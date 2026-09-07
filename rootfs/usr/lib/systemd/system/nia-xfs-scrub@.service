@@ -1,0 +1,31 @@
+# SPDX-License-Identifier: MIT
+# Read-only check; no autofsck policy override, no repairs, no trim, no shutdown.
+[Unit]
+Description=Nia XFS read-only metadata scrub for %f
+Documentation=man:xfs_scrub(8)
+After=local-fs.target
+RequiresMountsFor=%f
+ConditionPathIsMountPoint=%f
+
+[Service]
+Type=oneshot
+ExecStart=/usr/sbin/xfs_scrub -n -b -k %f
+# 2 is optimization advice, not filesystem-content authentication.
+SuccessExitStatus=2
+TimeoutStartSec=30min
+TimeoutStopSec=60s
+KillMode=control-group
+UMask=0077
+NoNewPrivileges=yes
+CapabilityBoundingSet=CAP_SYS_ADMIN CAP_DAC_READ_SEARCH
+RestrictNamespaces=yes
+RestrictAddressFamilies=AF_UNIX
+LockPersonality=yes
+MemoryDenyWriteExecute=yes
+CPUQuota=10%
+IOWeight=10
+MemoryMax=512M
+TasksMax=32
+LimitCORE=0
+StandardOutput=journal
+StandardError=journal

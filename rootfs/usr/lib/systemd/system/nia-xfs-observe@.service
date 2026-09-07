@@ -1,0 +1,31 @@
+# SPDX-License-Identifier: MIT
+# Provision only after exact native-tool and filesystem qualification.
+# No [Install]: importing this unit does not enable monitoring or repair.
+[Unit]
+Description=Nia XFS health observation for %f
+Documentation=man:xfs_healer(8)
+After=local-fs.target
+RequiresMountsFor=%f
+ConditionPathIsMountPoint=%f
+StartLimitIntervalSec=600
+StartLimitBurst=3
+
+[Service]
+Type=exec
+ExecStart=/usr/sbin/xfs_healer --no-autofsck --everything %f
+Restart=on-failure
+RestartSec=30s
+UMask=0077
+NoNewPrivileges=yes
+CapabilityBoundingSet=CAP_SYS_ADMIN CAP_DAC_READ_SEARCH
+RestrictNamespaces=yes
+RestrictAddressFamilies=AF_UNIX
+LockPersonality=yes
+MemoryDenyWriteExecute=yes
+CPUQuota=10%
+IOWeight=10
+MemoryMax=256M
+TasksMax=16
+LimitCORE=0
+StandardOutput=journal
+StandardError=journal

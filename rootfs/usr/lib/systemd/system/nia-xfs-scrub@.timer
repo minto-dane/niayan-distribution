@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: MIT
+# Instantiated per admitted filesystem; never auto-enabled by package import.
+[Unit]
+Description=Nia periodic XFS metadata check for %f
+
+[Timer]
+OnBootSec=30min
+OnUnitActiveSec=7d
+RandomizedDelaySec=1h
+AccuracySec=5min
+Unit=nia-xfs-scrub@%i.service

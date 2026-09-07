@@ -1,0 +1,32 @@
+{
+  "format": 1,
+  "release": "16.0",
+  "architecture": "x86_64",
+  "cpu_baseline": "x86-64-v2",
+  "update_model": "mutable",
+  "host_package_owner": "native-zypper-rpm",
+  "mission_owned_roots": "explicit-separated-roots-only",
+  "bootloader": "grub2",
+  "bls": false,
+  "secure_boot_required": true,
+  "selinux": "enforcing",
+  "network_manager": "NetworkManager",
+  "vendor_configuration": "/usr/etc",
+  "administrator_configuration": "/etc",
+  "temporary_storage": "tmpfs",
+  "kernel_track": "vendor-6.12-with-upstream-fix-watch",
+  "installer": "Agama",
+  "image_builder": "KIWI-NG",
+  "family_mixing": false,
+  "production_qualified": false,
+  "id": "leap-16.0",
+  "family": "opensuse-leap",
+  "title": "openSUSE Leap 16.0",
+  "cuda_table_status": "not-listed-for-leap-16-in-cuda-13.3-update1-table",
+  "subscription_required": false,
+  "sources": [
+    "https://get.opensuse.org/leap/16.0/",
+    "https://documentation.suse.com/sles/16.0/html/SLE-comparison/index.html",
+    "https://docs.nvidia.com/cuda/cuda-installation-guide-linux/"
+  ]
+}

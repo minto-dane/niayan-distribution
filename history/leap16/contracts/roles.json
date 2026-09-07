@@ -1,0 +1,45 @@
+{
+  "format": 1,
+  "roles": [
+    {
+      "id": "cluster-server",
+      "sleep_policy": "disabled-by-admitted-configuration",
+      "gpu": "optional-compute",
+      "gaming": false,
+      "required": [
+        "quorum",
+        "independent-fencing",
+        "application-replication",
+        "fault-domain-budget",
+        "restore-drill",
+        "time-integrity"
+      ]
+    },
+    {
+      "id": "single-server",
+      "sleep_policy": "disabled-by-admitted-configuration",
+      "gpu": "optional-compute",
+      "gaming": false,
+      "required": [
+        "independent-recovery",
+        "off-host-backup",
+        "restore-drill",
+        "hardware-watchdog",
+        "time-integrity"
+      ]
+    },
+    {
+      "id": "workstation",
+      "sleep_policy": "qualified-exact-driver-and-hardware",
+      "gpu": "optional",
+      "gaming": true,
+      "required": [
+        "configuration-closure",
+        "driver-userspace-cohort",
+        "suspend-resume-drill",
+        "off-host-backup"
+      ]
+    }
+  ],
+  "note": "Role metadata does not execute policy changes. Workstation game/32-bit compatibility is not imposed on cluster servers."
+}

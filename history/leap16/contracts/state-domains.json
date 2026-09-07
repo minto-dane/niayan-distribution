@@ -1,0 +1,80 @@
+{
+  "format": 1,
+  "domains": [
+    {
+      "id": "software",
+      "examples": [
+        "/usr"
+      ],
+      "owner": "native-rpm-until-explicit-migration",
+      "rollback": "matched-rpmdb-and-image"
+    },
+    {
+      "id": "rpmdb",
+      "examples": [
+        "runtime-resolved-rpm-dbpath"
+      ],
+      "owner": "native-rpm",
+      "rollback": "same-checkpoint-as-owned-files"
+    },
+    {
+      "id": "configuration",
+      "examples": [
+        "/etc"
+      ],
+      "owner": "administrator-and-explicit-config-contract",
+      "rollback": "three-way-plus-data-compatibility"
+    },
+    {
+      "id": "business-data",
+      "examples": [
+        "application-specific-data-paths"
+      ],
+      "owner": "application",
+      "rollback": "native-backup-pitr-contract"
+    },
+    {
+      "id": "trust-and-replay",
+      "examples": [
+        "mission-trust-epoch",
+        "receiver-sequence-floor"
+      ],
+      "owner": "independent-authority",
+      "rollback": "never-with-software"
+    },
+    {
+      "id": "audit",
+      "examples": [
+        "remote-receipted-evidence"
+      ],
+      "owner": "audit-authority",
+      "rollback": "never-with-software"
+    },
+    {
+      "id": "secrets",
+      "examples": [
+        "per-node-credentials",
+        "disk-recovery-keys"
+      ],
+      "owner": "key-authority",
+      "rollback": "separate-rotation-and-recovery"
+    },
+    {
+      "id": "boot",
+      "examples": [
+        "ESP",
+        "kernel",
+        "initramfs",
+        "GRUB"
+      ],
+      "owner": "boot-maintenance",
+      "rollback": "signed-cohort-with-current-revocations"
+    }
+  ],
+  "rules": [
+    "No path broad-brush /var rollback policy",
+    "Snapper snapshot is not off-host backup",
+    "Boot acknowledgement is a GRUB adapter obligation, not bootctl bless",
+    "Recovery image and administrator rescue credentials are not cloned production secrets"
+  ]
+}

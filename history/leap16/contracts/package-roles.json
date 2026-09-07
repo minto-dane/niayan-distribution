@@ -1,0 +1,48 @@
+{
+  "format": 1,
+  "resolution": "against-authenticated-exact-target-metadata",
+  "roles": {
+    "bootstrap": [
+      "filesystem",
+      "glibc",
+      "bash",
+      "coreutils",
+      "rpm",
+      "zypper",
+      "ca-certificates"
+    ],
+    "boot": [
+      "kernel-default",
+      "dracut",
+      "shim",
+      "grub2",
+      "grub2-x86_64-efi"
+    ],
+    "platform": [
+      "systemd",
+      "NetworkManager",
+      "chrony",
+      "audit",
+      "btrfsprogs",
+      "snapper",
+      "openssh",
+      "sudo"
+    ],
+    "mission-tools": [
+      "mission-assurance",
+      "mission-pkgcore",
+      "mission-statecore",
+      "mission-controlcore",
+      "mission-configcore",
+      "mission-resolvercore"
+    ],
+    "policy": [
+      "target-release-SELinux-policy-package-to-resolve"
+    ],
+    "recovery": [
+      "signed-independent-recovery-image",
+      "separately-provisioned-keys-and-trust-floor"
+    ]
+  },
+  "note": "Names are requirements to resolve, not a checked package closure. Some are virtual/site artifacts. No dummy resolution is used."
+}

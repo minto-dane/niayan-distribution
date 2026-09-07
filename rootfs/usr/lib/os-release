@@ -1,0 +1,6 @@
+NAME="Nia OS"
+PRETTY_NAME="Nia OS 0.1 (development)"
+ID=nia
+ID_LIKE=debian
+VERSION_ID="0.1-dev"
+VERSION_CODENAME=nia

@@ -1,0 +1,66 @@
+{
+  "schema": "org.niaos.product/v2",
+  "id": "nia-os",
+  "name": "Nia OS",
+  "version": "0.1-dev",
+  "qualification": "unqualified-source",
+  "supply": {
+    "distribution": "debian",
+    "codename": "forky",
+    "major": 14,
+    "format": "deb",
+    "mode": "pinned-snapshot",
+    "rolling_aliases": false,
+    "mix_families": false,
+    "architecture": "amd64",
+    "independent_architecture": "all",
+    "required_component": "main",
+    "exception_components": [
+      "contrib",
+      "non-free",
+      "non-free-firmware"
+    ],
+    "archive_authentication": "openpgp-inrelease-sha256-chain",
+    "reproduction": "exact-deb-source-buildinfo-independent-receipts"
+  },
+  "ownership": {
+    "host_package_authority": "nia",
+    "native_manager_writers": [],
+    "native_database": "nia-catalog-v1",
+    "requires_native_db_handoff": false,
+    "upstream_abi_reuse": true,
+    "maintainer_scripts": "reviewed-effect-contract-only"
+  },
+  "system": {
+    "architecture": "x86_64",
+    "cpu_baseline": "x86-64-v2",
+    "libc": "glibc",
+    "init": "systemd",
+    "network": "NetworkManager",
+    "mac": "apparmor-enforcing-scoped-profiles",
+    "root_filesystem": "xfs",
+    "data_filesystem": "xfs",
+    "at_rest_encryption": "luks2",
+    "boot": "systemd-boot-signed-uki",
+    "secure_boot_required": true,
+    "root_update": "mutable-managed",
+    "unconditional_reboot": false,
+    "hibernation_default": false,
+    "kernel": "debian-forky-signed-cohort-upstream-lag-gated",
+    "persistent_filesystem": "xfs",
+    "storage_contract": "org.niaos.xfs-policy/v1"
+  },
+  "product": {
+    "configuration_authority": "configcore",
+    "change_authority": "controlcore",
+    "solver_authority": "resolvercore-independent-checker",
+    "host_console": "nia",
+    "internal_compatibility_names": [
+      "missionctl",
+      "MC_*"
+    ],
+    "default_package_execution": false,
+    "bootable_image_available": false,
+    "production_qualified": false
+  }
+}

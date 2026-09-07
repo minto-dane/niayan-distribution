@@ -1,0 +1,92 @@
+{
+  "schema": "org.niaos.xfs-policy/v1",
+  "product": "nia-os",
+  "architecture": "x86_64",
+  "default_disk_filesystem": "xfs",
+  "exceptions": {
+    "efi": "vfat",
+    "volatile": "tmpfs",
+    "kernel": "virtual"
+  },
+  "kernel_minimum": [
+    7,
+    0,
+    0
+  ],
+  "xfsprogs_minimum": [
+    7,
+    0,
+    0
+  ],
+  "version_is_capability_proof": false,
+  "kernel_features": [
+    "CONFIG_XFS_FS",
+    "CONFIG_XFS_ONLINE_SCRUB",
+    "CONFIG_XFS_ONLINE_REPAIR"
+  ],
+  "disk_features": [
+    "crc",
+    "finobt",
+    "inobtcount",
+    "bigtime",
+    "rmapbt",
+    "reflink",
+    "parent"
+  ],
+  "capabilities": [
+    "scrub_readonly",
+    "online_repair",
+    "health_events",
+    "reverse_mapping",
+    "parent_pointers"
+  ],
+  "cohort": [
+    "kernel",
+    "kernel_config",
+    "xfsprogs",
+    "rescue_kernel",
+    "rescue_xfsprogs",
+    "disk_geometry",
+    "policy"
+  ],
+  "observer_mode": "native-healer-no-autofsck",
+  "repair_policy": "explicit-qualified-session",
+  "experimental_feature_waiver_required": true,
+  "qualified_for_automatic_repair": false,
+  "event_owner": "one-native-healer-per-filesystem",
+  "mount_scope": "filesystem-uuid+mount-id+mount-namespace+boot-id",
+  "lost_events": "invalidate-and-full-readonly-rescan",
+  "unknown_event": "invalidate-and-rescan",
+  "media_error": "preserve-evidence-contain-and-restore-authenticated-content",
+  "metadata_healthy_is_content_healthy": false,
+  "fsverity_assumed": false,
+  "integrity": "authenticated-catalog-digests+independent-backup+application-checksums",
+  "snapshot_required": false,
+  "native_fs_multi_file_acid": false,
+  "max_concurrent_scrubs_per_filesystem": 1,
+  "max_online_repair_attempts": 2,
+  "max_evidence_age_ms": 5000,
+  "max_scrub_age_seconds": 691200,
+  "log_zeroing_allowed": false,
+  "mount_norecovery_allowed": false,
+  "generic_force_repair_allowed": false,
+  "repair_requires": [
+    "independent-backup",
+    "rescue-compatible",
+    "isolated-evidence",
+    "single-writer-ownership",
+    "bounded-budget",
+    "current-authorization",
+    "no-media-error",
+    "no-unresolved-operation"
+  ],
+  "postrepair_requires": [
+    "new-full-metadata-scrub",
+    "catalog-content-and-attribute-verification",
+    "configuration-validation",
+    "application-health",
+    "fresh-independent-acceptance"
+  ],
+  "execution_permit": false,
+  "production_qualified": false
+}

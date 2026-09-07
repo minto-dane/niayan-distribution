@@ -1,0 +1,19 @@
+{
+  "schema": "org.niaos.supply-observation/v1",
+  "as_of": "2026-09-07",
+  "suite": "forky",
+  "linux_image_amd64": "7.1.12-1",
+  "xfsprogs": "6.19.0-1",
+  "native_healer_in_filelist": false,
+  "sources": [
+    "https://packages.debian.org/forky/linux-image-amd64",
+    "https://packages.debian.org/forky/xfsprogs",
+    "https://packages.debian.org/forky/amd64/xfsprogs/filelist"
+  ],
+  "upstream_healer_introduction": "xfsprogs 7.0.0",
+  "upstream_release_date": "2026-05-07",
+  "qualification": "not-an-artifact-attestation",
+  "automatic_repair_supply_ready": false,
+  "allowed_resolution": "wait-for-same-supplier-artifact-or-separately-admit-a-reviewed-rebuild",
+  "repository_mixing_allowed": false
+}

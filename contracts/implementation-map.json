@@ -1,0 +1,177 @@
+{
+  "schema": "org.niaos.implementation-map/v1",
+  "product": "nia-os",
+  "production_qualified": false,
+  "entries": [
+    {
+      "feature": "archive, DEB and source graph intake",
+      "state": "tooling-tested-synthetic-native",
+      "paths": [
+        "distribution/tools/debian_archive_auth.py",
+        "distribution/tools/deb_archive.py"
+      ],
+      "residual": "real Forky corpus, native trust lifecycle and privileged revalidation"
+    },
+    {
+      "feature": "DEB version and capability matching",
+      "state": "spark-source-not-compiled",
+      "paths": [
+        "pkgcore/src/pkg_deb_versions.adb",
+        "pkgcore/src/pkg_deb_semantics.adb"
+      ],
+      "residual": "GNATprove, differential Ada execution, phased effect lowering"
+    },
+    {
+      "feature": "native candidate catalog",
+      "state": "tooling-tested",
+      "paths": [
+        "distribution/tools/nia_catalog.py"
+      ],
+      "residual": "no root executor/catalog-WAL commit integration"
+    },
+    {
+      "feature": "reproduction admission",
+      "state": "tooling-tested-artificial-keys",
+      "paths": [
+        "distribution/tools/reproducibility.py"
+      ],
+      "residual": "real independent receipt issuers; source/license acceptance; no unsigned dashboard conversion"
+    },
+    {
+      "feature": "DEB libsolv proposal",
+      "state": "wrapper-tested-mock-api",
+      "paths": [
+        "resolvercore/tools/propose_libsolv_deb.py"
+      ],
+      "residual": "native libsolv built with DEB mode, full native phase rechecker"
+    },
+    {
+      "feature": "host ownership",
+      "state": "specification-and-candidate-model",
+      "paths": [
+        "distribution/profiles/nia-os.json",
+        "distribution/docs/ownership-and-effects.ja.md"
+      ],
+      "residual": "fresh-root installer and full catalog writer; legacy apply restriction not removed"
+    },
+    {
+      "feature": "storage and boot product",
+      "state": "layout-tool-and-specification",
+      "paths": [
+        "distribution/contracts/state-domains.json",
+        "distribution/docs/storage-boot.ja.md"
+      ],
+      "residual": "physical partitions, encryption provisioning, UKI generation/signing, real boot and crash testing"
+    },
+    {
+      "feature": "HA and recovery",
+      "state": "inherited-unqualified-sdk",
+      "paths": [
+        "statecore",
+        "controlcore"
+      ],
+      "residual": "site adapters, fleet transport, physical fencing, independent antirollback anchors, long-term GC"
+    },
+    {
+      "feature": "native PM database handoff",
+      "state": "not-a-product-goal",
+      "paths": [
+        "distribution/docs/ownership-and-effects.ja.md"
+      ],
+      "residual": "fresh Nia image only; no inplace conversion of an existing OS"
+    },
+    {
+      "feature": "arbitrary maintainer script compatibility",
+      "state": "not-a-product-goal",
+      "paths": [
+        "distribution/docs/ownership-and-effects.ja.md"
+      ],
+      "residual": "supported artifacts still require complete reviewed replacement effects"
+    },
+    {
+      "feature": "bootable distribution",
+      "state": "not-produced",
+      "paths": [
+        "distribution/docs/build-release.ja.md"
+      ],
+      "residual": "no bootable image or production certification in this archive"
+    },
+    {
+      "feature": "XFS capability, event coverage and repair control",
+      "state": "source-plus-tested-diagnostic-tooling",
+      "paths": [
+        "statecore/src/state_xfs_health.adb",
+        "distribution/tools/nia_xfs.py",
+        "distribution/contracts/xfs-policy.json"
+      ],
+      "residual": "native health collector, signed runtime bindings, state checkpoint/executor integration, upstream userspace intake, Ada/proof and real XFS fault tests"
+    },
+    {
+      "feature": "helper所有権と回収順",
+      "state": "runtime-source-unvalidated",
+      "paths": [
+        "assurance/runtime/mc_command.adb",
+        "assurance/runtime/mc_runtime.adb"
+      ],
+      "residual": "Ada/target tests and site integration outstanding; see assurance/docs/engineering/specs/execution-safety.ja.md"
+    },
+    {
+      "feature": "観測FD・ctimeの照合",
+      "state": "runtime-source-unvalidated",
+      "paths": [
+        "assurance/runtime/mc_fs.adb",
+        "pkgcore/runtime/pkg_file_engine.adb"
+      ],
+      "residual": "Ada/target tests and site integration outstanding; see assurance/docs/engineering/specs/execution-safety.ja.md"
+    },
+    {
+      "feature": "intent前の完了記録余力",
+      "state": "runtime-source-unvalidated",
+      "paths": [
+        "assurance/src/mc_journal_budget.ads",
+        "assurance/runtime/mc_gate.adb",
+        "controlcore/src/ctl_workflow.adb",
+        "controlcore/runtime/ctl_store.adb"
+      ],
+      "residual": "Ada/target tests and site integration outstanding; see assurance/docs/engineering/specs/execution-safety.ja.md"
+    },
+    {
+      "feature": "既存lockの欠落拒否",
+      "state": "runtime-source-unvalidated",
+      "paths": [
+        "pkgcore/runtime/pkg_file_engine.adb",
+        "assurance/runtime/mc_checkpoint_store.adb",
+        "statecore/runtime/state_network_controller.adb"
+      ],
+      "residual": "Ada/target tests and site integration outstanding; see assurance/docs/engineering/specs/execution-safety.ja.md"
+    },
+    {
+      "feature": "複合検査経路の必須化",
+      "state": "sdk-source-unvalidated",
+      "paths": [
+        "pkgcore/runtime/pkg_managed_engine.ads",
+        "pkgcore/runtime/pkg_managed_engine.adb"
+      ],
+      "residual": "Ada/target tests and site integration outstanding; see assurance/docs/engineering/specs/execution-safety.ja.md"
+    },
+    {
+      "feature": "世代namespaceの分離",
+      "state": "runtime-source-unvalidated",
+      "paths": [
+        "pkgcore/runtime/pkg_resolution_engine.ads",
+        "pkgcore/runtime/pkg_resolution_engine.adb"
+      ],
+      "residual": "Ada/target tests and site integration outstanding; see assurance/docs/engineering/specs/execution-safety.ja.md"
+    },
+    {
+      "feature": "explicit capsule consent and existing UI connector",
+      "state": "ada-sdk-uncompiled-native-protocol-probe-tested",
+      "paths": [
+        "capsulecore/src/capsule_consent.adb",
+        "capsulecore/runtime/capsule_access_ui.adb",
+        "capsulecore/runtime/capsule_consent_store.adb"
+      ],
+      "residual": "registry/anchor/resource-adapter integration, real desktop and Ada execution; no generic syscall interception"
+    }
+  ]
+}

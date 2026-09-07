@@ -1,0 +1,69 @@
+{
+  "format": 1,
+  "adapters": [
+    {
+      "id": "nvidia-power",
+      "implementation": "configcore/src/config_nvidia.adb",
+      "native_input": "restricted-options-parser-plus-authenticated-observer",
+      "qualifications": [
+        "exact-rpm-artifact",
+        "module-flavor",
+        "module-parameters",
+        "systemd-hooks-and-drop-ins",
+        "kernel-command-line",
+        "initramfs-copy",
+        "runtime-module-version",
+        "all-gpu-memory-capacity",
+        "backing-filesystem-and-SELinux",
+        "native-suspend-drill"
+      ]
+    },
+    {
+      "id": "openssh",
+      "implementation": "generic-schema-only",
+      "native_input": "version-pinned-sshd-T-and-t-in-isolated-target-root",
+      "qualifications": [
+        "Include-closure",
+        "Match-contexts",
+        "hostkeys-separately",
+        "new-port-checked-before-old-path-removed"
+      ]
+    },
+    {
+      "id": "systemd",
+      "implementation": "generic-schema-and-state-service-catalog",
+      "native_input": "target-version-systemd-verify-and-effective-properties",
+      "qualifications": [
+        "drop-in-precedence",
+        "list-reset-semantics",
+        "single-restart-authority",
+        "resources",
+        "credentials",
+        "loaded-vs-file-state"
+      ]
+    },
+    {
+      "id": "networkmanager",
+      "implementation": "statecore-existing-network-checkpoint-sdk",
+      "native_input": "site-adapter",
+      "qualifications": [
+        "checkpoint-supported-scope",
+        "independent-probe",
+        "routing-dns-firewall-cohort",
+        "timeout-result-unknown"
+      ]
+    },
+    {
+      "id": "database",
+      "implementation": "contract-required",
+      "native_input": "database-specific",
+      "qualifications": [
+        "schema-compatibility",
+        "point-in-time-restore",
+        "replication-lag-and-writer-fence"
+      ]
+    }
+  ],
+  "unknown_adapter": "reject-acceptance-not-guess",
+  "note": "Absence of a native adapter is not hidden by the generic schema validator."
+}

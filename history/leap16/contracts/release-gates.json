@@ -1,0 +1,161 @@
+{
+  "format": 1,
+  "gates": [
+    {
+      "id": "source-profile",
+      "state": "not-run",
+      "required": true
+    },
+    {
+      "id": "ada-build",
+      "state": "not-run",
+      "required": true
+    },
+    {
+      "id": "ada-tests",
+      "state": "not-run",
+      "required": true
+    },
+    {
+      "id": "spark-flow",
+      "state": "not-run",
+      "required": true
+    },
+    {
+      "id": "spark-proof",
+      "state": "not-run",
+      "required": true
+    },
+    {
+      "id": "abi-review",
+      "state": "not-run",
+      "required": true
+    },
+    {
+      "id": "rpm-signature",
+      "state": "not-run",
+      "required": true
+    },
+    {
+      "id": "repo-signature",
+      "state": "not-run",
+      "required": true
+    },
+    {
+      "id": "resolved-nevra-closure",
+      "state": "not-run",
+      "required": true
+    },
+    {
+      "id": "rpmdb-file-ownership",
+      "state": "not-run",
+      "required": true
+    },
+    {
+      "id": "config-adapter-coverage",
+      "state": "not-run",
+      "required": true
+    },
+    {
+      "id": "native-validator-target-root",
+      "state": "not-run",
+      "required": true
+    },
+    {
+      "id": "secure-boot-normal",
+      "state": "not-run",
+      "required": true
+    },
+    {
+      "id": "secure-boot-recovery",
+      "state": "not-run",
+      "required": true
+    },
+    {
+      "id": "selinux-enforcing",
+      "state": "not-run",
+      "required": true
+    },
+    {
+      "id": "disk-key-recovery",
+      "state": "not-run",
+      "required": true
+    },
+    {
+      "id": "power-loss-recovery",
+      "state": "not-run",
+      "required": true
+    },
+    {
+      "id": "network-checkpoint",
+      "state": "not-run",
+      "required": true
+    },
+    {
+      "id": "cluster-partition-fencing",
+      "state": "not-run",
+      "required": true
+    },
+    {
+      "id": "db-restore",
+      "state": "not-run",
+      "required": true
+    },
+    {
+      "id": "upgrade-downgrade-data-compatibility",
+      "state": "not-run",
+      "required": true
+    },
+    {
+      "id": "installer-profile-schema",
+      "state": "not-run",
+      "required": true
+    },
+    {
+      "id": "no-machine-secret-cloning",
+      "state": "not-run",
+      "required": true
+    },
+    {
+      "id": "image-sbom-and-license",
+      "state": "not-run",
+      "required": true
+    },
+    {
+      "id": "supplier-support-review",
+      "state": "not-run",
+      "required": true
+    },
+    {
+      "id": "independent-security-review",
+      "state": "not-run",
+      "required": true
+    },
+    {
+      "id": "native-to-neutral-coverage",
+      "state": "not-run",
+      "required": true
+    },
+    {
+      "id": "independent-selection-and-schedule",
+      "state": "not-run",
+      "required": true
+    },
+    {
+      "id": "native-effect-plan-binding",
+      "state": "not-run",
+      "required": true
+    },
+    {
+      "id": "post-check-authority-freshness",
+      "state": "not-run",
+      "required": true
+    },
+    {
+      "id": "untrusted-solver-sandbox",
+      "state": "not-run",
+      "required": true
+    }
+  ],
+  "note": "This catalog is a list of obligations, not self-asserted proof. No production gate is satisfied by editing state fields here."
+}
