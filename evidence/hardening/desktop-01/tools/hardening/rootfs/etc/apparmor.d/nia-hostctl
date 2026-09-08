@@ -1,0 +1,22 @@
+# SPDX-License-Identifier: MIT
+# Source scope: statecore/app/hostctl.adb, statecore/runtime/state_host_probe.adb,
+# assurance/runtime/mc_kernel_read.adb and mc_clock.adb.
+# hostctl is a read-only observer, never a package mutation worker.
+abi <abi/4.0>,
+include <tunables/global>
+
+profile nia-hostctl /usr/libexec/nia/hostctl {
+  include <abstractions/base>
+
+  # MC_Kernel_Read opens this directory as the anchor for openat2 beneath it.
+  / r,
+  /usr/libexec/nia/hostctl rix,
+  @{PROC}/1/comm r,
+  @{PROC}/sys/kernel/random/boot_id r,
+  @{PROC}/sys/kernel/{dmesg_restrict,randomize_va_space,unprivileged_bpf_disabled,kptr_restrict} r,
+  @{PROC}/@{pid}/attr/{apparmor/,}current r,
+  /sys/fs/cgroup/cgroup.controllers r,
+  /sys/fs/selinux/enforce r,
+  /sys/kernel/security/lockdown r,
+  /sys/firmware/efi/efivars/{SecureBoot,SetupMode}-8be4df61-93ca-11d2-aa0d-00e098032b8c r,
+}

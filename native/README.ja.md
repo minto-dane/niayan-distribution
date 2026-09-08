@@ -1,0 +1,43 @@
+# Niaパッケージ管理への完全置換
+
+[製品判断](../docs/decisions/0002-native-package-authority.ja.md)に従うTrixie置換工程。
+現段階の工具は移行対象の実データ検査であり、インストーラーや特権writerではない。
+
+```sh
+python3 native/audit_transition.py \
+  --status /offline-metadata/var/lib/dpkg/status \
+  --info /offline-metadata/var/lib/dpkg/info \
+  --output /new-output/transition.json
+make native-check
+```
+
+停止したビルドroot又は完成ISOから抽出したメタデータを使う。
+対象を稼働中のdpkg DBへ向けない。工具はstatusの再読と個々のファイルの安定性を
+検査するが、実システムのDPKGロックを取得するsnapshot機構ではない。
+出力にはstatus/control全件のSHA-256、版と関係の検査、除外対象、効果ファイル、
+コマンド出現箇所が含まれる。既存レポートを上書きしない。
+
+除外リストは既知のwriterと管理器依存群を探す開始点であり、全実行経路の
+不存在証明ではない。PackageKitの存在自体で二重書込が起きたとは断定しない。
+元のDEBを読み取る`tools/deb_archive.py`、認証する`tools/debian_archive_auth.py`、
+最終集合を再検査する`tools/debian_semantics.py`と接続する前の観測である。
+
+| 工程 | 状態 | 完了条件 |
+| --- | --- | --- |
+| 旧実ISOの移行対象検査 | 実行済み | 全2,239個のstatusと8,959個のcontrolファイルをhash照合 |
+| 元DEBからの効果変換 | 未完 | 全採用パッケージと暗黙triggerについて版付き契約を実装 |
+| Native phase・解決器接続 | 未完 | 既存の独立検査と元形式を同じ予約へ束縛 |
+| full-root/catalogの確定 | 未完 | 既存CAS/WALと原子的公開・実障害復旧を接続 |
+| 唯一の更新主体 | 未完 | 自動更新・GUI・CLIをNiaへ接続し別writerを除去 |
+| 新ISOと更新・復旧受入 | 未完 | 実導入、更新、電源断、rollback、署名失効、操作性 |
+
+上の未完条件を単純な真偽値で埋める実装は作らない。SPARKの局所証明は、
+未接続の副作用や稼働OSの完全性を証明するものではない。
+
+容量にも実装上の境界がある。`Pkg_File_Plan.Max_Changes`は1,024、
+`Resolver_Model.Max_Items`は4,096、`Max_Claims`は16,384である。
+全rootの所有権を既存の配列へそのまま押し込んだり、上限を無制限に増やしてはならない。
+更新の途中を別々のcommitとして公開する分割はトランザクションを弱める。
+inactive generationの組立てを有界な作業へ分け、全入力と所有権をhashへ束縛し、
+最後のroot/catalog公開を一つの復旧可能なcommitにする接続が必要である。
+現在の工具は`.list`のパス数も記録するが、これは実ファイル属性や差分変更数の検査ではない。

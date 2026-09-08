@@ -1,0 +1,51 @@
+{
+  "result": "pass",
+  "iso_sha256": "d4c18dc0e2be653bf11a04db40db95ca0353322010133e068dda274bd4aa314b",
+  "firmware": "bios",
+  "payload_sha256": {
+    "audit.py": "7b0c5032c8306594cd82134f325854782171413be79c56caf0fa924d6cbcc827",
+    "baseline.json": "5e9bb29a731229dbaa5e0a73e843785a175747d140f3a83ca976a14311721e1e",
+    "nia-hostctl": "812b39127bf4722bb8165e5876079f407993af6f9f9adaf2a92b3333f7a48225",
+    "60-niaos-hardening.conf": "f2958e92cff3041dd1616c873a627f5980a4d1e8c908a82467906189c897ecd9"
+  },
+  "tools_sha256": {
+    "hardening/test_vm.py": "c0c5ca4a202c9898ebb659af8253d079a5727b67f4fe78b0c8623c33eeb4972c",
+    "image/vm_console.py": "3f799bc9278eec91cb243b29402e0c82e55fbb47e8861efceb098893afde5e64",
+    "image/test-live.py": "7d2c4df20d6b2957f0b610f8aadf9ccf9dc94b1e53360eceb675e7ec8fb144ca"
+  },
+  "scope": "Live RAM-only runtime hardening, KDE IME, user namespaces and Firefox startup",
+  "persistent_boot_policy_tested": false,
+  "native_package_manager_tested": false,
+  "argv": [
+    "qemu-system-x86_64",
+    "-machine",
+    "q35",
+    "-m",
+    "2048",
+    "-smp",
+    "1",
+    "-accel",
+    "kvm",
+    "-cpu",
+    "host",
+    "-display",
+    "none",
+    "-monitor",
+    "none",
+    "-nic",
+    "user",
+    "-boot",
+    "d",
+    "-cdrom",
+    "/artifacts/niaos-0.1.0-amd64.hybrid.iso",
+    "-no-reboot",
+    "-serial",
+    "unix:/tmp/nia-qemu-mru_zosl/serial,server=on,wait=on",
+    "-qmp",
+    "unix:/tmp/nia-qemu-mru_zosl/qmp,server=on,wait=off"
+  ],
+  "runtime": "pass",
+  "japanese_input": "pass: KWrite saved \u65e5\u672c\u8a9e through Fcitx5/Mozc and KWin Wayland",
+  "usability": "pass: unprivileged user namespace, DNS, Firefox headless about:blank screenshot",
+  "elapsed_seconds": 80.99
+}

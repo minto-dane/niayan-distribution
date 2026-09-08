@@ -1,0 +1,12 @@
+Running as unit: run-p298117-i298417.scope; invocation ID: 3ec8e8c2255247b6bbd4ac0e462c309f
+limited-exec: {"scope": "run-p298117-i298417.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Traceback (most recent call last):
+  File "/source/hardening/test_vm.py", line 168, in <module>
+    main()
+    ~~~~^^
+  File "/source/hardening/test_vm.py", line 125, in main
+    guest.expect(b'NIA_HARDENING_APPLIED', b'NIA_HARDENING_FAIL')
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/source/image/vm_console.py", line 96, in expect
+    raise RuntimeError('guest acceptance failed; see serial.log')
+RuntimeError: guest acceptance failed; see serial.log

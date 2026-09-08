@@ -1,0 +1,37 @@
+Running as unit: run-p301858-i302158.scope; invocation ID: 05d0495aa6d945208465138b44684243
+limited-exec: {"scope": "run-p301858-i302158.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+xorriso 1.5.6 : RockRidge filesystem manipulator, libburnia project.
+
+xorriso : NOTE : Environment variable SOURCE_DATE_EPOCH encountered with value 1788739200
+Copying of file objects from ISO image to disk filesystem is: Enabled
+xorriso : NOTE : ISO image bears MBR with  -boot_image any partition_offset=16
+xorriso : NOTE : Loading ISO image tree from LBA 0
+xorriso : UPDATE :    1183 nodes read in 1 seconds
+xorriso : NOTE : Detected El-Torito boot information which currently is set to be discarded
+Drive current: -indev '/artifacts/niaos-0.1.0-amd64.hybrid.iso'
+Media current: stdio file, overwriteable
+Media status : is written , is appendable
+Boot record  : El Torito , MBR isohybrid cyl-align-on GPT APM
+Media summary: 1 session, 1775928 data blocks, 3469m data, 30.4g free
+Volume id    : 'NIAOS_0_1_0_AMD64'
+xorriso : UPDATE :       0 files restored ( 583.8m) in 1 seconds , 441.9xD
+xorriso : UPDATE :       0 files restored ( 697.1m) in 2 seconds , 85.1xD
+xorriso : UPDATE :       0 files restored (1176.6m) in 3 seconds , 278.3xD
+xorriso : UPDATE :       0 files restored (1256.2m) in 4 seconds , 60.3xD
+xorriso : UPDATE :       0 files restored (1664.4m) in 5 seconds , 309.0xD
+xorriso : UPDATE :       0 files restored (1955.0m) in 6 seconds , 220.0xD
+xorriso : UPDATE :       0 files restored (2228.6m) in 7 seconds , 207.2xD
+xorriso : UPDATE :       0 files restored (2450.5m) in 8 seconds , 168.0xD
+xorriso : UPDATE :       1 files restored (2699.0m) in 9 seconds = 222.3xD
+Extracted from ISO image: file '/live/filesystem.squashfs'='/results/filesystem.squashfs'
+Parallel unsquashfs: Using 1 processor
+8979 inodes (9175 blocks) to write
+
+
+created 8979 files
+created 10 directories
+created 0 symlinks
+created 0 devices
+created 0 fifos
+created 0 sockets
+created 0 hardlinks

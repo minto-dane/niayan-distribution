@@ -1,0 +1,4 @@
+Running as unit: run-p300990-i301290.scope; invocation ID: fd5b1dd70f6c43c9bcfbfe77b735f5cc
+limited-exec: {"scope": "run-p300990-i301290.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+{"installed_count": 2239, "packages_with_retained_effects": 1493, "retained_effect_count": 2263, "excluded_packages": ["apt", "apt-utils", "dpkg", "dpkg-dev", "libapt-pkg7.0", "libdpkg-perl", "packagekit", "packagekit-tools", "python-apt-common", "python3-apt", "unattended-upgrades"]}
+unsatisfied relations after exclusion: 12

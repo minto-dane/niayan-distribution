@@ -1,5 +1,9 @@
 # Debian 13イメージの構築
 
+ここは受入済みAPT基準版の再現手順。最新の製品方針は
+[Niaへの完全置換](../docs/decisions/0002-native-package-authority.ja.md)であり、
+このレシピだけでNia-only製品が生成されるわけではない。
+
 開発版。既存の7コンポーネントを改変せずにDEB化し、Debian 13 Trixieの公式パッケージと組み合わせる。[設計判断](../docs/decisions/0001-debian13.ja.md)。
 
 amd64・KDEの実ISOについて[構築と6項目のVM受入記録](../evidence/debian13/accepted-09/README.ja.md)を保存している。同じ入力からのISO 09/10が実バイト列で一致し、[対応ソース1,415組の収集・補完・照合](../evidence/debian13/accepted-09/source-collection/README.ja.md)も完了した。下記手順の記載だけを成功結果とはせず、対象hashを確認する。

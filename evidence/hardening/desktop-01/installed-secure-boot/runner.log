@@ -1,0 +1,3 @@
+Running as unit: run-p300526-i300826.scope; invocation ID: a7663d15f4de4c14bf3db656e8328aba
+limited-exec: {"scope": "run-p300526-i300826.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Formatting '/results/acceptance/installed.qcow2', fmt=qcow2 cluster_size=65536 extended_l2=off compression_type=zlib size=34359738368 backing_file=/artifacts/acceptance-01/install-uefi-offline/installed.qcow2 backing_fmt=qcow2 lazy_refcounts=off refcount_bits=16

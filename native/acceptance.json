@@ -1,0 +1,57 @@
+{
+  "schema": "org.niaos.native-development-traceability/v1",
+  "scope": "development requirements and hazards; not an execution authorization",
+  "decision": "docs/decisions/0002-native-package-authority.ja.md",
+  "requirements": [
+    {
+      "id": "NATIVE-001",
+      "requirement": "Nia is the sole installed-package and ownership writer",
+      "state": "not-integrated",
+      "hazard": "independent APT/dpkg/PackageKit or Nia writers can publish conflicting state",
+      "implementation": ["native/audit_transition.py"],
+      "tests": ["native/test_transition.py"],
+      "evidence": ["evidence/native-transition/initial-09/inventory.json"],
+      "remaining": "connect the actual native executor, GUI and automatic updates; prove absence of other writers in a new image"
+    },
+    {
+      "id": "NATIVE-002",
+      "requirement": "Preserve native dependency and effect semantics without falsified compatibility",
+      "state": "inventory-tested-effect-conversion-incomplete",
+      "hazard": "dropping metadata or executing unmodeled scripts violates update and rollback contracts",
+      "implementation": ["tools/deb_archive.py", "tools/debian_semantics.py", "native/audit_transition.py"],
+      "tests": ["native/test_transition.py", "tests/test_nia_intake.py"],
+      "evidence": ["evidence/native-transition/initial-09/inventory.json"],
+      "remaining": "authenticate original artifacts and implement every adopted phase, generated output and implicit trigger"
+    },
+    {
+      "id": "NATIVE-003",
+      "requirement": "Bounded staging must retain one recoverable root/catalog publication boundary",
+      "state": "not-integrated",
+      "hazard": "individually committed file-plan chunks expose a partially updated system",
+      "implementation": [],
+      "tests": [],
+      "evidence": [],
+      "remaining": "compose existing component SDKs with generation publication, interruption/fsync/space/lock/replay tests and independent trust rollback rules"
+    },
+    {
+      "id": "HARD-001",
+      "requirement": "Check real mitigation values and exact first-party artifacts",
+      "state": "listed-baseline-and-elf-tests-passed",
+      "hazard": "a configuration flag or successful build is mistaken for effective protection",
+      "implementation": ["hardening/audit.py", "hardening/baseline.json"],
+      "tests": ["hardening/test_hardening.py", "hardening/test_vm.py", "hardening/test_installed.py"],
+      "evidence": ["evidence/native-transition/initial-09/elf.json", "evidence/hardening/desktop-01/report.json"],
+      "remaining": "native image integration, hardware and performance qualification"
+    },
+    {
+      "id": "HARD-002",
+      "requirement": "Constrain the read-only Nia observer while preserving its documented observations",
+      "state": "live-and-persistent-vm-tests-passed",
+      "hazard": "profile presence is mistaken for actual enforcement or required reads are silently lost",
+      "implementation": ["hardening/rootfs/etc/apparmor.d/nia-hostctl", "hardening/rootfs/usr/lib/systemd/system/niaos-hostctl-confinement.service"],
+      "tests": ["hardening/test_vm.py", "hardening/test_installed.py"],
+      "evidence": ["evidence/hardening/desktop-01/report.json"],
+      "remaining": "connect installation, enablement and updates to native configuration effects; this does not confine all Nia workers"
+    }
+  ]
+}

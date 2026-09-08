@@ -1,0 +1,281 @@
+{
+  "kernel_release": "6.12.107+deb13-amd64",
+  "kernel_config_sha256": "9b460f1003db4d417288e9c14caecfa14245dab07186df948fef0f3661e38ceb",
+  "checks": [
+    {
+      "name": "kernel.randomize_va_space",
+      "value": 2,
+      "result": "pass"
+    },
+    {
+      "name": "kernel.kptr_restrict",
+      "value": 1,
+      "result": "pass"
+    },
+    {
+      "name": "kernel.dmesg_restrict",
+      "value": 1,
+      "result": "pass"
+    },
+    {
+      "name": "kernel.unprivileged_bpf_disabled",
+      "value": 2,
+      "result": "pass"
+    },
+    {
+      "name": "vm.unprivileged_userfaultfd",
+      "value": 0,
+      "result": "pass"
+    },
+    {
+      "name": "vm.mmap_min_addr",
+      "value": 65536,
+      "result": "pass"
+    },
+    {
+      "name": "fs.protected_hardlinks",
+      "value": 1,
+      "result": "pass"
+    },
+    {
+      "name": "fs.protected_symlinks",
+      "value": 1,
+      "result": "pass"
+    },
+    {
+      "name": "fs.protected_fifos",
+      "value": 1,
+      "result": "pass"
+    },
+    {
+      "name": "fs.protected_regular",
+      "value": 2,
+      "result": "pass"
+    },
+    {
+      "name": "CONFIG_RANDOMIZE_BASE",
+      "value": "y",
+      "result": "pass"
+    },
+    {
+      "name": "CONFIG_STRICT_KERNEL_RWX",
+      "value": "y",
+      "result": "pass"
+    },
+    {
+      "name": "CONFIG_STRICT_MODULE_RWX",
+      "value": "y",
+      "result": "pass"
+    },
+    {
+      "name": "CONFIG_STACKPROTECTOR_STRONG",
+      "value": "y",
+      "result": "pass"
+    },
+    {
+      "name": "CONFIG_HARDENED_USERCOPY",
+      "value": "y",
+      "result": "pass"
+    },
+    {
+      "name": "CONFIG_FORTIFY_SOURCE",
+      "value": "y",
+      "result": "pass"
+    },
+    {
+      "name": "CONFIG_SLAB_FREELIST_RANDOM",
+      "value": "y",
+      "result": "pass"
+    },
+    {
+      "name": "CONFIG_SLAB_FREELIST_HARDENED",
+      "value": "y",
+      "result": "pass"
+    },
+    {
+      "name": "CONFIG_VMAP_STACK",
+      "value": "y",
+      "result": "pass"
+    },
+    {
+      "name": "CONFIG_THREAD_INFO_IN_TASK",
+      "value": "y",
+      "result": "pass"
+    },
+    {
+      "name": "CONFIG_MITIGATION_PAGE_TABLE_ISOLATION",
+      "value": "y",
+      "result": "pass"
+    },
+    {
+      "name": "CONFIG_SECURITY_APPARMOR",
+      "value": "y",
+      "result": "pass"
+    },
+    {
+      "name": "CONFIG_SECCOMP",
+      "value": "y",
+      "result": "pass"
+    },
+    {
+      "name": "CONFIG_SECCOMP_FILTER",
+      "value": "y",
+      "result": "pass"
+    },
+    {
+      "name": "CONFIG_SECURITY_YAMA",
+      "value": "y",
+      "result": "pass"
+    },
+    {
+      "name": "CONFIG_SECURITY_LANDLOCK",
+      "value": "y",
+      "result": "pass"
+    },
+    {
+      "name": "apparmor_enabled",
+      "value": "Y",
+      "result": "pass"
+    },
+    {
+      "name": "apparmor_enforcing_profiles",
+      "value": 18,
+      "result": "pass"
+    },
+    {
+      "name": "apparmor_profile:nia-hostctl",
+      "value": [
+        "wpcom (unconfined)",
+        "wike (unconfined)",
+        "vpnns (unconfined)",
+        "vivaldi-bin (unconfined)",
+        "virtiofsd (unconfined)",
+        "vdens (unconfined)",
+        "uwsgi-core (unconfined)",
+        "/usr/sbin/cupsd (enforce)",
+        "/usr/sbin/cupsd//third_party (enforce)",
+        "/usr/lib/cups/backend/cups-pdf (enforce)",
+        "/usr/sbin/cups-browsed (enforce)",
+        "libreoffice-xpdfimport (enforce)",
+        "libreoffice-soffice (complain)",
+        "libreoffice-soffice//gpg (enforce)",
+        "libreoffice-senddoc (enforce)",
+        "libreoffice-oosplash (complain)",
+        "man_groff (enforce)",
+        "man_filter (enforce)",
+        "/usr/bin/man (enforce)",
+        "/usr/bin/akonadiserver (enforce)",
+        "userbindmount (unconfined)",
+        "unprivileged_userns (complain)",
+        "unix-chkpwd (complain)",
+        "tuxedo-control-center (unconfined)",
+        "tup (unconfined)",
+        "trinity (unconfined)",
+        "transmission-qt (complain)",
+        "transmission-gtk (complain)",
+        "transmission-daemon (complain)",
+        "transmission-cli (complain)",
+        "toybox (unconfined)",
+        "systemd-coredump (unconfined)",
+        "surfshark (unconfined)",
+        "stress-ng (unconfined)",
+        "steam (unconfined)",
+        "slirp4netns (unconfined)",
+        "slack (unconfined)",
+        "signal-desktop (unconfined)",
+        "scide (unconfined)",
+        "sbuild-upgrade (complain)",
+        "sbuild-update (complain)",
+        "sbuild-unhold (complain)",
+        "sbuild-shell (complain)",
+        "sbuild-hold (complain)",
+        "sbuild-distupgrade (complain)",
+        "sbuild-destroychroot (complain)",
+        "sbuild-createchroot (complain)",
+        "sbuild-clean (complain)",
+        "sbuild-checkpackages (complain)",
+        "sbuild-apt (complain)",
+        "sbuild-adduser (complain)",
+        "sbuild-abort (complain)",
+        "sbuild (complain)",
+        "runc (unconfined)",
+        "rssguard (unconfined)",
+        "rpm (unconfined)",
+        "rootlesskit (unconfined)",
+        "qutebrowser (unconfined)",
+        "qmapshack (unconfined)",
+        "qcam (unconfined)",
+        "privacybrowser (unconfined)",
+        "postgresql_akonadi (enforce)",
+        "polypane (unconfined)",
+        "plasmashell (complain)",
+        "plasmashell//QtWebEngineProcess (complain)",
+        "pageedit (unconfined)",
+        "opera (unconfined)",
+        "opam (unconfined)",
+        "obsidian (unconfined)",
+        "nvidia_modprobe (enforce)",
+        "nvidia_modprobe//kmod (enforce)",
+        "notepadqq (unconfined)",
+        "nia-hostctl (enforce)",
+        "nautilus (unconfined)",
+        "mysqld_akonadi (enforce)",
+        "msedge (unconfined)",
+        "mmdebstrap (unconfined)",
+        "mariadbd_akonadi (enforce)",
+        "lxc-usernsexec (unconfined)",
+        "lxc-unshare (unconfined)",
+        "lxc-stop (unconfined)",
+        "lxc-execute (unconfined)",
+        "lxc-destroy (unconfined)",
+        "lxc-create (unconfined)",
+        "lxc-attach (unconfined)",
+        "lsb_release (enforce)",
+        "loupe (unconfined)",
+        "linux-sandbox (unconfined)",
+        "libcamerify (unconfined)",
+        "lc-compliance (unconfined)",
+        "keybase (unconfined)",
+        "kchmviewer (unconfined)",
+        "ipa_verify (unconfined)",
+        "goldendict (unconfined)",
+        "github-desktop (unconfined)",
+        "geary (unconfined)",
+        "foliate (unconfined)",
+        "flatpak (unconfined)",
+        "firefox (unconfined)",
+        "evolution (unconfined)",
+        "epiphany (unconfined)",
+        "element-desktop (unconfined)",
+        "devhelp (unconfined)",
+        "crun (unconfined)",
+        "vscode (unconfined)",
+        "chromium (unconfined)",
+        "chrome (unconfined)",
+        "ch-run (unconfined)",
+        "ch-checkns (unconfined)",
+        "cam (unconfined)",
+        "busybox (unconfined)",
+        "buildah (unconfined)",
+        "brave (unconfined)",
+        "balena-etcher (unconfined)",
+        "Xorg (complain)",
+        "QtWebEngineProcess (unconfined)",
+        "MongoDB Compass (unconfined)",
+        "Discord (unconfined)",
+        "1password (unconfined)"
+      ],
+      "result": "pass"
+    },
+    {
+      "name": "boot_mitigations_not_disabled",
+      "value": "BOOT_IMAGE=/boot/vmlinuz-6.12.107+deb13-amd64 root=UUID=13923099-805c-4ef5-ad6b-ffa3a211b678 ro console=tty0 console=ttyS0,115200n8 quiet",
+      "result": "pass"
+    }
+  ],
+  "result": "pass",
+  "scope": "listed mitigations only; not whole-system security certification",
+  "schema": "org.niaos.hardening-observation/v1",
+  "policy_sha256": "daa9e445c6f8d787e306d95179afbf9006eb0f880b6015508b07e22e10ea8c5f",
+  "tool_sha256": "2310394ed1357199e212610fc64d4857dd6fb603c66ef5164a06d2a0de59acdd"
+}

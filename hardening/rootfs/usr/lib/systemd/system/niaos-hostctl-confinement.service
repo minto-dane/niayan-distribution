@@ -1,0 +1,31 @@
+# SPDX-License-Identifier: MIT
+[Unit]
+Description=Load the Nia read-only host observer confinement
+Documentation=man:apparmor_parser(8)
+DefaultDependencies=no
+After=local-fs.target apparmor.service
+Before=sysinit.target
+AssertSecurity=apparmor
+AssertPathExists=/sys/kernel/security/apparmor
+AssertPathExists=/etc/apparmor.d/nia-hostctl
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/sbin/apparmor_parser --replace --skip-cache --jobs=1 --Werror /etc/apparmor.d/nia-hostctl
+TimeoutStartSec=30
+NoNewPrivileges=yes
+CapabilityBoundingSet=CAP_MAC_ADMIN
+ProtectSystem=strict
+ProtectHome=yes
+PrivateTmp=yes
+RestrictAddressFamilies=AF_UNIX
+RestrictNamespaces=yes
+RestrictSUIDSGID=yes
+LockPersonality=yes
+UMask=0077
+MemoryMax=128M
+TasksMax=16
+
+[Install]
+WantedBy=sysinit.target

@@ -1,0 +1,6 @@
+Running as unit: run-p304089-i304389.scope; invocation ID: 7a8a2997f09248a99663e9f4f19205d5
+limited-exec: {"scope": "run-p304089-i304389.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+make: Entering directory '/home/nia/devbox/niaos/nia-os-consent'
+python3 assurance/ci/run-engineering-checks.py --mode source
+/home/nia/devbox/niaos/nia-os-consent/assurance/evidence/engineering-flcyucpm/report.json
+make: Leaving directory '/home/nia/devbox/niaos/nia-os-consent'

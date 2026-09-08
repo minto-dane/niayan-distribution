@@ -1,0 +1,225 @@
+{
+  "checks": [
+    {
+      "name": "assure",
+      "sha256": "df45babbb966fc0ffd1c4bbcea905326cb7834bc1980e0a856b940e24ba759de",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      },
+      "result": "pass"
+    },
+    {
+      "name": "capsulectl",
+      "sha256": "75c903ddf1dc5ee05b9601fd46140e34cd080e10cac5b428f72bcbfb94d555c3",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      },
+      "result": "pass"
+    },
+    {
+      "name": "configctl",
+      "sha256": "159e404c32e5ea5b795ec33a1f55c5528f5d9fe456060cb2ce124c5d22473a5f",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      },
+      "result": "pass"
+    },
+    {
+      "name": "controlctl",
+      "sha256": "c71893236c501f3bbbc412048b2ea9df57483e027d37ccc9145bb97aa2b9116b",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      },
+      "result": "pass"
+    },
+    {
+      "name": "hostctl",
+      "sha256": "ef465f3db7c359b26f6c8823f4fb56272b9483f90b79db70b9f32c921e84fd9f",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      },
+      "result": "pass"
+    },
+    {
+      "name": "mission_sign",
+      "sha256": "f862b22a882295852d8f3caec2d36c9cac63eac4c97422616765de2cd4421f87",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      },
+      "result": "pass"
+    },
+    {
+      "name": "missionctl",
+      "sha256": "bd58252eeff385149e71ee5843d2ffdf9f07cfb3eedd8f844a29e83dbf7573d0",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      },
+      "result": "pass"
+    },
+    {
+      "name": "nia",
+      "sha256": "4fd8695334ceb1bc7842df4b9edc3ffcddf1b23eb08d18da641a97f20ea84580",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      },
+      "result": "pass"
+    },
+    {
+      "name": "pkg_recoveryctl",
+      "sha256": "30cf87b7e83f94b05bc9ee634bb16c0b2214aa5b5bccfb7924860add6f92fcb3",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      },
+      "result": "pass"
+    },
+    {
+      "name": "pkg_scrubctl",
+      "sha256": "49d39ab587d93b133e7ea431bf3b1316a12bb07909333ab4ce031e4edd5fa740",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      },
+      "result": "pass"
+    },
+    {
+      "name": "pkg_worker",
+      "sha256": "9f593a53f8340b8ae18f4bd87c23bbda06800571d2845a9c30630c00682b49ca",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      },
+      "result": "pass"
+    },
+    {
+      "name": "pkgctl",
+      "sha256": "143c9dfe2d0411ce2d42b910101294e0cbd1cd9a39fbdd80f10268fca667cff4",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      },
+      "result": "pass"
+    },
+    {
+      "name": "platformctl",
+      "sha256": "5cf9228dd6a0189d6766135f8be209d5a662ef20eff97d89da201103895de2e6",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      },
+      "result": "pass"
+    },
+    {
+      "name": "resolverctl",
+      "sha256": "1d0e0497847d78966c640f3b22be41ac2e6fc13325ead0f45906adedbfee0863",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      },
+      "result": "pass"
+    },
+    {
+      "name": "state_healing_admin",
+      "sha256": "c4214943cd5754beae50f33f3575dbd0fc771b51951350385ad5fba0613d604b",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      },
+      "result": "pass"
+    },
+    {
+      "name": "state_recovery_worker",
+      "sha256": "0bcdfb8706cc4c1717d37d28dc50b94d8a51c42a923d0e3fd7614e973decc43e",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      },
+      "result": "pass"
+    },
+    {
+      "name": "state_worker",
+      "sha256": "56592be406e5ce7f78d3667d26993ba69993145916233e8c41c0a18d9295da31",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      },
+      "result": "pass"
+    },
+    {
+      "name": "statectl",
+      "sha256": "e040f4ea5828ea1c085b0230d5854c37298239eec349815763e3874ee14612c8",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      },
+      "result": "pass"
+    }
+  ],
+  "result": "pass",
+  "scope": "ELF program headers/dynamic flags only; no compiler instrumentation proof",
+  "schema": "org.niaos.hardening-observation/v1",
+  "policy_sha256": "daa9e445c6f8d787e306d95179afbf9006eb0f880b6015508b07e22e10ea8c5f",
+  "tool_sha256": "2310394ed1357199e212610fc64d4857dd6fb603c66ef5164a06d2a0de59acdd"
+}

@@ -1,0 +1,35 @@
+{
+  "schema": "org.niaos.hardening-baseline/v1",
+  "profile": "debian13-amd64-desktop",
+  "required_apparmor_profiles": ["nia-hostctl"],
+  "sysctl": {
+    "kernel.randomize_va_space": {"value": 2, "accepted": [2], "reference": "ubuntu-memory"},
+    "kernel.kptr_restrict": {"value": 1, "accepted": [1, 2], "reference": "kernel-sysctl"},
+    "kernel.dmesg_restrict": {"value": 1, "accepted": [1], "reference": "kernel-sysctl"},
+    "kernel.unprivileged_bpf_disabled": {"value": 2, "accepted": [1, 2], "reference": "kernel-sysctl"},
+    "vm.unprivileged_userfaultfd": {"value": 0, "accepted": [0], "reference": "kernel-userfaultfd"},
+    "vm.mmap_min_addr": {"value": 65536, "accepted": [65536], "reference": "ubuntu-memory"},
+    "fs.protected_hardlinks": {"value": 1, "accepted": [1], "reference": "kernel-fs"},
+    "fs.protected_symlinks": {"value": 1, "accepted": [1], "reference": "kernel-fs"},
+    "fs.protected_fifos": {"value": 1, "accepted": [1, 2], "reference": "kernel-fs"},
+    "fs.protected_regular": {"value": 2, "accepted": [2], "reference": "kernel-fs"}
+  },
+  "kernel_config": [
+    "CONFIG_RANDOMIZE_BASE", "CONFIG_STRICT_KERNEL_RWX", "CONFIG_STRICT_MODULE_RWX",
+    "CONFIG_STACKPROTECTOR_STRONG", "CONFIG_HARDENED_USERCOPY",
+    "CONFIG_FORTIFY_SOURCE", "CONFIG_SLAB_FREELIST_RANDOM", "CONFIG_SLAB_FREELIST_HARDENED",
+    "CONFIG_VMAP_STACK", "CONFIG_THREAD_INFO_IN_TASK", "CONFIG_MITIGATION_PAGE_TABLE_ISOLATION",
+    "CONFIG_SECURITY_APPARMOR", "CONFIG_SECCOMP", "CONFIG_SECCOMP_FILTER",
+    "CONFIG_SECURITY_YAMA", "CONFIG_SECURITY_LANDLOCK"
+  ],
+  "references": {
+    "ubuntu-memory": "https://documentation.ubuntu.com/security/security-features/process-memory/",
+    "ubuntu-compiler": "https://documentation.ubuntu.com/security/security-features/process-memory/compiler-flags/",
+    "kicksecure": "https://www.kicksecure.com/wiki/Security-misc",
+    "anssi": "https://messervices.cyber.gouv.fr/documents-guides/linux_configuration-en-v2.pdf",
+    "kernel-sysctl": "https://docs.kernel.org/admin-guide/sysctl/kernel.html",
+    "kernel-fs": "https://docs.kernel.org/admin-guide/sysctl/fs.html",
+    "kernel-userfaultfd": "https://docs.kernel.org/admin-guide/mm/userfaultfd.html"
+  },
+  "reviewed_on": "2026-09-08"
+}

@@ -1,0 +1,1 @@
+qemu-system-x86_64: -serial unix:/tmp/nia-qemu-u56bcu9l/serial,server=on,wait=on: info: QEMU waiting for connection on: disconnected:unix:/tmp/nia-qemu-u56bcu9l/serial,server=on

@@ -1,0 +1,1 @@
+qemu-system-x86_64: -serial unix:/tmp/nia-qemu-tvoy_aff/serial,server=on,wait=on: info: QEMU waiting for connection on: disconnected:unix:/tmp/nia-qemu-tvoy_aff/serial,server=on

@@ -1,0 +1,12 @@
+{
+  "result": "pass",
+  "scope": "independent extraction from the host completed ISO, exact status/control/ELF/kernel-config rehash",
+  "iso_sha256": "d4c18dc0e2be653bf11a04db40db95ca0353322010133e068dda274bd4aa314b",
+  "status_sha256": "5803139d1f0fa9daefb7bdb2bfa0f05de1aa26309d0f7ae42b61edb9f5f3ee47",
+  "control_files_rehashed": 8959,
+  "elf_rehashed": 18,
+  "kernel_config_sha256": "9b460f1003db4d417288e9c14caecfa14245dab07186df948fef0f3661e38ceb",
+  "inventory_sha256": "76ab2419432c68b5e9acf8e630c6160783b941c82082fc5fec83e0fa4b040b61",
+  "extract_log_sha256": "2022049ed6449d6621e8309a823d27fa94b770faaa7fe3b635c0f01b90b71af2",
+  "verifier_sha256": "a94cdc92227cbc73a5cced4805f8343a73e7f036ab6fdfcea777f42887021c7f"
+}

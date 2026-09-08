@@ -1,0 +1,4 @@
+Running as unit: run-p302643-i302943.scope; invocation ID: d7bf62ee9544469fad99fc1200cac800
+limited-exec: {"scope": "run-p302643-i302943.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+python3 assurance/ci/run-engineering-checks.py --mode source
+/home/nia/devbox/niaos/nia-os-consent/assurance/evidence/engineering-egtxtfqp/report.json

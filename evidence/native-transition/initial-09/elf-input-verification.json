@@ -1,0 +1,62 @@
+{
+  "result": "pass",
+  "scope": "18 observed build-root ELF files equal the exact DEB payloads bound to ISO 09 build record",
+  "build_record_sha256": "102eac490b225699f2a2c8fac274f1f0e759b07ebcffd158b7b69680255d8c72",
+  "packages": [
+    {
+      "path": "packages/niaos-assurance_0.1.0+git70baa595e385_amd64.deb",
+      "size": 163500,
+      "sha256": "af7c3031f932d5bbfecda2ceafdd8de1ed72d2f8370a52b4ec02d770e51adcb3"
+    },
+    {
+      "path": "packages/niaos-capsulecore_0.1.0+git0c356eecb425_amd64.deb",
+      "size": 66948,
+      "sha256": "7c97862c75ba7d54e188cd6001f3e070ad0681e897a5c3b71f5e35c53732d268"
+    },
+    {
+      "path": "packages/niaos-configcore_0.1.0+git6d46ea26c38c_amd64.deb",
+      "size": 94728,
+      "sha256": "663f792345cf77fe7a86c9b390126d37071682dafbad85bb345f425c3c41fece"
+    },
+    {
+      "path": "packages/niaos-controlcore_0.1.0+gite2a3f9ff89b5_amd64.deb",
+      "size": 199588,
+      "sha256": "c640cb0535b26a9db7ff268dcd3d5f84d969a723f821b0dd9288474d878010ef"
+    },
+    {
+      "path": "packages/niaos-pkgcore_0.1.0+gite74913f9f941_amd64.deb",
+      "size": 231492,
+      "sha256": "69e2f82fed042d5d603e9eee88cdb5bff1c7f454e0236bb636b08df069139cd0"
+    },
+    {
+      "path": "packages/niaos-resolvercore_0.1.0+gita58f281ff997_amd64.deb",
+      "size": 88564,
+      "sha256": "693f76f12902f2d23305073d3350b11a1379d76a1f27cdef696a8e8170ee8009"
+    },
+    {
+      "path": "packages/niaos-statecore_0.1.0+gitc0c9ca947c2e_amd64.deb",
+      "size": 230640,
+      "sha256": "dca754623a808d731649a67ac2c8e9d61eb26474c55b86f65aaf69dc162b140c"
+    }
+  ],
+  "elf_sha256": {
+    "assure": "df45babbb966fc0ffd1c4bbcea905326cb7834bc1980e0a856b940e24ba759de",
+    "controlctl": "c71893236c501f3bbbc412048b2ea9df57483e027d37ccc9145bb97aa2b9116b",
+    "platformctl": "5cf9228dd6a0189d6766135f8be209d5a662ef20eff97d89da201103895de2e6",
+    "capsulectl": "75c903ddf1dc5ee05b9601fd46140e34cd080e10cac5b428f72bcbfb94d555c3",
+    "configctl": "159e404c32e5ea5b795ec33a1f55c5528f5d9fe456060cb2ce124c5d22473a5f",
+    "nia": "4fd8695334ceb1bc7842df4b9edc3ffcddf1b23eb08d18da641a97f20ea84580",
+    "mission_sign": "f862b22a882295852d8f3caec2d36c9cac63eac4c97422616765de2cd4421f87",
+    "missionctl": "bd58252eeff385149e71ee5843d2ffdf9f07cfb3eedd8f844a29e83dbf7573d0",
+    "pkg_recoveryctl": "30cf87b7e83f94b05bc9ee634bb16c0b2214aa5b5bccfb7924860add6f92fcb3",
+    "pkg_scrubctl": "49d39ab587d93b133e7ea431bf3b1316a12bb07909333ab4ce031e4edd5fa740",
+    "pkg_worker": "9f593a53f8340b8ae18f4bd87c23bbda06800571d2845a9c30630c00682b49ca",
+    "pkgctl": "143c9dfe2d0411ce2d42b910101294e0cbd1cd9a39fbdd80f10268fca667cff4",
+    "resolverctl": "1d0e0497847d78966c640f3b22be41ac2e6fc13325ead0f45906adedbfee0863",
+    "hostctl": "ef465f3db7c359b26f6c8823f4fb56272b9483f90b79db70b9f32c921e84fd9f",
+    "state_healing_admin": "c4214943cd5754beae50f33f3575dbd0fc771b51951350385ad5fba0613d604b",
+    "state_recovery_worker": "0bcdfb8706cc4c1717d37d28dc50b94d8a51c42a923d0e3fd7614e973decc43e",
+    "state_worker": "56592be406e5ce7f78d3667d26993ba69993145916233e8c41c0a18d9295da31",
+    "statectl": "e040f4ea5828ea1c085b0230d5854c37298239eec349815763e3874ee14612c8"
+  }
+}

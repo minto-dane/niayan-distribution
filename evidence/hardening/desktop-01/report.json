@@ -1,0 +1,27 @@
+{
+  "result": "pass",
+  "scope": "three Live runtime compatibility tests and one persistent Secure Boot overlay test; native package replacement incomplete",
+  "tool_image_id": "7f92f64938b87b862dd962a93b558fb0caea13493745c684fbddfc190a723617",
+  "limits": {
+    "memory_bytes": 3221225472,
+    "swap_bytes": 0,
+    "cpu_quota": "100000 100000",
+    "pids": 128,
+    "guest_memory_mib": 2048,
+    "guest_vcpus": 1,
+    "sequential": true
+  },
+  "iso_sha256": "d4c18dc0e2be653bf11a04db40db95ca0353322010133e068dda274bd4aa314b",
+  "live_elapsed_seconds": [
+    81.005,
+    85.578,
+    81.18
+  ],
+  "installed_elapsed_seconds": 58.487,
+  "reports": {
+    "live-bios/report.json": "6f505a7916860395232707e08f8c522202764fac670a5b34bc3c1b559cc64255",
+    "live-uefi/report.json": "12d9c6a44246459c0e80fc3c7afc16a23f1f9b54232878fe8c459c40b6a2cf2a",
+    "live-secure-boot/report.json": "08b33fe16c6040e5c9840155ac4a07f9c20f7655a84a79c13f079ec63985fcd8",
+    "installed-secure-boot/report.json": "4916d453f37e44f0da07b5d13464d3a06515b3aa67fa85f3eb2e2a30691f07e8"
+  }
+}

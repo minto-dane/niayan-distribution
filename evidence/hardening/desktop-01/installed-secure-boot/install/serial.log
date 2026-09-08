@@ -1,0 +1,514 @@
+[2J[01;01H[=3h[2J[01;01H[2J[01;01H[=3h[2J[01;01H[2J[01;01H[=3h[2J[01;01HBdsDxe: loading Boot0001 "UEFI Misc Device" from PciRoot(0x0)/Pci(0x2,0x0)
+BdsDxe: starting Boot0001 "UEFI Misc Device" from PciRoot(0x0)/Pci(0x2,0x0)
+[H[J[1;1Herror: prohibited by secure boot policy.
+[?25l[m[H[J[1;1H[2;25HGNU GRUB  version 2.12-9+deb13u2
+
+[m[4;2H+----------------------------------------------------------------------------+[5;2H|[5;79H|[6;2H|[6;79H|[7;2H|[7;79H|[8;2H|[8;79H|[9;2H|[9;79H|[10;2H|[10;79H|[11;2H|[11;79H|[12;2H|[12;79H|[13;2H|[13;79H|[14;2H|[14;79H|[15;2H|[15;79H|[16;2H+----------------------------------------------------------------------------+[m[17;2H[18;2H[m     Use the ^ and v keys to select which entry is highlighted.          
+      Press enter to boot the selected OS, `e' to edit the commands       
+      before booting or `c' for a command-line. ESC to return             
+      previous menu.                                                      [5;80H [7m[5;3H*NiaOS GNU/Linux                                                            [m[5;78H[m[m[6;3H Advanced options for NiaOS GNU/Linux                                       [m[6;78H[m[m[7;3H UEFI Firmware Settings                                                     [m[7;78H[m[m[8;3H                                                                            [m[8;78H[m[m[9;3H                                                                            [m[9;78H[m[m[10;3H                                                                            [m[10;78H[m[m[11;3H                                                                            [m[11;78H[m[m[12;3H                                                                            [m[12;78H[m[m[13;3H                                                                            [m[13;78H[m[m[14;3H                                                                            [m[14;78H[m[m[15;3H                                                                            [m[15;78H[m[15;80H [5;78H[22;1H   The highlighted entry will be executed automatically in 5s.                 [5;78H[22;1H   The highlighted entry will be executed automatically in 4s.                 [5;78H[22;1H   The highlighted entry will be executed automatically in 3s.                 [5;78H[22;1H   The highlighted entry will be executed automatically in 2s.                 [5;78H[22;1H   The highlighted entry will be executed automatically in 1s.                 [5;78H[22;1H   The highlighted entry will be executed automatically in 0s.                 [5;78H[?25h[H[J[1;1H[H[J[1;1H  Booting `NiaOS GNU/Linux'
+
+Loading Linux 6.12.107+deb13-amd64 ...
+Loading initial ramdisk ...
+[0;21;33mamd_pstate: The CPPC feature is supported but currently disabled by the BIOS.[0m
+[0;21;33mPlease enable it if your BIOS has the CPPC option.[0m
+[0;21;33mamd_pstate: the _CPC object is not present in SBIOS or ACPI disabled[0m
+[0;21;33mata3.00: LPM support broken, forcing max_power[0m
+[0;21;33mata3.00: LPM support broken, forcing max_power[0m
+/dev/vda2: clean, 217664/1929536 files, 2038196/7703808 blocks
+[!p]104[?7h[[0;32m  OK  [0m] Finished [0;1;39mplymouth-read-write.servi…[0mPlymouth To Write Out Runtime Data.
+[[0;32m  OK  [0m] Mounted [0;1;39mproc-sys-fs-binfmt_misc.mo…[0mxecutable File Formats File System.
+[[0;32m  OK  [0m] Finished [0;1;39msystemd-binfmt.service[0m - Set Up Additional Binary Formats.
+[[0;32m  OK  [0m] Finished [0;1;39msystemd-tmpfiles-setup.se…[0mreate System Files and Directories.
+[[0;32m  OK  [0m] Finished [0;1;39mapparmor.service[0m - Load AppArmor profiles.
+[[0;32m  OK  [0m] Reached target [0;1;39msysinit.target[0m - System Initialization.
+[[0;32m  OK  [0m] Started [0;1;39mcups.path[0m - CUPS Scheduler.
+[[0;32m  OK  [0m] Started [0;1;39manacron.timer[0m - Trigger anacron every hour.
+[[0;32m  OK  [0m] Started [0;1;39mapt-daily.timer[0m - Daily apt download activities.
+[[0;32m  OK  [0m] Started [0;1;39mapt-daily-upgrade.timer[0m - …y apt upgrade and clean activities.
+[[0;32m  OK  [0m] Started [0;1;39mdpkg-db-backup.timer[0m - Daily dpkg database backup timer.
+[[0;32m  OK  [0m] Started [0;1;39me2scrub_all.timer[0m - Period…Metadata Check for All Filesystems.
+[[0;32m  OK  [0m] Started [0;1;39mfstrim.timer[0m - Discard unused filesystem blocks once a week.
+[[0;32m  OK  [0m] Started [0;1;39mfwupd-refresh.timer[0m - Refresh fwupd metadata regularly.
+[[0;32m  OK  [0m] Started [0;1;39mlogrotate.timer[0m - Daily rotation of log files.
+[[0;32m  OK  [0m] Started [0;1;39mman-db.timer[0m - Daily man-db regeneration.
+[[0;32m  OK  [0m] Started [0;1;39msystemd-tmpfiles-clean.tim…[0my Cleanup of Temporary Directories.
+[[0;32m  OK  [0m] Started [0;1;39mxfs_scrub_all.timer[0m - Peri…Metadata Check for All Filesystems.
+[[0;32m  OK  [0m] Reached target [0;1;39mpaths.target[0m - Path Units.
+[[0;32m  OK  [0m] Reached target [0;1;39mtimers.target[0m - Timer Units.
+[[0;32m  OK  [0m] Listening on [0;1;39mavahi-daemon.socket[0m -…DNS/DNS-SD Stack Activation Socket.
+[[0;32m  OK  [0m] Listening on [0;1;39mcups.socket[0m - CUPS Scheduler.
+[[0;32m  OK  [0m] Listening on [0;1;39mdbus.socket[0m - D-Bus System Message Bus Socket.
+[[0;32m  OK  [0m] Listening on [0;1;39msystemd-hostnamed.socket[0m - Hostname Service Socket.
+[[0;32m  OK  [0m] Listening on [0;1;39muuidd.socket[0m - UUID daemon activation socket.
+[[0;32m  OK  [0m] Reached target [0;1;39msockets.target[0m - Socket Units.
+         Starting [0;1;39mnetworking.service[0m - Raise network interfaces...
+[[0;32m  OK  [0m] Reached target [0;1;39mbasic.target[0m - Basic System.
+         Starting [0;1;39maccounts-daemon.service[0m - Accounts Service...
+[[0;32m  OK  [0m] Started [0;1;39manacron.service[0m - Run anacron jobs.
+         Starting [0;1;39mavahi-daemon.service[0m - Avahi mDNS/DNS-SD Stack...
+[[0;32m  OK  [0m] Started [0;1;39mcron.service[0m - Regular background program processing daemon.
+         Starting [0;1;39mdbus.service[0m - D-Bus System Message Bus...
+         Starting [0;1;39me2scrub_reap.service[0m - Re…ne ext4 Metadata Check Snapshots...
+         Starting [0;1;39mgrub-common.service[0m - Record successful boot for GRUB...
+         Starting [0;1;39mpolkit.service[0m - Authorization Manager...
+         Starting [0;1;39mswitcheroo-control.servic…[0mSwitcheroo Control Proxy service...
+         Starting [0;1;39msystemd-logind.service[0m - User Login Management...
+         Starting [0;1;39mudisks2.service[0m - Disk Manager...
+[[0;32m  OK  [0m] Started [0;1;39mdbus.service[0m - D-Bus System Message Bus.
+         Starting [0;1;39mNetworkManager.service[0m - Network Manager...
+         Starting [0;1;39mwpa_supplicant.service[0m - WPA supplicant...
+[[0;32m  OK  [0m] Started [0;1;39mavahi-daemon.service[0m - Avahi mDNS/DNS-SD Stack.
+[[0;32m  OK  [0m] Finished [0;1;39me2scrub_reap.service[0m - Re…line ext4 Metadata Check Snapshots.
+[[0;32m  OK  [0m] Finished [0;1;39mnetworking.service[0m - Raise network interfaces.
+[[0;32m  OK  [0m] Started [0;1;39mswitcheroo-control.service[0m - Switcheroo Control Proxy service.
+[[0;32m  OK  [0m] Started [0;1;39mwpa_supplicant.service[0m - WPA supplicant.
+[[0;32m  OK  [0m] Finished [0;1;39mgrub-common.service[0m - Record successful boot for GRUB.
+[[0;32m  OK  [0m] Started [0;1;39msystemd-logind.service[0m - User Login Management.
+[[0;32m  OK  [0m] Started [0;1;39mpolkit.service[0m - Authorization Manager.
+[[0;32m  OK  [0m] Started [0;1;39maccounts-daemon.service[0m - Accounts Service.
+         Starting [0;1;39mModemManager.service[0m - Modem Manager...
+         Starting [0;1;39msystemd-hostnamed.service[0m - Hostname Service...
+[[0;32m  OK  [0m] Started [0;1;39mudisks2.service[0m - Disk Manager.
+[[0;32m  OK  [0m] Started [0;1;39msystemd-hostnamed.service[0m - Hostname Service.
+[[0;32m  OK  [0m] Listening on [0;1;39msystemd-rfkill.socket[0m…ll Switch Status /dev/rfkill Watch.
+[[0;32m  OK  [0m] Started [0;1;39mModemManager.service[0m - Modem Manager.
+[[0;32m  OK  [0m] Started [0;1;39mNetworkManager.service[0m - Network Manager.
+[[0;32m  OK  [0m] Reached target [0;1;39mnetwork.target[0m - Network.
+         Starting [0;1;39mNetworkManager-dispatcher…[0manager Script Dispatcher Service...
+         Starting [0;1;39mNetworkManager-wait-onlin…ce[0m - Network Manager Wait Online...
+         Starting [0;1;39mcups.service[0m - CUPS Scheduler...
+         Starting [0;1;39msystemd-user-sessions.service[0m - Permit User Sessions...
+[[0;32m  OK  [0m] Started [0;1;39munattended-upgrades.service[0m - Unattended Upgrades Shutdown.
+[[0;32m  OK  [0m] Started [0;1;39mNetworkManager-dispatcher.…[0m Manager Script Dispatcher Service.
+[[0;32m  OK  [0m] Finished [0;1;39msystemd-user-sessions.service[0m - Permit User Sessions.
+         Starting [0;1;39mplymouth-quit-wait.servic…[0md until boot process finishes up...
+         Starting [0;1;39mplymouth-quit.service[0m - Terminate Plymouth Boot Screen...
+[[0;32m  OK  [0m] Started [0;1;39msddm.service[0m - Simple Desktop Display Manager.
+[[0;32m  OK  [0m] Started [0;1;39mcups.service[0m - CUPS Scheduler.
+[[0;32m  OK  [0m] Reached target [0;1;39mprinter.target[0m - Printer Support.
+[!p]104[?7h[6n[32766;32766H[6n[!p]104[?7h[6n[32766;32766H[6n
+Debian GNU/Linux 13 niaos-test ttyS0
+
+niaos-test login: niatest
+Password: 
+Linux niaos-test 6.12.107+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.107-1 (2026-08-29) x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+[?2004hniatest@niaos-test:~$ sudo -v
+[?2004l[sudo] password for niatest: 
+[?2004hniatest@niaos-test:~$ base64 -d <<'NIA_SCRIPT_END' | sudo -n sh
+[?2004l[?2004h> c2V0IC1ldQp0cmFwICdwcmludGYgIlxuTklBX1BFUlNJU1RFTlRfRkFJTFxuIicgRVhJVAp0ZXN0
+[?2004l[?2004h> ICIkKG9kIC1BbiAtajQgLU4xIC10IHUxIC9zeXMvZmlybXdhcmUvZWZpL2VmaXZhcnMvU2VjdXJl
+[?2004l[?2004h> Qm9vdC0qIHwgdHIgLWQgJyAnKSIgPSAxCmluc3RhbGwgLWQgLW0gMDcwMCAvcm9vdC9uaWEtaGFy
+[?2004l[?2004h> ZGVuaW5nLXRlc3QKYmFzZTY0IC1kID4gL3Jvb3QvbmlhLWhhcmRlbmluZy10ZXN0L2F1ZGl0LnB5
+[?2004l[?2004h> IDw8J05JQV9QQVlMT0FEJwpJeUV2ZFhOeUwySnBiaTlsYm5ZZ2NIbDBhRzl1TXdvaklGTlFSRmd0
+[?2004l[?2004h> VEdsalpXNXpaUzFKWkdWdWRHbG1hV1Z5T2lCTlNWUUtJaUlpVW1WaFpDQmxabVpsWTNScGRtVWdU
+[?2004l[?2004h> R2x1ZFhnZ2JXbDBhV2RoZEdsdmJuTWdiM0lnWm1seWMzUXRjR0Z5ZEhrZ1JVeEdJSEJ5YjNCbGNu
+[?2004l[?2004h> UnBaWE03SUc1bGRtVnlJR0Z3Y0d4NUlITmxkSFJwYm1kekxpSWlJZ3BtY205dElGOWZablYwZFhK
+[?2004l[?2004h> bFgxOGdhVzF3YjNKMElHRnVibTkwWVhScGIyNXpDZ3BwYlhCdmNuUWdZWEpuY0dGeWMyVUthVzF3
+[?2004l[?2004h> YjNKMElHaGhjMmhzYVdJS2FXMXdiM0owSUdwemIyNEthVzF3YjNKMElHOXpDbVp5YjIwZ2NHRjBh
+[?2004l[?2004h> R3hwWWlCcGJYQnZjblFnVUdGMGFBcHBiWEJ2Y25RZ2NtVUthVzF3YjNKMElITjBjblZqZEFvS1NF
+[?2004l[?2004h> VlNSU0E5SUZCaGRHZ29YMTltYVd4bFgxOHBMbkpsYzI5c2RtVW9LUzV3WVhKbGJuUUtDZ3BrWldZ
+[?2004l[?2004h> Z2JHOWhaRjl3YjJ4cFkza29jR0YwYUNrNkNpQWdJQ0J3YjJ4cFkza2dQU0JxYzI5dUxteHZZV1J6
+[?2004l[?2004h> S0hCaGRHZ3VjbVZoWkY5MFpYaDBLQ2twQ2lBZ0lDQnBaaUJ3YjJ4cFkzbGJKM05qYUdWdFlTZGRJ
+[?2004l[?2004h> Q0U5SUNkdmNtY3VibWxoYjNNdWFHRnlaR1Z1YVc1bkxXSmhjMlZzYVc1bEwzWXhKem9LSUNBZ0lD
+[?2004l[?2004h> QWdJQ0J5WVdselpTQldZV3gxWlVWeWNtOXlLQ2QxYm5OMWNIQnZjblJsWkNCb1lYSmtaVzVwYm1j
+[?2004l[?2004h> Z2MyTm9aVzFoSnlrS0lDQWdJR1p2Y2lCdVlXMWxMQ0J5YjNjZ2FXNGdjRzlzYVdONVd5ZHplWE5q
+[?2004l[?2004h> ZEd3blhTNXBkR1Z0Y3lncE9nb2dJQ0FnSUNBZ0lHbG1JRzV2ZENCeVpTNW1kV3hzYldGMFkyZ29j
+[?2004l[?2004h> aWRiWVMxNlhWdGhMWG93TFRsZlhTb29YQzViWVMxNlhWdGhMWG93TFRsZlhTb3BLeWNzSUc1aGJX
+[?2004l[?2004h> VXBPZ29nSUNBZ0lDQWdJQ0FnSUNCeVlXbHpaU0JXWVd4MVpVVnljbTl5S0NkcGJuWmhiR2xrSUhO
+[?2004l[?2004h> NWMyTjBiQ0J1WVcxbEp5a0tJQ0FnSUNBZ0lDQnBaaUIwZVhCbEtISnZkMXNuZG1Gc2RXVW5YU2tn
+[?2004l[?2004h> YVhNZ2JtOTBJR2x1ZENCdmNpQnliM2RiSjNaaGJIVmxKMTBnYm05MElHbHVJSEp2ZDFzbllXTmpa
+[?2004l[?2004h> WEIwWldRblhUb0tJQ0FnSUNBZ0lDQWdJQ0FnY21GcGMyVWdWbUZzZFdWRmNuSnZjaWduYVc1MllX
+[?2004l[?2004h> eHBaQ0J6ZVhOamRHd2dkbUZzZFdVbktRb2dJQ0FnSUNBZ0lHbG1JSEp2ZDFzbmNtVm1aWEpsYm1O
+[?2004l[?2004h> bEoxMGdibTkwSUdsdUlIQnZiR2xqZVZzbmNtVm1aWEpsYm1ObGN5ZGRPZ29nSUNBZ0lDQWdJQ0Fn
+[?2004l[?2004h> SUNCeVlXbHpaU0JXWVd4MVpVVnljbTl5S0NkdGFYTnphVzVuSUhOdmRYSmpaU0J5WldabGNtVnVZ
+[?2004l[?2004h> MlVuS1FvZ0lDQWdjbVYwZFhKdUlIQnZiR2xqZVFvS0NtUmxaaUJ5Wlc1a1pYSW9jRzlzYVdONUtU
+[?2004l[?2004h> b0tJQ0FnSUhKbGRIVnliaUFvSnlNZ1UxQkVXQzFNYVdObGJuTmxMVWxrWlc1MGFXWnBaWEk2SUUx
+[?2004l[?2004h> SlZGeHVKd29nSUNBZ0lDQWdJQ0FnSUNBbkl5QkhaVzVsY21GMFpXUWdabkp2YlNCb1lYSmtaVzVw
+[?2004l[?2004h> Ym1jdlltRnpaV3hwYm1VdWFuTnZianNnYzJWbElHaGhjbVJsYm1sdVp5OVNSVUZFVFVVdWFtRXVi
+[?2004l[?2004h> V1F1WEc0bkNpQWdJQ0FnSUNBZ0lDQWdJQ2NqSUVGa2JXbHVhWE4wY21GMGIzSWdiM1psY25KcFpH
+[?2004l[?2004h> VnpJR0psYkc5dVp5QnBiaUF2WlhSakwzTjVjMk4wYkM1a0x6a3dMVzVwWVc5ekxXeHZZMkZzTG1O
+[?2004l[?2004h> dmJtWXVYRzRuQ2lBZ0lDQWdJQ0FnSUNBZ0lDc2dKeWN1YW05cGJpaG1KM3R1WVcxbGZTQTlJSHR5
+[?2004l[?2004h> YjNkYkluWmhiSFZsSWwxOVhHNG5JR1p2Y2lCdVlXMWxMQ0J5YjNjZ2FXNGdjRzlzYVdONVd5ZHpl
+[?2004l[?2004h> WE5qZEd3blhTNXBkR1Z0Y3lncEtTa0tDZ3BrWldZZ1pXeG1YM0J5YjNCbGNuUnBaWE1vWkdGMFlT
+[?2004l[?2004h> azZDaUFnSUNBaklFTnZibk5sY25aaGRHbDJaU0JGVEVZMk5DQnNhWFIwYkdVdFpXNWthV0Z1SUhn
+[?2004l[?2004h> NE5pMDJOQ0JqYUdWamEyVnlMaUJPYnlCc1pHUWdiM0lnWlhobFkzVjBhVzl1TGdvZ0lDQWdhV1ln
+[?2004l[?2004h> YkdWdUtHUmhkR0VwSUR3Z05qUWdiM0lnWkdGMFlWczZOMTBnSVQwZ1lpZGNlRGRtUlV4R1hIZ3dN
+[?2004l[?2004h> bHg0TURGY2VEQXhKem9LSUNBZ0lDQWdJQ0J5WVdselpTQldZV3gxWlVWeWNtOXlLQ2RsZUhCbFkz
+[?2004l[?2004h> UmxaQ0JGVEVZMk5DQnNhWFIwYkdVdFpXNWthV0Z1SUhabGNuTnBiMjRnTVNjcENpQWdJQ0JvWldG
+[?2004l[?2004h> a1pYSWdQU0J6ZEhKMVkzUXVkVzV3WVdOclgyWnliMjBvSnp4SVNFbFJVVkZKU0VoSVNFaElKeXdn
+[?2004l[?2004h> WkdGMFlTd2dNVFlwQ2lBZ0lDQnJhVzVrTENCdFlXTm9hVzVsTENCMlpYSnphVzl1TENCZkxDQndh
+[?2004l[?2004h> RzltWml3Z1h5d2dYeXdnWldoemFYcGxMQ0J3YUhOcGVtVXNJSEJvYm5WdExDQXFYeUE5SUdobFlX
+[?2004l[?2004h> UmxjZ29nSUNBZ2FXWWdiV0ZqYUdsdVpTQWhQU0EyTWlCdmNpQjJaWEp6YVc5dUlDRTlJREVnYjNJ
+[?2004l[?2004h> Z1pXaHphWHBsSUNFOUlEWTBJRzl5SUhCb2MybDZaU0FoUFNBMU5pQnZjaUJ1YjNRZ01TQThQU0J3
+[?2004l[?2004h> YUc1MWJTQThQU0EwTURrMk9nb2dJQ0FnSUNBZ0lISmhhWE5sSUZaaGJIVmxSWEp5YjNJb0ozVnVj
+[?2004l[?2004h> M1Z3Y0c5eWRHVmtJRVZNUmlCb1pXRmtaWEluS1FvZ0lDQWdhV1lnY0dodlptWWdQQ0EyTkNCdmNp
+[?2004l[?2004h> QndhRzltWmlBcklIQm9jMmw2WlNBcUlIQm9iblZ0SUQ0Z2JHVnVLR1JoZEdFcE9nb2dJQ0FnSUNB
+[?2004l[?2004h> Z0lISmhhWE5sSUZaaGJIVmxSWEp5YjNJb0owVk1SaUJ3Y205bmNtRnRJSFJoWW14bElHSnZkVzVr
+[?2004l[?2004h> Y3ljcENpQWdJQ0J6WldkdFpXNTBjeUE5SUZ0ZENpQWdJQ0JtYjNJZ2JpQnBiaUJ5WVc1blpTaHdh
+[?2004l[?2004h> RzUxYlNrNkNpQWdJQ0FnSUNBZ2NDQTlJSE4wY25WamRDNTFibkJoWTJ0ZlpuSnZiU2duUEVsSlVW
+[?2004l[?2004h> RlJVVkZSSnl3Z1pHRjBZU3dnY0dodlptWWdLeUJ1SUNvZ2NHaHphWHBsS1FvZ0lDQWdJQ0FnSUhC
+[?2004l[?2004h> MGVYQmxMQ0JtYkdGbmN5d2diMlptYzJWMExDQmZMQ0JmTENCemFYcGxMQ0J0WlcxemFYcGxMQ0Jm
+[?2004l[?2004h> SUQwZ2NBb2dJQ0FnSUNBZ0lHbG1JRzltWm5ObGRDQStJR3hsYmloa1lYUmhLU0J2Y2lCemFYcGxJ
+[?2004l[?2004h> RDRnYkdWdUtHUmhkR0VwSUMwZ2IyWm1jMlYwT2dvZ0lDQWdJQ0FnSUNBZ0lDQnlZV2x6WlNCV1lX
+[?2004l[?2004h> eDFaVVZ5Y205eUtDZEZURVlnYzJWbmJXVnVkQ0JtYVd4bElHSnZkVzVrY3ljcENpQWdJQ0FnSUNB
+[?2004l[?2004h> Z2FXWWdjSFI1Y0dVZ1BUMGdNU0JoYm1RZ2MybDZaU0ErSUcxbGJYTnBlbVU2Q2lBZ0lDQWdJQ0Fn
+[?2004l[?2004h> SUNBZ0lISmhhWE5sSUZaaGJIVmxSWEp5YjNJb0owVk1SaUJNVDBGRUlHMWxiVzl5ZVNCaWIzVnVa
+[?2004l[?2004h> SE1uS1FvZ0lDQWdJQ0FnSUhObFoyMWxiblJ6TG1Gd2NHVnVaQ2h3S1FvZ0lDQWdjM1JoWTJ0eklE
+[?2004l[?2004h> MGdXM0FnWm05eUlIQWdhVzRnYzJWbmJXVnVkSE1nYVdZZ2NGc3dYU0E5UFNBd2VEWTBOelJGTlRV
+[?2004l[?2004h> eFhRb2dJQ0FnWkhsdVlXMXBZeUE5SUZ0d0lHWnZjaUJ3SUdsdUlITmxaMjFsYm5SeklHbG1JSEJi
+[?2004l[?2004h> TUYwZ1BUMGdNbDBLSUNBZ0lHbG1JR3hsYmloa2VXNWhiV2xqS1NBaFBTQXhPZ29nSUNBZ0lDQWdJ
+[?2004l[?2004h> SEpoYVhObElGWmhiSFZsUlhKeWIzSW9KMlY0Y0dWamRHVmtJRzl1WlNCa2VXNWhiV2xqSUhObFoy
+[?2004l[?2004h> MWxiblFuS1FvZ0lDQWdaSEFnUFNCa2VXNWhiV2xqV3pCZENpQWdJQ0JwWmlCa2NGczFYU0FsSURF
+[?2004l[?2004h> Mk9nb2dJQ0FnSUNBZ0lISmhhWE5sSUZaaGJIVmxSWEp5YjNJb0owVk1SaUJrZVc1aGJXbGpJR0Zz
+[?2004l[?2004h> YVdkdWJXVnVkQ2NwQ2lBZ0lDQnViM2NnUFNCR1lXeHpaUW9nSUNBZ2RHVnliV2x1WVhSbFpDQTlJ
+[?2004l[?2004h> RVpoYkhObENpQWdJQ0JtYjNJZ2IyWm1jMlYwSUdsdUlISmhibWRsS0dSd1d6SmRMQ0JrY0ZzeVhT
+[?2004l[?2004h> QXJJR1J3V3pWZExDQXhOaWs2Q2lBZ0lDQWdJQ0FnZEdGbkxDQjJZV3gxWlNBOUlITjBjblZqZEM1
+[?2004l[?2004h> MWJuQmhZMnRmWm5KdmJTZ25QSEZSSnl3Z1pHRjBZU3dnYjJabWMyVjBLUW9nSUNBZ0lDQWdJR2xt
+[?2004l[?2004h> SUhSaFp5QTlQU0F3T2dvZ0lDQWdJQ0FnSUNBZ0lDQjBaWEp0YVc1aGRHVmtJRDBnVkhKMVpRb2dJ
+[?2004l[?2004h> Q0FnSUNBZ0lDQWdJQ0JpY21WaGF3b2dJQ0FnSUNBZ0lHNXZkeUI4UFNCMFlXY2dQVDBnTWpRZ2Iz
+[?2004l[?2004h> SWdLSFJoWnlBOVBTQXpNQ0JoYm1RZ1ltOXZiQ2gyWVd4MVpTQW1JRGdwS1NCdmNpQW9kR0ZuSUQw
+[?2004l[?2004h> OUlEQjROa1pHUmtaR1JrSWdZVzVrSUdKdmIyd29kbUZzZFdVZ0ppQXhLU2tLSUNBZ0lHbG1JRzV2
+[?2004l[?2004h> ZENCMFpYSnRhVzVoZEdWa09nb2dJQ0FnSUNBZ0lISmhhWE5sSUZaaGJIVmxSWEp5YjNJb0ozVnVk
+[?2004l[?2004h> R1Z5YldsdVlYUmxaQ0JrZVc1aGJXbGpJSFJoWW14bEp5a0tJQ0FnSUhKbGMzVnNkQ0E5SUhzS0lD
+[?2004l[?2004h> QWdJQ0FnSUNBbmNHbGxKem9nYTJsdVpDQTlQU0F6SUdGdVpDQnpkVzBvY0Zzd1hTQTlQU0F6SUda
+[?2004l[?2004h> dmNpQndJR2x1SUhObFoyMWxiblJ6S1NBOVBTQXhMQW9nSUNBZ0lDQWdJQ2R1YjI1ZlpYaGxZM1Yw
+[?2004l[?2004h> WVdKc1pWOXpkR0ZqYXljNklHeGxiaWh6ZEdGamEzTXBJRDA5SURFZ1lXNWtJRzV2ZENCaWIyOXNL
+[?2004l[?2004h> SE4wWVdOcmMxc3dYVnN4WFNBbUlERXBMQW9nSUNBZ0lDQWdJQ2R5Wld4eWJ5YzZJR0Z1ZVNod1d6
+[?2004l[?2004h> QmRJRDA5SURCNE5qUTNORVUxTlRJZ1lXNWtJSEJiTmwwZ1BpQXdJR1p2Y2lCd0lHbHVJSE5sWjIx
+[?2004l[?2004h> bGJuUnpLU3dLSUNBZ0lDQWdJQ0FuWW1sdVpGOXViM2NuT2lCaWIyOXNLRzV2ZHlrc0NpQWdJQ0Fn
+[?2004l[?2004h> SUNBZ0oyNXZYM2R5YVhSaFlteGxYMlY0WldOMWRHRmliR1ZmYkc5aFpDYzZJRzV2ZENCaGJua29j
+[?2004l[?2004h> RnN3WFNBOVBTQXhJR0Z1WkNCd1d6RmRJQ1lnTXlBOVBTQXpJR1p2Y2lCd0lHbHVJSE5sWjIxbGJu
+[?2004l[?2004h> UnpLU3dLSUNBZ0lIMEtJQ0FnSUhKbGRIVnliaUJ5WlhOMWJIUUtDZ3BrWldZZ2NuVnVkR2x0WlNo
+[?2004l[?2004h> d2IyeHBZM2tzSUhCeWIyTTlVR0YwYUNnbkwzQnliMk1uS1N3Z2MzbHpjbTl2ZEQxUVlYUm9LQ2N2
+[?2004l[?2004h> YzNsekp5a3NJR0p2YjNROVVHRjBhQ2duTDJKdmIzUW5LU3dnY21Wc1pXRnpaVDFPYjI1bEtUb0tJ
+[?2004l[?2004h> Q0FnSUhKdmQzTWdQU0JiWFFvS0lDQWdJR1JsWmlCdlluTmxjblpsS0c1aGJXVXNJSEpsWVdRc0lH
+[?2004l[?2004h> Tm9aV05yS1RvS0lDQWdJQ0FnSUNCMGNuazZDaUFnSUNBZ0lDQWdJQ0FnSUhaaGJIVmxJRDBnY21W
+[?2004l[?2004h> aFpDZ3BDaUFnSUNBZ0lDQWdJQ0FnSUhCaGMzTmxaQ0E5SUdOb1pXTnJLSFpoYkhWbEtRb2dJQ0Fn
+[?2004l[?2004h> SUNBZ0lDQWdJQ0J5YjNkekxtRndjR1Z1WkNoN0oyNWhiV1VuT2lCdVlXMWxMQ0FuZG1Gc2RXVW5P
+[?2004l[?2004h> aUIyWVd4MVpTd2dKM0psYzNWc2RDYzZJQ2R3WVhOekp5QnBaaUJ3WVhOelpXUWdaV3h6WlNBblpt
+[?2004l[?2004h> RnBiQ2Q5S1FvZ0lDQWdJQ0FnSUdWNFkyVndkQ0FvVDFORmNuSnZjaXdnVm1Gc2RXVkZjbkp2Y2lr
+[?2004l[?2004h> Z1lYTWdaWEp5YjNJNkNpQWdJQ0FnSUNBZ0lDQWdJSEp2ZDNNdVlYQndaVzVrS0hzbmJtRnRaU2M2
+[?2004l[?2004h> SUc1aGJXVXNJQ2R5WlhOMWJIUW5PaUFuZFc1aGRtRnBiR0ZpYkdVbkxDQW5aWEp5YjNJbk9pQnpk
+[?2004l[?2004h> SElvWlhKeWIzSXBmU2tLQ2lBZ0lDQm1iM0lnYm1GdFpTd2djM0JsWXlCcGJpQndiMnhwWTNsYkoz
+[?2004l[?2004h> TjVjMk4wYkNkZExtbDBaVzF6S0NrNkNpQWdJQ0FnSUNBZ2IySnpaWEoyWlNodVlXMWxMQ0JzWVcx
+[?2004l[?2004h> aVpHRWdibUZ0WlQxdVlXMWxPaUJwYm5Rb0tIQnliMk1nTHlBbmMzbHpKeUF2SUc1aGJXVXVjbVZ3
+[?2004l[?2004h> YkdGalpTZ25MaWNzSUNjdkp5a3BMbkpsWVdSZmRHVjRkQ2dwS1N3S0lDQWdJQ0FnSUNBZ0lDQWdJ
+[?2004l[?2004h> Q0FnSUd4aGJXSmtZU0IyWVd4MVpTd2djM0JsWXoxemNHVmpPaUIyWVd4MVpTQnBiaUJ6Y0dWald5
+[?2004l[?2004h> ZGhZMk5sY0hSbFpDZGRLUW9nSUNBZ2NtVnNaV0Z6WlNBOUlISmxiR1ZoYzJVZ2IzSWdiM011ZFc1
+[?2004l[?2004h> aGJXVW9LUzV5Wld4bFlYTmxDaUFnSUNCcFppQnViM1FnY21VdVpuVnNiRzFoZEdOb0tISW5XMEV0
+[?2004l[?2004h> V21FdGVqQXRPVjh1SzF3dFhTc25MQ0J5Wld4bFlYTmxLVG9LSUNBZ0lDQWdJQ0J5WVdselpTQldZ
+[?2004l[?2004h> V3gxWlVWeWNtOXlLQ2RwYm5aaGJHbGtJR3RsY201bGJDQnlaV3hsWVhObEp5a0tJQ0FnSUdOdmJt
+[?2004l[?2004h> WnBaMTl3WVhSb0lEMGdZbTl2ZENBdklDZ25ZMjl1Wm1sbkxTY2dLeUJ5Wld4bFlYTmxLUW9nSUNB
+[?2004l[?2004h> Z2RISjVPZ29nSUNBZ0lDQWdJSEpoZHlBOUlHTnZibVpwWjE5d1lYUm9MbkpsWVdSZllubDBaWE1v
+[?2004l[?2004h> S1FvZ0lDQWdJQ0FnSUdOdmJtWnBaeUE5SUdScFkzUW9iR2x1WlM1emNHeHBkQ2duUFNjc0lERXBJ
+[?2004l[?2004h> R1p2Y2lCc2FXNWxJR2x1SUhKaGR5NWtaV052WkdVb0tTNXpjR3hwZEd4cGJtVnpLQ2tLSUNBZ0lD
+[?2004l[?2004h> QWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lHbG1JR3hwYm1VdWMzUmhjblJ6ZDJsMGFDZ25RMDlPUmts
+[?2004l[?2004h> SFh5Y3BJR0Z1WkNBblBTY2dhVzRnYkdsdVpTa0tJQ0FnSUNBZ0lDQm1iM0lnYm1GdFpTQnBiaUJ3
+[?2004l[?2004h> YjJ4cFkzbGJKMnRsY201bGJGOWpiMjVtYVdjblhUb0tJQ0FnSUNBZ0lDQWdJQ0FnY205M2N5NWhj
+[?2004l[?2004h> SEJsYm1Rb2V5ZHVZVzFsSnpvZ2JtRnRaU3dnSjNaaGJIVmxKem9nWTI5dVptbG5MbWRsZENodVlX
+[?2004l[?2004h> MWxLU3dLSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ2R5WlhOMWJIUW5PaUFuY0dG
+[?2004l[?2004h> emN5Y2dhV1lnWTI5dVptbG5MbWRsZENodVlXMWxLU0E5UFNBbmVTY2daV3h6WlNBblptRnBiQ2Q5
+[?2004l[?2004h> S1FvZ0lDQWdJQ0FnSUdOdmJtWnBaMTlvWVhOb0lEMGdhR0Z6YUd4cFlpNXphR0V5TlRZb2NtRjNL
+[?2004l[?2004h> UzVvWlhoa2FXZGxjM1FvS1FvZ0lDQWdaWGhqWlhCMElDaFBVMFZ5Y205eUxDQlZibWxqYjJSbFJY
+[?2004l[?2004h> SnliM0lwSUdGeklHVnljbTl5T2dvZ0lDQWdJQ0FnSUhKdmQzTXVZWEJ3Wlc1a0tIc25ibUZ0WlNj
+[?2004l[?2004h> NklDZHJaWEp1Wld4ZlkyOXVabWxuSnl3Z0ozSmxjM1ZzZENjNklDZDFibUYyWVdsc1lXSnNaU2Nz
+[?2004l[?2004h> SUNkbGNuSnZjaWM2SUhOMGNpaGxjbkp2Y2lsOUtRb2dJQ0FnSUNBZ0lHTnZibVpwWjE5b1lYTm9J
+[?2004l[?2004h> RDBnVG05dVpRb2dJQ0FnYjJKelpYSjJaU2duWVhCd1lYSnRiM0pmWlc1aFlteGxaQ2NzSUd4aGJX
+[?2004l[?2004h> SmtZVG9nS0hONWMzSnZiM1FnTHlBbmJXOWtkV3hsTDJGd2NHRnliVzl5TDNCaGNtRnRaWFJsY25N
+[?2004l[?2004h> dlpXNWhZbXhsWkNjcExuSmxZV1JmZEdWNGRDZ3BMbk4wY21sd0tDa3NDaUFnSUNBZ0lDQWdJQ0Fn
+[?2004l[?2004h> SUd4aGJXSmtZU0IyWVd4MVpUb2dkbUZzZFdVZ1BUMGdKMWtuS1FvZ0lDQWdiMkp6WlhKMlpTZ25Z
+[?2004l[?2004h> WEJ3WVhKdGIzSmZaVzVtYjNKamFXNW5YM0J5YjJacGJHVnpKeXdLSUNBZ0lDQWdJQ0FnSUNBZ2JH
+[?2004l[?2004h> RnRZbVJoT2lCemRXMG9iR2x1WlM1bGJtUnpkMmwwYUNnbklDaGxibVp2Y21ObEtTY3BJR1p2Y2lC
+[?2004l[?2004h> c2FXNWxJR2x1Q2lBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ2h6ZVhOeWIyOTBJQzhn
+[?2004l[?2004h> SjJ0bGNtNWxiQzl6WldOMWNtbDBlUzloY0hCaGNtMXZjaTl3Y205bWFXeGxjeWNwTG5KbFlXUmZk
+[?2004l[?2004h> R1Y0ZENncExuTndiR2wwYkdsdVpYTW9LU2tzQ2lBZ0lDQWdJQ0FnSUNBZ0lHeGhiV0prWVNCMllX
+[?2004l[?2004h> eDFaVG9nZG1Gc2RXVWdQaUF3S1FvZ0lDQWdabTl5SUc1aGJXVWdhVzRnY0c5c2FXTjVXeWR5WlhG
+[?2004l[?2004h> MWFYSmxaRjloY0hCaGNtMXZjbDl3Y205bWFXeGxjeWRkT2dvZ0lDQWdJQ0FnSUc5aWMyVnlkbVVv
+[?2004l[?2004h> SjJGd2NHRnliVzl5WDNCeWIyWnBiR1U2SnlBcklHNWhiV1VzQ2lBZ0lDQWdJQ0FnSUNBZ0lDQWdJ
+[?2004l[?2004h> Q0JzWVcxaVpHRTZJQ2h6ZVhOeWIyOTBJQzhnSjJ0bGNtNWxiQzl6WldOMWNtbDBlUzloY0hCaGNt
+[?2004l[?2004h> MXZjaTl3Y205bWFXeGxjeWNwTG5KbFlXUmZkR1Y0ZENncExuTndiR2wwYkdsdVpYTW9LU3dLSUNB
+[?2004l[?2004h> Z0lDQWdJQ0FnSUNBZ0lDQWdJR3hoYldKa1lTQjJZV3gxWlN3Z2JtRnRaVDF1WVcxbE9pQnVZVzFs
+[?2004l[?2004h> SUNzZ0p5QW9aVzVtYjNKalpTa25JR2x1SUhaaGJIVmxLUW9nSUNBZ2IySnpaWEoyWlNnblltOXZk
+[?2004l[?2004h> Rjl0YVhScFoyRjBhVzl1YzE5dWIzUmZaR2x6WVdKc1pXUW5MQ0JzWVcxaVpHRTZJQ2h3Y205aklD
+[?2004l[?2004h> OGdKMk50Wkd4cGJtVW5LUzV5WldGa1gzUmxlSFFvS1M1emRISnBjQ2dwTEFvZ0lDQWdJQ0FnSUNB
+[?2004l[?2004h> Z0lDQnNZVzFpWkdFZ2RtRnNkV1U2SUc1dmRDQmhibmtvZEc5clpXNGdhVzRnZXdvZ0lDQWdJQ0Fn
+[?2004l[?2004h> SUNBZ0lDQWdJQ0FnSjIxcGRHbG5ZWFJwYjI1elBXOW1aaWNzSUNkdWIydGhjMnh5Snl3Z0oyNXZj
+[?2004l[?2004h> MjFsY0Njc0lDZHViM050WVhBbkxDQW5ibTlsZUdWalBXOW1aaWNzQ2lBZ0lDQWdJQ0FnSUNBZ0lD
+[?2004l[?2004h> QWdJQ0FuYm05d2RHa25MQ0FuY0hScFBXOW1aaWNzSUNkdWIzTndaV04wY21WZmRqRW5MQ0FuYm05
+[?2004l[?2004h> emNHVmpkSEpsWDNZeUp5d0tJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDZHpjR1ZqZEhKbFgzWXlQVzlt
+[?2004l[?2004h> Wmljc0lDZHpjR1ZqZEhKbFgzWXlYM1Z6WlhJOWIyWm1KeXdnSjNOd1pXTmZjM1J2Y21WZllubHdZ
+[?2004l[?2004h> WE56WDJScGMyRmliR1U5YjJabUp5d0tJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDZHRaSE05YjJabUp5
+[?2004l[?2004h> d2dKM1J6ZUY5aGMzbHVZMTloWW05eWREMXZabVluTENBbmJERjBaajF2Wm1ZbkxDQW5ZWEJ3WVhK
+[?2004l[?2004h> dGIzSTlNQ2NzQ2lBZ0lDQWdJQ0FnSUNBZ0lIMGdabTl5SUhSdmEyVnVJR2x1SUhaaGJIVmxMbk53
+[?2004l[?2004h> YkdsMEtDa3BLUW9nSUNBZ2NtVjBkWEp1SUhzbmEyVnlibVZzWDNKbGJHVmhjMlVuT2lCeVpXeGxZ
+[?2004l[?2004h> WE5sTENBbmEyVnlibVZzWDJOdmJtWnBaMTl6YUdFeU5UWW5PaUJqYjI1bWFXZGZhR0Z6YUN3Z0oy
+[?2004l[?2004h> Tm9aV05yY3ljNklISnZkM01zQ2lBZ0lDQWdJQ0FnSUNBZ0lDZHlaWE4xYkhRbk9pQW5jR0Z6Y3lj
+[?2004l[?2004h> Z2FXWWdZV3hzS0hKYkozSmxjM1ZzZENkZElEMDlJQ2R3WVhOekp5Qm1iM0lnY2lCcGJpQnliM2R6
+[?2004l[?2004h> S1NCbGJITmxJQ2RtWVdsc0p5d0tJQ0FnSUNBZ0lDQWdJQ0FnSjNOamIzQmxKem9nSjJ4cGMzUmxa
+[?2004l[?2004h> Q0J0YVhScFoyRjBhVzl1Y3lCdmJteDVPeUJ1YjNRZ2QyaHZiR1V0YzNsemRHVnRJSE5sWTNWeWFY
+[?2004l[?2004h> UjVJR05sY25ScFptbGpZWFJwYjI0bmZRb0tDbVJsWmlCdFlXbHVLQ2s2Q2lBZ0lDQmhjQ0E5SUdG
+[?2004l[?2004h> eVozQmhjbk5sTGtGeVozVnRaVzUwVUdGeWMyVnlLR1JsYzJOeWFYQjBhVzl1UFY5ZlpHOWpYMThw
+[?2004l[?2004h> Q2lBZ0lDQmhjQzVoWkdSZllYSm5kVzFsYm5Rb0p5MHRjRzlzYVdONUp5d2dkSGx3WlQxUVlYUm9M
+[?2004l[?2004h> Q0JrWldaaGRXeDBQVWhGVWtVZ0x5QW5ZbUZ6Wld4cGJtVXVhbk52YmljcENpQWdJQ0J0YjJSbElE
+[?2004l[?2004h> MGdZWEF1WVdSa1gyMTFkSFZoYkd4NVgyVjRZMngxYzJsMlpWOW5jbTkxY0NoeVpYRjFhWEpsWkQx
+[?2004l[?2004h> VWNuVmxLUW9nSUNBZ2JXOWtaUzVoWkdSZllYSm5kVzFsYm5Rb0p5MHRjbVZ1WkdWeUxYTjVjMk4w
+[?2004l[?2004h> YkNjc0lHRmpkR2x2YmowbmMzUnZjbVZmZEhKMVpTY3BDaUFnSUNCdGIyUmxMbUZrWkY5aGNtZDFi
+[?2004l[?2004h> V1Z1ZENnbkxTMXlkVzUwYVcxbEp5d2dZV04wYVc5dVBTZHpkRzl5WlY5MGNuVmxKeWtLSUNBZ0lH
+[?2004l[?2004h> MXZaR1V1WVdSa1gyRnlaM1Z0Wlc1MEtDY3RMV1ZzWmljc0lIUjVjR1U5VUdGMGFDd2dibUZ5WjNN
+[?2004l[?2004h> OUp5c25LUW9nSUNBZ1lYSm5jeUE5SUdGd0xuQmhjbk5sWDJGeVozTW9LUW9nSUNBZ2NHOXNhV041
+[?2004l[?2004h> SUQwZ2JHOWhaRjl3YjJ4cFkza29ZWEpuY3k1d2IyeHBZM2twQ2lBZ0lDQnBaaUJoY21kekxuSmxi
+[?2004l[?2004h> bVJsY2w5emVYTmpkR3c2Q2lBZ0lDQWdJQ0FnY0hKcGJuUW9jbVZ1WkdWeUtIQnZiR2xqZVNrc0lH
+[?2004l[?2004h> VnVaRDBuSnlrS0lDQWdJQ0FnSUNCeVpYUjFjbTRLSUNBZ0lHbG1JR0Z5WjNNdWNuVnVkR2x0WlRv
+[?2004l[?2004h> S0lDQWdJQ0FnSUNCeVpYQnZjblFnUFNCeWRXNTBhVzFsS0hCdmJHbGplU2tLSUNBZ0lHVnNjMlU2
+[?2004l[?2004h> Q2lBZ0lDQWdJQ0FnY205M2N5QTlJRnRkQ2lBZ0lDQWdJQ0FnWm05eUlIQmhkR2dnYVc0Z1lYSm5j
+[?2004l[?2004h> eTVsYkdZNkNpQWdJQ0FnSUNBZ0lDQWdJSGRwZEdnZ2NHRjBhQzV2Y0dWdUtDZHlZaWNwSUdGeklI
+[?2004l[?2004h> TjBjbVZoYlRvS0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUdSaGRHRWdQU0J6ZEhKbFlXMHVjbVZoWkNn
+[?2004l[?2004h> eU5UWWdLaUF4TURJMEtpb3lJQ3NnTVNrS0lDQWdJQ0FnSUNBZ0lDQWdhV1lnYkdWdUtHUmhkR0Vw
+[?2004l[?2004h> SUQ0Z01qVTJJQ29nTVRBeU5Db3FNam9LSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJSEpoYVhObElGWmhi
+[?2004l[?2004h> SFZsUlhKeWIzSW9KMFZNUmlCdlluTmxjblpoZEdsdmJpQnphWHBsSUd4cGJXbDBKeWtLSUNBZ0lD
+[?2004l[?2004h> QWdJQ0FnSUNBZ2NISnZjR1Z5ZEdsbGN5QTlJR1ZzWmw5d2NtOXdaWEowYVdWektHUmhkR0VwQ2lB
+[?2004l[?2004h> Z0lDQWdJQ0FnSUNBZ0lISnZkM011WVhCd1pXNWtLSHNuYm1GdFpTYzZJSEJoZEdndWJtRnRaU3dn
+[?2004l[?2004h> SjNOb1lUSTFOaWM2SUdoaGMyaHNhV0l1YzJoaE1qVTJLR1JoZEdFcExtaGxlR1JwWjJWemRDZ3BM
+[?2004l[?2004h> QW9nSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdKM0J5YjNCbGNuUnBaWE1uT2lCd2Nt
+[?2004l[?2004h> OXdaWEowYVdWekxDQW5jbVZ6ZFd4MEp6b2dKM0JoYzNNbklHbG1JR0ZzYkNod2NtOXdaWEowYVdW
+[?2004l[?2004h> ekxuWmhiSFZsY3lncEtTQmxiSE5sSUNkbVlXbHNKMzBwQ2lBZ0lDQWdJQ0FnY21Wd2IzSjBJRDBn
+[?2004l[?2004h> ZXlkamFHVmphM01uT2lCeWIzZHpMQ0FuY21WemRXeDBKem9nSjNCaGMzTW5JR2xtSUdGc2JDaHlX
+[?2004l[?2004h> eWR5WlhOMWJIUW5YU0E5UFNBbmNHRnpjeWNnWm05eUlISWdhVzRnY205M2N5a2daV3h6WlNBblpt
+[?2004l[?2004h> RnBiQ2NzQ2lBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNkelkyOXdaU2M2SUNkRlRFWWdjSEp2WjNK
+[?2004l[?2004h> aGJTQm9aV0ZrWlhKekwyUjVibUZ0YVdNZ1pteGhaM01nYjI1c2VUc2dibThnWTI5dGNHbHNaWEln
+[?2004l[?2004h> YVc1emRISjFiV1Z1ZEdGMGFXOXVJSEJ5YjI5bUozMEtJQ0FnSUhKbGNHOXlkRnNuYzJOb1pXMWhK
+[?2004l[?2004h> MTBnUFNBbmIzSm5MbTVwWVc5ekxtaGhjbVJsYm1sdVp5MXZZbk5sY25aaGRHbHZiaTkyTVNjS0lD
+[?2004l[?2004h> QWdJSEpsY0c5eWRGc25jRzlzYVdONVgzTm9ZVEkxTmlkZElEMGdhR0Z6YUd4cFlpNXphR0V5TlRZ
+[?2004l[?2004h> b1lYSm5jeTV3YjJ4cFkza3VjbVZoWkY5aWVYUmxjeWdwS1M1b1pYaGthV2RsYzNRb0tRb2dJQ0Fn
+[?2004l[?2004h> Y21Wd2IzSjBXeWQwYjI5c1gzTm9ZVEkxTmlkZElEMGdhR0Z6YUd4cFlpNXphR0V5TlRZb1VHRjBh
+[?2004l[?2004h> Q2hmWDJacGJHVmZYeWt1Y21WaFpGOWllWFJsY3lncEtTNW9aWGhrYVdkbGMzUW9LUW9nSUNBZ2NI
+[?2004l[?2004h> SnBiblFvYW5OdmJpNWtkVzF3Y3loeVpYQnZjblFzSUdsdVpHVnVkRDB5S1NrS0lDQWdJSEpoYVhO
+[?2004l[?2004h> bElGTjVjM1JsYlVWNGFYUW9NQ0JwWmlCeVpYQnZjblJiSjNKbGMzVnNkQ2RkSUQwOUlDZHdZWE56
+[?2004l[?2004h> SnlCbGJITmxJREVwQ2dvS2FXWWdYMTl1WVcxbFgxOGdQVDBnSjE5ZmJXRnBibDlmSnpvS0lDQWdJ
+[?2004l[?2004h> RzFoYVc0b0tRbz0KTklBX1BBWUxPQUQKY2htb2QgMDY0NCAvcm9vdC9uaWEtaGFyZGVuaW5nLXRl
+[?2004l[?2004h> c3QvYXVkaXQucHkKYmFzZTY0IC1kID4gL3Jvb3QvbmlhLWhhcmRlbmluZy10ZXN0L2Jhc2VsaW5l
+[?2004l[?2004h> Lmpzb24gPDwnTklBX1BBWUxPQUQnCmV3b2dJQ0p6WTJobGJXRWlPaUFpYjNKbkxtNXBZVzl6TG1o
+[?2004l[?2004h> aGNtUmxibWx1WnkxaVlYTmxiR2x1WlM5Mk1TSXNDaUFnSW5CeWIyWnBiR1VpT2lBaVpHVmlhV0Z1
+[?2004l[?2004h> TVRNdFlXMWtOalF0WkdWemEzUnZjQ0lzQ2lBZ0luSmxjWFZwY21Wa1gyRndjR0Z5Ylc5eVgzQnli
+[?2004l[?2004h> MlpwYkdWeklqb2dXeUp1YVdFdGFHOXpkR04wYkNKZExBb2dJQ0p6ZVhOamRHd2lPaUI3Q2lBZ0lD
+[?2004l[?2004h> QWlhMlZ5Ym1Wc0xuSmhibVJ2YldsNlpWOTJZVjl6Y0dGalpTSTZJSHNpZG1Gc2RXVWlPaUF5TENB
+[?2004l[?2004h> aVlXTmpaWEIwWldRaU9pQmJNbDBzSUNKeVpXWmxjbVZ1WTJVaU9pQWlkV0oxYm5SMUxXMWxiVzl5
+[?2004l[?2004h> ZVNKOUxBb2dJQ0FnSW10bGNtNWxiQzVyY0hSeVgzSmxjM1J5YVdOMElqb2dleUoyWVd4MVpTSTZJ
+[?2004l[?2004h> REVzSUNKaFkyTmxjSFJsWkNJNklGc3hMQ0F5WFN3Z0luSmxabVZ5Wlc1alpTSTZJQ0pyWlhKdVpX
+[?2004l[?2004h> d3RjM2x6WTNSc0luMHNDaUFnSUNBaWEyVnlibVZzTG1SdFpYTm5YM0psYzNSeWFXTjBJam9nZXlK
+[?2004l[?2004h> MllXeDFaU0k2SURFc0lDSmhZMk5sY0hSbFpDSTZJRnN4WFN3Z0luSmxabVZ5Wlc1alpTSTZJQ0py
+[?2004l[?2004h> WlhKdVpXd3RjM2x6WTNSc0luMHNDaUFnSUNBaWEyVnlibVZzTG5WdWNISnBkbWxzWldkbFpGOWlj
+[?2004l[?2004h> R1pmWkdsellXSnNaV1FpT2lCN0luWmhiSFZsSWpvZ01pd2dJbUZqWTJWd2RHVmtJam9nV3pFc0lE
+[?2004l[?2004h> SmRMQ0FpY21WbVpYSmxibU5sSWpvZ0ltdGxjbTVsYkMxemVYTmpkR3dpZlN3S0lDQWdJQ0oyYlM1
+[?2004l[?2004h> MWJuQnlhWFpwYkdWblpXUmZkWE5sY21aaGRXeDBabVFpT2lCN0luWmhiSFZsSWpvZ01Dd2dJbUZq
+[?2004l[?2004h> WTJWd2RHVmtJam9nV3pCZExDQWljbVZtWlhKbGJtTmxJam9nSW10bGNtNWxiQzExYzJWeVptRjFi
+[?2004l[?2004h> SFJtWkNKOUxBb2dJQ0FnSW5adExtMXRZWEJmYldsdVgyRmtaSElpT2lCN0luWmhiSFZsSWpvZ05q
+[?2004l[?2004h> VTFNellzSUNKaFkyTmxjSFJsWkNJNklGczJOVFV6Tmwwc0lDSnlaV1psY21WdVkyVWlPaUFpZFdK
+[?2004l[?2004h> MWJuUjFMVzFsYlc5eWVTSjlMQW9nSUNBZ0ltWnpMbkJ5YjNSbFkzUmxaRjlvWVhKa2JHbHVhM01p
+[?2004l[?2004h> T2lCN0luWmhiSFZsSWpvZ01Td2dJbUZqWTJWd2RHVmtJam9nV3pGZExDQWljbVZtWlhKbGJtTmxJ
+[?2004l[?2004h> am9nSW10bGNtNWxiQzFtY3lKOUxBb2dJQ0FnSW1aekxuQnliM1JsWTNSbFpGOXplVzFzYVc1cmN5
+[?2004l[?2004h> STZJSHNpZG1Gc2RXVWlPaUF4TENBaVlXTmpaWEIwWldRaU9pQmJNVjBzSUNKeVpXWmxjbVZ1WTJV
+[?2004l[?2004h> aU9pQWlhMlZ5Ym1Wc0xXWnpJbjBzQ2lBZ0lDQWlabk11Y0hKdmRHVmpkR1ZrWDJacFptOXpJam9n
+[?2004l[?2004h> ZXlKMllXeDFaU0k2SURFc0lDSmhZMk5sY0hSbFpDSTZJRnN4TENBeVhTd2dJbkpsWm1WeVpXNWpa
+[?2004l[?2004h> U0k2SUNKclpYSnVaV3d0Wm5NaWZTd0tJQ0FnSUNKbWN5NXdjbTkwWldOMFpXUmZjbVZuZFd4aGNp
+[?2004l[?2004h> STZJSHNpZG1Gc2RXVWlPaUF5TENBaVlXTmpaWEIwWldRaU9pQmJNbDBzSUNKeVpXWmxjbVZ1WTJV
+[?2004l[?2004h> aU9pQWlhMlZ5Ym1Wc0xXWnpJbjBLSUNCOUxBb2dJQ0pyWlhKdVpXeGZZMjl1Wm1sbklqb2dXd29n
+[?2004l[?2004h> SUNBZ0lrTlBUa1pKUjE5U1FVNUVUMDFKV2tWZlFrRlRSU0lzSUNKRFQwNUdTVWRmVTFSU1NVTlVY
+[?2004l[?2004h> MHRGVWs1RlRGOVNWMWdpTENBaVEwOU9Sa2xIWDFOVVVrbERWRjlOVDBSVlRFVmZVbGRZSWl3S0lD
+[?2004l[?2004h> QWdJQ0pEVDA1R1NVZGZVMVJCUTB0UVVrOVVSVU5VVDFKZlUxUlNUMDVISWl3Z0lrTlBUa1pKUjE5
+[?2004l[?2004h> SVFWSkVSVTVGUkY5VlUwVlNRMDlRV1NJc0NpQWdJQ0FpUTA5T1JrbEhYMFpQVWxSSlJsbGZVMDlW
+[?2004l[?2004h> VWtORklpd2dJa05QVGtaSlIxOVRURUZDWDBaU1JVVk1TVk5VWDFKQlRrUlBUU0lzSUNKRFQwNUdT
+[?2004l[?2004h> VWRmVTB4QlFsOUdVa1ZGVEVsVFZGOUlRVkpFUlU1RlJDSXNDaUFnSUNBaVEwOU9Sa2xIWDFaTlFW
+[?2004l[?2004h> QmZVMVJCUTBzaUxDQWlRMDlPUmtsSFgxUklVa1ZCUkY5SlRrWlBYMGxPWDFSQlUwc2lMQ0FpUTA5
+[?2004l[?2004h> T1JrbEhYMDFKVkVsSFFWUkpUMDVmVUVGSFJWOVVRVUpNUlY5SlUwOU1RVlJKVDA0aUxBb2dJQ0Fn
+[?2004l[?2004h> SWtOUFRrWkpSMTlUUlVOVlVrbFVXVjlCVUZCQlVrMVBVaUlzSUNKRFQwNUdTVWRmVTBWRFEwOU5V
+[?2004l[?2004h> Q0lzSUNKRFQwNUdTVWRmVTBWRFEwOU5VRjlHU1V4VVJWSWlMQW9nSUNBZ0lrTlBUa1pKUjE5VFJV
+[?2004l[?2004h> TlZVa2xVV1Y5WlFVMUJJaXdnSWtOUFRrWkpSMTlUUlVOVlVrbFVXVjlNUVU1RVRFOURTeUlLSUNC
+[?2004l[?2004h> ZExBb2dJQ0p5WldabGNtVnVZMlZ6SWpvZ2V3b2dJQ0FnSW5WaWRXNTBkUzF0WlcxdmNua2lPaUFp
+[?2004l[?2004h> YUhSMGNITTZMeTlrYjJOMWJXVnVkR0YwYVc5dUxuVmlkVzUwZFM1amIyMHZjMlZqZFhKcGRIa3Zj
+[?2004l[?2004h> MlZqZFhKcGRIa3RabVZoZEhWeVpYTXZjSEp2WTJWemN5MXRaVzF2Y25rdklpd0tJQ0FnSUNKMVlu
+[?2004l[?2004h> VnVkSFV0WTI5dGNHbHNaWElpT2lBaWFIUjBjSE02THk5a2IyTjFiV1Z1ZEdGMGFXOXVMblZpZFc1
+[?2004l[?2004h> MGRTNWpiMjB2YzJWamRYSnBkSGt2YzJWamRYSnBkSGt0Wm1WaGRIVnlaWE12Y0hKdlkyVnpjeTF0
+[?2004l[?2004h> WlcxdmNua3ZZMjl0Y0dsc1pYSXRabXhoWjNNdklpd0tJQ0FnSUNKcmFXTnJjMlZqZFhKbElqb2dJ
+[?2004l[?2004h> bWgwZEhCek9pOHZkM2QzTG10cFkydHpaV04xY21VdVkyOXRMM2RwYTJrdlUyVmpkWEpwZEhrdGJX
+[?2004l[?2004h> bHpZeUlzQ2lBZ0lDQWlZVzV6YzJraU9pQWlhSFIwY0hNNkx5OXRaWE56WlhKMmFXTmxjeTVqZVdK
+[?2004l[?2004h> bGNpNW5iM1YyTG1aeUwyUnZZM1Z0Wlc1MGN5MW5kV2xrWlhNdmJHbHVkWGhmWTI5dVptbG5kWEpo
+[?2004l[?2004h> ZEdsdmJpMWxiaTEyTWk1d1pHWWlMQW9nSUNBZ0ltdGxjbTVsYkMxemVYTmpkR3dpT2lBaWFIUjBj
+[?2004l[?2004h> SE02THk5a2IyTnpMbXRsY201bGJDNXZjbWN2WVdSdGFXNHRaM1ZwWkdVdmMzbHpZM1JzTDJ0bGNt
+[?2004l[?2004h> NWxiQzVvZEcxc0lpd0tJQ0FnSUNKclpYSnVaV3d0Wm5NaU9pQWlhSFIwY0hNNkx5OWtiMk56TG10
+[?2004l[?2004h> bGNtNWxiQzV2Y21jdllXUnRhVzR0WjNWcFpHVXZjM2x6WTNSc0wyWnpMbWgwYld3aUxBb2dJQ0Fn
+[?2004l[?2004h> SW10bGNtNWxiQzExYzJWeVptRjFiSFJtWkNJNklDSm9kSFJ3Y3pvdkwyUnZZM011YTJWeWJtVnNM
+[?2004l[?2004h> bTl5Wnk5aFpHMXBiaTFuZFdsa1pTOXRiUzkxYzJWeVptRjFiSFJtWkM1b2RHMXNJZ29nSUgwc0Np
+[?2004l[?2004h> QWdJbkpsZG1sbGQyVmtYMjl1SWpvZ0lqSXdNall0TURrdE1EZ2lDbjBLCk5JQV9QQVlMT0FECmNo
+[?2004l[?2004h> bW9kIDA2NDQgL3Jvb3QvbmlhLWhhcmRlbmluZy10ZXN0L2Jhc2VsaW5lLmpzb24KaW5zdGFsbCAt
+[?2004l[?2004h> ZCAtbSAwNzU1IC9ldGMvYXBwYXJtb3IuZApiYXNlNjQgLWQgPiAvZXRjL2FwcGFybW9yLmQvbmlh
+[?2004l[?2004h> LWhvc3RjdGwgPDwnTklBX1BBWUxPQUQnCkl5QlRVRVJZTFV4cFkyVnVjMlV0U1dSbGJuUnBabWxs
+[?2004l[?2004h> Y2pvZ1RVbFVDaU1nVTI5MWNtTmxJSE5qYjNCbE9pQnpkR0YwWldOdmNtVXZZWEJ3TDJodmMzUmpk
+[?2004l[?2004h> R3d1WVdSaUxDQnpkR0YwWldOdmNtVXZjblZ1ZEdsdFpTOXpkR0YwWlY5b2IzTjBYM0J5YjJKbExt
+[?2004l[?2004h> RmtZaXdLSXlCaGMzTjFjbUZ1WTJVdmNuVnVkR2x0WlM5dFkxOXJaWEp1Wld4ZmNtVmhaQzVoWkdJ
+[?2004l[?2004h> Z1lXNWtJRzFqWDJOc2IyTnJMbUZrWWk0S0l5Qm9iM04wWTNSc0lHbHpJR0VnY21WaFpDMXZibXg1
+[?2004l[?2004h> SUc5aWMyVnlkbVZ5TENCdVpYWmxjaUJoSUhCaFkydGhaMlVnYlhWMFlYUnBiMjRnZDI5eWEyVnlM
+[?2004l[?2004h> Z3BoWW1rZ1BHRmlhUzgwTGpBK0xBcHBibU5zZFdSbElEeDBkVzVoWW14bGN5OW5iRzlpWVd3K0Nn
+[?2004l[?2004h> cHdjbTltYVd4bElHNXBZUzFvYjNOMFkzUnNJQzkxYzNJdmJHbGlaWGhsWXk5dWFXRXZhRzl6ZEdO
+[?2004l[?2004h> MGJDQjdDaUFnYVc1amJIVmtaU0E4WVdKemRISmhZM1JwYjI1ekwySmhjMlUrQ2dvZ0lDTWdUVU5m
+[?2004l[?2004h> UzJWeWJtVnNYMUpsWVdRZ2IzQmxibk1nZEdocGN5QmthWEpsWTNSdmNua2dZWE1nZEdobElHRnVZ
+[?2004l[?2004h> Mmh2Y2lCbWIzSWdiM0JsYm1GME1pQmlaVzVsWVhSb0lHbDBMZ29nSUM4Z2Npd0tJQ0F2ZFhOeUwy
+[?2004l[?2004h> eHBZbVY0WldNdmJtbGhMMmh2YzNSamRHd2djbWw0TEFvZ0lFQjdVRkpQUTMwdk1TOWpiMjF0SUhJ
+[?2004l[?2004h> c0NpQWdRSHRRVWs5RGZTOXplWE12YTJWeWJtVnNMM0poYm1SdmJTOWliMjkwWDJsa0lISXNDaUFn
+[?2004l[?2004h> UUh0UVVrOURmUzl6ZVhNdmEyVnlibVZzTDN0a2JXVnpaMTl5WlhOMGNtbGpkQ3h5WVc1a2IyMXBl
+[?2004l[?2004h> bVZmZG1GZmMzQmhZMlVzZFc1d2NtbDJhV3hsWjJWa1gySndabDlrYVhOaFlteGxaQ3hyY0hSeVgz
+[?2004l[?2004h> SmxjM1J5YVdOMGZTQnlMQW9nSUVCN1VGSlBRMzB2UUh0d2FXUjlMMkYwZEhJdmUyRndjR0Z5Ylc5
+[?2004l[?2004h> eUx5eDlZM1Z5Y21WdWRDQnlMQW9nSUM5emVYTXZabk12WTJkeWIzVndMMk5uY205MWNDNWpiMjUw
+[?2004l[?2004h> Y205c2JHVnljeUJ5TEFvZ0lDOXplWE12Wm5NdmMyVnNhVzUxZUM5bGJtWnZjbU5sSUhJc0NpQWdM
+[?2004l[?2004h> M041Y3k5clpYSnVaV3d2YzJWamRYSnBkSGt2Ykc5amEyUnZkMjRnY2l3S0lDQXZjM2x6TDJacGNt
+[?2004l[?2004h> MTNZWEpsTDJWbWFTOWxabWwyWVhKekwzdFRaV04xY21WQ2IyOTBMRk5sZEhWd1RXOWtaWDB0T0dK
+[?2004l[?2004h> bE5HUm1OakV0T1ROallTMHhNV1F5TFdGaE1HUXRNREJsTURrNE1ETXlZamhqSUhJc0NuMEsKTklB
+[?2004l[?2004h> X1BBWUxPQUQKY2htb2QgMDY0NCAvZXRjL2FwcGFybW9yLmQvbmlhLWhvc3RjdGwKaW5zdGFsbCAt
+[?2004l[?2004h> ZCAtbSAwNzU1IC91c3IvbGliL3N5c2N0bC5kCmJhc2U2NCAtZCA+IC91c3IvbGliL3N5c2N0bC5k
+[?2004l[?2004h> LzYwLW5pYW9zLWhhcmRlbmluZy5jb25mIDw8J05JQV9QQVlMT0FEJwpJeUJUVUVSWUxVeHBZMlZ1
+[?2004l[?2004h> YzJVdFNXUmxiblJwWm1sbGNqb2dUVWxVQ2lNZ1IyVnVaWEpoZEdWa0lHWnliMjBnYUdGeVpHVnVh
+[?2004l[?2004h> VzVuTDJKaGMyVnNhVzVsTG1wemIyNDdJSE5sWlNCb1lYSmtaVzVwYm1jdlVrVkJSRTFGTG1waExt
+[?2004l[?2004h> MWtMZ29qSUVGa2JXbHVhWE4wY21GMGIzSWdiM1psY25KcFpHVnpJR0psYkc5dVp5QnBiaUF2WlhS
+[?2004l[?2004h> akwzTjVjMk4wYkM1a0x6a3dMVzVwWVc5ekxXeHZZMkZzTG1OdmJtWXVDbXRsY201bGJDNXlZVzVr
+[?2004l[?2004h> YjIxcGVtVmZkbUZmYzNCaFkyVWdQU0F5Q210bGNtNWxiQzVyY0hSeVgzSmxjM1J5YVdOMElEMGdN
+[?2004l[?2004h> UXByWlhKdVpXd3VaRzFsYzJkZmNtVnpkSEpwWTNRZ1BTQXhDbXRsY201bGJDNTFibkJ5YVhacGJH
+[?2004l[?2004h> Vm5aV1JmWW5CbVgyUnBjMkZpYkdWa0lEMGdNZ3AyYlM1MWJuQnlhWFpwYkdWblpXUmZkWE5sY21a
+[?2004l[?2004h> aGRXeDBabVFnUFNBd0NuWnRMbTF0WVhCZmJXbHVYMkZrWkhJZ1BTQTJOVFV6TmdwbWN5NXdjbTkw
+[?2004l[?2004h> WldOMFpXUmZhR0Z5Wkd4cGJtdHpJRDBnTVFwbWN5NXdjbTkwWldOMFpXUmZjM2x0YkdsdWEzTWdQ
+[?2004l[?2004h> U0F4Q21aekxuQnliM1JsWTNSbFpGOW1hV1p2Y3lBOUlERUtabk11Y0hKdmRHVmpkR1ZrWDNKbFoz
+[?2004l[?2004h> VnNZWElnUFNBeUNnPT0KTklBX1BBWUxPQUQKY2htb2QgMDY0NCAvdXNyL2xpYi9zeXNjdGwuZC82
+[?2004l[?2004h> MC1uaWFvcy1oYXJkZW5pbmcuY29uZgppbnN0YWxsIC1kIC1tIDA3NTUgL3Vzci9saWIvc3lzdGVt
+[?2004l[?2004h> ZC9zeXN0ZW0KYmFzZTY0IC1kID4gL3Vzci9saWIvc3lzdGVtZC9zeXN0ZW0vbmlhb3MtaG9zdGN0
+[?2004l[?2004h> bC1jb25maW5lbWVudC5zZXJ2aWNlIDw8J05JQV9QQVlMT0FEJwpJeUJUVUVSWUxVeHBZMlZ1YzJV
+[?2004l[?2004h> dFNXUmxiblJwWm1sbGNqb2dUVWxVQ2x0VmJtbDBYUXBFWlhOamNtbHdkR2x2YmoxTWIyRmtJSFJv
+[?2004l[?2004h> WlNCT2FXRWdjbVZoWkMxdmJteDVJR2h2YzNRZ2IySnpaWEoyWlhJZ1kyOXVabWx1WlcxbGJuUUtS
+[?2004l[?2004h> RzlqZFcxbGJuUmhkR2x2YmoxdFlXNDZZWEJ3WVhKdGIzSmZjR0Z5YzJWeUtEZ3BDa1JsWm1GMWJI
+[?2004l[?2004h> UkVaWEJsYm1SbGJtTnBaWE05Ym04S1FXWjBaWEk5Ykc5allXd3Rabk11ZEdGeVoyVjBJR0Z3Y0dG
+[?2004l[?2004h> eWJXOXlMbk5sY25acFkyVUtRbVZtYjNKbFBYTjVjMmx1YVhRdWRHRnlaMlYwQ2tGemMyVnlkRk5s
+[?2004l[?2004h> WTNWeWFYUjVQV0Z3Y0dGeWJXOXlDa0Z6YzJWeWRGQmhkR2hGZUdsemRITTlMM041Y3k5clpYSnVa
+[?2004l[?2004h> V3d2YzJWamRYSnBkSGt2WVhCd1lYSnRiM0lLUVhOelpYSjBVR0YwYUVWNGFYTjBjejB2WlhSakwy
+[?2004l[?2004h> RndjR0Z5Ylc5eUxtUXZibWxoTFdodmMzUmpkR3dLQ2x0VFpYSjJhV05sWFFwVWVYQmxQVzl1WlhO
+[?2004l[?2004h> b2IzUUtVbVZ0WVdsdVFXWjBaWEpGZUdsMFBYbGxjd3BGZUdWalUzUmhjblE5TDNWemNpOXpZbWx1
+[?2004l[?2004h> TDJGd2NHRnliVzl5WDNCaGNuTmxjaUF0TFhKbGNHeGhZMlVnTFMxemEybHdMV05oWTJobElDMHRh
+[?2004l[?2004h> bTlpY3oweElDMHRWMlZ5Y205eUlDOWxkR012WVhCd1lYSnRiM0l1WkM5dWFXRXRhRzl6ZEdOMGJB
+[?2004l[?2004h> cFVhVzFsYjNWMFUzUmhjblJUWldNOU16QUtUbTlPWlhkUWNtbDJhV3hsWjJWelBYbGxjd3BEWVhC
+[?2004l[?2004h> aFltbHNhWFI1UW05MWJtUnBibWRUWlhROVEwRlFYMDFCUTE5QlJFMUpUZ3BRY205MFpXTjBVM2x6
+[?2004l[?2004h> ZEdWdFBYTjBjbWxqZEFwUWNtOTBaV04wU0c5dFpUMTVaWE1LVUhKcGRtRjBaVlJ0Y0QxNVpYTUtV
+[?2004l[?2004h> bVZ6ZEhKcFkzUkJaR1J5WlhOelJtRnRhV3hwWlhNOVFVWmZWVTVKV0FwU1pYTjBjbWxqZEU1aGJX
+[?2004l[?2004h> VnpjR0ZqWlhNOWVXVnpDbEpsYzNSeWFXTjBVMVZKUkZOSFNVUTllV1Z6Q2t4dlkydFFaWEp6YjI1
+[?2004l[?2004h> aGJHbDBlVDE1WlhNS1ZVMWhjMnM5TURBM053cE5aVzF2Y25sTllYZzlNVEk0VFFwVVlYTnJjMDFo
+[?2004l[?2004h> ZUQweE5nb0tXMGx1YzNSaGJHeGRDbGRoYm5SbFpFSjVQWE41YzJsdWFYUXVkR0Z5WjJWMENnPT0K
+[?2004l[?2004h> TklBX1BBWUxPQUQKY2htb2QgMDY0NCAvdXNyL2xpYi9zeXN0ZW1kL3N5c3RlbS9uaWFvcy1ob3N0
+[?2004l[?2004h> Y3RsLWNvbmZpbmVtZW50LnNlcnZpY2UKcHl0aG9uMyAtIDw8J05JQV9QUkVGTElHSFQnCmltcG9y
+[?2004l[?2004h> dCBqc29uLCBwYXRobGliCnA9anNvbi5sb2FkcyhwYXRobGliLlBhdGgoJy9yb290L25pYS1oYXJk
+[?2004l[?2004h> ZW5pbmctdGVzdC9iYXNlbGluZS5qc29uJykucmVhZF90ZXh0KCkpCmZvciBuYW1lLHJvdyBpbiBw
+[?2004l[?2004h> WydzeXNjdGwnXS5pdGVtcygpOgogICAgdmFsdWU9aW50KChwYXRobGliLlBhdGgoJy9wcm9jL3N5
+[?2004l[?2004h> cycpL25hbWUucmVwbGFjZSgnLicsJy8nKSkucmVhZF90ZXh0KCkpCiAgICBpZiB2YWx1ZSBpbiBy
+[?2004l[?2004h> b3dbJ2FjY2VwdGVkJ10gYW5kIHZhbHVlICE9IHJvd1sndmFsdWUnXToKICAgICAgICByYWlzZSBT
+[?2004l[?2004h> eXN0ZW1FeGl0KCdyZWZ1c2luZyB0byB3ZWFrZW4gZXhpc3Rpbmcgc3lzY3RsICcrbmFtZSkKTklB
+[?2004l[?2004h> X1BSRUZMSUdIVApzeXN0ZW1kLWFuYWx5emUgdmVyaWZ5IC91c3IvbGliL3N5c3RlbWQvc3lzdGVt
+[?2004l[?2004h> L25pYW9zLWhvc3RjdGwtY29uZmluZW1lbnQuc2VydmljZQpzeXN0ZW1jdGwgZGFlbW9uLXJlbG9h
+[?2004l[?2004h> ZApzeXN0ZW1jdGwgZW5hYmxlIG5pYW9zLWhvc3RjdGwtY29uZmluZW1lbnQuc2VydmljZQp0cmFw
+[?2004l[?2004h> IC0gRVhJVApwcmludGYgIlxuTklBX1BFUlNJU1RFTlRfUEFTU1xuIgo=
+[?2004l[?2004h> NIA_SCRIPT_END
+[?2004lCreated symlink '/etc/systemd/system/sysinit.target.wants/niaos-hostctl-confinement.service' → '/usr/lib/systemd/system/niaos-hostctl-confinement.service'.
+
+NIA_PERSISTENT_PASSsudo -n systemctl poweroff
+
+[?2004hniatest@niaos-test:~$ sudo -n systemctl poweroff
+[?2004l
+Broadcast message from root@niaos-test on pts/0 (Tue 2026-09-08 20:50:32 UTC):
+
+The system will power off now!
+
+[?2004hniatest@niaos-test:~$ [?2004l[?2004h[?2004l
+[!p]104[?7h[6n[32766;32766H[6n[[0;32m  OK  [0m] Stopped [0;1;39muser-runtime-dir@107.servi…[0mer Runtime Directory /run/user/107.
+[[0;32m  OK  [0m] Removed slice [0;1;39muser-107.slice[0m - User Slice of UID 107.[0;21;33mamd_pstate: The CPPC feature is supported but currently disabled by the BIOS.[0m
+[0;21;33mPlease enable it if your BIOS has the CPPC option.[0m
+[0;21;33mamd_pstate: the _CPC object is not present in SBIOS or ACPI disabled[0m
+[0;21;33mata3.00: LPM support broken, forcing max_power[0m
+[0;21;33mata3.00: LPM support broken, forcing max_power[0m
+
+[[0;32m  OK  [0m] Started [0;1;39mplymouth-poweroff.service[0m - Show Plymouth Power Off Screen.
+[[0;32m  OK  [0m] Stopped [0;1;39muser@1000.service[0m - User Manager for UID 1000.
+         Stopping [0;1;39msystemd-user-sessions.service[0m - Permit User Sessions...
+         Stopping [0;1;39muser-runtime-dir@1000.ser…[0mRuntime Directory /run/user/1000...
+[[0;32m  OK  [0m] Stopped [0;1;39msystemd-user-sessions.service[0m - Permit User Sessions.
+[[0;32m  OK  [0m] Stopped target [0;1;39mnetwork.target[0m - Network.
+[[0;32m  OK  [0m] Stopped target [0;1;39mremote-fs.target[0m - Remote File Systems.
+         Stopping [0;1;39mNetworkManager.service[0m - Network Manager...
+         Stopping [0;1;39mnetworking.service[0m - Raise network interfaces...
+         Stopping [0;1;39mwpa_supplicant.service[0m - WPA supplicant...
+[[0;32m  OK  [0m] Unmounted [0;1;39mrun-user-1000.mount[0m - /run/user/1000.
+[[0;32m  OK  [0m] Stopped [0;1;39muser-runtime-dir@1000.serv…[0mr Runtime Directory /run/user/1000.
+[[0;32m  OK  [0m] Removed slice [0;1;39muser-1000.slice[0m - User Slice of UID 1000.
+         Stopping [0;1;39msystemd-logind.service[0m - User Login Management...
+[[0;32m  OK  [0m] Stopped [0;1;39mwpa_supplicant.service[0m - WPA supplicant.
+[[0;32m  OK  [0m] Stopped [0;1;39msystemd-logind.service[0m - User Login Management.
+[[0;32m  OK  [0m] Stopped target [0;1;39mnss-user-lookup.target[0m - User and Group Name Lookups.
+[[0;32m  OK  [0m] Stopped [0;1;39mNetworkManager.service[0m - Network Manager.
+         Stopping [0;1;39mdbus.service[0m - D-Bus System Message Bus...
+[[0;32m  OK  [0m] Stopped [0;1;39mdbus.service[0m - D-Bus System Message Bus.
+[[0;32m  OK  [0m] Stopped target [0;1;39mbasic.target[0m - Basic System.
+[[0;32m  OK  [0m] Stopped [0;1;39msystemd-ask-password-plymo…[0mquests to Plymouth Directory Watch.
+[[0;32m  OK  [0m] Stopped target [0;1;39mpaths.target[0m - Path Units.
+[[0;32m  OK  [0m] Stopped [0;1;39mcups.path[0m - CUPS Scheduler.
+[[0;32m  OK  [0m] Stopped [0;1;39msystemd-ask-password-wall.…[0md Requests to Wall Directory Watch.
+[[0;32m  OK  [0m] Stopped target [0;1;39mslices.target[0m - Slice Units.
+[[0;32m  OK  [0m] Removed slice [0;1;39msystem-xfs_scrub.sli…[0mxfs_scrub background service slice.
+[[0;32m  OK  [0m] Removed slice [0;1;39muser.slice[0m - User and Session Slice.
+[[0;32m  OK  [0m] Stopped target [0;1;39msockets.target[0m - Socket Units.
+[[0;32m  OK  [0m] Closed [0;1;39mavahi-daemon.socket[0m - Avahi…DNS/DNS-SD Stack Activation Socket.
+[[0;32m  OK  [0m] Closed [0;1;39mcups.socket[0m - CUPS Scheduler.
+[[0;32m  OK  [0m] Closed [0;1;39mdbus.socket[0m - D-Bus System Message Bus Socket.
+[[0;32m  OK  [0m] Closed [0;1;39msystemd-hostnamed.socket[0m - Hostname Service Socket.
+[[0;32m  OK  [0m] Closed [0;1;39muuidd.socket[0m - UUID daemon activation socket.
+[[0;32m  OK  [0m] Stopped target [0;1;39msysinit.target[0m - System Initialization.
+         Stopping [0;1;39msystemd-binfmt.service[0m - Set Up Additional Binary Formats...
+         Stopping [0;1;39msystemd-timesyncd.service[0m - Network Time Synchronization...
+[[0;32m  OK  [0m] Stopped [0;1;39msystemd-tmpfiles-setup.ser…[0mreate System Files and Directories.
+[[0;32m  OK  [0m] Stopped [0;1;39mnetworking.service[0m - Raise network interfaces.
+[[0;32m  OK  [0m] Stopped [0;1;39msystemd-sysctl.service[0m - Apply Kernel Variables.
+[[0;32m  OK  [0m] Closed [0;1;39msystemd-coredump.socket[0m - Process Core Dump Socket.
+[[0;32m  OK  [0m] Stopped [0;1;39msystemd-modules-load.service[0m - Load Kernel Modules.
+[[0;32m  OK  [0m] Stopped [0;1;39msystemd-timesyncd.service[0m - Network Time Synchronization.
+[[0;32m  OK  [0m] Stopped [0;1;39msystemd-binfmt.service[0m - Set Up Additional Binary Formats.
+[[0;32m  OK  [0m] Unset automount [0;1;39mproc-sys-fs-binfmt…[0mormats File System Automount Point.
+[[0;32m  OK  [0m] Stopped target [0;1;39mlocal-fs.target[0m - Local File Systems.
+         Unmounting [0;1;39mboot-efi.mount[0m - /boot/efi...
+         Unmounting [0;1;39mrun-lock.mount[0m - Legacy Locks Directory /run/lock...
+         Unmounting [0;1;39mtmp.mount[0m - Temporary Directory /tmp...
+[[0;32m  OK  [0m] Unmounted [0;1;39mrun-lock.mount[0m - Legacy Locks Directory /run/lock.
+[[0;32m  OK  [0m] Unmounted [0;1;39mtmp.mount[0m - Temporary Directory /tmp.
+[[0;32m  OK  [0m] Stopped target [0;1;39mswap.target[0m - Swaps.
+         Deactivating swap [0;1;39mdev-disk-by\x2dd…p[0m - /dev/disk/by-diskseq/1-part3...
+[[0;32m  OK  [0m] Unmounted [0;1;39mboot-efi.mount[0m - /boot/efi.
+[[0;32m  OK  [0m] Stopped [0;1;39msystemd-fsck@dev-disk-by\x…[0meck on /dev/disk/by-uuid/1F34-D4E2.
+[[0;32m  OK  [0m] Removed slice [0;1;39msystem-systemd\x2dfs…slice[0m - Slice /system/systemd-fsck.
+[[0;32m  OK  [0m] Stopped target [0;1;39mlocal-fs-pre.target[0m…Preparation for Local File Systems.
+[[0;32m  OK  [0m] Stopped [0;1;39msystemd-remount-fs.service[0m…mount Root and Kernel File Systems.
+[[0;32m  OK  [0m] Stopped [0;1;39msystemd-tmpfiles-setup-dev…[0mCreate Static Device Nodes in /dev.
+[[0;32m  OK  [0m] Stopped [0;1;39msystemd-tmpfiles-setup-dev…[0mic Device Nodes in /dev gracefully.
+[[0;32m  OK  [0m] Reached target [0;1;39mshutdown.target[0m - System Shutdown.
+[[0;32m  OK  [0m] Deactivated swap [0;1;39mdev-disk-by\x2dpa…[0me4014d-f2e5-4d8e-be2f-e2fb318c5041.
+[[0;32m  OK  [0m] Deactivated swap [0;1;39mdev-disk-by\x2dpa…[0mpath/virtio-pci-0000:00:02.0-part3.
+[[0;32m  OK  [0m] Deactivated swap [0;1;39mdev-disk-by\x2dpa…[0mc3e1dd-9a1e-4308-9cf4-318ede0116e5.
+[[0;32m  OK  [0m] Deactivated swap [0;1;39mdev-disk-by\x2dpa…[0misk/by-path/pci-0000:00:02.0-part3.
+[[0;32m  OK  [0m] Deactivated swap [0;1;39mdev-disk-by\x2dpa…[0mc3e1dd-9a1e-4308-9cf4-318ede0116e5.
+[[0;32m  OK  [0m] Deactivated swap [0;1;39mdev-disk-by\x2dpa…[0mpci-0000:00:02.0-part/by-partnum/3.
+[[0;32m  OK  [0m] Deactivated swap [0;1;39mdev-disk-by\x2ddi…wap[0m - /dev/disk/by-diskseq/1-part3.
+[[0;32m  OK  [0m] Deactivated swap [0;1;39mdev-vda3.swap[0m - /dev/vda3.
+[[0;32m  OK  [0m] Deactivated swap [0;1;39mdev-disk-by\x2duu…[0me4014d-f2e5-4d8e-be2f-e2fb318c5041.
+[[0;32m  OK  [0m] Reached target [0;1;39mumount.target[0m - Unmount All Filesystems.
+[[0;32m  OK  [0m] Reached target [0;1;39mfinal.target[0m - Late Shutdown Services.
+[[0;32m  OK  [0m] Finished [0;1;39msystemd-poweroff.service[0m - System Power Off.
+[[0;32m  OK  [0m] Reached target [0;1;39mpoweroff.target[0m - System Power Off.
+[   17.456392] reboot: Power down

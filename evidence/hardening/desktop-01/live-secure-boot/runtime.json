@@ -1,0 +1,163 @@
+{
+  "kernel_release": "6.12.107+deb13-amd64",
+  "kernel_config_sha256": "9b460f1003db4d417288e9c14caecfa14245dab07186df948fef0f3661e38ceb",
+  "checks": [
+    {
+      "name": "kernel.randomize_va_space",
+      "value": 2,
+      "result": "pass"
+    },
+    {
+      "name": "kernel.kptr_restrict",
+      "value": 1,
+      "result": "pass"
+    },
+    {
+      "name": "kernel.dmesg_restrict",
+      "value": 1,
+      "result": "pass"
+    },
+    {
+      "name": "kernel.unprivileged_bpf_disabled",
+      "value": 2,
+      "result": "pass"
+    },
+    {
+      "name": "vm.unprivileged_userfaultfd",
+      "value": 0,
+      "result": "pass"
+    },
+    {
+      "name": "vm.mmap_min_addr",
+      "value": 65536,
+      "result": "pass"
+    },
+    {
+      "name": "fs.protected_hardlinks",
+      "value": 1,
+      "result": "pass"
+    },
+    {
+      "name": "fs.protected_symlinks",
+      "value": 1,
+      "result": "pass"
+    },
+    {
+      "name": "fs.protected_fifos",
+      "value": 1,
+      "result": "pass"
+    },
+    {
+      "name": "fs.protected_regular",
+      "value": 2,
+      "result": "pass"
+    },
+    {
+      "name": "CONFIG_RANDOMIZE_BASE",
+      "value": "y",
+      "result": "pass"
+    },
+    {
+      "name": "CONFIG_STRICT_KERNEL_RWX",
+      "value": "y",
+      "result": "pass"
+    },
+    {
+      "name": "CONFIG_STRICT_MODULE_RWX",
+      "value": "y",
+      "result": "pass"
+    },
+    {
+      "name": "CONFIG_STACKPROTECTOR_STRONG",
+      "value": "y",
+      "result": "pass"
+    },
+    {
+      "name": "CONFIG_HARDENED_USERCOPY",
+      "value": "y",
+      "result": "pass"
+    },
+    {
+      "name": "CONFIG_FORTIFY_SOURCE",
+      "value": "y",
+      "result": "pass"
+    },
+    {
+      "name": "CONFIG_SLAB_FREELIST_RANDOM",
+      "value": "y",
+      "result": "pass"
+    },
+    {
+      "name": "CONFIG_SLAB_FREELIST_HARDENED",
+      "value": "y",
+      "result": "pass"
+    },
+    {
+      "name": "CONFIG_VMAP_STACK",
+      "value": "y",
+      "result": "pass"
+    },
+    {
+      "name": "CONFIG_THREAD_INFO_IN_TASK",
+      "value": "y",
+      "result": "pass"
+    },
+    {
+      "name": "CONFIG_MITIGATION_PAGE_TABLE_ISOLATION",
+      "value": "y",
+      "result": "pass"
+    },
+    {
+      "name": "CONFIG_SECURITY_APPARMOR",
+      "value": "y",
+      "result": "pass"
+    },
+    {
+      "name": "CONFIG_SECCOMP",
+      "value": "y",
+      "result": "pass"
+    },
+    {
+      "name": "CONFIG_SECCOMP_FILTER",
+      "value": "y",
+      "result": "pass"
+    },
+    {
+      "name": "CONFIG_SECURITY_YAMA",
+      "value": "y",
+      "result": "pass"
+    },
+    {
+      "name": "CONFIG_SECURITY_LANDLOCK",
+      "value": "y",
+      "result": "pass"
+    },
+    {
+      "name": "apparmor_enabled",
+      "value": "Y",
+      "result": "pass"
+    },
+    {
+      "name": "apparmor_enforcing_profiles",
+      "value": 1,
+      "result": "pass"
+    },
+    {
+      "name": "apparmor_profile:nia-hostctl",
+      "value": [
+        "nia-hostctl (enforce)"
+      ],
+      "result": "pass"
+    },
+    {
+      "name": "boot_mitigations_not_disabled",
+      "value": "BOOT_IMAGE=/live/vmlinuz-6.12.107+deb13-amd64 boot=live components username=niaos hostname=niaos locales=ja_JP.UTF-8 keyboard-layouts=jp console=tty0 console=ttyS0,115200n8 findiso=",
+      "result": "pass"
+    }
+  ],
+  "result": "pass",
+  "scope": "listed mitigations only; not whole-system security certification",
+  "schema": "org.niaos.hardening-observation/v1",
+  "policy_sha256": "daa9e445c6f8d787e306d95179afbf9006eb0f880b6015508b07e22e10ea8c5f",
+  "tool_sha256": "2310394ed1357199e212610fc64d4857dd6fb603c66ef5164a06d2a0de59acdd"
+}
