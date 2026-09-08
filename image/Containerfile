@@ -1,0 +1,18 @@
+# SPDX-License-Identifier: MIT
+# Builder only: the installed system uses supported, current trixie repositories.
+FROM docker.io/library/debian:13.6-slim@sha256:abc9cb88a5587630d7f915f47b23b0668fe250fbfc6457aa4d52b534c1bbf73f
+ENV DEBIAN_FRONTEND=noninteractive LANG=C.UTF-8 LC_ALL=C.UTF-8
+COPY distribution/image/builder-packages.txt /usr/share/nia-builder-input-packages.txt
+RUN rm /etc/apt/sources.list.d/debian.sources && \
+    printf '%s\n' \
+      'deb [check-valid-until=no] http://snapshot.debian.org/archive/debian/20260907T000000Z trixie main' \
+      'deb [check-valid-until=no] http://snapshot.debian.org/archive/debian/20260907T000000Z trixie-updates main' \
+      'deb [check-valid-until=no] http://snapshot.debian.org/archive/debian-security/20260907T000000Z trixie-security main' \
+      > /etc/apt/sources.list
+RUN apt-get update && xargs -r apt-get install -y --no-install-recommends \
+      < /usr/share/nia-builder-input-packages.txt && \
+    dpkg-query -W > /usr/share/nia-builder-packages.txt && \
+    rm -rf /var/lib/apt/lists/*
+ENV SOURCE_DATE_EPOCH=1788739200 TZ=UTC DEB_BUILD_OPTIONS=parallel=1
+WORKDIR /build
+CMD ["lb", "build"]

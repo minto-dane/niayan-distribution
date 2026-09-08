@@ -1,0 +1,2 @@
+data/50-niaos.cfg etc/default/grub.d
+data/52niaos-security etc/apt/apt.conf.d

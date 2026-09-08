@@ -1,0 +1,553 @@
+{
+  "result": "recorded",
+  "artifacts": [
+    {
+      "path": "live/niaos-0.1.0-amd64.hybrid.iso",
+      "size": 3637100544,
+      "sha256": "d4c18dc0e2be653bf11a04db40db95ca0353322010133e068dda274bd4aa314b"
+    },
+    {
+      "path": "packages/niaos-assurance-dbgsym_0.1.0+git70baa595e385_amd64.deb",
+      "size": 329928,
+      "sha256": "3a9acd9e340d62dc1ae5d8a0afc1872f397c09a45b1a79edf5f4bd29279809a2"
+    },
+    {
+      "path": "packages/niaos-assurance_0.1.0+git70baa595e385.dsc",
+      "size": 747,
+      "sha256": "2ee1b7237ba67c2ada35cefa8cf54ba293ddf3b09bed194fa6b0708d422bc74d"
+    },
+    {
+      "path": "packages/niaos-assurance_0.1.0+git70baa595e385.tar.xz",
+      "size": 344376,
+      "sha256": "ce988a5bb43bab82ca490714c24559598e069e0ede9c03e20ba2e0d53f59c82d"
+    },
+    {
+      "path": "packages/niaos-assurance_0.1.0+git70baa595e385_amd64.buildinfo",
+      "size": 8668,
+      "sha256": "0a605a11dd9c05ff547bfafce7af1b6099300b3b08b5d32a23fb2ef689a58d1a"
+    },
+    {
+      "path": "packages/niaos-assurance_0.1.0+git70baa595e385_amd64.changes",
+      "size": 2205,
+      "sha256": "58b32086ef578581e958b1a2653f966c1d2f7c436a38c92d2246010fc6ebbe61"
+    },
+    {
+      "path": "packages/niaos-assurance_0.1.0+git70baa595e385_amd64.deb",
+      "size": 163500,
+      "sha256": "af7c3031f932d5bbfecda2ceafdd8de1ed72d2f8370a52b4ec02d770e51adcb3"
+    },
+    {
+      "path": "packages/niaos-base_0.1.0_all.deb",
+      "size": 1956,
+      "sha256": "699268ceb80239fa95a97f8ac55320edcc5cc6055272d592871341e6bb4a5051"
+    },
+    {
+      "path": "packages/niaos-capsulecore-dbgsym_0.1.0+git0c356eecb425_amd64.deb",
+      "size": 114140,
+      "sha256": "65e5307891936f10a8e2e23dd61523e8cc2f6f01b11bb2f0867cd8917e080f06"
+    },
+    {
+      "path": "packages/niaos-capsulecore_0.1.0+git0c356eecb425.dsc",
+      "size": 759,
+      "sha256": "ebc40e61ed4d06c8db3631c65211647904987d1372dd359fdb9c83d178de1dfb"
+    },
+    {
+      "path": "packages/niaos-capsulecore_0.1.0+git0c356eecb425.tar.xz",
+      "size": 141804,
+      "sha256": "6aebe5413225febb6fb66fe5a0012f8bd802394318f6a48bae37290e8e2e51c8"
+    },
+    {
+      "path": "packages/niaos-capsulecore_0.1.0+git0c356eecb425_amd64.buildinfo",
+      "size": 8691,
+      "sha256": "64da8f78344780ae7d64fa68c688917582b3413cb718f2427d609b9545052a1a"
+    },
+    {
+      "path": "packages/niaos-capsulecore_0.1.0+git0c356eecb425_amd64.changes",
+      "size": 2244,
+      "sha256": "0df07390db26beefd93f395e9acb19f9d98b6560786a0da6c9bda0eb9bb8ce54"
+    },
+    {
+      "path": "packages/niaos-capsulecore_0.1.0+git0c356eecb425_amd64.deb",
+      "size": 66948,
+      "sha256": "7c97862c75ba7d54e188cd6001f3e070ad0681e897a5c3b71f5e35c53732d268"
+    },
+    {
+      "path": "packages/niaos-configcore-dbgsym_0.1.0+git6d46ea26c38c_amd64.deb",
+      "size": 160840,
+      "sha256": "5ca16e1ea3309d66863d90d502d29b5f9e9a4645ca15082864c6f9cc68fe49b9"
+    },
+    {
+      "path": "packages/niaos-configcore_0.1.0+git6d46ea26c38c.dsc",
+      "size": 753,
+      "sha256": "5b37136d7b6033c3b3e8e972b024dd7ddd5a396a875c431854dd15dacbbe3dec"
+    },
+    {
+      "path": "packages/niaos-configcore_0.1.0+git6d46ea26c38c.tar.xz",
+      "size": 122536,
+      "sha256": "3c2bdd9b5b74b28c975b596b758f578666e619e1cd764a7a2e9e2ffe30d9adcb"
+    },
+    {
+      "path": "packages/niaos-configcore_0.1.0+git6d46ea26c38c_amd64.buildinfo",
+      "size": 8678,
+      "sha256": "2541c0dacd3cc1019de61e031ff34c270a78b27152bc8228db58d9c0b87ca847"
+    },
+    {
+      "path": "packages/niaos-configcore_0.1.0+git6d46ea26c38c_amd64.changes",
+      "size": 2223,
+      "sha256": "48d1538ecc2a652fc176296811076c8931b5cf57d0744ac8c848eb453184b23d"
+    },
+    {
+      "path": "packages/niaos-configcore_0.1.0+git6d46ea26c38c_amd64.deb",
+      "size": 94728,
+      "sha256": "663f792345cf77fe7a86c9b390126d37071682dafbad85bb345f425c3c41fece"
+    },
+    {
+      "path": "packages/niaos-controlcore-dbgsym_0.1.0+gite2a3f9ff89b5_amd64.deb",
+      "size": 648824,
+      "sha256": "05f6fda4716fb9a3c3be62be27db8ab7b97c40c4e2073d1ff319e184c9f547ca"
+    },
+    {
+      "path": "packages/niaos-controlcore_0.1.0+gite2a3f9ff89b5.dsc",
+      "size": 759,
+      "sha256": "1a50e45da4ab23c292372377e38ad50e72cf6fd6c4c1a82143112ccc4211fed4"
+    },
+    {
+      "path": "packages/niaos-controlcore_0.1.0+gite2a3f9ff89b5.tar.xz",
+      "size": 138356,
+      "sha256": "243297b0a8f3d23ba7719d49077b414959fda22cd41a1aef31a78466925d1a3a"
+    },
+    {
+      "path": "packages/niaos-controlcore_0.1.0+gite2a3f9ff89b5_amd64.buildinfo",
+      "size": 8694,
+      "sha256": "5b8157d7bad293150cb7f601d1b4777789614e65796de6e9764d5a515e072363"
+    },
+    {
+      "path": "packages/niaos-controlcore_0.1.0+gite2a3f9ff89b5_amd64.changes",
+      "size": 2247,
+      "sha256": "74530ff4783a50efe82ca3839c64e43bd72724d50b02c68942f309c0760aaccc"
+    },
+    {
+      "path": "packages/niaos-controlcore_0.1.0+gite2a3f9ff89b5_amd64.deb",
+      "size": 199588,
+      "sha256": "c640cb0535b26a9db7ff268dcd3d5f84d969a723f821b0dd9288474d878010ef"
+    },
+    {
+      "path": "packages/niaos-defaults_0.1.0_all.deb",
+      "size": 2372,
+      "sha256": "f7be309a802f39db81a9aa129733e426de1354110eb83ac74a1c4a510a32c16a"
+    },
+    {
+      "path": "packages/niaos-desktop-gnome_0.1.0_all.deb",
+      "size": 1900,
+      "sha256": "9fad53bb959e9f2675983f989161e3f71c6d030e829b73c1a5412a126a137b09"
+    },
+    {
+      "path": "packages/niaos-desktop-kde_0.1.0_all.deb",
+      "size": 2360,
+      "sha256": "1fb6feedbdcd5f77b089fcdb1bb8625bf5a6d91a72a39a1aa72aba5e618277dd"
+    },
+    {
+      "path": "packages/niaos-integration_0.1.0.dsc",
+      "size": 853,
+      "sha256": "52ec28dc00b88a2d750f796486517fd9d2447636b7970754bee43910c90aad4c"
+    },
+    {
+      "path": "packages/niaos-integration_0.1.0.tar.xz",
+      "size": 2792,
+      "sha256": "5c37b66ddb88ab5fea1926a8bc0977f67ded4b13af7e6303fad6dc8e386e4e64"
+    },
+    {
+      "path": "packages/niaos-integration_0.1.0_amd64.buildinfo",
+      "size": 6002,
+      "sha256": "28b2974a183d15a0df6862fe86d01233e7ab8414190051e34d14c3c94a5e8295"
+    },
+    {
+      "path": "packages/niaos-integration_0.1.0_amd64.changes",
+      "size": 2995,
+      "sha256": "e7fba9c3aa3908ff81a231a343901b3338871c669f2624e6ec9f9b493c93d06c"
+    },
+    {
+      "path": "packages/niaos-pkgcore-dbgsym_0.1.0+gite74913f9f941_amd64.deb",
+      "size": 614660,
+      "sha256": "8094691b045b2e0451122347098b51b88f46d13bcdb3774110f115cd3c4c56c2"
+    },
+    {
+      "path": "packages/niaos-pkgcore_0.1.0+gite74913f9f941.dsc",
+      "size": 735,
+      "sha256": "5a77a8e4e604500d7e6c88273589cefdedc35b6665233cd09468ec1e3b99e985"
+    },
+    {
+      "path": "packages/niaos-pkgcore_0.1.0+gite74913f9f941.tar.xz",
+      "size": 182056,
+      "sha256": "5db8c263d634d0c4f95889e87a29b090a265766913cdc0f976fdc83f683fcfcd"
+    },
+    {
+      "path": "packages/niaos-pkgcore_0.1.0+gite74913f9f941_amd64.buildinfo",
+      "size": 8642,
+      "sha256": "b49e19982d5e5febe54b845c8c8b8f1d6653127d70ac0a2bf5ca1cff0c3c60e9"
+    },
+    {
+      "path": "packages/niaos-pkgcore_0.1.0+gite74913f9f941_amd64.changes",
+      "size": 2163,
+      "sha256": "34b62a83ea358635a1f009ab2d701c7130efd0e92a86b9c73378f272e717d392"
+    },
+    {
+      "path": "packages/niaos-pkgcore_0.1.0+gite74913f9f941_amd64.deb",
+      "size": 231492,
+      "sha256": "69e2f82fed042d5d603e9eee88cdb5bff1c7f454e0236bb636b08df069139cd0"
+    },
+    {
+      "path": "packages/niaos-release_0.1.0_all.deb",
+      "size": 2228,
+      "sha256": "dd92109ca4d724c4b2bc711bdb333b2772266fff395bf3bca88c524368d5ce8e"
+    },
+    {
+      "path": "packages/niaos-resolvercore-dbgsym_0.1.0+gita58f281ff997_amd64.deb",
+      "size": 155996,
+      "sha256": "23c11adeda98340871095896024cfdfcbc6acf5cd98e0f9d5d3f5af8978988c2"
+    },
+    {
+      "path": "packages/niaos-resolvercore_0.1.0+gita58f281ff997.dsc",
+      "size": 765,
+      "sha256": "a2cbf620783aedc113cdd246d1c3a02b16a10f15c583ba5b5f44caf539dab837"
+    },
+    {
+      "path": "packages/niaos-resolvercore_0.1.0+gita58f281ff997.tar.xz",
+      "size": 133628,
+      "sha256": "2d0ade4038708a30b6fe19ece7d6d39194b853678f2b58f0c312b39df4fdc0b3"
+    },
+    {
+      "path": "packages/niaos-resolvercore_0.1.0+gita58f281ff997_amd64.buildinfo",
+      "size": 8704,
+      "sha256": "aebb3f2e2ff40dc7a322cd18dee469aeddeef61305b8501c7bcd9620380feaa1"
+    },
+    {
+      "path": "packages/niaos-resolvercore_0.1.0+gita58f281ff997_amd64.changes",
+      "size": 2265,
+      "sha256": "c7d2861f6c2560275304ee9a863e5292141ff4e0452203eb67f638a1d38598dc"
+    },
+    {
+      "path": "packages/niaos-resolvercore_0.1.0+gita58f281ff997_amd64.deb",
+      "size": 88564,
+      "sha256": "693f76f12902f2d23305073d3350b11a1379d76a1f27cdef696a8e8170ee8009"
+    },
+    {
+      "path": "packages/niaos-statecore-dbgsym_0.1.0+gitc0c9ca947c2e_amd64.deb",
+      "size": 679268,
+      "sha256": "37ceb62e75e5acdbbacdc82e090ff96c76b91e281d66b51cb7feeba5a8b4d4e2"
+    },
+    {
+      "path": "packages/niaos-statecore_0.1.0+gitc0c9ca947c2e.dsc",
+      "size": 747,
+      "sha256": "e0057c7f94918fe278804855c368de8632270bc746d17a3e82c75387ce80b023"
+    },
+    {
+      "path": "packages/niaos-statecore_0.1.0+gitc0c9ca947c2e.tar.xz",
+      "size": 200408,
+      "sha256": "45d78d06ac00b299f26165df531be1d2766100c65524649fe203648b8d0f481f"
+    },
+    {
+      "path": "packages/niaos-statecore_0.1.0+gitc0c9ca947c2e_amd64.buildinfo",
+      "size": 8668,
+      "sha256": "7d7371620add3b66de77bbaf89c26dc22426f8be427f69dec2517c44d119c222"
+    },
+    {
+      "path": "packages/niaos-statecore_0.1.0+gitc0c9ca947c2e_amd64.changes",
+      "size": 2205,
+      "sha256": "add54fd9af567aa975e6e1bd48cb9df61cb26aff6c84bfced5bfc71f02c0c467"
+    },
+    {
+      "path": "packages/niaos-statecore_0.1.0+gitc0c9ca947c2e_amd64.deb",
+      "size": 230640,
+      "sha256": "dca754623a808d731649a67ac2c8e9d61eb26474c55b86f65aaf69dc162b140c"
+    }
+  ],
+  "staged_configuration": [
+    {
+      "path": "auto/config",
+      "size": 2234,
+      "sha256": "db6c41394a1011465ca7bf2be7002f38eaba916eca066dbb57256d5c1b315ba8"
+    },
+    {
+      "path": "builder-packages.tsv",
+      "size": 13949,
+      "sha256": "3decfe6d6bea27092c3891efae574a2ac264ce185210eba25c72611e15eb98b6"
+    },
+    {
+      "path": "chroot.packages.install",
+      "size": 69931,
+      "sha256": "f6b080bdfcce214992be5c74d07ce0832c655e82c2b3efeb529cec01c86e0dc6"
+    },
+    {
+      "path": "chroot.packages.live",
+      "size": 69931,
+      "sha256": "f6b080bdfcce214992be5c74d07ce0832c655e82c2b3efeb529cec01c86e0dc6"
+    },
+    {
+      "path": "config/apt/apt.conf",
+      "size": 122,
+      "sha256": "0d9a88f899448a082a3eb3546cae6e232800350c0f0103eb487d76228b694d01"
+    },
+    {
+      "path": "config/binary",
+      "size": 2615,
+      "sha256": "5b71819f8883d3bb9cc8632d3df233ce15f79d14d57de7ad42de95834c0ab792"
+    },
+    {
+      "path": "config/bootstrap",
+      "size": 2582,
+      "sha256": "15beaedcd659135afbda320daca6905ef673861089773993ad0b52e4c843f765"
+    },
+    {
+      "path": "config/chroot",
+      "size": 785,
+      "sha256": "dd5c7681db68e35346919f346bcbc38707694aeda5775a0b2763a7b5ec20225a"
+    },
+    {
+      "path": "config/common",
+      "size": 2178,
+      "sha256": "a9c05e7eea8f1fe52be81bfe1f39939592d835dc90ce34c40d7c8f1cd64a1b08"
+    },
+    {
+      "path": "config/hooks/live/0010-disable-kexec-tools.hook.chroot",
+      "size": 237,
+      "sha256": "fee8b3be4d7beb02e672baafb2d45dcb5019fcbf8f2d4418a789f21f012d88d0"
+    },
+    {
+      "path": "config/hooks/live/0050-disable-sysvinit-tmpfs.hook.chroot",
+      "size": 135,
+      "sha256": "e464e8ef2a17486f0d030d2e4b49fd7808ddd837b715829b3708dc23b542c910"
+    },
+    {
+      "path": "config/hooks/live/0100-niaos-release.hook.chroot",
+      "size": 485,
+      "sha256": "4d3764cbf35b8fb8c5691681b6a51d0eaa8047bdeae6200806bb0853734be4c7"
+    },
+    {
+      "path": "config/hooks/normal/1000-create-mtab-symlink.hook.chroot",
+      "size": 163,
+      "sha256": "c61b7443477c033b7a1674d4cb5f107ae3aba9cf96522fe19c712e2813c574dd"
+    },
+    {
+      "path": "config/hooks/normal/1010-enable-cryptsetup.hook.chroot",
+      "size": 613,
+      "sha256": "97c6adbc9340fc61ca9f7d73ad7f0421a2040a9d97465234300616e125df97c2"
+    },
+    {
+      "path": "config/hooks/normal/1020-create-locales-files.hook.chroot",
+      "size": 133,
+      "sha256": "c1d39733b743f4862fb60b6d46e2686f5696420508fd6dd8f38ea7a4240c6b9d"
+    },
+    {
+      "path": "config/hooks/normal/5000-update-apt-file-cache.hook.chroot",
+      "size": 227,
+      "sha256": "a5fd0c201660ace5e42b0349924e08d4acc3eb5641b718bdb1a2255a63137070"
+    },
+    {
+      "path": "config/hooks/normal/5010-update-apt-xapian-index.hook.chroot",
+      "size": 383,
+      "sha256": "c22027c25636e893b7237d1f18169e207488f7de22649269a8b8873424899639"
+    },
+    {
+      "path": "config/hooks/normal/5020-update-glx-alternative.hook.chroot",
+      "size": 152,
+      "sha256": "8d30b7abab450403d2b563e84280229b181144b587b07d84bcd5a4330990bcd8"
+    },
+    {
+      "path": "config/hooks/normal/5030-update-plocate-database.hook.chroot",
+      "size": 449,
+      "sha256": "6d49216d8567cfdb5efbdae5d7a51a4956c82f34b9dadbd9e35ffe93d103c3d1"
+    },
+    {
+      "path": "config/hooks/normal/5040-update-nvidia-alternative.hook.chroot",
+      "size": 201,
+      "sha256": "5a8a51a4f0422327911320ce5d2ba2cb19308cde411e2d6b36d2badaf5ec3782"
+    },
+    {
+      "path": "config/hooks/normal/5050-dracut.hook.chroot",
+      "size": 1912,
+      "sha256": "d93bbc1d07e4adc0117d3257cba4bcf5c0ea75e651e3a5d192859e8c39b5b61f"
+    },
+    {
+      "path": "config/hooks/normal/8000-remove-adjtime-configuration.hook.chroot",
+      "size": 89,
+      "sha256": "28459f07aeee024c3b27319d825107dde4a924fa421ad94b21cdbbd6ddcf0236"
+    },
+    {
+      "path": "config/hooks/normal/8010-remove-backup-files.hook.chroot",
+      "size": 306,
+      "sha256": "ff9b0b3acc6da035d244f6b3f4207defa10efec86faa6cb177921e02c11bde15"
+    },
+    {
+      "path": "config/hooks/normal/8020-remove-dbus-machine-id.hook.chroot",
+      "size": 152,
+      "sha256": "3628dde00fb7aea9be4ed36afccf03928ca89a873b8822bbfebcbf5c0f0cd5ed"
+    },
+    {
+      "path": "config/hooks/normal/8030-truncate-log-files.hook.chroot",
+      "size": 127,
+      "sha256": "034e22076e493384ba588c79eef577222775218b601d33c356424c5ce444b63d"
+    },
+    {
+      "path": "config/hooks/normal/8040-remove-mdadm-configuration.hook.chroot",
+      "size": 73,
+      "sha256": "e8ed438565ecd1bbb5ce057ad60ab8cbefe4be5058e93fc74126a07ae1da601d"
+    },
+    {
+      "path": "config/hooks/normal/8050-remove-openssh-server-host-keys.hook.chroot",
+      "size": 204,
+      "sha256": "dafcf58b1e78e545dcc0dd257fb024d8468650fe70b693ec3e63d6d23f56499e"
+    },
+    {
+      "path": "config/hooks/normal/8060-remove-systemd-machine-id.hook.chroot",
+      "size": 266,
+      "sha256": "ca5f55bb939986ba0130a3516e3d0e4dc882cf0a8e1faa99a522d89d21bc208d"
+    },
+    {
+      "path": "config/hooks/normal/8070-remove-temporary-files.hook.chroot",
+      "size": 464,
+      "sha256": "bc1f1a27053f428fd61417069ba7368090a80121d412acc9e21b2587b7d37571"
+    },
+    {
+      "path": "config/hooks/normal/8080-reproducible-glibc.hook.chroot",
+      "size": 261,
+      "sha256": "1c8724bfad32cde5426a7af487aecff4cf6778b54837df4424fa0a237aa4b888"
+    },
+    {
+      "path": "config/hooks/normal/8090-remove-ssl-cert-snakeoil.hook.chroot",
+      "size": 285,
+      "sha256": "1c5a6f27be4386aa144a80f9fbd8efc92219de7c0822ce5faed713f6a563ccc8"
+    },
+    {
+      "path": "config/hooks/normal/8100-remove-udev-persistent-cd-rules.hook.chroot",
+      "size": 284,
+      "sha256": "ca525ec0887ba3f89f17efd8c1a64457dc077e8127938f0a1cac85b305b00e48"
+    },
+    {
+      "path": "config/hooks/normal/8110-remove-udev-persistent-net-rules.hook.chroot",
+      "size": 270,
+      "sha256": "b135ecd88708d705c9e48a211b53a805795d406820888c93236d1ac66436ed0b"
+    },
+    {
+      "path": "config/hooks/normal/9000-remove-gnome-icon-cache.hook.chroot",
+      "size": 116,
+      "sha256": "c6770f96ff70861dfb1fd716205108c24029a876b8124819755866d22bdfb8d8"
+    },
+    {
+      "path": "config/hooks/normal/9010-remove-python-pyc.hook.chroot",
+      "size": 165,
+      "sha256": "dbad666c84484afe5d1c2e55aca0be0db281f6a1b957665488a0580997effb7a"
+    },
+    {
+      "path": "config/hooks/normal/9020-remove-man-cache.hook.chroot",
+      "size": 62,
+      "sha256": "19b09d42c75108c5cf14f6a5b524da89d96f34c970104314cb7eef755d9ae043"
+    },
+    {
+      "path": "config/package-lists/live.list.chroot",
+      "size": 55,
+      "sha256": "9abc0066d87cea492441a99e09850a075322734e5dba7ac92bdf44fe330dcbe2"
+    },
+    {
+      "path": "config/package-lists/live.list.chroot_live",
+      "size": 42,
+      "sha256": "2fb4a20a47c4677b21954102140f1c5b7c8ac6b836b30f1e2a839b87d317da34"
+    },
+    {
+      "path": "config/package-lists/niaos.list.chroot",
+      "size": 136,
+      "sha256": "ac3dd6a9349105e2425d4a6b132c1a74fd2f2f42239e9f677006cf1f2097e15c"
+    },
+    {
+      "path": "config/packages.binary/apt-mirror-setup_1%3a0.198_all.udeb",
+      "size": 60948,
+      "sha256": "63ea527417929e40f6b8f220405ae7e4a89540299d638c0bffcd6de2a949c8e1"
+    },
+    {
+      "path": "config/packages.chroot/niaos-assurance_0.1.0+git70baa595e385_amd64.deb",
+      "size": 163500,
+      "sha256": "af7c3031f932d5bbfecda2ceafdd8de1ed72d2f8370a52b4ec02d770e51adcb3"
+    },
+    {
+      "path": "config/packages.chroot/niaos-base_0.1.0_all.deb",
+      "size": 1956,
+      "sha256": "699268ceb80239fa95a97f8ac55320edcc5cc6055272d592871341e6bb4a5051"
+    },
+    {
+      "path": "config/packages.chroot/niaos-capsulecore_0.1.0+git0c356eecb425_amd64.deb",
+      "size": 66948,
+      "sha256": "7c97862c75ba7d54e188cd6001f3e070ad0681e897a5c3b71f5e35c53732d268"
+    },
+    {
+      "path": "config/packages.chroot/niaos-configcore_0.1.0+git6d46ea26c38c_amd64.deb",
+      "size": 94728,
+      "sha256": "663f792345cf77fe7a86c9b390126d37071682dafbad85bb345f425c3c41fece"
+    },
+    {
+      "path": "config/packages.chroot/niaos-controlcore_0.1.0+gite2a3f9ff89b5_amd64.deb",
+      "size": 199588,
+      "sha256": "c640cb0535b26a9db7ff268dcd3d5f84d969a723f821b0dd9288474d878010ef"
+    },
+    {
+      "path": "config/packages.chroot/niaos-defaults_0.1.0_all.deb",
+      "size": 2372,
+      "sha256": "f7be309a802f39db81a9aa129733e426de1354110eb83ac74a1c4a510a32c16a"
+    },
+    {
+      "path": "config/packages.chroot/niaos-desktop-kde_0.1.0_all.deb",
+      "size": 2360,
+      "sha256": "1fb6feedbdcd5f77b089fcdb1bb8625bf5a6d91a72a39a1aa72aba5e618277dd"
+    },
+    {
+      "path": "config/packages.chroot/niaos-pkgcore_0.1.0+gite74913f9f941_amd64.deb",
+      "size": 231492,
+      "sha256": "69e2f82fed042d5d603e9eee88cdb5bff1c7f454e0236bb636b08df069139cd0"
+    },
+    {
+      "path": "config/packages.chroot/niaos-release_0.1.0_all.deb",
+      "size": 2228,
+      "sha256": "dd92109ca4d724c4b2bc711bdb333b2772266fff395bf3bca88c524368d5ce8e"
+    },
+    {
+      "path": "config/packages.chroot/niaos-resolvercore_0.1.0+gita58f281ff997_amd64.deb",
+      "size": 88564,
+      "sha256": "693f76f12902f2d23305073d3350b11a1379d76a1f27cdef696a8e8170ee8009"
+    },
+    {
+      "path": "config/packages.chroot/niaos-statecore_0.1.0+gitc0c9ca947c2e_amd64.deb",
+      "size": 230640,
+      "sha256": "dca754623a808d731649a67ac2c8e9d61eb26474c55b86f65aaf69dc162b140c"
+    },
+    {
+      "path": "config/rootfs/excludes",
+      "size": 90,
+      "sha256": "a32b00dabee9d78adf3d396e79e24efe6ce7c269e14d522a37efdb11700def63"
+    },
+    {
+      "path": "config/source",
+      "size": 138,
+      "sha256": "b26d96ae9450d13e2df09e7729ee36c9d3f431b7c7c64d2066e6a13b8f2f0ff4"
+    },
+    {
+      "path": "input-manifest.json",
+      "size": 4965,
+      "sha256": "a6c4f7b9be5c579a9f0952df15276881cb48284f36bb13bdc793ad4ef180cf3b"
+    },
+    {
+      "path": "nia-image.env",
+      "size": 241,
+      "sha256": "4f7072b53c6d7d2f384e16818da3599266030fe0321725e0f2b2eb0ee207b9d9"
+    },
+    {
+      "path": "niaos-0.1.0-amd64.packages",
+      "size": 69931,
+      "sha256": "f6b080bdfcce214992be5c74d07ce0832c655e82c2b3efeb529cec01c86e0dc6"
+    }
+  ],
+  "claims": {
+    "boot_tested": false,
+    "installed_tested": false,
+    "iso_bit_reproducible": false,
+    "production_qualified": false
+  }
+}

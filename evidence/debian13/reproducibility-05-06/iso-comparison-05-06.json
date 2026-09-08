@@ -1,0 +1,23 @@
+{
+  "schema": "org.niaos.iso-reproducibility/v1",
+  "inputs_identical": true,
+  "builds": [
+    {
+      "path": "live/niaos-0.1.0-amd64.hybrid.iso",
+      "size": 3640655872,
+      "sha256": "5b6c3038723966dc9ac60cd7b3e3b36388b405f2f865e446ab0546c378b2901c"
+    },
+    {
+      "path": "live/niaos-0.1.0-amd64.hybrid.iso",
+      "size": 3640655872,
+      "sha256": "162776d55d33c778c3ca47834efe04b9bc6df2f71b595b361029f3d995b51ce6"
+    }
+  ],
+  "byte_comparison_exit": 1,
+  "fresh_bootstrap": true,
+  "fresh_installer_download": true,
+  "reused_authenticated_deb_cache": true,
+  "native_packages": "same independently reproduced packages",
+  "production_qualified": false,
+  "result": "fail"
+}

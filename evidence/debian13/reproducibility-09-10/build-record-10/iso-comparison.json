@@ -1,0 +1,25 @@
+{
+  "result": "pass",
+  "input_manifests_identical": true,
+  "first_input_manifest_sha256": "a6c4f7b9be5c579a9f0952df15276881cb48284f36bb13bdc793ad4ef180cf3b",
+  "second_input_manifest_sha256": "a6c4f7b9be5c579a9f0952df15276881cb48284f36bb13bdc793ad4ef180cf3b",
+  "images": [
+    {
+      "path": "live/niaos-0.1.0-amd64.hybrid.iso",
+      "first": {
+        "path": "live/niaos-0.1.0-amd64.hybrid.iso",
+        "size": 3637100544,
+        "sha256": "d4c18dc0e2be653bf11a04db40db95ca0353322010133e068dda274bd4aa314b"
+      },
+      "second": {
+        "path": "live/niaos-0.1.0-amd64.hybrid.iso",
+        "size": 3637100544,
+        "sha256": "d4c18dc0e2be653bf11a04db40db95ca0353322010133e068dda274bd4aa314b"
+      },
+      "byte_comparison_exit": 0,
+      "identical": true
+    }
+  ],
+  "comparison_tool_sha256": "c87a343ccb6f638f77e8e8d4eb4bdbd35e2ea0583f92bc51623ef2858ecd36b6",
+  "scope": "these two recorded builds; does not certify other machines or future inputs"
+}

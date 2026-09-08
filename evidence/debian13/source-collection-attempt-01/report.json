@@ -1,0 +1,44 @@
+{
+  "result": "incomplete",
+  "scope": "cached binary/installer packages including Built-Using and Static-Built-Using",
+  "lock": {
+    "schema": "org.niaos.image-inputs/v1",
+    "release": "0.1.0",
+    "distribution": "trixie",
+    "architecture": "amd64",
+    "snapshot": "20260907T000000Z",
+    "source_date_epoch": 1788739200,
+    "archive_areas": [
+      "main",
+      "non-free-firmware"
+    ],
+    "builder": "localhost/niaos-image-builder:20260908",
+    "bootloaders": [
+      "syslinux",
+      "grub-efi"
+    ],
+    "secure_boot": "enable",
+    "installer": "live",
+    "installer_packages": {
+      "apt-mirror-setup": "1:0.198"
+    }
+  },
+  "input_manifest_sha256": "a6c4f7b9be5c579a9f0952df15276881cb48284f36bb13bdc793ad4ef180cf3b",
+  "collector_sha256": "f283f9c885a6f8271c24e38d59dd16062fad0c9dcaaa3724eb8a79781d968c97",
+  "images": [
+    {
+      "path": "live/niaos-0.1.0-amd64.hybrid.iso",
+      "sha256": "d4c18dc0e2be653bf11a04db40db95ca0353322010133e068dda274bd4aa314b"
+    }
+  ],
+  "include_installer": true,
+  "sources": [],
+  "production_qualified": false,
+  "firmware_note": "Non-free firmware source packages can contain opaque firmware blobs.",
+  "live_inventory": {
+    "path": "live/niaos-0.1.0-amd64.packages",
+    "sha256": "f6b080bdfcce214992be5c74d07ce0832c655e82c2b3efeb529cec01c86e0dc6",
+    "packages": 2239,
+    "missing_binary_associations": []
+  }
+}

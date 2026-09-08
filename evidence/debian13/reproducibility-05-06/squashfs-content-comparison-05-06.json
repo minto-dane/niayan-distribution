@@ -1,0 +1,164 @@
+[
+  {
+    "path": "packages/Packages.gz",
+    "same": true,
+    "builds": [
+      {
+        "exit": 2,
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "error": "cat: no matches for /packages\n"
+      },
+      {
+        "exit": 2,
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "error": "cat: no matches for /packages\n"
+      }
+    ]
+  },
+  {
+    "path": "packages/Release",
+    "same": true,
+    "builds": [
+      {
+        "exit": 2,
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "error": "cat: no matches for /packages\n"
+      },
+      {
+        "exit": 2,
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "error": "cat: no matches for /packages\n"
+      }
+    ]
+  },
+  {
+    "path": "var/cache/apt/pkgcache.bin",
+    "same": false,
+    "builds": [
+      {
+        "exit": 0,
+        "size": 3111959,
+        "sha256": "e3b11cef2d0f5bdf3fb684ac94b61beff4c4dc907e712ee34aed546ffc673384",
+        "error": ""
+      },
+      {
+        "exit": 0,
+        "size": 3111959,
+        "sha256": "e4fec34768bf54caf51387ea6ea70006b9fed4bb869593db6aa7f387571d2fe9",
+        "error": ""
+      }
+    ]
+  },
+  {
+    "path": "var/cache/apt/srcpkgcache.bin",
+    "same": false,
+    "builds": [
+      {
+        "exit": 0,
+        "size": 1769074,
+        "sha256": "d18e8ef4ef1c657adaea302306edec97568ba2b406afbfd0a7e81e7dd7d2745f",
+        "error": ""
+      },
+      {
+        "exit": 0,
+        "size": 1769074,
+        "sha256": "09f782089e66201da95b7ee61f1f482832cda5b6dca57a7a0c3626af257df418",
+        "error": ""
+      }
+    ]
+  },
+  {
+    "path": "var/cache/ldconfig/aux-cache",
+    "same": true,
+    "builds": [
+      {
+        "exit": 2,
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "error": "cat: no matches for /var/cache/ldconfig\n"
+      },
+      {
+        "exit": 2,
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "error": "cat: no matches for /var/cache/ldconfig\n"
+      }
+    ]
+  },
+  {
+    "path": "var/lib/apt/lists/_packages_._Release",
+    "same": true,
+    "builds": [
+      {
+        "exit": 2,
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "error": "cat: no matches for /var/lib/apt/lists/_packages_._Release\n"
+      },
+      {
+        "exit": 2,
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "error": "cat: no matches for /var/lib/apt/lists/_packages_._Release\n"
+      }
+    ]
+  },
+  {
+    "path": "var/log/dpkg.log",
+    "same": true,
+    "builds": [
+      {
+        "exit": 0,
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "error": ""
+      },
+      {
+        "exit": 0,
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "error": ""
+      }
+    ]
+  },
+  {
+    "path": "var/log/apt/history.log",
+    "same": true,
+    "builds": [
+      {
+        "exit": 0,
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "error": ""
+      },
+      {
+        "exit": 0,
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "error": ""
+      }
+    ]
+  },
+  {
+    "path": "var/log/apt/term.log",
+    "same": true,
+    "builds": [
+      {
+        "exit": 0,
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "error": ""
+      },
+      {
+        "exit": 0,
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "error": ""
+      }
+    ]
+  }
+]

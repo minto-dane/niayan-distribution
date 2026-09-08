@@ -11,6 +11,12 @@
 *.pyc
 __pycache__/
 build/
+*.iso
+*.qcow2
+*.deb
+*.udeb
+*.buildinfo
+*.changes
 
 # Generated validation runs; curated evidence is committed separately.
 evidence/engineering-*/

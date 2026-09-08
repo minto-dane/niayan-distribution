@@ -1,0 +1,105 @@
+[
+     {
+          "Id": "7f92f64938b87b862dd962a93b558fb0caea13493745c684fbddfc190a723617",
+          "Digest": "sha256:6b1916a03c6aed09aaa24f74600b5dc85f832115c7a922cad79267ee85477a3c",
+          "RepoTags": [
+               "localhost/niaos-image-builder:20260908"
+          ],
+          "RepoDigests": [
+               "localhost/niaos-image-builder@sha256:6b1916a03c6aed09aaa24f74600b5dc85f832115c7a922cad79267ee85477a3c"
+          ],
+          "Parent": "794da696955a872d6260e175fc2b2c95b31bb91a82fd2c12ea2a746e94abe9d1",
+          "Comment": "debuerreotype 0.17",
+          "Created": "2026-09-08T14:11:01.276149698Z",
+          "Config": {
+               "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "DEBIAN_FRONTEND=noninteractive",
+                    "LANG=C.UTF-8",
+                    "LC_ALL=C.UTF-8",
+                    "SOURCE_DATE_EPOCH=1788739200",
+                    "TZ=UTC",
+                    "DEB_BUILD_OPTIONS=parallel=1"
+               ],
+               "Cmd": [
+                    "lb",
+                    "build"
+               ],
+               "WorkingDir": "/build",
+               "Labels": {
+                    "io.buildah.version": "1.39.3"
+               }
+          },
+          "Version": "",
+          "Author": "",
+          "Architecture": "amd64",
+          "Os": "linux",
+          "Size": 896027363,
+          "VirtualSize": 896027363,
+          "GraphDriver": {
+               "Name": "vfs",
+               "Data": null
+          },
+          "RootFS": {
+               "Type": "layers",
+               "Layers": [
+                    "sha256:411a86676185cb54d695a805b238194a64e9b77e0c723f3802fbb87d333ea0b3",
+                    "sha256:c207cbfe57c4c4962e659f7f79095a4b662e15576ed63c9fceffad41be2127b3",
+                    "sha256:53fc939d33867db2dfbc3e09783da4d86105f84c6b885a3c3e3212993da0bc04",
+                    "sha256:c28b69de6ef465f4ab69f8d310bbbb520f2716d6636a7d561c456409d2970672"
+               ]
+          },
+          "Labels": {
+               "io.buildah.version": "1.39.3"
+          },
+          "Annotations": {
+               "org.opencontainers.image.base.digest": "sha256:abc9cb88a5587630d7f915f47b23b0668fe250fbfc6457aa4d52b534c1bbf73f",
+               "org.opencontainers.image.base.name": "docker.io/library/debian@sha256:abc9cb88a5587630d7f915f47b23b0668fe250fbfc6457aa4d52b534c1bbf73f"
+          },
+          "ManifestType": "application/vnd.oci.image.manifest.v1+json",
+          "User": "",
+          "History": [
+               {
+                    "created": "2026-08-24T00:00:00Z",
+                    "created_by": "# debian.sh --arch 'amd64' out/ 'trixie' '@1787529600'",
+                    "comment": "debuerreotype 0.17"
+               },
+               {
+                    "created": "2026-09-08T11:08:00.943099393Z",
+                    "created_by": "/bin/sh -c #(nop) ENV DEBIAN_FRONTEND=noninteractive LANG=C.UTF-8 LC_ALL=C.UTF-8",
+                    "comment": "FROM docker.io/library/debian@sha256:abc9cb88a5587630d7f915f47b23b0668fe250fbfc6457aa4d52b534c1bbf73f",
+                    "empty_layer": true
+               },
+               {
+                    "created": "2026-09-08T14:07:25.131619756Z",
+                    "created_by": "/bin/sh -c #(nop) COPY file:fdde6953ce61d013b5ffee5423b88f2258fec1b00db8cb24d5e455b1a0cb967d in /usr/share/nia-builder-input-packages.txt "
+               },
+               {
+                    "created": "2026-09-08T14:07:27.000428353Z",
+                    "created_by": "/bin/sh -c rm /etc/apt/sources.list.d/debian.sources &&     printf '%s\\n'       'deb [check-valid-until=no] http://snapshot.debian.org/archive/debian/20260907T000000Z trixie main'       'deb [check-valid-until=no] http://snapshot.debian.org/archive/debian/20260907T000000Z trixie-updates main'       'deb [check-valid-until=no] http://snapshot.debian.org/archive/debian-security/20260907T000000Z trixie-security main'       > /etc/apt/sources.list"
+               },
+               {
+                    "created": "2026-09-08T14:10:44.01773734Z",
+                    "created_by": "/bin/sh -c apt-get update && xargs -r apt-get install -y --no-install-recommends       < /usr/share/nia-builder-input-packages.txt &&     dpkg-query -W > /usr/share/nia-builder-packages.txt &&     rm -rf /var/lib/apt/lists/*"
+               },
+               {
+                    "created": "2026-09-08T14:10:55.332629395Z",
+                    "created_by": "/bin/sh -c #(nop) ENV SOURCE_DATE_EPOCH=1788739200 TZ=UTC DEB_BUILD_OPTIONS=parallel=1",
+                    "empty_layer": true
+               },
+               {
+                    "created": "2026-09-08T14:10:57.761808539Z",
+                    "created_by": "/bin/sh -c #(nop) WORKDIR /build",
+                    "empty_layer": true
+               },
+               {
+                    "created": "2026-09-08T14:11:01.276423459Z",
+                    "created_by": "/bin/sh -c #(nop) CMD [\"lb\", \"build\"]",
+                    "empty_layer": true
+               }
+          ],
+          "NamesHistory": [
+               "localhost/niaos-image-builder:20260908"
+          ]
+     }
+]

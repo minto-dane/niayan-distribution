@@ -1,0 +1,119 @@
+{
+  "scope": "native source package rebuild comparison; not ISO reproducibility",
+  "packages": [
+    {
+      "package": "niaos-assurance_0.1.0+git70baa595e385.dsc",
+      "previous_path": "/home/nia/devbox/niaos/.work/distro-trixie-01/packages/niaos-assurance_0.1.0+git70baa595e385.dsc",
+      "previous_sha256": "2ee1b7237ba67c2ada35cefa8cf54ba293ddf3b09bed194fa6b0708d422bc74d",
+      "current_sha256": "2ee1b7237ba67c2ada35cefa8cf54ba293ddf3b09bed194fa6b0708d422bc74d",
+      "identical": true
+    },
+    {
+      "package": "niaos-assurance_0.1.0+git70baa595e385.tar.xz",
+      "previous_path": "/home/nia/devbox/niaos/.work/distro-trixie-01/packages/niaos-assurance_0.1.0+git70baa595e385.tar.xz",
+      "previous_sha256": "ce988a5bb43bab82ca490714c24559598e069e0ede9c03e20ba2e0d53f59c82d",
+      "current_sha256": "ce988a5bb43bab82ca490714c24559598e069e0ede9c03e20ba2e0d53f59c82d",
+      "identical": true
+    },
+    {
+      "package": "niaos-capsulecore_0.1.0+git0c356eecb425.dsc",
+      "previous_path": "/home/nia/devbox/niaos/.work/distro-trixie-01/packages/niaos-capsulecore_0.1.0+git0c356eecb425.dsc",
+      "previous_sha256": "ebc40e61ed4d06c8db3631c65211647904987d1372dd359fdb9c83d178de1dfb",
+      "current_sha256": "ebc40e61ed4d06c8db3631c65211647904987d1372dd359fdb9c83d178de1dfb",
+      "identical": true
+    },
+    {
+      "package": "niaos-capsulecore_0.1.0+git0c356eecb425.tar.xz",
+      "previous_path": "/home/nia/devbox/niaos/.work/distro-trixie-01/packages/niaos-capsulecore_0.1.0+git0c356eecb425.tar.xz",
+      "previous_sha256": "6aebe5413225febb6fb66fe5a0012f8bd802394318f6a48bae37290e8e2e51c8",
+      "current_sha256": "6aebe5413225febb6fb66fe5a0012f8bd802394318f6a48bae37290e8e2e51c8",
+      "identical": true
+    },
+    {
+      "package": "niaos-configcore_0.1.0+git6d46ea26c38c.dsc",
+      "previous_path": "/home/nia/devbox/niaos/.work/distro-trixie-01/packages/niaos-configcore_0.1.0+git6d46ea26c38c.dsc",
+      "previous_sha256": "5b37136d7b6033c3b3e8e972b024dd7ddd5a396a875c431854dd15dacbbe3dec",
+      "current_sha256": "5b37136d7b6033c3b3e8e972b024dd7ddd5a396a875c431854dd15dacbbe3dec",
+      "identical": true
+    },
+    {
+      "package": "niaos-configcore_0.1.0+git6d46ea26c38c.tar.xz",
+      "previous_path": "/home/nia/devbox/niaos/.work/distro-trixie-01/packages/niaos-configcore_0.1.0+git6d46ea26c38c.tar.xz",
+      "previous_sha256": "3c2bdd9b5b74b28c975b596b758f578666e619e1cd764a7a2e9e2ffe30d9adcb",
+      "current_sha256": "3c2bdd9b5b74b28c975b596b758f578666e619e1cd764a7a2e9e2ffe30d9adcb",
+      "identical": true
+    },
+    {
+      "package": "niaos-controlcore_0.1.0+gite2a3f9ff89b5.dsc",
+      "previous_path": "/home/nia/devbox/niaos/.work/distro-trixie-01/packages/niaos-controlcore_0.1.0+gite2a3f9ff89b5.dsc",
+      "previous_sha256": "1a50e45da4ab23c292372377e38ad50e72cf6fd6c4c1a82143112ccc4211fed4",
+      "current_sha256": "1a50e45da4ab23c292372377e38ad50e72cf6fd6c4c1a82143112ccc4211fed4",
+      "identical": true
+    },
+    {
+      "package": "niaos-controlcore_0.1.0+gite2a3f9ff89b5.tar.xz",
+      "previous_path": "/home/nia/devbox/niaos/.work/distro-trixie-01/packages/niaos-controlcore_0.1.0+gite2a3f9ff89b5.tar.xz",
+      "previous_sha256": "243297b0a8f3d23ba7719d49077b414959fda22cd41a1aef31a78466925d1a3a",
+      "current_sha256": "243297b0a8f3d23ba7719d49077b414959fda22cd41a1aef31a78466925d1a3a",
+      "identical": true
+    },
+    {
+      "package": "niaos-integration_0.1.0.dsc",
+      "previous_path": "/home/nia/devbox/niaos/.work/distro-trixie-03/packages/niaos-integration_0.1.0.dsc",
+      "previous_sha256": "52ec28dc00b88a2d750f796486517fd9d2447636b7970754bee43910c90aad4c",
+      "current_sha256": "52ec28dc00b88a2d750f796486517fd9d2447636b7970754bee43910c90aad4c",
+      "identical": true
+    },
+    {
+      "package": "niaos-integration_0.1.0.tar.xz",
+      "previous_path": "/home/nia/devbox/niaos/.work/distro-trixie-03/packages/niaos-integration_0.1.0.tar.xz",
+      "previous_sha256": "5c37b66ddb88ab5fea1926a8bc0977f67ded4b13af7e6303fad6dc8e386e4e64",
+      "current_sha256": "5c37b66ddb88ab5fea1926a8bc0977f67ded4b13af7e6303fad6dc8e386e4e64",
+      "identical": true
+    },
+    {
+      "package": "niaos-pkgcore_0.1.0+gite74913f9f941.dsc",
+      "previous_path": "/home/nia/devbox/niaos/.work/distro-trixie-01/packages/niaos-pkgcore_0.1.0+gite74913f9f941.dsc",
+      "previous_sha256": "5a77a8e4e604500d7e6c88273589cefdedc35b6665233cd09468ec1e3b99e985",
+      "current_sha256": "5a77a8e4e604500d7e6c88273589cefdedc35b6665233cd09468ec1e3b99e985",
+      "identical": true
+    },
+    {
+      "package": "niaos-pkgcore_0.1.0+gite74913f9f941.tar.xz",
+      "previous_path": "/home/nia/devbox/niaos/.work/distro-trixie-01/packages/niaos-pkgcore_0.1.0+gite74913f9f941.tar.xz",
+      "previous_sha256": "5db8c263d634d0c4f95889e87a29b090a265766913cdc0f976fdc83f683fcfcd",
+      "current_sha256": "5db8c263d634d0c4f95889e87a29b090a265766913cdc0f976fdc83f683fcfcd",
+      "identical": true
+    },
+    {
+      "package": "niaos-resolvercore_0.1.0+gita58f281ff997.dsc",
+      "previous_path": "/home/nia/devbox/niaos/.work/distro-trixie-01/packages/niaos-resolvercore_0.1.0+gita58f281ff997.dsc",
+      "previous_sha256": "a2cbf620783aedc113cdd246d1c3a02b16a10f15c583ba5b5f44caf539dab837",
+      "current_sha256": "a2cbf620783aedc113cdd246d1c3a02b16a10f15c583ba5b5f44caf539dab837",
+      "identical": true
+    },
+    {
+      "package": "niaos-resolvercore_0.1.0+gita58f281ff997.tar.xz",
+      "previous_path": "/home/nia/devbox/niaos/.work/distro-trixie-01/packages/niaos-resolvercore_0.1.0+gita58f281ff997.tar.xz",
+      "previous_sha256": "2d0ade4038708a30b6fe19ece7d6d39194b853678f2b58f0c312b39df4fdc0b3",
+      "current_sha256": "2d0ade4038708a30b6fe19ece7d6d39194b853678f2b58f0c312b39df4fdc0b3",
+      "identical": true
+    },
+    {
+      "package": "niaos-statecore_0.1.0+gitc0c9ca947c2e.dsc",
+      "previous_path": "/home/nia/devbox/niaos/.work/distro-trixie-01/packages/niaos-statecore_0.1.0+gitc0c9ca947c2e.dsc",
+      "previous_sha256": "e0057c7f94918fe278804855c368de8632270bc746d17a3e82c75387ce80b023",
+      "current_sha256": "e0057c7f94918fe278804855c368de8632270bc746d17a3e82c75387ce80b023",
+      "identical": true
+    },
+    {
+      "package": "niaos-statecore_0.1.0+gitc0c9ca947c2e.tar.xz",
+      "previous_path": "/home/nia/devbox/niaos/.work/distro-trixie-01/packages/niaos-statecore_0.1.0+gitc0c9ca947c2e.tar.xz",
+      "previous_sha256": "45d78d06ac00b299f26165df531be1d2766100c65524649fe203648b8d0f481f",
+      "current_sha256": "45d78d06ac00b299f26165df531be1d2766100c65524649fe203648b8d0f481f",
+      "identical": true
+    }
+  ],
+  "identical": 16,
+  "total": 16
+}

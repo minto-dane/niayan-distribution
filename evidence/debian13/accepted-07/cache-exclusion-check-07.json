@@ -1,0 +1,10 @@
+{
+  "excluded_caches": [
+    "var/cache/apt/pkgcache.bin",
+    "var/cache/apt/srcpkgcache.bin"
+  ],
+  "found_in_squashfs": [],
+  "package_inventory_identical_to_05": true,
+  "package_count": 2239,
+  "inventory_sha256": "f6b080bdfcce214992be5c74d07ce0832c655e82c2b3efeb529cec01c86e0dc6"
+}

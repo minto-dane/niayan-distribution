@@ -1,0 +1,9 @@
+{
+  "url": "https://cloud.debian.org/images/cloud/trixie/20260831-2587/debian-13-genericcloud-amd64-20260831-2587.qcow2",
+  "sha512": "8ea9faae810043a0b35b0149f05014f26705c2339ffb11ead308f33e844a87cc3ef46ec81d5262b38817b6a88af404874d48a5857ebe072ef6a31dfb6e371f50",
+  "source": "Debian official cloud image and SHA512SUMS retrieved over HTTPS",
+  "detached_signature_available": false,
+  "memory_mib": 2048,
+  "vcpus": 1,
+  "disk_gib": 80
+}

@@ -1,5 +1,7 @@
 # Nia OS の組立て・配布・初回導入
 
+> 保存した独自カタログ研究モデルの文書です。Debian 13の実配布方針は[現在の設計判断](decisions/0001-debian13.ja.md)を参照してください。この文書の機能が実イメージへ接続済みであるとは扱いません。
+
 ## 供給と製品を分ける
 
 公開Debian mirror/snapshotから取得した原本DEB、Sources、.buildinfoと、Niaが生成するcatalog・設定・UKI・rootイメージは異なる成果物である。元DEBの署名・再現性を派生イメージの資格へ自動転記しない。

@@ -1,0 +1,140 @@
+{
+  "scope": "sequential rebuild of native DEB packages, including debug symbols; comparison is not ISO reproducibility",
+  "packages": [
+    {
+      "package": "niaos-assurance-dbgsym_0.1.0+git70baa595e385_amd64.deb",
+      "previous_path": "/home/nia/devbox/niaos/.work/distro-trixie-01/packages/niaos-assurance-dbgsym_0.1.0+git70baa595e385_amd64.deb",
+      "previous_sha256": "3a9acd9e340d62dc1ae5d8a0afc1872f397c09a45b1a79edf5f4bd29279809a2",
+      "current_sha256": "3a9acd9e340d62dc1ae5d8a0afc1872f397c09a45b1a79edf5f4bd29279809a2",
+      "identical": true
+    },
+    {
+      "package": "niaos-assurance_0.1.0+git70baa595e385_amd64.deb",
+      "previous_path": "/home/nia/devbox/niaos/.work/distro-trixie-01/packages/niaos-assurance_0.1.0+git70baa595e385_amd64.deb",
+      "previous_sha256": "af7c3031f932d5bbfecda2ceafdd8de1ed72d2f8370a52b4ec02d770e51adcb3",
+      "current_sha256": "af7c3031f932d5bbfecda2ceafdd8de1ed72d2f8370a52b4ec02d770e51adcb3",
+      "identical": true
+    },
+    {
+      "package": "niaos-base_0.1.0_all.deb",
+      "previous_path": "/home/nia/devbox/niaos/.work/distro-trixie-03/packages/niaos-base_0.1.0_all.deb",
+      "previous_sha256": "699268ceb80239fa95a97f8ac55320edcc5cc6055272d592871341e6bb4a5051",
+      "current_sha256": "699268ceb80239fa95a97f8ac55320edcc5cc6055272d592871341e6bb4a5051",
+      "identical": true
+    },
+    {
+      "package": "niaos-capsulecore-dbgsym_0.1.0+git0c356eecb425_amd64.deb",
+      "previous_path": "/home/nia/devbox/niaos/.work/distro-trixie-01/packages/niaos-capsulecore-dbgsym_0.1.0+git0c356eecb425_amd64.deb",
+      "previous_sha256": "65e5307891936f10a8e2e23dd61523e8cc2f6f01b11bb2f0867cd8917e080f06",
+      "current_sha256": "65e5307891936f10a8e2e23dd61523e8cc2f6f01b11bb2f0867cd8917e080f06",
+      "identical": true
+    },
+    {
+      "package": "niaos-capsulecore_0.1.0+git0c356eecb425_amd64.deb",
+      "previous_path": "/home/nia/devbox/niaos/.work/distro-trixie-01/packages/niaos-capsulecore_0.1.0+git0c356eecb425_amd64.deb",
+      "previous_sha256": "7c97862c75ba7d54e188cd6001f3e070ad0681e897a5c3b71f5e35c53732d268",
+      "current_sha256": "7c97862c75ba7d54e188cd6001f3e070ad0681e897a5c3b71f5e35c53732d268",
+      "identical": true
+    },
+    {
+      "package": "niaos-configcore-dbgsym_0.1.0+git6d46ea26c38c_amd64.deb",
+      "previous_path": "/home/nia/devbox/niaos/.work/distro-trixie-01/packages/niaos-configcore-dbgsym_0.1.0+git6d46ea26c38c_amd64.deb",
+      "previous_sha256": "5ca16e1ea3309d66863d90d502d29b5f9e9a4645ca15082864c6f9cc68fe49b9",
+      "current_sha256": "5ca16e1ea3309d66863d90d502d29b5f9e9a4645ca15082864c6f9cc68fe49b9",
+      "identical": true
+    },
+    {
+      "package": "niaos-configcore_0.1.0+git6d46ea26c38c_amd64.deb",
+      "previous_path": "/home/nia/devbox/niaos/.work/distro-trixie-01/packages/niaos-configcore_0.1.0+git6d46ea26c38c_amd64.deb",
+      "previous_sha256": "663f792345cf77fe7a86c9b390126d37071682dafbad85bb345f425c3c41fece",
+      "current_sha256": "663f792345cf77fe7a86c9b390126d37071682dafbad85bb345f425c3c41fece",
+      "identical": true
+    },
+    {
+      "package": "niaos-controlcore-dbgsym_0.1.0+gite2a3f9ff89b5_amd64.deb",
+      "previous_path": "/home/nia/devbox/niaos/.work/distro-trixie-01/packages/niaos-controlcore-dbgsym_0.1.0+gite2a3f9ff89b5_amd64.deb",
+      "previous_sha256": "05f6fda4716fb9a3c3be62be27db8ab7b97c40c4e2073d1ff319e184c9f547ca",
+      "current_sha256": "05f6fda4716fb9a3c3be62be27db8ab7b97c40c4e2073d1ff319e184c9f547ca",
+      "identical": true
+    },
+    {
+      "package": "niaos-controlcore_0.1.0+gite2a3f9ff89b5_amd64.deb",
+      "previous_path": "/home/nia/devbox/niaos/.work/distro-trixie-01/packages/niaos-controlcore_0.1.0+gite2a3f9ff89b5_amd64.deb",
+      "previous_sha256": "c640cb0535b26a9db7ff268dcd3d5f84d969a723f821b0dd9288474d878010ef",
+      "current_sha256": "c640cb0535b26a9db7ff268dcd3d5f84d969a723f821b0dd9288474d878010ef",
+      "identical": true
+    },
+    {
+      "package": "niaos-defaults_0.1.0_all.deb",
+      "previous_path": "/home/nia/devbox/niaos/.work/distro-trixie-03/packages/niaos-defaults_0.1.0_all.deb",
+      "previous_sha256": "f7be309a802f39db81a9aa129733e426de1354110eb83ac74a1c4a510a32c16a",
+      "current_sha256": "f7be309a802f39db81a9aa129733e426de1354110eb83ac74a1c4a510a32c16a",
+      "identical": true
+    },
+    {
+      "package": "niaos-desktop-gnome_0.1.0_all.deb",
+      "previous_path": "/home/nia/devbox/niaos/.work/distro-trixie-03/packages/niaos-desktop-gnome_0.1.0_all.deb",
+      "previous_sha256": "9fad53bb959e9f2675983f989161e3f71c6d030e829b73c1a5412a126a137b09",
+      "current_sha256": "9fad53bb959e9f2675983f989161e3f71c6d030e829b73c1a5412a126a137b09",
+      "identical": true
+    },
+    {
+      "package": "niaos-desktop-kde_0.1.0_all.deb",
+      "previous_path": "/home/nia/devbox/niaos/.work/distro-trixie-03/packages/niaos-desktop-kde_0.1.0_all.deb",
+      "previous_sha256": "1fb6feedbdcd5f77b089fcdb1bb8625bf5a6d91a72a39a1aa72aba5e618277dd",
+      "current_sha256": "1fb6feedbdcd5f77b089fcdb1bb8625bf5a6d91a72a39a1aa72aba5e618277dd",
+      "identical": true
+    },
+    {
+      "package": "niaos-pkgcore-dbgsym_0.1.0+gite74913f9f941_amd64.deb",
+      "previous_path": "/home/nia/devbox/niaos/.work/distro-trixie-01/packages/niaos-pkgcore-dbgsym_0.1.0+gite74913f9f941_amd64.deb",
+      "previous_sha256": "8094691b045b2e0451122347098b51b88f46d13bcdb3774110f115cd3c4c56c2",
+      "current_sha256": "8094691b045b2e0451122347098b51b88f46d13bcdb3774110f115cd3c4c56c2",
+      "identical": true
+    },
+    {
+      "package": "niaos-pkgcore_0.1.0+gite74913f9f941_amd64.deb",
+      "previous_path": "/home/nia/devbox/niaos/.work/distro-trixie-01/packages/niaos-pkgcore_0.1.0+gite74913f9f941_amd64.deb",
+      "previous_sha256": "69e2f82fed042d5d603e9eee88cdb5bff1c7f454e0236bb636b08df069139cd0",
+      "current_sha256": "69e2f82fed042d5d603e9eee88cdb5bff1c7f454e0236bb636b08df069139cd0",
+      "identical": true
+    },
+    {
+      "package": "niaos-release_0.1.0_all.deb",
+      "previous_path": "/home/nia/devbox/niaos/.work/distro-trixie-03/packages/niaos-release_0.1.0_all.deb",
+      "previous_sha256": "dd92109ca4d724c4b2bc711bdb333b2772266fff395bf3bca88c524368d5ce8e",
+      "current_sha256": "dd92109ca4d724c4b2bc711bdb333b2772266fff395bf3bca88c524368d5ce8e",
+      "identical": true
+    },
+    {
+      "package": "niaos-resolvercore-dbgsym_0.1.0+gita58f281ff997_amd64.deb",
+      "previous_path": "/home/nia/devbox/niaos/.work/distro-trixie-01/packages/niaos-resolvercore-dbgsym_0.1.0+gita58f281ff997_amd64.deb",
+      "previous_sha256": "23c11adeda98340871095896024cfdfcbc6acf5cd98e0f9d5d3f5af8978988c2",
+      "current_sha256": "23c11adeda98340871095896024cfdfcbc6acf5cd98e0f9d5d3f5af8978988c2",
+      "identical": true
+    },
+    {
+      "package": "niaos-resolvercore_0.1.0+gita58f281ff997_amd64.deb",
+      "previous_path": "/home/nia/devbox/niaos/.work/distro-trixie-01/packages/niaos-resolvercore_0.1.0+gita58f281ff997_amd64.deb",
+      "previous_sha256": "693f76f12902f2d23305073d3350b11a1379d76a1f27cdef696a8e8170ee8009",
+      "current_sha256": "693f76f12902f2d23305073d3350b11a1379d76a1f27cdef696a8e8170ee8009",
+      "identical": true
+    },
+    {
+      "package": "niaos-statecore-dbgsym_0.1.0+gitc0c9ca947c2e_amd64.deb",
+      "previous_path": "/home/nia/devbox/niaos/.work/distro-trixie-01/packages/niaos-statecore-dbgsym_0.1.0+gitc0c9ca947c2e_amd64.deb",
+      "previous_sha256": "37ceb62e75e5acdbbacdc82e090ff96c76b91e281d66b51cb7feeba5a8b4d4e2",
+      "current_sha256": "37ceb62e75e5acdbbacdc82e090ff96c76b91e281d66b51cb7feeba5a8b4d4e2",
+      "identical": true
+    },
+    {
+      "package": "niaos-statecore_0.1.0+gitc0c9ca947c2e_amd64.deb",
+      "previous_path": "/home/nia/devbox/niaos/.work/distro-trixie-01/packages/niaos-statecore_0.1.0+gitc0c9ca947c2e_amd64.deb",
+      "previous_sha256": "dca754623a808d731649a67ac2c8e9d61eb26474c55b86f65aaf69dc162b140c",
+      "current_sha256": "dca754623a808d731649a67ac2c8e9d61eb26474c55b86f65aaf69dc162b140c",
+      "identical": true
+    }
+  ],
+  "identical": 19,
+  "total": 19
+}

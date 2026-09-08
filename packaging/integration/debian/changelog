@@ -1,0 +1,5 @@
+niaos-integration (0.1.0) unstable; urgency=medium
+
+  * Package the Debian 13 derivative's identity and supported configuration.
+
+ -- NiaOS Developers <developers@niaos.invalid>  Mon, 07 Sep 2026 00:00:00 +0000

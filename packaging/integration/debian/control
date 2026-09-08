@@ -1,0 +1,43 @@
+Source: niaos-integration
+Section: metapackages
+Priority: optional
+Maintainer: NiaOS Developers <developers@niaos.invalid>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.7.2
+Rules-Requires-Root: no
+
+Package: niaos-release
+Architecture: all
+Depends: ${misc:Depends}, base-files (>= 13)
+Description: NiaOS distribution identity
+ Distribution identity maintained with a reversible dpkg diversion.
+ The upstream Debian base-files package is retained unmodified.
+
+Package: niaos-defaults
+Architecture: all
+Depends: ${misc:Depends}, niaos-release, unattended-upgrades
+Description: NiaOS defaults using supported configuration interfaces
+ GRUB naming and Debian 13 security update policy in separate configuration
+ snippets. Local administrator configuration remains under dpkg control.
+
+Package: niaos-base
+Architecture: all
+Depends: ${misc:Depends}, niaos-defaults, linux-image-amd64, systemd-sysv,
+ network-manager, systemd-timesyncd, ca-certificates, sudo, apparmor,
+ cryptsetup-initramfs, xfsprogs, e2fsprogs, locales, less, nano
+Description: NiaOS base system metapackage
+ Debian 13 base system, networking, encryption and filesystem utilities.
+
+Package: niaos-desktop-kde
+Architecture: all
+Depends: ${misc:Depends}, niaos-base, task-kde-desktop, fonts-noto-cjk,
+ fcitx5-mozc, im-config
+Description: NiaOS KDE Plasma desktop metapackage
+ Standard Debian KDE desktop with Japanese fonts and input support.
+
+Package: niaos-desktop-gnome
+Architecture: all
+Depends: ${misc:Depends}, niaos-base, task-gnome-desktop, fonts-noto-cjk,
+ ibus-mozc
+Description: NiaOS GNOME desktop metapackage
+ Standard Debian GNOME desktop with Japanese fonts and input support.

@@ -1,0 +1,12 @@
+# SPDX-License-Identifier: MIT
+# New-user default. im-config provides run_im; user changes take precedence.
+# KWin must launch Fcitx on Wayland to pass its input-method socket.
+case "$XDG_SESSION_TYPE:$XDG_CURRENT_DESKTOP" in
+    wayland:*KDE*)
+        run_im none
+        unset GTK_IM_MODULE QT_IM_MODULE SDL_IM_MODULE
+        XMODIFIERS=@im=fcitx
+        export XMODIFIERS
+        ;;
+    *) run_im fcitx5 ;;
+esac

@@ -1,0 +1,4 @@
+{
+  "/usr/share/OVMF/OVMF_CODE_4M.ms.fd": "1a46295574430cfb7f825ee3e4dc64b052acbef08e310377ed7c64cb757a9dc1",
+  "/build/acceptance-01/live-secure-boot/OVMF_VARS.fd": "0d12f9839018a68f4b13c9819cbf607b8b62d566f9c9dd7966550d93335f06b2"
+}

@@ -1,0 +1,73 @@
+{
+  "schema": "org.niaos.debian-image-acceptance/v1",
+  "result": "pass-for-recorded-vm-profile",
+  "iso": {
+    "path": "live/niaos-0.1.0-amd64.hybrid.iso",
+    "size": 3640655872,
+    "sha256": "11333d615170da99ebba932f81b2cd24b18f9190231210282efc8f0dc43daf16"
+  },
+  "input_manifest_sha256": "b433f4d8e374d32cf3edb17f8dc0b7b82f37bd721cfa3e040988c8e4a502c4d0",
+  "components": [
+    {
+      "component": "assurance",
+      "commit": "70baa595e385fe95847f6f0fe31274c092e1be85",
+      "package": "niaos-assurance",
+      "version": "0.1.0+git70baa595e385"
+    },
+    {
+      "component": "pkgcore",
+      "commit": "e74913f9f94126b0a012738843d09b699d2bd70c",
+      "package": "niaos-pkgcore",
+      "version": "0.1.0+gite74913f9f941"
+    },
+    {
+      "component": "statecore",
+      "commit": "c0c9ca947c2e4e45adb97a6021eed20cd3a20599",
+      "package": "niaos-statecore",
+      "version": "0.1.0+gitc0c9ca947c2e"
+    },
+    {
+      "component": "controlcore",
+      "commit": "e2a3f9ff89b5e1b649997d8e0ab6de0590d9fc99",
+      "package": "niaos-controlcore",
+      "version": "0.1.0+gite2a3f9ff89b5"
+    },
+    {
+      "component": "configcore",
+      "commit": "6d46ea26c38cfee7c9d3b7fa063f2752229f4c5b",
+      "package": "niaos-configcore",
+      "version": "0.1.0+git6d46ea26c38c"
+    },
+    {
+      "component": "resolvercore",
+      "commit": "a58f281ff997c091b5b3918679fd0baffb2e716f",
+      "package": "niaos-resolvercore",
+      "version": "0.1.0+gita58f281ff997"
+    },
+    {
+      "component": "capsulecore",
+      "commit": "0c356eecb425af2fcafc2163254b521b57a03c09",
+      "package": "niaos-capsulecore",
+      "version": "0.1.0+git0c356eecb425"
+    }
+  ],
+  "upstream_source_patches": [],
+  "package_rebuild": {
+    "registered_ada_mains_executed": 58,
+    "identical_debs": 19,
+    "identical_native_source_files": 16,
+    "evidence": "../accepted-05/README.ja.md"
+  },
+  "vm_acceptance": "acceptance/report.json",
+  "vm_checks_passed": 6,
+  "tool_image_id": "7f92f64938b87b862dd962a93b558fb0caea13493745c684fbddfc190a723617",
+  "iso_bit_reproducibility": {
+    "result": "fail",
+    "comparison": "../reproducibility-07-08/iso-comparison.json"
+  },
+  "source_collection": "corresponding source collection pending",
+  "github_published": false,
+  "production_qualified": false,
+  "hardware_qualified": false,
+  "cache_exclusion": "cache-exclusion-check-07.json"
+}

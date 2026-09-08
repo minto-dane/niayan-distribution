@@ -1,0 +1,8 @@
+NAME="NiaOS"
+PRETTY_NAME="NiaOS 0.1 (Debian 13, development)"
+ID=niaos
+ID_LIKE=debian
+VERSION_ID="0.1"
+VERSION="0.1 (trixie)"
+VERSION_CODENAME=trixie
+DEBIAN_VERSION_FULL="13"

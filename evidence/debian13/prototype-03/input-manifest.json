@@ -1,0 +1,104 @@
+{
+  "lock": {
+    "schema": "org.niaos.image-inputs/v1",
+    "release": "0.1.0",
+    "distribution": "trixie",
+    "architecture": "amd64",
+    "snapshot": "20260907T000000Z",
+    "source_date_epoch": 1788739200,
+    "archive_areas": [
+      "main",
+      "non-free-firmware"
+    ],
+    "builder": "localhost/niaos-image-builder:20260908",
+    "bootloaders": [
+      "syslinux",
+      "grub-efi"
+    ],
+    "secure_boot": "enable",
+    "installer": "live"
+  },
+  "desktop": "kde",
+  "components": [
+    {
+      "component": "assurance",
+      "commit": "70baa595e385fe95847f6f0fe31274c092e1be85",
+      "package": "niaos-assurance",
+      "version": "0.1.0+git70baa595e385"
+    },
+    {
+      "component": "pkgcore",
+      "commit": "e74913f9f94126b0a012738843d09b699d2bd70c",
+      "package": "niaos-pkgcore",
+      "version": "0.1.0+gite74913f9f941"
+    },
+    {
+      "component": "statecore",
+      "commit": "c0c9ca947c2e4e45adb97a6021eed20cd3a20599",
+      "package": "niaos-statecore",
+      "version": "0.1.0+gitc0c9ca947c2e"
+    },
+    {
+      "component": "controlcore",
+      "commit": "e2a3f9ff89b5e1b649997d8e0ab6de0590d9fc99",
+      "package": "niaos-controlcore",
+      "version": "0.1.0+gite2a3f9ff89b5"
+    },
+    {
+      "component": "configcore",
+      "commit": "6d46ea26c38cfee7c9d3b7fa063f2752229f4c5b",
+      "package": "niaos-configcore",
+      "version": "0.1.0+git6d46ea26c38c"
+    },
+    {
+      "component": "resolvercore",
+      "commit": "a58f281ff997c091b5b3918679fd0baffb2e716f",
+      "package": "niaos-resolvercore",
+      "version": "0.1.0+gita58f281ff997"
+    },
+    {
+      "component": "capsulecore",
+      "commit": "0c356eecb425af2fcafc2163254b521b57a03c09",
+      "package": "niaos-capsulecore",
+      "version": "0.1.0+git0c356eecb425"
+    }
+  ],
+  "distribution_inputs": {
+    "image/Containerfile": "3e02c895f0d91c45641808dcc074643a76da447e9d821d71f75fb85819568401",
+    "image/README.ja.md": "9d3606abcd9f5d233e0455985c7ad8000d8e3bbdc84090e28a9fab4c6c509738",
+    "image/auto/config": "bf16a50e2443be417258862c08eb53f6fdab4bc4a98217cfe76d229a3be051f4",
+    "image/build-live.sh": "fc81d36489f99830d7eccb02cf269e28611fc53915cab95f35a11d23df453fa0",
+    "image/build-packages.sh": "d5c91717e5da52b2268712c4b50c4c56e8ecdaeac8a7b6039118a72cd148b83f",
+    "image/builder-packages.txt": "b48a9c6d675c2dd792353152b88e17359a943f42c9102716ca496df462dbe18d",
+    "image/builder-vm.json": "fb1df182ea2550cbcf6a8cb5fc718965290fd05f0b46dd054211ab820e597047",
+    "image/collect-sources.py": "478d30220be65d247bfe43a91d8a095c9b3ac340a338ec7a2d931f0dbebd4077",
+    "image/fixtures/install-vm.cfg": "5a05732663f42b381460058d3cd9872375d46108700d22f3991c92f4133a4480",
+    "image/hooks/0100-niaos-release.hook.chroot": "4d3764cbf35b8fb8c5691681b6a51d0eaa8047bdeae6200806bb0853734be4c7",
+    "image/lock.json": "7c251a103f12ec46c05027592f0143fda025f50739bd04a294db657a17779230",
+    "image/prepare-builder-vm.py": "7ee18f7c93f9ec9612e45907f3b5079dcae1953b19e87f99f6578ba69ae0c36f",
+    "image/prepare.py": "465895e74375115d7479a77971089b43fe2f6a2c890e8ee4a34560df77a8cc8d",
+    "image/provision-builder.sh": "c4c6795014b044b4682f055269a6c80c015790cc27fead9f76f82fefd8c90d8a",
+    "image/record-build.py": "d1b2dda54621881b98734a62d2d3e4326406f18d51c0198dc2df01a3e50bf2e6",
+    "image/run-builder-vm.sh": "a8eb08fed6fb54b733c11e50e903c412392f24e8271a22c7d6f143cc9e25a047",
+    "image/test-install.py": "c41bc509918d443874c3c4b629f635edade7801fcb839567ccac00c4529d168f",
+    "image/test-live.py": "01eaf9e8f6a1333416d73b29ebbf6167ba4fbe00dc4b40e6c5bdb31986cb163e",
+    "image/test-release.sh": "df89eee31b7295261bc173d99713e0bc3aeaf1479f46e5aed9bda18977162f69",
+    "image/test_image_tools.py": "780775552943e95de12ff0448012390487c5a84b0b8cb0352a1016d756d287a1",
+    "image/vm_console.py": "f455ca170501452b779de798bb1b98f651e5251a1628c38a35d0b3a2423af030",
+    "packaging/integration/data/50-niaos.cfg": "91b6cd38df49e02c7b10c9d7794dae8cbdd8ffb8ecf770f4caeeff217a08c642",
+    "packaging/integration/data/52niaos-security": "2fad1e723b01a59a6bb91ca597bcbd3ae873f470b6819646923efae743b6b790",
+    "packaging/integration/data/kde/kwinrc": "7227064cf0eb9529b43ee8f5e7d8aa7670f1a2efa81a9969f62dca7cdf523c09",
+    "packaging/integration/data/kde/skel/.xinputrc": "8f63241babb60188d34626dd536a6be83d1e9c87b26aa54267add9726773934b",
+    "packaging/integration/data/os-release": "daad57532f449d580f3e2f5b51cf26dfff3d9619e482be3774e700c4445c5ea9",
+    "packaging/integration/debian/changelog": "045940300e2c2bcbea3374cb36f950c47ef48dcb91adb27a3f87e45d5326e89c",
+    "packaging/integration/debian/control": "e656b88ffeb45e4d424082c2d6147dffc073e6d0e4d5628730609f1d1fb3ef97",
+    "packaging/integration/debian/niaos-defaults.install": "48d6bab07c4c8635eb5cf398a30feb5423987e0e4cbbc60ba08386f4a82b14cd",
+    "packaging/integration/debian/niaos-desktop-kde.install": "0ec657dc82ca652e229a3be441b7b504e1cb6c00656f10f5ef06c957002d31f1",
+    "packaging/integration/debian/niaos-release.install": "47bcf1847032442f5e76e8df9e05c2d6c3d53226458b6a4c82815e5ea6ebba58",
+    "packaging/integration/debian/niaos-release.postrm": "c08e719a8ff837b0b7bd137440119b259d7e9755809c7a6dc6a0163cb24cefec",
+    "packaging/integration/debian/niaos-release.preinst": "97da948552539844e4f9a5ec61099c8a8876deb8cc518da50a2cd2af5886c7af",
+    "packaging/integration/debian/rules": "618ce2e7efd4d64a7d6128013474819bf9321eabe8b068a39fb61bd93e57cc0d",
+    "packaging/integration/debian/source/format": "e8e18df40bcd69d6aa404282679186d9b8256ac63a5b4e80d7f081e8a0095a2e"
+  },
+  "upstream_source_patches": []
+}

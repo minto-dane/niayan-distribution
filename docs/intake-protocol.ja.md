@@ -1,5 +1,7 @@
 # Nia取り込みプロトコル v1
 
+> 保存した独自カタログ研究モデルの文書です。Debian 13の実配布方針は[現在の設計判断](decisions/0001-debian13.ja.md)を参照してください。この文書の機能が実イメージへ接続済みであるとは扱いません。
+
 規範は各`tools/*.py`のstrict field setと本仕様。入力はネットワークから切り離した非特権build-roomで扱う。受信したJSONの`true`が権限証明になることはない。全出力の`execution_permit=false`を保つ。
 
 ## Input tree
