@@ -7,7 +7,7 @@ image-check: native-check hardening-check
 	@set -eu; for script in image/*.sh image/auto/config image/hooks/*.hook.chroot; do sh -n "$$script"; done
 
 native-check:
-	python3 -B -m unittest discover -s native -p test_transition.py -v
+	python3 -B -m unittest discover -s native -p 'test_*.py' -v
 	python3 -m compileall -q native
 
 hardening-check:

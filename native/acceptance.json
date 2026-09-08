@@ -8,9 +8,15 @@
       "requirement": "Nia is the sole installed-package and ownership writer",
       "state": "not-integrated",
       "hazard": "independent APT/dpkg/PackageKit or Nia writers can publish conflicting state",
-      "implementation": ["native/audit_transition.py"],
-      "tests": ["native/test_transition.py"],
-      "evidence": ["evidence/native-transition/initial-09/inventory.json"],
+      "implementation": [
+        "native/audit_transition.py"
+      ],
+      "tests": [
+        "native/test_transition.py"
+      ],
+      "evidence": [
+        "evidence/native-transition/initial-09/inventory.json"
+      ],
       "remaining": "connect the actual native executor, GUI and automatic updates; prove absence of other writers in a new image"
     },
     {
@@ -18,9 +24,18 @@
       "requirement": "Preserve native dependency and effect semantics without falsified compatibility",
       "state": "inventory-tested-effect-conversion-incomplete",
       "hazard": "dropping metadata or executing unmodeled scripts violates update and rollback contracts",
-      "implementation": ["tools/deb_archive.py", "tools/debian_semantics.py", "native/audit_transition.py"],
-      "tests": ["native/test_transition.py", "tests/test_nia_intake.py"],
-      "evidence": ["evidence/native-transition/initial-09/inventory.json"],
+      "implementation": [
+        "tools/deb_archive.py",
+        "tools/debian_semantics.py",
+        "native/audit_transition.py"
+      ],
+      "tests": [
+        "native/test_transition.py",
+        "tests/test_nia_intake.py"
+      ],
+      "evidence": [
+        "evidence/native-transition/initial-09/inventory.json"
+      ],
       "remaining": "authenticate original artifacts and implement every adopted phase, generated output and implicit trigger"
     },
     {
@@ -38,9 +53,19 @@
       "requirement": "Check real mitigation values and exact first-party artifacts",
       "state": "listed-baseline-and-elf-tests-passed",
       "hazard": "a configuration flag or successful build is mistaken for effective protection",
-      "implementation": ["hardening/audit.py", "hardening/baseline.json"],
-      "tests": ["hardening/test_hardening.py", "hardening/test_vm.py", "hardening/test_installed.py"],
-      "evidence": ["evidence/native-transition/initial-09/elf.json", "evidence/hardening/desktop-01/report.json"],
+      "implementation": [
+        "hardening/audit.py",
+        "hardening/baseline.json"
+      ],
+      "tests": [
+        "hardening/test_hardening.py",
+        "hardening/test_vm.py",
+        "hardening/test_installed.py"
+      ],
+      "evidence": [
+        "evidence/native-transition/initial-09/elf.json",
+        "evidence/hardening/desktop-01/report.json"
+      ],
       "remaining": "native image integration, hardware and performance qualification"
     },
     {
@@ -48,10 +73,78 @@
       "requirement": "Constrain the read-only Nia observer while preserving its documented observations",
       "state": "live-and-persistent-vm-tests-passed",
       "hazard": "profile presence is mistaken for actual enforcement or required reads are silently lost",
-      "implementation": ["hardening/rootfs/etc/apparmor.d/nia-hostctl", "hardening/rootfs/usr/lib/systemd/system/niaos-hostctl-confinement.service"],
-      "tests": ["hardening/test_vm.py", "hardening/test_installed.py"],
-      "evidence": ["evidence/hardening/desktop-01/report.json"],
+      "implementation": [
+        "hardening/rootfs/etc/apparmor.d/nia-hostctl",
+        "hardening/rootfs/usr/lib/systemd/system/niaos-hostctl-confinement.service"
+      ],
+      "tests": [
+        "hardening/test_vm.py",
+        "hardening/test_installed.py"
+      ],
+      "evidence": [
+        "evidence/hardening/desktop-01/report.json"
+      ],
       "remaining": "connect installation, enablement and updates to native configuration effects; this does not confine all Nia workers"
+    },
+    {
+      "id": "NATIVE-004",
+      "requirement": "Expose only the adopted public command family for Nia-owned management; retain independent external tools",
+      "state": "grammar-tested-runtime-not-integrated",
+      "hazard": "aliases or wrappers create ambiguous ownership or present unavailable operations as usable",
+      "implementation": [
+        "native/package_cli.py",
+        "native/management-commands.json"
+      ],
+      "tests": [
+        "native/test_package_cli.py"
+      ],
+      "evidence": [],
+      "remaining": "native transport, public packaging, real command output, interactive UI and absence of legacy public aliases in new image"
+    },
+    {
+      "id": "NATIVE-005",
+      "requirement": "Manage native interim fixes in the same catalog and transaction authority as normal packages",
+      "state": "local-artifact-build-display-tested-runtime-not-integrated",
+      "hazard": "independent fix database, stale base binding or uncoordinated holds permit inconsistent updates",
+      "implementation": [
+        "native/interim_package.py",
+        "native/interim_commands.py",
+        "native/package_cli.py"
+      ],
+      "tests": [
+        "native/test_interim_package.py",
+        "native/test_interim_commands.py"
+      ],
+      "evidence": [],
+      "remaining": "Publisher and contract authentication, freshness/current base, emgr execution and shared holds/ownership; normal-update supersession, interruption and recovery acceptance"
+    },
+    {
+      "id": "NATIVE-006",
+      "requirement": "Keep upload urgency, advisory identity, source fix version, vulnerability severity and authenticated authority distinct",
+      "state": "offline-observation-tested",
+      "hazard": "upload urgency or a textual advisory match is mistaken for signed fix authorization or absence of vulnerabilities",
+      "implementation": [
+        "native/update_metadata.py"
+      ],
+      "tests": [
+        "native/test_update_metadata.py"
+      ],
+      "evidence": [],
+      "remaining": "authenticated current advisory intake, full metadata coverage and instfix/catalog integration"
+    },
+    {
+      "id": "NATIVE-007",
+      "requirement": "Adopted commands must match the reference behavior and response interface, not merely parse its syntax",
+      "state": "development-response-tests-only-reference-not-qualified",
+      "hazard": "different status, exit codes, prompts or output fields mislead users and break administrative scripts",
+      "implementation": [
+        "native/interim_commands.py"
+      ],
+      "tests": [
+        "native/test_interim_commands.py"
+      ],
+      "evidence": [],
+      "remaining": "per-command output and behavior fixtures, TTY/non-TTY, stdout/stderr, quiet/verbose, locale, delimiter-safe native versions, cancellation, partial failure and recovery; real catalog/executor and UI acceptance"
     }
   ]
 }

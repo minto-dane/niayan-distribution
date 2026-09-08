@@ -47,7 +47,11 @@ def parse_json(raw: bytes):
     try:
         return json.loads(raw.decode('utf-8'), object_pairs_hook=_pairs,
                           parse_float=_number, parse_constant=_number)
-    except (UnicodeError, json.JSONDecodeError, RecursionError) as exc:
+    except Invalid:
+        raise
+    except (ValueError, RecursionError) as exc:
+        # The interpreter's bounded integer conversion raises ValueError,
+        # rather than JSONDecodeError, for an oversized numeric token.
         raise Invalid('invalid JSON') from exc
 
 def relative(text: str) -> str:

@@ -1,0 +1,105 @@
+Running as unit: run-p324093-i324393.scope; invocation ID: f761fdff1beb40ad90e090325b22e5bb
+limited-exec: {"scope": "run-p324093-i324393.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+make: Entering directory '/home/nia/devbox/niaos/nia-os-consent/distribution'
+python3 -B -m unittest discover -s native -p 'test_*.py' -v
+test_action_and_selector_ambiguity_rejected (test_interim_commands.InterimCommandTests.test_action_and_selector_ambiguity_rejected) ... ok
+test_all_installed_interim_operations_remain_unavailable (test_interim_commands.InterimCommandTests.test_all_installed_interim_operations_remain_unavailable) ... ok
+test_default_work_directory (test_interim_commands.InterimCommandTests.test_default_work_directory) ... ok
+test_detail_is_original_metadata_and_not_installed_state (test_interim_commands.InterimCommandTests.test_detail_is_original_metadata_and_not_installed_state) ... ok
+test_display_corrupt_or_symlink_package_emits_no_partial_report (test_interim_commands.InterimCommandTests.test_display_corrupt_or_symlink_package_emits_no_partial_report) ... ok
+test_display_escapes_terminal_formatting_and_marks_unknown_reboot (test_interim_commands.InterimCommandTests.test_display_escapes_terminal_formatting_and_marks_unknown_reboot) ... ok
+test_label_binding_and_corrupt_input_precede_output_creation (test_interim_commands.InterimCommandTests.test_label_binding_and_corrupt_input_precede_output_creation) ... ok
+test_label_length_and_interactive_mode_are_distinct (test_interim_commands.InterimCommandTests.test_label_length_and_interactive_mode_are_distinct) ... ok
+test_malformed_control_reports_failure_without_traceback (test_interim_commands.InterimCommandTests.test_malformed_control_reports_failure_without_traceback) ... ok
+test_output_never_overwritten_and_failure_uses_stderr (test_interim_commands.InterimCommandTests.test_output_never_overwritten_and_failure_uses_stderr) ... ok
+test_real_build_display_and_reproducible_bytes (test_interim_commands.InterimCommandTests.test_real_build_display_and_reproducible_bytes) ... ok
+test_work_directory_symlink_is_not_followed (test_interim_commands.InterimCommandTests.test_work_directory_symlink_is_not_followed) ... ok
+test_build_output_and_inspection_are_not_installation_or_trust (test_interim_package.InterimPackageTests.test_build_output_and_inspection_are_not_installation_or_trust) ... ok
+test_build_refuses_symlink_inputs_and_output (test_interim_package.InterimPackageTests.test_build_refuses_symlink_inputs_and_output) ... ok
+test_duplicate_identity_and_unchanged_replacement (test_interim_package.InterimPackageTests.test_duplicate_identity_and_unchanged_replacement) ... ok
+test_fix_dependency_cannot_also_be_superseded (test_interim_package.InterimPackageTests.test_fix_dependency_cannot_also_be_superseded) ... ok
+test_framing_rejects_truncation_corruption_and_extra_data (test_interim_package.InterimPackageTests.test_framing_rejects_truncation_corruption_and_extra_data) ... ok
+test_invalid_platform_times_and_advisory (test_interim_package.InterimPackageTests.test_invalid_platform_times_and_advisory) ... ok
+test_length_bounds_before_payload_read (test_interim_package.InterimPackageTests.test_length_bounds_before_payload_read) ... ok
+test_only_canonical_manifest_encoding (test_interim_package.InterimPackageTests.test_only_canonical_manifest_encoding) ... ok
+test_original_control_identity_is_checked (test_interim_package.InterimPackageTests.test_original_control_identity_is_checked) ... ok
+test_reproducible_roundtrip_preserves_original_debs (test_interim_package.InterimPackageTests.test_reproducible_roundtrip_preserves_original_debs) ... ok
+test_unknown_manifest_fields_never_become_authority (test_interim_package.InterimPackageTests.test_unknown_manifest_fields_never_become_authority) ... ok
+test_unlisted_missing_and_tampered_artifacts (test_interim_package.InterimPackageTests.test_unlisted_missing_and_tampered_artifacts) ... ok
+test_command_inventory_matches_actual_development_entrypoints (test_package_cli.Commands.test_command_inventory_matches_actual_development_entrypoints) ... ok
+test_geninstall_uses_same_installp_intent (test_package_cli.Commands.test_geninstall_uses_same_installp_intent) ... ok
+test_grouped_flags_and_attached_source (test_package_cli.Commands.test_grouped_flags_and_attached_source) ... ok
+test_instfix_p_lists_packages_not_installp_preview (test_package_cli.Commands.test_instfix_p_lists_packages_not_installp_preview) ... ok
+test_inutoc_default_and_explicit_directory (test_package_cli.Commands.test_inutoc_default_and_explicit_directory) ... ok
+test_invalid_and_bounded_input (test_package_cli.Commands.test_invalid_and_bounded_input) ... ok
+test_invalid_installp_combinations (test_package_cli.Commands.test_invalid_installp_combinations) ... ok
+test_lifecycle_is_not_collapsed (test_package_cli.Commands.test_lifecycle_is_not_collapsed) ... ok
+test_list_file_remains_unread_intent (test_package_cli.Commands.test_list_file_remains_unread_intent) ... ok
+test_lppchk_is_read_only_and_modes_are_distinct (test_package_cli.Commands.test_lppchk_is_read_only_and_modes_are_distinct) ... ok
+test_lppmgr_prompt_is_not_preview_and_list_overrides_removal (test_package_cli.Commands.test_lppmgr_prompt_is_not_preview_and_list_overrides_removal) ... ok
+test_lslpp_history_and_literal_patterns (test_package_cli.Commands.test_lslpp_history_and_literal_patterns) ... ok
+test_no_silent_compatibility_options (test_package_cli.Commands.test_no_silent_compatibility_options) ... ok
+test_preview_all_mutations (test_package_cli.Commands.test_preview_all_mutations) ... ok
+test_real_named_entry_points_and_no_fallback (test_package_cli.Commands.test_real_named_entry_points_and_no_fallback) ... ok
+test_suma_does_not_accept_foreign_specific_or_ambiguous_settings (test_package_cli.Commands.test_suma_does_not_accept_foreign_specific_or_ambiguous_settings) ... ok
+test_suma_schedule_bounds (test_package_cli.Commands.test_suma_schedule_bounds) ... ok
+test_suma_task_operations_and_attributes (test_package_cli.Commands.test_suma_task_operations_and_attributes) ... ok
+test_unconnected_actions_never_report_success (test_package_cli.Commands.test_unconnected_actions_never_report_success) ... ok
+test_update_all_is_installed_selection_not_media_all (test_package_cli.Commands.test_update_all_is_installed_selection_not_media_all) ... ok
+test_incomplete_or_duplicate_state_rejected (test_transition.TransitionTests.test_incomplete_or_duplicate_state_rejected) ... ok
+test_missing_file_lists_not_empty_success (test_transition.TransitionTests.test_missing_file_lists_not_empty_success) ... ok
+test_native_any_requires_multiarch_allowed (test_transition.TransitionTests.test_native_any_requires_multiarch_allowed) ... ok
+test_original_alternative_and_versioned_provides_preserved (test_transition.TransitionTests.test_original_alternative_and_versioned_provides_preserved) ... ok
+test_real_control_inventory_and_removal_breakage (test_transition.TransitionTests.test_real_control_inventory_and_removal_breakage) ... ok
+test_exact_artifact_and_source_binding (test_update_metadata.UpdateMetadataTests.test_exact_artifact_and_source_binding) ... ok
+test_malformed_and_ambiguous_advisories_rejected (test_update_metadata.UpdateMetadataTests.test_malformed_and_ambiguous_advisories_rejected) ... ok
+test_missing_urgency_is_unknown_not_low (test_update_metadata.UpdateMetadataTests.test_missing_urgency_is_unknown_not_low) ... ok
+test_native_version_order_and_release_selection (test_update_metadata.UpdateMetadataTests.test_native_version_order_and_release_selection) ... ok
+test_real_deb_intake_keeps_observation_separate_from_trust (test_update_metadata.UpdateMetadataTests.test_real_deb_intake_keeps_observation_separate_from_trust) ... ok
+test_source_version_not_binary_rebuild_version (test_update_metadata.UpdateMetadataTests.test_source_version_not_binary_rebuild_version) ... ok
+test_upload_urgency_case_and_comment_are_preserved (test_update_metadata.UpdateMetadataTests.test_upload_urgency_case_and_comment_are_preserved) ... ok
+
+----------------------------------------------------------------------
+Ran 56 tests in 1.468s
+
+OK
+python3 -m compileall -q native
+python3 -B -m unittest discover -s hardening -p test_hardening.py -v
+test_elf_negative_properties_are_not_pass (test_hardening.HardeningTests.test_elf_negative_properties_are_not_pass) ... ok
+test_generated_policy_is_exact (test_hardening.HardeningTests.test_generated_policy_is_exact) ... ok
+test_missing_runtime_evidence_fails (test_hardening.HardeningTests.test_missing_runtime_evidence_fails) ... ok
+test_truncated_program_table_or_dynamic_rejected (test_hardening.HardeningTests.test_truncated_program_table_or_dynamic_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+OK
+python3 -m compileall -q hardening
+python3 -B -m unittest discover -s image -p test_image_tools.py -v
+test_equal_bytes_require_equal_inputs_and_changed_bytes_fail (test_image_tools.ImageComparison.test_equal_bytes_require_equal_inputs_and_changed_bytes_fail) ... ok
+test_committed_file_modes_do_not_depend_on_checkout_permissions (test_image_tools.PreparationBoundaries.test_committed_file_modes_do_not_depend_on_checkout_permissions) ... ok
+test_dirty_component_refused_before_copy (test_image_tools.PreparationBoundaries.test_dirty_component_refused_before_copy) ... ok
+test_existing_output_is_not_overwritten (test_image_tools.PreparationBoundaries.test_existing_output_is_not_overwritten) ... ok
+test_failure_already_received_after_login_is_not_lost (test_image_tools.SerialAcceptance.test_failure_already_received_after_login_is_not_lost) ... ok
+test_additional_source_requires_exact_version (test_image_tools.SourceAssociation.test_additional_source_requires_exact_version) ... ok
+test_binary_nmu_uses_explicit_source_version_and_epoch (test_image_tools.SourceAssociation.test_binary_nmu_uses_explicit_source_version_and_epoch) ... ok
+test_historical_architectures_are_alternatives_and_errors_fail (test_image_tools.SourceAssociation.test_historical_architectures_are_alternatives_and_errors_fail) ... Historical download: fixture=1.0 (amd64)
+debsnap: No binary packages found for fixture version 1.0 on amd64
+Historical download: fixture=1.0 (all)
+Historical download: fixture=1.0 (amd64)
+TLS retrieval failedok
+test_installer_build_identity_preserves_source_version (test_image_tools.SourceAssociation.test_installer_build_identity_preserves_source_version) ... ok
+test_live_inventory_requires_every_exact_binary_version (test_image_tools.SourceAssociation.test_live_inventory_requires_every_exact_binary_version) ... ok
+test_missing_source_field_preserves_identity (test_image_tools.SourceAssociation.test_missing_source_field_preserves_identity) ... ok
+test_no_invented_bin_nmu_source_version (test_image_tools.SourceAssociation.test_no_invented_bin_nmu_source_version) ... ok
+test_signed_kernel_source_control_closes_missing_udeb_reference (test_image_tools.SourceAssociation.test_signed_kernel_source_control_closes_missing_udeb_reference) ... ok
+test_signed_wrapper_retains_actual_kernel_and_static_sources (test_image_tools.SourceAssociation.test_signed_wrapper_retains_actual_kernel_and_static_sources) ... ok
+test_source_archives_are_checked_against_exact_control (test_image_tools.SourceAssociation.test_source_archives_are_checked_against_exact_control) ... ok
+test_source_name_without_version_preserves_binary_version (test_image_tools.SourceAssociation.test_source_name_without_version_preserves_binary_version) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.155s
+
+OK
+python3 -m compileall -q image release
+make: Leaving directory '/home/nia/devbox/niaos/nia-os-consent/distribution'

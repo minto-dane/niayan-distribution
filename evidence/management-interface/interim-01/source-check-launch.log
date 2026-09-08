@@ -1,0 +1,3 @@
+Running as unit: run-p323424-i323724.scope; invocation ID: 3f0e11a312de40ccaf1afea091274557
+limited-exec: {"scope": "run-p323424-i323724.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+/home/nia/devbox/niaos/nia-os-consent/assurance/evidence/engineering-umm816gz/report.json

@@ -1,0 +1,368 @@
+{
+  "schema": "org.niaos.management-command-scope/v1",
+  "reviewed_on": "2026-09-08",
+  "baseline": "NiaOS management interface; per-command semantic adoption",
+  "complete_reference_inventory": false,
+  "authority": "development scope only; not a capability grant or runtime registry",
+  "families": [
+    {
+      "name": "package",
+      "commands": [
+        "installp",
+        "geninstall",
+        "install_all_updates",
+        "instfix",
+        "lslpp",
+        "lppchk"
+      ],
+      "state": "grammar-only",
+      "target": "one native catalog, resolver and managed transaction service",
+      "remaining": "native transport, authenticated catalog, lifecycle retention, fix metadata, output formats, complete option review, real update/recovery tests; no reference-platform BFF/RPM/ISMP delegation",
+      "reference_status": "Public command documentation reviewed for grammar-only entries; individual review pending for candidate entries."
+    },
+    {
+      "name": "media",
+      "commands": [
+        "inutoc",
+        "lppmgr"
+      ],
+      "state": "grammar-only",
+      "target": "authenticated native media index and reference-aware storage management",
+      "remaining": "native index format, original metadata preservation, base/update distinction, dependency/supersession checks, pin/rollback/reproduction/source retention and atomic index publication; never equate an older version with a deletable object",
+      "reference_status": "Public command documentation reviewed for grammar-only entries; individual review pending for candidate entries."
+    },
+    {
+      "name": "fetch",
+      "commands": [
+        "suma"
+      ],
+      "state": "grammar-only",
+      "target": "authenticated Debian/Nia update intake, persisted tasks and scheduler",
+      "remaining": "native repository selection, trust/expiry/revocation, bounded downloads, task persistence, schedule execution and reboot tests; vendor server, TL/SP/ML/PTF selection and automatic filesystem expansion are excluded",
+      "reference_status": "Public command documentation reviewed for grammar-only entries; individual review pending for candidate entries."
+    },
+    {
+      "name": "interactive-management",
+      "commands": [
+        "smit",
+        "smitty"
+      ],
+      "state": "planned",
+      "target": "shared action forms, TUI navigation, command display and redacted audit trail",
+      "remaining": "review fast paths including update_all, implement actual menus/forms and keyboard navigation, bind the same native requests/authorization/results as CLI; no arbitrary shell/ODM menu execution",
+      "reference_status": "Public command documentation reviewed for grammar-only entries; individual review pending for candidate entries."
+    },
+    {
+      "name": "interim-fixes",
+      "commands": [
+        "emgr",
+        "epkg"
+      ],
+      "state": "local-artifact-only",
+      "target": "native signed interim-fix artifacts; same catalog, ownership reservations, holds and managed transaction engine as normal packages",
+      "remaining": "Local deterministic unsigned artifact construction and display implemented; installed operations remain unavailable. Complete publisher/contract authentication, shared catalog holds, apply/check/remove, supersession/recovery, interactive packaging and response qualification.",
+      "reference_status": "Public command documentation reviewed for grammar-only entries; individual review pending for candidate entries."
+    },
+    {
+      "name": "services",
+      "commands": [
+        "lssrc",
+        "startsrc",
+        "stopsrc",
+        "refresh",
+        "mkssys",
+        "chssys",
+        "rmssys"
+      ],
+      "state": "excluded-external-system",
+      "target": "existing external software and its native administrative commands",
+      "remaining": "No wrapper implementation planned. Nia may consume explicit observations/effect adapters as part of its own transactions, but does not replace the external public interface.",
+      "reference_status": "Public command documentation reviewed for grammar-only entries; individual review pending for candidate entries."
+    },
+    {
+      "name": "devices",
+      "commands": [
+        "lsdev",
+        "lsattr",
+        "lscfg",
+        "cfgmgr",
+        "mkdev",
+        "chdev",
+        "rmdev"
+      ],
+      "state": "excluded-external-system",
+      "target": "existing external software and its native administrative commands",
+      "remaining": "No wrapper implementation planned. Nia may consume explicit observations/effect adapters as part of its own transactions, but does not replace the external public interface.",
+      "reference_status": "Public command documentation reviewed for grammar-only entries; individual review pending for candidate entries."
+    },
+    {
+      "name": "accounts",
+      "commands": [
+        "lsuser",
+        "mkuser",
+        "chuser",
+        "rmuser",
+        "lsgroup",
+        "mkgroup",
+        "chgroup",
+        "rmgroup",
+        "pwdadm",
+        "lssec",
+        "chsec"
+      ],
+      "state": "excluded-external-system",
+      "target": "existing external software and its native administrative commands",
+      "remaining": "No wrapper implementation planned. Nia may consume explicit observations/effect adapters as part of its own transactions, but does not replace the external public interface.",
+      "reference_status": "Public command documentation reviewed for grammar-only entries; individual review pending for candidate entries."
+    },
+    {
+      "name": "storage",
+      "commands": [
+        "lsfs",
+        "crfs",
+        "chfs",
+        "rmfs",
+        "lsvg",
+        "lspv",
+        "lslv",
+        "mkvg",
+        "mklv",
+        "extendvg",
+        "reducevg",
+        "chlv",
+        "rmlv"
+      ],
+      "state": "excluded-external-system",
+      "target": "existing external software and its native administrative commands",
+      "remaining": "No wrapper implementation planned. Nia may consume explicit observations/effect adapters as part of its own transactions, but does not replace the external public interface.",
+      "reference_status": "Public command documentation reviewed for grammar-only entries; individual review pending for candidate entries."
+    },
+    {
+      "name": "diagnostics-and-release",
+      "commands": [
+        "oslevel",
+        "errpt",
+        "errlogger",
+        "errclear",
+        "alog",
+        "snap"
+      ],
+      "state": "candidate-unreviewed",
+      "target": "Nia release manifest and statecore diagnostic/evidence contracts",
+      "remaining": "individual syntax review, release versus kernel version distinction, typed events, privacy, retention and collection budgets; do not fabricate APAR/TL identifiers or map evidence deletion blindly",
+      "reference_status": "Public command documentation reviewed for grammar-only entries; individual review pending for candidate entries."
+    },
+    {
+      "name": "network-and-tuning",
+      "commands": [
+        "mktcpip",
+        "chinet",
+        "no",
+        "nfso",
+        "vmo",
+        "ioo",
+        "schedo"
+      ],
+      "state": "excluded-external-system",
+      "target": "existing external software and its native administrative commands",
+      "remaining": "No wrapper implementation planned. Nia may consume explicit observations/effect adapters as part of its own transactions, but does not replace the external public interface.",
+      "reference_status": "Public command documentation reviewed for grammar-only entries; individual review pending for candidate entries."
+    },
+    {
+      "name": "foreign-platform-specific",
+      "commands": [
+        "nim",
+        "nimclient",
+        "lsnim",
+        "mkwpar",
+        "lswpar",
+        "chwpar",
+        "rmwpar",
+        "lparstat",
+        "lparmgr",
+        "bosboot",
+        "mksysb",
+        "alt_disk_copy",
+        "bffcreate"
+      ],
+      "state": "deferred-no-equivalent",
+      "target": "no direct implementation selected",
+      "remaining": "reference-platform NIM/WPAR/LPAR, boot images, rootvg backup and BFF formats are absent; any future analogous feature needs a separate semantic design and acceptance, not an alias",
+      "reference_status": "Public command documentation reviewed for grammar-only entries; individual review pending for candidate entries."
+    },
+    {
+      "name": "package-comparison",
+      "commands": [
+        "compare_report"
+      ],
+      "state": "planned",
+      "target": "native installed/catalog comparison and signed supply inventory",
+      "remaining": "Implement lower/higher/missing/new comparisons including active interim fixes and exact source/version semantics; qualify report names, column formats and exit behavior.",
+      "reference_status": "Review of official command and concept documentation; precise syntax and response coverage tracked separately."
+    },
+    {
+      "name": "package-search",
+      "commands": [
+        "which_fileset"
+      ],
+      "state": "planned",
+      "target": "authenticated supply contents index, including packages not installed",
+      "remaining": "Implement bounded reference-pattern lookup and source-index authentication; keep distinct from installed ownership lookup with lslpp -w.",
+      "reference_status": "Review of official command and concept documentation; precise syntax and response coverage tracked separately."
+    },
+    {
+      "name": "prerequisite-check",
+      "commands": [
+        "ckprereq"
+      ],
+      "state": "planned",
+      "target": "existing independent native dependency validation",
+      "remaining": "Bind exact catalog and input requirements, implement supported prerequisite syntax and documented outcomes; no independent write path.",
+      "reference_status": "Review of official command and concept documentation; precise syntax and response coverage tracked separately."
+    },
+    {
+      "name": "license-agreements",
+      "commands": [
+        "inulag"
+      ],
+      "state": "planned",
+      "target": "versioned license and consent records within the native catalog",
+      "remaining": "Add display/registration/revalidation semantics, subject-bound consent and installp/geninstall agreement integration; no separate license database.",
+      "reference_status": "Review of official command and concept documentation; precise syntax and response coverage tracked separately."
+    },
+    {
+      "name": "interim-fix-intake",
+      "commands": [
+        "emgr_check_ifixes",
+        "emgr_download_ifix"
+      ],
+      "state": "planned",
+      "target": "shared authenticated advisory and native interim artifact intake",
+      "remaining": "Check availability versus installed bases/holds; verify signatures and freshness; download without implicit installation; qualify path defaults and output.",
+      "reference_status": "Review of official command and concept documentation; precise syntax and response coverage tracked separately."
+    },
+    {
+      "name": "missing-command-installation",
+      "commands": [
+        "autofsinstall"
+      ],
+      "state": "planned",
+      "target": "optional Nia-owned missing-command resolution and install request",
+      "remaining": "Default disabled; explicit confirmation and ordinary native authorization; do not modify external managers or execute failed command text as a shell.",
+      "reference_status": "Review of official command and concept documentation; precise syntax and response coverage tracked separately."
+    },
+    {
+      "name": "installation-internals",
+      "commands": [
+        "inucp",
+        "inurecv",
+        "inurest",
+        "inusave",
+        "inuumsg",
+        "sysck"
+      ],
+      "state": "internal-only",
+      "target": "existing file/CAS/WAL, acceptance, effect and diagnostic components",
+      "remaining": "Cover equivalent effects through authenticated transactions; no standalone copying/restoration/catalog-update bypasses and no arbitrary package-provided scripts.",
+      "reference_status": "Review of official command and concept documentation; precise syntax and response coverage tracked separately."
+    },
+    {
+      "name": "native-authorization",
+      "commands": [
+        "lsauth",
+        "mkauth",
+        "chauth",
+        "rmauth",
+        "lsrole",
+        "mkrole",
+        "chrole",
+        "rmrole",
+        "rolelist",
+        "swrole",
+        "lssecattr",
+        "setsecattr",
+        "ckauth",
+        "rmsecattr"
+      ],
+      "state": "candidate-unreviewed",
+      "target": "Nia-managed authorization, roles and resource permissions only",
+      "remaining": "Review individual semantics before adoption; preserve external operating-system account and privilege tools; do not equate reference kernel privilege attributes with Linux capabilities.",
+      "reference_status": "Review of official command and concept documentation; precise syntax and response coverage tracked separately."
+    },
+    {
+      "name": "external-trust-and-loader",
+      "commands": [
+        "trustchk",
+        "genld",
+        "genkld",
+        "slibclean",
+        "lskst",
+        "setkst",
+        "setsecconf",
+        "lspriv",
+        "tracepriv",
+        "pvi",
+        "rbacqry"
+      ],
+      "state": "excluded-external-system",
+      "target": "external kernel, loader and runtime integrity mechanisms",
+      "remaining": "No compatibility wrapper for external trusted execution, module unloading or shared-library caches; native transactions still require accurate activation observations. Kernel security tables, privileged editors and process privilege tracing belong to external mechanisms; no equivalent native implementation selected.",
+      "reference_status": "Review of official command and concept documentation; precise syntax and response coverage tracked separately."
+    },
+    {
+      "name": "authorization-export",
+      "commands": [
+        "rbactoldif"
+      ],
+      "state": "deferred-no-equivalent",
+      "target": "No native LDAP authorization schema or export contract is selected",
+      "remaining": "Do not export native consent as foreign kernel privilege grants; reassess only with an explicit directory integration design.",
+      "reference_status": "Official command documents reviewed; depends on platform authorization tables and configured LDAP schema."
+    },
+    {
+      "name": "package-construction",
+      "commands": [
+        "mkinstallp"
+      ],
+      "state": "planned",
+      "target": "Native ordinary package construction and typed effect/source manifests",
+      "remaining": "Review template and interactive semantics against the existing native artifact/source tools. Preserve original third-party DEBs; do not introduce a second installed-package writer or fabricate foreign fileset metadata.",
+      "reference_status": "Official command/concept references reviewed for purpose and adoption boundary; complete option/response qualification remains separate."
+    },
+    {
+      "name": "media-copy",
+      "commands": [
+        "gencopy"
+      ],
+      "state": "planned",
+      "target": "Selection and copying of authenticated native install images",
+      "remaining": "Implement media selection, exact artifact/index copying and atomic destination publication; no shell forwarding of backend flag strings or unqualified foreign format support.",
+      "reference_status": "Official command/concept references reviewed for purpose and adoption boundary; complete option/response qualification remains separate."
+    },
+    {
+      "name": "diagnostic-template-tools",
+      "commands": [
+        "errupdate",
+        "errmsg"
+      ],
+      "state": "candidate-unreviewed",
+      "target": "Nia diagnostic templates and versioned message catalogs",
+      "remaining": "Reference purpose reviewed; native event schema, template versioning, syntax and catalog updates need individual adoption. No disabling mandatory transaction audit or rewriting retained evidence.",
+      "reference_status": "Official command/concept references reviewed for purpose and adoption boundary; complete option/response qualification remains separate."
+    },
+    {
+      "name": "platform-diagnostics",
+      "commands": [
+        "diag"
+      ],
+      "state": "deferred-no-equivalent",
+      "target": "External hardware diagnostics and platform service aids",
+      "remaining": "Reference primarily addresses hardware/service aids, firmware and media operations. Do not turn it into an alias for a Nia package verification command.",
+      "reference_status": "Official command/concept references reviewed for purpose and adoption boundary; complete option/response qualification remains separate."
+    }
+  ],
+  "public_entry_policy": "Only the adopted command family exposes Nia-owned administrative actions; no public nia/niactl/missionctl compatibility aliases. Internal SDKs and workers are implementation details.",
+  "external_software_policy": "Independent external software retains its own commands and authority. No compatibility wrappers for systemd, networking, device or storage tools.",
+  "response_policy": "Reference-equivalent behavior, stdout/stderr, exit status, prompts, tabular and machine-readable output, and interactive navigation are required per adopted command. Current grammar tests do not establish response compatibility.",
+  "review_scope": "Installation/update concept chapters, package command references, interim-fix intake, license and prerequisite helpers, missing-command lookup, comparison and authorization cross-references. This is a scoped review, not an exhaustive inventory of every operating-system utility. Ordinary package construction, generic media copying and diagnostic template/message cross-references were also reviewed; some command-level details and entire unrelated OS families remain outside the completed review."
+}

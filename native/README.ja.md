@@ -3,6 +3,12 @@
 [製品判断](../docs/decisions/0002-native-package-authority.ja.md)に従うTrixie置換工程。
 現段階の工具は移行対象の実データ検査であり、インストーラーや特権writerではない。
 
+公開管理コマンドは[最新判断](../docs/decisions/0003-management-interface.ja.md)に従う。
+[コマンド解析](commands.ja.md)と[更新緊急度・修正告知の識別](update-metadata.ja.md)を追加した。
+[緊急修正成果物](interim-package.ja.md)の決定的な作成と読取をepkg/emgrへ接続した。
+外部ソフトウェアの管理コマンドは包まず、Niaの管理操作の入口だけを統一する。
+緊急修正は通常パッケージと同じcatalogへ接続する設計で、適用器は未実装である。
+
 ```sh
 python3 native/audit_transition.py \
   --status /offline-metadata/var/lib/dpkg/status \

@@ -1,0 +1,155 @@
+{
+  "schema": "org.niaos.evidence-manifest/v1",
+  "files": [
+    {
+      "path": "README.ja.md",
+      "size": 1169,
+      "sha256": "26c2162625903d181f39dfe93f464a94aa7eb3e6cc53ac2f5154dc3e8e522936"
+    },
+    {
+      "path": "report.json",
+      "size": 5158,
+      "sha256": "6b4bbfb94bfa72d94b06d174eb6817f22fe8982588cd4283b154c3a80fda9000"
+    },
+    {
+      "path": "source-check/assurance-contract.log",
+      "size": 4077,
+      "sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6"
+    },
+    {
+      "path": "source-check/capsule-policy-tree-tests.log",
+      "size": 8739,
+      "sha256": "6c294ead79c2c7fd4e415c18f7d12e5530063cac375096378ecfb9153c3e48bd"
+    },
+    {
+      "path": "source-check/capsulecore-contract.log",
+      "size": 4077,
+      "sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6"
+    },
+    {
+      "path": "source-check/cohort-recovery-tests.log",
+      "size": 5151,
+      "sha256": "a23459ad8c01c5c727ee0c7aa11b03d2e0b6b9c95e1908b64051a64956396d2f"
+    },
+    {
+      "path": "source-check/component-ci-generated.log",
+      "size": 71,
+      "sha256": "e46a10320f07874e9bf758914c1cea6f1cde6ed4e70b81a989379528d1c3812f"
+    },
+    {
+      "path": "source-check/configcore-contract.log",
+      "size": 4077,
+      "sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6"
+    },
+    {
+      "path": "source-check/configuration-reference-tests.log",
+      "size": 3229,
+      "sha256": "5f930b1b51ce5c23c4ae0e8bf8301ba588b3a1112496d1140b2de01b3e8aefa9"
+    },
+    {
+      "path": "source-check/controlcore-contract.log",
+      "size": 4077,
+      "sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6"
+    },
+    {
+      "path": "source-check/distribution-tool-tests.log",
+      "size": 12134,
+      "sha256": "18ed8a73f6a1cf1fda5ecd75ba3c62c8b9723ea7814d1f5e078efe34ae33edc9"
+    },
+    {
+      "path": "source-check/engineering-unittests.log",
+      "size": 16275,
+      "sha256": "1813d830b37fed791a715db290a240639e0486b72789cb7871310a29f74db72d"
+    },
+    {
+      "path": "source-check/evidence-manifest.sha256",
+      "size": 2294,
+      "sha256": "fd3e7828a0b42249e8a7d9a567bd24307cfcddbdd64d3554f0e5ada778909888"
+    },
+    {
+      "path": "source-check/gprbuild-version.log",
+      "size": 369,
+      "sha256": "580b7d8d6b27ce742268f9fa3342c978e0240a050fb3ec9fb44ea3f063b5e8ca"
+    },
+    {
+      "path": "source-check/manager-implementation-profile.log",
+      "size": 129,
+      "sha256": "8e6503258bf0c12b82bcd750e52f16e350fbf7b3651488a01f41bf2f4a57dedc"
+    },
+    {
+      "path": "source-check/manager-reference-tests.log",
+      "size": 4879,
+      "sha256": "2d7252e59b9463ddb0494cf67611a52bd422a5ade050275fb2771b2a9b2004a6"
+    },
+    {
+      "path": "source-check/native-resolver-lock.log",
+      "size": 124,
+      "sha256": "e40adfcec7696f7f8117e538efe7e131aa99fef55ba2547468edc807fc208366"
+    },
+    {
+      "path": "source-check/nia-product-audit.log",
+      "size": 1259,
+      "sha256": "ca593df1303b99f528959d1549530aa1acc5ba0add1b38a70f124e995ff165d2"
+    },
+    {
+      "path": "source-check/pkgcore-contract.log",
+      "size": 4077,
+      "sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6"
+    },
+    {
+      "path": "source-check/report.json",
+      "size": 13164,
+      "sha256": "e107d90267c2c98f56bbd85e32f0ec2531b1de62b7efbec6e910396bceeb43a1"
+    },
+    {
+      "path": "source-check/resolution-reference-tests.log",
+      "size": 6707,
+      "sha256": "998c669148f2e4b859e9370cf7e95ddaefa3dbf21aa790e045babd0d45c8b4a4"
+    },
+    {
+      "path": "source-check/resolver-neutral-boundary.log",
+      "size": 1527,
+      "sha256": "9924a0e4760c31c44af6d27b6aeb0921e82fce58ec82e233c686c8eaa7aad157"
+    },
+    {
+      "path": "source-check/resolver-source-profile.log",
+      "size": 146,
+      "sha256": "d20516e36c781b18a0702dbd98ab8969ebb69c5f076558f497a888e4cf5e62b2"
+    },
+    {
+      "path": "source-check/resolvercore-contract.log",
+      "size": 4077,
+      "sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6"
+    },
+    {
+      "path": "source-check/statecore-contract.log",
+      "size": 4077,
+      "sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6"
+    },
+    {
+      "path": "source-check/syntax-and-doc-links.log",
+      "size": 162047,
+      "sha256": "b792a46cd619ade060399e78f4f3bd095ab294116a42e7fdd620a24c8868ecc9"
+    },
+    {
+      "path": "source-check/traceability.json",
+      "size": 396,
+      "sha256": "d6cb1e0e176f38c97ef21e01df97bdcf009b36df6a9e4e2505eb060cb11f7944"
+    },
+    {
+      "path": "source-check/unified-architecture-audit.log",
+      "size": 222423,
+      "sha256": "f8a873f9d86cf5ca9ad95e8443545da25b12aa8536c7e741ec9d85fcec8fbd84"
+    },
+    {
+      "path": "source-check-launch.log",
+      "size": 353,
+      "sha256": "f3ba69f3f818011fb2e015ea627c6c4e7d1a39725eb750c0d1ec0b743c6a0861"
+    },
+    {
+      "path": "tool-tests.log",
+      "size": 11858,
+      "sha256": "c83480e0295293695e3bd2c473d0db87c76be6e80ffcda7127367ea83798707a"
+    }
+  ]
+}

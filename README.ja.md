@@ -5,6 +5,7 @@ Debian 13 Trixieから、上流コードを変更せずに構築するディス�
 既存ISOはAPTを使う比較基準であり、置換完了・本番認定は未実施。
 
 読む順序: [最新の設計判断](docs/decisions/0002-native-package-authority.ja.md) →
+[公開コマンドと緊急修正](docs/decisions/0003-management-interface.ja.md) →
 [置換工程](native/README.ja.md) → [ハードニング](hardening/README.ja.md)。
 旧基準版の[構築と試験](image/README.ja.md)は再現用に維持する。
 

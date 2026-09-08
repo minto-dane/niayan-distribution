@@ -1,0 +1,108 @@
+{
+  "schema": "org.niaos.management-interface-validation/v1",
+  "source_subject": "8a85a84512a85a829d9f2ad2e4656089d158066006b72eea98bbe024242d76d4",
+  "tests": {
+    "command_grammar": 20,
+    "update_metadata": 7,
+    "transition": 5,
+    "hardening": 4,
+    "image_tools": 16,
+    "source_pipeline_steps": 24
+  },
+  "result": "pass-for-tested-development-scope",
+  "native_runtime_connected": false,
+  "interim_fix_implementation": false,
+  "interactive_ui_implemented": false,
+  "new_iso_built": false,
+  "formal_proof_rerun": false,
+  "inputs": [
+    {
+      "path": "Makefile",
+      "sha256": "c7438daccfb1725894af037bd581ba3cd183cfb7e181893bbec4b5dfc8aea099"
+    },
+    {
+      "path": "native/acceptance.json",
+      "sha256": "4bdbc33b9140012ab9a97de7afb3a40d54469e98e84dc6c9d966915ce7ee60cf"
+    },
+    {
+      "path": "native/audit_transition.py",
+      "sha256": "16390ec59e5ef41cf903484afe213d1d6d8d5099627c7f07b31cf898ae13420e"
+    },
+    {
+      "path": "native/bin/geninstall",
+      "sha256": "5a6bf38bd7e19708fae590f33892fd79ff4df9ff2581c387f94c0e907e54e44c"
+    },
+    {
+      "path": "native/bin/install_all_updates",
+      "sha256": "5a6bf38bd7e19708fae590f33892fd79ff4df9ff2581c387f94c0e907e54e44c"
+    },
+    {
+      "path": "native/bin/installp",
+      "sha256": "5a6bf38bd7e19708fae590f33892fd79ff4df9ff2581c387f94c0e907e54e44c"
+    },
+    {
+      "path": "native/bin/instfix",
+      "sha256": "5a6bf38bd7e19708fae590f33892fd79ff4df9ff2581c387f94c0e907e54e44c"
+    },
+    {
+      "path": "native/bin/inutoc",
+      "sha256": "5a6bf38bd7e19708fae590f33892fd79ff4df9ff2581c387f94c0e907e54e44c"
+    },
+    {
+      "path": "native/bin/lppchk",
+      "sha256": "5a6bf38bd7e19708fae590f33892fd79ff4df9ff2581c387f94c0e907e54e44c"
+    },
+    {
+      "path": "native/bin/lppmgr",
+      "sha256": "5a6bf38bd7e19708fae590f33892fd79ff4df9ff2581c387f94c0e907e54e44c"
+    },
+    {
+      "path": "native/bin/lslpp",
+      "sha256": "5a6bf38bd7e19708fae590f33892fd79ff4df9ff2581c387f94c0e907e54e44c"
+    },
+    {
+      "path": "native/bin/suma",
+      "sha256": "5a6bf38bd7e19708fae590f33892fd79ff4df9ff2581c387f94c0e907e54e44c"
+    },
+    {
+      "path": "native/management-commands.json",
+      "sha256": "689a41d2f0697adcb41ccdf49d883c3d74d1fe8932a727e8300f8032103c50ae"
+    },
+    {
+      "path": "native/package_cli.py",
+      "sha256": "6486a951ed82d0f62171cf40eb41363030cb7aa02805b959d49146953b0191a4"
+    },
+    {
+      "path": "native/test_package_cli.py",
+      "sha256": "3bffb7d8a60f05927675596f40a958f8319722200eb1a3acd67a987c45af2658"
+    },
+    {
+      "path": "native/test_transition.py",
+      "sha256": "f5cc4e6e026f92501f709a8cba57156a2b7f2399243670c4c47da51e671823a5"
+    },
+    {
+      "path": "native/test_update_metadata.py",
+      "sha256": "1b611a877143fb93a89fc08a5a77ccb73d2c97530959942ef3e862943316af8c"
+    },
+    {
+      "path": "native/update_metadata.py",
+      "sha256": "d80aff3bdc3642832b97e38bf5ba002e6591f96775eed3bbde93e9f8e8dd6553"
+    },
+    {
+      "path": "tools/deb_archive.py",
+      "sha256": "e19af8d9271ed6a847edad7636985ed1a7f9d09b17e47759c4531ba96ac142bf"
+    },
+    {
+      "path": "tools/debian_semantics.py",
+      "sha256": "ffb35309c71450f5e7409fe4a1f1b52d0ea0f2867ef2be547408956513df7802"
+    },
+    {
+      "path": "tools/nia_common.py",
+      "sha256": "70f877d3827d95b500e8c10c6482bb88b7f753dab7d46908b9acadd0bb4eec76"
+    },
+    {
+      "path": "tools/zstd_bounded.py",
+      "sha256": "cf61234f8761f1029b550294f32683971c5ba48cd61390eaf3f6ef9c06952e51"
+    }
+  ]
+}
