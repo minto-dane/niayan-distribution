@@ -1,0 +1,16 @@
+{
+  "reason": "ISO 09 passed all six VM checks; superseded generated ISO 07 test disks only",
+  "retained": "ISO 07, reports, screenshots and all logs",
+  "removed": [
+    {
+      "path": "/home/nia/devbox/niaos/.work/distro-artifacts-07/acceptance-01/install-uefi-offline/installed.qcow2",
+      "logical_bytes": 9242804224,
+      "allocated_bytes": 9242959872
+    },
+    {
+      "path": "/home/nia/devbox/niaos/.work/distro-artifacts-07/acceptance-01/install-bios-network/installed.qcow2",
+      "logical_bytes": 10119151616,
+      "allocated_bytes": 10119340032
+    }
+  ]
+}

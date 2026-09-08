@@ -7,6 +7,7 @@ from pathlib import Path
 import subprocess
 import socket
 import tempfile
+import tarfile
 import unittest
 from unittest import mock
 import time
@@ -22,6 +23,9 @@ spec.loader.exec_module(preparer)
 spec = importlib.util.spec_from_file_location('record_build', HERE / 'record-build.py')
 recorder = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(recorder)
+spec = importlib.util.spec_from_file_location('completion', HERE.parent / 'release/complete-sources.py')
+completion = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(completion)
 
 
 class ImageComparison(unittest.TestCase):
@@ -44,6 +48,31 @@ class ImageComparison(unittest.TestCase):
 
 
 class SourceAssociation(unittest.TestCase):
+    def test_signed_kernel_source_control_closes_missing_udeb_reference(self):
+        with tempfile.TemporaryDirectory(prefix='nia-kernel-source-') as temporary:
+            archive = Path(temporary) / 'signed.tar.xz'
+
+            def write_control(data, symlink=False):
+                with tarfile.open(archive, 'w:xz') as stream:
+                    member = tarfile.TarInfo('source-template/debian/control')
+                    member.size = len(data)
+                    if symlink:
+                        member.type = tarfile.SYMTYPE
+                        member.linkname = '/etc/passwd'
+                    stream.addfile(member, io.BytesIO(data))
+
+            write_control(b'Package: linux-image-fixture\nBuilt-Using: linux (= 6.12.94-1)\n')
+            self.assertEqual(completion.kernel_references(archive), [('linux', '6.12.94-1')])
+            write_control(b'Package: kernel-image-fixture-di\n')
+            with self.assertRaisesRegex(ValueError, 'lacks original'):
+                completion.kernel_references(archive)
+            write_control(b'Built-Using: linux (= ${source:Version})\n')
+            with self.assertRaisesRegex(ValueError, 'unsupported'):
+                completion.kernel_references(archive)
+            write_control(b'', symlink=True)
+            with self.assertRaisesRegex(ValueError, 'unexpected'):
+                completion.kernel_references(archive)
+
     def test_historical_architectures_are_alternatives_and_errors_fail(self):
         with tempfile.TemporaryDirectory(prefix='nia-history-test-') as temporary:
             calls = []

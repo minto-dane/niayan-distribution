@@ -1,0 +1,69 @@
+{
+  "base_report_sha256": "d2a637b46fb66629c5ec7ebfc32b2a1a25c84a805b22af9969d830d37f6d6870",
+  "collector_sha256": "f892eb99fef534e466b29a4e92ecebf41d8accd7e78ee02e4068bdff9004beb9",
+  "completion_tool_sha256": "aabcead8fa14fbdb17ad35cde386ca6d3d7a8f41bbce5f62565477e28892ef9f",
+  "images": [
+    {
+      "path": "live/niaos-0.1.0-amd64.hybrid.iso",
+      "sha256": "d4c18dc0e2be653bf11a04db40db95ca0353322010133e068dda274bd4aa314b"
+    }
+  ],
+  "input_manifest_sha256": "a6c4f7b9be5c579a9f0952df15276881cb48284f36bb13bdc793ad4ef180cf3b",
+  "result": "pass",
+  "scope": "original Linux sources for recorded signed amd64 kernels",
+  "wrappers": [
+    {
+      "name": "linux-signed-amd64",
+      "version": "6.12.107+1",
+      "archive_sha256": "01bcd3f1053d8042c0c786a8e879c50dfa4a0aafaf0c5db17e000e819f5e68c7",
+      "sources": [
+        [
+          "linux",
+          "6.12.107-1"
+        ]
+      ]
+    },
+    {
+      "name": "linux-signed-amd64",
+      "version": "6.12.94+1",
+      "archive_sha256": "6464b36f029836060d63c4590055c2f39a188a906ff17534fb399b61b0ddcf29",
+      "sources": [
+        [
+          "linux",
+          "6.12.94-1"
+        ]
+      ]
+    }
+  ],
+  "already_in_base": [
+    {
+      "name": "linux",
+      "version": "6.12.107-1"
+    }
+  ],
+  "sources": [
+    {
+      "name": "linux",
+      "version": "6.12.94-1",
+      "files": [
+        {
+          "path": "packages/linux/6.12.94-1/linux_6.12.94-1.debian.tar.xz",
+          "size": 1838436,
+          "sha256": "8c5130fd9dee8d6efcc594dc3357809ad8e0d0234357139f85f5ed39b37922b4"
+        },
+        {
+          "path": "packages/linux/6.12.94-1/linux_6.12.94-1.dsc",
+          "size": 288306,
+          "sha256": "985a33d437c11f73f672b808b62589a0db3e97c6c286f315dbe14d1fc43f1191"
+        },
+        {
+          "path": "packages/linux/6.12.94-1/linux_6.12.94.orig.tar.xz",
+          "size": 151297764,
+          "sha256": "3eea3dd18f67a103f6f8312e314075f695a27eaddd839e7b6c4641e6616dabba"
+        }
+      ],
+      "provenance": "signed APT snapshot"
+    }
+  ],
+  "production_qualified": false
+}

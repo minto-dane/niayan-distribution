@@ -1,0 +1,46 @@
+{
+  "result": "pass-for-source-checks",
+  "source_subject": "35f0072871a19fb269111dc4727428968b9bb0c3418a63a31840a4fbaa273acf",
+  "pipeline_checks": 24,
+  "python_test_groups": [
+    {
+      "log": "cohort-recovery-tests.log",
+      "run": 50,
+      "skipped": 0
+    },
+    {
+      "log": "engineering-unittests.log",
+      "run": 131,
+      "skipped": 0
+    },
+    {
+      "log": "configuration-reference-tests.log",
+      "run": 31,
+      "skipped": 0
+    },
+    {
+      "log": "capsule-policy-tree-tests.log",
+      "run": 95,
+      "skipped": 10
+    },
+    {
+      "log": "distribution-tool-tests.log",
+      "run": 134,
+      "skipped": 0
+    },
+    {
+      "log": "manager-reference-tests.log",
+      "run": 44,
+      "skipped": 0
+    },
+    {
+      "log": "resolution-reference-tests.log",
+      "run": 70,
+      "skipped": 1
+    }
+  ],
+  "python_tests_run": 555,
+  "python_tests_skipped": 11,
+  "ada_and_proof_rerun": false,
+  "reason": "seven component commits and mathematical inputs unchanged; prior proof acceptance remains bound to its recorded source"
+}

@@ -65,7 +65,15 @@
     "result": "pass",
     "comparison": "../reproducibility-09-10/iso-comparison.json"
   },
-  "source_collection": "corresponding source collection pending",
+  "source_collection": {
+    "result": "pass-for-recorded-source-inventories",
+    "base": "source-collection/report.json",
+    "signed_kernel_completion": "source-collection/signed-kernel-sources/report.json",
+    "host_verification": "source-collection/source-verification.json",
+    "source_packages": 1415,
+    "source_files": 4667,
+    "source_bytes": 8524077623
+  },
   "github_published": false,
   "production_qualified": false,
   "hardware_qualified": false,

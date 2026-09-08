@@ -2,7 +2,7 @@
 
 開発版。既存の7コンポーネントを改変せずにDEB化し、Debian 13 Trixieの公式パッケージと組み合わせる。[設計判断](../docs/decisions/0001-debian13.ja.md)。
 
-amd64・KDEの実ISOについて[構築と6項目のVM受入記録](../evidence/debian13/accepted-09/README.ja.md)を保存している。下記手順の記載だけを成功結果とはせず、対象hashを確認する。
+amd64・KDEの実ISOについて[構築と6項目のVM受入記録](../evidence/debian13/accepted-09/README.ja.md)を保存している。同じ入力からのISO 09/10が実バイト列で一致し、[対応ソース1,415組の収集・補完・照合](../evidence/debian13/accepted-09/source-collection/README.ja.md)も完了した。下記手順の記載だけを成功結果とはせず、対象hashを確認する。
 
 ## 入力と成果物
 
@@ -57,7 +57,7 @@ Distrobox内のユーザー名前空間では、作業領域に通常のデバ�
 1. Git外の新規VMディレクトリへ固定cloud imageを`base.qcow2`として取得し、専用のEd25519鍵を`ssh-keygen`で生成する。
 2. ビルダーコンテナにVMディレクトリを`/vm`、`image/`を`/source:ro`としてmountし、非rootで`python3 /source/prepare-builder-vm.py --directory /vm --public-key /vm/ssh-key.pub`を実行する。
 3. 同じcontainerに`--device /dev/kvm --network=host`を指定して`sh /source/run-builder-vm.sh`を実行する。VM全体を`dev/run-limited.sh`の外側kernel制限へ入れる。
-4. SSHの専用`UserKnownHostsFile`を使い、最初の接続後は`StrictHostKeyChecking=yes`で接続する。`image/`をVMの`/source`、準備した作業ディレクトリを`/build`へコピーする。
+4. SSHの専用`UserKnownHostsFile`を使い、最初の接続後は`StrictHostKeyChecking=yes`で接続する。`image/`をVMの`/source`、`release/`を`/release`、準備した作業ディレクトリを`/build`へコピーする。
 5. VM内で`sudo sh /source/provision-builder.sh`、続けて`sudo sh /source/build-live.sh`。再構築で設定を変えた場合は`--clean`を使用する。
 6. 生成物とログをホストのGit外の成果物ディレクトリへコピーして、VMを通常のpoweroffで停止する。別VMでISO受入を行う。
 
@@ -104,6 +104,8 @@ sudo python3 /source/record-build.py --output /build/record
 # Source collection only, after image building; the VM still uses the fixed snapshot.
 sudo apt-get install -y --no-install-recommends devscripts liblwp-protocol-https-perl
 sudo python3 /source/collect-sources.py --include-installer --output /build/corresponding-sources
+sudo python3 /release/complete-sources.py --sources /build/corresponding-sources \
+  --collector /source/collect-sources.py
 ```
 
 `record-build.py`は実際のlive-build設定、コンポーネント入力、ビルダーの全パッケージ版、ISOと独自DEB/source packageのSHA-256を保存する。記録の生成自体を起動試験の成功にしない。独立した2回の完成ビルドを比較する場合は、`record-build.py --build /build-second --compare-with /build-first --output /build-second/record`を使う。入力manifest、ISOの集合・サイズ・SHA-256、実際の`cmp`を照合し、不一致なら`iso-comparison.json`へ失敗を記録して非0で終了する。比較結果を別マシンや異なる入力へ一般化しない。生成物にGit外のVM seedやSSH鍵を含めない。
@@ -113,6 +115,10 @@ sudo python3 /source/collect-sources.py --include-installer --output /build/corr
 `--include-installer`は通常・GUI両方のinitrd内のdpkg inventoryも読み、内蔵パッケージとインストーラーの構築元を追加する。現在のISOのudeb poolにない内蔵パッケージは、Debianの[debsnap](https://manpages.debian.org/trixie/devscripts/debsnap.1.en.html)で正確な過去版を取得し、そのcontrolフィールドからSource・Built-Usingを対応付ける。取得したbinaryを実行・インストールしない。固定APT索引に残っていない正確なsource版もdebsnapでHTTPS取得し、`.dsc`のSource/Versionと全アーカイブのSHA-256・サイズを照合する。この過去版の取得をAPTのアーカイブ署名検証済みとは表示しない。各source行へ取得方法を記録する。`--include-installer`なしのキャッシュ収集だけで、ISO内蔵インストーラーのソースまで網羅したと扱わない。
 
 内蔵dpkg statusにはArchitectureが省略される。過去版binaryは`amd64`を指定し、その版が明示的に存在しない場合だけ`all`を取得する。debsnapへの複数architecture指定は両方の存在を要求するため、代替候補の指定には使わない。通信失敗を「パッケージなし」として処理しない。
+
+最後に[署名用カーネルsourceの補完](../release/README.ja.md)も実行する。インストーラーudebで省略された本体への参照を、取得済みの署名用sourceの正式なcontrolから読み、不足する正確なLinux本体を追加する。元の収集reportは変更せず、`signed-kernel-sources/report.json`を別に保存する。配布物には両方のsource集合を含める。
+
+一般ユーザーのホストへソース保管ディレクトリをコピーする場合、`rsync -a --no-owner --no-group`等でコピー先ユーザーの所有にする。VM内の`_apt`のUID/GIDをホストへ移す必要はない。`.dsc`・アーカイブ本体のバイト列は変えず、コピー後に両reportの全ファイルをサイズ・SHA-256で再照合する。
 
 `make image-check`はビルドせずに工具の構文と境界条件を検査する。単独のdistribution repoとworkspaceの両方のCIに含め、同じMake targetへ委譲する。実ISOの生成・VM受入は上の手順で別に実行する。
 

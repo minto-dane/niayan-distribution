@@ -35,6 +35,6 @@ ISO全体をホストへコピー後、同じSHA-256を再確認した。
 
 Live終了時のログには読み取り専用`/run/live/medium`のunmount警告が残る。メディア取り出し確認を経た電源断を観測しており、警告を削除したログにはしていない。導入済みシステムの終了では通常のunmount完了も記録している。
 
-7コンポーネントの配置とhost observer確認は、未接続のCapsule/native broker等の製品機能の完成を意味しない。05と06のISO全体の[再構築比較は不一致](../reproducibility-05-06/README.ja.md)だった。対応ソース保管、公開先と署名運用は、このVM受入とは別の記録で確認する。本番認定・GitHubへの公開は行っていない。
+7コンポーネントの配置とhost observer確認は、未接続のCapsule/native broker等の製品機能の完成を意味しない。05と06のISO全体の[再構築比較は不一致](../reproducibility-05-06/README.ja.md)だった。この旧ISO単独の対応ソース収集は未実施。後続の[ISO 09](../accepted-09/source-collection/README.ja.md)では収集・補完・コピー後の検査を完了した。公開先と署名運用は別の確認事項である。本番認定・GitHubへの公開は行っていない。
 
 ISO・DEB・udeb・initrd・仮想ディスク・OVMF変数ファイルはGitへ入れない。`build-record/report.json`の全ステージ一覧は外部の完全な構築記録を指す。このディレクトリはペイロードを除いた小さな証跡セットであり、ISOの配布物一式ではない。ログのgzip mtimeは0に固定した。

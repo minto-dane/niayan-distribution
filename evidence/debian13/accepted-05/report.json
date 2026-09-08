@@ -64,7 +64,7 @@
     "result": "fail",
     "comparison": "../reproducibility-05-06/iso-comparison-05-06.json"
   },
-  "source_collection": "separate collection pending",
+  "source_collection": "not performed separately for this superseded ISO; see ../accepted-09/source-collection/README.ja.md for the recorded final ISO",
   "github_published": false,
   "production_qualified": false,
   "hardware_qualified": false

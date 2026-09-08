@@ -1,0 +1,25 @@
+{
+  "result": "pass",
+  "scope": "independent host readback of complete source archives after VM collection",
+  "iso_sha256": "d4c18dc0e2be653bf11a04db40db95ca0353322010133e068dda274bd4aa314b",
+  "collector_sha256": "f892eb99fef534e466b29a4e92ecebf41d8accd7e78ee02e4068bdff9004beb9",
+  "collection_report_sha256": "d2a637b46fb66629c5ec7ebfc32b2a1a25c84a805b22af9969d830d37f6d6870",
+  "input_manifest_sha256": "a6c4f7b9be5c579a9f0952df15276881cb48284f36bb13bdc793ad4ef180cf3b",
+  "completion_report_sha256": "1acc792b78ce25b8df06556da0a83c76fa334310a8d7b542648f67b0998127aa",
+  "completion_tool_sha256": "aabcead8fa14fbdb17ad35cde386ca6d3d7a8f41bbce5f62565477e28892ef9f",
+  "supplemental_source_packages": 1,
+  "source_packages": 1415,
+  "source_files": 4667,
+  "source_bytes": 8524077623,
+  "live_packages": 2239,
+  "embedded_installer_packages": [
+    99,
+    175
+  ],
+  "provenance": {
+    "signed APT snapshot": 1407,
+    "native source package produced with the recorded component build": 8
+  },
+  "native_source_packages": 8,
+  "production_qualified": false
+}
