@@ -1,0 +1,17 @@
+# Local build products and credentials
+.work/
+.cache/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.o
+*.ali
+*.pyc
+__pycache__/
+build/
+
+# Generated validation runs; curated evidence is committed separately.
+evidence/engineering-*/
+evidence/reproducibility-*/

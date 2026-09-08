@@ -140,6 +140,12 @@ class ReadOnlyInventory(unittest.TestCase):
     def test_mountinfo_spaces(self):
         r=parse_mountinfo(b'37 1 8:2 / /a\\040b rw - xfs /dev/a rw\n')[0]
         self.assertEqual(r['mount_point'],'/a b')
+    def test_namespace_external_bind_root(self):
+        r=parse_mountinfo(b'37 1 0:42 /../../../../../.. /run/host rw - btrfs /dev/a rw\n')[0]
+        self.assertEqual(r['root'],'/../../../../../..')
+        self.assertEqual(r['mount_point'],'/run/host')
+    def test_relative_mount_root_rejected(self):
+        self.assertRaises(Invalid,parse_mountinfo,b'37 1 0:42 ../outside /run/host rw - btrfs /dev/a rw\n')
     def test_duplicate_id(self):
         self.assertRaises(Invalid,parse_mountinfo,b'37 1 8:2 / / rw - xfs /dev/a rw\n37 1 8:3 / /b rw - xfs /dev/b rw\n')
     def test_traversal(self):self.assertRaises(Invalid,parse_mountinfo,b'37 1 8:2 / /a/../b rw - xfs /dev/a rw\n')

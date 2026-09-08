@@ -173,9 +173,12 @@ def parse_mountinfo(data: bytes) -> list[dict]:
              'root':_mount_unescape(parts[3]),'mount_point':_mount_unescape(parts[4]),
              'options':parts[5].split(','),'filesystem':parts[k+1],
              'source':_mount_unescape(parts[k+2]),'super_options':parts[k+3].split(',')}
-        for field in ('root','mount_point'):
-            if not row[field].startswith('/'): raise Invalid('relative mount path')
-            if row[field] != '/': relative(row[field][1:])
+        # The kernel may report a bind mount's root outside the process root
+        # as /../... in a mount namespace (including Distrobox). It is opaque
+        # inventory data, never a path to open or an authorization input.
+        if not row['root'].startswith('/'): raise Invalid('relative mount root')
+        if not row['mount_point'].startswith('/'): raise Invalid('relative mount path')
+        if row['mount_point'] != '/': relative(row['mount_point'][1:])
         rows.append(row)
         if len(rows)>16384: raise Invalid('too many mounts')
     return rows
