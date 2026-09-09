@@ -1,0 +1,11 @@
+Running as unit: run-p204368-i204668.scope; invocation ID: 6d8031d313004d62abf3034785383518
+limited-exec: {"scope": "run-p204368-i204668.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Compile
+   [Ada]          run_catalog_store_tests.adb
+run_catalog_store_tests.adb:145:51: error: operator for type "Interfaces.Unsigned_8" is not directly visible
+run_catalog_store_tests.adb:145:51: error: use clause would make operation legal
+run_catalog_store_tests.adb:153:51: error: operator for type "Interfaces.Unsigned_8" is not directly visible
+run_catalog_store_tests.adb:153:51: error: use clause would make operation legal
+run_catalog_store_tests.adb:154:53: error: operator for type "Interfaces.Unsigned_8" is not directly visible
+run_catalog_store_tests.adb:154:53: error: use clause would make operation legal
+gprbuild: *** compilation phase failed

@@ -1,6 +1,7 @@
 # Niaパッケージ管理への完全置換
 
 [製品判断](../docs/decisions/0002-native-package-authority.ja.md)に従うTrixie置換工程。
+[正規catalogのCAS保存と再構築](catalog-store.ja.md)を追加した。
 [既存世代の変更集合と保護対象](transition-plan.ja.md)の読取SDKを追加した。
 [機能の管理主体](ownership.ja.md)にNiaが引き受ける役割と独立した基盤を整理した。
 [DEBトリガーの解析と発火先](deb-triggers.ja.md)を元DEB読取器と候補catalogへ追加した。

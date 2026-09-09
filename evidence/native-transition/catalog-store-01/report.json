@@ -1,0 +1,42 @@
+{
+  "format": 1,
+  "result": "pass-for-canonical-catalog-persistence-and-reobservation-only",
+  "baseline_root_commit": "2469dac",
+  "source_subject": "cc7c7d9b771e5a9b784d0a926f52eb04ee5924eb73c82997c8fbd7ed98f364af",
+  "source_report": "source-checks/report.json",
+  "build_input_files": 724,
+  "executables": 29,
+  "ada_mains": 25,
+  "new_assertions": 320,
+  "synthetic_originals": 4,
+  "malformed_frames": 20,
+  "catalog": "89a31cbefdb7297293dc8b7a7315adfadccc79dcaffc580e5ac254d9610ee44f",
+  "catalog_bytes": 440,
+  "independent_native_hashes": "accepted-oracle-summary.json",
+  "supplemental_reference": "attempts/debug-oracle.json; includes complete frame whose address matches accepted CI",
+  "ci_includes": [
+    "native catalog persistence test",
+    "independent raw ar/tar payload and metadata oracle",
+    "direct saved CAS byte comparison"
+  ],
+  "root_driver_assertions": [
+    1100,
+    34,
+    3,
+    6,
+    8,
+    5,
+    5,
+    7
+  ],
+  "proof_inputs": "seven exact sets unchanged; new runtime outside SPARK",
+  "sanitizer_scope": "C boundaries and allocator/library-call interception only; Ada and upstream library code uninstrumented; leaks disabled",
+  "full_capacity_qualified": false,
+  "real_os_package_set_qualified": false,
+  "production_authorization": false,
+  "accepted_generation_binding_validated": false,
+  "cas_pin_closure_validated": false,
+  "phase_schedule_validated": false,
+  "effective_ownership_resolved": false,
+  "boot_tested": false
+}

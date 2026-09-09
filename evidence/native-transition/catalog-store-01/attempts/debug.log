@@ -1,0 +1,9 @@
+Running as unit: run-p204091-i204391.scope; invocation ID: b3f60a31f7454b8388e82bf556ee0a5d
+limited-exec: {"scope": "run-p204091-i204391.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Setup
+   [mkdir]        object directory for project Tests
+   [mkdir]        exec directory for project Tests
+Compile
+   [Ada]          run_catalog_store_tests.adb
+run_catalog_store_tests.adb:136:16: error: name expected
+gprbuild: *** compilation phase failed
