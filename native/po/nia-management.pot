@@ -1,0 +1,384 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR NiaOS contributors
+# This file is distributed under the same license as the nia-management package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: nia-management 1\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "The command label differs from the package control file."
+msgstr ""
+
+msgid "The original package identity differs from the manifest."
+msgstr ""
+
+msgid "The package size or checksum does not match."
+msgstr ""
+
+msgid "The interim package has expired or is not yet valid."
+msgstr ""
+
+msgid "The interim package expired during download."
+msgstr ""
+
+msgid "The interim package is older than the trusted security minimum."
+msgstr ""
+
+msgid "The authenticated reference differs from the package manifest."
+msgstr ""
+
+msgid ""
+"Repository policy changed during download; retry with the current policy."
+msgstr ""
+
+msgid "Repository policy ownership or permissions are not trusted."
+msgstr ""
+
+msgid "The download URL is outside the configured repository."
+msgstr ""
+
+msgid "The requested artifact is absent from the authenticated repository."
+msgstr ""
+
+msgid "A required file or directory does not exist."
+msgstr ""
+
+msgid "The output already exists and was not overwritten."
+msgstr ""
+
+msgid "Permission to access a required file or directory was denied."
+msgstr ""
+
+msgid "Storage is full; the operation did not complete."
+msgstr ""
+
+msgid "The storage quota was exceeded; the operation did not complete."
+msgstr ""
+
+msgid "A symbolic link was encountered where an ordinary path is required."
+msgstr ""
+
+msgid "The repository is in use; retry after the current operation finishes."
+msgstr ""
+
+msgid "An input/output operation failed; completion is not established."
+msgstr ""
+
+msgid "The input is invalid or is not supported by this operation."
+msgstr ""
+
+msgid ""
+"Repository download failed; check the connection and repository "
+"configuration."
+msgstr ""
+
+msgid "Repository authentication failed; no artifact was accepted."
+msgstr ""
+
+msgid "The operation could not be completed."
+msgstr ""
+
+msgid "schedule needs five cron fields"
+msgstr ""
+
+msgid "unsupported cron field"
+msgstr ""
+
+msgid "cron step out of range"
+msgstr ""
+
+msgid "cron field out of range"
+msgstr ""
+
+msgid "unknown package command"
+msgstr ""
+
+msgid "command input limit exceeded"
+msgstr ""
+
+msgid "empty argument or control character"
+msgstr ""
+
+#, python-brace-format
+msgid "Invalid command option: {option}."
+msgstr ""
+
+msgid "unknown, duplicate or malformed SUMA attribute"
+msgstr ""
+
+#, python-brace-format
+msgid "repeated -{option}"
+msgstr ""
+
+#, python-brace-format
+msgid "missing or unsupported value for -{option}"
+msgstr ""
+
+msgid "options must precede operands; leading-dash operands are unsupported"
+msgstr ""
+
+msgid "option is not valid for this action"
+msgstr ""
+
+#, python-brace-format
+msgid "specify exactly one action from {actions}"
+msgstr ""
+
+msgid "conflicting installp actions"
+msgstr ""
+
+msgid "specify operands or -f LIST"
+msgstr ""
+
+msgid "all cannot be combined with names"
+msgstr ""
+
+msgid "name packages explicitly for reject/remove"
+msgstr ""
+
+msgid "Nia requires an explicit -d SOURCE for apply"
+msgstr ""
+
+msgid "media listing requires -d SOURCE and no operands"
+msgstr ""
+
+msgid "recovery covers the interrupted transaction; no operands allowed"
+msgstr ""
+
+msgid "-m must be 1, 2 or 3"
+msgstr ""
+
+msgid "-v does not accept file operands"
+msgstr ""
+
+msgid "specify -d SOURCE, without package operands"
+msgstr ""
+
+msgid "use -k for fix keywords"
+msgstr ""
+
+msgid "specify -d SOURCE"
+msgstr ""
+
+msgid "-p requires -k FIX"
+msgstr ""
+
+msgid "empty fix keyword list"
+msgstr ""
+
+msgid "inutoc accepts at most one directory"
+msgstr ""
+
+msgid "conflicting geninstall actions"
+msgstr ""
+
+msgid "unsupported installp flags in -I"
+msgstr ""
+
+msgid "-I accepts only installp option flags"
+msgstr ""
+
+msgid "geninstall -I must select apply, not commit alone"
+msgstr ""
+
+msgid "task IDs must be numeric"
+msgstr ""
+
+msgid "attribute edits for this SUMA action are not supported"
+msgstr ""
+
+msgid "incorrect task ID count"
+msgstr ""
+
+msgid "at most one task ID"
+msgstr ""
+
+msgid "specify -x, -w or -s"
+msgstr ""
+
+msgid "-s cannot be combined with -x or -w"
+msgstr ""
+
+msgid "Foreign TL/SP/ML/PTF are not Nia release identifiers"
+msgstr ""
+
+msgid "unsupported SUMA Action"
+msgstr ""
+
+msgid "DLTarget must be absolute"
+msgstr ""
+
+msgid "specify -L URL, without operands"
+msgstr ""
+
+msgid "specify one interim fix label"
+msgstr ""
+
+msgid "invalid interim fix label"
+msgstr ""
+
+msgid "conflicting interim actions"
+msgstr ""
+
+msgid "specify one interim package with -e or as an operand"
+msgstr ""
+
+msgid "specify one selector for remove, at most one for list/check"
+msgstr ""
+
+msgid "interim number must be a positive integer"
+msgstr ""
+
+msgid "at most one package for lock display"
+msgstr ""
+
+msgid "specify -e PACKAGE_FILE"
+msgstr ""
+
+msgid "verbosity must be 1, 2 or 3"
+msgstr ""
+
+msgid "specify -d SOURCE, without operands"
+msgstr ""
+
+msgid "-r and -m are mutually exclusive"
+msgstr ""
+
+#, python-brace-format
+msgid "Invoke as: {commands}"
+msgstr ""
+
+msgid ""
+"NiaOS development interface; native service is not connected.\n"
+"Local epkg template builds and emgr -d displays are available.\n"
+"emgr_download_ifix requires provisioned authenticated repository policy.\n"
+"Installed-package operations and interactive packaging are unavailable.\n"
+"Debian package names/versions are retained. Other reference-platform options "
+"are rejected."
+msgstr ""
+
+#, python-brace-format
+msgid ""
+"{command}: {action}: native package service is not connected; no operation "
+"or preview was performed."
+msgstr ""
+
+#, python-brace-format
+msgid "{label}: {value}"
+msgstr ""
+
+msgid "EFIX LABEL"
+msgstr ""
+
+msgid "ABSTRACT"
+msgstr ""
+
+msgid "REBOOT REQUIRED"
+msgstr ""
+
+msgctxt "reboot-required"
+msgid "yes"
+msgstr ""
+
+msgid "not established"
+msgstr ""
+
+msgctxt "reboot-required"
+msgid "no"
+msgstr ""
+
+msgid "PRE-REQUISITES"
+msgstr ""
+
+msgid "none"
+msgstr ""
+
+msgid "SUPERSEDE"
+msgstr ""
+
+msgid "CONFLICTS"
+msgstr ""
+
+msgid "ADVISORIES"
+msgstr ""
+
+msgid "PACKAGE SHA256"
+msgstr ""
+
+msgid "CREATED AT"
+msgstr ""
+
+msgid "EXPIRES AT"
+msgstr ""
+
+msgid "SECURITY EPOCH"
+msgstr ""
+
+msgid "ROLLBACK CONTRACT SHA256"
+msgstr ""
+
+msgid "PUBLISHER AUTHENTICATION"
+msgstr ""
+
+msgid "not verified"
+msgstr ""
+
+msgid "PACKAGE"
+msgstr ""
+
+msgid "LEVEL"
+msgstr ""
+
+msgid "BASE LEVEL"
+msgstr ""
+
+msgid "ACTIVATION"
+msgstr ""
+
+msgid "CONTROL EFFECT"
+msgstr ""
+
+msgid "BASE SHA256"
+msgstr ""
+
+msgid "TARGET SHA256"
+msgstr ""
+
+msgid "EFFECT CONTRACT SHA256"
+msgstr ""
+
+msgid "FILE NUMBER"
+msgstr ""
+
+msgid "LOCATION"
+msgstr ""
+
+msgid "FILE TYPE"
+msgstr ""
+
+msgid "SIZE"
+msgstr ""
+
+msgid "SHA256"
+msgstr ""
+
+msgid "LINK"
+msgstr ""
+
+#, python-brace-format
+msgid "Package file is: {path}"
+msgstr ""
+
+#, python-brace-format
+msgid "Downloaded interim fix: {path}"
+msgstr ""

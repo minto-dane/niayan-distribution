@@ -1,0 +1,6832 @@
+{
+  "all_targets_translated": false,
+  "complete_catalogs": [
+    "ja"
+  ],
+  "glibc_locale_encoding_pairs": 509,
+  "graphical_and_input_qualification": false,
+  "installer_choices": 78,
+  "missing_locale_targets": [
+    "aa_DJ",
+    "aa_ER",
+    "aa_ET",
+    "af_ZA",
+    "agr_PE",
+    "ak_GH",
+    "am_ET",
+    "an_ES",
+    "anp_IN",
+    "ar_AE",
+    "ar_BH",
+    "ar_DZ",
+    "ar_EG",
+    "ar_IN",
+    "ar_IQ",
+    "ar_JO",
+    "ar_KW",
+    "ar_LB",
+    "ar_LY",
+    "ar_MA",
+    "ar_OM",
+    "ar_QA",
+    "ar_SA",
+    "ar_SD",
+    "ar_SS",
+    "ar_SY",
+    "ar_TN",
+    "ar_YE",
+    "as_IN",
+    "ast_ES",
+    "ayc_PE",
+    "az_AZ",
+    "az_IR",
+    "be_BY",
+    "be_BY@latin",
+    "bem_ZM",
+    "ber_DZ",
+    "ber_MA",
+    "bg_BG",
+    "bhb_IN",
+    "bho_IN",
+    "bho_NP",
+    "bi_VU",
+    "bn_BD",
+    "bn_IN",
+    "bo_CN",
+    "bo_IN",
+    "br_FR",
+    "br_FR@euro",
+    "brx_IN",
+    "bs_BA",
+    "byn_ER",
+    "ca_AD",
+    "ca_ES",
+    "ca_ES@euro",
+    "ca_ES@valencia",
+    "ca_FR",
+    "ca_IT",
+    "ce_RU",
+    "chr_US",
+    "ckb_IQ",
+    "cmn_TW",
+    "crh_RU",
+    "crh_UA",
+    "cs_CZ",
+    "csb_PL",
+    "cv_RU",
+    "cy_GB",
+    "da_DK",
+    "de_AT",
+    "de_AT@euro",
+    "de_BE",
+    "de_BE@euro",
+    "de_CH",
+    "de_DE",
+    "de_DE@euro",
+    "de_IT",
+    "de_LI",
+    "de_LU",
+    "de_LU@euro",
+    "doi_IN",
+    "dsb_DE",
+    "dv_MV",
+    "dz_BT",
+    "el_CY",
+    "el_GR",
+    "el_GR@euro",
+    "eo",
+    "es_AR",
+    "es_BO",
+    "es_CL",
+    "es_CO",
+    "es_CR",
+    "es_CU",
+    "es_DO",
+    "es_EC",
+    "es_ES",
+    "es_ES@euro",
+    "es_GT",
+    "es_HN",
+    "es_MX",
+    "es_NI",
+    "es_PA",
+    "es_PE",
+    "es_PR",
+    "es_PY",
+    "es_SV",
+    "es_US",
+    "es_UY",
+    "es_VE",
+    "et_EE",
+    "eu_ES",
+    "eu_ES@euro",
+    "eu_FR",
+    "eu_FR@euro",
+    "fa_IR",
+    "ff_SN",
+    "fi_FI",
+    "fi_FI@euro",
+    "fil_PH",
+    "fo_FO",
+    "fr_BE",
+    "fr_BE@euro",
+    "fr_CA",
+    "fr_CH",
+    "fr_FR",
+    "fr_FR@euro",
+    "fr_LU",
+    "fr_LU@euro",
+    "fur_IT",
+    "fy_DE",
+    "fy_NL",
+    "ga_IE",
+    "ga_IE@euro",
+    "gbm_IN",
+    "gd_GB",
+    "gez_ER",
+    "gez_ER@abegede",
+    "gez_ET",
+    "gez_ET@abegede",
+    "gl_ES",
+    "gl_ES@euro",
+    "gu_IN",
+    "gv_GB",
+    "ha_NG",
+    "hak_TW",
+    "he_IL",
+    "hi_IN",
+    "hif_FJ",
+    "hne_IN",
+    "hr_HR",
+    "hsb_DE",
+    "ht_HT",
+    "hu_HU",
+    "hy_AM",
+    "ia_FR",
+    "id_ID",
+    "ig_NG",
+    "ik_CA",
+    "is_IS",
+    "it_CH",
+    "it_IT",
+    "it_IT@euro",
+    "iu_CA",
+    "ka_GE",
+    "kab_DZ",
+    "kk_KZ",
+    "kl_GL",
+    "km_KH",
+    "kn_IN",
+    "ko_KR",
+    "kok_IN",
+    "ks_IN",
+    "ks_IN@devanagari",
+    "ku_TR",
+    "kv_RU",
+    "kw_GB",
+    "ky_KG",
+    "lb_LU",
+    "lg_UG",
+    "li_BE",
+    "li_NL",
+    "lij_IT",
+    "ln_CD",
+    "lo_LA",
+    "lt_LT",
+    "ltg_LV",
+    "lv_LV",
+    "lzh_TW",
+    "mag_IN",
+    "mai_IN",
+    "mai_NP",
+    "mdf_RU",
+    "mfe_MU",
+    "mg_MG",
+    "mhr_RU",
+    "mi_NZ",
+    "miq_NI",
+    "mjw_IN",
+    "mk_MK",
+    "ml_IN",
+    "mn_MN",
+    "mni_IN",
+    "mnw_MM",
+    "mr_IN",
+    "ms_MY",
+    "mt_MT",
+    "my_MM",
+    "nan_TW",
+    "nan_TW@latin",
+    "nb_NO",
+    "nds_DE",
+    "nds_NL",
+    "ne_NP",
+    "nhn_MX",
+    "niu_NU",
+    "niu_NZ",
+    "nl_AW",
+    "nl_BE",
+    "nl_BE@euro",
+    "nl_NL",
+    "nl_NL@euro",
+    "nn_NO",
+    "nr_ZA",
+    "nso_ZA",
+    "oc_FR",
+    "om_ET",
+    "om_KE",
+    "or_IN",
+    "os_RU",
+    "pa_IN",
+    "pa_PK",
+    "pap_AW",
+    "pap_CW",
+    "pl_PL",
+    "ps_AF",
+    "pt_BR",
+    "pt_PT",
+    "pt_PT@euro",
+    "quz_PE",
+    "raj_IN",
+    "rif_MA",
+    "ro_RO",
+    "ru_RU",
+    "ru_UA",
+    "rw_RW",
+    "sa_IN",
+    "sah_RU",
+    "sat_IN",
+    "sc_IT",
+    "scn_IT",
+    "sd_IN",
+    "sd_IN@devanagari",
+    "se_NO",
+    "sgs_LT",
+    "shn_MM",
+    "shs_CA",
+    "si_LK",
+    "sid_ET",
+    "sk_SK",
+    "sl_SI",
+    "sm_WS",
+    "so_DJ",
+    "so_ET",
+    "so_KE",
+    "so_SO",
+    "sq_AL",
+    "sq_MK",
+    "sr_ME",
+    "sr_RS",
+    "sr_RS@latin",
+    "ss_ZA",
+    "ssy_ER",
+    "st_ZA",
+    "su_ID",
+    "sv_FI",
+    "sv_FI@euro",
+    "sv_SE",
+    "sw_KE",
+    "sw_TZ",
+    "syr",
+    "szl_PL",
+    "ta_IN",
+    "ta_LK",
+    "tcy_IN",
+    "te_IN",
+    "tg_TJ",
+    "th_TH",
+    "the_NP",
+    "ti_ER",
+    "ti_ET",
+    "tig_ER",
+    "tk_TM",
+    "tl_PH",
+    "tn_ZA",
+    "to_TO",
+    "tok",
+    "tpi_PG",
+    "tr_CY",
+    "tr_TR",
+    "ts_ZA",
+    "tt_RU",
+    "tt_RU@iqtelif",
+    "ug_CN",
+    "uk_UA",
+    "unm_US",
+    "ur_IN",
+    "ur_PK",
+    "uz_UZ",
+    "uz_UZ@cyrillic",
+    "ve_ZA",
+    "vi_VN",
+    "wa_BE",
+    "wa_BE@euro",
+    "wae_CH",
+    "wal_ET",
+    "wo_SN",
+    "xh_ZA",
+    "yi_US",
+    "yo_NG",
+    "yue_HK",
+    "yuw_PG",
+    "zgh_MA",
+    "zh_CN",
+    "zh_HK",
+    "zh_SG",
+    "zh_TW",
+    "zu_ZA"
+  ],
+  "release": "trixie",
+  "rows": [
+    {
+      "candidates": [
+        "aa_DJ",
+        "aa"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "aa_DJ.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "aa_DJ",
+        "aa"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "aa_DJ",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "aa_ER",
+        "aa"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "aa_ER",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "aa_ET",
+        "aa"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "aa_ET",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "af_ZA",
+        "af"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "af_ZA.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "af_ZA",
+        "af"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "af_ZA",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "agr_PE",
+        "agr"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "agr_PE",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ak_GH",
+        "ak"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ak_GH",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "am_ET",
+        "am"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "am_ET",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "an_ES",
+        "an"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "an_ES.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "an_ES",
+        "an"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-15",
+      "origin": "glibc",
+      "requested": "an_ES",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "anp_IN",
+        "anp"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "anp_IN",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ar_AE",
+        "ar"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ar_AE.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ar_AE",
+        "ar"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-6",
+      "origin": "glibc",
+      "requested": "ar_AE",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ar_BH",
+        "ar"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ar_BH.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ar_BH",
+        "ar"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-6",
+      "origin": "glibc",
+      "requested": "ar_BH",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ar_DZ",
+        "ar"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ar_DZ.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ar_DZ",
+        "ar"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-6",
+      "origin": "glibc",
+      "requested": "ar_DZ",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ar_EG",
+        "ar"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ar_EG.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ar_EG",
+        "ar"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-6",
+      "origin": "glibc",
+      "requested": "ar_EG",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ar_IN",
+        "ar"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ar_IN",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ar_IQ",
+        "ar"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ar_IQ.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ar_IQ",
+        "ar"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-6",
+      "origin": "glibc",
+      "requested": "ar_IQ",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ar_JO",
+        "ar"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ar_JO.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ar_JO",
+        "ar"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-6",
+      "origin": "glibc",
+      "requested": "ar_JO",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ar_KW",
+        "ar"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ar_KW.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ar_KW",
+        "ar"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-6",
+      "origin": "glibc",
+      "requested": "ar_KW",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ar_LB",
+        "ar"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ar_LB.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ar_LB",
+        "ar"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-6",
+      "origin": "glibc",
+      "requested": "ar_LB",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ar_LY",
+        "ar"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ar_LY.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ar_LY",
+        "ar"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-6",
+      "origin": "glibc",
+      "requested": "ar_LY",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ar_MA",
+        "ar"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ar_MA.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ar_MA",
+        "ar"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-6",
+      "origin": "glibc",
+      "requested": "ar_MA",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ar_OM",
+        "ar"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ar_OM.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ar_OM",
+        "ar"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-6",
+      "origin": "glibc",
+      "requested": "ar_OM",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ar_QA",
+        "ar"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ar_QA.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ar_QA",
+        "ar"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-6",
+      "origin": "glibc",
+      "requested": "ar_QA",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ar_SA",
+        "ar"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ar_SA.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ar_SA",
+        "ar"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-6",
+      "origin": "glibc",
+      "requested": "ar_SA",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ar_SD",
+        "ar"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ar_SD.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ar_SD",
+        "ar"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-6",
+      "origin": "glibc",
+      "requested": "ar_SD",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ar_SS",
+        "ar"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ar_SS",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ar_SY",
+        "ar"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ar_SY.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ar_SY",
+        "ar"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-6",
+      "origin": "glibc",
+      "requested": "ar_SY",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ar_TN",
+        "ar"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ar_TN.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ar_TN",
+        "ar"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-6",
+      "origin": "glibc",
+      "requested": "ar_TN",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ar_YE",
+        "ar"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ar_YE.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ar_YE",
+        "ar"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-6",
+      "origin": "glibc",
+      "requested": "ar_YE",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ayc_PE",
+        "ayc"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ayc_PE",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "az_AZ",
+        "az"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "az_AZ",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "az_IR",
+        "az"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "az_IR",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "as_IN",
+        "as"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "as_IN",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ast_ES",
+        "ast"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ast_ES.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ast_ES",
+        "ast"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-15",
+      "origin": "glibc",
+      "requested": "ast_ES",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "be_BY",
+        "be"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "be_BY.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "be_BY",
+        "be"
+      ],
+      "catalog": "en",
+      "encoding": "CP1251",
+      "origin": "glibc",
+      "requested": "be_BY",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "be_BY@latin",
+        "be@latin"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "be_BY@latin",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "bem_ZM",
+        "bem"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "bem_ZM",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ber_DZ",
+        "ber"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ber_DZ",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ber_MA",
+        "ber"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ber_MA",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "bg_BG",
+        "bg"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "bg_BG.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "bg_BG",
+        "bg"
+      ],
+      "catalog": "en",
+      "encoding": "CP1251",
+      "origin": "glibc",
+      "requested": "bg_BG",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "bhb_IN",
+        "bhb"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "bhb_IN.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "bho_IN",
+        "bho"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "bho_IN",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "bho_NP",
+        "bho"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "bho_NP",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "bi_VU",
+        "bi"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "bi_VU",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "bn_BD",
+        "bn"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "bn_BD",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "bn_IN",
+        "bn"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "bn_IN",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "bo_CN",
+        "bo"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "bo_CN",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "bo_IN",
+        "bo"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "bo_IN",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "br_FR",
+        "br"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "br_FR.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "br_FR",
+        "br"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "br_FR",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "br_FR@euro",
+        "br@euro",
+        "br_FR",
+        "br"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-15",
+      "origin": "glibc",
+      "requested": "br_FR@euro",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "brx_IN",
+        "brx"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "brx_IN",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "bs_BA",
+        "bs"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "bs_BA.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "bs_BA",
+        "bs"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-2",
+      "origin": "glibc",
+      "requested": "bs_BA",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "byn_ER",
+        "byn"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "byn_ER",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "en"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "C.UTF-8",
+      "state": "source-language"
+    },
+    {
+      "candidates": [
+        "ca_AD",
+        "ca"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ca_AD.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ca_AD",
+        "ca"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-15",
+      "origin": "glibc",
+      "requested": "ca_AD",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ca_ES",
+        "ca"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ca_ES.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ca_ES",
+        "ca"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "ca_ES",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ca_ES@euro",
+        "ca@euro",
+        "ca_ES",
+        "ca"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-15",
+      "origin": "glibc",
+      "requested": "ca_ES@euro",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ca_ES@valencia",
+        "ca@valencia"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ca_ES@valencia",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ca_FR",
+        "ca"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ca_FR.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ca_FR",
+        "ca"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-15",
+      "origin": "glibc",
+      "requested": "ca_FR",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ca_IT",
+        "ca"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ca_IT.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ca_IT",
+        "ca"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-15",
+      "origin": "glibc",
+      "requested": "ca_IT",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ce_RU",
+        "ce"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ce_RU",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "chr_US",
+        "chr"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "chr_US",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ckb_IQ",
+        "ckb"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ckb_IQ",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "cmn_TW",
+        "cmn"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "cmn_TW",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "crh_RU",
+        "crh"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "crh_RU",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "crh_UA",
+        "crh"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "crh_UA",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "cs_CZ",
+        "cs"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "cs_CZ.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "cs_CZ",
+        "cs"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-2",
+      "origin": "glibc",
+      "requested": "cs_CZ",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "csb_PL",
+        "csb"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "csb_PL",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "cv_RU",
+        "cv"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "cv_RU",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "cy_GB",
+        "cy"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "cy_GB.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "cy_GB",
+        "cy"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-14",
+      "origin": "glibc",
+      "requested": "cy_GB",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "da_DK",
+        "da"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "da_DK.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "da_DK",
+        "da"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "da_DK",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "de_AT",
+        "de"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "de_AT.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "de_AT",
+        "de"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "de_AT",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "de_AT@euro",
+        "de@euro",
+        "de_AT",
+        "de"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-15",
+      "origin": "glibc",
+      "requested": "de_AT@euro",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "de_BE",
+        "de"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "de_BE.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "de_BE",
+        "de"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "de_BE",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "de_BE@euro",
+        "de@euro",
+        "de_BE",
+        "de"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-15",
+      "origin": "glibc",
+      "requested": "de_BE@euro",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "de_CH",
+        "de"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "de_CH.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "de_CH",
+        "de"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "de_CH",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "de_DE",
+        "de"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "de_DE.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "de_DE",
+        "de"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "de_DE",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "de_DE@euro",
+        "de@euro",
+        "de_DE",
+        "de"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-15",
+      "origin": "glibc",
+      "requested": "de_DE@euro",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "de_IT",
+        "de"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "de_IT.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "de_IT",
+        "de"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "de_IT",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "de_LI",
+        "de"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "de_LI.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "de_LU",
+        "de"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "de_LU.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "de_LU",
+        "de"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "de_LU",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "de_LU@euro",
+        "de@euro",
+        "de_LU",
+        "de"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-15",
+      "origin": "glibc",
+      "requested": "de_LU@euro",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "doi_IN",
+        "doi"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "doi_IN",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "dsb_DE",
+        "dsb"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "dsb_DE",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "dv_MV",
+        "dv"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "dv_MV",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "dz_BT",
+        "dz"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "dz_BT",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "el_GR",
+        "el"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "el_GR.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "el_GR",
+        "el"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-7",
+      "origin": "glibc",
+      "requested": "el_GR",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "el_GR@euro",
+        "el@euro",
+        "el_GR",
+        "el"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-7",
+      "origin": "glibc",
+      "requested": "el_GR@euro",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "el_CY",
+        "el"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "el_CY.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "el_CY",
+        "el"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-7",
+      "origin": "glibc",
+      "requested": "el_CY",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "en_AG",
+        "en"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "en_AG",
+      "state": "source-language"
+    },
+    {
+      "candidates": [
+        "en_AU",
+        "en"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "en_AU.UTF-8",
+      "state": "source-language"
+    },
+    {
+      "candidates": [
+        "en_AU",
+        "en"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "en_AU",
+      "state": "source-language"
+    },
+    {
+      "candidates": [
+        "en_BW",
+        "en"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "en_BW.UTF-8",
+      "state": "source-language"
+    },
+    {
+      "candidates": [
+        "en_BW",
+        "en"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "en_BW",
+      "state": "source-language"
+    },
+    {
+      "candidates": [
+        "en_CA",
+        "en"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "en_CA.UTF-8",
+      "state": "source-language"
+    },
+    {
+      "candidates": [
+        "en_CA",
+        "en"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "en_CA",
+      "state": "source-language"
+    },
+    {
+      "candidates": [
+        "en_DK",
+        "en"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "en_DK.UTF-8",
+      "state": "source-language"
+    },
+    {
+      "candidates": [
+        "en_DK",
+        "en"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-15",
+      "origin": "glibc",
+      "requested": "en_DK.ISO-8859-15",
+      "state": "source-language"
+    },
+    {
+      "candidates": [
+        "en_DK",
+        "en"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "en_DK",
+      "state": "source-language"
+    },
+    {
+      "candidates": [
+        "en_GB",
+        "en"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "en_GB.UTF-8",
+      "state": "source-language"
+    },
+    {
+      "candidates": [
+        "en_GB",
+        "en"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "en_GB",
+      "state": "source-language"
+    },
+    {
+      "candidates": [
+        "en_GB",
+        "en"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-15",
+      "origin": "glibc",
+      "requested": "en_GB.ISO-8859-15",
+      "state": "source-language"
+    },
+    {
+      "candidates": [
+        "en_HK",
+        "en"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "en_HK.UTF-8",
+      "state": "source-language"
+    },
+    {
+      "candidates": [
+        "en_HK",
+        "en"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "en_HK",
+      "state": "source-language"
+    },
+    {
+      "candidates": [
+        "en_IE",
+        "en"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "en_IE.UTF-8",
+      "state": "source-language"
+    },
+    {
+      "candidates": [
+        "en_IE",
+        "en"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "en_IE",
+      "state": "source-language"
+    },
+    {
+      "candidates": [
+        "en_IE@euro",
+        "en@euro",
+        "en_IE",
+        "en"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-15",
+      "origin": "glibc",
+      "requested": "en_IE@euro",
+      "state": "source-language"
+    },
+    {
+      "candidates": [
+        "en_IL",
+        "en"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "en_IL",
+      "state": "source-language"
+    },
+    {
+      "candidates": [
+        "en_IN",
+        "en"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "en_IN",
+      "state": "source-language"
+    },
+    {
+      "candidates": [
+        "en_NG",
+        "en"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "en_NG",
+      "state": "source-language"
+    },
+    {
+      "candidates": [
+        "en_NZ",
+        "en"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "en_NZ.UTF-8",
+      "state": "source-language"
+    },
+    {
+      "candidates": [
+        "en_NZ",
+        "en"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "en_NZ",
+      "state": "source-language"
+    },
+    {
+      "candidates": [
+        "en_PH",
+        "en"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "en_PH.UTF-8",
+      "state": "source-language"
+    },
+    {
+      "candidates": [
+        "en_PH",
+        "en"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "en_PH",
+      "state": "source-language"
+    },
+    {
+      "candidates": [
+        "en_SC",
+        "en"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "en_SC.UTF-8",
+      "state": "source-language"
+    },
+    {
+      "candidates": [
+        "en_SG",
+        "en"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "en_SG.UTF-8",
+      "state": "source-language"
+    },
+    {
+      "candidates": [
+        "en_SG",
+        "en"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "en_SG",
+      "state": "source-language"
+    },
+    {
+      "candidates": [
+        "en_US",
+        "en"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "en_US.UTF-8",
+      "state": "source-language"
+    },
+    {
+      "candidates": [
+        "en_US",
+        "en"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "en_US",
+      "state": "source-language"
+    },
+    {
+      "candidates": [
+        "en_US",
+        "en"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-15",
+      "origin": "glibc",
+      "requested": "en_US.ISO-8859-15",
+      "state": "source-language"
+    },
+    {
+      "candidates": [
+        "en_ZA",
+        "en"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "en_ZA.UTF-8",
+      "state": "source-language"
+    },
+    {
+      "candidates": [
+        "en_ZA",
+        "en"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "en_ZA",
+      "state": "source-language"
+    },
+    {
+      "candidates": [
+        "en_ZM",
+        "en"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "en_ZM",
+      "state": "source-language"
+    },
+    {
+      "candidates": [
+        "en_ZW",
+        "en"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "en_ZW.UTF-8",
+      "state": "source-language"
+    },
+    {
+      "candidates": [
+        "en_ZW",
+        "en"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "en_ZW",
+      "state": "source-language"
+    },
+    {
+      "candidates": [
+        "eo"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "eo",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "es_AR",
+        "es"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "es_AR.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "es_AR",
+        "es"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "es_AR",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "es_BO",
+        "es"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "es_BO.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "es_BO",
+        "es"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "es_BO",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "es_CL",
+        "es"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "es_CL.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "es_CL",
+        "es"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "es_CL",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "es_CO",
+        "es"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "es_CO.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "es_CO",
+        "es"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "es_CO",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "es_CR",
+        "es"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "es_CR.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "es_CR",
+        "es"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "es_CR",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "es_CU",
+        "es"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "es_CU",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "es_DO",
+        "es"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "es_DO.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "es_DO",
+        "es"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "es_DO",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "es_EC",
+        "es"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "es_EC.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "es_EC",
+        "es"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "es_EC",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "es_ES",
+        "es"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "es_ES.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "es_ES",
+        "es"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "es_ES",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "es_ES@euro",
+        "es@euro",
+        "es_ES",
+        "es"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-15",
+      "origin": "glibc",
+      "requested": "es_ES@euro",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "es_GT",
+        "es"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "es_GT.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "es_GT",
+        "es"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "es_GT",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "es_HN",
+        "es"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "es_HN.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "es_HN",
+        "es"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "es_HN",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "es_MX",
+        "es"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "es_MX.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "es_MX",
+        "es"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "es_MX",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "es_NI",
+        "es"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "es_NI.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "es_NI",
+        "es"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "es_NI",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "es_PA",
+        "es"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "es_PA.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "es_PA",
+        "es"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "es_PA",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "es_PE",
+        "es"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "es_PE.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "es_PE",
+        "es"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "es_PE",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "es_PR",
+        "es"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "es_PR.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "es_PR",
+        "es"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "es_PR",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "es_PY",
+        "es"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "es_PY.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "es_PY",
+        "es"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "es_PY",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "es_SV",
+        "es"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "es_SV.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "es_SV",
+        "es"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "es_SV",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "es_US",
+        "es"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "es_US.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "es_US",
+        "es"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "es_US",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "es_UY",
+        "es"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "es_UY.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "es_UY",
+        "es"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "es_UY",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "es_VE",
+        "es"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "es_VE.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "es_VE",
+        "es"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "es_VE",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "et_EE",
+        "et"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "et_EE.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "et_EE",
+        "et"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "et_EE",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "et_EE",
+        "et"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-15",
+      "origin": "glibc",
+      "requested": "et_EE.ISO-8859-15",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "eu_ES",
+        "eu"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "eu_ES.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "eu_ES",
+        "eu"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "eu_ES",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "eu_ES@euro",
+        "eu@euro",
+        "eu_ES",
+        "eu"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-15",
+      "origin": "glibc",
+      "requested": "eu_ES@euro",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "eu_FR",
+        "eu"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "eu_FR.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "eu_FR",
+        "eu"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "eu_FR",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "eu_FR@euro",
+        "eu@euro",
+        "eu_FR",
+        "eu"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-15",
+      "origin": "glibc",
+      "requested": "eu_FR@euro",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "fa_IR",
+        "fa"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "fa_IR",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ff_SN",
+        "ff"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ff_SN",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "fi_FI",
+        "fi"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "fi_FI.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "fi_FI",
+        "fi"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "fi_FI",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "fi_FI@euro",
+        "fi@euro",
+        "fi_FI",
+        "fi"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-15",
+      "origin": "glibc",
+      "requested": "fi_FI@euro",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "fil_PH",
+        "fil"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "fil_PH",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "fo_FO",
+        "fo"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "fo_FO.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "fo_FO",
+        "fo"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "fo_FO",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "fr_BE",
+        "fr"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "fr_BE.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "fr_BE",
+        "fr"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "fr_BE",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "fr_BE@euro",
+        "fr@euro",
+        "fr_BE",
+        "fr"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-15",
+      "origin": "glibc",
+      "requested": "fr_BE@euro",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "fr_CA",
+        "fr"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "fr_CA.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "fr_CA",
+        "fr"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "fr_CA",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "fr_CH",
+        "fr"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "fr_CH.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "fr_CH",
+        "fr"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "fr_CH",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "fr_FR",
+        "fr"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "fr_FR.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "fr_FR",
+        "fr"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "fr_FR",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "fr_FR@euro",
+        "fr@euro",
+        "fr_FR",
+        "fr"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-15",
+      "origin": "glibc",
+      "requested": "fr_FR@euro",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "fr_LU",
+        "fr"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "fr_LU.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "fr_LU",
+        "fr"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "fr_LU",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "fr_LU@euro",
+        "fr@euro",
+        "fr_LU",
+        "fr"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-15",
+      "origin": "glibc",
+      "requested": "fr_LU@euro",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "fur_IT",
+        "fur"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "fur_IT",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "fy_NL",
+        "fy"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "fy_NL",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "fy_DE",
+        "fy"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "fy_DE",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ga_IE",
+        "ga"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ga_IE.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ga_IE",
+        "ga"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "ga_IE",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ga_IE@euro",
+        "ga@euro",
+        "ga_IE",
+        "ga"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-15",
+      "origin": "glibc",
+      "requested": "ga_IE@euro",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "gbm_IN",
+        "gbm"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "gbm_IN",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "gd_GB",
+        "gd"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "gd_GB.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "gd_GB",
+        "gd"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-15",
+      "origin": "glibc",
+      "requested": "gd_GB",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "gez_ER",
+        "gez"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "gez_ER",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "gez_ER@abegede",
+        "gez@abegede"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "gez_ER@abegede",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "gez_ET",
+        "gez"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "gez_ET",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "gez_ET@abegede",
+        "gez@abegede"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "gez_ET@abegede",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "gl_ES",
+        "gl"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "gl_ES.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "gl_ES",
+        "gl"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "gl_ES",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "gl_ES@euro",
+        "gl@euro",
+        "gl_ES",
+        "gl"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-15",
+      "origin": "glibc",
+      "requested": "gl_ES@euro",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "gu_IN",
+        "gu"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "gu_IN",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "gv_GB",
+        "gv"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "gv_GB.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "gv_GB",
+        "gv"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "gv_GB",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ha_NG",
+        "ha"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ha_NG",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "hak_TW",
+        "hak"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "hak_TW",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "he_IL",
+        "he"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "he_IL.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "he_IL",
+        "he"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-8",
+      "origin": "glibc",
+      "requested": "he_IL",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "hi_IN",
+        "hi"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "hi_IN",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "hif_FJ",
+        "hif"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "hif_FJ",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "hne_IN",
+        "hne"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "hne_IN",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "hr_HR",
+        "hr"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "hr_HR.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "hr_HR",
+        "hr"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-2",
+      "origin": "glibc",
+      "requested": "hr_HR",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "hsb_DE",
+        "hsb"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "hsb_DE.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "hsb_DE",
+        "hsb"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-2",
+      "origin": "glibc",
+      "requested": "hsb_DE",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ht_HT",
+        "ht"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ht_HT",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "hu_HU",
+        "hu"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "hu_HU.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "hu_HU",
+        "hu"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-2",
+      "origin": "glibc",
+      "requested": "hu_HU",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "hy_AM",
+        "hy"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "hy_AM",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "hy_AM",
+        "hy"
+      ],
+      "catalog": "en",
+      "encoding": "ARMSCII-8",
+      "origin": "glibc",
+      "requested": "hy_AM.ARMSCII-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ia_FR",
+        "ia"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ia_FR",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "id_ID",
+        "id"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "id_ID.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "id_ID",
+        "id"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "id_ID",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ig_NG",
+        "ig"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ig_NG",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ik_CA",
+        "ik"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ik_CA",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "is_IS",
+        "is"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "is_IS.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "is_IS",
+        "is"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "is_IS",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "it_CH",
+        "it"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "it_CH.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "it_CH",
+        "it"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "it_CH",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "it_IT",
+        "it"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "it_IT.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "it_IT",
+        "it"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "it_IT",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "it_IT@euro",
+        "it@euro",
+        "it_IT",
+        "it"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-15",
+      "origin": "glibc",
+      "requested": "it_IT@euro",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "iu_CA",
+        "iu"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "iu_CA",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ja_JP",
+        "ja"
+      ],
+      "catalog": "ja",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ja_JP.UTF-8",
+      "state": "translated"
+    },
+    {
+      "candidates": [
+        "ja_JP",
+        "ja"
+      ],
+      "catalog": "ja",
+      "encoding": "EUC-JP",
+      "origin": "glibc",
+      "requested": "ja_JP.EUC-JP",
+      "state": "translated"
+    },
+    {
+      "candidates": [
+        "ka_GE",
+        "ka"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ka_GE.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ka_GE",
+        "ka"
+      ],
+      "catalog": "en",
+      "encoding": "GEORGIAN-PS",
+      "origin": "glibc",
+      "requested": "ka_GE",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "kab_DZ",
+        "kab"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "kab_DZ",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "kk_KZ",
+        "kk"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "kk_KZ.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "kk_KZ",
+        "kk"
+      ],
+      "catalog": "en",
+      "encoding": "PT154",
+      "origin": "glibc",
+      "requested": "kk_KZ",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "kk_KZ",
+        "kk"
+      ],
+      "catalog": "en",
+      "encoding": "RK1048",
+      "origin": "glibc",
+      "requested": "kk_KZ.RK1048",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "kl_GL",
+        "kl"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "kl_GL.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "kl_GL",
+        "kl"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "kl_GL",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "km_KH",
+        "km"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "km_KH",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "kn_IN",
+        "kn"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "kn_IN",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ko_KR",
+        "ko"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ko_KR.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ko_KR",
+        "ko"
+      ],
+      "catalog": "en",
+      "encoding": "EUC-KR",
+      "origin": "glibc",
+      "requested": "ko_KR.EUC-KR",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "kok_IN",
+        "kok"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "kok_IN",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ks_IN",
+        "ks"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ks_IN",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ks_IN@devanagari",
+        "ks@devanagari"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ks_IN@devanagari",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ku_TR",
+        "ku"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ku_TR.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ku_TR",
+        "ku"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-9",
+      "origin": "glibc",
+      "requested": "ku_TR",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "kv_RU",
+        "kv"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "kv_RU",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "kw_GB",
+        "kw"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "kw_GB.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "kw_GB",
+        "kw"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "kw_GB",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ky_KG",
+        "ky"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ky_KG",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "lb_LU",
+        "lb"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "lb_LU",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "lg_UG",
+        "lg"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "lg_UG.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "lg_UG",
+        "lg"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-10",
+      "origin": "glibc",
+      "requested": "lg_UG",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "li_BE",
+        "li"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "li_BE",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "li_NL",
+        "li"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "li_NL",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "lij_IT",
+        "lij"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "lij_IT",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ln_CD",
+        "ln"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ln_CD",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "lo_LA",
+        "lo"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "lo_LA",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "lt_LT",
+        "lt"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "lt_LT.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "lt_LT",
+        "lt"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-13",
+      "origin": "glibc",
+      "requested": "lt_LT",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ltg_LV",
+        "ltg"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ltg_LV.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "lv_LV",
+        "lv"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "lv_LV.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "lv_LV",
+        "lv"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-13",
+      "origin": "glibc",
+      "requested": "lv_LV",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "lzh_TW",
+        "lzh"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "lzh_TW",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "mag_IN",
+        "mag"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "mag_IN",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "mai_IN",
+        "mai"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "mai_IN",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "mai_NP",
+        "mai"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "mai_NP",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "mdf_RU",
+        "mdf"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "mdf_RU",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "mfe_MU",
+        "mfe"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "mfe_MU",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "mg_MG",
+        "mg"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "mg_MG.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "mg_MG",
+        "mg"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-15",
+      "origin": "glibc",
+      "requested": "mg_MG",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "mhr_RU",
+        "mhr"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "mhr_RU",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "mi_NZ",
+        "mi"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "mi_NZ.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "mi_NZ",
+        "mi"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-13",
+      "origin": "glibc",
+      "requested": "mi_NZ",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "miq_NI",
+        "miq"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "miq_NI",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "mjw_IN",
+        "mjw"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "mjw_IN",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "mk_MK",
+        "mk"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "mk_MK.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "mk_MK",
+        "mk"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-5",
+      "origin": "glibc",
+      "requested": "mk_MK",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ml_IN",
+        "ml"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ml_IN",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "mn_MN",
+        "mn"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "mn_MN",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "mni_IN",
+        "mni"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "mni_IN",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "mnw_MM",
+        "mnw"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "mnw_MM",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "mr_IN",
+        "mr"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "mr_IN",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ms_MY",
+        "ms"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ms_MY.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ms_MY",
+        "ms"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "ms_MY",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "mt_MT",
+        "mt"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "mt_MT.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "mt_MT",
+        "mt"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-3",
+      "origin": "glibc",
+      "requested": "mt_MT",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "my_MM",
+        "my"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "my_MM",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "nan_TW",
+        "nan"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "nan_TW",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "nan_TW@latin",
+        "nan@latin"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "nan_TW@latin",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "nb_NO",
+        "nb"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "nb_NO.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "nb_NO",
+        "nb"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "nb_NO",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "nds_DE",
+        "nds"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "nds_DE",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "nds_NL",
+        "nds"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "nds_NL",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ne_NP",
+        "ne"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ne_NP",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "nhn_MX",
+        "nhn"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "nhn_MX",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "niu_NU",
+        "niu"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "niu_NU",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "niu_NZ",
+        "niu"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "niu_NZ",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "nl_AW",
+        "nl"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "nl_AW",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "nl_BE",
+        "nl"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "nl_BE.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "nl_BE",
+        "nl"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "nl_BE",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "nl_BE@euro",
+        "nl@euro",
+        "nl_BE",
+        "nl"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-15",
+      "origin": "glibc",
+      "requested": "nl_BE@euro",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "nl_NL",
+        "nl"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "nl_NL.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "nl_NL",
+        "nl"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "nl_NL",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "nl_NL@euro",
+        "nl@euro",
+        "nl_NL",
+        "nl"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-15",
+      "origin": "glibc",
+      "requested": "nl_NL@euro",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "nn_NO",
+        "nn"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "nn_NO.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "nn_NO",
+        "nn"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "nn_NO",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "nr_ZA",
+        "nr"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "nr_ZA",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "nso_ZA",
+        "nso"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "nso_ZA",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "oc_FR",
+        "oc"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "oc_FR.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "oc_FR",
+        "oc"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "oc_FR",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "om_ET",
+        "om"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "om_ET",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "om_KE",
+        "om"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "om_KE.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "om_KE",
+        "om"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "om_KE",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "or_IN",
+        "or"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "or_IN",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "os_RU",
+        "os"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "os_RU",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "pa_IN",
+        "pa"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "pa_IN",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "pa_PK",
+        "pa"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "pa_PK",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "pap_AW",
+        "pap"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "pap_AW",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "pap_CW",
+        "pap"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "pap_CW",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "pl_PL",
+        "pl"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "pl_PL.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "pl_PL",
+        "pl"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-2",
+      "origin": "glibc",
+      "requested": "pl_PL",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ps_AF",
+        "ps"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ps_AF",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "pt_BR",
+        "pt"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "pt_BR.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "pt_BR",
+        "pt"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "pt_BR",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "pt_PT",
+        "pt"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "pt_PT.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "pt_PT",
+        "pt"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "pt_PT",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "pt_PT@euro",
+        "pt@euro",
+        "pt_PT",
+        "pt"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-15",
+      "origin": "glibc",
+      "requested": "pt_PT@euro",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "quz_PE",
+        "quz"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "quz_PE",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "raj_IN",
+        "raj"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "raj_IN",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "rif_MA",
+        "rif"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "rif_MA",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ro_RO",
+        "ro"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ro_RO.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ro_RO",
+        "ro"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-2",
+      "origin": "glibc",
+      "requested": "ro_RO",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ru_RU",
+        "ru"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ru_RU.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ru_RU",
+        "ru"
+      ],
+      "catalog": "en",
+      "encoding": "KOI8-R",
+      "origin": "glibc",
+      "requested": "ru_RU.KOI8-R",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ru_RU",
+        "ru"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-5",
+      "origin": "glibc",
+      "requested": "ru_RU",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ru_RU",
+        "ru"
+      ],
+      "catalog": "en",
+      "encoding": "CP1251",
+      "origin": "glibc",
+      "requested": "ru_RU.CP1251",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ru_UA",
+        "ru"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ru_UA.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ru_UA",
+        "ru"
+      ],
+      "catalog": "en",
+      "encoding": "KOI8-U",
+      "origin": "glibc",
+      "requested": "ru_UA",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "rw_RW",
+        "rw"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "rw_RW",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "sa_IN",
+        "sa"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "sa_IN",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "sah_RU",
+        "sah"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "sah_RU",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "sat_IN",
+        "sat"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "sat_IN",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "sc_IT",
+        "sc"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "sc_IT",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "scn_IT",
+        "scn"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "scn_IT",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "sd_IN",
+        "sd"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "sd_IN",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "sd_IN@devanagari",
+        "sd@devanagari"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "sd_IN@devanagari",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "se_NO",
+        "se"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "se_NO",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "sgs_LT",
+        "sgs"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "sgs_LT",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "shn_MM",
+        "shn"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "shn_MM",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "shs_CA",
+        "shs"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "shs_CA",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "si_LK",
+        "si"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "si_LK",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "sid_ET",
+        "sid"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "sid_ET",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "sk_SK",
+        "sk"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "sk_SK.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "sk_SK",
+        "sk"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-2",
+      "origin": "glibc",
+      "requested": "sk_SK",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "sl_SI",
+        "sl"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "sl_SI.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "sl_SI",
+        "sl"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-2",
+      "origin": "glibc",
+      "requested": "sl_SI",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "sm_WS",
+        "sm"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "sm_WS",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "so_DJ",
+        "so"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "so_DJ.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "so_DJ",
+        "so"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "so_DJ",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "so_ET",
+        "so"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "so_ET",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "so_KE",
+        "so"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "so_KE.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "so_KE",
+        "so"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "so_KE",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "so_SO",
+        "so"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "so_SO.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "so_SO",
+        "so"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "so_SO",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "sq_AL",
+        "sq"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "sq_AL.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "sq_AL",
+        "sq"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "sq_AL",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "sq_MK",
+        "sq"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "sq_MK",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "sr_ME",
+        "sr"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "sr_ME",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "sr_RS",
+        "sr"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "sr_RS",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "sr_RS@latin",
+        "sr@latin"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "sr_RS@latin",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ss_ZA",
+        "ss"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ss_ZA",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ssy_ER",
+        "ssy"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ssy_ER",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "st_ZA",
+        "st"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "st_ZA.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "st_ZA",
+        "st"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "st_ZA",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "su_ID",
+        "su"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "su_ID",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "sv_FI",
+        "sv"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "sv_FI.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "sv_FI",
+        "sv"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "sv_FI",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "sv_FI@euro",
+        "sv@euro",
+        "sv_FI",
+        "sv"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-15",
+      "origin": "glibc",
+      "requested": "sv_FI@euro",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "sv_SE",
+        "sv"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "sv_SE.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "sv_SE",
+        "sv"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "sv_SE",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "sv_SE",
+        "sv"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-15",
+      "origin": "glibc",
+      "requested": "sv_SE.ISO-8859-15",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "sw_KE",
+        "sw"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "sw_KE",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "sw_TZ",
+        "sw"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "sw_TZ",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "syr"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "syr",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "szl_PL",
+        "szl"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "szl_PL",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ta_IN",
+        "ta"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ta_IN",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ta_LK",
+        "ta"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ta_LK",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "tcy_IN",
+        "tcy"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "tcy_IN.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "te_IN",
+        "te"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "te_IN",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "tg_TJ",
+        "tg"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "tg_TJ.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "tg_TJ",
+        "tg"
+      ],
+      "catalog": "en",
+      "encoding": "KOI8-T",
+      "origin": "glibc",
+      "requested": "tg_TJ",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "th_TH",
+        "th"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "th_TH.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "th_TH",
+        "th"
+      ],
+      "catalog": "en",
+      "encoding": "TIS-620",
+      "origin": "glibc",
+      "requested": "th_TH",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "the_NP",
+        "the"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "the_NP",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ti_ER",
+        "ti"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ti_ER",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ti_ET",
+        "ti"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ti_ET",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "tig_ER",
+        "tig"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "tig_ER",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "tk_TM",
+        "tk"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "tk_TM",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "tl_PH",
+        "tl"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "tl_PH.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "tl_PH",
+        "tl"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "tl_PH",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "tn_ZA",
+        "tn"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "tn_ZA",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "to_TO",
+        "to"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "to_TO",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "tok"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "tok",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "tpi_PG",
+        "tpi"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "tpi_PG",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "tr_CY",
+        "tr"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "tr_CY.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "tr_CY",
+        "tr"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-9",
+      "origin": "glibc",
+      "requested": "tr_CY",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "tr_TR",
+        "tr"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "tr_TR.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "tr_TR",
+        "tr"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-9",
+      "origin": "glibc",
+      "requested": "tr_TR",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ts_ZA",
+        "ts"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ts_ZA",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "tt_RU",
+        "tt"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "tt_RU",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "tt_RU@iqtelif",
+        "tt@iqtelif"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "tt_RU@iqtelif",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ug_CN",
+        "ug"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ug_CN",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "uk_UA",
+        "uk"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "uk_UA.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "uk_UA",
+        "uk"
+      ],
+      "catalog": "en",
+      "encoding": "KOI8-U",
+      "origin": "glibc",
+      "requested": "uk_UA",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "unm_US",
+        "unm"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "unm_US",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ur_IN",
+        "ur"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ur_IN",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ur_PK",
+        "ur"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ur_PK",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "uz_UZ",
+        "uz"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "uz_UZ.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "uz_UZ",
+        "uz"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "uz_UZ",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "uz_UZ@cyrillic",
+        "uz@cyrillic"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "uz_UZ@cyrillic",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ve_ZA",
+        "ve"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "ve_ZA",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "vi_VN",
+        "vi"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "vi_VN",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "wa_BE",
+        "wa"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "wa_BE.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "wa_BE",
+        "wa"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "wa_BE",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "wa_BE@euro",
+        "wa@euro",
+        "wa_BE",
+        "wa"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-15",
+      "origin": "glibc",
+      "requested": "wa_BE@euro",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "wae_CH",
+        "wae"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "wae_CH",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "wal_ET",
+        "wal"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "wal_ET",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "wo_SN",
+        "wo"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "wo_SN",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "xh_ZA",
+        "xh"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "xh_ZA.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "xh_ZA",
+        "xh"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "xh_ZA",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "yi_US",
+        "yi"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "yi_US.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "yi_US",
+        "yi"
+      ],
+      "catalog": "en",
+      "encoding": "CP1255",
+      "origin": "glibc",
+      "requested": "yi_US",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "yo_NG",
+        "yo"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "yo_NG",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "yue_HK",
+        "yue"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "yue_HK",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "yuw_PG",
+        "yuw"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "yuw_PG",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "zgh_MA",
+        "zgh"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "zgh_MA",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "zh_CN"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "zh_CN.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "zh_CN"
+      ],
+      "catalog": "en",
+      "encoding": "GB18030",
+      "origin": "glibc",
+      "requested": "zh_CN.GB18030",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "zh_CN"
+      ],
+      "catalog": "en",
+      "encoding": "GBK",
+      "origin": "glibc",
+      "requested": "zh_CN.GBK",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "zh_CN"
+      ],
+      "catalog": "en",
+      "encoding": "GB2312",
+      "origin": "glibc",
+      "requested": "zh_CN",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "zh_HK",
+        "zh_TW"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "zh_HK.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "zh_HK",
+        "zh_TW"
+      ],
+      "catalog": "en",
+      "encoding": "BIG5-HKSCS",
+      "origin": "glibc",
+      "requested": "zh_HK",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "zh_SG",
+        "zh_CN"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "zh_SG.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "zh_SG",
+        "zh_CN"
+      ],
+      "catalog": "en",
+      "encoding": "GBK",
+      "origin": "glibc",
+      "requested": "zh_SG.GBK",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "zh_SG",
+        "zh_CN"
+      ],
+      "catalog": "en",
+      "encoding": "GB2312",
+      "origin": "glibc",
+      "requested": "zh_SG",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "zh_TW"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "zh_TW.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "zh_TW"
+      ],
+      "catalog": "en",
+      "encoding": "EUC-TW",
+      "origin": "glibc",
+      "requested": "zh_TW.EUC-TW",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "zh_TW"
+      ],
+      "catalog": "en",
+      "encoding": "BIG5",
+      "origin": "glibc",
+      "requested": "zh_TW",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "zu_ZA",
+        "zu"
+      ],
+      "catalog": "en",
+      "encoding": "UTF-8",
+      "origin": "glibc",
+      "requested": "zu_ZA.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "zu_ZA",
+        "zu"
+      ],
+      "catalog": "en",
+      "encoding": "ISO-8859-1",
+      "origin": "glibc",
+      "requested": "zu_ZA",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "sq_AL",
+        "sq"
+      ],
+      "catalog": "en",
+      "language": "sq",
+      "origin": "installer",
+      "requested": "sq_AL.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "am_ET",
+        "am"
+      ],
+      "catalog": "en",
+      "language": "am",
+      "origin": "installer",
+      "requested": "am_ET",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ar_EG",
+        "ar"
+      ],
+      "catalog": "en",
+      "language": "ar",
+      "origin": "installer",
+      "requested": "ar_EG.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ast_ES",
+        "ast"
+      ],
+      "catalog": "en",
+      "language": "ast",
+      "origin": "installer",
+      "requested": "ast_ES.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "eu_ES",
+        "eu"
+      ],
+      "catalog": "en",
+      "language": "eu",
+      "origin": "installer",
+      "requested": "eu_ES.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "be_BY",
+        "be"
+      ],
+      "catalog": "en",
+      "language": "be",
+      "origin": "installer",
+      "requested": "be_BY.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "bn_BD",
+        "bn"
+      ],
+      "catalog": "en",
+      "language": "bn",
+      "origin": "installer",
+      "requested": "bn_BD",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "bs_BA",
+        "bs"
+      ],
+      "catalog": "en",
+      "language": "bs",
+      "origin": "installer",
+      "requested": "bs_BA.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "bg_BG",
+        "bg"
+      ],
+      "catalog": "en",
+      "language": "bg",
+      "origin": "installer",
+      "requested": "bg_BG.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "bo_IN",
+        "bo"
+      ],
+      "catalog": "en",
+      "language": "bo",
+      "origin": "installer",
+      "requested": "bo_IN",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "en"
+      ],
+      "catalog": "en",
+      "language": "C",
+      "origin": "installer",
+      "requested": "C",
+      "state": "source-language"
+    },
+    {
+      "candidates": [
+        "ca_ES",
+        "ca"
+      ],
+      "catalog": "en",
+      "language": "ca",
+      "origin": "installer",
+      "requested": "ca_ES.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "zh_CN"
+      ],
+      "catalog": "en",
+      "language": "zh_CN",
+      "origin": "installer",
+      "requested": "zh_CN.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "zh_TW"
+      ],
+      "catalog": "en",
+      "language": "zh_TW",
+      "origin": "installer",
+      "requested": "zh_TW.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "hr_HR",
+        "hr"
+      ],
+      "catalog": "en",
+      "language": "hr",
+      "origin": "installer",
+      "requested": "hr_HR.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "cs_CZ",
+        "cs"
+      ],
+      "catalog": "en",
+      "language": "cs",
+      "origin": "installer",
+      "requested": "cs_CZ.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "da_DK",
+        "da"
+      ],
+      "catalog": "en",
+      "language": "da",
+      "origin": "installer",
+      "requested": "da_DK.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "nl_NL",
+        "nl"
+      ],
+      "catalog": "en",
+      "language": "nl",
+      "origin": "installer",
+      "requested": "nl_NL.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "dz_BT",
+        "dz"
+      ],
+      "catalog": "en",
+      "language": "dz",
+      "origin": "installer",
+      "requested": "dz_BT",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "en_US",
+        "en"
+      ],
+      "catalog": "en",
+      "language": "en",
+      "origin": "installer",
+      "requested": "en_US.UTF-8",
+      "state": "source-language"
+    },
+    {
+      "candidates": [
+        "eo"
+      ],
+      "catalog": "en",
+      "language": "eo",
+      "origin": "installer",
+      "requested": "eo.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "et_EE",
+        "et"
+      ],
+      "catalog": "en",
+      "language": "et",
+      "origin": "installer",
+      "requested": "et_EE.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "fi_FI",
+        "fi"
+      ],
+      "catalog": "en",
+      "language": "fi",
+      "origin": "installer",
+      "requested": "fi_FI.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "fr_FR",
+        "fr"
+      ],
+      "catalog": "en",
+      "language": "fr",
+      "origin": "installer",
+      "requested": "fr_FR.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "gl_ES",
+        "gl"
+      ],
+      "catalog": "en",
+      "language": "gl",
+      "origin": "installer",
+      "requested": "gl_ES.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ka_GE",
+        "ka"
+      ],
+      "catalog": "en",
+      "language": "ka",
+      "origin": "installer",
+      "requested": "ka_GE.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "de_DE",
+        "de"
+      ],
+      "catalog": "en",
+      "language": "de",
+      "origin": "installer",
+      "requested": "de_DE.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "el_GR",
+        "el"
+      ],
+      "catalog": "en",
+      "language": "el",
+      "origin": "installer",
+      "requested": "el_GR.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "gu_IN",
+        "gu"
+      ],
+      "catalog": "en",
+      "language": "gu",
+      "origin": "installer",
+      "requested": "gu_IN",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "he_IL",
+        "he"
+      ],
+      "catalog": "en",
+      "language": "he",
+      "origin": "installer",
+      "requested": "he_IL.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "hi_IN",
+        "hi"
+      ],
+      "catalog": "en",
+      "language": "hi",
+      "origin": "installer",
+      "requested": "hi_IN",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "hu_HU",
+        "hu"
+      ],
+      "catalog": "en",
+      "language": "hu",
+      "origin": "installer",
+      "requested": "hu_HU.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "is_IS",
+        "is"
+      ],
+      "catalog": "en",
+      "language": "is",
+      "origin": "installer",
+      "requested": "is_IS.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "id_ID",
+        "id"
+      ],
+      "catalog": "en",
+      "language": "id",
+      "origin": "installer",
+      "requested": "id_ID.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ga_IE",
+        "ga"
+      ],
+      "catalog": "en",
+      "language": "ga",
+      "origin": "installer",
+      "requested": "ga_IE.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "it_IT",
+        "it"
+      ],
+      "catalog": "en",
+      "language": "it",
+      "origin": "installer",
+      "requested": "it_IT.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ja_JP",
+        "ja"
+      ],
+      "catalog": "ja",
+      "language": "ja",
+      "origin": "installer",
+      "requested": "ja_JP.UTF-8",
+      "state": "translated"
+    },
+    {
+      "candidates": [
+        "kab_DZ",
+        "kab"
+      ],
+      "catalog": "en",
+      "language": "kab",
+      "origin": "installer",
+      "requested": "kab_DZ",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "kk_KZ",
+        "kk"
+      ],
+      "catalog": "en",
+      "language": "kk",
+      "origin": "installer",
+      "requested": "kk_KZ.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "km_KH",
+        "km"
+      ],
+      "catalog": "en",
+      "language": "km",
+      "origin": "installer",
+      "requested": "km_KH",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "kn_IN",
+        "kn"
+      ],
+      "catalog": "en",
+      "language": "kn",
+      "origin": "installer",
+      "requested": "kn_IN",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ko_KR",
+        "ko"
+      ],
+      "catalog": "en",
+      "language": "ko",
+      "origin": "installer",
+      "requested": "ko_KR.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ku_TR",
+        "ku"
+      ],
+      "catalog": "en",
+      "language": "ku",
+      "origin": "installer",
+      "requested": "ku_TR.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "lo_LA",
+        "lo"
+      ],
+      "catalog": "en",
+      "language": "lo",
+      "origin": "installer",
+      "requested": "lo_LA",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "lv_LV",
+        "lv"
+      ],
+      "catalog": "en",
+      "language": "lv",
+      "origin": "installer",
+      "requested": "lv_LV.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "lt_LT",
+        "lt"
+      ],
+      "catalog": "en",
+      "language": "lt",
+      "origin": "installer",
+      "requested": "lt_LT.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ml_IN",
+        "ml"
+      ],
+      "catalog": "en",
+      "language": "ml",
+      "origin": "installer",
+      "requested": "ml_IN",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "mr_IN",
+        "mr"
+      ],
+      "catalog": "en",
+      "language": "mr",
+      "origin": "installer",
+      "requested": "mr_IN",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "mk_MK",
+        "mk"
+      ],
+      "catalog": "en",
+      "language": "mk",
+      "origin": "installer",
+      "requested": "mk_MK.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "my_MM",
+        "my"
+      ],
+      "catalog": "en",
+      "language": "my",
+      "origin": "installer",
+      "requested": "my_MM",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ne_NP",
+        "ne"
+      ],
+      "catalog": "en",
+      "language": "ne",
+      "origin": "installer",
+      "requested": "ne_NP",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "se_NO",
+        "se"
+      ],
+      "catalog": "en",
+      "language": "se_NO",
+      "origin": "installer",
+      "requested": "se_NO",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "nb_NO",
+        "nb"
+      ],
+      "catalog": "en",
+      "language": "nb_NO",
+      "origin": "installer",
+      "requested": "nb_NO.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "nn_NO",
+        "nn"
+      ],
+      "catalog": "en",
+      "language": "nn_NO",
+      "origin": "installer",
+      "requested": "nn_NO.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "oc_FR",
+        "oc"
+      ],
+      "catalog": "en",
+      "language": "oc",
+      "origin": "installer",
+      "requested": "oc_FR.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "fa_IR",
+        "fa"
+      ],
+      "catalog": "en",
+      "language": "fa",
+      "origin": "installer",
+      "requested": "fa_IR",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "pl_PL",
+        "pl"
+      ],
+      "catalog": "en",
+      "language": "pl",
+      "origin": "installer",
+      "requested": "pl_PL.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "pt_PT",
+        "pt"
+      ],
+      "catalog": "en",
+      "language": "pt",
+      "origin": "installer",
+      "requested": "pt_PT.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "pt_BR",
+        "pt"
+      ],
+      "catalog": "en",
+      "language": "pt_BR",
+      "origin": "installer",
+      "requested": "pt_BR.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "pa_IN",
+        "pa"
+      ],
+      "catalog": "en",
+      "language": "pa",
+      "origin": "installer",
+      "requested": "pa_IN",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ro_RO",
+        "ro"
+      ],
+      "catalog": "en",
+      "language": "ro",
+      "origin": "installer",
+      "requested": "ro_RO.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ru_RU",
+        "ru"
+      ],
+      "catalog": "en",
+      "language": "ru",
+      "origin": "installer",
+      "requested": "ru_RU.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "si_LK",
+        "si"
+      ],
+      "catalog": "en",
+      "language": "si",
+      "origin": "installer",
+      "requested": "si_LK",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "sr_RS",
+        "sr"
+      ],
+      "catalog": "en",
+      "language": "sr",
+      "origin": "installer",
+      "requested": "sr_RS",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "sk_SK",
+        "sk"
+      ],
+      "catalog": "en",
+      "language": "sk",
+      "origin": "installer",
+      "requested": "sk_SK.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "sl_SI",
+        "sl"
+      ],
+      "catalog": "en",
+      "language": "sl",
+      "origin": "installer",
+      "requested": "sl_SI.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "es_ES",
+        "es"
+      ],
+      "catalog": "en",
+      "language": "es",
+      "origin": "installer",
+      "requested": "es_ES.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "sv_SE",
+        "sv"
+      ],
+      "catalog": "en",
+      "language": "sv",
+      "origin": "installer",
+      "requested": "sv_SE.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "tl_PH",
+        "tl"
+      ],
+      "catalog": "en",
+      "language": "tl",
+      "origin": "installer",
+      "requested": "tl_PH.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ta_IN",
+        "ta"
+      ],
+      "catalog": "en",
+      "language": "ta",
+      "origin": "installer",
+      "requested": "ta_IN",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "te_IN",
+        "te"
+      ],
+      "catalog": "en",
+      "language": "te",
+      "origin": "installer",
+      "requested": "te_IN",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "tg_TJ",
+        "tg"
+      ],
+      "catalog": "en",
+      "language": "tg",
+      "origin": "installer",
+      "requested": "tg_TJ.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "th_TH",
+        "th"
+      ],
+      "catalog": "en",
+      "language": "th",
+      "origin": "installer",
+      "requested": "th_TH.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "tr_TR",
+        "tr"
+      ],
+      "catalog": "en",
+      "language": "tr",
+      "origin": "installer",
+      "requested": "tr_TR.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "ug_CN",
+        "ug"
+      ],
+      "catalog": "en",
+      "language": "ug",
+      "origin": "installer",
+      "requested": "ug_CN",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "uk_UA",
+        "uk"
+      ],
+      "catalog": "en",
+      "language": "uk",
+      "origin": "installer",
+      "requested": "uk_UA.UTF-8",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "vi_VN",
+        "vi"
+      ],
+      "catalog": "en",
+      "language": "vi",
+      "origin": "installer",
+      "requested": "vi_VN",
+      "state": "english-fallback"
+    },
+    {
+      "candidates": [
+        "cy_GB",
+        "cy"
+      ],
+      "catalog": "en",
+      "language": "cy",
+      "origin": "installer",
+      "requested": "cy_GB.UTF-8",
+      "state": "english-fallback"
+    }
+  ],
+  "schema": "org.niaos.language-coverage/v1",
+  "source_language": "en"
+}

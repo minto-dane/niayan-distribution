@@ -175,6 +175,30 @@
         "evidence/management-interface/repository-01/README.ja.md"
       ],
       "remaining": "Production keys and provisioning, independent rollback-resistant trust floor/time, service isolation and deadline, contract semantics and Debian archive chain, actual power-loss qualification and managed-engine integration"
+    },
+    {
+      "id": "NATIVE-009",
+      "requirement": "Support all Debian 13 language and locale targets without changing command grammar, signed inputs, outcomes or transaction authority",
+      "state": "english-and-japanese-cli-tested-graphical-acceptance-pending",
+      "hazard": "Translated identifiers or locale-sensitive parsing change authorization or recovery; malformed translations and terminal controls obscure outcomes",
+      "implementation": [
+        "native/i18n.py",
+        "native/diagnostics.py",
+        "native/i18n_catalogs.py",
+        "native/package_cli.py",
+        "native/interim_commands.py",
+        "native/interim_download.py",
+        "native/debian-languages.json",
+        "native/language_coverage.py"
+      ],
+      "tests": [
+        "native/test_i18n.py",
+        "native/check_download_cli.py"
+      ],
+      "evidence": [
+        "evidence/management-interface/localization-01/README.ja.md"
+      ],
+      "remaining": "Complete translations for all pinned Debian language targets; TUI/GUI integration and fonts/shaping/RTL/cell-width/accessibility/IME acceptance, translation review and reference response qualification; English fallback never qualifies as a completed translation"
     }
   ]
 }

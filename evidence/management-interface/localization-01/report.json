@@ -1,0 +1,395 @@
+{
+  "schema": "org.niaos.management-interface-validation/v1",
+  "source_subject": "8d7624f4932cced4741fae446ceb6d1fc3fd7456be3892734bffdac345ddaef1",
+  "source_subject_scope": "complete source pipeline; exact tool runtime inputs listed separately below",
+  "tests": {
+    "native": 107,
+    "hardening": 4,
+    "image_tools": 16,
+    "public_cli_in_disposable_root_container": 6,
+    "source_pipeline_steps": 24,
+    "translatable_messages": 115,
+    "glibc_locale_encoding_pairs": 509,
+    "installer_choices": 78
+  },
+  "result": "pass-for-tested-development-scope",
+  "container_image": "sha256:0d256f5b95dcd43dc441ac734cae705938dca230ceab11c47f787901c6de18eb",
+  "source_language": "en",
+  "complete_translation_catalogs": [
+    "ja"
+  ],
+  "all_languages_translated": false,
+  "full_language_release_gate_returncode": 1,
+  "full_language_gate_result": "expected-rejection-incomplete-translations",
+  "source_operation_independent_of_locale": true,
+  "graphical_and_input_qualification": false,
+  "native_runtime_connected": false,
+  "interim_installation_implemented": false,
+  "response_compatibility_qualified": false,
+  "new_iso_built": false,
+  "formal_proof_rerun": false,
+  "inputs": [
+    {
+      "path": ".gitattributes",
+      "sha256": "a2fe471bb62e1f8d76ccf63b2d753773dbcd58bea7686032d3b129b6a0e90c11"
+    },
+    {
+      "path": ".github/workflows/image-tools.yml",
+      "sha256": "1868611728242acade193046faef03bc3681171602c4833421d9a39e457dc051"
+    },
+    {
+      "path": "Makefile",
+      "sha256": "e5886b9495d843842b888e1870d13a86e7a50e79855c894013c6eed55814ce66"
+    },
+    {
+      "path": "docs/decisions/0004-localized-interface.ja.md",
+      "sha256": "107964f440aefd35faef8277c131e9cdb3e7e96f46ccca3d1946eac687d7156e"
+    },
+    {
+      "path": "native/Containerfile",
+      "sha256": "26ec0d5469d6ab51252f28b948ff480761b45cd17ab3af3e860327be44414dec"
+    },
+    {
+      "path": "native/README.ja.md",
+      "sha256": "745367c81645e80f5db9cee04324c8d1ec28510c815ff484e1cbe019ac1d2c9d"
+    },
+    {
+      "path": "native/acceptance.json",
+      "sha256": "fe4cb80d04de52eaac31df62b8f94ce6338ac80105660e717381685ab208efe1"
+    },
+    {
+      "path": "native/audit_transition.py",
+      "sha256": "16390ec59e5ef41cf903484afe213d1d6d8d5099627c7f07b31cf898ae13420e"
+    },
+    {
+      "path": "native/bin/emgr",
+      "sha256": "9b5f36e86b78f99ffadff07b4634d16928e205e034ceef9f3d19d06306405b19"
+    },
+    {
+      "path": "native/bin/emgr_download_ifix",
+      "sha256": "9b5f36e86b78f99ffadff07b4634d16928e205e034ceef9f3d19d06306405b19"
+    },
+    {
+      "path": "native/bin/epkg",
+      "sha256": "9b5f36e86b78f99ffadff07b4634d16928e205e034ceef9f3d19d06306405b19"
+    },
+    {
+      "path": "native/bin/geninstall",
+      "sha256": "5a6bf38bd7e19708fae590f33892fd79ff4df9ff2581c387f94c0e907e54e44c"
+    },
+    {
+      "path": "native/bin/install_all_updates",
+      "sha256": "5a6bf38bd7e19708fae590f33892fd79ff4df9ff2581c387f94c0e907e54e44c"
+    },
+    {
+      "path": "native/bin/installp",
+      "sha256": "5a6bf38bd7e19708fae590f33892fd79ff4df9ff2581c387f94c0e907e54e44c"
+    },
+    {
+      "path": "native/bin/instfix",
+      "sha256": "5a6bf38bd7e19708fae590f33892fd79ff4df9ff2581c387f94c0e907e54e44c"
+    },
+    {
+      "path": "native/bin/inutoc",
+      "sha256": "5a6bf38bd7e19708fae590f33892fd79ff4df9ff2581c387f94c0e907e54e44c"
+    },
+    {
+      "path": "native/bin/lppchk",
+      "sha256": "5a6bf38bd7e19708fae590f33892fd79ff4df9ff2581c387f94c0e907e54e44c"
+    },
+    {
+      "path": "native/bin/lppmgr",
+      "sha256": "5a6bf38bd7e19708fae590f33892fd79ff4df9ff2581c387f94c0e907e54e44c"
+    },
+    {
+      "path": "native/bin/lslpp",
+      "sha256": "5a6bf38bd7e19708fae590f33892fd79ff4df9ff2581c387f94c0e907e54e44c"
+    },
+    {
+      "path": "native/bin/suma",
+      "sha256": "5a6bf38bd7e19708fae590f33892fd79ff4df9ff2581c387f94c0e907e54e44c"
+    },
+    {
+      "path": "native/check_download_cli.py",
+      "sha256": "17eea452ce30e66b039712a90defb7ef195c72c5d1bca5445d7404431fdb6327"
+    },
+    {
+      "path": "native/command-review.ja.md",
+      "sha256": "f4c15001c0adb7d2e3500c4ab9961a1937f5eb8da911e9c97a68ee2ad106595b"
+    },
+    {
+      "path": "native/commands.ja.md",
+      "sha256": "526cee241f190a7b3c8e5a7d47221776af8cc8df13b34b2fd82d9cbc0bd91854"
+    },
+    {
+      "path": "native/debian-languages.json",
+      "sha256": "b4d6e056c16baaef3f5cfe8cd7d294fdf6ab399b3791de3cab109ebe13450fe8"
+    },
+    {
+      "path": "native/diagnostics.py",
+      "sha256": "a779ce6864036d72555b826c1921b61f62e634b8c714793da5b8c23e1777b2eb"
+    },
+    {
+      "path": "native/i18n.py",
+      "sha256": "699caf86e5e0325918ad6dba9aee81e42ee93e4c489a0dea78b3c55771442f84"
+    },
+    {
+      "path": "native/i18n_catalogs.py",
+      "sha256": "ca5e25b2bc802efec33759bd364750e3c0082bf4d552803ba874c967f0d991d4"
+    },
+    {
+      "path": "native/interim-package.ja.md",
+      "sha256": "bf67b3f6a480b9cfe3c4fe5d1f1a62b3b8be06062ab93d26563d9149a7c7e732"
+    },
+    {
+      "path": "native/interim_commands.py",
+      "sha256": "4ee8456bc0db31e6ccd2bf3f7a8b214fa485bae9e623d72cf2cd1173c2cd7653"
+    },
+    {
+      "path": "native/interim_download.py",
+      "sha256": "faf03f00ca62436ce6447c0405fccb5767147fb83dab06de4f31b9b78fddde47"
+    },
+    {
+      "path": "native/interim_intake.py",
+      "sha256": "446dd339afd631b7ef0a4b9965b7d4b3cec8c297c118898e0516ba79c6789dbf"
+    },
+    {
+      "path": "native/interim_package.py",
+      "sha256": "aa0e15fe00d69590e08323dbc03d52f384e594e9850d3570f2098a7faa46336e"
+    },
+    {
+      "path": "native/language_coverage.py",
+      "sha256": "5206a27a98c59a72b9f657ef2852741480bbd026c8fad93e6e329a9decef0acc"
+    },
+    {
+      "path": "native/locale/ja/LC_MESSAGES/nia-management.mo",
+      "sha256": "77dd28b7cfcd2efc78b10b8feee74998a1970d90907ca939b3842b6e4eb74d62"
+    },
+    {
+      "path": "native/localization.ja.md",
+      "sha256": "15ef2a2e2aaa1570516b1414c55f63bbd61c1dd4a043aa800b930b4069124eac"
+    },
+    {
+      "path": "native/management-commands.json",
+      "sha256": "de2ec979037b4f62161b10247f2d1e0fa165d4ba766acf3421ab3bb9f6559087"
+    },
+    {
+      "path": "native/package_cli.py",
+      "sha256": "4a6c655b99b666851321fc1e062f189464547474244b4832c4c33952900ad2a3"
+    },
+    {
+      "path": "native/po/ja.po",
+      "sha256": "97930fa91a5c46e32334f66a4536d8060d5675c31955136403cc678fa92270be"
+    },
+    {
+      "path": "native/po/nia-management.pot",
+      "sha256": "e7cd31ddfdd97fb64092eba24daa7eb75f6f804a2e0e5703e6ce37d370a32f93"
+    },
+    {
+      "path": "native/repository.ja.md",
+      "sha256": "081ff2801a6305f907a40f54de7da0b2d4f5785c869e925dfbfa04e5f041edb9"
+    },
+    {
+      "path": "native/repository.py",
+      "sha256": "9b2536e9dff9a5e704cc503d990658dd4538bd9df95cbbc1e22bd933698034f6"
+    },
+    {
+      "path": "native/test-packages.txt",
+      "sha256": "9de9eb2ad8df92fdff090fc767fbd28b92a7d6dd0bfa53fd9f699bf622abaf2a"
+    },
+    {
+      "path": "native/test_i18n.py",
+      "sha256": "3ad1b02f9b67a35c73685ad07789fe8c499846379c85c977c52bdf2f48beba8c"
+    },
+    {
+      "path": "native/test_interim_commands.py",
+      "sha256": "afbb9c41ed35870bb082fe41b115d586ed187c871cc1d7875bb2b55e1e407187"
+    },
+    {
+      "path": "native/test_interim_intake.py",
+      "sha256": "56613cace250e661dfb53e0b6966fcb40271bccbaada19308b9f5c777470eccf"
+    },
+    {
+      "path": "native/test_interim_package.py",
+      "sha256": "c93bd61c834d31dbca6e19d8ae8b1fa79f918b73c0aed76de94383387c00ec8f"
+    },
+    {
+      "path": "native/test_package_cli.py",
+      "sha256": "3f70fcbfd7cd8ca93ccedac935adaee504baf5302dc3e0930b0aa334bb24b489"
+    },
+    {
+      "path": "native/test_repository.py",
+      "sha256": "5276b5b7fac6bffecab5afab59a3e44796ac9ae8f300a854ae5b0ea20a7c14cf"
+    },
+    {
+      "path": "native/test_repository_https.py",
+      "sha256": "348f162378ade92fed719ca5c7033ca9c0cb0dc5a2336dc9242cee93a74d8c06"
+    },
+    {
+      "path": "native/test_transition.py",
+      "sha256": "f5cc4e6e026f92501f709a8cba57156a2b7f2399243670c4c47da51e671823a5"
+    },
+    {
+      "path": "native/test_update_metadata.py",
+      "sha256": "9cf67b5f664448356e8155c30cc61ecbe0358a61302f79556eb96cfb7882795d"
+    },
+    {
+      "path": "native/update-metadata.ja.md",
+      "sha256": "6a68291d34501fc92525d25aad779313444949da8e8b1f601263aa80997e7d86"
+    },
+    {
+      "path": "native/update_metadata.py",
+      "sha256": "d80aff3bdc3642832b97e38bf5ba002e6591f96775eed3bbde93e9f8e8dd6553"
+    },
+    {
+      "path": "tools/deb_archive.py",
+      "sha256": "e19af8d9271ed6a847edad7636985ed1a7f9d09b17e47759c4531ba96ac142bf"
+    },
+    {
+      "path": "tools/debian_semantics.py",
+      "sha256": "ffb35309c71450f5e7409fe4a1f1b52d0ea0f2867ef2be547408956513df7802"
+    },
+    {
+      "path": "tools/nia_common.py",
+      "sha256": "528aef5b9aeff742feb2142c8a7bd847fd36f4107fe06d3ae2497e839a5fb21e"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "README.ja.md",
+      "sha256": "203f33f90f9cef18b75106448445daa5dd8bc1624b2c28df4137f684f9e89f1d"
+    },
+    {
+      "path": "container-build.log",
+      "sha256": "56f9bf91f242d5aec5ea80ab3223806c48327896faec0a13844683f36c6c3263"
+    },
+    {
+      "path": "language-coverage.json",
+      "sha256": "a9f477e68a8a91a4e2cdc8d6c62d684f5491c9149bf1860e47ca3bffe9298edd"
+    },
+    {
+      "path": "language-release-gate.log",
+      "sha256": "9661c98573ec3637b1c8a1d16ac8263ad95b294c669dd68899e2a8d2aed48d5d"
+    },
+    {
+      "path": "public-cli.log",
+      "sha256": "7e78b2823e11e09e456b82684c40e3d4c5b976e0580357e4e37b383ee897f5ef"
+    },
+    {
+      "path": "source-check/assurance-contract.log",
+      "sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6"
+    },
+    {
+      "path": "source-check/capsule-policy-tree-tests.log",
+      "sha256": "c480fe2b73a9bc3ba5cca43780b0c02884a002a5c9d3cdc2c7a6dc7a0697a4fb"
+    },
+    {
+      "path": "source-check/capsulecore-contract.log",
+      "sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6"
+    },
+    {
+      "path": "source-check/cohort-recovery-tests.log",
+      "sha256": "98a4f31e5c526009f0381d84d73fb1e69cadab9002a56778e17cf68ea11ebb5c"
+    },
+    {
+      "path": "source-check/component-ci-generated.log",
+      "sha256": "e46a10320f07874e9bf758914c1cea6f1cde6ed4e70b81a989379528d1c3812f"
+    },
+    {
+      "path": "source-check/configcore-contract.log",
+      "sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6"
+    },
+    {
+      "path": "source-check/configuration-reference-tests.log",
+      "sha256": "9dcbb98e5d08c3376741b71791c4f9f529fee963313f4d89f38fbdb5b3b93ba5"
+    },
+    {
+      "path": "source-check/controlcore-contract.log",
+      "sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6"
+    },
+    {
+      "path": "source-check/distribution-tool-tests.log",
+      "sha256": "2ba42d7243473ef8f2bfe69e0e8ca599f6b82bbb30ef33fce06ae5b428ccb197"
+    },
+    {
+      "path": "source-check/engineering-unittests.log",
+      "sha256": "cb5664c8b4345296e6deccdfa7844b7de0eb75378aafbd5cfed7ad92a3a44d18"
+    },
+    {
+      "path": "source-check/evidence-manifest.sha256",
+      "sha256": "3fd571709a5726f2e0c9e11203204c09c7aeb8889a25639d829bcbea7f970213"
+    },
+    {
+      "path": "source-check/gprbuild-version.log",
+      "sha256": "580b7d8d6b27ce742268f9fa3342c978e0240a050fb3ec9fb44ea3f063b5e8ca"
+    },
+    {
+      "path": "source-check/manager-implementation-profile.log",
+      "sha256": "8e6503258bf0c12b82bcd750e52f16e350fbf7b3651488a01f41bf2f4a57dedc"
+    },
+    {
+      "path": "source-check/manager-reference-tests.log",
+      "sha256": "2d7252e59b9463ddb0494cf67611a52bd422a5ade050275fb2771b2a9b2004a6"
+    },
+    {
+      "path": "source-check/native-resolver-lock.log",
+      "sha256": "e40adfcec7696f7f8117e538efe7e131aa99fef55ba2547468edc807fc208366"
+    },
+    {
+      "path": "source-check/nia-product-audit.log",
+      "sha256": "c987a737201c765bf6e2e7523ccab8f2c142597b8e84766e77e2a26f5c8e3aae"
+    },
+    {
+      "path": "source-check/pkgcore-contract.log",
+      "sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6"
+    },
+    {
+      "path": "source-check/report.json",
+      "sha256": "ae415257169f99cabac3d4ed63e596f4ed011dd8b0b1be6c1afbbb13188058db"
+    },
+    {
+      "path": "source-check/resolution-reference-tests.log",
+      "sha256": "f69e741c976e8506b0a4cd8f667cd57b583e4167773efd839c1738652052438a"
+    },
+    {
+      "path": "source-check/resolver-neutral-boundary.log",
+      "sha256": "9924a0e4760c31c44af6d27b6aeb0921e82fce58ec82e233c686c8eaa7aad157"
+    },
+    {
+      "path": "source-check/resolver-source-profile.log",
+      "sha256": "d20516e36c781b18a0702dbd98ab8969ebb69c5f076558f497a888e4cf5e62b2"
+    },
+    {
+      "path": "source-check/resolvercore-contract.log",
+      "sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6"
+    },
+    {
+      "path": "source-check/statecore-contract.log",
+      "sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6"
+    },
+    {
+      "path": "source-check/syntax-and-doc-links.log",
+      "sha256": "2b07c2b3f3a3c0b63f9a24c9cae653fc6ea52f59c5c7dd75a631da63c027fb6e"
+    },
+    {
+      "path": "source-check/traceability.json",
+      "sha256": "28eab077c5f49ac6680d6bef5f4e3dba8a9e5726919b0915b628cc1fe15cf732"
+    },
+    {
+      "path": "source-check/unified-architecture-audit.log",
+      "sha256": "8c4d863181b08a09c6d69c16272527c44fce9c63eacf4c3326f1253b2cfb0d7e"
+    },
+    {
+      "path": "source-check-launcher.log",
+      "sha256": "f477d0fab186686bbe7dbd3ffc6fef14e0edcd128ed385927d3e58b96e1cb8e2"
+    },
+    {
+      "path": "test-packages.txt",
+      "sha256": "b0371816433afe2e65d051e94b553b50c2291f4fb99b2e046a64e55c54e4473d"
+    },
+    {
+      "path": "tool-tests.log",
+      "sha256": "5e24fb5ce33f1c074710e252b356f463024179b7a029b6597adaa4f279b80ec2"
+    }
+  ]
+}

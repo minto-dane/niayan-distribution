@@ -48,10 +48,10 @@ def main():
         command = str(Path(__file__).resolve().parent / 'bin/emgr_download_ifix')
         output = case.directory / 'output'
 
-        def invoke(directory):
+        def invoke(directory, language='C.UTF-8'):
             return subprocess.run([command, '-L', case.remote.targets_url+target, '-P', str(directory)],
-                env={'PATH': '', 'LANG': 'C.UTF-8', 'LC_ALL': 'C.UTF-8', 'HOME': '/tmp'},
-                capture_output=True, text=True, timeout=30)
+                env={'PATH': '', 'LANG': language, 'LC_ALL': language, 'HOME': '/tmp'},
+                capture_output=True, encoding='utf-8', timeout=30)
 
         result = invoke(output)
         destination = output / 'fix001.epkg'
@@ -60,6 +60,13 @@ def main():
                 or destination.read_bytes() != raw):
             raise AssertionError(('public authenticated download', result))
         print('PASS public command: real HTTPS, system CA, fixed root policy, delegated signatures and exact bytes')
+        localized = case.directory / '日本語'
+        result = invoke(localized, 'ja_JP.UTF-8')
+        if (result.returncode != 0 or result.stderr
+                or result.stdout != '緊急修正を取得しました: ' + str(localized / 'fix001.epkg') + '\n'
+                or (localized / 'fix001.epkg').read_bytes() != raw):
+            raise AssertionError(('Japanese public download', result))
+        print('PASS public command: Japanese response and Unicode output path preserve the original artifact')
         result = invoke(output)
         if result.returncode != 1 or result.stdout or destination.read_bytes() != raw:
             raise AssertionError(('exclusive output', result))
@@ -73,6 +80,11 @@ def main():
         if result.returncode != 1 or result.stdout or rejected.exists() or 'reference differs' not in result.stderr:
             raise AssertionError(('reference binding', result))
         print('PASS public command: authenticated but incorrectly bound reference creates no output')
+        result = invoke(rejected, 'ja_JP.UTF-8')
+        if (result.returncode != 1 or result.stdout or rejected.exists()
+                or '[NIA-E-REFERENCE]' not in result.stderr or '一致しません' not in result.stderr):
+            raise AssertionError(('Japanese reference rejection', result))
+        print('PASS public command: Japanese authentication failure retains the same diagnostic code and no output')
         policy.chmod(0o666)
         result = invoke(rejected)
         if result.returncode != 1 or result.stdout or rejected.exists() or 'Traceback' in result.stderr:

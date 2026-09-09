@@ -6,7 +6,9 @@ import os
 from pathlib import Path
 import sys
 
-from interim_commands import _directory, _display_text
+from interim_commands import _directory
+from i18n import UI, write_text
+from diagnostics import public_error
 from interim_intake import authenticate
 from repository import Repository, base_url, target_path, tuf_errors
 from nia_common import Invalid, canonical, digest, fields, integer, parse_json, read_file, write_new
@@ -60,15 +62,16 @@ def download(policy, url: str, directory: Path, *, fetcher=None, recheck):
         return output
 
 
-def execute_download(request):
+def execute_download(request, *, ui=None):
+    ui = ui or UI.from_environment()
     try:
         values = dict(request.values)
         policy = load_policy(POLICY_PATH)
         output = download(policy, values['L'],
                           Path(values.get('P', '/tmp/ifix_' + str(os.getpid()))),
                           recheck=lambda: load_policy(POLICY_PATH))
-        print('Downloaded interim fix: ' + _display_text(output))
+        write_text(sys.stdout, ui.message('Downloaded interim fix: {path}', path=output) + '\n')
         return 0
     except (Invalid, OSError, ValueError, tuf_errors.RepositoryError, tuf_errors.DownloadError) as exc:
-        print('emgr_download_ifix: ' + _display_text(exc), file=sys.stderr)
+        write_text(sys.stderr, 'emgr_download_ifix: ' + public_error(exc, ui, repository=True) + '\n')
         return 1

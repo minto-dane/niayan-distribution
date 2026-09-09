@@ -10,8 +10,9 @@ from __future__ import annotations
 import os
 from pathlib import Path
 import sys
-import unicodedata
 
+from i18n import UI, N_, write_text
+from diagnostics import public_error
 from interim_package import MAX_PACKAGE, Invalid, build_bytes, decode
 from deb_archive import inspect_bytes
 from nia_common import read_file, sha, write_new
@@ -35,14 +36,8 @@ def _directory(path: Path) -> None:
         os.close(fd)
 
 
-def _display_text(value) -> str:
-    # Original metadata can contain Unicode format characters. Do not turn
-    # descriptions or paths into terminal control sequences or hidden labels.
-    return ''.join(('\\u%04x' % ord(c)) if unicodedata.category(c).startswith('C') else c
-                   for c in str(value))
-
-
-def display(raw: bytes, verbosity: int) -> str:
+def display(raw: bytes, verbosity: int, *, ui=None) -> str:
+    ui = ui or UI()
     if type(verbosity) is not int or verbosity not in (1, 2, 3):
         raise Invalid('display verbosity')
     manifest, artifacts = decode(raw)
@@ -50,56 +45,57 @@ def display(raw: bytes, verbosity: int) -> str:
 
     def line(name, value):
         nonlocal size
-        text = name + ': ' + _display_text(value) + '\n'
+        text = ui.message('{label}: {value}', label=ui.message(name), value=value) + '\n'
         size += len(text.encode('utf-8'))
         if size > MAX_DISPLAY:
             raise Invalid('display output limit')
         lines.append(text)
 
-    line('EFIX LABEL', manifest['label'])
+    line(N_('EFIX LABEL'), manifest['label'])
     if verbosity >= 2:
-        line('ABSTRACT', manifest['description'])
+        line(N_('ABSTRACT'), manifest['description'])
         modes = {r['activation'] for r in manifest['replacements']}
-        line('REBOOT REQUIRED', 'yes' if 'node-reboot' in modes else
-             'not established' if 'offline-migration' in modes else 'no')
-        line('PRE-REQUISITES', ', '.join(manifest['requires']) or 'none')
-        line('SUPERSEDE', ', '.join(manifest['supersedes']) or 'none')
-        line('CONFLICTS', ', '.join(manifest['conflicts']) or 'none')
-        line('ADVISORIES', ', '.join(manifest['advisories']))
+        line(N_('REBOOT REQUIRED'), ui.context('reboot-required', 'yes') if 'node-reboot' in modes else
+             ui.message('not established') if 'offline-migration' in modes else ui.context('reboot-required', 'no'))
+        line(N_('PRE-REQUISITES'), ', '.join(manifest['requires']) or ui.message('none'))
+        line(N_('SUPERSEDE'), ', '.join(manifest['supersedes']) or ui.message('none'))
+        line(N_('CONFLICTS'), ', '.join(manifest['conflicts']) or ui.message('none'))
+        line(N_('ADVISORIES'), ', '.join(manifest['advisories']))
     if verbosity == 3:
-        line('PACKAGE SHA256', sha(raw))
-        line('CREATED AT', manifest['created_at'])
-        line('EXPIRES AT', manifest['expires_at'])
-        line('SECURITY EPOCH', manifest['security_epoch'])
-        line('ROLLBACK CONTRACT SHA256', manifest['rollback_contract_sha256'])
-        line('PUBLISHER AUTHENTICATION', 'not verified')
+        line(N_('PACKAGE SHA256'), sha(raw))
+        line(N_('CREATED AT'), manifest['created_at'])
+        line(N_('EXPIRES AT'), manifest['expires_at'])
+        line(N_('SECURITY EPOCH'), manifest['security_epoch'])
+        line(N_('ROLLBACK CONTRACT SHA256'), manifest['rollback_contract_sha256'])
+        line(N_('PUBLISHER AUTHENTICATION'), ui.message('not verified'))
     for replacement in manifest['replacements']:
         base, target = replacement['base'], replacement['target']
         observed = inspect_bytes(artifacts[target['artifact_sha256']])
-        line('PACKAGE', target['package'])
-        line('LEVEL', target['version'])
+        line(N_('PACKAGE'), target['package'])
+        line(N_('LEVEL'), target['version'])
         if verbosity >= 2:
-            line('BASE LEVEL', base['version'])
-            line('ACTIVATION', replacement['activation'])
+            line(N_('BASE LEVEL'), base['version'])
+            line(N_('ACTIVATION'), replacement['activation'])
             for effect in observed['effect_members']:
-                line('CONTROL EFFECT', effect['member'])
+                line(N_('CONTROL EFFECT'), effect['member'])
         if verbosity == 3:
-            line('BASE SHA256', base['artifact_sha256'])
-            line('TARGET SHA256', target['artifact_sha256'])
-            line('EFFECT CONTRACT SHA256', replacement['effect_contract_sha256'])
+            line(N_('BASE SHA256'), base['artifact_sha256'])
+            line(N_('TARGET SHA256'), target['artifact_sha256'])
+            line(N_('EFFECT CONTRACT SHA256'), replacement['effect_contract_sha256'])
         for index, entry in enumerate(observed['file_inventory'], 1):
-            line('FILE NUMBER', index)
-            line('LOCATION', '/' + entry['path'])
+            line(N_('FILE NUMBER'), index)
+            line(N_('LOCATION'), '/' + entry['path'])
             if verbosity >= 2:
-                line('FILE TYPE', entry['kind'])
+                line(N_('FILE TYPE'), entry['kind'])
             if verbosity == 3:
-                for name in ('size', 'sha256', 'link'):
+                for name, label in (('size', N_('SIZE')), ('sha256', N_('SHA256')), ('link', N_('LINK'))):
                     if entry.get(name) is not None and entry.get(name) != '':
-                        line(name.upper(), entry[name])
+                        line(label, entry[name])
     return ''.join(lines)
 
 
-def execute_local(request) -> int:
+def execute_local(request, *, ui=None) -> int:
+    ui = ui or UI.from_environment()
     values = dict(request.values)
     try:
         if request.action == 'interim-build':
@@ -111,14 +107,14 @@ def execute_local(request) -> int:
             _directory(directory)
             output = directory / (label + '.' + sha(raw) + '.epkg')
             write_new(output, raw)
-            print('Package file is: ' + _display_text(output))
+            write_text(sys.stdout, ui.message('Package file is: {path}', path=output) + '\n')
         elif request.action == 'interim-display':
             path = Path(values['e'] if 'e' in values else request.operands[0])
-            rendered = display(read_file(path, MAX_PACKAGE), int(values.get('v', '1')))
-            sys.stdout.write(rendered)
+            rendered = display(read_file(path, MAX_PACKAGE), int(values.get('v', '1')), ui=ui)
+            write_text(sys.stdout, rendered)
         else:
             raise Invalid('unsupported local interim operation')
         return 0
     except (Invalid, OSError, RuntimeError) as exc:
-        print(request.command + ': ' + _display_text(exc), file=sys.stderr)
+        write_text(sys.stderr, request.command + ': ' + public_error(exc, ui) + '\n')
         return 1

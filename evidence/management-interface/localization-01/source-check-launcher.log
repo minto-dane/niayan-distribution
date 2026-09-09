@@ -1,0 +1,3 @@
+Running as unit: run-p362213-i362513.scope; invocation ID: d7a31e8613b64654b7b7d643bfea27d6
+limited-exec: {"scope": "run-p362213-i362513.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+/home/nia/devbox/niaos/nia-os-consent/assurance/evidence/engineering-i6_08nfw/report.json

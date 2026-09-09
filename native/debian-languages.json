@@ -1,0 +1,2374 @@
+{
+  "schema": "org.niaos.debian-language-targets/v1",
+  "release": "trixie",
+  "scope": "All glibc SUPPORTED locale/encoding pairs plus active installer language choices; not a translation-completion claim",
+  "sources": [
+    {
+      "package": "locales",
+      "source_package": "glibc",
+      "version": "2.41-12+deb13u3",
+      "file": "usr/share/i18n/SUPPORTED",
+      "sha256": "a61ddb1888dc2b120dafd56a0b8b449b4378eb2a08cc78241b0c88182e949ffd",
+      "url": "https://sources.debian.org/src/glibc/2.41-12%2Bdeb13u3/localedata/SUPPORTED/"
+    },
+    {
+      "package": "localechooser",
+      "version": "2.112",
+      "file": "languagelist",
+      "sha256": "fe2f6bf7e2966b17b0488e40334bad7984b2cd404cc33ba9854d43e097e92a97",
+      "url": "https://sources.debian.org/data/main/l/localechooser/2.112/languagelist"
+    }
+  ],
+  "glibc": [
+    {
+      "locale": "aa_DJ.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "aa_DJ",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "aa_ER",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "aa_ET",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "af_ZA.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "af_ZA",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "agr_PE",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ak_GH",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "am_ET",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "an_ES.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "an_ES",
+      "encoding": "ISO-8859-15"
+    },
+    {
+      "locale": "anp_IN",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ar_AE.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ar_AE",
+      "encoding": "ISO-8859-6"
+    },
+    {
+      "locale": "ar_BH.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ar_BH",
+      "encoding": "ISO-8859-6"
+    },
+    {
+      "locale": "ar_DZ.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ar_DZ",
+      "encoding": "ISO-8859-6"
+    },
+    {
+      "locale": "ar_EG.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ar_EG",
+      "encoding": "ISO-8859-6"
+    },
+    {
+      "locale": "ar_IN",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ar_IQ.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ar_IQ",
+      "encoding": "ISO-8859-6"
+    },
+    {
+      "locale": "ar_JO.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ar_JO",
+      "encoding": "ISO-8859-6"
+    },
+    {
+      "locale": "ar_KW.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ar_KW",
+      "encoding": "ISO-8859-6"
+    },
+    {
+      "locale": "ar_LB.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ar_LB",
+      "encoding": "ISO-8859-6"
+    },
+    {
+      "locale": "ar_LY.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ar_LY",
+      "encoding": "ISO-8859-6"
+    },
+    {
+      "locale": "ar_MA.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ar_MA",
+      "encoding": "ISO-8859-6"
+    },
+    {
+      "locale": "ar_OM.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ar_OM",
+      "encoding": "ISO-8859-6"
+    },
+    {
+      "locale": "ar_QA.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ar_QA",
+      "encoding": "ISO-8859-6"
+    },
+    {
+      "locale": "ar_SA.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ar_SA",
+      "encoding": "ISO-8859-6"
+    },
+    {
+      "locale": "ar_SD.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ar_SD",
+      "encoding": "ISO-8859-6"
+    },
+    {
+      "locale": "ar_SS",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ar_SY.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ar_SY",
+      "encoding": "ISO-8859-6"
+    },
+    {
+      "locale": "ar_TN.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ar_TN",
+      "encoding": "ISO-8859-6"
+    },
+    {
+      "locale": "ar_YE.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ar_YE",
+      "encoding": "ISO-8859-6"
+    },
+    {
+      "locale": "ayc_PE",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "az_AZ",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "az_IR",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "as_IN",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ast_ES.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ast_ES",
+      "encoding": "ISO-8859-15"
+    },
+    {
+      "locale": "be_BY.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "be_BY",
+      "encoding": "CP1251"
+    },
+    {
+      "locale": "be_BY@latin",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "bem_ZM",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ber_DZ",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ber_MA",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "bg_BG.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "bg_BG",
+      "encoding": "CP1251"
+    },
+    {
+      "locale": "bhb_IN.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "bho_IN",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "bho_NP",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "bi_VU",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "bn_BD",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "bn_IN",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "bo_CN",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "bo_IN",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "br_FR.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "br_FR",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "br_FR@euro",
+      "encoding": "ISO-8859-15"
+    },
+    {
+      "locale": "brx_IN",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "bs_BA.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "bs_BA",
+      "encoding": "ISO-8859-2"
+    },
+    {
+      "locale": "byn_ER",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "C.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ca_AD.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ca_AD",
+      "encoding": "ISO-8859-15"
+    },
+    {
+      "locale": "ca_ES.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ca_ES",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "ca_ES@euro",
+      "encoding": "ISO-8859-15"
+    },
+    {
+      "locale": "ca_ES@valencia",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ca_FR.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ca_FR",
+      "encoding": "ISO-8859-15"
+    },
+    {
+      "locale": "ca_IT.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ca_IT",
+      "encoding": "ISO-8859-15"
+    },
+    {
+      "locale": "ce_RU",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "chr_US",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ckb_IQ",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "cmn_TW",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "crh_RU",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "crh_UA",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "cs_CZ.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "cs_CZ",
+      "encoding": "ISO-8859-2"
+    },
+    {
+      "locale": "csb_PL",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "cv_RU",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "cy_GB.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "cy_GB",
+      "encoding": "ISO-8859-14"
+    },
+    {
+      "locale": "da_DK.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "da_DK",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "de_AT.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "de_AT",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "de_AT@euro",
+      "encoding": "ISO-8859-15"
+    },
+    {
+      "locale": "de_BE.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "de_BE",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "de_BE@euro",
+      "encoding": "ISO-8859-15"
+    },
+    {
+      "locale": "de_CH.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "de_CH",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "de_DE.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "de_DE",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "de_DE@euro",
+      "encoding": "ISO-8859-15"
+    },
+    {
+      "locale": "de_IT.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "de_IT",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "de_LI.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "de_LU.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "de_LU",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "de_LU@euro",
+      "encoding": "ISO-8859-15"
+    },
+    {
+      "locale": "doi_IN",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "dsb_DE",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "dv_MV",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "dz_BT",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "el_GR.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "el_GR",
+      "encoding": "ISO-8859-7"
+    },
+    {
+      "locale": "el_GR@euro",
+      "encoding": "ISO-8859-7"
+    },
+    {
+      "locale": "el_CY.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "el_CY",
+      "encoding": "ISO-8859-7"
+    },
+    {
+      "locale": "en_AG",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "en_AU.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "en_AU",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "en_BW.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "en_BW",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "en_CA.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "en_CA",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "en_DK.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "en_DK.ISO-8859-15",
+      "encoding": "ISO-8859-15"
+    },
+    {
+      "locale": "en_DK",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "en_GB.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "en_GB",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "en_GB.ISO-8859-15",
+      "encoding": "ISO-8859-15"
+    },
+    {
+      "locale": "en_HK.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "en_HK",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "en_IE.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "en_IE",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "en_IE@euro",
+      "encoding": "ISO-8859-15"
+    },
+    {
+      "locale": "en_IL",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "en_IN",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "en_NG",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "en_NZ.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "en_NZ",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "en_PH.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "en_PH",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "en_SC.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "en_SG.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "en_SG",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "en_US.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "en_US",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "en_US.ISO-8859-15",
+      "encoding": "ISO-8859-15"
+    },
+    {
+      "locale": "en_ZA.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "en_ZA",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "en_ZM",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "en_ZW.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "en_ZW",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "eo",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "es_AR.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "es_AR",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "es_BO.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "es_BO",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "es_CL.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "es_CL",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "es_CO.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "es_CO",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "es_CR.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "es_CR",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "es_CU",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "es_DO.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "es_DO",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "es_EC.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "es_EC",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "es_ES.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "es_ES",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "es_ES@euro",
+      "encoding": "ISO-8859-15"
+    },
+    {
+      "locale": "es_GT.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "es_GT",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "es_HN.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "es_HN",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "es_MX.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "es_MX",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "es_NI.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "es_NI",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "es_PA.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "es_PA",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "es_PE.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "es_PE",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "es_PR.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "es_PR",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "es_PY.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "es_PY",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "es_SV.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "es_SV",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "es_US.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "es_US",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "es_UY.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "es_UY",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "es_VE.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "es_VE",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "et_EE.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "et_EE",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "et_EE.ISO-8859-15",
+      "encoding": "ISO-8859-15"
+    },
+    {
+      "locale": "eu_ES.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "eu_ES",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "eu_ES@euro",
+      "encoding": "ISO-8859-15"
+    },
+    {
+      "locale": "eu_FR.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "eu_FR",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "eu_FR@euro",
+      "encoding": "ISO-8859-15"
+    },
+    {
+      "locale": "fa_IR",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ff_SN",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "fi_FI.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "fi_FI",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "fi_FI@euro",
+      "encoding": "ISO-8859-15"
+    },
+    {
+      "locale": "fil_PH",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "fo_FO.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "fo_FO",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "fr_BE.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "fr_BE",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "fr_BE@euro",
+      "encoding": "ISO-8859-15"
+    },
+    {
+      "locale": "fr_CA.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "fr_CA",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "fr_CH.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "fr_CH",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "fr_FR.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "fr_FR",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "fr_FR@euro",
+      "encoding": "ISO-8859-15"
+    },
+    {
+      "locale": "fr_LU.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "fr_LU",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "fr_LU@euro",
+      "encoding": "ISO-8859-15"
+    },
+    {
+      "locale": "fur_IT",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "fy_NL",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "fy_DE",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ga_IE.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ga_IE",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "ga_IE@euro",
+      "encoding": "ISO-8859-15"
+    },
+    {
+      "locale": "gbm_IN",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "gd_GB.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "gd_GB",
+      "encoding": "ISO-8859-15"
+    },
+    {
+      "locale": "gez_ER",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "gez_ER@abegede",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "gez_ET",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "gez_ET@abegede",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "gl_ES.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "gl_ES",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "gl_ES@euro",
+      "encoding": "ISO-8859-15"
+    },
+    {
+      "locale": "gu_IN",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "gv_GB.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "gv_GB",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "ha_NG",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "hak_TW",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "he_IL.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "he_IL",
+      "encoding": "ISO-8859-8"
+    },
+    {
+      "locale": "hi_IN",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "hif_FJ",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "hne_IN",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "hr_HR.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "hr_HR",
+      "encoding": "ISO-8859-2"
+    },
+    {
+      "locale": "hsb_DE.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "hsb_DE",
+      "encoding": "ISO-8859-2"
+    },
+    {
+      "locale": "ht_HT",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "hu_HU.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "hu_HU",
+      "encoding": "ISO-8859-2"
+    },
+    {
+      "locale": "hy_AM",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "hy_AM.ARMSCII-8",
+      "encoding": "ARMSCII-8"
+    },
+    {
+      "locale": "ia_FR",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "id_ID.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "id_ID",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "ig_NG",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ik_CA",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "is_IS.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "is_IS",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "it_CH.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "it_CH",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "it_IT.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "it_IT",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "it_IT@euro",
+      "encoding": "ISO-8859-15"
+    },
+    {
+      "locale": "iu_CA",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ja_JP.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ja_JP.EUC-JP",
+      "encoding": "EUC-JP"
+    },
+    {
+      "locale": "ka_GE.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ka_GE",
+      "encoding": "GEORGIAN-PS"
+    },
+    {
+      "locale": "kab_DZ",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "kk_KZ.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "kk_KZ",
+      "encoding": "PT154"
+    },
+    {
+      "locale": "kk_KZ.RK1048",
+      "encoding": "RK1048"
+    },
+    {
+      "locale": "kl_GL.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "kl_GL",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "km_KH",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "kn_IN",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ko_KR.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ko_KR.EUC-KR",
+      "encoding": "EUC-KR"
+    },
+    {
+      "locale": "kok_IN",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ks_IN",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ks_IN@devanagari",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ku_TR.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ku_TR",
+      "encoding": "ISO-8859-9"
+    },
+    {
+      "locale": "kv_RU",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "kw_GB.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "kw_GB",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "ky_KG",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "lb_LU",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "lg_UG.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "lg_UG",
+      "encoding": "ISO-8859-10"
+    },
+    {
+      "locale": "li_BE",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "li_NL",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "lij_IT",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ln_CD",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "lo_LA",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "lt_LT.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "lt_LT",
+      "encoding": "ISO-8859-13"
+    },
+    {
+      "locale": "ltg_LV.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "lv_LV.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "lv_LV",
+      "encoding": "ISO-8859-13"
+    },
+    {
+      "locale": "lzh_TW",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "mag_IN",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "mai_IN",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "mai_NP",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "mdf_RU",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "mfe_MU",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "mg_MG.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "mg_MG",
+      "encoding": "ISO-8859-15"
+    },
+    {
+      "locale": "mhr_RU",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "mi_NZ.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "mi_NZ",
+      "encoding": "ISO-8859-13"
+    },
+    {
+      "locale": "miq_NI",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "mjw_IN",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "mk_MK.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "mk_MK",
+      "encoding": "ISO-8859-5"
+    },
+    {
+      "locale": "ml_IN",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "mn_MN",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "mni_IN",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "mnw_MM",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "mr_IN",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ms_MY.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ms_MY",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "mt_MT.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "mt_MT",
+      "encoding": "ISO-8859-3"
+    },
+    {
+      "locale": "my_MM",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "nan_TW",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "nan_TW@latin",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "nb_NO.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "nb_NO",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "nds_DE",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "nds_NL",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ne_NP",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "nhn_MX",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "niu_NU",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "niu_NZ",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "nl_AW",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "nl_BE.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "nl_BE",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "nl_BE@euro",
+      "encoding": "ISO-8859-15"
+    },
+    {
+      "locale": "nl_NL.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "nl_NL",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "nl_NL@euro",
+      "encoding": "ISO-8859-15"
+    },
+    {
+      "locale": "nn_NO.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "nn_NO",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "nr_ZA",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "nso_ZA",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "oc_FR.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "oc_FR",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "om_ET",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "om_KE.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "om_KE",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "or_IN",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "os_RU",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "pa_IN",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "pa_PK",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "pap_AW",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "pap_CW",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "pl_PL.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "pl_PL",
+      "encoding": "ISO-8859-2"
+    },
+    {
+      "locale": "ps_AF",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "pt_BR.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "pt_BR",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "pt_PT.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "pt_PT",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "pt_PT@euro",
+      "encoding": "ISO-8859-15"
+    },
+    {
+      "locale": "quz_PE",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "raj_IN",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "rif_MA",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ro_RO.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ro_RO",
+      "encoding": "ISO-8859-2"
+    },
+    {
+      "locale": "ru_RU.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ru_RU.KOI8-R",
+      "encoding": "KOI8-R"
+    },
+    {
+      "locale": "ru_RU",
+      "encoding": "ISO-8859-5"
+    },
+    {
+      "locale": "ru_RU.CP1251",
+      "encoding": "CP1251"
+    },
+    {
+      "locale": "ru_UA.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ru_UA",
+      "encoding": "KOI8-U"
+    },
+    {
+      "locale": "rw_RW",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "sa_IN",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "sah_RU",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "sat_IN",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "sc_IT",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "scn_IT",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "sd_IN",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "sd_IN@devanagari",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "se_NO",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "sgs_LT",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "shn_MM",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "shs_CA",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "si_LK",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "sid_ET",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "sk_SK.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "sk_SK",
+      "encoding": "ISO-8859-2"
+    },
+    {
+      "locale": "sl_SI.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "sl_SI",
+      "encoding": "ISO-8859-2"
+    },
+    {
+      "locale": "sm_WS",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "so_DJ.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "so_DJ",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "so_ET",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "so_KE.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "so_KE",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "so_SO.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "so_SO",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "sq_AL.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "sq_AL",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "sq_MK",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "sr_ME",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "sr_RS",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "sr_RS@latin",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ss_ZA",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ssy_ER",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "st_ZA.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "st_ZA",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "su_ID",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "sv_FI.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "sv_FI",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "sv_FI@euro",
+      "encoding": "ISO-8859-15"
+    },
+    {
+      "locale": "sv_SE.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "sv_SE",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "sv_SE.ISO-8859-15",
+      "encoding": "ISO-8859-15"
+    },
+    {
+      "locale": "sw_KE",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "sw_TZ",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "syr",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "szl_PL",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ta_IN",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ta_LK",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "tcy_IN.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "te_IN",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "tg_TJ.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "tg_TJ",
+      "encoding": "KOI8-T"
+    },
+    {
+      "locale": "th_TH.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "th_TH",
+      "encoding": "TIS-620"
+    },
+    {
+      "locale": "the_NP",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ti_ER",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ti_ET",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "tig_ER",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "tk_TM",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "tl_PH.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "tl_PH",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "tn_ZA",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "to_TO",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "tok",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "tpi_PG",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "tr_CY.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "tr_CY",
+      "encoding": "ISO-8859-9"
+    },
+    {
+      "locale": "tr_TR.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "tr_TR",
+      "encoding": "ISO-8859-9"
+    },
+    {
+      "locale": "ts_ZA",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "tt_RU",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "tt_RU@iqtelif",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ug_CN",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "uk_UA.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "uk_UA",
+      "encoding": "KOI8-U"
+    },
+    {
+      "locale": "unm_US",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ur_IN",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ur_PK",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "uz_UZ.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "uz_UZ",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "uz_UZ@cyrillic",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "ve_ZA",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "vi_VN",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "wa_BE.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "wa_BE",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "wa_BE@euro",
+      "encoding": "ISO-8859-15"
+    },
+    {
+      "locale": "wae_CH",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "wal_ET",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "wo_SN",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "xh_ZA.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "xh_ZA",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "locale": "yi_US.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "yi_US",
+      "encoding": "CP1255"
+    },
+    {
+      "locale": "yo_NG",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "yue_HK",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "yuw_PG",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "zgh_MA",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "zh_CN.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "zh_CN.GB18030",
+      "encoding": "GB18030"
+    },
+    {
+      "locale": "zh_CN.GBK",
+      "encoding": "GBK"
+    },
+    {
+      "locale": "zh_CN",
+      "encoding": "GB2312"
+    },
+    {
+      "locale": "zh_HK.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "zh_HK",
+      "encoding": "BIG5-HKSCS"
+    },
+    {
+      "locale": "zh_SG.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "zh_SG.GBK",
+      "encoding": "GBK"
+    },
+    {
+      "locale": "zh_SG",
+      "encoding": "GB2312"
+    },
+    {
+      "locale": "zh_TW.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "zh_TW.EUC-TW",
+      "encoding": "EUC-TW"
+    },
+    {
+      "locale": "zh_TW",
+      "encoding": "BIG5"
+    },
+    {
+      "locale": "zu_ZA.UTF-8",
+      "encoding": "UTF-8"
+    },
+    {
+      "locale": "zu_ZA",
+      "encoding": "ISO-8859-1"
+    }
+  ],
+  "installer": [
+    {
+      "language": "sq",
+      "locale": "sq_AL.UTF-8"
+    },
+    {
+      "language": "am",
+      "locale": "am_ET"
+    },
+    {
+      "language": "ar",
+      "locale": "ar_EG.UTF-8"
+    },
+    {
+      "language": "ast",
+      "locale": "ast_ES.UTF-8"
+    },
+    {
+      "language": "eu",
+      "locale": "eu_ES.UTF-8"
+    },
+    {
+      "language": "be",
+      "locale": "be_BY.UTF-8"
+    },
+    {
+      "language": "bn",
+      "locale": "bn_BD"
+    },
+    {
+      "language": "bs",
+      "locale": "bs_BA.UTF-8"
+    },
+    {
+      "language": "bg",
+      "locale": "bg_BG.UTF-8"
+    },
+    {
+      "language": "bo",
+      "locale": "bo_IN"
+    },
+    {
+      "language": "C",
+      "locale": "C"
+    },
+    {
+      "language": "ca",
+      "locale": "ca_ES.UTF-8"
+    },
+    {
+      "language": "zh_CN",
+      "locale": "zh_CN.UTF-8"
+    },
+    {
+      "language": "zh_TW",
+      "locale": "zh_TW.UTF-8"
+    },
+    {
+      "language": "hr",
+      "locale": "hr_HR.UTF-8"
+    },
+    {
+      "language": "cs",
+      "locale": "cs_CZ.UTF-8"
+    },
+    {
+      "language": "da",
+      "locale": "da_DK.UTF-8"
+    },
+    {
+      "language": "nl",
+      "locale": "nl_NL.UTF-8"
+    },
+    {
+      "language": "dz",
+      "locale": "dz_BT"
+    },
+    {
+      "language": "en",
+      "locale": "en_US.UTF-8"
+    },
+    {
+      "language": "eo",
+      "locale": "eo.UTF-8"
+    },
+    {
+      "language": "et",
+      "locale": "et_EE.UTF-8"
+    },
+    {
+      "language": "fi",
+      "locale": "fi_FI.UTF-8"
+    },
+    {
+      "language": "fr",
+      "locale": "fr_FR.UTF-8"
+    },
+    {
+      "language": "gl",
+      "locale": "gl_ES.UTF-8"
+    },
+    {
+      "language": "ka",
+      "locale": "ka_GE.UTF-8"
+    },
+    {
+      "language": "de",
+      "locale": "de_DE.UTF-8"
+    },
+    {
+      "language": "el",
+      "locale": "el_GR.UTF-8"
+    },
+    {
+      "language": "gu",
+      "locale": "gu_IN"
+    },
+    {
+      "language": "he",
+      "locale": "he_IL.UTF-8"
+    },
+    {
+      "language": "hi",
+      "locale": "hi_IN"
+    },
+    {
+      "language": "hu",
+      "locale": "hu_HU.UTF-8"
+    },
+    {
+      "language": "is",
+      "locale": "is_IS.UTF-8"
+    },
+    {
+      "language": "id",
+      "locale": "id_ID.UTF-8"
+    },
+    {
+      "language": "ga",
+      "locale": "ga_IE.UTF-8"
+    },
+    {
+      "language": "it",
+      "locale": "it_IT.UTF-8"
+    },
+    {
+      "language": "ja",
+      "locale": "ja_JP.UTF-8"
+    },
+    {
+      "language": "kab",
+      "locale": "kab_DZ"
+    },
+    {
+      "language": "kk",
+      "locale": "kk_KZ.UTF-8"
+    },
+    {
+      "language": "km",
+      "locale": "km_KH"
+    },
+    {
+      "language": "kn",
+      "locale": "kn_IN"
+    },
+    {
+      "language": "ko",
+      "locale": "ko_KR.UTF-8"
+    },
+    {
+      "language": "ku",
+      "locale": "ku_TR.UTF-8"
+    },
+    {
+      "language": "lo",
+      "locale": "lo_LA"
+    },
+    {
+      "language": "lv",
+      "locale": "lv_LV.UTF-8"
+    },
+    {
+      "language": "lt",
+      "locale": "lt_LT.UTF-8"
+    },
+    {
+      "language": "ml",
+      "locale": "ml_IN"
+    },
+    {
+      "language": "mr",
+      "locale": "mr_IN"
+    },
+    {
+      "language": "mk",
+      "locale": "mk_MK.UTF-8"
+    },
+    {
+      "language": "my",
+      "locale": "my_MM"
+    },
+    {
+      "language": "ne",
+      "locale": "ne_NP"
+    },
+    {
+      "language": "se_NO",
+      "locale": "se_NO"
+    },
+    {
+      "language": "nb_NO",
+      "locale": "nb_NO.UTF-8"
+    },
+    {
+      "language": "nn_NO",
+      "locale": "nn_NO.UTF-8"
+    },
+    {
+      "language": "oc",
+      "locale": "oc_FR.UTF-8"
+    },
+    {
+      "language": "fa",
+      "locale": "fa_IR"
+    },
+    {
+      "language": "pl",
+      "locale": "pl_PL.UTF-8"
+    },
+    {
+      "language": "pt",
+      "locale": "pt_PT.UTF-8"
+    },
+    {
+      "language": "pt_BR",
+      "locale": "pt_BR.UTF-8"
+    },
+    {
+      "language": "pa",
+      "locale": "pa_IN"
+    },
+    {
+      "language": "ro",
+      "locale": "ro_RO.UTF-8"
+    },
+    {
+      "language": "ru",
+      "locale": "ru_RU.UTF-8"
+    },
+    {
+      "language": "si",
+      "locale": "si_LK"
+    },
+    {
+      "language": "sr",
+      "locale": "sr_RS"
+    },
+    {
+      "language": "sk",
+      "locale": "sk_SK.UTF-8"
+    },
+    {
+      "language": "sl",
+      "locale": "sl_SI.UTF-8"
+    },
+    {
+      "language": "es",
+      "locale": "es_ES.UTF-8"
+    },
+    {
+      "language": "sv",
+      "locale": "sv_SE.UTF-8"
+    },
+    {
+      "language": "tl",
+      "locale": "tl_PH.UTF-8"
+    },
+    {
+      "language": "ta",
+      "locale": "ta_IN"
+    },
+    {
+      "language": "te",
+      "locale": "te_IN"
+    },
+    {
+      "language": "tg",
+      "locale": "tg_TJ.UTF-8"
+    },
+    {
+      "language": "th",
+      "locale": "th_TH.UTF-8"
+    },
+    {
+      "language": "tr",
+      "locale": "tr_TR.UTF-8"
+    },
+    {
+      "language": "ug",
+      "locale": "ug_CN"
+    },
+    {
+      "language": "uk",
+      "locale": "uk_UA.UTF-8"
+    },
+    {
+      "language": "vi",
+      "locale": "vi_VN"
+    },
+    {
+      "language": "cy",
+      "locale": "cy_GB.UTF-8"
+    }
+  ]
+}

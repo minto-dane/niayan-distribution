@@ -8,6 +8,7 @@
 [緊急修正成果物](interim-package.ja.md)の決定的な作成と読取をepkg/emgrへ接続した。
 [共通の供給認証](repository.ja.md)と`emgr_download_ifix`のHTTPS取得も実装した。
 署名済み成果物と参照の認証は、稼働システムへの適用許可とは別に検査する。
+[多言語表示](localization.ja.md)は共通のgettext層を使用し、操作要求と表示言語を分離する。
 外部ソフトウェアの管理コマンドは包まず、Niaの管理操作の入口だけを統一する。
 緊急修正は通常パッケージと同じcatalogへ接続する設計で、適用器は未実装である。
 

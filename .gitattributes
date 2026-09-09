@@ -5,6 +5,7 @@
 *.png binary
 *.gz binary
 *.zip binary
+*.mo binary
 # Evidence logs retain terminal bytes and intentional whitespace exactly.
 evidence/**/*.log -text -whitespace
 evidence/**/serial.log binary
