@@ -1,0 +1,38 @@
+{
+  "result": "pass-for-ar-envelope-and-cas-sdk-only",
+  "production_qualified": false,
+  "source_subject": "a1fea042e264bffca34da1d85cac7fea9f495061edd22633009bdbcb72a37945",
+  "image_id": "0c04329a1343a0f1ae82ab931ffc7a7e5cbfdccbf18948e0576366fbf5bb249a",
+  "pkgcore": {
+    "compile_all": true,
+    "application_mains": 4,
+    "test_mains": 15,
+    "new_reader_assertions": 764,
+    "root_refused_entrypoints": 2,
+    "reproducible_executables": 19,
+    "exact_build_inputs": 346
+  },
+  "real_debs": {
+    "files": 7,
+    "members": 21,
+    "comparison": "original historical SHA256, independent ar output and saved CAS bytes"
+  },
+  "source_checks": 24,
+  "proof_inputs": "all seven unchanged; new runtime is outside SPARK",
+  "limits": {
+    "memory_bytes": 3221225472,
+    "swap_bytes": 0,
+    "cpu_cores": 1,
+    "pids": 128,
+    "heavy_jobs_in_parallel": 1
+  },
+  "remaining": [
+    "compressed tar/control semantic validation",
+    "production trust and authorization",
+    "installed catalog and all DEB effects",
+    "native-only package management integration",
+    "actual root/boot activation and power-loss recovery",
+    "native-only ISO",
+    "all language translations and interface qualification"
+  ]
+}

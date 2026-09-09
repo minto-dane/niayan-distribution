@@ -1,0 +1,188 @@
+{
+  "result": "pass",
+  "scope": "original ar envelopes and exact compressed CAS members; no tar semantics or installation",
+  "files": [
+    {
+      "filename": "niaos-assurance_0.1.0+git70baa595e385_amd64.deb",
+      "sha256": "af7c3031f932d5bbfecda2ceafdd8de1ed72d2f8370a52b4ec02d770e51adcb3",
+      "size": 163500,
+      "members": [
+        {
+          "name": "debian-binary",
+          "sha256": "d526eb4e878a23ef26ae190031b4efd2d58ed66789ac049ea3dbaf74c9df7402",
+          "offset": 68,
+          "size": 4
+        },
+        {
+          "name": "control.tar.xz",
+          "sha256": "35fea31a2e0ab15d3c5d5b50d9afb677c348b0635ab2e598cfd745c82818f9b5",
+          "offset": 132,
+          "size": 776
+        },
+        {
+          "name": "data.tar.xz",
+          "sha256": "dd173f0cd2a059c04c624bf1dcb4c1572118219c89c4f48fec33e2afa341a98d",
+          "offset": 968,
+          "size": 162532
+        }
+      ],
+      "result": "pass"
+    },
+    {
+      "filename": "niaos-pkgcore_0.1.0+gite74913f9f941_amd64.deb",
+      "sha256": "69e2f82fed042d5d603e9eee88cdb5bff1c7f454e0236bb636b08df069139cd0",
+      "size": 231492,
+      "members": [
+        {
+          "name": "debian-binary",
+          "sha256": "d526eb4e878a23ef26ae190031b4efd2d58ed66789ac049ea3dbaf74c9df7402",
+          "offset": 68,
+          "size": 4
+        },
+        {
+          "name": "control.tar.xz",
+          "sha256": "599f08daa1bef097188acccdc72d2b03a9d2c31061ffd723c91ee24bcd2ea4aa",
+          "offset": 132,
+          "size": 840
+        },
+        {
+          "name": "data.tar.xz",
+          "sha256": "c064bd56df4a49adc47412d8eb267455b1c0136ca26d43304b79f9b534f92a83",
+          "offset": 1032,
+          "size": 230460
+        }
+      ],
+      "result": "pass"
+    },
+    {
+      "filename": "niaos-resolvercore_0.1.0+gita58f281ff997_amd64.deb",
+      "sha256": "693f76f12902f2d23305073d3350b11a1379d76a1f27cdef696a8e8170ee8009",
+      "size": 88564,
+      "members": [
+        {
+          "name": "debian-binary",
+          "sha256": "d526eb4e878a23ef26ae190031b4efd2d58ed66789ac049ea3dbaf74c9df7402",
+          "offset": 68,
+          "size": 4
+        },
+        {
+          "name": "control.tar.xz",
+          "sha256": "38f3b6f00c580d4ae5f7162d3051ceccdd7e10ee92d2b8ef3650d1946382ae13",
+          "offset": 132,
+          "size": 720
+        },
+        {
+          "name": "data.tar.xz",
+          "sha256": "855e2dd3f9352a8f421df0173e46161dca929809356b219f6b5d9479e6652528",
+          "offset": 912,
+          "size": 87652
+        }
+      ],
+      "result": "pass"
+    },
+    {
+      "filename": "niaos-statecore_0.1.0+gitc0c9ca947c2e_amd64.deb",
+      "sha256": "dca754623a808d731649a67ac2c8e9d61eb26474c55b86f65aaf69dc162b140c",
+      "size": 230640,
+      "members": [
+        {
+          "name": "debian-binary",
+          "sha256": "d526eb4e878a23ef26ae190031b4efd2d58ed66789ac049ea3dbaf74c9df7402",
+          "offset": 68,
+          "size": 4
+        },
+        {
+          "name": "control.tar.xz",
+          "sha256": "0d00d1e3e03c04f57e4bc4fc14514ddb7cce9fc3c8544fe9801a2090ed07eed9",
+          "offset": 132,
+          "size": 848
+        },
+        {
+          "name": "data.tar.xz",
+          "sha256": "56102f3e35af0a293ad0096e960e53336b641033f6cacdde77ce08c1e833727f",
+          "offset": 1040,
+          "size": 229600
+        }
+      ],
+      "result": "pass"
+    },
+    {
+      "filename": "niaos-controlcore_0.1.0+gite2a3f9ff89b5_amd64.deb",
+      "sha256": "c640cb0535b26a9db7ff268dcd3d5f84d969a723f821b0dd9288474d878010ef",
+      "size": 199588,
+      "members": [
+        {
+          "name": "debian-binary",
+          "sha256": "d526eb4e878a23ef26ae190031b4efd2d58ed66789ac049ea3dbaf74c9df7402",
+          "offset": 68,
+          "size": 4
+        },
+        {
+          "name": "control.tar.xz",
+          "sha256": "56977dc6564555b43fb62ee715f1f3458e3e379215e1baa1ff738ebedfa46998",
+          "offset": 132,
+          "size": 776
+        },
+        {
+          "name": "data.tar.xz",
+          "sha256": "a2050b6b0ddcd2685a653bf16862d5d945eefd4370265a0153dfcc2c13348a6e",
+          "offset": 968,
+          "size": 198620
+        }
+      ],
+      "result": "pass"
+    },
+    {
+      "filename": "niaos-configcore_0.1.0+git6d46ea26c38c_amd64.deb",
+      "sha256": "663f792345cf77fe7a86c9b390126d37071682dafbad85bb345f425c3c41fece",
+      "size": 94728,
+      "members": [
+        {
+          "name": "debian-binary",
+          "sha256": "d526eb4e878a23ef26ae190031b4efd2d58ed66789ac049ea3dbaf74c9df7402",
+          "offset": 68,
+          "size": 4
+        },
+        {
+          "name": "control.tar.xz",
+          "sha256": "58a1ca52036c9b906e3f446557866337b4511743e36bd8d399545f8ba75bc528",
+          "offset": 132,
+          "size": 716
+        },
+        {
+          "name": "data.tar.xz",
+          "sha256": "74295d03a41c70013dbd4faeab12b3e3766a83ff1327d93e1b3a3f3ad7c124f5",
+          "offset": 908,
+          "size": 93820
+        }
+      ],
+      "result": "pass"
+    },
+    {
+      "filename": "niaos-capsulecore_0.1.0+git0c356eecb425_amd64.deb",
+      "sha256": "7c97862c75ba7d54e188cd6001f3e070ad0681e897a5c3b71f5e35c53732d268",
+      "size": 66948,
+      "members": [
+        {
+          "name": "debian-binary",
+          "sha256": "d526eb4e878a23ef26ae190031b4efd2d58ed66789ac049ea3dbaf74c9df7402",
+          "offset": 68,
+          "size": 4
+        },
+        {
+          "name": "control.tar.xz",
+          "sha256": "847d9c2ee09475d52d7e482657368017debc905b949a89a5b88086ed0cf09628",
+          "offset": 132,
+          "size": 716
+        },
+        {
+          "name": "data.tar.xz",
+          "sha256": "d72032fe52991da39903b16219e6c60acc21c70d033d089aaada4865c67d44f5",
+          "offset": 908,
+          "size": 66040
+        }
+      ],
+      "result": "pass"
+    }
+  ]
+}

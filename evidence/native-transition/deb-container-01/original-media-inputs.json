@@ -1,0 +1,41 @@
+{
+  "baseline": "distribution/evidence/debian13/accepted-09/distro-deb-comparison-04.json",
+  "baseline_sha256": "3102f8bf3fd9716286da67943d93c32e601dd83c601beeb317b17af7003ae281",
+  "files": [
+    {
+      "filename": "niaos-assurance_0.1.0+git70baa595e385_amd64.deb",
+      "sha256": "af7c3031f932d5bbfecda2ceafdd8de1ed72d2f8370a52b4ec02d770e51adcb3",
+      "size": 163500
+    },
+    {
+      "filename": "niaos-pkgcore_0.1.0+gite74913f9f941_amd64.deb",
+      "sha256": "69e2f82fed042d5d603e9eee88cdb5bff1c7f454e0236bb636b08df069139cd0",
+      "size": 231492
+    },
+    {
+      "filename": "niaos-resolvercore_0.1.0+gita58f281ff997_amd64.deb",
+      "sha256": "693f76f12902f2d23305073d3350b11a1379d76a1f27cdef696a8e8170ee8009",
+      "size": 88564
+    },
+    {
+      "filename": "niaos-statecore_0.1.0+gitc0c9ca947c2e_amd64.deb",
+      "sha256": "dca754623a808d731649a67ac2c8e9d61eb26474c55b86f65aaf69dc162b140c",
+      "size": 230640
+    },
+    {
+      "filename": "niaos-controlcore_0.1.0+gite2a3f9ff89b5_amd64.deb",
+      "sha256": "c640cb0535b26a9db7ff268dcd3d5f84d969a723f821b0dd9288474d878010ef",
+      "size": 199588
+    },
+    {
+      "filename": "niaos-configcore_0.1.0+git6d46ea26c38c_amd64.deb",
+      "sha256": "663f792345cf77fe7a86c9b390126d37071682dafbad85bb345f425c3c41fece",
+      "size": 94728
+    },
+    {
+      "filename": "niaos-capsulecore_0.1.0+git0c356eecb425_amd64.deb",
+      "sha256": "7c97862c75ba7d54e188cd6001f3e070ad0681e897a5c3b71f5e35c53732d268",
+      "size": 66948
+    }
+  ]
+}
