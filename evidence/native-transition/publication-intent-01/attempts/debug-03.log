@@ -1,0 +1,18 @@
+Running as unit: run-p53699-i53999.scope; invocation ID: a7e50033eb6a47299850de47965c0cf1
+limited-exec: {"scope": "run-p53699-i53999.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Setup
+   [mkdir]        object directory for project Tests
+   [mkdir]        exec directory for project Tests
+Compile
+   [Ada]          run_generation_stage_tests.adb
+run_generation_stage_tests.adb:171:82: error: operator for type "Interfaces.Unsigned_8" is not directly visible
+run_generation_stage_tests.adb:171:82: error: use clause would make operation legal
+gprbuild: *** compilation phase failed
+Traceback (most recent call last):
+  File "/evidence/run-debug.py", line 8, in <module>
+    subprocess.run(['gprbuild', '-s', '-j1', '-p', '-P', 'tests.gpr', 'run_generation_stage_tests.adb', 'run_generation_publication_tests.adb'], check=True)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/subprocess.py", line 577, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['gprbuild', '-s', '-j1', '-p', '-P', 'tests.gpr', 'run_generation_stage_tests.adb', 'run_generation_publication_tests.adb']' returned non-zero exit status 4.

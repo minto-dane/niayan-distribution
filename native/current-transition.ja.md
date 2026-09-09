@@ -45,8 +45,8 @@ transition fingerprintは前後catalog、全変更と、architecture policyを�
 
 返却時に予約は解放する。結果は更新計画の観測であり、署名・供給認証・実行許可ではない。
 本番admissionはpolicyの出所、現在の同じdescriptor、全phase/effect/所有権と保持を
-実行時の予約下で検査する必要がある。現在のPublishは正確なpredecessorを再照合するが、
-この新しいBindingを本番認可へ自動的に取り込む機能はまだない。
+実行時の予約下で検査する必要がある。[公開検査記録](publication-intent.ja.md)は同じBindingを
+NIAGEN03経由で物理計画へ束縛し、Publishで再計算する。本番の供給・policy adapterと全効果の認可は未完である。
 逆方向の計画を作れても、rollback floorの許可や実データの巻戻し可能性は別の条件である。
 
 ## 検証

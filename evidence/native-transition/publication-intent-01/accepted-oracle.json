@@ -1,0 +1,83 @@
+{
+  "result": "pass-for-two-published-native-catalog-observations",
+  "root": "1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f",
+  "accepted_plan": "f56e53c082654dcc13af3aa80f19aeeda2fe64e1235ab23558d490051d83103a",
+  "observations": 16,
+  "missing_retention_checks": 73,
+  "generations": [
+    {
+      "generation": 1,
+      "descriptor": "07890c9aaad34a289a37a9b03643b4a60976d69365f976d654660e82df34d15f",
+      "catalog": "8ee688345e1d9502ee8cd7277a453c30bfb77b947201beb3300e9df2b8ca321d",
+      "payload": "bbe3e16236d9244db7e5c0b2a9c2c61766b8a921d8b097fcd370e77f152ed931",
+      "claims": 0,
+      "retention": {
+        "hash": "32094e7c613fdb6dffb1f27d926b176f7fd8946b8c2cf3ca9e3b95cb91a1a8ca",
+        "objects": 5
+      }
+    },
+    {
+      "generation": 2,
+      "descriptor": "a8878ff2b591dd2c55f3ff29bee3e1362f3504265d375a6a5ed56e628fab4d03",
+      "catalog": "eaa6a97798ac2f5e7b073ba6c19835d2dc29ce713cc34904872ba9210a5b0c0e",
+      "payload": "78e9ba0b5027271e174c089389b3f35aba833406970e9742d2eb66be6411c139",
+      "claims": 1,
+      "retention": {
+        "hash": "a5b3afc2f4d82a51c9070cd565e93157c01851437d5dc961cac026a8af381932",
+        "objects": 7
+      }
+    }
+  ],
+  "update_observations": 18,
+  "update_bindings": {
+    "f4dda59d2e010df668681c50bbd5d4184687b203e07881217a3082626a43fd8c": {
+      "current": "07890c9aaad34a289a37a9b03643b4a60976d69365f976d654660e82df34d15f",
+      "target": "8ee688345e1d9502ee8cd7277a453c30bfb77b947201beb3300e9df2b8ca321d",
+      "retention": "32094e7c613fdb6dffb1f27d926b176f7fd8946b8c2cf3ca9e3b95cb91a1a8ca",
+      "endpoint": "b9162fac3040f7a74556649c3a0f28fef050217aa538f60698b0e42f9edf1ae4",
+      "transition": "4b8236c7dbdfc2fd62af33fa88db1c2d11f30b7a2be46315402e8a4e6bd2d464",
+      "changes": 0
+    },
+    "113b561addaf359b5421ee154cc6262a1864443e784b45136e97a229e6c7f7ed": {
+      "current": "07890c9aaad34a289a37a9b03643b4a60976d69365f976d654660e82df34d15f",
+      "target": "eaa6a97798ac2f5e7b073ba6c19835d2dc29ce713cc34904872ba9210a5b0c0e",
+      "retention": "a5b3afc2f4d82a51c9070cd565e93157c01851437d5dc961cac026a8af381932",
+      "endpoint": "668f299123e5ef155e89774af37b96a92e0b32f138dcacab024b718a6e9dc050",
+      "transition": "c8f2528b5b4632fe869634200b68eb714d551466b3382680c5ad63243082a480",
+      "changes": 2
+    },
+    "068a9e2a7ff3be5c5decf0f20b02f11eae90fef01538874a8ccf7cb007a46ce8": {
+      "current": "a8878ff2b591dd2c55f3ff29bee3e1362f3504265d375a6a5ed56e628fab4d03",
+      "target": "eaa6a97798ac2f5e7b073ba6c19835d2dc29ce713cc34904872ba9210a5b0c0e",
+      "retention": "a5b3afc2f4d82a51c9070cd565e93157c01851437d5dc961cac026a8af381932",
+      "endpoint": "668f299123e5ef155e89774af37b96a92e0b32f138dcacab024b718a6e9dc050",
+      "transition": "94321c59989ea34c8093703414b2e5f6e32eab7ff8f3ee388cbf7f154ee7a2bd",
+      "changes": 0
+    },
+    "67c5b8bd2b133c4f86b904a8481cf3f90e9e9821e4076cffa2f655f60fa67d3b": {
+      "current": "a8878ff2b591dd2c55f3ff29bee3e1362f3504265d375a6a5ed56e628fab4d03",
+      "target": "8ee688345e1d9502ee8cd7277a453c30bfb77b947201beb3300e9df2b8ca321d",
+      "retention": "32094e7c613fdb6dffb1f27d926b176f7fd8946b8c2cf3ca9e3b95cb91a1a8ca",
+      "endpoint": "b9162fac3040f7a74556649c3a0f28fef050217aa538f60698b0e42f9edf1ae4",
+      "transition": "72f90f4b29a64b32285da5e4307e2fc01bf234a4584b305b06a594299dd48ecd",
+      "changes": 2
+    }
+  },
+  "missing_update_objects": 8,
+  "publication_intents": {
+    "1": {
+      "hash": "38c0e841345eeb0948445869eb5553bb39ebf66c24fe6fa00123868f32600451",
+      "native_result": "b9162fac3040f7a74556649c3a0f28fef050217aa538f60698b0e42f9edf1ae4",
+      "binding": "5647fb6d71581489d46551a6b7bd437a317dc0f000dc5b7b59e3eedfcec7a641"
+    },
+    "2": {
+      "hash": "55bfc021f70d2fcf75ac72f9a0ecbcc0a9e908bd9665b6a84c0874bf15930135",
+      "native_result": "c8f2528b5b4632fe869634200b68eb714d551466b3382680c5ad63243082a480",
+      "binding": "113b561addaf359b5421ee154cc6262a1864443e784b45136e97a229e6c7f7ed"
+    }
+  },
+  "intent_reject_cases": 26,
+  "intent_publication_rejections": 3,
+  "physical_deb_payload_applied": false,
+  "production_authorization": false
+}

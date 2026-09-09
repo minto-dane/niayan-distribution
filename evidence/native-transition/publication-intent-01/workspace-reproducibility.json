@@ -1,0 +1,252 @@
+{
+  "result": "identical-binaries",
+  "binary_count": 18,
+  "binaries": {
+    "assurance/build/bin/assure": "f5f54372640d5b02f091b3af347de87a146f7acd0abc7145e798b09fba91f3bf",
+    "assurance/build/bin/controlctl": "6aac8fd639693b8ae0c59c919d26e79d87e176fca666544e8fcc864ec2917239",
+    "assurance/build/bin/platformctl": "744079c3f66b5624fc1085128d88a0f51c1b41ca7d8042fb101c1e2e37c4faae",
+    "pkgcore/build/bin/pkg_recoveryctl": "9d0ea3352ddeba4c2a6501f5806ea375c0c7d6474578761e7b11b2894f86ac8f",
+    "pkgcore/build/bin/pkgctl": "0dfa1516f3b2e2aeeb64d59fc70ad06c1fb456403c54e833b72429aef6bb232d",
+    "pkgcore/build/bin/pkg_worker": "a117cfb1072add7c3fe47e5f8c4fa354584d8654fd73a74fbf407b0d5ae0fa5f",
+    "pkgcore/build/bin/pkg_scrubctl": "b17cc6886463430a76f6f6ceefbe07dc70f610aec7b08e67e95792f8265ad174",
+    "statecore/build/bin/hostctl": "5308deda4dd28f9774d23ee0e5be0ba0bf79f5d856487f52fbad2d8be2d14324",
+    "statecore/build/bin/statectl": "f365fffe4efd3a5ba4f122412ee4b06dd1308a15390f9b546a71ec2b24d66d29",
+    "statecore/build/bin/state_worker": "471e989e4bec21ccab7a7f3feb62323d88c10a8955305d45b7d21e0eba57a329",
+    "statecore/build/bin/state_recovery_worker": "fcdd8a386623819ede00a350ca185e224c219734d8235befffca61f16ec5eea2",
+    "statecore/build/bin/state_healing_admin": "f49acc16646ab7423b0ac1d854f733fd37e93d31ffc89a88d97e404721009c2c",
+    "controlcore/build/bin/nia": "d23382f670de1820b44ed06442e257a22cbf409f9271b2798e559f2ddf571775",
+    "controlcore/build/bin/missionctl": "220ad7602161e8597fdd6c3d2b4e7d0181638f84206630564d80e279da7f42fd",
+    "controlcore/build/bin/mission_sign": "a020884a55bc956b5276c9ccfa5b57b96ddd418da8c6d81659995fe4a9aa7a2e",
+    "configcore/build/bin/configctl": "66f8e257137f8f8d822ae364ee46af974503d79ffabeb2403d9a449811f8d023",
+    "resolvercore/build/bin/resolverctl": "a495cbb2e2d02bbcf8e67a56d4b1a722d57b2b246d6f2e398df210c68dd3db13",
+    "capsulecore/build/bin/capsulectl": "7622ec53d426ef75dd4ee5d94904fd7b7cf7ff71fac6b01e6906185967a30048"
+  },
+  "input_copies": [
+    {
+      "path": "/home/nia/devbox/niaos/nia-os-consent",
+      "inputs": 3350,
+      "matches": true
+    },
+    {
+      "path": "/home/nia/devbox/niaos/.work/native-publication-intent-01/workspace",
+      "inputs": 3350,
+      "matches": true
+    },
+    {
+      "path": "/home/nia/devbox/niaos/.work/native-publication-intent-01/workspace-independent-long-path",
+      "inputs": 3350,
+      "matches": true
+    }
+  ],
+  "elf": [
+    {
+      "name": "assurance/build/bin/assure",
+      "sha256": "f5f54372640d5b02f091b3af347de87a146f7acd0abc7145e798b09fba91f3bf",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      }
+    },
+    {
+      "name": "assurance/build/bin/controlctl",
+      "sha256": "6aac8fd639693b8ae0c59c919d26e79d87e176fca666544e8fcc864ec2917239",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      }
+    },
+    {
+      "name": "assurance/build/bin/platformctl",
+      "sha256": "744079c3f66b5624fc1085128d88a0f51c1b41ca7d8042fb101c1e2e37c4faae",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      }
+    },
+    {
+      "name": "pkgcore/build/bin/pkg_recoveryctl",
+      "sha256": "9d0ea3352ddeba4c2a6501f5806ea375c0c7d6474578761e7b11b2894f86ac8f",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      }
+    },
+    {
+      "name": "pkgcore/build/bin/pkgctl",
+      "sha256": "0dfa1516f3b2e2aeeb64d59fc70ad06c1fb456403c54e833b72429aef6bb232d",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      }
+    },
+    {
+      "name": "pkgcore/build/bin/pkg_worker",
+      "sha256": "a117cfb1072add7c3fe47e5f8c4fa354584d8654fd73a74fbf407b0d5ae0fa5f",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      }
+    },
+    {
+      "name": "pkgcore/build/bin/pkg_scrubctl",
+      "sha256": "b17cc6886463430a76f6f6ceefbe07dc70f610aec7b08e67e95792f8265ad174",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      }
+    },
+    {
+      "name": "statecore/build/bin/hostctl",
+      "sha256": "5308deda4dd28f9774d23ee0e5be0ba0bf79f5d856487f52fbad2d8be2d14324",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      }
+    },
+    {
+      "name": "statecore/build/bin/statectl",
+      "sha256": "f365fffe4efd3a5ba4f122412ee4b06dd1308a15390f9b546a71ec2b24d66d29",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      }
+    },
+    {
+      "name": "statecore/build/bin/state_worker",
+      "sha256": "471e989e4bec21ccab7a7f3feb62323d88c10a8955305d45b7d21e0eba57a329",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      }
+    },
+    {
+      "name": "statecore/build/bin/state_recovery_worker",
+      "sha256": "fcdd8a386623819ede00a350ca185e224c219734d8235befffca61f16ec5eea2",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      }
+    },
+    {
+      "name": "statecore/build/bin/state_healing_admin",
+      "sha256": "f49acc16646ab7423b0ac1d854f733fd37e93d31ffc89a88d97e404721009c2c",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      }
+    },
+    {
+      "name": "controlcore/build/bin/nia",
+      "sha256": "d23382f670de1820b44ed06442e257a22cbf409f9271b2798e559f2ddf571775",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      }
+    },
+    {
+      "name": "controlcore/build/bin/missionctl",
+      "sha256": "220ad7602161e8597fdd6c3d2b4e7d0181638f84206630564d80e279da7f42fd",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      }
+    },
+    {
+      "name": "controlcore/build/bin/mission_sign",
+      "sha256": "a020884a55bc956b5276c9ccfa5b57b96ddd418da8c6d81659995fe4a9aa7a2e",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      }
+    },
+    {
+      "name": "configcore/build/bin/configctl",
+      "sha256": "66f8e257137f8f8d822ae364ee46af974503d79ffabeb2403d9a449811f8d023",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      }
+    },
+    {
+      "name": "resolvercore/build/bin/resolverctl",
+      "sha256": "a495cbb2e2d02bbcf8e67a56d4b1a722d57b2b246d6f2e398df210c68dd3db13",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      }
+    },
+    {
+      "name": "capsulecore/build/bin/capsulectl",
+      "sha256": "7622ec53d426ef75dd4ee5d94904fd7b7cf7ff71fac6b01e6906185967a30048",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      }
+    }
+  ],
+  "source_date_epoch": [
+    null,
+    1788739200
+  ],
+  "independent_mtime": 1788652800,
+  "timezones": [
+    "UTC system default; TZ unset",
+    "Pacific/Honolulu"
+  ],
+  "jobs": 1,
+  "first_environment": "run-engineering-checks removes SOURCE_DATE_EPOCH and TZ; JOBS=1"
+}

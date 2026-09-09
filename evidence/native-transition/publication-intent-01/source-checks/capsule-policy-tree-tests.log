@@ -1,0 +1,100 @@
+test_bus_request (test_capsule.MetadataTests.test_bus_request) ... ok
+test_conditional_preserved (test_capsule.MetadataTests.test_conditional_preserved) ... ok
+test_default_not_inherited (test_capsule.MetadataTests.test_default_not_inherited) ... ok
+test_double_negated (test_capsule.MetadataTests.test_double_negated) ... ok
+test_dri_is_raw (test_capsule.MetadataTests.test_dri_is_raw) ... ok
+test_duplicate_key (test_capsule.MetadataTests.test_duplicate_key) ... ok
+test_escaping (test_capsule.MetadataTests.test_escaping) ... ok
+test_extension_not_ignored (test_capsule.MetadataTests.test_extension_not_ignored) ... ok
+test_fallback_condition (test_capsule.MetadataTests.test_fallback_condition) ... ok
+test_negated (test_capsule.MetadataTests.test_negated) ... ok
+test_pulse_not_playback_only (test_capsule.MetadataTests.test_pulse_not_playback_only) ... ok
+test_raw_path_not_guessed (test_capsule.MetadataTests.test_raw_path_not_guessed) ... ok
+test_request_not_grant (test_capsule.MetadataTests.test_request_not_grant) ... ok
+test_runtime_required (test_capsule.MetadataTests.test_runtime_required) ... ok
+test_shell_command_rejected (test_capsule.MetadataTests.test_shell_command_rejected) ... ok
+test_unknown_condition (test_capsule.MetadataTests.test_unknown_condition) ... ok
+test_unknown_permission (test_capsule.MetadataTests.test_unknown_permission) ... ok
+test_version_needs_contract (test_capsule.MetadataTests.test_version_needs_contract) ... ok
+test_all_confinement_conditions (test_capsule.PolicyTests.test_all_confinement_conditions) ... ok
+test_clean_environment (test_capsule.PolicyTests.test_clean_environment) ... ok
+test_depot (test_capsule.PolicyTests.test_depot) ... ok
+test_every_intersection_per_capability (test_capsule.PolicyTests.test_every_intersection_per_capability) ... ok
+test_forbidden_despite_all_approvals (test_capsule.PolicyTests.test_forbidden_despite_all_approvals) ... ok
+test_gpu_cohort (test_capsule.PolicyTests.test_gpu_cohort) ... ok
+test_isolated_requires_vm (test_capsule.PolicyTests.test_isolated_requires_vm) ... ok
+test_native_never_fallback (test_capsule.PolicyTests.test_native_never_fallback) ... ok
+test_nested_and_compat (test_capsule.PolicyTests.test_nested_and_compat) ... ok
+test_network_not_outbound_only (test_capsule.PolicyTests.test_network_not_outbound_only) ... ok
+test_portal_identity_and_proxy (test_capsule.PolicyTests.test_portal_identity_and_proxy) ... ok
+test_required_no_downgrade (test_capsule.PolicyTests.test_required_no_downgrade) ... ok
+test_type_confusion (test_capsule.PolicyTests.test_type_confusion) ... ok
+test_unknown_capability (test_capsule.PolicyTests.test_unknown_capability) ... ok
+test_unknown_field (test_capsule.PolicyTests.test_unknown_field) ... ok
+test_unknown_missing (test_capsule.PolicyTests.test_unknown_missing) ... ok
+test_complete_materialization (test_capsule.TreeTests.test_complete_materialization) ... ok
+test_existing_candidate (test_capsule.TreeTests.test_existing_candidate) ... ok
+test_extra_source (test_capsule.TreeTests.test_extra_source) ... ok
+test_fifo_rejected (test_capsule.TreeTests.test_fifo_rejected) ... ok
+test_interruption (test_capsule.TreeTests.test_interruption) ... ok
+test_not_hardlinked (test_capsule.TreeTests.test_not_hardlinked) ... ok
+test_overlap (test_capsule.TreeTests.test_overlap) ... ok
+test_parent_symlink (test_capsule.TreeTests.test_parent_symlink) ... ok
+test_readonly_modes (test_capsule.TreeTests.test_readonly_modes) ... ok
+test_same_relative_name_separate (test_capsule.TreeTests.test_same_relative_name_separate) ... ok
+test_setid (test_capsule.TreeTests.test_setid) ... ok
+test_symlink_not_followed (test_capsule.TreeTests.test_symlink_not_followed) ... ok
+test_xattr (test_capsule.TreeTests.test_xattr) ... ok
+test_boolean_epoch (test_capsule.WireTests.test_boolean_epoch) ... ok
+test_frame_roundtrip (test_capsule.WireTests.test_frame_roundtrip) ... ok
+test_high_bit_epoch (test_capsule.WireTests.test_high_bit_epoch) ... ok
+test_native_cannot_be_encoded (test_capsule.WireTests.test_native_cannot_be_encoded) ... ok
+test_reserved_and_unknown_bits (test_capsule.WireTests.test_reserved_and_unknown_bits) ... ok
+test_truncated_or_appended (test_capsule.WireTests.test_truncated_or_appended) ... ok
+test_activation_requires_user (test_consent.ConsentTests.test_activation_requires_user) ... ok
+test_active_grant (test_consent.ConsentTests.test_active_grant) ... ok
+test_allow_is_not_effect (test_consent.ConsentTests.test_allow_is_not_effect) ... ok
+test_cancelled_ui_no_grant (test_consent.ConsentTests.test_cancelled_ui_no_grant) ... ok
+test_clock_before_prompt (test_consent.ConsentTests.test_clock_before_prompt) ... ok
+test_confirm_revoke (test_consent.ConsentTests.test_confirm_revoke) ... ok
+test_exact_context_fields (test_consent.ConsentTests.test_exact_context_fields) ... ok
+test_exact_question_fields (test_consent.ConsentTests.test_exact_question_fields) ... ok
+test_expiry_not_revocation_confirmation (test_consent.ConsentTests.test_expiry_not_revocation_confirmation) ... ok
+test_finite_event_sequences (test_consent.ConsentTests.test_finite_event_sequences) ... ok
+test_invalid_reply_clock (test_consent.ConsentTests.test_invalid_reply_clock) ... ok
+test_lease_boundary (test_consent.ConsentTests.test_lease_boundary) ... ok
+test_lock_revokes_use (test_consent.ConsentTests.test_lock_revokes_use) ... ok
+test_no_revoke_replay (test_consent.ConsentTests.test_no_revoke_replay) ... ok
+test_no_user_asserted_confirmation (test_consent.ConsentTests.test_no_user_asserted_confirmation) ... ok
+test_portal_cannot_reenter_as_dialog (test_consent.ConsentTests.test_portal_cannot_reenter_as_dialog) ... ok
+test_portal_grant_requires_consent (test_consent.ConsentTests.test_portal_grant_requires_consent) ... ok
+test_portal_records_intent_before_user (test_consent.ConsentTests.test_portal_records_intent_before_user) ... ok
+test_portal_unknown_requires_recovery (test_consent.ConsentTests.test_portal_unknown_requires_recovery) ... ok
+test_resource_different (test_consent.ConsentTests.test_resource_different) ... ok
+test_restart_does_not_resurrect (test_consent.ConsentTests.test_restart_does_not_resurrect) ... ok
+test_revocation_requires_observation (test_consent.ConsentTests.test_revocation_requires_observation) ... ok
+test_stale_approval (test_consent.ConsentTests.test_stale_approval) ... ok
+test_unknown_effect (test_consent.ConsentTests.test_unknown_effect) ... ok
+test_all_crash_points_never_issue_before_anchor (test_consent.DurableOrderingModel.test_all_crash_points_never_issue_before_anchor) ... ok
+test_capacity_retains_closure_reserve (test_consent.DurableOrderingModel.test_capacity_retains_closure_reserve) ... ok
+test_extra_descriptors_are_rejected_and_closed (test_consent.KernelChannelTests.test_extra_descriptors_are_rejected_and_closed) ... ok
+test_oversized_record_is_observable (test_consent.KernelChannelTests.test_oversized_record_is_observable) ... ok
+test_sender_credentials (test_consent.KernelChannelTests.test_sender_credentials) ... ok
+test_frame (test_consent.RequestFrameTests.test_frame) ... ok
+test_length_and_reserved (test_consent.RequestFrameTests.test_length_and_reserved) ... ok
+test_no_boolean_grant_field (test_consent.RequestFrameTests.test_no_boolean_grant_field) ... ok
+test_allow_response_is_zero (test_native_access.NativeAccessTests.test_allow_response_is_zero) ... skipped 'private D-Bus only, no host UI'
+test_backend_lost_after_reply (test_native_access.NativeAccessTests.test_backend_lost_after_reply) ... skipped 'private D-Bus only, no host UI'
+test_cancel_response_not_success (test_native_access.NativeAccessTests.test_cancel_response_not_success) ... skipped 'private D-Bus only, no host UI'
+test_deny_response_not_success (test_native_access.NativeAccessTests.test_deny_response_not_success) ... skipped 'private D-Bus only, no host UI'
+test_invalid_enum (test_native_access.NativeAccessTests.test_invalid_enum) ... skipped 'private D-Bus only, no host UI'
+test_no_backend (test_native_access.NativeAccessTests.test_no_backend) ... skipped 'private D-Bus only, no host UI'
+test_owner_pinned (test_native_access.NativeAccessTests.test_owner_pinned) ... skipped 'private D-Bus only, no host UI'
+test_timeout_closes_known_request (test_native_access.NativeAccessTests.test_timeout_closes_known_request) ... skipped 'private D-Bus only, no host UI'
+test_unknown_result_field (test_native_access.NativeAccessTests.test_unknown_result_field) ... skipped 'private D-Bus only, no host UI'
+test_wrong_signature (test_native_access.NativeAccessTests.test_wrong_signature) ... skipped 'private D-Bus only, no host UI'
+
+----------------------------------------------------------------------
+Ran 95 tests in 0.052s
+
+OK (skipped=10)

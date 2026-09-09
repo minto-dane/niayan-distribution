@@ -1,0 +1,92 @@
+{
+  "result": "unchanged",
+  "scope": "Exact existing proof input sets only; current generation transition runtime is outside SPARK",
+  "baseline": "assurance/evidence/native-development/current-component-proof/report.json",
+  "baseline_sha256": "f250d403235b8add336ffcfc21a60be02606d71060c0579842ca4c2e116c2cb3",
+  "components": [
+    {
+      "repository": "assurance",
+      "source_directories": [
+        "src"
+      ],
+      "input_count": 97,
+      "changed_inputs": [],
+      "added_sources": [],
+      "removed_sources": [],
+      "unchanged": true
+    },
+    {
+      "repository": "pkgcore",
+      "source_directories": [
+        "src",
+        "vendor/resolver/src",
+        "vendor/contracts/src"
+      ],
+      "input_count": 179,
+      "changed_inputs": [],
+      "added_sources": [],
+      "removed_sources": [],
+      "unchanged": true
+    },
+    {
+      "repository": "statecore",
+      "source_directories": [
+        "src",
+        "vendor/contracts/src"
+      ],
+      "input_count": 198,
+      "changed_inputs": [],
+      "added_sources": [],
+      "removed_sources": [],
+      "unchanged": true
+    },
+    {
+      "repository": "controlcore",
+      "source_directories": [
+        "src",
+        "vendor/contracts/src"
+      ],
+      "input_count": 104,
+      "changed_inputs": [],
+      "added_sources": [],
+      "removed_sources": [],
+      "unchanged": true
+    },
+    {
+      "repository": "configcore",
+      "source_directories": [
+        "src",
+        "vendor/contracts/src"
+      ],
+      "input_count": 121,
+      "changed_inputs": [],
+      "added_sources": [],
+      "removed_sources": [],
+      "unchanged": true
+    },
+    {
+      "repository": "resolvercore",
+      "source_directories": [
+        "src",
+        "vendor/contracts/src"
+      ],
+      "input_count": 113,
+      "changed_inputs": [],
+      "added_sources": [],
+      "removed_sources": [],
+      "unchanged": true
+    },
+    {
+      "repository": "capsulecore",
+      "source_directories": [
+        "src",
+        "vendor/contracts/src"
+      ],
+      "input_count": 115,
+      "changed_inputs": [],
+      "added_sources": [],
+      "removed_sources": [],
+      "unchanged": true
+    }
+  ]
+}
