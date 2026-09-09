@@ -1,0 +1,105 @@
+{
+  "result": "pass",
+  "scope": "read-only native payload versus Python tarfile, dpkg-deb and complete CAS objects; no extraction or execution",
+  "files": [
+    {
+      "filename": "attributes.deb",
+      "original": "f4f6d95e8bf537f53792b950ca317e0bdd5ee05d5766a1711188fa860675373e",
+      "tar": "f213abcb06d97448afb2dfb48c5986dcf879f526637e79b0905f71d6ca4211ec",
+      "entries": 1,
+      "tar_bytes": 10240,
+      "cas_objects": 5,
+      "result": "pass"
+    },
+    {
+      "filename": "basic.deb",
+      "original": "12b80707238d3ed44016c82f7cf69b541309c40ec3776729099ca897a8301615",
+      "tar": "8608bd031dfc513b8c28237b11c80af9f6c0d7af68ad52c8eb02f85004d31a2e",
+      "entries": 13,
+      "tar_bytes": 10240,
+      "cas_objects": 8,
+      "result": "pass"
+    },
+    {
+      "filename": "empty.deb",
+      "original": "940cfc2df801756b185ad6ef15914fa4650e5f17dbe6bb39256b14511acaf4c0",
+      "tar": "84ff92691f909a05b224e1c56abb4864f01b4f8e3c854e4bb4c7baf1d3f6d652",
+      "entries": 0,
+      "tar_bytes": 10240,
+      "cas_objects": 2,
+      "result": "pass"
+    },
+    {
+      "filename": "flags.deb",
+      "original": "94117f2b1b935e5a0c3458bf791e979b1c91710987a2a12f366f6bfa7e01045c",
+      "tar": "17cb81562051a2e07048eb0904bbfa2057c587f5e90ef5dbc8a6fdc468936193",
+      "entries": 1,
+      "tar_bytes": 10240,
+      "cas_objects": 4,
+      "result": "pass"
+    },
+    {
+      "filename": "gnu-numeric.deb",
+      "original": "a25a460b42fa4f3b6e4169ebc5455b39715311b77861bdd820ceb57606450a3a",
+      "tar": "92e2127e6a1f40a1f8a1501da43026028f37d84ae2e48bfeb08463f8d434adc2",
+      "entries": 1,
+      "tar_bytes": 10240,
+      "cas_objects": 4,
+      "result": "pass"
+    },
+    {
+      "filename": "gnu.deb",
+      "original": "883fd4506ec9b9a21b92336b43885e193fa976e66882ab22d973bd1014e6ac5c",
+      "tar": "1939836f759376a42309f531b8df360e9d066aebf4272b694138b0cc3019a76f",
+      "entries": 2,
+      "tar_bytes": 10240,
+      "cas_objects": 5,
+      "result": "pass"
+    },
+    {
+      "filename": "multilingual.deb",
+      "original": "80e94653963677e84367194b29bcb5e49373183d9e99070501fe6d82a1fdd084",
+      "tar": "86fb9ffa3a8de56c08e2a5c9e6ab8370d9abfd2c41bf396c8638119dfa6c23db",
+      "entries": 5,
+      "tar_bytes": 10240,
+      "cas_objects": 8,
+      "result": "pass"
+    },
+    {
+      "filename": "negative-clock.deb",
+      "original": "650a614e085dbd5d949d4433d4ac0ea89ef37e273e0ba9cfb3c167c56b4b6846",
+      "tar": "fab334fb034cbd409402629281325691edf48ae5d660c86675a96ace076cf0c3",
+      "entries": 1,
+      "tar_bytes": 10240,
+      "cas_objects": 4,
+      "result": "pass"
+    },
+    {
+      "filename": "negative-zero.deb",
+      "original": "ad33c6be4d7e2860601935d68198406d6f46cc230de039dd3265dfbf2f8840d8",
+      "tar": "10fe0e6028f8ef49727538d3371ac9c2b68cf46183e4f9bafb5fdc726fe442b9",
+      "entries": 1,
+      "tar_bytes": 10240,
+      "cas_objects": 4,
+      "result": "pass"
+    },
+    {
+      "filename": "pax.deb",
+      "original": "cd00b95a30b306fa94ebd89f3722a91180a9b87a7668e205de99a773c0ea6010",
+      "tar": "4a761217a7d41ee23ab8ef6503db52b71e2eb99d8f499dce46b0fe203a1c28bd",
+      "entries": 2,
+      "tar_bytes": 10240,
+      "cas_objects": 5,
+      "result": "pass"
+    },
+    {
+      "filename": "unicode.deb",
+      "original": "2c6b28d85e1e2a5fdedc1ae93df0d282be957ee34e47379553b9970080fc6963",
+      "tar": "a3bf021ddf9651a15f4a646bf83db83acf0eff3785be14ee3697a2827d2a87ec",
+      "entries": 1,
+      "tar_bytes": 10240,
+      "cas_objects": 4,
+      "result": "pass"
+    }
+  ]
+}

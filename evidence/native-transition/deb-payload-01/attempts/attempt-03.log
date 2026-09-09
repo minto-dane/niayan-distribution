@@ -1,0 +1,13 @@
+Running as unit: run-p93192-i93492.scope; invocation ID: 9dfc155ce2fd4d4c80e7654c9dd54134
+limited-exec: {"scope": "run-p93192-i93492.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Setup
+   [mkdir]        object directory for project Tests
+   [mkdir]        exec directory for project Tests
+Compile
+   [Ada]          run_deb_payload_tests.adb
+run_deb_payload_tests.adb:41:41: error: "To_String" not declared in "MC_Text"
+run_deb_payload_tests.adb:65:54: error: "To_String" not declared in "MC_Text"
+run_deb_payload_tests.adb:66:54: error: "To_String" not declared in "MC_Text"
+run_deb_payload_tests.adb:67:55: error: "To_String" not declared in "MC_Text"
+run_deb_payload_tests.adb:68:55: error: "To_String" not declared in "MC_Text"
+gprbuild: *** compilation phase failed

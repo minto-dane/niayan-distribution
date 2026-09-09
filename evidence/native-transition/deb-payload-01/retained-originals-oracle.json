@@ -1,0 +1,132 @@
+{
+  "result": "pass",
+  "scope": "read-only native payload versus Python tarfile, dpkg-deb and complete CAS objects; no extraction or execution",
+  "files": [
+    {
+      "filename": "bash_5.2.37-2+b9_amd64.deb",
+      "original": "03571d298ed24c615641d54dec4eb023ef5710a2b8cb9304acb66e372cab9c46",
+      "tar": "3c127c34bb4b4a3066e5e14762289c7844cc6293741e25540feecab202b406d7",
+      "entries": 166,
+      "tar_bytes": 7342080,
+      "cas_objects": 72,
+      "result": "pass"
+    },
+    {
+      "filename": "coreutils_9.7-3_amd64.deb",
+      "original": "1299ab6f9389a288eb2f5f3dd222c26cc777b9a2d5ecb6ee4cbd340cebcdada2",
+      "tar": "6dc069b7e814800e6de328b9ae19335f7a5645b1c82fc9215bb2d070241da0ce",
+      "entries": 463,
+      "tar_bytes": 18851840,
+      "cas_objects": 271,
+      "result": "pass"
+    },
+    {
+      "filename": "dpkg_1.22.22_amd64.deb",
+      "original": "3e800c6d75e8e709007ed1c356e5fa8509a75c1694fb0a1183709abc9cfdc1f3",
+      "tar": "4decf48c79b89b14e294d6f9eec8f8b386cd3712dff8a8906f39a5761923db9b",
+      "entries": 300,
+      "tar_bytes": 6696960,
+      "cas_objects": 153,
+      "result": "pass"
+    },
+    {
+      "filename": "large-xz.deb",
+      "original": "b489514ee8cc12743f6817b9a21a01f3d51e688acf894c14d052ad19213e203d",
+      "tar": "4dabd1f4d2054996eefbbe99ac19074a06c985e869b3a42ed2f822c9a53702c8",
+      "entries": 1,
+      "tar_bytes": 100669440,
+      "cas_objects": 4,
+      "result": "pass"
+    },
+    {
+      "filename": "libc6_2.41-12+deb13u3_amd64.deb",
+      "original": "8ffd13165b9ee3f067e2ee670df718e48c1bdaa18676ac93d1de761dbbb3913c",
+      "tar": "526979303eb22baccfa62b76cd881a37f5d0237bcdfa88183c24b3e55608a377",
+      "entries": 300,
+      "tar_bytes": 13260800,
+      "cas_objects": 289,
+      "result": "pass"
+    },
+    {
+      "filename": "niaos-assurance_0.1.0+git70baa595e385_amd64.deb",
+      "original": "af7c3031f932d5bbfecda2ceafdd8de1ed72d2f8370a52b4ec02d770e51adcb3",
+      "tar": "baaa59bf68403242e49a1fa33cded4d254907daf1d5227bb539a8c90f150a49e",
+      "entries": 13,
+      "tar_bytes": 552960,
+      "cas_objects": 9,
+      "result": "pass"
+    },
+    {
+      "filename": "niaos-capsulecore_0.1.0+git0c356eecb425_amd64.deb",
+      "original": "7c97862c75ba7d54e188cd6001f3e070ad0681e897a5c3b71f5e35c53732d268",
+      "tar": "b8c9825743e41516c79fa663c0d1782da17055132956d9b55e0d8ae96214bd03",
+      "entries": 11,
+      "tar_bytes": 174080,
+      "cas_objects": 7,
+      "result": "pass"
+    },
+    {
+      "filename": "niaos-configcore_0.1.0+git6d46ea26c38c_amd64.deb",
+      "original": "663f792345cf77fe7a86c9b390126d37071682dafbad85bb345f425c3c41fece",
+      "tar": "03c1ac03879c8feb78d39863eeb2e14f5e249998a40b29469b0014c693d0b129",
+      "entries": 11,
+      "tar_bytes": 256000,
+      "cas_objects": 7,
+      "result": "pass"
+    },
+    {
+      "filename": "niaos-controlcore_0.1.0+gite2a3f9ff89b5_amd64.deb",
+      "original": "c640cb0535b26a9db7ff268dcd3d5f84d969a723f821b0dd9288474d878010ef",
+      "tar": "dd2d46aaa1dc4ce2286b4c6de856f3dbb9ac46cbf2143d5321e01eb8f481888d",
+      "entries": 14,
+      "tar_bytes": 1054720,
+      "cas_objects": 9,
+      "result": "pass"
+    },
+    {
+      "filename": "niaos-pkgcore_0.1.0+gite74913f9f941_amd64.deb",
+      "original": "69e2f82fed042d5d603e9eee88cdb5bff1c7f454e0236bb636b08df069139cd0",
+      "tar": "1b61f611c8d3b76ac4a1cc3afd9a6d2f372c0d8e6fab641733ed127a5615bc5a",
+      "entries": 14,
+      "tar_bytes": 921600,
+      "cas_objects": 10,
+      "result": "pass"
+    },
+    {
+      "filename": "niaos-resolvercore_0.1.0+gita58f281ff997_amd64.deb",
+      "original": "693f76f12902f2d23305073d3350b11a1379d76a1f27cdef696a8e8170ee8009",
+      "tar": "c94884c8bb08751c76f5c8b393a5e15e6f4306ca3d668aed2f9f8d492ec3dc17",
+      "entries": 11,
+      "tar_bytes": 235520,
+      "cas_objects": 7,
+      "result": "pass"
+    },
+    {
+      "filename": "niaos-statecore_0.1.0+gitc0c9ca947c2e_amd64.deb",
+      "original": "dca754623a808d731649a67ac2c8e9d61eb26474c55b86f65aaf69dc162b140c",
+      "tar": "08578d3169558aa5033aafa6a3e848c59f00eaf678d25b0f3ef302585cbce731",
+      "entries": 15,
+      "tar_bytes": 1075200,
+      "cas_objects": 11,
+      "result": "pass"
+    },
+    {
+      "filename": "upstream-fixture-10.deb",
+      "original": "ee81302a1d5b7434762b6e784a572854d4b6cf6235e33e2d104ad4e1cae71ab4",
+      "tar": "237bb1352cc31a83f58be3e89113df9516275735e704a857b663a574c99c232c",
+      "entries": 1051,
+      "tar_bytes": 10178560,
+      "cas_objects": 817,
+      "result": "pass"
+    },
+    {
+      "filename": "upstream-fixture-12.deb",
+      "original": "c5eaef41c6947d2888fa3462f787a7e02158b997bd0119154283f425ba57b8b8",
+      "tar": "d943553d106b42f58c33d7bac7efaf20dd26cba13373d7b958f9b6f224ca6555",
+      "entries": 534,
+      "tar_bytes": 4853760,
+      "cas_objects": 338,
+      "result": "pass"
+    }
+  ]
+}

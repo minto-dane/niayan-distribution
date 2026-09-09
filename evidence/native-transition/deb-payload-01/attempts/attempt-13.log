@@ -1,0 +1,9 @@
+Running as unit: run-p96742-i97042.scope; invocation ID: 5850c1908d224881b184e89fdf6dee3c
+limited-exec: {"scope": "run-p96742-i97042.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Compile
+   [Ada]          run_deb_payload_tests.adb
+run_deb_payload_tests.adb:115:37: error: operator for type "Interfaces.Unsigned_64" is not directly visible
+run_deb_payload_tests.adb:115:37: error: use clause would make operation legal
+run_deb_payload_tests.adb:115:75: error: operator for type "Interfaces.Unsigned_64" is not directly visible
+run_deb_payload_tests.adb:115:75: error: use clause would make operation legal
+gprbuild: *** compilation phase failed

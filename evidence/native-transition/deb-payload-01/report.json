@@ -1,0 +1,40 @@
+{
+  "result": "pass-for-payload-observation-profile-only",
+  "source_subject": "32956b52274683d893c1d0c5824d22e45b4ea8f25daa1af78370666a37fa90bc",
+  "production_qualified": false,
+  "formal_proof_of_new_runtime": false,
+  "existing_proof_inputs_unchanged": true,
+  "compile_all": true,
+  "application_count": 4,
+  "ada_test_mains": 20,
+  "payload_assertions": 814,
+  "locales": [
+    "C.UTF-8",
+    "C"
+  ],
+  "fixtures": 40,
+  "accepted_fixture_oracles": 11,
+  "accepted_fixture_entries": 28,
+  "original_debs": 13,
+  "large_synthetic_debs": 1,
+  "original_entries": 2904,
+  "expanded_bytes": 166123520,
+  "peak_native_rss_kib": 16640,
+  "large_native_rss_kib": 16640,
+  "reproducible_executables": 24,
+  "build_input_count": 494,
+  "root_refusal_assertions": 3,
+  "sanitized_assertions": 814,
+  "source_check_reports": [
+    "source-checks-first/report.json",
+    "source-checks-final/report.json"
+  ],
+  "remaining": [
+    "global PAX, sparse and remaining archive/ACL profiles",
+    "versioned generation format and complete ownership/executor integration",
+    "all DEB metadata, effects, lifecycle and catalog authority",
+    "production authorization and independent trust floor",
+    "actual root and boot activation, power-loss and rescue qualification",
+    "native-only replacement ISO and all translations/review"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "filename": "large-xz.deb",
+  "synthetic": true,
+  "size": 25264,
+  "sha256": "b489514ee8cc12743f6817b9a21a01f3d51e688acf894c14d052ad19213e203d",
+  "encoded_sha256": "6dd31906a89318e438d7717d7dc03ea0c5789b63b983ce55cc055f442dfbb44e",
+  "expanded_sha256": "4dabd1f4d2054996eefbbe99ac19074a06c985e869b3a42ed2f822c9a53702c8",
+  "expanded_size": 100669440,
+  "payload_size": 100663296
+}

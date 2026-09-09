@@ -1,0 +1,39 @@
+{
+  "container_image": "0c04329a1343a0f1ae82ab931ffc7a7e5cbfdccbf18948e0576366fbf5bb249a",
+  "network": "none",
+  "normal_uid": 1000,
+  "root_refusal_uid": 0,
+  "outer_scope": "sh dev/run-limited.sh",
+  "limits": {
+    "memory_bytes": 3221225472,
+    "swap_bytes": 0,
+    "cpu_cores": 1,
+    "pids": 128
+  },
+  "normal": [
+    "make compile-all build test",
+    "python3 tests/make_deb_payload_fixtures.py --check",
+    "LC_ALL=C build/test-bin/run_deb_payload_tests PRIVATE_CAS tests/fixtures/deb-payload"
+  ],
+  "independent": "make compile-all build test-build",
+  "paths": [
+    "/workspace",
+    "/independent/pkgcore"
+  ],
+  "timezones": [
+    "UTC",
+    "Pacific/Honolulu"
+  ],
+  "source_date_epoch": 1788739200,
+  "independent_mtime": 1788652800,
+  "root": "build/test-bin/run_deb_payload_tests /nonexistent /nonexistent",
+  "sanitized_build": "gprbuild -s -j1 -p -P tests.gpr run_deb_payload_tests.adb -cargs:C -fsanitize=address,undefined -fno-omit-frame-pointer -largs -fsanitize=address,undefined",
+  "sanitized_environment": {
+    "ASAN_OPTIONS": "detect_leaks=0:halt_on_error=1",
+    "UBSAN_OPTIONS": "halt_on_error=1:print_stacktrace=1"
+  },
+  "sanitizer_scope": "C boundaries and allocator/library-call interception; Ada and upstream library code uninstrumented; leak checking disabled",
+  "oracle": "pkgcore/tests/compare_deb_payload.py; native probes first, then read-only dpkg-deb and Python tarfile/CAS; no extraction",
+  "new_dependencies": [],
+  "upstream_sources_modified": false
+}

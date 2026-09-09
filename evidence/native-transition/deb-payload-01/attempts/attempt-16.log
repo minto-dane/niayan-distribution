@@ -1,0 +1,54 @@
+Running as unit: run-p102840-i103140.scope; invocation ID: 0770c4d857a243ec8bd2041c71cd7f20
+limited-exec: {"scope": "run-p102840-i103140.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Compile
+   [Ada]          run_deb_payload_tests.adb
+   [C]            pkg_deb_stream.c
+   [C]            pkg_deb_decode.c
+   [Ada]          mc_clock.adb
+   [Ada]          mc_fs.adb
+   [Ada]          mc_hex.adb
+   [Ada]          mc_posix.ads
+   [Ada]          mc_runtime.adb
+   [Ada]          mc_sha256.adb
+   [Ada]          mc_store.adb
+   [Ada]          mc_types.adb
+   [Ada]          pkg_deb_payload.adb
+   [Ada]          test_support.adb
+   [Ada]          mc_kernel_read.adb
+   [Ada]          mc_codec.adb
+   [Ada]          mc_paths.adb
+   [Ada]          mc_dirents.adb
+   [Ada]          mc_text.adb
+   [Ada]          pkg_deb_container.adb
+   [Ada]          pkg_deb_data_stream.adb
+   [Ada]          pkg_tar_framing.adb
+Bind
+   [gprbind]      run_deb_payload_tests.bexch
+   [Ada]          run_deb_payload_tests.ali
+Link
+   [archive]      libtests.a
+   [index]        libtests.a
+   [link]         run_deb_payload_tests.adb
+PASS assertions= 814
+attributes.deb {'returncode': 0, 'seconds': 0.16487690799840493, 'peak_child_rss_kib': 11276, 'filename': 'attributes.deb'}
+basic.deb {'returncode': 0, 'seconds': 0.46566703600183246, 'peak_child_rss_kib': 11316, 'filename': 'basic.deb'}
+empty.deb {'returncode': 0, 'seconds': 0.06445165500190342, 'peak_child_rss_kib': 11340, 'filename': 'empty.deb'}
+flags.deb {'returncode': 0, 'seconds': 0.11453037200044491, 'peak_child_rss_kib': 11284, 'filename': 'flags.deb'}
+gnu-numeric.deb {'returncode': 0, 'seconds': 0.11531880299662589, 'peak_child_rss_kib': 11244, 'filename': 'gnu-numeric.deb'}
+gnu.deb {'returncode': 0, 'seconds': 0.164670803998888, 'peak_child_rss_kib': 11276, 'filename': 'gnu.deb'}
+multilingual.deb {'returncode': 0, 'seconds': 0.264925243001926, 'peak_child_rss_kib': 11388, 'filename': 'multilingual.deb'}
+negative-clock.deb {'returncode': 0, 'seconds': 0.11404791500171996, 'peak_child_rss_kib': 11284, 'filename': 'negative-clock.deb'}
+negative-zero.deb {'returncode': 0, 'seconds': 0.11436878300082753, 'peak_child_rss_kib': 11372, 'filename': 'negative-zero.deb'}
+pax.deb {'returncode': 0, 'seconds': 0.16446059300142224, 'peak_child_rss_kib': 11320, 'filename': 'pax.deb'}
+unicode.deb {'returncode': 0, 'seconds': 0.11400682699968456, 'peak_child_rss_kib': 11224, 'filename': 'unicode.deb'}
+attributes.deb 1
+basic.deb 13
+empty.deb 0
+flags.deb 1
+gnu-numeric.deb 1
+gnu.deb 2
+multilingual.deb 5
+negative-clock.deb 1
+negative-zero.deb 1
+pax.deb 2
+unicode.deb 1

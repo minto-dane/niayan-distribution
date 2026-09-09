@@ -1,0 +1,14 @@
+Running as unit: run-p97651-i97951.scope; invocation ID: bfd44384bc7e45af972d64088288d78b
+limited-exec: {"scope": "run-p97651-i97951.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+attributes.deb 1
+basic.deb 13
+empty.deb 0
+flags.deb 1
+Traceback (most recent call last):
+  File "/workspace/tests/compare_deb_payload.py", line 138, in <module>
+    rows.append(compare(source,log,cas)); print(source.name,rows[-1]['entries'],flush=True)
+                ~~~~~~~^^^^^^^^^^^^^^^^
+  File "/workspace/tests/compare_deb_payload.py", line 118, in compare
+    assert exp == got, (source.name, exp, got)
+           ^^^^^^^^^^
+AssertionError: ('gnu-numeric.deb', {'index': 1, 'PATH': 'numeric', 'LINK': '', 'UNAME': 'fixture-user', 'GNAME': 'fixture-group', 'ATTR': ['REGULAR', 420, 4294967295, 4294967294, 0, 0, 1, 1, 1, 0, 0], 'CONTENT': '1b16b1df538ba12dc3f97edbb85caa7050d46c148134290feba80f8236c83db9', 'XATTR': '96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7', 'ACL': '96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7', 'MTIME': ['TRUE', -1, 0], 'ATIME': ['FALSE', 0, 0], 'CTIME': ['FALSE', 0, 0], 'BTIME': ['FALSE', 0, 0]}, {'index': 1, 'PATH': 'numeric', 'LINK': '', 'UNAME': 'fixture-user', 'GNAME': 'fixture-group', 'ATTR': ['REGULAR', 420, 4294967295, 4294967294, 0, 0, 1, 1, 1, 0, 0], 'CONTENT': '1b16b1df538ba12dc3f97edbb85caa7050d46c148134290feba80f8236c83db9', 'XATTR': '96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7', 'ACL': '96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7', 'MTIME': ['TRUE-1', 0], 'ATIME': ['FALSE', 0, 0], 'CTIME': ['FALSE', 0, 0], 'BTIME': ['FALSE', 0, 0]})

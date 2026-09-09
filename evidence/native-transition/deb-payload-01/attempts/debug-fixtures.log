@@ -1,0 +1,21 @@
+Running as unit: run-p97191-i97491.scope; invocation ID: 0e793795992446a3ba5d36bf468d9382
+limited-exec: {"scope": "run-p97191-i97491.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+attributes.deb {'returncode': 0, 'seconds': 0.11402291700142086, 'peak_child_rss_kib': 11260, 'filename': 'attributes.deb'}
+basic.deb {'returncode': 0, 'seconds': 0.4646363379979448, 'peak_child_rss_kib': 11292, 'filename': 'basic.deb'}
+empty.deb {'returncode': 0, 'seconds': 0.11407791900273878, 'peak_child_rss_kib': 11276, 'filename': 'empty.deb'}
+flags.deb {'returncode': 0, 'seconds': 0.11446422800145228, 'peak_child_rss_kib': 11340, 'filename': 'flags.deb'}
+gnu-numeric.deb {'returncode': 0, 'seconds': 0.16429909599901293, 'peak_child_rss_kib': 11264, 'filename': 'gnu-numeric.deb'}
+gnu.deb {'returncode': 0, 'seconds': 0.16428291700140107, 'peak_child_rss_kib': 11420, 'filename': 'gnu.deb'}
+multilingual.deb {'returncode': 0, 'seconds': 0.16469934199994896, 'peak_child_rss_kib': 11340, 'filename': 'multilingual.deb'}
+negative-clock.deb {'returncode': 0, 'seconds': 0.11409946899948409, 'peak_child_rss_kib': 11264, 'filename': 'negative-clock.deb'}
+negative-zero.deb {'returncode': 0, 'seconds': 0.11411704299825942, 'peak_child_rss_kib': 11244, 'filename': 'negative-zero.deb'}
+pax.deb {'returncode': 0, 'seconds': 0.16480619999856572, 'peak_child_rss_kib': 11276, 'filename': 'pax.deb'}
+unicode.deb {'returncode': 0, 'seconds': 0.11400474299807684, 'peak_child_rss_kib': 11420, 'filename': 'unicode.deb'}
+Traceback (most recent call last):
+  File "/workspace/tests/compare_deb_payload.py", line 138, in <module>
+    rows.append(compare(source,log,cas)); print(source.name,rows[-1]['entries'],flush=True)
+                ~~~~~~~^^^^^^^^^^^^^^^^
+  File "/workspace/tests/compare_deb_payload.py", line 118, in compare
+    assert exp == got, (source.name, exp, got)
+           ^^^^^^^^^^
+AssertionError: ('attributes.deb', {'index': 1, 'PATH': 'attr', 'LINK': '', 'UNAME': 'fixture-user', 'GNAME': 'fixture-group', 'ATTR': ['REGULAR', 2528, 4294967295, 4294967294, 0, 0, 10, 10, 1, 0, 0], 'CONTENT': 'f1b4db36f908e557e2321176b6d345f5a700d4fba979381605327fdc1c8adbf7', 'XATTR': 'ab8d207cb16cd7b853712b386302698fa9c6f52064ebff58597d8e7668bb1330', 'ACL': '69178384d5fe6bcde8a00e1d5a91d823c0c44762a5442e6c8965baeb2b4f2d2d', 'MTIME': ['TRUE', 1700000000, 123456789], 'ATIME': ['TRUE', 1700000001, 7], 'CTIME': ['TRUE', 1700000002, 420000000], 'BTIME': ['TRUE', 1700000003, 750000000]}, {'index': 1, 'PATH': 'attr', 'LINK': '', 'UNAME': 'fixture-user', 'GNAME': 'fixture-group', 'ATTR': ['REGULAR', 2528, 4294967295, 4294967294, 0, 0, 10, 10, 1, 0, 0], 'CONTENT': 'f1b4db36f908e557e2321176b6d345f5a700d4fba979381605327fdc1c8adbf7', 'XATTR': 'ab8d207cb16cd7b853712b386302698fa9c6f52064ebff58597d8e7668bb1330', 'ACL': '8e9a370c93cf08459f7e9d2f910ffb3ddff943a7a4200bc13e2c8d6df38b703c', 'MTIME': ['TRUE', 1700000000, 123456789], 'ATIME': ['TRUE', 1700000001, 7], 'CTIME': ['TRUE', 1700000002, 420000000], 'BTIME': ['TRUE', 1700000003, 750000000]})

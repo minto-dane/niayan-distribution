@@ -1,0 +1,12 @@
+Running as unit: run-p94512-i94812.scope; invocation ID: 7de32f1f84f24c2c9c024bad43544a6f
+limited-exec: {"scope": "run-p94512-i94812.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+C option 0
+open 0
+header -20 b"Pathname can't be converted from UTF-8 to current locale." offset 1536
+b'\xe8\xb3\x87\xe6\x96\x99/\xe6\x9b\xb4\xe6\x96\xb0.txt' 1700000000 0
+header 1 None offset 3072
+C.UTF-8 option 0
+open 0
+header 0 None offset 1536
+b'\xe8\xb3\x87\xe6\x96\x99/\xe6\x9b\xb4\xe6\x96\xb0.txt' 1700000000 0
+header 1 None offset 3072

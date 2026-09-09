@@ -1,0 +1,3 @@
+Running as unit: run-p104965-i105265.scope; invocation ID: e82ae14a275d46fdaa05d313085c8ecf
+limited-exec: {"scope": "run-p104965-i105265.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+/home/nia/devbox/niaos/nia-os-consent/assurance/evidence/engineering-s9r0fuig/report.json

@@ -1,0 +1,86 @@
+[
+  {
+    "returncode": 0,
+    "seconds": 1.466539951001323,
+    "peak_child_rss_kib": 15976,
+    "filename": "bash_5.2.37-2+b9_amd64.deb"
+  },
+  {
+    "returncode": 0,
+    "seconds": 15.545740596000542,
+    "peak_child_rss_kib": 16632,
+    "filename": "coreutils_9.7-3_amd64.deb"
+  },
+  {
+    "returncode": 0,
+    "seconds": 9.78628552200098,
+    "peak_child_rss_kib": 15692,
+    "filename": "dpkg_1.22.22_amd64.deb"
+  },
+  {
+    "returncode": 0,
+    "seconds": 6.8781959020016075,
+    "peak_child_rss_kib": 16640,
+    "filename": "large-xz.deb"
+  },
+  {
+    "returncode": 0,
+    "seconds": 12.542545112999505,
+    "peak_child_rss_kib": 16264,
+    "filename": "libc6_2.41-12+deb13u3_amd64.deb"
+  },
+  {
+    "returncode": 0,
+    "seconds": 0.5154381009997451,
+    "peak_child_rss_kib": 11292,
+    "filename": "niaos-assurance_0.1.0+git70baa595e385_amd64.deb"
+  },
+  {
+    "returncode": 0,
+    "seconds": 0.46624060799877043,
+    "peak_child_rss_kib": 12724,
+    "filename": "niaos-capsulecore_0.1.0+git0c356eecb425_amd64.deb"
+  },
+  {
+    "returncode": 0,
+    "seconds": 0.5152446600004623,
+    "peak_child_rss_kib": 11264,
+    "filename": "niaos-configcore_0.1.0+git6d46ea26c38c_amd64.deb"
+  },
+  {
+    "returncode": 0,
+    "seconds": 0.6656466739987081,
+    "peak_child_rss_kib": 11412,
+    "filename": "niaos-controlcore_0.1.0+gite2a3f9ff89b5_amd64.deb"
+  },
+  {
+    "returncode": 0,
+    "seconds": 0.6654622409987496,
+    "peak_child_rss_kib": 11388,
+    "filename": "niaos-pkgcore_0.1.0+gite74913f9f941_amd64.deb"
+  },
+  {
+    "returncode": 0,
+    "seconds": 0.46531947100083926,
+    "peak_child_rss_kib": 11300,
+    "filename": "niaos-resolvercore_0.1.0+gita58f281ff997_amd64.deb"
+  },
+  {
+    "returncode": 0,
+    "seconds": 0.6652104220011097,
+    "peak_child_rss_kib": 11284,
+    "filename": "niaos-statecore_0.1.0+gitc0c9ca947c2e_amd64.deb"
+  },
+  {
+    "returncode": 0,
+    "seconds": 36.594071226998494,
+    "peak_child_rss_kib": 16616,
+    "filename": "upstream-fixture-10.deb"
+  },
+  {
+    "returncode": 0,
+    "seconds": 18.35705223900004,
+    "peak_child_rss_kib": 14940,
+    "filename": "upstream-fixture-12.deb"
+  }
+]

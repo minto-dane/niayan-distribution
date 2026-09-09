@@ -1,0 +1,12 @@
+{
+  "Makefile": "d628b2d7edd9d527f6ec24f33fbfe15e9be78c55ff4aff890286d42032ea3b18",
+  ".github/workflows/ci.yml": "2748ff8442b3bcbfad63aceda3d56984e068df09aaf2194aa6ce5289e5303fa5",
+  "dev/Containerfile": "1f36e505bf5eaa98da52ee57dbdb2c9fd9c6c60bb0fb50e35305dd30a236c3f9",
+  "dev/PUBLISHING.ja.md": "1c76250bca6f0225f0f27a8351d5429b3402f792bcad3a786422ba5c245ebad8",
+  "dev/README.ja.md": "693dca87723234a6129f4354e35d7a47cf043e202f3e7c170163233299a042dd",
+  "dev/limited-exec.py": "175957bd20a22b0c5b4f1b0a00229c726bb60799cdec4e8999d9a156aa560dd6",
+  "dev/packages.txt": "ca425c87a740f47409e32b4bbdb99b346e50e54c01a3d534ffd89bcfc36a7288",
+  "dev/reproducible-build.py": "97c7f4515bb5e175f0fe030aa6bcd4b1adbd3cb31f64a7391818b75ddbd75812",
+  "dev/run-limited.sh": "0e364b98c24151260a4e964d73f5d2b0b97b09b092aa77fa9c97192c23ecaff8",
+  "dev/setup-debian.sh": "d2423d2b1186f5b9d3976ebdf04b2cb6243555d19b74d1041d195f3031633844"
+}

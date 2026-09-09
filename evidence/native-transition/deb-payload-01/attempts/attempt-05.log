@@ -1,0 +1,6 @@
+Running as unit: run-p93863-i94163.scope; invocation ID: 6a40222ecdfa4aeb9178bb0cd9d5b566
+limited-exec: {"scope": "run-p93863-i94163.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+gprbuild: "run_deb_payload_tests" up to date
+FAIL: payload unicode.debCORRUPT
+
+raised TEST_SUPPORT.FAILURE : payload unicode.debCORRUPT

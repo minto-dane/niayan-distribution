@@ -64,3 +64,6 @@ inactive generationの組立てを有界な作業へ分け、全入力と所有�
 原本binary関係項目のnative読取は[deb-relations.ja.md](deb-relations.ja.md)を参照。
 
 原本dataメンバーのstream保存は[deb-data-stream.ja.md](deb-data-stream.ja.md)を参照。
+
+採用tar profileの内容・属性・リンク保持は[deb-payload.ja.md](deb-payload.ja.md)を参照。
+世代形式・実行器の拡張と稼働rootへの接続は未完である。

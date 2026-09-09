@@ -1,0 +1,34 @@
+Running as unit: run-p95320-i95620.scope; invocation ID: 69f0fbb4d4af4056acdf6a935e672b96
+limited-exec: {"scope": "run-p95320-i95620.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Compile
+   [Ada]          run_deb_payload_tests.adb
+   [C]            pkg_deb_stream.c
+   [C]            pkg_deb_decode.c
+   [Ada]          mc_clock.adb
+   [Ada]          mc_fs.adb
+   [Ada]          mc_hex.adb
+   [Ada]          mc_posix.ads
+   [Ada]          mc_runtime.adb
+   [Ada]          mc_sha256.adb
+   [Ada]          mc_store.adb
+   [Ada]          mc_types.adb
+   [Ada]          pkg_deb_payload.adb
+   [Ada]          test_support.adb
+   [Ada]          mc_kernel_read.adb
+   [Ada]          mc_codec.adb
+   [Ada]          mc_paths.adb
+   [Ada]          mc_dirents.adb
+   [Ada]          mc_text.adb
+   [Ada]          pkg_deb_container.adb
+   [Ada]          pkg_deb_data_stream.adb
+   [Ada]          pkg_tar_framing.adb
+Bind
+   [gprbind]      run_deb_payload_tests.bexch
+   [Ada]          run_deb_payload_tests.ali
+Link
+   [archive]      libtests.a
+   [index]        libtests.a
+   [link]         run_deb_payload_tests.adb
+FAIL: payload attributes.debIO_ERROR
+
+raised TEST_SUPPORT.FAILURE : payload attributes.debIO_ERROR

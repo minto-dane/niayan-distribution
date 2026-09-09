@@ -1,0 +1,68 @@
+[
+  {
+    "returncode": 0,
+    "seconds": 0.11442204000195488,
+    "peak_child_rss_kib": 11316,
+    "filename": "attributes.deb"
+  },
+  {
+    "returncode": 0,
+    "seconds": 0.46511120200011646,
+    "peak_child_rss_kib": 11264,
+    "filename": "basic.deb"
+  },
+  {
+    "returncode": 0,
+    "seconds": 0.11495624400049564,
+    "peak_child_rss_kib": 11316,
+    "filename": "empty.deb"
+  },
+  {
+    "returncode": 0,
+    "seconds": 0.16438571400067303,
+    "peak_child_rss_kib": 11320,
+    "filename": "flags.deb"
+  },
+  {
+    "returncode": 0,
+    "seconds": 0.11399818000063533,
+    "peak_child_rss_kib": 11420,
+    "filename": "gnu-numeric.deb"
+  },
+  {
+    "returncode": 0,
+    "seconds": 0.1645942830000422,
+    "peak_child_rss_kib": 11340,
+    "filename": "gnu.deb"
+  },
+  {
+    "returncode": 0,
+    "seconds": 0.3149929550017987,
+    "peak_child_rss_kib": 11288,
+    "filename": "multilingual.deb"
+  },
+  {
+    "returncode": 0,
+    "seconds": 0.11445210600140854,
+    "peak_child_rss_kib": 11204,
+    "filename": "negative-clock.deb"
+  },
+  {
+    "returncode": 0,
+    "seconds": 0.11423843800002942,
+    "peak_child_rss_kib": 11284,
+    "filename": "negative-zero.deb"
+  },
+  {
+    "returncode": 0,
+    "seconds": 0.16467869099869858,
+    "peak_child_rss_kib": 11360,
+    "filename": "pax.deb"
+  },
+  {
+    "returncode": 0,
+    "seconds": 0.11448125099923345,
+    "peak_child_rss_kib": 11372,
+    "filename": "unicode.deb"
+  }
+]
