@@ -1,0 +1,3 @@
+Running as unit: run-p180231-i180531.scope; invocation ID: 8f2413097a7b440783bd6e3b0ecb234c
+limited-exec: {"scope": "run-p180231-i180531.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+/home/nia/devbox/niaos/nia-os-consent/assurance/evidence/engineering-y1nkexi5/report.json

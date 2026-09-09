@@ -1,0 +1,4285 @@
+{
+  "result": "pass-for-declared-matrix-and-hashes",
+  "cases": 610,
+  "originals": 147,
+  "findings": {
+    "NO_VIOLATION": 273,
+    "ARCHITECTURE_NOT_ENABLED": 1,
+    "MISSING_DEPENDENCY": 321,
+    "VERSION_SKEW": 1,
+    "NOT_COINSTALLABLE": 4,
+    "PRESENT_CONFLICT": 10
+  },
+  "results": [
+    {
+      "id": "case-0000",
+      "name": "standalone",
+      "finding": "NO_VIOLATION",
+      "catalog": "548704fd88096829eb35eebc5be5a1507a223e12b62911d9972f6a47f59bf9d8",
+      "fingerprint": "1a9d78f32b88a0bb84cccc60661d20b7fe793ff80e27460b868d553b2fdc4b9f"
+    },
+    {
+      "id": "case-0001",
+      "name": "weak-and-source-not-runtime-deps",
+      "finding": "NO_VIOLATION",
+      "catalog": "af676649ff961c1e78e458cee3c2b0f43814da2b7205a15d1e6b8a1c175dce53",
+      "fingerprint": "d9b28b778ae8e65ff215facd3fb5a94b8a3d8c01c4a62b3cf11a0753a74c157b"
+    },
+    {
+      "id": "case-0002",
+      "name": "unenabled-architecture",
+      "finding": "ARCHITECTURE_NOT_ENABLED",
+      "catalog": "f834b85e72f68cacc368dff0da515201a68aeffef4cbf2e32ecf826d6a6f942f",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0003",
+      "name": "alternatives-second",
+      "finding": "NO_VIOLATION",
+      "catalog": "fae3d1b34b914b689a41330835de11cb86b34840aea46ca986e59051cc571b78",
+      "fingerprint": "7257b8a6309afde742108af87d9db8a516d441b25f208c2a02ea04487d5f5a78"
+    },
+    {
+      "id": "case-0004",
+      "name": "all-groups-required",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "349fceca96c0a3298c1a85a09f0ae2815a0c14cbd26e54cec4763fe876e2d991",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0005",
+      "name": "self-dependency",
+      "finding": "NO_VIOLATION",
+      "catalog": "65076891b8c2019cd5538ce5b431c1ba974e4e1744cd805104a82251f58186d7",
+      "fingerprint": "cec8a3690aa928abc9a1d413f0adfb2bee1e832beaf6502f1e830006c6d8cc8f"
+    },
+    {
+      "id": "case-0006",
+      "name": "self-provided-dependency",
+      "finding": "NO_VIOLATION",
+      "catalog": "2e0d295aed73b73a373e844a25ee6c888b2fa4ef5cffb89ee0bde2580f699cce",
+      "fingerprint": "92d3d45ca571727afe2a21468cd53f9cda6f4aadfcda206f2b1a3f983ad353e1"
+    },
+    {
+      "id": "case-0007",
+      "name": "dependency-cycle",
+      "finding": "NO_VIOLATION",
+      "catalog": "4259c1e709694a8327c42129ef68aecc7122131e735f546e968a2aec33a9badf",
+      "fingerprint": "daf3d3674110a7a6f17a1cb2bebb8d71e18cb9149f06f1537e86e769d595854f"
+    },
+    {
+      "id": "case-0008",
+      "name": "predependency-cycle-endpoint-only",
+      "finding": "NO_VIOLATION",
+      "catalog": "ce81000c7a8dd798731cea3c679a04d3cc0c6c400b9776eeaf9f5317b96d6d1f",
+      "fingerprint": "ed5c27d2ee424b8f6a393f77ce78ccef122735b9f9c556a3154e58a214ad0f39"
+    },
+    {
+      "id": "case-0009",
+      "name": "predependency-missing",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "953274a3d1576422a1323a3aa6e79eaa240b67fb46dc1ed074180b2796279e09",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0010",
+      "name": "depends-version-<<-3",
+      "finding": "NO_VIOLATION",
+      "catalog": "5d2aad3d234d9685a42cdb2b04481c4e7be4127e0eacb6b9050a9a2d55badd33",
+      "fingerprint": "f8dc6a490efb2578c86ca6d04a1c31b4b1383172c401259dd0a16cefbe63f497"
+    },
+    {
+      "id": "case-0011",
+      "name": "depends-version-<=-2",
+      "finding": "NO_VIOLATION",
+      "catalog": "372e00e891ced5cb3f9cfdefcb4f4cf87574ce1d0eb2e2c50ec512eefd0da30a",
+      "fingerprint": "de51db2df59ddf497a95af4e1e7cd7e80d9a6c551f6f82af8dea405dcf3225c3"
+    },
+    {
+      "id": "case-0012",
+      "name": "depends-version-=-2",
+      "finding": "NO_VIOLATION",
+      "catalog": "ae23f0c4431674b7bf7aa150d694a0cd0f8edd0d46c1a764da90e6e9c98ebc97",
+      "fingerprint": "6d4e25f74900459392ebad284cb59bf081b063441e04aea433681d5126b64cfc"
+    },
+    {
+      "id": "case-0013",
+      "name": "depends-version->=-2",
+      "finding": "NO_VIOLATION",
+      "catalog": "9c0b3b6488a18e79a84bb044cfb6dfb2deb71b01e051711dd8024674a6967007",
+      "fingerprint": "fad6eee303b7db14d825fd8e719ba22e8356a0f036468481ff5faef5b6ebe7ac"
+    },
+    {
+      "id": "case-0014",
+      "name": "depends-version->>-1",
+      "finding": "NO_VIOLATION",
+      "catalog": "b6ca3c3aa9b9a5d04020376ae3d928cbe2b60990e8e7b4d7ccb4635a52f42f1e",
+      "fingerprint": "033ab00f8dfbc467d703b877b8147a5ef6fa21c39112e87ba14b8f641db3408d"
+    },
+    {
+      "id": "case-0015",
+      "name": "depends-version->>-2",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "1be8a2b5caf4f9cf5e0fd48947dc23bce690712b0de568f2fe39f53c10904701",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0016",
+      "name": "depends-version-=-1",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "fe8c6f1d65db11c064d4ef9611707d0b6abace5d054fe1ddd85f531a7424615e",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0017",
+      "name": "pre-depends-version-<<-3",
+      "finding": "NO_VIOLATION",
+      "catalog": "a808b4dfe5557251b3d2359b6c81a0bc7eb092d1fb401bc48e69255f38537c5d",
+      "fingerprint": "4ce8b87b07549010f060733bd581410db05a96afa1ff1b75f8e7da9bdc52b3e5"
+    },
+    {
+      "id": "case-0018",
+      "name": "pre-depends-version-<=-2",
+      "finding": "NO_VIOLATION",
+      "catalog": "3e5d9b74bfaa6243291043f440833e4cffd8001750595810e80d2956133a1491",
+      "fingerprint": "f0dab029f55465a8f43e6dcaba03a685b03ac6811db04f5f0ec250c76a6048e1"
+    },
+    {
+      "id": "case-0019",
+      "name": "pre-depends-version-=-2",
+      "finding": "NO_VIOLATION",
+      "catalog": "f7154fb5b55e7672243a6c7533092d7633430ea8a6d74eb2cc5f33cabf7b94a0",
+      "fingerprint": "8ab763a78491ddd0c8e2a5d0376a1dcb700aa252dc1aa7c3e426e728e72ef985"
+    },
+    {
+      "id": "case-0020",
+      "name": "pre-depends-version->=-2",
+      "finding": "NO_VIOLATION",
+      "catalog": "7d2959f5f95409bb7698380280996ee69d63aa90f201123e7dd82215eb2d16d6",
+      "fingerprint": "145aec096ec8477b5439864700cb43f853075304a3af7a7149940b59d56bdfd6"
+    },
+    {
+      "id": "case-0021",
+      "name": "pre-depends-version->>-1",
+      "finding": "NO_VIOLATION",
+      "catalog": "b6d9c39e2a5bea699de62683a06cfb38fc0ee447471ae31fa3cac7839876861d",
+      "fingerprint": "b896fe9b8dc52ea8e8bc0358307b521781b57f2a91bc86b9ad7ef5a8220bdc1d"
+    },
+    {
+      "id": "case-0022",
+      "name": "pre-depends-version->>-2",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "65a9c72170874c55241f889e574782317d674fef4a0000a3000e3d0dc410da68",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0023",
+      "name": "pre-depends-version-=-1",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "5ba62c1e1af2f0f214707065a3ac0aff0490e9a8718cab7a7e07ed6c97c1682c",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0024",
+      "name": "epoch-and-tilde",
+      "finding": "NO_VIOLATION",
+      "catalog": "2299e7f2035a71feb4626d03ea17dc96a9e56e5bc6d856cc00b0ced455df9c1e",
+      "fingerprint": "bfa59ea5b588df94a2faaa1d4b3f0517e0bfd5b1e52790e69838508cdb0c402c"
+    },
+    {
+      "id": "case-0025",
+      "name": "epoch-dominates",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "a64a69a3d43eeb1d59c609862725a6547907875decbee25c17b91d608087a1ad",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0026",
+      "name": "coinstall-same-version",
+      "finding": "NO_VIOLATION",
+      "catalog": "a25000241e69672529ca534fb9cb7d0ea9bb24b54dba57a77c36fa48be7a2968",
+      "fingerprint": "6bca7472bb7ed364cd41612124dc83fd84fcba5b1c5a85f3fdd1c974078edf50"
+    },
+    {
+      "id": "case-0027",
+      "name": "coinstall-equivalent-version",
+      "finding": "NO_VIOLATION",
+      "catalog": "761131823e62b66cda2f292cc42b2f2a9e68def2d9414ac17282e90283317d27",
+      "fingerprint": "9f4bf3dd11d3a4923480f77e22f9a570ce8e265f0fd06fa6e5fcb3e98a1cdf98"
+    },
+    {
+      "id": "case-0028",
+      "name": "coinstall-version-skew",
+      "finding": "VERSION_SKEW",
+      "catalog": "e1b6cad031a6e2f8258c7b083d63a83dbc4b09272de33a4fa71dab17a9bb06bd",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0029",
+      "name": "coinstall-no",
+      "finding": "NOT_COINSTALLABLE",
+      "catalog": "071c83122adfcb584868c20cf442685b0ccc65d82a8629d9cb6f2f655ba004b2",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0030",
+      "name": "coinstall-foreign",
+      "finding": "NOT_COINSTALLABLE",
+      "catalog": "fb223000b02d7c96cba0220b7ebb19bffff7130b5ac44735b0cd3749cc9610d1",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0031",
+      "name": "coinstall-allowed",
+      "finding": "NOT_COINSTALLABLE",
+      "catalog": "b9db38f9ff54f0ec1ad99ad8c928562708eeb93d996862252624d54c8ce87f62",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0032",
+      "name": "coinstall-all-native",
+      "finding": "NOT_COINSTALLABLE",
+      "catalog": "0d0fdcad85770381c9d65f2c9e6835f0c98140578c7985a01460b5aa043998d7",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0033",
+      "name": "real-amd64-amd64-no-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "de52fccb155630cb6a0f79854f62a7485cf0a0a7fe6f424db522b4d38985f254",
+      "fingerprint": "f6b552b7784a0d8e70e14e588b3c6a9bdeca03bd616dd148bfa97bddf2c2eca3"
+    },
+    {
+      "id": "case-0034",
+      "name": "real-amd64-amd64-no-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "88bcc96e990dc0cbfbc328c3b1315ac8049bc5e701ea5af4b30df728403d1752",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0035",
+      "name": "real-amd64-amd64-no-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "4f2915191c4bcc4104401126cecf90718e5cb223e8f97efe8a6a4fdbe77f0666",
+      "fingerprint": "61284c0c1c74b3e59189ba2cc113b4cad3af96e71f5106639d8aebb308aaa073"
+    },
+    {
+      "id": "case-0036",
+      "name": "real-amd64-amd64-no-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "aa145116ada1d4c3dd1a92d043dae0ce355d0db4ed0dc8d2c0773ed910f57c11",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0037",
+      "name": "real-amd64-amd64-no-all",
+      "finding": "NO_VIOLATION",
+      "catalog": "0b329300918d20087ce36f78d8acc00a0173803b6f2c3229c53ac4e4c624b16c",
+      "fingerprint": "a5d9fef3bde4c704dd1bd4a3a4b4145487bee35b3069f73b2659efcf75eb2658"
+    },
+    {
+      "id": "case-0038",
+      "name": "real-amd64-amd64-no-native",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "fa4fda9f0d6ec99b010f3616072dd68d63f9478a582b6d307c06a52081b0c749",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0039",
+      "name": "real-amd64-amd64-same-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "d3ecbc5020d62bf63d603446c220e44235cc63a95851671ded815c9c33d61fcb",
+      "fingerprint": "27a0cffc50d57ed4aa88b1cafe9885505f380ae3719451a9cdf4296d0ec2801b"
+    },
+    {
+      "id": "case-0040",
+      "name": "real-amd64-amd64-same-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "4ed0d16e9ce0601ecd041f03705880c4b66517c0cde6e28c7e03fdebe022f4ef",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0041",
+      "name": "real-amd64-amd64-same-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "2580ecba27b25bde1852bfbf12b3e457b446395ec9af1707d92be022d3455759",
+      "fingerprint": "7f59c5139c1c1a2c0bf7cbc85862a74be2e45b1272a3ea673b7755671192534f"
+    },
+    {
+      "id": "case-0042",
+      "name": "real-amd64-amd64-same-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "48dcaccd8e3c14b0efa340c93751870c3c8f28d0f436244dbf6538bf64e75813",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0043",
+      "name": "real-amd64-amd64-same-all",
+      "finding": "NO_VIOLATION",
+      "catalog": "b41e14d21052f9cc6cf1c4ddf1b5aba8e7e1d4e63c43c33cabc915bcec2b6894",
+      "fingerprint": "8f02c4da9e8493f0042f54b717fe5ef1876e167ec5886a430791fb8f6ec86030"
+    },
+    {
+      "id": "case-0044",
+      "name": "real-amd64-amd64-same-native",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "b17f6a9a1d38f5023511a895d31a692a6fa420a19d69f93e1c304e42ce4e1d90",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0045",
+      "name": "real-amd64-amd64-foreign-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "674ef106d2e7685827323e11b1031b023c0a7b2aecfe78156df1a9aae85adf9c",
+      "fingerprint": "46f8785ad3fb2ee52b408c9ce583cf5fdc26a019515d78b5733c244380dabc85"
+    },
+    {
+      "id": "case-0046",
+      "name": "real-amd64-amd64-foreign-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "2c2ef3f397846783428ae1561614e1dfeedc438e26971154094328f4cd7efe2c",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0047",
+      "name": "real-amd64-amd64-foreign-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "45df5570445b67db3da6428b0ba514be86efe0baae1440da101ecebaa93d4f93",
+      "fingerprint": "93e882b4e277625dd5c000c7234708dde6f3a91562450eac3db3599e18f75713"
+    },
+    {
+      "id": "case-0048",
+      "name": "real-amd64-amd64-foreign-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "459ec2eac21b1781b41f76e0b436430756a17f4efa943640c5178284cf47eeec",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0049",
+      "name": "real-amd64-amd64-foreign-all",
+      "finding": "NO_VIOLATION",
+      "catalog": "3cf2a82ae9748ded38d19b039a2fb0f29b4b2fabba4b3cf67cc1d723773536a8",
+      "fingerprint": "6fbb54a939ea136426e534432135b0bba5f2faae2ec0918b0044fe35ad71d2a7"
+    },
+    {
+      "id": "case-0050",
+      "name": "real-amd64-amd64-foreign-native",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "ca9299a73cbe63f12eef8c00982220814305f11969e25de38b84293a89186c32",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0051",
+      "name": "real-amd64-amd64-allowed-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "dfe378f258897fa5bd5c68ae96cb8c51704f4caec9100c03693c2f4656ef07db",
+      "fingerprint": "2be7806a6e1b487fac9e3833ee6fd200d1be838190ac5240555171fda9cd33fb"
+    },
+    {
+      "id": "case-0052",
+      "name": "real-amd64-amd64-allowed-any",
+      "finding": "NO_VIOLATION",
+      "catalog": "4e4f4d81e1190b1e6451056388c81d39facd204887e56a00be351065f2525760",
+      "fingerprint": "ea26be5cf52ab92ec47f085e6165a1f0adfc2728c24df6ac2389cedfb7fc5d17"
+    },
+    {
+      "id": "case-0053",
+      "name": "real-amd64-amd64-allowed-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "a2bd675127a0f47b97027d331bbe15e4397f4e97c785dd402827316845ef402a",
+      "fingerprint": "cf40f2817e7d3b82f97b33086de436820b78ef173622fd5563f72319f15bdeca"
+    },
+    {
+      "id": "case-0054",
+      "name": "real-amd64-amd64-allowed-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "e8204f6a2b76e0c02a53587922637ae26e4df4f0f694c9ea7fd4cfbaa62f396b",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0055",
+      "name": "real-amd64-amd64-allowed-all",
+      "finding": "NO_VIOLATION",
+      "catalog": "89f7c2ebb4f3de14999a5891b6dfcbcc33263091b48bd33a1d43e3968a01163d",
+      "fingerprint": "c991c2a4489ff1b40ee073a1db2b724c9e79cbdf5fed4c91ecb1063b17e455c4"
+    },
+    {
+      "id": "case-0056",
+      "name": "real-amd64-amd64-allowed-native",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "37f7cb9873b92a5d422cac010187ccf891a91bbba62e31919819ed5ffa438793",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0057",
+      "name": "real-amd64-arm64-no-implicit",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "72edecf2ba982ca883fb06907624e5d8b92b666768f4a8d01ba94163697f1dd0",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0058",
+      "name": "real-amd64-arm64-no-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "9ff0f236bfff86196b9c772bb0de79081e16d799718b171f1bac0344f798eb9a",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0059",
+      "name": "real-amd64-arm64-no-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "a5ab3af03ec52c858751f75ba29820b7bbcb09a41b2eca7422fff8868f80f9a5",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0060",
+      "name": "real-amd64-arm64-no-arm64",
+      "finding": "NO_VIOLATION",
+      "catalog": "447e0610bf600b3d19c5795ae54a2b65dc5808164ad2e19135fef0b18d21db17",
+      "fingerprint": "bb06fdeb4109b53377645a2654171fd4df2f9b4b413f30408c6172ecebb7b539"
+    },
+    {
+      "id": "case-0061",
+      "name": "real-amd64-arm64-no-all",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "660bd7c82d4c3dcad6aa779688d718efdb2e3d19fc2c9d4c48228b5433f1f2db",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0062",
+      "name": "real-amd64-arm64-no-native",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "2de479cdae0a3df4eb6e5c1828543693fad0dac65586b5ff3778d27b7ac930ad",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0063",
+      "name": "real-amd64-arm64-same-implicit",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "46da2e3ac2224ef2e790c44cef186fe272752e47f89954ae25cf205757abd81d",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0064",
+      "name": "real-amd64-arm64-same-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "95f4604ba16a3305a25d7712229bfb66b8f7406fcb2b02f8676a0117e0c94ba2",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0065",
+      "name": "real-amd64-arm64-same-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "2ac31115d2c0a0c4f128424b58992d0709a87c68681c2dc4f8d17666e007412d",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0066",
+      "name": "real-amd64-arm64-same-arm64",
+      "finding": "NO_VIOLATION",
+      "catalog": "f8920aa7a95c3a460bd1c04731186eadc78484678d2307538c158b9ad730beaa",
+      "fingerprint": "c882d2e556c9a7ff431d0878eaf659800ac1948c2b414eb9cd4627ab4e60d419"
+    },
+    {
+      "id": "case-0067",
+      "name": "real-amd64-arm64-same-all",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "d9ef026c5218df6735a9b781b3f012f5c9f1651d47956a440933e5de7ad35655",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0068",
+      "name": "real-amd64-arm64-same-native",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "7929f99d51b0ec3c08db804ec3a3874a1d23121d5e4b30aa1e9cca07c732f1cf",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0069",
+      "name": "real-amd64-arm64-foreign-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "22ce9e9509cb6ec7eb8d7a114818a30af90680039d9292a7fde21de9a5f5b612",
+      "fingerprint": "1f8652fa0ee0fe0b22385b2e48a6b00e34deee28bc0093534573e58f03b4a336"
+    },
+    {
+      "id": "case-0070",
+      "name": "real-amd64-arm64-foreign-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "c2895340f1affa686e27c4dd1da4c70f01189b29d5d20c2aad1998e655814d0a",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0071",
+      "name": "real-amd64-arm64-foreign-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "baf6d418f376895960647107aec0edd80e46e067681d5d7fd5f1be93a5af649e",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0072",
+      "name": "real-amd64-arm64-foreign-arm64",
+      "finding": "NO_VIOLATION",
+      "catalog": "70e958cf8cc656a93ab12884904ff0ceb62cc1d1cf82fa23ff4a1529fa09992b",
+      "fingerprint": "0ec41eadd66cb391dd2334819275b67214db39d8847ea5a78df52567333466e1"
+    },
+    {
+      "id": "case-0073",
+      "name": "real-amd64-arm64-foreign-all",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "5648ec6ee31a5ae221b9fe62dde7c2aab2c48b0cd44fba8012db8ea7310dd058",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0074",
+      "name": "real-amd64-arm64-foreign-native",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "ebc24421059318e3b78a28e3dbd1b459a507b1a797cf57a5987c0dda6a638ce6",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0075",
+      "name": "real-amd64-arm64-allowed-implicit",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "fc44eb9689a928294464a8e06de68035d09e1912b746826c4193095640dde8b5",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0076",
+      "name": "real-amd64-arm64-allowed-any",
+      "finding": "NO_VIOLATION",
+      "catalog": "bf674b1a33fb780410a3647fb9ccc3cc3823ab9bcfb1160cd4664c5bab902b75",
+      "fingerprint": "5036d6932f829ba63004c06202c9f09445ab6b2516d1ed1ad8cead13000c2582"
+    },
+    {
+      "id": "case-0077",
+      "name": "real-amd64-arm64-allowed-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "dcd61cb2acd2bcba79161d84dbb237f53b4f087f872eeb532405cf7dacf8d88f",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0078",
+      "name": "real-amd64-arm64-allowed-arm64",
+      "finding": "NO_VIOLATION",
+      "catalog": "7b791fc13228e0e46692b7df9d28a2602eb847087847f1201430116e7a537e3d",
+      "fingerprint": "8accb7c16a33b06ee0f908383805267fe2bca6a176ee58ce782d84b9497751f7"
+    },
+    {
+      "id": "case-0079",
+      "name": "real-amd64-arm64-allowed-all",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "bf5dd6ae5c3d516e44ee771590172527afe77120b403e022e584ce4271b40d90",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0080",
+      "name": "real-amd64-arm64-allowed-native",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "f27255629c744f7ba7da355d16dadc6617c29efa5663032dbf7b68e2825ba24e",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0081",
+      "name": "real-amd64-all-no-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "7897263c128bdf188448e37a4a9cf9b93dc4b47ccd2b74cf695271c9a8384d97",
+      "fingerprint": "7066e2eef02b98ac5f22778905006d654afddd6d854f4f46727084b1ac15d442"
+    },
+    {
+      "id": "case-0082",
+      "name": "real-amd64-all-no-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "249f00434d534d211ef1caa693bd7372f88ec2f475ca6a99d43554d3660f3877",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0083",
+      "name": "real-amd64-all-no-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "bdfff1ed7b6bb3ddd19da384d79b2955f25b11c1dbfd98165564eb98a43d2e08",
+      "fingerprint": "d577d8d1fd710ff87b8dc38255fcc94d143d066cab6e144e0ace78052851e7c3"
+    },
+    {
+      "id": "case-0084",
+      "name": "real-amd64-all-no-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "e4405c521649fd50531e6033eaec5e97f9c6a1f6e121576aba49e39dc6ab8c6d",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0085",
+      "name": "real-amd64-all-no-all",
+      "finding": "NO_VIOLATION",
+      "catalog": "32d81db463a6f153cbe88500b72a5e89c7233a000c86d5a67fb8e28b825460d8",
+      "fingerprint": "303f4e824225f1613b27d0decc668421e6636d627a6fc4293d494ad70740ad8a"
+    },
+    {
+      "id": "case-0086",
+      "name": "real-amd64-all-no-native",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "75f8f852745c0136191df112316aa559fe8732e4b0efbd4e0e6d162be95dbe85",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0087",
+      "name": "real-amd64-all-foreign-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "7215a530097e08eefd0a831726a6af5e8519d98c03e73ec83156a6606e764382",
+      "fingerprint": "605c4c88e142e99ea20fb725b8e2afd9a1bebfc67aa74a6effcb59a84571578f"
+    },
+    {
+      "id": "case-0088",
+      "name": "real-amd64-all-foreign-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "aa54ff147ca919e02a4d94ff70be865f5f8b07a0d893a5acd19dcbacfc949e89",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0089",
+      "name": "real-amd64-all-foreign-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "331e3cd6256c1cae2058980e043e8cf7d1130131de33cb58b588a73bf7de1351",
+      "fingerprint": "c744680cc9505e5cf830c9115fac1de39e5e0afda3b67cfd0e6beeaf650e0ad8"
+    },
+    {
+      "id": "case-0090",
+      "name": "real-amd64-all-foreign-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "0816feae2026f12612c1c3f0b0ca5e298b8e3c98b935ae3956f113eedb085a88",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0091",
+      "name": "real-amd64-all-foreign-all",
+      "finding": "NO_VIOLATION",
+      "catalog": "9072d0aa22f59bd1c3b68a6dfbc4b3c0a13960a0bfe715c0b934378c5eed0911",
+      "fingerprint": "5ebef72a1a70ce85602644950f62541d2a6c9c99bd1d9810144d58a6408de049"
+    },
+    {
+      "id": "case-0092",
+      "name": "real-amd64-all-foreign-native",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "ce0a76955b0876ecc0ddb3e5cc8e45f86bd44b23463a3efd25edfa0ce223da36",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0093",
+      "name": "real-amd64-all-allowed-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "a1e5d5a35139cea311dc144e7ac1c57495f9d7e5c4fbaf7a01ea53934f7fc6c5",
+      "fingerprint": "67a5b8314fb1dc13a14896fed68287aa573f655d3fc0c30d0106fab9e9be6657"
+    },
+    {
+      "id": "case-0094",
+      "name": "real-amd64-all-allowed-any",
+      "finding": "NO_VIOLATION",
+      "catalog": "ed12a9706d99ca961340d86a65a7c63b0fdcf43b31860379ea975a712f18c548",
+      "fingerprint": "9dcde45f5fa89e5b534fd1ecac5b2125482e785ac9c818b9c36e60bec41b37b7"
+    },
+    {
+      "id": "case-0095",
+      "name": "real-amd64-all-allowed-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "3230d0b72fcc7a269f5891f4efbc21842bd804f6f7a85e117d0789c2918372fd",
+      "fingerprint": "c79a0630145ca77b2db65b8796134621525e16615637e06274e45ae37af34ed6"
+    },
+    {
+      "id": "case-0096",
+      "name": "real-amd64-all-allowed-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "35db003eb83cbb85fe7ae9b8a2f2584c4b2db915a38801b65d16e576b3406fde",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0097",
+      "name": "real-amd64-all-allowed-all",
+      "finding": "NO_VIOLATION",
+      "catalog": "aa4de27db07e5e0d7ddbb7ca34df8d72b3d1eb018737f2df364f559cb58b44f3",
+      "fingerprint": "4fe147ce70bd7273b2b0eb1ff8e5d1913c8b8267e7f5a2ed36c82c56871c2790"
+    },
+    {
+      "id": "case-0098",
+      "name": "real-amd64-all-allowed-native",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "c0d3559bf3f7a800cc6293ed5f6c0c25bc1f6af09a48869834fbb979414143de",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0099",
+      "name": "real-arm64-amd64-no-implicit",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "fede3c80c35a7180bb2fbb0ac4c0f791d22630a7e6cd15d967fc2d0e4c2937fe",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0100",
+      "name": "real-arm64-amd64-no-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "3cbebe2bbb5c5e84a983d128edd7fa518cf0a368662e495bda18ec4dfb955857",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0101",
+      "name": "real-arm64-amd64-no-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "ccac96ec563205a21bd88fb2679873846f2927c34cb531e35386659b06ab8f81",
+      "fingerprint": "6c9649e27a884985a1718e7fee273e6cae01d40e14a4bb0d1a38ed0d62838132"
+    },
+    {
+      "id": "case-0102",
+      "name": "real-arm64-amd64-no-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "3b990563bd97a29eaf9daebdf35ffbbcf59bd5dcd958dbfd2589d14c82da1013",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0103",
+      "name": "real-arm64-amd64-no-all",
+      "finding": "NO_VIOLATION",
+      "catalog": "dbf020bfbb2360bcef53456b9114442fa4156654fe321ad9074d82c9d8946102",
+      "fingerprint": "48d0393a09aded0f928a6161edeb67712580571db6143c8c2bc083fdec5f8232"
+    },
+    {
+      "id": "case-0104",
+      "name": "real-arm64-amd64-no-native",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "caddaf1b0bff377aa8d9d14e5b649deccfa0c85efa30baf1f8778a52784abf39",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0105",
+      "name": "real-arm64-amd64-same-implicit",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "273ab3def9a8675014b0c39b6c27ead4ea0488b2dd88372eb9c334394f461665",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0106",
+      "name": "real-arm64-amd64-same-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "6c82b59f75fe8c2308c070398812a11e4e31381736209200964a27ca5d18642c",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0107",
+      "name": "real-arm64-amd64-same-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "44205e6db85db2035bf7b07bbcc5f492db9dc83342997fa6cb91cc7e95c823a1",
+      "fingerprint": "2586494c083c23f08bba982565ddd829a7fd4554845cd9ba597b611245a2a005"
+    },
+    {
+      "id": "case-0108",
+      "name": "real-arm64-amd64-same-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "1b44613d0714d401188c5ed9a24f7accf2040ba5e427a4617dfb8828e1b0d991",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0109",
+      "name": "real-arm64-amd64-same-all",
+      "finding": "NO_VIOLATION",
+      "catalog": "b44add1cb16b22a9d5f5a384f7a5b6ef002a3b8a910f2c88c9b6ea38ea35496d",
+      "fingerprint": "cb60112f5eced982cc34c29b5ab14df89b131cbd23d7a699e6288893310d789c"
+    },
+    {
+      "id": "case-0110",
+      "name": "real-arm64-amd64-same-native",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "a770c9eee412c97822ac2404dc0c17ccea9767a9c3579c5e6740f959f886ce5d",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0111",
+      "name": "real-arm64-amd64-foreign-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "dca6fe1e07671b75e1de8cc14f1c83e289c5dd21468e1bf542a73c79da42e66b",
+      "fingerprint": "41ea9d917edd04aadd8135f50e2bc4cef02bd6516b706f7917c5200d3cd4e1e3"
+    },
+    {
+      "id": "case-0112",
+      "name": "real-arm64-amd64-foreign-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "05c147fc5cf29c4f380429613cf8f6dcee826a7db973f478e8dca445f9ace161",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0113",
+      "name": "real-arm64-amd64-foreign-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "bfa201a3a0b78af0a60542cb9699231c7f5b30a360883545118482d32a677af1",
+      "fingerprint": "2b50e730c343cca96ad12352ac49d67c165935675f1d60899c7b72c7557c3fea"
+    },
+    {
+      "id": "case-0114",
+      "name": "real-arm64-amd64-foreign-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "ad22225f5c43f0993ba0937031c6e1032c7a004372511dd4488470300ff0237d",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0115",
+      "name": "real-arm64-amd64-foreign-all",
+      "finding": "NO_VIOLATION",
+      "catalog": "be41a96382ef15f1f92343413065bdf7437813408e16923e0eafe6711509ccc8",
+      "fingerprint": "c44e99c01ccf96ae809679bf7f9f41b5dd58a0755fef264a90c8c82e5f860a2f"
+    },
+    {
+      "id": "case-0116",
+      "name": "real-arm64-amd64-foreign-native",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "0ad855fba7a1b2dce7f8c94976915c474e4cc87f2fc4d205439f22b6891cf786",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0117",
+      "name": "real-arm64-amd64-allowed-implicit",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "83b4e4152febfab1fd8dffea0334750dffd317a7ebfe0e0d90a880904c8d6604",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0118",
+      "name": "real-arm64-amd64-allowed-any",
+      "finding": "NO_VIOLATION",
+      "catalog": "37055556c60588ebc9a1a18cb563364a1d774cfab8b69039eea7781d490a8a61",
+      "fingerprint": "d7bf6ef26924751de7e50352f6321440fe5f7e9d7d21db2e9aeec027369f9d4c"
+    },
+    {
+      "id": "case-0119",
+      "name": "real-arm64-amd64-allowed-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "d3d90d760dc8a2f4181f1adb7ffe01eb959de2a5072a8c8b8c9f55c8ff0d70cf",
+      "fingerprint": "4f0d89d190fab593f573ce4166799735e31ee93869a83b8eb9c61f5a34526b4d"
+    },
+    {
+      "id": "case-0120",
+      "name": "real-arm64-amd64-allowed-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "2e31c58e338baa0e064add5b9909902cc289fc01ca1fa347127f66136299c510",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0121",
+      "name": "real-arm64-amd64-allowed-all",
+      "finding": "NO_VIOLATION",
+      "catalog": "ca3accca42d95562704e20f236583042cf22b6080e6bc4ac1ae555b2c3a6f577",
+      "fingerprint": "75f498580a94dacd808384430e8b676a89ef3cb4021a4ceb6215361fa2bad43c"
+    },
+    {
+      "id": "case-0122",
+      "name": "real-arm64-amd64-allowed-native",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "f5e6fbda6f1a35ade0348aaf1a1e93aee0e8b048923122d2558ddc6e50b649b8",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0123",
+      "name": "real-arm64-arm64-no-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "210a58bff593efdce9daa679c5b535f0f08b0bfad37ffb09d598a0b8d915d0b2",
+      "fingerprint": "89998fb3cb998da8299fdffcfd71056c58b518e034342bcfddd23808907faec6"
+    },
+    {
+      "id": "case-0124",
+      "name": "real-arm64-arm64-no-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "70383395eca29a24cece1b0d4ecfae4c81807ecf1b66d482e0f62745ebc720a7",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0125",
+      "name": "real-arm64-arm64-no-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "a1d01bd4b10bab535dd22094c16bd41523dd2f2c8078f5c5f18bd8b4f5d722c0",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0126",
+      "name": "real-arm64-arm64-no-arm64",
+      "finding": "NO_VIOLATION",
+      "catalog": "3f41890508e79af7dd30b94ac190b5c3ee880b1ade9b4f005c53c8d49ddc64d3",
+      "fingerprint": "5e71212cae21b9ab8ab293c048e53c0cd6a1ac74b701e6e56b735a2ecfa059d3"
+    },
+    {
+      "id": "case-0127",
+      "name": "real-arm64-arm64-no-all",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "a63be1e2a414867834dad1b08f7baae69284338ad9e4487eb4579dc0e22729c1",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0128",
+      "name": "real-arm64-arm64-no-native",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "a6a2e151a30bb242346db98e50148f2ddcd014139aed1679ddb47df718103813",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0129",
+      "name": "real-arm64-arm64-same-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "d82ee2edd14cde9dbbe121db27f79586010f40020fc3979d74933162c94baa4d",
+      "fingerprint": "b5c66bea0bd6b353feb765092a702b32baf0a6e136a8d0375da6818ada3d1f86"
+    },
+    {
+      "id": "case-0130",
+      "name": "real-arm64-arm64-same-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "1ccca1303661227421400afce651dc0c5f8717fae60b676ebc954b71b9ec886e",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0131",
+      "name": "real-arm64-arm64-same-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "c88dc5467612ac825a977e6ad25aad5f9c92029189324782670bfb4fab2fa045",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0132",
+      "name": "real-arm64-arm64-same-arm64",
+      "finding": "NO_VIOLATION",
+      "catalog": "663837d45f669151c43d411d9d71cb60fd811d33345a03aa57c3d077d4ce6438",
+      "fingerprint": "03fcf58d418f68fe10355a2e66bc6aef0b6a63846f9e82fc526395eddf8029cd"
+    },
+    {
+      "id": "case-0133",
+      "name": "real-arm64-arm64-same-all",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "e2f408c3de1f81dbe93247bfed5cf30c05e306882e3506a788d8a33eea508221",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0134",
+      "name": "real-arm64-arm64-same-native",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "09ad206f1e2a0876c54071851b62a4147a83ad3515446a3d3fa392a574c3cc8b",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0135",
+      "name": "real-arm64-arm64-foreign-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "84bb5d6d6c94343b2590378df2ebd551c2b16cf3f674f0259f837e46c52b9ae2",
+      "fingerprint": "f3e1cbfa7977720949ea858e22bf54a36eb7161edf25c5c815e9a97d7e0c92db"
+    },
+    {
+      "id": "case-0136",
+      "name": "real-arm64-arm64-foreign-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "010f186081fee11fd7a93ce5c8ac5d9fbe78bbe7bc86f6603cb5dab3cee044cc",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0137",
+      "name": "real-arm64-arm64-foreign-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "3f6a31b17d90836a2731e4c2bb8791c40371b78d251834cd75a1d5d478314cef",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0138",
+      "name": "real-arm64-arm64-foreign-arm64",
+      "finding": "NO_VIOLATION",
+      "catalog": "4c005e69516862ef605dd3e53a606943443ca501038bf984b1895f82aa6e0a72",
+      "fingerprint": "82f8c50fd931660bff303c4de8f899cf2a1b617dcf99903f127a0d1f1ccb1db9"
+    },
+    {
+      "id": "case-0139",
+      "name": "real-arm64-arm64-foreign-all",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "0c8507639c53cb14064731c740f9412106b045545e8336cc5cb603dc73ac3e73",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0140",
+      "name": "real-arm64-arm64-foreign-native",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "c765731128c0150522fb3c78f06edeb35d60806395483d856cba5b6dc0df62ec",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0141",
+      "name": "real-arm64-arm64-allowed-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "2e12e5b56e2263d19ac8198c4be20836c2a1c638b548d59a22c4a8ec9dc1be83",
+      "fingerprint": "569ac334b501d594535753dc2d468a9e2a76e0d664b481636bdcea0496eaf4ec"
+    },
+    {
+      "id": "case-0142",
+      "name": "real-arm64-arm64-allowed-any",
+      "finding": "NO_VIOLATION",
+      "catalog": "7715a1fd77e73ca6eaed8aab012107f3299f198e27630ae415ce9b530e181b38",
+      "fingerprint": "f7e888cfeabeafa06f33d80cc8d543f1452bacc815e18e996255d4f5c9b63c5d"
+    },
+    {
+      "id": "case-0143",
+      "name": "real-arm64-arm64-allowed-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "2c30618925d1696fa333b5072188cb4dc676c23d558c2edca3cf3d57d3ffe8cf",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0144",
+      "name": "real-arm64-arm64-allowed-arm64",
+      "finding": "NO_VIOLATION",
+      "catalog": "0ad0036483b1a0c1426eab9a1bb6867291fd5c3805b4b0176bf71eed9e0b4128",
+      "fingerprint": "fa3cb0a291f1f2a69ee0ccbc6217f9f34888b37a753635c3a4f6606bb1801f4a"
+    },
+    {
+      "id": "case-0145",
+      "name": "real-arm64-arm64-allowed-all",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "8076d5f7c602111a39246d5822a1ea44ba523d2dd5b78a1004010798bd4a1f16",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0146",
+      "name": "real-arm64-arm64-allowed-native",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "8bc5444708887b98c4bfce337bf5d9df9301e958ab6ebf621c5d3686e0a6bac7",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0147",
+      "name": "real-arm64-all-no-implicit",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "3cd722842667c95521046047ca1389b0b8cdf783fd332bb9542f875e2f5ead0d",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0148",
+      "name": "real-arm64-all-no-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "01113514b71a34dac69a64ffbb7b9c473e3b9e5921963133d5a10ad95232c9a7",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0149",
+      "name": "real-arm64-all-no-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "cfad1a1976dc54fb333c412537e5e44d4cfe0ed3822833ec9446d34c7ecae111",
+      "fingerprint": "e602915d2b5bef9b56f50690c171597d83ce689c57169e733bfd420c92fba384"
+    },
+    {
+      "id": "case-0150",
+      "name": "real-arm64-all-no-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "d126ea8b0325914502b6fd3432522b4c6d32b0556b80c3f7edd68978660f3dd6",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0151",
+      "name": "real-arm64-all-no-all",
+      "finding": "NO_VIOLATION",
+      "catalog": "4b9d5ef6c492d7195c9020e5c6c59c06aa1b751460dbe28a09b29e7fd2133668",
+      "fingerprint": "094cc353ee8c20f3c029b82099901e1b567993e53ec5d78829a8e54a942a3ed3"
+    },
+    {
+      "id": "case-0152",
+      "name": "real-arm64-all-no-native",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "09d06d622ae547bceb11e8e4f0d722ea59ba40c51d8d3f1006d9f01731eb941f",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0153",
+      "name": "real-arm64-all-foreign-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "fedfb5dc5f1125939060b4df072204fe9e19309da0de7282461466b4d6a00dd8",
+      "fingerprint": "cd3cf5aadbf5dd785c259edd9f047a7e7be833d0c8b417ce2af23c30d078aeb7"
+    },
+    {
+      "id": "case-0154",
+      "name": "real-arm64-all-foreign-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "3143446cb258b5469e815022a72fa4816c4c80f5c6295929198bff660eb934bb",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0155",
+      "name": "real-arm64-all-foreign-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "4258645ab0f13c385bdffad06740e48fc14d18b99faa5bba1159c479a9211fc9",
+      "fingerprint": "933e2b935f4d9a6880bcaaddb8014a08dbff8fca4720e962650d798d2f337f49"
+    },
+    {
+      "id": "case-0156",
+      "name": "real-arm64-all-foreign-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "ee43c8904e38f2b50bfd14c33a1dfd72051539a48c9a5ebd239e42b9cd943a27",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0157",
+      "name": "real-arm64-all-foreign-all",
+      "finding": "NO_VIOLATION",
+      "catalog": "0cf92868b6c406640cd5080d998cd7ac436796871b40cd497090cd35146dab4d",
+      "fingerprint": "7b1d19c010fa2dd9823c10c6cfdc5bab89fff6fee8e9422bbd989bd06ac82251"
+    },
+    {
+      "id": "case-0158",
+      "name": "real-arm64-all-foreign-native",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "f4a09e79095e1417bb9c67f640d637490871c2bf7ce09e5591a6c38f8cb11df8",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0159",
+      "name": "real-arm64-all-allowed-implicit",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "b68266a6e58b95559952ebcad9c3fa870d7ab85e54020e812d45b1cadf0dd03b",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0160",
+      "name": "real-arm64-all-allowed-any",
+      "finding": "NO_VIOLATION",
+      "catalog": "77f11951fb28fef27c6e6b606fa4d9714d42ab5fbac33936393cff55eb06d4fa",
+      "fingerprint": "f5f679a66efbb64c0928c1913d81b642fa5d2b075634a819a747ac2dd2800835"
+    },
+    {
+      "id": "case-0161",
+      "name": "real-arm64-all-allowed-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "90c77db83cc3c9c6ecc4a212b89a73b9fbea1e2ebb5551b267463fbe69f62795",
+      "fingerprint": "692e7ab2e0633c7d227204f37ee920d801fa008b2bb18411c9e9456909fc47c0"
+    },
+    {
+      "id": "case-0162",
+      "name": "real-arm64-all-allowed-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "0868463ce324b62becac4dbc418923da9c9f24162f8ffd511c3af65bdf3a1a63",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0163",
+      "name": "real-arm64-all-allowed-all",
+      "finding": "NO_VIOLATION",
+      "catalog": "339e39fb770100a7a7fbc6e91a938aa0810bdea4bd9e166e7fa644b677e86de6",
+      "fingerprint": "44cebad2cf13227167cef68d6d47b6ac21c7f7fa9a1a908706cd0c0e60a6cc0f"
+    },
+    {
+      "id": "case-0164",
+      "name": "real-arm64-all-allowed-native",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "b7d668e39fb4c625ab63cbcb9c0b5d45045f1404695de4e99a81ee9169d58cfc",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0165",
+      "name": "real-all-amd64-no-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "7be06ddd735083a96bad9242cf29e021011cbd0ac4b049f3daae5557e7c2ea72",
+      "fingerprint": "bc756aa2ada8c207779b04efab8e15d1ff11b19e1a4cea506828a15f8ea5a7b8"
+    },
+    {
+      "id": "case-0166",
+      "name": "real-all-amd64-no-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "255995be28fcc463d6b66c3a11094fd368a9f804e65e698af20808dd407a8e53",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0167",
+      "name": "real-all-amd64-no-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "f18f506aae61774c742a1ffba419aadc997dace5de7f38476571f44caddd32e6",
+      "fingerprint": "255d4034e8ef8b72638b1b0ff946907af19b146fa60fb9c611e5b4bd66b9eb91"
+    },
+    {
+      "id": "case-0168",
+      "name": "real-all-amd64-no-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "3a59c78685ca606e19180c60e9f3e7dea97bfdb64d1250edfd74049b64c725f1",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0169",
+      "name": "real-all-amd64-no-all",
+      "finding": "NO_VIOLATION",
+      "catalog": "4f8861ffa2e9f9947c45af70d619d146d1108ef33329282caf4911bcded8d7f2",
+      "fingerprint": "f59e28fed7402839d43c7c24ba8ea465aa0b6cfe0978201acdcb0f69a54882b7"
+    },
+    {
+      "id": "case-0170",
+      "name": "real-all-amd64-no-native",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "6c3a04cccf64cf0a284dffb12afd20e57203fafb28b133cbb5f42e09fc206aac",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0171",
+      "name": "real-all-amd64-same-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "16919e6904cb430b369017f002074bd8ea164b0110e2f77617cd261ab2903e9f",
+      "fingerprint": "a1c4f191d066c088dc7dde097154df9f8f1de41c4a344cee56b52ba552667fd0"
+    },
+    {
+      "id": "case-0172",
+      "name": "real-all-amd64-same-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "e18ada08f6034d66765f567b0015d2b57adb3f7dc53119d585ca28b2bb2ff420",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0173",
+      "name": "real-all-amd64-same-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "c8ce76064b4fd81e703ac99eff790667060536ec9cb869e1be1f0ca3ee48f5e1",
+      "fingerprint": "f5b890651f32ab019f0601b4d901a494a35e668b20d02bd0e39bfc3bb050d433"
+    },
+    {
+      "id": "case-0174",
+      "name": "real-all-amd64-same-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "eea793ed0267021c17724e32fe9384f0f29255dec0feecb4749548fa9eb1d28e",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0175",
+      "name": "real-all-amd64-same-all",
+      "finding": "NO_VIOLATION",
+      "catalog": "b177b5629b1efde2e9b6db80e388a480ed7324154ad74afeb0a978bb8d7ebf0e",
+      "fingerprint": "e4ece6cfc881e27bb7585e3dd5396f519aef05c811c773bcf47e506986039bfb"
+    },
+    {
+      "id": "case-0176",
+      "name": "real-all-amd64-same-native",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "ab0e15c79446252be46b73fc87d48ae4475ba26941ce64cf9ad04cb95f6c0578",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0177",
+      "name": "real-all-amd64-foreign-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "44a1a5986a296a4d5e44f64ae7e635fec5cd05d75660000c1917f91c985b7be9",
+      "fingerprint": "7aaf01521a32ddbda95da565fe977c06a4077d6742983b7c834a370174a6138c"
+    },
+    {
+      "id": "case-0178",
+      "name": "real-all-amd64-foreign-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "3f6273a6eb9f732b01d01b2222959e74f84e072dad5c97f87930da3a006958ed",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0179",
+      "name": "real-all-amd64-foreign-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "6b4f9afaf53d6e372ca3090d0c8d62f742880f2d1a9d3fda8f14fac2fc6afc7e",
+      "fingerprint": "af3a422710408f5e32cdac63e6060353c57208ea740a9a5d5c06ee1420e6a82a"
+    },
+    {
+      "id": "case-0180",
+      "name": "real-all-amd64-foreign-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "a52230e87454b10b1b2ab0afe12b5c6e5ace140fc70f8846292958d7c98801f5",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0181",
+      "name": "real-all-amd64-foreign-all",
+      "finding": "NO_VIOLATION",
+      "catalog": "8dadea6285a4b68401004e3caa64caec526b4d65e3244bd13b46d5a653c7fd1f",
+      "fingerprint": "6318ce677842e827bde73e88de97d473538da052e8bf9b9585cb1f4d156af6b5"
+    },
+    {
+      "id": "case-0182",
+      "name": "real-all-amd64-foreign-native",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "870dbe09d53c97eb45e25ab4f3d7d75b8684f5e9fc4602f068a066ed497bcf1e",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0183",
+      "name": "real-all-amd64-allowed-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "b41b803752695fdc59234309f4b09ca467ba97abdc04c778a62f89873201c271",
+      "fingerprint": "c2625fdf22d4366b552cefc026752cb4612fe890dea137fc29d99430da6b5bc6"
+    },
+    {
+      "id": "case-0184",
+      "name": "real-all-amd64-allowed-any",
+      "finding": "NO_VIOLATION",
+      "catalog": "704055d3b43da599c17a1a34312d8e94e2e1701fe6f8ea3eecb4e8b01fd9d68b",
+      "fingerprint": "cba341f914b54aa2ad71e576d48fa917c95bb1e69298a40514d5564590aaaa38"
+    },
+    {
+      "id": "case-0185",
+      "name": "real-all-amd64-allowed-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "db9924f5560733c7f7eecbccdc780cc680d94ca0de9f301892db55ded908ea9c",
+      "fingerprint": "772c3c31be8d16103ecb56a0e4f71fa6ecb3eba25bb08d9f2c219360cf15f1e2"
+    },
+    {
+      "id": "case-0186",
+      "name": "real-all-amd64-allowed-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "cdb9068e32a390c1f9aab235bfa570c8f55f4a74ed5ce3fb1d252a37010116cb",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0187",
+      "name": "real-all-amd64-allowed-all",
+      "finding": "NO_VIOLATION",
+      "catalog": "2dc2c3fa6b79f876f88e8e73c24dba942587eca53aa3ddb10d71923d3fb92d04",
+      "fingerprint": "765dd30dc267c135f764be4611d17ea259d4156060f4a42d068059810074d28b"
+    },
+    {
+      "id": "case-0188",
+      "name": "real-all-amd64-allowed-native",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "def7e3cd798e6ea426202695eda8ed06c50313f8e816cc11f7cebfe11186999f",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0189",
+      "name": "real-all-arm64-no-implicit",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "d17dfdc281c65f1a97029ce27d8e156aace27473519bf1185921335cbba880a1",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0190",
+      "name": "real-all-arm64-no-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "26b8fda7ae18a1291a204752d3cca7f267d1bdb83694444a18341288ced7c58b",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0191",
+      "name": "real-all-arm64-no-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "288fbb3129bf72cff8f72e334605f9f647c38e65f680151d6aef1eed9b0488e5",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0192",
+      "name": "real-all-arm64-no-arm64",
+      "finding": "NO_VIOLATION",
+      "catalog": "d3b65e18754aab1910dae2a6a93f7c7cea8b6f05b8505749ed934fc534c6b8ba",
+      "fingerprint": "975cde54822761628bcaf94ca7ab356cd43011d1ef5d6cb0602a6ab1a41f1dd9"
+    },
+    {
+      "id": "case-0193",
+      "name": "real-all-arm64-no-all",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "9f7dcef9710e9639cc2ff90286777d29bc2ea3fc8b737c2c3375021ede632670",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0194",
+      "name": "real-all-arm64-no-native",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "2a4ac789c9f3f09506bf4edee04ec5091894a772cab2d5d696c88ffc58d677ef",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0195",
+      "name": "real-all-arm64-same-implicit",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "d35d8648b1df964452dc0bbd3142570c5cb8f6a11cad642173a25a2a9b4ab0c6",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0196",
+      "name": "real-all-arm64-same-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "1ec681f3710ea138ac79ee77e16d55c4d95bd223349e4e99f53f2167e87fd967",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0197",
+      "name": "real-all-arm64-same-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "e38ecf902fb35c087889a85e76fe6efd8b12a0d3cd438d07704574440d68a153",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0198",
+      "name": "real-all-arm64-same-arm64",
+      "finding": "NO_VIOLATION",
+      "catalog": "d6f0ae45a275fadb70a0caa1ae6317bdcb914403e5d09d358c1e95194fb940e3",
+      "fingerprint": "2dd375b9bad132c256ac26b811470dfde4d1c6753f1de732728b0f6a9d7398b2"
+    },
+    {
+      "id": "case-0199",
+      "name": "real-all-arm64-same-all",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "309ebbbd62cadf6c705a090915041055d55269e65502233836289f28ab1ff30c",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0200",
+      "name": "real-all-arm64-same-native",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "0791abc68c14d18b8e5069921c1702c2ae6faf2ec1be2a7caf44bd6212a07cb2",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0201",
+      "name": "real-all-arm64-foreign-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "2b8af40e2ba96e83c309ece965c9730696c6f2a12e661596ae632d433fdebe6c",
+      "fingerprint": "c1523e218ffeee1b4360ed893c05554debc04ec0bae5cf949575d4b81f3c86e2"
+    },
+    {
+      "id": "case-0202",
+      "name": "real-all-arm64-foreign-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "70168fbb162abbdff3a2786619d8866c8b3737da6038e8e3222130bb528184b5",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0203",
+      "name": "real-all-arm64-foreign-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "02e33564e2b4c4b1388a8ec4471013681312d0a18eb4d261ae47cf516ccd3d94",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0204",
+      "name": "real-all-arm64-foreign-arm64",
+      "finding": "NO_VIOLATION",
+      "catalog": "ebbefbc01f6a53c92254ce7d449c137814a7661db5cab3ca9507820f74cc4555",
+      "fingerprint": "0dda2c7d9d1db559da365a3afc9fb4b367b318fd8524d2cc3ef81780cba98e1b"
+    },
+    {
+      "id": "case-0205",
+      "name": "real-all-arm64-foreign-all",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "8feb1d24ce020caf8a6ef5c17bd30b9275b5d472e2d5ddb540d3d6e03c55f9c0",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0206",
+      "name": "real-all-arm64-foreign-native",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "20da900d4db1d0d370f6cc10c3cb4fad2f8fed4d57ac01ebd985dfa73158002a",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0207",
+      "name": "real-all-arm64-allowed-implicit",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "e1565669416e846951a985ceb465e0d68a8c91b919c827e853d32e8e5aa53486",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0208",
+      "name": "real-all-arm64-allowed-any",
+      "finding": "NO_VIOLATION",
+      "catalog": "d91d7ba39f11470bdda85e30a0d34747da99e2fdd532a43a2c7015ddd81b6e2e",
+      "fingerprint": "500c0085ea6597c80de9f1826cd6e6d4ff2becedd56cb23a7f240b1fb8681d4a"
+    },
+    {
+      "id": "case-0209",
+      "name": "real-all-arm64-allowed-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "c2d99f6a8d05a7086e7f98fadff29e54dc637377dd85fe20ad758d63831491e0",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0210",
+      "name": "real-all-arm64-allowed-arm64",
+      "finding": "NO_VIOLATION",
+      "catalog": "14908a9a2ad29da3823ee5354a83e7a8cd4823dccfd968fe933c47dfa596a221",
+      "fingerprint": "fe951ecfc9a47efdb218f8b0800c69e98ee5895a0daec20d8e3c09d9750a8818"
+    },
+    {
+      "id": "case-0211",
+      "name": "real-all-arm64-allowed-all",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "949cabb66076054b4b0885b751fd1c4f4756956fd674d83d15195d3dce6ffaba",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0212",
+      "name": "real-all-arm64-allowed-native",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "4cd5cb68018431e60127598ce92d4950725d577ca3924ed58353ba7188372952",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0213",
+      "name": "real-all-all-no-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "2316501276df1369b00633baebcf640e369c091e4a9709076503b5fd14f9a5fa",
+      "fingerprint": "1579203337586fbaeb8e83a013cd6a09c380b93b749d2074e3639e6745d16a6f"
+    },
+    {
+      "id": "case-0214",
+      "name": "real-all-all-no-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "080e6ca8f3ef8bfb798ddd60cc1557887c0b8243cc7a2577dc1c73e84ca544f2",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0215",
+      "name": "real-all-all-no-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "53923843b60a616763171cd9bcef0b7d575cb14ba209479c9a1c5c28edec461d",
+      "fingerprint": "3504c379a71b2c26b92cc1e5c4697a4ad4f47783c2d7eedbfef92c39ecb22aea"
+    },
+    {
+      "id": "case-0216",
+      "name": "real-all-all-no-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "0d8782377171df50a59e555304797ff7faa760e2f9ea85bcf1e5260c5fdfdb70",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0217",
+      "name": "real-all-all-no-all",
+      "finding": "NO_VIOLATION",
+      "catalog": "76366cf82dcea065d1a3f23803bb094750a09a4439e6c3aceb96615883f582f3",
+      "fingerprint": "bc724fefc1c6f0132c12e92264ff4bf7c9ae96347387223ade32f2a8f4043a11"
+    },
+    {
+      "id": "case-0218",
+      "name": "real-all-all-no-native",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "dcee532972fcd1d7f557e9b992030a3fe995de96ea1965ab7ee269c35d58b384",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0219",
+      "name": "real-all-all-foreign-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "02e13935b0fd51276d4f1dd561a8af1adc894126471746836d384e95e3310fc9",
+      "fingerprint": "e8daea245218d5800a6c5d16330c051d2e70a67f6fcdd0169898622435ba4907"
+    },
+    {
+      "id": "case-0220",
+      "name": "real-all-all-foreign-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "b9774606d5aa4c832ccbf2d9041cc88ff8767c0aebc23424fe50529ac09a5141",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0221",
+      "name": "real-all-all-foreign-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "55f37b24f87dd959dddd01cf0a81a83c8bbc4eba04e01a2bf9a672d32fb261cb",
+      "fingerprint": "6c92c60e2b7f59ba573e6e2f81187ec15922475cd7357f5b10f2b743aaf99293"
+    },
+    {
+      "id": "case-0222",
+      "name": "real-all-all-foreign-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "c8e379619e2b7182b348a36f7c386533bea6c04255162026068a83302efdbe50",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0223",
+      "name": "real-all-all-foreign-all",
+      "finding": "NO_VIOLATION",
+      "catalog": "83080e57d3fc1af0a92dbc61b39118c3fc1ae81592d8d17cbedb0c1f08f2cd5d",
+      "fingerprint": "d79b8c4632436d11a59a184f24642bf728c88497627ff98f2d308d6d1f3e1edf"
+    },
+    {
+      "id": "case-0224",
+      "name": "real-all-all-foreign-native",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "a691618146e53c0d54af529d67b633e8ba343b68cd9617ddee2bfd4dd76b9c33",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0225",
+      "name": "real-all-all-allowed-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "0e257200638050e9f13a569aa797bebd40558ba71dab462fc85baeab9f29f3f0",
+      "fingerprint": "3e959fc2bd09734b6df16643fd26f488d62bb037eaaf6c0bcd7be1214dfa333f"
+    },
+    {
+      "id": "case-0226",
+      "name": "real-all-all-allowed-any",
+      "finding": "NO_VIOLATION",
+      "catalog": "79504b2f7c2d658675bfb8ee5f3040077087321b9c8d22c708b03d24f33bc136",
+      "fingerprint": "456e83041da5da16313b950c4d61fcd5754b062df325fe45263d3bffeb53efad"
+    },
+    {
+      "id": "case-0227",
+      "name": "real-all-all-allowed-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "0a6bccd1b070f1bf417c16513b10649278f5d877efa804f84ec06fb008eee341",
+      "fingerprint": "a9683d0d2ba795bc21fd74e81a3f81c76cf4ab48db4a4ba7b89a10ff2c3ae043"
+    },
+    {
+      "id": "case-0228",
+      "name": "real-all-all-allowed-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "5640fe6c2d39efe8b58c3166fb786d47f5ba07c3851a732a03a15c692bdacacc",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0229",
+      "name": "real-all-all-allowed-all",
+      "finding": "NO_VIOLATION",
+      "catalog": "e1a5139b4a5a293fb15aeb7f58f0e47e4b51e29f22960a0a145a2a0b451b5aa7",
+      "fingerprint": "a8cd2433f2dd06d5893e149bd47a486d1da964d4bb77003b75e975ba059dc6f6"
+    },
+    {
+      "id": "case-0230",
+      "name": "real-all-all-allowed-native",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "e2c8434031edb2d0fcbda5961a3cc27b6ecb2af6f36272ee8403ca96a18cd10d",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0231",
+      "name": "virtual-amd64-amd64-no-implicit-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "5e669d44b05a14a42f91e84f3a233dfdad6c2cca754e6e08861cda14759afa4b",
+      "fingerprint": "b000040d03eccbe61040a782034ae860ae257c7cd2e4c77884ebcc902d0e278d"
+    },
+    {
+      "id": "case-0232",
+      "name": "virtual-amd64-amd64-no-implicit-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "361075e59e57b3f3dea37da00daeb92839fd9c3cf44dfa314783ff570b9fb6f7",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0233",
+      "name": "virtual-amd64-amd64-no-implicit-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "9998b45c551888b55db992f857e53cec16d681ddf6980a9cebb547e42d3eec39",
+      "fingerprint": "e2bcbe75b9bdf9008f92be564a1b89d2178f2c21e69b35a0a3dc2b055d00dec3"
+    },
+    {
+      "id": "case-0234",
+      "name": "virtual-amd64-amd64-no-implicit-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "ec071e712f0317db6c3fe378f040b338f6ae5704e76bbcdbbe359c145dded9f2",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0235",
+      "name": "virtual-amd64-amd64-no-any-implicit",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "dfbcfaee0677d131e1efa96734c5e0a4cb2d63362152de70e078faa42202c832",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0236",
+      "name": "virtual-amd64-amd64-no-any-any",
+      "finding": "NO_VIOLATION",
+      "catalog": "129c80e6bc8e9fcfe417868dada31bbe663b5127345ae64cc9279793370031cf",
+      "fingerprint": "ef8a45bd216c4efa747e43dbc15942d5593318ed0dbddba8ac093104e198a6c1"
+    },
+    {
+      "id": "case-0237",
+      "name": "virtual-amd64-amd64-no-any-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "68474a78054cd548b531b9af3d2a4e9d02a09b9d1341938829df550c8e910a8a",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0238",
+      "name": "virtual-amd64-amd64-no-any-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "7f232774a21969a3b82365f8343a4fca0d8f2cb93ff364544f865e78ea9486e8",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0239",
+      "name": "virtual-amd64-amd64-no-amd64-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "f2f3a8dc9191e5d1598f1df938086f659d3716b86c743d87205758ec6f94859e",
+      "fingerprint": "973c4961a210b133abefa4f0c7b06bd495ad99e56c4c088b4ca1ab74bce0cd7c"
+    },
+    {
+      "id": "case-0240",
+      "name": "virtual-amd64-amd64-no-amd64-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "c9787b57487e3ae5a6a6d0b7c2d1b8103d808de7d65b31f311b3e88431c47b51",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0241",
+      "name": "virtual-amd64-amd64-no-amd64-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "5222e87bf541c8c0f4b44dbfc265c735c3246857429ce29f1bf58d5bf50f2516",
+      "fingerprint": "d3899d54370d8d3b009d3daf6a9f247c8978c12db4053e4acdbdf2a1727a39c8"
+    },
+    {
+      "id": "case-0242",
+      "name": "virtual-amd64-amd64-no-amd64-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "939511d32d61c6411379889c4c1be1602dc0c49b55e9737e9ec5960ddf5a136d",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0243",
+      "name": "virtual-amd64-amd64-no-arm64-implicit",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "87ab7c437c0ec9b8eac4ae289c19008152ebce24576d66b5b02a1fbf7dea1892",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0244",
+      "name": "virtual-amd64-amd64-no-arm64-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "61d1d7f1520dd3dfb44c26414d420d4bee8575cd6117bffc6c2d1fdfc56d2db7",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0245",
+      "name": "virtual-amd64-amd64-no-arm64-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "8e2747a2c8fc465924960acc0944e692e06a9aba336fd2d4e601670105bb5014",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0246",
+      "name": "virtual-amd64-amd64-no-arm64-arm64",
+      "finding": "NO_VIOLATION",
+      "catalog": "33fe4ccd0c11142f9cfb92afd86f81d8ccf5475f6cb6f19ffda4769b3899b0c6",
+      "fingerprint": "8e5e18e886732bff59fd943e6239b1f85e1be7a0a945ced9e71b9f1f76114420"
+    },
+    {
+      "id": "case-0247",
+      "name": "virtual-amd64-amd64-same-implicit-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "d744be025adbfdc5213d1505f0be9e25767acf85dc0e6adb78adf2b614c8f1aa",
+      "fingerprint": "f3e486d457d2c916b0ebf604b9ec452a5a08c767c950f96e725287ee1c762235"
+    },
+    {
+      "id": "case-0248",
+      "name": "virtual-amd64-amd64-same-implicit-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "2b59a51b1fa445b55c147ae677a7c8ae11231b7f67bb323760b611a0b7943be2",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0249",
+      "name": "virtual-amd64-amd64-same-implicit-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "c4e558570405a213703dae26230a5c315bad9fb8df293f181ecf3a2954302f63",
+      "fingerprint": "72d5a93c99908e2b34675541875be2dedf472058b78510afcabf5c8747b57040"
+    },
+    {
+      "id": "case-0250",
+      "name": "virtual-amd64-amd64-same-implicit-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "ebd53672090a3fffeb8f925684431abf79f8c1752e9a1668d14b618c719587b3",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0251",
+      "name": "virtual-amd64-amd64-same-any-implicit",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "3390650ce7ae8ada4c625cfbdd8edb4157fdbc94b546b867d5c10897d95860ff",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0252",
+      "name": "virtual-amd64-amd64-same-any-any",
+      "finding": "NO_VIOLATION",
+      "catalog": "d3feb43a4df1a6c647df4df5d022db5d01fd13172e09d65d7f7a3a3828652b77",
+      "fingerprint": "852c9997c59441e879520c249c2b83c3c3c55f36a1febc852b40972129d8387a"
+    },
+    {
+      "id": "case-0253",
+      "name": "virtual-amd64-amd64-same-any-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "46dabc63cf5824c6292f2c5a0f9bb63e995119e9dae84201441eabb58c594597",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0254",
+      "name": "virtual-amd64-amd64-same-any-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "4ff5efcc357c2ef4c4cf4feb00010a35889e01cfd0e90190118fcd45a8ffbc61",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0255",
+      "name": "virtual-amd64-amd64-same-amd64-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "e7396b25d1417e5796df0df4dc1c6ff120375b3c52a76c5caa9d345f8b1d74db",
+      "fingerprint": "c1e6c89552e69cec8842d1bb164e6209e6583dcadaece064eb135372ff571c23"
+    },
+    {
+      "id": "case-0256",
+      "name": "virtual-amd64-amd64-same-amd64-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "30948a3638da285118f78abdd708cf41bb9e2bde0f293b7a5913a4d47b40e0bf",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0257",
+      "name": "virtual-amd64-amd64-same-amd64-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "fdc79efd057c6e36bde9989bdd38797647efea09793cf75fa18fa8a22938253b",
+      "fingerprint": "b25faee2833dfbd586a0acd2a546ede2b5768f9aac68ba326709524014ecb656"
+    },
+    {
+      "id": "case-0258",
+      "name": "virtual-amd64-amd64-same-amd64-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "cbdbef71b0874fcdfafa95860cd9bf8247c83d93af054a6b4427e3417eefaa31",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0259",
+      "name": "virtual-amd64-amd64-same-arm64-implicit",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "3bb14374bbbd586a1b9e0fa36954407993b3a3227c4a85e546f5fc89810f991d",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0260",
+      "name": "virtual-amd64-amd64-same-arm64-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "c0d971a06979ca46ffcd4b3781f526685bbc0ace0562c327bc5abd2aa0591982",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0261",
+      "name": "virtual-amd64-amd64-same-arm64-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "7187e5c1a58200d8d305197175386069726b0e4ee70f7c204a6e1ee1f5a72d48",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0262",
+      "name": "virtual-amd64-amd64-same-arm64-arm64",
+      "finding": "NO_VIOLATION",
+      "catalog": "fba0f2875a61ae629176aed6c2317757f4a9f987e6484b9f346f6a4e8533f1e5",
+      "fingerprint": "d69eb71b6fd1f6e683d8acd55608cc4e6af654a3885dd4a3016f734d6fc5c536"
+    },
+    {
+      "id": "case-0263",
+      "name": "virtual-amd64-amd64-foreign-implicit-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "c3282d71669193f4e4337930d1f12cc1c5ba93d9f1e6d19de3fb1256c9a03f4c",
+      "fingerprint": "6499e613b55d1da9a9285310c990c1db77613b10d2a7eab8a34df6b481a266e6"
+    },
+    {
+      "id": "case-0264",
+      "name": "virtual-amd64-amd64-foreign-implicit-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "8f69faa041a226d7f5816b59800f6120110f9db05973975555481bd3053cf713",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0265",
+      "name": "virtual-amd64-amd64-foreign-implicit-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "0e8d83ee2b7518b3ae88854f8d1b3bef793c703d51cc5374c8250d5024574a94",
+      "fingerprint": "afc47fb50d173647c0949d84cabd435916c828344b203e096cf267926353cd2a"
+    },
+    {
+      "id": "case-0266",
+      "name": "virtual-amd64-amd64-foreign-implicit-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "92d004e1f554da39acc976446923c3c3909b717807bd3c44e1b333bd4a1a2705",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0267",
+      "name": "virtual-amd64-amd64-foreign-any-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "3f42111e6b6a100b64668588b47c18919106be63f74eac50129c7b4493007134",
+      "fingerprint": "d159abdbe167ecf7d1976bd76686277f58bf3b55d55ae1e214dab036cc0caac6"
+    },
+    {
+      "id": "case-0268",
+      "name": "virtual-amd64-amd64-foreign-any-any",
+      "finding": "NO_VIOLATION",
+      "catalog": "933e1303c071cb13f26a34a99f01cfd5cf7d24a6783d988873777ad39a21c296",
+      "fingerprint": "b8ba6dd8ff5ba5695379d4cddb98ca8927dc932102bf06a02c742a146bfaf271"
+    },
+    {
+      "id": "case-0269",
+      "name": "virtual-amd64-amd64-foreign-any-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "3757a97c4d01103d7be8aa52e665a6a11661899b249084a88e6dd8cb4a8c7158",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0270",
+      "name": "virtual-amd64-amd64-foreign-any-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "f637bc8d222e3e36d7999b32702cae2ad904570248909d42a7071cadbd61598f",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0271",
+      "name": "virtual-amd64-amd64-foreign-amd64-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "c9afbfa25e56a5666adb8d9ff76c5ac044252715460031e9c7b1ea7520b5f7fe",
+      "fingerprint": "6003376fc31e76dcb6e23abe13696af756176ac61a10193885984a00fb9d2a1a"
+    },
+    {
+      "id": "case-0272",
+      "name": "virtual-amd64-amd64-foreign-amd64-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "47bbe423491f2e8a24c7259ef5e9df4252e60d9e2ff0737304504292b8179b2a",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0273",
+      "name": "virtual-amd64-amd64-foreign-amd64-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "db9b903cb36865aff222d40a6949a18dba1bce2f427d5092e500713263f7f449",
+      "fingerprint": "d763179d78b285311112e2ada07b0c1c1a3222add24dc050bd8b0f64f4faf588"
+    },
+    {
+      "id": "case-0274",
+      "name": "virtual-amd64-amd64-foreign-amd64-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "54aae7b9005e6d384849da0b07a79558ecddb1e4b675f6fce1da57dae486efc4",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0275",
+      "name": "virtual-amd64-amd64-foreign-arm64-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "aa8e26a2df1ca3127f78b783c6c6a4c9d1b111e3fbdddb65152ffad3bd44abcb",
+      "fingerprint": "873fe49c505ad7266be8bc868eb6a1a5ddf7dc45e4831621f09fe4b84caa6e27"
+    },
+    {
+      "id": "case-0276",
+      "name": "virtual-amd64-amd64-foreign-arm64-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "09b00f7771d5508b3ffaec7b2801f5ad25684fc30acc6b199d31a858ce4c3390",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0277",
+      "name": "virtual-amd64-amd64-foreign-arm64-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "5eca8b4b47f408f9c39a3468e6f90d5a499b7f296a13a35e191d95965bbed966",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0278",
+      "name": "virtual-amd64-amd64-foreign-arm64-arm64",
+      "finding": "NO_VIOLATION",
+      "catalog": "f018b973197b3ee06e0c0703d95eba44f4ca876bf5db08345bdb79bf1e9fb944",
+      "fingerprint": "7dafa12811fd20ca39640bc07aa4bccb191b01e3293baff4bcf21065a501f2f2"
+    },
+    {
+      "id": "case-0279",
+      "name": "virtual-amd64-amd64-allowed-implicit-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "d6ab22af240b7232a0f3aa0a34e180e75075715da18647f2b3bbb2885f12a17a",
+      "fingerprint": "c48a0543f6b4d43bc8ec986f57b9029460704356f5f38ae735d2b111562f3f4b"
+    },
+    {
+      "id": "case-0280",
+      "name": "virtual-amd64-amd64-allowed-implicit-any",
+      "finding": "NO_VIOLATION",
+      "catalog": "2305f2b42ef685c948effa7d2837bc1fc76ea58c8b69cae0b48eb69a4853e2e8",
+      "fingerprint": "795c09e20c9c881518a8e6051f048b0379585c0abf98f41a843e8a6d53da23d7"
+    },
+    {
+      "id": "case-0281",
+      "name": "virtual-amd64-amd64-allowed-implicit-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "6b2df9507b7a15cbbbf3b257e73b184e3b8a0e2d8c2df1174b2c8a61f2bc8acd",
+      "fingerprint": "173c7631358aa491d4d32bfaae09ad22de58ad7440227a90b070667fc6faa17d"
+    },
+    {
+      "id": "case-0282",
+      "name": "virtual-amd64-amd64-allowed-implicit-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "79e03678e4cb625a677bda49efc82948e7a96fafb203f3554122181a2c964ee1",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0283",
+      "name": "virtual-amd64-amd64-allowed-any-implicit",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "3fabf2092e474fdc45cd9c2cb9bc453c8139327d2b2239422a921750e9a0e754",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0284",
+      "name": "virtual-amd64-amd64-allowed-any-any",
+      "finding": "NO_VIOLATION",
+      "catalog": "290e1ffab10e06994bf28c271aa8fc1e958c66e732b5c572e361761ae5b040b8",
+      "fingerprint": "c965896d3fbf5615220cb3bbaf69a1324ee9f1dda856ce2aad3346fd826f3f31"
+    },
+    {
+      "id": "case-0285",
+      "name": "virtual-amd64-amd64-allowed-any-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "6c51433537c772679daa0b4efab7cecf89b94f3dad2f6447a3f40123c32ea106",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0286",
+      "name": "virtual-amd64-amd64-allowed-any-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "f9c49dd21328ace9ddb5b12fcdb4b47a9944b570ca69a518931d30239feb7bc3",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0287",
+      "name": "virtual-amd64-amd64-allowed-amd64-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "80ed7c3b598793724e7614d70d04545a4508df298d1f63e3ac2888aecae48acc",
+      "fingerprint": "2d77652b8645a99789200586e04445a6e1056048fe6330e44e075418fab39f50"
+    },
+    {
+      "id": "case-0288",
+      "name": "virtual-amd64-amd64-allowed-amd64-any",
+      "finding": "NO_VIOLATION",
+      "catalog": "2211737f4fffd624f6195ab255dcb792b3089d7659d1e31155487e7b55eb6cad",
+      "fingerprint": "7e9e5166668776bab25dc32ed1c4cc0a45a75a1673e9fa421bebaa1e9748ad66"
+    },
+    {
+      "id": "case-0289",
+      "name": "virtual-amd64-amd64-allowed-amd64-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "2d3861ecc46174d7bf86e3345e7b1052c1fef0dfa10f3ca74e5cae5254412a5e",
+      "fingerprint": "07652e1de015ad275e74a57f6be5d2cddf8cb4a62c988e09a57734604417e2af"
+    },
+    {
+      "id": "case-0290",
+      "name": "virtual-amd64-amd64-allowed-amd64-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "461539d8ded8102bbc202aaa318ea711d82492972ac7ff3fd9f4f116372bd305",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0291",
+      "name": "virtual-amd64-amd64-allowed-arm64-implicit",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "bc3afed9cebccf8b21b7e95084ec416324857b741360e762eea57ad586474175",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0292",
+      "name": "virtual-amd64-amd64-allowed-arm64-any",
+      "finding": "NO_VIOLATION",
+      "catalog": "53673a4d64eef282a19216f92db045a527bd7362c4ce1d8f0d28217a6708a799",
+      "fingerprint": "485aef4fca4c6b5c4d85dc7f1f86aca10842d96ba7bda712274ce7dfbbebf9b1"
+    },
+    {
+      "id": "case-0293",
+      "name": "virtual-amd64-amd64-allowed-arm64-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "3575107c99bafaec7f47fb656230168cc4b4efdb6f14bc2d3def9dd48b99a271",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0294",
+      "name": "virtual-amd64-amd64-allowed-arm64-arm64",
+      "finding": "NO_VIOLATION",
+      "catalog": "4ece427c97fdb312fba2e4b84ecb33a4a6572c315ab0249cbd64a011474f3f78",
+      "fingerprint": "77f554c570b6e7db2ae0bb40dea218a5a1420e3ede827e44724ca27392d7a523"
+    },
+    {
+      "id": "case-0295",
+      "name": "virtual-amd64-arm64-no-implicit-implicit",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "6ef4e6dc54c4369e077c51fff8e6e3ab7313cdbf1cb87382d51f1525b1cf6189",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0296",
+      "name": "virtual-amd64-arm64-no-implicit-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "c8b4f848ab6beae541497d172d5974ed890f296fdb66bf00bdcfff8fa835c2d0",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0297",
+      "name": "virtual-amd64-arm64-no-implicit-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "522b4a11bdbe3363d3aa5758648c39a39b1df75c61a298330d83b33f35a66aa7",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0298",
+      "name": "virtual-amd64-arm64-no-implicit-arm64",
+      "finding": "NO_VIOLATION",
+      "catalog": "58685f35148581e18e92a2b653ae5d81740228d9895b87a3c726835a1fdd48e6",
+      "fingerprint": "5d497720212a28699688fb0f783587adf8401442e6ae04c048e2adccbb117530"
+    },
+    {
+      "id": "case-0299",
+      "name": "virtual-amd64-arm64-no-any-implicit",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "5acc9df7e80c684ae3dcb2bfa7c3dd678e5e1e46f87b8273aa72a76229f451c6",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0300",
+      "name": "virtual-amd64-arm64-no-any-any",
+      "finding": "NO_VIOLATION",
+      "catalog": "45ca60cdef730c91123088b3a849a8db8729d67624ec2a3db585c46b4b900172",
+      "fingerprint": "bb6ba3296c8cec8c57cf92a0b23eaad6c0cb75bad3cb8b7fa5db02f38490e808"
+    },
+    {
+      "id": "case-0301",
+      "name": "virtual-amd64-arm64-no-any-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "890bf0db7b8d3ea9eddec64d7533586d944879fe14e729cb123c7fbd93aed77f",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0302",
+      "name": "virtual-amd64-arm64-no-any-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "ce341cbc7ef3543e61fe43aa2eb87a49352eebb8c244e38b442d67c139fe2107",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0303",
+      "name": "virtual-amd64-arm64-no-amd64-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "6b88159592dd9c63aad18d20d20a2e46db70f787f2882be353df82b8c32b767a",
+      "fingerprint": "ab8a983519c073830eea843b416f07e06e5d204aab902207f4e8f2f5b64d3c85"
+    },
+    {
+      "id": "case-0304",
+      "name": "virtual-amd64-arm64-no-amd64-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "8fe6fce3b29394fd0dffbbc6f6d3b710753abd58983c5545786a288f87e151ca",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0305",
+      "name": "virtual-amd64-arm64-no-amd64-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "0326ac8d596ffb1a5e78b0449f6419efc79d6638fae5848fd266263dd50c5506",
+      "fingerprint": "7267c673c726e2b802202f4aadcb65c799bcf0542ed68b0768cb694f9372bcbe"
+    },
+    {
+      "id": "case-0306",
+      "name": "virtual-amd64-arm64-no-amd64-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "bbfc611fac9d995c62e95ffdc8e538846504bb919ba91221a2de1e219d60e16e",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0307",
+      "name": "virtual-amd64-arm64-no-arm64-implicit",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "1721654ca92f3d8dc1397169165bd1bb347762a3246e79a4e1125012d4e65971",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0308",
+      "name": "virtual-amd64-arm64-no-arm64-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "2a43caba04e0ba184055dae89f7e0d35ecef931603246dd590fdb912086e885a",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0309",
+      "name": "virtual-amd64-arm64-no-arm64-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "f29d8631b76fc439930999281d1a89e1a8f138e2671b501b36083f46c35b7429",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0310",
+      "name": "virtual-amd64-arm64-no-arm64-arm64",
+      "finding": "NO_VIOLATION",
+      "catalog": "76c39285391e725cb90661f71fa3d4fd3b6f3b86ab7b59fe5217dc37548d0337",
+      "fingerprint": "d4c10c74da51dbfa7a80fd27bc50aa3800f97168e579beb12772f02fa4c8867e"
+    },
+    {
+      "id": "case-0311",
+      "name": "virtual-amd64-arm64-same-implicit-implicit",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "a56b40833facb2e5dbb16f7bd75eeeaf89f817ba8ed9cb43de06f493cb5e80fa",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0312",
+      "name": "virtual-amd64-arm64-same-implicit-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "fe378f89c68f6a44f6196630ee2e1064148f41367651dffd9acf50646de9b41b",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0313",
+      "name": "virtual-amd64-arm64-same-implicit-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "e8e3cc97c3dedeb71fa7654364e9bc67087cd93f0e46bfef9e7c12029234b0f8",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0314",
+      "name": "virtual-amd64-arm64-same-implicit-arm64",
+      "finding": "NO_VIOLATION",
+      "catalog": "c768c4eebc6d2fa0fe569ad21d682d43dcbb69d0370d1fc9a1f8f5d8b9e7a4d7",
+      "fingerprint": "4dbfbac13344921ede21bf34bf566223d26efddfc42c0e842992a4e0b78c8229"
+    },
+    {
+      "id": "case-0315",
+      "name": "virtual-amd64-arm64-same-any-implicit",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "60dab2b3cf9a96ddf9c867b88bc4a39805df1bb8202cfc7ccb7deb1f74f044b5",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0316",
+      "name": "virtual-amd64-arm64-same-any-any",
+      "finding": "NO_VIOLATION",
+      "catalog": "20d04129c9829b0f0dddb4c04cf71b4816f807582e91306a48bc63ea196d1ae7",
+      "fingerprint": "156e1ded0180bdaaafe0793683aca427e699f42694e3a67f19a37fafb7be68ec"
+    },
+    {
+      "id": "case-0317",
+      "name": "virtual-amd64-arm64-same-any-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "4b4f398bef0394537d3cacb02541bcc958646881cc3f85b5d04c1814f4c0d96b",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0318",
+      "name": "virtual-amd64-arm64-same-any-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "5f17bcc9039ace5847c1f76b31115f1a89e9be4370e9897d23b2a89e6f9b4ee6",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0319",
+      "name": "virtual-amd64-arm64-same-amd64-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "a6fd47c54f727d59285c94658ab50cbfd4ea4d3725f141a6389952b1a28c561b",
+      "fingerprint": "d0f161ad88e6df2279efab539f611b18c7620731987d7854efd39b5799519bbf"
+    },
+    {
+      "id": "case-0320",
+      "name": "virtual-amd64-arm64-same-amd64-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "6c901396d2d2ff880fe97ea746a16165cd4ecab1616efc92f8c6f62b468da9f3",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0321",
+      "name": "virtual-amd64-arm64-same-amd64-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "e9d80b6f712b15ba83e6824be482d1434f58a19f301c32dad4f501ada5c4ab53",
+      "fingerprint": "d879c9c6d8c6710462514647ea78002a70ef71492096927dd7c4fe873682cd43"
+    },
+    {
+      "id": "case-0322",
+      "name": "virtual-amd64-arm64-same-amd64-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "0a08122713531286cdef5449bb037eae316d32bd6110cf6c67716e49bfd6d46a",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0323",
+      "name": "virtual-amd64-arm64-same-arm64-implicit",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "e9dabcc4d45d2bea44edf06b35fa480741b6cb38daf7e78883d884a6632de8a1",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0324",
+      "name": "virtual-amd64-arm64-same-arm64-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "1d5a716da8a333a98a61ed5ce4db3486013dc89d4a70ca1ad7b3f64419dc5fe9",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0325",
+      "name": "virtual-amd64-arm64-same-arm64-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "c0e312747a0285c7ebb417960972d4576b8fb902cf246187efd39de48712de76",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0326",
+      "name": "virtual-amd64-arm64-same-arm64-arm64",
+      "finding": "NO_VIOLATION",
+      "catalog": "a59833606e374e676d25b7e640e4317dec4ec871c1ca29329e53f4f90bde8ca0",
+      "fingerprint": "f245db058538ba67dc749dd934802bc288d6794775e36fad4dcc4228105786e2"
+    },
+    {
+      "id": "case-0327",
+      "name": "virtual-amd64-arm64-foreign-implicit-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "6812c7ac3d184246a200295f10a7197cd4cae35d81dc74d2b04995cebf1fea62",
+      "fingerprint": "447fc148e167b2441ddcc886b8ab2f86e7a3f60be7ff3fad37086c2f5a1d62f0"
+    },
+    {
+      "id": "case-0328",
+      "name": "virtual-amd64-arm64-foreign-implicit-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "57b4e7785b97e3c63106367cce85b349d83af7b4c66b11579b2c8224bdf08282",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0329",
+      "name": "virtual-amd64-arm64-foreign-implicit-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "b8b7bd3c831fb1016832434678ea59061b702157ae7ba8a71cc996dfe5f77765",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0330",
+      "name": "virtual-amd64-arm64-foreign-implicit-arm64",
+      "finding": "NO_VIOLATION",
+      "catalog": "ba669ee7109b716ba6d53140eb8b7954102d2a0076be24e540c605073e824060",
+      "fingerprint": "43127de680df8875e0a1f80b49a1c8dc26386b5393ca27dd0754ec8ab3de543d"
+    },
+    {
+      "id": "case-0331",
+      "name": "virtual-amd64-arm64-foreign-any-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "74f7d7e26bc6824367a2be566c020808892de4a9da50ab5fcf0f303a08bba0cd",
+      "fingerprint": "e5a717817a188a041bd4b018d26a6c7616efee78f2b77ce514a9e8bdfcd36d43"
+    },
+    {
+      "id": "case-0332",
+      "name": "virtual-amd64-arm64-foreign-any-any",
+      "finding": "NO_VIOLATION",
+      "catalog": "243e858b8c3aa8016850aa5b94e750c4e64aee55b4bb5d2f3c4bfd6df5a10066",
+      "fingerprint": "d4c01381cc27b62fb0481c757b7f0eaf0eb96a68f5c4e194beeeb5f144ab87b0"
+    },
+    {
+      "id": "case-0333",
+      "name": "virtual-amd64-arm64-foreign-any-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "8ae4d72a32a30c08c5cfc0497f73a6527ac4a8f7e8506729cb0afd36efa6d7ec",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0334",
+      "name": "virtual-amd64-arm64-foreign-any-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "0c334ad49de1cc49f35ab2051903ac3e9a78943d2990e945fc7e7aa49c454552",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0335",
+      "name": "virtual-amd64-arm64-foreign-amd64-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "7ba06e1ad4fc6e781ad1205d700efc8ac8b9b02871aea9aac60e719e8b84e934",
+      "fingerprint": "3c9da6e80000098c5c78a075e1f47938b7badb842d522d64e23e0f167633a8bb"
+    },
+    {
+      "id": "case-0336",
+      "name": "virtual-amd64-arm64-foreign-amd64-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "aafd4961ce38cfceb91fb2dcb4a547de9450bc1a6d98e210038911b4d81bead7",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0337",
+      "name": "virtual-amd64-arm64-foreign-amd64-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "c5261a227ab2c5f3c83922bdaf69dbd803373ada359677d251d42518dbab7c0f",
+      "fingerprint": "9ec6a17629289cafe750eaa94bc474a335fb2918565a52e6400c324ac141032f"
+    },
+    {
+      "id": "case-0338",
+      "name": "virtual-amd64-arm64-foreign-amd64-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "6c84c374ad688de4aa0c55476e6c43d5910d52323450094ab07de740cd530283",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0339",
+      "name": "virtual-amd64-arm64-foreign-arm64-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "97200a44ff95268c0e87c59bc491ee784a610760524802267dd56948b7c46a69",
+      "fingerprint": "26e5eebeba825bab033c9f67687ab52b82db834bf63a3f4e0e3aa6134dd42c23"
+    },
+    {
+      "id": "case-0340",
+      "name": "virtual-amd64-arm64-foreign-arm64-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "6dde635a0eb7960defb4ca3a624e417b08a0367519633e4c226f496163ebe61f",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0341",
+      "name": "virtual-amd64-arm64-foreign-arm64-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "e761e0912f8ed809a6bc4dfe1c1278fc0e481c8cc391be585e0551a0060c850e",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0342",
+      "name": "virtual-amd64-arm64-foreign-arm64-arm64",
+      "finding": "NO_VIOLATION",
+      "catalog": "40b5b1ec9e04a607e993f7f5df484814d86be929a6b530cbe1bd3ce10f886db0",
+      "fingerprint": "d9cad1d79ebd49bd0451a3a718feee76b813fe9de6d7c589c96de78ffc22a44a"
+    },
+    {
+      "id": "case-0343",
+      "name": "virtual-amd64-arm64-allowed-implicit-implicit",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "f0c716797c407c04d83959a899ec3126de440f336675ec0b221b17cf076e8618",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0344",
+      "name": "virtual-amd64-arm64-allowed-implicit-any",
+      "finding": "NO_VIOLATION",
+      "catalog": "a672023b8604771334254fa30273a604637b7b66ce64dbe6446e9c4ae6363d8d",
+      "fingerprint": "87aa165575de91dd9fdbdd1472afec838fd563c86523ac5afd414575c382921a"
+    },
+    {
+      "id": "case-0345",
+      "name": "virtual-amd64-arm64-allowed-implicit-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "4d8058476ce80dfe985536793c5d600790593f0009686601ec3d438142031bb4",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0346",
+      "name": "virtual-amd64-arm64-allowed-implicit-arm64",
+      "finding": "NO_VIOLATION",
+      "catalog": "274dab47a35da540ca2833f412cd9b490e8c4a385f61ceb304a933d535d1654b",
+      "fingerprint": "38c0889105a8045300d3c82d59349d2efca0e4fbe0b56e5786c04ce8aaf3a58b"
+    },
+    {
+      "id": "case-0347",
+      "name": "virtual-amd64-arm64-allowed-any-implicit",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "e1cf0b7694dfaa524209a76a286787c529a6d136fa64f15067c7f52e0aec6203",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0348",
+      "name": "virtual-amd64-arm64-allowed-any-any",
+      "finding": "NO_VIOLATION",
+      "catalog": "6bb0e80e937dd237e1bdff965d3d2d4956c69be85082121d2930e6ba5fcb7280",
+      "fingerprint": "c3f6e29884d9418b6781d320e6fd630e50f636ccf8b362d8dc8fa264f5020124"
+    },
+    {
+      "id": "case-0349",
+      "name": "virtual-amd64-arm64-allowed-any-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "509c859d088f6e031b14358f4e7cabf53f26952878d4e2c85d14ad42a8411c6b",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0350",
+      "name": "virtual-amd64-arm64-allowed-any-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "bc5ceba28ff11fb78714e1231d17bb85397a1a9a68a91c97bbba3873bd3f8848",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0351",
+      "name": "virtual-amd64-arm64-allowed-amd64-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "32c49b5b842e044843d21e3e09262acf2e85034f3e6515cdd79aa4151f58ec05",
+      "fingerprint": "0a2686af36607f92fb01d0244528cde01210566227a9fec5f2e8d46743b1dc76"
+    },
+    {
+      "id": "case-0352",
+      "name": "virtual-amd64-arm64-allowed-amd64-any",
+      "finding": "NO_VIOLATION",
+      "catalog": "5f0b32ace60451d635da57457ca0260f0d14143c604e1af36432075f5d6d0733",
+      "fingerprint": "9f274d4038b7f3b46a5fb6129c115fea4c8d2f6250ff571d240126ecbc40a6b1"
+    },
+    {
+      "id": "case-0353",
+      "name": "virtual-amd64-arm64-allowed-amd64-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "a8e2f6ec5571891be6ca2332985fa3ad3591a1e696c5c8d47cbb346f929da190",
+      "fingerprint": "31e258f0745aa28706736ebf43b673664c5f3990bf0e0bbd818ab9f7367083e4"
+    },
+    {
+      "id": "case-0354",
+      "name": "virtual-amd64-arm64-allowed-amd64-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "e85f52457d7236aeaee79d2d0f08a9aab269ddb8b8d8fbd0d5beac3f9f747e2e",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0355",
+      "name": "virtual-amd64-arm64-allowed-arm64-implicit",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "9e5e5cf8a6f132b9edbca340e46425c1360754787d7534b3f65eacd43fd858cd",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0356",
+      "name": "virtual-amd64-arm64-allowed-arm64-any",
+      "finding": "NO_VIOLATION",
+      "catalog": "78e4e888408fc01e937ab44ec73836abaaf6d78f6ee34d2bb61a7a717bb8a440",
+      "fingerprint": "9be0e2da62529d35fc2d6980f0038e8065cda8bae074b829bafa8090bab3c830"
+    },
+    {
+      "id": "case-0357",
+      "name": "virtual-amd64-arm64-allowed-arm64-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "496af1b2eb9089c1d27066e983b835268372b108802d817f7535cb0ab7c5ac02",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0358",
+      "name": "virtual-amd64-arm64-allowed-arm64-arm64",
+      "finding": "NO_VIOLATION",
+      "catalog": "f1b980149a887684e04f828ec83aa244d51c20c0b3435920a226a0b5c08aef77",
+      "fingerprint": "3e7487958931bbbbfa3faa823b391260e22f49cd51c91b87e0ddb5944915f791"
+    },
+    {
+      "id": "case-0359",
+      "name": "virtual-amd64-all-no-implicit-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "ca079fb660803e96ec2aba7d663571ad04ea438d3606fb3699c2356f8cc6ad87",
+      "fingerprint": "a57d55049b7129e9f9eb1776840a3222a42e5a249808d07673a39630b9cc14b6"
+    },
+    {
+      "id": "case-0360",
+      "name": "virtual-amd64-all-no-implicit-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "e7349dc216cf9c97d23c20d9c45d9b8057504875dbd274c3957beb9a3352e445",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0361",
+      "name": "virtual-amd64-all-no-implicit-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "cd2af48ddb7bd154c4a32b234d439f9b0829a9c14facd5911ce31e62c1f3e727",
+      "fingerprint": "1ccd53ae44344871df71a05486659a0ac7b9f774e76adb23270ae90e68d176a3"
+    },
+    {
+      "id": "case-0362",
+      "name": "virtual-amd64-all-no-implicit-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "0f04b68a58ccd6dc77eff6eaaa422b2c06ede03f6c12bdf01f9c1fe637f8dd33",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0363",
+      "name": "virtual-amd64-all-no-any-implicit",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "0b6a6f37ec24cc8b167ab04e1a4161d149f82fbea391f5b94ab0a0df2006fdac",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0364",
+      "name": "virtual-amd64-all-no-any-any",
+      "finding": "NO_VIOLATION",
+      "catalog": "aebe800990134acd6c0bbb12f1dd8710929c8d0ae453e6465d065b5a3de77f14",
+      "fingerprint": "c07bfc195e9aecb49a6028273546501c0d367651c2cb2e4e4a522ca3e3c66f81"
+    },
+    {
+      "id": "case-0365",
+      "name": "virtual-amd64-all-no-any-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "b9bc5db2b3afe41b7ca36364be1cdd1d44f732bcee2c10e0eb70090a6c5481ae",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0366",
+      "name": "virtual-amd64-all-no-any-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "b68a6c4b52bd0eed255201b385a2f5f34bd9bd73e7135a422ca61a31ad8e9003",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0367",
+      "name": "virtual-amd64-all-no-amd64-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "0f0c90e3db412229959aa6981697c08c36ac2eb44a17e71f47d9682aeaacc752",
+      "fingerprint": "5654a0c83745c17d267f9117ccf32392b1fe3ca1c496fa41c9adaaef019b1379"
+    },
+    {
+      "id": "case-0368",
+      "name": "virtual-amd64-all-no-amd64-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "54e40ea2d3118e02a848d5d17a52b62bc275df9a197e4746cf9ee358a3fd4584",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0369",
+      "name": "virtual-amd64-all-no-amd64-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "f536df30b1465c0fe5a6e6b05b00c6ac66033eff005b0e4ff1eaa2faeb867acf",
+      "fingerprint": "981e9d136b07d996fbb33379d7a2c2baa85643fe528b388de398b6c4ceda1f0b"
+    },
+    {
+      "id": "case-0370",
+      "name": "virtual-amd64-all-no-amd64-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "a8c216fdf164e82aa5c67a034634f61d9fe69cea32fe8a3cecce67afefdff5e6",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0371",
+      "name": "virtual-amd64-all-no-arm64-implicit",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "5ad8fc7845d16ac192466adbc01d522082f29f09bd5abeea13499e8d3f661c8f",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0372",
+      "name": "virtual-amd64-all-no-arm64-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "00852fe6bb3643f24efae58805cb07a18226c18d3506354f601e7054c24ed251",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0373",
+      "name": "virtual-amd64-all-no-arm64-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "eda1189e11bdf963fe3f2d890ea2a558a5fe6327a1df6e861db67751ff1d1c0d",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0374",
+      "name": "virtual-amd64-all-no-arm64-arm64",
+      "finding": "NO_VIOLATION",
+      "catalog": "68dcc6da649548f0827199c059ba49d2ae571197f08ac8a46a0a3f51ac80bf75",
+      "fingerprint": "b8bab0edf7bc2485bc5b25964abc8884bde9d3ceaee587d494e9cbc0360ea8a8"
+    },
+    {
+      "id": "case-0375",
+      "name": "virtual-amd64-all-foreign-implicit-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "cd106c004691ee9ec2af641edc77de8de75a2718c880bfc906ccef7d17cd36fb",
+      "fingerprint": "7a12b52f114ad534b0484a510c68346f97108512405374f38e700be2a3df83ec"
+    },
+    {
+      "id": "case-0376",
+      "name": "virtual-amd64-all-foreign-implicit-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "828c438acf6e34a5cd11e7d8893bc611c1d16c2f9b6d4f67358582583b56f198",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0377",
+      "name": "virtual-amd64-all-foreign-implicit-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "6bbb793f07c4c5aa8a6b5230d49577eb3844ec740ee99796f8d5f8745e0aa5a5",
+      "fingerprint": "55b21e027a575d5fb50730bbf284472646201d991550ada6b4b4ccbdf9b4d070"
+    },
+    {
+      "id": "case-0378",
+      "name": "virtual-amd64-all-foreign-implicit-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "7628f1a1da1200e8157e65f135ccb486d938387e9ab3dedb780771f58507460b",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0379",
+      "name": "virtual-amd64-all-foreign-any-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "a86e45b97c8dceec6fc3d5c852cf4a7f3ed1774e9a29c4757411249f0858ea38",
+      "fingerprint": "ec4983163327b14e5b11d8ddd83986d606fea0a5c81656bec3cf0763c67b21b2"
+    },
+    {
+      "id": "case-0380",
+      "name": "virtual-amd64-all-foreign-any-any",
+      "finding": "NO_VIOLATION",
+      "catalog": "4a82df6c7ccee8d6b4df3b5016a23a7a80e330f44e47797ba2dfbf57cb5fb6e3",
+      "fingerprint": "815d55b79117a534a34f373b90ab9e22c0e8a70c81de224d4a8d30f5fd4f1fe9"
+    },
+    {
+      "id": "case-0381",
+      "name": "virtual-amd64-all-foreign-any-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "86fd731adc3cc611f3bfbbbe0453f14ad2b2086b5e0e8867964e8061290a21f9",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0382",
+      "name": "virtual-amd64-all-foreign-any-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "9d644507ae50fa64ee8b52b16e4e4b36e094122b36083fb2386fc513f9224dfa",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0383",
+      "name": "virtual-amd64-all-foreign-amd64-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "3ff66fd3ef705d250c968b9fa6a08b83637f9bc8832d1e2344d8f7e85a8cf0ea",
+      "fingerprint": "5f8b7fe57d14bfd43a6d23e4bf10c5cda6e1823349a67b1722f9f86a3e9a7318"
+    },
+    {
+      "id": "case-0384",
+      "name": "virtual-amd64-all-foreign-amd64-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "3727cfc012d6f5f72e8f0bb45d1e0714024db34e42f4fd7f4f8f3e90cb8990a0",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0385",
+      "name": "virtual-amd64-all-foreign-amd64-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "c656c4b86b9b0e965a45b8380c86b194384d3a5a6fff3e03c1d79f5644f62b99",
+      "fingerprint": "eb359bc56a4eeb358ed216d91136636d70ff22b23f3aa23b0de5dd9439de7388"
+    },
+    {
+      "id": "case-0386",
+      "name": "virtual-amd64-all-foreign-amd64-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "edf35a7db6f80e73e94c48ac330e6bbc5696b727668bc8971850396f79df9e05",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0387",
+      "name": "virtual-amd64-all-foreign-arm64-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "0c6a73892946b61daa2ea2d97d3866a8b608977f07b3dd84761432486acf6856",
+      "fingerprint": "5f2db328dfc255384f57814c8447a843331836e9624613d58f863fac752cbe0c"
+    },
+    {
+      "id": "case-0388",
+      "name": "virtual-amd64-all-foreign-arm64-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "1f6e144a390dc57b693d73f3b57314bf496d0caca1e22a4a9731709c62d78afc",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0389",
+      "name": "virtual-amd64-all-foreign-arm64-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "3c3f599f5a2f663decec561e4201411e22043bb6811273534990310394483ae0",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0390",
+      "name": "virtual-amd64-all-foreign-arm64-arm64",
+      "finding": "NO_VIOLATION",
+      "catalog": "bd02f1930e501899da8f0e56913208416c6ab7fe7b5511d9aa50d876c5f449fe",
+      "fingerprint": "51b482946ef65c8e42d93b79ba1f24e8cab2688a59ec4bceed4e68ee8a0fd1ec"
+    },
+    {
+      "id": "case-0391",
+      "name": "virtual-amd64-all-allowed-implicit-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "784df01c843ba7818593283d57b9852cb4e58d1dde55db8c09eaa7a7305e89d0",
+      "fingerprint": "bf64b5b7df178f8b35ce621cb52e42ae0873c68364055e754c916deb304d3217"
+    },
+    {
+      "id": "case-0392",
+      "name": "virtual-amd64-all-allowed-implicit-any",
+      "finding": "NO_VIOLATION",
+      "catalog": "d422e34e00aae59f54338b2a393e86e7e1c385ddbc9e7055386a1a2a40ddc8b8",
+      "fingerprint": "a464a9c4f5ed25f551080c073973e6d4f011a90aefddb949cb09e5161df6e4c7"
+    },
+    {
+      "id": "case-0393",
+      "name": "virtual-amd64-all-allowed-implicit-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "bae9fc5f0f53988305f2772be185ced8737ff17153250a66d2832dcfa65a461c",
+      "fingerprint": "573eef98505ceea761075c328fd2cc12aecb0ae658a23c3a5e9de1d63f1055a9"
+    },
+    {
+      "id": "case-0394",
+      "name": "virtual-amd64-all-allowed-implicit-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "8c606cb674d9314b9735b6f0b0e38c84293e3f6d76dde94a7826aa81243aeb70",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0395",
+      "name": "virtual-amd64-all-allowed-any-implicit",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "45bdb735c27df36bbdeed92ee24d0be7abf14b420e8ae3174565081b6b120a66",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0396",
+      "name": "virtual-amd64-all-allowed-any-any",
+      "finding": "NO_VIOLATION",
+      "catalog": "7cd260241c2f444e4792f77de64a4eafcae4716fa98ae3083b690c4dc95ab88a",
+      "fingerprint": "5d50f447f0791da88c9e8c5286664e89146a18d9a8516a90c075b41c3f1b20e0"
+    },
+    {
+      "id": "case-0397",
+      "name": "virtual-amd64-all-allowed-any-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "772868f98b5df27a19a27ce67be6622ac8758c9e66b030f3c876c09f7a869182",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0398",
+      "name": "virtual-amd64-all-allowed-any-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "3e0156c17a0510241eba4a23545e151fb7a741e93e0c767aa374a145466a633c",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0399",
+      "name": "virtual-amd64-all-allowed-amd64-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "0de9798cbaf368e4fb237d0527f172531fd2c14c9e5d574a945d698ae2c19e52",
+      "fingerprint": "ac0dcb30093718c1e76d95170c58cfe3d0a09afb4fa4c2d63baced8f729ae1f5"
+    },
+    {
+      "id": "case-0400",
+      "name": "virtual-amd64-all-allowed-amd64-any",
+      "finding": "NO_VIOLATION",
+      "catalog": "32056839cef5131f123cd806a714eac7616cf7685e767466954468c24c2fa513",
+      "fingerprint": "715606ba288b1b9efe919fc51825b4ee206b69768022be9b920a8136a6573ee7"
+    },
+    {
+      "id": "case-0401",
+      "name": "virtual-amd64-all-allowed-amd64-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "cfc6784bad9766012a1f41b7ccd1e6026f028662dc579e0fdbe6d0785b774130",
+      "fingerprint": "5124b93ceceaf16e37597f85d6b7a6b2c5a20ed914105afe5ec78b4886ca8794"
+    },
+    {
+      "id": "case-0402",
+      "name": "virtual-amd64-all-allowed-amd64-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "3dfb8f38854ae2ad7e3273d79ef73b20447bf8d9e5dfa2505bea14b8259b926a",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0403",
+      "name": "virtual-amd64-all-allowed-arm64-implicit",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "ed188f4d652c89019f049bfc6fe553965bd6a9080043b069004c86eb6d8512f6",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0404",
+      "name": "virtual-amd64-all-allowed-arm64-any",
+      "finding": "NO_VIOLATION",
+      "catalog": "58393baf17b2c816333c01e6adf34aef99a30cc72696d32b54fd38fa1340c99e",
+      "fingerprint": "3f22b8b5a7d4e070e58744c5290c5fe0ca134b8d5db3b428b1f5131be3a18b92"
+    },
+    {
+      "id": "case-0405",
+      "name": "virtual-amd64-all-allowed-arm64-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "9ed3dfee21ad32c8be2d99806c12fb201f0a534eef97b5852952c75f4f8cfa49",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0406",
+      "name": "virtual-amd64-all-allowed-arm64-arm64",
+      "finding": "NO_VIOLATION",
+      "catalog": "e641e6b156b8a3568b920816854cba39b4fe04b8c284f791f601c72f873a44b8",
+      "fingerprint": "31693ca50a9aaea28625e5c6922edd516f214e08c232ed3b3ff797ddf86157e0"
+    },
+    {
+      "id": "case-0407",
+      "name": "virtual-arm64-amd64-no-implicit-implicit",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "ac85498301870c92d5ab777d64af8ffba2ba184fb3c84bd9b85bae96a3281171",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0408",
+      "name": "virtual-arm64-amd64-no-implicit-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "50316727afbcb911185ad6d867e91d48d794f84a120a247448270eb9714d8f13",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0409",
+      "name": "virtual-arm64-amd64-no-implicit-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "609c171f64535f12ea7fa8946b51f418f6ec11e3d16775856342647aa0ec65f9",
+      "fingerprint": "a8776272d9a27ae90f55798d050d6b2cdd63a6281ee95ed8bf5c566e247cc6e4"
+    },
+    {
+      "id": "case-0410",
+      "name": "virtual-arm64-amd64-no-implicit-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "d450278682f269b86e8932ee384e9f2ae96015af6127082045ac77271d9046fc",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0411",
+      "name": "virtual-arm64-amd64-no-any-implicit",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "aace1c3afd47ae5eb6863c17ebae68aeec2b11488ddf48a5e5fd16c0a4928e79",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0412",
+      "name": "virtual-arm64-amd64-no-any-any",
+      "finding": "NO_VIOLATION",
+      "catalog": "73bc0bc6418e271392803d2901dd4564484cfa9e8d6b5d851245b03aa77f6748",
+      "fingerprint": "15fae3d22d868fb37e5c23ffac497d5e86af8e3c05d5fce57dcaf57fec500edb"
+    },
+    {
+      "id": "case-0413",
+      "name": "virtual-arm64-amd64-no-any-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "03ba83f00205cae774494336909a5ff3b5b97eb73546b81f69b25982c843edbd",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0414",
+      "name": "virtual-arm64-amd64-no-any-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "1fe0967a39e56ccf8ef4e5be977bb7897b9035b6f1f05ed92d92900ef49ba4d5",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0415",
+      "name": "virtual-arm64-amd64-no-amd64-implicit",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "9fa796d3c3e52cbfbe8e14b7856e76cbbffa60c5bf083a7310b6284456c80ae1",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0416",
+      "name": "virtual-arm64-amd64-no-amd64-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "1019d53d13e0ef5f70913d09c5c9fd09e645913a5bdaf6063571d05ab82e5766",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0417",
+      "name": "virtual-arm64-amd64-no-amd64-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "43fc3a48d84087cee8c4aaa42528bbaf775eda91ff9ff7b600b7df86dfa2113f",
+      "fingerprint": "af29024151a2b486b16e30fd0fc8b177835e08bed7891812ee53a6bedb00ccec"
+    },
+    {
+      "id": "case-0418",
+      "name": "virtual-arm64-amd64-no-amd64-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "728edce43d0f413f1c964a4fc786ec6a208243188a1a615d180eb9c4997b37b2",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0419",
+      "name": "virtual-arm64-amd64-no-arm64-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "b97a4273a8607378f53f5fa09b9840b7682aaf32075623e90eabe51d0c7239bc",
+      "fingerprint": "577fa2fd9aeb7bb5426d0bc1d27826abfa1ed819cf357f7bc3b0962e6a9b2f5f"
+    },
+    {
+      "id": "case-0420",
+      "name": "virtual-arm64-amd64-no-arm64-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "b69148d0b45cec7289be150962bb1c051d6d74c11bd4aea65987c81b9beee763",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0421",
+      "name": "virtual-arm64-amd64-no-arm64-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "026aa3cfcf0de248045181379920d9d883de022ec9c9ac97e022c8c7fd452b1f",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0422",
+      "name": "virtual-arm64-amd64-no-arm64-arm64",
+      "finding": "NO_VIOLATION",
+      "catalog": "c32628b6a0c2f1a30d60f44a4dc485e168f41a02ac86b8dec6231163e7d6a22c",
+      "fingerprint": "a2fe4b99d58aa59658d72c37b566423b8e76a5dce5d658db48d84f536c4bebae"
+    },
+    {
+      "id": "case-0423",
+      "name": "virtual-arm64-amd64-same-implicit-implicit",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "fca853fb15b34f2dfd2291dea3358c4919d49b8470c6bb9254de329c64bb39d9",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0424",
+      "name": "virtual-arm64-amd64-same-implicit-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "98668f951a945ce5ca1e0b985bb762e05242dd6b1764bad55ec52fe2fd937950",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0425",
+      "name": "virtual-arm64-amd64-same-implicit-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "30da1e47ac8dff8e0d31c3066c5c35aa346a870947b7abcbbd57b58a5d91eb71",
+      "fingerprint": "1125c32bbc383bf4df3316d993fd88b3bb07892ce3ddc5d5d0f93274327c8265"
+    },
+    {
+      "id": "case-0426",
+      "name": "virtual-arm64-amd64-same-implicit-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "53c8aeb031c4d051bd9659de78f745fd87852dadee3fe7f08e4cbec3447a3a9d",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0427",
+      "name": "virtual-arm64-amd64-same-any-implicit",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "7756ac014a0c6be1b6ba7280a3801fe9a30571487ea08d3d2acaa3ec31c77c8f",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0428",
+      "name": "virtual-arm64-amd64-same-any-any",
+      "finding": "NO_VIOLATION",
+      "catalog": "ff9fe988ff3e0d6219d59c51f64e374cbfa078467d1a83d17ae7bd3f50cb555a",
+      "fingerprint": "bf2688508ba0fccb2f01719c6ba4ba7f01f27ef8e2b4358fefc708d4fbf0e5f1"
+    },
+    {
+      "id": "case-0429",
+      "name": "virtual-arm64-amd64-same-any-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "1dec3aeed33514e9d3f88d4bcb3e4fdc611f58a5c3f6b73263e68f49ab5eb697",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0430",
+      "name": "virtual-arm64-amd64-same-any-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "c345831515b3b41fa90cd175a8d8e75fca2993cda3c757a049527c855f52b2b2",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0431",
+      "name": "virtual-arm64-amd64-same-amd64-implicit",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "a0a00ff4bb70043f15adca215c50c302fe9f9da2f68a218e6b92878f5f1b2948",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0432",
+      "name": "virtual-arm64-amd64-same-amd64-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "2a55384f8df5b8fc1f3004d6dc93171f7d3652a89633c43fa0ff6043fd28433e",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0433",
+      "name": "virtual-arm64-amd64-same-amd64-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "d4e7586cd23aabdfc3286e53ff658d36ecdc104ad1110cc2838e69b7e9bcf3a6",
+      "fingerprint": "e6f45a58b02d2d81cdfb743bb93af361d29ad3f317220f073d17d9dc3af1b310"
+    },
+    {
+      "id": "case-0434",
+      "name": "virtual-arm64-amd64-same-amd64-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "dcb089155a3bf0cd37e5e34eccec6f78cf5bc528e86ddaf1c3425ed635717c3d",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0435",
+      "name": "virtual-arm64-amd64-same-arm64-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "6c35aff6813cb8752c156d937a1269df5eab46b851394c5f2316918a92899f60",
+      "fingerprint": "c51abd3afc747a2bc5a30be8adbfcb01407d2c15494983084429a42f8c786680"
+    },
+    {
+      "id": "case-0436",
+      "name": "virtual-arm64-amd64-same-arm64-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "398f08eb9f62e0c85cbd8718365ba71c5d0d75cd5ae248c4e3017e87a654d7af",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0437",
+      "name": "virtual-arm64-amd64-same-arm64-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "648aab93f7e747c2e01ec3de771b71fd240e3e1c0e5f4956c35b8deaee0d8b14",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0438",
+      "name": "virtual-arm64-amd64-same-arm64-arm64",
+      "finding": "NO_VIOLATION",
+      "catalog": "bbbdcd5213006dd4743e3cedcd562bb6d8cc96f1c706f3fe0c2c279263836ab3",
+      "fingerprint": "7e3092505bd27537030fe2e6015badd1340ee66a1de4dcada395e219cb8810c3"
+    },
+    {
+      "id": "case-0439",
+      "name": "virtual-arm64-amd64-foreign-implicit-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "a461cb7e5df024318f1b452405fbdf7999fc91c47ce9ca79c5bb97dbf42c1d16",
+      "fingerprint": "68efb156a04cf1d0e953a7e0ad206ac5d712d87aa7ce7216a154e3becc6402b6"
+    },
+    {
+      "id": "case-0440",
+      "name": "virtual-arm64-amd64-foreign-implicit-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "962974a67b0c4723cd99d1379be1205037d7d494b84595b9b28970c08267c1c9",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0441",
+      "name": "virtual-arm64-amd64-foreign-implicit-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "862edac8b56f2c0d95a61641c56523d396f4a07a52e7159c7a15605c8fb1b6b6",
+      "fingerprint": "186e84a724dd80e2d8bc0c26439eaf2f44d0cf6a3f3cbf7a658e68e381c74f3e"
+    },
+    {
+      "id": "case-0442",
+      "name": "virtual-arm64-amd64-foreign-implicit-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "12ec4906bd7a8dfafaf7af1d14a47655bbe8ece9dda46334e3d9fd8bf6a52c92",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0443",
+      "name": "virtual-arm64-amd64-foreign-any-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "7b098c885b45239613ee7803d415bdfe0a7f995b6c3da550dbd63d004c69c9a5",
+      "fingerprint": "b65d515aa0825b4f696a400d1ddbb91534b338e12fcf2fc9b5d58c1139dd5923"
+    },
+    {
+      "id": "case-0444",
+      "name": "virtual-arm64-amd64-foreign-any-any",
+      "finding": "NO_VIOLATION",
+      "catalog": "adf57cbd03fdbcd93772e94e41b0d5eb6df8614f41f4e5798017e584829b877b",
+      "fingerprint": "91f213adfc57ac1cbc8cf2d2de0538676ce36442d4b71900236127cc2d50011e"
+    },
+    {
+      "id": "case-0445",
+      "name": "virtual-arm64-amd64-foreign-any-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "a19228585a5a405c0f3f87bb405fd89ee043709c0a227c814be4fbc956b9f5ee",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0446",
+      "name": "virtual-arm64-amd64-foreign-any-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "04837c53857ac1fd943f554e593bb0d22e45b00b4b1d436becff768607ed94ae",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0447",
+      "name": "virtual-arm64-amd64-foreign-amd64-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "cfb57b0a1bc11265aee82241232d5ebda3619a35e192654786387967da0eb851",
+      "fingerprint": "8addce1c10092680555824dc8e8570f9ac37a4240ff87756e9f0230f10929f38"
+    },
+    {
+      "id": "case-0448",
+      "name": "virtual-arm64-amd64-foreign-amd64-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "1f5ec19f01c8838468666ba1fa58600b358b7848eeb539a5588993a35e1a6ca3",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0449",
+      "name": "virtual-arm64-amd64-foreign-amd64-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "e95f9e484eec160c80955f0efadc48c7f616989ccff8b3f34c768f3792817203",
+      "fingerprint": "cbc01b3654c9311da8ce924237bce778b2d9f6b7c215ff5b116545489946514b"
+    },
+    {
+      "id": "case-0450",
+      "name": "virtual-arm64-amd64-foreign-amd64-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "853a3488ab3677b53df7ce4d7527cef87721cc76309b5e44dcf0c322c4532774",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0451",
+      "name": "virtual-arm64-amd64-foreign-arm64-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "71207e7f7bfb5fb9df35056bef6a066ca17287b62ccea227c5d4143e08df4314",
+      "fingerprint": "eef859fea1a211890f3ab8201cd0f4373002e3eef87d752a595d0a79ee733641"
+    },
+    {
+      "id": "case-0452",
+      "name": "virtual-arm64-amd64-foreign-arm64-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "81d44c178c49c18513e1ed02c7f387146e0acd9249822ba3a81adfd02a64e8cd",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0453",
+      "name": "virtual-arm64-amd64-foreign-arm64-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "50b79f7ee0a9a16c1bc4a7b1bca03ed59ccf3d0b9b34ef402b879762763379b7",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0454",
+      "name": "virtual-arm64-amd64-foreign-arm64-arm64",
+      "finding": "NO_VIOLATION",
+      "catalog": "5b75cfa8b2310b5b1f8fcaa14f6a03d6f4c053d4a540f1ccdae6ff51ad0dada9",
+      "fingerprint": "464d881846bd2ee0faddf290aa14a15e7cf14edbbf19fed3bf4b5fb4d8f20efe"
+    },
+    {
+      "id": "case-0455",
+      "name": "virtual-arm64-amd64-allowed-implicit-implicit",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "194ea2221780f7d1b1c8c3dcdaaede8686cdb78d2ff551b69f414b800bb45bf6",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0456",
+      "name": "virtual-arm64-amd64-allowed-implicit-any",
+      "finding": "NO_VIOLATION",
+      "catalog": "4a32d303ad7abef7049f1d25bf4c1e93a4e787da1fa4292c8fe9a45ae135f849",
+      "fingerprint": "c1467351e5d87fbee6c4d736a64fa9ef9b90c4c4c786511900c60998ef7bc263"
+    },
+    {
+      "id": "case-0457",
+      "name": "virtual-arm64-amd64-allowed-implicit-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "73e680226339e0c6b55156058a6c0fb15910c08faf4744488915870305c7364a",
+      "fingerprint": "2669a3be055c66f7fd6b1f0b2596ed6c346d927af56b7f5057bd3db5156e8d61"
+    },
+    {
+      "id": "case-0458",
+      "name": "virtual-arm64-amd64-allowed-implicit-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "250ef6688a4323aeb4bd56fd7025503221d2c8ba23f77f37af710ea2c1c340ba",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0459",
+      "name": "virtual-arm64-amd64-allowed-any-implicit",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "6a4dda8296be86f4cfec072c836d00632902ec8f8628e8374d666f838339918d",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0460",
+      "name": "virtual-arm64-amd64-allowed-any-any",
+      "finding": "NO_VIOLATION",
+      "catalog": "6ee84f93247a08b163142744eb4dd47f67b25fa04430fe7ad5b2a71b637c98ae",
+      "fingerprint": "cd9d0412c49abf974cac1afe583212dc49e2754f0676ccf320126bb8ee9360cb"
+    },
+    {
+      "id": "case-0461",
+      "name": "virtual-arm64-amd64-allowed-any-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "821197966af3a9ae9bca5ff4fdfe54fd4e9c2f9704fa34358ec5540a5623c90f",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0462",
+      "name": "virtual-arm64-amd64-allowed-any-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "4308d12420ef932a8bdd0bd85047330762f0647a875ea9adf47a36d9215833c9",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0463",
+      "name": "virtual-arm64-amd64-allowed-amd64-implicit",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "bc0214c52e09edf9e34c37e02b295766315ed9d6229f98730341f01ec728eaf0",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0464",
+      "name": "virtual-arm64-amd64-allowed-amd64-any",
+      "finding": "NO_VIOLATION",
+      "catalog": "a36158780c67166e73e80a3e20957513babec9bc10ec65de0ec55dae96ee5fc4",
+      "fingerprint": "aa1b0a0bbef420096d6685b6993cc1d0224fae05c38261f2a26c984d7de431d8"
+    },
+    {
+      "id": "case-0465",
+      "name": "virtual-arm64-amd64-allowed-amd64-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "efa219f487671c357d935523360f1033e24dbee58a7ab20e182820f0f14568dd",
+      "fingerprint": "f2040c0508a64a8f70bd814220a889a30acda97b1b37928a5b15abc559ae26a7"
+    },
+    {
+      "id": "case-0466",
+      "name": "virtual-arm64-amd64-allowed-amd64-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "25947730f9b71ded834d1cd0e7c373cf34fa2d70b619158fd83191b4f19be935",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0467",
+      "name": "virtual-arm64-amd64-allowed-arm64-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "07f8047e8086ec6155e355a8a15f4028dba2347b4de4031418d43f42511fc3a7",
+      "fingerprint": "9001269a296e73a2842cdfb52ea8b48cc8f37b5c2a68667e0bd4bda0e4c6f2b8"
+    },
+    {
+      "id": "case-0468",
+      "name": "virtual-arm64-amd64-allowed-arm64-any",
+      "finding": "NO_VIOLATION",
+      "catalog": "4b39899bb247e860d1974a69e1d862d7942b71a1ae648da2f4f4830293eb90b0",
+      "fingerprint": "96e1f5767b32a1eb4bffeeb580bd995c5c0cff9fe97faf1b86c6803987939823"
+    },
+    {
+      "id": "case-0469",
+      "name": "virtual-arm64-amd64-allowed-arm64-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "b440c6da0ec5e9248525fee48ced755ddb8426af7f4ace016fcc9969d8383101",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0470",
+      "name": "virtual-arm64-amd64-allowed-arm64-arm64",
+      "finding": "NO_VIOLATION",
+      "catalog": "e180ac562c7f4ddc03e03cb7add367b825cc54efd3e1d06a0fb61ce4c0deb28f",
+      "fingerprint": "707eaa9b69ceff6ab39d2dfceb3df430e36bafacb0db047e0708a843a59ed9b7"
+    },
+    {
+      "id": "case-0471",
+      "name": "virtual-arm64-arm64-no-implicit-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "172793b956158c137d9da954b47cc0a6431fe4abd924e0371cc5e22c072f4572",
+      "fingerprint": "eabf5d6b1b810447f7b5274326a67106c7d0bd0458134b3fc3bbee9f2a2cf5e9"
+    },
+    {
+      "id": "case-0472",
+      "name": "virtual-arm64-arm64-no-implicit-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "db5d124ab570ecd9f80822f2ca9373ab2eb3455a52dc3754aaaadf77ae288055",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0473",
+      "name": "virtual-arm64-arm64-no-implicit-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "255cbcdcb9a8dbb2d6026853ac8384f43cf476f7ba0cd912b39b69fcaa948242",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0474",
+      "name": "virtual-arm64-arm64-no-implicit-arm64",
+      "finding": "NO_VIOLATION",
+      "catalog": "24c5a802d9669ccc5c86d947a1bf2e4771a17934105239e12b1f9b9b20229e53",
+      "fingerprint": "8b6857543afa575b1215d4815eb8f078c34bc358c63c4530f5cb89d8ce665f31"
+    },
+    {
+      "id": "case-0475",
+      "name": "virtual-arm64-arm64-no-any-implicit",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "8f0d9becdac6ceb14e4d585d62a9db3dbe045390a53929adc9f9582605f250c5",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0476",
+      "name": "virtual-arm64-arm64-no-any-any",
+      "finding": "NO_VIOLATION",
+      "catalog": "e9ffb10110aa53c07e1c6cb07d43ea359e114705240eb7bd3f2b5d77cf75cfe5",
+      "fingerprint": "bb7bdecf600e3262e176e12e95b5f3e592ab616d0a9f26f66a99b44424e53e3e"
+    },
+    {
+      "id": "case-0477",
+      "name": "virtual-arm64-arm64-no-any-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "d8c59201d170527003df471f9e136bd17f00250ea480354b7ef2fa1c96c0f0f0",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0478",
+      "name": "virtual-arm64-arm64-no-any-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "dda162d6d67c65213a3a4b879ddc4175c03dab2b464069846de55b2d5c77f2a9",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0479",
+      "name": "virtual-arm64-arm64-no-amd64-implicit",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "b1f8e01cc4fef51eba902bd7b26610e48e8973bf07745ab0072a33530a726f17",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0480",
+      "name": "virtual-arm64-arm64-no-amd64-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "1fb6338d458b5f0b9a997cee5e220d5512082e4a39706f307e4be360a13a403d",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0481",
+      "name": "virtual-arm64-arm64-no-amd64-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "3f4734cda86a32abbb3f4e8cd9150ce5064bddfdc3463bad0b8993ca7eae1845",
+      "fingerprint": "e9a88b9dba69d6bfe6f10c22fe0e4ca3cfc4fcd7a81ca825c93c267facb40882"
+    },
+    {
+      "id": "case-0482",
+      "name": "virtual-arm64-arm64-no-amd64-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "b383cf01e70c79491071270a28dc02f46b4c5ba9893c8e8696b5570d2b6d4793",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0483",
+      "name": "virtual-arm64-arm64-no-arm64-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "6e9a7211277c3ec8f199c11105aab51407726fa083e7c95c0a9379f782b1f57d",
+      "fingerprint": "c81ea0d6bb7a8bcb1de2128d03b09445fe721705ca4cdf069f5d8db3707c07a3"
+    },
+    {
+      "id": "case-0484",
+      "name": "virtual-arm64-arm64-no-arm64-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "9eec32793fd78c1e5027f47671c5452fddbdb2f1bdd4c3b03296fa2bcd1b19bc",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0485",
+      "name": "virtual-arm64-arm64-no-arm64-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "eff34fc74074bab710b56d32fd643d231801647a502bc0a60022d058c5530fa0",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0486",
+      "name": "virtual-arm64-arm64-no-arm64-arm64",
+      "finding": "NO_VIOLATION",
+      "catalog": "1d42be47186f4b4c40a44888a03095d2ac15a8c2509eaf878a93a2d380b4e082",
+      "fingerprint": "2845451bf1e4d10dd7513a265b11df0d79f9dec25d0f2be25d2aa9f3a50a2800"
+    },
+    {
+      "id": "case-0487",
+      "name": "virtual-arm64-arm64-same-implicit-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "394abf488d5f42532da4750d80396b84d0c6ebba6c5d7edbceb9f5db870b2338",
+      "fingerprint": "0af4b817dfe0c6aad9a6d1a61b6ec9958e3a861d0072d02ef08085f05caf0dcc"
+    },
+    {
+      "id": "case-0488",
+      "name": "virtual-arm64-arm64-same-implicit-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "1822676bd5f92f4e235a8fa1985518bf3446c63434a9d0feaeb9be2f9bd9ebae",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0489",
+      "name": "virtual-arm64-arm64-same-implicit-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "dc63838b5e5b48fc0e80dbe6e3870d4f0963a0048dc63d7f3a97293ebee5fad6",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0490",
+      "name": "virtual-arm64-arm64-same-implicit-arm64",
+      "finding": "NO_VIOLATION",
+      "catalog": "5a5263afad57ebcfb407b0a8721e622a0a742d1a9216367e4a541d7ed13cbd97",
+      "fingerprint": "76d3f8bbeac53a61202e9725b5128063976694df412c283b205c97c97d646e4c"
+    },
+    {
+      "id": "case-0491",
+      "name": "virtual-arm64-arm64-same-any-implicit",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "e4f47fae777816aff6351876726cad05f3f7a6fe71aa929b421170d3b0276bb4",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0492",
+      "name": "virtual-arm64-arm64-same-any-any",
+      "finding": "NO_VIOLATION",
+      "catalog": "ee8a27eee27a7c4df50fb400b249c0a61af149cb6f12c20d5a76932707e7b754",
+      "fingerprint": "4422fd86ce9e25c736cb8906548e9d433d4bef86de16a296e894a2fea3132c74"
+    },
+    {
+      "id": "case-0493",
+      "name": "virtual-arm64-arm64-same-any-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "211715f81d2506b95f5be36ea0c75b591e88ca610f78cdb115e891c73b361a9e",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0494",
+      "name": "virtual-arm64-arm64-same-any-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "625e3cc88eb6711064a1e2460ac7316fda5cf54c0531fd9bfd67acb8ba147122",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0495",
+      "name": "virtual-arm64-arm64-same-amd64-implicit",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "9ed97ecc675f5eb43f9817df853507898321d53e167476c4222e337a951595a7",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0496",
+      "name": "virtual-arm64-arm64-same-amd64-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "252bda115adbb47764dfc6392488e3e20aa096425803458ac6df9dba694cd1ec",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0497",
+      "name": "virtual-arm64-arm64-same-amd64-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "7f2a9ac8fd845d3accc98c0da71eac5cf977e689815fd9198ef337af678580cc",
+      "fingerprint": "52c484e2d3f49e0070086ff059edab2170b7fbe994f0d0d57e0e28a4be54165e"
+    },
+    {
+      "id": "case-0498",
+      "name": "virtual-arm64-arm64-same-amd64-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "78ae2e7cee6d9f5dabf0b8a1de39b0c5bee0230230b9a87e163e17a0dff56cb4",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0499",
+      "name": "virtual-arm64-arm64-same-arm64-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "eeae4be67aef1f930390da69e720e36548e35a17ae8858f3648e9e1efb11c4b0",
+      "fingerprint": "b233c78f87d36880b06089989393e72d1ecffe150d76337f4771256bf68ba8db"
+    },
+    {
+      "id": "case-0500",
+      "name": "virtual-arm64-arm64-same-arm64-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "aa140b9d9e5f02a57c678e3317eebf656533f03ba3038a6c35274edad4c88a55",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0501",
+      "name": "virtual-arm64-arm64-same-arm64-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "ebd9a195bc40670f7c515ac250a97db4f7f8139b92d214b606298d7edeb13240",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0502",
+      "name": "virtual-arm64-arm64-same-arm64-arm64",
+      "finding": "NO_VIOLATION",
+      "catalog": "5d253d66172445226844e4c0477cdc98df4b0bfabd001ceb603781406cdf135e",
+      "fingerprint": "505157472443c25ddab29636f4799545d4cff131317f41cf3f68efefddae977d"
+    },
+    {
+      "id": "case-0503",
+      "name": "virtual-arm64-arm64-foreign-implicit-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "1caeb57451a40431ba5c284b7f40fc8d3509501546aa7b8f25c0d343670c3a3c",
+      "fingerprint": "8c9fe711453498d493210e449582734c126747ba50ccd39f32ce3e5bfb9563b6"
+    },
+    {
+      "id": "case-0504",
+      "name": "virtual-arm64-arm64-foreign-implicit-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "ac9e0453ad2d08fd3e5c4a12ac517a303d8155e8c2266c60903a1a1a634f23f8",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0505",
+      "name": "virtual-arm64-arm64-foreign-implicit-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "65182c2c459100f7e94a423ad137010adbfdb098fbeeb00e612c486dde00d236",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0506",
+      "name": "virtual-arm64-arm64-foreign-implicit-arm64",
+      "finding": "NO_VIOLATION",
+      "catalog": "7e29b4850c5af25e3ac50bb8e47ca78486653e07baeba4625d7c5a99753d7e18",
+      "fingerprint": "b7671f4e7928a2d19b0cca3f765a9c16a563a3a6e0b56d43ea13144e56ac9fb8"
+    },
+    {
+      "id": "case-0507",
+      "name": "virtual-arm64-arm64-foreign-any-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "e81481ed05e8eeff95128b4142d8097bb4f007cc4e96ff868fabf538025deae5",
+      "fingerprint": "2040a150550eacd110d0cfe909591d1c562a63f5d42cc49b2564a9252885c2a5"
+    },
+    {
+      "id": "case-0508",
+      "name": "virtual-arm64-arm64-foreign-any-any",
+      "finding": "NO_VIOLATION",
+      "catalog": "84f93e09756011add2cccfbcb76d59de6cba5c186b4d9700e739b3ea0b0ee98b",
+      "fingerprint": "4f00475e2ab987af4f5f15f499a3a3f5ccb118e897a425303de8adb44b59ac07"
+    },
+    {
+      "id": "case-0509",
+      "name": "virtual-arm64-arm64-foreign-any-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "d0a8d1a5ade0d81fdb91bdf0d98645fe29966c0de709bc28a9c4e0542e44faa9",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0510",
+      "name": "virtual-arm64-arm64-foreign-any-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "41b8cdcbbdae284e4cd8919e81161e1973953192f5d8c051eb23680b1a3443fd",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0511",
+      "name": "virtual-arm64-arm64-foreign-amd64-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "c1bccc31177e6febba2b3f04761ed34d6350373c8afb7458b28e838070785891",
+      "fingerprint": "49a9c413d8beb20a728d8a26e13d1935bbac95466b6009f800804234593824d9"
+    },
+    {
+      "id": "case-0512",
+      "name": "virtual-arm64-arm64-foreign-amd64-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "238ffc89067e91846cab1ccf9ecad70f17cc26873954cd5fd5e593264fb276a3",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0513",
+      "name": "virtual-arm64-arm64-foreign-amd64-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "9889a44b9d0a8f71da41e79ff366e72c187104aa3dc21566c2e9349cf783987f",
+      "fingerprint": "bcb39fd66d81dde3c70c0ce50b8583004b8430e25ff0863f29c09aa9dfd1dd3d"
+    },
+    {
+      "id": "case-0514",
+      "name": "virtual-arm64-arm64-foreign-amd64-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "92dc48e7c1e4593213a25165f9522c8a976ff4ffeb66cd4972e74f2b6414cb81",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0515",
+      "name": "virtual-arm64-arm64-foreign-arm64-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "1f94a524abd64292b91ab967bc0b8c3399200a0fe886e0dea856aa777f1b194d",
+      "fingerprint": "55adfbc487a58183af80769911d7589e2d0adc889484ec70193c53bd697ff9b8"
+    },
+    {
+      "id": "case-0516",
+      "name": "virtual-arm64-arm64-foreign-arm64-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "eb58a79c3a18666d5570f2e3e6c31de31a4d088e025d80eed0fb33d0b0917ff2",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0517",
+      "name": "virtual-arm64-arm64-foreign-arm64-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "358aafd30a7a26036e83d8148d52f76362c7dcc332418464bff4aaccf68f60de",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0518",
+      "name": "virtual-arm64-arm64-foreign-arm64-arm64",
+      "finding": "NO_VIOLATION",
+      "catalog": "c1f6eac23f61248a50ad0f797fc24f0272d740bd8b9f333059d8e5277e80ea9c",
+      "fingerprint": "a2699f77fdf55acdbc6b9d63ff0e358f588048553ba202450187010d34f72581"
+    },
+    {
+      "id": "case-0519",
+      "name": "virtual-arm64-arm64-allowed-implicit-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "59da3f467435b665b454dec2a17f3e02b03b0cd567bf73636d191065902f4389",
+      "fingerprint": "3c09e811225abe0cce0c5792f4985bf73565d43fc6f9ab66f2858a62f15ab5e3"
+    },
+    {
+      "id": "case-0520",
+      "name": "virtual-arm64-arm64-allowed-implicit-any",
+      "finding": "NO_VIOLATION",
+      "catalog": "9f98e88689c78ab84785e0b06f68bebc0d074f0867656b350b8bd22cfba67add",
+      "fingerprint": "263ba1224a7fc83f535e4604ffd0349db098529dc0d9425d9d6dbda7994020fd"
+    },
+    {
+      "id": "case-0521",
+      "name": "virtual-arm64-arm64-allowed-implicit-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "f43bc8acc7dafab98f1b578572fe602bf393fe6d5641d8153d31d42ff051de07",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0522",
+      "name": "virtual-arm64-arm64-allowed-implicit-arm64",
+      "finding": "NO_VIOLATION",
+      "catalog": "0c2a3843f9e70b2c02b5ade64ddeaea2c9067bea65a52a8316fddfa5e9dc1961",
+      "fingerprint": "0d182bca638ea2d6a241006eb70dc8293760c68f5d5f16806542a0f10582bc07"
+    },
+    {
+      "id": "case-0523",
+      "name": "virtual-arm64-arm64-allowed-any-implicit",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "b0a8489e42cc4efd23e755bbbebb96bb3843f32500421ba30ae6d1eac1fcc2bc",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0524",
+      "name": "virtual-arm64-arm64-allowed-any-any",
+      "finding": "NO_VIOLATION",
+      "catalog": "41ffed56749d7617cd8a9532797a6785df4389386606aa6b27c6942d6fe5719b",
+      "fingerprint": "db6a4a520fa198649b4453977c7ce66c7f98a4f3693baf03dc925575f74456ff"
+    },
+    {
+      "id": "case-0525",
+      "name": "virtual-arm64-arm64-allowed-any-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "248df132fba51f75f17cbe55380e0743e36b01fc351020cea6972d26686f53ec",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0526",
+      "name": "virtual-arm64-arm64-allowed-any-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "790c4e486cb6a88feb0f18e3002843e310862c74e2c83cbe4fd8204b32fadfe9",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0527",
+      "name": "virtual-arm64-arm64-allowed-amd64-implicit",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "e017dd6afc8cd67c97c1ff40b16b23dbb5b2429524ed1930ef6caf8f6e452b70",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0528",
+      "name": "virtual-arm64-arm64-allowed-amd64-any",
+      "finding": "NO_VIOLATION",
+      "catalog": "17f8e5ac0f985d38b690c595026698b8a41c71e06a408460340caa298441514c",
+      "fingerprint": "dc13aa7ae51dbd4017d84a36950258827a20a3b8ccb1407cf3e5f19b99cbe3b2"
+    },
+    {
+      "id": "case-0529",
+      "name": "virtual-arm64-arm64-allowed-amd64-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "7e7fd7e36d87494423fded4f6d7268f8d78996f7d18f4771f9f1f89172fd5332",
+      "fingerprint": "b1ca742b58a32a79c926792c9effd110a75ff965ec935abe930ea56b2093816b"
+    },
+    {
+      "id": "case-0530",
+      "name": "virtual-arm64-arm64-allowed-amd64-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "d6bd80b66c3328e401781b1bf8f4097655aaf58ee6c79b90cab44265e8e647b7",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0531",
+      "name": "virtual-arm64-arm64-allowed-arm64-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "037fc60683dec81a3cafd75b9bfaae87ae665211f59f0e224dd8559dcbdc33c2",
+      "fingerprint": "ec44f452eefc27ce3038372427d37244e36ba4783e9efd79010df6d558913e8f"
+    },
+    {
+      "id": "case-0532",
+      "name": "virtual-arm64-arm64-allowed-arm64-any",
+      "finding": "NO_VIOLATION",
+      "catalog": "4330249d915d42608d6663095dbe8fcf39778ab03e71e4d2ee39a701047338a7",
+      "fingerprint": "4e0171e6b993c5e37e455fa42858286622e09a48c10bdaafd3c3d7b9234c3257"
+    },
+    {
+      "id": "case-0533",
+      "name": "virtual-arm64-arm64-allowed-arm64-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "d68663e18cf91452adc35a10904455e82570809c7065ae0586b6102e2f18746c",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0534",
+      "name": "virtual-arm64-arm64-allowed-arm64-arm64",
+      "finding": "NO_VIOLATION",
+      "catalog": "b56eea9079f5968b83a2f0c9c90f443a83f99e784f9beb00cf4c7c61151bc168",
+      "fingerprint": "dee6a13a90e2aedd8c80aca9f3c17d4a26efd26862ea418041c8d3e834726dc5"
+    },
+    {
+      "id": "case-0535",
+      "name": "virtual-arm64-all-no-implicit-implicit",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "9d22528956f64736c4a771e6256899f6cbda4874b8bb69644721cc9eb5ff4b58",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0536",
+      "name": "virtual-arm64-all-no-implicit-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "0b862bab950140c73a7d9b7f5dfa5fc413b06424097e38bd236b865aa30765e7",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0537",
+      "name": "virtual-arm64-all-no-implicit-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "f98bacf33fc0da530efffa8a668036ceaff1f882de4b86a89c15c1aaa9b3ea95",
+      "fingerprint": "7f42749e821724b777c6b4759850ae4c3b3481ff8dadea482b81a254d3dc7ba4"
+    },
+    {
+      "id": "case-0538",
+      "name": "virtual-arm64-all-no-implicit-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "404bcba32dbd6f14d03b85c6c119af5f1e16baefe235066feb0d96c5c172c6fc",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0539",
+      "name": "virtual-arm64-all-no-any-implicit",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "d1795f4a26d7728c96f10bcc9002bf2db8c6696b8f0e17170a734890d9b394f2",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0540",
+      "name": "virtual-arm64-all-no-any-any",
+      "finding": "NO_VIOLATION",
+      "catalog": "d5842c2594a4c402f18abfa5b4f53156fee01a998bb5864a9c8be4e366fbc5ee",
+      "fingerprint": "f398565234ec50b8b303387ff682c76fee889d2ff09033d3717ad2d0b45d0ade"
+    },
+    {
+      "id": "case-0541",
+      "name": "virtual-arm64-all-no-any-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "8637c4c116144db98a63ea88a2d4691914534ac96de0a145f88313a86e8a7a1c",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0542",
+      "name": "virtual-arm64-all-no-any-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "05aa772ccad4eb2d0276dbf22560a33be6602e71e5e1e8b1f5ef14d1c8e1e64d",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0543",
+      "name": "virtual-arm64-all-no-amd64-implicit",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "736b89bd7a3df76682463ae8c4f0d2daad09daf9620c7113fdd9d0ea7889ddd9",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0544",
+      "name": "virtual-arm64-all-no-amd64-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "8de6a0f16e341178d24ba99c43694bf97dae6b32d23aa4f29832c785aedc731d",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0545",
+      "name": "virtual-arm64-all-no-amd64-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "38f767935f0f3b3b05d8afbf0dc3445e8f76f0951bb39b4abb878562defcf35e",
+      "fingerprint": "b479a7b83aae44219825893a84a5ac7a36dccec18a9eb6efe44c34758fd5ab98"
+    },
+    {
+      "id": "case-0546",
+      "name": "virtual-arm64-all-no-amd64-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "cfa005eb921013e3ddd6c552063e5c78393e884f90e33f92b2f24c2c34bd3af7",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0547",
+      "name": "virtual-arm64-all-no-arm64-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "7a6f1dda9cb1d5d81f992474c5362c3566b7ca8a4bb4e0f0177cadd0d9e8a8ad",
+      "fingerprint": "8389b7aab6d4769793a0b80f51a19e92c21087527a5b55920412ae76b15f950e"
+    },
+    {
+      "id": "case-0548",
+      "name": "virtual-arm64-all-no-arm64-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "8ddc85125eee5b77f7fa31a4baed7bbdaa9808b7cbd0a8e79a8da76bc266665b",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0549",
+      "name": "virtual-arm64-all-no-arm64-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "acdcaa672498585b698c498f582f545289d85f418530e2cfdb03940cff33cab9",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0550",
+      "name": "virtual-arm64-all-no-arm64-arm64",
+      "finding": "NO_VIOLATION",
+      "catalog": "018b20444fd15b3cb231121765f962ff93519b2cda35feb344f5093f2305ecf0",
+      "fingerprint": "a688262ef1970425642c4dfe3ce126afeb2e61912f3d111cb50342f762132cad"
+    },
+    {
+      "id": "case-0551",
+      "name": "virtual-arm64-all-foreign-implicit-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "c53d2b5f95a42177a5fc8d19742857ee2af1d5199ba37024d97e030383c9f7fd",
+      "fingerprint": "0254df705392d022b3d09e00ad82718d517e59edea984746f0636c4986bc5091"
+    },
+    {
+      "id": "case-0552",
+      "name": "virtual-arm64-all-foreign-implicit-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "a8e6bc19917f17dc4f71b386a2abeb1d5b9de56823aa0658ba26847bd653de59",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0553",
+      "name": "virtual-arm64-all-foreign-implicit-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "dfe96af799394ec110d075973356760692e07fef83debe358e2f3c018ea979c9",
+      "fingerprint": "bfc04a145ca67106d6425bb27526fb613b1eb0d85e40f82f7c9be4fe0fe1f8e2"
+    },
+    {
+      "id": "case-0554",
+      "name": "virtual-arm64-all-foreign-implicit-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "db19bc2ddf5a4dac016bdd10e066f2a1f26386943bdcdd6aa43928322fb5961b",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0555",
+      "name": "virtual-arm64-all-foreign-any-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "7aa2a5861f6790cd0e5e2699800d3adae06a1b4e32a91e5c94ec0072295a0d69",
+      "fingerprint": "e20219879ce9601614203e55f63cd7e169aa8526a7e5e53f730acadf2a9b3ca4"
+    },
+    {
+      "id": "case-0556",
+      "name": "virtual-arm64-all-foreign-any-any",
+      "finding": "NO_VIOLATION",
+      "catalog": "f6b0379d7fb53110e31a1ef094617040492e04b7af19e3d717eb7de5804ae133",
+      "fingerprint": "d852f170629acd3518d134789306e265a270d07402b00a217691cff95457d90e"
+    },
+    {
+      "id": "case-0557",
+      "name": "virtual-arm64-all-foreign-any-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "5d7bbc0457b5242ad4be3d2fcb273a18bcce5525b26a62957975d8ebdbc69645",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0558",
+      "name": "virtual-arm64-all-foreign-any-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "4515acf114bb930f47501075b98dbcbcf604abc079a325442f281277de19ddb1",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0559",
+      "name": "virtual-arm64-all-foreign-amd64-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "64e9f0a35fc1e525e1ac4bf3963c19f42ae00b29cd52a6ec51a900542db15c11",
+      "fingerprint": "12b26dc9fb00b9044593467a49eb078ed4859821a32606953efc8774856ca555"
+    },
+    {
+      "id": "case-0560",
+      "name": "virtual-arm64-all-foreign-amd64-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "464be15fb4f16a40dbc9552136fdac051cdd7c2c521236adf0ac091fee7aae0b",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0561",
+      "name": "virtual-arm64-all-foreign-amd64-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "3fd219956ea8274d413e009b45d5aeaab88096ffb8947f4323905ca8bd7c07ff",
+      "fingerprint": "6230c245c708491ea826e8f80d4e65c44672b0ad6f6064d8c613f39d642f73a4"
+    },
+    {
+      "id": "case-0562",
+      "name": "virtual-arm64-all-foreign-amd64-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "fa28a782dbdd1fc48b8b81c01aae611ac776b18346746025b6ea9527ccf93bd3",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0563",
+      "name": "virtual-arm64-all-foreign-arm64-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "a43ad44c0affb791f790d06494509eff1ba69e8da4f135399205072fadba3fd7",
+      "fingerprint": "649e484088b0ab4fa716aecff873d46b7cca346e77d4eba8ef67070268e97b97"
+    },
+    {
+      "id": "case-0564",
+      "name": "virtual-arm64-all-foreign-arm64-any",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "8e5fa848d39abdd41e0002156f37b935dc33c48d9132094495b7034ae004d105",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0565",
+      "name": "virtual-arm64-all-foreign-arm64-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "04a7299235c2b86f1c2c072b4b5c41116d8f548524e166620b62f9b24b046a8e",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0566",
+      "name": "virtual-arm64-all-foreign-arm64-arm64",
+      "finding": "NO_VIOLATION",
+      "catalog": "a40cb36986568aec64f7a7ff36d40df9bd1a40f09fb4da300ce56035a287f7c2",
+      "fingerprint": "f73c63d4eded8024f1563e862aca5ff79921b03b551a64884725961ffff3db2d"
+    },
+    {
+      "id": "case-0567",
+      "name": "virtual-arm64-all-allowed-implicit-implicit",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "425a37153c3e81e377d86042cf5b2a7dcc8fcb8fb309c3c33ad2e8df98fa42ea",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0568",
+      "name": "virtual-arm64-all-allowed-implicit-any",
+      "finding": "NO_VIOLATION",
+      "catalog": "ee3c0f8d5d07af5b44d226e89d3ca36ca9f6c0c21313889528eb545292c5b7b2",
+      "fingerprint": "22da0f5811c392cd39acc6ee617ac43c1ea09716fcfb1b61c55d9446d05ff15a"
+    },
+    {
+      "id": "case-0569",
+      "name": "virtual-arm64-all-allowed-implicit-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "c761e570d17d778df145c63d21f76f8517a79aaad5ccc5852dcb8a13515a9862",
+      "fingerprint": "85f82803090cfa31dc0970c3c95d309be6b6cd2499ae03d4e536df9d75de9690"
+    },
+    {
+      "id": "case-0570",
+      "name": "virtual-arm64-all-allowed-implicit-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "f32b101b95ef9e37ec3a15ce988b9800ed7c21a40cc03b755331ecbeb1e7fee5",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0571",
+      "name": "virtual-arm64-all-allowed-any-implicit",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "b82d4409c8258c97c96ee79c130066f8217c0bec54baf4eef04401cf2c57ecc3",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0572",
+      "name": "virtual-arm64-all-allowed-any-any",
+      "finding": "NO_VIOLATION",
+      "catalog": "221a6e8dd6cdf0ef2d9fe73eb3a1cfae5f056c158cb502523aebc4c9d95d22ec",
+      "fingerprint": "94d54ff0acdf5ad81c1d79dd2db7b6ac5625e3e3302552eb4cc740c9859a11b9"
+    },
+    {
+      "id": "case-0573",
+      "name": "virtual-arm64-all-allowed-any-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "051efd8726af19149d430607953cbf2c3296e55c9a5039dc37f8fe15715f0c8c",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0574",
+      "name": "virtual-arm64-all-allowed-any-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "0a2f3f8d18e55772511c3062ac684c6afea38f60c2821e63832c123edb2e4544",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0575",
+      "name": "virtual-arm64-all-allowed-amd64-implicit",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "622792e1f7f9835ee1312a63f191f23814f342780fa6db637bcfaa5a72743b21",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0576",
+      "name": "virtual-arm64-all-allowed-amd64-any",
+      "finding": "NO_VIOLATION",
+      "catalog": "5bf493fcadac50647e5f1a82a17d63438dc18648594b3a43034491b5eeb5f78c",
+      "fingerprint": "23783eca51ff9ba832c8b117a5d78f76bb3d3fda6c7742502814c48608b846e3"
+    },
+    {
+      "id": "case-0577",
+      "name": "virtual-arm64-all-allowed-amd64-amd64",
+      "finding": "NO_VIOLATION",
+      "catalog": "4d514f1d4e3a6bd3f966bf28f9a781d824c8cd6a3b1e810f9473236b9d5b3b41",
+      "fingerprint": "d0af3b55ab6ff0001ba8ce184b8012e24092167c3d44b8a58b9685cecf20e9f3"
+    },
+    {
+      "id": "case-0578",
+      "name": "virtual-arm64-all-allowed-amd64-arm64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "f152a929db40a9d8f813b39099a06c42744c3fe742859b2ce18f9cf5ce614206",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0579",
+      "name": "virtual-arm64-all-allowed-arm64-implicit",
+      "finding": "NO_VIOLATION",
+      "catalog": "b0748da32e652e32e96832271ec78e5144d3ee9423400593e22c1c7cddae3e30",
+      "fingerprint": "34218485e64d9d149105f6e7a13abdd434e7f4cb54339fc764ec73fa9e836969"
+    },
+    {
+      "id": "case-0580",
+      "name": "virtual-arm64-all-allowed-arm64-any",
+      "finding": "NO_VIOLATION",
+      "catalog": "3ba37105a9d2178524613f06dc75db74e09d2ceae812c34de57e1ca7204867e1",
+      "fingerprint": "0c32b3c0ee48f53a098bbee77b638f9965fea0a8a1df24bd3414b7c2e9871356"
+    },
+    {
+      "id": "case-0581",
+      "name": "virtual-arm64-all-allowed-arm64-amd64",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "1685ecbb88a22535264997b41041d297d29b4485aa4868a31339de0eca12059f",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0582",
+      "name": "virtual-arm64-all-allowed-arm64-arm64",
+      "finding": "NO_VIOLATION",
+      "catalog": "f449796ff7f9a883da258f8997303103865349a652235228ae2c67f58a7c4ad2",
+      "fingerprint": "e6a372741624d3e1ccb486d6f25ac7b4dc27d2c31fd2c7c8aa3e1332926c02c1"
+    },
+    {
+      "id": "case-0583",
+      "name": "provided-version-not-owner-version",
+      "finding": "NO_VIOLATION",
+      "catalog": "437446f16b8526b59f9d86a29a0007b0ac8cf4efb5df45ebb31e3e2ec27a7a4e",
+      "fingerprint": "1801d3f2a4916231aed4b86d1c76c93993c158f0c99587aab26fe332aa6565a1"
+    },
+    {
+      "id": "case-0584",
+      "name": "owner-version-not-provided-version",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "07a23e5a9181490e41094fcda8f8a8085278108638fc5c3b72cef9e51cd34c2a",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0585",
+      "name": "unversioned-provide-not-versioned-need",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "09bee38d6b1d9974c29825deceb3fa19902a686872adad99f1f628a8e85e9458",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0586",
+      "name": "unversioned-provide",
+      "finding": "NO_VIOLATION",
+      "catalog": "4c9c946e05206be1851b0e9dbcf1fc64275f92e3d5e7c82d8a0b394d294f426f",
+      "fingerprint": "fd19ba6c0824ee95d83a90c9b1a7fc4f1cd348bf5d38696be2881f4ce3174a36"
+    },
+    {
+      "id": "case-0587",
+      "name": "multiple-provided-versions",
+      "finding": "NO_VIOLATION",
+      "catalog": "9482605449c5a54950526fd0a28a922e69469cb13ccdd9533b35f9a6702a4894",
+      "fingerprint": "1d4e93070866600384f49ff1b4602cc1c07048b7c317cd2e6a9873c5a89d8b7f"
+    },
+    {
+      "id": "case-0588",
+      "name": "conflicts-real",
+      "finding": "PRESENT_CONFLICT",
+      "catalog": "af47f5bbaa2fc209d2c2b0af64832f4d0ab94c26061ed2ef49b724b4d19b0c4b",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0589",
+      "name": "conflicts-version-miss",
+      "finding": "NO_VIOLATION",
+      "catalog": "016688e523f95a10de2a5ec869795b27a49a9ee81241533d3616f38c79013293",
+      "fingerprint": "6edc0706d3c6d6a3bf75f69c863949696a6995f4e7d870b058f3319b6c0f28b7"
+    },
+    {
+      "id": "case-0590",
+      "name": "conflicts-self",
+      "finding": "NO_VIOLATION",
+      "catalog": "e9298fdb7c8ed4679cc05cedfc6458a56fa260e6c584e9613f997dfa63274d3c",
+      "fingerprint": "c2cf086d1587de7377727cf6443688437848d27afc05e05f3f9565053a116681"
+    },
+    {
+      "id": "case-0591",
+      "name": "conflicts-virtual",
+      "finding": "PRESENT_CONFLICT",
+      "catalog": "f2e3dc3d08941905e74c4bbbe148c956ab6124018869018a6eb2857224862439",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0592",
+      "name": "conflicts-virtual-version",
+      "finding": "PRESENT_CONFLICT",
+      "catalog": "767969739a100dc6a4f37d6e01100162fcf00cf869208a4e30c0adcf7dfcc4fd",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0593",
+      "name": "conflicts-self-provide",
+      "finding": "NO_VIOLATION",
+      "catalog": "f2370d5135f2d050e0b61e9126c1b78bc35909aae5bc9045fd2431d9fe05ea97",
+      "fingerprint": "07ba4b1b2d0cf6dffbaa32b3d7ddd351f27278bc07819f546f483c987ae5ffc0"
+    },
+    {
+      "id": "case-0594",
+      "name": "conflicts-other-provider",
+      "finding": "PRESENT_CONFLICT",
+      "catalog": "985a64cc169355d3712a13f4b1f82f933ddf2ecab3efcc5bf20e5fa678b0da90",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0595",
+      "name": "conflicts-foreign-implicit",
+      "finding": "PRESENT_CONFLICT",
+      "catalog": "f85cf5d7b14e8fe4e7ba647ecbbe188195fe6dc832a724c5a9949ea908d24fc1",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0596",
+      "name": "conflicts-foreign-explicit-miss",
+      "finding": "NO_VIOLATION",
+      "catalog": "06bab81eb1ce49b5de9ad4306b0618c3d2d267612c077c5c4c257faf1ad46261",
+      "fingerprint": "6606553c2dcf900fdf2e5348a37ffa907e8e8828b7b47d3c636673339033619c"
+    },
+    {
+      "id": "case-0597",
+      "name": "conflicts-coinstalled-self-name",
+      "finding": "NO_VIOLATION",
+      "catalog": "effe686b4bd7dad26827afa10ee7de8de0246b00fe0ce6da2fb9ef90bd91c0ae",
+      "fingerprint": "b4fd5d6235786aebf1964fc1292a515bcadcba459a2829e63be0da87d945018a"
+    },
+    {
+      "id": "case-0598",
+      "name": "breaks-real",
+      "finding": "PRESENT_CONFLICT",
+      "catalog": "794aac17c53c9f0710f47b6513529fd33daafb90ac0e34a87bc9c09a2ee35889",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0599",
+      "name": "breaks-version-miss",
+      "finding": "NO_VIOLATION",
+      "catalog": "c9712c6e2c32370ea791f5d40aa06fc51bb6c982977a3439ead86d3d4b161770",
+      "fingerprint": "d901e23c0eb2a3bb0e16bbe04295772bfe238d120dcbe7beb92bc66634855c2b"
+    },
+    {
+      "id": "case-0600",
+      "name": "breaks-self",
+      "finding": "NO_VIOLATION",
+      "catalog": "8faab352581f005029861a82fd9107d5aa6d7aa4bb7a65b4063d72041358b75b",
+      "fingerprint": "8a76415ea563f3e587c774e03da725ac9950b7b9decb040382ec36f64e64c7e6"
+    },
+    {
+      "id": "case-0601",
+      "name": "breaks-virtual",
+      "finding": "PRESENT_CONFLICT",
+      "catalog": "051f7bc02ab46628406f1b5ba301339af4d17efe8d06d80bf697c4b34dcc0e1f",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0602",
+      "name": "breaks-virtual-version",
+      "finding": "PRESENT_CONFLICT",
+      "catalog": "8380909e83809100bde7aed6b830bffa53b9a304a6eed0c7fdd33be5c7007873",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0603",
+      "name": "breaks-self-provide",
+      "finding": "NO_VIOLATION",
+      "catalog": "2bf6fe71841cdba0bb6c382b1b4226b03bc9f1b79983248429cb0e19a934e5c3",
+      "fingerprint": "dd0540a95fd8f6141d5a44eaf6e44022d38da1a79e0da04b9edd476bc65e098f"
+    },
+    {
+      "id": "case-0604",
+      "name": "breaks-other-provider",
+      "finding": "PRESENT_CONFLICT",
+      "catalog": "73997872c3a70f6e780078954a5947792279a7b8510d6f05497fe085a59f1ffc",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0605",
+      "name": "breaks-foreign-implicit",
+      "finding": "PRESENT_CONFLICT",
+      "catalog": "23e477256cc70a9473c74592e86b2fccfec3225e37e30702359f20f1a84d7fef",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "case-0606",
+      "name": "breaks-foreign-explicit-miss",
+      "finding": "NO_VIOLATION",
+      "catalog": "e48ef8f0ab9fdfae1a588985ae1e31b1e7fa941c635aaf37a1a3c353c3463614",
+      "fingerprint": "c0a82b5ca2fbc06865d6324b9560711081f770f12159a932840f682603c7cb4c"
+    },
+    {
+      "id": "case-0607",
+      "name": "breaks-coinstalled-self-name",
+      "finding": "NO_VIOLATION",
+      "catalog": "0c7bc70456c061d68557d9a2646e4ac0f8f5df218bff3892a11917d52c033e84",
+      "fingerprint": "17f7a39d9bf2b4befafca3b929d4a98b702f8ca622a39887ae6d77538d50a2b7"
+    },
+    {
+      "id": "case-0608",
+      "name": "other-native-all-provider",
+      "finding": "NO_VIOLATION",
+      "catalog": "3cd722842667c95521046047ca1389b0b8cdf783fd332bb9542f875e2f5ead0d",
+      "fingerprint": "78efd9830836a50414190a899935c82bd37a4afaea58c0582c2b5073ddf3f266"
+    },
+    {
+      "id": "case-0609",
+      "name": "other-native-all-consumer",
+      "finding": "MISSING_DEPENDENCY",
+      "catalog": "7be06ddd735083a96bad9242cf29e021011cbd0ac4b049f3daae5557e7c2ea72",
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  ]
+}

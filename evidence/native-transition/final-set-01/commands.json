@@ -1,0 +1,27 @@
+{
+  "container_image": "0c04329a1343a0f1ae82ab931ffc7a7e5cbfdccbf18948e0576366fbf5bb249a",
+  "network": "none",
+  "normal_uid": 1000,
+  "root_uid": 0,
+  "outer_scope": "sh dev/run-limited.sh",
+  "limits": {
+    "memory_bytes": 3221225472,
+    "swap_bytes": 0,
+    "cpu_cores": 1,
+    "pids": 128
+  },
+  "normal": "make compile-all build test JOBS=1",
+  "independent": "make compile-all build test-build JOBS=1",
+  "root": "sh ci/generation-root-refusal-test.sh",
+  "sanitized": "python3 /evidence/run-sanitized.py",
+  "upstream": "python3 tests/check_deb_final_set_upstream.py --media tests/fixtures/deb-final-set --work NEW_PRIVATE_PATH",
+  "source_date_epoch": 1788739200,
+  "independent_mtime": 1788652800,
+  "timezones": [
+    "UTC",
+    "Pacific/Honolulu"
+  ],
+  "new_dependencies": [],
+  "shared_runtime_changed": false,
+  "upstream_source_changed": false
+}

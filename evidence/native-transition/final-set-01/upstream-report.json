@@ -1,0 +1,6295 @@
+{
+  "upstream": "Debian 'dpkg' package management program version 1.22.22 (amd64).",
+  "scope": "independent per-target simulated configure and unpack from synthetic complete installed sets; no real phase schedule or scripts",
+  "cases": 898,
+  "seconds": 27.469304710997676,
+  "mismatches": [],
+  "results": [
+    {
+      "id": "case-0000",
+      "name": "standalone",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0001",
+      "name": "weak-and-source-not-runtime-deps",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0002",
+      "name": "unenabled-architecture",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0003",
+      "name": "alternatives-second",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0004",
+      "name": "all-groups-required",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0005",
+      "name": "self-dependency",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0006",
+      "name": "self-provided-dependency",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0007",
+      "name": "dependency-cycle",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0008",
+      "name": "predependency-cycle-endpoint-only",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0009",
+      "name": "predependency-missing",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0010",
+      "name": "depends-version-<<-3",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0011",
+      "name": "depends-version-<=-2",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0012",
+      "name": "depends-version-=-2",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0013",
+      "name": "depends-version->=-2",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0014",
+      "name": "depends-version->>-1",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0015",
+      "name": "depends-version->>-2",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0016",
+      "name": "depends-version-=-1",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0017",
+      "name": "pre-depends-version-<<-3",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0018",
+      "name": "pre-depends-version-<=-2",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0019",
+      "name": "pre-depends-version-=-2",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0020",
+      "name": "pre-depends-version->=-2",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0021",
+      "name": "pre-depends-version->>-1",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0022",
+      "name": "pre-depends-version->>-2",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0023",
+      "name": "pre-depends-version-=-1",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0024",
+      "name": "epoch-and-tilde",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0025",
+      "name": "epoch-dominates",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0026",
+      "name": "coinstall-same-version",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0027",
+      "name": "coinstall-equivalent-version",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0028",
+      "name": "coinstall-version-skew",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0029",
+      "name": "coinstall-no",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0030",
+      "name": "coinstall-foreign",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0031",
+      "name": "coinstall-allowed",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0032",
+      "name": "coinstall-all-native",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0033",
+      "name": "real-amd64-amd64-no-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0034",
+      "name": "real-amd64-amd64-no-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0035",
+      "name": "real-amd64-amd64-no-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0036",
+      "name": "real-amd64-amd64-no-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0037",
+      "name": "real-amd64-amd64-no-all",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0038",
+      "name": "real-amd64-amd64-no-native",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0039",
+      "name": "real-amd64-amd64-same-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0040",
+      "name": "real-amd64-amd64-same-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0041",
+      "name": "real-amd64-amd64-same-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0042",
+      "name": "real-amd64-amd64-same-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0043",
+      "name": "real-amd64-amd64-same-all",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0044",
+      "name": "real-amd64-amd64-same-native",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0045",
+      "name": "real-amd64-amd64-foreign-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0046",
+      "name": "real-amd64-amd64-foreign-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0047",
+      "name": "real-amd64-amd64-foreign-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0048",
+      "name": "real-amd64-amd64-foreign-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0049",
+      "name": "real-amd64-amd64-foreign-all",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0050",
+      "name": "real-amd64-amd64-foreign-native",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0051",
+      "name": "real-amd64-amd64-allowed-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0052",
+      "name": "real-amd64-amd64-allowed-any",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0053",
+      "name": "real-amd64-amd64-allowed-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0054",
+      "name": "real-amd64-amd64-allowed-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0055",
+      "name": "real-amd64-amd64-allowed-all",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0056",
+      "name": "real-amd64-amd64-allowed-native",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0057",
+      "name": "real-amd64-arm64-no-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0058",
+      "name": "real-amd64-arm64-no-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0059",
+      "name": "real-amd64-arm64-no-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0060",
+      "name": "real-amd64-arm64-no-arm64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0061",
+      "name": "real-amd64-arm64-no-all",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0062",
+      "name": "real-amd64-arm64-no-native",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0063",
+      "name": "real-amd64-arm64-same-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0064",
+      "name": "real-amd64-arm64-same-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0065",
+      "name": "real-amd64-arm64-same-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0066",
+      "name": "real-amd64-arm64-same-arm64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0067",
+      "name": "real-amd64-arm64-same-all",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0068",
+      "name": "real-amd64-arm64-same-native",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0069",
+      "name": "real-amd64-arm64-foreign-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0070",
+      "name": "real-amd64-arm64-foreign-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0071",
+      "name": "real-amd64-arm64-foreign-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0072",
+      "name": "real-amd64-arm64-foreign-arm64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0073",
+      "name": "real-amd64-arm64-foreign-all",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0074",
+      "name": "real-amd64-arm64-foreign-native",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0075",
+      "name": "real-amd64-arm64-allowed-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0076",
+      "name": "real-amd64-arm64-allowed-any",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0077",
+      "name": "real-amd64-arm64-allowed-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0078",
+      "name": "real-amd64-arm64-allowed-arm64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0079",
+      "name": "real-amd64-arm64-allowed-all",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0080",
+      "name": "real-amd64-arm64-allowed-native",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0081",
+      "name": "real-amd64-all-no-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0082",
+      "name": "real-amd64-all-no-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0083",
+      "name": "real-amd64-all-no-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0084",
+      "name": "real-amd64-all-no-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0085",
+      "name": "real-amd64-all-no-all",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0086",
+      "name": "real-amd64-all-no-native",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0087",
+      "name": "real-amd64-all-foreign-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0088",
+      "name": "real-amd64-all-foreign-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0089",
+      "name": "real-amd64-all-foreign-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0090",
+      "name": "real-amd64-all-foreign-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0091",
+      "name": "real-amd64-all-foreign-all",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0092",
+      "name": "real-amd64-all-foreign-native",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0093",
+      "name": "real-amd64-all-allowed-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0094",
+      "name": "real-amd64-all-allowed-any",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0095",
+      "name": "real-amd64-all-allowed-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0096",
+      "name": "real-amd64-all-allowed-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0097",
+      "name": "real-amd64-all-allowed-all",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0098",
+      "name": "real-amd64-all-allowed-native",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0099",
+      "name": "real-arm64-amd64-no-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0100",
+      "name": "real-arm64-amd64-no-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0101",
+      "name": "real-arm64-amd64-no-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0102",
+      "name": "real-arm64-amd64-no-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0103",
+      "name": "real-arm64-amd64-no-all",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0104",
+      "name": "real-arm64-amd64-no-native",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0105",
+      "name": "real-arm64-amd64-same-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0106",
+      "name": "real-arm64-amd64-same-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0107",
+      "name": "real-arm64-amd64-same-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0108",
+      "name": "real-arm64-amd64-same-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0109",
+      "name": "real-arm64-amd64-same-all",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0110",
+      "name": "real-arm64-amd64-same-native",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0111",
+      "name": "real-arm64-amd64-foreign-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0112",
+      "name": "real-arm64-amd64-foreign-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0113",
+      "name": "real-arm64-amd64-foreign-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0114",
+      "name": "real-arm64-amd64-foreign-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0115",
+      "name": "real-arm64-amd64-foreign-all",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0116",
+      "name": "real-arm64-amd64-foreign-native",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0117",
+      "name": "real-arm64-amd64-allowed-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0118",
+      "name": "real-arm64-amd64-allowed-any",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0119",
+      "name": "real-arm64-amd64-allowed-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0120",
+      "name": "real-arm64-amd64-allowed-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0121",
+      "name": "real-arm64-amd64-allowed-all",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0122",
+      "name": "real-arm64-amd64-allowed-native",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0123",
+      "name": "real-arm64-arm64-no-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0124",
+      "name": "real-arm64-arm64-no-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0125",
+      "name": "real-arm64-arm64-no-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0126",
+      "name": "real-arm64-arm64-no-arm64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0127",
+      "name": "real-arm64-arm64-no-all",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0128",
+      "name": "real-arm64-arm64-no-native",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0129",
+      "name": "real-arm64-arm64-same-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0130",
+      "name": "real-arm64-arm64-same-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0131",
+      "name": "real-arm64-arm64-same-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0132",
+      "name": "real-arm64-arm64-same-arm64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0133",
+      "name": "real-arm64-arm64-same-all",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0134",
+      "name": "real-arm64-arm64-same-native",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0135",
+      "name": "real-arm64-arm64-foreign-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0136",
+      "name": "real-arm64-arm64-foreign-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0137",
+      "name": "real-arm64-arm64-foreign-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0138",
+      "name": "real-arm64-arm64-foreign-arm64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0139",
+      "name": "real-arm64-arm64-foreign-all",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0140",
+      "name": "real-arm64-arm64-foreign-native",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0141",
+      "name": "real-arm64-arm64-allowed-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0142",
+      "name": "real-arm64-arm64-allowed-any",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0143",
+      "name": "real-arm64-arm64-allowed-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0144",
+      "name": "real-arm64-arm64-allowed-arm64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0145",
+      "name": "real-arm64-arm64-allowed-all",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0146",
+      "name": "real-arm64-arm64-allowed-native",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0147",
+      "name": "real-arm64-all-no-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0148",
+      "name": "real-arm64-all-no-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0149",
+      "name": "real-arm64-all-no-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0150",
+      "name": "real-arm64-all-no-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0151",
+      "name": "real-arm64-all-no-all",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0152",
+      "name": "real-arm64-all-no-native",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0153",
+      "name": "real-arm64-all-foreign-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0154",
+      "name": "real-arm64-all-foreign-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0155",
+      "name": "real-arm64-all-foreign-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0156",
+      "name": "real-arm64-all-foreign-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0157",
+      "name": "real-arm64-all-foreign-all",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0158",
+      "name": "real-arm64-all-foreign-native",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0159",
+      "name": "real-arm64-all-allowed-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0160",
+      "name": "real-arm64-all-allowed-any",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0161",
+      "name": "real-arm64-all-allowed-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0162",
+      "name": "real-arm64-all-allowed-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0163",
+      "name": "real-arm64-all-allowed-all",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0164",
+      "name": "real-arm64-all-allowed-native",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0165",
+      "name": "real-all-amd64-no-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0166",
+      "name": "real-all-amd64-no-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0167",
+      "name": "real-all-amd64-no-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0168",
+      "name": "real-all-amd64-no-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0169",
+      "name": "real-all-amd64-no-all",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0170",
+      "name": "real-all-amd64-no-native",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0171",
+      "name": "real-all-amd64-same-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0172",
+      "name": "real-all-amd64-same-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0173",
+      "name": "real-all-amd64-same-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0174",
+      "name": "real-all-amd64-same-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0175",
+      "name": "real-all-amd64-same-all",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0176",
+      "name": "real-all-amd64-same-native",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0177",
+      "name": "real-all-amd64-foreign-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0178",
+      "name": "real-all-amd64-foreign-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0179",
+      "name": "real-all-amd64-foreign-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0180",
+      "name": "real-all-amd64-foreign-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0181",
+      "name": "real-all-amd64-foreign-all",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0182",
+      "name": "real-all-amd64-foreign-native",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0183",
+      "name": "real-all-amd64-allowed-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0184",
+      "name": "real-all-amd64-allowed-any",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0185",
+      "name": "real-all-amd64-allowed-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0186",
+      "name": "real-all-amd64-allowed-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0187",
+      "name": "real-all-amd64-allowed-all",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0188",
+      "name": "real-all-amd64-allowed-native",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0189",
+      "name": "real-all-arm64-no-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0190",
+      "name": "real-all-arm64-no-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0191",
+      "name": "real-all-arm64-no-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0192",
+      "name": "real-all-arm64-no-arm64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0193",
+      "name": "real-all-arm64-no-all",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0194",
+      "name": "real-all-arm64-no-native",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0195",
+      "name": "real-all-arm64-same-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0196",
+      "name": "real-all-arm64-same-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0197",
+      "name": "real-all-arm64-same-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0198",
+      "name": "real-all-arm64-same-arm64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0199",
+      "name": "real-all-arm64-same-all",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0200",
+      "name": "real-all-arm64-same-native",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0201",
+      "name": "real-all-arm64-foreign-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0202",
+      "name": "real-all-arm64-foreign-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0203",
+      "name": "real-all-arm64-foreign-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0204",
+      "name": "real-all-arm64-foreign-arm64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0205",
+      "name": "real-all-arm64-foreign-all",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0206",
+      "name": "real-all-arm64-foreign-native",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0207",
+      "name": "real-all-arm64-allowed-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0208",
+      "name": "real-all-arm64-allowed-any",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0209",
+      "name": "real-all-arm64-allowed-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0210",
+      "name": "real-all-arm64-allowed-arm64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0211",
+      "name": "real-all-arm64-allowed-all",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0212",
+      "name": "real-all-arm64-allowed-native",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0213",
+      "name": "real-all-all-no-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0214",
+      "name": "real-all-all-no-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0215",
+      "name": "real-all-all-no-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0216",
+      "name": "real-all-all-no-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0217",
+      "name": "real-all-all-no-all",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0218",
+      "name": "real-all-all-no-native",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0219",
+      "name": "real-all-all-foreign-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0220",
+      "name": "real-all-all-foreign-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0221",
+      "name": "real-all-all-foreign-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0222",
+      "name": "real-all-all-foreign-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0223",
+      "name": "real-all-all-foreign-all",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0224",
+      "name": "real-all-all-foreign-native",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0225",
+      "name": "real-all-all-allowed-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0226",
+      "name": "real-all-all-allowed-any",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0227",
+      "name": "real-all-all-allowed-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0228",
+      "name": "real-all-all-allowed-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0229",
+      "name": "real-all-all-allowed-all",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0230",
+      "name": "real-all-all-allowed-native",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0231",
+      "name": "virtual-amd64-amd64-no-implicit-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0232",
+      "name": "virtual-amd64-amd64-no-implicit-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0233",
+      "name": "virtual-amd64-amd64-no-implicit-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0234",
+      "name": "virtual-amd64-amd64-no-implicit-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0235",
+      "name": "virtual-amd64-amd64-no-any-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0236",
+      "name": "virtual-amd64-amd64-no-any-any",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0237",
+      "name": "virtual-amd64-amd64-no-any-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0238",
+      "name": "virtual-amd64-amd64-no-any-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0239",
+      "name": "virtual-amd64-amd64-no-amd64-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0240",
+      "name": "virtual-amd64-amd64-no-amd64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0241",
+      "name": "virtual-amd64-amd64-no-amd64-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0242",
+      "name": "virtual-amd64-amd64-no-amd64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0243",
+      "name": "virtual-amd64-amd64-no-arm64-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0244",
+      "name": "virtual-amd64-amd64-no-arm64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0245",
+      "name": "virtual-amd64-amd64-no-arm64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0246",
+      "name": "virtual-amd64-amd64-no-arm64-arm64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0247",
+      "name": "virtual-amd64-amd64-same-implicit-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0248",
+      "name": "virtual-amd64-amd64-same-implicit-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0249",
+      "name": "virtual-amd64-amd64-same-implicit-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0250",
+      "name": "virtual-amd64-amd64-same-implicit-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0251",
+      "name": "virtual-amd64-amd64-same-any-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0252",
+      "name": "virtual-amd64-amd64-same-any-any",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0253",
+      "name": "virtual-amd64-amd64-same-any-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0254",
+      "name": "virtual-amd64-amd64-same-any-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0255",
+      "name": "virtual-amd64-amd64-same-amd64-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0256",
+      "name": "virtual-amd64-amd64-same-amd64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0257",
+      "name": "virtual-amd64-amd64-same-amd64-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0258",
+      "name": "virtual-amd64-amd64-same-amd64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0259",
+      "name": "virtual-amd64-amd64-same-arm64-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0260",
+      "name": "virtual-amd64-amd64-same-arm64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0261",
+      "name": "virtual-amd64-amd64-same-arm64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0262",
+      "name": "virtual-amd64-amd64-same-arm64-arm64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0263",
+      "name": "virtual-amd64-amd64-foreign-implicit-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0264",
+      "name": "virtual-amd64-amd64-foreign-implicit-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0265",
+      "name": "virtual-amd64-amd64-foreign-implicit-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0266",
+      "name": "virtual-amd64-amd64-foreign-implicit-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0267",
+      "name": "virtual-amd64-amd64-foreign-any-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0268",
+      "name": "virtual-amd64-amd64-foreign-any-any",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0269",
+      "name": "virtual-amd64-amd64-foreign-any-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0270",
+      "name": "virtual-amd64-amd64-foreign-any-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0271",
+      "name": "virtual-amd64-amd64-foreign-amd64-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0272",
+      "name": "virtual-amd64-amd64-foreign-amd64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0273",
+      "name": "virtual-amd64-amd64-foreign-amd64-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0274",
+      "name": "virtual-amd64-amd64-foreign-amd64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0275",
+      "name": "virtual-amd64-amd64-foreign-arm64-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0276",
+      "name": "virtual-amd64-amd64-foreign-arm64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0277",
+      "name": "virtual-amd64-amd64-foreign-arm64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0278",
+      "name": "virtual-amd64-amd64-foreign-arm64-arm64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0279",
+      "name": "virtual-amd64-amd64-allowed-implicit-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0280",
+      "name": "virtual-amd64-amd64-allowed-implicit-any",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0281",
+      "name": "virtual-amd64-amd64-allowed-implicit-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0282",
+      "name": "virtual-amd64-amd64-allowed-implicit-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0283",
+      "name": "virtual-amd64-amd64-allowed-any-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0284",
+      "name": "virtual-amd64-amd64-allowed-any-any",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0285",
+      "name": "virtual-amd64-amd64-allowed-any-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0286",
+      "name": "virtual-amd64-amd64-allowed-any-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0287",
+      "name": "virtual-amd64-amd64-allowed-amd64-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0288",
+      "name": "virtual-amd64-amd64-allowed-amd64-any",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0289",
+      "name": "virtual-amd64-amd64-allowed-amd64-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0290",
+      "name": "virtual-amd64-amd64-allowed-amd64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0291",
+      "name": "virtual-amd64-amd64-allowed-arm64-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0292",
+      "name": "virtual-amd64-amd64-allowed-arm64-any",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0293",
+      "name": "virtual-amd64-amd64-allowed-arm64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0294",
+      "name": "virtual-amd64-amd64-allowed-arm64-arm64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0295",
+      "name": "virtual-amd64-arm64-no-implicit-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0296",
+      "name": "virtual-amd64-arm64-no-implicit-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0297",
+      "name": "virtual-amd64-arm64-no-implicit-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0298",
+      "name": "virtual-amd64-arm64-no-implicit-arm64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0299",
+      "name": "virtual-amd64-arm64-no-any-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0300",
+      "name": "virtual-amd64-arm64-no-any-any",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0301",
+      "name": "virtual-amd64-arm64-no-any-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0302",
+      "name": "virtual-amd64-arm64-no-any-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0303",
+      "name": "virtual-amd64-arm64-no-amd64-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0304",
+      "name": "virtual-amd64-arm64-no-amd64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0305",
+      "name": "virtual-amd64-arm64-no-amd64-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0306",
+      "name": "virtual-amd64-arm64-no-amd64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0307",
+      "name": "virtual-amd64-arm64-no-arm64-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0308",
+      "name": "virtual-amd64-arm64-no-arm64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0309",
+      "name": "virtual-amd64-arm64-no-arm64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0310",
+      "name": "virtual-amd64-arm64-no-arm64-arm64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0311",
+      "name": "virtual-amd64-arm64-same-implicit-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0312",
+      "name": "virtual-amd64-arm64-same-implicit-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0313",
+      "name": "virtual-amd64-arm64-same-implicit-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0314",
+      "name": "virtual-amd64-arm64-same-implicit-arm64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0315",
+      "name": "virtual-amd64-arm64-same-any-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0316",
+      "name": "virtual-amd64-arm64-same-any-any",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0317",
+      "name": "virtual-amd64-arm64-same-any-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0318",
+      "name": "virtual-amd64-arm64-same-any-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0319",
+      "name": "virtual-amd64-arm64-same-amd64-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0320",
+      "name": "virtual-amd64-arm64-same-amd64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0321",
+      "name": "virtual-amd64-arm64-same-amd64-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0322",
+      "name": "virtual-amd64-arm64-same-amd64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0323",
+      "name": "virtual-amd64-arm64-same-arm64-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0324",
+      "name": "virtual-amd64-arm64-same-arm64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0325",
+      "name": "virtual-amd64-arm64-same-arm64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0326",
+      "name": "virtual-amd64-arm64-same-arm64-arm64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0327",
+      "name": "virtual-amd64-arm64-foreign-implicit-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0328",
+      "name": "virtual-amd64-arm64-foreign-implicit-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0329",
+      "name": "virtual-amd64-arm64-foreign-implicit-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0330",
+      "name": "virtual-amd64-arm64-foreign-implicit-arm64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0331",
+      "name": "virtual-amd64-arm64-foreign-any-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0332",
+      "name": "virtual-amd64-arm64-foreign-any-any",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0333",
+      "name": "virtual-amd64-arm64-foreign-any-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0334",
+      "name": "virtual-amd64-arm64-foreign-any-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0335",
+      "name": "virtual-amd64-arm64-foreign-amd64-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0336",
+      "name": "virtual-amd64-arm64-foreign-amd64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0337",
+      "name": "virtual-amd64-arm64-foreign-amd64-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0338",
+      "name": "virtual-amd64-arm64-foreign-amd64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0339",
+      "name": "virtual-amd64-arm64-foreign-arm64-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0340",
+      "name": "virtual-amd64-arm64-foreign-arm64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0341",
+      "name": "virtual-amd64-arm64-foreign-arm64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0342",
+      "name": "virtual-amd64-arm64-foreign-arm64-arm64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0343",
+      "name": "virtual-amd64-arm64-allowed-implicit-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0344",
+      "name": "virtual-amd64-arm64-allowed-implicit-any",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0345",
+      "name": "virtual-amd64-arm64-allowed-implicit-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0346",
+      "name": "virtual-amd64-arm64-allowed-implicit-arm64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0347",
+      "name": "virtual-amd64-arm64-allowed-any-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0348",
+      "name": "virtual-amd64-arm64-allowed-any-any",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0349",
+      "name": "virtual-amd64-arm64-allowed-any-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0350",
+      "name": "virtual-amd64-arm64-allowed-any-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0351",
+      "name": "virtual-amd64-arm64-allowed-amd64-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0352",
+      "name": "virtual-amd64-arm64-allowed-amd64-any",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0353",
+      "name": "virtual-amd64-arm64-allowed-amd64-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0354",
+      "name": "virtual-amd64-arm64-allowed-amd64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0355",
+      "name": "virtual-amd64-arm64-allowed-arm64-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0356",
+      "name": "virtual-amd64-arm64-allowed-arm64-any",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0357",
+      "name": "virtual-amd64-arm64-allowed-arm64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0358",
+      "name": "virtual-amd64-arm64-allowed-arm64-arm64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0359",
+      "name": "virtual-amd64-all-no-implicit-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0360",
+      "name": "virtual-amd64-all-no-implicit-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0361",
+      "name": "virtual-amd64-all-no-implicit-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0362",
+      "name": "virtual-amd64-all-no-implicit-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0363",
+      "name": "virtual-amd64-all-no-any-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0364",
+      "name": "virtual-amd64-all-no-any-any",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0365",
+      "name": "virtual-amd64-all-no-any-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0366",
+      "name": "virtual-amd64-all-no-any-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0367",
+      "name": "virtual-amd64-all-no-amd64-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0368",
+      "name": "virtual-amd64-all-no-amd64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0369",
+      "name": "virtual-amd64-all-no-amd64-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0370",
+      "name": "virtual-amd64-all-no-amd64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0371",
+      "name": "virtual-amd64-all-no-arm64-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0372",
+      "name": "virtual-amd64-all-no-arm64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0373",
+      "name": "virtual-amd64-all-no-arm64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0374",
+      "name": "virtual-amd64-all-no-arm64-arm64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0375",
+      "name": "virtual-amd64-all-foreign-implicit-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0376",
+      "name": "virtual-amd64-all-foreign-implicit-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0377",
+      "name": "virtual-amd64-all-foreign-implicit-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0378",
+      "name": "virtual-amd64-all-foreign-implicit-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0379",
+      "name": "virtual-amd64-all-foreign-any-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0380",
+      "name": "virtual-amd64-all-foreign-any-any",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0381",
+      "name": "virtual-amd64-all-foreign-any-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0382",
+      "name": "virtual-amd64-all-foreign-any-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0383",
+      "name": "virtual-amd64-all-foreign-amd64-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0384",
+      "name": "virtual-amd64-all-foreign-amd64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0385",
+      "name": "virtual-amd64-all-foreign-amd64-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0386",
+      "name": "virtual-amd64-all-foreign-amd64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0387",
+      "name": "virtual-amd64-all-foreign-arm64-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0388",
+      "name": "virtual-amd64-all-foreign-arm64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0389",
+      "name": "virtual-amd64-all-foreign-arm64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0390",
+      "name": "virtual-amd64-all-foreign-arm64-arm64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0391",
+      "name": "virtual-amd64-all-allowed-implicit-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0392",
+      "name": "virtual-amd64-all-allowed-implicit-any",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0393",
+      "name": "virtual-amd64-all-allowed-implicit-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0394",
+      "name": "virtual-amd64-all-allowed-implicit-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0395",
+      "name": "virtual-amd64-all-allowed-any-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0396",
+      "name": "virtual-amd64-all-allowed-any-any",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0397",
+      "name": "virtual-amd64-all-allowed-any-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0398",
+      "name": "virtual-amd64-all-allowed-any-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0399",
+      "name": "virtual-amd64-all-allowed-amd64-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0400",
+      "name": "virtual-amd64-all-allowed-amd64-any",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0401",
+      "name": "virtual-amd64-all-allowed-amd64-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0402",
+      "name": "virtual-amd64-all-allowed-amd64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0403",
+      "name": "virtual-amd64-all-allowed-arm64-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0404",
+      "name": "virtual-amd64-all-allowed-arm64-any",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0405",
+      "name": "virtual-amd64-all-allowed-arm64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0406",
+      "name": "virtual-amd64-all-allowed-arm64-arm64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0407",
+      "name": "virtual-arm64-amd64-no-implicit-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0408",
+      "name": "virtual-arm64-amd64-no-implicit-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0409",
+      "name": "virtual-arm64-amd64-no-implicit-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0410",
+      "name": "virtual-arm64-amd64-no-implicit-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0411",
+      "name": "virtual-arm64-amd64-no-any-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0412",
+      "name": "virtual-arm64-amd64-no-any-any",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0413",
+      "name": "virtual-arm64-amd64-no-any-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0414",
+      "name": "virtual-arm64-amd64-no-any-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0415",
+      "name": "virtual-arm64-amd64-no-amd64-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0416",
+      "name": "virtual-arm64-amd64-no-amd64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0417",
+      "name": "virtual-arm64-amd64-no-amd64-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0418",
+      "name": "virtual-arm64-amd64-no-amd64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0419",
+      "name": "virtual-arm64-amd64-no-arm64-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0420",
+      "name": "virtual-arm64-amd64-no-arm64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0421",
+      "name": "virtual-arm64-amd64-no-arm64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0422",
+      "name": "virtual-arm64-amd64-no-arm64-arm64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0423",
+      "name": "virtual-arm64-amd64-same-implicit-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0424",
+      "name": "virtual-arm64-amd64-same-implicit-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0425",
+      "name": "virtual-arm64-amd64-same-implicit-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0426",
+      "name": "virtual-arm64-amd64-same-implicit-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0427",
+      "name": "virtual-arm64-amd64-same-any-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0428",
+      "name": "virtual-arm64-amd64-same-any-any",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0429",
+      "name": "virtual-arm64-amd64-same-any-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0430",
+      "name": "virtual-arm64-amd64-same-any-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0431",
+      "name": "virtual-arm64-amd64-same-amd64-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0432",
+      "name": "virtual-arm64-amd64-same-amd64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0433",
+      "name": "virtual-arm64-amd64-same-amd64-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0434",
+      "name": "virtual-arm64-amd64-same-amd64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0435",
+      "name": "virtual-arm64-amd64-same-arm64-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0436",
+      "name": "virtual-arm64-amd64-same-arm64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0437",
+      "name": "virtual-arm64-amd64-same-arm64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0438",
+      "name": "virtual-arm64-amd64-same-arm64-arm64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0439",
+      "name": "virtual-arm64-amd64-foreign-implicit-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0440",
+      "name": "virtual-arm64-amd64-foreign-implicit-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0441",
+      "name": "virtual-arm64-amd64-foreign-implicit-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0442",
+      "name": "virtual-arm64-amd64-foreign-implicit-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0443",
+      "name": "virtual-arm64-amd64-foreign-any-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0444",
+      "name": "virtual-arm64-amd64-foreign-any-any",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0445",
+      "name": "virtual-arm64-amd64-foreign-any-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0446",
+      "name": "virtual-arm64-amd64-foreign-any-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0447",
+      "name": "virtual-arm64-amd64-foreign-amd64-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0448",
+      "name": "virtual-arm64-amd64-foreign-amd64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0449",
+      "name": "virtual-arm64-amd64-foreign-amd64-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0450",
+      "name": "virtual-arm64-amd64-foreign-amd64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0451",
+      "name": "virtual-arm64-amd64-foreign-arm64-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0452",
+      "name": "virtual-arm64-amd64-foreign-arm64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0453",
+      "name": "virtual-arm64-amd64-foreign-arm64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0454",
+      "name": "virtual-arm64-amd64-foreign-arm64-arm64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0455",
+      "name": "virtual-arm64-amd64-allowed-implicit-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0456",
+      "name": "virtual-arm64-amd64-allowed-implicit-any",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0457",
+      "name": "virtual-arm64-amd64-allowed-implicit-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0458",
+      "name": "virtual-arm64-amd64-allowed-implicit-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0459",
+      "name": "virtual-arm64-amd64-allowed-any-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0460",
+      "name": "virtual-arm64-amd64-allowed-any-any",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0461",
+      "name": "virtual-arm64-amd64-allowed-any-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0462",
+      "name": "virtual-arm64-amd64-allowed-any-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0463",
+      "name": "virtual-arm64-amd64-allowed-amd64-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0464",
+      "name": "virtual-arm64-amd64-allowed-amd64-any",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0465",
+      "name": "virtual-arm64-amd64-allowed-amd64-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0466",
+      "name": "virtual-arm64-amd64-allowed-amd64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0467",
+      "name": "virtual-arm64-amd64-allowed-arm64-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0468",
+      "name": "virtual-arm64-amd64-allowed-arm64-any",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0469",
+      "name": "virtual-arm64-amd64-allowed-arm64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0470",
+      "name": "virtual-arm64-amd64-allowed-arm64-arm64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0471",
+      "name": "virtual-arm64-arm64-no-implicit-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0472",
+      "name": "virtual-arm64-arm64-no-implicit-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0473",
+      "name": "virtual-arm64-arm64-no-implicit-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0474",
+      "name": "virtual-arm64-arm64-no-implicit-arm64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0475",
+      "name": "virtual-arm64-arm64-no-any-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0476",
+      "name": "virtual-arm64-arm64-no-any-any",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0477",
+      "name": "virtual-arm64-arm64-no-any-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0478",
+      "name": "virtual-arm64-arm64-no-any-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0479",
+      "name": "virtual-arm64-arm64-no-amd64-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0480",
+      "name": "virtual-arm64-arm64-no-amd64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0481",
+      "name": "virtual-arm64-arm64-no-amd64-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0482",
+      "name": "virtual-arm64-arm64-no-amd64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0483",
+      "name": "virtual-arm64-arm64-no-arm64-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0484",
+      "name": "virtual-arm64-arm64-no-arm64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0485",
+      "name": "virtual-arm64-arm64-no-arm64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0486",
+      "name": "virtual-arm64-arm64-no-arm64-arm64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0487",
+      "name": "virtual-arm64-arm64-same-implicit-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0488",
+      "name": "virtual-arm64-arm64-same-implicit-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0489",
+      "name": "virtual-arm64-arm64-same-implicit-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0490",
+      "name": "virtual-arm64-arm64-same-implicit-arm64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0491",
+      "name": "virtual-arm64-arm64-same-any-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0492",
+      "name": "virtual-arm64-arm64-same-any-any",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0493",
+      "name": "virtual-arm64-arm64-same-any-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0494",
+      "name": "virtual-arm64-arm64-same-any-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0495",
+      "name": "virtual-arm64-arm64-same-amd64-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0496",
+      "name": "virtual-arm64-arm64-same-amd64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0497",
+      "name": "virtual-arm64-arm64-same-amd64-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0498",
+      "name": "virtual-arm64-arm64-same-amd64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0499",
+      "name": "virtual-arm64-arm64-same-arm64-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0500",
+      "name": "virtual-arm64-arm64-same-arm64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0501",
+      "name": "virtual-arm64-arm64-same-arm64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0502",
+      "name": "virtual-arm64-arm64-same-arm64-arm64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0503",
+      "name": "virtual-arm64-arm64-foreign-implicit-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0504",
+      "name": "virtual-arm64-arm64-foreign-implicit-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0505",
+      "name": "virtual-arm64-arm64-foreign-implicit-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0506",
+      "name": "virtual-arm64-arm64-foreign-implicit-arm64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0507",
+      "name": "virtual-arm64-arm64-foreign-any-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0508",
+      "name": "virtual-arm64-arm64-foreign-any-any",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0509",
+      "name": "virtual-arm64-arm64-foreign-any-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0510",
+      "name": "virtual-arm64-arm64-foreign-any-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0511",
+      "name": "virtual-arm64-arm64-foreign-amd64-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0512",
+      "name": "virtual-arm64-arm64-foreign-amd64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0513",
+      "name": "virtual-arm64-arm64-foreign-amd64-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0514",
+      "name": "virtual-arm64-arm64-foreign-amd64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0515",
+      "name": "virtual-arm64-arm64-foreign-arm64-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0516",
+      "name": "virtual-arm64-arm64-foreign-arm64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0517",
+      "name": "virtual-arm64-arm64-foreign-arm64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0518",
+      "name": "virtual-arm64-arm64-foreign-arm64-arm64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0519",
+      "name": "virtual-arm64-arm64-allowed-implicit-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0520",
+      "name": "virtual-arm64-arm64-allowed-implicit-any",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0521",
+      "name": "virtual-arm64-arm64-allowed-implicit-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0522",
+      "name": "virtual-arm64-arm64-allowed-implicit-arm64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0523",
+      "name": "virtual-arm64-arm64-allowed-any-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0524",
+      "name": "virtual-arm64-arm64-allowed-any-any",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0525",
+      "name": "virtual-arm64-arm64-allowed-any-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0526",
+      "name": "virtual-arm64-arm64-allowed-any-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0527",
+      "name": "virtual-arm64-arm64-allowed-amd64-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0528",
+      "name": "virtual-arm64-arm64-allowed-amd64-any",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0529",
+      "name": "virtual-arm64-arm64-allowed-amd64-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0530",
+      "name": "virtual-arm64-arm64-allowed-amd64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0531",
+      "name": "virtual-arm64-arm64-allowed-arm64-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0532",
+      "name": "virtual-arm64-arm64-allowed-arm64-any",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0533",
+      "name": "virtual-arm64-arm64-allowed-arm64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0534",
+      "name": "virtual-arm64-arm64-allowed-arm64-arm64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0535",
+      "name": "virtual-arm64-all-no-implicit-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0536",
+      "name": "virtual-arm64-all-no-implicit-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0537",
+      "name": "virtual-arm64-all-no-implicit-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0538",
+      "name": "virtual-arm64-all-no-implicit-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0539",
+      "name": "virtual-arm64-all-no-any-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0540",
+      "name": "virtual-arm64-all-no-any-any",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0541",
+      "name": "virtual-arm64-all-no-any-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0542",
+      "name": "virtual-arm64-all-no-any-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0543",
+      "name": "virtual-arm64-all-no-amd64-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0544",
+      "name": "virtual-arm64-all-no-amd64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0545",
+      "name": "virtual-arm64-all-no-amd64-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0546",
+      "name": "virtual-arm64-all-no-amd64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0547",
+      "name": "virtual-arm64-all-no-arm64-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0548",
+      "name": "virtual-arm64-all-no-arm64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0549",
+      "name": "virtual-arm64-all-no-arm64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0550",
+      "name": "virtual-arm64-all-no-arm64-arm64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0551",
+      "name": "virtual-arm64-all-foreign-implicit-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0552",
+      "name": "virtual-arm64-all-foreign-implicit-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0553",
+      "name": "virtual-arm64-all-foreign-implicit-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0554",
+      "name": "virtual-arm64-all-foreign-implicit-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0555",
+      "name": "virtual-arm64-all-foreign-any-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0556",
+      "name": "virtual-arm64-all-foreign-any-any",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0557",
+      "name": "virtual-arm64-all-foreign-any-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0558",
+      "name": "virtual-arm64-all-foreign-any-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0559",
+      "name": "virtual-arm64-all-foreign-amd64-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0560",
+      "name": "virtual-arm64-all-foreign-amd64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0561",
+      "name": "virtual-arm64-all-foreign-amd64-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0562",
+      "name": "virtual-arm64-all-foreign-amd64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0563",
+      "name": "virtual-arm64-all-foreign-arm64-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0564",
+      "name": "virtual-arm64-all-foreign-arm64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0565",
+      "name": "virtual-arm64-all-foreign-arm64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0566",
+      "name": "virtual-arm64-all-foreign-arm64-arm64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0567",
+      "name": "virtual-arm64-all-allowed-implicit-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0568",
+      "name": "virtual-arm64-all-allowed-implicit-any",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0569",
+      "name": "virtual-arm64-all-allowed-implicit-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0570",
+      "name": "virtual-arm64-all-allowed-implicit-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0571",
+      "name": "virtual-arm64-all-allowed-any-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0572",
+      "name": "virtual-arm64-all-allowed-any-any",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0573",
+      "name": "virtual-arm64-all-allowed-any-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0574",
+      "name": "virtual-arm64-all-allowed-any-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0575",
+      "name": "virtual-arm64-all-allowed-amd64-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0576",
+      "name": "virtual-arm64-all-allowed-amd64-any",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0577",
+      "name": "virtual-arm64-all-allowed-amd64-amd64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0578",
+      "name": "virtual-arm64-all-allowed-amd64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0579",
+      "name": "virtual-arm64-all-allowed-arm64-implicit",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0580",
+      "name": "virtual-arm64-all-allowed-arm64-any",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0581",
+      "name": "virtual-arm64-all-allowed-arm64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0582",
+      "name": "virtual-arm64-all-allowed-arm64-arm64",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0583",
+      "name": "provided-version-not-owner-version",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0584",
+      "name": "owner-version-not-provided-version",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0585",
+      "name": "unversioned-provide-not-versioned-need",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0586",
+      "name": "unversioned-provide",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0587",
+      "name": "multiple-provided-versions",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0588",
+      "name": "conflicts-real",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0589",
+      "name": "conflicts-version-miss",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0590",
+      "name": "conflicts-self",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0591",
+      "name": "conflicts-virtual",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0592",
+      "name": "conflicts-virtual-version",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0593",
+      "name": "conflicts-self-provide",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0594",
+      "name": "conflicts-other-provider",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0595",
+      "name": "conflicts-foreign-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0596",
+      "name": "conflicts-foreign-explicit-miss",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0597",
+      "name": "conflicts-coinstalled-self-name",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0598",
+      "name": "breaks-real",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0599",
+      "name": "breaks-version-miss",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0600",
+      "name": "breaks-self",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0601",
+      "name": "breaks-virtual",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0602",
+      "name": "breaks-virtual-version",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0603",
+      "name": "breaks-self-provide",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0604",
+      "name": "breaks-other-provider",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0605",
+      "name": "breaks-foreign-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0606",
+      "name": "breaks-foreign-explicit-miss",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0607",
+      "name": "breaks-coinstalled-self-name",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0608",
+      "name": "other-native-all-provider",
+      "expected": true,
+      "upstream": true,
+      "matches": true
+    },
+    {
+      "id": "case-0609",
+      "name": "other-native-all-consumer",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0610",
+      "name": "negative-virtual-conflicts-amd64-no-implicit-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0611",
+      "name": "negative-virtual-conflicts-amd64-no-implicit-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0612",
+      "name": "negative-virtual-conflicts-amd64-no-implicit-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0613",
+      "name": "negative-virtual-conflicts-amd64-no-implicit-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0614",
+      "name": "negative-virtual-conflicts-amd64-no-any-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0615",
+      "name": "negative-virtual-conflicts-amd64-no-any-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0616",
+      "name": "negative-virtual-conflicts-amd64-no-any-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0617",
+      "name": "negative-virtual-conflicts-amd64-no-any-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0618",
+      "name": "negative-virtual-conflicts-amd64-no-amd64-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0619",
+      "name": "negative-virtual-conflicts-amd64-no-amd64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0620",
+      "name": "negative-virtual-conflicts-amd64-no-amd64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0621",
+      "name": "negative-virtual-conflicts-amd64-no-amd64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0622",
+      "name": "negative-virtual-conflicts-amd64-no-arm64-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0623",
+      "name": "negative-virtual-conflicts-amd64-no-arm64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0624",
+      "name": "negative-virtual-conflicts-amd64-no-arm64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0625",
+      "name": "negative-virtual-conflicts-amd64-no-arm64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0626",
+      "name": "negative-virtual-conflicts-amd64-foreign-implicit-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0627",
+      "name": "negative-virtual-conflicts-amd64-foreign-implicit-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0628",
+      "name": "negative-virtual-conflicts-amd64-foreign-implicit-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0629",
+      "name": "negative-virtual-conflicts-amd64-foreign-implicit-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0630",
+      "name": "negative-virtual-conflicts-amd64-foreign-any-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0631",
+      "name": "negative-virtual-conflicts-amd64-foreign-any-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0632",
+      "name": "negative-virtual-conflicts-amd64-foreign-any-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0633",
+      "name": "negative-virtual-conflicts-amd64-foreign-any-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0634",
+      "name": "negative-virtual-conflicts-amd64-foreign-amd64-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0635",
+      "name": "negative-virtual-conflicts-amd64-foreign-amd64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0636",
+      "name": "negative-virtual-conflicts-amd64-foreign-amd64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0637",
+      "name": "negative-virtual-conflicts-amd64-foreign-amd64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0638",
+      "name": "negative-virtual-conflicts-amd64-foreign-arm64-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0639",
+      "name": "negative-virtual-conflicts-amd64-foreign-arm64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0640",
+      "name": "negative-virtual-conflicts-amd64-foreign-arm64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0641",
+      "name": "negative-virtual-conflicts-amd64-foreign-arm64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0642",
+      "name": "negative-virtual-conflicts-amd64-allowed-implicit-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0643",
+      "name": "negative-virtual-conflicts-amd64-allowed-implicit-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0644",
+      "name": "negative-virtual-conflicts-amd64-allowed-implicit-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0645",
+      "name": "negative-virtual-conflicts-amd64-allowed-implicit-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0646",
+      "name": "negative-virtual-conflicts-amd64-allowed-any-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0647",
+      "name": "negative-virtual-conflicts-amd64-allowed-any-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0648",
+      "name": "negative-virtual-conflicts-amd64-allowed-any-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0649",
+      "name": "negative-virtual-conflicts-amd64-allowed-any-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0650",
+      "name": "negative-virtual-conflicts-amd64-allowed-amd64-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0651",
+      "name": "negative-virtual-conflicts-amd64-allowed-amd64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0652",
+      "name": "negative-virtual-conflicts-amd64-allowed-amd64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0653",
+      "name": "negative-virtual-conflicts-amd64-allowed-amd64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0654",
+      "name": "negative-virtual-conflicts-amd64-allowed-arm64-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0655",
+      "name": "negative-virtual-conflicts-amd64-allowed-arm64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0656",
+      "name": "negative-virtual-conflicts-amd64-allowed-arm64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0657",
+      "name": "negative-virtual-conflicts-amd64-allowed-arm64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0658",
+      "name": "negative-virtual-conflicts-arm64-no-implicit-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0659",
+      "name": "negative-virtual-conflicts-arm64-no-implicit-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0660",
+      "name": "negative-virtual-conflicts-arm64-no-implicit-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0661",
+      "name": "negative-virtual-conflicts-arm64-no-implicit-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0662",
+      "name": "negative-virtual-conflicts-arm64-no-any-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0663",
+      "name": "negative-virtual-conflicts-arm64-no-any-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0664",
+      "name": "negative-virtual-conflicts-arm64-no-any-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0665",
+      "name": "negative-virtual-conflicts-arm64-no-any-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0666",
+      "name": "negative-virtual-conflicts-arm64-no-amd64-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0667",
+      "name": "negative-virtual-conflicts-arm64-no-amd64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0668",
+      "name": "negative-virtual-conflicts-arm64-no-amd64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0669",
+      "name": "negative-virtual-conflicts-arm64-no-amd64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0670",
+      "name": "negative-virtual-conflicts-arm64-no-arm64-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0671",
+      "name": "negative-virtual-conflicts-arm64-no-arm64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0672",
+      "name": "negative-virtual-conflicts-arm64-no-arm64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0673",
+      "name": "negative-virtual-conflicts-arm64-no-arm64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0674",
+      "name": "negative-virtual-conflicts-arm64-foreign-implicit-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0675",
+      "name": "negative-virtual-conflicts-arm64-foreign-implicit-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0676",
+      "name": "negative-virtual-conflicts-arm64-foreign-implicit-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0677",
+      "name": "negative-virtual-conflicts-arm64-foreign-implicit-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0678",
+      "name": "negative-virtual-conflicts-arm64-foreign-any-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0679",
+      "name": "negative-virtual-conflicts-arm64-foreign-any-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0680",
+      "name": "negative-virtual-conflicts-arm64-foreign-any-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0681",
+      "name": "negative-virtual-conflicts-arm64-foreign-any-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0682",
+      "name": "negative-virtual-conflicts-arm64-foreign-amd64-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0683",
+      "name": "negative-virtual-conflicts-arm64-foreign-amd64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0684",
+      "name": "negative-virtual-conflicts-arm64-foreign-amd64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0685",
+      "name": "negative-virtual-conflicts-arm64-foreign-amd64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0686",
+      "name": "negative-virtual-conflicts-arm64-foreign-arm64-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0687",
+      "name": "negative-virtual-conflicts-arm64-foreign-arm64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0688",
+      "name": "negative-virtual-conflicts-arm64-foreign-arm64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0689",
+      "name": "negative-virtual-conflicts-arm64-foreign-arm64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0690",
+      "name": "negative-virtual-conflicts-arm64-allowed-implicit-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0691",
+      "name": "negative-virtual-conflicts-arm64-allowed-implicit-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0692",
+      "name": "negative-virtual-conflicts-arm64-allowed-implicit-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0693",
+      "name": "negative-virtual-conflicts-arm64-allowed-implicit-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0694",
+      "name": "negative-virtual-conflicts-arm64-allowed-any-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0695",
+      "name": "negative-virtual-conflicts-arm64-allowed-any-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0696",
+      "name": "negative-virtual-conflicts-arm64-allowed-any-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0697",
+      "name": "negative-virtual-conflicts-arm64-allowed-any-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0698",
+      "name": "negative-virtual-conflicts-arm64-allowed-amd64-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0699",
+      "name": "negative-virtual-conflicts-arm64-allowed-amd64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0700",
+      "name": "negative-virtual-conflicts-arm64-allowed-amd64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0701",
+      "name": "negative-virtual-conflicts-arm64-allowed-amd64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0702",
+      "name": "negative-virtual-conflicts-arm64-allowed-arm64-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0703",
+      "name": "negative-virtual-conflicts-arm64-allowed-arm64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0704",
+      "name": "negative-virtual-conflicts-arm64-allowed-arm64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0705",
+      "name": "negative-virtual-conflicts-arm64-allowed-arm64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0706",
+      "name": "negative-virtual-conflicts-all-no-implicit-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0707",
+      "name": "negative-virtual-conflicts-all-no-implicit-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0708",
+      "name": "negative-virtual-conflicts-all-no-implicit-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0709",
+      "name": "negative-virtual-conflicts-all-no-implicit-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0710",
+      "name": "negative-virtual-conflicts-all-no-any-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0711",
+      "name": "negative-virtual-conflicts-all-no-any-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0712",
+      "name": "negative-virtual-conflicts-all-no-any-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0713",
+      "name": "negative-virtual-conflicts-all-no-any-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0714",
+      "name": "negative-virtual-conflicts-all-no-amd64-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0715",
+      "name": "negative-virtual-conflicts-all-no-amd64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0716",
+      "name": "negative-virtual-conflicts-all-no-amd64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0717",
+      "name": "negative-virtual-conflicts-all-no-amd64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0718",
+      "name": "negative-virtual-conflicts-all-no-arm64-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0719",
+      "name": "negative-virtual-conflicts-all-no-arm64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0720",
+      "name": "negative-virtual-conflicts-all-no-arm64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0721",
+      "name": "negative-virtual-conflicts-all-no-arm64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0722",
+      "name": "negative-virtual-conflicts-all-foreign-implicit-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0723",
+      "name": "negative-virtual-conflicts-all-foreign-implicit-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0724",
+      "name": "negative-virtual-conflicts-all-foreign-implicit-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0725",
+      "name": "negative-virtual-conflicts-all-foreign-implicit-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0726",
+      "name": "negative-virtual-conflicts-all-foreign-any-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0727",
+      "name": "negative-virtual-conflicts-all-foreign-any-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0728",
+      "name": "negative-virtual-conflicts-all-foreign-any-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0729",
+      "name": "negative-virtual-conflicts-all-foreign-any-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0730",
+      "name": "negative-virtual-conflicts-all-foreign-amd64-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0731",
+      "name": "negative-virtual-conflicts-all-foreign-amd64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0732",
+      "name": "negative-virtual-conflicts-all-foreign-amd64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0733",
+      "name": "negative-virtual-conflicts-all-foreign-amd64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0734",
+      "name": "negative-virtual-conflicts-all-foreign-arm64-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0735",
+      "name": "negative-virtual-conflicts-all-foreign-arm64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0736",
+      "name": "negative-virtual-conflicts-all-foreign-arm64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0737",
+      "name": "negative-virtual-conflicts-all-foreign-arm64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0738",
+      "name": "negative-virtual-conflicts-all-allowed-implicit-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0739",
+      "name": "negative-virtual-conflicts-all-allowed-implicit-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0740",
+      "name": "negative-virtual-conflicts-all-allowed-implicit-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0741",
+      "name": "negative-virtual-conflicts-all-allowed-implicit-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0742",
+      "name": "negative-virtual-conflicts-all-allowed-any-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0743",
+      "name": "negative-virtual-conflicts-all-allowed-any-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0744",
+      "name": "negative-virtual-conflicts-all-allowed-any-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0745",
+      "name": "negative-virtual-conflicts-all-allowed-any-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0746",
+      "name": "negative-virtual-conflicts-all-allowed-amd64-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0747",
+      "name": "negative-virtual-conflicts-all-allowed-amd64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0748",
+      "name": "negative-virtual-conflicts-all-allowed-amd64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0749",
+      "name": "negative-virtual-conflicts-all-allowed-amd64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0750",
+      "name": "negative-virtual-conflicts-all-allowed-arm64-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0751",
+      "name": "negative-virtual-conflicts-all-allowed-arm64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0752",
+      "name": "negative-virtual-conflicts-all-allowed-arm64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0753",
+      "name": "negative-virtual-conflicts-all-allowed-arm64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0754",
+      "name": "negative-virtual-breaks-amd64-no-implicit-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0755",
+      "name": "negative-virtual-breaks-amd64-no-implicit-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0756",
+      "name": "negative-virtual-breaks-amd64-no-implicit-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0757",
+      "name": "negative-virtual-breaks-amd64-no-implicit-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0758",
+      "name": "negative-virtual-breaks-amd64-no-any-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0759",
+      "name": "negative-virtual-breaks-amd64-no-any-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0760",
+      "name": "negative-virtual-breaks-amd64-no-any-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0761",
+      "name": "negative-virtual-breaks-amd64-no-any-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0762",
+      "name": "negative-virtual-breaks-amd64-no-amd64-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0763",
+      "name": "negative-virtual-breaks-amd64-no-amd64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0764",
+      "name": "negative-virtual-breaks-amd64-no-amd64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0765",
+      "name": "negative-virtual-breaks-amd64-no-amd64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0766",
+      "name": "negative-virtual-breaks-amd64-no-arm64-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0767",
+      "name": "negative-virtual-breaks-amd64-no-arm64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0768",
+      "name": "negative-virtual-breaks-amd64-no-arm64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0769",
+      "name": "negative-virtual-breaks-amd64-no-arm64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0770",
+      "name": "negative-virtual-breaks-amd64-foreign-implicit-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0771",
+      "name": "negative-virtual-breaks-amd64-foreign-implicit-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0772",
+      "name": "negative-virtual-breaks-amd64-foreign-implicit-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0773",
+      "name": "negative-virtual-breaks-amd64-foreign-implicit-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0774",
+      "name": "negative-virtual-breaks-amd64-foreign-any-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0775",
+      "name": "negative-virtual-breaks-amd64-foreign-any-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0776",
+      "name": "negative-virtual-breaks-amd64-foreign-any-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0777",
+      "name": "negative-virtual-breaks-amd64-foreign-any-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0778",
+      "name": "negative-virtual-breaks-amd64-foreign-amd64-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0779",
+      "name": "negative-virtual-breaks-amd64-foreign-amd64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0780",
+      "name": "negative-virtual-breaks-amd64-foreign-amd64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0781",
+      "name": "negative-virtual-breaks-amd64-foreign-amd64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0782",
+      "name": "negative-virtual-breaks-amd64-foreign-arm64-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0783",
+      "name": "negative-virtual-breaks-amd64-foreign-arm64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0784",
+      "name": "negative-virtual-breaks-amd64-foreign-arm64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0785",
+      "name": "negative-virtual-breaks-amd64-foreign-arm64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0786",
+      "name": "negative-virtual-breaks-amd64-allowed-implicit-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0787",
+      "name": "negative-virtual-breaks-amd64-allowed-implicit-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0788",
+      "name": "negative-virtual-breaks-amd64-allowed-implicit-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0789",
+      "name": "negative-virtual-breaks-amd64-allowed-implicit-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0790",
+      "name": "negative-virtual-breaks-amd64-allowed-any-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0791",
+      "name": "negative-virtual-breaks-amd64-allowed-any-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0792",
+      "name": "negative-virtual-breaks-amd64-allowed-any-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0793",
+      "name": "negative-virtual-breaks-amd64-allowed-any-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0794",
+      "name": "negative-virtual-breaks-amd64-allowed-amd64-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0795",
+      "name": "negative-virtual-breaks-amd64-allowed-amd64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0796",
+      "name": "negative-virtual-breaks-amd64-allowed-amd64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0797",
+      "name": "negative-virtual-breaks-amd64-allowed-amd64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0798",
+      "name": "negative-virtual-breaks-amd64-allowed-arm64-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0799",
+      "name": "negative-virtual-breaks-amd64-allowed-arm64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0800",
+      "name": "negative-virtual-breaks-amd64-allowed-arm64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0801",
+      "name": "negative-virtual-breaks-amd64-allowed-arm64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0802",
+      "name": "negative-virtual-breaks-arm64-no-implicit-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0803",
+      "name": "negative-virtual-breaks-arm64-no-implicit-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0804",
+      "name": "negative-virtual-breaks-arm64-no-implicit-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0805",
+      "name": "negative-virtual-breaks-arm64-no-implicit-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0806",
+      "name": "negative-virtual-breaks-arm64-no-any-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0807",
+      "name": "negative-virtual-breaks-arm64-no-any-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0808",
+      "name": "negative-virtual-breaks-arm64-no-any-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0809",
+      "name": "negative-virtual-breaks-arm64-no-any-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0810",
+      "name": "negative-virtual-breaks-arm64-no-amd64-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0811",
+      "name": "negative-virtual-breaks-arm64-no-amd64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0812",
+      "name": "negative-virtual-breaks-arm64-no-amd64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0813",
+      "name": "negative-virtual-breaks-arm64-no-amd64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0814",
+      "name": "negative-virtual-breaks-arm64-no-arm64-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0815",
+      "name": "negative-virtual-breaks-arm64-no-arm64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0816",
+      "name": "negative-virtual-breaks-arm64-no-arm64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0817",
+      "name": "negative-virtual-breaks-arm64-no-arm64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0818",
+      "name": "negative-virtual-breaks-arm64-foreign-implicit-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0819",
+      "name": "negative-virtual-breaks-arm64-foreign-implicit-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0820",
+      "name": "negative-virtual-breaks-arm64-foreign-implicit-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0821",
+      "name": "negative-virtual-breaks-arm64-foreign-implicit-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0822",
+      "name": "negative-virtual-breaks-arm64-foreign-any-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0823",
+      "name": "negative-virtual-breaks-arm64-foreign-any-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0824",
+      "name": "negative-virtual-breaks-arm64-foreign-any-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0825",
+      "name": "negative-virtual-breaks-arm64-foreign-any-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0826",
+      "name": "negative-virtual-breaks-arm64-foreign-amd64-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0827",
+      "name": "negative-virtual-breaks-arm64-foreign-amd64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0828",
+      "name": "negative-virtual-breaks-arm64-foreign-amd64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0829",
+      "name": "negative-virtual-breaks-arm64-foreign-amd64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0830",
+      "name": "negative-virtual-breaks-arm64-foreign-arm64-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0831",
+      "name": "negative-virtual-breaks-arm64-foreign-arm64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0832",
+      "name": "negative-virtual-breaks-arm64-foreign-arm64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0833",
+      "name": "negative-virtual-breaks-arm64-foreign-arm64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0834",
+      "name": "negative-virtual-breaks-arm64-allowed-implicit-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0835",
+      "name": "negative-virtual-breaks-arm64-allowed-implicit-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0836",
+      "name": "negative-virtual-breaks-arm64-allowed-implicit-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0837",
+      "name": "negative-virtual-breaks-arm64-allowed-implicit-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0838",
+      "name": "negative-virtual-breaks-arm64-allowed-any-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0839",
+      "name": "negative-virtual-breaks-arm64-allowed-any-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0840",
+      "name": "negative-virtual-breaks-arm64-allowed-any-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0841",
+      "name": "negative-virtual-breaks-arm64-allowed-any-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0842",
+      "name": "negative-virtual-breaks-arm64-allowed-amd64-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0843",
+      "name": "negative-virtual-breaks-arm64-allowed-amd64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0844",
+      "name": "negative-virtual-breaks-arm64-allowed-amd64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0845",
+      "name": "negative-virtual-breaks-arm64-allowed-amd64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0846",
+      "name": "negative-virtual-breaks-arm64-allowed-arm64-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0847",
+      "name": "negative-virtual-breaks-arm64-allowed-arm64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0848",
+      "name": "negative-virtual-breaks-arm64-allowed-arm64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0849",
+      "name": "negative-virtual-breaks-arm64-allowed-arm64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0850",
+      "name": "negative-virtual-breaks-all-no-implicit-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0851",
+      "name": "negative-virtual-breaks-all-no-implicit-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0852",
+      "name": "negative-virtual-breaks-all-no-implicit-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0853",
+      "name": "negative-virtual-breaks-all-no-implicit-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0854",
+      "name": "negative-virtual-breaks-all-no-any-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0855",
+      "name": "negative-virtual-breaks-all-no-any-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0856",
+      "name": "negative-virtual-breaks-all-no-any-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0857",
+      "name": "negative-virtual-breaks-all-no-any-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0858",
+      "name": "negative-virtual-breaks-all-no-amd64-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0859",
+      "name": "negative-virtual-breaks-all-no-amd64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0860",
+      "name": "negative-virtual-breaks-all-no-amd64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0861",
+      "name": "negative-virtual-breaks-all-no-amd64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0862",
+      "name": "negative-virtual-breaks-all-no-arm64-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0863",
+      "name": "negative-virtual-breaks-all-no-arm64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0864",
+      "name": "negative-virtual-breaks-all-no-arm64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0865",
+      "name": "negative-virtual-breaks-all-no-arm64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0866",
+      "name": "negative-virtual-breaks-all-foreign-implicit-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0867",
+      "name": "negative-virtual-breaks-all-foreign-implicit-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0868",
+      "name": "negative-virtual-breaks-all-foreign-implicit-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0869",
+      "name": "negative-virtual-breaks-all-foreign-implicit-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0870",
+      "name": "negative-virtual-breaks-all-foreign-any-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0871",
+      "name": "negative-virtual-breaks-all-foreign-any-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0872",
+      "name": "negative-virtual-breaks-all-foreign-any-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0873",
+      "name": "negative-virtual-breaks-all-foreign-any-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0874",
+      "name": "negative-virtual-breaks-all-foreign-amd64-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0875",
+      "name": "negative-virtual-breaks-all-foreign-amd64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0876",
+      "name": "negative-virtual-breaks-all-foreign-amd64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0877",
+      "name": "negative-virtual-breaks-all-foreign-amd64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0878",
+      "name": "negative-virtual-breaks-all-foreign-arm64-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0879",
+      "name": "negative-virtual-breaks-all-foreign-arm64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0880",
+      "name": "negative-virtual-breaks-all-foreign-arm64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0881",
+      "name": "negative-virtual-breaks-all-foreign-arm64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0882",
+      "name": "negative-virtual-breaks-all-allowed-implicit-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0883",
+      "name": "negative-virtual-breaks-all-allowed-implicit-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0884",
+      "name": "negative-virtual-breaks-all-allowed-implicit-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0885",
+      "name": "negative-virtual-breaks-all-allowed-implicit-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0886",
+      "name": "negative-virtual-breaks-all-allowed-any-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0887",
+      "name": "negative-virtual-breaks-all-allowed-any-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0888",
+      "name": "negative-virtual-breaks-all-allowed-any-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0889",
+      "name": "negative-virtual-breaks-all-allowed-any-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0890",
+      "name": "negative-virtual-breaks-all-allowed-amd64-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0891",
+      "name": "negative-virtual-breaks-all-allowed-amd64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0892",
+      "name": "negative-virtual-breaks-all-allowed-amd64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0893",
+      "name": "negative-virtual-breaks-all-allowed-amd64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0894",
+      "name": "negative-virtual-breaks-all-allowed-arm64-implicit",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0895",
+      "name": "negative-virtual-breaks-all-allowed-arm64-any",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0896",
+      "name": "negative-virtual-breaks-all-allowed-arm64-amd64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    },
+    {
+      "id": "case-0897",
+      "name": "negative-virtual-breaks-all-allowed-arm64-arm64",
+      "expected": false,
+      "upstream": false,
+      "matches": true
+    }
+  ]
+}

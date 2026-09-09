@@ -39,7 +39,8 @@
         "../pkgcore/runtime/pkg_deb_stream.c",
         "../pkgcore/runtime/pkg_deb_data_stream.adb",
         "../pkgcore/runtime/pkg_tar_framing.adb",
-        "../pkgcore/runtime/pkg_deb_payload.adb"
+        "../pkgcore/runtime/pkg_deb_payload.adb",
+        "../pkgcore/runtime/pkg_deb_final_set.adb"
       ],
       "tests": [
         "native/test_transition.py",
@@ -52,7 +53,9 @@
         "../pkgcore/tests/run_deb_relations_tests.adb",
         "../pkgcore/tests/run_deb_data_stream_tests.adb",
         "../pkgcore/tests/run_deb_payload_tests.adb",
-        "../pkgcore/tests/compare_deb_payload.py"
+        "../pkgcore/tests/compare_deb_payload.py",
+        "../pkgcore/tests/run_deb_final_set_tests.adb",
+        "../pkgcore/tests/check_deb_final_set_upstream.py"
       ],
       "evidence": [
         "evidence/native-transition/initial-09/inventory.json",
@@ -63,7 +66,8 @@
         "evidence/native-transition/deb-metadata-01/README.ja.md",
         "evidence/native-transition/deb-relations-01/README.ja.md",
         "evidence/native-transition/deb-data-stream-01/README.ja.md",
-        "evidence/native-transition/deb-payload-01/README.ja.md"
+        "evidence/native-transition/deb-payload-01/README.ja.md",
+        "evidence/native-transition/final-set-01/README.ja.md"
       ],
       "remaining": "authenticate original artifacts and implement every adopted phase, generated output and implicit trigger"
     },

@@ -1,0 +1,37 @@
+{
+  "id": "case-0607",
+  "name": "breaks-coinstalled-self-name",
+  "expected": true,
+  "upstream": false,
+  "matches": false,
+  "runs": [
+    {
+      "action": "configure",
+      "target": "library:amd64",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "dpkg: dependency problems prevent configuration of library:amd64:\n library:arm64 (2) breaks library and is installed.\n\ndpkg: error processing package library:amd64 (--configure):\n dependency problems - leaving unconfigured\nErrors were encountered while processing:\n library:amd64\n"
+    },
+    {
+      "action": "configure",
+      "target": "library:arm64",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "dpkg: dependency problems prevent configuration of library:arm64:\n library:amd64 (2) breaks library and is installed.\n\ndpkg: error processing package library:arm64 (--configure):\n dependency problems - leaving unconfigured\nErrors were encountered while processing:\n library:arm64\n"
+    },
+    {
+      "action": "unpack",
+      "target": "/workspace/tests/fixtures/deb-final-set/479fd73963041a2f15bb01ee508e9baebf6b77b0f8fa2baffe5782f61084d43c.deb",
+      "returncode": 0,
+      "stdout": "(Reading database ... 0 files and directories currently installed.)\nPreparing to unpack .../479fd73963041a2f15bb01ee508e9baebf6b77b0f8fa2baffe5782f61084d43c.deb ...\n",
+      "stderr": "dpkg: warning: files list file for package 'library:amd64' missing; assuming package has no files currently installed\ndpkg: warning: files list file for package 'library:arm64' missing; assuming package has no files currently installed\n"
+    },
+    {
+      "action": "unpack",
+      "target": "/workspace/tests/fixtures/deb-final-set/331cfc8fe8ccd3768e2b499bee564c777169662b5906483f288066a773026a5c.deb",
+      "returncode": 0,
+      "stdout": "(Reading database ... 0 files and directories currently installed.)\nPreparing to unpack .../331cfc8fe8ccd3768e2b499bee564c777169662b5906483f288066a773026a5c.deb ...\n",
+      "stderr": "dpkg: warning: files list file for package 'library:amd64' missing; assuming package has no files currently installed\ndpkg: warning: files list file for package 'library:arm64' missing; assuming package has no files currently installed\n"
+    }
+  ]
+}

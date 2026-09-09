@@ -1,0 +1,48 @@
+{
+  "format": 1,
+  "result": "pass-for-candidate-endpoint-constraints-only",
+  "baseline_root_commit": "ef2ca13",
+  "source_subject": "0af8311a792c22aff260302f937ca135efe9a7b04162a70e2427efa7d6e8a34d",
+  "source_report": "source-checks/report.json",
+  "build_input_files": 677,
+  "executables": 27,
+  "ada_mains": 23,
+  "new_assertions": 23038,
+  "synthetic_originals": 153,
+  "matrix_cases": 898,
+  "findings": {
+    "NO_VIOLATION": 272,
+    "ARCHITECTURE_NOT_ENABLED": 1,
+    "MISSING_DEPENDENCY": 321,
+    "VERSION_SKEW": 1,
+    "NOT_COINSTALLABLE": 4,
+    "PRESENT_CONFLICT": 299
+  },
+  "independent_native_hashes": "accepted-native-oracle.json",
+  "upstream": "upstream-report.json",
+  "upstream_mismatches": 0,
+  "initial_upstream_mismatch": "attempts/breaks-coinstalled-self-name.json",
+  "ci_includes": [
+    "fixture regeneration",
+    "native matrix",
+    "independent hashes",
+    "fixed upstream simulation"
+  ],
+  "root_driver_assertions": [
+    1100,
+    34,
+    3,
+    6,
+    8,
+    5
+  ],
+  "proof_inputs": "seven exact sets unchanged; new runtime outside SPARK",
+  "sanitizer_scope": "C boundaries and allocator/library-call interception only; Ada and upstream library code uninstrumented; leaks disabled",
+  "full_capacity_qualified": false,
+  "real_os_package_set_qualified": false,
+  "production_authorization": false,
+  "phase_schedule_validated": false,
+  "essential_protected_removal_validated": false,
+  "effective_ownership_resolved": false,
+  "boot_tested": false
+}

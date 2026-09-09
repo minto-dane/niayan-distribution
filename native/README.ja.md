@@ -77,3 +77,6 @@ inactive generationの組立てを有界な作業へ分け、全入力と所有�
 
 選択した原本・control期待hash・payload索引を完全照合するprivate候補は
 [selected-catalog.ja.md](selected-catalog.ja.md)を参照。稼働catalog/認可と全関係の意味検査は未完。
+
+候補の必須依存・競合・architectureと共存版の検査は
+[final-set.ja.md](final-set.ja.md)を参照。実行順序・稼働認可と実効所有権は別工程。

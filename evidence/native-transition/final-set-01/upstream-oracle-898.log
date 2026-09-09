@@ -1,0 +1,20 @@
+Running as unit: run-p149330-i149630.scope; invocation ID: 183d2001ede84ce59b2291925b8273ab
+limited-exec: {"scope": "run-p149330-i149630.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+checked 50 mismatches 0
+checked 100 mismatches 0
+checked 150 mismatches 0
+checked 200 mismatches 0
+checked 250 mismatches 0
+checked 300 mismatches 0
+checked 350 mismatches 0
+checked 400 mismatches 0
+checked 450 mismatches 0
+checked 500 mismatches 0
+checked 550 mismatches 0
+checked 600 mismatches 0
+checked 650 mismatches 0
+checked 700 mismatches 0
+checked 750 mismatches 0
+checked 800 mismatches 0
+checked 850 mismatches 0
+{"upstream": "Debian 'dpkg' package management program version 1.22.22 (amd64).", "scope": "independent per-target simulated configure and unpack from synthetic complete installed sets; no real phase schedule or scripts", "cases": 898, "seconds": 27.469304710997676, "mismatches": []}

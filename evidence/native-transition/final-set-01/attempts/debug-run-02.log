@@ -1,0 +1,19 @@
+Running as unit: run-p139323-i139623.scope; invocation ID: 36e1e3503adc4077abab3b407ecfeaeb
+limited-exec: {"scope": "run-p139323-i139623.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Compile
+   [Ada]          run_deb_final_set_tests.adb
+   [C]            pkg_deb_stream.c
+   [C]            pkg_deb_decode.c
+   [Ada]          mc_clock.adb
+   [Ada]          mc_fs.adb
+   [Ada]          mc_hex.adb
+   [Ada]          mc_posix.ads
+   [Ada]          mc_runtime.adb
+   [Ada]          mc_store.adb
+   [Ada]          mc_text.adb
+   [Ada]          mc_types.adb
+   [Ada]          pkg_deb_final_set.adb
+pkg_deb_final_set.adb:72:82: error: expected type "Standard.Integer"
+pkg_deb_final_set.adb:72:82: error: found type "Field_Kind" defined at pkg_deb_relations.ads:7
+pkg_deb_final_set.adb:72:103: error: too many components for record aggregate
+gprbuild: *** compilation phase failed

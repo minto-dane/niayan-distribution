@@ -1,0 +1,9 @@
+Running as unit: run-p139121-i139421.scope; invocation ID: 83ac53012d9f48c1b422052e4c329f7d
+limited-exec: {"scope": "run-p139121-i139421.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Setup
+   [mkdir]        object directory for project Tests
+   [mkdir]        exec directory for project Tests
+Compile
+   [Ada]          run_deb_final_set_tests.adb
+run_deb_final_set_tests.adb:113:14: error: name expected
+gprbuild: *** compilation phase failed
