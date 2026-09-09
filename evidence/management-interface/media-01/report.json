@@ -1,0 +1,87 @@
+{
+  "schema": "org.niaos.development-validation/v1",
+  "source_subject": "b2b9795aa6de090627c3e742be5dfabc9f408015a5430394dea3e0d871200f53",
+  "result": "pass-for-local-media-tooling-only",
+  "production_qualified": false,
+  "container_image": "0d256f5b95dcd43dc441ac734cae705938dca230ceab11c47f787901c6de18eb",
+  "limits": {
+    "memory_bytes": 3221225472,
+    "swap_bytes": 0,
+    "cpu_quota": "100000 100000",
+    "pids": 128,
+    "network": "none",
+    "uid": 1000,
+    "heavy_jobs_parallel": false
+  },
+  "inputs": {
+    "final_copy": "tested-inputs.json",
+    "file_count": 189,
+    "all_final_copy_hashes_match_checkout": true,
+    "source": "source-inputs.json",
+    "real_media_run": "real-media-run-inputs.json",
+    "original_debs": "original-media-inputs.json"
+  },
+  "checks": [
+    {
+      "command": "make image-check",
+      "exit_code": 0,
+      "tests": 142,
+      "groups": {
+        "native": 122,
+        "hardening": 4,
+        "image": 16
+      },
+      "media_tests": 14,
+      "skipped": 0,
+      "syntax_checks": "Python compileall and shell syntax passed",
+      "log": "image-check.log"
+    },
+    {
+      "command": "python3 -B /work/validate_real_media.py",
+      "exit_code": 0,
+      "original_packages": 7,
+      "packages_bytes_unchanged": true,
+      "deterministic_index": true,
+      "public_commands": [
+        "inutoc",
+        "installp -l",
+        "installp -L",
+        "geninstall -L"
+      ],
+      "report": "real-media-result.json"
+    },
+    {
+      "command": "python3 -B native/language_coverage.py --require-all",
+      "exit_code": 1,
+      "expected": "reject incomplete Debian language translation coverage",
+      "messages_per_catalog": 119,
+      "catalogs": 7,
+      "report": "language-coverage.json"
+    },
+    {
+      "command": "python3 assurance/ci/run-engineering-checks.py --mode source",
+      "exit_code": 0,
+      "checks": 24,
+      "report": "source-check/report.json"
+    }
+  ],
+  "prior_attempt": {
+    "log": "attempts/registry-state-mismatch.log",
+    "exit_code": 2,
+    "cause": "entrypoint inventory test did not recognize the two new implementation states",
+    "resolution": "register the two states while retaining exact inventory/HELP/bin equality checks; rerun all 142 tests"
+  },
+  "formal_proof": {
+    "rerun": false,
+    "existing_seven_component_input_sets_unchanged": true,
+    "media_python_not_formally_proved": true
+  },
+  "remaining": [
+    "runtime package service and managed transaction integration",
+    "all original DEB effect semantics and recovery",
+    "complete reference response compatibility",
+    "authenticated media admission and reference-aware removal",
+    "actual boot switch, power-loss recovery and native-only ISO",
+    "all Debian translations and independent translation/graphical review"
+  ]
+}

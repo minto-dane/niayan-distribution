@@ -10,6 +10,7 @@ root/catalogを単一の論理世代として確定する。実mount/bootと稼�
 
 公開管理コマンドは[最新判断](../docs/decisions/0003-management-interface.ja.md)に従う。
 [コマンド解析](commands.ja.md)と[更新緊急度・修正告知の識別](update-metadata.ja.md)を追加した。
+[媒体索引と一覧](media.ja.md)をinutoc・installp・geninstallへ接続した。
 [緊急修正成果物](interim-package.ja.md)の決定的な作成と読取をepkg/emgrへ接続した。
 [共通の供給認証](repository.ja.md)と`emgr_download_ifix`のHTTPS取得も実装した。
 署名済み成果物と参照の認証は、稼働システムへの適用許可とは別に検査する。

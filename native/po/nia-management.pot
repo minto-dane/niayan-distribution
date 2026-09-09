@@ -16,6 +16,12 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "The media index is stale; rebuild it with inutoc."
+msgstr ""
+
+msgid "The media changed during inspection; retry after changes have finished."
+msgstr ""
+
 msgid "The command label differs from the package control file."
 msgstr ""
 
@@ -267,6 +273,11 @@ msgid ""
 "are rejected."
 msgstr ""
 
+msgid ""
+"Local media indexing and listing are available through inutoc, installp and "
+"geninstall."
+msgstr ""
+
 #, python-brace-format
 msgid ""
 "{command}: {action}: native package service is not connected; no operation "
@@ -381,4 +392,7 @@ msgstr ""
 
 #, python-brace-format
 msgid "Downloaded interim fix: {path}"
+msgstr ""
+
+msgid "ARCHITECTURE"
 msgstr ""

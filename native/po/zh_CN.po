@@ -351,3 +351,15 @@ msgstr "{command}：{action}：尚未连接原生软件包服务；未执行任�
 msgid "{label}: {value}"
 msgstr "{label}：{value}"
 
+
+msgid "Local media indexing and listing are available through inutoc, installp and geninstall."
+msgstr "可通过 inutoc、installp 和 geninstall 创建本地介质索引并列出内容。"
+
+msgid "The media index is stale; rebuild it with inutoc."
+msgstr "介质索引已过时；请使用 inutoc 重新创建。"
+
+msgid "The media changed during inspection; retry after changes have finished."
+msgstr "检查期间介质发生了变化；请在更改完成后重试。"
+
+msgid "ARCHITECTURE"
+msgstr "架构"

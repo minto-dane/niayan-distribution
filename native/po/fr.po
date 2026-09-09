@@ -351,3 +351,15 @@ msgstr "{command} : {action} : le service natif de paquets n’est pas connecté
 msgid "{label}: {value}"
 msgstr "{label} : {value}"
 
+
+msgid "Local media indexing and listing are available through inutoc, installp and geninstall."
+msgstr "inutoc, installp et geninstall permettent de créer les index et de consulter le contenu des supports locaux."
+
+msgid "The media index is stale; rebuild it with inutoc."
+msgstr "L’index du support est périmé ; recréez-le avec inutoc."
+
+msgid "The media changed during inspection; retry after changes have finished."
+msgstr "Le support a changé pendant la vérification ; réessayez une fois les modifications terminées."
+
+msgid "ARCHITECTURE"
+msgstr "ARCHITECTURE"

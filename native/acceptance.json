@@ -214,6 +214,23 @@
         "evidence/native-transition/triggers-localization-01/README.ja.md"
       ],
       "remaining": "Complete translations for all pinned Debian language targets; TUI/GUI integration and fonts/shaping/RTL/cell-width/accessibility/IME acceptance, translation review and reference response qualification; English fallback never qualifies as a completed translation"
+    },
+    {
+      "id": "NATIVE-010",
+      "requirement": "Build deterministic original-DEB media indexes without granting installed-state or supply authority",
+      "state": "local-media-index-and-listing-tested-installed-service-not-integrated",
+      "hazard": "stale or partial media indexes substitute fabricated package identity, trust or installed state",
+      "implementation": [
+        "native/media.py",
+        "native/package_cli.py"
+      ],
+      "tests": [
+        "native/test_media.py"
+      ],
+      "evidence": [
+        "evidence/management-interface/media-01/README.ja.md"
+      ],
+      "remaining": "Authenticated admission, native installed service, complete reference-response qualification, reference-aware media retention and real power-loss qualification"
     }
   ]
 }

@@ -8,6 +8,10 @@ import errno
 from i18n import N_
 
 INPUT_MESSAGES = {
+    'media index is stale; rebuild with inutoc': ('NIA-E-MEDIA-STALE', N_('The media index is stale; rebuild it with inutoc.')),
+    'media changed during inspection': ('NIA-E-MEDIA-CHANGED', N_('The media changed during inspection; retry after changes have finished.')),
+    'media index changed during inspection': ('NIA-E-MEDIA-CHANGED', N_('The media changed during inspection; retry after changes have finished.')),
+    'media index changed during publication': ('NIA-E-MEDIA-CHANGED', N_('The media changed during inspection; retry after changes have finished.')),
     'command label differs from interim control': ('NIA-E-LABEL', N_('The command label differs from the package control file.')),
     'original DEB identity differs from interim manifest': ('NIA-E-IDENTITY', N_('The original package identity differs from the manifest.')),
     'artifact size or digest mismatch': ('NIA-E-CONTENT', N_('The package size or checksum does not match.')),

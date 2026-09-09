@@ -351,3 +351,15 @@ msgstr "{command}: {action}: der native Paketdienst ist nicht angebunden; es wur
 msgid "{label}: {value}"
 msgstr "{label}: {value}"
 
+
+msgid "Local media indexing and listing are available through inutoc, installp and geninstall."
+msgstr "Lokale Medien können mit inutoc, installp und geninstall indiziert und aufgelistet werden."
+
+msgid "The media index is stale; rebuild it with inutoc."
+msgstr "Der Medienindex ist veraltet. Erstellen Sie ihn mit inutoc neu."
+
+msgid "The media changed during inspection; retry after changes have finished."
+msgstr "Das Medium wurde während der Prüfung geändert. Wiederholen Sie den Vorgang nach Abschluss der Änderungen."
+
+msgid "ARCHITECTURE"
+msgstr "ARCHITEKTUR"

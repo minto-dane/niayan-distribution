@@ -320,6 +320,7 @@ def main(command: str, argv: list[str]) -> int:
             'emgr_download_ifix requires provisioned authenticated repository policy.\n'
             'Installed-package operations and interactive packaging are unavailable.\n'
             'Debian package names/versions are retained. Other reference-platform options are rejected.') + '\n')
+        write_text(sys.stdout, ui.message('Local media indexing and listing are available through inutoc, installp and geninstall.') + '\n')
         return 0
     try:
         request = parse(command, argv)
@@ -332,6 +333,9 @@ def main(command: str, argv: list[str]) -> int:
     if request.action == 'interim-download':
         from interim_download import execute_download
         return execute_download(request, ui=ui)
+    if request.action in ('index-media', 'media-list', 'media-list-colon'):
+        from media import execute
+        return execute(request, ui=ui)
     # Translation is presentation only; no fake preview or alternative writer.
     write_text(sys.stderr, ui.message(
         '{command}: {action}: native package service is not connected; no operation or preview was performed.',

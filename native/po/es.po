@@ -351,3 +351,15 @@ msgstr "{command}: {action}: el servicio nativo de paquetes no está conectado; 
 msgid "{label}: {value}"
 msgstr "{label}: {value}"
 
+
+msgid "Local media indexing and listing are available through inutoc, installp and geninstall."
+msgstr "inutoc, installp y geninstall permiten crear índices y listar medios locales."
+
+msgid "The media index is stale; rebuild it with inutoc."
+msgstr "El índice del medio está desactualizado; vuelva a crearlo con inutoc."
+
+msgid "The media changed during inspection; retry after changes have finished."
+msgstr "El medio cambió durante la inspección; vuelva a intentarlo cuando hayan terminado los cambios."
+
+msgid "ARCHITECTURE"
+msgstr "ARQUITECTURA"

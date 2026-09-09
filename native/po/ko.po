@@ -351,3 +351,15 @@ msgstr "{command}: {action}: 네이티브 패키지 서비스가 연결되지 �
 msgid "{label}: {value}"
 msgstr "{label}: {value}"
 
+
+msgid "Local media indexing and listing are available through inutoc, installp and geninstall."
+msgstr "inutoc, installp, geninstall을 통해 로컬 매체의 색인을 만들고 목록을 표시할 수 있습니다."
+
+msgid "The media index is stale; rebuild it with inutoc."
+msgstr "매체 색인이 오래되었습니다. inutoc으로 다시 만드십시오."
+
+msgid "The media changed during inspection; retry after changes have finished."
+msgstr "검사 중에 매체가 변경되었습니다. 변경이 끝난 후 다시 시도하십시오."
+
+msgid "ARCHITECTURE"
+msgstr "아키텍처"

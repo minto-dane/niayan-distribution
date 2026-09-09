@@ -351,3 +351,15 @@ msgstr "{command}：{action}：尚未連接原生套件服務；未執行任何�
 msgid "{label}: {value}"
 msgstr "{label}：{value}"
 
+
+msgid "Local media indexing and listing are available through inutoc, installp and geninstall."
+msgstr "可透過 inutoc、installp 和 geninstall 建立本機媒體索引並列出內容。"
+
+msgid "The media index is stale; rebuild it with inutoc."
+msgstr "媒體索引已過時；請使用 inutoc 重新建立。"
+
+msgid "The media changed during inspection; retry after changes have finished."
+msgstr "檢查期間媒體發生了變更；請在變更完成後重試。"
+
+msgid "ARCHITECTURE"
+msgstr "架構"

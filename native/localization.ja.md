@@ -1,8 +1,8 @@
 # 管理コマンドの多言語対応
 
 [設計判断](../docs/decisions/0004-localized-interface.ja.md)に従い、12コマンドのヘルプ・
-引数エラーと、epkg/emgrの成果物操作、emgr_download_ifixの応答を共通の表示層へ接続した。
-英語原文115件と、ja・de・es・fr・ko・zh_CN・zh_TWの7翻訳カタログを管理する。操作要求・認可・元DEBのバイト列は翻訳しない。
+引数エラーと、epkg/emgrの成果物操作、emgr_download_ifixと媒体操作の応答を共通の表示層へ接続した。
+英語原文119件と、ja・de・es・fr・ko・zh_CN・zh_TWの7翻訳カタログを管理する。操作要求・認可・元DEBのバイト列は翻訳しない。
 製品の対象はDebian 13の全言語であり、現在の完成した翻訳数とは区別する。
 
 ## Debian全言語の対象と完了条件

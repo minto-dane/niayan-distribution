@@ -359,3 +359,15 @@ msgstr "{command}: {action}: パッケージ管理サービスは未接続です
 #, python-brace-format
 msgid "{label}: {value}"
 msgstr "{label}: {value}"
+
+msgid "Local media indexing and listing are available through inutoc, installp and geninstall."
+msgstr "ローカル媒体の索引作成と一覧表示は inutoc、installp、geninstall で利用できます。"
+
+msgid "The media index is stale; rebuild it with inutoc."
+msgstr "媒体の索引が古くなっています。inutoc で再作成してください。"
+
+msgid "The media changed during inspection; retry after changes have finished."
+msgstr "検査中に媒体が変更されました。変更が完了してから再試行してください。"
+
+msgid "ARCHITECTURE"
+msgstr "アーキテクチャ"

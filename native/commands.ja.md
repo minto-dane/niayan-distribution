@@ -4,6 +4,7 @@
 追加の対象と採用境界は[調査記録](command-review.ja.md)とコマンド台帳を参照。
 `package_cli.py`は12コマンドの引数を、未認証の構造化された操作要求へ変換する。
 `epkg -e`のローカル作成と`emgr -d`の表示は[成果物工具](interim-package.ja.md)へ接続した。
+`inutoc`の索引作成とinstallp/geninstallの[媒体一覧](media.ja.md)も原本DEB読取器へ接続した。
 `emgr_download_ifix -L URL [-P DIRECTORY]`は[共通の供給認証](repository.ja.md)を使い、
 あらかじめ配備されたroot所有policyと信頼cacheに従って成果物を取得する。
 稼働実行器やcatalogには接続していない。`bin/`は開発用の入口であり、
@@ -34,7 +35,7 @@ make native-check
 容量自動拡張、別root、復旧保存の省略、検査結果で正本を上書きする操作は未接続である。
 これらの制限が残るため、参照した操作体系との完全な構文・動作互換性は未達。
 
-ヘルプ、引数エラー、成果物操作の表示は[英語・日本語](localization.ja.md)に対応する。
+ヘルプ、引数エラー、成果物・媒体操作の表示は[英語原文と7翻訳catalog](localization.ja.md)に対応する。
 コマンド構文と機械処理用の値は翻訳しない。
 
 応答も適合対象であり、表示列・状態名・結果要約・プロンプト・終了コード・

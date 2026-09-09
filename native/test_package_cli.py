@@ -182,7 +182,9 @@ class Commands(unittest.TestCase):
             for name in family['commands']:
                 self.assertNotIn(name, names)
                 names.add(name)
-                if family['state'] in ('grammar-only', 'local-artifact-only', 'authenticated-fetch-only'):
+                if family['state'] in ('grammar-only', 'local-artifact-only', 'authenticated-fetch-only',
+                                       'media-listing-connected-installed-operations-pending',
+                                       'local-index-connected-media-retention-pending'):
                     parsed.add(name)
         self.assertEqual(parsed, set(HELP))
         self.assertEqual({p.name for p in (root / 'bin').iterdir()}, parsed)
@@ -200,8 +202,7 @@ class Commands(unittest.TestCase):
     def test_unconnected_actions_never_report_success(self):
         for command, args in [('installp', ['-ap', '-d', '/media', 'vim']),
                               ('installp', ['-C']), ('lslpp', ['-l']),
-                              ('lppchk', ['-v']), ('instfix', ['-i']),
-                              ('inutoc', [])]:
+                              ('lppchk', ['-v']), ('instfix', ['-i'])]:
             out, err = io.StringIO(), io.StringIO()
             with self.subTest(command=command), contextlib.redirect_stdout(out), contextlib.redirect_stderr(err):
                 self.assertEqual(main(command, args), 1)

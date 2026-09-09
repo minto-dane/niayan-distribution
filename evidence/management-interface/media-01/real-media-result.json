@@ -1,0 +1,13 @@
+{
+  "result": "pass",
+  "artifact_count": 7,
+  "original_bytes_unchanged": true,
+  "deterministic_rebuild": true,
+  "identical_rebuild_preserves_inode": true,
+  "installp_geninstall_colon_identical_across_locales": true,
+  "index_sha256": "eafd2a5ffa211168c2248834cca722e4318d15a87e67c02facb467f7b57fdfee",
+  "packages_installed": false,
+  "handlers_executed": false,
+  "publisher_authentication": false,
+  "production_qualified": false
+}

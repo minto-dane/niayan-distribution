@@ -15,7 +15,7 @@
         "lslpp",
         "lppchk"
       ],
-      "state": "grammar-only",
+      "state": "media-listing-connected-installed-operations-pending",
       "target": "one native catalog, resolver and managed transaction service",
       "remaining": "native transport, authenticated catalog, lifecycle retention, fix metadata, output formats, complete option review, real update/recovery tests; no reference-platform BFF/RPM/ISMP delegation",
       "reference_status": "Public command documentation reviewed for grammar-only entries; individual review pending for candidate entries."
@@ -26,9 +26,9 @@
         "inutoc",
         "lppmgr"
       ],
-      "state": "grammar-only",
+      "state": "local-index-connected-media-retention-pending",
       "target": "authenticated native media index and reference-aware storage management",
-      "remaining": "native index format, original metadata preservation, base/update distinction, dependency/supersession checks, pin/rollback/reproduction/source retention and atomic index publication; never equate an older version with a deletable object",
+      "remaining": "Authenticate original media at admission; implement base/update distinctions, pin/rollback/reproduction/source retention, safe move/remove and complete response qualification. Local original-DEB index publication and listing are implemented.",
       "reference_status": "Public command documentation reviewed for grammar-only entries; individual review pending for candidate entries."
     },
     {
