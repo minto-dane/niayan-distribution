@@ -1,0 +1,56 @@
+{
+  "schema": "org.niaos.development-validation/v1",
+  "source_subject": "30d4b667646dad5a8732fec8a78c109b634d7e319c08680a67834d5b832938d2",
+  "result": "pass-for-reference-layer-only",
+  "production_qualified": false,
+  "reference_model": true,
+  "handler_execution": false,
+  "native_cas_wal_integration": false,
+  "completion_observations_authenticated": false,
+  "container_image": "0c04329a1343a0f1ae82ab931ffc7a7e5cbfdccbf18948e0576366fbf5bb249a",
+  "limits": {
+    "memory_bytes": 3221225472,
+    "swap_bytes": 0,
+    "cpu_quota": "100000 100000",
+    "pids": 128,
+    "network": "none",
+    "uid": 1000,
+    "heavy_jobs_parallel": false
+  },
+  "inputs": {
+    "tested": "tested-inputs.json",
+    "count": 192,
+    "all_hashes_match_checkout": true,
+    "source": "source-inputs.json"
+  },
+  "checks": [
+    {
+      "command": "python3 -B -m unittest discover -s tests -p test_*.py -v",
+      "exit_code": 0,
+      "tests": 158,
+      "trigger_state_tests": 13,
+      "trigger_routing_tests": 11,
+      "skipped": 0,
+      "log": "fixed-tests.log"
+    },
+    {
+      "command": "python3 assurance/ci/run-engineering-checks.py --mode source",
+      "exit_code": 0,
+      "checks": 24,
+      "report": "source-check/report.json"
+    }
+  ],
+  "formal_proof": {
+    "rerun": false,
+    "existing_seven_input_sets_unchanged": true,
+    "reference_python_not_proved": true
+  },
+  "remaining": [
+    "complete native package lifecycle and authenticated observations",
+    "native CAS/WAL and executor integration",
+    "handler failure and removal/deconfiguration semantics",
+    "actual boot switch and power-loss recovery",
+    "full original DEB effects and native-only image",
+    "all target translations and full response qualification"
+  ]
+}

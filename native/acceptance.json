@@ -28,16 +28,19 @@
         "tools/deb_archive.py",
         "tools/debian_semantics.py",
         "native/audit_transition.py",
-        "tools/debian_triggers.py"
+        "tools/debian_triggers.py",
+        "tools/debian_trigger_state.py"
       ],
       "tests": [
         "native/test_transition.py",
         "tests/test_nia_intake.py",
-        "tests/test_debian_triggers.py"
+        "tests/test_debian_triggers.py",
+        "tests/test_debian_trigger_state.py"
       ],
       "evidence": [
         "evidence/native-transition/initial-09/inventory.json",
-        "evidence/native-transition/triggers-localization-01/README.ja.md"
+        "evidence/native-transition/triggers-localization-01/README.ja.md",
+        "evidence/native-transition/trigger-state-01/README.ja.md"
       ],
       "remaining": "authenticate original artifacts and implement every adopted phase, generated output and implicit trigger"
     },
