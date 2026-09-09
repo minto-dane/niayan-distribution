@@ -1,0 +1,62 @@
+{
+  "scope": "exact existing proof inputs; new generation runtime is outside proof.gpr and is NOT formally proven",
+  "result": "pass",
+  "components": [
+    {
+      "repository": "assurance",
+      "changed_inputs": [],
+      "added_sources": [],
+      "removed_sources": [],
+      "recorded_input_count": 97,
+      "unchanged": true
+    },
+    {
+      "repository": "pkgcore",
+      "changed_inputs": [],
+      "added_sources": [],
+      "removed_sources": [],
+      "recorded_input_count": 179,
+      "unchanged": true
+    },
+    {
+      "repository": "statecore",
+      "changed_inputs": [],
+      "added_sources": [],
+      "removed_sources": [],
+      "recorded_input_count": 198,
+      "unchanged": true
+    },
+    {
+      "repository": "controlcore",
+      "changed_inputs": [],
+      "added_sources": [],
+      "removed_sources": [],
+      "recorded_input_count": 104,
+      "unchanged": true
+    },
+    {
+      "repository": "configcore",
+      "changed_inputs": [],
+      "added_sources": [],
+      "removed_sources": [],
+      "recorded_input_count": 121,
+      "unchanged": true
+    },
+    {
+      "repository": "resolvercore",
+      "changed_inputs": [],
+      "added_sources": [],
+      "removed_sources": [],
+      "recorded_input_count": 113,
+      "unchanged": true
+    },
+    {
+      "repository": "capsulecore",
+      "changed_inputs": [],
+      "added_sources": [],
+      "removed_sources": [],
+      "recorded_input_count": 115,
+      "unchanged": true
+    }
+  ]
+}

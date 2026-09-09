@@ -1,7 +1,9 @@
 # Niaパッケージ管理への完全置換
 
 [製品判断](../docs/decisions/0002-native-package-authority.ja.md)に従うTrixie置換工程。
-現段階の工具は移行対象の実データ検査であり、インストーラーや特権writerではない。
+現段階のPython工具は移行対象の実データ検査であり、インストーラーや特権writerではない。
+pkgcoreには[非公開世代の組立てSDK](generation-stage.ja.md)を追加した。
+既存CAS/WALで分割適用と全体検査を行うが、稼働root/catalogの公開器は未実装。
 
 公開管理コマンドは[最新判断](../docs/decisions/0003-management-interface.ja.md)に従う。
 [コマンド解析](commands.ja.md)と[更新緊急度・修正告知の識別](update-metadata.ja.md)を追加した。
