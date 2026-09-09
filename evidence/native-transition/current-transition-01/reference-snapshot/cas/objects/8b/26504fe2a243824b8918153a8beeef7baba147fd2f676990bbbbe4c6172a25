@@ -1,0 +1,21 @@
+Package: consumer
+Version: 1:1.0-1
+Architecture: all
+Maintainer: Fixture <fixture@example.invalid>
+Description: candidate fixture
+ 日本語の説明
+Source: consumer-source (1:1.0-2)
+Essential: yes
+Protected: yes
+Installed-Size: 0
+Depends: library:any (>= 2.0) | fallback:arm64, helper
+Pre-Depends: bootstrap (>= 1:1.0-1)
+Recommends: optional | another
+Suggests: suggestion
+Enhances: editor
+Breaks: obsolete (<< 2)
+Conflicts: competing:any
+Replaces: obsolete (<= 1)
+Provides: virtual:amd64 (= 1.0), unversioned
+Built-Using: source-one (= 1.0)
+Static-Built-Using: source-two (= 2.0)

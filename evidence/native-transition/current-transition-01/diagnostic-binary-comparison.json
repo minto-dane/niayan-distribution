@@ -1,0 +1,5 @@
+{
+  "result": "identical",
+  "sha256": "991e658e275d3160d86c65428fa08586ce8341a65d2dde51cadb86ca30d8ebd4",
+  "scope": "publication driver used for persisted reference snapshot and independent CI"
+}

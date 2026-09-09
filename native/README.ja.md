@@ -2,6 +2,7 @@
 
 [製品判断](../docs/decisions/0002-native-package-authority.ja.md)に従うTrixie置換工程。
 [受理済み世代のnative catalog観測](current-catalog.ja.md)を同じ排他区間へ接続した。
+[確定済み世代からの更新計画](current-transition.ja.md)は同じ予約で候補の保持と通常更新を検査する。
 [正規catalogのCAS保存と再構築](catalog-store.ja.md)を追加した。
 [既存世代の変更集合と保護対象](transition-plan.ja.md)の読取SDKを追加した。
 [機能の管理主体](ownership.ja.md)にNiaが引き受ける役割と独立した基盤を整理した。

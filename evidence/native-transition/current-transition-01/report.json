@@ -1,0 +1,49 @@
+{
+  "format": 1,
+  "result": "partial-qualification-host-memory-prerequisite",
+  "source_subject": "afdb6163195025cb2c485c7450ee4894738ba2f51b6a767930753921023e2cb8",
+  "post_build_changes": "handoff-only-changes.json",
+  "baseline_root_commit": "313230d",
+  "source_gate_passed": false,
+  "whole_workspace_gate_passed": false,
+  "whole_gate": "attempts/whole-gate-memory/report.json",
+  "whole_gate_failure": "engineering-unittests: insufficient-memory-before-start",
+  "workspace_ada_mains_executed_by_whole_gate": 0,
+  "workspace_apps_built": 18,
+  "independent_pkgcore_mains_passed": 25,
+  "pkgcore_executables_reproduced": 29,
+  "workspace_apps_reproduced": 18,
+  "publication_assertions": 1361,
+  "stage_assertions": 1193,
+  "root_driver_assertions": [
+    1113,
+    40,
+    3,
+    6,
+    8,
+    5,
+    5,
+    11
+  ],
+  "update_observations": 18,
+  "update_bindings": 4,
+  "missing_update_objects": 8,
+  "missing_baseline_retention_checks": 64,
+  "private_dbus_tests": [
+    32,
+    10
+  ],
+  "build_inputs": 729,
+  "workspace_inputs": 3346,
+  "proof_inputs": "seven exact sets unchanged; affected runtime outside SPARK",
+  "sanitizer_scope": "C boundaries and allocator/library-call interception only; Ada and upstream libraries uninstrumented; leaks disabled",
+  "production_authorization": false,
+  "physical_deb_payload_applied": false,
+  "boot_tested": false,
+  "full_capacity_qualified": false,
+  "safe_gc_implemented": false,
+  "remaining_required_checks": [
+    "complete whole-workspace source/build/71-main gate after real memory prerequisite recovers",
+    "host source gate"
+  ]
+}

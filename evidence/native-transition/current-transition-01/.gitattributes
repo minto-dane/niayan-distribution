@@ -1,0 +1,2 @@
+# Content-addressed fixtures must retain their exact bytes in every checkout.
+reference-snapshot/** binary

@@ -22,6 +22,9 @@ commit済みjournalを検査する。未確定transaction、欠落/不正な記�
 
 ## 観測後の扱い
 
+現在の世代から候補への計画を作る場合は、[更新計画の観測](current-transition.ja.md)で
+両catalogと保持・通常更新を同じ予約内で検査し、正確なdescriptorへ束縛できる。
+
 返却時に全予約を解放する。呼出元は観測したdescriptorとcatalogを計画の前世代へ結び付け、
 適用時にはその正確なpredecessorを再照合しなければならない。
 既存Publishは現在のaccepted descriptorと計画のBeforeを比べ、Engineの予約取得後にも世代を再確認する。

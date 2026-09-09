@@ -1,0 +1,3 @@
+Running as unit: run-p6361-i6661.scope; invocation ID: 7d571907ace74a16a4db7f2d46481b7d
+limited-exec: {"scope": "run-p6361-i6661.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Error: current system boot ID differs from cached boot ID; an unhandled reboot has occurred. Please delete directories "/home/nia/devbox/niaos/.work/podman-generation-reboot-run" and "/home/nia/devbox/niaos/.work/podman-generation-reboot-tmp" and re-run Podman

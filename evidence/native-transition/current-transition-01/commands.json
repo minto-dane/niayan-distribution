@@ -1,0 +1,30 @@
+{
+  "container_image": "0c04329a1343a0f1ae82ab931ffc7a7e5cbfdccbf18948e0576366fbf5bb249a",
+  "network": "none",
+  "normal_uid": 1000,
+  "root_uid": 0,
+  "outer_scope": "sh dev/run-limited.sh",
+  "limits": {
+    "memory_bytes": 3221225472,
+    "swap_bytes": 0,
+    "cpu_cores": 1,
+    "pids": 128
+  },
+  "first": "fresh workspace env -u TZ -u SOURCE_DATE_EPOCH make build JOBS=1; make -C pkgcore test-build JOBS=1",
+  "independent": "fresh /independent-long-workspace make build JOBS=1; make -C pkgcore test-build JOBS=1",
+  "tested_binaries": "independent build; byte-identical to first build",
+  "jobs": 1,
+  "source_date_epoch": [
+    null,
+    1788739200
+  ],
+  "independent_mtime": 1788652800,
+  "timezones": [
+    "UTC default; explicit environment unset",
+    "Pacific/Honolulu"
+  ],
+  "new_dependencies": [],
+  "shared_runtime_changed": false,
+  "upstream_source_changed": false,
+  "safety_guard_changed": false
+}
