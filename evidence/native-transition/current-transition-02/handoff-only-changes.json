@@ -1,0 +1,16 @@
+{
+  "changes": [
+    {
+      "path": "AGENTS.md",
+      "before_sha256": "0180162f2865a1cde82276ff3c3cdc0611db774dc5824c364c202436f636ef65",
+      "after_sha256": "85dc212d7daf6fa6219d79b6b3de2164f6d14242a08219630778c74f89fb33bf",
+      "scope": "handoff only; engineering source subject unchanged; original build input map preserved"
+    },
+    {
+      "path": "STATUS.ja.md",
+      "before_sha256": "a3c0f43dcec03719616caaa1a1acf19b20c98c1bf98f8ac444918633e61a3885",
+      "after_sha256": "32014c9286f03d4210729907ed2b5a876bdeb23f6d814ad2017bd1afd68d2df3",
+      "scope": "handoff only; engineering source subject unchanged; original build input map preserved"
+    }
+  ]
+}

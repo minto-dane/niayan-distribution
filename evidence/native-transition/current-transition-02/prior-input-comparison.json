@@ -1,0 +1,50 @@
+{
+  "result": "exact-input-comparison",
+  "changed_inputs": [
+    {
+      "path": "AGENTS.md",
+      "before": "5b911b13e69edf301ca99251b7daaf380f5bfe1c408eedf2b50fa6d136f8d199",
+      "after": "0180162f2865a1cde82276ff3c3cdc0611db774dc5824c364c202436f636ef65"
+    },
+    {
+      "path": "STATUS.ja.md",
+      "before": "58c534670e7dadafc0652b49bdf31a07cf89b27cf2b9fff9fc60cc1e95c59102",
+      "after": "a3c0f43dcec03719616caaa1a1acf19b20c98c1bf98f8ac444918633e61a3885"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0054.ja.md",
+      "before": "655c7a9f1feb711fa0e8184a9fac79cfcefb79e77a000661e0c61fdf30af67bf",
+      "after": "a6e57230820403e8984d9e5a888a82ec4d1508767b8338971867237e4b8f501f"
+    },
+    {
+      "path": "assurance/engineering/fault-cases.json",
+      "before": "be5e2f52e26d2ce6dd186e11bd47496c623a9dbd1ee6ac0dc2a3b6927fbbc461",
+      "after": "6f257705903b3f6f0701bb74c636ed77cc65dedc995a2f74b6c34b74c852a313"
+    },
+    {
+      "path": "assurance/engineering/requirements.json",
+      "before": "13d183f785dc806f4a16e03a127bf3b8ab5d9f2338d75690ad2e42d842d9a271",
+      "after": "5b1217b877ada2bfab841832ed06b6bfbaf86aa9d8969a1c20be80bdd29be493"
+    },
+    {
+      "path": "assurance/tests/engineering/test_proof_guard.py",
+      "before": "6d23a69af5d633d817847032a6ea68916153f8adc5234df9a2bb1952451dc231",
+      "after": "b919417c587bfee961ac7ac44e2cd7da7822c04eac15ff1dcc0d3cfd381e5d66"
+    }
+  ],
+  "prior_evidence": "distribution/evidence/native-transition/current-transition-01",
+  "unchanged_pkgcore_input_count": 729,
+  "unchanged_guard_and_scope_files": {
+    "configcore/ci/proof-guard.py": "ad9958d1a2349e892199701f26e91f8f8babada5be611c3f8d3e9bf569225bab",
+    "capsulecore/ci/proof-guard.py": "ad9958d1a2349e892199701f26e91f8f8babada5be611c3f8d3e9bf569225bab",
+    "controlcore/ci/proof-guard.py": "ad9958d1a2349e892199701f26e91f8f8babada5be611c3f8d3e9bf569225bab",
+    "pkgcore/ci/proof-guard.py": "ad9958d1a2349e892199701f26e91f8f8babada5be611c3f8d3e9bf569225bab",
+    "resolvercore/ci/proof-guard.py": "ad9958d1a2349e892199701f26e91f8f8babada5be611c3f8d3e9bf569225bab",
+    "assurance/ci/proof-guard.py": "ad9958d1a2349e892199701f26e91f8f8babada5be611c3f8d3e9bf569225bab",
+    "statecore/ci/proof-guard.py": "ad9958d1a2349e892199701f26e91f8f8babada5be611c3f8d3e9bf569225bab",
+    "dev/run-limited.sh": "0e364b98c24151260a4e964d73f5d2b0b97b09b092aa77fa9c97192c23ecaff8",
+    "dev/limited-exec.py": "175957bd20a22b0c5b4f1b0a00229c726bb60799cdec4e8999d9a156aa560dd6"
+  },
+  "runtime_and_ada_build_inputs_changed": false,
+  "meaning": "Only fixture resource limits, their requirement/specification and prior handoff text changed; production guards and runtime inputs are byte-identical."
+}

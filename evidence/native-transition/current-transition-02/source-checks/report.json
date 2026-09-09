@@ -1,0 +1,464 @@
+{
+  "format": 1,
+  "mode": "source",
+  "created_utc": "2026-09-09T22:33:13.016903+00:00",
+  "production_approval": false,
+  "ada_execution": "not-run",
+  "formal_proof": "not-run",
+  "temporary_io_tree": "/tmp/mission-engineering-tests-4zw1zzxt",
+  "checks": [
+    {
+      "name": "traceability",
+      "result": "pass",
+      "layer": "source"
+    },
+    {
+      "argv": [
+        "gprbuild",
+        "--version"
+      ],
+      "cwd": "/home/nia/devbox/niaos/nia-os-consent",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 369,
+      "seconds": 0.047,
+      "log_sha256": "580b7d8d6b27ce742268f9fa3342c978e0240a050fb3ec9fb44ea3f063b5e8ca",
+      "name": "gprbuild-version",
+      "layer": "tool-identification"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "assurance/tests/engineering",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "cwd": "/home/nia/devbox/niaos/nia-os-consent",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 16755,
+      "seconds": 10.251,
+      "log_sha256": "71c4f57c1089aad4dbcf054c70d2c9d6ec74eef1576d5272fedacb1dbc3cd706",
+      "name": "engineering-unittests",
+      "layer": "source-and-reference"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "assurance/ci/sync-component-ci.py"
+      ],
+      "cwd": "/home/nia/devbox/niaos/nia-os-consent",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 71,
+      "seconds": 0.455,
+      "log_sha256": "e46a10320f07874e9bf758914c1cea6f1cde6ed4e70b81a989379528d1c3812f",
+      "name": "component-ci-generated",
+      "layer": "source"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "controlcore/tests/reference",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "cwd": "/home/nia/devbox/niaos/nia-os-consent",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 4879,
+      "seconds": 0.106,
+      "log_sha256": "94c89a208b188e5c7f719178ce4c3ed37c7490d8fe007297abf9670281178bff",
+      "name": "manager-reference-tests",
+      "layer": "source-and-reference"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "configcore/tests",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "cwd": "/home/nia/devbox/niaos/nia-os-consent",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 3229,
+      "seconds": 0.071,
+      "log_sha256": "5f930b1b51ce5c23c4ae0e8bf8301ba588b3a1112496d1140b2de01b3e8aefa9",
+      "name": "configuration-reference-tests",
+      "layer": "reference-and-limited-native-probe"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "resolvercore/tests",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "cwd": "/home/nia/devbox/niaos/nia-os-consent",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 6707,
+      "seconds": 0.139,
+      "log_sha256": "f69e741c976e8506b0a4cd8f667cd57b583e4167773efd839c1738652052438a",
+      "name": "resolution-reference-tests",
+      "layer": "reference-and-untrusted-proposal-tool-tests"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "assurance/tests_py",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "cwd": "/home/nia/devbox/niaos/nia-os-consent",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 5151,
+      "seconds": 0.296,
+      "log_sha256": "bca3672ddb287e59ec72425169ad1b1e2a9f1eb1850677fbf3a7a853207f35d9",
+      "name": "cohort-recovery-tests",
+      "layer": "actual-nonprivileged-cryptography-and-io"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "capsulecore/tests_py",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "cwd": "/home/nia/devbox/niaos/nia-os-consent",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 8739,
+      "seconds": 0.132,
+      "log_sha256": "09dcb4726fc7db71dbdeadd553f35d0269ef1ca1c160a0e32c73ce24af3fc2f0",
+      "name": "capsule-policy-tree-tests",
+      "layer": "reference-and-actual-candidate-tree-io"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "ci/profile.py"
+      ],
+      "cwd": "/home/nia/devbox/niaos/nia-os-consent/resolvercore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 146,
+      "seconds": 0.039,
+      "log_sha256": "d20516e36c781b18a0702dbd98ab8969ebb69c5f076558f497a888e4cf5e62b2",
+      "name": "resolver-source-profile",
+      "layer": "source"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "ci/check-neutral.py"
+      ],
+      "cwd": "/home/nia/devbox/niaos/nia-os-consent/resolvercore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 1527,
+      "seconds": 0.038,
+      "log_sha256": "9924a0e4760c31c44af6d27b6aeb0921e82fce58ec82e233c686c8eaa7aad157",
+      "name": "resolver-neutral-boundary",
+      "layer": "source"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "ci/check-resolver.py"
+      ],
+      "cwd": "/home/nia/devbox/niaos/nia-os-consent/pkgcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 124,
+      "seconds": 0.031,
+      "log_sha256": "e40adfcec7696f7f8117e538efe7e131aa99fef55ba2547468edc807fc208366",
+      "name": "native-resolver-lock",
+      "layer": "source"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "distribution/tests",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "cwd": "/home/nia/devbox/niaos/nia-os-consent",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 16204,
+      "seconds": 2.234,
+      "log_sha256": "cda98f4789c1d9b0b7830f70718a7290cf5b815cbf02aefc92ed17f01a3bc837",
+      "name": "distribution-tool-tests",
+      "layer": "actual-build-tool-tests"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "assurance/ci/nia-product-audit.py"
+      ],
+      "cwd": "/home/nia/devbox/niaos/nia-os-consent",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 1259,
+      "seconds": 0.215,
+      "log_sha256": "5df1c464295c40ba66ca9c6b8d746ca30be54863ea2f06425c0fb3f3ed7ddfba",
+      "name": "nia-product-audit",
+      "layer": "source-product-coherence"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "assurance/ci/unified-audit.py"
+      ],
+      "cwd": "/home/nia/devbox/niaos/nia-os-consent",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 256994,
+      "seconds": 0.385,
+      "log_sha256": "1de45a30fbfedb55d55aac51441cbd564eec42526c8523fdd82a56ad40a0b29d",
+      "name": "unified-architecture-audit",
+      "layer": "source"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "assurance/ci/engineering.py",
+        "lint"
+      ],
+      "cwd": "/home/nia/devbox/niaos/nia-os-consent",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 179251,
+      "seconds": 0.418,
+      "log_sha256": "deea94b8c3a4d30698848bfc5c9c2dfc46577c545de6998d8237c6aac73bfe5e",
+      "name": "syntax-and-doc-links",
+      "layer": "source"
+    },
+    {
+      "argv": [
+        "/bin/sh",
+        "ci/check-contract.sh"
+      ],
+      "cwd": "/home/nia/devbox/niaos/nia-os-consent/assurance",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 4077,
+      "seconds": 0.021,
+      "log_sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6",
+      "name": "assurance-contract",
+      "layer": "source"
+    },
+    {
+      "argv": [
+        "/bin/sh",
+        "ci/check-contract.sh"
+      ],
+      "cwd": "/home/nia/devbox/niaos/nia-os-consent/pkgcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 4077,
+      "seconds": 0.017,
+      "log_sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6",
+      "name": "pkgcore-contract",
+      "layer": "source"
+    },
+    {
+      "argv": [
+        "/bin/sh",
+        "ci/check-contract.sh"
+      ],
+      "cwd": "/home/nia/devbox/niaos/nia-os-consent/statecore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 4077,
+      "seconds": 0.02,
+      "log_sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6",
+      "name": "statecore-contract",
+      "layer": "source"
+    },
+    {
+      "argv": [
+        "/bin/sh",
+        "ci/check-contract.sh"
+      ],
+      "cwd": "/home/nia/devbox/niaos/nia-os-consent/controlcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 4077,
+      "seconds": 0.019,
+      "log_sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6",
+      "name": "controlcore-contract",
+      "layer": "source"
+    },
+    {
+      "argv": [
+        "/bin/sh",
+        "ci/check-contract.sh"
+      ],
+      "cwd": "/home/nia/devbox/niaos/nia-os-consent/configcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 4077,
+      "seconds": 0.026,
+      "log_sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6",
+      "name": "configcore-contract",
+      "layer": "source"
+    },
+    {
+      "argv": [
+        "/bin/sh",
+        "ci/check-contract.sh"
+      ],
+      "cwd": "/home/nia/devbox/niaos/nia-os-consent/resolvercore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 4077,
+      "seconds": 0.017,
+      "log_sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6",
+      "name": "resolvercore-contract",
+      "layer": "source"
+    },
+    {
+      "argv": [
+        "/bin/sh",
+        "ci/check-contract.sh"
+      ],
+      "cwd": "/home/nia/devbox/niaos/nia-os-consent/capsulecore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 4077,
+      "seconds": 0.016,
+      "log_sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6",
+      "name": "capsulecore-contract",
+      "layer": "source"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "ci/manager-profile.py"
+      ],
+      "cwd": "/home/nia/devbox/niaos/nia-os-consent/controlcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 129,
+      "seconds": 0.034,
+      "log_sha256": "8e6503258bf0c12b82bcd750e52f16e350fbf7b3651488a01f41bf2f4a57dedc",
+      "name": "manager-implementation-profile",
+      "layer": "source"
+    }
+  ],
+  "environment": {
+    "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+    "kernel": "6.12.107+deb13-amd64",
+    "architecture": "x86_64",
+    "gprbuild": "/usr/bin/gprbuild",
+    "gnatprove": null,
+    "native_fixture_tools": {
+      "gpg": "/usr/bin/gpg",
+      "gpgv": "/usr/bin/gpgv",
+      "gpg-agent": "/usr/bin/gpg-agent",
+      "gpgconf": "/usr/bin/gpgconf",
+      "dpkg-deb": "/usr/bin/dpkg-deb"
+    }
+  },
+  "source_subject_before": "f6e883af2ab0a8b15ffaeb61f2cf2d8718b7513def47b3143fd131514e63d8ab",
+  "source_subject_after": "f6e883af2ab0a8b15ffaeb61f2cf2d8718b7513def47b3143fd131514e63d8ab",
+  "result": "pass-for-requested-layer-only",
+  "temporary_io_tree_removed": true,
+  "ended_utc": "2026-09-09T22:33:28.738030+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "result": "same-pkgcore-inputs-and-executable-bytes",
+  "prior_directory": "../current-transition-01",
+  "prior_root_commit": "a273c41",
+  "prior_pkgcore_commit": "795f503",
+  "pkgcore_input_count": 729,
+  "identical_executable_count": 29,
+  "checked_prior_files": {
+    "report.json": "947ff53e961da91fee20f1a853544c438d7eb17c598e8218659539e9173b1c5f",
+    "accepted-build-test.log": "add64b3eef675edde40e4bc5caf23584a2e007ed1a48e1916671000a56149b3b",
+    "accepted-oracle.json": "5c422a17e4a1dd15db3f8bee809aadf317c04edc441d895b88526911fdd6a74f",
+    "root-probe.log": "9149b312208b8ac17dfcbcb1f88673050a073f6e1bb58e696a4fc36bbe6ddc46",
+    "sanitized.log": "6c6c80243afc160f748dfa193670324b4ce896756c588a34d19393c00d60ea88",
+    "reproducibility.json": "3b1ffeef6171b8c9a968b843cd2088b2d39a5ee17ea0948220ffa11788554480",
+    "build-inputs.json": "a07f55416133cea179194fb76af10c69fed2b9546614a34f2771c343a08a7457",
+    "input-comparison.json": "7076f063e224853ef4dbd8256e82a8f88dce3365e50c97bcdc62d44f89f2cc30"
+  },
+  "meaning": "Existing independent component CI, root refusal and sanitizer evidence retains its original source subject; current full-workspace execution is separately recorded. No new sanitizer or component-CI run is claimed."
+}
