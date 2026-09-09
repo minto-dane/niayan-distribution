@@ -1,0 +1,4 @@
+FROM 0c04329a1343a0f1ae82ab931ffc7a7e5cbfdccbf18948e0576366fbf5bb249a
+USER root
+RUN apt-get update && apt-get install -y --no-install-recommends erofs-utils=1.8.6-1 attr acl && dpkg-query -W > /usr/share/nia-generation-probe-packages.txt && rm -rf /var/lib/apt/lists/*
+USER builder

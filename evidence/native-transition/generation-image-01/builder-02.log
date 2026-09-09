@@ -1,0 +1,69 @@
+Running as unit: run-p111068-i111368.scope; invocation ID: 39fc12cfd7a04fa0b7284875586cdfa2
+limited-exec: {"scope": "run-p111068-i111368.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+STEP 1/4: FROM 0c04329a1343a0f1ae82ab931ffc7a7e5cbfdccbf18948e0576366fbf5bb249a
+STEP 2/4: USER root
+STEP 3/4: RUN apt-get update && apt-get install -y --no-install-recommends erofs-utils=1.8.6-1 attr acl && dpkg-query -W > /usr/share/nia-generation-probe-packages.txt && rm -rf /var/lib/apt/lists/*
+Get:1 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie InRelease [140 kB]
+Get:2 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie-updates InRelease [47.3 kB]
+Get:3 http://snapshot.debian.org/archive/debian-security/20260907T000000Z trixie-security InRelease [43.4 kB]
+Get:4 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 Packages [9673 kB]
+Get:5 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie-updates/main amd64 Packages [4412 B]
+Get:6 http://snapshot.debian.org/archive/debian-security/20260907T000000Z trixie-security/main amd64 Packages [251 kB]
+Fetched 10.2 MB in 1s (11.7 MB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  libdeflate0
+Suggested packages:
+  erofsfuse
+The following NEW packages will be installed:
+  acl attr erofs-utils libdeflate0
+0 upgraded, 4 newly installed, 0 to remove and 0 not upgraded.
+Need to get 295 kB of archives.
+After this operation, 1147 kB of additional disk space will be used.
+Get:1 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 acl amd64 2.3.2-2+b1 [64.4 kB]
+Get:2 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 attr amd64 1:2.5.2-3 [44.0 kB]
+Get:3 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libdeflate0 amd64 1.23-2 [47.3 kB]
+Get:4 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 erofs-utils amd64 1.8.6-1 [139 kB]
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+debconf: unable to initialize frontend: Teletype
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Noninteractive
+Fetched 295 kB in 1s (272 kB/s)
+Selecting previously unselected package acl.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 19844 files and directories currently installed.)
+Preparing to unpack .../acl_2.3.2-2+b1_amd64.deb ...
+Unpacking acl (2.3.2-2+b1) ...
+Selecting previously unselected package attr.
+Preparing to unpack .../attr_1%3a2.5.2-3_amd64.deb ...
+Unpacking attr (1:2.5.2-3) ...
+Selecting previously unselected package libdeflate0:amd64.
+Preparing to unpack .../libdeflate0_1.23-2_amd64.deb ...
+Unpacking libdeflate0:amd64 (1.23-2) ...
+Selecting previously unselected package erofs-utils.
+Preparing to unpack .../erofs-utils_1.8.6-1_amd64.deb ...
+Unpacking erofs-utils (1.8.6-1) ...
+Setting up attr (1:2.5.2-3) ...
+Setting up libdeflate0:amd64 (1.23-2) ...
+Setting up acl (2.3.2-2+b1) ...
+Setting up erofs-utils (1.8.6-1) ...
+Processing triggers for libc-bin (2.41-12+deb13u3) ...
+STEP 4/4: USER builder
+COMMIT
+Getting image source signatures
+Copying blob sha256:411a86676185cb54d695a805b238194a64e9b77e0c723f3802fbb87d333ea0b3
+Copying blob sha256:789a6d11b8361b394262955d32ea0a746c79aa741f9ec041f1a4e30456cea244
+Copying blob sha256:e8c7a4c0b8594ee798fe73ed489ba2a3a3933acaa60f1d6eac69c86026dfac8d
+Copying blob sha256:92e8f10eff7b86164107dd72a0ea4dc468369f03e297df5738c7db95d6d230e0
+Copying blob sha256:bd183ae3a7c2e77aa1d506ac0361824891ebc9cb683f2fee2c3ebffe28c93411
+Copying config sha256:c4780834974a93ecca8c6ab5ed18f329021439a6d905ec207c30b207fe64a063
+Writing manifest to image destination
+--> c4780834974a
+c4780834974a93ecca8c6ab5ed18f329021439a6d905ec207c30b207fe64a063

@@ -1,0 +1,39 @@
+{
+  "format": 1,
+  "result": "not-accepted-for-direct-payload-input",
+  "baseline_source_subject": "32956b52274683d893c1d0c5824d22e45b4ea8f25daa1af78370666a37fa90bc",
+  "baseline_root_commit": "aaeee76",
+  "baseline_pkgcore_commit": "b7eed54",
+  "image": "sha256:c4780834974a93ecca8c6ab5ed18f329021439a6d905ec207c30b207fe64a063",
+  "runtime_code_changed": false,
+  "fixture_source": "pkgcore/tests/fixtures/deb-payload/manifest.json",
+  "synthetic_debs": 11,
+  "additional_tars": 4,
+  "mkfs_attempts": 19,
+  "mkfs_successes": 17,
+  "fsck_successes": 17,
+  "timezone_pairs_equal": 4,
+  "kernel_mount_tested": false,
+  "boot_tested": false,
+  "scope_limits": {
+    "memory_bytes": 3221225472,
+    "swap_bytes": 0,
+    "cpu_quota": 100000,
+    "cpu_period": 100000,
+    "pids": 128
+  },
+  "exclusions": [
+    "No arbitrary input validation qualification for experimental observer",
+    "No shared-contract or proof-input changes",
+    "No production backend adoption",
+    "No all-DEB acceptance",
+    "No inode-flag or independent atime/ctime/btime support in tested image profile"
+  ],
+  "evidence_copy_interruption": {
+    "reason": "ordinary copy expanded a failed sparse output",
+    "partial_copy_bytes_removed": 15464833024,
+    "source_failed_outputs_modified": false
+  },
+  "source_check_subject": "8a6ce83352a1d8e86165e2af6428427b5b9e0b67909623ca66685aabd7c2e17d",
+  "source_checks_passed": 24
+}

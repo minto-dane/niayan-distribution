@@ -1,0 +1,11 @@
+Path : /
+Size: 51  On-disk size: 51  directory
+NID: 36   Links: 2   Layout: 2   Compression ratio: 100.00%
+Inode size: 64   Xattr size: 0
+Uid: 0   Gid: 0  Access: 0777/rwxrwxrwx
+Timestamp: 2026-09-07 00:00:00.000000000
+
+       NID TYPE  FILENAME
+        36    2  .
+        36    2  ..
+        40    1  before-epoch

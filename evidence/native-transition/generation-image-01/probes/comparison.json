@@ -1,0 +1,390 @@
+{
+  "qualification": "not-accepted-for-direct-payload-input",
+  "scope": "17 successful images, synthetic fixtures only; no kernel mount or boot acceptance",
+  "images": [
+    {
+      "image": "attributes.erofs",
+      "sha256": "7f0eebbd25599ec571d0aadcfdac28256829e9a3a933f63fc1f4d62fa3d770e0",
+      "tar_sha256": "f213abcb06d97448afb2dfb48c5986dcf879f526637e79b0905f71d6ca4211ec",
+      "checked_entries": 1,
+      "issues": [
+        {
+          "path": "attr",
+          "field": "atime",
+          "expected": "1700000001.000000007",
+          "observed": "no separate on-disk field in tested profile"
+        },
+        {
+          "path": "attr",
+          "field": "ctime",
+          "expected": "1700000002.42",
+          "observed": "no separate on-disk field in tested profile"
+        },
+        {
+          "path": "attr",
+          "field": "LIBARCHIVE.creationtime",
+          "expected": "1700000003.75",
+          "observed": "no separate on-disk field in tested profile"
+        },
+        {
+          "path": "attr",
+          "field": "system.posix_acl_access",
+          "expected": "user::rwx,user:42:r--,group::r--,mask::r--,other::---",
+          "observed": null
+        }
+      ],
+      "undeclared_directories": [
+        {
+          "path": "",
+          "mode": 511,
+          "uid": 0,
+          "gid": 0
+        }
+      ],
+      "declared_fields_match": false
+    },
+    {
+      "image": "core-ustar-a.erofs",
+      "sha256": "1349c749503a273a2fa1f5151f75f812e53395f06f059de7d853631d746ad3cf",
+      "tar_sha256": "558ec3ff1f41745f6986c06c694cbcd2076e7771e5d4511387bd6de34442f721",
+      "checked_entries": 9,
+      "issues": [],
+      "undeclared_directories": [],
+      "declared_fields_match": true
+    },
+    {
+      "image": "core-ustar-b.erofs",
+      "sha256": "1349c749503a273a2fa1f5151f75f812e53395f06f059de7d853631d746ad3cf",
+      "tar_sha256": "558ec3ff1f41745f6986c06c694cbcd2076e7771e5d4511387bd6de34442f721",
+      "checked_entries": 9,
+      "issues": [],
+      "undeclared_directories": [],
+      "declared_fields_match": true
+    },
+    {
+      "image": "empty.erofs",
+      "sha256": "12ab67051824d2ff9aa2e591b3f5e06c06c23dc3f0e3fc0e99e66ee529d0e173",
+      "tar_sha256": "84ff92691f909a05b224e1c56abb4864f01b4f8e3c854e4bb4c7baf1d3f6d652",
+      "checked_entries": 0,
+      "issues": [],
+      "undeclared_directories": [
+        {
+          "path": "",
+          "mode": 511,
+          "uid": 0,
+          "gid": 0
+        }
+      ],
+      "declared_fields_match": true
+    },
+    {
+      "image": "flags.erofs",
+      "sha256": "2eb2adf7ed5dd4a065f95d500b5c060abe96b2d7f5d3e33bee7f775827d15780",
+      "tar_sha256": "17cb81562051a2e07048eb0904bbfa2057c587f5e90ef5dbc8a6fdc468936193",
+      "checked_entries": 1,
+      "issues": [
+        {
+          "path": "flags",
+          "field": "SCHILY.fflags",
+          "expected": "nodump",
+          "observed": "no separate on-disk field in tested profile"
+        }
+      ],
+      "undeclared_directories": [
+        {
+          "path": "",
+          "mode": 511,
+          "uid": 0,
+          "gid": 0
+        }
+      ],
+      "declared_fields_match": false
+    },
+    {
+      "image": "gnu.erofs",
+      "sha256": "b22773a1389a148f01c22d24b6ade8c2c364fb4b6c7506118388abd08c3e98dd",
+      "tar_sha256": "1939836f759376a42309f531b8df360e9d066aebf4272b694138b0cc3019a76f",
+      "checked_entries": 2,
+      "issues": [],
+      "undeclared_directories": [
+        {
+          "path": "",
+          "mode": 511,
+          "uid": 0,
+          "gid": 0
+        },
+        {
+          "path": "usr",
+          "mode": 511,
+          "uid": 0,
+          "gid": 0
+        },
+        {
+          "path": "usr/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "mode": 511,
+          "uid": 0,
+          "gid": 0
+        }
+      ],
+      "declared_fields_match": true
+    },
+    {
+      "image": "multilingual.erofs",
+      "sha256": "480bc9c8a078ee796b0699f9282827fa5a3b286cffb885eba5beedb338df56d7",
+      "tar_sha256": "86fb9ffa3a8de56c08e2a5c9e6ab8370d9abfd2c41bf396c8638119dfa6c23db",
+      "checked_entries": 5,
+      "issues": [],
+      "undeclared_directories": [
+        {
+          "path": "",
+          "mode": 511,
+          "uid": 0,
+          "gid": 0
+        },
+        {
+          "path": "العربية",
+          "mode": 511,
+          "uid": 0,
+          "gid": 0
+        }
+      ],
+      "declared_fields_match": true
+    },
+    {
+      "image": "negative-clock.erofs",
+      "sha256": "b13c35a591f073d6cc24d9175d80428951adfb80ebf04859c8a2d3a2265e21ec",
+      "tar_sha256": "fab334fb034cbd409402629281325691edf48ae5d660c86675a96ace076cf0c3",
+      "checked_entries": 1,
+      "issues": [
+        {
+          "path": "before-epoch",
+          "field": "mtime",
+          "expected": [
+            -2,
+            750000000
+          ],
+          "observed": [
+            -1,
+            25
+          ]
+        }
+      ],
+      "undeclared_directories": [
+        {
+          "path": "",
+          "mode": 511,
+          "uid": 0,
+          "gid": 0
+        }
+      ],
+      "declared_fields_match": false
+    },
+    {
+      "image": "negative-integer-pax-a.erofs",
+      "sha256": "392561531e24629846b659130b0337259d757ed1a8607733b504d8a9249cab34",
+      "tar_sha256": "60b90fca1e4ba59d6ca1965c55ba3c416527837cabb2cb436bebe997b2edb79e",
+      "checked_entries": 1,
+      "issues": [],
+      "undeclared_directories": [
+        {
+          "path": "",
+          "mode": 511,
+          "uid": 0,
+          "gid": 0
+        }
+      ],
+      "declared_fields_match": true
+    },
+    {
+      "image": "negative-integer-pax-b.erofs",
+      "sha256": "392561531e24629846b659130b0337259d757ed1a8607733b504d8a9249cab34",
+      "tar_sha256": "60b90fca1e4ba59d6ca1965c55ba3c416527837cabb2cb436bebe997b2edb79e",
+      "checked_entries": 1,
+      "issues": [],
+      "undeclared_directories": [
+        {
+          "path": "",
+          "mode": 511,
+          "uid": 0,
+          "gid": 0
+        }
+      ],
+      "declared_fields_match": true
+    },
+    {
+      "image": "negative-zero.erofs",
+      "sha256": "5eee6f5d8e9eff78a0571f848d57f8295187306fa5426d42d472e7bf5d22df4c",
+      "tar_sha256": "10fe0e6028f8ef49727538d3371ac9c2b68cf46183e4f9bafb5fdc726fe442b9",
+      "checked_entries": 1,
+      "issues": [
+        {
+          "path": "before-epoch",
+          "field": "mtime",
+          "expected": [
+            -1,
+            999999999
+          ],
+          "observed": [
+            0,
+            1
+          ]
+        },
+        {
+          "path": "before-epoch",
+          "field": "atime",
+          "expected": "0.123456789000",
+          "observed": "no separate on-disk field in tested profile"
+        }
+      ],
+      "undeclared_directories": [
+        {
+          "path": "",
+          "mode": 511,
+          "uid": 0,
+          "gid": 0
+        }
+      ],
+      "declared_fields_match": false
+    },
+    {
+      "image": "pax.erofs",
+      "sha256": "b22773a1389a148f01c22d24b6ade8c2c364fb4b6c7506118388abd08c3e98dd",
+      "tar_sha256": "4a761217a7d41ee23ab8ef6503db52b71e2eb99d8f499dce46b0fe203a1c28bd",
+      "checked_entries": 2,
+      "issues": [],
+      "undeclared_directories": [
+        {
+          "path": "",
+          "mode": 511,
+          "uid": 0,
+          "gid": 0
+        },
+        {
+          "path": "usr",
+          "mode": 511,
+          "uid": 0,
+          "gid": 0
+        },
+        {
+          "path": "usr/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "mode": 511,
+          "uid": 0,
+          "gid": 0
+        }
+      ],
+      "declared_fields_match": true
+    },
+    {
+      "image": "positive-fraction-a.erofs",
+      "sha256": "7c3eb904089783454a0e358f9a469155cebde579d6ce64222e2f62ef6c2feaa4",
+      "tar_sha256": "98df683cc41df31396d639a99d1c6254b4d74915c2722e0f9e5c277af925b850",
+      "checked_entries": 1,
+      "issues": [
+        {
+          "path": "fraction",
+          "field": "mtime",
+          "expected": [
+            1700000000,
+            250000000
+          ],
+          "observed": [
+            1700000000,
+            25
+          ]
+        }
+      ],
+      "undeclared_directories": [
+        {
+          "path": "",
+          "mode": 511,
+          "uid": 0,
+          "gid": 0
+        }
+      ],
+      "declared_fields_match": false
+    },
+    {
+      "image": "positive-fraction-b.erofs",
+      "sha256": "7c3eb904089783454a0e358f9a469155cebde579d6ce64222e2f62ef6c2feaa4",
+      "tar_sha256": "98df683cc41df31396d639a99d1c6254b4d74915c2722e0f9e5c277af925b850",
+      "checked_entries": 1,
+      "issues": [
+        {
+          "path": "fraction",
+          "field": "mtime",
+          "expected": [
+            1700000000,
+            250000000
+          ],
+          "observed": [
+            1700000000,
+            25
+          ]
+        }
+      ],
+      "undeclared_directories": [
+        {
+          "path": "",
+          "mode": 511,
+          "uid": 0,
+          "gid": 0
+        }
+      ],
+      "declared_fields_match": false
+    },
+    {
+      "image": "positive-nine-digits-a.erofs",
+      "sha256": "14b20ce01b9164c70eafccc982bd4e75de0b15b36c2f1ca1d56b92bbc5ae3187",
+      "tar_sha256": "139ab5b7a2e9ae465c4724458d7caf324298974fdc103214ec2ad6e4ed84bd59",
+      "checked_entries": 1,
+      "issues": [],
+      "undeclared_directories": [
+        {
+          "path": "",
+          "mode": 511,
+          "uid": 0,
+          "gid": 0
+        }
+      ],
+      "declared_fields_match": true
+    },
+    {
+      "image": "positive-nine-digits-b.erofs",
+      "sha256": "14b20ce01b9164c70eafccc982bd4e75de0b15b36c2f1ca1d56b92bbc5ae3187",
+      "tar_sha256": "139ab5b7a2e9ae465c4724458d7caf324298974fdc103214ec2ad6e4ed84bd59",
+      "checked_entries": 1,
+      "issues": [],
+      "undeclared_directories": [
+        {
+          "path": "",
+          "mode": 511,
+          "uid": 0,
+          "gid": 0
+        }
+      ],
+      "declared_fields_match": true
+    },
+    {
+      "image": "unicode.erofs",
+      "sha256": "b4d287422a714d2b46c29b57b6eba509896d56ef8e91deb124320834db5e2c03",
+      "tar_sha256": "a3bf021ddf9651a15f4a646bf83db83acf0eff3785be14ee3697a2827d2a87ec",
+      "checked_entries": 1,
+      "issues": [],
+      "undeclared_directories": [
+        {
+          "path": "",
+          "mode": 511,
+          "uid": 0,
+          "gid": 0
+        },
+        {
+          "path": "資料",
+          "mode": 511,
+          "uid": 0,
+          "gid": 0
+        }
+      ],
+      "declared_fields_match": true
+    }
+  ]
+}

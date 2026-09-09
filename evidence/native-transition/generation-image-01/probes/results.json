@@ -1,0 +1,295 @@
+[
+  {
+    "fixture": {
+      "filename": "basic.deb",
+      "sha256": "12b80707238d3ed44016c82f7cf69b541309c40ec3776729099ca897a8301615",
+      "size": 20672,
+      "accepted": true
+    },
+    "command": [
+      "mkfs.erofs",
+      "--workers=1",
+      "--tar=f",
+      "-E",
+      "force-inode-extended",
+      "-b4096",
+      "-T1788739200",
+      "--mkfs-time",
+      "-U",
+      "cc580a36-7187-4494-838e-6c8d25bf917a",
+      "--preserve-mtime",
+      "/work/probes/basic.erofs",
+      "/work/probes/basic.tar"
+    ],
+    "returncode": 1,
+    "tar_sha256": "8608bd031dfc513b8c28237b11c80af9f6c0d7af68ad52c8eb02f85004d31a2e"
+  },
+  {
+    "fixture": {
+      "filename": "empty.deb",
+      "sha256": "940cfc2df801756b185ad6ef15914fa4650e5f17dbe6bb39256b14511acaf4c0",
+      "size": 20672,
+      "accepted": true
+    },
+    "command": [
+      "mkfs.erofs",
+      "--workers=1",
+      "--tar=f",
+      "-E",
+      "force-inode-extended",
+      "-b4096",
+      "-T1788739200",
+      "--mkfs-time",
+      "-U",
+      "cc580a36-7187-4494-838e-6c8d25bf917a",
+      "--preserve-mtime",
+      "/work/probes/empty.erofs",
+      "/work/probes/empty.tar"
+    ],
+    "returncode": 0,
+    "tar_sha256": "84ff92691f909a05b224e1c56abb4864f01b4f8e3c854e4bb4c7baf1d3f6d652",
+    "image_sha256": "12ab67051824d2ff9aa2e591b3f5e06c06c23dc3f0e3fc0e99e66ee529d0e173",
+    "fsck_returncode": 0
+  },
+  {
+    "fixture": {
+      "filename": "gnu.deb",
+      "sha256": "883fd4506ec9b9a21b92336b43885e193fa976e66882ab22d973bd1014e6ac5c",
+      "size": 20672,
+      "accepted": true
+    },
+    "command": [
+      "mkfs.erofs",
+      "--workers=1",
+      "--tar=f",
+      "-E",
+      "force-inode-extended",
+      "-b4096",
+      "-T1788739200",
+      "--mkfs-time",
+      "-U",
+      "cc580a36-7187-4494-838e-6c8d25bf917a",
+      "--preserve-mtime",
+      "/work/probes/gnu.erofs",
+      "/work/probes/gnu.tar"
+    ],
+    "returncode": 0,
+    "tar_sha256": "1939836f759376a42309f531b8df360e9d066aebf4272b694138b0cc3019a76f",
+    "image_sha256": "b22773a1389a148f01c22d24b6ade8c2c364fb4b6c7506118388abd08c3e98dd",
+    "fsck_returncode": 0
+  },
+  {
+    "fixture": {
+      "filename": "pax.deb",
+      "sha256": "cd00b95a30b306fa94ebd89f3722a91180a9b87a7668e205de99a773c0ea6010",
+      "size": 20672,
+      "accepted": true
+    },
+    "command": [
+      "mkfs.erofs",
+      "--workers=1",
+      "--tar=f",
+      "-E",
+      "force-inode-extended",
+      "-b4096",
+      "-T1788739200",
+      "--mkfs-time",
+      "-U",
+      "cc580a36-7187-4494-838e-6c8d25bf917a",
+      "--preserve-mtime",
+      "/work/probes/pax.erofs",
+      "/work/probes/pax.tar"
+    ],
+    "returncode": 0,
+    "tar_sha256": "4a761217a7d41ee23ab8ef6503db52b71e2eb99d8f499dce46b0fe203a1c28bd",
+    "image_sha256": "b22773a1389a148f01c22d24b6ade8c2c364fb4b6c7506118388abd08c3e98dd",
+    "fsck_returncode": 0
+  },
+  {
+    "fixture": {
+      "filename": "unicode.deb",
+      "sha256": "2c6b28d85e1e2a5fdedc1ae93df0d282be957ee34e47379553b9970080fc6963",
+      "size": 20672,
+      "accepted": true
+    },
+    "command": [
+      "mkfs.erofs",
+      "--workers=1",
+      "--tar=f",
+      "-E",
+      "force-inode-extended",
+      "-b4096",
+      "-T1788739200",
+      "--mkfs-time",
+      "-U",
+      "cc580a36-7187-4494-838e-6c8d25bf917a",
+      "--preserve-mtime",
+      "/work/probes/unicode.erofs",
+      "/work/probes/unicode.tar"
+    ],
+    "returncode": 0,
+    "tar_sha256": "a3bf021ddf9651a15f4a646bf83db83acf0eff3785be14ee3697a2827d2a87ec",
+    "image_sha256": "b4d287422a714d2b46c29b57b6eba509896d56ef8e91deb124320834db5e2c03",
+    "fsck_returncode": 0
+  },
+  {
+    "fixture": {
+      "filename": "multilingual.deb",
+      "sha256": "80e94653963677e84367194b29bcb5e49373183d9e99070501fe6d82a1fdd084",
+      "size": 20672,
+      "accepted": true
+    },
+    "command": [
+      "mkfs.erofs",
+      "--workers=1",
+      "--tar=f",
+      "-E",
+      "force-inode-extended",
+      "-b4096",
+      "-T1788739200",
+      "--mkfs-time",
+      "-U",
+      "cc580a36-7187-4494-838e-6c8d25bf917a",
+      "--preserve-mtime",
+      "/work/probes/multilingual.erofs",
+      "/work/probes/multilingual.tar"
+    ],
+    "returncode": 0,
+    "tar_sha256": "86fb9ffa3a8de56c08e2a5c9e6ab8370d9abfd2c41bf396c8638119dfa6c23db",
+    "image_sha256": "480bc9c8a078ee796b0699f9282827fa5a3b286cffb885eba5beedb338df56d7",
+    "fsck_returncode": 0
+  },
+  {
+    "fixture": {
+      "filename": "gnu-numeric.deb",
+      "sha256": "a25a460b42fa4f3b6e4169ebc5455b39715311b77861bdd820ceb57606450a3a",
+      "size": 20672,
+      "accepted": true
+    },
+    "command": [
+      "mkfs.erofs",
+      "--workers=1",
+      "--tar=f",
+      "-E",
+      "force-inode-extended",
+      "-b4096",
+      "-T1788739200",
+      "--mkfs-time",
+      "-U",
+      "cc580a36-7187-4494-838e-6c8d25bf917a",
+      "--preserve-mtime",
+      "/work/probes/gnu-numeric.erofs",
+      "/work/probes/gnu-numeric.tar"
+    ],
+    "returncode": 1,
+    "tar_sha256": "92e2127e6a1f40a1f8a1501da43026028f37d84ae2e48bfeb08463f8d434adc2"
+  },
+  {
+    "fixture": {
+      "filename": "flags.deb",
+      "sha256": "94117f2b1b935e5a0c3458bf791e979b1c91710987a2a12f366f6bfa7e01045c",
+      "size": 20672,
+      "accepted": true
+    },
+    "command": [
+      "mkfs.erofs",
+      "--workers=1",
+      "--tar=f",
+      "-E",
+      "force-inode-extended",
+      "-b4096",
+      "-T1788739200",
+      "--mkfs-time",
+      "-U",
+      "cc580a36-7187-4494-838e-6c8d25bf917a",
+      "--preserve-mtime",
+      "/work/probes/flags.erofs",
+      "/work/probes/flags.tar"
+    ],
+    "returncode": 0,
+    "tar_sha256": "17cb81562051a2e07048eb0904bbfa2057c587f5e90ef5dbc8a6fdc468936193",
+    "image_sha256": "2eb2adf7ed5dd4a065f95d500b5c060abe96b2d7f5d3e33bee7f775827d15780",
+    "fsck_returncode": 0
+  },
+  {
+    "fixture": {
+      "filename": "attributes.deb",
+      "sha256": "f4f6d95e8bf537f53792b950ca317e0bdd5ee05d5766a1711188fa860675373e",
+      "size": 20672,
+      "accepted": true
+    },
+    "command": [
+      "mkfs.erofs",
+      "--workers=1",
+      "--tar=f",
+      "-E",
+      "force-inode-extended",
+      "-b4096",
+      "-T1788739200",
+      "--mkfs-time",
+      "-U",
+      "cc580a36-7187-4494-838e-6c8d25bf917a",
+      "--preserve-mtime",
+      "/work/probes/attributes.erofs",
+      "/work/probes/attributes.tar"
+    ],
+    "returncode": 0,
+    "tar_sha256": "f213abcb06d97448afb2dfb48c5986dcf879f526637e79b0905f71d6ca4211ec",
+    "image_sha256": "7f0eebbd25599ec571d0aadcfdac28256829e9a3a933f63fc1f4d62fa3d770e0",
+    "fsck_returncode": 0
+  },
+  {
+    "fixture": {
+      "filename": "negative-clock.deb",
+      "sha256": "650a614e085dbd5d949d4433d4ac0ea89ef37e273e0ba9cfb3c167c56b4b6846",
+      "size": 20672,
+      "accepted": true
+    },
+    "command": [
+      "mkfs.erofs",
+      "--workers=1",
+      "--tar=f",
+      "-E",
+      "force-inode-extended",
+      "-b4096",
+      "-T1788739200",
+      "--mkfs-time",
+      "-U",
+      "cc580a36-7187-4494-838e-6c8d25bf917a",
+      "--preserve-mtime",
+      "/work/probes/negative-clock.erofs",
+      "/work/probes/negative-clock.tar"
+    ],
+    "returncode": 0,
+    "tar_sha256": "fab334fb034cbd409402629281325691edf48ae5d660c86675a96ace076cf0c3",
+    "image_sha256": "b13c35a591f073d6cc24d9175d80428951adfb80ebf04859c8a2d3a2265e21ec",
+    "fsck_returncode": 0
+  },
+  {
+    "fixture": {
+      "filename": "negative-zero.deb",
+      "sha256": "ad33c6be4d7e2860601935d68198406d6f46cc230de039dd3265dfbf2f8840d8",
+      "size": 20672,
+      "accepted": true
+    },
+    "command": [
+      "mkfs.erofs",
+      "--workers=1",
+      "--tar=f",
+      "-E",
+      "force-inode-extended",
+      "-b4096",
+      "-T1788739200",
+      "--mkfs-time",
+      "-U",
+      "cc580a36-7187-4494-838e-6c8d25bf917a",
+      "--preserve-mtime",
+      "/work/probes/negative-zero.erofs",
+      "/work/probes/negative-zero.tar"
+    ],
+    "returncode": 0,
+    "tar_sha256": "10fe0e6028f8ef49727538d3371ac9c2b68cf46183e4f9bafb5fdc726fe442b9",
+    "image_sha256": "5eee6f5d8e9eff78a0571f848d57f8295187306fa5426d42d472e7bf5d22df4c",
+    "fsck_returncode": 0
+  }
+]

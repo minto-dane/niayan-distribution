@@ -1,0 +1,4 @@
+<E> erofs: invalid tar @ 0
+<E> erofs: 	Could not format the device : [Error 5] Input/output error
+
+mkfs.erofs 1.8.6

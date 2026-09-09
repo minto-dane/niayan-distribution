@@ -1,0 +1,202 @@
+[
+  {
+    "name": "core-ustar",
+    "tar_sha256": "558ec3ff1f41745f6986c06c694cbcd2076e7771e5d4511387bd6de34442f721",
+    "images": [
+      {
+        "image": "core-ustar-a.erofs",
+        "command": [
+          "mkfs.erofs",
+          "--workers=1",
+          "--tar=f",
+          "-E",
+          "force-inode-extended",
+          "-b4096",
+          "-T1788739200",
+          "--mkfs-time",
+          "-U",
+          "cc580a36-7187-4494-838e-6c8d25bf917a",
+          "--preserve-mtime",
+          "/work/probes/core-ustar-a.erofs",
+          "/work/probes/core-ustar.tar"
+        ],
+        "returncode": 0,
+        "TZ": "UTC",
+        "sha256": "1349c749503a273a2fa1f5151f75f812e53395f06f059de7d853631d746ad3cf",
+        "fsck_returncode": 0
+      },
+      {
+        "image": "core-ustar-b.erofs",
+        "command": [
+          "mkfs.erofs",
+          "--workers=1",
+          "--tar=f",
+          "-E",
+          "force-inode-extended",
+          "-b4096",
+          "-T1788739200",
+          "--mkfs-time",
+          "-U",
+          "cc580a36-7187-4494-838e-6c8d25bf917a",
+          "--preserve-mtime",
+          "/work/probes/core-ustar-b.erofs",
+          "/work/probes/core-ustar.tar"
+        ],
+        "returncode": 0,
+        "TZ": "Pacific/Honolulu",
+        "sha256": "1349c749503a273a2fa1f5151f75f812e53395f06f059de7d853631d746ad3cf",
+        "fsck_returncode": 0
+      }
+    ]
+  },
+  {
+    "name": "positive-fraction",
+    "tar_sha256": "98df683cc41df31396d639a99d1c6254b4d74915c2722e0f9e5c277af925b850",
+    "images": [
+      {
+        "image": "positive-fraction-a.erofs",
+        "command": [
+          "mkfs.erofs",
+          "--workers=1",
+          "--tar=f",
+          "-E",
+          "force-inode-extended",
+          "-b4096",
+          "-T1788739200",
+          "--mkfs-time",
+          "-U",
+          "cc580a36-7187-4494-838e-6c8d25bf917a",
+          "--preserve-mtime",
+          "/work/probes/positive-fraction-a.erofs",
+          "/work/probes/positive-fraction.tar"
+        ],
+        "returncode": 0,
+        "TZ": "UTC",
+        "sha256": "7c3eb904089783454a0e358f9a469155cebde579d6ce64222e2f62ef6c2feaa4",
+        "fsck_returncode": 0
+      },
+      {
+        "image": "positive-fraction-b.erofs",
+        "command": [
+          "mkfs.erofs",
+          "--workers=1",
+          "--tar=f",
+          "-E",
+          "force-inode-extended",
+          "-b4096",
+          "-T1788739200",
+          "--mkfs-time",
+          "-U",
+          "cc580a36-7187-4494-838e-6c8d25bf917a",
+          "--preserve-mtime",
+          "/work/probes/positive-fraction-b.erofs",
+          "/work/probes/positive-fraction.tar"
+        ],
+        "returncode": 0,
+        "TZ": "Pacific/Honolulu",
+        "sha256": "7c3eb904089783454a0e358f9a469155cebde579d6ce64222e2f62ef6c2feaa4",
+        "fsck_returncode": 0
+      }
+    ]
+  },
+  {
+    "name": "positive-nine-digits",
+    "tar_sha256": "139ab5b7a2e9ae465c4724458d7caf324298974fdc103214ec2ad6e4ed84bd59",
+    "images": [
+      {
+        "image": "positive-nine-digits-a.erofs",
+        "command": [
+          "mkfs.erofs",
+          "--workers=1",
+          "--tar=f",
+          "-E",
+          "force-inode-extended",
+          "-b4096",
+          "-T1788739200",
+          "--mkfs-time",
+          "-U",
+          "cc580a36-7187-4494-838e-6c8d25bf917a",
+          "--preserve-mtime",
+          "/work/probes/positive-nine-digits-a.erofs",
+          "/work/probes/positive-nine-digits.tar"
+        ],
+        "returncode": 0,
+        "TZ": "UTC",
+        "sha256": "14b20ce01b9164c70eafccc982bd4e75de0b15b36c2f1ca1d56b92bbc5ae3187",
+        "fsck_returncode": 0
+      },
+      {
+        "image": "positive-nine-digits-b.erofs",
+        "command": [
+          "mkfs.erofs",
+          "--workers=1",
+          "--tar=f",
+          "-E",
+          "force-inode-extended",
+          "-b4096",
+          "-T1788739200",
+          "--mkfs-time",
+          "-U",
+          "cc580a36-7187-4494-838e-6c8d25bf917a",
+          "--preserve-mtime",
+          "/work/probes/positive-nine-digits-b.erofs",
+          "/work/probes/positive-nine-digits.tar"
+        ],
+        "returncode": 0,
+        "TZ": "Pacific/Honolulu",
+        "sha256": "14b20ce01b9164c70eafccc982bd4e75de0b15b36c2f1ca1d56b92bbc5ae3187",
+        "fsck_returncode": 0
+      }
+    ]
+  },
+  {
+    "name": "negative-integer-pax",
+    "tar_sha256": "60b90fca1e4ba59d6ca1965c55ba3c416527837cabb2cb436bebe997b2edb79e",
+    "images": [
+      {
+        "image": "negative-integer-pax-a.erofs",
+        "command": [
+          "mkfs.erofs",
+          "--workers=1",
+          "--tar=f",
+          "-E",
+          "force-inode-extended",
+          "-b4096",
+          "-T1788739200",
+          "--mkfs-time",
+          "-U",
+          "cc580a36-7187-4494-838e-6c8d25bf917a",
+          "--preserve-mtime",
+          "/work/probes/negative-integer-pax-a.erofs",
+          "/work/probes/negative-integer-pax.tar"
+        ],
+        "returncode": 0,
+        "TZ": "UTC",
+        "sha256": "392561531e24629846b659130b0337259d757ed1a8607733b504d8a9249cab34",
+        "fsck_returncode": 0
+      },
+      {
+        "image": "negative-integer-pax-b.erofs",
+        "command": [
+          "mkfs.erofs",
+          "--workers=1",
+          "--tar=f",
+          "-E",
+          "force-inode-extended",
+          "-b4096",
+          "-T1788739200",
+          "--mkfs-time",
+          "-U",
+          "cc580a36-7187-4494-838e-6c8d25bf917a",
+          "--preserve-mtime",
+          "/work/probes/negative-integer-pax-b.erofs",
+          "/work/probes/negative-integer-pax.tar"
+        ],
+        "returncode": 0,
+        "TZ": "Pacific/Honolulu",
+        "sha256": "392561531e24629846b659130b0337259d757ed1a8607733b504d8a9249cab34",
+        "fsck_returncode": 0
+      }
+    ]
+  }
+]

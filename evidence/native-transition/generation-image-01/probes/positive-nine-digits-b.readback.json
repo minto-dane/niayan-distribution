@@ -1,0 +1,33 @@
+{
+  "": {
+    "nid": 36,
+    "offset": 1152,
+    "layout": 2,
+    "mode": 16895,
+    "size": 47,
+    "block": 4294967295,
+    "uid": 0,
+    "gid": 0,
+    "mtime": 1788739200,
+    "mtime_nsec": 0,
+    "nlink": 2,
+    "xattr_size": 0,
+    "xattrs": {}
+  },
+  "fraction": {
+    "nid": 40,
+    "offset": 1280,
+    "layout": 0,
+    "mode": 36329,
+    "size": 0,
+    "block": 0,
+    "uid": 123,
+    "gid": 456,
+    "mtime": 1700000000,
+    "mtime_nsec": 250000000,
+    "nlink": 1,
+    "xattr_size": 0,
+    "xattrs": {},
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

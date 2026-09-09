@@ -1,0 +1,16 @@
+[
+  {
+    "name": "basic.erofs",
+    "logical_bytes": 2199023255552,
+    "allocated_bytes": 4096,
+    "preserved": false,
+    "reason": "failed construction output; excluded from final evidence files"
+  },
+  {
+    "name": "gnu-numeric.erofs",
+    "logical_bytes": 2199023255552,
+    "allocated_bytes": 0,
+    "preserved": false,
+    "reason": "failed construction output; excluded from final evidence files"
+  }
+]
