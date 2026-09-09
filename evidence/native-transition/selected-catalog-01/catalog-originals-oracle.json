@@ -1,0 +1,69 @@
+{
+  "result": "pass",
+  "scope": "candidate binding and retained metadata only; no dependency or execution permission",
+  "packages": 14,
+  "fields": 154,
+  "atoms": 146,
+  "hashes": {
+    "CATALOG": "a9f05b1b4bb907d216464c0a01dfff13018ab31223f7480e140627d4a7885876",
+    "PAYLOAD": "d7fd4ec84c751a979036aa88dedc10e231b3086dc815e66ccf36a324e822bbbc"
+  },
+  "originals": [
+    {
+      "filename": "bash_5.2.37-2+b9_amd64.deb",
+      "original": "03571d298ed24c615641d54dec4eb023ef5710a2b8cb9304acb66e372cab9c46"
+    },
+    {
+      "filename": "coreutils_9.7-3_amd64.deb",
+      "original": "1299ab6f9389a288eb2f5f3dd222c26cc777b9a2d5ecb6ee4cbd340cebcdada2"
+    },
+    {
+      "filename": "dpkg_1.22.22_amd64.deb",
+      "original": "3e800c6d75e8e709007ed1c356e5fa8509a75c1694fb0a1183709abc9cfdc1f3"
+    },
+    {
+      "filename": "large-xz.deb",
+      "original": "b489514ee8cc12743f6817b9a21a01f3d51e688acf894c14d052ad19213e203d"
+    },
+    {
+      "filename": "libc6_2.41-12+deb13u3_amd64.deb",
+      "original": "8ffd13165b9ee3f067e2ee670df718e48c1bdaa18676ac93d1de761dbbb3913c"
+    },
+    {
+      "filename": "niaos-assurance_0.1.0+git70baa595e385_amd64.deb",
+      "original": "af7c3031f932d5bbfecda2ceafdd8de1ed72d2f8370a52b4ec02d770e51adcb3"
+    },
+    {
+      "filename": "niaos-capsulecore_0.1.0+git0c356eecb425_amd64.deb",
+      "original": "7c97862c75ba7d54e188cd6001f3e070ad0681e897a5c3b71f5e35c53732d268"
+    },
+    {
+      "filename": "niaos-configcore_0.1.0+git6d46ea26c38c_amd64.deb",
+      "original": "663f792345cf77fe7a86c9b390126d37071682dafbad85bb345f425c3c41fece"
+    },
+    {
+      "filename": "niaos-controlcore_0.1.0+gite2a3f9ff89b5_amd64.deb",
+      "original": "c640cb0535b26a9db7ff268dcd3d5f84d969a723f821b0dd9288474d878010ef"
+    },
+    {
+      "filename": "niaos-pkgcore_0.1.0+gite74913f9f941_amd64.deb",
+      "original": "69e2f82fed042d5d603e9eee88cdb5bff1c7f454e0236bb636b08df069139cd0"
+    },
+    {
+      "filename": "niaos-resolvercore_0.1.0+gita58f281ff997_amd64.deb",
+      "original": "693f76f12902f2d23305073d3350b11a1379d76a1f27cdef696a8e8170ee8009"
+    },
+    {
+      "filename": "niaos-statecore_0.1.0+gitc0c9ca947c2e_amd64.deb",
+      "original": "dca754623a808d731649a67ac2c8e9d61eb26474c55b86f65aaf69dc162b140c"
+    },
+    {
+      "filename": "upstream-fixture-10.deb",
+      "original": "ee81302a1d5b7434762b6e784a572854d4b6cf6235e33e2d104ad4e1cae71ab4"
+    },
+    {
+      "filename": "upstream-fixture-12.deb",
+      "original": "c5eaef41c6947d2888fa3462f787a7e02158b997bd0119154283f425ba57b8b8"
+    }
+  ]
+}

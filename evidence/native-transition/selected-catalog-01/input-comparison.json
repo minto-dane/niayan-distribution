@@ -1,0 +1,25 @@
+{
+  "result": "pass",
+  "copies": [
+    {
+      "path": "/home/nia/devbox/niaos/nia-os-consent/pkgcore",
+      "input_count": 516,
+      "matches": true
+    },
+    {
+      "path": "/home/nia/devbox/niaos/.work/native-catalog-01/accepted",
+      "input_count": 516,
+      "matches": true
+    },
+    {
+      "path": "/home/nia/devbox/niaos/.work/native-catalog-01/independent-long-path/pkgcore",
+      "input_count": 516,
+      "matches": true
+    },
+    {
+      "path": "/home/nia/devbox/niaos/.work/native-catalog-01/sanitized",
+      "input_count": 516,
+      "matches": true
+    }
+  ]
+}

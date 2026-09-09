@@ -1,0 +1,29 @@
+{
+  "result": "pass",
+  "scope": "candidate binding and retained metadata only; no dependency or execution permission",
+  "packages": 4,
+  "fields": 44,
+  "atoms": 15,
+  "hashes": {
+    "CATALOG": "89a31cbefdb7297293dc8b7a7315adfadccc79dcaffc580e5ac254d9610ee44f",
+    "PAYLOAD": "c33fad7c9e72bec9409665ad66334b606240eae1f1b2f2287516bbe440fcfafb"
+  },
+  "originals": [
+    {
+      "filename": "empty.deb",
+      "original": "0ca179e6befeb761f3613f1ef57ca892ebc3a6a228dca32f1309f0ac06a7de7e"
+    },
+    {
+      "filename": "library-arm64.deb",
+      "original": "00e863e5628799d5a1fe9f24c82311574278d135937e19b635480d563f31b3c5"
+    },
+    {
+      "filename": "library-amd64.deb",
+      "original": "58d44b4ec99a566bea3a42071712b0fb3861d32509cd45603c46ca5ba119d961"
+    },
+    {
+      "filename": "consumer.deb",
+      "original": "0f6ef3b64df5746218e3e239c356077a2a94257efaf09d350c8ac8e80f88e557"
+    }
+  ]
+}

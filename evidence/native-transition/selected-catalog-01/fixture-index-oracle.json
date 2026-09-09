@@ -1,0 +1,48 @@
+{
+  "result": "pass",
+  "scope": "private source claims only; not package admission or root execution",
+  "index": {
+    "INDEX": "c33fad7c9e72bec9409665ad66334b606240eae1f1b2f2287516bbe440fcfafb",
+    "PACKAGES": 4,
+    "CLAIMS": 3,
+    "PATHS": 3
+  },
+  "independent_payload_checks": [
+    {
+      "filename": "consumer.deb",
+      "original": "0f6ef3b64df5746218e3e239c356077a2a94257efaf09d350c8ac8e80f88e557",
+      "tar": "f1b540812d629269d46190018b39a6567710f14e1a85d08a6ec4d49ce328ee21",
+      "entries": 1,
+      "tar_bytes": 10240,
+      "cas_objects": 4,
+      "result": "pass"
+    },
+    {
+      "filename": "empty.deb",
+      "original": "0ca179e6befeb761f3613f1ef57ca892ebc3a6a228dca32f1309f0ac06a7de7e",
+      "tar": "84ff92691f909a05b224e1c56abb4864f01b4f8e3c854e4bb4c7baf1d3f6d652",
+      "entries": 0,
+      "tar_bytes": 10240,
+      "cas_objects": 2,
+      "result": "pass"
+    },
+    {
+      "filename": "library-amd64.deb",
+      "original": "58d44b4ec99a566bea3a42071712b0fb3861d32509cd45603c46ca5ba119d961",
+      "tar": "9eaa8539bed7af004c35769df424bfd21824519adbcfa5c56e40c8255513c015",
+      "entries": 1,
+      "tar_bytes": 10240,
+      "cas_objects": 4,
+      "result": "pass"
+    },
+    {
+      "filename": "library-arm64.deb",
+      "original": "00e863e5628799d5a1fe9f24c82311574278d135937e19b635480d563f31b3c5",
+      "tar": "9fe4e95fc4aae1ee4a7a4e713b81429fb6e0084b959c9f48e4b313041fb90e16",
+      "entries": 1,
+      "tar_bytes": 10240,
+      "cas_objects": 4,
+      "result": "pass"
+    }
+  ]
+}

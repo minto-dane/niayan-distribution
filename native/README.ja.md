@@ -74,3 +74,6 @@ inactive generationの組立てを有界な作業へ分け、全入力と所有�
 
 [世代image候補の属性受入](generation-image.ja.md)で上流工具へのtar直接入力を調べた。
 固定版の当該経路は属性欠落・時刻不一致のため未採用。原本の属性要件は維持する。
+
+選択した原本・control期待hash・payload索引を完全照合するprivate候補は
+[selected-catalog.ja.md](selected-catalog.ja.md)を参照。稼働catalog/認可と全関係の意味検査は未完。

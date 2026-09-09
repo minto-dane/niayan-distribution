@@ -1,0 +1,26 @@
+[
+  {
+    "returncode": 0,
+    "seconds": 0.03187600700039184,
+    "peak_child_rss_kib": 11412,
+    "filename": "consumer.deb"
+  },
+  {
+    "returncode": 0,
+    "seconds": 0.015705195000919048,
+    "peak_child_rss_kib": 11316,
+    "filename": "empty.deb"
+  },
+  {
+    "returncode": 0,
+    "seconds": 0.031862823001574725,
+    "peak_child_rss_kib": 11260,
+    "filename": "library-amd64.deb"
+  },
+  {
+    "returncode": 0,
+    "seconds": 0.031854586999543244,
+    "peak_child_rss_kib": 11224,
+    "filename": "library-arm64.deb"
+  }
+]
