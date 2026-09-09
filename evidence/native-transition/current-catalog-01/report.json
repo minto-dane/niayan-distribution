@@ -1,0 +1,42 @@
+{
+  "format": 1,
+  "result": "pass-for-consistent-native-current-catalog-observation-only",
+  "baseline_root_commit": "a764d21",
+  "source_subject": "4694cfb40880ec35fcb93b8c30fb94d2dbcab4121f091745462ea2aed78a9be7",
+  "source_report": "source-checks/report.json",
+  "build_input_files": 725,
+  "executables": 29,
+  "ada_mains": 25,
+  "publication_assertions": 456,
+  "prior_publication_assertions": 333,
+  "synthetic_originals": 2,
+  "published_generations": 2,
+  "successful_observations": 16,
+  "independent_linkage": "accepted-oracle.json",
+  "ci_includes": [
+    "publication and recovery with native fixture catalogs",
+    "same-lock native observations",
+    "independent root-state/plan/descriptor/manifest/catalog/original linkage"
+  ],
+  "root_driver_assertions": [
+    1100,
+    37,
+    3,
+    6,
+    8,
+    5,
+    5,
+    7
+  ],
+  "proof_inputs": "seven exact sets unchanged; changed publisher runtime outside SPARK",
+  "sanitizer_scope": "C boundaries and allocator/library-call interception only; Ada and upstream library code uninstrumented; leaks disabled",
+  "full_capacity_qualified": false,
+  "real_os_package_set_qualified": false,
+  "production_authorization": false,
+  "reservation_retained_after_return": false,
+  "physical_deb_payload_applied": false,
+  "cas_pin_closure_validated": false,
+  "phase_schedule_validated": false,
+  "effective_ownership_resolved": false,
+  "boot_tested": false
+}

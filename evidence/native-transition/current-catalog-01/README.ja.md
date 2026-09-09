@@ -1,0 +1,27 @@
+# 受理済みnative catalog観測の検証
+
+Read_Current_Catalogはaccepted plan・descriptor・manifest・journalとnative原本の再観測を、
+同じpublication/root/CAS予約の中で行う。失敗時は三つの出力を消し、返却前に予約を解放する。
+対象sourceと結果はreport.json、全保存ファイルはSHA256SUMSに束縛する。
+
+固定環境でpkgcore全source・4アプリ・25 Ada mainが成功し、公開/復旧試験は従来333から456 assertionsへ拡張した。
+二つのnative fixture catalogをstaging/publication SDKへ渡し、16回の成功観測と既存の拒否/復旧行列を検査した。
+原本/catalog欠落、root/CAS競合、期限、別root、旧世代planの再適用も検査した。
+独立readerは実際のroot.stateからaccepted plan、descriptorの連鎖、manifest、catalog、元DEBを照合する。
+accepted-oracle.jsonは通常CIがその実行のprivate状態/CASへ行った照合結果である。
+reference-snapshotは新規の診断ビルドから保存した小さい参照原本で、同じアドレスと観測結果を通常CIへ照合した。
+
+29実行ファイルは独立二ビルドでbyte一致し、725入力をcheckout・通常・独立・sanitizedの全コピーへ照合した。
+29 ELFの緩和設定、8本のroot拒否driver（公開driver37 assertions）、ASan/UBSanリンク下456 assertionsも成功した。
+Adaと上流library本体は非計測、leak検査は無効。全7repoのproof入力はexact membershipとhashが不変。
+変更したpublisher runtimeはSPARK対象外である。
+ソース24工程は成功し、前後subjectは`4694cfb40880ec35fcb93b8c30fb94d2dbcab4121f091745462ea2aed78a9be7`で一致した。
+
+attemptsには初期診断と増分ビルドの観測を保存する。固定SOURCE_DATE_EPOCHの診断では、
+ソース/オブジェクト更新後も旧実行ファイルが残り、新しい観測出力が現れなかった。
+この終了値をqualificationへ流用せず、新規コピーから再ビルドした。通常・独立・sanitizedもすべて新規build treeである。
+この制約をdev/README.ja.mdへ記録した。
+
+試験のauthorityとtree/versionは合成であり、native catalogの接続をDEB payloadの物理適用と読み替えない。
+全OS/最大容量、本番の認証済み予約、CAS pin閉包、phase・全効果・所有権・実root/boot・完全置換ISOは未受入。
+観測時の予約は返却後には残らない。既存Publishの正確なpredecessor比較とmanaged guardを省略しない。

@@ -97,14 +97,16 @@
         "../pkgcore/tests/run_selected_catalog_tests.adb",
         "../pkgcore/tests/compare_selected_catalog.py",
         "../pkgcore/tests/run_catalog_store_tests.adb",
-        "../pkgcore/tests/compare_catalog_store.py"
+        "../pkgcore/tests/compare_catalog_store.py",
+        "../pkgcore/tests/compare_current_catalog.py"
       ],
       "evidence": [
         "evidence/native-transition/generation-01/README.ja.md",
         "evidence/native-transition/publication-01/README.ja.md",
         "evidence/native-transition/payload-index-01/README.ja.md",
         "evidence/native-transition/selected-catalog-01/README.ja.md",
-        "evidence/native-transition/catalog-store-01/README.ja.md"
+        "evidence/native-transition/catalog-store-01/README.ja.md",
+        "evidence/native-transition/current-catalog-01/README.ja.md"
       ],
       "remaining": "Bind the caller selection to authenticated resolver/policy results; validate full relationship and cross-architecture coexistence/phase semantics; resolve effective ownership, aliases and native contracts; connect production authority/effects, CAS pin closure and privileged metadata; capacity reservation, fsync/space/power-loss fault tests, actual mount/boot activation and recovery, independent trust rollback"
     },

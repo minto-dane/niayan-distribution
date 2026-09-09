@@ -1,0 +1,90 @@
+Running as unit: run-p226374-i226674.scope; invocation ID: aaaebca80db747ec8966831906630ab6
+limited-exec: {"scope": "run-p226374-i226674.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Setup
+   [mkdir]        object directory for project Tests
+   [mkdir]        exec directory for project Tests
+Compile
+   [Ada]          run_generation_publication_tests.adb
+   [C]            pkg_deb_stream.c
+   [C]            pkg_deb_decode.c
+   [Ada]          mc_atomic.adb
+   [Ada]          mc_clock.adb
+   [Ada]          mc_codec.adb
+   [Ada]          mc_config_auth.adb
+   [Ada]          mc_config_receipt.adb
+   [Ada]          mc_contract_profile.ads
+   [Ada]          mc_dirents.adb
+   [Ada]          mc_fs.adb
+   [Ada]          mc_hex.adb
+   [Ada]          mc_log.adb
+   [Ada]          mc_log_format.adb
+   [Ada]          mc_posix.ads
+   [Ada]          mc_runtime.adb
+   [Ada]          mc_sha256.adb
+   [Ada]          mc_stop_barrier.adb
+   [Ada]          mc_store.adb
+   [Ada]          mc_text.adb
+   [Ada]          mc_types.adb
+   [Ada]          pkg_catalog_store.adb
+   [Ada]          pkg_configuration_engine.adb
+   [Ada]          pkg_deb_metadata.adb
+   [Ada]          pkg_deb_payload.adb
+   [Ada]          pkg_file_engine.adb
+   [Ada]          pkg_file_plan.adb
+   [Ada]          pkg_file_replay.adb
+   [Ada]          pkg_generation_descriptor.adb
+   [Ada]          pkg_generation_manifest.adb
+   [Ada]          pkg_generation_publisher.adb
+   [Ada]          pkg_generation_stage.adb
+   [Ada]          pkg_image_inspector.adb
+   [Ada]          pkg_managed_engine.adb
+   [Ada]          pkg_payload_index.adb
+   [Ada]          pkg_quiescent_engine.adb
+   [Ada]          pkg_recovery_audit.adb
+   [Ada]          pkg_resolution_engine.adb
+   [Ada]          pkg_root_state.adb
+   [Ada]          pkg_selected_catalog.adb
+   [Ada]          resolver_admission.adb
+   [Ada]          resolver_model.adb
+   [Ada]          resolver_verify.adb
+   [Ada]          resolver_wire.adb
+   [Ada]          test_support.adb
+   [Ada]          mc_kernel_read.adb
+   [Ada]          mc_authentic.adb
+   [Ada]          mc_signatures.adb
+   [Ada]          mc_paths.adb
+   [Ada]          mc_journal_budget.ads
+   [Ada]          mc_time_guard.adb
+   [Ada]          pkg_deb_container.adb
+   [Ada]          pkg_deb_control.adb
+   [Ada]          pkg_deb_relations.adb
+   [Ada]          pkg_deb_fields.adb
+   [Ada]          pkg_deb_data_stream.adb
+   [Ada]          pkg_tar_framing.adb
+   [Ada]          pkg_deb_semantics.adb
+   [Ada]          mc_protocol.adb
+   [Ada]          pkg_deb_versions.adb
+Bind
+   [gprbind]      run_generation_publication_tests.bexch
+   [Ada]          run_generation_publication_tests.ali
+Link
+   [archive]      libtests.a
+   [index]        libtests.a
+   [link]         run_generation_publication_tests.adb
+CURRENT_CATALOG 39d3ce9903290a2b2f6895e24cb8a344679233c80cab566ccbeaa0e5b4fef145 1 8ee688345e1d9502ee8cd7277a453c30bfb77b947201beb3300e9df2b8ca321d bbe3e16236d9244db7e5c0b2a9c2c61766b8a921d8b097fcd370e77f152ed931 1 0
+CURRENT_CATALOG af2e482ea7f5e6dbeb4fcc9eafd973c427844572729ac28c9542ba31f715ebc6 2 eaa6a97798ac2f5e7b073ba6c19835d2dc29ce713cc34904872ba9210a5b0c0e 78e9ba0b5027271e174c089389b3f35aba833406970e9742d2eb66be6411c139 1 1
+CURRENT_CATALOG af2e482ea7f5e6dbeb4fcc9eafd973c427844572729ac28c9542ba31f715ebc6 2 eaa6a97798ac2f5e7b073ba6c19835d2dc29ce713cc34904872ba9210a5b0c0e 78e9ba0b5027271e174c089389b3f35aba833406970e9742d2eb66be6411c139 1 1
+CURRENT_CATALOG af2e482ea7f5e6dbeb4fcc9eafd973c427844572729ac28c9542ba31f715ebc6 2 eaa6a97798ac2f5e7b073ba6c19835d2dc29ce713cc34904872ba9210a5b0c0e 78e9ba0b5027271e174c089389b3f35aba833406970e9742d2eb66be6411c139 1 1
+CURRENT_CATALOG af2e482ea7f5e6dbeb4fcc9eafd973c427844572729ac28c9542ba31f715ebc6 2 eaa6a97798ac2f5e7b073ba6c19835d2dc29ce713cc34904872ba9210a5b0c0e 78e9ba0b5027271e174c089389b3f35aba833406970e9742d2eb66be6411c139 1 1
+CURRENT_CATALOG af2e482ea7f5e6dbeb4fcc9eafd973c427844572729ac28c9542ba31f715ebc6 2 eaa6a97798ac2f5e7b073ba6c19835d2dc29ce713cc34904872ba9210a5b0c0e 78e9ba0b5027271e174c089389b3f35aba833406970e9742d2eb66be6411c139 1 1
+CURRENT_CATALOG af2e482ea7f5e6dbeb4fcc9eafd973c427844572729ac28c9542ba31f715ebc6 2 eaa6a97798ac2f5e7b073ba6c19835d2dc29ce713cc34904872ba9210a5b0c0e 78e9ba0b5027271e174c089389b3f35aba833406970e9742d2eb66be6411c139 1 1
+CURRENT_CATALOG af2e482ea7f5e6dbeb4fcc9eafd973c427844572729ac28c9542ba31f715ebc6 2 eaa6a97798ac2f5e7b073ba6c19835d2dc29ce713cc34904872ba9210a5b0c0e 78e9ba0b5027271e174c089389b3f35aba833406970e9742d2eb66be6411c139 1 1
+CURRENT_CATALOG af2e482ea7f5e6dbeb4fcc9eafd973c427844572729ac28c9542ba31f715ebc6 2 eaa6a97798ac2f5e7b073ba6c19835d2dc29ce713cc34904872ba9210a5b0c0e 78e9ba0b5027271e174c089389b3f35aba833406970e9742d2eb66be6411c139 1 1
+CURRENT_CATALOG af2e482ea7f5e6dbeb4fcc9eafd973c427844572729ac28c9542ba31f715ebc6 2 eaa6a97798ac2f5e7b073ba6c19835d2dc29ce713cc34904872ba9210a5b0c0e 78e9ba0b5027271e174c089389b3f35aba833406970e9742d2eb66be6411c139 1 1
+CURRENT_CATALOG af2e482ea7f5e6dbeb4fcc9eafd973c427844572729ac28c9542ba31f715ebc6 2 eaa6a97798ac2f5e7b073ba6c19835d2dc29ce713cc34904872ba9210a5b0c0e 78e9ba0b5027271e174c089389b3f35aba833406970e9742d2eb66be6411c139 1 1
+CURRENT_CATALOG af2e482ea7f5e6dbeb4fcc9eafd973c427844572729ac28c9542ba31f715ebc6 2 eaa6a97798ac2f5e7b073ba6c19835d2dc29ce713cc34904872ba9210a5b0c0e 78e9ba0b5027271e174c089389b3f35aba833406970e9742d2eb66be6411c139 1 1
+CURRENT_CATALOG af2e482ea7f5e6dbeb4fcc9eafd973c427844572729ac28c9542ba31f715ebc6 2 eaa6a97798ac2f5e7b073ba6c19835d2dc29ce713cc34904872ba9210a5b0c0e 78e9ba0b5027271e174c089389b3f35aba833406970e9742d2eb66be6411c139 1 1
+CURRENT_CATALOG af2e482ea7f5e6dbeb4fcc9eafd973c427844572729ac28c9542ba31f715ebc6 2 eaa6a97798ac2f5e7b073ba6c19835d2dc29ce713cc34904872ba9210a5b0c0e 78e9ba0b5027271e174c089389b3f35aba833406970e9742d2eb66be6411c139 1 1
+CURRENT_CATALOG af2e482ea7f5e6dbeb4fcc9eafd973c427844572729ac28c9542ba31f715ebc6 2 eaa6a97798ac2f5e7b073ba6c19835d2dc29ce713cc34904872ba9210a5b0c0e 78e9ba0b5027271e174c089389b3f35aba833406970e9742d2eb66be6411c139 1 1
+CURRENT_CATALOG af2e482ea7f5e6dbeb4fcc9eafd973c427844572729ac28c9542ba31f715ebc6 2 eaa6a97798ac2f5e7b073ba6c19835d2dc29ce713cc34904872ba9210a5b0c0e 78e9ba0b5027271e174c089389b3f35aba833406970e9742d2eb66be6411c139 1 1
+PASS assertions= 456

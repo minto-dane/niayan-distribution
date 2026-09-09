@@ -1,0 +1,23 @@
+{
+  "scope": "diagnostic only; not accepted qualification",
+  "source_date_epoch": 1788739200,
+  "result": "compiler refreshed objects but existing executable remained unchanged; fresh directory required",
+  "files": {
+    "tests/run_generation_publication_tests.adb": {
+      "sha256": "7604e8192123f2b474e4956eb8088906f0bf6148fc8f66a1efe73d92af1db7ec",
+      "mtime_ns": 1788953311384069520
+    },
+    "build/test-obj/run_generation_publication_tests.ali": {
+      "sha256": "4e8911a0f579e9e23d0ccef640f92180c028cdc466fe3a2c2dd2d0aa832c0823",
+      "mtime_ns": 1788953532325852852
+    },
+    "build/test-obj/run_generation_publication_tests.o": {
+      "sha256": "f2a8ff8af82b0b81179e58e9ca8e9a49e4d081580794c3503e39fd3c921a3cd7",
+      "mtime_ns": 1788953534405831574
+    },
+    "build/test-bin/run_generation_publication_tests": {
+      "sha256": "f2801241a05f0aadfb236191380313f899b5471ef68152d05dabd263ed4a71b3",
+      "mtime_ns": 1788953181885318323
+    }
+  }
+}
