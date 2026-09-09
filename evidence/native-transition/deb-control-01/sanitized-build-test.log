@@ -1,0 +1,10 @@
+Running as unit: run-p52126-i52426.scope; invocation ID: e082b48edd064c6f8c48d8ad4b0dbfbb
+limited-exec: {"scope": "run-p52126-i52426.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Compile
+   [Ada]          run_deb_control_tests.adb
+Bind
+   [gprbind]      run_deb_control_tests.bexch
+   [Ada]          run_deb_control_tests.ali
+Link
+   [link]         run_deb_control_tests.adb
+PASS assertions= 229

@@ -5,7 +5,8 @@
 [DEBトリガーの解析と発火先](deb-triggers.ja.md)を元DEB読取器と候補catalogへ追加した。
 現段階のPython工具は移行対象の実データ検査であり、インストーラーや特権writerではない。
 [元DEB読取SDK](deb-container.ja.md)でar envelopeと圧縮メンバーを既存CASへ束縛する。
-圧縮tarとcontrolの意味検証・適用接続は別の未完条件である。
+[圧縮制御ファイルの読取](deb-control.ja.md)も同じCASへ接続した。
+controlの意味検証、全効果と適用接続は別の未完条件である。
 pkgcoreには[非公開世代の組立てSDK](generation-stage.ja.md)を追加した。
 既存CAS/WALで分割適用と全体検査を行い、[公開SDK](generation-publication.ja.md)で
 root/catalogを単一の論理世代として確定する。実mount/bootと稼働管理器への接続は未完。

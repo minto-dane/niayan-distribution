@@ -1,0 +1,9 @@
+Running as unit: run-p47030-i47330.scope; invocation ID: 28687f13812a415b8a9af84832c5ef4f
+limited-exec: {"scope": "run-p47030-i47330.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Traceback (most recent call last):
+  File "/results/compare-real.py", line 10, in <module>
+    run=subprocess.run([binary,d,str(media),source.name],capture_output=True,text=True,timeout=120,check=True)
+  File "/usr/lib/python3.13/subprocess.py", line 577, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['/workspace/build/test-bin/run_deb_control_tests', '/results/probe-cas/tmpoltrp06b', '/media', 'systemd_257.13-1~deb13u1_amd64.deb']' returned non-zero exit status 1.

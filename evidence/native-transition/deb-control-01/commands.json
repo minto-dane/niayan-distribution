@@ -1,0 +1,39 @@
+{
+  "container_image": "0c04329a1343a0f1ae82ab931ffc7a7e5cbfdccbf18948e0576366fbf5bb249a",
+  "container_network": "none",
+  "normal_uid": 1000,
+  "root_refusal_uid": 0,
+  "outer_scope": "sh dev/run-limited.sh",
+  "normal": [
+    "make compile-all build test",
+    "python3 tests/make_deb_control_fixtures.py --check"
+  ],
+  "independent": [
+    "make compile-all build test-build"
+  ],
+  "sanitized_build": [
+    "gprbuild",
+    "-s",
+    "-j1",
+    "-p",
+    "-P",
+    "tests.gpr",
+    "run_deb_control_tests.adb",
+    "-cargs:C",
+    "-fsanitize=address,undefined",
+    "-fno-omit-frame-pointer",
+    "-largs",
+    "-fsanitize=address,undefined"
+  ],
+  "sanitized_environment": {
+    "ASAN_OPTIONS": "detect_leaks=0:halt_on_error=1",
+    "UBSAN_OPTIONS": "halt_on_error=1:print_stacktrace=1"
+  },
+  "sanitized_run": "build/test-bin/run_deb_control_tests <fresh-absolute-CAS> tests/fixtures/deb-control",
+  "sanitizer_scope": "C boundary instrumentation linked into the Ada control test; upstream libraries and Ada units are not instrumented; leak checking disabled",
+  "root_refusal": [
+    "build/test-bin/run_deb_container_tests /nonexistent",
+    "build/test-bin/run_deb_control_tests /nonexistent /nonexistent"
+  ],
+  "real_debs": "python3 /results/compare-real.py"
+}

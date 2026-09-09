@@ -1,0 +1,788 @@
+{
+  "result": "pass",
+  "scope": "original control files and metadata with independent ar/Python tar parsing and CAS readback; no interpretation, installation or supply authentication",
+  "files": [
+    {
+      "filename": "niaos-assurance_0.1.0+git70baa595e385_amd64.deb",
+      "sha256": "af7c3031f932d5bbfecda2ceafdd8de1ed72d2f8370a52b4ec02d770e51adcb3",
+      "size": 163500,
+      "source": "/home/nia/devbox/niaos/.work/media-01/original-media/niaos-assurance_0.1.0+git70baa595e385_amd64.deb",
+      "archive_sha256": "35fea31a2e0ab15d3c5d5b50d9afb677c348b0635ab2e598cfd745c82818f9b5",
+      "entries": [
+        {
+          "name": ".",
+          "kind": "DIRECTORY",
+          "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "size": 0,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1788739200
+        },
+        {
+          "name": "control",
+          "kind": "REGULAR",
+          "sha256": "091f72326708e04cd94936454828cf44c626a7824c6026a08aa32106ce700233",
+          "size": 483,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1788739200
+        },
+        {
+          "name": "md5sums",
+          "kind": "REGULAR",
+          "sha256": "677aed2bf3ca98ffe458e6fa0a23bee7714b3002d276a7909ab7666a25720c9a",
+          "size": 414,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1788739200
+        }
+      ],
+      "result": "pass"
+    },
+    {
+      "filename": "niaos-capsulecore_0.1.0+git0c356eecb425_amd64.deb",
+      "sha256": "7c97862c75ba7d54e188cd6001f3e070ad0681e897a5c3b71f5e35c53732d268",
+      "size": 66948,
+      "source": "/home/nia/devbox/niaos/.work/media-01/original-media/niaos-capsulecore_0.1.0+git0c356eecb425_amd64.deb",
+      "archive_sha256": "847d9c2ee09475d52d7e482657368017debc905b949a89a5b88086ed0cf09628",
+      "entries": [
+        {
+          "name": ".",
+          "kind": "DIRECTORY",
+          "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "size": 0,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1788739200
+        },
+        {
+          "name": "control",
+          "kind": "REGULAR",
+          "sha256": "65c0e3ee5a8d7751d1126c13aa2ec72581d8c1b34b8e033bee0ef7b410f42dc6",
+          "size": 487,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1788739200
+        },
+        {
+          "name": "md5sums",
+          "kind": "REGULAR",
+          "sha256": "493dc9b37ed2d0cc819b7e75e0d786be6de009ab473569f9b24b9402b5ea02f4",
+          "size": 301,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1788739200
+        }
+      ],
+      "result": "pass"
+    },
+    {
+      "filename": "niaos-configcore_0.1.0+git6d46ea26c38c_amd64.deb",
+      "sha256": "663f792345cf77fe7a86c9b390126d37071682dafbad85bb345f425c3c41fece",
+      "size": 94728,
+      "source": "/home/nia/devbox/niaos/.work/media-01/original-media/niaos-configcore_0.1.0+git6d46ea26c38c_amd64.deb",
+      "archive_sha256": "58a1ca52036c9b906e3f446557866337b4511743e36bd8d399545f8ba75bc528",
+      "entries": [
+        {
+          "name": ".",
+          "kind": "DIRECTORY",
+          "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "size": 0,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1788739200
+        },
+        {
+          "name": "control",
+          "kind": "REGULAR",
+          "sha256": "48cee6bc1fde47ee11917d16e6a9ce019029a74cc4379eba307fa8b5268257cf",
+          "size": 485,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1788739200
+        },
+        {
+          "name": "md5sums",
+          "kind": "REGULAR",
+          "sha256": "91285aad0ba791cde46e671c3a3ac46c48dfc94da90a7ff77927d0406c76d6d3",
+          "size": 297,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1788739200
+        }
+      ],
+      "result": "pass"
+    },
+    {
+      "filename": "niaos-controlcore_0.1.0+gite2a3f9ff89b5_amd64.deb",
+      "sha256": "c640cb0535b26a9db7ff268dcd3d5f84d969a723f821b0dd9288474d878010ef",
+      "size": 199588,
+      "source": "/home/nia/devbox/niaos/.work/media-01/original-media/niaos-controlcore_0.1.0+gite2a3f9ff89b5_amd64.deb",
+      "archive_sha256": "56977dc6564555b43fb62ee715f1f3458e3e379215e1baa1ff738ebedfa46998",
+      "entries": [
+        {
+          "name": ".",
+          "kind": "DIRECTORY",
+          "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "size": 0,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1788739200
+        },
+        {
+          "name": "control",
+          "kind": "REGULAR",
+          "sha256": "c3d5019d331eb7352d60c454d31e76b17c5dde04ee64b53a9ce66444c722b1c8",
+          "size": 488,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1788739200
+        },
+        {
+          "name": "md5sums",
+          "kind": "REGULAR",
+          "sha256": "e83db60871fd75f77bbf7a110829186bb344ab5e6eec8f318f679af9a11ca4a1",
+          "size": 410,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1788739200
+        }
+      ],
+      "result": "pass"
+    },
+    {
+      "filename": "niaos-pkgcore_0.1.0+gite74913f9f941_amd64.deb",
+      "sha256": "69e2f82fed042d5d603e9eee88cdb5bff1c7f454e0236bb636b08df069139cd0",
+      "size": 231492,
+      "source": "/home/nia/devbox/niaos/.work/media-01/original-media/niaos-pkgcore_0.1.0+gite74913f9f941_amd64.deb",
+      "archive_sha256": "599f08daa1bef097188acccdc72d2b03a9d2c31061ffd723c91ee24bcd2ea4aa",
+      "entries": [
+        {
+          "name": ".",
+          "kind": "DIRECTORY",
+          "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "size": 0,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1788739200
+        },
+        {
+          "name": "control",
+          "kind": "REGULAR",
+          "sha256": "7512fc9e5b06cf5089e97e1bbf836e19671145b0a63f9672a286adb9c11a8ba0",
+          "size": 532,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1788739200
+        },
+        {
+          "name": "md5sums",
+          "kind": "REGULAR",
+          "sha256": "b95f2efcc8eba5d41dbbe51e25f2945ca3fc026e6090c29be2257fa55c42955e",
+          "size": 475,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1788739200
+        }
+      ],
+      "result": "pass"
+    },
+    {
+      "filename": "niaos-resolvercore_0.1.0+gita58f281ff997_amd64.deb",
+      "sha256": "693f76f12902f2d23305073d3350b11a1379d76a1f27cdef696a8e8170ee8009",
+      "size": 88564,
+      "source": "/home/nia/devbox/niaos/.work/media-01/original-media/niaos-resolvercore_0.1.0+gita58f281ff997_amd64.deb",
+      "archive_sha256": "38f3b6f00c580d4ae5f7162d3051ceccdd7e10ee92d2b8ef3650d1946382ae13",
+      "entries": [
+        {
+          "name": ".",
+          "kind": "DIRECTORY",
+          "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "size": 0,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1788739200
+        },
+        {
+          "name": "control",
+          "kind": "REGULAR",
+          "sha256": "4e86ade86b5a80c901ae26d6efb27954bb29909275504a610c310269441ebf3a",
+          "size": 489,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1788739200
+        },
+        {
+          "name": "md5sums",
+          "kind": "REGULAR",
+          "sha256": "0f56a06e245b7e7d2a34d3902b0b24cb4093935b37da3c64bb7b22376ead0532",
+          "size": 305,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1788739200
+        }
+      ],
+      "result": "pass"
+    },
+    {
+      "filename": "niaos-statecore_0.1.0+gitc0c9ca947c2e_amd64.deb",
+      "sha256": "dca754623a808d731649a67ac2c8e9d61eb26474c55b86f65aaf69dc162b140c",
+      "size": 230640,
+      "source": "/home/nia/devbox/niaos/.work/media-01/original-media/niaos-statecore_0.1.0+gitc0c9ca947c2e_amd64.deb",
+      "archive_sha256": "0d00d1e3e03c04f57e4bc4fc14514ddb7cce9fc3c8544fe9801a2090ed07eed9",
+      "entries": [
+        {
+          "name": ".",
+          "kind": "DIRECTORY",
+          "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "size": 0,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1788739200
+        },
+        {
+          "name": "control",
+          "kind": "REGULAR",
+          "sha256": "295a3aa4eaa2e64f0393253729843f973b7af6bd6df02baaaec47643b60ad546",
+          "size": 504,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1788739200
+        },
+        {
+          "name": "md5sums",
+          "kind": "REGULAR",
+          "sha256": "791f1b36a63c24732c4a4a3b7b4428e8fcb47064b10d53bb11ae6de98b03d4eb",
+          "size": 556,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1788739200
+        }
+      ],
+      "result": "pass"
+    },
+    {
+      "filename": "dpkg_1.22.22_amd64.deb",
+      "sha256": "3e800c6d75e8e709007ed1c356e5fa8509a75c1694fb0a1183709abc9cfdc1f3",
+      "size": 1537216,
+      "source": "/home/nia/devbox/niaos/.work/distro-trixie-01/live/cache/packages.bootstrap/dpkg_1.22.22_amd64.deb",
+      "archive_sha256": "2abf1b42b367df75deab877c0c2e8483c700062f05a80bb271b61af859326ec1",
+      "entries": [
+        {
+          "name": ".",
+          "kind": "DIRECTORY",
+          "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "size": 0,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1772766083
+        },
+        {
+          "name": "conffiles",
+          "kind": "REGULAR",
+          "sha256": "1fa597ab4184eb9914de0677909ddeeb10acb4fa091578341cfdcaec60e3a867",
+          "size": 117,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1772766083
+        },
+        {
+          "name": "control",
+          "kind": "REGULAR",
+          "sha256": "8c4713982387e3c925b0f7370bc63d911e12e15b9132b2dd0730a83b245de87a",
+          "size": 737,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1772766083
+        },
+        {
+          "name": "md5sums",
+          "kind": "REGULAR",
+          "sha256": "c49a8135aafad1d086fa3ee4feb8ccbaa9fadf99094e0970b7637b1677e89539",
+          "size": 10461,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1772766083
+        },
+        {
+          "name": "postinst",
+          "kind": "REGULAR",
+          "sha256": "46dccfe29646a5cd280aefcb889c78fe64246dd7a9cc8f0303d4c317a95c585b",
+          "size": 1836,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1772766083
+        },
+        {
+          "name": "postrm",
+          "kind": "REGULAR",
+          "sha256": "e243f1768626aff1c90bbe5f30fad907b737d7a02547175d2dc309e54c0658ae",
+          "size": 1490,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1772766083
+        }
+      ],
+      "result": "pass"
+    },
+    {
+      "filename": "bash_5.2.37-2+b9_amd64.deb",
+      "sha256": "03571d298ed24c615641d54dec4eb023ef5710a2b8cb9304acb66e372cab9c46",
+      "size": 1501148,
+      "source": "/home/nia/devbox/niaos/.work/distro-trixie-01/live/cache/packages.bootstrap/bash_5.2.37-2+b9_amd64.deb",
+      "archive_sha256": "418cbaa14f952adbd3f1f6774805b4cfdeebf4a21a465a44d5404373e787dd97",
+      "entries": [
+        {
+          "name": ".",
+          "kind": "DIRECTORY",
+          "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "size": 0,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1778324878
+        },
+        {
+          "name": "conffiles",
+          "kind": "REGULAR",
+          "sha256": "547d1cf6291bce0dcc569f9caad2b7d204f42efb7a20047d86aa48e0c305a52f",
+          "size": 77,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1778324878
+        },
+        {
+          "name": "control",
+          "kind": "REGULAR",
+          "sha256": "e5ac2b4184fa87ce58cd70c810b000b7409c0c2bbb2a2f0a7a734578f1f51096",
+          "size": 916,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1778324878
+        },
+        {
+          "name": "md5sums",
+          "kind": "REGULAR",
+          "sha256": "d319e12143e0c82eaef1eeac93e8b123fa13f75288662bf81790c5cb1a5aaba3",
+          "size": 4585,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1778324878
+        },
+        {
+          "name": "postinst",
+          "kind": "REGULAR",
+          "sha256": "6d1b5aafa381703582cefe6ba5e4b7b0cfa7f10b0b0a9b299361c4afd5172a21",
+          "size": 486,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1778324878
+        },
+        {
+          "name": "postrm",
+          "kind": "REGULAR",
+          "sha256": "e8f835625839bd2403fd46b7707dd84caab180dfce1fd2fc04883050d84f16b0",
+          "size": 209,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1778324878
+        },
+        {
+          "name": "prerm",
+          "kind": "REGULAR",
+          "sha256": "8d4c0e961f582ca7821cd5b81c8ba304a90f2ddfd6efd963f58cf6020eb2198a",
+          "size": 289,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1778324878
+        }
+      ],
+      "result": "pass"
+    },
+    {
+      "filename": "libc6_2.41-12+deb13u3_amd64.deb",
+      "sha256": "8ffd13165b9ee3f067e2ee670df718e48c1bdaa18676ac93d1de761dbbb3913c",
+      "size": 2849576,
+      "source": "/home/nia/devbox/niaos/.work/distro-trixie-01/live/cache/packages.bootstrap/libc6_2.41-12+deb13u3_amd64.deb",
+      "archive_sha256": "719b8f608bb8aa640f5fbace1f63ce637f9748d0640b62a206c48c4e53fc35b1",
+      "entries": [
+        {
+          "name": ".",
+          "kind": "DIRECTORY",
+          "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "size": 0,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1777320562
+        },
+        {
+          "name": "conffiles",
+          "kind": "REGULAR",
+          "sha256": "a59a14914231cc9a833ba49b14308e57b755236ff70bc3b0c4ee77b2bd34eed8",
+          "size": 40,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1777320562
+        },
+        {
+          "name": "control",
+          "kind": "REGULAR",
+          "sha256": "747ac33ee685482f194e32e7216ff89cdde2b0561f80fcbdeda7d4f46d5176d9",
+          "size": 1648,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1777320562
+        },
+        {
+          "name": "md5sums",
+          "kind": "REGULAR",
+          "sha256": "e111dc05d03a62a844f34280bea3ddfa1369eb4e8869359c38065143b22cdc03",
+          "size": 21673,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1777320562
+        },
+        {
+          "name": "postinst",
+          "kind": "REGULAR",
+          "sha256": "ff2a3a7a0e74ceac331ca5ad22e7ef57c974a7b891a9b1e7f3def4377ec6f1b5",
+          "size": 7887,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1777320562
+        },
+        {
+          "name": "postrm",
+          "kind": "REGULAR",
+          "sha256": "d911893b23b52a371e843a621a27d49060f0aefdc07c8cb43ef77563a84fbd5b",
+          "size": 427,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1777320562
+        },
+        {
+          "name": "preinst",
+          "kind": "REGULAR",
+          "sha256": "964a417b9c330f80213fe8aebb1f44eaea307203962aecb0de493742583bb454",
+          "size": 15455,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1777320562
+        },
+        {
+          "name": "shlibs",
+          "kind": "REGULAR",
+          "sha256": "0cd84ab17272c7733ed2f0d933eaa21014d96505d943f9937f59a1a3b00a70f8",
+          "size": 930,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1777320562
+        },
+        {
+          "name": "symbols",
+          "kind": "REGULAR",
+          "sha256": "64c277b6c98f98287fce26d8af3831d8c92b39d5d2a98de5cedd7140fe36eb3b",
+          "size": 158752,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1777320562
+        },
+        {
+          "name": "templates",
+          "kind": "REGULAR",
+          "sha256": "2af890832b593c1eec89031803cb9cbe7e4b19acc73adcaf96fdc89450396ceb",
+          "size": 95435,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1777320562
+        },
+        {
+          "name": "triggers",
+          "kind": "REGULAR",
+          "sha256": "c67ab4558a59eb1e96d899a5bdbb153d6a2ab0e580f4acf5bfb1e4e6150ad2f4",
+          "size": 68,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1777320562
+        }
+      ],
+      "result": "pass"
+    },
+    {
+      "filename": "upstream-fixture-10.deb",
+      "sha256": "ee81302a1d5b7434762b6e784a572854d4b6cf6235e33e2d104ad4e1cae71ab4",
+      "size": 3093632,
+      "source": "/home/nia/devbox/niaos/.work/distro-trixie-01/live/cache/packages.bootstrap/systemd_257.13-1~deb13u1_amd64.deb",
+      "original_filename": "systemd_257.13-1~deb13u1_amd64.deb",
+      "archive_sha256": "982c7af53ddf53184146a18cf507464b7d93e35d2aa8ca5e043f76541572557b",
+      "entries": [
+        {
+          "name": ".",
+          "kind": "DIRECTORY",
+          "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "size": 0,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1776109085
+        },
+        {
+          "name": "conffiles",
+          "kind": "REGULAR",
+          "sha256": "cc580780157ed469a69377bf15d4d5291e9ccd04d6f56457318a52ec8ecd5d77",
+          "size": 223,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1776109085
+        },
+        {
+          "name": "control",
+          "kind": "REGULAR",
+          "sha256": "dba7ff084f1ca966f62949ca02730c076d2b02294b33817d941d8fc1f559654f",
+          "size": 1633,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1776109085
+        },
+        {
+          "name": "md5sums",
+          "kind": "REGULAR",
+          "sha256": "e9f31c8e9bd3cfd5a25368be91e8fed4105def5b00c8c68bbf37f65acc40f6ad",
+          "size": 53514,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1776109085
+        },
+        {
+          "name": "postinst",
+          "kind": "REGULAR",
+          "sha256": "7a95419baad7f5e6cfa7a422ae8965e67a5b25f9c74fa6cb6596090c1c236793",
+          "size": 4314,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1776109085
+        },
+        {
+          "name": "postrm",
+          "kind": "REGULAR",
+          "sha256": "781f34e5df4d482e4f1f7725c356a1560226fa812217e9f87bfe9c4e2d5d825e",
+          "size": 1936,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1776109085
+        },
+        {
+          "name": "preinst",
+          "kind": "REGULAR",
+          "sha256": "bcf12d1b4fa4b7a22e9ab7db0fd273839c35036576946158a996887da96b080e",
+          "size": 3526,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1776109085
+        },
+        {
+          "name": "prerm",
+          "kind": "REGULAR",
+          "sha256": "686758f30f18776b6f60f030b11f451639576a2c9f3262e5907a92b1c2f1b48a",
+          "size": 442,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1776109085
+        },
+        {
+          "name": "triggers",
+          "kind": "REGULAR",
+          "sha256": "f437e8a59b6a78ef87c93d055c385f203ef4b58cee0d2bfc85adf0a80213e9f8",
+          "size": 142,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1776109085
+        }
+      ],
+      "result": "pass"
+    },
+    {
+      "filename": "coreutils_9.7-3_amd64.deb",
+      "sha256": "1299ab6f9389a288eb2f5f3dd222c26cc777b9a2d5ecb6ee4cbd340cebcdada2",
+      "size": 3023556,
+      "source": "/home/nia/devbox/niaos/.work/distro-trixie-01/live/cache/packages.bootstrap/coreutils_9.7-3_amd64.deb",
+      "archive_sha256": "c5acb0badf54482bd105263defdf3d585d38948faeca7b0629167b0bdef0a0b8",
+      "entries": [
+        {
+          "name": ".",
+          "kind": "DIRECTORY",
+          "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "size": 0,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1749050045
+        },
+        {
+          "name": "control",
+          "kind": "REGULAR",
+          "sha256": "06d27f11497e62379a1a4fc599709da32a6b0684bf20b4bc63be36da9bc6aed0",
+          "size": 1177,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1749050045
+        },
+        {
+          "name": "md5sums",
+          "kind": "REGULAR",
+          "sha256": "cbd05b8cc5eeeaabca5ae5c5e728590047d76ce1261adef2b7b50ed3f63254b1",
+          "size": 16044,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1749050045
+        }
+      ],
+      "result": "pass"
+    },
+    {
+      "filename": "upstream-fixture-12.deb",
+      "sha256": "c5eaef41c6947d2888fa3462f787a7e02158b997bd0119154283f425ba57b8b8",
+      "size": 1228860,
+      "source": "/home/nia/devbox/niaos/.work/distro-trixie-01/live/cache/packages.bootstrap/passwd_1%3a4.17.4-2_amd64.deb",
+      "original_filename": "passwd_1%3a4.17.4-2_amd64.deb",
+      "archive_sha256": "1988f0699a78f132f62c2fda242310b95233824a1cbec46b928ba41e01500e2f",
+      "entries": [
+        {
+          "name": ".",
+          "kind": "DIRECTORY",
+          "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "size": 0,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1745058028
+        },
+        {
+          "name": "conffiles",
+          "kind": "REGULAR",
+          "sha256": "c5a633e0cd0a04d2ae520c47d5b6efa8cec76b0eecc58a01aa431429e2d64778",
+          "size": 111,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1745058028
+        },
+        {
+          "name": "control",
+          "kind": "REGULAR",
+          "sha256": "fb0de1ced8a709e79bd60ec8ab4469b891c0b14a681440a08c6e858552df3cb9",
+          "size": 842,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1745058028
+        },
+        {
+          "name": "md5sums",
+          "kind": "REGULAR",
+          "sha256": "d5e7282b15ee404ef74ec5df6936b6e87d54284d4adc629cd8bac56893ff3d68",
+          "size": 22226,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1745058028
+        },
+        {
+          "name": "postinst",
+          "kind": "REGULAR",
+          "sha256": "01d0ce8ac3b7cd30e42d588bddf13c3cede1c6c696550295bc83922a32938630",
+          "size": 1134,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1745058028
+        },
+        {
+          "name": "postrm",
+          "kind": "REGULAR",
+          "sha256": "dbca5850b8a06014e88ecf7b5c6441c0065d5383350c92fcaf6bb6842dadffdb",
+          "size": 175,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1745058028
+        },
+        {
+          "name": "preinst",
+          "kind": "REGULAR",
+          "sha256": "dbca5850b8a06014e88ecf7b5c6441c0065d5383350c92fcaf6bb6842dadffdb",
+          "size": 175,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1745058028
+        },
+        {
+          "name": "prerm",
+          "kind": "REGULAR",
+          "sha256": "dbca5850b8a06014e88ecf7b5c6441c0065d5383350c92fcaf6bb6842dadffdb",
+          "size": 175,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mtime": 1745058028
+        }
+      ],
+      "result": "pass"
+    }
+  ]
+}

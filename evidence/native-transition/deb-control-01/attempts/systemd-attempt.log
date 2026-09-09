@@ -1,0 +1,5 @@
+Running as unit: run-p47298-i47598.scope; invocation ID: 153e499ea2854fe4a7392498be884612
+limited-exec: {"scope": "run-p47298-i47598.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+FAIL: open fixture systemd_257.13-1~deb13u1_amd64.debINVALID_INPUT
+
+raised TEST_SUPPORT.FAILURE : open fixture systemd_257.13-1~deb13u1_amd64.debINVALID_INPUT

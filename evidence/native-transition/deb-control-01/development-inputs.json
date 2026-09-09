@@ -1,0 +1,18 @@
+[
+  {
+    "path": "dev/Containerfile",
+    "sha256": "1f36e505bf5eaa98da52ee57dbdb2c9fd9c6c60bb0fb50e35305dd30a236c3f9"
+  },
+  {
+    "path": "dev/packages.txt",
+    "sha256": "e60ec3b541e4c7cddb947d156c13401a608656d83aa7201299667382c5a02d5a"
+  },
+  {
+    "path": "dev/run-limited.sh",
+    "sha256": "0e364b98c24151260a4e964d73f5d2b0b97b09b092aa77fa9c97192c23ecaff8"
+  },
+  {
+    "path": "dev/limited-exec.py",
+    "sha256": "175957bd20a22b0c5b4f1b0a00229c726bb60799cdec4e8999d9a156aa560dd6"
+  }
+]

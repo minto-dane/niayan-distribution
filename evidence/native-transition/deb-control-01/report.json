@@ -1,0 +1,61 @@
+{
+  "result": "pass-for-native-control-observation-and-cas-retention-only",
+  "production_qualified": false,
+  "source_subject": "0ac39bc66d1164eb438ac282509f0cd9c43f48ce7625828c3841f810f326c67e",
+  "image_id": "0c04329a1343a0f1ae82ab931ffc7a7e5cbfdccbf18948e0576366fbf5bb249a",
+  "pkgcore": {
+    "compile_all": true,
+    "application_mains": 4,
+    "ada_test_mains": 16,
+    "control_assertions": 229,
+    "synthetic_control_debs": 35,
+    "envelope_assertions": 764,
+    "root_refused_entrypoints": 3,
+    "reproducible_executables": 20,
+    "exact_build_inputs": 387
+  },
+  "sanitizers": {
+    "result": "pass",
+    "instrumented": "C codec boundary linked into Ada control test",
+    "assertions": 229,
+    "ada_and_upstream_libraries_instrumented": false,
+    "leak_checking": false
+  },
+  "elf_hardening": {
+    "result": "pass",
+    "executables": 20,
+    "properties": [
+      "PIE",
+      "non-executable stack",
+      "RELRO",
+      "immediate binding",
+      "no writable/executable load"
+    ]
+  },
+  "original_debs": {
+    "count": 13,
+    "control_entries": 65,
+    "component_originals": 7,
+    "upstream_cached_originals": 6,
+    "fixture_transport_aliases": 2,
+    "scope": "independent ar/Python tar and CAS byte/metadata comparison; not fresh supply authentication"
+  },
+  "source_checks": 24,
+  "proof_inputs": "all seven exact sets unchanged; Ada/C runtime remains outside SPARK",
+  "limits": {
+    "memory_bytes": 3221225472,
+    "swap_bytes": 0,
+    "cpu_cores": 1,
+    "pids": 128,
+    "heavy_jobs_in_parallel": 1
+  },
+  "remaining": [
+    "control-field semantic validation",
+    "complete tar/data.tar semantics",
+    "all maintainer-script and trigger effects",
+    "native catalog and execution authority",
+    "actual root and boot activation and power-loss recovery",
+    "native-only ISO",
+    "all language translations and command response qualification"
+  ]
+}
