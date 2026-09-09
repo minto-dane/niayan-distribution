@@ -1,0 +1,20 @@
+ORIGINAL af7c3031f932d5bbfecda2ceafdd8de1ed72d2f8370a52b4ec02d770e51adcb3
+CONTROL 091f72326708e04cd94936454828cf44c626a7824c6026a08aa32106ce700233
+PACKAGE niaos-assurance
+VERSION 0.1.0+git70baa595e385
+ARCHITECTURE amd64
+SOURCE niaos-assurance 0.1.0+git70baa595e385
+MULTI NO
+ESSENTIAL FALSE
+PROTECTED FALSE
+INSTALLED_SIZE TRUE 537
+FIELD package
+FIELD version
+FIELD architecture
+FIELD maintainer
+FIELD installed-size
+FIELD depends
+FIELD section
+FIELD priority
+FIELD description
+PASS assertions= 9

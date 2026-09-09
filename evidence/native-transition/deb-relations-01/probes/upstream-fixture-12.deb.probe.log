@@ -1,0 +1,25 @@
+ORIGINAL c5eaef41c6947d2888fa3462f787a7e02158b997bd0119154283f425ba57b8b8
+CONTROL fb0de1ced8a709e79bd60ec8ab4469b891c0b14a681440a08c6e858552df3cb9
+PACKAGE passwd
+VERSION 1:4.17.4-2
+ARCHITECTURE amd64
+SOURCE shadow 1:4.17.4-2
+MULTI FOREIGN
+ESSENTIAL FALSE
+PROTECTED FALSE
+INSTALLED_SIZE TRUE 4758
+FIELD package
+FIELD source
+FIELD version
+FIELD architecture
+FIELD maintainer
+FIELD installed-size
+FIELD depends
+FIELD recommends
+FIELD replaces
+FIELD section
+FIELD priority
+FIELD multi-arch
+FIELD homepage
+FIELD description
+PASS assertions= 9

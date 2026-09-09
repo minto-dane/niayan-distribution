@@ -1,0 +1,27 @@
+ORIGINAL 03571d298ed24c615641d54dec4eb023ef5710a2b8cb9304acb66e372cab9c46
+CONTROL e5ac2b4184fa87ce58cd70c810b000b7409c0c2bbb2a2f0a7a734578f1f51096
+PACKAGE bash
+VERSION 5.2.37-2+b9
+ARCHITECTURE amd64
+SOURCE bash 5.2.37-2
+MULTI FOREIGN
+ESSENTIAL TRUE
+PROTECTED FALSE
+INSTALLED_SIZE TRUE 7196
+FIELD package
+FIELD source
+FIELD version
+FIELD architecture
+FIELD essential
+FIELD maintainer
+FIELD installed-size
+FIELD pre-depends
+FIELD depends
+FIELD recommends
+FIELD suggests
+FIELD section
+FIELD priority
+FIELD multi-arch
+FIELD homepage
+FIELD description
+PASS assertions= 9

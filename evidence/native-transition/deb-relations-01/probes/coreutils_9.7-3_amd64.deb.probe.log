@@ -1,0 +1,23 @@
+ORIGINAL 1299ab6f9389a288eb2f5f3dd222c26cc777b9a2d5ecb6ee4cbd340cebcdada2
+CONTROL 06d27f11497e62379a1a4fc599709da32a6b0684bf20b4bc63be36da9bc6aed0
+PACKAGE coreutils
+VERSION 9.7-3
+ARCHITECTURE amd64
+SOURCE coreutils 9.7-3
+MULTI FOREIGN
+ESSENTIAL TRUE
+PROTECTED FALSE
+INSTALLED_SIZE TRUE 18457
+FIELD package
+FIELD version
+FIELD architecture
+FIELD essential
+FIELD maintainer
+FIELD installed-size
+FIELD pre-depends
+FIELD section
+FIELD priority
+FIELD multi-arch
+FIELD homepage
+FIELD description
+PASS assertions= 9

@@ -60,3 +60,5 @@ make native-check
 inactive generationの組立てを有界な作業へ分け、全入力と所有権をhashへ束縛し、
 最後のroot/catalog公開を一つの復旧可能なcommitにする接続が必要である。
 現在の工具は`.list`のパス数も記録するが、これは実ファイル属性や差分変更数の検査ではない。
+
+原本binary関係項目のnative読取は[deb-relations.ja.md](deb-relations.ja.md)を参照。

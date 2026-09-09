@@ -1,0 +1,3 @@
+Running as unit: run-p67940-i68240.scope; invocation ID: bbc356391ceb4a30b56e7db96533d060
+limited-exec: {"scope": "run-p67940-i68240.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Synthetic control fixtures: 37 written

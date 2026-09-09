@@ -1,0 +1,86 @@
+{
+  "scope": "preserved component originals plus six original upstream DEBs from the prior development cache; this comparison is not supply authentication",
+  "files": [
+    {
+      "filename": "niaos-assurance_0.1.0+git70baa595e385_amd64.deb",
+      "sha256": "af7c3031f932d5bbfecda2ceafdd8de1ed72d2f8370a52b4ec02d770e51adcb3",
+      "size": 163500,
+      "source": "/home/nia/devbox/niaos/.work/media-01/original-media/niaos-assurance_0.1.0+git70baa595e385_amd64.deb"
+    },
+    {
+      "filename": "niaos-capsulecore_0.1.0+git0c356eecb425_amd64.deb",
+      "sha256": "7c97862c75ba7d54e188cd6001f3e070ad0681e897a5c3b71f5e35c53732d268",
+      "size": 66948,
+      "source": "/home/nia/devbox/niaos/.work/media-01/original-media/niaos-capsulecore_0.1.0+git0c356eecb425_amd64.deb"
+    },
+    {
+      "filename": "niaos-configcore_0.1.0+git6d46ea26c38c_amd64.deb",
+      "sha256": "663f792345cf77fe7a86c9b390126d37071682dafbad85bb345f425c3c41fece",
+      "size": 94728,
+      "source": "/home/nia/devbox/niaos/.work/media-01/original-media/niaos-configcore_0.1.0+git6d46ea26c38c_amd64.deb"
+    },
+    {
+      "filename": "niaos-controlcore_0.1.0+gite2a3f9ff89b5_amd64.deb",
+      "sha256": "c640cb0535b26a9db7ff268dcd3d5f84d969a723f821b0dd9288474d878010ef",
+      "size": 199588,
+      "source": "/home/nia/devbox/niaos/.work/media-01/original-media/niaos-controlcore_0.1.0+gite2a3f9ff89b5_amd64.deb"
+    },
+    {
+      "filename": "niaos-pkgcore_0.1.0+gite74913f9f941_amd64.deb",
+      "sha256": "69e2f82fed042d5d603e9eee88cdb5bff1c7f454e0236bb636b08df069139cd0",
+      "size": 231492,
+      "source": "/home/nia/devbox/niaos/.work/media-01/original-media/niaos-pkgcore_0.1.0+gite74913f9f941_amd64.deb"
+    },
+    {
+      "filename": "niaos-resolvercore_0.1.0+gita58f281ff997_amd64.deb",
+      "sha256": "693f76f12902f2d23305073d3350b11a1379d76a1f27cdef696a8e8170ee8009",
+      "size": 88564,
+      "source": "/home/nia/devbox/niaos/.work/media-01/original-media/niaos-resolvercore_0.1.0+gita58f281ff997_amd64.deb"
+    },
+    {
+      "filename": "niaos-statecore_0.1.0+gitc0c9ca947c2e_amd64.deb",
+      "sha256": "dca754623a808d731649a67ac2c8e9d61eb26474c55b86f65aaf69dc162b140c",
+      "size": 230640,
+      "source": "/home/nia/devbox/niaos/.work/media-01/original-media/niaos-statecore_0.1.0+gitc0c9ca947c2e_amd64.deb"
+    },
+    {
+      "filename": "dpkg_1.22.22_amd64.deb",
+      "sha256": "3e800c6d75e8e709007ed1c356e5fa8509a75c1694fb0a1183709abc9cfdc1f3",
+      "size": 1537216,
+      "source": "/home/nia/devbox/niaos/.work/distro-trixie-01/live/cache/packages.bootstrap/dpkg_1.22.22_amd64.deb"
+    },
+    {
+      "filename": "bash_5.2.37-2+b9_amd64.deb",
+      "sha256": "03571d298ed24c615641d54dec4eb023ef5710a2b8cb9304acb66e372cab9c46",
+      "size": 1501148,
+      "source": "/home/nia/devbox/niaos/.work/distro-trixie-01/live/cache/packages.bootstrap/bash_5.2.37-2+b9_amd64.deb"
+    },
+    {
+      "filename": "libc6_2.41-12+deb13u3_amd64.deb",
+      "sha256": "8ffd13165b9ee3f067e2ee670df718e48c1bdaa18676ac93d1de761dbbb3913c",
+      "size": 2849576,
+      "source": "/home/nia/devbox/niaos/.work/distro-trixie-01/live/cache/packages.bootstrap/libc6_2.41-12+deb13u3_amd64.deb"
+    },
+    {
+      "filename": "upstream-fixture-10.deb",
+      "sha256": "ee81302a1d5b7434762b6e784a572854d4b6cf6235e33e2d104ad4e1cae71ab4",
+      "size": 3093632,
+      "source": "/home/nia/devbox/niaos/.work/distro-trixie-01/live/cache/packages.bootstrap/systemd_257.13-1~deb13u1_amd64.deb",
+      "original_filename": "systemd_257.13-1~deb13u1_amd64.deb"
+    },
+    {
+      "filename": "coreutils_9.7-3_amd64.deb",
+      "sha256": "1299ab6f9389a288eb2f5f3dd222c26cc777b9a2d5ecb6ee4cbd340cebcdada2",
+      "size": 3023556,
+      "source": "/home/nia/devbox/niaos/.work/distro-trixie-01/live/cache/packages.bootstrap/coreutils_9.7-3_amd64.deb"
+    },
+    {
+      "filename": "upstream-fixture-12.deb",
+      "sha256": "c5eaef41c6947d2888fa3462f787a7e02158b997bd0119154283f425ba57b8b8",
+      "size": 1228860,
+      "source": "/home/nia/devbox/niaos/.work/distro-trixie-01/live/cache/packages.bootstrap/passwd_1%3a4.17.4-2_amd64.deb",
+      "original_filename": "passwd_1%3a4.17.4-2_amd64.deb"
+    }
+  ],
+  "fixture_naming": "Two transport filenames use neutral fixture aliases because the existing MC_FS internal path policy excludes tilde and percent; original bytes and source names are retained."
+}

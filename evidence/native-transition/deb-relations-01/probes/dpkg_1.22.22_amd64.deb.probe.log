@@ -1,0 +1,26 @@
+ORIGINAL 3e800c6d75e8e709007ed1c356e5fa8509a75c1694fb0a1183709abc9cfdc1f3
+CONTROL 8c4713982387e3c925b0f7370bc63d911e12e15b9132b2dd0730a83b245de87a
+PACKAGE dpkg
+VERSION 1.22.22
+ARCHITECTURE amd64
+SOURCE dpkg 1.22.22
+MULTI FOREIGN
+ESSENTIAL TRUE
+PROTECTED FALSE
+INSTALLED_SIZE TRUE 6587
+FIELD package
+FIELD version
+FIELD architecture
+FIELD essential
+FIELD maintainer
+FIELD installed-size
+FIELD pre-depends
+FIELD depends
+FIELD suggests
+FIELD breaks
+FIELD section
+FIELD priority
+FIELD multi-arch
+FIELD homepage
+FIELD description
+PASS assertions= 9

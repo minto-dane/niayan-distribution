@@ -1,0 +1,56 @@
+{
+  "result": "pass-for-native-binary-relationship-grammar-only",
+  "production_qualified": false,
+  "source_subject": "729fca47ca208b682ab2ed7012230f2906a7407eea4d302fd187f355677c5d19",
+  "image_id": "0c04329a1343a0f1ae82ab931ffc7a7e5cbfdccbf18948e0576366fbf5bb249a",
+  "pkgcore": {
+    "compile_all": true,
+    "application_mains": 4,
+    "ada_test_mains": 18,
+    "relation_assertions": 176,
+    "metadata_assertions": 117,
+    "control_assertions": 229,
+    "envelope_assertions": 764,
+    "synthetic_control_debs": 37,
+    "root_refused_entrypoints": 1,
+    "reproducible_executables": 22,
+    "exact_build_inputs": 397
+  },
+  "original_debs": {
+    "count": 13,
+    "fields": 153,
+    "component_originals": 7,
+    "upstream_cached_originals": 6,
+    "fixture_transport_aliases": 2,
+    "scope": "Final metadata executable includes eleven-field grammar validation and compares identity/field names with dpkg-deb read-only build oracle and raw CAS; not fresh authentication"
+  },
+  "iso_status_corpus": {
+    "packages": 2239,
+    "relationship_fields": 4388,
+    "atoms": 20234,
+    "scope": "Relationship values compared with existing independent Python limited profile; not original DEB or full control qualification"
+  },
+  "elf_hardening": {
+    "result": "pass",
+    "executables": 22
+  },
+  "source_checks": 24,
+  "proof_inputs": "all seven exact sets unchanged; new Ada runtime outside SPARK",
+  "runner_fix": "Canonical generator omits trailing whitespace for zero-argument tests; six other runners differ only in trailing whitespace; pkgcore final tests repeated",
+  "limits": {
+    "memory_bytes": 3221225472,
+    "swap_bytes": 0,
+    "cpu_cores": 1,
+    "pids": 128,
+    "heavy_jobs_in_parallel": 1
+  },
+  "remaining": [
+    "native dependency satisfaction, architecture coinstallation and all phases",
+    "complete optional-field and data.tar semantics",
+    "all DEB effects and source retention fulfillment",
+    "native catalog and authorization",
+    "actual root/boot and power-loss recovery",
+    "native-only ISO",
+    "all translations and command response qualification"
+  ]
+}

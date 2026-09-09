@@ -42,7 +42,8 @@ Architecture: allとMulti-Arch: sameの組は拒否する。
 Architectureはlabel構文の観測であり、稼働platformが対応するという判定ではない。
 Maintainerの検査も本人確認や完全なmailbox文法の検証ではない。
 Installed-Sizeは宣言値であり、payloadの実測やディスク予約を置き換えない。
-任意field全体、依存・Provides・Breaks・Replaces、保守scriptとtriggerの意味検査は未完。
+採用11関係fieldの構文は[関係読取器](deb-relations.ja.md)で追加検査する。
+任意field全体、依存の充足・phase・所有権、保守scriptとtriggerの意味検査は未完。
 したがって識別情報が得られても、単独では実行許可・全package適合・認証成功にならない。
 
 ## 資源と検証
