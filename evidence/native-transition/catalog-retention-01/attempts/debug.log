@@ -1,0 +1,22 @@
+Running as unit: run-p247430-i247730.scope; invocation ID: b32494a797ec48e1b4b06c7ac0fd78f0
+limited-exec: {"scope": "run-p247430-i247730.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Setup
+   [mkdir]        object directory for project Tests
+   [mkdir]        exec directory for project Tests
+Compile
+   [Ada]          run_catalog_store_tests.adb
+   [C]            pkg_deb_stream.c
+   [C]            pkg_deb_decode.c
+   [Ada]          mc_clock.adb
+   [Ada]          mc_codec.adb
+   [Ada]          mc_fs.adb
+   [Ada]          mc_hex.adb
+   [Ada]          mc_posix.ads
+   [Ada]          mc_runtime.adb
+   [Ada]          mc_store.adb
+   [Ada]          mc_text.adb
+   [Ada]          mc_types.adb
+   [Ada]          pkg_catalog_retention.adb
+pkg_catalog_retention.adb:114:24: error: operator for type "Interfaces.Unsigned_8" is not directly visible
+pkg_catalog_retention.adb:114:24: error: use clause would make operation legal
+gprbuild: *** compilation phase failed

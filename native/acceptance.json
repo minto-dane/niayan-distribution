@@ -87,7 +87,8 @@
         "../pkgcore/runtime/pkg_generation_publisher.adb",
         "../pkgcore/runtime/pkg_payload_index.adb",
         "../pkgcore/runtime/pkg_selected_catalog.adb",
-        "../pkgcore/runtime/pkg_catalog_store.adb"
+        "../pkgcore/runtime/pkg_catalog_store.adb",
+        "../pkgcore/runtime/pkg_catalog_retention.adb"
       ],
       "tests": [
         "../pkgcore/tests/run_generation_stage_tests.adb",
@@ -98,7 +99,8 @@
         "../pkgcore/tests/compare_selected_catalog.py",
         "../pkgcore/tests/run_catalog_store_tests.adb",
         "../pkgcore/tests/compare_catalog_store.py",
-        "../pkgcore/tests/compare_current_catalog.py"
+        "../pkgcore/tests/compare_current_catalog.py",
+        "../pkgcore/tests/compare_catalog_retention.py"
       ],
       "evidence": [
         "evidence/native-transition/generation-01/README.ja.md",
@@ -106,9 +108,10 @@
         "evidence/native-transition/payload-index-01/README.ja.md",
         "evidence/native-transition/selected-catalog-01/README.ja.md",
         "evidence/native-transition/catalog-store-01/README.ja.md",
-        "evidence/native-transition/current-catalog-01/README.ja.md"
+        "evidence/native-transition/current-catalog-01/README.ja.md",
+        "evidence/native-transition/catalog-retention-01/README.ja.md"
       ],
-      "remaining": "Bind the caller selection to authenticated resolver/policy results; validate full relationship and cross-architecture coexistence/phase semantics; resolve effective ownership, aliases and native contracts; connect production authority/effects, CAS pin closure and privileged metadata; capacity reservation, fsync/space/power-loss fault tests, actual mount/boot activation and recovery, independent trust rollback"
+      "remaining": "Bind the caller selection to authenticated resolver/policy results; validate full relationship and cross-architecture coexistence/phase semantics; resolve effective ownership, aliases and native contracts; connect production authority/effects, whole-generation/effect/trust/recovery CAS pin closure and safe GC and privileged metadata; capacity reservation, fsync/space/power-loss fault tests, actual mount/boot activation and recovery, independent trust rollback"
     },
     {
       "id": "HARD-001",

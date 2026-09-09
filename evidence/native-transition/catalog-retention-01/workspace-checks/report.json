@@ -1,0 +1,1915 @@
+{
+  "format": 1,
+  "mode": "build",
+  "created_utc": "2026-09-09T12:36:25.126766+00:00",
+  "production_approval": false,
+  "ada_execution": "all-registered-tests-pass",
+  "formal_proof": "not-run",
+  "temporary_io_tree": "/tmp/mission-engineering-tests-4snuqjdi",
+  "checks": [
+    {
+      "name": "traceability",
+      "result": "pass",
+      "layer": "source"
+    },
+    {
+      "argv": [
+        "gprbuild",
+        "--version"
+      ],
+      "cwd": "/workspace",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 369,
+      "seconds": 0.029,
+      "log_sha256": "580b7d8d6b27ce742268f9fa3342c978e0240a050fb3ec9fb44ea3f063b5e8ca",
+      "name": "gprbuild-version",
+      "layer": "tool-identification"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "assurance/tests/engineering",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "cwd": "/workspace",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 16416,
+      "seconds": 9.692,
+      "log_sha256": "ab925b774e82bfc792ff3cf0f38861cee10ce37ab200fe35993d64022847a343",
+      "name": "engineering-unittests",
+      "layer": "source-and-reference"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "assurance/ci/sync-component-ci.py"
+      ],
+      "cwd": "/workspace",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 71,
+      "seconds": 0.418,
+      "log_sha256": "e46a10320f07874e9bf758914c1cea6f1cde6ed4e70b81a989379528d1c3812f",
+      "name": "component-ci-generated",
+      "layer": "source"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "controlcore/tests/reference",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "cwd": "/workspace",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 4879,
+      "seconds": 0.085,
+      "log_sha256": "537ecd7cdd913094877f260fc26bc940d5a5e455ea05af02072d15f2de620ab6",
+      "name": "manager-reference-tests",
+      "layer": "source-and-reference"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "configcore/tests",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "cwd": "/workspace",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 3229,
+      "seconds": 0.079,
+      "log_sha256": "9dcbb98e5d08c3376741b71791c4f9f529fee963313f4d89f38fbdb5b3b93ba5",
+      "name": "configuration-reference-tests",
+      "layer": "reference-and-limited-native-probe"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "resolvercore/tests",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "cwd": "/workspace",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 6707,
+      "seconds": 0.132,
+      "log_sha256": "998c669148f2e4b859e9370cf7e95ddaefa3dbf21aa790e045babd0d45c8b4a4",
+      "name": "resolution-reference-tests",
+      "layer": "reference-and-untrusted-proposal-tool-tests"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "assurance/tests_py",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "cwd": "/workspace",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 5151,
+      "seconds": 0.765,
+      "log_sha256": "425669c075a6ffbd95fd3e9e41fbbac4caae27ee873a1b84cea35cb4b8169ab3",
+      "name": "cohort-recovery-tests",
+      "layer": "actual-nonprivileged-cryptography-and-io"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "capsulecore/tests_py",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "cwd": "/workspace",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 8739,
+      "seconds": 0.192,
+      "log_sha256": "2bf530296f7671f036efdf047f9c7f303a5366f41bd4cbf4a9153dcf1dc50fc9",
+      "name": "capsule-policy-tree-tests",
+      "layer": "reference-and-actual-candidate-tree-io"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "ci/profile.py"
+      ],
+      "cwd": "/workspace/resolvercore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 146,
+      "seconds": 0.028,
+      "log_sha256": "d20516e36c781b18a0702dbd98ab8969ebb69c5f076558f497a888e4cf5e62b2",
+      "name": "resolver-source-profile",
+      "layer": "source"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "ci/check-neutral.py"
+      ],
+      "cwd": "/workspace/resolvercore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 1527,
+      "seconds": 0.027,
+      "log_sha256": "9924a0e4760c31c44af6d27b6aeb0921e82fce58ec82e233c686c8eaa7aad157",
+      "name": "resolver-neutral-boundary",
+      "layer": "source"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "ci/check-resolver.py"
+      ],
+      "cwd": "/workspace/pkgcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 124,
+      "seconds": 0.023,
+      "log_sha256": "e40adfcec7696f7f8117e538efe7e131aa99fef55ba2547468edc807fc208366",
+      "name": "native-resolver-lock",
+      "layer": "source"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "distribution/tests",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "cwd": "/workspace",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 16204,
+      "seconds": 2.154,
+      "log_sha256": "f2cbbf6618d28850a766ff2f5faac8bdfb8d153670c6885d733d9a5e059bfee7",
+      "name": "distribution-tool-tests",
+      "layer": "actual-build-tool-tests"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "assurance/ci/nia-product-audit.py"
+      ],
+      "cwd": "/workspace",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 1259,
+      "seconds": 0.171,
+      "log_sha256": "7a905d21e74c009f408057427e0084a782749feecae4fda88967c0a9cfb86218",
+      "name": "nia-product-audit",
+      "layer": "source-product-coherence"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "assurance/ci/unified-audit.py"
+      ],
+      "cwd": "/workspace",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 253435,
+      "seconds": 0.285,
+      "log_sha256": "d35f4ee0acea57b38294415959e8bb116f9170e624a86d88b98634d064bdbc83",
+      "name": "unified-architecture-audit",
+      "layer": "source"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "assurance/ci/engineering.py",
+        "lint"
+      ],
+      "cwd": "/workspace",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 178825,
+      "seconds": 0.328,
+      "log_sha256": "d20f1003acb864dedb0789b804acddc4632fba5909c0ed969970511269fea215",
+      "name": "syntax-and-doc-links",
+      "layer": "source"
+    },
+    {
+      "argv": [
+        "/bin/sh",
+        "ci/check-contract.sh"
+      ],
+      "cwd": "/workspace/assurance",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 4077,
+      "seconds": 0.02,
+      "log_sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6",
+      "name": "assurance-contract",
+      "layer": "source"
+    },
+    {
+      "argv": [
+        "/bin/sh",
+        "ci/check-contract.sh"
+      ],
+      "cwd": "/workspace/pkgcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 4077,
+      "seconds": 0.015,
+      "log_sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6",
+      "name": "pkgcore-contract",
+      "layer": "source"
+    },
+    {
+      "argv": [
+        "/bin/sh",
+        "ci/check-contract.sh"
+      ],
+      "cwd": "/workspace/statecore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 4077,
+      "seconds": 0.019,
+      "log_sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6",
+      "name": "statecore-contract",
+      "layer": "source"
+    },
+    {
+      "argv": [
+        "/bin/sh",
+        "ci/check-contract.sh"
+      ],
+      "cwd": "/workspace/controlcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 4077,
+      "seconds": 0.019,
+      "log_sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6",
+      "name": "controlcore-contract",
+      "layer": "source"
+    },
+    {
+      "argv": [
+        "/bin/sh",
+        "ci/check-contract.sh"
+      ],
+      "cwd": "/workspace/configcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 4077,
+      "seconds": 0.018,
+      "log_sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6",
+      "name": "configcore-contract",
+      "layer": "source"
+    },
+    {
+      "argv": [
+        "/bin/sh",
+        "ci/check-contract.sh"
+      ],
+      "cwd": "/workspace/resolvercore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 4077,
+      "seconds": 0.03,
+      "log_sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6",
+      "name": "resolvercore-contract",
+      "layer": "source"
+    },
+    {
+      "argv": [
+        "/bin/sh",
+        "ci/check-contract.sh"
+      ],
+      "cwd": "/workspace/capsulecore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 4077,
+      "seconds": 0.016,
+      "log_sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6",
+      "name": "capsulecore-contract",
+      "layer": "source"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "ci/manager-profile.py"
+      ],
+      "cwd": "/workspace/controlcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 129,
+      "seconds": 0.039,
+      "log_sha256": "8e6503258bf0c12b82bcd750e52f16e350fbf7b3651488a01f41bf2f4a57dedc",
+      "name": "manager-implementation-profile",
+      "layer": "source"
+    },
+    {
+      "argv": [
+        "make",
+        "compile-all"
+      ],
+      "cwd": "/workspace/assurance",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 7138,
+      "seconds": 6.944,
+      "log_sha256": "5d2e6a4276ec345d4cae162583ca15198c8a1e9bbd1c173a18e901fd1f2a0685",
+      "name": "assurance-compile-all",
+      "layer": "ada-build"
+    },
+    {
+      "argv": [
+        "make",
+        "build"
+      ],
+      "cwd": "/workspace/assurance",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 4440,
+      "seconds": 0.633,
+      "log_sha256": "5f246d823123c4784c2aebf500b5d59d070eb153bd586a18696a7db1dc0716a1",
+      "name": "assurance-application-links",
+      "layer": "ada-build"
+    },
+    {
+      "argv": [
+        "make",
+        "test-build"
+      ],
+      "cwd": "/workspace/assurance",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 10262,
+      "seconds": 9.97,
+      "log_sha256": "ad5e02cec5e98f76b52851417b773975428ba9fb75938a330b4a939c46b13fc9",
+      "name": "assurance-tests-build",
+      "layer": "ada-build"
+    },
+    {
+      "argv": [
+        "/workspace/assurance/build/test-bin/run_recovery_storage_tests",
+        "/tmp/mission-engineering-tests-4snuqjdi/run_recovery_storage_tests-s2hg9arw/state",
+        "/tmp/mission-engineering-tests-4snuqjdi/run_recovery_storage_tests-s2hg9arw/store"
+      ],
+      "cwd": "/workspace/assurance",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 20,
+      "seconds": 0.056,
+      "log_sha256": "0616121470d6e909433ba8bde56b50c773b06a1f60c93baa52a9cdcbe33ce630",
+      "name": "assurance-run_recovery_storage_tests",
+      "layer": "ada-isolated-io"
+    },
+    {
+      "argv": [
+        "/workspace/assurance/build/test-bin/run_qualification_tests"
+      ],
+      "cwd": "/workspace/assurance",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 20,
+      "seconds": 0.014,
+      "log_sha256": "d892a7c3d4abf0eb3282a56b943dc0eae62c76a3935b609df68783c241307bc5",
+      "name": "assurance-run_qualification_tests",
+      "layer": "ada-unit"
+    },
+    {
+      "argv": [
+        "/workspace/assurance/build/test-bin/run_contract_tests"
+      ],
+      "cwd": "/workspace/assurance",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 21,
+      "seconds": 0.007,
+      "log_sha256": "0c781debb52f97abaa2b01b781d3103e8271be8578edbccc293ba13924686e3c",
+      "name": "assurance-run_contract_tests",
+      "layer": "ada-unit"
+    },
+    {
+      "argv": [
+        "/workspace/assurance/build/test-bin/run_ingress_tests"
+      ],
+      "cwd": "/workspace/assurance",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 21,
+      "seconds": 0.008,
+      "log_sha256": "593ed774199fa8d1699f4a69842299c832c27f60e1aa828b4890312e5baf64a4",
+      "name": "assurance-run_ingress_tests",
+      "layer": "ada-unit"
+    },
+    {
+      "argv": [
+        "/workspace/assurance/build/test-bin/run_v2_tests"
+      ],
+      "cwd": "/workspace/assurance",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 21,
+      "seconds": 0.003,
+      "log_sha256": "020d07a15d1c1c6c5ab771ed0388b87fe9a9fe1b31e4410e028af8a07325fcfc",
+      "name": "assurance-run_v2_tests",
+      "layer": "ada-unit"
+    },
+    {
+      "argv": [
+        "/workspace/assurance/build/test-bin/run_resilience_contract_tests"
+      ],
+      "cwd": "/workspace/assurance",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 21,
+      "seconds": 0.002,
+      "log_sha256": "47a5d7624ccce6a7e86e8f36f6f30fbc6c81e60e94a3e9681a4c67618cdeef6d",
+      "name": "assurance-run_resilience_contract_tests",
+      "layer": "ada-unit"
+    },
+    {
+      "argv": [
+        "/workspace/assurance/build/test-bin/run_control_tests"
+      ],
+      "cwd": "/workspace/assurance",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 20,
+      "seconds": 0.002,
+      "log_sha256": "1a096b41ff92810aa2b3f8e22cb8ccc642ad856a815daf19b748dee7064f50cc",
+      "name": "assurance-run_control_tests",
+      "layer": "ada-unit"
+    },
+    {
+      "argv": [
+        "/workspace/assurance/build/test-bin/run_backup_contract_tests"
+      ],
+      "cwd": "/workspace/assurance",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 20,
+      "seconds": 0.002,
+      "log_sha256": "0dee2b2a3279d63fff09fb89d34a67643abc6ba11ec2d2feb7dd6f0abeecef46",
+      "name": "assurance-run_backup_contract_tests",
+      "layer": "ada-unit"
+    },
+    {
+      "argv": [
+        "/workspace/assurance/build/test-bin/run_control_io_tests",
+        "/tmp/mission-engineering-tests-4snuqjdi/run_control_io_tests-psnzv8pq/policy",
+        "/tmp/mission-engineering-tests-4snuqjdi/run_control_io_tests-psnzv8pq/ops",
+        "/tmp/mission-engineering-tests-4snuqjdi/run_control_io_tests-psnzv8pq/security"
+      ],
+      "cwd": "/workspace/assurance",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 20,
+      "seconds": 0.03,
+      "log_sha256": "ad15b5577d91e969f1dc6ded7ec211ca7a1dfa40ea7cc241f971cbdc5eeaaf9b",
+      "name": "assurance-run_control_io_tests",
+      "layer": "ada-isolated-io"
+    },
+    {
+      "argv": [
+        "/workspace/assurance/build/test-bin/run_checkpoint_io_tests",
+        "/tmp/mission-engineering-tests-4snuqjdi/run_checkpoint_io_tests-5la258y3/private"
+      ],
+      "cwd": "/workspace/assurance",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 20,
+      "seconds": 0.023,
+      "log_sha256": "ab10f03e00266142a8f1b886f346702c866c0dd55f266471a26f1a0b6c38d136",
+      "name": "assurance-run_checkpoint_io_tests",
+      "layer": "ada-isolated-io"
+    },
+    {
+      "argv": [
+        "/workspace/assurance/build/test-bin/run_control_vector_tests",
+        "tests/fixtures/control-v1"
+      ],
+      "cwd": "/workspace/assurance",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 20,
+      "seconds": 0.002,
+      "log_sha256": "c0e6d46da7812d5f2fa929a89fe85a4dad128495b60bd94ac019e1956957f658",
+      "name": "assurance-run_control_vector_tests",
+      "layer": "ada-unit"
+    },
+    {
+      "argv": [
+        "/workspace/assurance/build/test-bin/run_stop_barrier_tests"
+      ],
+      "cwd": "/workspace/assurance",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 20,
+      "seconds": 0.006,
+      "log_sha256": "99dff4567698f16fde335bd215da8035ed9c1088b073e92d06522ce714d10e5c",
+      "name": "assurance-run_stop_barrier_tests",
+      "layer": "ada-unit"
+    },
+    {
+      "argv": [
+        "/workspace/assurance/build/test-bin/run_stop_vector_tests",
+        "fixtures/stop-v1"
+      ],
+      "cwd": "/workspace/assurance",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 20,
+      "seconds": 0.003,
+      "log_sha256": "e5ca429570a0012ffbeb3b0772e8362647f445bf89025bba8de6e27340075744",
+      "name": "assurance-run_stop_vector_tests",
+      "layer": "ada-unit"
+    },
+    {
+      "argv": [
+        "/workspace/assurance/build/test-bin/run_receiver_ledger_tests",
+        "/tmp/mission-engineering-tests-4snuqjdi/run_receiver_ledger_tests-afmx8722/private"
+      ],
+      "cwd": "/workspace/assurance",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 20,
+      "seconds": 0.008,
+      "log_sha256": "6918d581e318e957ca2649807bdcd11027512b7a6ee1e4b54c7393881bf77ac5",
+      "name": "assurance-run_receiver_ledger_tests",
+      "layer": "ada-isolated-io"
+    },
+    {
+      "argv": [
+        "/workspace/assurance/build/test-bin/run_request_replay_tests"
+      ],
+      "cwd": "/workspace/assurance",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 20,
+      "seconds": 0.001,
+      "log_sha256": "35f44008ec4bf24ccfd20caa06f0a93483bf11797d4f9690d27024f07a4ad7c8",
+      "name": "assurance-run_request_replay_tests",
+      "layer": "ada-unit"
+    },
+    {
+      "argv": [
+        "/workspace/assurance/build/test-bin/run_platform_assurance_tests"
+      ],
+      "cwd": "/workspace/assurance",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 20,
+      "seconds": 0.001,
+      "log_sha256": "5316e6c4541a8a5ffb9f9fda385f57ac69606cdf7bcd17f034d87239d28d20e1",
+      "name": "assurance-run_platform_assurance_tests",
+      "layer": "ada-unit"
+    },
+    {
+      "argv": [
+        "/workspace/assurance/build/test-bin/run_journal_budget_tests"
+      ],
+      "cwd": "/workspace/assurance",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 23,
+      "seconds": 0.012,
+      "log_sha256": "4433aee98f07cd650c308276b90954fb2eb6d19b6e169286d429a479087d2b97",
+      "name": "assurance-run_journal_budget_tests",
+      "layer": "ada-unit"
+    },
+    {
+      "argv": [
+        "/workspace/assurance/build/test-bin/run_fs_observation_tests",
+        "/tmp/mission-engineering-tests-4snuqjdi/run_fs_observation_tests-_autlf3i/private"
+      ],
+      "cwd": "/workspace/assurance",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 20,
+      "seconds": 0.027,
+      "log_sha256": "2e5c4aa45841278ad370310d88e2c63c4b89eccc66ec56437860919d6c1e3d98",
+      "name": "assurance-run_fs_observation_tests",
+      "layer": "ada-isolated-io"
+    },
+    {
+      "argv": [
+        "/workspace/assurance/build/test-bin/run_command_lifecycle_tests",
+        "/tmp/mission-engineering-tests-4snuqjdi/run_command_lifecycle_tests-buuxi6ts/private"
+      ],
+      "cwd": "/workspace/assurance",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 20,
+      "seconds": 0.56,
+      "log_sha256": "12729b1a28f6495ced0431b477f38ee08da685259f04485ac671958a558f1eb4",
+      "name": "assurance-run_command_lifecycle_tests",
+      "layer": "ada-isolated-io"
+    },
+    {
+      "argv": [
+        "/workspace/assurance/build/test-bin/run_cohort_recovery_tests"
+      ],
+      "cwd": "/workspace/assurance",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 0,
+      "seconds": 0.004,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "name": "assurance-run_cohort_recovery_tests",
+      "layer": "ada-unit"
+    },
+    {
+      "argv": [
+        "make",
+        "compile-all"
+      ],
+      "cwd": "/workspace/pkgcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 10234,
+      "seconds": 32.897,
+      "log_sha256": "c80e7501926ea71a21ad666bd486a542106419b701044348c6dc07616824f627",
+      "name": "pkgcore-compile-all",
+      "layer": "ada-build"
+    },
+    {
+      "argv": [
+        "make",
+        "build"
+      ],
+      "cwd": "/workspace/pkgcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 4772,
+      "seconds": 0.896,
+      "log_sha256": "ad682646b177bc4d7e69b9160dbc480b1d2dd549439d067c40bd5804a15c65f7",
+      "name": "pkgcore-application-links",
+      "layer": "ada-build"
+    },
+    {
+      "argv": [
+        "make",
+        "test-build"
+      ],
+      "cwd": "/workspace/pkgcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 12590,
+      "seconds": 41.774,
+      "log_sha256": "2f50f1c50a7cbdad13b91f6d429fbea06b4fec020492580158fd0b3fa5cd4fce",
+      "name": "pkgcore-tests-build",
+      "layer": "ada-build"
+    },
+    {
+      "argv": [
+        "/workspace/pkgcore/build/test-bin/run_file_replay_tests"
+      ],
+      "cwd": "/workspace/pkgcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 20,
+      "seconds": 0.003,
+      "log_sha256": "7b5a504d38f9e8cff67f392a51477c7642771e752b65b9538df2ba179cb9ac17",
+      "name": "pkgcore-run_file_replay_tests",
+      "layer": "ada-unit"
+    },
+    {
+      "argv": [
+        "/workspace/pkgcore/build/test-bin/run_composition_tests"
+      ],
+      "cwd": "/workspace/pkgcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 20,
+      "seconds": 0.003,
+      "log_sha256": "35f44008ec4bf24ccfd20caa06f0a93483bf11797d4f9690d27024f07a4ad7c8",
+      "name": "pkgcore-run_composition_tests",
+      "layer": "ada-unit"
+    },
+    {
+      "argv": [
+        "/workspace/pkgcore/build/test-bin/run_pkg_tests"
+      ],
+      "cwd": "/workspace/pkgcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 21,
+      "seconds": 0.005,
+      "log_sha256": "246081383ec572317a50fd52074f5a6dd5cb9d3577ddd1ace434fbb9dd2edc67",
+      "name": "pkgcore-run_pkg_tests",
+      "layer": "ada-unit"
+    },
+    {
+      "argv": [
+        "/workspace/pkgcore/build/test-bin/run_rpm_tests"
+      ],
+      "cwd": "/workspace/pkgcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 21,
+      "seconds": 0.006,
+      "log_sha256": "3203a0fdccfb4ecdb27cd1c8da4c7205a76735c2747834bdb025a1e8d09532cb",
+      "name": "pkgcore-run_rpm_tests",
+      "layer": "ada-unit"
+    },
+    {
+      "argv": [
+        "/workspace/pkgcore/build/test-bin/run_journal_io_tests",
+        "/tmp/mission-engineering-tests-4snuqjdi/run_journal_io_tests-w4v5zlmg/private"
+      ],
+      "cwd": "/workspace/pkgcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 20,
+      "seconds": 0.02,
+      "log_sha256": "e5ca429570a0012ffbeb3b0772e8362647f445bf89025bba8de6e27340075744",
+      "name": "pkgcore-run_journal_io_tests",
+      "layer": "ada-isolated-io"
+    },
+    {
+      "argv": [
+        "/workspace/pkgcore/build/test-bin/run_v2_pkg_tests"
+      ],
+      "cwd": "/workspace/pkgcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 20,
+      "seconds": 0.016,
+      "log_sha256": "6c8ff480a6097c831fff7e9d13afb117f5c14b9e9925f71e35654e29d7b22daf",
+      "name": "pkgcore-run_v2_pkg_tests",
+      "layer": "ada-unit"
+    },
+    {
+      "argv": [
+        "/workspace/pkgcore/build/test-bin/run_file_engine_tests",
+        "/tmp/mission-engineering-tests-4snuqjdi/run_file_engine_tests-4dag69lv/root",
+        "/tmp/mission-engineering-tests-4snuqjdi/run_file_engine_tests-4dag69lv/state",
+        "/tmp/mission-engineering-tests-4snuqjdi/run_file_engine_tests-4dag69lv/store"
+      ],
+      "cwd": "/workspace/pkgcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 20,
+      "seconds": 0.117,
+      "log_sha256": "729d75a995c9bd05cfb28e043009bcef13ed28de2880c701a452a2ddd2676cd9",
+      "name": "pkgcore-run_file_engine_tests",
+      "layer": "ada-isolated-io"
+    },
+    {
+      "argv": [
+        "/workspace/pkgcore/build/test-bin/run_repair_tests"
+      ],
+      "cwd": "/workspace/pkgcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 21,
+      "seconds": 0.131,
+      "log_sha256": "1aac0c9b7dcd1287250a81617bb97de84d862fcfcb674e89d9f5eeec5884f4fc",
+      "name": "pkgcore-run_repair_tests",
+      "layer": "ada-unit"
+    },
+    {
+      "argv": [
+        "/workspace/pkgcore/build/test-bin/run_retention_batch_tests"
+      ],
+      "cwd": "/workspace/pkgcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 20,
+      "seconds": 0.002,
+      "log_sha256": "e8671347d1dce64344301585343997170b6f96249e804baa4b719545247dc89f",
+      "name": "pkgcore-run_retention_batch_tests",
+      "layer": "ada-unit"
+    },
+    {
+      "argv": [
+        "/workspace/pkgcore/build/test-bin/run_enterprise_pkg_tests"
+      ],
+      "cwd": "/workspace/pkgcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 20,
+      "seconds": 0.002,
+      "log_sha256": "1db479bef9972ac9ca4f8f0e5fcd647f694724962d3711fce33333b7bd9ffc38",
+      "name": "pkgcore-run_enterprise_pkg_tests",
+      "layer": "ada-unit"
+    },
+    {
+      "argv": [
+        "/workspace/pkgcore/build/test-bin/run_pkg_resolution_tests"
+      ],
+      "cwd": "/workspace/pkgcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 0,
+      "seconds": 0.035,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "name": "pkgcore-run_pkg_resolution_tests",
+      "layer": "ada-unit"
+    },
+    {
+      "argv": [
+        "/workspace/pkgcore/build/test-bin/run_deb_semantics_tests"
+      ],
+      "cwd": "/workspace/pkgcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 63,
+      "seconds": 0.002,
+      "log_sha256": "974babddde2e16c3b7fcf63805ab0fd47c1a1745653247a52b7c55c648471da3",
+      "name": "pkgcore-run_deb_semantics_tests",
+      "layer": "ada-unit"
+    },
+    {
+      "argv": [
+        "/workspace/pkgcore/build/test-bin/run_generation_stage_tests",
+        "/tmp/mission-engineering-tests-4snuqjdi/run_generation_stage_tests-wax9in7t/root",
+        "/tmp/mission-engineering-tests-4snuqjdi/run_generation_stage_tests-wax9in7t/state",
+        "/tmp/mission-engineering-tests-4snuqjdi/run_generation_stage_tests-wax9in7t/store"
+      ],
+      "cwd": "/workspace/pkgcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 22,
+      "seconds": 8.314,
+      "log_sha256": "2a92ebef45610286cd22599be7c726f8b3570795698308373fde34293d33311a",
+      "name": "pkgcore-run_generation_stage_tests",
+      "layer": "ada-isolated-io"
+    },
+    {
+      "argv": [
+        "/workspace/pkgcore/build/test-bin/run_generation_publication_tests",
+        "/tmp/mission-engineering-tests-4snuqjdi/run_generation_publication_tests-7zosd55p/root",
+        "/tmp/mission-engineering-tests-4snuqjdi/run_generation_publication_tests-7zosd55p/state",
+        "/tmp/mission-engineering-tests-4snuqjdi/run_generation_publication_tests-7zosd55p/store",
+        "/tmp/mission-engineering-tests-4snuqjdi/run_generation_publication_tests-7zosd55p/bank",
+        "tests/fixtures/selected-catalog"
+      ],
+      "cwd": "/workspace/pkgcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 3493,
+      "seconds": 1.463,
+      "log_sha256": "0caecc2237fff45e966467e1d09ce5ca702405d4b586c045504d85d92fb74e56",
+      "name": "pkgcore-run_generation_publication_tests",
+      "layer": "ada-isolated-io"
+    },
+    {
+      "argv": [
+        "/workspace/pkgcore/build/test-bin/run_deb_container_tests",
+        "/tmp/mission-engineering-tests-4snuqjdi/run_deb_container_tests-l6bwlzlh/store"
+      ],
+      "cwd": "/workspace/pkgcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 21,
+      "seconds": 0.615,
+      "log_sha256": "bee98be241411d995bad622395df69ce220c9a85c5bb7d92d9dd07b9343a13cb",
+      "name": "pkgcore-run_deb_container_tests",
+      "layer": "ada-isolated-io"
+    },
+    {
+      "argv": [
+        "/workspace/pkgcore/build/test-bin/run_deb_control_tests",
+        "/tmp/mission-engineering-tests-4snuqjdi/run_deb_control_tests-w34_i6il/store",
+        "tests/fixtures/deb-control"
+      ],
+      "cwd": "/workspace/pkgcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 21,
+      "seconds": 0.765,
+      "log_sha256": "85f4b68e337a311d165fc8f2ad9e9c1b7d900e7ac3954bb01a44606b5c80b7c3",
+      "name": "pkgcore-run_deb_control_tests",
+      "layer": "ada-isolated-io"
+    },
+    {
+      "argv": [
+        "/workspace/pkgcore/build/test-bin/run_deb_metadata_tests",
+        "/tmp/mission-engineering-tests-4snuqjdi/run_deb_metadata_tests-48tpg5ls/store",
+        "tests/fixtures/deb-control"
+      ],
+      "cwd": "/workspace/pkgcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 834,
+      "seconds": 0.097,
+      "log_sha256": "973a82a8b55a9981142a36593fc731d399c103665cb4078451112537637ec57b",
+      "name": "pkgcore-run_deb_metadata_tests",
+      "layer": "ada-isolated-io"
+    },
+    {
+      "argv": [
+        "/workspace/pkgcore/build/test-bin/run_deb_relations_tests"
+      ],
+      "cwd": "/workspace/pkgcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 21,
+      "seconds": 0.007,
+      "log_sha256": "4ab35174fb7aed606c453caa714f3f3f3915c49d03e967859452e6491b522846",
+      "name": "pkgcore-run_deb_relations_tests",
+      "layer": "ada-unit"
+    },
+    {
+      "argv": [
+        "/workspace/pkgcore/build/test-bin/run_deb_data_stream_tests",
+        "/tmp/mission-engineering-tests-4snuqjdi/run_deb_data_stream_tests-k5wapsgc/store",
+        "tests/fixtures/deb-data"
+      ],
+      "cwd": "/workspace/pkgcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 21,
+      "seconds": 0.482,
+      "log_sha256": "8756a34f14fd9aa016e96772a7fb6c024ae16670deec872e037402c8895cd80d",
+      "name": "pkgcore-run_deb_data_stream_tests",
+      "layer": "ada-isolated-io"
+    },
+    {
+      "argv": [
+        "/workspace/pkgcore/build/test-bin/run_deb_payload_tests",
+        "/tmp/mission-engineering-tests-4snuqjdi/run_deb_payload_tests-ornfxez9/store",
+        "tests/fixtures/deb-payload"
+      ],
+      "cwd": "/workspace/pkgcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 21,
+      "seconds": 0.743,
+      "log_sha256": "f7b7ec29fbb15cdf4919699f3adb2c0c49441a7b2f0f23bd46c7f35b95c5dbfc",
+      "name": "pkgcore-run_deb_payload_tests",
+      "layer": "ada-isolated-io"
+    },
+    {
+      "argv": [
+        "/workspace/pkgcore/build/test-bin/run_payload_index_tests",
+        "/tmp/mission-engineering-tests-4snuqjdi/run_payload_index_tests-c4zore89/store",
+        "tests/fixtures/deb-payload",
+        "tests/fixtures/payload-index"
+      ],
+      "cwd": "/workspace/pkgcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 123,
+      "seconds": 0.324,
+      "log_sha256": "c11682dab992ccdf615532b262d88bc43abe952161d615d78723ea65113a5ef6",
+      "name": "pkgcore-run_payload_index_tests",
+      "layer": "ada-isolated-io"
+    },
+    {
+      "argv": [
+        "/workspace/pkgcore/build/test-bin/run_selected_catalog_tests",
+        "/tmp/mission-engineering-tests-4snuqjdi/run_selected_catalog_tests-sg488wtb/store",
+        "tests/fixtures/selected-catalog"
+      ],
+      "cwd": "/workspace/pkgcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 6570,
+      "seconds": 1.148,
+      "log_sha256": "c161e8bd9723087a1ba3bfb71eb4468cc73e4a0130258052ac66c2207df0ec74",
+      "name": "pkgcore-run_selected_catalog_tests",
+      "layer": "ada-isolated-io"
+    },
+    {
+      "argv": [
+        "/workspace/pkgcore/build/test-bin/run_deb_final_set_tests",
+        "/tmp/mission-engineering-tests-4snuqjdi/run_deb_final_set_tests-lfu362od/store",
+        "tests/fixtures/deb-final-set"
+      ],
+      "cwd": "/workspace/pkgcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 395930,
+      "seconds": 136.502,
+      "log_sha256": "3490c5562a5ab24f5ca70bbe56ca81f226378986bac024923bdc03a9ed9126ca",
+      "name": "pkgcore-run_deb_final_set_tests",
+      "layer": "ada-isolated-io"
+    },
+    {
+      "argv": [
+        "/workspace/pkgcore/build/test-bin/run_deb_transition_tests",
+        "/tmp/mission-engineering-tests-4snuqjdi/run_deb_transition_tests-x60nt_vg/store",
+        "tests/fixtures/deb-transition"
+      ],
+      "cwd": "/workspace/pkgcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 25186,
+      "seconds": 20.928,
+      "log_sha256": "e2270221fb0bcb4ea525058f1a914650270128e2ac9292ba469e91c26fef1817",
+      "name": "pkgcore-run_deb_transition_tests",
+      "layer": "ada-isolated-io"
+    },
+    {
+      "argv": [
+        "/workspace/pkgcore/build/test-bin/run_catalog_store_tests",
+        "/tmp/mission-engineering-tests-4snuqjdi/run_catalog_store_tests-dak2c_3j/store",
+        "tests/fixtures/selected-catalog"
+      ],
+      "cwd": "/workspace/pkgcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 8757,
+      "seconds": 31.243,
+      "log_sha256": "c2c26c78b24ba02ee4de1f02113b33e7a4a42c17a38377743170e5aab2a8e99e",
+      "name": "pkgcore-run_catalog_store_tests",
+      "layer": "ada-isolated-io"
+    },
+    {
+      "argv": [
+        "make",
+        "compile-all"
+      ],
+      "cwd": "/workspace/statecore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 9976,
+      "seconds": 12.247,
+      "log_sha256": "0d3976c66131baf9cb72b4cf21b1c9a1026a1cd833f0c66a3c11e0b550f2218d",
+      "name": "statecore-compile-all",
+      "layer": "ada-build"
+    },
+    {
+      "argv": [
+        "make",
+        "build"
+      ],
+      "cwd": "/workspace/statecore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 4702,
+      "seconds": 0.915,
+      "log_sha256": "c06145b8f4e1350e05892cde5f2cbed5e61f0d34665a15b5f83a5dcdf711bf2e",
+      "name": "statecore-application-links",
+      "layer": "ada-build"
+    },
+    {
+      "argv": [
+        "make",
+        "test-build"
+      ],
+      "cwd": "/workspace/statecore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 9490,
+      "seconds": 10.48,
+      "log_sha256": "7de8c3a0a6615e811bf7bd9707f5ff57890b930c545c711cd9ed0b5c591539f8",
+      "name": "statecore-tests-build",
+      "layer": "ada-build"
+    },
+    {
+      "argv": [
+        "/workspace/statecore/build/test-bin/run_platform_tests"
+      ],
+      "cwd": "/workspace/statecore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 20,
+      "seconds": 0.003,
+      "log_sha256": "6156d30c0f933e332bf79c404f7131c76cda34fb51178e20d0a9c0c46ff7e93c",
+      "name": "statecore-run_platform_tests",
+      "layer": "ada-unit"
+    },
+    {
+      "argv": [
+        "/workspace/statecore/build/test-bin/run_host_io_tests"
+      ],
+      "cwd": "/workspace/statecore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 19,
+      "seconds": 0.002,
+      "log_sha256": "dcbdd8bf77892cf9ade8b315ad4b4e5cc676249925753458e81fe9068caa5150",
+      "name": "statecore-run_host_io_tests",
+      "layer": "ada-host-read-only"
+    },
+    {
+      "argv": [
+        "/workspace/statecore/build/test-bin/run_state_tests"
+      ],
+      "cwd": "/workspace/statecore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 21,
+      "seconds": 0.001,
+      "log_sha256": "bf2eec73edf40d9fb8e2a043389eb9714285b54026b23bcde417e0cef705e33f",
+      "name": "statecore-run_state_tests",
+      "layer": "ada-unit"
+    },
+    {
+      "argv": [
+        "/workspace/statecore/build/test-bin/run_v2_state_tests"
+      ],
+      "cwd": "/workspace/statecore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 22,
+      "seconds": 0.06,
+      "log_sha256": "eee199da1863a830cdc38c93dc9be23e19a48c0df9af5a568626c97cc126a496",
+      "name": "statecore-run_v2_state_tests",
+      "layer": "ada-unit"
+    },
+    {
+      "argv": [
+        "/workspace/statecore/build/test-bin/run_healing_tests"
+      ],
+      "cwd": "/workspace/statecore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 22,
+      "seconds": 0.015,
+      "log_sha256": "f308f184d7bc397e4c88bbc81cbbc580623698a70546ba0b19f16ff82e288fab",
+      "name": "statecore-run_healing_tests",
+      "layer": "ada-unit"
+    },
+    {
+      "argv": [
+        "/workspace/statecore/build/test-bin/run_cluster_resilience_tests"
+      ],
+      "cwd": "/workspace/statecore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 20,
+      "seconds": 0.002,
+      "log_sha256": "6c8ff480a6097c831fff7e9d13afb117f5c14b9e9925f71e35654e29d7b22daf",
+      "name": "statecore-run_cluster_resilience_tests",
+      "layer": "ada-unit"
+    },
+    {
+      "argv": [
+        "/workspace/statecore/build/test-bin/run_healing_io_tests",
+        "/tmp/mission-engineering-tests-4snuqjdi/run_healing_io_tests-r1ft3bwq/state",
+        "/tmp/mission-engineering-tests-4snuqjdi/run_healing_io_tests-r1ft3bwq/store"
+      ],
+      "cwd": "/workspace/statecore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 20,
+      "seconds": 0.191,
+      "log_sha256": "12729b1a28f6495ced0431b477f38ee08da685259f04485ac671958a558f1eb4",
+      "name": "statecore-run_healing_io_tests",
+      "layer": "ada-isolated-io"
+    },
+    {
+      "argv": [
+        "/workspace/statecore/build/test-bin/run_readmission_tests"
+      ],
+      "cwd": "/workspace/statecore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 20,
+      "seconds": 0.004,
+      "log_sha256": "6918d581e318e957ca2649807bdcd11027512b7a6ee1e4b54c7393881bf77ac5",
+      "name": "statecore-run_readmission_tests",
+      "layer": "ada-unit"
+    },
+    {
+      "argv": [
+        "/workspace/statecore/build/test-bin/run_disaster_tests"
+      ],
+      "cwd": "/workspace/statecore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 20,
+      "seconds": 0.004,
+      "log_sha256": "e5ca429570a0012ffbeb3b0772e8362647f445bf89025bba8de6e27340075744",
+      "name": "statecore-run_disaster_tests",
+      "layer": "ada-unit"
+    },
+    {
+      "argv": [
+        "/workspace/statecore/build/test-bin/run_etcd_limit_tests"
+      ],
+      "cwd": "/workspace/statecore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 20,
+      "seconds": 0.011,
+      "log_sha256": "7f8bf16ab67c3f332081cb89a1a4fbd63fc5479c5dbe24d314d3f0959512530b",
+      "name": "statecore-run_etcd_limit_tests",
+      "layer": "ada-unit"
+    },
+    {
+      "argv": [
+        "/workspace/statecore/build/test-bin/run_etcd_wire_tests"
+      ],
+      "cwd": "/workspace/statecore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 20,
+      "seconds": 0.005,
+      "log_sha256": "32bfee698b1dc16169ca2cfd2b7fd3657e5acbc91e52a67bc1447b73811cf0bd",
+      "name": "statecore-run_etcd_wire_tests",
+      "layer": "ada-unit"
+    },
+    {
+      "argv": [
+        "/workspace/statecore/build/test-bin/run_ras_platform_tests"
+      ],
+      "cwd": "/workspace/statecore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 20,
+      "seconds": 0.004,
+      "log_sha256": "e92377301f047c299999d140d63d3e66d928a200949ad4c9b085716b1ad5ed02",
+      "name": "statecore-run_ras_platform_tests",
+      "layer": "ada-unit"
+    },
+    {
+      "argv": [
+        "/workspace/statecore/build/test-bin/run_xfs_health_tests"
+      ],
+      "cwd": "/workspace/statecore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 0,
+      "seconds": 0.004,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "name": "statecore-run_xfs_health_tests",
+      "layer": "ada-unit"
+    },
+    {
+      "argv": [
+        "make",
+        "compile-all"
+      ],
+      "cwd": "/workspace/controlcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 7678,
+      "seconds": 8.122,
+      "log_sha256": "df6115dc5b3905d7c442dd72753ab759219129547068b6b3abad1e96482f05c2",
+      "name": "controlcore-compile-all",
+      "layer": "ada-build"
+    },
+    {
+      "argv": [
+        "make",
+        "build"
+      ],
+      "cwd": "/workspace/controlcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 4595,
+      "seconds": 0.708,
+      "log_sha256": "beb267a37d4a1ac433ad7681bd93c6589f6895142d728f9a326689a299b6d7ae",
+      "name": "controlcore-application-links",
+      "layer": "ada-build"
+    },
+    {
+      "argv": [
+        "make",
+        "test-build"
+      ],
+      "cwd": "/workspace/controlcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 6292,
+      "seconds": 4.329,
+      "log_sha256": "856c87b28b3b92b17236332a683d99f1ad060cca9daf1c8aec8b418d80243393",
+      "name": "controlcore-tests-build",
+      "layer": "ada-build"
+    },
+    {
+      "argv": [
+        "/workspace/controlcore/build/test-bin/run_manager_model_tests"
+      ],
+      "cwd": "/workspace/controlcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 20,
+      "seconds": 0.002,
+      "log_sha256": "b75f296de58a2338123a34cf73408a27117bc0e5d064279564f47b8d1dd8ae39",
+      "name": "controlcore-run_manager_model_tests",
+      "layer": "ada-unit"
+    },
+    {
+      "argv": [
+        "/workspace/controlcore/build/test-bin/run_manager_vector_tests",
+        "tests/fixtures"
+      ],
+      "cwd": "/workspace/controlcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 20,
+      "seconds": 0.007,
+      "log_sha256": "7b1cdd5d93cf29d102a15eab348d2ec773e2f478334639b8b4350e138c82005f",
+      "name": "controlcore-run_manager_vector_tests",
+      "layer": "ada-unit"
+    },
+    {
+      "argv": [
+        "/workspace/controlcore/build/test-bin/run_manager_storage_tests",
+        "tests/fixtures",
+        "/tmp/mission-engineering-tests-4snuqjdi/run_manager_storage_tests-tlnr2xov/private"
+      ],
+      "cwd": "/workspace/controlcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 20,
+      "seconds": 0.373,
+      "log_sha256": "650e938aa420f74ca52cfb0180fcaca873b3c7dadc814689ae41f6aed51b4ef2",
+      "name": "controlcore-run_manager_storage_tests",
+      "layer": "ada-isolated-io"
+    },
+    {
+      "argv": [
+        "make",
+        "compile-all"
+      ],
+      "cwd": "/workspace/configcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 7577,
+      "seconds": 7.684,
+      "log_sha256": "547d2b7e92d3e62f7ea7748a9368781e72bf8feb2657fdc97e472fab4d10d06a",
+      "name": "configcore-compile-all",
+      "layer": "ada-build"
+    },
+    {
+      "argv": [
+        "make",
+        "build"
+      ],
+      "cwd": "/workspace/configcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 4245,
+      "seconds": 0.374,
+      "log_sha256": "5cf0ad2205e45718afc82548faeb35777d517a73d11feb210c22b2cd0416589b",
+      "name": "configcore-application-links",
+      "layer": "ada-build"
+    },
+    {
+      "argv": [
+        "make",
+        "test-build"
+      ],
+      "cwd": "/workspace/configcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 5846,
+      "seconds": 3.512,
+      "log_sha256": "a993c5ca57814d1bc262bb85c84dc8d9299ef9d74875069fb38cf4a530765dff",
+      "name": "configcore-tests-build",
+      "layer": "ada-build"
+    },
+    {
+      "argv": [
+        "/workspace/configcore/build/test-bin/run_config_tests"
+      ],
+      "cwd": "/workspace/configcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 48,
+      "seconds": 0.012,
+      "log_sha256": "92d09ef91e537ea921427f6aaddc350c32046c5056c0bf26227786dc2648483a",
+      "name": "configcore-run_config_tests",
+      "layer": "ada-unit"
+    },
+    {
+      "argv": [
+        "/workspace/configcore/build/test-bin/run_config_nvidia_tests"
+      ],
+      "cwd": "/workspace/configcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 67,
+      "seconds": 0.012,
+      "log_sha256": "6235b55c1befa357d7f66a30c896a9375a9ec1954a9689b881f990e99c94dae6",
+      "name": "configcore-run_config_nvidia_tests",
+      "layer": "ada-unit"
+    },
+    {
+      "argv": [
+        "/workspace/configcore/build/test-bin/run_config_binding_tests"
+      ],
+      "cwd": "/workspace/configcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 65,
+      "seconds": 0.002,
+      "log_sha256": "91abaaed287d6ba0419c1fc793779fa59ce9020a512695f116a2b73d6927b919",
+      "name": "configcore-run_config_binding_tests",
+      "layer": "ada-unit"
+    },
+    {
+      "argv": [
+        "/workspace/configcore/build/test-bin/run_config_io_tests",
+        "/tmp/mission-engineering-tests-4snuqjdi/run_config_io_tests-f1u0o6aw/inventory"
+      ],
+      "cwd": "/workspace/configcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 51,
+      "seconds": 0.003,
+      "log_sha256": "6737512c60097cf419ef8db89f911e4a6a417bdc1fbe4c89a38b3f07080b9fb5",
+      "name": "configcore-run_config_io_tests",
+      "layer": "ada-isolated-io"
+    },
+    {
+      "argv": [
+        "make",
+        "compile-all"
+      ],
+      "cwd": "/workspace/resolvercore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 9105,
+      "seconds": 7.51,
+      "log_sha256": "e538017bea0ba1780ad5e1b4c8be1b7087d934c27dd0cbac51d46ae09a981607",
+      "name": "resolvercore-compile-all",
+      "layer": "ada-build"
+    },
+    {
+      "argv": [
+        "make",
+        "build"
+      ],
+      "cwd": "/workspace/resolvercore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 5976,
+      "seconds": 0.451,
+      "log_sha256": "0cd3a8c49f67e3892a148418c6f046f802a5cc1ace6c06e9a6a4c4d815557f22",
+      "name": "resolvercore-application-links",
+      "layer": "ada-build"
+    },
+    {
+      "argv": [
+        "make",
+        "test-build"
+      ],
+      "cwd": "/workspace/resolvercore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 6807,
+      "seconds": 1.965,
+      "log_sha256": "430a8af13b91171d494761a6eb6d15683c36939ac46e14da6a1c9096ba47ce9a",
+      "name": "resolvercore-tests-build",
+      "layer": "ada-build"
+    },
+    {
+      "argv": [
+        "/workspace/resolvercore/build/test-bin/run_resolver_tests"
+      ],
+      "cwd": "/workspace/resolvercore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 0,
+      "seconds": 0.02,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "name": "resolvercore-run_resolver_tests",
+      "layer": "ada-unit"
+    },
+    {
+      "argv": [
+        "/workspace/resolvercore/build/test-bin/run_resolver_proof_tests"
+      ],
+      "cwd": "/workspace/resolvercore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 0,
+      "seconds": 0.025,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "name": "resolvercore-run_resolver_proof_tests",
+      "layer": "ada-unit"
+    },
+    {
+      "argv": [
+        "make",
+        "compile-all"
+      ],
+      "cwd": "/workspace/capsulecore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 7560,
+      "seconds": 7.22,
+      "log_sha256": "85c499281789544751c6e89f305ef367dcc426e5da4238d109d44b3d68586531",
+      "name": "capsulecore-compile-all",
+      "layer": "ada-build"
+    },
+    {
+      "argv": [
+        "make",
+        "build"
+      ],
+      "cwd": "/workspace/capsulecore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 4249,
+      "seconds": 0.356,
+      "log_sha256": "bf3d00b9603651f9d1c8913964a49c43b7366c67d6c2b08676668ebe84a9381c",
+      "name": "capsulecore-application-links",
+      "layer": "ada-build"
+    },
+    {
+      "argv": [
+        "make",
+        "test-build"
+      ],
+      "cwd": "/workspace/capsulecore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 5840,
+      "seconds": 3.688,
+      "log_sha256": "d0dfcb3d1ac04774d6fce26fa84ec5350e1d254c3568fda405d144f0be35cf1c",
+      "name": "capsulecore-tests-build",
+      "layer": "ada-build"
+    },
+    {
+      "argv": [
+        "/workspace/capsulecore/build/test-bin/run_capsule_tests"
+      ],
+      "cwd": "/workspace/capsulecore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 0,
+      "seconds": 0.002,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "name": "capsulecore-run_capsule_tests",
+      "layer": "ada-unit"
+    },
+    {
+      "argv": [
+        "/workspace/capsulecore/build/test-bin/run_consent_tests"
+      ],
+      "cwd": "/workspace/capsulecore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 0,
+      "seconds": 0.001,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "name": "capsulecore-run_consent_tests",
+      "layer": "ada-unit"
+    },
+    {
+      "argv": [
+        "/workspace/capsulecore/build/test-bin/run_consent_store_tests",
+        "/tmp/mission-engineering-tests-4snuqjdi/run_consent_store_tests-_117hkid/private"
+      ],
+      "cwd": "/workspace/capsulecore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 0,
+      "seconds": 0.013,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "name": "capsulecore-run_consent_store_tests",
+      "layer": "ada-isolated-io"
+    },
+    {
+      "argv": [
+        "/workspace/capsulecore/build/test-bin/run_consent_channel_tests"
+      ],
+      "cwd": "/workspace/capsulecore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 57,
+      "seconds": 0.103,
+      "log_sha256": "831044df415a9405e7606d321efb2a037cfe26b1858fb75fa26230a5788081ae",
+      "name": "capsulecore-run_consent_channel_tests",
+      "layer": "ada-isolated-io"
+    }
+  ],
+  "environment": {
+    "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+    "kernel": "6.12.107+deb13-amd64",
+    "architecture": "x86_64",
+    "gprbuild": "/usr/bin/gprbuild",
+    "gnatprove": null,
+    "native_fixture_tools": {
+      "gpg": "/usr/bin/gpg",
+      "gpgv": "/usr/bin/gpgv",
+      "gpg-agent": "/usr/bin/gpg-agent",
+      "gpgconf": "/usr/bin/gpgconf",
+      "dpkg-deb": "/usr/bin/dpkg-deb"
+    }
+  },
+  "source_subject_before": "b5d4d412c0d4f11d741f030cb08180d9d2e8534bf73883c8dad8323f2d38127c",
+  "source_subject_after": "b5d4d412c0d4f11d741f030cb08180d9d2e8534bf73883c8dad8323f2d38127c",
+  "result": "pass-for-requested-layer-only",
+  "temporary_io_tree_removed": true,
+  "ended_utc": "2026-09-09T12:42:47.746427+00:00"
+}

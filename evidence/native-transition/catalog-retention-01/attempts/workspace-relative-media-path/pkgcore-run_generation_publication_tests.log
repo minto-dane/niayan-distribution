@@ -1,0 +1,3 @@
+FAIL: native fixture mediaINVALID_INPUT
+
+raised TEST_SUPPORT.FAILURE : native fixture mediaINVALID_INPUT

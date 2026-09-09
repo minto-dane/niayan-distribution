@@ -1,0 +1,5 @@
+Package: retention-rich
+Version: 1
+Architecture: all
+Maintainer: Fixture <fixture@example.invalid>
+Description: retention fixture

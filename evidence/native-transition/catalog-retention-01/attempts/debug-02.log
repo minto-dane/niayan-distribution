@@ -1,0 +1,167 @@
+Running as unit: run-p247656-i247956.scope; invocation ID: d312fcd5ae1a45efb0cc87d7200404c3
+limited-exec: {"scope": "run-p247656-i247956.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Setup
+   [mkdir]        object directory for project Tests
+   [mkdir]        exec directory for project Tests
+Compile
+   [Ada]          run_catalog_store_tests.adb
+   [C]            pkg_deb_stream.c
+   [C]            pkg_deb_decode.c
+   [Ada]          mc_clock.adb
+   [Ada]          mc_codec.adb
+   [Ada]          mc_fs.adb
+   [Ada]          mc_hex.adb
+   [Ada]          mc_posix.ads
+   [Ada]          mc_runtime.adb
+   [Ada]          mc_store.adb
+   [Ada]          mc_text.adb
+   [Ada]          mc_types.adb
+   [Ada]          pkg_catalog_retention.adb
+   [Ada]          pkg_catalog_store.adb
+   [Ada]          pkg_deb_metadata.adb
+   [Ada]          pkg_deb_payload.adb
+   [Ada]          pkg_deb_relations.adb
+   [Ada]          pkg_deb_semantics.adb
+   [Ada]          pkg_payload_index.adb
+   [Ada]          pkg_selected_catalog.adb
+   [Ada]          test_support.adb
+   [Ada]          mc_kernel_read.adb
+   [Ada]          mc_paths.adb
+   [Ada]          mc_sha256.adb
+   [Ada]          mc_dirents.adb
+   [Ada]          pkg_deb_container.adb
+   [Ada]          pkg_deb_control.adb
+   [Ada]          pkg_deb_fields.adb
+   [Ada]          pkg_deb_data_stream.adb
+   [Ada]          pkg_tar_framing.adb
+   [Ada]          pkg_deb_versions.adb
+Bind
+   [gprbind]      run_catalog_store_tests.bexch
+   [Ada]          run_catalog_store_tests.ali
+Link
+   [archive]      libtests.a
+   [index]        libtests.a
+   [link]         run_catalog_store_tests.adb
+CATALOG 89a31cbefdb7297293dc8b7a7315adfadccc79dcaffc580e5ac254d9610ee44f
+PAYLOAD c33fad7c9e72bec9409665ad66334b606240eae1f1b2f2287516bbe440fcfafb
+PACKAGE	00e863e5628799d5a1fe9f24c82311574278d135937e19b635480d563f31b3c5	d6c15ca5460e5d5af3f285ae514607985b74ff69c5a77eea528e2b4e48952672	1a48e9db7d76f50e4e9bd96a8e769a881d54438c3625f99a664a92aff26f44aa	library	2.0	arm64	library	2.0	 1	 0	 0	 0	 0
+FIELD	00e863e5628799d5a1fe9f24c82311574278d135937e19b635480d563f31b3c5	depends	 0	 0
+FIELD	00e863e5628799d5a1fe9f24c82311574278d135937e19b635480d563f31b3c5	pre-depends	 0	 0
+FIELD	00e863e5628799d5a1fe9f24c82311574278d135937e19b635480d563f31b3c5	recommends	 0	 0
+FIELD	00e863e5628799d5a1fe9f24c82311574278d135937e19b635480d563f31b3c5	suggests	 0	 0
+FIELD	00e863e5628799d5a1fe9f24c82311574278d135937e19b635480d563f31b3c5	enhances	 0	 0
+FIELD	00e863e5628799d5a1fe9f24c82311574278d135937e19b635480d563f31b3c5	breaks	 0	 0
+FIELD	00e863e5628799d5a1fe9f24c82311574278d135937e19b635480d563f31b3c5	conflicts	 0	 0
+FIELD	00e863e5628799d5a1fe9f24c82311574278d135937e19b635480d563f31b3c5	replaces	 0	 0
+FIELD	00e863e5628799d5a1fe9f24c82311574278d135937e19b635480d563f31b3c5	provides	 0	 0
+FIELD	00e863e5628799d5a1fe9f24c82311574278d135937e19b635480d563f31b3c5	built-using	 0	 0
+FIELD	00e863e5628799d5a1fe9f24c82311574278d135937e19b635480d563f31b3c5	static-built-using	 0	 0
+PACKAGE	0ca179e6befeb761f3613f1ef57ca892ebc3a6a228dca32f1309f0ac06a7de7e	4a36f6eb7c1b236ab6cb28ddb882919e888bf393dfc00d93008ad6730697f8f7	a31a856f430af395bccd7eb2f142b11ad3ae0fc5daf3acc4ffb341c48a5abd39	empty-package	1	all	empty-package	1	 0	 0	 0	 0	 0
+FIELD	0ca179e6befeb761f3613f1ef57ca892ebc3a6a228dca32f1309f0ac06a7de7e	depends	 0	 0
+FIELD	0ca179e6befeb761f3613f1ef57ca892ebc3a6a228dca32f1309f0ac06a7de7e	pre-depends	 0	 0
+FIELD	0ca179e6befeb761f3613f1ef57ca892ebc3a6a228dca32f1309f0ac06a7de7e	recommends	 0	 0
+FIELD	0ca179e6befeb761f3613f1ef57ca892ebc3a6a228dca32f1309f0ac06a7de7e	suggests	 0	 0
+FIELD	0ca179e6befeb761f3613f1ef57ca892ebc3a6a228dca32f1309f0ac06a7de7e	enhances	 0	 0
+FIELD	0ca179e6befeb761f3613f1ef57ca892ebc3a6a228dca32f1309f0ac06a7de7e	breaks	 0	 0
+FIELD	0ca179e6befeb761f3613f1ef57ca892ebc3a6a228dca32f1309f0ac06a7de7e	conflicts	 0	 0
+FIELD	0ca179e6befeb761f3613f1ef57ca892ebc3a6a228dca32f1309f0ac06a7de7e	replaces	 0	 0
+FIELD	0ca179e6befeb761f3613f1ef57ca892ebc3a6a228dca32f1309f0ac06a7de7e	provides	 0	 0
+FIELD	0ca179e6befeb761f3613f1ef57ca892ebc3a6a228dca32f1309f0ac06a7de7e	built-using	 0	 0
+FIELD	0ca179e6befeb761f3613f1ef57ca892ebc3a6a228dca32f1309f0ac06a7de7e	static-built-using	 0	 0
+PACKAGE	0f6ef3b64df5746218e3e239c356077a2a94257efaf09d350c8ac8e80f88e557	c5aa4b4f698a26b74da5e35d42cba479859bbf631040a790a018960f3f93944b	8b26504fe2a243824b8918153a8beeef7baba147fd2f676990bbbbe4c6172a25	consumer	1:1.0-1	all	consumer-source	1:1.0-2	 0	 1	 1	 1	 0
+FIELD	0f6ef3b64df5746218e3e239c356077a2a94257efaf09d350c8ac8e80f88e557	depends	 3	 2
+ATOM	0f6ef3b64df5746218e3e239c356077a2a94257efaf09d350c8ac8e80f88e557	depends	 1	 1	 4	library	any	2.0
+ATOM	0f6ef3b64df5746218e3e239c356077a2a94257efaf09d350c8ac8e80f88e557	depends	 2	 1	 0	fallback	arm64	
+ATOM	0f6ef3b64df5746218e3e239c356077a2a94257efaf09d350c8ac8e80f88e557	depends	 3	 2	 0	helper		
+FIELD	0f6ef3b64df5746218e3e239c356077a2a94257efaf09d350c8ac8e80f88e557	pre-depends	 1	 1
+ATOM	0f6ef3b64df5746218e3e239c356077a2a94257efaf09d350c8ac8e80f88e557	pre-depends	 1	 1	 4	bootstrap		1:1.0-1
+FIELD	0f6ef3b64df5746218e3e239c356077a2a94257efaf09d350c8ac8e80f88e557	recommends	 2	 1
+ATOM	0f6ef3b64df5746218e3e239c356077a2a94257efaf09d350c8ac8e80f88e557	recommends	 1	 1	 0	optional		
+ATOM	0f6ef3b64df5746218e3e239c356077a2a94257efaf09d350c8ac8e80f88e557	recommends	 2	 1	 0	another		
+FIELD	0f6ef3b64df5746218e3e239c356077a2a94257efaf09d350c8ac8e80f88e557	suggests	 1	 1
+ATOM	0f6ef3b64df5746218e3e239c356077a2a94257efaf09d350c8ac8e80f88e557	suggests	 1	 1	 0	suggestion		
+FIELD	0f6ef3b64df5746218e3e239c356077a2a94257efaf09d350c8ac8e80f88e557	enhances	 1	 1
+ATOM	0f6ef3b64df5746218e3e239c356077a2a94257efaf09d350c8ac8e80f88e557	enhances	 1	 1	 0	editor		
+FIELD	0f6ef3b64df5746218e3e239c356077a2a94257efaf09d350c8ac8e80f88e557	breaks	 1	 1
+ATOM	0f6ef3b64df5746218e3e239c356077a2a94257efaf09d350c8ac8e80f88e557	breaks	 1	 1	 1	obsolete		2
+FIELD	0f6ef3b64df5746218e3e239c356077a2a94257efaf09d350c8ac8e80f88e557	conflicts	 1	 1
+ATOM	0f6ef3b64df5746218e3e239c356077a2a94257efaf09d350c8ac8e80f88e557	conflicts	 1	 1	 0	competing	any	
+FIELD	0f6ef3b64df5746218e3e239c356077a2a94257efaf09d350c8ac8e80f88e557	replaces	 1	 1
+ATOM	0f6ef3b64df5746218e3e239c356077a2a94257efaf09d350c8ac8e80f88e557	replaces	 1	 1	 2	obsolete		1
+FIELD	0f6ef3b64df5746218e3e239c356077a2a94257efaf09d350c8ac8e80f88e557	provides	 2	 2
+ATOM	0f6ef3b64df5746218e3e239c356077a2a94257efaf09d350c8ac8e80f88e557	provides	 1	 1	 3	virtual	amd64	1.0
+ATOM	0f6ef3b64df5746218e3e239c356077a2a94257efaf09d350c8ac8e80f88e557	provides	 2	 2	 0	unversioned		
+FIELD	0f6ef3b64df5746218e3e239c356077a2a94257efaf09d350c8ac8e80f88e557	built-using	 1	 1
+ATOM	0f6ef3b64df5746218e3e239c356077a2a94257efaf09d350c8ac8e80f88e557	built-using	 1	 1	 3	source-one		1.0
+FIELD	0f6ef3b64df5746218e3e239c356077a2a94257efaf09d350c8ac8e80f88e557	static-built-using	 1	 1
+ATOM	0f6ef3b64df5746218e3e239c356077a2a94257efaf09d350c8ac8e80f88e557	static-built-using	 1	 1	 3	source-two		2.0
+PACKAGE	58d44b4ec99a566bea3a42071712b0fb3861d32509cd45603c46ca5ba119d961	fa80064f2359d7350982c364c020e80c8b170652d5aae49e5f7ca4274ebf2a67	cdea0fb2dd479379b2ad793d68104bb27f1945583be0f64680766b3cdca69936	library	2.0	amd64	library	2.0	 1	 0	 0	 0	 0
+FIELD	58d44b4ec99a566bea3a42071712b0fb3861d32509cd45603c46ca5ba119d961	depends	 0	 0
+FIELD	58d44b4ec99a566bea3a42071712b0fb3861d32509cd45603c46ca5ba119d961	pre-depends	 0	 0
+FIELD	58d44b4ec99a566bea3a42071712b0fb3861d32509cd45603c46ca5ba119d961	recommends	 0	 0
+FIELD	58d44b4ec99a566bea3a42071712b0fb3861d32509cd45603c46ca5ba119d961	suggests	 0	 0
+FIELD	58d44b4ec99a566bea3a42071712b0fb3861d32509cd45603c46ca5ba119d961	enhances	 0	 0
+FIELD	58d44b4ec99a566bea3a42071712b0fb3861d32509cd45603c46ca5ba119d961	breaks	 0	 0
+FIELD	58d44b4ec99a566bea3a42071712b0fb3861d32509cd45603c46ca5ba119d961	conflicts	 0	 0
+FIELD	58d44b4ec99a566bea3a42071712b0fb3861d32509cd45603c46ca5ba119d961	replaces	 0	 0
+FIELD	58d44b4ec99a566bea3a42071712b0fb3861d32509cd45603c46ca5ba119d961	provides	 0	 0
+FIELD	58d44b4ec99a566bea3a42071712b0fb3861d32509cd45603c46ca5ba119d961	built-using	 0	 0
+FIELD	58d44b4ec99a566bea3a42071712b0fb3861d32509cd45603c46ca5ba119d961	static-built-using	 0	 0
+REJECT short-header CORRUPT
+REJECT short-header CORRUPT
+REJECT short-header CORRUPT
+REJECT truncated-entry CORRUPT
+REJECT trailing-byte CORRUPT
+REJECT tag-length CORRUPT
+REJECT unknown-version UNSUPPORTED
+REJECT empty-count CORRUPT
+REJECT count-cap EXHAUSTED
+REJECT count-length CORRUPT
+REJECT zero-payload CORRUPT
+REJECT wrong-payload CORRUPT
+REJECT zero-entry-digest CORRUPT
+REJECT zero-entry-digest CORRUPT
+REJECT zero-entry-digest CORRUPT
+REJECT source-order CORRUPT
+REJECT duplicate-original CORRUPT
+REJECT wrong-control-archive CORRUPT
+REJECT wrong-raw-control CONFLICT
+REJECT object-cap EXHAUSTED
+CLOSURE_REJECT empty CORRUPT
+CLOSURE_REJECT short-header CORRUPT
+CLOSURE_REJECT truncated CORRUPT
+CLOSURE_REJECT trailing CORRUPT
+CLOSURE_REJECT version UNSUPPORTED
+CLOSURE_REJECT zero-catalog CORRUPT
+CLOSURE_REJECT zero-payload CORRUPT
+CLOSURE_REJECT wrong-payload CORRUPT
+CLOSURE_REJECT empty-count CORRUPT
+CLOSURE_REJECT count-cap EXHAUSTED
+CLOSURE_REJECT zero-member CORRUPT
+CLOSURE_REJECT duplicate CORRUPT
+CLOSURE_REJECT ordering CORRUPT
+CLOSURE_REJECT omitted-member CORRUPT
+CLOSURE_REJECT omitted-member CORRUPT
+CLOSURE_REJECT omitted-member CORRUPT
+CLOSURE_REJECT omitted-member CORRUPT
+CLOSURE_REJECT omitted-member CORRUPT
+CLOSURE_REJECT omitted-member CORRUPT
+CLOSURE_REJECT omitted-member CORRUPT
+CLOSURE_REJECT omitted-member CORRUPT
+CLOSURE_REJECT omitted-member CORRUPT
+CLOSURE_REJECT omitted-member CORRUPT
+CLOSURE_REJECT omitted-member CORRUPT
+CLOSURE_REJECT omitted-member CORRUPT
+CLOSURE_REJECT omitted-member CORRUPT
+CLOSURE_REJECT omitted-member CORRUPT
+CLOSURE_REJECT omitted-member CORRUPT
+CLOSURE_REJECT omitted-member CORRUPT
+CLOSURE_REJECT omitted-member CORRUPT
+CLOSURE_REJECT omitted-member CORRUPT
+CLOSURE_REJECT omitted-member CORRUPT
+CLOSURE_REJECT omitted-member CORRUPT
+CLOSURE_REJECT omitted-member CORRUPT
+CLOSURE_REJECT extra-member CORRUPT
+CLOSURE bac19bde7cac8c79003ff89dda075e7881da5fea925ff8f17d1c83d894986e12 752 21 35 21
+STORED 89a31cbefdb7297293dc8b7a7315adfadccc79dcaffc580e5ac254d9610ee44f 440
+PASS assertions= 529

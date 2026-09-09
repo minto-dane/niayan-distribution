@@ -1,0 +1,5 @@
+Running as unit: run-p266410-i266710.scope; invocation ID: 169cdac727334595896529c444b590e7
+limited-exec: {"scope": "run-p266410-i266710.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+python3 assurance/ci/run-engineering-checks.py --mode build --include-host-observers
+/workspace/assurance/evidence/engineering-tpzb7wpt/report.json
+make: *** [Makefile:22: check] Error 1

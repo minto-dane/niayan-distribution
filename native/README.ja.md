@@ -83,3 +83,6 @@ inactive generationの組立てを有界な作業へ分け、全入力と所有�
 
 候補の必須依存・競合・architectureと共存版の検査は
 [final-set.ja.md](final-set.ja.md)を参照。実行順序・稼働認可と実効所有権は別工程。
+
+[catalog由来のCAS保持閉包](catalog-retention.ja.md)で、原本・control内容・payloadと属性の
+正確な一覧を既存pinへ束縛する。全世代・効果・認証・復旧rootの保持とGC削除認可は別工程。

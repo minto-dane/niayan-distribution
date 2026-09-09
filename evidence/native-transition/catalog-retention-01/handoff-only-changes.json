@@ -1,0 +1,14 @@
+{
+  "scope": "Post-qualification handoff documents only; excluded from engineering source subject and executable build inputs",
+  "source_subject": "b5d4d412c0d4f11d741f030cb08180d9d2e8534bf73883c8dad8323f2d38127c",
+  "changes": {
+    "AGENTS.md": {
+      "before": "141031fd1e3c4663e520449504f94ae4d876ca1869bd56f053d9e0b4479be020",
+      "after": "b25deee1d970c731e3d5325f8d050d0cbe1c41bbdce7e8e6627e5e105f9a56b6"
+    },
+    "STATUS.ja.md": {
+      "before": "e070924ab6edab25bee7082f0eacd357fa29076e85319e7e060c680711631d1b",
+      "after": "afce67e05450f84346ad6869dd436edf2b8efd347973bb1f2c151745f2762a47"
+    }
+  }
+}

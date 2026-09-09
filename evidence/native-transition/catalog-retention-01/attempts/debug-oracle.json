@@ -1,0 +1,82 @@
+{
+  "result": "pass-for-two-exact-catalog-retention-closures",
+  "catalogs": [
+    {
+      "catalog": "89a31cbefdb7297293dc8b7a7315adfadccc79dcaffc580e5ac254d9610ee44f",
+      "address": "bac19bde7cac8c79003ff89dda075e7881da5fea925ff8f17d1c83d894986e12",
+      "bytes": 752,
+      "objects": 21,
+      "member_sizes": {
+        "00e863e5628799d5a1fe9f24c82311574278d135937e19b635480d563f31b3c5": 20672,
+        "0ca179e6befeb761f3613f1ef57ca892ebc3a6a228dca32f1309f0ac06a7de7e": 20672,
+        "0f6ef3b64df5746218e3e239c356077a2a94257efaf09d350c8ac8e80f88e557": 20672,
+        "1a48e9db7d76f50e4e9bd96a8e769a881d54438c3625f99a664a92aff26f44aa": 164,
+        "4a36f6eb7c1b236ab6cb28ddb882919e888bf393dfc00d93008ad6730697f8f7": 10240,
+        "5861314d7fccb39c2192173240eab44fa35ca66426201ca2acd0630a6258dd51": 5,
+        "58d44b4ec99a566bea3a42071712b0fb3861d32509cd45603c46ca5ba119d961": 20672,
+        "84ff92691f909a05b224e1c56abb4864f01b4f8e3c854e4bb4c7baf1d3f6d652": 10240,
+        "89a31cbefdb7297293dc8b7a7315adfadccc79dcaffc580e5ac254d9610ee44f": 440,
+        "8b26504fe2a243824b8918153a8beeef7baba147fd2f676990bbbbe4c6172a25": 583,
+        "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7": 2,
+        "9eaa8539bed7af004c35769df424bfd21824519adbcfa5c56e40c8255513c015": 10240,
+        "9fe4e95fc4aae1ee4a7a4e713b81429fb6e0084b959c9f48e4b313041fb90e16": 10240,
+        "a31a856f430af395bccd7eb2f142b11ad3ae0fc5daf3acc4ffb341c48a5abd39": 149,
+        "a7937b64b8caa58f03721bb6bacf5c78cb235febe0e70b1b84cd99541461a08e": 5,
+        "c5aa4b4f698a26b74da5e35d42cba479859bbf631040a790a018960f3f93944b": 10240,
+        "cdea0fb2dd479379b2ad793d68104bb27f1945583be0f64680766b3cdca69936": 164,
+        "d6c15ca5460e5d5af3f285ae514607985b74ff69c5a77eea528e2b4e48952672": 10240,
+        "f1b540812d629269d46190018b39a6567710f14e1a85d08a6ec4d49ce328ee21": 10240,
+        "f69162950f235e3cdbbad33f1f912d1a504be90d8a37d002c735d6f3e3882265": 5,
+        "fa80064f2359d7350982c364c020e80c8b170652d5aae49e5f7ca4274ebf2a67": 10240
+      },
+      "originals": [
+        "consumer.deb",
+        "library-amd64.deb",
+        "library-arm64.deb",
+        "empty.deb"
+      ],
+      "pin": "49494949494949494949494949494949",
+      "payload_kinds": [
+        "0"
+      ]
+    },
+    {
+      "catalog": "aa5d8c3fe2f9f05694c11668098809a750733362b74364d48ae79377e6ae67ae",
+      "address": "2da60fe23387d30c8ef57a6e617d691051c6ef73e04ce1341db25c2a951243de",
+      "bytes": 560,
+      "objects": 15,
+      "member_sizes": {
+        "05b6d8bb279781c4c8f7ebf25b98156aa6007b8d540c4e92c769fb5fc1bda4ce": 343,
+        "14fa014d123147d254b35b89c21b535b9cf5d0a1c49090da959893ba98dc68a3": 10240,
+        "2079854a0681437b7cba0ccdfbe5ea50f3192f47560126fb69ccab621c60e51d": 8,
+        "522cde47c52a96319afcce14c0a6d315bc2a87123b3209d8c8ddc874a529f3e1": 391,
+        "818fb62f2115e7bd54c87e71385d74ef1e10fe559ef512993766ba8ab0e1b0a2": 10,
+        "81a6e6d8a4cf5c63e2ad57190e66f1b8fbf79ebb3af4ff4fb1fcfa953a516ea7": 130,
+        "92817920fa441a40d72cd612289876d4b413893cdd7b124869afdca9dc9361e2": 94,
+        "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7": 2,
+        "aa5d8c3fe2f9f05694c11668098809a750733362b74364d48ae79377e6ae67ae": 152,
+        "c6e99d90cadc21257ad511e7987193e3ce6d340057c0341856d4376f2698c99f": 8,
+        "c7bff877aac8a05d1400d2a4769ef01604bf0048c0112df1e8856094d4de52ac": 22,
+        "d0b4978dbac5ba2da1b81b1b7634431752f0f8544e0d0b97d21ac17a83bc839f": 928,
+        "d1b2a59fbea7e20077af9f91b27e95e865061b270be03ff539ab3b73587882e8": 8,
+        "d3b5f42d8a63f02454ce59ec36d72b0cb90e0f02df8b3f1793c6a7d85102542e": 18,
+        "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855": 0
+      },
+      "originals": [
+        "retention-rich.deb"
+      ],
+      "pin": "4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d",
+      "payload_kinds": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ]
+    }
+  ],
+  "rejected_frames": 35,
+  "missing_members": 21
+}

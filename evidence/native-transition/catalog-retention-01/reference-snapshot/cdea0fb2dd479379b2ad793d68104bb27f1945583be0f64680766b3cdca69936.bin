@@ -1,0 +1,7 @@
+Package: library
+Version: 2.0
+Architecture: amd64
+Maintainer: Fixture <fixture@example.invalid>
+Description: candidate fixture
+ 日本語の説明
+Multi-Arch: same
