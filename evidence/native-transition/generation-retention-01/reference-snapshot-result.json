@@ -1,0 +1,33 @@
+{
+  "result": "pass-for-two-published-native-catalog-observations",
+  "root": "1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f",
+  "accepted_plan": "dddd733117493285eeec706258b51d4f5cb2239436655771ba95ff793c70fb82",
+  "observations": 16,
+  "missing_retention_checks": 64,
+  "generations": [
+    {
+      "generation": 1,
+      "descriptor": "56dd4f366aa4ef6fcede75ffcbaed6ae68e9f306421242628eb1897ad02beac1",
+      "catalog": "8ee688345e1d9502ee8cd7277a453c30bfb77b947201beb3300e9df2b8ca321d",
+      "payload": "bbe3e16236d9244db7e5c0b2a9c2c61766b8a921d8b097fcd370e77f152ed931",
+      "claims": 0,
+      "retention": {
+        "hash": "32094e7c613fdb6dffb1f27d926b176f7fd8946b8c2cf3ca9e3b95cb91a1a8ca",
+        "objects": 5
+      }
+    },
+    {
+      "generation": 2,
+      "descriptor": "a857b7c674b4c24980f824506ed4f2cdafa22ef7cb4e1c64346f37a28ff143ed",
+      "catalog": "eaa6a97798ac2f5e7b073ba6c19835d2dc29ce713cc34904872ba9210a5b0c0e",
+      "payload": "78e9ba0b5027271e174c089389b3f35aba833406970e9742d2eb66be6411c139",
+      "claims": 1,
+      "retention": {
+        "hash": "a5b3afc2f4d82a51c9070cd565e93157c01851437d5dc961cac026a8af381932",
+        "objects": 7
+      }
+    }
+  ],
+  "physical_deb_payload_applied": false,
+  "production_authorization": false
+}

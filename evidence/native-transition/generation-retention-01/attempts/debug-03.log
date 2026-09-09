@@ -1,0 +1,106 @@
+Running as unit: run-p304260-i304560.scope; invocation ID: c4d2fc9d143447259d5e1b99d4df738c
+limited-exec: {"scope": "run-p304260-i304560.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Setup
+   [mkdir]        object directory for project Tests
+   [mkdir]        exec directory for project Tests
+Compile
+   [Ada]          run_generation_stage_tests.adb
+   [Ada]          run_generation_publication_tests.adb
+   [C]            pkg_deb_stream.c
+   [C]            pkg_deb_decode.c
+   [Ada]          mc_atomic.adb
+   [Ada]          mc_clock.adb
+   [Ada]          mc_codec.adb
+   [Ada]          mc_dirents.adb
+   [Ada]          mc_fs.adb
+   [Ada]          mc_hex.adb
+   [Ada]          mc_log.adb
+   [Ada]          mc_log_format.adb
+   [Ada]          mc_posix.ads
+   [Ada]          mc_runtime.adb
+   [Ada]          mc_sha256.adb
+   [Ada]          mc_store.adb
+   [Ada]          mc_text.adb
+   [Ada]          mc_types.adb
+   [Ada]          pkg_file_engine.adb
+   [Ada]          pkg_file_plan.adb
+   [Ada]          pkg_file_replay.adb
+   [Ada]          pkg_generation_manifest.adb
+   [Ada]          pkg_generation_stage.adb
+   [Ada]          pkg_image_inspector.adb
+   [Ada]          pkg_recovery_audit.adb
+   [Ada]          pkg_root_state.adb
+   [Ada]          test_support.adb
+   [Ada]          mc_config_auth.adb
+   [Ada]          mc_config_receipt.adb
+   [Ada]          mc_contract_profile.ads
+   [Ada]          mc_stop_barrier.adb
+   [Ada]          pkg_catalog_retention.adb
+   [Ada]          pkg_catalog_store.adb
+   [Ada]          pkg_configuration_engine.adb
+   [Ada]          pkg_deb_metadata.adb
+   [Ada]          pkg_deb_payload.adb
+   [Ada]          pkg_generation_descriptor.adb
+   [Ada]          pkg_generation_publisher.adb
+   [Ada]          pkg_managed_engine.adb
+   [Ada]          pkg_payload_index.adb
+   [Ada]          pkg_quiescent_engine.adb
+   [Ada]          pkg_resolution_engine.adb
+   [Ada]          pkg_selected_catalog.adb
+   [Ada]          resolver_admission.adb
+   [Ada]          resolver_model.adb
+   [Ada]          resolver_verify.adb
+   [Ada]          resolver_wire.adb
+   [Ada]          mc_kernel_read.adb
+   [Ada]          mc_paths.adb
+   [Ada]          mc_journal_budget.ads
+   [Ada]          mc_authentic.adb
+   [Ada]          mc_signatures.adb
+   [Ada]          mc_time_guard.adb
+   [Ada]          pkg_deb_container.adb
+   [Ada]          pkg_deb_control.adb
+   [Ada]          pkg_deb_relations.adb
+   [Ada]          pkg_deb_fields.adb
+   [Ada]          pkg_deb_data_stream.adb
+   [Ada]          pkg_tar_framing.adb
+   [Ada]          pkg_deb_semantics.adb
+   [Ada]          mc_protocol.adb
+   [Ada]          pkg_deb_versions.adb
+Bind
+   [gprbind]      run_generation_stage_tests.bexch
+   [Ada]          run_generation_stage_tests.ali
+   [gprbind]      run_generation_publication_tests.bexch
+   [Ada]          run_generation_publication_tests.ali
+Link
+   [archive]      libtests.a
+   [index]        libtests.a
+   [link]         run_generation_stage_tests.adb
+   [link]         run_generation_publication_tests.adb
+PASS assertions= 1193
+RETENTION_MISSING 0 32094e7c613fdb6dffb1f27d926b176f7fd8946b8c2cf3ca9e3b95cb91a1a8ca IO_ERROR
+RETENTION_MISSING 0 0ca179e6befeb761f3613f1ef57ca892ebc3a6a228dca32f1309f0ac06a7de7e IO_ERROR
+RETENTION_MISSING 0 4a36f6eb7c1b236ab6cb28ddb882919e888bf393dfc00d93008ad6730697f8f7 IO_ERROR
+RETENTION_MISSING 0 84ff92691f909a05b224e1c56abb4864f01b4f8e3c854e4bb4c7baf1d3f6d652 IO_ERROR
+RETENTION_MISSING 0 8ee688345e1d9502ee8cd7277a453c30bfb77b947201beb3300e9df2b8ca321d IO_ERROR
+RETENTION_MISSING 0 a31a856f430af395bccd7eb2f142b11ad3ae0fc5daf3acc4ffb341c48a5abd39 IO_ERROR
+RETENTION_MISSING 1 32094e7c613fdb6dffb1f27d926b176f7fd8946b8c2cf3ca9e3b95cb91a1a8ca IO_ERROR
+RETENTION_MISSING 1 0ca179e6befeb761f3613f1ef57ca892ebc3a6a228dca32f1309f0ac06a7de7e IO_ERROR
+RETENTION_MISSING 1 4a36f6eb7c1b236ab6cb28ddb882919e888bf393dfc00d93008ad6730697f8f7 IO_ERROR
+RETENTION_MISSING 1 84ff92691f909a05b224e1c56abb4864f01b4f8e3c854e4bb4c7baf1d3f6d652 IO_ERROR
+RETENTION_MISSING 1 8ee688345e1d9502ee8cd7277a453c30bfb77b947201beb3300e9df2b8ca321d IO_ERROR
+RETENTION_MISSING 1 a31a856f430af395bccd7eb2f142b11ad3ae0fc5daf3acc4ffb341c48a5abd39 IO_ERROR
+RETENTION_MISSING 2 32094e7c613fdb6dffb1f27d926b176f7fd8946b8c2cf3ca9e3b95cb91a1a8ca IO_ERROR
+RETENTION_MISSING 2 0ca179e6befeb761f3613f1ef57ca892ebc3a6a228dca32f1309f0ac06a7de7e IO_ERROR
+RETENTION_MISSING 2 4a36f6eb7c1b236ab6cb28ddb882919e888bf393dfc00d93008ad6730697f8f7 IO_ERROR
+RETENTION_MISSING 2 84ff92691f909a05b224e1c56abb4864f01b4f8e3c854e4bb4c7baf1d3f6d652 IO_ERROR
+RETENTION_MISSING 2 8ee688345e1d9502ee8cd7277a453c30bfb77b947201beb3300e9df2b8ca321d IO_ERROR
+RETENTION_MISSING 2 a31a856f430af395bccd7eb2f142b11ad3ae0fc5daf3acc4ffb341c48a5abd39 IO_ERROR
+RETENTION_MISSING 3 32094e7c613fdb6dffb1f27d926b176f7fd8946b8c2cf3ca9e3b95cb91a1a8ca IO_ERROR
+RETENTION_MISSING 3 0ca179e6befeb761f3613f1ef57ca892ebc3a6a228dca32f1309f0ac06a7de7e IO_ERROR
+RETENTION_MISSING 3 4a36f6eb7c1b236ab6cb28ddb882919e888bf393dfc00d93008ad6730697f8f7 IO_ERROR
+RETENTION_MISSING 3 84ff92691f909a05b224e1c56abb4864f01b4f8e3c854e4bb4c7baf1d3f6d652 IO_ERROR
+RETENTION_MISSING 3 8ee688345e1d9502ee8cd7277a453c30bfb77b947201beb3300e9df2b8ca321d IO_ERROR
+RETENTION_MISSING 3 a31a856f430af395bccd7eb2f142b11ad3ae0fc5daf3acc4ffb341c48a5abd39 IO_ERROR
+FAIL: approval returned after deadline cannot authorize work
+
+raised TEST_SUPPORT.FAILURE : approval returned after deadline cannot authorize work

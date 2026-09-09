@@ -10,6 +10,7 @@
 1. 独立検査したcatalog、全payload/xattrs、全分割プラン、認証対象receiptを既存CASへ置く。
 2. `Pkg_Generation_Manifest.Encode`でマニフェストを作り、そのhashへ現在の認可を束縛する。
 3. 必須Authorizer付きでStageを生成し、空のprivate root/stateを`Provision`する。
+   四入口へ有限のBOOTTIME期限を明示する。native世代では[版付き保持](generation-retention.ja.md)を束縛する。
 4. `Advance`を呼び、最大1つの非公開分割を適用・確定する。各呼出しで全マニフェストを
    再検査する。`Completed_Batches`は非公開組立ての進捗で、物理検査や製品受入ではない。
 5. 全分割終了後に`Inspect`で全物理内容、項目数、全journalとpinを検査する。
@@ -26,7 +27,7 @@
 
 | 0起点offset | bytes | 内容 |
 | --- | --- | --- |
-| 0 | 8 | `NIAGEN01` |
+| 0 | 8 | `NIAGEN01`（構造形式）または`NIAGEN02`（native） |
 | 8 | 16 | stage identity |
 | 24 | 16 | 要求identity |
 | 40 | 8 | epoch |
@@ -35,11 +36,11 @@
 | 88 | 32 | effect contract SHA-256 |
 | 120 | 4 | 全項目数 |
 | 124 | 4 | 分割数 |
-| 128 | 32 | zero予約領域 |
+| 128 | 32 | v1: zero予約領域、v2: 非zeroのcatalog保持閉包SHA-256 |
 | 160以降 | 64×分割数 | plan SHA-256とreceipt SHA-256 |
 
 最大512分割、1分割1,024項目、合計524,288項目。
-各分割のtransaction identityはSHA-256(`NIAGEN01` + 要求identity + 1起点分割番号u32)の
+各分割のtransaction identityはSHA-256(各形式の8 byte tag + 要求identity + 1起点分割番号u32)の
 先頭16 bytes。分割iのbase/targetはi−1/iで、catalog/契約/epoch/fenceは全分割共通。
 receipt bytesのhash照合だけでは認証ではなく、必須Authorizerが意味と現在の許可を確認する。
 

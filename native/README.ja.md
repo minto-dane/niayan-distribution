@@ -86,3 +86,6 @@ inactive generationの組立てを有界な作業へ分け、全入力と所有�
 
 [catalog由来のCAS保持閉包](catalog-retention.ja.md)で、原本・control内容・payloadと属性の
 正確な一覧を既存pinへ束縛する。全世代・効果・認証・復旧rootの保持とGC削除認可は別工程。
+
+[版付き世代保持](generation-retention.ja.md)は既存世代pinからこの一覧を参照し、
+組立て・公開・現世代native観測で再生成前の欠落検査を必須とする。

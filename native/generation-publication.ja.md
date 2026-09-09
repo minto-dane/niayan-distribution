@@ -14,8 +14,9 @@
 3. 必須の本番認可・barrier・二役の構成証明・独立解決検査・native照合・最終再観測を
    接続したManaged engineと、stage認可・bootstrap認可からPublisherを生成する。
 4. 空のprivate root/stateを明示的にProvisionする。既存管理状態を再初期化しない。
-5. Publishへプランdigestと認証対象health receiptを渡す。stageを全検査して予約を
+5. Publishへプランdigest、認証対象health receipt、有限のBOOTTIME期限を渡す。stageを全検査して予約を
    保持したまま、全Managed guardを通して既存ファイル実行器で確定する。
+   [native形式の保持閉包](generation-retention.ja.md)を必須とし、全掲載objectを先に検査する。
 6. Read_Currentでaccepted planが参照するdescriptorを読む。進行中はIndeterminate、
    初回確定前はStaleとなる。失敗時はdescriptorが空になる。
 

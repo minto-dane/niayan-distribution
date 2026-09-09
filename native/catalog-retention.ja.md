@@ -42,6 +42,7 @@ payload fingerprintはcatalogとの束縛であって、そのhashのCASファ�
 
 `Pin`はPrepare後に既存`MC_Store.Pin`へ渡す。`Verify_Pin`はpinの一致を先に確認し、
 Verifyで全内容を検査する。既存のstage/publication transactionとは異なる新規identityを使う。
+[native世代](generation-retention.ja.md)では直接Pinを重ねず、既存世代manifest pinから閉包を参照する。
 同一identity/対象の再試行は可能だが、異なる型・対象に束縛済みのpinを上書きしない。
 失敗時のPrepare/Pin出力はzero。期限切れや不確定なpin書込では、永続pinが既に存在する場合がある。
 未実行と判断せず、同じidentity/catalogで再試行・検査する。
@@ -63,7 +64,7 @@ Verifyで全内容を検査する。既存のstage/publication transactionとは
 
 これはcatalog由来の保持閉包であり、世代全体の保持・削除認可ではない。
 accepted plan・世代descriptor/manifest・batch plan/receipt・生成効果・認証・復旧起動・
-履歴世代を含む全root集合への接続、保持期間と安全なGCは引き続き必要である。
+履歴世代を含む全root集合の完全な列挙、保持期間と安全なGCは引き続き必要である。
 このAPIはobjectもpinも削除しない。独立したbackup削除方針をCASの削除許可に読み替えない。
 供給認証・本番の同一予約でのadmission・実行phase・所有権・全DEB効果・実root/bootと
 完全置換ISOは、この検証だけで完成扱いにしない。

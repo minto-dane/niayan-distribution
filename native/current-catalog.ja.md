@@ -10,7 +10,8 @@ root markerとroot.state、accepted plan、前後descriptor、stage manifestのp
 commit済みjournalを検査する。未確定transaction、欠落/不正な記録、初期世代は成功扱いにしない。
 この記録検査は従来のRead_Currentと共通である。
 
-同じ予約を保持したまま`Pkg_Catalog_Store.Load`を呼び、descriptorが指定したcatalogから
+同じ予約で[新版manifestの保持閉包](generation-retention.ja.md)と全掲載objectを先に検査する。
+その後に`Pkg_Catalog_Store.Load`を呼び、descriptorが指定したcatalogから
 全元DEBのcontrolとpayloadを再観測する。最後にroot.stateが変わっていないことと期限を確認する。
 全体成功時だけdescriptor、catalog、payload indexを返す。いずれかが失敗した場合は、
 以前の成功結果も含め三つの出力を消す。元DEBのないcacheを成功の代わりに使わない。
@@ -28,7 +29,8 @@ commit済みjournalを検査する。未確定transaction、欠落/不正な記�
 
 UID0は拒否する。期限は観測の前後とnative readerで検査し、同期CAS hash等には外側timeoutも必要。
 CASにderived objectを補う場合があるが、root.stateやjournalの書換え、物理rootの修復は行わない。
-CAS pin閉包と本番の認証済み予約、実行phase・全効果・所有権・実root/bootの接続は未完である。
+catalog由来の保持hashは既存世代pinへ接続した。全履歴/効果/認証/復旧rootの保持と
+本番の認証済み予約、実行phase・全効果・所有権・実root/bootの接続は未完である。
 
 ## 試験
 

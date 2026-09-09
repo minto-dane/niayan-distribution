@@ -1,0 +1,30 @@
+{
+  "container_image": "0c04329a1343a0f1ae82ab931ffc7a7e5cbfdccbf18948e0576366fbf5bb249a",
+  "network": "none",
+  "normal_uid": 1000,
+  "root_uid": 0,
+  "outer_scope": "sh dev/run-limited.sh",
+  "limits": {
+    "memory_bytes": 3221225472,
+    "swap_bytes": 0,
+    "cpu_cores": 1,
+    "pids": 128
+  },
+  "normal": "fresh workspace make check private-dbus JOBS=1, then sh pkgcore/ci/test-all.sh using those exact binaries",
+  "independent": "fresh independent workspace make build JOBS=1, then make -C pkgcore test-build JOBS=1",
+  "root": "sh pkgcore/ci/generation-root-refusal-test.sh",
+  "sanitized": "python3 /evidence/run-sanitized.py",
+  "source_date_epoch": [
+    null,
+    1788739200
+  ],
+  "independent_mtime": 1788652800,
+  "timezones": [
+    "UTC system default in cleaned build environment",
+    "Pacific/Honolulu"
+  ],
+  "fresh_build_trees_required": true,
+  "new_dependencies": [],
+  "shared_runtime_changed": false,
+  "upstream_source_changed": false
+}

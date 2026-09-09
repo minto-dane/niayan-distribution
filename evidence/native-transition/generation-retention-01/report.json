@@ -1,0 +1,54 @@
+{
+  "format": 1,
+  "result": "pass-for-versioned-generation-catalog-retention-only",
+  "baseline_root_commit": "af4142f",
+  "source_subject": "139a883e127a3d94aa964d0f2fc2883346a7277f83c40c4a54dcc076e9ca1384",
+  "source_report": "source-checks/report.json",
+  "post_qualification_changes": "handoff-only-changes.json",
+  "build_input_files": 729,
+  "executables": 29,
+  "ada_mains": 25,
+  "stage_assertions": 1193,
+  "publication_assertions": 1133,
+  "native_observations": 16,
+  "missing_retention_checks": 64,
+  "closure_objects": [
+    5,
+    7
+  ],
+  "closure_bytes": [
+    240,
+    304
+  ],
+  "independent_oracle": "accepted-oracle.json",
+  "root_driver_assertions": [
+    1113,
+    37,
+    3,
+    6,
+    8,
+    5,
+    5,
+    11
+  ],
+  "proof_inputs": "seven exact sets unchanged; affected runtime outside SPARK",
+  "sanitizer_scope": "C boundaries and allocator/library-call interception only; Ada and upstream library code uninstrumented; leaks disabled",
+  "workspace_ada_mains": 71,
+  "workspace_shipped_apps": 18,
+  "private_dbus_tests": [
+    32,
+    10
+  ],
+  "workspace_python_unittest_discovered": 580,
+  "workspace_python_unittest_skipped_in_source_checks": 11,
+  "workspace_checks": 116,
+  "workspace_inputs": 3344,
+  "workspace_report": "workspace-checks/report.json",
+  "workspace_reproducibility": "workspace-reproducibility.json",
+  "full_capacity_qualified": false,
+  "production_authorization": false,
+  "whole_generation_closure_validated": false,
+  "safe_gc_implemented": false,
+  "physical_deb_payload_applied": false,
+  "boot_tested": false
+}
