@@ -13,6 +13,8 @@
 4. `Advance`を呼び、最大1つの非公開分割を適用・確定する。各呼出しで全マニフェストを
    再検査する。`Completed_Batches`は非公開組立ての進捗で、物理検査や製品受入ではない。
 5. 全分割終了後に`Inspect`で全物理内容、項目数、全journalとpinを検査する。
+   公開へ続ける場合は`Verify_And_Hold`で全体検査後も二つのstage予約を保持し、
+   公開完了時に`Close`する。[公開SDK](generation-publication.ja.md)がこの接続を行う。
 
 全関数はUID 0を拒否する。呼出し側は非公開性と管理予約を維持する。
 戻り値が結果不明なら永続状態を保持する。新規rootとして再初期化したり、同じ効果を
@@ -50,13 +52,14 @@ secret/trust/audit等の既存除外は論理パスにも適用する。物理�
 ## 残る製品接続
 
 catalogの意味、緊急修正のholds、全DEB副作用、全特権属性、生成物と構成移行、
-管理認可と独立trust floor、容量予約、実電源断、root/catalogの単一公開commit、
-boot/health/recoveryとの接続は未完。このSDKの分割commitを稼働rootへ転用しない。
+管理認可と独立trust floor、容量予約、実電源断、
+実mount/boot/health/recoveryとの接続は未完。root/catalogの論理的な単一確定は
+[公開SDK](generation-publication.ja.md)へ追加したが、稼働OSへの接続ではない。このSDKの分割commitを稼働rootへ転用しない。
 元ISOの受入を新しい完全置換の受入に流用しない。
 
 ## 開発検証
 
 非特権の`make compile-all build test`に登録した実行試験で検査する。
-root拒否の3入口は、同じビルドを使う使い捨てコンテナ内で
+root拒否の4入口と公開SDKの3入口は、同じビルドを使う使い捨てコンテナ内で
 `sh ci/generation-root-refusal-test.sh`を実行する。workspaceとpkgcoreのCIにも登録した。
 GitHub上の実行は公開先で別途確認する。

@@ -41,19 +41,23 @@
     {
       "id": "NATIVE-003",
       "requirement": "Bounded staging must retain one recoverable root/catalog publication boundary",
-      "state": "isolated-inactive-stage-sdk-tests-passed-publication-not-integrated",
+      "state": "isolated-generation-sdk-implemented-target-activation-not-integrated",
       "hazard": "individually committed file-plan chunks expose a partially updated system",
       "implementation": [
         "../pkgcore/runtime/pkg_generation_manifest.adb",
-        "../pkgcore/runtime/pkg_generation_stage.adb"
+        "../pkgcore/runtime/pkg_generation_stage.adb",
+        "../pkgcore/runtime/pkg_generation_descriptor.adb",
+        "../pkgcore/runtime/pkg_generation_publisher.adb"
       ],
       "tests": [
-        "../pkgcore/tests/run_generation_stage_tests.adb"
+        "../pkgcore/tests/run_generation_stage_tests.adb",
+        "../pkgcore/tests/run_generation_publication_tests.adb"
       ],
       "evidence": [
-        "evidence/native-transition/generation-01/README.ja.md"
+        "evidence/native-transition/generation-01/README.ja.md",
+        "evidence/native-transition/publication-01/README.ja.md"
       ],
-      "remaining": "Connect production managed authority, validated catalog/effects and privileged metadata; capacity reservation, fsync/space/power-loss fault tests, one full-root/catalog publication, independent trust rollback and boot/recovery adapters"
+      "remaining": "Connect production managed authority, validated catalog/effects and privileged metadata; capacity reservation, fsync/space/power-loss fault tests, actual mount/boot activation and recovery, independent trust rollback"
     },
     {
       "id": "HARD-001",

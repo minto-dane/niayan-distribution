@@ -1,0 +1,13 @@
+Scope command line contains environment variable, which is not expanded by default for now, but will be expanded by default in the future. Use --expand-environment=yes/no to explicitly control it as needed.
+Running as unit: run-p11045-i11345.scope; invocation ID: 20175f7c2a0a458589bf941fdf18164e
+limited-exec: {"scope": "run-p11045-i11345.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Compile
+   [Ada]          run_generation_publication_tests.adb
+Bind
+   [gprbind]      run_generation_publication_tests.bexch
+   [Ada]          run_generation_publication_tests.ali
+Link
+   [link]         run_generation_publication_tests.adb
+FAIL: decode last recordCORRUPT
+
+raised TEST_SUPPORT.FAILURE : decode last recordCORRUPT

@@ -1,0 +1,85 @@
+{
+  "schema": "org.niaos.generation-publication-evidence/v1",
+  "scope": "unprivileged logical generation publication SDK; not boot activation or installed package management",
+  "result": "pass-for-recorded-layers",
+  "production_qualified": false,
+  "source_subject": "16a43c7b1adc304efc51f665283e4de70bf674c915a887556ada5b69262b3253",
+  "native": {
+    "returncode": 0,
+    "fresh_independent_copy": true,
+    "commands": [
+      "make compile-all build test"
+    ],
+    "input_sha256_file": "inputs.json",
+    "input_files": 343,
+    "stage_assertions": 1180,
+    "publication_assertions": 333,
+    "test_mains": [
+      "run_file_replay_tests",
+      "run_composition_tests",
+      "run_pkg_tests",
+      "run_rpm_tests",
+      "run_journal_io_tests",
+      "run_v2_pkg_tests",
+      "run_file_engine_tests",
+      "run_repair_tests",
+      "run_retention_batch_tests",
+      "run_enterprise_pkg_tests",
+      "run_pkg_resolution_tests",
+      "run_deb_semantics_tests",
+      "run_generation_stage_tests",
+      "run_generation_publication_tests"
+    ]
+  },
+  "root_refusal": {
+    "returncode": 0,
+    "stage_assertions": 1100,
+    "publication_assertions": 34,
+    "specific_refusal_checks": 7,
+    "source_mount": "read-only",
+    "network": "disabled"
+  },
+  "source_checks": {
+    "returncode": 0,
+    "count": 24,
+    "subject_before": "16a43c7b1adc304efc51f665283e4de70bf674c915a887556ada5b69262b3253",
+    "subject_after": "16a43c7b1adc304efc51f665283e4de70bf674c915a887556ada5b69262b3253",
+    "execution": "limited Distrobox scope, separate from fixed-container Ada execution"
+  },
+  "formal_proof": {
+    "rerun": false,
+    "existing_seven_component_input_sets_unchanged": true,
+    "new_runtime_proven": false
+  },
+  "environment": {
+    "container_image": "localhost/niaos-dev:20260908-gpg",
+    "container_image_id": "0c04329a1343a0f1ae82ab931ffc7a7e5cbfdccbf18948e0576366fbf5bb249a",
+    "limits": {
+      "memory_bytes": 3221225472,
+      "swap_bytes": 0,
+      "cpu_cores": 1,
+      "pids": 128
+    },
+    "native_uid": 1000,
+    "network": "disabled"
+  },
+  "not_qualified": [
+    "actual mount/boot activation and rescue",
+    "production authorization, barriers and independent trust floors",
+    "catalog and emergency-fix holds semantics",
+    "complete original DEB effect closure and privileged metadata",
+    "real power-loss/fsync/space failures",
+    "native-only ISO and full language/UI acceptance",
+    "GitHub execution and publication"
+  ],
+  "reproducibility": {
+    "result": "identical-binaries",
+    "binary_count": 18,
+    "application_binaries": 4,
+    "test_binaries": 14,
+    "second_build_returncode": 0,
+    "same_pinned_toolchain": true,
+    "input_bytes_equal": true,
+    "jobs": 1
+  }
+}

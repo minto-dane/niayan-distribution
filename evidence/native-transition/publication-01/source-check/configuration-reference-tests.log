@@ -1,0 +1,36 @@
+test_3090_minimum_5_percent (test_reference.CapacitySpecification.test_3090_minimum_5_percent) ... ok
+test_round_up_for_small_allocation (test_reference.CapacitySpecification.test_round_up_for_small_allocation) ... ok
+test_sum_not_largest_gpu (test_reference.CapacitySpecification.test_sum_not_largest_gpu) ... ok
+test_cycle_blocked (test_reference.DependencySpecification.test_cycle_blocked) ... ok
+test_initramfs_transitive_recheck (test_reference.DependencySpecification.test_initramfs_transitive_recheck) ... ok
+test_unknown_dependency (test_reference.DependencySpecification.test_unknown_dependency) ... ok
+test_unrelated_unchanged (test_reference.DependencySpecification.test_unrelated_unchanged) ... ok
+test_addition (test_reference.MergeSpecification.test_addition) ... ok
+test_conflict_cannot_return_partial_proposal (test_reference.MergeSpecification.test_conflict_cannot_return_partial_proposal) ... ok
+test_deletion (test_reference.MergeSpecification.test_deletion) ... ok
+test_finite_three_way_truth_table (test_reference.MergeSpecification.test_finite_three_way_truth_table) ... ok
+test_partial_not_complete (test_reference.MergeSpecification.test_partial_not_complete) ... ok
+test_unknown_not_absence (test_reference.MergeSpecification.test_unknown_not_absence) ... ok
+test_real_getdents64_in_private_directory (test_reference.NativeDirectoryProbe.test_real_getdents64_in_private_directory) ... ok
+test_exact_expiration (test_reference.ReceiptSpecification.test_exact_expiration) ... ok
+test_future_observation (test_reference.ReceiptSpecification.test_future_observation) ... ok
+test_positive_before_apply (test_reference.ReceiptSpecification.test_positive_before_apply) ... ok
+test_real_ed25519_changed_subject (test_reference.ReceiptSpecification.test_real_ed25519_changed_subject) ... ok
+test_real_ed25519_role_separation (test_reference.ReceiptSpecification.test_real_ed25519_role_separation) ... ok
+test_replay_floor (test_reference.ReceiptSpecification.test_replay_floor) ... ok
+test_reserved_bytes (test_reference.ReceiptSpecification.test_reserved_bytes) ... ok
+test_restore_requires_compatibility (test_reference.ReceiptSpecification.test_restore_requires_compatibility) ... ok
+test_running_requires_derived_and_running (test_reference.ReceiptSpecification.test_running_requires_derived_and_running) ... ok
+test_unknown_phase (test_reference.ReceiptSpecification.test_unknown_phase) ... ok
+test_unset_floor (test_reference.ReceiptSpecification.test_unset_floor) ... ok
+test_zero_subject (test_reference.ReceiptSpecification.test_zero_subject) ... ok
+test_duplicate_priority (test_reference.SelectionSpecification.test_duplicate_priority) ... ok
+test_lexical_order_across_directories (test_reference.SelectionSpecification.test_lexical_order_across_directories) ... ok
+test_mask_replaces_same_basename (test_reference.SelectionSpecification.test_mask_replaces_same_basename) ... ok
+test_missing_inventory (test_reference.SelectionSpecification.test_missing_inventory) ... ok
+test_shadowed_but_unobserved_still_blocks (test_reference.SelectionSpecification.test_shadowed_but_unobserved_still_blocks) ... ok
+
+----------------------------------------------------------------------
+Ran 31 tests in 0.016s
+
+OK
