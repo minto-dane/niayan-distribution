@@ -1,0 +1,217 @@
+Running as unit: run-p331570-i331870.scope; invocation ID: 1253e33a35d54a128636cb0f74ed5782
+limited-exec: {"scope": "run-p331570-i331870.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+make: Entering directory '/home/nia/devbox/niaos/nia-os-consent/distribution'
+python3 -B -m unittest discover -s native -p 'test_*.py' -v
+test_action_and_selector_ambiguity_rejected (test_interim_commands.InterimCommandTests.test_action_and_selector_ambiguity_rejected) ... ok
+test_all_installed_interim_operations_remain_unavailable (test_interim_commands.InterimCommandTests.test_all_installed_interim_operations_remain_unavailable) ... ok
+test_default_work_directory (test_interim_commands.InterimCommandTests.test_default_work_directory) ... ok
+test_detail_is_original_metadata_and_not_installed_state (test_interim_commands.InterimCommandTests.test_detail_is_original_metadata_and_not_installed_state) ... ok
+test_display_corrupt_or_symlink_package_emits_no_partial_report (test_interim_commands.InterimCommandTests.test_display_corrupt_or_symlink_package_emits_no_partial_report) ... ok
+test_display_escapes_terminal_formatting_and_marks_unknown_reboot (test_interim_commands.InterimCommandTests.test_display_escapes_terminal_formatting_and_marks_unknown_reboot) ... ok
+test_label_binding_and_corrupt_input_precede_output_creation (test_interim_commands.InterimCommandTests.test_label_binding_and_corrupt_input_precede_output_creation) ... ok
+test_label_length_and_interactive_mode_are_distinct (test_interim_commands.InterimCommandTests.test_label_length_and_interactive_mode_are_distinct) ... ok
+test_malformed_control_reports_failure_without_traceback (test_interim_commands.InterimCommandTests.test_malformed_control_reports_failure_without_traceback) ... ok
+test_output_never_overwritten_and_failure_uses_stderr (test_interim_commands.InterimCommandTests.test_output_never_overwritten_and_failure_uses_stderr) ... ok
+test_real_build_display_and_reproducible_bytes (test_interim_commands.InterimCommandTests.test_real_build_display_and_reproducible_bytes) ... ok
+test_work_directory_symlink_is_not_followed (test_interim_commands.InterimCommandTests.test_work_directory_symlink_is_not_followed) ... ok
+test_exact_artifact_and_references_use_real_delegated_signatures (test_interim_intake.InterimIntakeTests.test_exact_artifact_and_references_use_real_delegated_signatures) ... ok
+test_expired_and_future_artifacts_rejected_even_when_signed (test_interim_intake.InterimIntakeTests.test_expired_and_future_artifacts_rejected_even_when_signed) ... ok
+test_failed_authentication_never_creates_output (test_interim_intake.InterimIntakeTests.test_failed_authentication_never_creates_output) ... ok
+test_foreign_download_url_and_invalid_syntax (test_interim_intake.InterimIntakeTests.test_foreign_download_url_and_invalid_syntax) ... ok
+test_independent_security_epoch_floor (test_interim_intake.InterimIntakeTests.test_independent_security_epoch_floor) ... ok
+test_outer_signature_cannot_supply_missing_reference (test_interim_intake.InterimIntakeTests.test_outer_signature_cannot_supply_missing_reference) ... ok
+test_policy_change_prevents_output_publication (test_interim_intake.InterimIntakeTests.test_policy_change_prevents_output_publication) ... ok
+test_real_download_retains_exact_bytes_and_does_not_overwrite (test_interim_intake.InterimIntakeTests.test_real_download_retains_exact_bytes_and_does_not_overwrite) ... ok
+test_resigned_reference_with_different_hash_is_rejected (test_interim_intake.InterimIntakeTests.test_resigned_reference_with_different_hash_is_rejected) ... ok
+test_untrusted_policy_owner_permissions_and_links_are_rejected (test_interim_intake.InterimIntakeTests.test_untrusted_policy_owner_permissions_and_links_are_rejected) ... ok
+test_build_output_and_inspection_are_not_installation_or_trust (test_interim_package.InterimPackageTests.test_build_output_and_inspection_are_not_installation_or_trust) ... ok
+test_build_refuses_symlink_inputs_and_output (test_interim_package.InterimPackageTests.test_build_refuses_symlink_inputs_and_output) ... ok
+test_duplicate_identity_and_unchanged_replacement (test_interim_package.InterimPackageTests.test_duplicate_identity_and_unchanged_replacement) ... ok
+test_fix_dependency_cannot_also_be_superseded (test_interim_package.InterimPackageTests.test_fix_dependency_cannot_also_be_superseded) ... ok
+test_framing_rejects_truncation_corruption_and_extra_data (test_interim_package.InterimPackageTests.test_framing_rejects_truncation_corruption_and_extra_data) ... ok
+test_invalid_platform_times_and_advisory (test_interim_package.InterimPackageTests.test_invalid_platform_times_and_advisory) ... ok
+test_length_bounds_before_payload_read (test_interim_package.InterimPackageTests.test_length_bounds_before_payload_read) ... ok
+test_only_canonical_manifest_encoding (test_interim_package.InterimPackageTests.test_only_canonical_manifest_encoding) ... ok
+test_original_control_identity_is_checked (test_interim_package.InterimPackageTests.test_original_control_identity_is_checked) ... ok
+test_reproducible_roundtrip_preserves_original_debs (test_interim_package.InterimPackageTests.test_reproducible_roundtrip_preserves_original_debs) ... ok
+test_unknown_manifest_fields_never_become_authority (test_interim_package.InterimPackageTests.test_unknown_manifest_fields_never_become_authority) ... ok
+test_unlisted_missing_and_tampered_artifacts (test_interim_package.InterimPackageTests.test_unlisted_missing_and_tampered_artifacts) ... ok
+test_command_inventory_matches_actual_development_entrypoints (test_package_cli.Commands.test_command_inventory_matches_actual_development_entrypoints) ... ok
+test_geninstall_uses_same_installp_intent (test_package_cli.Commands.test_geninstall_uses_same_installp_intent) ... ok
+test_grouped_flags_and_attached_source (test_package_cli.Commands.test_grouped_flags_and_attached_source) ... ok
+test_instfix_p_lists_packages_not_installp_preview (test_package_cli.Commands.test_instfix_p_lists_packages_not_installp_preview) ... ok
+test_inutoc_default_and_explicit_directory (test_package_cli.Commands.test_inutoc_default_and_explicit_directory) ... ok
+test_invalid_and_bounded_input (test_package_cli.Commands.test_invalid_and_bounded_input) ... ok
+test_invalid_installp_combinations (test_package_cli.Commands.test_invalid_installp_combinations) ... ok
+test_lifecycle_is_not_collapsed (test_package_cli.Commands.test_lifecycle_is_not_collapsed) ... ok
+test_list_file_remains_unread_intent (test_package_cli.Commands.test_list_file_remains_unread_intent) ... ok
+test_lppchk_is_read_only_and_modes_are_distinct (test_package_cli.Commands.test_lppchk_is_read_only_and_modes_are_distinct) ... ok
+test_lppmgr_prompt_is_not_preview_and_list_overrides_removal (test_package_cli.Commands.test_lppmgr_prompt_is_not_preview_and_list_overrides_removal) ... ok
+test_lslpp_history_and_literal_patterns (test_package_cli.Commands.test_lslpp_history_and_literal_patterns) ... ok
+test_no_silent_compatibility_options (test_package_cli.Commands.test_no_silent_compatibility_options) ... ok
+test_preview_all_mutations (test_package_cli.Commands.test_preview_all_mutations) ... ok
+test_real_named_entry_points_and_no_fallback (test_package_cli.Commands.test_real_named_entry_points_and_no_fallback) ... ok
+test_suma_does_not_accept_foreign_specific_or_ambiguous_settings (test_package_cli.Commands.test_suma_does_not_accept_foreign_specific_or_ambiguous_settings) ... ok
+test_suma_schedule_bounds (test_package_cli.Commands.test_suma_schedule_bounds) ... ok
+test_suma_task_operations_and_attributes (test_package_cli.Commands.test_suma_task_operations_and_attributes) ... ok
+test_unconnected_actions_never_report_success (test_package_cli.Commands.test_unconnected_actions_never_report_success) ... ok
+test_update_all_is_installed_selection_not_media_all (test_package_cli.Commands.test_update_all_is_installed_selection_not_media_all) ... ok
+test_cache_binding_permissions_links_and_lock_replacement (test_repository.RepositoryTests.test_cache_binding_permissions_links_and_lock_replacement) ... ok
+test_cache_lock_is_exclusive_and_released_on_failure (test_repository.RepositoryTests.test_cache_lock_is_exclusive_and_released_on_failure) ... ok
+test_delegated_publisher_cannot_publish_outside_scope (test_repository.RepositoryTests.test_delegated_publisher_cannot_publish_outside_scope) ... ok
+test_download_corruption_and_session_poisoning (test_repository.RepositoryTests.test_download_corruption_and_session_poisoning) ... ok
+test_expired_signed_metadata_is_rejected (test_repository.RepositoryTests.test_expired_signed_metadata_is_rejected) ... ok
+test_independent_bootstrap_pin_and_root_threshold (test_repository.RepositoryTests.test_independent_bootstrap_pin_and_root_threshold) ... ok
+test_missing_cache_is_never_automatically_reset (test_repository.RepositoryTests.test_missing_cache_is_never_automatically_reset) ... ok
+test_network_urls_are_not_inferred_from_untrusted_names (test_repository.RepositoryTests.test_network_urls_are_not_inferred_from_untrusted_names) ... ok
+test_persisted_timestamp_rejects_rollback_on_next_process_context (test_repository.RepositoryTests.test_persisted_timestamp_rejects_rollback_on_next_process_context) ... ok
+test_real_chain_target_hash_and_cache_reopen (test_repository.RepositoryTests.test_real_chain_target_hash_and_cache_reopen) ... ok
+test_root_rotation_requires_old_and_new_root_signatures (test_repository.RepositoryTests.test_root_rotation_requires_old_and_new_root_signatures) ... ok
+test_rotated_root_revokes_old_target_publisher (test_repository.RepositoryTests.test_rotated_root_revokes_old_target_publisher) ... ok
+test_sync_failure_never_returns_authenticated_target (test_repository.RepositoryTests.test_sync_failure_never_returns_authenticated_target) ... ok
+test_target_limit_checked_before_payload_download (test_repository.RepositoryTests.test_target_limit_checked_before_payload_download) ... ok
+test_wrong_signature_and_mixed_snapshot_rejected (test_repository.RepositoryTests.test_wrong_signature_and_mixed_snapshot_rejected) ... ok
+test_actual_https_and_signed_artifact (test_repository_https.HTTPSTests.test_actual_https_and_signed_artifact) ... ok
+test_corrupt_payload_from_real_https_fails_verification (test_repository_https.HTTPSTests.test_corrupt_payload_from_real_https_fails_verification) ... ok
+test_redirect_is_rejected_without_following_it (test_repository_https.HTTPSTests.test_redirect_is_rejected_without_following_it) ... ok
+test_untrusted_tls_certificate_is_rejected (test_repository_https.HTTPSTests.test_untrusted_tls_certificate_is_rejected) ... ERROR
+test_incomplete_or_duplicate_state_rejected (test_transition.TransitionTests.test_incomplete_or_duplicate_state_rejected) ... ok
+test_missing_file_lists_not_empty_success (test_transition.TransitionTests.test_missing_file_lists_not_empty_success) ... ok
+test_native_any_requires_multiarch_allowed (test_transition.TransitionTests.test_native_any_requires_multiarch_allowed) ... ok
+test_original_alternative_and_versioned_provides_preserved (test_transition.TransitionTests.test_original_alternative_and_versioned_provides_preserved) ... ok
+test_real_control_inventory_and_removal_breakage (test_transition.TransitionTests.test_real_control_inventory_and_removal_breakage) ... ok
+test_exact_artifact_and_source_binding (test_update_metadata.UpdateMetadataTests.test_exact_artifact_and_source_binding) ... ok
+test_malformed_and_ambiguous_advisories_rejected (test_update_metadata.UpdateMetadataTests.test_malformed_and_ambiguous_advisories_rejected) ... ok
+test_missing_urgency_is_unknown_not_low (test_update_metadata.UpdateMetadataTests.test_missing_urgency_is_unknown_not_low) ... ok
+test_native_version_order_and_release_selection (test_update_metadata.UpdateMetadataTests.test_native_version_order_and_release_selection) ... ok
+test_real_deb_intake_keeps_observation_separate_from_trust (test_update_metadata.UpdateMetadataTests.test_real_deb_intake_keeps_observation_separate_from_trust) ... ok
+test_source_version_not_binary_rebuild_version (test_update_metadata.UpdateMetadataTests.test_source_version_not_binary_rebuild_version) ... ok
+test_upload_urgency_case_and_comment_are_preserved (test_update_metadata.UpdateMetadataTests.test_upload_urgency_case_and_comment_are_preserved) ... ok
+
+======================================================================
+ERROR: test_untrusted_tls_certificate_is_rejected (test_repository_https.HTTPSTests.test_untrusted_tls_certificate_is_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 1105, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 741, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+        sock=sock,
+    ...<14 lines>...
+        assert_fingerprint=self.assert_fingerprint,
+    )
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 920, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+        sock=sock,
+    ...<8 lines>...
+        tls_in_tls=tls_in_tls,
+    )
+  File "/usr/lib/python3/dist-packages/urllib3/util/ssl_.py", line 460, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+  File "/usr/lib/python3/dist-packages/urllib3/util/ssl_.py", line 504, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        session=session
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/lib/python3.13/ssl.py", line 1076, in _create
+    self.do_handshake()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/ssl.py", line 1372, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1029)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1029)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='127.0.0.1', port=43659): Max retries exceeded with url: /metadata/2.root.json (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1029)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nia/devbox/niaos/nia-os-consent/distribution/native/test_repository_https.py", line 101, in test_untrusted_tls_certificate_is_rejected
+    with self.client(False):
+         ~~~~~~~~~~~^^^^^^^
+  File "/home/nia/devbox/niaos/nia-os-consent/distribution/native/repository.py", line 229, in __enter__
+    self.updater.refresh()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3/dist-packages/tuf/ngclient/updater.py", line 143, in refresh
+    self._load_root()
+    ~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3/dist-packages/tuf/ngclient/updater.py", line 327, in _load_root
+    data = self._download_metadata(
+        Root.type,
+        self.config.root_max_length,
+        next_version,
+    )
+  File "/usr/lib/python3/dist-packages/tuf/ngclient/updater.py", line 286, in _download_metadata
+    return self._fetcher.download_bytes(url, length)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/tuf/ngclient/fetcher.py", line 138, in download_bytes
+    with self.download_file(url, max_length) as dl_file:
+         ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/contextlib.py", line 141, in __enter__
+    return next(self.gen)
+  File "/usr/lib/python3/dist-packages/tuf/ngclient/fetcher.py", line 101, in download_file
+    for chunk in chunks:
+                 ^^^^^^
+  File "/home/nia/devbox/niaos/nia-os-consent/distribution/native/repository.py", line 84, in _fetch
+    with self.session.get(url, stream=True, allow_redirects=False, timeout=(5, 5),
+         ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                          headers={'Accept-Encoding': 'identity'}) as response:
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 698, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='127.0.0.1', port=43659): Max retries exceeded with url: /metadata/2.root.json (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1029)')))
+
+----------------------------------------------------------------------
+Ran 85 tests in 1.760s
+
+FAILED (errors=1)
+make: *** [Makefile:10: native-check] Error 1
+make: Leaving directory '/home/nia/devbox/niaos/nia-os-consent/distribution'

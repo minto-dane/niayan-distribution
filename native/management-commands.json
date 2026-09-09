@@ -233,8 +233,7 @@
     {
       "name": "interim-fix-intake",
       "commands": [
-        "emgr_check_ifixes",
-        "emgr_download_ifix"
+        "emgr_check_ifixes"
       ],
       "state": "planned",
       "target": "shared authenticated advisory and native interim artifact intake",
@@ -359,6 +358,16 @@
       "target": "External hardware diagnostics and platform service aids",
       "remaining": "Reference primarily addresses hardware/service aids, firmware and media operations. Do not turn it into an alias for a Nia package verification command.",
       "reference_status": "Official command/concept references reviewed for purpose and adoption boundary; complete option/response qualification remains separate."
+    },
+    {
+      "name": "interim-download",
+      "commands": [
+        "emgr_download_ifix"
+      ],
+      "state": "authenticated-fetch-only",
+      "target": "Shared upstream TUF repository client and exact native interim/reference intake",
+      "remaining": "Provision production trust and persistent rollback-resistant cache; installed service integration, response qualification, offline media closure and real deployment acceptance remain.",
+      "reference_status": "Official download flags and default directory reviewed; development response is not reference-qualified."
     }
   ],
   "public_entry_policy": "Only the adopted command family exposes Nia-owned administrative actions; no public nia/niactl/missionctl compatibility aliases. Internal SDKs and workers are implementation details.",

@@ -41,8 +41,8 @@ def _pairs(items):
 def _number(_):
     raise Invalid('floating point and nonfinite values are not supported')
 
-def parse_json(raw: bytes):
-    if len(raw) > MAX_JSON:
+def parse_json(raw: bytes, *, limit=MAX_JSON):
+    if len(raw) > limit:
         raise Invalid('JSON byte limit')
     try:
         return json.loads(raw.decode('utf-8'), object_pairs_hook=_pairs,
@@ -76,7 +76,7 @@ def directory_fd(path: Path | str) -> int:
     except BaseException:
         os.close(fd); raise
 
-def read_at(root: Path | str, name: str, limit=MAX_JSON) -> bytes:
+def read_at(root: Path | str, name: str, limit=MAX_JSON, *, owner: int | None = None) -> bytes:
     parts = relative(name).split('/')
     parent = directory_fd(root)
     try:
@@ -88,6 +88,8 @@ def read_at(root: Path | str, name: str, limit=MAX_JSON) -> bytes:
             before = os.fstat(fd)
             if not stat.S_ISREG(before.st_mode) or before.st_size > limit:
                 raise Invalid('input is not a bounded regular file')
+            if owner is not None and (before.st_uid != owner or before.st_mode & 0o022 or before.st_nlink != 1):
+                raise Invalid('input is not protected policy owned by the expected authority')
             chunks=[]; count=0
             while True:
                 chunk = os.read(fd, min(1024*1024, limit+1-count))
@@ -105,9 +107,9 @@ def read_at(root: Path | str, name: str, limit=MAX_JSON) -> bytes:
     finally:
         os.close(parent)
 
-def read_file(path: Path | str, limit=MAX_JSON) -> bytes:
+def read_file(path: Path | str, limit=MAX_JSON, *, owner: int | None = None) -> bytes:
     p=Path(path)
-    return read_at(p.parent,p.name,limit)
+    return read_at(p.parent,p.name,limit,owner=owner)
 
 def write_new(path: Path | str, data: bytes) -> None:
     """Publish only to an absent name; never replace a user's file or a symlink."""

@@ -1,0 +1,7 @@
+Running as unit: run-p342482-i342782.scope; invocation ID: a148107e46034668984143ee79ea934a
+limited-exec: {"scope": "run-p342482-i342782.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+rehash: warning: skipping ca-certificates.crt, it does not contain exactly one certificate or CRL
+PASS public command: real HTTPS, system CA, fixed root policy, delegated signatures and exact bytes
+PASS public command: existing output retained and failure reported
+PASS public command: authenticated but incorrectly bound reference creates no output
+PASS public command: writable policy rejected without traceback or output

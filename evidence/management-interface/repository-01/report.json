@@ -1,0 +1,451 @@
+{
+  "schema": "org.niaos.management-interface-validation/v1",
+  "source_subject": "05eefe705d9265ec11e71181f0b90ba5dfcb14ed0e55758b174f53394b0a7876",
+  "source_subject_scope": "complete source pipeline; exact tool runtime inputs listed separately below",
+  "tests": {
+    "native": 91,
+    "hardening": 4,
+    "image_tools": 16,
+    "public_cli_in_disposable_root_container": 4,
+    "source_pipeline_steps": 24
+  },
+  "result": "pass-for-tested-development-scope",
+  "container_image": "sha256:a10a1f95c260d36e207f8668161ab66c3dd459f99497a0e36188b13b882296bd",
+  "tuf_version": "5.1.0-2",
+  "securesystemslib_version": "1.2.0-2",
+  "repository_authentication_implemented": true,
+  "interim_reference_bytes_authenticated": true,
+  "atomic_trust_checkpoint_implemented": true,
+  "real_public_download_tested": true,
+  "contract_semantics_checked": false,
+  "production_trust_provisioned": false,
+  "native_runtime_connected": false,
+  "interim_installation_implemented": false,
+  "response_compatibility_qualified": false,
+  "new_iso_built": false,
+  "formal_proof_rerun": false,
+  "inputs": [
+    {
+      "path": ".github/workflows/image-tools.yml",
+      "sha256": "1868611728242acade193046faef03bc3681171602c4833421d9a39e457dc051"
+    },
+    {
+      "path": "Makefile",
+      "sha256": "c7438daccfb1725894af037bd581ba3cd183cfb7e181893bbec4b5dfc8aea099"
+    },
+    {
+      "path": "native/Containerfile",
+      "sha256": "26ec0d5469d6ab51252f28b948ff480761b45cd17ab3af3e860327be44414dec"
+    },
+    {
+      "path": "native/README.ja.md",
+      "sha256": "b0fc0544a68c5ddb4d7bc9f48bcf96e9a895c69111eca9aaa623ae06861b13e7"
+    },
+    {
+      "path": "native/acceptance.json",
+      "sha256": "415137880e500c1b5f3b3df7d1409dc1fc18241b309218aa89744ea2a6a8f42b"
+    },
+    {
+      "path": "native/audit_transition.py",
+      "sha256": "16390ec59e5ef41cf903484afe213d1d6d8d5099627c7f07b31cf898ae13420e"
+    },
+    {
+      "path": "native/bin/emgr",
+      "sha256": "9b5f36e86b78f99ffadff07b4634d16928e205e034ceef9f3d19d06306405b19"
+    },
+    {
+      "path": "native/bin/emgr_download_ifix",
+      "sha256": "9b5f36e86b78f99ffadff07b4634d16928e205e034ceef9f3d19d06306405b19"
+    },
+    {
+      "path": "native/bin/epkg",
+      "sha256": "9b5f36e86b78f99ffadff07b4634d16928e205e034ceef9f3d19d06306405b19"
+    },
+    {
+      "path": "native/bin/geninstall",
+      "sha256": "5a6bf38bd7e19708fae590f33892fd79ff4df9ff2581c387f94c0e907e54e44c"
+    },
+    {
+      "path": "native/bin/install_all_updates",
+      "sha256": "5a6bf38bd7e19708fae590f33892fd79ff4df9ff2581c387f94c0e907e54e44c"
+    },
+    {
+      "path": "native/bin/installp",
+      "sha256": "5a6bf38bd7e19708fae590f33892fd79ff4df9ff2581c387f94c0e907e54e44c"
+    },
+    {
+      "path": "native/bin/instfix",
+      "sha256": "5a6bf38bd7e19708fae590f33892fd79ff4df9ff2581c387f94c0e907e54e44c"
+    },
+    {
+      "path": "native/bin/inutoc",
+      "sha256": "5a6bf38bd7e19708fae590f33892fd79ff4df9ff2581c387f94c0e907e54e44c"
+    },
+    {
+      "path": "native/bin/lppchk",
+      "sha256": "5a6bf38bd7e19708fae590f33892fd79ff4df9ff2581c387f94c0e907e54e44c"
+    },
+    {
+      "path": "native/bin/lppmgr",
+      "sha256": "5a6bf38bd7e19708fae590f33892fd79ff4df9ff2581c387f94c0e907e54e44c"
+    },
+    {
+      "path": "native/bin/lslpp",
+      "sha256": "5a6bf38bd7e19708fae590f33892fd79ff4df9ff2581c387f94c0e907e54e44c"
+    },
+    {
+      "path": "native/bin/suma",
+      "sha256": "5a6bf38bd7e19708fae590f33892fd79ff4df9ff2581c387f94c0e907e54e44c"
+    },
+    {
+      "path": "native/check_download_cli.py",
+      "sha256": "4355cdf73c3b8f222f22ec9d1fc0fee6cd213c2ae0c0f4212907fcc784170510"
+    },
+    {
+      "path": "native/command-review.ja.md",
+      "sha256": "f4c15001c0adb7d2e3500c4ab9961a1937f5eb8da911e9c97a68ee2ad106595b"
+    },
+    {
+      "path": "native/commands.ja.md",
+      "sha256": "6b3058a4bcb0cdd15d8007d398ed9f95582447d495f02fcb64a0b4f6e99724db"
+    },
+    {
+      "path": "native/interim-package.ja.md",
+      "sha256": "bf67b3f6a480b9cfe3c4fe5d1f1a62b3b8be06062ab93d26563d9149a7c7e732"
+    },
+    {
+      "path": "native/interim_commands.py",
+      "sha256": "de3c262fe18b54f7904e6f94ff04456a114cc72d3d78be02f87d6020841d89c1"
+    },
+    {
+      "path": "native/interim_download.py",
+      "sha256": "fae9c6c8826a04c90fcc7709d00ae95951bc9799223ae956c54d3d52496be612"
+    },
+    {
+      "path": "native/interim_intake.py",
+      "sha256": "446dd339afd631b7ef0a4b9965b7d4b3cec8c297c118898e0516ba79c6789dbf"
+    },
+    {
+      "path": "native/interim_package.py",
+      "sha256": "aa0e15fe00d69590e08323dbc03d52f384e594e9850d3570f2098a7faa46336e"
+    },
+    {
+      "path": "native/management-commands.json",
+      "sha256": "de2ec979037b4f62161b10247f2d1e0fa165d4ba766acf3421ab3bb9f6559087"
+    },
+    {
+      "path": "native/package_cli.py",
+      "sha256": "0cfb9be07e651d60560d0161e79a03e9d5d9392cd1422194a52e5a3e3cde142d"
+    },
+    {
+      "path": "native/repository.ja.md",
+      "sha256": "081ff2801a6305f907a40f54de7da0b2d4f5785c869e925dfbfa04e5f041edb9"
+    },
+    {
+      "path": "native/repository.py",
+      "sha256": "9b2536e9dff9a5e704cc503d990658dd4538bd9df95cbbc1e22bd933698034f6"
+    },
+    {
+      "path": "native/test-packages.txt",
+      "sha256": "89af386cab66895bc0e497a92631e39a8802e1be4b4e07ed37dcb1ad4dced74c"
+    },
+    {
+      "path": "native/test_interim_commands.py",
+      "sha256": "afbb9c41ed35870bb082fe41b115d586ed187c871cc1d7875bb2b55e1e407187"
+    },
+    {
+      "path": "native/test_interim_intake.py",
+      "sha256": "56613cace250e661dfb53e0b6966fcb40271bccbaada19308b9f5c777470eccf"
+    },
+    {
+      "path": "native/test_interim_package.py",
+      "sha256": "c93bd61c834d31dbca6e19d8ae8b1fa79f918b73c0aed76de94383387c00ec8f"
+    },
+    {
+      "path": "native/test_package_cli.py",
+      "sha256": "3f70fcbfd7cd8ca93ccedac935adaee504baf5302dc3e0930b0aa334bb24b489"
+    },
+    {
+      "path": "native/test_repository.py",
+      "sha256": "5276b5b7fac6bffecab5afab59a3e44796ac9ae8f300a854ae5b0ea20a7c14cf"
+    },
+    {
+      "path": "native/test_repository_https.py",
+      "sha256": "348f162378ade92fed719ca5c7033ca9c0cb0dc5a2336dc9242cee93a74d8c06"
+    },
+    {
+      "path": "native/test_transition.py",
+      "sha256": "f5cc4e6e026f92501f709a8cba57156a2b7f2399243670c4c47da51e671823a5"
+    },
+    {
+      "path": "native/test_update_metadata.py",
+      "sha256": "9cf67b5f664448356e8155c30cc61ecbe0358a61302f79556eb96cfb7882795d"
+    },
+    {
+      "path": "native/update-metadata.ja.md",
+      "sha256": "6a68291d34501fc92525d25aad779313444949da8e8b1f601263aa80997e7d86"
+    },
+    {
+      "path": "native/update_metadata.py",
+      "sha256": "d80aff3bdc3642832b97e38bf5ba002e6591f96775eed3bbde93e9f8e8dd6553"
+    },
+    {
+      "path": "tools/deb_archive.py",
+      "sha256": "e19af8d9271ed6a847edad7636985ed1a7f9d09b17e47759c4531ba96ac142bf"
+    },
+    {
+      "path": "tools/debian_semantics.py",
+      "sha256": "ffb35309c71450f5e7409fe4a1f1b52d0ea0f2867ef2be547408956513df7802"
+    },
+    {
+      "path": "tools/nia_common.py",
+      "sha256": "528aef5b9aeff742feb2142c8a7bd847fd36f4107fe06d3ae2497e839a5fb21e"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "README.ja.md",
+      "sha256": "78ba24fe0c3144199549450af1a633369c772fb57d8091d92ecba2c6774407e1"
+    },
+    {
+      "path": "attempt-container-tests.log",
+      "sha256": "bf25b2a1063dec730fb6172ad2aac9c55f707f2048e4e9da3d94b959efd78148"
+    },
+    {
+      "path": "attempt-https-tests.log",
+      "sha256": "336376653e5ba72484fc28ce1c396fe1d18a0c6d07b3cd406506817a810903c3"
+    },
+    {
+      "path": "attempt-source-check/assurance-contract.log",
+      "sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6"
+    },
+    {
+      "path": "attempt-source-check/capsule-policy-tree-tests.log",
+      "sha256": "09dcb4726fc7db71dbdeadd553f35d0269ef1ca1c160a0e32c73ce24af3fc2f0"
+    },
+    {
+      "path": "attempt-source-check/capsulecore-contract.log",
+      "sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6"
+    },
+    {
+      "path": "attempt-source-check/cohort-recovery-tests.log",
+      "sha256": "bca3672ddb287e59ec72425169ad1b1e2a9f1eb1850677fbf3a7a853207f35d9"
+    },
+    {
+      "path": "attempt-source-check/component-ci-generated.log",
+      "sha256": "1db3672a59693062371fa4f7e9ba43ba4e524f680fd97326a42a4836b12aac6e"
+    },
+    {
+      "path": "attempt-source-check/configcore-contract.log",
+      "sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6"
+    },
+    {
+      "path": "attempt-source-check/configuration-reference-tests.log",
+      "sha256": "5f930b1b51ce5c23c4ae0e8bf8301ba588b3a1112496d1140b2de01b3e8aefa9"
+    },
+    {
+      "path": "attempt-source-check/controlcore-contract.log",
+      "sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6"
+    },
+    {
+      "path": "attempt-source-check/distribution-tool-tests.log",
+      "sha256": "f6db2183d557bd6082bf077ea5087d57a51409d735292e4f5ec35560832f4b0c"
+    },
+    {
+      "path": "attempt-source-check/engineering-unittests.log",
+      "sha256": "bdf86d7c889c145adf06ebe2a5b770862047f303490f984fc2b80911b376748a"
+    },
+    {
+      "path": "attempt-source-check/evidence-manifest.sha256",
+      "sha256": "d5e1ed284bd1de756e9a330f6259192b3a5162bcb1d026bf0d1772702739b5e8"
+    },
+    {
+      "path": "attempt-source-check/gprbuild-version.log",
+      "sha256": "580b7d8d6b27ce742268f9fa3342c978e0240a050fb3ec9fb44ea3f063b5e8ca"
+    },
+    {
+      "path": "attempt-source-check/manager-implementation-profile.log",
+      "sha256": "8e6503258bf0c12b82bcd750e52f16e350fbf7b3651488a01f41bf2f4a57dedc"
+    },
+    {
+      "path": "attempt-source-check/manager-reference-tests.log",
+      "sha256": "6da559879077988c823a858d482045b172362cf400fb55c1a18465ee2fdbcba3"
+    },
+    {
+      "path": "attempt-source-check/native-resolver-lock.log",
+      "sha256": "e40adfcec7696f7f8117e538efe7e131aa99fef55ba2547468edc807fc208366"
+    },
+    {
+      "path": "attempt-source-check/nia-product-audit.log",
+      "sha256": "00409abba36a7b163fe40a8c972abf9c90cb2d267dbd4388e7cbfe598584d953"
+    },
+    {
+      "path": "attempt-source-check/pkgcore-contract.log",
+      "sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6"
+    },
+    {
+      "path": "attempt-source-check/report.json",
+      "sha256": "2409e175499b08529f545975944244371282bc4e988018563eca83406264d9dc"
+    },
+    {
+      "path": "attempt-source-check/resolution-reference-tests.log",
+      "sha256": "fe6483ff1598414a780e70a78345d3b47c1b362b23c6ed2a1e42d5228a213301"
+    },
+    {
+      "path": "attempt-source-check/resolver-neutral-boundary.log",
+      "sha256": "9924a0e4760c31c44af6d27b6aeb0921e82fce58ec82e233c686c8eaa7aad157"
+    },
+    {
+      "path": "attempt-source-check/resolver-source-profile.log",
+      "sha256": "d20516e36c781b18a0702dbd98ab8969ebb69c5f076558f497a888e4cf5e62b2"
+    },
+    {
+      "path": "attempt-source-check/resolvercore-contract.log",
+      "sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6"
+    },
+    {
+      "path": "attempt-source-check/statecore-contract.log",
+      "sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6"
+    },
+    {
+      "path": "attempt-source-check/syntax-and-doc-links.log",
+      "sha256": "dbb8e487784ebf57c2eb05985d2f9a20f952b7b285c4aac70753d56a0605d427"
+    },
+    {
+      "path": "attempt-source-check/traceability.json",
+      "sha256": "44ed822e3b53073140ddc2a74230e87507cdcdb4cf457b3f8837da2021e6ced7"
+    },
+    {
+      "path": "attempt-source-check/unified-architecture-audit.log",
+      "sha256": "1ef3fbb7be6d3746b16ab44a266d6395512ea54d9c33c505940103f1ca9835e2"
+    },
+    {
+      "path": "container-build.log",
+      "sha256": "f987f77dafb33ff1cbb79f9af5c3af23f19a9c0e346be2a951383bebc1dbc415"
+    },
+    {
+      "path": "engineering-check.json",
+      "sha256": "95aa255d0315a59109097bd36bca8b3b0e3e4531a31a3053a20c7a2decbfc588"
+    },
+    {
+      "path": "public-cli.log",
+      "sha256": "e40c6e3c00805ab849e306fa6361fff241d5682ba0dbcb8c1228e4ea992d2ef4"
+    },
+    {
+      "path": "source-check/assurance-contract.log",
+      "sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6"
+    },
+    {
+      "path": "source-check/capsule-policy-tree-tests.log",
+      "sha256": "c480fe2b73a9bc3ba5cca43780b0c02884a002a5c9d3cdc2c7a6dc7a0697a4fb"
+    },
+    {
+      "path": "source-check/capsulecore-contract.log",
+      "sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6"
+    },
+    {
+      "path": "source-check/cohort-recovery-tests.log",
+      "sha256": "98a4f31e5c526009f0381d84d73fb1e69cadab9002a56778e17cf68ea11ebb5c"
+    },
+    {
+      "path": "source-check/component-ci-generated.log",
+      "sha256": "e46a10320f07874e9bf758914c1cea6f1cde6ed4e70b81a989379528d1c3812f"
+    },
+    {
+      "path": "source-check/configcore-contract.log",
+      "sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6"
+    },
+    {
+      "path": "source-check/configuration-reference-tests.log",
+      "sha256": "5f930b1b51ce5c23c4ae0e8bf8301ba588b3a1112496d1140b2de01b3e8aefa9"
+    },
+    {
+      "path": "source-check/controlcore-contract.log",
+      "sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6"
+    },
+    {
+      "path": "source-check/distribution-tool-tests.log",
+      "sha256": "c5f3e1189ccdc2d12493d375455d6cb406d20de611ad7b30005e117eac7b669f"
+    },
+    {
+      "path": "source-check/engineering-unittests.log",
+      "sha256": "49c9669003c8a18de395c76814597a5a3b8b45c3c8cbedc2de769538f255a52c"
+    },
+    {
+      "path": "source-check/evidence-manifest.sha256",
+      "sha256": "1f9daae26b3f5f071c13a613885078113e374b5631dbfc6a087da3c3f7450996"
+    },
+    {
+      "path": "source-check/gprbuild-version.log",
+      "sha256": "580b7d8d6b27ce742268f9fa3342c978e0240a050fb3ec9fb44ea3f063b5e8ca"
+    },
+    {
+      "path": "source-check/manager-implementation-profile.log",
+      "sha256": "8e6503258bf0c12b82bcd750e52f16e350fbf7b3651488a01f41bf2f4a57dedc"
+    },
+    {
+      "path": "source-check/manager-reference-tests.log",
+      "sha256": "537ecd7cdd913094877f260fc26bc940d5a5e455ea05af02072d15f2de620ab6"
+    },
+    {
+      "path": "source-check/native-resolver-lock.log",
+      "sha256": "e40adfcec7696f7f8117e538efe7e131aa99fef55ba2547468edc807fc208366"
+    },
+    {
+      "path": "source-check/nia-product-audit.log",
+      "sha256": "817fbe6168d7ff7114a4cc03db471963ba01f502029b2c1d4940e52ce6d58c83"
+    },
+    {
+      "path": "source-check/pkgcore-contract.log",
+      "sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6"
+    },
+    {
+      "path": "source-check/report.json",
+      "sha256": "93954cd544f80621d60ff2f4178b3b139b3b35805dbda22b0557723e630fec39"
+    },
+    {
+      "path": "source-check/resolution-reference-tests.log",
+      "sha256": "92c07248620a2f1efae1c0ba9458b5833083185d2ebf5219fc5da4cd374dc2d9"
+    },
+    {
+      "path": "source-check/resolver-neutral-boundary.log",
+      "sha256": "9924a0e4760c31c44af6d27b6aeb0921e82fce58ec82e233c686c8eaa7aad157"
+    },
+    {
+      "path": "source-check/resolver-source-profile.log",
+      "sha256": "d20516e36c781b18a0702dbd98ab8969ebb69c5f076558f497a888e4cf5e62b2"
+    },
+    {
+      "path": "source-check/resolvercore-contract.log",
+      "sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6"
+    },
+    {
+      "path": "source-check/statecore-contract.log",
+      "sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6"
+    },
+    {
+      "path": "source-check/syntax-and-doc-links.log",
+      "sha256": "dbb8e487784ebf57c2eb05985d2f9a20f952b7b285c4aac70753d56a0605d427"
+    },
+    {
+      "path": "source-check/traceability.json",
+      "sha256": "c449827d56ab2136f7d9b332f4f2e75218dd5dfcc398680ee134e10c0ec48ff6"
+    },
+    {
+      "path": "source-check/unified-architecture-audit.log",
+      "sha256": "908b820800b0bd94ac05c89e61c178c5e9715ee81feb1106de549ffc5f50771a"
+    },
+    {
+      "path": "source-check-launcher.log",
+      "sha256": "e4bcfdff4c3b1e4bffcf4841c759788a34de6fbc6f6bea89ac58625e3c40b143"
+    },
+    {
+      "path": "test-packages.txt",
+      "sha256": "b419617c162afb5f16c87081b23dd9f9d87bc7983a8ea270c20c334d6563b5c9"
+    },
+    {
+      "path": "tool-tests.log",
+      "sha256": "6b5086912d805df47f2f22231507dfc0bbbe5a69f858760267ac413e22ddcade"
+    }
+  ]
+}

@@ -5,10 +5,21 @@ permissions:
 jobs:
   image-tools:
     runs-on: ubuntu-24.04
-    timeout-minutes: 5
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
         with:
           persist-credentials: false
-      - name: Check source preparation, collection and acceptance tools
-        run: make image-check
+      - name: Build the pinned Debian test environment
+        run: docker build -f native/Containerfile -t nia-native-tests .
+      - name: Check source preparation, authenticated supply and acceptance tools
+        run: |
+          docker run --rm --network=none --user "$(id -u):$(id -g)" \
+            --memory=3g --memory-swap=3g --cpus=1 --pids-limit=128 \
+            -e HOME=/tmp -v "$PWD:/source" nia-native-tests
+      - name: Exercise the public download command in a disposable root container
+        run: |
+          docker run --rm --network=none --user 0:0 \
+            --memory=3g --memory-swap=3g --cpus=1 --pids-limit=128 \
+            -v "$PWD:/source:ro" nia-native-tests \
+            python3 -B native/check_download_cli.py

@@ -2,8 +2,10 @@
 
 製品判断は[0003](../docs/decisions/0003-management-interface.ja.md)。
 追加の対象と採用境界は[調査記録](command-review.ja.md)とコマンド台帳を参照。
-`package_cli.py`は11コマンドの引数を、未認証の構造化された操作要求へ変換する。
+`package_cli.py`は12コマンドの引数を、未認証の構造化された操作要求へ変換する。
 `epkg -e`のローカル作成と`emgr -d`の表示は[成果物工具](interim-package.ja.md)へ接続した。
+`emgr_download_ifix -L URL [-P DIRECTORY]`は[共通の供給認証](repository.ja.md)を使い、
+あらかじめ配備されたroot所有policyと信頼cacheに従って成果物を取得する。
 稼働実行器やcatalogには接続していない。`bin/`は開発用の入口であり、
 パッケージやISOには組み込んでいない。稼働状態の変更・照会・事前検査は終了値1で未接続を返す。
 ローカル成果物操作の成功とヘルプは終了値0、構文エラーは2となる。

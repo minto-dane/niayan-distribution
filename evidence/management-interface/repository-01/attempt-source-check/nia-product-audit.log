@@ -1,0 +1,43 @@
+{
+  "schema": "org.niaos.product-audit/v1",
+  "result": "source-coherence-pass",
+  "product": "Nia OS",
+  "upstream": "debian-forky",
+  "transport": "deb",
+  "host_package_authority": "nia",
+  "native_db_handoff_required": false,
+  "profiles": 1,
+  "state_domains": 14,
+  "release_gates": 43,
+  "packaging": {
+    "covered_application_mains": [
+      "assurance/assure",
+      "assurance/controlctl",
+      "assurance/platformctl",
+      "pkgcore/pkg_recoveryctl",
+      "pkgcore/pkgctl",
+      "pkgcore/pkg_worker",
+      "pkgcore/pkg_scrubctl",
+      "statecore/hostctl",
+      "statecore/statectl",
+      "statecore/state_worker",
+      "statecore/state_recovery_worker",
+      "statecore/state_healing_admin",
+      "controlcore/nia",
+      "controlcore/missionctl",
+      "controlcore/mission_sign",
+      "configcore/configctl",
+      "resolvercore/resolverctl",
+      "capsulecore/capsulectl"
+    ],
+    "transport": "deb",
+    "package_build_executed": false,
+    "native_dependencies_qualified": false,
+    "legacy_rpm_recipes_active": false
+  },
+  "execution_permit": false,
+  "bootable_image": false,
+  "formal_proof": false,
+  "production_qualified": false,
+  "source_subject": "92aa8ebe18e04d5a3c7345ba6a77c0a3d6cec5ca923741a826d71ca20da9f92b"
+}

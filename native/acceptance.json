@@ -104,19 +104,26 @@
     {
       "id": "NATIVE-005",
       "requirement": "Manage native interim fixes in the same catalog and transaction authority as normal packages",
-      "state": "local-artifact-build-display-tested-runtime-not-integrated",
+      "state": "artifact-build-display-authenticated-fetch-tested-runtime-not-integrated",
       "hazard": "independent fix database, stale base binding or uncoordinated holds permit inconsistent updates",
       "implementation": [
         "native/interim_package.py",
         "native/interim_commands.py",
-        "native/package_cli.py"
+        "native/package_cli.py",
+        "native/interim_intake.py",
+        "native/interim_download.py",
+        "native/repository.py"
       ],
       "tests": [
         "native/test_interim_package.py",
-        "native/test_interim_commands.py"
+        "native/test_interim_commands.py",
+        "native/test_interim_intake.py",
+        "native/check_download_cli.py"
       ],
-      "evidence": [],
-      "remaining": "Publisher and contract authentication, freshness/current base, emgr execution and shared holds/ownership; normal-update supersession, interruption and recovery acceptance"
+      "evidence": [
+        "evidence/management-interface/repository-01/README.ja.md"
+      ],
+      "remaining": "Contract semantics and Debian archive chain, independent time/trust floor, current base, emgr execution and shared holds/ownership; normal-update supersession, interruption and recovery acceptance"
     },
     {
       "id": "NATIVE-006",
@@ -138,13 +145,36 @@
       "state": "development-response-tests-only-reference-not-qualified",
       "hazard": "different status, exit codes, prompts or output fields mislead users and break administrative scripts",
       "implementation": [
-        "native/interim_commands.py"
+        "native/interim_commands.py",
+        "native/interim_download.py"
       ],
       "tests": [
-        "native/test_interim_commands.py"
+        "native/test_interim_commands.py",
+        "native/check_download_cli.py"
       ],
       "evidence": [],
       "remaining": "per-command output and behavior fixtures, TTY/non-TTY, stdout/stderr, quiet/verbose, locale, delimiter-safe native versions, cancellation, partial failure and recovery; real catalog/executor and UI acceptance"
+    },
+    {
+      "id": "NATIVE-008",
+      "requirement": "Authenticate shared repository supply and persist complete metadata version floors before returning targets",
+      "state": "signed-fixture-https-and-checkpoint-tests-passed-production-trust-not-provisioned",
+      "hazard": "Untrusted bootstrap, stale metadata, out-of-scope delegation, partial cache publication or mistaken execution authority admits unsafe supply",
+      "implementation": [
+        "native/repository.py",
+        "native/interim_intake.py",
+        "native/interim_download.py"
+      ],
+      "tests": [
+        "native/test_repository.py",
+        "native/test_repository_https.py",
+        "native/test_interim_intake.py",
+        "native/check_download_cli.py"
+      ],
+      "evidence": [
+        "evidence/management-interface/repository-01/README.ja.md"
+      ],
+      "remaining": "Production keys and provisioning, independent rollback-resistant trust floor/time, service isolation and deadline, contract semantics and Debian archive chain, actual power-loss qualification and managed-engine integration"
     }
   ]
 }

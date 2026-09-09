@@ -34,6 +34,7 @@ Niaのトランザクションが必要とする外部観測や副作用adapter�
 | `inutoc`・`lppmgr` | 配布索引の構築とメディアの参照を考慮した管理 |
 | `emgr` | 暫定・緊急修正の適用、一覧、検査、削除とパッケージ保留 |
 | `epkg` | 暫定・緊急修正成果物の作成 |
+| `emgr_download_ifix` | 共通の認証済み供給元から暫定・緊急修正を取得 |
 | `smit`・`smitty` | Niaの対話管理。`update_all`等のfast pathも同じ操作へ接続 |
 
 これは実装済み一覧ではない。[状態台帳](../../native/management-commands.json)と
@@ -88,7 +89,9 @@ Niaの内部JSON・SDKの診断文を、そのまま利用者向け応答とし�
 有効化条件、復旧条件、発行・失効世代を含める。成果物作成と発行認可は分離する。
 任意のhost scriptや一時的なファイル上書きを修正成果物として認めない。
 [native v1形式](../../native/interim-package.ja.md)の作成器・読取器と、
-epkgのテンプレート作成・emgrの内容表示を実装した。署名検証器と稼働操作は未接続である。
+epkgのテンプレート作成・emgrの内容表示を実装した。
+[共通の供給認証](../../native/repository.ja.md)は上流TUFを用い、通常成果物と同じ
+信頼cacheで署名・委譲・期限・参照hashを検査する。稼働操作は未接続である。
 
 `emgr`は通常パッケージと同じcatalog、writer予約、CAS/WAL、設定・効果検査を使う。
 別の導入DBは作らない。catalogはベース、現在有効な修正、実際の有効版と所有権を

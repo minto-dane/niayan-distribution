@@ -182,7 +182,7 @@ class Commands(unittest.TestCase):
             for name in family['commands']:
                 self.assertNotIn(name, names)
                 names.add(name)
-                if family['state'] in ('grammar-only', 'local-artifact-only'):
+                if family['state'] in ('grammar-only', 'local-artifact-only', 'authenticated-fetch-only'):
                     parsed.add(name)
         self.assertEqual(parsed, set(HELP))
         self.assertEqual({p.name for p in (root / 'bin').iterdir()}, parsed)

@@ -51,6 +51,7 @@ HELP = {
              'suma -l [TASK ...]\nsuma {-u | -d} TASK\nsuma {-c | -D}'),
     'lppmgr': 'lppmgr -d SOURCE [-r | -m DIRECTORY] [-l] [-u] [-b] [-x] [-p] [-t] [-s] [-V]',
     'epkg': 'epkg [-w WORK_DIRECTORY] [-e CONTROL_FILE] LABEL',
+    'emgr_download_ifix': 'emgr_download_ifix -L URL [-P DIRECTORY]',
     'emgr': ('emgr -d [-v 1|2|3] {-e PACKAGE_FILE | PACKAGE_FILE}\n'
              'emgr {-l | -c} [-L LABEL | -n NUMBER | -u VUID] [-v 1|2|3]\n'
              'emgr -r {-L LABEL | -n NUMBER | -u VUID} [-p] [-q]\n'
@@ -68,6 +69,7 @@ SPECS = {
     'suma': 'xws:a:lcDud',
     'lppmgr': 'd:rm:lubxptsV',
     'epkg': 'w:e:',
+    'emgr_download_ifix': 'L:P:',
     'emgr': 'de:lcrPL:n:u:v:pq',
 }
 
@@ -254,6 +256,9 @@ def parse(command: str, argv: list[str]) -> Request:
                       'fetch-task-run' if 'x' in flags else 'fetch-task-save')
             # Action=Preview describes the fetch task. Saving/scheduling that
             # task is still a mutation, so it is not a global read-only flag.
+    elif command == 'emgr_download_ifix':
+        require('L' in values and not operands, 'specify -L URL, without operands')
+        action = 'interim-download'
     elif command == 'epkg':
         require(len(operands) == 1, 'specify one interim fix label')
         require(bool(re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9_.+-]{0,99}', operands[0])),
@@ -306,6 +311,7 @@ def main(command: str, argv: list[str]) -> int:
         print(HELP[command])
         print('\nNiaOS development interface; native service is not connected.\n'
               'Local epkg template builds and emgr -d displays are available.\n'
+              'emgr_download_ifix requires provisioned authenticated repository policy.\n'
               'Installed-package operations and interactive packaging are unavailable.\n'
               'Debian package names/versions are retained. Other reference-platform options are rejected.')
         return 0
@@ -317,6 +323,9 @@ def main(command: str, argv: list[str]) -> int:
     if request.action in ('interim-build', 'interim-display'):
         from interim_commands import execute_local
         return execute_local(request)
+    if request.action == 'interim-download':
+        from interim_download import execute_download
+        return execute_download(request)
     # No fake preview/list/verification success and no fallback to another writer.
     # A future transport must submit this untrusted intent to the same native
     # authority used by GUI/automatic updates and propagate its actual outcome.

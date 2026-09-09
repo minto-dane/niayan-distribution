@@ -2,7 +2,8 @@
 
 `interim_package.py`は、元のDEBを変更しない決定的な作成器・読取器である。
 `epkg`のテンプレート作成と`emgr -d`の内容表示へ接続した。
-署名検証、稼働中の対象版照合、保留、適用・削除は未接続である。
+`emgr_download_ifix`の[共通供給認証](repository.ja.md)では、外側のTUF署名と
+契約・対応ソース参照の原本バイト列を検証する。稼働中の対象版照合、保留、適用・削除は未接続である。
 この成果物を構文検査できたことは、信頼や実行許可を意味しない。
 
 ## 開発用入口
@@ -69,9 +70,10 @@ activationは`new-process`、`service-restart`、`relogin`、`node-reboot`、
 
 ## 信頼・応答・受入
 
-成果物は未署名であり、契約と対応ソースの参照先は認証も取得もしていない。
-現在時刻、失効、issuer、信頼epoch、稼働baseとの一致、実効果の閉包は、
-通常パッケージと同じintake・catalog・managed engineで検査する必要がある。
+ローカル作成・表示自体は署名検証を行わない。供給時にはTUFの署名対象として公開する。
+共通intakeは署名・委譲・metadata版・期限・security epochと参照バイト列を検査する。
+契約の意味、Debian archiveの信頼chain、稼働baseとの一致、実効果の閉包は、
+通常パッケージと同じcatalog・managed engineへ接続して検査する必要がある。
 別の修正DBや特権Python writerは作らない。
 
 表示は元DEBのファイル一覧とサイズ・digest、宣言された対象版・activationを使う。

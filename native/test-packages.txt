@@ -1,0 +1,6 @@
+ca-certificates
+git
+make
+python3
+python3-cryptography
+python3-tuf
