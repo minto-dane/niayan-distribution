@@ -1,0 +1,26 @@
+# 既存世代の変更集合の検証
+
+通常更新の前後catalogから正確な変更集合を作り、target関係と旧Essential/Protectedの保持を
+検査する読取SDKの記録。実行入力と結果は`report.json`、全保存ファイルは`SHA256SUMS`へ束縛する。
+
+固定コンテナでpkgcore全source・4アプリ・24 Ada mainをビルドし、既存試験と
+新規3045 assertionsを実行した。36合成原本・44ケースの変更全件と原本/control、前後catalog、
+target receipt、plan hashは独立読取器の計算と一致した。既存の最終集合898ケースと
+固定dpkg 1.22.22のsimulationも不一致なし。後者は実行phase順序の検証ではない。
+
+23ケースは通常変更として成立し、17ケースは保護移行が必要として拒否、4ケースは
+target関係違反として拒否した。保護flag維持はNiaの通常更新policyであり、
+上流が全てのflag変更を同じように拒否すると主張するものではない。
+
+独立した二ビルドの28実行ファイルがbyte一致し、全28 ELFの緩和設定と7本のroot拒否driverが成功した。
+720入力をcheckout・通常・独立・sanitizedの全コピーへ照合した。ASan/UBSanリンク下も3045 assertions成功。
+ソース24工程は成功し、前後source subjectは`646d1c1d56d1adb351034dee09978af06516d47a531fdc11a0acfc2160888c65`で一致した。
+ASan/UBSanはC境界とallocator/library callの検査で、Adaと上流library本体は非計測、
+leak検査は無効。既存7repoの証明入力はexact membershipとhashが不変、新runtimeはSPARK対象外。
+
+`attempts/`には初回のAda構文エラーと、空catalogの既存契約に反した試験入力の失敗を残す。
+後者は通常の未変更packageを共通に含む試験世代へ修正した。既存catalogの非空契約は変更していない。
+接頭辞のあるpackage名の順序は、name/architectureのtuple順になるよう修正し独立deltaへ照合した。
+
+全OS原本集合・最大容量・認証済み前世代のguard下照合・保護移行・bootstrap・rollback floor・
+実行phaseと全効果・所有権とalias・CAS pin閉包・実root/boot・完全置換ISOは未受入である。

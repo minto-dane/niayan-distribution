@@ -1,0 +1,31 @@
+Running as unit: run-p183850-i184150.scope; invocation ID: 995bb183fe1a4e03bfbfa92ca85489f3
+limited-exec: {"scope": "run-p183850-i184150.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Compile
+   [Ada]          pkg_deb_transition.adb
+   [Ada]          pkg_payload_index.adb
+   [Ada]          pkg_selected_catalog.adb
+   [Ada]          test_support.adb
+   [Ada]          mc_kernel_read.adb
+   [Ada]          mc_codec.adb
+   [Ada]          mc_paths.adb
+   [Ada]          mc_sha256.adb
+   [Ada]          mc_dirents.adb
+   [Ada]          pkg_deb_semantics.adb
+   [Ada]          pkg_deb_versions.adb
+   [Ada]          pkg_deb_relations.adb
+   [Ada]          pkg_deb_container.adb
+   [Ada]          pkg_deb_data_stream.adb
+   [Ada]          pkg_tar_framing.adb
+   [Ada]          pkg_deb_metadata.adb
+   [Ada]          pkg_deb_fields.adb
+   [Ada]          pkg_deb_control.adb
+Bind
+   [gprbind]      run_deb_transition_tests.bexch
+   [Ada]          run_deb_transition_tests.ali
+Link
+   [archive]      libtests.a
+   [index]        libtests.a
+   [link]         run_deb_transition_tests.adb
+FAIL: payload indexINVALID_INPUT
+
+raised TEST_SUPPORT.FAILURE : payload indexINVALID_INPUT

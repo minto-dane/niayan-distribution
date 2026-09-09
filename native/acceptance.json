@@ -40,7 +40,8 @@
         "../pkgcore/runtime/pkg_deb_data_stream.adb",
         "../pkgcore/runtime/pkg_tar_framing.adb",
         "../pkgcore/runtime/pkg_deb_payload.adb",
-        "../pkgcore/runtime/pkg_deb_final_set.adb"
+        "../pkgcore/runtime/pkg_deb_final_set.adb",
+        "../pkgcore/runtime/pkg_deb_transition.adb"
       ],
       "tests": [
         "native/test_transition.py",
@@ -55,7 +56,9 @@
         "../pkgcore/tests/run_deb_payload_tests.adb",
         "../pkgcore/tests/compare_deb_payload.py",
         "../pkgcore/tests/run_deb_final_set_tests.adb",
-        "../pkgcore/tests/check_deb_final_set_upstream.py"
+        "../pkgcore/tests/check_deb_final_set_upstream.py",
+        "../pkgcore/tests/run_deb_transition_tests.adb",
+        "../pkgcore/tests/compare_deb_transition.py"
       ],
       "evidence": [
         "evidence/native-transition/initial-09/inventory.json",
@@ -67,9 +70,10 @@
         "evidence/native-transition/deb-relations-01/README.ja.md",
         "evidence/native-transition/deb-data-stream-01/README.ja.md",
         "evidence/native-transition/deb-payload-01/README.ja.md",
-        "evidence/native-transition/final-set-01/README.ja.md"
+        "evidence/native-transition/final-set-01/README.ja.md",
+        "evidence/native-transition/transition-plan-01/README.ja.md"
       ],
-      "remaining": "authenticate original artifacts and implement every adopted phase, generated output and implicit trigger"
+      "remaining": "authenticate baseline and selected artifacts; validate protection migration, bootstrap, every adopted phase, generated output and implicit trigger"
     },
     {
       "id": "NATIVE-003",

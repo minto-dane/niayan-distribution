@@ -1,0 +1,22 @@
+Running as unit: run-p183509-i183809.scope; invocation ID: 7d5d9e8d54224da794a0991a0ed2d174
+limited-exec: {"scope": "run-p183509-i183809.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Setup
+   [mkdir]        object directory for project Tests
+   [mkdir]        exec directory for project Tests
+Compile
+   [Ada]          run_deb_transition_tests.adb
+   [C]            pkg_deb_stream.c
+   [C]            pkg_deb_decode.c
+   [Ada]          mc_clock.adb
+   [Ada]          mc_fs.adb
+   [Ada]          mc_hex.adb
+   [Ada]          mc_posix.ads
+   [Ada]          mc_runtime.adb
+   [Ada]          mc_store.adb
+   [Ada]          mc_text.adb
+   [Ada]          mc_types.adb
+   [Ada]          pkg_deb_final_set.adb
+   [Ada]          pkg_deb_payload.adb
+   [Ada]          pkg_deb_transition.adb
+pkg_deb_transition.adb:92:15: error: mixed logical operators in expression
+gprbuild: *** compilation phase failed

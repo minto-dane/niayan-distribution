@@ -1,0 +1,38 @@
+{
+  "format": 1,
+  "result": "pass-for-ordinary-transition-delta-and-protection-only",
+  "baseline_root_commit": "ce507b2",
+  "source_subject": "646d1c1d56d1adb351034dee09978af06516d47a531fdc11a0acfc2160888c65",
+  "source_report": "source-checks/report.json",
+  "build_input_files": 720,
+  "executables": 28,
+  "ada_mains": 24,
+  "new_assertions": 3045,
+  "synthetic_originals": 36,
+  "matrix_cases": 44,
+  "independent_native_hashes": "accepted-native-oracle.json",
+  "ci_includes": [
+    "fixture regeneration",
+    "native transition matrix",
+    "independent deltas and hashes"
+  ],
+  "root_driver_assertions": [
+    1100,
+    34,
+    3,
+    6,
+    8,
+    5,
+    5
+  ],
+  "proof_inputs": "seven exact sets unchanged; new runtime outside SPARK",
+  "sanitizer_scope": "C boundaries and allocator/library-call interception only; Ada and upstream library code uninstrumented; leaks disabled",
+  "full_capacity_qualified": false,
+  "real_os_package_set_qualified": false,
+  "production_authorization": false,
+  "phase_schedule_validated": false,
+  "protection_migration_validated": false,
+  "bootstrap_validated": false,
+  "effective_ownership_resolved": false,
+  "boot_tested": false
+}
