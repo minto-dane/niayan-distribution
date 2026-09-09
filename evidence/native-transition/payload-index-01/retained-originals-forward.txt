@@ -1,0 +1,14 @@
+bash_5.2.37-2+b9_amd64.deb
+coreutils_9.7-3_amd64.deb
+dpkg_1.22.22_amd64.deb
+large-xz.deb
+libc6_2.41-12+deb13u3_amd64.deb
+niaos-assurance_0.1.0+git70baa595e385_amd64.deb
+niaos-capsulecore_0.1.0+git0c356eecb425_amd64.deb
+niaos-configcore_0.1.0+git6d46ea26c38c_amd64.deb
+niaos-controlcore_0.1.0+gite2a3f9ff89b5_amd64.deb
+niaos-pkgcore_0.1.0+gite74913f9f941_amd64.deb
+niaos-resolvercore_0.1.0+gita58f281ff997_amd64.deb
+niaos-statecore_0.1.0+gitc0c9ca947c2e_amd64.deb
+upstream-fixture-10.deb
+upstream-fixture-12.deb

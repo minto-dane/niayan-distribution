@@ -1,0 +1,22 @@
+Running as unit: run-p123178-i123478.scope; invocation ID: 4ae6f36ca2404ba5aa37e2254b9cdf19
+limited-exec: {"scope": "run-p123178-i123478.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+bash_5.2.37-2+b9_amd64.deb {'returncode': 0, 'seconds': 1.4668397049972555, 'peak_child_rss_kib': 15664, 'filename': 'bash_5.2.37-2+b9_amd64.deb'}
+coreutils_9.7-3_amd64.deb {'returncode': 0, 'seconds': 3.9712286540016066, 'peak_child_rss_kib': 16396, 'filename': 'coreutils_9.7-3_amd64.deb'}
+dpkg_1.22.22_amd64.deb {'returncode': 0, 'seconds': 2.1184422740006994, 'peak_child_rss_kib': 15196, 'filename': 'dpkg_1.22.22_amd64.deb'}
+large-xz.deb {'returncode': 0, 'seconds': 6.476903774997481, 'peak_child_rss_kib': 16404, 'filename': 'large-xz.deb'}
+libc6_2.41-12+deb13u3_amd64.deb {'returncode': 0, 'seconds': 9.133166630999767, 'peak_child_rss_kib': 16616, 'filename': 'libc6_2.41-12+deb13u3_amd64.deb'}
+niaos-assurance_0.1.0+git70baa595e385_amd64.deb {'returncode': 0, 'seconds': 0.5654713360017922, 'peak_child_rss_kib': 11256, 'filename': 'niaos-assurance_0.1.0+git70baa595e385_amd64.deb'}
+niaos-capsulecore_0.1.0+git0c356eecb425_amd64.deb {'returncode': 0, 'seconds': 0.46601680899766507, 'peak_child_rss_kib': 11276, 'filename': 'niaos-capsulecore_0.1.0+git0c356eecb425_amd64.deb'}
+niaos-configcore_0.1.0+git6d46ea26c38c_amd64.deb {'returncode': 0, 'seconds': 0.5159988800005522, 'peak_child_rss_kib': 11292, 'filename': 'niaos-configcore_0.1.0+git6d46ea26c38c_amd64.deb'}
+niaos-controlcore_0.1.0+gite2a3f9ff89b5_amd64.deb {'returncode': 0, 'seconds': 0.6664017549992423, 'peak_child_rss_kib': 11340, 'filename': 'niaos-controlcore_0.1.0+gite2a3f9ff89b5_amd64.deb'}
+niaos-pkgcore_0.1.0+gite74913f9f941_amd64.deb {'returncode': 0, 'seconds': 0.7160913250008889, 'peak_child_rss_kib': 11316, 'filename': 'niaos-pkgcore_0.1.0+gite74913f9f941_amd64.deb'}
+niaos-resolvercore_0.1.0+gita58f281ff997_amd64.deb {'returncode': 0, 'seconds': 0.7157449690021167, 'peak_child_rss_kib': 11372, 'filename': 'niaos-resolvercore_0.1.0+gita58f281ff997_amd64.deb'}
+niaos-statecore_0.1.0+gitc0c9ca947c2e_amd64.deb {'returncode': 0, 'seconds': 0.7658850690022518, 'peak_child_rss_kib': 11420, 'filename': 'niaos-statecore_0.1.0+gitc0c9ca947c2e_amd64.deb'}
+upstream-fixture-10.deb {'returncode': 0, 'seconds': 36.49504293499922, 'peak_child_rss_kib': 16432, 'filename': 'upstream-fixture-10.deb'}
+upstream-fixture-12.deb {'returncode': 0, 'seconds': 18.053825671002414, 'peak_child_rss_kib': 14408, 'filename': 'upstream-fixture-12.deb'}
+retained-originals forward {"returncode": 0, "seconds": 102.3433881359997, "peak_child_rss_kib": 20568}
+
+Independent payloads and canonical index match: {'INDEX': 'd7fd4ec84c751a979036aa88dedc10e231b3086dc815e66ccf36a324e822bbbc', 'PACKAGES': 14, 'CLAIMS': 2904, 'PATHS': 2493}
+retained-originals reverse {"returncode": 0, "seconds": 102.64117358699878, "peak_child_rss_kib": 20624}
+
+Independent payloads and canonical index match: {'INDEX': 'd7fd4ec84c751a979036aa88dedc10e231b3086dc815e66ccf36a324e822bbbc', 'PACKAGES': 14, 'CLAIMS': 2904, 'PATHS': 2493}

@@ -1,0 +1,40 @@
+Running as unit: run-p124520-i124820.scope; invocation ID: fb13b533926945faa2376ed28a5e8845
+limited-exec: {"scope": "run-p124520-i124820.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Setup
+   [mkdir]        object directory for project Tests
+   [mkdir]        exec directory for project Tests
+Compile
+   [Ada]          run_payload_index_tests.adb
+   [C]            pkg_deb_stream.c
+   [C]            pkg_deb_decode.c
+   [Ada]          mc_clock.adb
+   [Ada]          mc_fs.adb
+   [Ada]          mc_hex.adb
+   [Ada]          mc_posix.ads
+   [Ada]          mc_runtime.adb
+   [Ada]          mc_store.adb
+   [Ada]          mc_types.adb
+   [Ada]          pkg_deb_payload.adb
+   [Ada]          pkg_payload_index.adb
+   [Ada]          test_support.adb
+   [Ada]          mc_kernel_read.adb
+   [Ada]          mc_codec.adb
+   [Ada]          mc_paths.adb
+   [Ada]          mc_sha256.adb
+   [Ada]          mc_dirents.adb
+   [Ada]          mc_text.adb
+   [Ada]          pkg_deb_container.adb
+   [Ada]          pkg_deb_data_stream.adb
+   [Ada]          pkg_tar_framing.adb
+Bind
+   [gprbind]      run_payload_index_tests.bexch
+   [Ada]          run_payload_index_tests.ali
+Link
+   [archive]      libtests.a
+   [index]        libtests.a
+   [link]         run_payload_index_tests.adb
+INDEX a28d9984f635c2ffdffcaae61bd2e360815c29ee9443c668c1ed6d0a9462d9b8
+PACKAGES 14
+CLAIMS 35
+PATHS 28
+PASS assertions= 449

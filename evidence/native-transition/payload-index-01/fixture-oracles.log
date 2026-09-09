@@ -1,0 +1,22 @@
+Running as unit: run-p122657-i122957.scope; invocation ID: 8ded63f9cb134748b593d65e074cd6fa
+limited-exec: {"scope": "run-p122657-i122957.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+attributes.deb {'returncode': 0, 'seconds': 0.03178579599989462, 'peak_child_rss_kib': 11276, 'filename': 'attributes.deb'}
+basic.deb {'returncode': 0, 'seconds': 0.11406137499943725, 'peak_child_rss_kib': 11252, 'filename': 'basic.deb'}
+empty.deb {'returncode': 0, 'seconds': 0.031815773003472714, 'peak_child_rss_kib': 11292, 'filename': 'empty.deb'}
+flags.deb {'returncode': 0, 'seconds': 0.031812457000341965, 'peak_child_rss_kib': 11316, 'filename': 'flags.deb'}
+gnu-numeric.deb {'returncode': 0, 'seconds': 0.03186292099780985, 'peak_child_rss_kib': 11300, 'filename': 'gnu-numeric.deb'}
+gnu.deb {'returncode': 0, 'seconds': 0.06393923799987533, 'peak_child_rss_kib': 11316, 'filename': 'gnu.deb'}
+links.deb {'returncode': 0, 'seconds': 0.031816833001357736, 'peak_child_rss_kib': 11292, 'filename': 'links.deb'}
+multilingual.deb {'returncode': 0, 'seconds': 0.06444705199828604, 'peak_child_rss_kib': 11256, 'filename': 'multilingual.deb'}
+negative-clock.deb {'returncode': 0, 'seconds': 0.0319329789999756, 'peak_child_rss_kib': 11260, 'filename': 'negative-clock.deb'}
+negative-zero.deb {'returncode': 0, 'seconds': 0.03185288999884506, 'peak_child_rss_kib': 11316, 'filename': 'negative-zero.deb'}
+overlap.deb {'returncode': 0, 'seconds': 0.06397047599966754, 'peak_child_rss_kib': 11276, 'filename': 'overlap.deb'}
+pax.deb {'returncode': 0, 'seconds': 0.06429358699824661, 'peak_child_rss_kib': 11388, 'filename': 'pax.deb'}
+shared.deb {'returncode': 0, 'seconds': 0.03181629200116731, 'peak_child_rss_kib': 11412, 'filename': 'shared.deb'}
+unicode.deb {'returncode': 0, 'seconds': 0.0320438760027173, 'peak_child_rss_kib': 11280, 'filename': 'unicode.deb'}
+retained-fixtures forward {"returncode": 0, "seconds": 0.3647983289993135, "peak_child_rss_kib": 11388}
+
+Independent payloads and canonical index match: {'INDEX': 'a28d9984f635c2ffdffcaae61bd2e360815c29ee9443c668c1ed6d0a9462d9b8', 'PACKAGES': 14, 'CLAIMS': 35, 'PATHS': 28}
+retained-fixtures reverse {"returncode": 0, "seconds": 0.3647415430023102, "peak_child_rss_kib": 11204}
+
+Independent payloads and canonical index match: {'INDEX': 'a28d9984f635c2ffdffcaae61bd2e360815c29ee9443c668c1ed6d0a9462d9b8', 'PACKAGES': 14, 'CLAIMS': 35, 'PATHS': 28}

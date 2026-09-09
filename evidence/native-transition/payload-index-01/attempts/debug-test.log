@@ -1,0 +1,7 @@
+Running as unit: run-p118095-i118395.scope; invocation ID: 2f1532ccf0f345e88a88cfc1cc3eacbd
+limited-exec: {"scope": "run-p118095-i118395.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+INDEX a28d9984f635c2ffdffcaae61bd2e360815c29ee9443c668c1ed6d0a9462d9b8
+PACKAGES 14
+CLAIMS 35
+PATHS 28
+PASS assertions= 449

@@ -76,17 +76,21 @@
         "../pkgcore/runtime/pkg_generation_manifest.adb",
         "../pkgcore/runtime/pkg_generation_stage.adb",
         "../pkgcore/runtime/pkg_generation_descriptor.adb",
-        "../pkgcore/runtime/pkg_generation_publisher.adb"
+        "../pkgcore/runtime/pkg_generation_publisher.adb",
+        "../pkgcore/runtime/pkg_payload_index.adb"
       ],
       "tests": [
         "../pkgcore/tests/run_generation_stage_tests.adb",
-        "../pkgcore/tests/run_generation_publication_tests.adb"
+        "../pkgcore/tests/run_generation_publication_tests.adb",
+        "../pkgcore/tests/run_payload_index_tests.adb",
+        "../pkgcore/tests/compare_payload_index.py"
       ],
       "evidence": [
         "evidence/native-transition/generation-01/README.ja.md",
-        "evidence/native-transition/publication-01/README.ja.md"
+        "evidence/native-transition/publication-01/README.ja.md",
+        "evidence/native-transition/payload-index-01/README.ja.md"
       ],
-      "remaining": "Connect production managed authority, validated catalog/effects and privileged metadata; capacity reservation, fsync/space/power-loss fault tests, actual mount/boot activation and recovery, independent trust rollback"
+      "remaining": "Resolve effective ownership from the complete source-claim index, package identities, aliases and native contracts; connect production managed authority, validated catalog/effects and privileged metadata; capacity reservation, fsync/space/power-loss fault tests, actual mount/boot activation and recovery, independent trust rollback"
     },
     {
       "id": "HARD-001",

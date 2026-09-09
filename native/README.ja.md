@@ -68,5 +68,9 @@ inactive generationの組立てを有界な作業へ分け、全入力と所有�
 採用tar profileの内容・属性・リンク保持は[deb-payload.ja.md](deb-payload.ja.md)を参照。
 世代形式・実行器の拡張と稼働rootへの接続は未完である。
 
+[全原本のclaim索引](payload-index.ja.md)で属性と所有権主張を保持するnative層を追加した。
+共有pathの全ownerと属性差、原本内hardlink、暗黙parentと非directory祖先を保持する。
+索引化は実効所有者の選択・catalog認可・世代実行の代用にはならない。
+
 [世代image候補の属性受入](generation-image.ja.md)で上流工具へのtar直接入力を調べた。
 固定版の当該経路は属性欠落・時刻不一致のため未採用。原本の属性要件は維持する。

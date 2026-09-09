@@ -1,0 +1,76 @@
+{
+  "format": 1,
+  "result": "pass-for-private-source-claim-index-only",
+  "baseline_root_commit": "27d9a4d",
+  "source_checks": [
+    {
+      "report": "source-checks-first/report.json",
+      "subject": "4eb559a222749317ab8dcfa7e379b411ab55de4536842b0963c34893278c0d2e"
+    },
+    {
+      "report": "source-checks-pre-clarification/report.json",
+      "subject": "3232618705ec5f58a4e26c439657b83db454e28338c23ad4c35e6a5f5de981b3"
+    },
+    {
+      "report": "source-checks-final/report.json",
+      "subject": "d8d464830a283c50c37cfc7c907db77ed80c0a90d90c6f3bce7b20dddca1bd77"
+    }
+  ],
+  "build_input_files": 503,
+  "executables": 25,
+  "ada_mains": 21,
+  "new_assertions": 449,
+  "fixture_regeneration": 3,
+  "synthetic_index": {
+    "INDEX": "a28d9984f635c2ffdffcaae61bd2e360815c29ee9443c668c1ed6d0a9462d9b8",
+    "PACKAGES": 14,
+    "CLAIMS": 35,
+    "PATHS": 28
+  },
+  "original_media_index": {
+    "INDEX": "d7fd4ec84c751a979036aa88dedc10e231b3086dc815e66ccf36a324e822bbbc",
+    "PACKAGES": 14,
+    "CLAIMS": 2904,
+    "PATHS": 2493
+  },
+  "total_original_tar_bytes": 166123520,
+  "resources": {
+    "retained-fixtures": {
+      "forward": {
+        "returncode": 0,
+        "seconds": 0.3647983289993135,
+        "peak_child_rss_kib": 11388
+      },
+      "reverse": {
+        "returncode": 0,
+        "seconds": 0.3647415430023102,
+        "peak_child_rss_kib": 11204
+      }
+    },
+    "retained-originals": {
+      "forward": {
+        "returncode": 0,
+        "seconds": 102.3433881359997,
+        "peak_child_rss_kib": 20568
+      },
+      "reverse": {
+        "returncode": 0,
+        "seconds": 102.64117358699878,
+        "peak_child_rss_kib": 20624
+      }
+    }
+  },
+  "root_driver_assertions": [
+    1100,
+    34,
+    3,
+    6
+  ],
+  "proof_inputs": "seven exact sets unchanged; new runtime outside SPARK",
+  "sanitizer_scope": "C boundaries and allocator/library-call interception only; Ada and upstream library code uninstrumented; leaks disabled",
+  "production_authorization": false,
+  "full_os_capacity_qualified": false,
+  "installed_catalog": false,
+  "effective_ownership_resolved": false,
+  "boot_tested": false
+}
