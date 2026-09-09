@@ -1,0 +1,11 @@
+{
+  "result": "pass",
+  "tested_copy_changed_only": [
+    "tests/test_consent_release.py"
+  ],
+  "current_checkout_difference": [
+    "native/acceptance.json"
+  ],
+  "difference_scope": "traceability ledger adds this evidence and new catalog status; all implementation, translations, tests, contracts, profiles and Makefile hashes match the final test copy",
+  "image_check_used_original_input_manifest": true
+}

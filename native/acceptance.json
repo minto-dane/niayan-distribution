@@ -27,14 +27,17 @@
       "implementation": [
         "tools/deb_archive.py",
         "tools/debian_semantics.py",
-        "native/audit_transition.py"
+        "native/audit_transition.py",
+        "tools/debian_triggers.py"
       ],
       "tests": [
         "native/test_transition.py",
-        "tests/test_nia_intake.py"
+        "tests/test_nia_intake.py",
+        "tests/test_debian_triggers.py"
       ],
       "evidence": [
-        "evidence/native-transition/initial-09/inventory.json"
+        "evidence/native-transition/initial-09/inventory.json",
+        "evidence/native-transition/triggers-localization-01/README.ja.md"
       ],
       "remaining": "authenticate original artifacts and implement every adopted phase, generated output and implicit trigger"
     },
@@ -190,7 +193,7 @@
     {
       "id": "NATIVE-009",
       "requirement": "Support all Debian 13 language and locale targets without changing command grammar, signed inputs, outcomes or transaction authority",
-      "state": "english-and-japanese-cli-tested-graphical-acceptance-pending",
+      "state": "english-source-and-seven-cli-catalogs-tested-all-languages-and-graphical-acceptance-pending",
       "hazard": "Translated identifiers or locale-sensitive parsing change authorization or recovery; malformed translations and terminal controls obscure outcomes",
       "implementation": [
         "native/i18n.py",
@@ -207,7 +210,8 @@
         "native/check_download_cli.py"
       ],
       "evidence": [
-        "evidence/management-interface/localization-01/README.ja.md"
+        "evidence/management-interface/localization-01/README.ja.md",
+        "evidence/native-transition/triggers-localization-01/README.ja.md"
       ],
       "remaining": "Complete translations for all pinned Debian language targets; TUI/GUI integration and fonts/shaping/RTL/cell-width/accessibility/IME acceptance, translation review and reference response qualification; English fallback never qualifies as a completed translation"
     }

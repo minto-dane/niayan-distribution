@@ -42,7 +42,7 @@ class LocalizationTests(unittest.TestCase):
         for env, first in cases:
             with self.subTest(env=env):
                 self.assertEqual(languages(env)[0], first)
-        self.assertEqual(UI.from_environment({'LANG': 'de_DE.UTF-8', 'LANGUAGE': 'fr:ja'}).message('PACKAGE'), 'パッケージ')
+        self.assertEqual(UI.from_environment({'LANG': 'de_DE.UTF-8', 'LANGUAGE': 'fr:ja'}).message('PACKAGE'), 'PAQUET')
         self.assertEqual(UI.from_environment({'LANG': 'ja_JP.UTF-8', 'LANGUAGE': 'en:ja'}).message('PACKAGE'), 'PACKAGE')
 
     def test_every_pinned_debian_locale_and_installer_choice_is_accepted(self):
@@ -194,6 +194,33 @@ class LocalizationTests(unittest.TestCase):
             def gettext(self, message):
                 return '{path.__class__}'
         self.assertEqual(UI(Broken()).message('Package file is: {path}', path='ok'), 'Package file is: ok')
+
+    def test_added_catalogs_have_complete_messages_and_language_independent_operations(self):
+        labels = {'de': 'PAKET', 'es': 'PAQUETE', 'fr': 'PAQUET',
+                  'ko': '패키지', 'zh_CN': '软件包', 'zh_TW': '套件'}
+        for language, label in labels.items():
+            with self.subTest(language=language):
+                ui = UI.from_environment({'LANG': language})
+                self.assertEqual(ui.message('PACKAGE'), label)
+                for message in source_forms():
+                    self.assertIn(message, ui.translation._catalog)
+                for command in HELP:
+                    result = self.run_command(command, ['--help'], {'LANG': language})
+                    self.assertEqual((result.returncode, result.stderr), (0, ''))
+                    self.assertTrue(result.stdout.startswith(HELP[command] + '\n'))
+                    self.assertNotIn('NiaOS development interface', result.stdout)
+                invalid = self.run_command('installp', ['-d', '/one', '-d', '/two', 'package'], {'LANG': language})
+                self.assertEqual((invalid.returncode, invalid.stdout), (2, ''))
+                self.assertIn('-d', invalid.stderr)
+                self.assertNotIn('repeated -d', invalid.stderr)
+                unavailable = self.run_command('installp', ['-d', '/media', 'package'], {'LANG': language})
+                self.assertEqual((unavailable.returncode, unavailable.stdout), (1, ''))
+                self.assertIn('installp', unavailable.stderr)
+                self.assertIn('apply', unavailable.stderr)
+                self.assertEqual(ui.message('Package file is: {path}', path='/tmp/é-資料').count('/tmp/é-資料'), 1)
+        self.assertEqual(UI.from_environment({'LANG': 'zh_HK.UTF-8'}).message('PACKAGE'), '套件')
+        self.assertEqual(UI.from_environment({'LANG': 'zh_SG.UTF-8'}).message('PACKAGE'), '软件包')
+        self.assertEqual(UI.from_environment({'LANG': 'de_DE.ISO-8859-15@euro'}).message('PACKAGE'), 'PAKET')
 
     def test_real_gettext_plural_rules_support_languages_with_more_than_two_forms(self):
         # Compile an isolated synthetic catalog with three forms using the same

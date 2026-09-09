@@ -1,0 +1,123 @@
+{
+  "schema": "org.niaos.development-validation/v1",
+  "source_subject": "ef6012e2bbd64da55bc9b012abc15e80acb5b4b9d83564c0d32e36d836365fef",
+  "result": "pass-for-implemented-tooling-only",
+  "production_qualified": false,
+  "limits": {
+    "memory_bytes": 3221225472,
+    "swap_bytes": 0,
+    "cpu_quota": "100000 100000",
+    "pids": 128,
+    "heavy_jobs_parallel": false
+  },
+  "containers": {
+    "native": "0d256f5b95dcd43dc441ac734cae705938dca230ceab11c47f787901c6de18eb",
+    "development": "0c04329a1343a0f1ae82ab931ffc7a7e5cbfdccbf18948e0576366fbf5bb249a",
+    "network": "none",
+    "uid": 1000
+  },
+  "checks": [
+    {
+      "command": "make image-check",
+      "exit_code": 0,
+      "tests": 128,
+      "groups": {
+        "native": 108,
+        "hardening": 4,
+        "image": 16
+      },
+      "compilation": "compileall and shell syntax completed",
+      "log": "image-check.log",
+      "input_manifest": "image-check-inputs.json"
+    },
+    {
+      "command": "python3 -B -m unittest discover -s tests -p test_*.py -v",
+      "exit_code": 0,
+      "tests": 145,
+      "trigger_tests": 11,
+      "skipped": 0,
+      "log": "distribution-tests.log",
+      "input_manifest": "distribution-tests-inputs.json"
+    },
+    {
+      "command": "python3 -B native/language_coverage.py --require-all",
+      "exit_code": 1,
+      "expected": "reject incomplete language coverage",
+      "report": "language-coverage.json"
+    },
+    {
+      "command": "python3 assurance/ci/run-engineering-checks.py --mode source",
+      "exit_code": 0,
+      "checks": 24,
+      "report": "source-check/report.json"
+    }
+  ],
+  "trigger_corpus": {
+    "original_files_hash_matched": 1186,
+    "normalized_declarations": 1224,
+    "handlers_executed": false,
+    "report": "trigger-corpus.json"
+  },
+  "localization": {
+    "messages_per_catalog": 115,
+    "catalogs": [
+      "de",
+      "es",
+      "fr",
+      "ja",
+      "ko",
+      "zh_CN",
+      "zh_TW"
+    ],
+    "added_catalogs": [
+      "de",
+      "es",
+      "fr",
+      "ko",
+      "zh_CN",
+      "zh_TW"
+    ],
+    "source": "en",
+    "target_rows_by_state": {
+      "english-fallback": 453,
+      "source-language": 39,
+      "translated": 95
+    },
+    "missing_distinct_locale_targets": 282,
+    "independent_translation_review": false,
+    "graphical_input_qualification": false
+  },
+  "formal_proof": {
+    "rerun": false,
+    "all_seven_existing_input_sets_unchanged": true,
+    "new_python_code_is_not_proved": true,
+    "report": "proof-input-comparison.json"
+  },
+  "prior_attempts": [
+    {
+      "log": "attempts/native-tests-01.log",
+      "exit_code": 2,
+      "cause": "108 native tests passed; compileall could not write cache on read-only source mount",
+      "resolution": "writable disposable source copy, full image-check rerun"
+    },
+    {
+      "log": "attempts/distribution-tests-final.log",
+      "exit_code": 1,
+      "cause": "consent test assumed parent checkout was named distribution; import failed"
+    },
+    {
+      "log": "attempts/distribution-tests-final-02.log",
+      "exit_code": 1,
+      "cause": "setting import path did not correct hard-coded parent contract path",
+      "resolution": "test locates tools and contracts relative to its independent repository; entire 145-test suite rerun without PYTHONPATH override"
+    }
+  ],
+  "remaining": [
+    "actual native package/catalog transport and one writer in deployed image",
+    "all adopted original DEB effect handlers, nested triggers and recoverable lifecycle WAL",
+    "production authority and independent trust floor",
+    "actual mount and boot switch, recovery and power-loss qualification",
+    "native-only ISO and desktop/automatic-update integration",
+    "all Debian target translations, independent review and graphical/input qualification"
+  ]
+}

@@ -1,0 +1,353 @@
+# SPDX-License-Identifier: MIT
+# German translations for the Nia management interface.
+# Copyright (C) 2026 NiaOS contributors.
+msgid ""
+msgstr "Project-Id-Version: nia-management 1\nReport-Msgid-Bugs-To: \nPO-Revision-Date: 2026-09-09 00:00+0000\nLast-Translator: NiaOS contributors\nLanguage-Team: German\nLanguage: de\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "-I accepts only installp option flags"
+msgstr "-I akzeptiert nur installp-Optionsflags"
+
+msgid "-m must be 1, 2 or 3"
+msgstr "-m muss 1, 2 oder 3 sein"
+
+msgid "-p requires -k FIX"
+msgstr "-p erfordert -k FIX"
+
+msgid "-r and -m are mutually exclusive"
+msgstr "-r und -m schließen sich gegenseitig aus"
+
+msgid "-s cannot be combined with -x or -w"
+msgstr "-s kann nicht mit -x oder -w kombiniert werden"
+
+msgid "-v does not accept file operands"
+msgstr "-v akzeptiert keine Dateioperanden"
+
+msgid "A required file or directory does not exist."
+msgstr "Eine erforderliche Datei oder ein erforderliches Verzeichnis existiert nicht."
+
+msgid "A symbolic link was encountered where an ordinary path is required."
+msgstr "Anstelle des erforderlichen gewöhnlichen Pfades wurde ein symbolischer Link gefunden."
+
+msgid "ABSTRACT"
+msgstr "ZUSAMMENFASSUNG"
+
+msgid "ACTIVATION"
+msgstr "AKTIVIERUNG"
+
+msgid "ADVISORIES"
+msgstr "KORREKTURHINWEISE"
+
+msgid "An input/output operation failed; completion is not established."
+msgstr "Eine Ein-/Ausgabeoperation ist fehlgeschlagen; ihr Abschluss ist nicht bestätigt."
+
+msgid "BASE LEVEL"
+msgstr "BASISVERSION"
+
+msgid "BASE SHA256"
+msgstr "BASIS-SHA256"
+
+msgid "CONFLICTS"
+msgstr "KONFLIKTE"
+
+msgid "CONTROL EFFECT"
+msgstr "STEUERUNGSEFFEKT"
+
+msgid "CREATED AT"
+msgstr "ERSTELLT AM"
+
+msgid "DLTarget must be absolute"
+msgstr "DLTarget muss ein absoluter Pfad sein"
+
+msgid "Downloaded interim fix: {path}"
+msgstr "Vorläufige Korrektur heruntergeladen: {path}"
+
+msgid "EFFECT CONTRACT SHA256"
+msgstr "SHA256 DES EFFEKTVERTRAGS"
+
+msgid "EFIX LABEL"
+msgstr "KORREKTURKENNUNG"
+
+msgid "EXPIRES AT"
+msgstr "LÄUFT AB AM"
+
+msgid "FILE NUMBER"
+msgstr "DATEINUMMER"
+
+msgid "FILE TYPE"
+msgstr "DATEITYP"
+
+msgid "Foreign TL/SP/ML/PTF are not Nia release identifiers"
+msgstr "TL/SP/ML/PTF anderer Plattformen sind keine Nia-Versionskennungen"
+
+msgid "Invalid command option: {option}."
+msgstr "Ungültige Befehlsoption: {option}."
+
+msgid "Invoke as: {commands}"
+msgstr "Aufruf als: {commands}"
+
+msgid "LEVEL"
+msgstr "VERSION"
+
+msgid "LINK"
+msgstr "LINK"
+
+msgid "LOCATION"
+msgstr "SPEICHERORT"
+
+msgid "Nia requires an explicit -d SOURCE for apply"
+msgstr "Nia erfordert zum Anwenden ein ausdrücklich angegebenes -d SOURCE"
+
+msgid "NiaOS development interface; native service is not connected.\nLocal epkg template builds and emgr -d displays are available.\nemgr_download_ifix requires provisioned authenticated repository policy.\nInstalled-package operations and interactive packaging are unavailable.\nDebian package names/versions are retained. Other reference-platform options are rejected."
+msgstr "NiaOS-Entwicklungsschnittstelle; der native Dienst ist nicht angebunden.\nLokale Paketerstellung aus Vorlagen mit epkg und Anzeige mit emgr -d sind verfügbar.\nemgr_download_ifix erfordert eine eingerichtete, authentifizierte Repository-Richtlinie.\nOperationen an installierten Paketen und interaktive Paketerstellung sind nicht verfügbar.\nDebian-Paketnamen und -Versionen bleiben erhalten. Andere Optionen der Referenzplattform werden abgelehnt."
+
+msgid "PACKAGE"
+msgstr "PAKET"
+
+msgid "PACKAGE SHA256"
+msgstr "PAKET-SHA256"
+
+msgid "PRE-REQUISITES"
+msgstr "VORAUSSETZUNGEN"
+
+msgid "PUBLISHER AUTHENTICATION"
+msgstr "AUTHENTIFIZIERUNG DES HERAUSGEBERS"
+
+msgid "Package file is: {path}"
+msgstr "Paketdatei: {path}"
+
+msgid "Permission to access a required file or directory was denied."
+msgstr "Der Zugriff auf eine erforderliche Datei oder ein erforderliches Verzeichnis wurde verweigert."
+
+msgid "REBOOT REQUIRED"
+msgstr "NEUSTART ERFORDERLICH"
+
+msgid "ROLLBACK CONTRACT SHA256"
+msgstr "SHA256 DES RÜCKSETZVERTRAGS"
+
+msgid "Repository authentication failed; no artifact was accepted."
+msgstr "Repository-Authentifizierung fehlgeschlagen; kein Artefakt wurde akzeptiert."
+
+msgid "Repository download failed; check the connection and repository configuration."
+msgstr "Download aus dem Repository fehlgeschlagen; prüfen Sie die Verbindung und Repository-Konfiguration."
+
+msgid "Repository policy changed during download; retry with the current policy."
+msgstr "Die Repository-Richtlinie wurde während des Downloads geändert; versuchen Sie es mit der aktuellen Richtlinie erneut."
+
+msgid "Repository policy ownership or permissions are not trusted."
+msgstr "Eigentümer oder Berechtigungen der Repository-Richtlinie sind nicht vertrauenswürdig."
+
+msgid "SECURITY EPOCH"
+msgstr "SICHERHEITSEPOCHE"
+
+msgid "SHA256"
+msgstr "SHA256"
+
+msgid "SIZE"
+msgstr "GRÖSSE"
+
+msgid "SUPERSEDE"
+msgstr "ERSETZT"
+
+msgid "Storage is full; the operation did not complete."
+msgstr "Der Speicher ist voll; die Operation wurde nicht abgeschlossen."
+
+msgid "TARGET SHA256"
+msgstr "ZIEL-SHA256"
+
+msgid "The authenticated reference differs from the package manifest."
+msgstr "Die authentifizierte Referenz weicht vom Paketmanifest ab."
+
+msgid "The command label differs from the package control file."
+msgstr "Die Befehlskennung weicht von der Steuerdatei des Pakets ab."
+
+msgid "The download URL is outside the configured repository."
+msgstr "Die Download-URL liegt außerhalb des konfigurierten Repositorys."
+
+msgid "The input is invalid or is not supported by this operation."
+msgstr "Die Eingabe ist ungültig oder wird von dieser Operation nicht unterstützt."
+
+msgid "The interim package expired during download."
+msgstr "Das vorläufige Korrekturpaket ist während des Downloads abgelaufen."
+
+msgid "The interim package has expired or is not yet valid."
+msgstr "Das vorläufige Korrekturpaket ist abgelaufen oder noch nicht gültig."
+
+msgid "The interim package is older than the trusted security minimum."
+msgstr "Das vorläufige Korrekturpaket ist älter als der vertrauenswürdige Sicherheitsmindeststand."
+
+msgid "The operation could not be completed."
+msgstr "Die Operation konnte nicht abgeschlossen werden."
+
+msgid "The original package identity differs from the manifest."
+msgstr "Die Identität des Originalpakets weicht vom Manifest ab."
+
+msgid "The output already exists and was not overwritten."
+msgstr "Die Ausgabe existiert bereits und wurde nicht überschrieben."
+
+msgid "The package size or checksum does not match."
+msgstr "Die Paketgröße oder Prüfsumme stimmt nicht überein."
+
+msgid "The repository is in use; retry after the current operation finishes."
+msgstr "Das Repository wird verwendet; versuchen Sie es nach Abschluss der aktuellen Operation erneut."
+
+msgid "The requested artifact is absent from the authenticated repository."
+msgstr "Das angeforderte Artefakt fehlt im authentifizierten Repository."
+
+msgid "The storage quota was exceeded; the operation did not complete."
+msgstr "Das Speicherkontingent wurde überschritten; die Operation wurde nicht abgeschlossen."
+
+msgid "all cannot be combined with names"
+msgstr "all kann nicht mit Namen kombiniert werden"
+
+msgid "at most one package for lock display"
+msgstr "zur Anzeige der Sperren ist höchstens ein Paket zulässig"
+
+msgid "at most one task ID"
+msgstr "höchstens eine Aufgaben-ID ist zulässig"
+
+msgid "attribute edits for this SUMA action are not supported"
+msgstr "Attributänderungen werden für diese SUMA-Aktion nicht unterstützt"
+
+msgid "command input limit exceeded"
+msgstr "Eingabegrenze des Befehls überschritten"
+
+msgid "conflicting geninstall actions"
+msgstr "widersprüchliche geninstall-Aktionen"
+
+msgid "conflicting installp actions"
+msgstr "widersprüchliche installp-Aktionen"
+
+msgid "conflicting interim actions"
+msgstr "widersprüchliche Aktionen für vorläufige Korrekturen"
+
+msgid "cron field out of range"
+msgstr "cron-Feld außerhalb des gültigen Bereichs"
+
+msgid "cron step out of range"
+msgstr "cron-Schrittweite außerhalb des gültigen Bereichs"
+
+msgid "empty argument or control character"
+msgstr "leeres Argument oder Steuerzeichen"
+
+msgid "empty fix keyword list"
+msgstr "leere Liste von Korrekturschlüsselwörtern"
+
+msgid "geninstall -I must select apply, not commit alone"
+msgstr "geninstall -I muss das Anwenden auswählen, nicht nur das Bestätigen"
+
+msgid "incorrect task ID count"
+msgstr "falsche Anzahl von Aufgaben-IDs"
+
+msgid "interim number must be a positive integer"
+msgstr "die Nummer der vorläufigen Korrektur muss eine positive ganze Zahl sein"
+
+msgid "inutoc accepts at most one directory"
+msgstr "inutoc akzeptiert höchstens ein Verzeichnis"
+
+msgid "invalid interim fix label"
+msgstr "ungültige Kennung der vorläufigen Korrektur"
+
+msgid "media listing requires -d SOURCE and no operands"
+msgstr "zum Auflisten des Mediums sind -d SOURCE und keine Operanden erforderlich"
+
+msgid "missing or unsupported value for -{option}"
+msgstr "fehlender oder nicht unterstützter Wert für -{option}"
+
+msgid "name packages explicitly for reject/remove"
+msgstr "geben Sie die Pakete zum Zurückweisen oder Entfernen ausdrücklich an"
+
+msgid "none"
+msgstr "keine"
+
+msgid "not established"
+msgstr "nicht bestätigt"
+
+msgid "not verified"
+msgstr "nicht überprüft"
+
+msgid "option is not valid for this action"
+msgstr "die Option ist für diese Aktion ungültig"
+
+msgid "options must precede operands; leading-dash operands are unsupported"
+msgstr "Optionen müssen vor Operanden stehen; mit Bindestrich beginnende Operanden werden nicht unterstützt"
+
+msgctxt "reboot-required"
+msgid "no"
+msgstr "nein"
+
+msgctxt "reboot-required"
+msgid "yes"
+msgstr "ja"
+
+msgid "recovery covers the interrupted transaction; no operands allowed"
+msgstr "die Wiederherstellung betrifft die unterbrochene Transaktion; Operanden sind nicht zulässig"
+
+msgid "repeated -{option}"
+msgstr "-{option} mehrfach angegeben"
+
+msgid "schedule needs five cron fields"
+msgstr "der Zeitplan erfordert fünf cron-Felder"
+
+msgid "specify -L URL, without operands"
+msgstr "geben Sie -L URL ohne Operanden an"
+
+msgid "specify -d SOURCE"
+msgstr "geben Sie -d SOURCE an"
+
+msgid "specify -d SOURCE, without operands"
+msgstr "geben Sie -d SOURCE ohne Operanden an"
+
+msgid "specify -d SOURCE, without package operands"
+msgstr "geben Sie -d SOURCE ohne Paketoperanden an"
+
+msgid "specify -e PACKAGE_FILE"
+msgstr "geben Sie -e PACKAGE_FILE an"
+
+msgid "specify -x, -w or -s"
+msgstr "geben Sie -x, -w oder -s an"
+
+msgid "specify exactly one action from {actions}"
+msgstr "geben Sie genau eine Aktion aus {actions} an"
+
+msgid "specify one interim fix label"
+msgstr "geben Sie eine Kennung für eine vorläufige Korrektur an"
+
+msgid "specify one interim package with -e or as an operand"
+msgstr "geben Sie ein vorläufiges Korrekturpaket mit -e oder als Operand an"
+
+msgid "specify one selector for remove, at most one for list/check"
+msgstr "geben Sie zum Entfernen einen Selektor an, zum Auflisten oder Prüfen höchstens einen"
+
+msgid "specify operands or -f LIST"
+msgstr "geben Sie Operanden oder -f LIST an"
+
+msgid "task IDs must be numeric"
+msgstr "Aufgaben-IDs müssen numerisch sein"
+
+msgid "unknown package command"
+msgstr "unbekannter Paketbefehl"
+
+msgid "unknown, duplicate or malformed SUMA attribute"
+msgstr "unbekanntes, doppeltes oder fehlerhaftes SUMA-Attribut"
+
+msgid "unsupported SUMA Action"
+msgstr "nicht unterstützte SUMA-Action"
+
+msgid "unsupported cron field"
+msgstr "nicht unterstütztes cron-Feld"
+
+msgid "unsupported installp flags in -I"
+msgstr "nicht unterstützte installp-Optionsflags in -I"
+
+msgid "use -k for fix keywords"
+msgstr "verwenden Sie -k für Korrekturschlüsselwörter"
+
+msgid "verbosity must be 1, 2 or 3"
+msgstr "der Ausführlichkeitsgrad muss 1, 2 oder 3 sein"
+
+msgid "{command}: {action}: native package service is not connected; no operation or preview was performed."
+msgstr "{command}: {action}: der native Paketdienst ist nicht angebunden; es wurde keine Operation oder Vorschau ausgeführt."
+
+msgid "{label}: {value}"
+msgstr "{label}: {value}"
+

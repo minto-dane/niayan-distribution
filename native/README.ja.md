@@ -1,6 +1,8 @@
 # Niaパッケージ管理への完全置換
 
 [製品判断](../docs/decisions/0002-native-package-authority.ja.md)に従うTrixie置換工程。
+[機能の管理主体](ownership.ja.md)にNiaが引き受ける役割と独立した基盤を整理した。
+[DEBトリガーの解析と発火先](deb-triggers.ja.md)を元DEB読取器と候補catalogへ追加した。
 現段階のPython工具は移行対象の実データ検査であり、インストーラーや特権writerではない。
 pkgcoreには[非公開世代の組立てSDK](generation-stage.ja.md)を追加した。
 既存CAS/WALで分割適用と全体検査を行い、[公開SDK](generation-publication.ja.md)で

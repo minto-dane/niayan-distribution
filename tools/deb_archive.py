@@ -9,6 +9,7 @@ import io,lzma,re,tarfile,zlib
 from pathlib import PurePosixPath
 from nia_common import Invalid,sha,relative,read_file
 from debian_semantics import NAME,split_version,relations
+from debian_triggers import describe as describe_triggers
 
 MAX_DEB=512*1024*1024
 MAX_CONTROL=16*1024*1024
@@ -228,6 +229,7 @@ def inspect_bytes(raw:bytes)->dict:
             'artifact_sha256':sha(raw),'format':'deb','identity':{k:info[k] for k in ('package','version','architecture')},
             'raw_control_sha256':sha(files['control']),'fields':info,'relationships':native,
             'control_inventory':control,'file_inventory':data,'conffiles':conf,'effect_members':effects,
+            'trigger_declarations':describe_triggers(files.get('triggers',b'')),
             'unknown_control_members':unknown_controls,'unmodeled_fields':sorted(set(info)-DESCRIPTIVE),
             'runtime_dependencies_preserved':True,'maintainer_scripts_executed':False,
             'needs_reviewed_effect_contract':True,'native_database_created':False}

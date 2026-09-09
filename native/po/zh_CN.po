@@ -1,0 +1,353 @@
+# SPDX-License-Identifier: MIT
+# Simplified Chinese translations for the Nia management interface.
+# Copyright (C) 2026 NiaOS contributors.
+msgid ""
+msgstr "Project-Id-Version: nia-management 1\nReport-Msgid-Bugs-To: \nPO-Revision-Date: 2026-09-09 00:00+0000\nLast-Translator: NiaOS contributors\nLanguage-Team: Simplified Chinese\nLanguage: zh_CN\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=1; plural=0;\n"
+
+msgid "-I accepts only installp option flags"
+msgstr "-I 仅接受 installp 选项标志"
+
+msgid "-m must be 1, 2 or 3"
+msgstr "-m 必须为 1、2 或 3"
+
+msgid "-p requires -k FIX"
+msgstr "-p 需要 -k FIX"
+
+msgid "-r and -m are mutually exclusive"
+msgstr "-r 与 -m 不能同时使用"
+
+msgid "-s cannot be combined with -x or -w"
+msgstr "-s 不能与 -x 或 -w 一起使用"
+
+msgid "-v does not accept file operands"
+msgstr "-v 不接受文件操作数"
+
+msgid "A required file or directory does not exist."
+msgstr "所需的文件或目录不存在。"
+
+msgid "A symbolic link was encountered where an ordinary path is required."
+msgstr "需要普通路径的位置存在符号链接。"
+
+msgid "ABSTRACT"
+msgstr "摘要"
+
+msgid "ACTIVATION"
+msgstr "激活条件"
+
+msgid "ADVISORIES"
+msgstr "修复公告"
+
+msgid "An input/output operation failed; completion is not established."
+msgstr "输入/输出操作失败；尚未确认操作是否完成。"
+
+msgid "BASE LEVEL"
+msgstr "基础版本"
+
+msgid "BASE SHA256"
+msgstr "基础 SHA256"
+
+msgid "CONFLICTS"
+msgstr "冲突项"
+
+msgid "CONTROL EFFECT"
+msgstr "控制脚本效果"
+
+msgid "CREATED AT"
+msgstr "创建时间"
+
+msgid "DLTarget must be absolute"
+msgstr "DLTarget 必须是绝对路径"
+
+msgid "Downloaded interim fix: {path}"
+msgstr "已下载临时修复：{path}"
+
+msgid "EFFECT CONTRACT SHA256"
+msgstr "效果契约 SHA256"
+
+msgid "EFIX LABEL"
+msgstr "紧急修复标签"
+
+msgid "EXPIRES AT"
+msgstr "到期时间"
+
+msgid "FILE NUMBER"
+msgstr "文件编号"
+
+msgid "FILE TYPE"
+msgstr "文件类型"
+
+msgid "Foreign TL/SP/ML/PTF are not Nia release identifiers"
+msgstr "其他平台的 TL/SP/ML/PTF 不是 Nia 发行版本标识"
+
+msgid "Invalid command option: {option}."
+msgstr "无效的命令选项：{option}。"
+
+msgid "Invoke as: {commands}"
+msgstr "调用方式：{commands}"
+
+msgid "LEVEL"
+msgstr "版本"
+
+msgid "LINK"
+msgstr "链接"
+
+msgid "LOCATION"
+msgstr "位置"
+
+msgid "Nia requires an explicit -d SOURCE for apply"
+msgstr "Nia 在应用时要求显式指定 -d SOURCE"
+
+msgid "NiaOS development interface; native service is not connected.\nLocal epkg template builds and emgr -d displays are available.\nemgr_download_ifix requires provisioned authenticated repository policy.\nInstalled-package operations and interactive packaging are unavailable.\nDebian package names/versions are retained. Other reference-platform options are rejected."
+msgstr "NiaOS 开发接口；尚未连接原生服务。\n可以使用 epkg 从本地模板构建，以及使用 emgr -d 显示内容。\nemgr_download_ifix 需要已配置且经过认证的仓库策略。\n尚不支持已安装软件包操作和交互式软件包创建。\n保留 Debian 软件包的名称和版本。其他参考平台选项将被拒绝。"
+
+msgid "PACKAGE"
+msgstr "软件包"
+
+msgid "PACKAGE SHA256"
+msgstr "软件包 SHA256"
+
+msgid "PRE-REQUISITES"
+msgstr "先决条件"
+
+msgid "PUBLISHER AUTHENTICATION"
+msgstr "发布者认证"
+
+msgid "Package file is: {path}"
+msgstr "软件包文件：{path}"
+
+msgid "Permission to access a required file or directory was denied."
+msgstr "访问所需文件或目录的权限被拒绝。"
+
+msgid "REBOOT REQUIRED"
+msgstr "需要重启"
+
+msgid "ROLLBACK CONTRACT SHA256"
+msgstr "回滚契约 SHA256"
+
+msgid "Repository authentication failed; no artifact was accepted."
+msgstr "仓库认证失败；未接受任何产物。"
+
+msgid "Repository download failed; check the connection and repository configuration."
+msgstr "仓库下载失败；请检查连接和仓库配置。"
+
+msgid "Repository policy changed during download; retry with the current policy."
+msgstr "下载期间仓库策略已更改；请使用当前策略重试。"
+
+msgid "Repository policy ownership or permissions are not trusted."
+msgstr "仓库策略的所有者或权限不可信。"
+
+msgid "SECURITY EPOCH"
+msgstr "安全纪元"
+
+msgid "SHA256"
+msgstr "SHA256"
+
+msgid "SIZE"
+msgstr "大小"
+
+msgid "SUPERSEDE"
+msgstr "取代项"
+
+msgid "Storage is full; the operation did not complete."
+msgstr "存储空间已满；操作未完成。"
+
+msgid "TARGET SHA256"
+msgstr "目标 SHA256"
+
+msgid "The authenticated reference differs from the package manifest."
+msgstr "经过认证的引用与软件包清单不一致。"
+
+msgid "The command label differs from the package control file."
+msgstr "命令标签与软件包控制文件不一致。"
+
+msgid "The download URL is outside the configured repository."
+msgstr "下载 URL 不在配置的仓库范围内。"
+
+msgid "The input is invalid or is not supported by this operation."
+msgstr "输入无效或此操作不支持该输入。"
+
+msgid "The interim package expired during download."
+msgstr "临时修复包在下载期间已过期。"
+
+msgid "The interim package has expired or is not yet valid."
+msgstr "临时修复包已过期或尚未生效。"
+
+msgid "The interim package is older than the trusted security minimum."
+msgstr "临时修复包低于可信的最低安全要求。"
+
+msgid "The operation could not be completed."
+msgstr "无法完成操作。"
+
+msgid "The original package identity differs from the manifest."
+msgstr "原始软件包标识与清单不一致。"
+
+msgid "The output already exists and was not overwritten."
+msgstr "输出已存在，未被覆盖。"
+
+msgid "The package size or checksum does not match."
+msgstr "软件包大小或校验和不匹配。"
+
+msgid "The repository is in use; retry after the current operation finishes."
+msgstr "仓库正在使用中；请在当前操作完成后重试。"
+
+msgid "The requested artifact is absent from the authenticated repository."
+msgstr "经过认证的仓库中不存在请求的产物。"
+
+msgid "The storage quota was exceeded; the operation did not complete."
+msgstr "已超出存储配额；操作未完成。"
+
+msgid "all cannot be combined with names"
+msgstr "all 不能与名称一起使用"
+
+msgid "at most one package for lock display"
+msgstr "显示锁定信息时最多只能指定一个软件包"
+
+msgid "at most one task ID"
+msgstr "最多只能指定一个任务 ID"
+
+msgid "attribute edits for this SUMA action are not supported"
+msgstr "此 SUMA 操作不支持编辑属性"
+
+msgid "command input limit exceeded"
+msgstr "命令输入超出限制"
+
+msgid "conflicting geninstall actions"
+msgstr "geninstall 操作相互冲突"
+
+msgid "conflicting installp actions"
+msgstr "installp 操作相互冲突"
+
+msgid "conflicting interim actions"
+msgstr "临时修复操作相互冲突"
+
+msgid "cron field out of range"
+msgstr "cron 字段超出范围"
+
+msgid "cron step out of range"
+msgstr "cron 步长超出范围"
+
+msgid "empty argument or control character"
+msgstr "参数为空或包含控制字符"
+
+msgid "empty fix keyword list"
+msgstr "修复关键字列表为空"
+
+msgid "geninstall -I must select apply, not commit alone"
+msgstr "geninstall -I 必须选择应用操作，不能仅选择提交操作"
+
+msgid "incorrect task ID count"
+msgstr "任务 ID 数量不正确"
+
+msgid "interim number must be a positive integer"
+msgstr "临时修复编号必须是正整数"
+
+msgid "inutoc accepts at most one directory"
+msgstr "inutoc 最多接受一个目录"
+
+msgid "invalid interim fix label"
+msgstr "临时修复标签无效"
+
+msgid "media listing requires -d SOURCE and no operands"
+msgstr "列出介质内容需要 -d SOURCE，且不能提供操作数"
+
+msgid "missing or unsupported value for -{option}"
+msgstr "-{option} 的值缺失或不受支持"
+
+msgid "name packages explicitly for reject/remove"
+msgstr "拒绝或移除时请显式指定软件包名称"
+
+msgid "none"
+msgstr "无"
+
+msgid "not established"
+msgstr "尚未确认"
+
+msgid "not verified"
+msgstr "未验证"
+
+msgid "option is not valid for this action"
+msgstr "此操作不能使用该选项"
+
+msgid "options must precede operands; leading-dash operands are unsupported"
+msgstr "选项必须位于操作数之前；不支持以连字符开头的操作数"
+
+msgctxt "reboot-required"
+msgid "no"
+msgstr "否"
+
+msgctxt "reboot-required"
+msgid "yes"
+msgstr "是"
+
+msgid "recovery covers the interrupted transaction; no operands allowed"
+msgstr "恢复针对被中断的事务；不允许提供操作数"
+
+msgid "repeated -{option}"
+msgstr "重复指定了 -{option}"
+
+msgid "schedule needs five cron fields"
+msgstr "计划需要五个 cron 字段"
+
+msgid "specify -L URL, without operands"
+msgstr "请指定 -L URL，不要提供操作数"
+
+msgid "specify -d SOURCE"
+msgstr "请指定 -d SOURCE"
+
+msgid "specify -d SOURCE, without operands"
+msgstr "请指定 -d SOURCE，不要提供操作数"
+
+msgid "specify -d SOURCE, without package operands"
+msgstr "请指定 -d SOURCE，不要提供软件包操作数"
+
+msgid "specify -e PACKAGE_FILE"
+msgstr "请指定 -e PACKAGE_FILE"
+
+msgid "specify -x, -w or -s"
+msgstr "请指定 -x、-w 或 -s"
+
+msgid "specify exactly one action from {actions}"
+msgstr "请从 {actions} 中指定且仅指定一个操作"
+
+msgid "specify one interim fix label"
+msgstr "请指定一个临时修复标签"
+
+msgid "specify one interim package with -e or as an operand"
+msgstr "请使用 -e 或操作数指定一个临时修复包"
+
+msgid "specify one selector for remove, at most one for list/check"
+msgstr "移除时请指定一个选择条件；列出或检查时最多指定一个"
+
+msgid "specify operands or -f LIST"
+msgstr "请指定操作数或 -f LIST"
+
+msgid "task IDs must be numeric"
+msgstr "任务 ID 必须为数字"
+
+msgid "unknown package command"
+msgstr "未知的软件包命令"
+
+msgid "unknown, duplicate or malformed SUMA attribute"
+msgstr "SUMA 属性未知、重复或格式错误"
+
+msgid "unsupported SUMA Action"
+msgstr "不支持的 SUMA Action"
+
+msgid "unsupported cron field"
+msgstr "不支持的 cron 字段"
+
+msgid "unsupported installp flags in -I"
+msgstr "-I 中包含不支持的 installp 选项标志"
+
+msgid "use -k for fix keywords"
+msgstr "请使用 -k 指定修复关键字"
+
+msgid "verbosity must be 1, 2 or 3"
+msgstr "详细程度必须为 1、2 或 3"
+
+msgid "{command}: {action}: native package service is not connected; no operation or preview was performed."
+msgstr "{command}：{action}：尚未连接原生软件包服务；未执行任何操作或预览。"
+
+msgid "{label}: {value}"
+msgstr "{label}：{value}"
+

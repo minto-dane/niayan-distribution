@@ -19,7 +19,8 @@ def candidate(observations:list[dict],required_packages:list[str],profile_sha256
         identity=observed['identity'];meta=observed['fields'];artifact=observed['artifact_sha256'];digest(artifact)
         if artifact in objects:raise Invalid('duplicate input artifact')
         objects[artifact]={'identity':identity,'raw_control_sha256':observed['raw_control_sha256'],
-            'effects':observed['effect_members'],'unmodeled_fields':observed['unmodeled_fields'],
+            'effects':observed['effect_members'],'trigger_declarations':observed['trigger_declarations'],
+            'unmodeled_fields':observed['unmodeled_fields'],
             'control_inventory':observed['control_inventory'],'unknown_control_members':observed['unknown_control_members']}
         provides=[(a.name,a.version or None) for g in relations(meta.get('provides',''),provides=True) for a in g]
         p={'id':artifact,'name':identity['package'],'version':identity['version'],'architecture':identity['architecture'],

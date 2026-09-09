@@ -4,14 +4,14 @@ import json
 import sys
 import unittest
 from pathlib import Path
-ROOT=Path(__file__).resolve().parents[2]
-sys.path.insert(0,str(ROOT/'distribution/tools'))
+ROOT=Path(__file__).resolve().parents[1]
+sys.path.insert(0,str(ROOT/'tools'))
 from nia_policy import GATES,readiness
 from nia_common import Invalid
 
 class ConsentRelease(unittest.TestCase):
     def test_registered_gate_set_matches_product_contract(self):
-        c=json.loads((ROOT/'distribution/contracts/release-gates.json').read_text())
+        c=json.loads((ROOT/'contracts/release-gates.json').read_text())
         self.assertEqual(c['required_gates'],list(GATES))
         self.assertFalse(c['production_qualified'])
     def test_consent_cannot_disappear_from_missing_evidence(self):
