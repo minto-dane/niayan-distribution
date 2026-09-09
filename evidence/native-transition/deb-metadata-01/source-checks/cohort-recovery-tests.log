@@ -1,0 +1,55 @@
+test_all_copies_corrupt (test_recovery_cohort.RecoveryTests.test_all_copies_corrupt) ... ok
+test_all_copies_missing_no_ready_marker (test_recovery_cohort.RecoveryTests.test_all_copies_missing_no_ready_marker) ... ok
+test_boolean_generation (test_recovery_cohort.RecoveryTests.test_boolean_generation) ... ok
+test_business_data_not_generic_restore (test_recovery_cohort.RecoveryTests.test_business_data_not_generic_restore) ... ok
+test_capacity (test_recovery_cohort.RecoveryTests.test_capacity) ... ok
+test_chunk_coverage (test_recovery_cohort.RecoveryTests.test_chunk_coverage) ... ok
+test_different_damaged_chunks_combined (test_recovery_cohort.RecoveryTests.test_different_damaged_chunks_combined) ... ok
+test_directory_ancestor_must_be_declared (test_recovery_cohort.RecoveryTests.test_directory_ancestor_must_be_declared) ... ok
+test_duplicate_json (test_recovery_cohort.RecoveryTests.test_duplicate_json) ... ok
+test_duplicate_path (test_recovery_cohort.RecoveryTests.test_duplicate_path) ... ok
+test_each_interruption_keeps_originals (test_recovery_cohort.RecoveryTests.test_each_interruption_keeps_originals) ... ok
+test_empty_content_digest (test_recovery_cohort.RecoveryTests.test_empty_content_digest) ... ok
+test_entire_replica_lost (test_recovery_cohort.RecoveryTests.test_entire_replica_lost) ... ok
+test_evidence_io_error_is_not_swallowed (test_recovery_cohort.RecoveryTests.test_evidence_io_error_is_not_swallowed) ... ok
+test_exact_reconstruction (test_recovery_cohort.RecoveryTests.test_exact_reconstruction) ... ok
+test_expiry (test_recovery_cohort.RecoveryTests.test_expiry) ... ok
+test_export_never_writes_into_source (test_recovery_cohort.RecoveryTests.test_export_never_writes_into_source) ... ok
+test_export_rejects_unlisted_input_before_writing (test_recovery_cohort.RecoveryTests.test_export_rejects_unlisted_input_before_writing) ... ok
+test_fifo_no_block (test_recovery_cohort.RecoveryTests.test_fifo_no_block) ... ok
+test_file_setid_never_ignored (test_recovery_cohort.RecoveryTests.test_file_setid_never_ignored) ... ok
+test_forged_signature (test_recovery_cohort.RecoveryTests.test_forged_signature) ... ok
+test_future_time (test_recovery_cohort.RecoveryTests.test_future_time) ... ok
+test_journal_mandatory (test_recovery_cohort.RecoveryTests.test_journal_mandatory) ... ok
+test_live_inventory_detects_corruption (test_recovery_cohort.RecoveryTests.test_live_inventory_detects_corruption) ... ok
+test_live_inventory_detects_injected_file (test_recovery_cohort.RecoveryTests.test_live_inventory_detects_injected_file) ... ok
+test_live_inventory_detects_missing_history (test_recovery_cohort.RecoveryTests.test_live_inventory_detects_missing_history) ... ok
+test_live_inventory_detects_unlisted_directory (test_recovery_cohort.RecoveryTests.test_live_inventory_detects_unlisted_directory) ... ok
+test_live_inventory_detects_wrong_mode (test_recovery_cohort.RecoveryTests.test_live_inventory_detects_wrong_mode) ... ok
+test_live_inventory_detects_xattr_change (test_recovery_cohort.RecoveryTests.test_live_inventory_detects_xattr_change) ... ok
+test_manifest_all_lost (test_recovery_cohort.RecoveryTests.test_manifest_all_lost) ... ok
+test_manifest_loss_and_corruption_fallback (test_recovery_cohort.RecoveryTests.test_manifest_loss_and_corruption_fallback) ... ok
+test_manifest_substitution (test_recovery_cohort.RecoveryTests.test_manifest_substitution) ... ok
+test_minimum_generation (test_recovery_cohort.RecoveryTests.test_minimum_generation) ... ok
+test_no_overwrite_of_candidate (test_recovery_cohort.RecoveryTests.test_no_overwrite_of_candidate) ... ok
+test_old_anchor_even_with_valid_signatures (test_recovery_cohort.RecoveryTests.test_old_anchor_even_with_valid_signatures) ... ok
+test_one_signature_not_enough (test_recovery_cohort.RecoveryTests.test_one_signature_not_enough) ... ok
+test_parent_symlink (test_recovery_cohort.RecoveryTests.test_parent_symlink) ... ok
+test_pending_set_not_erased (test_recovery_cohort.RecoveryTests.test_pending_set_not_erased) ... ok
+test_replaced_anchor (test_recovery_cohort.RecoveryTests.test_replaced_anchor) ... ok
+test_revoked_key (test_recovery_cohort.RecoveryTests.test_revoked_key) ... ok
+test_root_directory_permissions_detected (test_recovery_cohort.RecoveryTests.test_root_directory_permissions_detected) ... ok
+test_root_xattrs_detected (test_recovery_cohort.RecoveryTests.test_root_xattrs_detected) ... ok
+test_same_domain (test_recovery_cohort.RecoveryTests.test_same_domain) ... ok
+test_same_key_under_alias (test_recovery_cohort.RecoveryTests.test_same_key_under_alias) ... ok
+test_symlink_object (test_recovery_cohort.RecoveryTests.test_symlink_object) ... ok
+test_traversal (test_recovery_cohort.RecoveryTests.test_traversal) ... ok
+test_trust_floor (test_recovery_cohort.RecoveryTests.test_trust_floor) ... ok
+test_verify_is_read_only (test_recovery_cohort.RecoveryTests.test_verify_is_read_only) ... ok
+test_wrong_node (test_recovery_cohort.RecoveryTests.test_wrong_node) ... ok
+test_wrong_roles (test_recovery_cohort.RecoveryTests.test_wrong_roles) ... ok
+
+----------------------------------------------------------------------
+Ran 50 tests in 0.181s
+
+OK

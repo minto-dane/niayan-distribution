@@ -1,0 +1,20 @@
+ORIGINAL c640cb0535b26a9db7ff268dcd3d5f84d969a723f821b0dd9288474d878010ef
+CONTROL c3d5019d331eb7352d60c454d31e76b17c5dde04ee64b53a9ce66444c722b1c8
+PACKAGE niaos-controlcore
+VERSION 0.1.0+gite2a3f9ff89b5
+ARCHITECTURE amd64
+SOURCE niaos-controlcore 0.1.0+gite2a3f9ff89b5
+MULTI NO
+ESSENTIAL FALSE
+PROTECTED FALSE
+INSTALLED_SIZE TRUE 1025
+FIELD package
+FIELD version
+FIELD architecture
+FIELD maintainer
+FIELD installed-size
+FIELD depends
+FIELD section
+FIELD priority
+FIELD description
+PASS assertions= 9

@@ -1,0 +1,20 @@
+ORIGINAL dca754623a808d731649a67ac2c8e9d61eb26474c55b86f65aaf69dc162b140c
+CONTROL 295a3aa4eaa2e64f0393253729843f973b7af6bd6df02baaaec47643b60ad546
+PACKAGE niaos-statecore
+VERSION 0.1.0+gitc0c9ca947c2e
+ARCHITECTURE amd64
+SOURCE niaos-statecore 0.1.0+gitc0c9ca947c2e
+MULTI NO
+ESSENTIAL FALSE
+PROTECTED FALSE
+INSTALLED_SIZE TRUE 1047
+FIELD package
+FIELD version
+FIELD architecture
+FIELD maintainer
+FIELD installed-size
+FIELD depends
+FIELD section
+FIELD priority
+FIELD description
+PASS assertions= 9

@@ -1,0 +1,27 @@
+ORIGINAL 8ffd13165b9ee3f067e2ee670df718e48c1bdaa18676ac93d1de761dbbb3913c
+CONTROL 747ac33ee685482f194e32e7216ff89cdde2b0561f80fcbdeda7d4f46d5176d9
+PACKAGE libc6
+VERSION 2.41-12+deb13u3
+ARCHITECTURE amd64
+SOURCE glibc 2.41-12+deb13u3
+MULTI SAME
+ESSENTIAL FALSE
+PROTECTED FALSE
+INSTALLED_SIZE TRUE 13226
+FIELD package
+FIELD source
+FIELD version
+FIELD architecture
+FIELD maintainer
+FIELD installed-size
+FIELD depends
+FIELD recommends
+FIELD suggests
+FIELD breaks
+FIELD replaces
+FIELD section
+FIELD priority
+FIELD multi-arch
+FIELD homepage
+FIELD description
+PASS assertions= 9

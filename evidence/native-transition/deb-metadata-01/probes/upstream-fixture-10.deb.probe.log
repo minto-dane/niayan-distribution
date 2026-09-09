@@ -1,0 +1,28 @@
+ORIGINAL ee81302a1d5b7434762b6e784a572854d4b6cf6235e33e2d104ad4e1cae71ab4
+CONTROL dba7ff084f1ca966f62949ca02730c076d2b02294b33817d941d8fc1f559654f
+PACKAGE systemd
+VERSION 257.13-1~deb13u1
+ARCHITECTURE amd64
+SOURCE systemd 257.13-1~deb13u1
+MULTI FOREIGN
+ESSENTIAL FALSE
+PROTECTED FALSE
+INSTALLED_SIZE TRUE 9944
+FIELD package
+FIELD version
+FIELD architecture
+FIELD maintainer
+FIELD installed-size
+FIELD pre-depends
+FIELD depends
+FIELD recommends
+FIELD suggests
+FIELD conflicts
+FIELD breaks
+FIELD provides
+FIELD section
+FIELD priority
+FIELD multi-arch
+FIELD homepage
+FIELD description
+PASS assertions= 9

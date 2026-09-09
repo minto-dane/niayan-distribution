@@ -1,0 +1,21 @@
+{
+  "container_image": "0c04329a1343a0f1ae82ab931ffc7a7e5cbfdccbf18948e0576366fbf5bb249a",
+  "container_network": "none",
+  "normal_uid": 1000,
+  "root_refusal_uid": 0,
+  "outer_scope": "sh dev/run-limited.sh",
+  "normal": [
+    "make compile-all build test",
+    "python3 tests/make_deb_control_fixtures.py --check"
+  ],
+  "independent": [
+    "make compile-all build test-build"
+  ],
+  "normal_path": "/workspace",
+  "independent_path": "/independent/pkgcore",
+  "normal_mtime": 1788739200,
+  "independent_mtime": 1788652800,
+  "independent_tz": "Pacific/Honolulu",
+  "root_refusal": "build/test-bin/run_deb_metadata_tests /nonexistent /nonexistent",
+  "real_debs": "python3 /results/compare-real.py"
+}
