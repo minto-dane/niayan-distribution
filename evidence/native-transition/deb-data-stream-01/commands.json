@@ -1,0 +1,53 @@
+{
+  "container_image": "0c04329a1343a0f1ae82ab931ffc7a7e5cbfdccbf18948e0576366fbf5bb249a",
+  "container_network": "none",
+  "normal_uid": 1000,
+  "root_refusal_uid": 0,
+  "outer_scope": "sh dev/run-limited.sh",
+  "normal": [
+    "make compile-all build test",
+    "python3 tests/make_deb_data_fixtures.py --check"
+  ],
+  "independent": [
+    "make compile-all build test-build"
+  ],
+  "normal_path": "/workspace",
+  "independent_path": "/independent/pkgcore",
+  "normal_mtime": 1788739200,
+  "independent_mtime": 1788652800,
+  "source_date_epoch": 1788739200,
+  "normal_tz": "UTC",
+  "independent_tz": "Pacific/Honolulu",
+  "sanitized_build": [
+    "gprbuild",
+    "-s",
+    "-j1",
+    "-p",
+    "-P",
+    "tests.gpr",
+    "run_deb_data_stream_tests.adb",
+    "-cargs:C",
+    "-fsanitize=address,undefined",
+    "-fno-omit-frame-pointer",
+    "-largs",
+    "-fsanitize=address,undefined"
+  ],
+  "sanitized_environment": {
+    "ASAN_OPTIONS": "detect_leaks=0:halt_on_error=1",
+    "UBSAN_OPTIONS": "halt_on_error=1:print_stacktrace=1"
+  },
+  "sanitized_run": "mkdir -m 700 /tmp/data-stream-cas; build/test-bin/run_deb_data_stream_tests /tmp/data-stream-cas tests/fixtures/deb-data",
+  "sanitizer_scope": "C boundaries only; Ada and upstream libraries uninstrumented; leak checking disabled",
+  "root_refusal": "build/test-bin/run_deb_data_stream_tests /nonexistent /nonexistent",
+  "comparisons": [
+    "python3 /results/generate-large.py",
+    "python3 /results/compare-real.py"
+  ],
+  "codec_development_versions": {
+    "libbz2-dev": "1.0.8-6",
+    "liblzma-dev": "5.8.1-1+deb13u1",
+    "libzstd-dev": "1.5.7+dfsg-1",
+    "zlib1g-dev": "1:1.3.dfsg+really1.3.1-1+b1"
+  },
+  "toolchain_note": "Existing fixed image already provides libbz2-dev transitively; explicit development/CI dependency added without rebuilding the image"
+}

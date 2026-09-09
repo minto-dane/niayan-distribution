@@ -1,0 +1,3 @@
+Running as unit: run-p86782-i87082.scope; invocation ID: 2efc439f44634d1a83c30140eed72c00
+limited-exec: {"scope": "run-p86782-i87082.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+/home/nia/devbox/niaos/nia-os-consent/assurance/evidence/engineering-aiesflnb/report.json

@@ -1,0 +1,35 @@
+Running as unit: run-p85962-i86262.scope; invocation ID: e6078802ec36406d928d31f2eb3b99c3
+limited-exec: {"scope": "run-p85962-i86262.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Setup
+   [mkdir]        object directory for project Tests
+   [mkdir]        exec directory for project Tests
+Compile
+   [Ada]          run_deb_data_stream_tests.adb
+   [C]            pkg_deb_stream.c
+   [C]            pkg_deb_decode.c
+   [Ada]          mc_clock.adb
+   [Ada]          mc_fs.adb
+   [Ada]          mc_hex.adb
+   [Ada]          mc_posix.ads
+   [Ada]          mc_runtime.adb
+   [Ada]          mc_sha256.adb
+   [Ada]          mc_store.adb
+   [Ada]          mc_types.adb
+   [Ada]          pkg_deb_container.adb
+   [Ada]          pkg_deb_data_stream.adb
+   [Ada]          test_support.adb
+   [Ada]          mc_kernel_read.adb
+   [Ada]          mc_codec.adb
+   [Ada]          mc_paths.adb
+   [Ada]          mc_dirents.adb
+   [Ada]          mc_text.adb
+Bind
+   [gprbind]      run_deb_data_stream_tests.bexch
+   [Ada]          run_deb_data_stream_tests.ali
+Link
+   [archive]      libtests.a
+   [index]        libtests.a
+   [link]         run_deb_data_stream_tests.adb
+FAIL: private CASDENIED
+
+raised TEST_SUPPORT.FAILURE : private CASDENIED

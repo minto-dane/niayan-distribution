@@ -35,7 +35,9 @@
         "../pkgcore/runtime/pkg_deb_decode.c",
         "../pkgcore/runtime/pkg_deb_fields.adb",
         "../pkgcore/runtime/pkg_deb_metadata.adb",
-        "../pkgcore/runtime/pkg_deb_relations.adb"
+        "../pkgcore/runtime/pkg_deb_relations.adb",
+        "../pkgcore/runtime/pkg_deb_stream.c",
+        "../pkgcore/runtime/pkg_deb_data_stream.adb"
       ],
       "tests": [
         "native/test_transition.py",
@@ -45,7 +47,8 @@
         "../pkgcore/tests/run_deb_container_tests.adb",
         "../pkgcore/tests/run_deb_control_tests.adb",
         "../pkgcore/tests/run_deb_metadata_tests.adb",
-        "../pkgcore/tests/run_deb_relations_tests.adb"
+        "../pkgcore/tests/run_deb_relations_tests.adb",
+        "../pkgcore/tests/run_deb_data_stream_tests.adb"
       ],
       "evidence": [
         "evidence/native-transition/initial-09/inventory.json",
@@ -54,7 +57,8 @@
         "evidence/native-transition/deb-container-01/README.ja.md",
         "evidence/native-transition/deb-control-01/README.ja.md",
         "evidence/native-transition/deb-metadata-01/README.ja.md",
-        "evidence/native-transition/deb-relations-01/README.ja.md"
+        "evidence/native-transition/deb-relations-01/README.ja.md",
+        "evidence/native-transition/deb-data-stream-01/README.ja.md"
       ],
       "remaining": "authenticate original artifacts and implement every adopted phase, generated output and implicit trigger"
     },

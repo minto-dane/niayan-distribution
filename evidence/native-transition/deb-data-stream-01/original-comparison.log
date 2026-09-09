@@ -1,0 +1,4 @@
+Running as unit: run-p83997-i84297.scope; invocation ID: 7141fb3d6289421f886c1d7f275b2d22
+limited-exec: {"scope": "run-p83997-i84297.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+large synthetic input: 25264 expanded: 100669440
+PASS data streams: 14 expanded bytes: 166123520 max native KiB: 14752

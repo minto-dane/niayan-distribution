@@ -1,0 +1,306 @@
+{
+  "result": "pass",
+  "scope": "Data stream only; native versus read-only dpkg-deb and independent ar/CAS; 13 cached originals plus one synthetic large input; no tar ownership/effect qualification",
+  "files": [
+    {
+      "input": {
+        "filename": "niaos-assurance_0.1.0+git70baa595e385_amd64.deb",
+        "sha256": "af7c3031f932d5bbfecda2ceafdd8de1ed72d2f8370a52b4ec02d770e51adcb3",
+        "size": 163500,
+        "source": "/home/nia/devbox/niaos/.work/media-01/original-media/niaos-assurance_0.1.0+git70baa595e385_amd64.deb"
+      },
+      "observation": {
+        "ORIGINAL": "af7c3031f932d5bbfecda2ceafdd8de1ed72d2f8370a52b4ec02d770e51adcb3",
+        "COMPRESSED": "dd173f0cd2a059c04c624bf1dcb4c1572118219c89c4f48fec33e2afa341a98d",
+        "EXPANDED": "baaa59bf68403242e49a1fa33cded4d254907daf1d5227bb539a8c90f150a49e",
+        "ENCODED_SIZE": "162532",
+        "EXPANDED_SIZE": "552960"
+      },
+      "resources": {
+        "returncode": 0,
+        "seconds": 0.06392969799890125,
+        "peak_child_rss_kib": 11316
+      },
+      "result": "pass"
+    },
+    {
+      "input": {
+        "filename": "niaos-capsulecore_0.1.0+git0c356eecb425_amd64.deb",
+        "sha256": "7c97862c75ba7d54e188cd6001f3e070ad0681e897a5c3b71f5e35c53732d268",
+        "size": 66948,
+        "source": "/home/nia/devbox/niaos/.work/media-01/original-media/niaos-capsulecore_0.1.0+git0c356eecb425_amd64.deb"
+      },
+      "observation": {
+        "ORIGINAL": "7c97862c75ba7d54e188cd6001f3e070ad0681e897a5c3b71f5e35c53732d268",
+        "COMPRESSED": "d72032fe52991da39903b16219e6c60acc21c70d033d089aaada4865c67d44f5",
+        "EXPANDED": "b8c9825743e41516c79fa663c0d1782da17055132956d9b55e0d8ae96214bd03",
+        "ENCODED_SIZE": "66040",
+        "EXPANDED_SIZE": "174080"
+      },
+      "resources": {
+        "returncode": 0,
+        "seconds": 0.06448135599930538,
+        "peak_child_rss_kib": 11388
+      },
+      "result": "pass"
+    },
+    {
+      "input": {
+        "filename": "niaos-configcore_0.1.0+git6d46ea26c38c_amd64.deb",
+        "sha256": "663f792345cf77fe7a86c9b390126d37071682dafbad85bb345f425c3c41fece",
+        "size": 94728,
+        "source": "/home/nia/devbox/niaos/.work/media-01/original-media/niaos-configcore_0.1.0+git6d46ea26c38c_amd64.deb"
+      },
+      "observation": {
+        "ORIGINAL": "663f792345cf77fe7a86c9b390126d37071682dafbad85bb345f425c3c41fece",
+        "COMPRESSED": "74295d03a41c70013dbd4faeab12b3e3766a83ff1327d93e1b3a3f3ad7c124f5",
+        "EXPANDED": "03c1ac03879c8feb78d39863eeb2e14f5e249998a40b29469b0014c693d0b129",
+        "ENCODED_SIZE": "93820",
+        "EXPANDED_SIZE": "256000"
+      },
+      "resources": {
+        "returncode": 0,
+        "seconds": 0.06436033899990434,
+        "peak_child_rss_kib": 11276
+      },
+      "result": "pass"
+    },
+    {
+      "input": {
+        "filename": "niaos-controlcore_0.1.0+gite2a3f9ff89b5_amd64.deb",
+        "sha256": "c640cb0535b26a9db7ff268dcd3d5f84d969a723f821b0dd9288474d878010ef",
+        "size": 199588,
+        "source": "/home/nia/devbox/niaos/.work/media-01/original-media/niaos-controlcore_0.1.0+gite2a3f9ff89b5_amd64.deb"
+      },
+      "observation": {
+        "ORIGINAL": "c640cb0535b26a9db7ff268dcd3d5f84d969a723f821b0dd9288474d878010ef",
+        "COMPRESSED": "a2050b6b0ddcd2685a653bf16862d5d945eefd4370265a0153dfcc2c13348a6e",
+        "EXPANDED": "dd2d46aaa1dc4ce2286b4c6de856f3dbb9ac46cbf2143d5321e01eb8f481888d",
+        "ENCODED_SIZE": "198620",
+        "EXPANDED_SIZE": "1054720"
+      },
+      "resources": {
+        "returncode": 0,
+        "seconds": 0.11421728499954042,
+        "peak_child_rss_kib": 11340
+      },
+      "result": "pass"
+    },
+    {
+      "input": {
+        "filename": "niaos-pkgcore_0.1.0+gite74913f9f941_amd64.deb",
+        "sha256": "69e2f82fed042d5d603e9eee88cdb5bff1c7f454e0236bb636b08df069139cd0",
+        "size": 231492,
+        "source": "/home/nia/devbox/niaos/.work/media-01/original-media/niaos-pkgcore_0.1.0+gite74913f9f941_amd64.deb"
+      },
+      "observation": {
+        "ORIGINAL": "69e2f82fed042d5d603e9eee88cdb5bff1c7f454e0236bb636b08df069139cd0",
+        "COMPRESSED": "c064bd56df4a49adc47412d8eb267455b1c0136ca26d43304b79f9b534f92a83",
+        "EXPANDED": "1b61f611c8d3b76ac4a1cc3afd9a6d2f372c0d8e6fab641733ed127a5615bc5a",
+        "ENCODED_SIZE": "230460",
+        "EXPANDED_SIZE": "921600"
+      },
+      "resources": {
+        "returncode": 0,
+        "seconds": 0.11432698899989191,
+        "peak_child_rss_kib": 11320
+      },
+      "result": "pass"
+    },
+    {
+      "input": {
+        "filename": "niaos-resolvercore_0.1.0+gita58f281ff997_amd64.deb",
+        "sha256": "693f76f12902f2d23305073d3350b11a1379d76a1f27cdef696a8e8170ee8009",
+        "size": 88564,
+        "source": "/home/nia/devbox/niaos/.work/media-01/original-media/niaos-resolvercore_0.1.0+gita58f281ff997_amd64.deb"
+      },
+      "observation": {
+        "ORIGINAL": "693f76f12902f2d23305073d3350b11a1379d76a1f27cdef696a8e8170ee8009",
+        "COMPRESSED": "855e2dd3f9352a8f421df0173e46161dca929809356b219f6b5d9479e6652528",
+        "EXPANDED": "c94884c8bb08751c76f5c8b393a5e15e6f4306ca3d668aed2f9f8d492ec3dc17",
+        "ENCODED_SIZE": "87652",
+        "EXPANDED_SIZE": "235520"
+      },
+      "resources": {
+        "returncode": 0,
+        "seconds": 0.06413025200163247,
+        "peak_child_rss_kib": 11288
+      },
+      "result": "pass"
+    },
+    {
+      "input": {
+        "filename": "niaos-statecore_0.1.0+gitc0c9ca947c2e_amd64.deb",
+        "sha256": "dca754623a808d731649a67ac2c8e9d61eb26474c55b86f65aaf69dc162b140c",
+        "size": 230640,
+        "source": "/home/nia/devbox/niaos/.work/media-01/original-media/niaos-statecore_0.1.0+gitc0c9ca947c2e_amd64.deb"
+      },
+      "observation": {
+        "ORIGINAL": "dca754623a808d731649a67ac2c8e9d61eb26474c55b86f65aaf69dc162b140c",
+        "COMPRESSED": "56102f3e35af0a293ad0096e960e53336b641033f6cacdde77ce08c1e833727f",
+        "EXPANDED": "08578d3169558aa5033aafa6a3e848c59f00eaf678d25b0f3ef302585cbce731",
+        "ENCODED_SIZE": "229600",
+        "EXPANDED_SIZE": "1075200"
+      },
+      "resources": {
+        "returncode": 0,
+        "seconds": 0.11491184899932705,
+        "peak_child_rss_kib": 11420
+      },
+      "result": "pass"
+    },
+    {
+      "input": {
+        "filename": "dpkg_1.22.22_amd64.deb",
+        "sha256": "3e800c6d75e8e709007ed1c356e5fa8509a75c1694fb0a1183709abc9cfdc1f3",
+        "size": 1537216,
+        "source": "/home/nia/devbox/niaos/.work/distro-trixie-01/live/cache/packages.bootstrap/dpkg_1.22.22_amd64.deb"
+      },
+      "observation": {
+        "ORIGINAL": "3e800c6d75e8e709007ed1c356e5fa8509a75c1694fb0a1183709abc9cfdc1f3",
+        "COMPRESSED": "37f3ef72a6319d50f53c85784738f656255f4a8c84217cd8bc31f3f5f52dfafe",
+        "EXPANDED": "4decf48c79b89b14e294d6f9eec8f8b386cd3712dff8a8906f39a5761923db9b",
+        "ENCODED_SIZE": "1531612",
+        "EXPANDED_SIZE": "6696960"
+      },
+      "resources": {
+        "returncode": 0,
+        "seconds": 0.41450600499956636,
+        "peak_child_rss_kib": 14744
+      },
+      "result": "pass"
+    },
+    {
+      "input": {
+        "filename": "bash_5.2.37-2+b9_amd64.deb",
+        "sha256": "03571d298ed24c615641d54dec4eb023ef5710a2b8cb9304acb66e372cab9c46",
+        "size": 1501148,
+        "source": "/home/nia/devbox/niaos/.work/distro-trixie-01/live/cache/packages.bootstrap/bash_5.2.37-2+b9_amd64.deb"
+      },
+      "observation": {
+        "ORIGINAL": "03571d298ed24c615641d54dec4eb023ef5710a2b8cb9304acb66e372cab9c46",
+        "COMPRESSED": "a73a8405d184efc4777b7cbfa32223f978b85a94106b43e200f639293e714add",
+        "EXPANDED": "3c127c34bb4b4a3066e5e14762289c7844cc6293741e25540feecab202b406d7",
+        "ENCODED_SIZE": "1498012",
+        "EXPANDED_SIZE": "7342080"
+      },
+      "resources": {
+        "returncode": 0,
+        "seconds": 0.4648799060014426,
+        "peak_child_rss_kib": 14200
+      },
+      "result": "pass"
+    },
+    {
+      "input": {
+        "filename": "libc6_2.41-12+deb13u3_amd64.deb",
+        "sha256": "8ffd13165b9ee3f067e2ee670df718e48c1bdaa18676ac93d1de761dbbb3913c",
+        "size": 2849576,
+        "source": "/home/nia/devbox/niaos/.work/distro-trixie-01/live/cache/packages.bootstrap/libc6_2.41-12+deb13u3_amd64.deb"
+      },
+      "observation": {
+        "ORIGINAL": "8ffd13165b9ee3f067e2ee670df718e48c1bdaa18676ac93d1de761dbbb3913c",
+        "COMPRESSED": "95a4f44259a988a46ffc920573c9be10a9747f7bd1ed2164031f142883020e90",
+        "EXPANDED": "526979303eb22baccfa62b76cd881a37f5d0237bcdfa88183c24b3e55608a377",
+        "ENCODED_SIZE": "2788456",
+        "EXPANDED_SIZE": "13260800"
+      },
+      "resources": {
+        "returncode": 0,
+        "seconds": 0.8158256049991905,
+        "peak_child_rss_kib": 14644
+      },
+      "result": "pass"
+    },
+    {
+      "input": {
+        "filename": "upstream-fixture-10.deb",
+        "sha256": "ee81302a1d5b7434762b6e784a572854d4b6cf6235e33e2d104ad4e1cae71ab4",
+        "size": 3093632,
+        "source": "/home/nia/devbox/niaos/.work/distro-trixie-01/live/cache/packages.bootstrap/systemd_257.13-1~deb13u1_amd64.deb",
+        "original_filename": "systemd_257.13-1~deb13u1_amd64.deb"
+      },
+      "observation": {
+        "ORIGINAL": "ee81302a1d5b7434762b6e784a572854d4b6cf6235e33e2d104ad4e1cae71ab4",
+        "COMPRESSED": "31de5d8124d846df207b930845a965ecfd9169fa316e7f5b8b7e1683933158e0",
+        "EXPANDED": "237bb1352cc31a83f58be3e89113df9516275735e704a857b663a574c99c232c",
+        "ENCODED_SIZE": "3072624",
+        "EXPANDED_SIZE": "10178560"
+      },
+      "resources": {
+        "returncode": 0,
+        "seconds": 0.7191709270009596,
+        "peak_child_rss_kib": 14752
+      },
+      "result": "pass"
+    },
+    {
+      "input": {
+        "filename": "coreutils_9.7-3_amd64.deb",
+        "sha256": "1299ab6f9389a288eb2f5f3dd222c26cc777b9a2d5ecb6ee4cbd340cebcdada2",
+        "size": 3023556,
+        "source": "/home/nia/devbox/niaos/.work/distro-trixie-01/live/cache/packages.bootstrap/coreutils_9.7-3_amd64.deb"
+      },
+      "observation": {
+        "ORIGINAL": "1299ab6f9389a288eb2f5f3dd222c26cc777b9a2d5ecb6ee4cbd340cebcdada2",
+        "COMPRESSED": "0de2cb75b50dd60a01b7d4a4da67316bc8a93ac384cc5b18e0093127620f0c49",
+        "EXPANDED": "6dc069b7e814800e6de328b9ae19335f7a5645b1c82fc9215bb2d070241da0ce",
+        "ENCODED_SIZE": "3016476",
+        "EXPANDED_SIZE": "18851840"
+      },
+      "resources": {
+        "returncode": 0,
+        "seconds": 0.9655185430001438,
+        "peak_child_rss_kib": 14568
+      },
+      "result": "pass"
+    },
+    {
+      "input": {
+        "filename": "upstream-fixture-12.deb",
+        "sha256": "c5eaef41c6947d2888fa3462f787a7e02158b997bd0119154283f425ba57b8b8",
+        "size": 1228860,
+        "source": "/home/nia/devbox/niaos/.work/distro-trixie-01/live/cache/packages.bootstrap/passwd_1%3a4.17.4-2_amd64.deb",
+        "original_filename": "passwd_1%3a4.17.4-2_amd64.deb"
+      },
+      "observation": {
+        "ORIGINAL": "c5eaef41c6947d2888fa3462f787a7e02158b997bd0119154283f425ba57b8b8",
+        "COMPRESSED": "30cd988d40a49d3363264be5bd3ffde6ed0083f9cb5aca62b0305c28c209c76e",
+        "EXPANDED": "d943553d106b42f58c33d7bac7efaf20dd26cba13373d7b958f9b6f224ca6555",
+        "ENCODED_SIZE": "1220112",
+        "EXPANDED_SIZE": "4853760"
+      },
+      "resources": {
+        "returncode": 0,
+        "seconds": 0.3145780590002687,
+        "peak_child_rss_kib": 12268
+      },
+      "result": "pass"
+    },
+    {
+      "input": {
+        "filename": "large-xz.deb",
+        "synthetic": true,
+        "size": 25264,
+        "sha256": "b489514ee8cc12743f6817b9a21a01f3d51e688acf894c14d052ad19213e203d",
+        "encoded_sha256": "6dd31906a89318e438d7717d7dc03ea0c5789b63b983ce55cc055f442dfbb44e",
+        "expanded_sha256": "4dabd1f4d2054996eefbbe99ac19074a06c985e869b3a42ed2f822c9a53702c8",
+        "expanded_size": 100669440,
+        "payload_size": 100663296
+      },
+      "observation": {
+        "ORIGINAL": "b489514ee8cc12743f6817b9a21a01f3d51e688acf894c14d052ad19213e203d",
+        "COMPRESSED": "6dd31906a89318e438d7717d7dc03ea0c5789b63b983ce55cc055f442dfbb44e",
+        "EXPANDED": "4dabd1f4d2054996eefbbe99ac19074a06c985e869b3a42ed2f822c9a53702c8",
+        "ENCODED_SIZE": "14832",
+        "EXPANDED_SIZE": "100669440"
+      },
+      "resources": {
+        "returncode": 0,
+        "seconds": 3.3231825229995593,
+        "peak_child_rss_kib": 14660
+      },
+      "result": "pass"
+    }
+  ]
+}
