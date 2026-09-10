@@ -1,0 +1,4 @@
+Setup
+   [mkdir]        object directory for project Tests
+   [mkdir]        exec directory for project Tests
+gprbuild: "run_site_supply_tests.adb" was not found in the sources of any project

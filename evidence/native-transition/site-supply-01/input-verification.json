@@ -1,0 +1,11 @@
+{
+  "format": 1,
+  "source_subject": "4e9865f5ff59e92bf042d26ce22215f15c02190ca8c3abeebef43f410e0c55fe",
+  "native_compilation_source_files": 362,
+  "all_native_sources_identical": true,
+  "vm_helper_identical": true,
+  "vm_input_files": 15,
+  "all_vm_inputs_identical": true,
+  "component_commit": "9de3fe6542f9cf497434855de17af602f998165e",
+  "production_authorization_completed": false
+}

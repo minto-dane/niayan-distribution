@@ -1,0 +1,17 @@
+{
+  "check_site_supply.py": "58ccaf7874d0338b35e8acc4975c7b70e6b56de0de42159b99b6ada9b0c204fb",
+  "component.deb": "b1b850ecd20ecb411aaf98f7eb3708083855649578ccd463009d33e6a88f5d3c",
+  "root-preparation.deb": "a86a0ffd44854f33a455d16db51588cb30e501327aed05ba00a83cf7934f0667",
+  "runtime/publication-driver": "3d920067d02480bf1add1fcb19998aa24cfdc97c97df6dcc5a0458f2cf709d60",
+  "runtime/session-driver": "07ef0124905586b455012a7b502b9ba78a0e2314a492e8c678bb0b4ddc0dcece",
+  "dependencies/libgnat-14_14.2.0-19_amd64.deb": "1edd2b13324d41e70c25a0172c3c90e4a413aae3312ea0489116e2b573c57885",
+  "runtime/fixtures/invalid.deb": "2bad3e457fb1e6b55d1c94179a11793e714a8935aad6ecc15df1ed4352d56c18",
+  "runtime/fixtures/manifest.json": "db078626ba1bcb84b9c45fff645d3ac88197047d0f74f4924b37ee05b2d6fe4f",
+  "runtime/fixtures/retention-rich.deb": "d0b4978dbac5ba2da1b81b1b7634431752f0f8544e0d0b97d21ac17a83bc839f",
+  "runtime/fixtures/consumer-repacked.deb": "9305004013dfd1abaf229e49ab2337a81a62e1dff70e4e0910569bffb90e77a1",
+  "runtime/fixtures/library-arm64.deb": "00e863e5628799d5a1fe9f24c82311574278d135937e19b635480d563f31b3c5",
+  "runtime/fixtures/consumer.deb": "0f6ef3b64df5746218e3e239c356077a2a94257efaf09d350c8ac8e80f88e557",
+  "runtime/fixtures/consumer-upgrade.deb": "0e0f3577d1df0bf203fb665e643b6c04d4db1c4ffddfbdcc652b5e1fd03b8629",
+  "runtime/fixtures/empty.deb": "0ca179e6befeb761f3613f1ef57ca892ebc3a6a228dca32f1309f0ac06a7de7e",
+  "runtime/fixtures/library-amd64.deb": "58d44b4ec99a566bea3a42071712b0fb3861d32509cd45603c46ca5ba119d961"
+}

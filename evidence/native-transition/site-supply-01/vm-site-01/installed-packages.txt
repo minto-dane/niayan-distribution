@@ -1,0 +1,3 @@
+libgnat-14:amd64	14.2.0-19
+niaos-pkgcore	0.1.0+git9de3fe6542f9
+niaos-root-preparation	0.2.0

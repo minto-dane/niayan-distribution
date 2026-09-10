@@ -1,0 +1,12 @@
+Compile
+   [Ada]          run_site_supply_tests.adb
+   [Ada]          run_generation_publication_tests.adb
+   [Ada]          pkg_site_supply.adb
+Bind
+   [gprbind]      run_site_supply_tests.bexch
+   [Ada]          run_site_supply_tests.ali
+   [gprbind]      run_generation_publication_tests.bexch
+   [Ada]          run_generation_publication_tests.ali
+Link
+   [link]         run_site_supply_tests.adb
+   [link]         run_generation_publication_tests.adb

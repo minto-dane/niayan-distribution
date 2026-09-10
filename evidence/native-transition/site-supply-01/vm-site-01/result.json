@@ -1,0 +1,142 @@
+{
+  "format": 1,
+  "result": "pass",
+  "uid": 987,
+  "probe_cases": [
+    {
+      "case": "protected-current-policy",
+      "exit": 0,
+      "stdout": "format=nia-site-supply-1\nstatus=OK\nmap=2323232323232323232323232323232323232323232323232323232323232323\nobserved_at= 1789068780\nauthorities= 1\nauthority=4747474747474747474747474747474747474747474747474747474747474747 8a88e3dd7409f195fd52db2d3cba5d72ca6709bf1d94121bf3748801b40f6f5c 7 600\nexecution_permit=false\n"
+    },
+    {
+      "case": "root-provider-refused",
+      "exit": 2,
+      "stdout": "format=nia-site-supply-1\nstatus=DENIED\n"
+    },
+    {
+      "case": "wrong-pinned-hash",
+      "exit": 2,
+      "stdout": "format=nia-site-supply-1\nstatus=DENIED\n"
+    },
+    {
+      "case": "serial-below-floor",
+      "exit": 2,
+      "stdout": "format=nia-site-supply-1\nstatus=DENIED\n"
+    },
+    {
+      "case": "clock-below-floor",
+      "exit": 2,
+      "stdout": "format=nia-site-supply-1\nstatus=STALE\n"
+    },
+    {
+      "case": "policy-expired",
+      "exit": 2,
+      "stdout": "format=nia-site-supply-1\nstatus=STALE\n"
+    },
+    {
+      "case": "policy-not-yet-valid",
+      "exit": 2,
+      "stdout": "format=nia-site-supply-1\nstatus=STALE\n"
+    },
+    {
+      "case": "wrong-root",
+      "exit": 2,
+      "stdout": "format=nia-site-supply-1\nstatus=DENIED\n"
+    },
+    {
+      "case": "excess-authorities",
+      "exit": 2,
+      "stdout": "format=nia-site-supply-1\nstatus=INVALID_INPUT\n"
+    },
+    {
+      "case": "zero-key",
+      "exit": 2,
+      "stdout": "format=nia-site-supply-1\nstatus=INVALID_INPUT\n"
+    },
+    {
+      "case": "zero-epoch",
+      "exit": 2,
+      "stdout": "format=nia-site-supply-1\nstatus=INVALID_INPUT\n"
+    },
+    {
+      "case": "extra-policy-byte",
+      "exit": 2,
+      "stdout": "format=nia-site-supply-1\nstatus=INVALID_INPUT\n"
+    },
+    {
+      "case": "writable-supply.bin",
+      "exit": 2,
+      "stdout": "format=nia-site-supply-1\nstatus=DENIED\n"
+    },
+    {
+      "case": "caller-owned-supply.bin",
+      "exit": 2,
+      "stdout": "format=nia-site-supply-1\nstatus=DENIED\n"
+    },
+    {
+      "case": "writable-supply.floor",
+      "exit": 2,
+      "stdout": "format=nia-site-supply-1\nstatus=DENIED\n"
+    },
+    {
+      "case": "caller-owned-supply.floor",
+      "exit": 2,
+      "stdout": "format=nia-site-supply-1\nstatus=DENIED\n"
+    },
+    {
+      "case": "caller-owned-directory",
+      "exit": 2,
+      "stdout": "format=nia-site-supply-1\nstatus=DENIED\n"
+    },
+    {
+      "case": "missing-floor",
+      "exit": 2,
+      "stdout": "format=nia-site-supply-1\nstatus=IO_ERROR\n"
+    },
+    {
+      "case": "linked-directory",
+      "exit": 2,
+      "stdout": "format=nia-site-supply-1\nstatus=IO_ERROR\n"
+    },
+    {
+      "case": "writable-ancestor",
+      "exit": 2,
+      "stdout": "format=nia-site-supply-1\nstatus=DENIED\n"
+    }
+  ],
+  "session_changes": [
+    {
+      "change": "policy",
+      "result": "PASS assertions= 253\n"
+    },
+    {
+      "change": "floor",
+      "result": "PASS assertions= 253\n"
+    },
+    {
+      "change": "missing",
+      "result": "PASS assertions= 253\n"
+    }
+  ],
+  "publication_cases": [
+    {
+      "case": "accepted",
+      "exit": 0,
+      "log": "accepted.log"
+    },
+    {
+      "case": "key-change",
+      "exit": 0,
+      "log": "key-change.log"
+    },
+    {
+      "case": "epoch-change",
+      "exit": 0,
+      "log": "epoch-change.log"
+    }
+  ],
+  "production_managed_authorization": false,
+  "boot_switch": false,
+  "hardware_rollback_resistance": false,
+  "keys": "public deterministic test key; never deployment authority"
+}

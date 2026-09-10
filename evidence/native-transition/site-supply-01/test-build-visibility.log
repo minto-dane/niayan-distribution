@@ -1,0 +1,11 @@
+Compile
+   [Ada]          run_site_supply_tests.adb
+run_site_supply_tests.adb:42:92: error: operator for type "Interfaces.Unsigned_64" is not directly visible
+run_site_supply_tests.adb:42:92: error: use clause would make operation legal
+run_site_supply_tests.adb:42:98: error: operator for type "Interfaces.Unsigned_64" is not directly visible
+run_site_supply_tests.adb:42:98: error: use clause would make operation legal
+run_site_supply_tests.adb:54:45: error: operator for type "Interfaces.Unsigned_64" is not directly visible
+run_site_supply_tests.adb:54:45: error: use clause would make operation legal
+run_site_supply_tests.adb:97:54: error: operator for type "Interfaces.Unsigned_64" is not directly visible
+run_site_supply_tests.adb:97:54: error: use clause would make operation legal
+gprbuild: *** compilation phase failed
