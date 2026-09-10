@@ -1,0 +1,5 @@
+Running as unit: run-p712228-i712528.scope; invocation ID: 3e3cadab99664d6c8670a5b3497df6f5
+limited-exec: {"scope": "run-p712228-i712528.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Formatting '/evidence/vm-supply-planner-01/test.qcow2', fmt=qcow2 cluster_size=65536 extended_l2=off compression_type=zlib size=85899345920 backing_file=/vm-base/builder.qcow2 backing_fmt=qcow2 lazy_refcounts=off refcount_bits=16
+VM packaged observer ready
+Packaged observer VM exit 0

@@ -9,6 +9,7 @@ from pathlib import Path
 import pwd
 import shutil
 import subprocess
+import struct
 import sys
 import time
 
@@ -30,10 +31,10 @@ def client(output, native_mode=None):
         uid = pwd.getpwnam('nia-supply').pw_uid
         if native_mode == 'wrong-observer-uid':
             uid += 1
-        mode = native_mode if native_mode in ('accepted', 'wrong-control') else 'denied'
+        mode = native_mode if native_mode in ('accepted', 'wrong-control', 'planning', 'planning-denied') else 'denied'
         subprocess.run([str(DEST/'run_archive_observer_tests'), str(store), str(media), str(uid),
                         job['index'], job['deb'], mode], check=True, timeout=140)
-        if native_mode == 'accepted':
+        if native_mode in ('accepted', 'planning'):
             print('PASS packaged observer HTTPS credential native CAS', flush=True)
             return 0
         print('PASS native observer rejection with cleared bindings', flush=True)
@@ -72,7 +73,10 @@ def main():
     parser.add_argument('--client-output', type=Path)
     parser.add_argument('--native', action='store_true')
     parser.add_argument('--native-mode')
+    parser.add_argument('--planning', action='store_true')
     args = parser.parse_args()
+    if args.planning:
+        args.native = True
     if args.client_output:
         return client(args.client_output, args.native_mode)
     if (os.geteuid() != 0 or Path('/proc/1/comm').read_text().strip() != 'systemd'
@@ -99,12 +103,15 @@ def main():
     fixtures.ReceiptTests.setUpClass()
     case = fixtures.ReceiptTests(); case.setUp()
     https = HTTPSTests(); https.setUp()
-    lease = {'path': None, 'observations': 0, 'failures': []}
+    lease = {'path': None, 'observations': 0, 'failures': [], 'change': None}
     if args.native:
         base_handler = https.server.RequestHandlerClass
 
         class HeldReservationHandler(base_handler):
             def do_GET(self):
+                if lease['change'] is not None:
+                    change = lease['change']; lease['change'] = None
+                    change()
                 if lease['path'] is not None:
                     try:
                         fd = os.open(lease['path'], os.O_RDWR | os.O_NOFOLLOW | os.O_CLOEXEC)
@@ -160,8 +167,21 @@ def main():
         for name, data in [('InRelease', case.fixture.signed), ('Packages', case.fixture.fixture.packed), ('original.deb', case.fixture.fixture.deb)]:
             (DEST/'input'/name).write_bytes(data)
         subprocess.run(['systemctl', 'start', 'niaos-archive-observer.socket'], check=True)
+        if args.planning:
+            site = Path('/etc/niaos/supply'); site.mkdir(mode=0o755)
+            trust = Path('/var/lib/niaos/trust'); trust.mkdir(mode=0o755)
+            now = int(time.time())
+            site_wire = (b'NIATRST1' + bytes([95])*16 + struct.pack('>QQQQ', 7, now-60, now+3600, 1)
+                         + bytes.fromhex(expected_scope) + case.public_key + struct.pack('>QQ', 7, 300))
 
-        def run_case(name, *, accepted=False, user='nia-pkg', native_mode=None):
+            def deploy_site(wire):
+                (site/'supply.bin').write_bytes(wire); (site/'supply.bin').chmod(0o644)
+                (trust/'supply.floor').write_bytes(b'NIAFLOR1'+bytes([95])*16+struct.pack('>QQ', 7, now-60)+hashlib.sha256(wire).digest())
+                (trust/'supply.floor').chmod(0o644)
+
+            deploy_site(site_wire)
+
+        def run_case(name, *, accepted=False, user='nia-pkg', native_mode=None, change=None):
             out = args.report.parent/name;out.mkdir(mode=0o700);os.chown(out, account.pw_uid, account.pw_gid)
             command = ['/usr/bin/python3', '-I', str(DEST/'distribution/native/worker/check_archive_observer.py'), '--client-output', str(out)]
             if args.native:
@@ -170,14 +190,17 @@ def main():
                 command = ['runuser', '-u', user, '--', *command]
             before_probes = lease['observations']
             lease['path'] = out/'store/store.lock' if args.native else None
+            lease['change'] = change
             try:
                 run = subprocess.run(command, capture_output=True, text=True, timeout=145)
             finally:
                 lease['path'] = None
+                pending_change = lease['change']; lease['change'] = None
             (args.report.parent/(name+'.log')).write_text(run.stdout+run.stderr)
             assert run.returncode == (0 if accepted else 2), (name, run.returncode, run.stdout, run.stderr)
             assert ('PASS packaged observer' in run.stdout) == accepted
             assert not lease['failures'], lease['failures']
+            assert change is None or pending_change is None, 'planned trust change was not reached'
             if args.native and accepted:
                 assert lease['observations'] > before_probes, 'no live CAS reservation observation'
             deadline = time.monotonic()+15
@@ -193,6 +216,14 @@ def main():
         if args.native:
             run_case('wrong-control', native_mode='wrong-control')
             run_case('wrong-observer-uid', native_mode='wrong-observer-uid')
+        if args.planning:
+            run_case('planned', accepted=True, native_mode='planning')
+            run_case('planned-again', accepted=True, native_mode='planning')
+            changed_wire = site_wire[:-8] + struct.pack('>Q', 299)
+            run_case('planning-trust-change', native_mode='planning-denied', change=lambda: deploy_site(changed_wire))
+            deploy_site(site_wire)
+            run_case('planning-floor-missing', native_mode='planning-denied', change=lambda: (trust/'supply.floor').unlink())
+            deploy_site(site_wire)
         state.chmod(0o755)
         run_case('nonprivate-state')
         assert state.stat().st_mode & 0o777 == 0o755
@@ -225,6 +256,7 @@ def main():
             'cases': results, 'https_transport': 'real TLS with VM-local temporary CA; default production fetcher',
             'observer_uid': pwd.getpwnam('nia-supply').pw_uid, 'core_uid': account.pw_uid,
             'native_cas_observer': args.native, 'cas_exclusion_observations': lease['observations'],
+            'protected_supply_planning': args.planning,
             'production_authorization': False}, indent=2)+'\n')
     finally:
         subprocess.run(['systemctl', 'stop', 'niaos-archive-observer.socket', 'niaos-archive-observer.service'], check=False)

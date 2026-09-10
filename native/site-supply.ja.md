@@ -45,6 +45,10 @@ policy serialが下限未満、rootが不一致、完全hashが不一致なら�
 
 ## 公開処理との接続
 
+計画作成前は[供給planner](supply-planner.ja.md)の`Open_Planning`/`Observe_Planning`を使う。
+架空のplan/map/policyを渡さず、完成後に同じtrust pinを保持する`Bind_Publication`で束縛する。
+計画用sessionは公開用Observeを満たさない。
+
 Openはpolicy/floor directoryと、root/transaction/physical plan/retained policy/mapの正確な
 context、finite BOOTTIME deadlineを受ける。contextは呼出側のassertionであり、それだけで
 公開を認可しない。初回観測で独立policy/floorをpinし、Observeは毎回保護fileを読み直して

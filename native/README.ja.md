@@ -1,5 +1,8 @@
 # Niaパッケージ管理への完全置換
 
+[現在site trustによる供給計画](supply-planner.ja.md)は保持原本を実observerへ渡し、
+同じCAS予約で供給map/保持policyへ接続する。公開controllerと全managed認可は別の未完工程である。
+
 [製品判断](../docs/decisions/0002-native-package-authority.ja.md)に従うTrixie置換工程。
 [隔離rootの実展開worker](root-extraction.ja.md)を実装した。認可済みサービス・永続bankとbootへの接続は未完。
 [受理済み世代のnative catalog観測](current-catalog.ja.md)を同じ排他区間へ接続した。

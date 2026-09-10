@@ -1,0 +1,2 @@
+PASS assertions= 4
+PASS native observer rejection with cleared bindings

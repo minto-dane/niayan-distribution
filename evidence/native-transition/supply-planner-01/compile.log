@@ -1,0 +1,21 @@
+Running as unit: run-p711793-i712093.scope; invocation ID: 10da180b535145718c423f2bddaad005
+limited-exec: {"scope": "run-p711793-i712093.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Compile
+   [Ada]          run_archive_observer_tests.adb
+   [Ada]          run_site_supply_tests.adb
+   [C]            pkg_deb_stream.c
+   [C]            archive_observer.c
+   [C]            pkg_deb_decode.c
+   [C]            root_preparation.c
+   [Ada]          pkg_site_supply.adb
+   [Ada]          pkg_supply_planner.adb
+Bind
+   [gprbind]      run_archive_observer_tests.bexch
+   [Ada]          run_archive_observer_tests.ali
+   [gprbind]      run_site_supply_tests.bexch
+   [Ada]          run_site_supply_tests.ali
+Link
+   [archive]      libtests.a
+   [index]        libtests.a
+   [link]         run_archive_observer_tests.adb
+   [link]         run_site_supply_tests.adb
