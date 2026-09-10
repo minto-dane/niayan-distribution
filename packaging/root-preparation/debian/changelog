@@ -1,0 +1,5 @@
+niaos-root-preparation (0.1.0) unstable; urgency=medium
+
+  * Package the internal socket-activated root preparation service.
+
+ -- NiaOS Developers <developers@niaos.invalid>  Thu, 10 Sep 2026 00:00:00 +0000

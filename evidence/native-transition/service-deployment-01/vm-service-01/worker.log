@@ -1,0 +1,8 @@
+Linux niaos-builder 6.12.107+deb13-cloud-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.107-1 (2026-08-29) x86_64 GNU/Linux
+Traceback (most recent call last):
+  File "/var/tmp/nia-service/check_service_deployment.py", line 134, in <module>
+    main()
+    ~~~~^^
+  File "/var/tmp/nia-service/check_service_deployment.py", line 53, in main
+    account = pwd.getpwnam('nia-pkg')
+KeyError: "getpwnam(): name not found: 'nia-pkg'"

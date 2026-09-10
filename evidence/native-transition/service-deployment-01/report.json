@@ -1,0 +1,129 @@
+{
+  "format": 1,
+  "step": "native-root-service-deployment",
+  "result": "pass",
+  "source_subject": "a07ca45f3cc978710477f81e60e59403c1062e7fbdc6c4a5cb3b1facb2c5ee9a",
+  "package_source_inputs_equal": 18,
+  "package_reproducibility": {
+    "main_sha256": "6013c429320602e42c657dcee90345bd21af81636af38f07b83e13f92c7ec75c",
+    "dbgsym_sha256": "06edbca453b1f09bbfeefc143bf6b54f6d2948e5dde9177a93aa9388bb0a46c1",
+    "comparison": "two separate build directories in the same frozen Debian 13 builder VM",
+    "final_source_inputs": "inputs/source-final.json",
+    "accepted_service_source_inputs": "inputs/source.json",
+    "delta": "debian/control: Architecture any -> amd64; no other package input differs"
+  },
+  "first_phase": "vm-service-03; 207 native assertions, installed package, actual account UID 987, namespace and resource properties",
+  "second_phase": "vm-resume-04; fresh overlay backed by unchanged powered-off vm-service-03 disk; history, independent missing-state cases and explicit restoration only; no repeat build/extraction",
+  "worker_sha256": "65b1d101670af68843c66e4fb44db78eccb4cf5b88214f8df951b87313377e22",
+  "runtime_inputs": {
+    "driver": {
+      "sha256": "d97c25c44c076980c71ab211b6b890e0c37254000b582521b68f7d2b62356051",
+      "size": 7802224
+    },
+    "fixtures/base.deb": {
+      "sha256": "5232f16949588621eb448b5279fb7980798b6e215da39e592465e7b7295bc63f",
+      "size": 20672
+    },
+    "fixtures/conflicting.deb": {
+      "sha256": "ee46fc545ce0166e307a522cd019a79dc6382a750d8178a7030b7aab44fc0dfa",
+      "size": 20672
+    },
+    "fixtures/manifest.json": {
+      "sha256": "cb18fab92f1fd1aa9553dd573c2a50ba5f5f19593c5b870df489165ce2a638e6",
+      "size": 424
+    },
+    "fixtures/overlay.deb": {
+      "sha256": "b0ecd5748c3fad84146740449a32eddc4c4a5e5df6ceab7cce0016f80690a73f",
+      "size": 20672
+    },
+    "lib/ld-linux-x86-64.so.2": {
+      "sha256": "438c546d8e8cc48496bf3a95f753051afd9db66a629a74e31a9ded71586b56e0",
+      "size": 225672
+    },
+    "lib/libacl.so.1": {
+      "sha256": "3c03774961231d8485a4dba36ec359a95939a84719799c58cd26173e44bbde90",
+      "size": 38832
+    },
+    "lib/libarchive.so.13": {
+      "sha256": "9b8d5d966c7544aeaef792c4a3568ee9ae58f807b9d71922754d024a59ff37b9",
+      "size": 833536
+    },
+    "lib/libbz2.so.1.0": {
+      "sha256": "c630f057efedc12f848710d71f40283895591e5b4608539f387895c64e0553da",
+      "size": 74688
+    },
+    "lib/libc.so.6": {
+      "sha256": "fa430b8f298f817a266046af84a77533185ad6fc4406c7d3787b5a0a0c207826",
+      "size": 1995216
+    },
+    "lib/libgcc_s.so.1": {
+      "sha256": "30c61ab012a4241bed033725a09b61f5fdd3bb7df95ee852d0b096520524c7af",
+      "size": 182856
+    },
+    "lib/libgnat-14.so": {
+      "sha256": "89e703c6ca4f3dbc226295b3101ab8870f704d134a0bddc10fb6b8d839a93e16",
+      "size": 4614512
+    },
+    "lib/liblz4.so.1": {
+      "sha256": "67bf8b84af77e962e09be661944f7c61393c4806746734e36db9fbdaebc1de36",
+      "size": 154096
+    },
+    "lib/liblzma.so.5": {
+      "sha256": "01e05a4b5268805a10a2414a8904fb1fb45c60626dce53b5ea19c1d491049b99",
+      "size": 198832
+    },
+    "lib/libm.so.6": {
+      "sha256": "6d567d53e895273ca14a1f9dc164fc6c8d39aed2f60aa46a733c2784228915f3",
+      "size": 977112
+    },
+    "lib/libnettle.so.8": {
+      "sha256": "34ac695c167a593d3587bd88592d33d53e5dc4035984f84446100962f57376fd",
+      "size": 346216
+    },
+    "lib/libsodium.so.23": {
+      "sha256": "85e2e494494f4f50c4b6d2b4ae90e885da1bfdefd52c4cc5767fd10abff62505",
+      "size": 375496
+    },
+    "lib/libxml2.so.2": {
+      "sha256": "8f2643af68a9eba917929046806dabd1848867068d0eee0f6799288a8e886963",
+      "size": 1799256
+    },
+    "lib/libxxhash.so.0": {
+      "sha256": "7dd49b353facbee50c371d0559ce29db5afee5ac33249ca5c7068420fb642762",
+      "size": 71592
+    },
+    "lib/libz.so.1": {
+      "sha256": "85590dd58edf5445e18bc7193e5ebc01ac5841f1ae187e97705a662e90c6421e",
+      "size": 125376
+    },
+    "lib/libzstd.so.1": {
+      "sha256": "27f07c9a49c2c956bcfb64cd4712976586a66facbf15fc7f09bc37413b5f2b21",
+      "size": 825336
+    }
+  },
+  "driver_provenance": "unchanged fixed-SDK binary from root-preparation-01; no new Ada build/proof",
+  "sdk_image": "sha256:4ec0d3adaef0afc8ce1eccdb621d46911ea2ebc11ddaa9e86f15e4ce59776d4c",
+  "vm_tool_image": "sha256:7f92f64938b87b862dd962a93b558fb0caea13493745c684fbddfc190a723617",
+  "limits": {
+    "outer_ram_gib": 3,
+    "swap": 0,
+    "cpu": 1,
+    "pids": 128,
+    "vm_ram_mib": 2048,
+    "vm_vcpus": 1
+  },
+  "failures_retained": [
+    "missing explicit dh_installsysusers in compat 13",
+    "API mount overrides /dev tmpfs",
+    "failed socket from prior missing-state case",
+    "socket trigger counter persists across reset-failed; respect default window"
+  ],
+  "installed_production_root_changed": false,
+  "production_admission_provider": false,
+  "physical_root_revalidation_after_reboot": false,
+  "boot_switch": false,
+  "full_deb_effects": false,
+  "replacement_iso": false,
+  "goal_complete": false,
+  "final_build": "vm-repackage-01; restrict source Architecture to amd64; both DEBs reproduced and byte-identical to vm-service-03 accepted packages"
+}

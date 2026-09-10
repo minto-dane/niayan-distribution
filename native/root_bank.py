@@ -11,6 +11,7 @@ import fcntl
 import hashlib
 import json
 import os
+import pwd
 from pathlib import Path
 import re
 import socket
@@ -299,15 +300,8 @@ class Bank:
             count += 1
 
 
-def main():
-    """Socket-activated internal daemon; protected policy is mandatory."""
-    import argparse
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--config', required=True, type=Path)
-    args = parser.parse_args()
-    if os.getuid() or os.geteuid() or os.environ.get('LISTEN_PID') != str(os.getpid()) or os.environ.get('LISTEN_FDS') != '1':
-        raise Rejected('activation')
-    fd = os.open(args.config, os.O_RDONLY | os.O_NOFOLLOW | os.O_CLOEXEC | os.O_NONBLOCK)
+def read_policy(path):
+    fd = os.open(path, os.O_RDONLY | os.O_NOFOLLOW | os.O_CLOEXEC | os.O_NONBLOCK)
     try:
         info = os.fstat(fd)
         if not stat.S_ISREG(info.st_mode) or info.st_uid or info.st_nlink != 1 or stat.S_IMODE(info.st_mode) != 0o600:
@@ -315,11 +309,43 @@ def main():
         policy = decode(os.read(fd, MAX_PACKET + 1), require_canonical=False)
     finally:
         os.close(fd)
-    if type(policy) is not dict or set(policy) != {'version', 'bank', 'reservation', 'worker', 'client_uid'} or type(policy['version']) is not int or policy['version'] != 1:
+    if type(policy) is not dict or type(policy.get('version')) is not int:
+        raise Rejected('policy-schema')
+    identity_key = {1: 'client_uid', 2: 'client_user'}.get(policy['version'])
+    if identity_key is None or set(policy) != {'version', 'bank', 'reservation', 'worker', identity_key}:
         raise Rejected('policy-schema')
     for key in ('bank', 'reservation', 'worker'):
         if type(policy[key]) is not str or not policy[key].startswith('/') or '\x00' in policy[key]:
             raise Rejected('policy-path')
+    if identity_key == 'client_user':
+        name = policy['client_user']
+        if not isinstance(name, str) or not re.fullmatch(r'[a-z_][a-z0-9_-]{0,31}', name):
+            raise Rejected('policy-account')
+        policy['client_uid'] = pwd.getpwnam(name).pw_uid
+    if type(policy['client_uid']) is not int or policy['client_uid'] <= 0:
+        raise Rejected('policy-account')
+    return policy
+
+
+def main():
+    """Internal daemon or explicit bootstrap; neither initializes a CAS."""
+    import argparse
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--config', required=True, type=Path)
+    parser.add_argument('--provision-bank', action='store_true')
+    args = parser.parse_args()
+    if os.getuid() or os.geteuid():
+        raise Rejected('privilege')
+    policy = read_policy(args.config)
+    if args.provision_bank:
+        # Existing empty protected mount only, explicitly requested by installer.
+        # Never recreate or initialize the independently owned native CAS.
+        provision_bank(policy['bank'])
+        bank = Bank(policy['bank'], policy['reservation'], policy['worker'], policy['client_uid'])
+        bank.close()
+        return
+    if os.environ.get('LISTEN_PID') != str(os.getpid()) or os.environ.get('LISTEN_FDS') != '1':
+        raise Rejected('activation')
     listener = socket.socket(fileno=3)
     bank = Bank(policy['bank'], policy['reservation'], policy['worker'], policy['client_uid'])
     try:

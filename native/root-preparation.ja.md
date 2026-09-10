@@ -2,7 +2,8 @@
 
 `Pkg_Generation_Stage.Prepare_Root`はNIAGEN05の検証済み世代を内部root準備サービスへ渡す。
 単独のtar hashやサービス応答を公開認可にせず、既存のmandatory Authorizeを使う。
-製品の認可provider・service/account/policy配置・公開コマンド・bootとの接続は別に必要である。
+service/account/設定の配布物は[service-deployment.ja.md](service-deployment.ja.md)を参照。
+製品の認可provider・installer/controller・公開コマンド・bootとの接続は別に必要である。
 
 ## 呼出しの順序
 
@@ -42,7 +43,7 @@ bankの過去結果を読むだけでは物理再検証や公開許可になら�
 同じAda経路から実サービスとworkerへ接続する。通常成功と展開後認可拒否を別の空bankで確認する。
 試験の認可と供給鍵は明示した人工fixture用であり、本番providerとして配備しない。
 
-サービス配置、独立認可/供給policy、容量予約、物理再検証/回収、全DEB効果、実boot、
+製品installer/controller、独立認可/供給policy、容量予約、物理再検証/回収、全DEB効果、実boot、
 完全置換ISOは未完。変更のないアルゴリズムの全証明・旧カオス・性能campaignは繰り返さない。
 
 初回の原本保存用fixtureには、Linuxで通常復元できないsymlink mode 0644とUID最大値を含んだ。

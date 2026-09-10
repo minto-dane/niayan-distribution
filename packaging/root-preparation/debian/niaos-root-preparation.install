@@ -1,0 +1,5 @@
+build/native-worker/root-extract usr/libexec/niaos
+native/root_bank.py usr/libexec/niaos
+deployment/root-preparation.json etc/niaos
+deployment/var-lib-niaos-roots.mount usr/lib/systemd/system
+deployment/dev usr/lib/niaos/root-preparation

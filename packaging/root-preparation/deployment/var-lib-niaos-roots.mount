@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: MIT
+[Unit]
+Description=NiaOS inactive root storage protection
+AssertPathIsDirectory=/var/lib/niaos/roots
+Before=niaos-root-preparation.service
+
+[Mount]
+What=/var/lib/niaos/roots
+Where=/var/lib/niaos/roots
+Type=none
+Options=bind,nodev,nosuid,noexec

@@ -1,0 +1,258 @@
+total 4
+drwxr-xr-x 15 root root        2980 Sep 10 16:06 .
+drwxr-xr-x 30 root root        4096 Sep  8 20:20 ..
+crw-r--r--  1 root root     10, 235 Sep 10 16:06 autofs
+drwxr-xr-x  2 root root         140 Sep 10 16:06 block
+drwxr-xr-x  2 root root          60 Sep 10 16:06 bsg
+crw-------  1 root root     10, 234 Sep 10 16:06 btrfs-control
+lrwxrwxrwx  1 root root           3 Sep 10 16:06 cdrom -> sr0
+drwxr-xr-x  2 root root        2380 Sep 10 16:06 char
+crw-------  1 root root      5,   1 Sep 10 16:06 console
+lrwxrwxrwx  1 root root          11 Sep 10 16:06 core -> /proc/kcore
+crw-------  1 root root     10, 259 Sep 10 16:06 cpu_dma_latency
+crw-------  1 root root     10, 203 Sep 10 16:06 cuse
+drwxr-xr-x  7 root root         140 Sep 10 16:06 disk
+drwxr-xr-x  2 root root          60 Sep 10 16:06 dma_heap
+lrwxrwxrwx  1 root root          13 Sep 10 16:06 fd -> /proc/self/fd
+crw-rw-rw-  1 root root      1,   7 Sep 10 16:06 full
+crw-rw-rw-  1 root root     10, 229 Sep 10 16:06 fuse
+crw-------  1 root root     10, 228 Sep 10 16:06 hpet
+drwxr-xr-x  2 root root           0 Sep 10 16:06 hugepages
+crw-------  1 root root     10, 183 Sep 10 16:06 hwrng
+lrwxrwxrwx  1 root root          12 Sep 10 16:06 initctl -> /run/initctl
+drwxr-xr-x  3 root root         100 Sep 10 16:06 input
+c---------  1 root root      0,   0 Sep 10 16:06 kmsg
+crw-rw----  1 root kvm      10, 232 Sep 10 16:06 kvm
+lrwxrwxrwx  1 root root          28 Sep 10 16:06 log -> /run/systemd/journal/dev-log
+crw-rw----  1 root disk     10, 237 Sep 10 16:06 loop-control
+drwxr-xr-x  2 root root          60 Sep 10 16:06 mapper
+crw-r-----  1 root kmem      1,   1 Sep 10 16:06 mem
+drwxrwxrwt  2 root root          40 Sep 10 16:06 mqueue
+drwxr-xr-x  2 root root          60 Sep 10 16:06 net
+crw-rw-rw-  1 root root      1,   3 Sep 10 16:06 null
+crw-------  1 root root     10, 144 Sep 10 16:06 nvram
+crw-rw-rw-  1 root tty       5,   2 Sep 10 16:06 ptmx
+drwxr-xr-x  2 root root           0 Sep 10 16:06 pts
+crw-rw-rw-  1 root root      1,   8 Sep 10 16:06 random
+lrwxrwxrwx  1 root root           4 Sep 10 16:06 rtc -> rtc0
+crw-------  1 root root    250,   0 Sep 10 16:06 rtc0
+crw-rw----  1 root cdrom    21,   0 Sep 10 16:06 sg0
+drwxrwxrwt  2 root root          40 Sep 10 16:06 shm
+crw-------  1 root root     10, 231 Sep 10 16:06 snapshot
+brw-rw----  1 root cdrom    11,   0 Sep 10 16:06 sr0
+lrwxrwxrwx  1 root root          15 Sep 10 16:06 stderr -> /proc/self/fd/2
+lrwxrwxrwx  1 root root          15 Sep 10 16:06 stdin -> /proc/self/fd/0
+lrwxrwxrwx  1 root root          15 Sep 10 16:06 stdout -> /proc/self/fd/1
+crw-rw-rw-  1 root tty       5,   0 Sep 10 16:06 tty
+crw-------  1 root tty       4,   0 Sep 10 16:06 tty0
+crw-------  1 root tty       4,   1 Sep 10 16:06 tty1
+crw-------  1 root tty       4,  10 Sep 10 16:06 tty10
+crw-------  1 root tty       4,  11 Sep 10 16:06 tty11
+crw-------  1 root tty       4,  12 Sep 10 16:06 tty12
+crw-------  1 root tty       4,  13 Sep 10 16:06 tty13
+crw-------  1 root tty       4,  14 Sep 10 16:06 tty14
+crw-------  1 root tty       4,  15 Sep 10 16:06 tty15
+crw-------  1 root tty       4,  16 Sep 10 16:06 tty16
+crw-------  1 root tty       4,  17 Sep 10 16:06 tty17
+crw-------  1 root tty       4,  18 Sep 10 16:06 tty18
+crw-------  1 root tty       4,  19 Sep 10 16:06 tty19
+crw-------  1 root tty       4,   2 Sep 10 16:06 tty2
+crw-------  1 root tty       4,  20 Sep 10 16:06 tty20
+crw-------  1 root tty       4,  21 Sep 10 16:06 tty21
+crw-------  1 root tty       4,  22 Sep 10 16:06 tty22
+crw-------  1 root tty       4,  23 Sep 10 16:06 tty23
+crw-------  1 root tty       4,  24 Sep 10 16:06 tty24
+crw-------  1 root tty       4,  25 Sep 10 16:06 tty25
+crw-------  1 root tty       4,  26 Sep 10 16:06 tty26
+crw-------  1 root tty       4,  27 Sep 10 16:06 tty27
+crw-------  1 root tty       4,  28 Sep 10 16:06 tty28
+crw-------  1 root tty       4,  29 Sep 10 16:06 tty29
+crw-------  1 root tty       4,   3 Sep 10 16:06 tty3
+crw-------  1 root tty       4,  30 Sep 10 16:06 tty30
+crw-------  1 root tty       4,  31 Sep 10 16:06 tty31
+crw-------  1 root tty       4,  32 Sep 10 16:06 tty32
+crw-------  1 root tty       4,  33 Sep 10 16:06 tty33
+crw-------  1 root tty       4,  34 Sep 10 16:06 tty34
+crw-------  1 root tty       4,  35 Sep 10 16:06 tty35
+crw-------  1 root tty       4,  36 Sep 10 16:06 tty36
+crw-------  1 root tty       4,  37 Sep 10 16:06 tty37
+crw-------  1 root tty       4,  38 Sep 10 16:06 tty38
+crw-------  1 root tty       4,  39 Sep 10 16:06 tty39
+crw-------  1 root tty       4,   4 Sep 10 16:06 tty4
+crw-------  1 root tty       4,  40 Sep 10 16:06 tty40
+crw-------  1 root tty       4,  41 Sep 10 16:06 tty41
+crw-------  1 root tty       4,  42 Sep 10 16:06 tty42
+crw-------  1 root tty       4,  43 Sep 10 16:06 tty43
+crw-------  1 root tty       4,  44 Sep 10 16:06 tty44
+crw-------  1 root tty       4,  45 Sep 10 16:06 tty45
+crw-------  1 root tty       4,  46 Sep 10 16:06 tty46
+crw-------  1 root tty       4,  47 Sep 10 16:06 tty47
+crw-------  1 root tty       4,  48 Sep 10 16:06 tty48
+crw-------  1 root tty       4,  49 Sep 10 16:06 tty49
+crw-------  1 root tty       4,   5 Sep 10 16:06 tty5
+crw-------  1 root tty       4,  50 Sep 10 16:06 tty50
+crw-------  1 root tty       4,  51 Sep 10 16:06 tty51
+crw-------  1 root tty       4,  52 Sep 10 16:06 tty52
+crw-------  1 root tty       4,  53 Sep 10 16:06 tty53
+crw-------  1 root tty       4,  54 Sep 10 16:06 tty54
+crw-------  1 root tty       4,  55 Sep 10 16:06 tty55
+crw-------  1 root tty       4,  56 Sep 10 16:06 tty56
+crw-------  1 root tty       4,  57 Sep 10 16:06 tty57
+crw-------  1 root tty       4,  58 Sep 10 16:06 tty58
+crw-------  1 root tty       4,  59 Sep 10 16:06 tty59
+crw-------  1 root tty       4,   6 Sep 10 16:06 tty6
+crw-------  1 root tty       4,  60 Sep 10 16:06 tty60
+crw-------  1 root tty       4,  61 Sep 10 16:06 tty61
+crw-------  1 root tty       4,  62 Sep 10 16:06 tty62
+crw-------  1 root tty       4,  63 Sep 10 16:06 tty63
+crw-------  1 root tty       4,   7 Sep 10 16:06 tty7
+crw-------  1 root tty       4,   8 Sep 10 16:06 tty8
+crw-------  1 root tty       4,   9 Sep 10 16:06 tty9
+crw-rw----  1 root dialout   4,  64 Sep 10 16:06 ttyS0
+crw-rw----  1 root dialout   4,  65 Sep 10 16:06 ttyS1
+crw-rw----  1 root dialout   4,  66 Sep 10 16:06 ttyS2
+crw-rw----  1 root dialout   4,  67 Sep 10 16:06 ttyS3
+crw-rw----  1 root kvm      10, 258 Sep 10 16:06 udmabuf
+crw-------  1 root root     10, 239 Sep 10 16:06 uhid
+crw-rw-rw-  1 root root      1,   9 Sep 10 16:06 urandom
+crw-------  1 root root     10, 257 Sep 10 16:06 userfaultfd
+crw-rw----  1 root tty       7,   0 Sep 10 16:06 vcs
+crw-rw----  1 root tty       7,   1 Sep 10 16:06 vcs1
+crw-rw----  1 root tty       7,   2 Sep 10 16:06 vcs2
+crw-rw----  1 root tty       7,   3 Sep 10 16:06 vcs3
+crw-rw----  1 root tty       7,   4 Sep 10 16:06 vcs4
+crw-rw----  1 root tty       7,   5 Sep 10 16:06 vcs5
+crw-rw----  1 root tty       7,   6 Sep 10 16:06 vcs6
+crw-rw----  1 root tty       7, 128 Sep 10 16:06 vcsa
+crw-rw----  1 root tty       7, 129 Sep 10 16:06 vcsa1
+crw-rw----  1 root tty       7, 130 Sep 10 16:06 vcsa2
+crw-rw----  1 root tty       7, 131 Sep 10 16:06 vcsa3
+crw-rw----  1 root tty       7, 132 Sep 10 16:06 vcsa4
+crw-rw----  1 root tty       7, 133 Sep 10 16:06 vcsa5
+crw-rw----  1 root tty       7, 134 Sep 10 16:06 vcsa6
+crw-rw----  1 root tty       7,  64 Sep 10 16:06 vcsu
+crw-rw----  1 root tty       7,  65 Sep 10 16:06 vcsu1
+crw-rw----  1 root tty       7,  66 Sep 10 16:06 vcsu2
+crw-rw----  1 root tty       7,  67 Sep 10 16:06 vcsu3
+crw-rw----  1 root tty       7,  68 Sep 10 16:06 vcsu4
+crw-rw----  1 root tty       7,  69 Sep 10 16:06 vcsu5
+crw-rw----  1 root tty       7,  70 Sep 10 16:06 vcsu6
+brw-rw----  1 root disk    254,   0 Sep 10 16:06 vda
+brw-rw----  1 root disk    254,   1 Sep 10 16:06 vda1
+brw-rw----  1 root disk    254,  14 Sep 10 16:06 vda14
+brw-rw----  1 root disk    254,  15 Sep 10 16:06 vda15
+drwxr-xr-x  2 root root          60 Sep 10 16:06 vfio
+crw-------  1 root root     10, 256 Sep 10 16:06 vga_arbiter
+crw-rw----  1 root kvm      10, 238 Sep 10 16:06 vhost-net
+crw-rw----  1 root kvm      10, 241 Sep 10 16:06 vhost-vsock
+crw-------  1 root root     10, 260 Sep 10 16:06 vmci
+crw-rw-rw-  1 root root     10, 261 Sep 10 16:06 vsock
+crw-rw-rw-  1 root root      1,   5 Sep 10 16:06 zero
+299 216 254:1 / / ro,nosuid,relatime shared:235 master:1 - ext4 /dev/vda1 rw,discard,errors=remount-ro
+300 299 0:6 / /dev rw,nosuid,relatime shared:236 master:2 - devtmpfs udev rw,size=998368k,nr_inodes=249592,mode=755,inode64
+301 300 0:24 / /dev/pts rw,nosuid,noexec,relatime shared:237 master:3 - devpts devpts rw,gid=5,mode=600,ptmxmode=000
+302 300 0:26 / /dev/shm rw,nosuid,nodev shared:238 master:4 - tmpfs tmpfs rw,inode64
+303 300 0:21 / /dev/mqueue rw,nosuid,nodev,noexec,relatime shared:239 master:13 - mqueue mqueue rw
+304 300 0:31 / /dev/hugepages rw,nosuid,nodev,relatime shared:240 master:14 - hugetlbfs hugetlbfs rw,pagesize=2M
+305 299 0:25 / /run rw,nosuid,nodev,noexec,relatime shared:246 master:5 - tmpfs tmpfs rw,size=202184k,mode=755,inode64
+306 305 0:32 / /run/lock rw,nosuid,nodev,noexec,relatime shared:247 master:15 - tmpfs tmpfs rw,size=5120k,inode64
+313 299 0:22 / /sys rw,nosuid,nodev,noexec,relatime shared:251 master:6 - sysfs sysfs rw
+314 313 0:7 / /sys/kernel/security rw,nosuid,nodev,noexec,relatime shared:252 master:7 - securityfs securityfs rw
+315 313 0:27 / /sys/fs/cgroup ro,nosuid,nodev,noexec,relatime shared:253 master:8 - cgroup2 cgroup2 rw,nsdelegate,memory_recursiveprot
+316 313 0:28 / /sys/fs/pstore rw,nosuid,nodev,noexec,relatime shared:255 master:9 - pstore pstore rw
+317 313 0:29 / /sys/fs/bpf ro,nosuid,nodev,noexec,relatime shared:256 master:10 - bpf bpf rw,mode=700
+318 313 0:8 / /sys/kernel/debug ro,nosuid,nodev,noexec,relatime shared:257 master:16 - debugfs debugfs rw
+319 313 0:13 / /sys/kernel/tracing ro,nosuid,nodev,noexec,relatime shared:258 master:17 - tracefs tracefs rw
+320 313 0:35 / /sys/fs/fuse/connections rw,nosuid,nodev,noexec,relatime shared:259 master:20 - fusectl fusectl rw
+321 313 0:36 / /sys/kernel/config rw,nosuid,nodev,noexec,relatime shared:260 master:21 - configfs configfs rw
+325 299 0:33 / /tmp rw,nosuid,nodev shared:261 master:18 - tmpfs tmpfs rw,size=1010912k,nr_inodes=1048576,inode64
+326 299 254:15 / /boot/efi ro,nosuid,relatime shared:263 master:142 - vfat /dev/vda15 rw,fmask=0077,dmask=0077,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro
+327 299 254:1 /var/lib/niaos/roots /var/lib/niaos/roots rw,nosuid,nodev,noexec,relatime shared:264 master:1 - ext4 /dev/vda1 rw,discard,errors=remount-ro
+328 300 0:25 /systemd/inaccessible/chr /dev/kmsg ro,nosuid,nodev,noexec,relatime shared:241 master:5 - tmpfs tmpfs rw,size=202184k,mode=755,inode64
+329 300 0:6 /null /dev/null ro,nosuid,relatime shared:242 master:2 - devtmpfs udev rw,size=998368k,nr_inodes=249592,mode=755,inode64
+330 300 0:6 /random /dev/random ro,nosuid,relatime shared:243 master:2 - devtmpfs udev rw,size=998368k,nr_inodes=249592,mode=755,inode64
+331 300 0:6 /urandom /dev/urandom ro,nosuid,relatime shared:244 master:2 - devtmpfs udev rw,size=998368k,nr_inodes=249592,mode=755,inode64
+332 300 0:6 /zero /dev/zero ro,nosuid,relatime shared:245 master:2 - devtmpfs udev rw,size=998368k,nr_inodes=249592,mode=755,inode64
+333 299 0:25 /systemd/inaccessible/dir /home ro,nosuid,nodev,noexec,relatime shared:265 master:5 - tmpfs tmpfs rw,size=202184k,mode=755,inode64
+334 299 0:53 / /proc rw,nosuid,nodev,noexec,relatime shared:266 - proc proc rw
+322 334 0:49 / /proc/sys/fs/binfmt_misc rw,nosuid,nodev,noexec,relatime shared:267 master:170 - binfmt_misc binfmt_misc rw
+323 334 0:53 /acpi /proc/acpi ro,nosuid,nodev,noexec,relatime shared:268 - proc proc rw
+324 334 0:53 /bus /proc/bus ro,nosuid,nodev,noexec,relatime shared:269 - proc proc rw
+335 334 0:53 /fs /proc/fs ro,nosuid,nodev,noexec,relatime shared:270 - proc proc rw
+336 334 0:53 /irq /proc/irq ro,nosuid,nodev,noexec,relatime shared:271 - proc proc rw
+337 334 0:25 /systemd/inaccessible/reg /proc/kallsyms ro,nosuid,nodev,noexec,relatime shared:272 master:5 - tmpfs tmpfs rw,size=202184k,mode=755,inode64
+338 334 0:25 /systemd/inaccessible/reg /proc/kcore ro,nosuid,nodev,noexec,relatime shared:273 master:5 - tmpfs tmpfs rw,size=202184k,mode=755,inode64
+339 334 0:25 /systemd/inaccessible/reg /proc/kmsg ro,nosuid,nodev,noexec,relatime shared:274 master:5 - tmpfs tmpfs rw,size=202184k,mode=755,inode64
+340 334 0:53 /mtrr /proc/mtrr ro,nosuid,nodev,noexec,relatime shared:275 - proc proc rw
+341 334 0:53 /sys /proc/sys ro,nosuid,nodev,noexec,relatime shared:276 - proc proc rw
+342 341 0:49 / /proc/sys/fs/binfmt_misc ro,nosuid,nodev,noexec,relatime shared:277 master:170 - binfmt_misc binfmt_misc rw
+343 334 0:53 /sysrq-trigger /proc/sysrq-trigger ro,nosuid,nodev,noexec,relatime shared:278 - proc proc rw
+344 299 0:25 /systemd/inaccessible/dir /root ro,nosuid,nodev,noexec,relatime shared:279 master:5 - tmpfs tmpfs rw,size=202184k,mode=755,inode64
+307 305 0:25 /systemd/inaccessible/dir /run/credentials ro,nosuid,nodev,noexec,relatime shared:248 master:5 - tmpfs tmpfs rw,size=202184k,mode=755,inode64
+308 305 0:25 /systemd/propagate/niaos-root-preparation.service /run/systemd/incoming ro,nosuid,nodev,noexec,relatime master:5 - tmpfs tmpfs rw,size=202184k,mode=755,inode64
+309 305 0:25 /systemd/inaccessible/dir /run/user ro,nosuid,nodev,noexec,relatime shared:250 master:5 - tmpfs tmpfs rw,size=202184k,mode=755,inode64
+310 315 0:27 /system.slice/niaos-root-preparation.service/memory.pressure /sys/fs/cgroup/system.slice/niaos-root-preparation.service/memory.pressure rw,nosuid,nodev,noexec,relatime shared:254 master:8 - cgroup2 cgroup2 rw,nsdelegate,memory_recursiveprot
+311 325 0:33 /systemd-private-476422089fe540048b330a50ed1c49f6-niaos-root-preparation.service-67X9qM/tmp /tmp rw,nosuid,nodev shared:262 master:18 - tmpfs tmpfs rw,size=1010912k,nr_inodes=1048576,inode64
+312 299 0:25 /systemd/inaccessible/dir /usr/lib/modules ro,nosuid,nodev,noexec,relatime shared:280 master:5 - tmpfs tmpfs rw,size=202184k,mode=755,inode64
+345 299 254:1 /var/tmp/systemd-private-476422089fe540048b330a50ed1c49f6-niaos-root-preparation.service-Eo0hui/tmp /var/tmp rw,nosuid,relatime shared:281 master:1 - ext4 /dev/vda1 rw,discard,errors=remount-ro
+Name:	python3
+Umask:	0077
+State:	R (running)
+Tgid:	650
+Ngid:	0
+Pid:	650
+PPid:	1
+TracerPid:	0
+Uid:	0	0	0	0
+Gid:	0	0	0	0
+FDSize:	128
+Groups:	 
+NStgid:	650
+NSpid:	650
+NSpgid:	650
+NSsid:	650
+Kthread:	0
+VmPeak:	   26300 kB
+VmSize:	   26280 kB
+VmLck:	       0 kB
+VmPin:	       0 kB
+VmHWM:	   18312 kB
+VmRSS:	   18312 kB
+RssAnon:	    7944 kB
+RssFile:	   10368 kB
+RssShmem:	       0 kB
+VmData:	    8692 kB
+VmStk:	     132 kB
+VmExe:	    3180 kB
+VmLib:	    6812 kB
+VmPTE:	      92 kB
+VmSwap:	       0 kB
+HugetlbPages:	       0 kB
+CoreDumping:	0
+THP_enabled:	1
+untag_mask:	0xffffffffffffffff
+Threads:	1
+SigQ:	2/7798
+SigPnd:	0000000000000000
+ShdPnd:	0000000000000000
+SigBlk:	0000000000000000
+SigIgn:	0000000001001000
+SigCgt:	0000000000000002
+CapInh:	0000000000000000
+CapPrm:	000000008804001b
+CapEff:	000000008804001b
+CapBnd:	000000008804001b
+CapAmb:	0000000000000000
+NoNewPrivs:	1
+Seccomp:	2
+Seccomp_filters:	15
+Speculation_Store_Bypass:	thread vulnerable
+SpeculationIndirectBranch:	conditional enabled
+Cpus_allowed:	1
+Cpus_allowed_list:	0
+Mems_allowed:	00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000001
+Mems_allowed_list:	0
+voluntary_ctxt_switches:	29
+nonvoluntary_ctxt_switches:	38
+x86_Thread_features:	
+x86_Thread_features_locked:	

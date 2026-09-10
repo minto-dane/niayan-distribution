@@ -1,0 +1,10 @@
+Linux niaos-builder 6.12.107+deb13-cloud-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.107-1 (2026-08-29) x86_64 GNU/Linux
+Created symlink '/etc/systemd/system/sockets.target.wants/niaos-root-preparation.socket' → '/usr/lib/systemd/system/niaos-root-preparation.socket'.
+Traceback (most recent call last):
+  File "/var/tmp/nia-service/check_service_deployment.py", line 134, in <module>
+    main()
+    ~~~~^^
+  File "/var/tmp/nia-service/check_service_deployment.py", line 121, in main
+    assert set(p.name for p in dev.iterdir()) == {'null', 'zero', 'random', 'urandom'}
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

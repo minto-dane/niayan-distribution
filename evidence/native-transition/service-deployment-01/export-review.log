@@ -1,0 +1,4 @@
+make: Entering directory '/home/nia/devbox/niaos/nia-os-consent/distribution'
+test -n "/home/nia/devbox/niaos/.work/native-service-deployment-01/source-review"
+python3 -B native/prepare_service_package.py --output "/home/nia/devbox/niaos/.work/native-service-deployment-01/source-review"
+make: Leaving directory '/home/nia/devbox/niaos/nia-os-consent/distribution'

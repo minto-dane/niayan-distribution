@@ -1,0 +1,25 @@
+#!/usr/bin/make -f
+# SPDX-License-Identifier: MIT
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all reproducible=+all
+export DEB_CFLAGS_MAINT_APPEND = -ffile-prefix-map=$(CURDIR)=/usr/src/niaos/root-preparation -gno-record-gcc-switches
+include /usr/share/dpkg/buildflags.mk
+export CFLAGS LDFLAGS
+export CPPFLAGS := $(filter-out -D_FORTIFY_SOURCE=%,$(CPPFLAGS))
+
+%:
+	dh $@
+execute_after_dh_install:
+	dh_installsysusers
+override_dh_auto_build:
+	$(MAKE) -C native/worker BUILD=../../build/native-worker -j1
+override_dh_auto_test:
+	python3 -B -m py_compile native/root_bank.py
+override_dh_auto_install:
+override_dh_fixperms:
+	dh_fixperms
+	chmod 0600 debian/niaos-root-preparation/etc/niaos/root-preparation.json
+override_dh_installsystemd:
+	dh_installsystemd --no-enable --no-start
+override_dh_auto_clean:
+	$(MAKE) -C native/worker clean
+	rm -rf build native/__pycache__

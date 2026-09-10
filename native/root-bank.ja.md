@@ -9,10 +9,11 @@
 socket activationのFD 3にAF_UNIX/SOCK_SEQPACKET listenerを渡し、
 `python3 -I /保護された配置/root_bank.py --config /保護された設定.json`で起動する。
 実UID/実効UIDは0、LISTEN_PIDは本人、LISTEN_FDSは1を必須とする。
-公開管理コマンドの代替入口ではない。製品のservice unit・専用account・mount・policyの配備は別工程である。
+公開管理コマンドの代替入口ではない。service unit・専用account・mount・設定の配布物は[service-deployment.ja.md](service-deployment.ja.md)を参照。
 
 設定はroot所有・0600・単一linkの通常JSON fileで、重複keyや4,096 byte超を拒否する。
-必須keyはversion（整数1）、bank/reservation/worker（絶対path）、client_uid（正の整数）。
+v1の必須keyはversion（整数1）、bank/reservation/worker（絶対path）、client_uid（正の整数）。
+v2はclient_uidの代わりにclient_userを使い、保護されたaccount名を起動時の正の実UIDへ解決する。
 client_uidは世代準備権を持つ専用の内部core accountであり、一般desktop利用者を指定しない。
 workerはroot所有でgroup/other書込不可の配置を使い、開いたinodeを保持して実行する。
 実行対象fileのSHA-256を結果へ記録するが、共有libraryやscript参照先の供給認証を代行しない。
@@ -37,7 +38,7 @@ SCM_RIGHTSには読取専用tar FDとO_RDWRの実CAS予約FDの二つを付け�
 信頼されたcallerは同じ予約内でNIAGEN05/NIAROOT1、catalog/closure、元DEB、論理所有権、
 供給とsite効果契約を検査し、その結果から依頼とtar FDを導出しなければならない。
 本番SDKのadapterと呼出し後の再検査は[root-preparation.ja.md](root-preparation.ja.md)を参照。
-本番の認可providerとservice配置は引き続き必要である。
+本番の認可providerと製品installer/controllerへの接続は引き続き必要である。
 
 stage directoryを新規作成してbankをfsyncし、intent.jsonを排他的に作成・fsyncしてから
 空rootを作りworkerを起動する。既存stageは上書きしない。workerには有限の期限と三つのFDを渡す。

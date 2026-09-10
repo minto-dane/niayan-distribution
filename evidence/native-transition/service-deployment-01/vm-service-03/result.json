@@ -1,0 +1,41 @@
+{
+  "result": "awaiting-reboot",
+  "stage": "56565656565656565656565656565656",
+  "record": {
+    "effects_applied": false,
+    "intent_sha256": "86494b5dca1c10b66625ba4fa970dec1f04c2f6d705f466df73fe9d04b67b370",
+    "physical_revalidation": false,
+    "published": false,
+    "state": "extracted",
+    "version": 1,
+    "worker_exit": 0,
+    "worker_sha256": "65b1d101670af68843c66e4fb44db78eccb4cf5b88214f8df951b87313377e22"
+  },
+  "uid": 987,
+  "boot_id": "e71c846a-624e-4fd0-b678-1b536cf08cd4",
+  "service_properties": "MainPID=1791\nMemoryMax=1073741824\nMemorySwapMax=0\nTasksMax=32\nCapabilityBoundingSet=cap_chown cap_dac_override cap_fowner cap_fsetid cap_sys_chroot cap_mknod cap_setfcap\nNoNewPrivileges=yes\n",
+  "worker_sha256": "65b1d101670af68843c66e4fb44db78eccb4cf5b88214f8df951b87313377e22",
+  "device_view": {
+    "random": {
+      "mode": 8630,
+      "rdev": 264
+    },
+    "urandom": {
+      "mode": 8630,
+      "rdev": 265
+    },
+    "zero": {
+      "mode": 8630,
+      "rdev": 261
+    },
+    "null": {
+      "mode": 8630,
+      "rdev": 259
+    }
+  },
+  "readonly_temporary_directories": true,
+  "automatic_initialization": false,
+  "automatic_activation": false,
+  "installed_root_changed": false,
+  "production_admission_policy": false
+}

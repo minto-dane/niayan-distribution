@@ -1,0 +1,75 @@
+{
+  "format": 1,
+  "files": {
+    "debian/changelog": {
+      "source": "packaging/root-preparation/debian/changelog",
+      "sha256": "96126e58d95cf7ec0213e0191a6bd5d02ebe846008043cebd295e9a983651661",
+      "mode": 420
+    },
+    "debian/control": {
+      "source": "packaging/root-preparation/debian/control",
+      "sha256": "3eef9023fe2447ec9c74dbd964b0a85edd64cbc51091f79e6f39a7823702d587",
+      "mode": 420
+    },
+    "debian/copyright": {
+      "source": "packaging/root-preparation/debian/copyright",
+      "sha256": "f96d3eaef3770dcdce7c9c803e20be495f53e1a35b751da7f81c7f1155cb8b52",
+      "mode": 420
+    },
+    "debian/niaos-root-preparation.install": {
+      "source": "packaging/root-preparation/debian/niaos-root-preparation.install",
+      "sha256": "9002e8ccb315e69d5d35a9ad82baf93d29a0260485fae6585a50adab3af1ab36",
+      "mode": 420
+    },
+    "debian/niaos-root-preparation.service": {
+      "source": "packaging/root-preparation/debian/niaos-root-preparation.service",
+      "sha256": "6741933541af8884802b3bcc6a8e101acd3fa3f77725c4a5f313976f68a04a70",
+      "mode": 420
+    },
+    "debian/niaos-root-preparation.socket": {
+      "source": "packaging/root-preparation/debian/niaos-root-preparation.socket",
+      "sha256": "a3645f979a794ae05f06f0d211f20249e032f2a38c9615c0176b312289b488bd",
+      "mode": 420
+    },
+    "debian/niaos-root-preparation.sysusers": {
+      "source": "packaging/root-preparation/debian/niaos-root-preparation.sysusers",
+      "sha256": "4e05445e1b941f30b0358860b5c15b00a5ac8ebb813f4da73302647ff4db8fd3",
+      "mode": 420
+    },
+    "debian/rules": {
+      "source": "packaging/root-preparation/debian/rules",
+      "sha256": "831f4f07c520aead05ef20f33db77c4b44596f04da957bd6b62702de5bcc5e03",
+      "mode": 493
+    },
+    "debian/source/format": {
+      "source": "packaging/root-preparation/debian/source/format",
+      "sha256": "e8e18df40bcd69d6aa404282679186d9b8256ac63a5b4e80d7f081e8a0095a2e",
+      "mode": 420
+    },
+    "deployment/root-preparation.json": {
+      "source": "packaging/root-preparation/deployment/root-preparation.json",
+      "sha256": "c4f58ec9047a68c03d65753045a9aa0df5db8ddfad498c3c746dfd96b53aad4b",
+      "mode": 420
+    },
+    "deployment/var-lib-niaos-roots.mount": {
+      "source": "packaging/root-preparation/deployment/var-lib-niaos-roots.mount",
+      "sha256": "760597372531c28864e7ec12710e12d79a2d2adae1b965c3df69cd88da28012c",
+      "mode": 420
+    },
+    "native/root_bank.py": {
+      "source": "native/root_bank.py",
+      "sha256": "732fa28fac61d44374f8f55e4d222dc1a18890bf8bf17fe4c8272ea150913ffc",
+      "mode": 420
+    },
+    "native/worker/root_extract.c": {
+      "source": "native/worker/root_extract.c",
+      "sha256": "dcf56a62f7b6943a484349ee28eef455b8643b1ad9dd1362cdaf0c43d987c9e1",
+      "mode": 420
+    },
+    "native/worker/Makefile": {
+      "source": "native/worker/Makefile",
+      "sha256": "c8a42c6e475bc8fa9bd29bcfad97cc5a2899b0401de56aa15c588594f844a4da",
+      "mode": 420
+    }
+  }
+}

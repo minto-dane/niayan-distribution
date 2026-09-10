@@ -1,0 +1,13 @@
+Stopping 'niaos-root-preparation.service', but its triggering units are still active:
+niaos-root-preparation.socket
+Traceback (most recent call last):
+  File "/var/tmp/nia-service/check_service_deployment.py", line 148, in <module>
+    main()
+    ~~~~^^
+  File "/var/tmp/nia-service/check_service_deployment.py", line 72, in main
+    result['after_restoration'] = request(account.pw_uid, account.pw_gid, result['stage'])
+                                  ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/tmp/nia-service/check_service_deployment.py", line 40, in request
+    assert result.returncode == 0, result.stderr
+           ^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: b'Traceback (most recent call last):\n  File "<string>", line 3, in <module>\n    s.connect(sys.argv[1]);s.sendall((json.dumps({\'inspect\':sys.argv[2]},sort_keys=True,separators=(\',\',\':\'))+\'\\n\').encode())\n    ~~~~~~~~~^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory\n'

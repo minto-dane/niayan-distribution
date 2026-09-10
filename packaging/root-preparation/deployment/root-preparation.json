@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "bank": "/var/lib/niaos/roots",
+  "reservation": "/var/lib/niaos/core/store/store.lock",
+  "worker": "/usr/libexec/niaos/root-extract",
+  "client_user": "nia-pkg"
+}

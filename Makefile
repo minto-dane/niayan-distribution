@@ -42,3 +42,9 @@ native-bank-check: native-worker
 native-preparation-check: native-worker
 	test -n "$(WORKER_TEST_BASE)" -a -n "$(NATIVE_DRIVER)" -a -n "$(NATIVE_LOADER)" -a -n "$(NATIVE_LIBRARIES)" -a -n "$(NATIVE_FIXTURES)"
 	python3 -B native/worker/check_root_preparation.py --worker "$(CURDIR)/build/native-worker/root-extract" --driver "$(NATIVE_DRIVER)" --loader "$(NATIVE_LOADER)" --libraries "$(NATIVE_LIBRARIES)" --fixtures "$(NATIVE_FIXTURES)" --base "$(WORKER_TEST_BASE)" --report "$(CURDIR)/build/native-worker/preparation-check.json"
+
+# Export only selected source files into a new directory; build in limited builder.
+.PHONY: native-service-source
+native-service-source:
+	test -n "$(SERVICE_SOURCE)"
+	python3 -B native/prepare_service_package.py --output "$(SERVICE_SOURCE)"
