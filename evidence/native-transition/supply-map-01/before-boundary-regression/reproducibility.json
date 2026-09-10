@@ -1,0 +1,129 @@
+{
+  "result": "identical-binaries",
+  "pkgcore_binary_count": 31,
+  "pkgcore_binaries": {
+    "build/bin/pkg_recoveryctl": "9d0ea3352ddeba4c2a6501f5806ea375c0c7d6474578761e7b11b2894f86ac8f",
+    "build/bin/pkg_scrubctl": "b17cc6886463430a76f6f6ceefbe07dc70f610aec7b08e67e95792f8265ad174",
+    "build/bin/pkg_worker": "a117cfb1072add7c3fe47e5f8c4fa354584d8654fd73a74fbf407b0d5ae0fa5f",
+    "build/bin/pkgctl": "0dfa1516f3b2e2aeeb64d59fc70ad06c1fb456403c54e833b72429aef6bb232d",
+    "build/test-bin/run_archive_supply_tests": "f6bc0d0164fca326160885132b56cec62d6e087027fa4cfba92776ee9440623d",
+    "build/test-bin/run_catalog_store_tests": "70da0884906a382e5debe4821be0a4f017594fd7f4996e0064a3aba2c44d2c7f",
+    "build/test-bin/run_composition_tests": "dae370f1708ef9f7be9919208c777588890627fcdca50a225078b9b289775978",
+    "build/test-bin/run_deb_container_tests": "10fcc2ae80f19e3600b82eb30f9b057db0bf76b6bf3d8df6bfc22b43fe81ccc1",
+    "build/test-bin/run_deb_control_tests": "1cf611c566a59940292ddad2653d27c70be99a1112caa2075c6890ddf7a2374b",
+    "build/test-bin/run_deb_data_stream_tests": "a45c9d3d3f3c5c206a6bc874019b96b892063258c9d0d9f62006bed15e78bc5d",
+    "build/test-bin/run_deb_final_set_tests": "78ad232b169034f636c515e3527d3a96c1309063cc3730afaab726abc9f7ebb9",
+    "build/test-bin/run_deb_metadata_tests": "8ef6769bb7ffbe4d6d88407b0f09ddcb0a20dde9a6be0ce24e8aa5118d2a5021",
+    "build/test-bin/run_deb_payload_tests": "01d605c10825a43774b7664aecc15a7e9f1823a636f5d79eb8688c72678bdf68",
+    "build/test-bin/run_deb_relations_tests": "2f1b8572d0120d00cacfafde2567db06bf691a449312ec1a6ebbdc1364c79fb6",
+    "build/test-bin/run_deb_semantics_tests": "3a14cd488dd95867356c81778ecef77336670bb810b8261c54d1773a60857a5c",
+    "build/test-bin/run_deb_transition_tests": "3a152b7b594378238c0e8aafa237d49dc690a5d3a46801bf2ca3ad7a0d1b0a7e",
+    "build/test-bin/run_enterprise_pkg_tests": "67f89cf53c8b99575bd5535a40598fddd10ca5490f6661fa82a672a175cb8120",
+    "build/test-bin/run_file_engine_tests": "2afee0c3cf37f272fd4df1a117ce6b9b3b436725d84f371972d7d9c52b3254e9",
+    "build/test-bin/run_file_replay_tests": "0930e52c45a178b467be5a1adab9a49d16f395f42bc137885b1d2c83722e6a43",
+    "build/test-bin/run_generation_publication_tests": "31c1eb50f3f9ac0fd1213c6f2841928eb9b4ce9a974f3c1c5902d69d9bef3a30",
+    "build/test-bin/run_generation_stage_tests": "279a6519e58c994d5b35588dbf5040a4908f16852f31eef3ece862960dbd9356",
+    "build/test-bin/run_journal_io_tests": "6e6972ac10335293399fd40a06ef8df26d10796a7b449c0a30ff6797e630cd54",
+    "build/test-bin/run_payload_index_tests": "102f631a46c311819dff94b6fb16859ac20ac5f70b19b44ae8e57dd2bb0d686e",
+    "build/test-bin/run_pkg_resolution_tests": "224adfd6b4afcf788c29ef64a6b2928170f785681be6e90a2bb22da082bdd67f",
+    "build/test-bin/run_pkg_tests": "7058d30905fafd2bd65b9486410925e38918d0a577923632e4be9884d169eea6",
+    "build/test-bin/run_repair_tests": "cd238b85b4dc128ac14fac1b5632e63a33d3a8d4f7e961c0dc30bd7e25cdaeb5",
+    "build/test-bin/run_retention_batch_tests": "caf0528b14fc019e2da0a9d70cb85fef661edfdb005d18311402183b495e71dc",
+    "build/test-bin/run_rpm_tests": "3f985cafee7f8fdeba742ae6e395556140a1ff59f995504825732c1329c2980d",
+    "build/test-bin/run_selected_catalog_tests": "2e82f3508246e3d894426db9a178a52382372425d559f5e73819467bd0e7cf28",
+    "build/test-bin/run_supply_map_tests": "662c39923004796f166f8d142cd723616a344d271c7a52b51b073625e48b7daf",
+    "build/test-bin/run_v2_pkg_tests": "1a9e05da0fdc09b5642d6c60565268b0e94e91e6f5f7ed8602a95004c825ff5e"
+  },
+  "application_count": 18,
+  "applications": [
+    {
+      "path": "assurance/build/bin/assure",
+      "sha256": "f5f54372640d5b02f091b3af347de87a146f7acd0abc7145e798b09fba91f3bf"
+    },
+    {
+      "path": "assurance/build/bin/controlctl",
+      "sha256": "6aac8fd639693b8ae0c59c919d26e79d87e176fca666544e8fcc864ec2917239"
+    },
+    {
+      "path": "assurance/build/bin/platformctl",
+      "sha256": "744079c3f66b5624fc1085128d88a0f51c1b41ca7d8042fb101c1e2e37c4faae"
+    },
+    {
+      "path": "pkgcore/build/bin/pkg_recoveryctl",
+      "sha256": "9d0ea3352ddeba4c2a6501f5806ea375c0c7d6474578761e7b11b2894f86ac8f"
+    },
+    {
+      "path": "pkgcore/build/bin/pkgctl",
+      "sha256": "0dfa1516f3b2e2aeeb64d59fc70ad06c1fb456403c54e833b72429aef6bb232d"
+    },
+    {
+      "path": "pkgcore/build/bin/pkg_worker",
+      "sha256": "a117cfb1072add7c3fe47e5f8c4fa354584d8654fd73a74fbf407b0d5ae0fa5f"
+    },
+    {
+      "path": "pkgcore/build/bin/pkg_scrubctl",
+      "sha256": "b17cc6886463430a76f6f6ceefbe07dc70f610aec7b08e67e95792f8265ad174"
+    },
+    {
+      "path": "statecore/build/bin/hostctl",
+      "sha256": "5308deda4dd28f9774d23ee0e5be0ba0bf79f5d856487f52fbad2d8be2d14324"
+    },
+    {
+      "path": "statecore/build/bin/statectl",
+      "sha256": "f365fffe4efd3a5ba4f122412ee4b06dd1308a15390f9b546a71ec2b24d66d29"
+    },
+    {
+      "path": "statecore/build/bin/state_worker",
+      "sha256": "471e989e4bec21ccab7a7f3feb62323d88c10a8955305d45b7d21e0eba57a329"
+    },
+    {
+      "path": "statecore/build/bin/state_recovery_worker",
+      "sha256": "fcdd8a386623819ede00a350ca185e224c219734d8235befffca61f16ec5eea2"
+    },
+    {
+      "path": "statecore/build/bin/state_healing_admin",
+      "sha256": "f49acc16646ab7423b0ac1d854f733fd37e93d31ffc89a88d97e404721009c2c"
+    },
+    {
+      "path": "controlcore/build/bin/nia",
+      "sha256": "d23382f670de1820b44ed06442e257a22cbf409f9271b2798e559f2ddf571775"
+    },
+    {
+      "path": "controlcore/build/bin/missionctl",
+      "sha256": "220ad7602161e8597fdd6c3d2b4e7d0181638f84206630564d80e279da7f42fd"
+    },
+    {
+      "path": "controlcore/build/bin/mission_sign",
+      "sha256": "a020884a55bc956b5276c9ccfa5b57b96ddd418da8c6d81659995fe4a9aa7a2e"
+    },
+    {
+      "path": "configcore/build/bin/configctl",
+      "sha256": "66f8e257137f8f8d822ae364ee46af974503d79ffabeb2403d9a449811f8d023"
+    },
+    {
+      "path": "resolvercore/build/bin/resolverctl",
+      "sha256": "a495cbb2e2d02bbcf8e67a56d4b1a722d57b2b246d6f2e398df210c68dd3db13"
+    },
+    {
+      "path": "capsulecore/build/bin/capsulectl",
+      "sha256": "7622ec53d426ef75dd4ee5d94904fd7b7cf7ff71fac6b01e6906185967a30048"
+    }
+  ],
+  "paths": [
+    "/workspace",
+    "/independent-long-workspace"
+  ],
+  "source_date_epoch": [
+    null,
+    1788739200
+  ],
+  "timezones": [
+    "UTC (build runner cleans TZ)",
+    "Pacific/Honolulu"
+  ],
+  "second_input_mtime": 1788652800,
+  "jobs": [
+    1,
+    1
+  ]
+}

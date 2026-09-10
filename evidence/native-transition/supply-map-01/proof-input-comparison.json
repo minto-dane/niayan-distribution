@@ -1,0 +1,44 @@
+{
+  "result": "unchanged",
+  "baseline": "assurance/evidence/native-development/current-component-proof/report.json",
+  "baseline_sha256": "f250d403235b8add336ffcfc21a60be02606d71060c0579842ca4c2e116c2cb3",
+  "components": [
+    {
+      "repository": "assurance",
+      "input_count": 97,
+      "unchanged": true
+    },
+    {
+      "repository": "pkgcore",
+      "input_count": 179,
+      "unchanged": true
+    },
+    {
+      "repository": "statecore",
+      "input_count": 198,
+      "unchanged": true
+    },
+    {
+      "repository": "controlcore",
+      "input_count": 104,
+      "unchanged": true
+    },
+    {
+      "repository": "configcore",
+      "input_count": 121,
+      "unchanged": true
+    },
+    {
+      "repository": "resolvercore",
+      "input_count": 113,
+      "unchanged": true
+    },
+    {
+      "repository": "capsulecore",
+      "input_count": 115,
+      "unchanged": true
+    }
+  ],
+  "formal_proof_repeated": false,
+  "new_runtime_is_spark": false
+}

@@ -1,0 +1,54 @@
+Running as unit: run-p208418-i208718.scope; invocation ID: f52d0a99cbd2441da839e553f132f6a9
+limited-exec: {"scope": "run-p208418-i208718.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Setup
+   [mkdir]        object directory for project Tests
+   [mkdir]        exec directory for project Tests
+Compile
+   [Ada]          run_supply_map_tests.adb
+   [C]            pkg_deb_stream.c
+   [C]            pkg_deb_decode.c
+   [Ada]          mc_clock.adb
+   [Ada]          mc_codec.adb
+   [Ada]          mc_fs.adb
+   [Ada]          mc_hex.adb
+   [Ada]          mc_posix.ads
+   [Ada]          mc_runtime.adb
+   [Ada]          mc_sha256.adb
+   [Ada]          mc_store.adb
+   [Ada]          mc_types.adb
+   [Ada]          pkg_archive_supply.adb
+   [Ada]          pkg_catalog_retention.adb
+   [Ada]          pkg_catalog_store.adb
+   [Ada]          pkg_deb_metadata.adb
+   [Ada]          pkg_deb_payload.adb
+   [Ada]          pkg_generation_descriptor.adb
+   [Ada]          pkg_payload_index.adb
+   [Ada]          pkg_selected_catalog.adb
+   [Ada]          pkg_supply_map.adb
+   [Ada]          test_support.adb
+   [Ada]          mc_kernel_read.adb
+   [Ada]          mc_paths.adb
+   [Ada]          mc_dirents.adb
+   [Ada]          mc_text.adb
+   [Ada]          mc_authentic.adb
+   [Ada]          mc_signatures.adb
+   [Ada]          pkg_deb_container.adb
+   [Ada]          pkg_deb_control.adb
+   [Ada]          pkg_deb_relations.adb
+   [Ada]          pkg_deb_fields.adb
+   [Ada]          pkg_deb_data_stream.adb
+   [Ada]          pkg_tar_framing.adb
+   [Ada]          pkg_file_plan.adb
+   [Ada]          pkg_deb_semantics.adb
+   [Ada]          mc_protocol.adb
+   [Ada]          pkg_deb_versions.adb
+Bind
+   [gprbind]      run_supply_map_tests.bexch
+   [Ada]          run_supply_map_tests.ali
+Link
+   [archive]      libtests.a
+   [index]        libtests.a
+   [link]         run_supply_map_tests.adb
+FAIL: highest valid array boundINDETERMINATE
+
+raised TEST_SUPPORT.FAILURE : highest valid array boundINDETERMINATE

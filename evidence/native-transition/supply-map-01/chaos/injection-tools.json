@@ -1,0 +1,38 @@
+{
+  "/usr/bin/strace": {
+    "sha256": "69f88291a4e47f258b8e32b089c919a247509f063ef3d6afe5389939051102b3",
+    "copy": "strace"
+  },
+  "/lib/x86_64-linux-gnu/libunwind-ptrace.so.0.0.0": {
+    "sha256": "4ee27f69f3097980f79fa22ca54f533d3dded0e8c9ca11ce8f67be241ee6dc61",
+    "copy": "lib/libunwind-ptrace.so.0.0.0"
+  },
+  "/lib/x86_64-linux-gnu/libunwind-ptrace.so.0": {
+    "sha256": "4ee27f69f3097980f79fa22ca54f533d3dded0e8c9ca11ce8f67be241ee6dc61",
+    "copy": "lib/libunwind-ptrace.so.0"
+  },
+  "/lib/x86_64-linux-gnu/libunwind.so.8": {
+    "sha256": "2da9fe641c4824df74830606e6e6b6642ed9fb530ed7a67c4aff54afa08dfa45",
+    "copy": "lib/libunwind.so.8"
+  },
+  "/lib/x86_64-linux-gnu/libunwind-x86_64.so.8.1.0": {
+    "sha256": "16e5e304811046269edc71fadea00ded923d0d7c8cfac2ce4a5e1fe8447d0012",
+    "copy": "lib/libunwind-x86_64.so.8.1.0"
+  },
+  "/lib/x86_64-linux-gnu/libunwind-coredump.so.0": {
+    "sha256": "8ec0540ab03737dc8b9fe93d1c1d83867f90845ccc75380319c183c0334104e8",
+    "copy": "lib/libunwind-coredump.so.0"
+  },
+  "/lib/x86_64-linux-gnu/libunwind-coredump.so.0.0.0": {
+    "sha256": "8ec0540ab03737dc8b9fe93d1c1d83867f90845ccc75380319c183c0334104e8",
+    "copy": "lib/libunwind-coredump.so.0.0.0"
+  },
+  "/lib/x86_64-linux-gnu/libunwind-x86_64.so.8": {
+    "sha256": "16e5e304811046269edc71fadea00ded923d0d7c8cfac2ce4a5e1fe8447d0012",
+    "copy": "lib/libunwind-x86_64.so.8"
+  },
+  "/lib/x86_64-linux-gnu/libunwind.so.8.1.0": {
+    "sha256": "2da9fe641c4824df74830606e6e6b6642ed9fb530ed7a67c4aff54afa08dfa45",
+    "copy": "lib/libunwind.so.8.1.0"
+  }
+}

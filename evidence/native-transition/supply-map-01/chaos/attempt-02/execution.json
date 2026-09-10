@@ -1,0 +1,12 @@
+{
+  "source_subject": "6c6fb59c99442dd2973c420403ee37a3dd9e1ac7a10fcecdeda340a1444a8b2d",
+  "image": "sha256:4ec0d3adaef0afc8ce1eccdb621d46911ea2ebc11ddaa9e86f15e4ce59776d4c",
+  "uid": 1000,
+  "network": "none",
+  "capabilities_added": [
+    "SYS_PTRACE",
+    "DAC_READ_SEARCH"
+  ],
+  "campaign_sha256": "30892535e9bb5947810969ddbd7b2929149b6ee2ba00167cbbad5e2c62d221d7",
+  "driver_source_sha256": "899647cd805a52ca8dd6aa2cdf034d44ed6f43f03311d30f3e22be3b06517b70"
+}

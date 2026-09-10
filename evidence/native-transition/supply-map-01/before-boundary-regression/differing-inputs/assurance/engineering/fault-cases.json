@@ -1,0 +1,1335 @@
+{
+  "format": 1,
+  "actual_ada_execution": false,
+  "cases": [
+    {
+      "id": "FAULT-001",
+      "scenario": "Prepared直前に停止",
+      "requirements": [
+        "REQ-001",
+        "REQ-004"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-001.ja.md",
+      "expected": "部分のprovision以外の副作用なしを確認する。",
+      "execution": "not-run",
+      "reference_tests": "assurance/tests/engineering/test_replay_model.py"
+    },
+    {
+      "id": "FAULT-002",
+      "scenario": "Prepared永続化後、Active公開前に停止",
+      "requirements": [
+        "REQ-001",
+        "REQ-004",
+        "REQ-010"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-002.ja.md",
+      "expected": "孤立記録を保全し全preimageの再検証なしに採用しない。",
+      "execution": "not-run",
+      "reference_tests": "assurance/tests/engineering/test_replay_model.py"
+    },
+    {
+      "id": "FAULT-003",
+      "scenario": "Apply_Intent後・実作用前に停止",
+      "requirements": [
+        "REQ-001",
+        "REQ-003",
+        "REQ-010"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-001.ja.md",
+      "expected": "pendingのbeforeを確認する。",
+      "execution": "not-run",
+      "reference_tests": "assurance/tests/engineering/test_replay_model.py"
+    },
+    {
+      "id": "FAULT-004",
+      "scenario": "rename後・Apply_Done前に停止",
+      "requirements": [
+        "REQ-001",
+        "REQ-003",
+        "REQ-010"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-001.ja.md",
+      "expected": "pendingのafterを照合し同じ効果を無条件に再送しない。",
+      "execution": "not-run",
+      "reference_tests": "assurance/tests/engineering/test_replay_model.py"
+    },
+    {
+      "id": "FAULT-005",
+      "scenario": "Apply_Done後に実像がbeforeへ変わる",
+      "requirements": [
+        "REQ-003"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-012.ja.md",
+      "expected": "Conflictで停止し無断再適用しない。",
+      "execution": "not-run",
+      "reference_tests": "assurance/tests/engineering/test_replay_model.py"
+    },
+    {
+      "id": "FAULT-006",
+      "scenario": "未来の項目がintentなしでafterになる",
+      "requirements": [
+        "REQ-003"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-012.ja.md",
+      "expected": "履歴と実像の不一致を拒否する。",
+      "execution": "not-run",
+      "reference_tests": "assurance/tests/engineering/test_replay_model.py"
+    },
+    {
+      "id": "FAULT-007",
+      "scenario": "Commit_Intentのreceipt変更",
+      "requirements": [
+        "REQ-002"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-003.ja.md",
+      "expected": "後続の別receiptを拒否する。",
+      "execution": "not-run",
+      "reference_tests": "assurance/tests/engineering/test_replay_model.py"
+    },
+    {
+      "id": "FAULT-008",
+      "scenario": "root.state新世代後にCommit応答喪失",
+      "requirements": [
+        "REQ-002",
+        "REQ-010",
+        "REQ-012"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-003.ja.md",
+      "expected": "同じ決定を照合し完了する。",
+      "execution": "not-run",
+      "reference_tests": "assurance/tests/engineering/test_replay_model.py"
+    },
+    {
+      "id": "FAULT-009",
+      "scenario": "Restore_Done後の再中断",
+      "requirements": [
+        "REQ-002",
+        "REQ-003",
+        "REQ-010"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-001.ja.md",
+      "expected": "逆順done suffixがbeforeであることを確認する。",
+      "execution": "not-run",
+      "reference_tests": "assurance/tests/engineering/test_replay_model.py"
+    },
+    {
+      "id": "FAULT-010",
+      "scenario": "最後の1..255byteだけが不完全",
+      "requirements": [
+        "REQ-006"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-001.ja.md",
+      "expected": "原本と監査を保存し完全recordは残す。",
+      "execution": "not-run",
+      "reference_tests": "assurance/tests/engineering/test_replay_model.py"
+    },
+    {
+      "id": "FAULT-011",
+      "scenario": "完全recordのchecksum不正",
+      "requirements": [
+        "REQ-001",
+        "REQ-006"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-001.ja.md",
+      "expected": "自動truncateしない。",
+      "execution": "not-run",
+      "reference_tests": "assurance/tests/engineering/test_replay_model.py"
+    },
+    {
+      "id": "FAULT-012",
+      "scenario": "存在するはずのlogがない",
+      "requirements": [
+        "REQ-004",
+        "REQ-005"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-002.ja.md",
+      "expected": "読み取り/再開でファイルを新規作成しない。",
+      "execution": "not-run",
+      "reference_tests": "assurance/tests/engineering/test_replay_model.py"
+    },
+    {
+      "id": "FAULT-013",
+      "scenario": "CASまたはpinの欠落",
+      "requirements": [
+        "REQ-019"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-002.ja.md",
+      "expected": "digestやpinを捏造しない。",
+      "execution": "not-run",
+      "reference_tests": "assurance/tests/engineering/test_replay_model.py"
+    },
+    {
+      "id": "FAULT-014",
+      "scenario": "同一pinの再送を多数回",
+      "requirements": [
+        "REQ-007"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-007.ja.md",
+      "expected": "確定衝突の未公開tempだけを掃除する。",
+      "execution": "not-run",
+      "reference_tests": "assurance/tests/engineering/test_replay_model.py"
+    },
+    {
+      "id": "FAULT-015",
+      "scenario": "fsync EIOまたは容量不足",
+      "requirements": [
+        "REQ-010"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-007.ja.md",
+      "expected": "結果不明を保持し再初期化しない。",
+      "execution": "not-run",
+      "reference_tests": "assurance/tests/engineering/test_replay_model.py"
+    },
+    {
+      "id": "FAULT-016",
+      "scenario": "観測中に状態ファイルが変更される",
+      "requirements": [
+        "REQ-009"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-012.ja.md",
+      "expected": "可能な競合を検出し限定観測とする。",
+      "execution": "not-run",
+      "reference_tests": "assurance/tests/engineering/test_replay_model.py"
+    },
+    {
+      "id": "FAULT-017",
+      "scenario": "journal名にFIFO/リンクを置く",
+      "requirements": [
+        "REQ-028"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-012.ja.md",
+      "expected": "open/ハッシュ前に型と非block条件で拒否する。",
+      "execution": "not-run",
+      "reference_tests": "assurance/tests/engineering/test_replay_model.py"
+    },
+    {
+      "id": "FAULT-018",
+      "scenario": "systemd操作結果だけを喪失",
+      "requirements": [
+        "REQ-012",
+        "REQ-016"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-004.ja.md",
+      "expected": "同じoperation/invocationを再観測する。",
+      "execution": "not-run",
+      "reference_tests": "assurance/tests/engineering/test_replay_model.py"
+    },
+    {
+      "id": "FAULT-019",
+      "scenario": "controller再起動と復旧上限",
+      "requirements": [
+        "REQ-016"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-004.ja.md",
+      "expected": "予算を復活させない。",
+      "execution": "not-run",
+      "reference_tests": "assurance/tests/engineering/test_replay_model.py"
+    },
+    {
+      "id": "FAULT-020",
+      "scenario": "split-brainと古いwriter",
+      "requirements": [
+        "REQ-014",
+        "REQ-015"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-005.ja.md",
+      "expected": "物理/保存先の隔離なしに昇格しない。",
+      "execution": "not-run",
+      "reference_tests": "assurance/tests/engineering/test_replay_model.py"
+    },
+    {
+      "id": "FAULT-021",
+      "scenario": "etcdのsnapshotへ戻してwatchが古い",
+      "requirements": [
+        "REQ-013",
+        "REQ-015"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-006.ja.md",
+      "expected": "新世代・高水位・client再構成を確認する。",
+      "execution": "not-run",
+      "reference_tests": "assurance/tests/engineering/test_replay_model.py"
+    },
+    {
+      "id": "FAULT-022",
+      "scenario": "期限切れTLSと時計の不確かさ",
+      "requirements": [
+        "REQ-020",
+        "REQ-027"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-008.ja.md",
+      "expected": "検証を無効にせず新規作用を抑止する。",
+      "execution": "not-run",
+      "reference_tests": "assurance/tests/engineering/test_replay_model.py"
+    },
+    {
+      "id": "FAULT-023",
+      "scenario": "NM確定応答の喪失",
+      "requirements": [
+        "REQ-017"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-009.ja.md",
+      "expected": "checkpoint状態を照合し重複処理しない。",
+      "execution": "not-run",
+      "reference_tests": "assurance/tests/engineering/test_replay_model.py"
+    },
+    {
+      "id": "FAULT-024",
+      "scenario": "新kernel起動失敗",
+      "requirements": [
+        "REQ-018"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-009.ja.md",
+      "expected": "署名済み互換な回復候補と独立媒体を用いる。",
+      "execution": "not-run",
+      "reference_tests": "assurance/tests/engineering/test_replay_model.py"
+    },
+    {
+      "id": "FAULT-025",
+      "scenario": "backup復元と新旧DB schema不一致",
+      "requirements": [
+        "REQ-019",
+        "REQ-030"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-010.ja.md",
+      "expected": "binary rollbackでdata互換性を代替しない。",
+      "execution": "not-run",
+      "reference_tests": "assurance/tests/engineering/test_replay_model.py"
+    },
+    {
+      "id": "FAULT-026",
+      "scenario": "source変更後に旧CI PASSを添付",
+      "requirements": [
+        "REQ-021",
+        "REQ-022",
+        "REQ-023",
+        "REQ-024",
+        "REQ-025",
+        "REQ-026"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-011.ja.md",
+      "expected": "source subjectの不一致と未実行層を検出する。",
+      "execution": "not-run",
+      "reference_tests": "assurance/tests/engineering/test_replay_model.py"
+    },
+    {
+      "id": "FAULT-027",
+      "scenario": "統一署名planについて入力改変・中断・再開",
+      "requirements": [
+        "REQ-033"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-013.ja.md",
+      "expected": "四repoの所有権を分離した管理入口は、exactな署名workflowと固定route以外を実行してはならない。",
+      "execution": "not-run",
+      "reference_tests": "controlcore/tests/run_manager_vector_tests.adb"
+    },
+    {
+      "id": "FAULT-028",
+      "scenario": "意図先行と結果照合について入力改変・中断・再開",
+      "requirements": [
+        "REQ-034"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-013.ja.md",
+      "expected": "管理器はworker起動より前にintentを永続化し、終了値やtimeoutではなくexact receiver台帳を照合しなければならない。",
+      "execution": "not-run",
+      "reference_tests": "controlcore/tests/run_manager_storage_tests.adb"
+    },
+    {
+      "id": "FAULT-029",
+      "scenario": "空/欠落再送台帳の拒否について入力改変・中断・再開",
+      "requirements": [
+        "REQ-035"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-013.ja.md",
+      "expected": "既存receiverまたはhealingの復旧Openは欠落logを生成せず、空logを正常な初期状態とみなしてはならない。",
+      "execution": "not-run",
+      "reference_tests": "assurance/tests/run_receiver_ledger_tests.adb"
+    },
+    {
+      "id": "FAULT-030",
+      "scenario": "予約を全資源について保持について入力改変・中断・再開",
+      "requirements": [
+        "REQ-036"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-013.ja.md",
+      "expected": "復旧planは親と同一clusterかつ完全同一資源集合を要求し、受入れ以前に親の予約を解除してはならない。",
+      "execution": "not-run",
+      "reference_tests": "controlcore/tests/run_manager_model_tests.adb"
+    },
+    {
+      "id": "FAULT-031",
+      "scenario": "Exact部分末尾修復について入力改変・中断・再開",
+      "requirements": [
+        "REQ-037"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-013.ja.md",
+      "expected": "完全prefixを検査し、head/count/tail/report/policy/期限に三役署名を検証し、証拠を保存後だけ部分tailを修復しなければならない。",
+      "execution": "not-run",
+      "reference_tests": "controlcore/tests/run_manager_storage_tests.adb"
+    },
+    {
+      "id": "FAULT-032",
+      "scenario": "二つのprofile拘束について入力改変・中断・再開",
+      "requirements": [
+        "REQ-038"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-013.ja.md",
+      "expected": "共有契約と管理器実装を別々にpolicyへ固定し、変更・欠落・未知fileを無視して署名対象を流用してはならない。",
+      "execution": "not-run",
+      "reference_tests": "controlcore/tests/reference/test_management.py"
+    },
+    {
+      "id": "FAULT-033",
+      "scenario": "分岐在庫の保存について入力改変・中断・再開",
+      "requirements": [
+        "REQ-039"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-013.ja.md",
+      "expected": "分岐ZIPの復元/同名優先を在庫化し、追加テストを登録し、過去のPASSを現版のAda実行結果へ昇格してはならない。",
+      "execution": "not-run",
+      "reference_tests": "assurance/tests/engineering/test_unified_audit.py"
+    },
+    {
+      "id": "FAULT-034",
+      "scenario": "業務受入れと操作結果の分離について入力改変・中断・再開",
+      "requirements": [
+        "REQ-040"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-013.ja.md",
+      "expected": "receiver completionだけで業務復旧と予約解放を承認せず、exact reportと現在head/revisionへ三役closureを要求しなければならない。",
+      "execution": "not-run",
+      "reference_tests": "controlcore/tests/run_manager_vector_tests.adb"
+    },
+    {
+      "id": "FAULT-035",
+      "scenario": "完全な設定入力と不明の分離の対象/世代/入力を故障注入で変更",
+      "requirements": [
+        "REQ-041"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-configuration.ja.md",
+      "expected": "新しい変更を拒否し、元の証拠と正常稼働中の無関係な業務を保存する。",
+      "execution": "not-run",
+      "reference_tests": "configcore/tests/test_reference.py"
+    },
+    {
+      "id": "FAULT-036",
+      "scenario": "追加削除を含む三方向mergeの対象/世代/入力を故障注入で変更",
+      "requirements": [
+        "REQ-042"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-configuration.ja.md",
+      "expected": "新しい変更を拒否し、元の証拠と正常稼働中の無関係な業務を保存する。",
+      "execution": "not-run",
+      "reference_tests": "configcore/tests/test_reference.py"
+    },
+    {
+      "id": "FAULT-037",
+      "scenario": "優先順位と派生依存の検査の対象/世代/入力を故障注入で変更",
+      "requirements": [
+        "REQ-043"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-configuration.ja.md",
+      "expected": "新しい変更を拒否し、元の証拠と正常稼働中の無関係な業務を保存する。",
+      "execution": "not-run",
+      "reference_tests": "configcore/tests/test_reference.py"
+    },
+    {
+      "id": "FAULT-038",
+      "scenario": "NVIDIAのexact power capabilityの対象/世代/入力を故障注入で変更",
+      "requirements": [
+        "REQ-044"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-configuration.ja.md",
+      "expected": "新しい変更を拒否し、元の証拠と正常稼働中の無関係な業務を保存する。",
+      "execution": "not-run",
+      "reference_tests": "configcore/tests/test_reference.py"
+    },
+    {
+      "id": "FAULT-039",
+      "scenario": "独立署名した設定承認の対象/世代/入力を故障注入で変更",
+      "requirements": [
+        "REQ-045"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-configuration.ja.md",
+      "expected": "新しい変更を拒否し、元の証拠と正常稼働中の無関係な業務を保存する。",
+      "execution": "not-run",
+      "reference_tests": "configcore/tests/test_reference.py"
+    },
+    {
+      "id": "FAULT-040",
+      "scenario": "設定状態の再起動継続の対象/世代/入力を故障注入で変更",
+      "requirements": [
+        "REQ-046"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-configuration.ja.md",
+      "expected": "新しい変更を拒否し、元の証拠と正常稼働中の無関係な業務を保存する。",
+      "execution": "not-run",
+      "reference_tests": "configcore/tests/test_reference.py"
+    },
+    {
+      "id": "FAULT-041",
+      "scenario": "安全なdirect configuration inventoryの対象/世代/入力を故障注入で変更",
+      "requirements": [
+        "REQ-047"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-configuration.ja.md",
+      "expected": "新しい変更を拒否し、元の証拠と正常稼働中の無関係な業務を保存する。",
+      "execution": "not-run",
+      "reference_tests": "configcore/tests/test_reference.py"
+    },
+    {
+      "id": "FAULT-042",
+      "scenario": "SUSE familyと安全基盤の固定の対象/世代/入力を故障注入で変更",
+      "requirements": [
+        "REQ-048"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-configuration.ja.md",
+      "expected": "新しい変更を拒否し、元の証拠と正常稼働中の無関係な業務を保存する。",
+      "execution": "not-run",
+      "reference_tests": "distribution/history/leap16/tests/test_distro_inputs.py"
+    },
+    {
+      "id": "FAULT-043",
+      "scenario": "配布入力の独立source期待値の対象/世代/入力を故障注入で変更",
+      "requirements": [
+        "REQ-049"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-configuration.ja.md",
+      "expected": "新しい変更を拒否し、元の証拠と正常稼働中の無関係な業務を保存する。",
+      "execution": "not-run",
+      "reference_tests": "distribution/history/leap16/tests/test_distro_inputs.py"
+    },
+    {
+      "id": "FAULT-044",
+      "scenario": "RPM-MDの範囲外参照拒否の対象/世代/入力を故障注入で変更",
+      "requirements": [
+        "REQ-050"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-configuration.ja.md",
+      "expected": "新しい変更を拒否し、元の証拠と正常稼働中の無関係な業務を保存する。",
+      "execution": "not-run",
+      "reference_tests": "distribution/history/leap16/tests/test_distro_inputs.py"
+    },
+    {
+      "id": "FAULT-045",
+      "scenario": "全5repoの開発整合性の対象/世代/入力を故障注入で変更",
+      "requirements": [
+        "REQ-051"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-configuration.ja.md",
+      "expected": "新しい変更を拒否し、元の証拠と正常稼働中の無関係な業務を保存する。",
+      "execution": "not-run",
+      "reference_tests": "configcore/tests/test_reference.py"
+    },
+    {
+      "id": "FAULT-046",
+      "scenario": "意味変更と単一変更ownerの対象/世代/入力を故障注入で変更",
+      "requirements": [
+        "REQ-052"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-configuration.ja.md",
+      "expected": "新しい変更を拒否し、元の証拠と正常稼働中の無関係な業務を保存する。",
+      "execution": "not-run",
+      "reference_tests": "configcore/tests/test_reference.py"
+    },
+    {
+      "id": "FAULT-047",
+      "scenario": "誤った形式変換を正しいSATで正当化",
+      "requirements": [
+        "REQ-053"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/solver-rejection.ja.md",
+      "expected": "原データ/adapter/coverageを別に検証。変更を拒否し、結果不明を正常/UNSATへ変換しない。",
+      "execution": "reference-only",
+      "reference_tests": "resolvercore/tests/test_resolution_reference.py"
+    },
+    {
+      "id": "FAULT-048",
+      "scenario": "最終集合だけ合っている危険計画",
+      "requirements": [
+        "REQ-054"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/solver-rejection.ja.md",
+      "expected": "直接評価・exact入力・上限拒否。変更を拒否し、結果不明を正常/UNSATへ変換しない。",
+      "execution": "reference-only",
+      "reference_tests": "resolvercore/tests/test_resolution_reference.py"
+    },
+    {
+      "id": "FAULT-049",
+      "scenario": "過渡的な依存欠落と重複操作",
+      "requirements": [
+        "REQ-055"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/solver-rejection.ja.md",
+      "expected": "境界ごとの再計算と操作IDの一意性。変更を拒否し、結果不明を正常/UNSATへ変換しない。",
+      "execution": "reference-only",
+      "reference_tests": "resolvercore/tests/test_resolution_reference.py"
+    },
+    {
+      "id": "FAULT-050",
+      "scenario": "偽証明や別問題の証明を受理",
+      "requirements": [
+        "REQ-056"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/solver-rejection.ja.md",
+      "expected": "全opposing clausesを再計算し原式を独立生成。変更を拒否し、結果不明を正常/UNSATへ変換しない。",
+      "execution": "reference-only",
+      "reference_tests": "resolvercore/tests/test_resolution_reference.py"
+    },
+    {
+      "id": "FAULT-051",
+      "scenario": "rich dependenciesの意味落ち",
+      "requirements": [
+        "REQ-057"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/solver-rejection.ja.md",
+      "expected": "集合の交差/差、native再検査と未知拒否。変更を拒否し、結果不明を正常/UNSATへ変換しない。",
+      "execution": "reference-only",
+      "reference_tests": "resolvercore/tests/test_resolution_reference.py"
+    },
+    {
+      "id": "FAULT-052",
+      "scenario": "検査中の失効やsource省略",
+      "requirements": [
+        "REQ-058"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/solver-rejection.ja.md",
+      "expected": "必須native/current callbacksと元認可の再検査。変更を拒否し、結果不明を正常/UNSATへ変換しない。",
+      "execution": "reference-only",
+      "reference_tests": "resolvercore/tests/test_resolution_reference.py"
+    },
+    {
+      "id": "FAULT-053",
+      "scenario": "solverの提案をroot変更へ直結",
+      "requirements": [
+        "REQ-059"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/solver-rejection.ja.md",
+      "expected": "候補出力のみ・問題拒否・独立gate。変更を拒否し、結果不明を正常/UNSATへ変換しない。",
+      "execution": "reference-only",
+      "reference_tests": "resolvercore/tests/test_resolution_reference.py"
+    },
+    {
+      "id": "FAULT-054",
+      "scenario": "未証明コードを形式検証済みと誤認",
+      "requirements": [
+        "REQ-060"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/solver-rejection.ja.md",
+      "expected": "proof境界と実行結果の明示、資格化gate。変更を拒否し、結果不明を正常/UNSATへ変換しない。",
+      "execution": "reference-only",
+      "reference_tests": "resolvercore/tests/test_resolution_reference.py"
+    },
+    {
+      "id": "FAULT-055",
+      "scenario": "catalogとrootの別世代復元",
+      "requirements": [
+        "REQ-061"
+      ],
+      "runbook": "distribution/docs/recovery-runbook.ja.md",
+      "expected": "拒否または限定診断。既存稼働の破壊や権限自動緩和をしない。",
+      "execution": "not-run",
+      "reference_tests": "distribution/tests/test_nia_intake.py"
+    },
+    {
+      "id": "FAULT-056",
+      "scenario": "RPM比較の誤用/配置前の依存違反",
+      "requirements": [
+        "REQ-062"
+      ],
+      "runbook": "distribution/docs/recovery-runbook.ja.md",
+      "expected": "拒否または限定診断。既存稼働の破壊や権限自動緩和をしない。",
+      "execution": "not-run",
+      "reference_tests": "distribution/tests/test_nia_intake.py"
+    },
+    {
+      "id": "FAULT-057",
+      "scenario": "同名別binaryの再現性を流用",
+      "requirements": [
+        "REQ-063"
+      ],
+      "runbook": "distribution/docs/recovery-runbook.ja.md",
+      "expected": "拒否または限定診断。既存稼働の破壊や権限自動緩和をしない。",
+      "execution": "not-run",
+      "reference_tests": "distribution/tests/test_nia_intake.py"
+    },
+    {
+      "id": "FAULT-058",
+      "scenario": "正当dataや失効情報の巻き戻し",
+      "requirements": [
+        "REQ-064"
+      ],
+      "runbook": "distribution/docs/recovery-runbook.ja.md",
+      "expected": "拒否または限定診断。既存稼働の破壊や権限自動緩和をしない。",
+      "execution": "not-run",
+      "reference_tests": "distribution/tests/test_nia_intake.py"
+    },
+    {
+      "id": "FAULT-059",
+      "scenario": "複数base/古いPASSの混在",
+      "requirements": [
+        "REQ-065"
+      ],
+      "runbook": "distribution/docs/recovery-runbook.ja.md",
+      "expected": "拒否または限定診断。既存稼働の破壊や権限自動緩和をしない。",
+      "execution": "not-run",
+      "reference_tests": "distribution/tests/test_nia_intake.py"
+    },
+    {
+      "id": "FAULT-060",
+      "scenario": "XFS能力の実行時拘束",
+      "requirements": [
+        "REQ-066"
+      ],
+      "runbook": "distribution/docs/recovery-runbook.ja.md",
+      "expected": "scope拘束、coverage失効、証拠保全、限定された復旧。無条件再試行と偽の正常判定を拒否。",
+      "execution": "not-run",
+      "reference_tests": "distribution/tests/test_nia_xfs.py"
+    },
+    {
+      "id": "FAULT-061",
+      "scenario": "metadataと内容の分離",
+      "requirements": [
+        "REQ-067"
+      ],
+      "runbook": "distribution/docs/recovery-runbook.ja.md",
+      "expected": "scope拘束、coverage失効、証拠保全、限定された復旧。無条件再試行と偽の正常判定を拒否。",
+      "execution": "not-run",
+      "reference_tests": "distribution/tests/test_nia_xfs.py"
+    },
+    {
+      "id": "FAULT-062",
+      "scenario": "失われたイベントと再試行",
+      "requirements": [
+        "REQ-068"
+      ],
+      "runbook": "distribution/docs/recovery-runbook.ja.md",
+      "expected": "scope拘束、coverage失効、証拠保全、限定された復旧。無条件再試行と偽の正常判定を拒否。",
+      "execution": "not-run",
+      "reference_tests": "distribution/tests/test_nia_xfs.py"
+    },
+    {
+      "id": "FAULT-063",
+      "scenario": "XFS復旧領域の分離",
+      "requirements": [
+        "REQ-069"
+      ],
+      "runbook": "distribution/docs/recovery-runbook.ja.md",
+      "expected": "scope拘束、coverage失効、証拠保全、限定された復旧。無条件再試行と偽の正常判定を拒否。",
+      "execution": "not-run",
+      "reference_tests": "distribution/tests/test_nia_xfs.py"
+    },
+    {
+      "id": "FAULT-064",
+      "scenario": "非修復の初期運用",
+      "requirements": [
+        "REQ-070"
+      ],
+      "runbook": "distribution/docs/recovery-runbook.ja.md",
+      "expected": "scope拘束、coverage失効、証拠保全、限定された復旧。無条件再試行と偽の正常判定を拒否。",
+      "execution": "not-run",
+      "reference_tests": "distribution/tests/test_nia_xfs.py"
+    },
+    {
+      "id": "FAULT-065",
+      "scenario": "helper所有権と回収順",
+      "requirements": [
+        "REQ-071"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-014.ja.md",
+      "expected": "leaderを回収する前にcleanupし、stdout/leader終了順に依存せず期限・出力上限を守る。",
+      "execution": "not-run",
+      "reference_tests": "assurance/tests/engineering/test_final_runtime.py"
+    },
+    {
+      "id": "FAULT-066",
+      "scenario": "観測FD・ctimeの照合",
+      "requirements": [
+        "REQ-072"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-014.ja.md",
+      "expected": "パスとFDの事前事後を照合し、mtimeだけ復元した変更も観測差異として拒否する。",
+      "execution": "not-run",
+      "reference_tests": "assurance/tests/engineering/test_final_runtime.py"
+    },
+    {
+      "id": "FAULT-067",
+      "scenario": "intent前の完了記録余力",
+      "requirements": [
+        "REQ-073"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-014.ja.md",
+      "expected": "未完計画の予約と新規計画の終了記録余力を確保してから新たなintentを記録する。",
+      "execution": "not-run",
+      "reference_tests": "assurance/tests/engineering/test_final_runtime.py"
+    },
+    {
+      "id": "FAULT-068",
+      "scenario": "既存lockの欠落拒否",
+      "requirements": [
+        "REQ-074"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-014.ja.md",
+      "expected": "既存状態の復旧と新規bootstrapを分け、失われたlock inodeを通常アクセスで再作成しない。",
+      "execution": "not-run",
+      "reference_tests": "assurance/tests/engineering/test_final_runtime.py"
+    },
+    {
+      "id": "FAULT-069",
+      "scenario": "複合検査経路の必須化",
+      "requirements": [
+        "REQ-075"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-014.ja.md",
+      "expected": "合成SDKは停止・設定・元の認可・独立solver・native意味・現在の予約を必須とし、弱い下位Engineを公開しない。",
+      "execution": "not-run",
+      "reference_tests": "assurance/tests/engineering/test_final_runtime.py"
+    },
+    {
+      "id": "FAULT-070",
+      "scenario": "世代namespaceの分離",
+      "requirements": [
+        "REQ-076"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-014.ja.md",
+      "expected": "catalog/model世代とcluster membership epochを等号で結び付けず、それぞれ対応する証拠へ束縛する。",
+      "execution": "not-run",
+      "reference_tests": "assurance/tests/engineering/test_final_runtime.py"
+    },
+    {
+      "id": "FAULT-071",
+      "scenario": "外部anchorと独立quorum",
+      "requirements": [
+        "REQ-077"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-015.ja.md",
+      "expected": "復旧は外部でpinした完全なanchorと現在のtrust floorへ一致し、別principal・鍵・domainとrecovery/witness役の署名を要求する。",
+      "execution": "not-run",
+      "reference_tests": "assurance/tests_py/test_recovery_cohort.py"
+    },
+    {
+      "id": "FAULT-072",
+      "scenario": "完全inventoryの破損検出",
+      "requirements": [
+        "REQ-078"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-015.ja.md",
+      "expected": "認証されたcohortの内容、mode、owner、xattr、directory集合を検査し、追加・欠落・改変を正常な空状態と解釈しない。",
+      "execution": "not-run",
+      "reference_tests": "assurance/tests_py/test_recovery_cohort.py"
+    },
+    {
+      "id": "FAULT-073",
+      "scenario": "候補への再構成と証拠保全",
+      "requirements": [
+        "REQ-079"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-015.ja.md",
+      "expected": "複数の破損複製から正しいchunkだけを選び、新しい私有candidateへ再構成し、証拠I/O失敗では完了扱いしない。",
+      "execution": "not-run",
+      "reference_tests": "assurance/tests_py/test_recovery_cohort.py"
+    },
+    {
+      "id": "FAULT-074",
+      "scenario": "historyと外部効果の継続",
+      "requirements": [
+        "REQ-080"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-015.ja.md",
+      "expected": "復旧でpending要求を消さず、候補のbyte一致後もnative journalを検査し、外部結果を照合するまでOperationalへ進めない。",
+      "execution": "not-run",
+      "reference_tests": "assurance/tests/run_cohort_recovery_tests.adb"
+    },
+    {
+      "id": "FAULT-075",
+      "scenario": "Capsule能力の非昇格",
+      "requirements": [
+        "REQ-081"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-016.ja.md",
+      "expected": "Capsuleの能力は要求とOS・管理者・利用者方針の積集合とし、必須能力不足、未知の能力、host全体の権限を拒否する。",
+      "execution": "not-run",
+      "reference_tests": "capsulecore/tests_py/test_capsule.py"
+    },
+    {
+      "id": "FAULT-076",
+      "scenario": "世代とデータの独立管理",
+      "requirements": [
+        "REQ-082"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-016.ja.md",
+      "expected": "runtimeとapp世代をdigestで固定し、旧実行個体・復旧pinを保持し、データ契約の変更に明示的な移行を要求する。",
+      "execution": "not-run",
+      "reference_tests": "capsulecore/tests/run_capsule_tests.adb"
+    },
+    {
+      "id": "FAULT-077",
+      "scenario": "Flatpak入力の要求化",
+      "requirements": [
+        "REQ-083"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-016.ja.md",
+      "expected": "Flatpak metadataは許可ではなく要求として扱い、raw network/audio/deviceの意味を狭く偽装せず、未対応条件やextensionを拒否する。",
+      "execution": "not-run",
+      "reference_tests": "capsulecore/tests_py/test_capsule.py"
+    },
+    {
+      "id": "FAULT-078",
+      "scenario": "brokerとmountの実行個体束縛",
+      "requirements": [
+        "REQ-084"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-016.ja.md",
+      "expected": "brokerとmountはapp・世代・policy・boot・cgroup・userの実際のidentityへ束縛し、既存FDの失効をDB操作だけで保証しない。",
+      "execution": "not-run",
+      "reference_tests": "capsulecore/tests/run_capsule_tests.adb"
+    },
+    {
+      "id": "FAULT-079",
+      "scenario": "candidate treeの独立検査",
+      "requirements": [
+        "REQ-085"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-016.ja.md",
+      "expected": "正確な原本digestと完全inventoryを再検査し、元のinodeを共有せず、新しい候補に限ってmaterializeし、診断を実行許可にしない。",
+      "execution": "not-run",
+      "reference_tests": "capsulecore/tests_py/test_capsule.py"
+    },
+    {
+      "id": "FAULT-080",
+      "scenario": "統一診断と形式版の拘束",
+      "requirements": [
+        "REQ-086"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-016.ja.md",
+      "expected": "Capsule診断はNiaの固定tool policy経由で行い、未知bit・不正長・reserved・classを拒否し、自己申告の条件を本番証拠にしない。",
+      "execution": "not-run",
+      "reference_tests": "capsulecore/tests_py/test_capsule.py"
+    },
+    {
+      "id": "FAULT-081",
+      "scenario": "Kernel由来peerの要求受信",
+      "requirements": [
+        "REQ-087"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-017.ja.md",
+      "expected": "要求はkernel credentialsと登録済み実行個体から認証し、wireの自己申告で本人・許可を決めてはならない。",
+      "execution": "not-run",
+      "reference_tests": "capsulecore/tests_py/test_consent.py"
+    },
+    {
+      "id": "FAULT-082",
+      "scenario": "同意と資源の分離",
+      "requirements": [
+        "REQ-088"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-017.ja.md",
+      "expected": "同意は正確な質問と資源へ束縛し、同意だけで資源を与えず、反映の直前直後に現在の認可を照合しなければならない。",
+      "execution": "not-run",
+      "reference_tests": "capsulecore/tests_py/test_consent.py"
+    },
+    {
+      "id": "FAULT-083",
+      "scenario": "native Portalの先行intent",
+      "requirements": [
+        "REQ-089"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-017.ja.md",
+      "expected": "native PortalがUIと同時に資源を作る場合はpossible-effectを永続化してから呼び出し、応答喪失時に要求を再送してはならない。",
+      "execution": "not-run",
+      "reference_tests": "capsulecore/tests_py/test_consent.py"
+    },
+    {
+      "id": "FAULT-084",
+      "scenario": "UI backendの本人・形式検査",
+      "requirements": [
+        "REQ-090"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-017.ja.md",
+      "expected": "UI backendのunique ownerと独立した本人確認、正確な質問digest、返答の署名型と期限を検査しなければならない。",
+      "execution": "not-run",
+      "reference_tests": "capsulecore/tests_py/test_consent.py"
+    },
+    {
+      "id": "FAULT-085",
+      "scenario": "失効の実効性",
+      "requirements": [
+        "REQ-091"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-017.ja.md",
+      "expected": "取消と資源遮断を区別し、実際のgrant/FD/sessionが遮断された証拠なしに失効完了を記録してはならない。",
+      "execution": "not-run",
+      "reference_tests": "capsulecore/tests_py/test_consent.py"
+    },
+    {
+      "id": "FAULT-086",
+      "scenario": "保存・anchor・終端予算",
+      "requirements": [
+        "REQ-092"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-017.ja.md",
+      "expected": "ログは独立anchorと一致することを要求し、欠落を初期化せず、既存ticketの終端記録の枠を新規要求へ使わせてはならない。",
+      "execution": "not-run",
+      "reference_tests": "capsulecore/tests_py/test_consent.py"
+    },
+    {
+      "id": "FAULT-087",
+      "scenario": "要求洪水とbroker再起動",
+      "requirements": [
+        "REQ-093"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-017.ja.md",
+      "expected": "prompt budgetをuser+appへ固定し、再起動・世代更新による予算リセットや旧grantの自動復活を許可してはならない。",
+      "execution": "not-run",
+      "reference_tests": "capsulecore/tests_py/test_consent.py"
+    },
+    {
+      "id": "FAULT-088",
+      "scenario": "引き継ぎ・未完範囲の明示",
+      "requirements": [
+        "REQ-094"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-017.ja.md",
+      "expected": "診断、模擬peer試験、Ada実行・flow・proveの各結果、未接続adapterを区別し、現在の実装と残る出荷条件を機械台帳と文書へ記録しなければならない。",
+      "execution": "not-run",
+      "reference_tests": "capsulecore/tests_py/test_consent.py"
+    },
+    {
+      "id": "FAULT-089",
+      "scenario": "計画2件目の欠落・プロパティの重複",
+      "requirements": [
+        "REQ-028"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-017.ja.md",
+      "expected": "前のfieldのOKを伝播せず全体を拒否する。",
+      "execution": "not-run",
+      "reference_tests": "pkgcore/tests/run_v2_pkg_tests.adb"
+    },
+    {
+      "id": "FAULT-090",
+      "scenario": "試験引数が存在しないディレクトリを要求する",
+      "requirements": [
+        "REQ-023"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-017.ja.md",
+      "expected": "prepare_directoriesで明示されたものだけを作り、未作成を前提にした実試験を維持する。",
+      "execution": "not-run",
+      "reference_tests": "assurance/tests/engineering/test_engineering.py"
+    },
+    {
+      "id": "FAULT-091",
+      "scenario": "要求に余分な権利FDが付く",
+      "requirements": [
+        "REQ-087"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-017.ja.md",
+      "expected": "入力を拒否して受信したFDを閉じ、試験自身のFD数が増えない。",
+      "execution": "not-run",
+      "reference_tests": "capsulecore/tests/run_consent_channel_tests.adb"
+    },
+    {
+      "id": "FAULT-092",
+      "scenario": "証明子孫の過大割当・同時起動・timeout・中断",
+      "requirements": [
+        "REQ-095",
+        "REQ-021"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-011.ja.md",
+      "expected": "小さい人工上限で起動拒否・割当拒否・子孫停止を確認し、中断を形式証明の成功にしない。128 MiBの試験枠にも2048 MiBの予備メモリを要求し、既定の実証明は4096 MiB未満で起動しない。",
+      "execution": "not-run",
+      "reference_tests": "assurance/tests/engineering/test_proof_guard.py"
+    },
+    {
+      "id": "FAULT-093",
+      "scenario": "署名付きDEB人工fixtureに必要な工具がPATHに存在しない",
+      "requirements": [
+        "REQ-021"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-011.ja.md",
+      "expected": "統合runnerが試験開始前に不足工具を記録して失敗し、Ada実行と形式証明を未実行のまま保持する。",
+      "execution": "not-run",
+      "reference_tests": "assurance/tests/engineering/test_native_dependencies.py"
+    },
+    {
+      "id": "FAULT-094",
+      "scenario": "能力に対する要求・OS・管理者・利用者の四方針のいずれかが欠ける",
+      "requirements": [
+        "REQ-081"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-011.ja.md",
+      "expected": "全能力の16組合せについて、四つが揃った場合だけ積集合に能力が残り、別能力へ広がらない。",
+      "execution": "not-run",
+      "reference_tests": "capsulecore/tests/run_capsule_tests.adb"
+    },
+    {
+      "id": "FAULT-095",
+      "scenario": "promptが最大長・整数上限の配列添字、または各入力制約を越える値を持つ",
+      "requirements": [
+        "REQ-088"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-011.ja.md",
+      "expected": "有効な最大長は独立したdigest基準値と一致し、無効入力はZeroを返し、fieldの境界を変えるとdigestが変わる。",
+      "execution": "not-run",
+      "reference_tests": "capsulecore/tests/run_capsule_tests.adb"
+    },
+    {
+      "id": "FAULT-096",
+      "scenario": "分割をまたぐ重複、親の欠落、内容変更、余分な項目、lock/journal欠落、途中適用・確定と部分journal",
+      "requirements": [
+        "REQ-096"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-011.ja.md",
+      "expected": "非公開状態だけを変更し、全体の不一致と欠落を拒否する。記録された確定境界を再開し、結果不明の末尾を保持して自動修復しない。",
+      "execution": "not-run",
+      "reference_tests": "pkgcore/tests/run_generation_stage_tests.adb"
+    },
+    {
+      "id": "FAULT-097",
+      "scenario": "認可・barrier・構成署名・解決証拠の不成立、候補適用後の確定拒否、確定窓での中断、公開journal/lock欠落",
+      "requirements": [
+        "REQ-097"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-011.ja.md",
+      "expected": "候補を現行として返さず、全gateを通して同じ記録を再開する。root/catalogの対を一緒に確定し、結果不明・欠落を自動修復しない。",
+      "execution": "not-run",
+      "reference_tests": "pkgcore/tests/run_generation_publication_tests.adb"
+    },
+    {
+      "id": "FAULT-098",
+      "scenario": "スクリプトを持たない変更元による発火、await/noawaitの混在、旧新版と同一batchの重複、未知命令と非正規パス",
+      "requirements": [
+        "REQ-098"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-011.ja.md",
+      "expected": "受信者と待機関係を落とさず保持し、未対応の意味を拒否する。原本hashを維持し、handlerの実行や完了を捏造しない。",
+      "execution": "not-run",
+      "reference_tests": "distribution/tests/test_debian_triggers.py"
+    },
+    {
+      "id": "FAULT-099",
+      "scenario": "媒体の途中変更、古い索引、同一識別子の重複、リンク・非通常ファイル、書込み・fsync・renameの失敗",
+      "requirements": [
+        "REQ-099"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-011.ja.md",
+      "expected": "原本と既存の完全な索引を保持する。rename後の同期失敗は完了不明として失敗し、署名済みや導入済みと偽らない。",
+      "execution": "not-run",
+      "reference_tests": "distribution/native/test_media.py"
+    },
+    {
+      "id": "FAULT-100",
+      "scenario": "処理中の同名再発火、noawait追加、待機の連鎖・循環、古いattemptによる応答、処理中checkpointの再読",
+      "requirements": [
+        "REQ-100"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-011.ja.md",
+      "expected": "新しい発火と未解決の待機を保持し、異なるattemptの成功観測を拒否する。復号だけでは処理再実行や完了を起こさない。",
+      "execution": "not-run",
+      "reference_tests": "distribution/tests/test_debian_trigger_state.py"
+    },
+    {
+      "id": "FAULT-101",
+      "scenario": "途中切断、偽のoffset/digest、重複・過剰メンバー、不正名・数値・padding、期限切れ、CAS破損、UID 0",
+      "requirements": [
+        "REQ-101"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-011.ja.md",
+      "expected": "元DEBを再検査し、失敗時に部分的なenvelopeや成功digestを返さない。メンバーの保存は展開や導入許可を発生させない。",
+      "execution": "not-run",
+      "reference_tests": "pkgcore/tests/run_deb_container_tests.adb"
+    },
+    {
+      "id": "FAULT-102",
+      "scenario": "gzip CRC不正、xz/zstd切断、圧縮ラベル相違・連結・後続データ、重複・危険名・特殊entry・PAX属性、個別/合計/全展開量の上限、期限と偽envelope",
+      "requirements": [
+        "REQ-102"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-011.ja.md",
+      "expected": "不正や未対応入力で全inventoryを空にし、完了したCAS objectを稼働状態としない。保守scriptは正確なbyte列として保持し実行しない。",
+      "execution": "not-run",
+      "reference_tests": "pkgcore/tests/run_deb_control_tests.adb"
+    },
+    {
+      "id": "FAULT-103",
+      "scenario": "重複・空値・複数stanza、不正UTF-8、原本不一致、切り詰め、必須項目欠落、異常版・保護値、単純項目折返し、資源境界、通し経路のstack不足",
+      "requirements": [
+        "REQ-103"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-011.ja.md",
+      "expected": "無効入力で部分結果を返さず、未知項目を原本に保持する。大きな中間結果の寿命を管理し、制限を増やさずに元DEB経路を実行できる。",
+      "execution": "not-run",
+      "reference_tests": "pkgcore/tests/run_deb_metadata_tests.adb"
+    },
+    {
+      "id": "FAULT-104",
+      "scenario": "空の選択肢・末尾separator・不正な版演算子・source専用制約・折返し・Providesの不正演算子・Built-Usingの版欠落・原本取り違え・有界atom数超過",
+      "requirements": [
+        "REQ-104"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-011.ja.md",
+      "expected": "失敗時に部分式や原本digestを返さず、未知architectureを別の意味へ変換しない。原本経路でもすべての採用binary関係項目の構文を検査する。",
+      "execution": "not-run",
+      "reference_tests": "pkgcore/tests/run_deb_relations_tests.adb"
+    },
+    {
+      "id": "FAULT-105",
+      "scenario": "分割位置の違い、空stream、境界の展開上限、CRC不正、切断・連結・後続byte、不一致envelope、期限超過、decoderの完了後・失敗後の再使用",
+      "requirements": [
+        "REQ-105"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-011.ja.md",
+      "expected": "すべての圧縮byteを照合して完全消費し、失敗時に展開digestとサイズを成功として返さない。展開量に比例する入力/出力bufferを確保せず、原本と二回目の出力をCASへ束縛する。",
+      "execution": "not-run",
+      "reference_tests": "pkgcore/tests/run_deb_data_stream_tests.adb"
+    },
+    {
+      "id": "FAULT-106",
+      "scenario": "重複・非directory祖先・危険path/link・hardlink欠落/循環、未知拡張、不正ACL、属性上限、tar破損・終端・padding、日本語名と呼出側locale、負の小数時刻、UID0と期限超過",
+      "requirements": [
+        "REQ-106"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-011.ja.md",
+      "expected": "部分inventoryを返さず、完全CAS blobと稼働状態を区別する。対応属性・内容を原本から保持し、呼出側localeを復元する。",
+      "execution": "not-run",
+      "reference_tests": "pkgcore/tests/run_deb_payload_tests.adb"
+    },
+    {
+      "id": "FAULT-107",
+      "scenario": "入力順反転、同一原本重複、属性の異なる共有directory、同一内容の別owner、非directory祖先、暗黙parent、別原本の同名path、source破棄、未sealと境界外読取、期限超過とUID0",
+      "requirements": [
+        "REQ-107"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-011.ja.md",
+      "expected": "全claimと原本内inode identityを保持し、部分候補や最後のownerを確定結果として返さない。原本inventoryの破棄後も索引の内容は変わらず、失敗時はcandidate全体を破棄する。",
+      "execution": "not-run",
+      "reference_tests": "pkgcore/tests/run_payload_index_tests.adb"
+    },
+    {
+      "id": "FAULT-108",
+      "scenario": "空payload原本の欠落、同数の原本すり替え、期待control不一致、選択原本重複、同一identityの再梱包/別版、再Sealの入力変更、順序反転、入力破棄、期限とUID0",
+      "requirements": [
+        "REQ-108"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-011.ja.md",
+      "expected": "metadata・選択・payload集合が完全一致する場合だけimmutable候補を公開し、失敗では全体を破棄する。全関係のqualifier/version/代替groupを保持する。",
+      "execution": "not-run",
+      "reference_tests": "pkgcore/tests/run_selected_catalog_tests.adb"
+    },
+    {
+      "id": "FAULT-109",
+      "scenario": "代替候補と欠落group、実/仮想依存の版とarchitecture全組合せ、同名共存と版差、自己Conflicts/Breaksと異architecture、negative virtual、policy順序/集合変更、期限とUID0",
+      "requirements": [
+        "REQ-109"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-011.ja.md",
+      "expected": "全必須関係の成立時だけcandidateとarchitecture policyへ束縛したreceiptを返す。失敗は旧成功hashを消し、原因の原本/field/groupを示す。candidateは変更しない。",
+      "execution": "not-run",
+      "reference_tests": "pkgcore/tests/run_deb_final_set_tests.adb"
+    },
+    {
+      "id": "FAULT-110",
+      "scenario": "保護flag全組合せ、削除/architecture変更/仮想代替、版比較と再梱包、接頭辞順序、入力順/寿命、壊れた前世代の修復、壊れる候補、途中拒否、期限とUID0",
+      "requirements": [
+        "REQ-110"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-011.ja.md",
+      "expected": "通常更新で保護identityとflagを保持し、正確な差分と前後catalog/endpointを束縛する。拒否は旧計画を消し、入力を変更しない。",
+      "execution": "not-run",
+      "reference_tests": "pkgcore/tests/run_deb_transition_tests.adb"
+    },
+    {
+      "id": "FAULT-111",
+      "scenario": "再保存/再open、全identity/関係/claim保持、20形式不正、control/payload hash不一致、空payload原本欠落、catalog欠落、期限とUID0",
+      "requirements": [
+        "REQ-111"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-011.ja.md",
+      "expected": "同じfingerprintで正規CAS原本を保存し、完全再観測時だけcatalogとpayloadを返す。失敗は旧成功両出力を消し、Save失敗は入力を保つ。",
+      "execution": "not-run",
+      "reference_tests": "pkgcore/tests/run_catalog_store_tests.adb"
+    },
+    {
+      "id": "FAULT-112",
+      "scenario": "二世代のnative catalog観測、未確定commitと復旧、stale scratch、欠落/破損journal/lock/descriptor、原本/catalog欠落、root/CAS競合、期限/別root、旧世代plan再適用",
+      "requirements": [
+        "REQ-112"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-011.ja.md",
+      "expected": "受理済みの正確なdescriptor/catalog/payloadだけを返し、不明/欠落/期限切れ/排他失敗は全出力を消す。旧観測のplanは現世代を上書きしない。",
+      "execution": "not-run",
+      "reference_tests": "pkgcore/tests/run_generation_publication_tests.adb"
+    },
+    {
+      "id": "FAULT-113",
+      "scenario": "二catalogの正規保持一覧、全掲載オブジェクトの単独省略/欠落、余剰/重複/順序/形式不正、圧縮control/data・script内容・七payload種・xattr/ACL、破損byte、pin再open/衝突/欠落、再生成の明示的区別、期限とUID0",
+      "requirements": [
+        "REQ-113"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-011.ja.md",
+      "expected": "正確なcatalog由来集合だけを認め、欠落した掲載オブジェクトは検査時に再生成せず拒否する。Prepareで明示再生成後は同じhashを復元し、pin衝突は既存対象を保つ。",
+      "execution": "not-run",
+      "reference_tests": "pkgcore/tests/run_catalog_store_tests.adb"
+    },
+    {
+      "id": "FAULT-114",
+      "scenario": "v1/v2形式・独立transaction vector、旧形式公開拒否、五境界で閉包と全member欠落、空/無期限・認可中の期限切れ、不正manifest hash、復旧行列と独立原本reader",
+      "requirements": [
+        "REQ-114"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-011.ja.md",
+      "expected": "保持欠落を再生成せず失敗し、未組立てrootと確定済み状態を保つ。旧形式は構造検査を維持するがnative公開へ使えず、遅延認可は受け入れない。",
+      "execution": "not-run",
+      "reference_tests": "pkgcore/tests/run_generation_publication_tests.adb"
+    },
+    {
+      "id": "FAULT-115",
+      "scenario": "二世代の変更なし/順方向/逆方向の観測と独立Binding、候補全member/closure欠落、基準保持欠落、誤ったdescriptor/root/closure、依存不成立、architecture policy変更、期限、全予約の競合と復旧行列",
+      "requirements": ["REQ-115"],
+      "runbook": "assurance/docs/engineering/runbooks/RB-011.ja.md",
+      "expected": "同一予約で検査した前後世代とpolicyだけへ計画を束縛する。失敗では全成功出力を消し、欠落の再生成や確定済み状態の書換えを行わない。",
+      "execution": "not-run",
+      "reference_tests": "pkgcore/tests/run_generation_publication_tests.adb"
+    },
+    {
+      "id": "FAULT-116",
+      "scenario": "三世代形式の正規性と降格拒否、保持する検査記録の欠落、policy順序・重複・追加、26不正記録、組立て済み候補の結果/root/初期構築偽装、独立Binding照合",
+      "requirements": [
+        "REQ-116"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-011.ja.md",
+      "expected": "基準と候補に束縛されたnative結果だけを認める。構造的に正しい不正候補でも公開前に止め、実root.stateとgeneration.nextを変えず、失敗した検査の旧Bindingを消す。",
+      "execution": "not-run",
+      "reference_tests": "pkgcore/tests/run_generation_publication_tests.adb"
+    },
+    {
+      "id": "FAULT-117",
+      "scenario": "実TUF/OpenPGP署名の片方欠落、別原本pin・suite・component・architecture、Release期限欠如/期限切れ/日付floor、巨大未使用Contentsと選択index上限、元DEB/control不一致、対応ソース混在、epoch不足、処理中の期限/時計/target変化、保持TUF全roleと使用/未使用委譲の期限、鍵交代後の再検証、checkpoint/identity/予約変更、要求枠/session期限、追加取得なし、UID0",
+      "requirements": [
+        "REQ-117"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-011.ja.md",
+      "expected": "原本供給の信頼入力をすべて検査し、欠落や不一致では返却しない。通常Releaseにも有限期限を要求し、実行許可・第二の導入済みDB・hostでのscript実行を作らない。",
+      "execution": "not-run",
+      "reference_tests": "distribution/native/test_archive_intake.py"
+    },
+    {
+      "id": "FAULT-118",
+      "scenario": "実TUF/OpenPGP認証不成立時の署名非呼出、別key/domain、provider失敗/遅延/cache変更、全320byte破損、署名済み範囲外/zero/期限/epoch、独立authorityと時刻、全参照欠落、署名済み別control/不正DEB、CAS再open、発行からnativeへの実接続、UID0",
+      "requirements": ["REQ-118"],
+      "runbook": "assurance/docs/engineering/runbooks/RB-011.ja.md",
+      "expected": "独立authorityと実原本に一致する記録だけを受け入れる。失敗はBindingを消し、欠落原本/controlを再生成して正常化しない。実行許可や第二の導入済みDBを作らない。",
+      "execution": "not-run",
+      "reference_tests": "pkgcore/tests/run_archive_supply_tests.adb"
+    },
+    {
+      "id": "FAULT-119",
+      "scenario": "初期構築・追加・削除・再導入、過不足と別原本/control、重複/非正規行、全map byte変更、基準/root変更、独立authority欠落/重複、期限・CAS書込障害・強制終了と再開、全供給原本と基準descriptor/closure欠損、実署名発行から独立map preimage照合、UID0",
+      "requirements": [
+        "REQ-119"
+      ],
+      "runbook": "assurance/docs/engineering/runbooks/RB-011.ja.md",
+      "expected": "新規に必要な原本だけを正確に認証し、失敗したAddress/Valid_Untilを消す。保持欠損を正常化せず、期限切れの歴史的保持検査を新規認可にしない。",
+      "execution": "not-run",
+      "reference_tests": "pkgcore/tests/run_supply_map_tests.adb"
+    }
+  ]
+}

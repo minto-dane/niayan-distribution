@@ -1,0 +1,10 @@
+{
+  "different_from_final_pkgcore": [
+    "README.md",
+    "ci/generation-root-refusal-test.sh",
+    "ci/test-all.sh",
+    "tests/run_supply_map_tests.adb",
+    "runtime/pkg_supply_map.adb"
+  ],
+  "result": "preliminary driver passed 712 assertions; final driver and integration were separately qualified"
+}

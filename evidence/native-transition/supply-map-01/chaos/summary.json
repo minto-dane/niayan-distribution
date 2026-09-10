@@ -1,0 +1,35 @@
+{
+  "result": "pass-for-scoped-lab-only",
+  "source_subject": "6c6fb59c99442dd2973c420403ee37a3dd9e1ac7a10fcecdeda340a1444a8b2d",
+  "completed_campaigns": [
+    "attempt-01",
+    "attempt-02"
+  ],
+  "seeds": [
+    20260910,
+    20260911
+  ],
+  "case_count": 70,
+  "counts": {
+    "kill": 13,
+    "io-error": 13,
+    "map-corruption": 6,
+    "required-reference-loss": 18,
+    "structure-loss": 8,
+    "deadline-delay": 8,
+    "kill-then-corrupt": 4
+  },
+  "observed_false_successes": 0,
+  "recovery_ms": {
+    "p50": 950.2810500016494,
+    "p95": 1039.5178729995678,
+    "max": 1120.4890759981936
+  },
+  "native_runtime_hardening_changed": false,
+  "lab_capabilities": [
+    "SYS_PTRACE",
+    "DAC_READ_SEARCH"
+  ],
+  "scope": "candidate supply map only; no accepted publication, physical power loss or boot",
+  "quarantine_and_restore_are_explicit_lab_actions": true
+}

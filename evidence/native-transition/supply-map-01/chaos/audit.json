@@ -1,0 +1,28 @@
+{
+  "result": "pass",
+  "campaigns": [
+    {
+      "path": "attempt-01",
+      "seed": 20260910,
+      "case_count": 34,
+      "report_sha256": "c7d311def47deaf3b6e4db21ebb15c40f8948887c62813cafcf9c49f3478002a"
+    },
+    {
+      "path": "attempt-02",
+      "seed": 20260911,
+      "case_count": 36,
+      "report_sha256": "974bdae8432988fa36886a52f5033832a78227eaee1e8fc85f2996f8af6cb7a2"
+    }
+  ],
+  "counts": {
+    "kill": 13,
+    "io-error": 13,
+    "map-corruption": 6,
+    "required-reference-loss": 18,
+    "structure-loss": 8,
+    "deadline-delay": 8,
+    "kill-then-corrupt": 4
+  },
+  "case_count": 70,
+  "scope": "independent public signatures/map preimage, actual injected faults, zero failed outputs and original-bound recovery"
+}

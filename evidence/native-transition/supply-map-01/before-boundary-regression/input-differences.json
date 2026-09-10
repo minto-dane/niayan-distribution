@@ -1,0 +1,11 @@
+{
+  "different_from_final_inputs": [
+    "assurance/docs/engineering/api-index.ja.md",
+    "assurance/engineering/component-catalog.json",
+    "assurance/engineering/fault-cases.json",
+    "distribution/native/supply-map.ja.md",
+    "pkgcore/runtime/pkg_supply_map.adb",
+    "pkgcore/tests/run_supply_map_tests.adb"
+  ],
+  "scope": "Prior complete gates are not final regression qualification"
+}

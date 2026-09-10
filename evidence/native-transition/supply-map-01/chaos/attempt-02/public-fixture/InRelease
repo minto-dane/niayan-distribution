@@ -1,0 +1,19 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Origin: Debian
+Label: Debian
+Suite: stable
+Codename: trixie
+Date: Thu, 10 Sep 2026 03:03:53 GMT
+Architectures: amd64 all
+Components: main
+SHA256:
+ 9ae529035433296764f4737f94080e88b77b89f3bd551793a8754334fddf862f 232 main/binary-amd64/Packages.xz
+-----BEGIN PGP SIGNATURE-----
+
+iHUEARYKAB0WIQQmHCORPm5FIIBHdtJ0EDKXzulvswUCaqIeVQAKCRB0EDKXzulv
+szHLAQDzIPVtjUxnlFMawVORdDMtahNaJYddGmTPNzdEOMbHmAEA+268GQaLDM4V
+z4LdvuXyv1be47RVL5w0pQ6kVafpewM=
+=5OG1
+-----END PGP SIGNATURE-----

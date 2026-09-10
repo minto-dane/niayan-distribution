@@ -1,0 +1,5 @@
+{
+  "different_from_final_pkgcore": [
+    "runtime/pkg_supply_map.adb"
+  ]
+}

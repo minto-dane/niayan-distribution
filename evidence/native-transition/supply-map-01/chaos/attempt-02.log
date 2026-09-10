@@ -1,0 +1,57 @@
+Running as unit: run-p236621-i236921.scope; invocation ID: d5cf07b3e2124e23b37c4acf0e84671e
+limited-exec: {"scope": "run-p236621-i236921.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+PASS fault-00 io-error
+PASS fault-01 io-error
+PASS fault-02 io-error
+PASS fault-03 kill
+PASS fault-04 kill
+PASS fault-05 kill
+PASS fault-06 io-error
+PASS fault-07 io-error
+PASS fault-08 kill
+PASS fault-09 kill
+PASS fault-10 io-error
+PASS fault-11 kill
+PASS fault-12 kill
+PASS fault-13 io-error
+PASS map-bitflip map-corruption
+PASS map-truncate map-corruption
+PASS map-missing map-corruption
+PASS lost-receipt required-reference-loss
+PASS lost-policy required-reference-loss
+PASS lost-original.deb required-reference-loss
+PASS lost-control required-reference-loss
+PASS lost-InRelease required-reference-loss
+PASS lost-Packages required-reference-loss
+PASS lost-keyring required-reference-loss
+PASS lost-catalog required-reference-loss
+PASS lost-closure required-reference-loss
+PASS structure-store.lock structure-loss
+PASS structure-objects structure-loss
+PASS structure-incoming structure-loss
+PASS structure-pins structure-loss
+PASS delay-00 deadline-delay
+PASS delay-01 deadline-delay
+PASS delay-02 deadline-delay
+PASS delay-03 deadline-delay
+PASS kill-corrupt-0 kill-then-corrupt
+PASS kill-corrupt-1 kill-then-corrupt
+{
+  "result": "pass",
+  "seed": 20260911,
+  "case_count": 36,
+  "counts": {
+    "io-error": 7,
+    "kill": 7,
+    "map-corruption": 3,
+    "required-reference-loss": 9,
+    "structure-loss": 4,
+    "deadline-delay": 4,
+    "kill-then-corrupt": 2
+  },
+  "recovery_ms": {
+    "p50": 954.2084509994311,
+    "p95": 1080.3180230032012,
+    "max": 1120.4890759981936
+  }
+}

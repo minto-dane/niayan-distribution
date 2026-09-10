@@ -242,6 +242,7 @@
         "native/test_repository_revalidation.py",
         "native/test_archive_receipt.py",
         "native/check_archive_receipt_bridge.py",
+        "native/check_supply_map_bridge.py",
         "tests/test_debian_trust.py"
       ],
       "evidence": [
