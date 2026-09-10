@@ -53,7 +53,8 @@ UID0を拒否し、失敗時の出力digestはzeroにする。失敗した呼出
 alternatives/diversions等の意味とsite policyに基づく採用決定を、供給・効果・公開計画へ
 束縛するproviderが必要である。manifest単独を認可や導入済みDBとして利用しない。
 
-現時点で新manifestを世代pinへ接続していない。全世代の保持・GC、特権分離された展開器、
+NIAGEN05を通して既存の世代pin・公開/復旧へ接続した。[root世代](root-generation.ja.md)を参照。
+全世代の保持・GC、特権分離された展開器、
 効果の実行と復旧、実サービス・root/boot接続を実装してから完全置換ISOの受入へ進む。
 今回の検証対象は人工DEBの実payload組立てであり、ディストリビューション完成ではない。
 

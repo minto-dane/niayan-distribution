@@ -1,0 +1,24 @@
+{
+  "result": "pass",
+  "manifest": "65a954d321ca8b379efa9c371bdd0add589e4d0721f25e7b74c51766aa8086e4",
+  "archive": "523ebbcbad55ace7443ada3e4f47715f4126574fc2d2c7a2124572db7068ec41",
+  "original_debs": 3,
+  "selected_paths": 13,
+  "archive_bytes": 13312,
+  "entry_types": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6"
+  ],
+  "exact_original_spans": true,
+  "hardlink_targets_precede_links": true,
+  "physical_extraction": false,
+  "production_authorization": false,
+  "generation_manifest": "2fa5050a741c188894197b4ea5e778e88a0f881b9a02cb9e46ebae1f8f7b9ba5",
+  "generation_pin": true,
+  "staged_archive_exact": true
+}

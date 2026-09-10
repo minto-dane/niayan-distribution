@@ -1,0 +1,48 @@
+test_absent_command_is_not_run (test_engineering.SafeInputTests.test_absent_command_is_not_run) ... ok
+test_absent_temporary_argument (test_engineering.SafeInputTests.test_absent_temporary_argument) ... ok
+test_c_runtime_is_inventoried_without_spark_claim (test_engineering.SafeInputTests.test_c_runtime_is_inventoried_without_spark_claim) ... ok
+test_child_environment_omits_secrets (test_engineering.SafeInputTests.test_child_environment_omits_secrets) ... ok
+test_command_exit_and_log_boundaries (test_engineering.SafeInputTests.test_command_exit_and_log_boundaries) ... ok
+test_directory_refused (test_engineering.SafeInputTests.test_directory_refused) ... ok
+test_duplicate_json_refused (test_engineering.SafeInputTests.test_duplicate_json_refused) ... ok
+test_exact_temporary_arguments (test_engineering.SafeInputTests.test_exact_temporary_arguments) ... ok
+test_fifo_refused_before_read (test_engineering.SafeInputTests.test_fifo_refused_before_read) ... ok
+test_final_symlink_refused (test_engineering.SafeInputTests.test_final_symlink_refused) ... ok
+test_nested_duplicate_json_refused (test_engineering.SafeInputTests.test_nested_duplicate_json_refused) ... ok
+test_parent_symlink_refused (test_engineering.SafeInputTests.test_parent_symlink_refused) ... ok
+test_regular_read_and_bound (test_engineering.SafeInputTests.test_regular_read_and_bound) ... ok
+test_socket_refused_before_read (test_engineering.SafeInputTests.test_socket_refused_before_read) ... ok
+test_timeout_is_not_success (test_engineering.SafeInputTests.test_timeout_is_not_success) ... ok
+test_unsafe_references_refused (test_engineering.SafeInputTests.test_unsafe_references_refused) ... ok
+test_unsafe_temporary_argument_refused (test_engineering.SafeInputTests.test_unsafe_temporary_argument_refused) ... ok
+test_api_inventory_is_lexical_not_semantic (test_engineering.TraceabilityTests.test_api_inventory_is_lexical_not_semantic) ... ok
+test_baseline_resolves_without_claiming_proof (test_engineering.TraceabilityTests.test_baseline_resolves_without_claiming_proof) ... ok
+test_claimed_production_qualification_rejected (test_engineering.TraceabilityTests.test_claimed_production_qualification_rejected) ... ok
+test_document_change_changes_source_subject (test_engineering.TraceabilityTests.test_document_change_changes_source_subject) ... ok
+test_duplicate_requirement_rejected (test_engineering.TraceabilityTests.test_duplicate_requirement_rejected) ... ok
+test_duplicate_test_registration_rejected (test_engineering.TraceabilityTests.test_duplicate_test_registration_rejected) ... ok
+test_empty_verification_obligation_rejected (test_engineering.TraceabilityTests.test_empty_verification_obligation_rejected) ... ok
+test_evidence_is_excluded_from_source_subject (test_engineering.TraceabilityTests.test_evidence_is_excluded_from_source_subject) ... ok
+test_fault_catalog_cannot_claim_ada_execution (test_engineering.TraceabilityTests.test_fault_catalog_cannot_claim_ada_execution) ... ok
+test_fault_catalog_does_not_assert_runtime_execution (test_engineering.TraceabilityTests.test_fault_catalog_does_not_assert_runtime_execution) ... ok
+test_missing_adr_reference_rejected (test_engineering.TraceabilityTests.test_missing_adr_reference_rejected) ... ok
+test_missing_code_reference_rejected (test_engineering.TraceabilityTests.test_missing_code_reference_rejected) ... ok
+test_missing_hazard_reference_rejected (test_engineering.TraceabilityTests.test_missing_hazard_reference_rejected) ... ok
+test_missing_test_registration_rejected (test_engineering.TraceabilityTests.test_missing_test_registration_rejected) ... ok
+test_replaced_adr_requires_superseded_status (test_engineering.TraceabilityTests.test_replaced_adr_requires_superseded_status) ... ok
+test_requirement_cannot_use_superseded_decision (test_engineering.TraceabilityTests.test_requirement_cannot_use_superseded_decision) ... ok
+test_stale_api_index_rejected (test_engineering.TraceabilityTests.test_stale_api_index_rejected) ... ok
+test_stale_source_inventory_rejected (test_engineering.TraceabilityTests.test_stale_source_inventory_rejected) ... ok
+test_submodule_gitfile_is_not_source (test_engineering.TraceabilityTests.test_submodule_gitfile_is_not_source) ... ok
+test_test_plan_cannot_assert_a_pass (test_engineering.TraceabilityTests.test_test_plan_cannot_assert_a_pass) ... ok
+test_unassigned_owners_not_implicitly_approved (test_engineering.TraceabilityTests.test_unassigned_owners_not_implicitly_approved) ... ok
+test_unknown_fault_reference_rejected (test_engineering.TraceabilityTests.test_unknown_fault_reference_rejected) ... ok
+test_unknown_file_changes_source_subject (test_engineering.TraceabilityTests.test_unknown_file_changes_source_subject) ... ok
+test_unknown_hazard_fields_rejected (test_engineering.TraceabilityTests.test_unknown_hazard_fields_rejected) ... ok
+test_unknown_requirement_field_rejected (test_engineering.TraceabilityTests.test_unknown_requirement_field_rejected) ... ok
+test_wrong_io_argument_count_rejected (test_engineering.TraceabilityTests.test_wrong_io_argument_count_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 43 tests in 4.996s
+
+OK

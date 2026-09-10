@@ -1,0 +1,9 @@
+Running as unit: run-p323258-i323558.scope; invocation ID: 4cabaa2f0c6a4397a57f6758ef64cbc6
+limited-exec: {"scope": "run-p323258-i323558.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+PASS build
+PASS root
+PASS root-oracle
+PASS stage
+PASS publication
+PASS publication-oracle
+PASS root-publication

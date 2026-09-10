@@ -1,0 +1,14 @@
+{
+  "result": "pass",
+  "accepted_generation": 1,
+  "accepted_plan": "19fda32f20283adc5746970d53c88d1e73ac2a8c6036561fdb8217056d09f3a8",
+  "generation_manifest": "e2f0564576994c7bb01a887e76c6bdbe66be0564bb4ec1233c37cc7b35c0ad89",
+  "root_manifest": "78e43e0546922c061426b5fbd5f7a778beace4921bbea2940e70b51e16b7078a",
+  "archive": "b930c18ec428f9d8af5dbf1a6fdaf5ce9ed974c1de8174bab79127247d492251",
+  "paths": 10,
+  "actual_staged_archive": true,
+  "original_spans_exact": true,
+  "privileged_extraction": false,
+  "actual_boot": false,
+  "production_authorization": false
+}

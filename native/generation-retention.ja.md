@@ -1,5 +1,8 @@
 # 世代へ束縛したnative catalog保持
 
+root成果物を保持する現行拡張は[NIAGEN05](root-generation.ja.md)を参照。
+以下は変更せず保持しているNIAGEN02のcatalog閉包と共通予約規則である。
+
 `NIAGEN02`は、[catalog保持閉包](catalog-retention.ja.md)のSHA-256を世代マニフェストへ
 含める。既存の世代transaction pin → manifest → closure → 全掲載objectという参照を使い、
 別の導入済みDBや重複した保持pinを作らない。

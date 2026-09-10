@@ -1,0 +1,4 @@
+Running as unit: run-p319278-i319578.scope; invocation ID: 76c8722634164889a68728c4253e4a97
+limited-exec: {"scope": "run-p319278-i319578.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+PASS root archive original-span oracle: 13 paths
+PASS accepted root publication oracle: 10 paths

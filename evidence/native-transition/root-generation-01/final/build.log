@@ -1,0 +1,14 @@
+Compile
+   [Ada]          root_archive_stage_test.adb
+   [Ada]          pkg_generation_manifest.adb
+Bind
+   [gprbind]      run_root_archive_tests.bexch
+   [Ada]          run_root_archive_tests.ali
+   [gprbind]      run_generation_stage_tests.bexch
+   [Ada]          run_generation_stage_tests.ali
+   [gprbind]      run_generation_publication_tests.bexch
+   [Ada]          run_generation_publication_tests.ali
+Link
+   [link]         run_root_archive_tests.adb
+   [link]         run_generation_stage_tests.adb
+   [link]         run_generation_publication_tests.adb
