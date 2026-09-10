@@ -3,6 +3,7 @@
 #include <archive.h>
 #include <archive_entry.h>
 #include <sodium.h>
+#include <signal.h>
 #include <dirent.h>
 #include <errno.h>
 #include <fcntl.h>
@@ -30,6 +31,7 @@
 
 /* Internal, non-setuid worker. FD 3 is an authorized uncompressed root tar;
  * FD 4 is its private, root-owned staging parent containing an empty "root".
+ * FD 6 retains the caller's actual writer reservation throughout extraction.
  * The invoking service owns admission and publication; successful extraction
  * never publishes a generation. No scripts, executable children or sockets. */
 #define MAX_BYTES (UINT64_C(8) * 1024 * 1024 * 1024)
@@ -102,6 +104,11 @@ static int restrict_process(uint64_t deadline) {
     if (syscall(SYS_capset, &h, d)) return -1;
     /* This filter supplements chroot, closed outside directory descriptors,
      * private parent ownership and mandatory nodev/nosuid/noexec storage. */
+#define GUARD_LEASE(n) BPF_JUMP(BPF_JMP | BPF_JEQ | BPF_K, (n), 0, 4), \
+    BPF_STMT(BPF_LD | BPF_W | BPF_ABS, offsetof(struct seccomp_data, args[0])), \
+    BPF_JUMP(BPF_JMP | BPF_JEQ | BPF_K, 6, 0, 1), \
+    BPF_STMT(BPF_RET | BPF_K, SECCOMP_RET_KILL_PROCESS), \
+    BPF_STMT(BPF_LD | BPF_W | BPF_ABS, offsetof(struct seccomp_data, nr))
 #define REFUSE(n) BPF_JUMP(BPF_JMP | BPF_JEQ | BPF_K, (n), 0, 1), BPF_STMT(BPF_RET | BPF_K, SECCOMP_RET_KILL_PROCESS)
 #if defined(__x86_64__)
 #define WORKER_ARCH AUDIT_ARCH_X86_64
@@ -119,6 +126,28 @@ static int restrict_process(uint64_t deadline) {
         BPF_JUMP(BPF_JMP | BPF_JSET | BPF_K, 0x40000000U, 0, 1),
         BPF_STMT(BPF_RET | BPF_K, SECCOMP_RET_KILL_PROCESS),
 #endif
+        /* The outside reservation FD is retained solely as a lock, not as a
+         * writable inode capability. It cannot be closed, copied or mutated. */
+        GUARD_LEASE(SYS_flock), GUARD_LEASE(SYS_close), GUARD_LEASE(SYS_dup), GUARD_LEASE(SYS_fcntl),
+        GUARD_LEASE(SYS_write), GUARD_LEASE(SYS_writev), GUARD_LEASE(SYS_pwrite64),
+        GUARD_LEASE(SYS_pwritev), GUARD_LEASE(SYS_pwritev2), GUARD_LEASE(SYS_ftruncate),
+        GUARD_LEASE(SYS_fallocate), GUARD_LEASE(SYS_fchmod), GUARD_LEASE(SYS_fchown),
+        GUARD_LEASE(SYS_fchmodat), GUARD_LEASE(SYS_fchownat), GUARD_LEASE(SYS_utimensat),
+        GUARD_LEASE(SYS_fsetxattr), GUARD_LEASE(SYS_fremovexattr), GUARD_LEASE(SYS_ioctl),
+        GUARD_LEASE(SYS_linkat),
+#ifdef SYS_fchmodat2
+        GUARD_LEASE(SYS_fchmodat2),
+#endif
+        BPF_JUMP(BPF_JMP | BPF_JEQ | BPF_K, SYS_mmap, 0, 4),
+        BPF_STMT(BPF_LD | BPF_W | BPF_ABS, offsetof(struct seccomp_data, args[4])),
+        BPF_JUMP(BPF_JMP | BPF_JEQ | BPF_K, 6, 0, 1),
+        BPF_STMT(BPF_RET | BPF_K, SECCOMP_RET_KILL_PROCESS),
+        BPF_STMT(BPF_LD | BPF_W | BPF_ABS, offsetof(struct seccomp_data, nr)),
+        REFUSE(SYS_dup3), REFUSE(SYS_close_range), REFUSE(SYS_sendfile),
+        REFUSE(SYS_splice), REFUSE(SYS_vmsplice), REFUSE(SYS_tee), REFUSE(SYS_copy_file_range),
+#ifdef SYS_dup2
+        REFUSE(SYS_dup2),
+#endif
         REFUSE(SYS_execve), REFUSE(SYS_execveat), REFUSE(SYS_mount), REFUSE(SYS_umount2),
         REFUSE(SYS_chroot), REFUSE(SYS_pivot_root), REFUSE(SYS_unshare), REFUSE(SYS_setns),
         REFUSE(SYS_socket), REFUSE(SYS_socketpair), REFUSE(SYS_ptrace), REFUSE(SYS_bpf),
@@ -133,6 +162,7 @@ static int restrict_process(uint64_t deadline) {
         BPF_STMT(BPF_RET | BPF_K, SECCOMP_RET_ALLOW)
     };
 #undef REFUSE
+#undef GUARD_LEASE
     struct sock_fprog program = {(unsigned short)(sizeof(filter) / sizeof(filter[0])), filter};
     return prctl(PR_SET_SECCOMP, SECCOMP_MODE_FILTER, &program);
 }
@@ -220,16 +250,30 @@ static int verify(struct archive *disk, struct retained *record, struct input *i
     return 0;
 }
 int main(int argc, char **argv) {
-    struct input in = {0}; uint64_t count_limit;
+    struct input in = {0}; uint64_t count_limit, supplied[3];
     unsigned char expected[crypto_hash_sha256_BYTES], actual[crypto_hash_sha256_BYTES];
     size_t decoded = 0; struct stat parent, root, original; struct statvfs fs;
     if (geteuid() != 0 || getuid() != 0) return fail("privilege");
-    if (argc != 5 || strlen(argv[1]) != 64 || sodium_init() < 0 ||
+    if (argc != 8 || strlen(argv[1]) != 64 || sodium_init() < 0 ||
         sodium_hex2bin(expected, sizeof(expected), argv[1], 64, NULL, &decoded, NULL) || decoded != sizeof(expected) ||
         number(argv[2], &in.size) || in.size < 1024 || in.size > MAX_BYTES || in.size % 512 ||
         number(argv[3], &count_limit) || !count_limit || count_limit > MAX_ENTRIES ||
         number(argv[4], &in.deadline) || in.deadline <= now_ms() || in.deadline - now_ms() > 600000)
         return fail("arguments");
+    for (unsigned i = 0; i < 3; ++i)
+        if (number(argv[5 + i], &supplied[i]) || supplied[i] < 3 || supplied[i] > INT_MAX) return fail("descriptors");
+    int copies[3];
+    for (unsigned i = 0; i < 3; ++i) {
+        copies[i] = fcntl((int)supplied[i], F_DUPFD_CLOEXEC, 10);
+        if (copies[i] < 0) return fail("descriptors");
+    }
+    if (dup2(copies[0], 3) < 0 || dup2(copies[1], 4) < 0 || dup2(copies[2], 6) < 0) return fail("descriptors");
+    for (unsigned i = 0; i < 3; ++i) close(copies[i]);
+    struct stat reservation;
+    if (fstat(6, &reservation) || !S_ISREG(reservation.st_mode) || reservation.st_nlink != 1 ||
+        (fcntl(6, F_GETFL) & O_ACCMODE) != O_RDWR || flock(6, LOCK_EX | LOCK_NB)) return fail("reservation");
+    pid_t parent_pid = getppid();
+    if (prctl(PR_SET_PDEATHSIG, SIGKILL) || getppid() != parent_pid) return fail("parent");
     /* Filenames are filesystem bytes. Fix PAX UTF-8 decoding independently of
      * the user's UI locale; binary tar names remain binary. Load locale data
      * before entering the empty root and discard override search paths. */
@@ -247,7 +291,7 @@ int main(int argc, char **argv) {
     if (target != 5) close(target);
     if (fchdir(5) || chroot(".") || chdir("/")) return fail("chroot");
     close(0); close(4);
-    if (syscall(SYS_close_range, 6U, UINT_MAX, 0)) return fail("descriptors");
+    if (syscall(SYS_close_range, 7U, UINT_MAX, 0)) return fail("descriptors");
     if (restrict_process(in.deadline)) return fail("process-policy");
     umask(077);
     struct archive *reader = archive_read_new(), *writer = archive_write_disk_new();

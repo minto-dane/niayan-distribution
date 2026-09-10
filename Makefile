@@ -31,3 +31,8 @@ native-worker:
 native-worker-check: native-worker
 	test -n "$(WORKER_TEST_BASE)"
 	python3 -B native/worker/check_root_extract.py --worker "$(CURDIR)/build/native-worker/root-extract" --target-base "$(WORKER_TEST_BASE)" --report "$(CURDIR)/build/native-worker/check.json"
+
+.PHONY: native-bank-check
+native-bank-check: native-worker
+	test -n "$(WORKER_TEST_BASE)"
+	python3 -B native/worker/check_root_bank.py --worker "$(CURDIR)/build/native-worker/root-extract" --base "$(WORKER_TEST_BASE)" --report "$(CURDIR)/build/native-worker/bank-check.json"

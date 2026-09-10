@@ -1,0 +1,83 @@
+{
+  "format": 1,
+  "result": "pass",
+  "source_subject": "bbd17d3d2eca6f80f7a76970b324dc2c04800889e6205f884bb139f82a0479a5",
+  "inputs": {
+    "distribution/native/worker/root_extract.c": "dcf56a62f7b6943a484349ee28eef455b8643b1ad9dd1362cdaf0c43d987c9e1",
+    "distribution/native/worker/check_root_extract.py": "ea036b67cebd4a59651fe3f733f803b73e8bc424522a31063d1cdb101cffe0a1",
+    "distribution/native/worker/check_root_bank.py": "c94fb22e60ec60ed0ab1cacd21c37f08cb7b13cad6f8ea05dee6f30586be6887",
+    "distribution/native/root_bank.py": "2918758884cb2e5d98ecdc2dc63211884c4b49bb1180e8c54df581e49a27da57",
+    "distribution/native/worker/Makefile": "c8a42c6e475bc8fa9bd29bcfad97cc5a2899b0401de56aa15c588594f844a4da"
+  },
+  "artifacts": {
+    "workspace/build/root-extract": {
+      "sha256": "5f7f0b32f25186d60562db6020c55311297657ac8d1a2231df99e3c855026b34",
+      "size": 62872
+    },
+    "workspace/lib/ld-linux-x86-64.so.2": {
+      "sha256": "438c546d8e8cc48496bf3a95f753051afd9db66a629a74e31a9ded71586b56e0",
+      "size": 225672
+    },
+    "workspace/lib/libacl.so.1": {
+      "sha256": "3c03774961231d8485a4dba36ec359a95939a84719799c58cd26173e44bbde90",
+      "size": 38832
+    },
+    "workspace/lib/libarchive.so.13": {
+      "sha256": "9b8d5d966c7544aeaef792c4a3568ee9ae58f807b9d71922754d024a59ff37b9",
+      "size": 833536
+    },
+    "workspace/lib/libbz2.so.1.0": {
+      "sha256": "c630f057efedc12f848710d71f40283895591e5b4608539f387895c64e0553da",
+      "size": 74688
+    },
+    "workspace/lib/libc.so.6": {
+      "sha256": "fa430b8f298f817a266046af84a77533185ad6fc4406c7d3787b5a0a0c207826",
+      "size": 1995216
+    },
+    "workspace/lib/liblz4.so.1": {
+      "sha256": "67bf8b84af77e962e09be661944f7c61393c4806746734e36db9fbdaebc1de36",
+      "size": 154096
+    },
+    "workspace/lib/liblzma.so.5": {
+      "sha256": "01e05a4b5268805a10a2414a8904fb1fb45c60626dce53b5ea19c1d491049b99",
+      "size": 198832
+    },
+    "workspace/lib/libm.so.6": {
+      "sha256": "6d567d53e895273ca14a1f9dc164fc6c8d39aed2f60aa46a733c2784228915f3",
+      "size": 977112
+    },
+    "workspace/lib/libnettle.so.8": {
+      "sha256": "34ac695c167a593d3587bd88592d33d53e5dc4035984f84446100962f57376fd",
+      "size": 346216
+    },
+    "workspace/lib/libsodium.so.23": {
+      "sha256": "85e2e494494f4f50c4b6d2b4ae90e885da1bfdefd52c4cc5767fd10abff62505",
+      "size": 375496
+    },
+    "workspace/lib/libxml2.so.2": {
+      "sha256": "8f2643af68a9eba917929046806dabd1848867068d0eee0f6799288a8e886963",
+      "size": 1799256
+    },
+    "workspace/lib/libxxhash.so.0": {
+      "sha256": "7dd49b353facbee50c371d0559ce29db5afee5ac33249ca5c7068420fb642762",
+      "size": 71592
+    },
+    "workspace/lib/libz.so.1": {
+      "sha256": "85590dd58edf5445e18bc7193e5ebc01ac5841f1ae187e97705a662e90c6421e",
+      "size": 125376
+    },
+    "workspace/lib/libzstd.so.1": {
+      "sha256": "27f07c9a49c2c956bcfb64cd4712976586a66facbf15fc7f09bc37413b5f2b21",
+      "size": 825336
+    }
+  },
+  "sdk_image": "sha256:4ec0d3adaef0afc8ce1eccdb621d46911ea2ebc11ddaa9e86f15e4ce59776d4c",
+  "vm_tool_image": "sha256:7f92f64938b87b862dd962a93b558fb0caea13493745c684fbddfc190a723617",
+  "final_execution": "vm-bank-03",
+  "storage": "guest ext4 on a private qcow2 overlay, bind nodev/nosuid/noexec",
+  "worker_launcher_sha256": "459d3c8062d2a0ae8ad08e1a2e7cc79cdfb3a7686416fc4eb138ef6a99ffd98f",
+  "production_admission_connected": false,
+  "actual_boot_tested": false,
+  "physical_power_loss_tested": false,
+  "unchanged_ada_proof_or_broad_suites_repeated": false
+}

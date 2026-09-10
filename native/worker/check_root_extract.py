@@ -3,6 +3,7 @@
 """Privileged worker acceptance in explicitly supplied disposable nodev storage."""
 import argparse
 import hashlib
+import fcntl
 import io
 import json
 import os
@@ -55,16 +56,17 @@ def run(worker, base, raw, count, *, digest=None, deadline=None, occupied=False,
         source.write_bytes(raw)
         f = os.open(source, os.O_RDWR if writable else os.O_RDONLY)
         d = os.open(parent, os.O_RDONLY | os.O_DIRECTORY)
+        lease = os.open(parent / 'writer.lock', os.O_RDWR | os.O_CREAT | os.O_EXCL, 0o600)
+        fcntl.flock(lease, fcntl.LOCK_EX | fcntl.LOCK_NB)
         try:
             # Keep the worker's fixed descriptor protocol explicit; no preexec
             # callbacks or shell interpolation in a privileged launcher.
-            if (f, d) != (3, 4):
-                raise RuntimeError(f'run standalone with descriptors 3/4 available: {(f, d)}')
             until = deadline if deadline is not None else int(time.clock_gettime(time.CLOCK_BOOTTIME) * 1000) + 60000
             result = subprocess.run([str(worker), digest or hashlib.sha256(raw).hexdigest(),
-                str(len(raw)), str(count), str(until)], pass_fds=(f, d),
+                str(len(raw)), str(count), str(until), str(f), str(d), str(lease)], pass_fds=(f, d, lease),
                 capture_output=True, text=True, timeout=65, check=False)
         finally:
+            os.close(lease)
             os.close(d)
             os.close(f)
         record = dict(returncode=result.returncode, stdout=result.stdout, stderr=result.stderr)

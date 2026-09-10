@@ -1,0 +1,17 @@
+Linux niaos-builder 6.12.107+deb13-cloud-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.107-1 (2026-08-29) x86_64 GNU/Linux
+PASS root extraction: full filesystem observation and five refusal cases
+Traceback (most recent call last):
+  File "/tmp/nia-root-extract/check_root_bank.py", line 75, in rpc
+    result = peer.recv(4096)
+ConnectionResetError: [Errno 104] Connection reset by peer
+Traceback (most recent call last):
+  File "/tmp/nia-root-extract/check_root_bank.py", line 175, in <module>
+    main()
+    ~~~~^^
+  File "/tmp/nia-root-extract/check_root_bank.py", line 94, in main
+    results['unauthorized-peer'] = rpc({'inspect': request['stage']}, root=True, pass_descriptors=False)
+                                   ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/nia-root-extract/check_root_bank.py", line 90, in rpc
+    _, status = os.waitpid(child, 0); assert status == 0
+                                             ^^^^^^^^^^^
+AssertionError

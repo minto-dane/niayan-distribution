@@ -6,16 +6,20 @@
 
 ## 呼出し契約
 
-実UIDと実効UIDの双方を0とする保護されたサービスだけが呼ぶ。FD 3は読取専用の通常tar、
-FD 4はroot所有・0700のprivate staging親directory。親の`root`はroot所有・0700・空でなければならない。
+実UIDと実効UIDの双方を0とする保護されたサービスだけが呼ぶ。引数で指定するFDは読取専用の通常tar、
+root所有・0700のprivate staging親directory、実CAS writer予約のO_RDWR通常fileの三つ。親の`root`はroot所有・0700・空でなければならない。
 rootには排他flockを保持し、実mountのnodev/nosuid/noexecを検査する。稼働rootへの展開はしない。
 
-引数は検証済みtarのSHA-256、正確なbyte長、正確なentry数、CLOCK_BOOTTIME基準の期限ms。
+引数は検証済みtarのSHA-256、正確なbyte長、正確なentry数、CLOCK_BOOTTIME基準の期限ms、
+tar FD番号、親FD番号、予約FD番号。旧四引数の呼出しは受け付けない。
 最大8 GiB、524,288 entry、600秒。CASのhash文字列だけを実行認可として扱わない。
 呼出し側は同じwriter予約で、NIAGEN05/NIAROOT1・catalog/closure・元DEB・論理所有権・供給・
 site効果契約を再検証し、期待値とFDの取得を束縛する義務を持つ。この本番adapterは未実装である。
 
-workerは空rootへchroot/chdirし、外側directory FDと不要FDを閉じる。chroot単独をsandboxとせず、
+workerは三つのFDを3/4/6へ複製し、予約FDの排他flockを確認する。LOCK_UNは行わず、
+受渡し元と同じopen file descriptionを保持する。空rootへchroot/chdirし、外側directory FDと
+不要FDを閉じる。FD 6への書込・複製・解錠・mmap等はseccompで禁止し、終了時まで保持する。
+親の死亡時はPDEATHSIGで停止する。chroot単独をsandboxとせず、
 no-new-privileges、dump禁止、必要な六つのinode操作capability、syscall ABIを検査するseccomp、
 メモリ512 MiB・FD64・単一ファイル8 GiB・wall期限を併用する。exec、process生成、network socket、
 mount/namespace変更等を禁止する。外側サービスはさらにcgroupと保護された親領域を維持する。
@@ -53,8 +57,8 @@ MAC状態全体を認定しない。表現できないUID・mode・ACL・flags�
 試験は全7種類と数値属性、ACL/xattr、日本語と非UTF-8の名前、root時刻、入力/件数/期限/既存treeを確認する。
 device nodeはlstatで確認し、開かない。Distroboxの外側でmknodが拒否される場合、その実行を受入成功にしない。
 
-tmpfs上の展開成功を永続媒体の電断試験と呼ばない。保護された実世代bank、同じ認可/保持閉包からの
-worker起動、ディスク容量予約、controllerの再開・回収、全DEB効果、実mount/bootと完全置換ISOが残る。
+tmpfs上の展開成功を永続媒体の電断試験と呼ばない。内部の永続準備bankは
+[root-bank.ja.md](root-bank.ja.md)を参照。同じ認可/保持閉包からのworker起動、ディスク容量予約、controllerの再開・回収、全DEB効果、実mount/bootと完全置換ISOが残る。
 
 一次資料: [libarchive disk writer](https://github.com/libarchive/libarchive/blob/master/libarchive/archive.h)、
 [読取と展開のAPI](https://github.com/libarchive/libarchive/wiki/Examples)、

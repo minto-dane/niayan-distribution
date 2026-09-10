@@ -1,0 +1,20 @@
+Linux niaos-builder 6.12.107+deb13-cloud-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.107-1 (2026-08-29) x86_64 GNU/Linux
+TARGET                      FSTYPE OPTIONS
+/var/lib/nia-root-bank-test ext4   rw,nosuid,nodev,noexec,relatime,discard,errors=remount-ro
+PASS root extraction: full filesystem observation and five refusal cases
+Traceback (most recent call last):
+  File "/tmp/nia-root-extract/check_root_bank.py", line 73, in rpc
+    peer.sendall(canonical(message))
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+Traceback (most recent call last):
+  File "/tmp/nia-root-extract/check_root_bank.py", line 183, in <module>
+    main()
+    ~~~~^^
+  File "/tmp/nia-root-extract/check_root_bank.py", line 99, in main
+    results['unauthorized-peer'] = rpc({'inspect': request['stage']}, root=True, pass_descriptors=False)
+                                   ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/nia-root-extract/check_root_bank.py", line 95, in rpc
+    _, status = os.waitpid(child, 0); assert status == 0
+                                             ^^^^^^^^^^^
+AssertionError
