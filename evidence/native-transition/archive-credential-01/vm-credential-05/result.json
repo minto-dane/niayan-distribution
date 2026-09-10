@@ -1,0 +1,34 @@
+{
+  "schema": "org.niaos.archive-credential-vm-test/v1",
+  "result": "pass",
+  "observer_uid": 999,
+  "cases": [
+    {
+      "case": "accepted",
+      "passed": true,
+      "service_exit": 0,
+      "active_state": "inactive"
+    },
+    {
+      "case": "wrong-public-key",
+      "passed": true,
+      "service_exit": 1,
+      "active_state": "failed"
+    },
+    {
+      "case": "short-credential",
+      "passed": true,
+      "service_exit": 1,
+      "active_state": "failed"
+    },
+    {
+      "case": "missing-credential",
+      "passed": true,
+      "service_exit": 1,
+      "active_state": "failed"
+    }
+  ],
+  "production_authorization": false,
+  "repository_transport": "in-process signed fixture; no HTTPS",
+  "private_keys_exported": false
+}

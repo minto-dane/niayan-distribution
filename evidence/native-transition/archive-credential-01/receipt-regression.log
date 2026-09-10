@@ -1,0 +1,20 @@
+Running as unit: run-p658971-i659271.scope; invocation ID: 9ab6cda2b7b8457db43d24bb146e03a8
+limited-exec: {"scope": "run-p658971-i659271.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+test_bad_original_never_reaches_signer (test_archive_receipt.ReceiptTests.test_bad_original_never_reaches_signer) ... ok
+test_epoch_floor_failure_never_reaches_signer (test_archive_receipt.ReceiptTests.test_epoch_floor_failure_never_reaches_signer) ... ok
+test_expiry_or_backward_clock_during_signing_is_rejected (test_archive_receipt.ReceiptTests.test_expiry_or_backward_clock_during_signing_is_rejected) ... ok
+test_full_observation_has_canonical_native_signature (test_archive_receipt.ReceiptTests.test_full_observation_has_canonical_native_signature) ... ok
+test_invalid_lifetime_and_key_are_rejected_before_fetch (test_archive_receipt.ReceiptTests.test_invalid_lifetime_and_key_are_rejected_before_fetch) ... ok
+test_missing_policy_never_reaches_signer (test_archive_receipt.ReceiptTests.test_missing_policy_never_reaches_signer) ... ok
+test_other_signer_or_domain_cannot_issue (test_archive_receipt.ReceiptTests.test_other_signer_or_domain_cannot_issue) ... ok
+test_provider_cannot_change_retained_checkpoint (test_archive_receipt.ReceiptTests.test_provider_cannot_change_retained_checkpoint) ... ok
+test_root_is_rejected_before_any_supply_or_signer (test_archive_receipt.ReceiptTests.test_root_is_rejected_before_any_supply_or_signer) ... ok
+test_signature_length_and_type_are_checked (test_archive_receipt.ReceiptTests.test_signature_length_and_type_are_checked) ... ok
+test_signer_failure_is_not_an_issued_receipt (test_archive_receipt.ReceiptTests.test_signer_failure_is_not_an_issued_receipt) ... ok
+test_total_issuance_deadline_is_finite (test_archive_receipt.ReceiptTests.test_total_issuance_deadline_is_finite) ... ok
+test_tuf_metadata_deadline_caps_receipt (test_archive_receipt.ReceiptTests.test_tuf_metadata_deadline_caps_receipt) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.337s
+
+OK

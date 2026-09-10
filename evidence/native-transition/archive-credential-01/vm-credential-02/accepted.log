@@ -1,0 +1,27 @@
+{"credential_uid": 0, "observer_uid": 999, "credential_gid": 0, "credential_acl": "0200000001000400ffffffff02000400e703000004000000ffffffff10000400ffffffff20000000ffffffff", "credential_mode": "0o440", "credential_mount_readonly": true, "credential_link_count": 1}
+dpkg-deb: error: control directory has bad permissions 700 (must be >=0755 and <=0775)
+Traceback (most recent call last):
+  File "/opt/nia-credential-test/distribution/native/worker/check_archive_credential.py", line 158, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/opt/nia-credential-test/distribution/native/worker/check_archive_credential.py", line 52, in main
+    return child()
+  File "/opt/nia-credential-test/distribution/native/worker/check_archive_credential.py", line 36, in child
+    return bridge.main()
+           ~~~~~~~~~~~^^
+  File "/opt/nia-credential-test/distribution/native/check_archive_receipt_bridge.py", line 28, in main
+    fixtures.ReceiptTests.setUpClass()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/nia-credential-test/distribution/native/test_archive_receipt.py", line 27, in setUpClass
+    trust_tests.TrixieTests.setUpClass()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/nia-credential-test/distribution/tests/test_debian_trust.py", line 22, in setUpClass
+    legacy.NativeFixture.setUpClass()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/nia-credential-test/distribution/tests/test_nia_intake.py", line 27, in setUpClass
+    subprocess.run(['dpkg-deb','--build','--root-owner-group','-Zxz',str(pkg),str(cls.root/'test.deb')],check=True,capture_output=True)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/subprocess.py", line 577, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['dpkg-deb', '--build', '--root-owner-group', '-Zxz', '/tmp/nia-intake-test-c7sovb5k/package', '/tmp/nia-intake-test-c7sovb5k/test.deb']' returned non-zero exit status 2.

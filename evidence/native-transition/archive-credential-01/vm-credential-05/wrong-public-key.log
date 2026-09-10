@@ -1,0 +1,29 @@
+Starting nia-archive-credential-test.service - NiaOS disposable archive credential acceptance...
+{"credential_uid": 0, "observer_uid": 999, "credential_gid": 0, "credential_acl": "0200000001000400ffffffff02000400e703000004000000ffffffff10000400ffffffff20000000ffffffff", "credential_mode": "0o440", "credential_mount_readonly": true, "credential_link_count": 1}
+Traceback (most recent call last):
+  File "/opt/nia-credential-test/distribution/native/worker/check_archive_credential.py", line 166, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/opt/nia-credential-test/distribution/native/worker/check_archive_credential.py", line 52, in main
+    return child()
+  File "/opt/nia-credential-test/distribution/native/worker/check_archive_credential.py", line 36, in child
+    return bridge.main()
+           ~~~~~~~~~~~^^
+  File "/opt/nia-credential-test/distribution/native/check_archive_receipt_bridge.py", line 42, in main
+    receipt = issue_from_credential(repository, case.target, case.fixture.root,
+        case.fixture.fixture.keyring, case.fixture.index, case.fixture.path,
+        credential_fd=fd, expected_scope=expected_scope.hex(), public_key=case.public_key,
+        minimum_security_epoch=7, maximum_lifetime_seconds=300)
+  File "/opt/nia-credential-test/distribution/native/archive_credential.py", line 148, in issue_from_credential
+    return issue(repository, target, snapshot, keyring, index, deb,
+                 minimum_security_epoch=minimum_security_epoch,
+                 maximum_lifetime_seconds=maximum_lifetime_seconds,
+                 public_key=public_key, sign=sign_authenticated)
+  File "/opt/nia-credential-test/distribution/native/archive_receipt.py", line 65, in issue
+    signature = sign(message)
+  File "/opt/nia-credential-test/distribution/native/archive_credential.py", line 137, in sign_authenticated
+    raise Invalid('archive credential differs from independent key')
+nia_common.Invalid: archive credential differs from independent key
+nia-archive-credential-test.service: Main process exited, code=exited, status=1/FAILURE
+nia-archive-credential-test.service: Failed with result 'exit-code'.
+Failed to start nia-archive-credential-test.service - NiaOS disposable archive credential acceptance.

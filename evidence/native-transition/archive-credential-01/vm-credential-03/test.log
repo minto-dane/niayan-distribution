@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/var/tmp/nia-credential/runtime/distribution/native/worker/check_archive_credential.py", line 159, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/var/tmp/nia-credential/runtime/distribution/native/worker/check_archive_credential.py", line 133, in main
+    assert run.returncode == 0 and log.count('PASS archive receipt bridge ') == 5, log
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

@@ -1,0 +1,12 @@
+Failed to reset failed state of unit nia-archive-credential-test.service: Unit nia-archive-credential-test.service not loaded.
+Traceback (most recent call last):
+  File "/var/tmp/nia-credential/runtime/distribution/native/worker/check_archive_credential.py", line 165, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/var/tmp/nia-credential/runtime/distribution/native/worker/check_archive_credential.py", line 152, in main
+    subprocess.run(['systemctl', 'reset-failed', unit], check=True)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/subprocess.py", line 577, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['systemctl', 'reset-failed', 'nia-archive-credential-test.service']' returned non-zero exit status 1.

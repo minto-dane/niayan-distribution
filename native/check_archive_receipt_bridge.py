@@ -10,11 +10,17 @@ import tempfile
 import test_archive_receipt as fixtures
 from deb_archive import ar_members, decompress, tar_inventory, MAX_CONTROL
 from archive_receipt import scope
+from archive_credential import issue_from_credential
+from cryptography.hazmat.primitives.serialization import Encoding, PrivateFormat, NoEncryption
+from test_archive_credential import credential
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--driver', type=Path, required=True)
+    parser.add_argument('--credential-fd', type=int,
+                        help='VM-only externally delivered credential; requires independent public key')
+    parser.add_argument('--public-key', type=Path)
     args = parser.parse_args()
     if os.geteuid() == 0:
         raise SystemExit('Use an unprivileged isolated test container')
@@ -23,9 +29,23 @@ def main():
     case = fixtures.ReceiptTests()
     try:
         case.setUp()
-        with case.remote.client(case.cache) as repository:
-            receipt = case.issue(repository)
-            expected_scope = bytes.fromhex(scope(repository, case.target))
+        if (args.credential_fd is None) != (args.public_key is None):
+            raise ValueError('credential FD and independent public key must be paired')
+        supplied = args.credential_fd is not None
+        fd = args.credential_fd if supplied else credential(case.key.private_bytes(
+            Encoding.Raw, PrivateFormat.Raw, NoEncryption()))
+        if supplied:
+            case.public_key = args.public_key.read_bytes()
+        try:
+            with case.remote.client(case.cache) as repository:
+                expected_scope = bytes.fromhex(scope(repository, case.target))
+                receipt = issue_from_credential(repository, case.target, case.fixture.root,
+                    case.fixture.fixture.keyring, case.fixture.index, case.fixture.path,
+                    credential_fd=fd, expected_scope=expected_scope.hex(), public_key=case.public_key,
+                    minimum_security_epoch=7, maximum_lifetime_seconds=300)
+        finally:
+            if not supplied:
+                os.close(fd)
         original = case.fixture.fixture.deb
         control = tar_inventory(decompress(*ar_members(original)[1], MAX_CONTROL), control=True)[1]['control']
         artifacts = {'receipt': receipt.wire, 'policy': receipt.policy_bytes, 'original.deb': original,

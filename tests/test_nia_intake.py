@@ -20,6 +20,9 @@ class NativeFixture(unittest.TestCase):
         cls.home=cls.root/'gnupg';cls.home.mkdir(mode=0o700)
         cls.now=int(time.time());cls.snapshot=cls.root/'snapshot';cls.snapshot.mkdir()
         pkg=cls.root/'package';(pkg/'DEBIAN').mkdir(parents=True);(pkg/'etc').mkdir()
+        # dpkg-deb requires a searchable control directory even under a private
+        # service umask. The enclosing fixture root remains private (0700).
+        (pkg/'DEBIAN').chmod(0o755)
         (pkg/'DEBIAN/control').write_text('Package: nia-test\nVersion: 1:2.0~rc1-3\nArchitecture: all\nMaintainer: Nia synthetic fixture\nDescription: not for installation\n')
         (pkg/'DEBIAN/conffiles').write_text('/etc/nia-test.conf\n')
         (pkg/'DEBIAN/postinst').write_text('#!/bin/sh\necho forbidden > '+str(cls.root/'SCRIPT_WAS_EXECUTED')+'\n')

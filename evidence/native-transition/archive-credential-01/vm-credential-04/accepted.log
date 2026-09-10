@@ -1,0 +1,13 @@
+Starting nia-archive-credential-test.service - NiaOS disposable archive credential acceptance...
+{"credential_uid": 0, "observer_uid": 999, "credential_gid": 0, "credential_acl": "0200000001000400ffffffff02000400e703000004000000ffffffff10000400ffffffff20000000ffffffff", "credential_mode": "0o440", "credential_mount_readonly": true, "credential_link_count": 1}
+SUPPLY_RECEIPT a6ff2f30c96cd4497f2d50fee18bac0d087ea8b7317757b0f4a92bc4d87f983e
+SUPPLY_ORIGINAL e896d162d346366c6425de1101efc0396e9f46c112d93a66dc938fc375c7d856
+SUPPLY_CONTROL c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae
+PASS assertions= 31
+PASS archive receipt bridge accepted
+PASS archive receipt bridge wrong-key
+PASS archive receipt bridge wrong-scope
+PASS archive receipt bridge different-control
+PASS archive receipt bridge damaged-receipt
+nia-archive-credential-test.service: Deactivated successfully.
+Finished nia-archive-credential-test.service - NiaOS disposable archive credential acceptance.

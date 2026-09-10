@@ -3,7 +3,9 @@
 `archive_receipt.issue`は既存archive intakeのTUF/OpenPGP認証を実行し、正確な原本hashと
 期限をnative用の署名付き記録へ変換する。呼出側が独立に設定する署名providerと公開鍵pinを必須とする。
 任意の観測JSONや`AuthenticatedArchive`を署名するAPIは公開しない。製品鍵の生成・保管、
-既定authority、新しい公開管理コマンドは追加しない。署名providerの実運用配備は未認定である。
+既定authority、新しい公開管理コマンドは追加しない。
+credentialを使う内部providerと配備条件は[archive-credential.ja.md](archive-credential.ja.md)。
+独立設定を備えた製品observer serviceと鍵運用の配備は未認定である。
 
 ## 形式と適用範囲
 

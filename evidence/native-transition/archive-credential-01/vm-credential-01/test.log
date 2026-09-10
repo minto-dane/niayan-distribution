@@ -1,0 +1,34 @@
+Traceback (most recent call last):
+  File "/var/tmp/nia-credential/runtime/distribution/native/worker/check_archive_credential.py", line 151, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/var/tmp/nia-credential/runtime/distribution/native/worker/check_archive_credential.py", line 126, in main
+    assert run.returncode == 0 and log.count('PASS archive receipt bridge ') == 5, log
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {"credential_uid": 0, "observer_uid": 999, "credential_mode": "0o440", "credential_mount_readonly": true, "credential_link_count": 1}
+Traceback (most recent call last):
+  File "/opt/nia-credential-test/distribution/native/worker/check_archive_credential.py", line 151, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/opt/nia-credential-test/distribution/native/worker/check_archive_credential.py", line 45, in main
+    return child()
+  File "/opt/nia-credential-test/distribution/native/worker/check_archive_credential.py", line 33, in child
+    return bridge.main()
+           ~~~~~~~~~~~^^
+  File "/opt/nia-credential-test/distribution/native/check_archive_receipt_bridge.py", line 28, in main
+    fixtures.ReceiptTests.setUpClass()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/nia-credential-test/distribution/native/test_archive_receipt.py", line 27, in setUpClass
+    trust_tests.TrixieTests.setUpClass()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/nia-credential-test/distribution/tests/test_debian_trust.py", line 22, in setUpClass
+    legacy.NativeFixture.setUpClass()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/nia-credential-test/distribution/tests/test_nia_intake.py", line 27, in setUpClass
+    subprocess.run(['dpkg-deb','--build','--root-owner-group','-Zxz',str(pkg),str(cls.root/'test.deb')],check=True,capture_output=True)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/subprocess.py", line 577, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['dpkg-deb', '--build', '--root-owner-group', '-Zxz', '/tmp/nia-intake-test-8yemhtat/package', '/tmp/nia-intake-test-8yemhtat/test.deb']' returned non-zero exit status 2.
+

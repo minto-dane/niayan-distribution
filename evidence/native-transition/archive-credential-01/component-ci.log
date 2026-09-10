@@ -1,0 +1,3 @@
+Running as unit: run-p689278-i689578.scope; invocation ID: ab3dce0edfc64a5bad9146d922eb33b0
+limited-exec: {"scope": "run-p689278-i689578.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Component CI and all registered test runners match the canonical plan.

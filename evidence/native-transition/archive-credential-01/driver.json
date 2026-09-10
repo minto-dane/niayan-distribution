@@ -1,0 +1,17 @@
+{
+  "sha256": "60cb7028edf3032bf31ef3edbe4d2032a1faac56d1115c01983fc43a469c1f93",
+  "compile_source": "native-site-supply-01/workspace/pkgcore",
+  "pkgcore_commit": "9de3fe6542f9cf497434855de17af602f998165e",
+  "gprbuild_arguments": [
+    "-P",
+    "tests.gpr",
+    "-j1",
+    "run_archive_supply_tests.adb"
+  ],
+  "kernel_limits": {
+    "memory_max": 3221225472,
+    "swap_max": 0,
+    "cpu_quota": "100%",
+    "pids_max": 128
+  }
+}
