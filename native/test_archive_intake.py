@@ -1,16 +1,19 @@
 # SPDX-License-Identifier: MIT
 """Both real TUF and OpenPGP signatures must authenticate original DEB intake."""
 import copy
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 import sys
 import tempfile
 import time
+from types import SimpleNamespace
 import unittest
-from unittest.mock import patch
+from unittest.mock import Mock, patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]/'tests'))
 import test_debian_trust as trust_tests
 import test_repository as repository_tests
+from test_repository_revalidation import clock_at
 from archive_intake import authenticate
 from nia_common import Invalid, canonical, sha
 
@@ -95,33 +98,64 @@ class ArchiveIntakeTests(unittest.TestCase):
 
     def test_policy_expired_after_archive_check(self):
         with self.remote.client(self.cache) as client:
-            with patch('archive_intake.time.time', side_effect=[self.fixture.now, self.fixture.now+1800]):
+            clock = SimpleNamespace(monotonic=time.monotonic, time=Mock(side_effect=[self.fixture.now, self.fixture.now+1800]))
+            with patch('archive_intake.time', clock):
                 with self.assertRaisesRegex(Invalid, 'deadline expired'):
                     self.intake(client)
 
     def test_backward_clock_is_rejected(self):
         with self.remote.client(self.cache) as client:
-            with patch('archive_intake.time.time', side_effect=[self.fixture.now, self.fixture.now-1]):
+            clock = SimpleNamespace(monotonic=time.monotonic, time=Mock(side_effect=[self.fixture.now, self.fixture.now-1]))
+            with patch('archive_intake.time', clock):
                 with self.assertRaisesRegex(Invalid, 'time changed'):
                     self.intake(client)
 
     def test_expiry_during_final_recheck(self):
         with self.remote.client(self.cache) as client:
-            with patch('archive_intake.time.time', side_effect=[self.fixture.now, self.fixture.now, self.fixture.now+1800]):
+            clock = SimpleNamespace(monotonic=time.monotonic,
+                                    time=Mock(side_effect=[self.fixture.now, self.fixture.now, self.fixture.now+1800]))
+            with patch('archive_intake.time', clock):
                 with self.assertRaisesRegex(Invalid, 'final recheck'):
                     self.intake(client)
 
-    def test_different_target_bytes_in_same_session_are_rejected(self):
+    def test_policy_bytes_must_match_retained_authenticated_target(self):
         with self.remote.client(self.cache) as client:
             target = client.target
-            calls = 0
             def changed(*args):
-                nonlocal calls
-                calls += 1
-                raw = target(*args)
-                return raw if calls == 1 else raw+b'\n'
-            with patch.object(client, 'target', side_effect=changed), self.assertRaisesRegex(Invalid, 'policy changed'):
+                return target(*args)+b'\n'
+            with patch.object(client, 'target', side_effect=changed), self.assertRaises(repository_tests.tuf_errors.RepositoryError):
                 self.intake(client)
+
+    def test_tuf_deadline_caps_archive_observation(self):
+        expiry = datetime.now(timezone.utc) + timedelta(minutes=5)
+        self.remote.role_expiries['timestamp'] = expiry
+        self.publish()
+        with self.remote.client(self.cache) as client:
+            result = self.intake(client)
+            self.assertEqual(result.valid_until, int(expiry.timestamp()))
+
+    def test_tuf_expiry_during_archive_work_is_rejected(self):
+        expiry = datetime.now(timezone.utc) + timedelta(minutes=5)
+        self.remote.role_expiries['timestamp'] = expiry
+        self.publish()
+        with self.remote.client(self.cache) as client:
+            revalidate = client.revalidate_target
+            def later(*args):
+                with clock_at(expiry + timedelta(seconds=1)):
+                    return revalidate(*args)
+            with patch.object(client, 'revalidate_target', side_effect=later):
+                with self.assertRaises(repository_tests.tuf_errors.ExpiredMetadataError):
+                    self.intake(client)
+
+    def test_delegated_policy_deadline_caps_archive_observation(self):
+        expiry = datetime.now(timezone.utc) + timedelta(minutes=5)
+        del self.remote.targets[self.target]
+        self.remote.delegation_pattern = 'archives/*'
+        self.remote.delegated[self.target] = self.raw
+        self.remote.role_expiries['fixes'] = expiry
+        self.remote.publish()
+        with self.remote.client(self.cache) as client:
+            self.assertEqual(self.intake(client).valid_until, int(expiry.timestamp()))
 
     def test_root_is_rejected_before_any_supply_request(self):
         with self.remote.client(self.cache) as client:

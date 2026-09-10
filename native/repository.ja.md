@@ -40,6 +40,15 @@ fsyncが失敗した操作を成功として返さない。ただしreplace後�
 
 ## 取得と緊急修正
 
+`revalidate_target(path, raw)`は既存sessionが保持するcheckpointを一時領域へコピーし、
+新しい上流Updaterで署名・版・委譲・期限・target bytesを再検証する。追加ネットワーク取得はなく、
+現在のrootを使い、初期rootへ戻さない。委譲metadataは保持原本だけを返す取得器へ渡し、
+探索で使用したroleを記録する。上流の私有trust状態は参照しない。
+成功時は使用したroleと四つのtop-level roleの最短期限を返す。
+永続checkpointとrepository identity、排他予約を前後で照合し、期限到達・時計逆行・
+session期限・共通要求枠超過で失敗する。失敗sessionは再利用できない。
+この検査は取得後に時間がかかる原本認証向けであり、最新remote metadataの取得ではない。
+
 HTTPSの接続先を設定されたmetadata/target baseに限定し、redirect、資格情報付きURL、
 環境変数由来のproxy、HTTP content encodingを使用しない。TLSは証明書を検証する。
 ASCIIの正規化されたtarget pathに限定し、`..`やURL escapeを拒否する。

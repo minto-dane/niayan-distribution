@@ -1,0 +1,49 @@
+test_bounded_input (test_management.FilesystemPreparationTests.test_bounded_input) ... ok
+test_duplicate_json_refused (test_management.FilesystemPreparationTests.test_duplicate_json_refused) ... ok
+test_no_clobber (test_management.FilesystemPreparationTests.test_no_clobber) ... ok
+test_paths_are_fixed_absolute_identifiers (test_management.FilesystemPreparationTests.test_paths_are_fixed_absolute_identifiers) ... ok
+test_private_output_required (test_management.FilesystemPreparationTests.test_private_output_required) ... ok
+test_symlink_fifo_socket_and_directory_refused (test_management.FilesystemPreparationTests.test_symlink_fifo_socket_and_directory_refused) ... ok
+test_gate_no_implicit_initialization (test_management.IntegrationSourceTests.test_gate_no_implicit_initialization) ... ok
+test_healing_recovery_requires_explicit_bootstrap (test_management.IntegrationSourceTests.test_healing_recovery_requires_explicit_bootstrap) ... ok
+test_intent_precedes_external_effect (test_management.IntegrationSourceTests.test_intent_precedes_external_effect) ... ok
+test_manager_open_is_not_an_executor (test_management.IntegrationSourceTests.test_manager_open_is_not_an_executor) ... ok
+test_manager_profile_checked_before_build (test_management.IntegrationSourceTests.test_manager_profile_checked_before_build) ... ok
+test_restore_lineage_inventory (test_management.IntegrationSourceTests.test_restore_lineage_inventory) ... ok
+test_closure_golden (test_management.PackTests.test_closure_golden) ... ok
+test_dependency_self_or_forward_refused (test_management.PackTests.test_dependency_self_or_forward_refused) ... ok
+test_duplicate_dependency_refused (test_management.PackTests.test_duplicate_dependency_refused) ... ok
+test_duplicate_roles_refused (test_management.PackTests.test_duplicate_roles_refused) ... ok
+test_duplicate_routes_refused (test_management.PackTests.test_duplicate_routes_refused) ... ok
+test_independent_offsets (test_management.PackTests.test_independent_offsets) ... ok
+test_integer_and_overflow (test_management.PackTests.test_integer_and_overflow) ... ok
+test_lifetime_bounds (test_management.PackTests.test_lifetime_bounds) ... ok
+test_no_runtime_shell_or_unsigned_program_in_plan (test_management.PackTests.test_no_runtime_shell_or_unsigned_program_in_plan) ... ok
+test_plan_golden (test_management.PackTests.test_plan_golden) ... ok
+test_policy_and_routes_golden (test_management.PackTests.test_policy_and_routes_golden) ... ok
+test_profile_is_bound (test_management.PackTests.test_profile_is_bound) ... ok
+test_recovery_is_distinct_identity (test_management.PackTests.test_recovery_is_distinct_identity) ... ok
+test_repair_golden (test_management.PackTests.test_repair_golden) ... ok
+test_unimplemented_backend_action_refused (test_management.PackTests.test_unimplemented_backend_action_refused) ... ok
+test_unknown_fields_refused (test_management.PackTests.test_unknown_fields_refused) ... ok
+test_unused_slots_have_canonical_inspect_default (test_management.PackTests.test_unused_slots_have_canonical_inspect_default) ... ok
+test_zero_identifiers_and_digest (test_management.PackTests.test_zero_identifiers_and_digest) ... ok
+test_acid_boundary_is_not_receiver_exit_code (test_management.RecoveryReferenceTests.test_acid_boundary_is_not_receiver_exit_code) ... ok
+test_exhaustive_pending_never_dispatches (test_management.RecoveryReferenceTests.test_exhaustive_pending_never_dispatches) ... ok
+test_failure_is_not_no_effect (test_management.RecoveryReferenceTests.test_failure_is_not_no_effect) ... ok
+test_no_blind_retry_after_crash (test_management.RecoveryReferenceTests.test_no_blind_retry_after_crash) ... ok
+test_parent_resource_family_must_be_retained (test_management.RecoveryReferenceTests.test_parent_resource_family_must_be_retained) ... ok
+test_reachable_state_exploration (test_management.RecoveryReferenceTests.test_reachable_state_exploration) ... ok
+test_resource_closure_is_checked_in_actual_source (test_management.RecoveryReferenceTests.test_resource_closure_is_checked_in_actual_source) ... ok
+test_all_signatures_bound_to_full_plan (test_management.SignatureTests.test_all_signatures_bound_to_full_plan) ... ok
+test_closure_and_repair_need_all_three_roles (test_management.SignatureTests.test_closure_and_repair_need_all_three_roles) ... ok
+test_domain_separation (test_management.SignatureTests.test_domain_separation) ... ok
+test_native_envelope_commitment (test_management.SignatureTests.test_native_envelope_commitment) ... ok
+test_public_fixture_manifest (test_management.SignatureTests.test_public_fixture_manifest) ... ok
+test_role_substitution_refused (test_management.SignatureTests.test_role_substitution_refused) ... ok
+test_two_independent_roles (test_management.SignatureTests.test_two_independent_roles) ... ok
+
+----------------------------------------------------------------------
+Ran 44 tests in 0.017s
+
+OK

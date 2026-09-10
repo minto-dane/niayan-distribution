@@ -1,0 +1,33 @@
+{
+  "source_subject": "fc04dac35a5edcfeee2e9da0b654dece78c257557df5ef5b526a841c4f72a1c8",
+  "result": "pass",
+  "inputs": 3356,
+  "native_image": "sha256:b626ca976c8ba342df3377e3ad068e29bf45b4c3ad0f7f8927f0551dd09c07dd",
+  "dev_image": "sha256:0c04329a1343a0f1ae82ab931ffc7a7e5cbfdccbf18948e0576366fbf5bb249a",
+  "checks": [
+    {
+      "name": "native-image-check",
+      "returncode": 0,
+      "log_sha256": "ae8db1bfba6d8dce95332355601bdd8b7d16b87bcf92d490e251bf4a70a31fbe"
+    },
+    {
+      "name": "container-source-check",
+      "returncode": 0,
+      "log_sha256": "34a2454a6936f37b6e06435d6aa8c4ac448aa2c8974d9b8b30ee95bf157bfb2e"
+    },
+    {
+      "name": "host-source-check",
+      "returncode": 0,
+      "log_sha256": "c792bc72b391fce3fa6664191bec304dee86f8542ba6e4057f9142f9112ee7ee"
+    },
+    {
+      "name": "engineering-lint",
+      "returncode": 0,
+      "log_sha256": "fcd1b4a391bba70e88510e60938654d0459fe95a63ca0701f690b1ae9c4f1e31"
+    }
+  ],
+  "production_approval": false,
+  "ada_execution": "not-repeated",
+  "formal_proof": "not-repeated",
+  "source_subject_after": "fc04dac35a5edcfeee2e9da0b654dece78c257557df5ef5b526a841c4f72a1c8"
+}

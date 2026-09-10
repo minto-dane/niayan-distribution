@@ -157,6 +157,37 @@ def decode_checkpoint(raw: bytes) -> dict[str, bytes]:
     return result
 
 
+class _RetainedMetadata(FetcherInterface):
+    """Serve one exact validated checkpoint to a fresh upstream verifier.
+
+    No network fallback. Delegated roles start outside the temporary cache, so
+    their actual use is observable without accessing private Updater attributes.
+    """
+    def __init__(self, metadata_url, metadata):
+        self.files = {}
+        self.expiries = {}
+        self.used = set()
+        self.requests = 0
+        for name, raw in metadata.items():
+            value = Metadata.from_bytes(raw)
+            self.expiries[name] = int(value.signed.expires.timestamp())
+            for alias in (name, str(value.signed.version) + '.' + name):
+                url = metadata_url + alias
+                if url in self.files and self.files[url] != (name, raw):
+                    raise Invalid('ambiguous retained metadata name')
+                self.files[url] = (name, raw)
+
+    def _fetch(self, url):
+        self.requests += 1
+        if self.requests > MAX_REQUESTS:
+            raise Invalid('retained metadata request budget')
+        if url not in self.files:
+            raise tuf_errors.DownloadHTTPError('retained metadata absent', 404)
+        name, raw = self.files[url]
+        self.used.add(name)
+        yield raw
+
+
 def initialize(cache: Path, trusted_root: bytes, expected_root_sha256: str,
                metadata_url: str, targets_url: str):
     """Provision a NEW cache only. Expected digest must come from trusted policy.
@@ -345,6 +376,61 @@ class Repository:
             if time.monotonic() - self.started >= MAX_SESSION_SECONDS:
                 raise Invalid('repository session expired during download')
             return raw
+        except BaseException:
+            self.failed = True
+            raise
+
+    def revalidate_target(self, path: str, raw: bytes) -> int:
+        """Revalidate retained target metadata now, returning its expiry bound.
+
+        A fresh upstream verifier uses an ephemeral copy of our locked, current
+        checkpoint. This is not a remote refresh, a new persistent trust cache,
+        an initial-root reset, or permission to execute the authenticated bytes.
+        """
+        if self.updater is None or self.failed:
+            raise Invalid('repository session is not usable')
+        try:
+            target_path(path)
+            if not isinstance(raw, bytes) or not 1 <= len(raw) <= MAX_TARGET:
+                raise Invalid('retained target byte limit')
+            if time.monotonic() - self.started >= MAX_SESSION_SECONDS:
+                raise Invalid('repository session expired before revalidation')
+            self.target_count += 1
+            if self.target_count > MAX_REQUESTS:
+                raise Invalid('aggregate target budget')
+            before = int(time.time())
+            self._check_cache()
+            checkpoint = self._read_cache('checkpoint.json', MAX_CHECKPOINT)
+            if sha(checkpoint) != self.checkpoint_digest:
+                raise Invalid('retained checkpoint changed during session')
+            if parse_json(self._read_cache('repository.json', 8192)) != self.identity:
+                raise Invalid('repository cache identity changed during session')
+            metadata = decode_checkpoint(checkpoint)
+            fetcher = _RetainedMetadata(self.identity['metadata_url'], metadata)
+            top = {'root.json', 'timestamp.json', 'snapshot.json', 'targets.json'}
+            if not top <= set(metadata):
+                raise Invalid('retained top-level metadata missing')
+            with tempfile.TemporaryDirectory(prefix='nia-revalidation-') as temporary:
+                for name in top:
+                    write_new(Path(temporary) / name, metadata[name])
+                fresh = Updater(temporary, self.identity['metadata_url'],
+                                target_base_url=self.identity['targets_url'], fetcher=fetcher, config=CONFIG)
+                fresh.refresh()
+                info = fresh.get_targetinfo(path)
+                if info is None:
+                    raise Invalid('target absent from retained verified metadata')
+                digest(info.hashes.get('sha256'))
+                info.verify_length_and_hashes(raw)
+            expires = min(fetcher.expiries[name] for name in top | fetcher.used)
+            self._check_cache()
+            if sha(self._read_cache('checkpoint.json', MAX_CHECKPOINT)) != self.checkpoint_digest:
+                raise Invalid('retained checkpoint changed during revalidation')
+            if parse_json(self._read_cache('repository.json', 8192)) != self.identity:
+                raise Invalid('repository cache identity changed during revalidation')
+            after = int(time.time())
+            if after < before or after >= expires or time.monotonic() - self.started >= MAX_SESSION_SECONDS:
+                raise Invalid('retained metadata expired during revalidation or clock moved backward')
+            return expires
         except BaseException:
             self.failed = True
             raise

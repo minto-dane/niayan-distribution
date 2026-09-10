@@ -1,0 +1,3 @@
+Running as unit: run-p110361-i110661.scope; invocation ID: b34105482c2442e4b2bbb74dc49825ce
+limited-exec: {"scope": "run-p110361-i110661.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+/home/nia/devbox/niaos/nia-os-consent/assurance/evidence/engineering-yxer8chb/report.json

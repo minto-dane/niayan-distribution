@@ -60,9 +60,15 @@ Releaseは大きいContentsファイルのhashも列挙する。サイズ欄の�
 
 ## 返却結果と残る接続
 
-返却前に同じTUF sessionのtarget bytesとcache予約を再検査する。上流TUFはsessionの
-基準時刻でmetadataを検証するため、この処理を新たなrepository refreshや実行時のpolicy更新確認とは
-扱わない。sessionの期限・request/転送上限と唯一のdurable trust checkpointは既存Repositoryが管理する。
+返却前に`Repository.revalidate_target`で、保持している正確なTUF checkpointを新しい
+上流Updaterへ渡し、現在時刻で署名・版・委譲・target bytesを再検証する。通常のUpdaterは
+session開始時の基準時刻を使うため、取得後の同じUpdaterでの照合だけではこの検査を代替できない。
+返すvalid_untilはDebian側の期限と、root/timestamp/snapshot/targetsおよび探索で使用した
+委譲roleの期限の最小値とする。返却時の期限到達と時計逆行も拒否する。
+同じcache予約を保持し、保存済みcheckpointのhashとrepository identityを前後で照合する。
+追加ネットワーク取得、初期rootへの復帰、第二の永続cacheは行わない。未使用の委譲roleの期限は
+対象へ適用しない。これは最新remote policyの取得や実行時のpolicy更新確認ではない。
+sessionの期限・request/転送上限と唯一のdurable trust checkpointは既存Repositoryが管理する。
 古いOS世代と一緒にtrust floorを戻さない保管、実行直前の独立policy確認は引き続き必要である。
 
 `AuthenticatedArchive`やそのJSONは観測結果であり、他プロセスの成功フラグを信用する仕組みではない。
@@ -76,6 +82,8 @@ native CASへ取り込んだ元DEB/control hashを正確に照合し、供給認
 security component、architecture、元DEBとソースの完全照合を検査する。
 `native/test_archive_intake.py`は実TUF署名も組み合わせ、どちらかの認証を省略した入力、
 旧policy、epoch不足、処理中の期限・時計変化・target変更・UID0を拒否する。
+`native/test_repository_revalidation.py`は保持原本の実署名を再検証し、各roleと委譲roleの期限、
+鍵交代後のroot、オフライン性、checkpoint/identity/予約の変更、要求枠とsession期限を検査する。
 試験依存はnative/test-packages.txtへ記載し、必須工具の欠落をskipで隠さない。
 `make image-check`のnative-checkから、既存工具も含むtool-checkを実行する。
 公式の公開Releaseと原本DEB/対応ソースの観測は、合成署名fixtureや本番policyの配備と区別して記録する。

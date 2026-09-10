@@ -238,6 +238,7 @@
         "native/test_interim_intake.py",
         "native/check_download_cli.py",
         "native/test_archive_intake.py",
+        "native/test_repository_revalidation.py",
         "tests/test_debian_trust.py"
       ],
       "evidence": [

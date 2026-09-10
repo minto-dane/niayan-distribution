@@ -25,6 +25,7 @@ class SignedRepository(FetcherInterface):
     def __init__(self):
         self.keys = {name: CryptoSigner.generate_ed25519() for name in ('root', 'timestamp', 'snapshot', 'targets', 'fixes')}
         self.expires = datetime.now(timezone.utc) + timedelta(days=1)
+        self.role_expiries = {}
         self.root = Metadata(Root(expires=self.expires))
         for name in ('root', 'timestamp', 'snapshot', 'targets'):
             self.root.signed.add_key(self.keys[name].public_key, name)
@@ -45,7 +46,7 @@ class SignedRepository(FetcherInterface):
         yield self.files[url]
 
     def publish(self):
-        targets = Metadata(Targets(version=self.version, expires=self.expires))
+        targets = Metadata(Targets(version=self.version, expires=self.role_expiries.get('targets', self.expires)))
         for name, data in self.targets.items():
             targets.signed.targets[name] = TargetFile.from_data(name, data, ['sha256'])
         roles = {}
@@ -53,19 +54,19 @@ class SignedRepository(FetcherInterface):
             key = self.keys['fixes'].public_key
             targets.signed.delegations = Delegations({key.keyid: key},
                 {'fixes': DelegatedRole('fixes', [key.keyid], 1, True, paths=[self.delegation_pattern])})
-            fixes = Metadata(Targets(version=self.version, expires=self.expires))
+            fixes = Metadata(Targets(version=self.version, expires=self.role_expiries.get('fixes', self.expires)))
             for name, data in self.delegated.items():
                 fixes.signed.targets[name] = TargetFile.from_data(name, data, ['sha256'])
             fixes.sign(self.keys['fixes'])
             roles['fixes'] = fixes.to_bytes()
         targets.sign(self.keys['targets'])
         roles['targets'] = targets.to_bytes()
-        snapshot = Metadata(Snapshot(version=self.version, expires=self.expires))
+        snapshot = Metadata(Snapshot(version=self.version, expires=self.role_expiries.get('snapshot', self.expires)))
         for name, data in roles.items():
             snapshot.signed.meta[name + '.json'] = MetaFile.from_data(self.version, data, ['sha256'])
         snapshot.sign(self.keys['snapshot'])
         raw_snapshot = snapshot.to_bytes()
-        timestamp = Metadata(Timestamp(version=self.version, expires=self.expires,
+        timestamp = Metadata(Timestamp(version=self.version, expires=self.role_expiries.get('timestamp', self.expires),
             snapshot_meta=MetaFile.from_data(self.version, raw_snapshot, ['sha256'])))
         timestamp.sign(self.keys['timestamp'])
         self.files[self.metadata_url + 'timestamp.json'] = timestamp.to_bytes()

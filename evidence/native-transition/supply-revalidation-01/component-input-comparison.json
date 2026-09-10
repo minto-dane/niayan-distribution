@@ -1,0 +1,42 @@
+{
+  "baseline_root_commit": "7959751",
+  "components": [
+    {
+      "repository": "assurance",
+      "inputs": 364,
+      "unchanged": true
+    },
+    {
+      "repository": "pkgcore",
+      "inputs": 722,
+      "unchanged": true
+    },
+    {
+      "repository": "statecore",
+      "inputs": 346,
+      "unchanged": true
+    },
+    {
+      "repository": "controlcore",
+      "inputs": 235,
+      "unchanged": true
+    },
+    {
+      "repository": "configcore",
+      "inputs": 213,
+      "unchanged": true
+    },
+    {
+      "repository": "resolvercore",
+      "inputs": 216,
+      "unchanged": true
+    },
+    {
+      "repository": "capsulecore",
+      "inputs": 220,
+      "unchanged": true
+    }
+  ],
+  "scope": "Every component input outside docs and engineering unchanged",
+  "ada_build_repeated": false
+}

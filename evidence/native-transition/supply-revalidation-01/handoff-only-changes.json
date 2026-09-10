@@ -1,0 +1,15 @@
+{
+  "changes": [
+    {
+      "path": "AGENTS.md",
+      "before_sha256": "532faca721e89ebb34648f248720787ef807849fdadd2432e1e83219410359cd",
+      "after_sha256": "37d47598df8fac79b52b321d6cd21fb3feef410e8cce82f1c106e62f9e08444f"
+    },
+    {
+      "path": "STATUS.ja.md",
+      "before_sha256": "558aa1ce91e4dbb99b99b6ed9f812d8ef625aed6833cdcb1e5b1ed23a641c761",
+      "after_sha256": "e57cb3187f9340e4cfc9103adb006b46b8409b21af04ca7242c12969141a98ba"
+    }
+  ],
+  "source_subject_changed": false
+}

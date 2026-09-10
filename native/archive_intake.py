@@ -69,16 +69,15 @@ def authenticate(repository: Repository, target: str, snapshot: Path, keyring: b
     after = int(time.time())
     if after < before or after >= verified['valid_until'] or time.monotonic() - started >= 120:
         raise Invalid('archive intake time changed or deadline expired')
-    # Recheck exact target bytes and cache reservation within this same bounded
-    # TUF session. Upstream validates metadata at its session reference time;
-    # this is not a fresh repository refresh or a live execution-policy check.
-    if repository.target(target, MAX_METADATA) != raw:
-        raise Invalid('archive policy changed during intake')
+    # Fresh upstream verification of our exact retained checkpoint also bounds
+    # the observation by every TUF role used to authenticate this target. It
+    # preserves the single cache reservation and never contacts a second source.
+    valid_until = min(verified['valid_until'], repository.revalidate_target(target, raw))
     checked = int(time.time())
-    if checked < after or checked >= verified['valid_until'] or time.monotonic() - started >= 120:
+    if checked < after or checked >= valid_until or time.monotonic() - started >= 120:
         raise Invalid('archive policy expired during final recheck')
     observed = verified['observation']
-    return AuthenticatedArchive(raw, target, envelope['security_epoch'], checked, verified['valid_until'],
+    return AuthenticatedArchive(raw, target, envelope['security_epoch'], checked, valid_until,
                                 verified['codename'], trust['release']['architecture'],
                                 verified['inrelease_sha256'], verified['index_sha256'],
                                 observed['artifact_sha256'], observed['raw_control_sha256'])

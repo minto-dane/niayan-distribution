@@ -1,0 +1,5920 @@
+{
+  "format": 1,
+  "layer": "syntax-and-local-links-only",
+  "checks": [
+    {
+      "path": "assurance/ci/check-contract.sh",
+      "kind": "shell-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "assurance/ci/control-io-test.sh",
+      "kind": "shell-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "assurance/ci/cross-repository.sh",
+      "kind": "shell-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "assurance/ci/engineering.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "assurance/ci/install-gnatprove.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "assurance/ci/nia-product-audit.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "assurance/ci/proof-guard.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "assurance/ci/rebind-development.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "assurance/ci/recovery-storage-test.sh",
+      "kind": "shell-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "assurance/ci/refresh-contract.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "assurance/ci/refresh-lineage.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "assurance/ci/regenerate-public-fixtures.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "assurance/ci/run-engineering-checks.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "assurance/ci/setup-container.sh",
+      "kind": "shell-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "assurance/ci/sync-component-ci.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "assurance/ci/test-all.sh",
+      "kind": "shell-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "assurance/ci/unified-audit.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "assurance/ci/verify.sh",
+      "kind": "shell-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "assurance/tests/engineering/test_development_rebind.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "assurance/tests/engineering/test_engineering.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "assurance/tests/engineering/test_final_runtime.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "assurance/tests/engineering/test_limited_scope.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "assurance/tests/engineering/test_native_dependencies.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "assurance/tests/engineering/test_proof_guard.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "assurance/tests/engineering/test_replay_model.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "assurance/tests/engineering/test_unified_audit.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "assurance/tests_py/test_recovery_cohort.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "assurance/tools/nia_recovery.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "assurance/tools/recovery_io.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "pkgcore/ci/check-contract.sh",
+      "kind": "shell-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "pkgcore/ci/check-resolver.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "pkgcore/ci/file-engine-test.sh",
+      "kind": "shell-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "pkgcore/ci/generation-root-refusal-test.sh",
+      "kind": "shell-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "pkgcore/ci/install-gnatprove.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "pkgcore/ci/journal-test.sh",
+      "kind": "shell-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "pkgcore/ci/proof-guard.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "pkgcore/ci/setup-container.sh",
+      "kind": "shell-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "pkgcore/ci/test-all.sh",
+      "kind": "shell-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "pkgcore/ci/verify.sh",
+      "kind": "shell-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "pkgcore/tests/check_deb_final_set_upstream.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "pkgcore/tests/compare_catalog_retention.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "pkgcore/tests/compare_catalog_store.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "pkgcore/tests/compare_current_catalog.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "pkgcore/tests/compare_deb_final_set.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "pkgcore/tests/compare_deb_payload.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "pkgcore/tests/compare_deb_transition.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "pkgcore/tests/compare_payload_index.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "pkgcore/tests/compare_selected_catalog.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "pkgcore/tests/make_deb_control_fixtures.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "pkgcore/tests/make_deb_data_fixtures.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "pkgcore/tests/make_deb_final_set_fixtures.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "pkgcore/tests/make_deb_payload_fixtures.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "pkgcore/tests/make_deb_transition_fixtures.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "pkgcore/tests/make_payload_index_fixtures.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "pkgcore/tests/make_selected_catalog_fixtures.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "statecore/ci/check-contract.sh",
+      "kind": "shell-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "statecore/ci/healing-io-test.sh",
+      "kind": "shell-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "statecore/ci/install-gnatprove.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "statecore/ci/proof-guard.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "statecore/ci/setup-container.sh",
+      "kind": "shell-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "statecore/ci/test-all.sh",
+      "kind": "shell-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "statecore/ci/verify.sh",
+      "kind": "shell-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "controlcore/ci/check-contract.sh",
+      "kind": "shell-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "controlcore/ci/generate-test-fixtures.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "controlcore/ci/install-gnatprove.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "controlcore/ci/manager-profile.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "controlcore/ci/proof-guard.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "controlcore/ci/setup-container.sh",
+      "kind": "shell-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "controlcore/ci/storage-test.sh",
+      "kind": "shell-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "controlcore/ci/test-all.sh",
+      "kind": "shell-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "controlcore/ci/verify.sh",
+      "kind": "shell-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "controlcore/tests/reference/test_management.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "controlcore/tools/controlpack.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "configcore/ci/check-contract.sh",
+      "kind": "shell-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "configcore/ci/install-gnatprove.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "configcore/ci/proof-guard.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "configcore/ci/setup-container.sh",
+      "kind": "shell-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "configcore/ci/test-all.sh",
+      "kind": "shell-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "configcore/ci/verify.sh",
+      "kind": "shell-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "configcore/tests/test_reference.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "resolvercore/ci/check-contract.sh",
+      "kind": "shell-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "resolvercore/ci/check-neutral.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "resolvercore/ci/install-gnatprove.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "resolvercore/ci/profile.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "resolvercore/ci/proof-guard.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "resolvercore/ci/setup-container.sh",
+      "kind": "shell-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "resolvercore/ci/test-all.sh",
+      "kind": "shell-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "resolvercore/ci/verify.sh",
+      "kind": "shell-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "resolvercore/tests/reference_model.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "resolvercore/tests/test_deb_proposer.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "resolvercore/tests/test_resolution_reference.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "resolvercore/tests/test_solver_tools.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "resolvercore/tools/propose_cadical.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "resolvercore/tools/propose_libsolv.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "resolvercore/tools/propose_libsolv_deb.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "resolvercore/tools/resolution_wire.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "capsulecore/ci/check-contract.sh",
+      "kind": "shell-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "capsulecore/ci/install-gnatprove.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "capsulecore/ci/proof-guard.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "capsulecore/ci/setup-container.sh",
+      "kind": "shell-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "capsulecore/ci/test-all.sh",
+      "kind": "shell-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "capsulecore/ci/test-consent.sh",
+      "kind": "shell-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "capsulecore/tests_py/consent_reference.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "capsulecore/tests_py/native_access_probe.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "capsulecore/tests_py/test_capsule.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "capsulecore/tests_py/test_consent.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "capsulecore/tests_py/test_native_access.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "capsulecore/tools/capsule_io.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "capsulecore/tools/capsule_metadata.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "capsulecore/tools/capsule_plan.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "capsulecore/tools/capsule_tree.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "capsulecore/tools/capsule_wire.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "capsulecore/tools/capsulectl.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/hardening/audit.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/hardening/test_hardening.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/hardening/test_installed.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/hardening/test_vm.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/history/leap16/tests/test_distro_inputs.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/history/leap16/tools/distroctl.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/history/leap16/tools/repo_metadata.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/image/build-live.sh",
+      "kind": "shell-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/image/build-packages.sh",
+      "kind": "shell-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/image/collect-sources.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/image/prepare-builder-vm.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/image/prepare-installer.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/image/prepare.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/image/provision-builder.sh",
+      "kind": "shell-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/image/record-build.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/image/run-builder-vm.sh",
+      "kind": "shell-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/image/test-install.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/image/test-live.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/image/test-release.sh",
+      "kind": "shell-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/image/test-suite.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/image/test_image_tools.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/image/vm_console.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/native/archive_intake.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/native/audit_transition.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/native/check_download_cli.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/native/diagnostics.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/native/i18n.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/native/i18n_catalogs.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/native/interim_commands.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/native/interim_download.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/native/interim_intake.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/native/interim_package.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/native/language_coverage.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/native/media.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/native/package_cli.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/native/repository.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/native/test_archive_intake.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/native/test_i18n.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/native/test_interim_commands.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/native/test_interim_intake.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/native/test_interim_package.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/native/test_media.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/native/test_package_cli.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/native/test_repository.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/native/test_repository_https.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/native/test_repository_revalidation.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/native/test_transition.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/native/test_update_metadata.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/native/update_metadata.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/release/complete-sources.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/tests/test_consent_release.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/tests/test_debian_trigger_state.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/tests/test_debian_triggers.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/tests/test_debian_trust.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/tests/test_nia_intake.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/tests/test_nia_xfs.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/tools/deb_archive.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/tools/debian_archive_auth.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/tools/debian_semantics.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/tools/debian_trigger_state.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/tools/debian_triggers.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/tools/nia-distroctl.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/tools/nia_catalog.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/tools/nia_common.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/tools/nia_layout.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/tools/nia_policy.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/tools/nia_xfs.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/tools/reproducibility.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "distribution/tools/zstd_bounded.py",
+      "kind": "python-syntax",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "path": "assurance/docs/engineering/README.ja.md",
+      "kind": "local-document-link",
+      "target": "specs/execution-safety.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/README.ja.md",
+      "kind": "local-document-link",
+      "target": "final-review.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/README.ja.md",
+      "kind": "local-document-link",
+      "target": "specs/production-closure.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/README.ja.md",
+      "kind": "local-document-link",
+      "target": "specs/architecture.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/README.ja.md",
+      "kind": "local-document-link",
+      "target": "specs/failure-model.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/README.ja.md",
+      "kind": "local-document-link",
+      "target": "specs/recovery-protocol.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/README.ja.md",
+      "kind": "local-document-link",
+      "target": "specs/acid-contract.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/README.ja.md",
+      "kind": "local-document-link",
+      "target": "specs/storage-formats.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/README.ja.md",
+      "kind": "local-document-link",
+      "target": "specs/connector-contracts.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/README.ja.md",
+      "kind": "local-document-link",
+      "target": "specs/security.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/README.ja.md",
+      "kind": "local-document-link",
+      "target": "specs/verification.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/README.ja.md",
+      "kind": "local-document-link",
+      "target": "specs/proof-plan.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/README.ja.md",
+      "kind": "local-document-link",
+      "target": "specs/development.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/README.ja.md",
+      "kind": "local-document-link",
+      "target": "specs/release-migration.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/README.ja.md",
+      "kind": "local-document-link",
+      "target": "specs/continuation.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/README.ja.md",
+      "kind": "local-document-link",
+      "target": "adr/README.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/README.ja.md",
+      "kind": "local-document-link",
+      "target": "runbooks/README.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/README.ja.md",
+      "kind": "local-document-link",
+      "target": "api-index.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/README.ja.md",
+      "kind": "local-document-link",
+      "target": "specs/unified-management.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/README.ja.md",
+      "kind": "local-document-link",
+      "target": "specs/capability-matrix.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/README.ja.md",
+      "kind": "local-document-link",
+      "target": "api-index.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0001.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/recovery-protocol.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0001.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/acid-contract.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0001.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/verification.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0002.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0021.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0002.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/recovery-protocol.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0002.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/acid-contract.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0002.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/verification.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0003.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/recovery-protocol.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0003.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/acid-contract.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0003.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/verification.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0004.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/recovery-protocol.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0004.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/acid-contract.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0004.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/verification.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0005.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/recovery-protocol.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0005.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/acid-contract.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0005.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/verification.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0006.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/recovery-protocol.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0006.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/acid-contract.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0006.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/verification.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0007.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/recovery-protocol.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0007.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/acid-contract.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0007.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/verification.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0008.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/recovery-protocol.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0008.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/acid-contract.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0008.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/verification.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0009.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/recovery-protocol.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0009.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/acid-contract.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0009.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/verification.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0010.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/recovery-protocol.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0010.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/acid-contract.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0010.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/verification.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0011.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/recovery-protocol.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0011.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/acid-contract.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0011.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/verification.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0012.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/recovery-protocol.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0012.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/acid-contract.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0012.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/verification.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0013.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/recovery-protocol.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0013.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/acid-contract.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0013.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/verification.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0014.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/recovery-protocol.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0014.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/acid-contract.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0014.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/verification.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0015.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/recovery-protocol.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0015.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/acid-contract.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0015.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/verification.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0016.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/recovery-protocol.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0016.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/acid-contract.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0016.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/verification.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0017.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/recovery-protocol.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0017.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/acid-contract.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0017.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/verification.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0018.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/recovery-protocol.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0018.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/acid-contract.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0018.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/verification.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0019.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/recovery-protocol.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0019.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/acid-contract.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0019.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/verification.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0020.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/recovery-protocol.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0020.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/acid-contract.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0020.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/verification.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0021.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0002.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0021.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/unified-management.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0021.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/capability-matrix.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0021.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../controlcore/docs/verification.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0021.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0028.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0022.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/unified-management.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0022.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/capability-matrix.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0022.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../controlcore/docs/verification.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0023.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/unified-management.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0023.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/capability-matrix.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0023.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../controlcore/docs/verification.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0024.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/unified-management.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0024.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/capability-matrix.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0024.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../controlcore/docs/verification.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0025.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/unified-management.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0025.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/capability-matrix.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0025.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../controlcore/docs/verification.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0026.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/unified-management.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0026.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/capability-matrix.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0026.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../controlcore/docs/verification.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0027.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/unified-management.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0027.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/capability-matrix.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0027.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../controlcore/docs/verification.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0028.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/suse-config.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0029.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/suse-config.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0030.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/suse-config.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0031.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/suse-config.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0032.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/suse-config.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0033.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/suse-config.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0034.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/suse-config.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0035.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/solver-assurance.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0036.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/solver-assurance.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0037.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/solver-assurance.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0038.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/solver-assurance.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0039.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/solver-assurance.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0040.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/solver-assurance.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0041.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/solver-assurance.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0042.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../distribution/docs/base-decision.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0043.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../distribution/docs/ownership-and-effects.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0044.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../distribution/docs/ownership-and-effects.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0045.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../distribution/docs/storage-boot.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0046.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../distribution/docs/build-release.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0047.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../distribution/docs/architecture.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0048.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../distribution/docs/storage-boot.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0048.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../distribution/docs/xfs-health.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0048.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../distribution/docs/xfs-acceptance.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0049.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/execution-safety.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0049.ja.md",
+      "kind": "local-document-link",
+      "target": "../runbooks/RB-014.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0049.ja.md",
+      "kind": "local-document-link",
+      "target": "../final-review.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0055.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0056.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0057.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../distribution/native/deb-triggers.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0057.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../distribution/native/ownership.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0058.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../distribution/native/media.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0059.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../distribution/native/trigger-state.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0060.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../distribution/native/deb-container.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0061.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../distribution/native/deb-control.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0062.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../distribution/native/deb-metadata.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0063.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../distribution/native/deb-relations.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0064.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../distribution/native/deb-data-stream.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0065.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../distribution/native/deb-payload.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0066.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../distribution/evidence/native-transition/generation-image-01/README.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0066.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../distribution/native/generation-image.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0067.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../distribution/native/payload-index.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0068.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../distribution/native/selected-catalog.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0069.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../distribution/native/final-set.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0070.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../distribution/native/transition-plan.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0071.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../distribution/native/catalog-store.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0072.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../distribution/native/current-catalog.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0073.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../distribution/native/catalog-retention.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0074.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../distribution/native/generation-retention.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0075.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../distribution/native/current-transition.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0076.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../distribution/native/publication-intent.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/ADR-0077.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../distribution/native/archive-supply.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/README.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0001.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/README.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0002.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/README.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0003.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/README.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0004.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/README.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0005.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/README.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0006.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/README.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0007.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/README.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0008.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/README.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0009.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/README.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0010.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/README.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0011.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/README.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0012.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/README.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0013.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/README.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0014.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/README.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0015.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/README.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0016.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/README.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0017.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/README.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0018.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/README.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0019.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/README.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0020.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/README.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0021.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/README.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0022.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/README.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0023.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/README.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0024.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/README.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0025.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/README.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0026.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/README.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0027.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/README.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0028.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/README.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0029.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/README.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0030.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/README.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0031.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/README.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0032.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/README.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0033.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/README.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0034.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/README.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0035.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/README.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0036.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/README.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0037.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/README.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0038.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/README.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0039.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/README.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0040.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/README.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0041.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/README.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0042.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/README.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0043.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/README.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0044.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/README.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0045.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/README.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0046.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/README.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0047.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/README.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0048.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/adr/README.ja.md",
+      "kind": "local-document-link",
+      "target": "ADR-0049.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/app/assure.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/app/contract_lock.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/app/contract_lock.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/app/controlctl.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/app/platformctl.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_admin.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_admin.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_atomic.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_atomic.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_authentic.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_authentic.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_checkpoint_store.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_checkpoint_store.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_cli.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_cli.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_clock.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_clock.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_command.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_command.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_config_auth.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_config_auth.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_control_io.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_control_io.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_durable.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_durable.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_fault_auth.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_fault_auth.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_file_io.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_file_io.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_fs.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_fs.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_gate.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_gate.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_https.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_https.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_ingress.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_ingress.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_kernel_read.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_kernel_read.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_keys.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_keys.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_layout.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_layout.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_log.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_log.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_posix.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_qualification_auth.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_qualification_auth.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_receiver_ledger.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_receiver_ledger.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_request_files.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_request_files.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_runtime.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_runtime.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_signatures.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_signatures.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_site_policy.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_site_policy.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_stop_barrier_auth.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_stop_barrier_auth.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_store.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_store.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_tools.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_tools.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_xml.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/runtime/mc_xml.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_accounting.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_accounting.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_attestation.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_attestation.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_authorization.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_authorization.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_backups.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_backups.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_base64.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_base64.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_breakglass.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_breakglass.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_checkpoint.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_checkpoint.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_codec.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_codec.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_commissioning.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_commissioning.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_compatibility.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_compatibility.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_config_receipt.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_config_receipt.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_contract_profile.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_control.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_control.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_control_codec.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_control_codec.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_diagnostic_bundle.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_diagnostic_bundle.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_dirents.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_dirents.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_fault_report.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_fault_report.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_faults.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_faults.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_generation.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_generation.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_golden.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_golden.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_health_golden.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_health_golden.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_health_report.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_health_report.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_hex.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_hex.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_incidents.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_incidents.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_journal_budget.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_json.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_json.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_log_format.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_log_format.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_maintenance.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_maintenance.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_numbers.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_numbers.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_paths.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_paths.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_platform_profile.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_platform_profile.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_properties.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_properties.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_protocol.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_protocol.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_qualification.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_qualification.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_recovery_cohort.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_recovery_cohort.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_release.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_release.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_replay.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_replay.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_request_replay.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_request_replay.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_requests.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_requests.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_retry_budget.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_retry_budget.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_sha256.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_sha256.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_stop_barrier.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_stop_barrier.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_system_baseline.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_system_baseline.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_text.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_text.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_time_guard.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_time_guard.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_types.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_types.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_witness.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../assurance/src/mc_witness.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../capsulecore/app/capsulectl.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../capsulecore/runtime/capsule_access_ui.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../capsulecore/runtime/capsule_access_ui.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../capsulecore/runtime/capsule_consent_channel.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../capsulecore/runtime/capsule_consent_channel.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../capsulecore/runtime/capsule_consent_engine.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../capsulecore/runtime/capsule_consent_engine.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../capsulecore/runtime/capsule_consent_store.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../capsulecore/runtime/capsule_consent_store.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../capsulecore/src/capsule_broker.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../capsulecore/src/capsule_broker.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../capsulecore/src/capsule_consent.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../capsulecore/src/capsule_consent.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../capsulecore/src/capsule_consent_wire.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../capsulecore/src/capsule_consent_wire.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../capsulecore/src/capsule_lifecycle.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../capsulecore/src/capsule_lifecycle.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../capsulecore/src/capsule_mounts.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../capsulecore/src/capsule_mounts.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../capsulecore/src/capsule_policy.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../capsulecore/src/capsule_policy.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../capsulecore/src/capsule_prompt.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../capsulecore/src/capsule_prompt.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../capsulecore/src/capsule_types.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../capsulecore/src/capsule_types.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../capsulecore/src/capsule_wire.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../capsulecore/src/capsule_wire.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../configcore/app/configctl.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../configcore/runtime/config_inputs.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../configcore/runtime/config_inputs.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../configcore/runtime/config_inventory.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../configcore/runtime/config_inventory.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../configcore/src/config_dependencies.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../configcore/src/config_dependencies.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../configcore/src/config_document_codec.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../configcore/src/config_document_codec.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../configcore/src/config_layers.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../configcore/src/config_layers.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../configcore/src/config_lifecycle.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../configcore/src/config_lifecycle.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../configcore/src/config_merge.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../configcore/src/config_merge.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../configcore/src/config_migration.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../configcore/src/config_migration.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../configcore/src/config_model.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../configcore/src/config_model.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../configcore/src/config_modprobe.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../configcore/src/config_modprobe.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../configcore/src/config_nvidia.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../configcore/src/config_nvidia.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../configcore/src/config_schema_codec.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../configcore/src/config_schema_codec.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../configcore/src/config_semantics.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../configcore/src/config_semantics.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../configcore/src/config_values.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../configcore/src/config_values.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../controlcore/app/mission_sign.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../controlcore/app/missionctl.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../controlcore/app/nia.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../controlcore/runtime/ctl_capsule.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../controlcore/runtime/ctl_capsule.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../controlcore/runtime/ctl_closure.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../controlcore/runtime/ctl_closure.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../controlcore/runtime/ctl_config.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../controlcore/runtime/ctl_config.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../controlcore/runtime/ctl_configuration.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../controlcore/runtime/ctl_configuration.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../controlcore/runtime/ctl_dispatch.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../controlcore/runtime/ctl_dispatch.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../controlcore/runtime/ctl_log_repair.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../controlcore/runtime/ctl_log_repair.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../controlcore/runtime/ctl_resolution.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../controlcore/runtime/ctl_resolution.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../controlcore/runtime/ctl_store.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../controlcore/runtime/ctl_store.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../controlcore/src/ctl_plan.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../controlcore/src/ctl_plan.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../controlcore/src/ctl_profile.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../controlcore/src/ctl_wire.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../controlcore/src/ctl_wire.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../controlcore/src/ctl_workflow.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../controlcore/src/ctl_workflow.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/app/pkg_recoveryctl.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/app/pkg_scrubctl.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/app/pkg_worker.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/app/pkgctl.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_admin.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_admin.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_archive.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_archive.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_catalog_retention.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_catalog_retention.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_catalog_store.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_catalog_store.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_configuration_engine.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_configuration_engine.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_deb_container.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_deb_container.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_deb_control.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_deb_control.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_deb_data_stream.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_deb_data_stream.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_deb_decode.c",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_deb_fields.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_deb_fields.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_deb_final_set.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_deb_final_set.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_deb_metadata.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_deb_metadata.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_deb_payload.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_deb_payload.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_deb_relations.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_deb_relations.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_deb_stream.c",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_deb_transition.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_deb_transition.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_file_engine.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_file_engine.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_generation_descriptor.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_generation_descriptor.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_generation_intent.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_generation_intent.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_generation_manifest.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_generation_manifest.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_generation_publisher.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_generation_publisher.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_generation_stage.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_generation_stage.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_image_inspector.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_image_inspector.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_journal_io.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_journal_io.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_managed_engine.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_managed_engine.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_payload_index.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_payload_index.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_plan_compiler.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_plan_compiler.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_quiescent_engine.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_quiescent_engine.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_recovery_audit.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_recovery_audit.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_resolution_engine.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_resolution_engine.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_rpm_auth.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_rpm_auth.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_rpm_file.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_rpm_file.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_scrubber.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_scrubber.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_selected_catalog.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_selected_catalog.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_source.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_source.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_tar_framing.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/runtime/pkg_tar_framing.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_acceptance.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_acceptance.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_activation.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_activation.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_admission.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_admission.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_advisory.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_advisory.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_artifact_grant.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_artifact_grant.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_change_set.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_change_set.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_deb_semantics.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_deb_semantics.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_deb_versions.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_deb_versions.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_dependency.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_dependency.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_evr.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_evr.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_exposure_policy.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_exposure_policy.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_file_plan.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_file_plan.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_file_replay.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_file_replay.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_holds.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_holds.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_incorporation.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_incorporation.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_inventory.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_inventory.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_journal.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_journal.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_maintenance_bundle.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_maintenance_bundle.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_payload_map.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_payload_map.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_provenance.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_provenance.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_recovery.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_recovery.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_recovery_catalog.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_recovery_catalog.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_repository_trust.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_repository_trust.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_retention_batch.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_retention_batch.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_rollback_contract.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_rollback_contract.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_root_state.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_root_state.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_rpm.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_rpm.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_rpm_fields.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_rpm_fields.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_rpm_resolution.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_rpm_resolution.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_self_repair.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_self_repair.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_system_composition.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_system_composition.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_transactions.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_transactions.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_versions.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../pkgcore/src/pkg_versions.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../resolvercore/app/resolverctl.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../resolvercore/runtime/resolver_io.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../resolvercore/runtime/resolver_io.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../resolvercore/src/resolver_admission.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../resolvercore/src/resolver_admission.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../resolvercore/src/resolver_builder.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../resolvercore/src/resolver_builder.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../resolvercore/src/resolver_cnf.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../resolvercore/src/resolver_cnf.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../resolvercore/src/resolver_lrat.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../resolvercore/src/resolver_lrat.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../resolvercore/src/resolver_model.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../resolvercore/src/resolver_model.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../resolvercore/src/resolver_proof.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../resolvercore/src/resolver_proof.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../resolvercore/src/resolver_verify.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../resolvercore/src/resolver_verify.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../resolvercore/src/resolver_wire.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../resolvercore/src/resolver_wire.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/app/hostctl.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/app/state_healing_admin.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/app/state_recovery_worker.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/app/state_worker.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/app/statectl.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/runtime/state_barrier_store.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/runtime/state_barrier_store.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/runtime/state_binding.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/runtime/state_binding.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/runtime/state_coordinator.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/runtime/state_coordinator.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/runtime/state_disaster_store.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/runtime/state_disaster_store.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/runtime/state_etcd.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/runtime/state_etcd.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/runtime/state_executor.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/runtime/state_executor.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/runtime/state_healing_engine.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/runtime/state_healing_engine.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/runtime/state_healing_journal.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/runtime/state_healing_journal.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/runtime/state_host_probe.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/runtime/state_host_probe.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/runtime/state_network_controller.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/runtime/state_network_controller.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/runtime/state_nm_checkpoint.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/runtime/state_nm_checkpoint.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/runtime/state_pacemaker.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/runtime/state_pacemaker.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/runtime/state_readmission_store.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/runtime/state_readmission_store.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/runtime/state_rollout_store.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/runtime/state_rollout_store.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/runtime/state_strict_coordinator.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/runtime/state_strict_coordinator.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/runtime/state_systemd.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/runtime/state_systemd.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/runtime/state_systemd_control.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/runtime/state_systemd_control.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_authority.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_authority.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_boot.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_boot.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_boot_acceptance.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_boot_acceptance.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_boot_assessment.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_boot_assessment.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_budget.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_budget.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_capacity_guard.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_capacity_guard.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_changes.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_changes.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_cluster_safety.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_cluster_safety.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_config.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_config.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_config_merge.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_config_merge.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_crash_evidence.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_crash_evidence.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_degraded_mode.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_degraded_mode.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_dependency_graph.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_dependency_graph.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_disaster.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_disaster.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_etcd_limits.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_etcd_wire.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_etcd_wire.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_failover.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_failover.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_fault_correlation.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_fault_correlation.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_fru_health.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_fru_health.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_healing.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_healing.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_healing_codec.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_healing_codec.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_healing_repair_claim.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_healing_repair_claim.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_healing_request.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_healing_request.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_host_admission.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_host_admission.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_inventory.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_inventory.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_kernel_health.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_kernel_health.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_kernel_maintenance.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_kernel_maintenance.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_network_change.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_network_change.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_network_integrity.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_network_integrity.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_node_lifecycle.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_node_lifecycle.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_operation.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_operation.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_platform_health.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_platform_health.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_power_integrity.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_power_integrity.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_ras.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_ras.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_readmission.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_readmission.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_recovery_objective.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_recovery_objective.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_reservation_safety.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_reservation_safety.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_resilience_controller.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_resilience_controller.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_rollout.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_rollout.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_rollout_codec.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_rollout_codec.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_self_test.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_self_test.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_service.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_service.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_service_catalogue.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_service_catalogue.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_serviceability.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_serviceability.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_storage_integrity.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_storage_integrity.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_time_integrity.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_time_integrity.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_topology.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_topology.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_unit.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_unit.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_wlm.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_wlm.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_workload_safety.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_workload_safety.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_xfs_health.adb",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/api-index.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../statecore/src/state_xfs_health.ads",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/final-review.ja.md",
+      "kind": "local-document-link",
+      "target": "specs/execution-safety.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/final-review.ja.md",
+      "kind": "local-document-link",
+      "target": "specs/production-closure.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/final-review.ja.md",
+      "kind": "local-document-link",
+      "target": "adr/ADR-0049.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/runbooks/RB-011.ja.md",
+      "kind": "local-document-link",
+      "target": "../adr/ADR-0054.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/runbooks/RB-013.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../controlcore/docs/operations.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/runbooks/RB-013.ja.md",
+      "kind": "local-document-link",
+      "target": "../specs/capability-matrix.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/runbooks/README.ja.md",
+      "kind": "local-document-link",
+      "target": "RB-001.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/runbooks/README.ja.md",
+      "kind": "local-document-link",
+      "target": "RB-002.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/runbooks/README.ja.md",
+      "kind": "local-document-link",
+      "target": "RB-003.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/runbooks/README.ja.md",
+      "kind": "local-document-link",
+      "target": "RB-004.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/runbooks/README.ja.md",
+      "kind": "local-document-link",
+      "target": "RB-005.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/runbooks/README.ja.md",
+      "kind": "local-document-link",
+      "target": "RB-006.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/runbooks/README.ja.md",
+      "kind": "local-document-link",
+      "target": "RB-007.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/runbooks/README.ja.md",
+      "kind": "local-document-link",
+      "target": "RB-008.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/runbooks/README.ja.md",
+      "kind": "local-document-link",
+      "target": "RB-009.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/runbooks/README.ja.md",
+      "kind": "local-document-link",
+      "target": "RB-010.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/runbooks/README.ja.md",
+      "kind": "local-document-link",
+      "target": "RB-011.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/runbooks/README.ja.md",
+      "kind": "local-document-link",
+      "target": "RB-012.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/runbooks/README.ja.md",
+      "kind": "local-document-link",
+      "target": "RB-013.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/runbooks/README.ja.md",
+      "kind": "local-document-link",
+      "target": "solver-rejection.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/runbooks/README.ja.md",
+      "kind": "local-document-link",
+      "target": "RB-014.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/solver-change-review.ja.md",
+      "kind": "local-document-link",
+      "target": "specs/solver-assurance.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/solver-change-review.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../resolvercore/docs/proof-boundary.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/solver-change-review.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../resolvercore/docs/integration.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/solver-change-review.ja.md",
+      "kind": "local-document-link",
+      "target": "specs/capability-matrix.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/specs/acid-contract.ja.md",
+      "kind": "local-document-link",
+      "target": "../sources.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/specs/architecture.ja.md",
+      "kind": "local-document-link",
+      "target": "solver-assurance.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/specs/architecture.ja.md",
+      "kind": "local-document-link",
+      "target": "unified-management.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/specs/capability-matrix.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../distribution/docs/architecture.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/specs/capability-matrix.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../distribution/docs/ownership-and-effects.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/specs/capability-matrix.ja.md",
+      "kind": "local-document-link",
+      "target": "solver-assurance.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/specs/capability-matrix.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../distribution/history/leap16/docs/qualification.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/specs/connector-contracts.ja.md",
+      "kind": "local-document-link",
+      "target": "unified-management.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/specs/continuation.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../distribution/docs/architecture.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/specs/continuation.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../distribution/docs/ownership-and-effects.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/specs/continuation.ja.md",
+      "kind": "local-document-link",
+      "target": "solver-assurance.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/specs/proof-plan.ja.md",
+      "kind": "local-document-link",
+      "target": "../sources.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/specs/solver-assurance.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../distribution/docs/architecture.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/specs/solver-assurance.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../distribution/docs/ownership-and-effects.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/specs/solver-assurance.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../resolvercore/docs/neutral-spec.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/specs/solver-assurance.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../pkgcore/docs/rpm-resolution.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/specs/solver-assurance.ja.md",
+      "kind": "local-document-link",
+      "target": "acid-contract.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/specs/suse-config.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../distribution/docs/architecture.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/specs/suse-config.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../distribution/docs/ownership-and-effects.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/specs/suse-config.ja.md",
+      "kind": "local-document-link",
+      "target": "solver-assurance.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/specs/suse-config.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../configcore/docs/architecture.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/specs/suse-config.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../configcore/docs/schemas-v1.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/specs/suse-config.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../configcore/docs/integration.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/specs/suse-config.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../configcore/docs/nvidia.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/specs/suse-config.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../distribution/history/leap16/docs/base-selection.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/specs/suse-config.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../distribution/history/leap16/docs/assembly.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/specs/suse-config.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../configcore/docs/recovery.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/specs/suse-config.ja.md",
+      "kind": "local-document-link",
+      "target": "capability-matrix.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/specs/suse-config.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../distribution/history/leap16/docs/qualification.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/specs/unified-management.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../controlcore/docs/architecture.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/specs/unified-management.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../controlcore/docs/protocol.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/specs/unified-management.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../../controlcore/docs/operations.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/specs/unified-management.ja.md",
+      "kind": "local-document-link",
+      "target": "../../../engineering/lineage-merge.json",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/specs/unified-management.ja.md",
+      "kind": "local-document-link",
+      "target": "capability-matrix.ja.md",
+      "result": "pass"
+    },
+    {
+      "path": "assurance/docs/engineering/specs/unified-management.ja.md",
+      "kind": "local-document-link",
+      "target": "continuation.ja.md",
+      "result": "pass"
+    }
+  ],
+  "result": "pass",
+  "ada_execution": false,
+  "formal_proof": false,
+  "production_approval": false
+}
