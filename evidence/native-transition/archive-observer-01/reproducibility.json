@@ -1,0 +1,19 @@
+{
+  "package": "niaos-archive-observer",
+  "version": "0.1.0",
+  "architecture": "all",
+  "sha256": "3d393d248edf558e4b6344e2dddc8db280d4cdd308a05a519396ea128bd32c6b",
+  "independent_directories_equal": true,
+  "source_files": {
+    "niaos-archive-observer_0.1.0.tar.xz": {
+      "sha256": "45ba096add42d38bf9d57b9aeafd50bc0dc56137f9ac522af15306d4d17af3d1",
+      "size": 31212,
+      "independent_directories_equal": true
+    },
+    "niaos-archive-observer_0.1.0.dsc": {
+      "sha256": "3f0558cd20f86fe3968dc76b739848188489cc3c125bac988e7dff87cd763e12",
+      "size": 620,
+      "independent_directories_equal": true
+    }
+  }
+}

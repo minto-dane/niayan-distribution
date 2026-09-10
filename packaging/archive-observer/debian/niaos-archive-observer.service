@@ -1,0 +1,46 @@
+# SPDX-License-Identifier: BSD-3-Clause
+[Unit]
+Description=NiaOS internal authenticated archive observer
+StartLimitIntervalSec=60
+StartLimitBurst=120
+Requires=niaos-archive-observer.socket
+After=niaos-archive-observer.socket network.target
+AssertPathExists=/etc/niaos/archive-observer.json
+AssertPathExists=/etc/niaos/archive-keyring.gpg
+AssertPathExists=/var/lib/niaos/supply/bootstrap-complete.json
+AssertPathExists=/var/lib/niaos/supply/repository/writer.lock
+[Service]
+Type=exec
+ExecStart=/usr/libexec/niaos/archive-observer
+LoadCredential=archive-seed:/etc/niaos/credentials/archive-seed
+RuntimeMaxSec=125
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+User=nia-supply
+Group=nia-supply
+UMask=0077
+ReadWritePaths=/var/lib/niaos/supply
+PrivateTmp=yes
+PrivateDevices=yes
+ProtectSystem=strict
+ProtectHome=yes
+NoNewPrivileges=yes
+CapabilityBoundingSet=
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectKernelLogs=yes
+ProtectControlGroups=yes
+RestrictNamespaces=yes
+LockPersonality=yes
+MemoryDenyWriteExecute=yes
+SystemCallArchitectures=native
+LimitCORE=0
+LimitNOFILE=128
+LimitFSIZE=1G
+MemoryMax=1G
+MemorySwapMax=0
+CPUQuota=100%
+TasksMax=32
+TimeoutStopSec=5
+KillMode=control-group
+OOMPolicy=kill
+Restart=no

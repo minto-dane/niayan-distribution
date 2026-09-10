@@ -1,0 +1,13 @@
+Running as unit: run-p702776-i703076.scope; invocation ID: e3830f16ade94b10af5c1a11e637a36e
+limited-exec: {"scope": "run-p702776-i703076.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+dh clean
+   debian/rules override_dh_auto_clean
+make[1]: Entering directory '/home/nia/devbox/niaos/.work/native-archive-observer-01/final/source'
+find native tools -type d -name __pycache__ -prune -exec rm -rf {} +
+make[1]: Leaving directory '/home/nia/devbox/niaos/.work/native-archive-observer-01/final/source'
+   dh_clean
+Running as unit: run-p702799-i703099.scope; invocation ID: 2cc9a55fb9334e54a90a95a73221cc9a
+limited-exec: {"scope": "run-p702799-i703099.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+dpkg-source: info: using source format '3.0 (native)'
+dpkg-source: info: building niaos-archive-observer in niaos-archive-observer_0.1.0.tar.xz
+dpkg-source: info: building niaos-archive-observer in niaos-archive-observer_0.1.0.dsc

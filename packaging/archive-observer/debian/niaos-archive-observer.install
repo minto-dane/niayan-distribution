@@ -1,0 +1,4 @@
+native/*.py usr/lib/niaos/archive-observer/native
+tools/*.py usr/lib/niaos/archive-observer/tools
+deployment/archive-observer usr/libexec/niaos
+debian/niaos-archive-observer-provision.service usr/lib/systemd/system

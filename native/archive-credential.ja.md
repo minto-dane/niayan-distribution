@@ -50,6 +50,8 @@ DEB fixtureはprivate親directory内でcontrol directoryの0755を明示し、se
 
 VMのTUF transportは実署名付きのprocess内fixtureであり、HTTPS配備の受入とは数えない。
 鍵はテスト用にVM内で生成して終了時にsource fileを削除し、秘密鍵を証跡へ出力しない。
-本番observerのjob protocol、root所有設定の導入、既存TUF cacheの初期配備、実HTTPSとの
-service統合、鍵の生成/更新/失効、site floor更新とpublisher/controllerへの接続は残る。
 この工具のfixtureや一時unitを本番サービスとして配布しない。
+配布可能なobserver、内部client、明示provisioningと実HTTPSの接続は
+[archive-observer.ja.md](archive-observer.ja.md)を参照。
+本番siteの設定導入、鍵の生成/更新/失効、site floor更新と完全なpublisher/controller接続は
+配布serviceでも別の残作業である。

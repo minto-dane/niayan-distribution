@@ -1,0 +1,12 @@
+{
+  "source_subject": "036f81116950a4937a69e969152faae3043ecfbb159868533c036cff045dc38b",
+  "package_input_count": 22,
+  "package_inputs_equal": true,
+  "vm_python_inputs": 65,
+  "vm_python_inputs_equal": true,
+  "vm_input_count": 79,
+  "driver_sha256": "60cb7028edf3032bf31ef3edbe4d2032a1faac56d1115c01983fc43a469c1f93",
+  "driver_source_evidence": "distribution/evidence/native-transition/archive-credential-01/compile-inputs.json",
+  "new_ada_compilation": false,
+  "mismatches": []
+}

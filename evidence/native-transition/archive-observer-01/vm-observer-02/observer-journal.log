@@ -1,0 +1,44 @@
+Starting niaos-archive-observer-provision.service - NiaOS explicit archive trust cache provisioning...
+niaos-archive-observer-provision.service: Deactivated successfully.
+Finished niaos-archive-observer-provision.service - NiaOS explicit archive trust cache provisioning.
+Starting niaos-archive-observer-provision.service - NiaOS explicit archive trust cache provisioning...
+archive-observer: startup or provisioning rejected
+niaos-archive-observer-provision.service: Main process exited, code=exited, status=1/FAILURE
+niaos-archive-observer-provision.service: Failed with result 'exit-code'.
+Failed to start niaos-archive-observer-provision.service - NiaOS explicit archive trust cache provisioning.
+Starting niaos-archive-observer.service - NiaOS internal authenticated archive observer...
+Started niaos-archive-observer.service - NiaOS internal authenticated archive observer.
+niaos-archive-observer.service: Deactivated successfully.
+Starting niaos-archive-observer.service - NiaOS internal authenticated archive observer...
+Started niaos-archive-observer.service - NiaOS internal authenticated archive observer.
+niaos-archive-observer.service: Deactivated successfully.
+Starting niaos-archive-observer.service - NiaOS internal authenticated archive observer...
+Started niaos-archive-observer.service - NiaOS internal authenticated archive observer.
+archive-observer: bootstrap-history rejected (Invalid)
+niaos-archive-observer.service: Deactivated successfully.
+Starting niaos-archive-observer.service - NiaOS internal authenticated archive observer...
+Started niaos-archive-observer.service - NiaOS internal authenticated archive observer.
+archive-observer: bootstrap-history rejected (Invalid)
+niaos-archive-observer.service: Deactivated successfully.
+Starting niaos-archive-observer.service - NiaOS internal authenticated archive observer...
+Started niaos-archive-observer.service - NiaOS internal authenticated archive observer.
+archive-observer: peer rejected (Invalid)
+niaos-archive-observer.service: Deactivated successfully.
+Starting niaos-archive-observer.service - NiaOS internal authenticated archive observer...
+Started niaos-archive-observer.service - NiaOS internal authenticated archive observer.
+archive-observer: authentication rejected (Invalid)
+niaos-archive-observer.service: Deactivated successfully.
+Starting niaos-archive-observer.service - NiaOS internal authenticated archive observer...
+Started niaos-archive-observer.service - NiaOS internal authenticated archive observer.
+archive-observer: configuration rejected (Invalid)
+niaos-archive-observer.service: Deactivated successfully.
+Starting niaos-archive-observer.service - NiaOS internal authenticated archive observer...
+Started niaos-archive-observer.service - NiaOS internal authenticated archive observer.
+archive-observer: authentication rejected (Invalid)
+niaos-archive-observer.service: Deactivated successfully.
+Starting niaos-archive-observer.service - NiaOS internal authenticated archive observer...
+Started niaos-archive-observer.service - NiaOS internal authenticated archive observer.
+archive-observer: authentication rejected (DownloadError)
+niaos-archive-observer.service: Deactivated successfully.
+niaos-archive-observer.service: Starting requested but asserts failed.
+Assertion failed for niaos-archive-observer.service - NiaOS internal authenticated archive observer.

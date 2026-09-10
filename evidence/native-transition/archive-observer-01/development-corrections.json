@@ -1,0 +1,12 @@
+{
+  "first_build_attempt": {
+    "cwd": "/home/nia/devbox/niaos/nia-os-consent",
+    "command": "dpkg-buildpackage -us -uc -b -j1 --no-sign",
+    "exit_code": 25,
+    "error": "cannot open file debian/changelog: No such file or directory",
+    "effect": "stopped before package build"
+  },
+  "packaging_review": "Explicitly install the provisioning unit; its filename is not the binary package basename.",
+  "post_first_vm_review": "Move StateDirectory to explicit provisioning only; normal service rejects altered state owner/mode and uses ReadWritePaths. Final VM covers both new refusals.",
+  "protection_limits_weakened": false
+}

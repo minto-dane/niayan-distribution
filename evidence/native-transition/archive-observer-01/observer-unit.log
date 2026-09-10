@@ -1,0 +1,16 @@
+Running as unit: run-p702840-i703140.scope; invocation ID: f91988e3faa7424f89fb57f24a4e6d51
+limited-exec: {"scope": "run-p702840-i703140.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+test_caller_owned_configuration_is_not_site_authority (test_archive_observer.ObserverTests.test_caller_owned_configuration_is_not_site_authority) ... ok
+test_configuration_binds_repository_target_and_site_limits (test_archive_observer.ObserverTests.test_configuration_binds_repository_target_and_site_limits) ... ok
+test_duplicate_unknown_or_empty_configuration_is_refused (test_archive_observer.ObserverTests.test_duplicate_unknown_or_empty_configuration_is_refused) ... ok
+test_private_copy_preserves_original_offset_and_refuses_overwrite (test_archive_observer.ObserverTests.test_private_copy_preserves_original_offset_and_refuses_overwrite) ... ok
+test_received_descriptors_are_close_on_exec (test_archive_observer.ObserverTests.test_received_descriptors_are_close_on_exec) ... ok
+test_received_descriptors_are_closed_on_count_or_packet_failure (test_archive_observer.ObserverTests.test_received_descriptors_are_closed_on_count_or_packet_failure) ... ok
+test_request_identity_and_paths_are_canonical (test_archive_observer.ObserverTests.test_request_identity_and_paths_are_canonical) ... ok
+test_result_descriptors_are_fully_sealed_and_readonly (test_archive_observer.ObserverTests.test_result_descriptors_are_fully_sealed_and_readonly) ... ok
+test_writable_nonregular_empty_and_oversize_originals_are_refused (test_archive_observer.ObserverTests.test_writable_nonregular_empty_and_oversize_originals_are_refused) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.004s
+
+OK

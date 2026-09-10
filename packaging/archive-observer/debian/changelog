@@ -1,0 +1,5 @@
+niaos-archive-observer (0.1.0) unstable; urgency=medium
+
+  * Package the credential-backed original archive observer and internal client.
+
+ -- NiaOS Developers <developers@niaos.invalid>  Thu, 10 Sep 2026 00:00:00 +0000

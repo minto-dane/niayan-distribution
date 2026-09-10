@@ -1,0 +1,13 @@
+# SPDX-License-Identifier: BSD-3-Clause
+[Unit]
+Description=NiaOS internal authenticated archive socket
+[Socket]
+ListenSequentialPacket=/run/niaos/archive-observer.sock
+SocketUser=root
+SocketGroup=nia-pkg
+SocketMode=0660
+DirectoryMode=0755
+Backlog=8
+RemoveOnStop=yes
+[Install]
+WantedBy=sockets.target

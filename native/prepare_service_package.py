@@ -8,12 +8,19 @@ from pathlib import Path
 import stat
 
 
-def prepare(destination):
+def prepare(destination, component='root-preparation'):
     distribution = Path(__file__).resolve().parents[1]
-    packaging = distribution / 'packaging/root-preparation'
+    if component not in ('root-preparation', 'archive-observer'):
+        raise ValueError('unknown internal service component')
+    packaging = distribution / 'packaging' / component
     files = [(p, p.relative_to(packaging)) for p in sorted(packaging.rglob('*')) if not p.is_dir()]
-    files += [(distribution / name, Path(name)) for name in
-              ('native/root_bank.py', 'native/storage_bootstrap.py', 'native/worker/root_extract.c', 'native/worker/Makefile')]
+    inputs = ('native/root_bank.py', 'native/storage_bootstrap.py', 'native/worker/root_extract.c', 'native/worker/Makefile')
+    if component == 'archive-observer':
+        inputs = tuple('native/'+name+'.py' for name in ('archive_observer', 'archive_observer_client',
+            'archive_credential', 'archive_receipt', 'archive_intake', 'repository'))
+        inputs += tuple('tools/'+name+'.py' for name in ('nia_common', 'debian_archive_auth',
+            'deb_archive', 'debian_semantics', 'debian_triggers'))
+    files += [(distribution / name, Path(name)) for name in inputs]
     # Review all inputs before creating a fresh output. No upstream patching,
     # recursive workspace export, installed-state discovery or hidden download.
     checked = []
@@ -36,5 +43,6 @@ def prepare(destination):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path, required=True)
+    parser.add_argument('--component', choices=('root-preparation', 'archive-observer'), default='root-preparation')
     args = parser.parse_args()
-    prepare(args.output)
+    prepare(args.output, args.component)

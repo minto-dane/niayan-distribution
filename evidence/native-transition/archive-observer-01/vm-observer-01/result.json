@@ -1,0 +1,53 @@
+{
+  "schema": "org.niaos.archive-observer-vm-test/v1",
+  "result": "pass",
+  "cases": [
+    {
+      "case": "explicit-bootstrap-and-repeat-refusal",
+      "passed": true
+    },
+    {
+      "case": "accepted",
+      "passed": true,
+      "client_exit": 0
+    },
+    {
+      "case": "second-request",
+      "passed": true,
+      "client_exit": 0
+    },
+    {
+      "case": "root-peer",
+      "passed": true,
+      "client_exit": 2
+    },
+    {
+      "case": "changed-original",
+      "passed": true,
+      "client_exit": 2
+    },
+    {
+      "case": "unprotected-config",
+      "passed": true,
+      "client_exit": 2
+    },
+    {
+      "case": "wrong-credential",
+      "passed": true,
+      "client_exit": 2
+    },
+    {
+      "case": "untrusted-https",
+      "passed": true,
+      "client_exit": 2
+    },
+    {
+      "case": "missing-lock-refused-without-reinitialization",
+      "passed": true
+    }
+  ],
+  "https_transport": "real TLS with VM-local temporary CA; default production fetcher",
+  "observer_uid": 986,
+  "core_uid": 999,
+  "production_authorization": false
+}

@@ -1,0 +1,3 @@
+# SPDX-License-Identifier: BSD-3-Clause
+u nia-supply - "NiaOS supply observer" /nonexistent /usr/sbin/nologin
+g nia-pkg -

@@ -1,0 +1,115 @@
+{
+  "format": 1,
+  "files": {
+    "debian/changelog": {
+      "source": "packaging/archive-observer/debian/changelog",
+      "sha256": "4a5d2b34c28edc828001de9160e5732ff1ef62d7f93c0d128143e2fcf60c749f",
+      "mode": 420
+    },
+    "debian/control": {
+      "source": "packaging/archive-observer/debian/control",
+      "sha256": "9ed7a7ad4384914017f3eccc754e2169e6f5afaf02d9609b9463831a159c7254",
+      "mode": 420
+    },
+    "debian/copyright": {
+      "source": "packaging/archive-observer/debian/copyright",
+      "sha256": "be83d83ddff20d3bbdb9e6dc7f4e42ff6d79ddae42018069c80680edb9faf761",
+      "mode": 420
+    },
+    "debian/niaos-archive-observer-provision.service": {
+      "source": "packaging/archive-observer/debian/niaos-archive-observer-provision.service",
+      "sha256": "e97d20359f66032a2fff9ec741f082e629cebc09de8d292c4d2f0ddd4baaa2d0",
+      "mode": 420
+    },
+    "debian/niaos-archive-observer.install": {
+      "source": "packaging/archive-observer/debian/niaos-archive-observer.install",
+      "sha256": "e098aa63e61d05bb1dc8f26e446d3c9ef78874c5d475d54cee6ea29d8efa0098",
+      "mode": 420
+    },
+    "debian/niaos-archive-observer.service": {
+      "source": "packaging/archive-observer/debian/niaos-archive-observer.service",
+      "sha256": "c459835f92819136fc76f4fd4b4d011441427f10db82872bd8df206c1d84214d",
+      "mode": 420
+    },
+    "debian/niaos-archive-observer.socket": {
+      "source": "packaging/archive-observer/debian/niaos-archive-observer.socket",
+      "sha256": "065ebc99d3ca82873007f54aa964baa01d10a5f62ecae29d2b3feecfa9820486",
+      "mode": 420
+    },
+    "debian/niaos-archive-observer.sysusers": {
+      "source": "packaging/archive-observer/debian/niaos-archive-observer.sysusers",
+      "sha256": "f5810f25f12fb950c7a9ac9d582cefab9d98a2e003c28a94b76535bc404a8c83",
+      "mode": 420
+    },
+    "debian/rules": {
+      "source": "packaging/archive-observer/debian/rules",
+      "sha256": "8107b7bb72dc08447f4bb411961dc3ed59c7b6e3137ad58ec5aca5776b89eb65",
+      "mode": 493
+    },
+    "debian/source/format": {
+      "source": "packaging/archive-observer/debian/source/format",
+      "sha256": "e8e18df40bcd69d6aa404282679186d9b8256ac63a5b4e80d7f081e8a0095a2e",
+      "mode": 420
+    },
+    "deployment/archive-observer": {
+      "source": "packaging/archive-observer/deployment/archive-observer",
+      "sha256": "d33792585c6cc12a6a820f690dbbf61253a03e1c8fbe3f19655ec791dad08956",
+      "mode": 493
+    },
+    "native/archive_observer.py": {
+      "source": "native/archive_observer.py",
+      "sha256": "43f42133fbd8eb0a219dc7dcb7d8b3613ca81a9e5fd0de1e44060d1401bc15ea",
+      "mode": 420
+    },
+    "native/archive_observer_client.py": {
+      "source": "native/archive_observer_client.py",
+      "sha256": "8eef9cc136a92bf2650dd7a3d03c0013f371c30dd9c1c0963941c3fd7e8caf16",
+      "mode": 420
+    },
+    "native/archive_credential.py": {
+      "source": "native/archive_credential.py",
+      "sha256": "57289b2776de2b434eb896a8635d4a32b8e04b657f5b5c22fac0d530b715568d",
+      "mode": 420
+    },
+    "native/archive_receipt.py": {
+      "source": "native/archive_receipt.py",
+      "sha256": "308a97ffda0688966e1138147a6fd965c111c4203d3798dcd53f0865b99aca2b",
+      "mode": 420
+    },
+    "native/archive_intake.py": {
+      "source": "native/archive_intake.py",
+      "sha256": "96162cef6699f73dcd75728fc3093c27d7b48f3298478f5cb60041c6358f5715",
+      "mode": 420
+    },
+    "native/repository.py": {
+      "source": "native/repository.py",
+      "sha256": "a75959dd4e5467c02f00108ef5bc3afae5f18c6e3c79f5bf621c17738b27f5dc",
+      "mode": 420
+    },
+    "tools/nia_common.py": {
+      "source": "tools/nia_common.py",
+      "sha256": "ccc00afc10a76e6ac00d215b7f28cc3e7a9f7130ca6e0945405189ed365ea259",
+      "mode": 420
+    },
+    "tools/debian_archive_auth.py": {
+      "source": "tools/debian_archive_auth.py",
+      "sha256": "5ef260e93f4f358ad40994f8bf164f6a91480d4b8c8670da159f65483fe63d83",
+      "mode": 420
+    },
+    "tools/deb_archive.py": {
+      "source": "tools/deb_archive.py",
+      "sha256": "8108779aa3fa59d9905d33538d36fb2e2c6dd27ef09898a5732443b6f7220d0d",
+      "mode": 420
+    },
+    "tools/debian_semantics.py": {
+      "source": "tools/debian_semantics.py",
+      "sha256": "2e50bb265d26669c19dfb701b359b256db662059d5d1a50729b013d15b0f2b60",
+      "mode": 420
+    },
+    "tools/debian_triggers.py": {
+      "source": "tools/debian_triggers.py",
+      "sha256": "09647793c78ac823e3663a68421ac2cb024fdeb3bb32e00b1e0835004e714dcf",
+      "mode": 420
+    }
+  }
+}

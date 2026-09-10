@@ -1,0 +1,40 @@
+# SPDX-License-Identifier: BSD-3-Clause
+[Unit]
+Description=NiaOS explicit archive trust cache provisioning
+AssertPathExists=/etc/niaos/archive-observer.json
+AssertPathExists=/etc/niaos/archive-root.json
+[Service]
+Type=oneshot
+ExecStart=/usr/libexec/niaos/archive-observer --provision-cache
+TimeoutStartSec=30
+RestrictAddressFamilies=AF_UNIX
+User=nia-supply
+Group=nia-supply
+UMask=0077
+StateDirectory=niaos/supply
+StateDirectoryMode=0700
+PrivateTmp=yes
+PrivateDevices=yes
+ProtectSystem=strict
+ProtectHome=yes
+NoNewPrivileges=yes
+CapabilityBoundingSet=
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectKernelLogs=yes
+ProtectControlGroups=yes
+RestrictNamespaces=yes
+LockPersonality=yes
+MemoryDenyWriteExecute=yes
+SystemCallArchitectures=native
+LimitCORE=0
+LimitNOFILE=128
+LimitFSIZE=1G
+MemoryMax=1G
+MemorySwapMax=0
+CPUQuota=100%
+TasksMax=32
+TimeoutStopSec=5
+KillMode=control-group
+OOMPolicy=kill
+Restart=no

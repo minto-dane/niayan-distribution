@@ -1,0 +1,7 @@
+{
+  "package": "niaos-archive-observer",
+  "version": "0.1.0",
+  "architecture": "all",
+  "sha256": "fe5f00b09b97afad2561a2d03b57e18d3f73330b8db76d1368c51644adacc098",
+  "independent_directories_equal": true
+}

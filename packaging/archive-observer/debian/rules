@@ -1,0 +1,14 @@
+#!/usr/bin/make -f
+# SPDX-License-Identifier: BSD-3-Clause
+%:
+	dh $@
+execute_after_dh_install:
+	dh_installsysusers
+override_dh_auto_build:
+override_dh_auto_test:
+	python3 -B -m compileall -q native tools
+override_dh_auto_install:
+override_dh_auto_clean:
+	find native tools -type d -name __pycache__ -prune -exec rm -rf {} +
+override_dh_installsystemd:
+	dh_installsystemd --no-enable --no-start
