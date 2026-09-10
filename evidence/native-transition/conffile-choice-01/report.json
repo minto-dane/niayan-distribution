@@ -1,0 +1,30 @@
+{
+  "format": 1,
+  "source_subject": "ada07d0d7094d368868fb7a829276f8bab6e8e5559306f49fb8066a05257d4b0",
+  "production_qualified": false,
+  "native_assertions": 154,
+  "native_result": "pass",
+  "accepted_log": "test-06.log",
+  "compile_input_count": 377,
+  "fixture_input_count": 22,
+  "kernel_limits": {
+    "memory_bytes": 3221225472,
+    "swap_bytes": 0,
+    "cpu_percent": 100,
+    "pids": 128
+  },
+  "scope": "original conffile proposal, content-choice binding, observed backup namespace and retained direct references",
+  "full_suite_and_formal_proof": "not-repeated; mathematical/vendor inputs unchanged",
+  "prior_failures": [
+    "test-01.log: test Byte equality visibility; corrected",
+    "test-02.log: relative media argument rejected; used a fresh CAS/root and absolute fixture path",
+    "test-05.log: cached executable reported up-to-date and ran 152 old assertions; excluded from final-source acceptance; test-06.log forces recompilation and runs 154"
+  ],
+  "remaining": [
+    "authenticated UI and complete managed root/context/catalog/ownership admission",
+    "privileged observations and full attributes/global namespace effects",
+    "durable record reader/recovery and generation retention/pins/GC",
+    "physical root/boot publication and native ISO",
+    "remaining DEB effects, translations and production requirements"
+  ]
+}

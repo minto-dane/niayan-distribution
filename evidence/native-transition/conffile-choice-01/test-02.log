@@ -1,0 +1,19 @@
+Running as unit: run-p736124-i736424.scope; invocation ID: b0f248ad80364626b5695a032d77b223
+limited-exec: {"scope": "run-p736124-i736424.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Compile
+   [Ada]          run_conffile_choice_tests.adb
+   [Ada]          pkg_conffile_choice.adb
+   [Ada]          pkg_deb_conffiles.adb
+   [Ada]          pkg_deb_payload.adb
+   [Ada]          pkg_deb_container.adb
+   [Ada]          pkg_deb_control.adb
+   [Ada]          pkg_deb_data_stream.adb
+   [Ada]          pkg_tar_framing.adb
+Bind
+   [gprbind]      run_conffile_choice_tests.bexch
+   [Ada]          run_conffile_choice_tests.ali
+Link
+   [link]         run_conffile_choice_tests.adb
+FAIL: mediaINVALID_INPUT
+
+raised TEST_SUPPORT.FAILURE : mediaINVALID_INPUT

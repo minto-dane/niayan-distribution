@@ -1,0 +1,5 @@
+Running as unit: run-p737292-i737592.scope; invocation ID: feaef6b0bc3a421bb4ffb9e03af4c235
+limited-exec: {"scope": "run-p737292-i737592.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+gprbuild: "run_conffile_choice_tests" up to date
+PASS conffile fixtures: 21
+PASS assertions= 152

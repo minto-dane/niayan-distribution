@@ -5,6 +5,8 @@
 実行認可が要求するConfiguration/Side_Effectsの意味を実装する工程で、全効果の完成ではない。
 実localの保存と変更検知は[設定snapshot](conffile-snapshot.ja.md)へ接続する内部SDKを追加した。
 特権属性の完全観測、利用者選択と実root公開は引き続き未完である。
+[候補への選択束縛と保持一覧](conffile-choice.ja.md)も内部SDKへ追加した。
+認証済みUIや全rootの実適用への接続を完了したという意味ではない。
 
 ## 元DEBへの束縛
 
