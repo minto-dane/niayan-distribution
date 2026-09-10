@@ -1,0 +1,7 @@
+Running as unit: run-p425986-i426286.scope; invocation ID: 702cb3f410d74026950ed62334703730
+limited-exec: {"scope": "run-p425986-i426286.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+libarchive13t64:amd64	3.7.4-4+deb13u1
+libc6:amd64	2.41-12+deb13u3
+libsodium23:amd64	1.0.18-1+deb13u1
+{"result":"failed","reason":"privilege"}
+PASS nonprivileged invocation refused

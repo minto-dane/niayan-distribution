@@ -1,0 +1,4 @@
+Running as unit: run-p373149-i373449.scope; invocation ID: b112eab969434268b0693edce540265f
+limited-exec: {"scope": "run-p373149-i373449.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+mkdir -p build
+cc -D_FORTIFY_SOURCE=3 -O2 -g -std=c11 -Wall -Wextra -Werror -fstack-protector-strong -fPIE -pie -Wl,-z,relro,-z,now,-z,noexecstack root_extract.c -larchive -lsodium -o build/root-extract

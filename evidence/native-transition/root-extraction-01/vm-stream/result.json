@@ -1,0 +1,38 @@
+{
+  "result": "pass",
+  "cases": {
+    "full-linux-root": {
+      "returncode": 0,
+      "stdout": "{\"result\":\"extracted\",\"profile\":\"linux-inode-v1\",\"archive_sha256\":\"b45a7d94a52c0af84137ba92ae5caca22cee1d072c358ba9dc049ab6507df29a\",\"entries\":10,\"published\":false}\n",
+      "stderr": "",
+      "independent_filesystem_check": "pass"
+    },
+    "wrong-hash": {
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "{\"result\":\"failed\",\"reason\":\"digest\"}\n"
+    },
+    "wrong-count": {
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "{\"result\":\"failed\",\"reason\":\"archive\"}\n"
+    },
+    "expired": {
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "{\"result\":\"failed\",\"reason\":\"arguments\"}\n"
+    },
+    "occupied-target": {
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "{\"result\":\"failed\",\"reason\":\"staging\"}\n"
+    },
+    "writable-input": {
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "{\"result\":\"failed\",\"reason\":\"descriptors\"}\n"
+    }
+  },
+  "production_authorization": false,
+  "actual_boot": false
+}

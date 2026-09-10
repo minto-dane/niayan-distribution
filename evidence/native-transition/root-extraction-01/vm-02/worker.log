@@ -1,0 +1,9 @@
+Linux niaos-builder 6.12.107+deb13-cloud-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.107-1 (2026-08-29) x86_64 GNU/Linux
+Traceback (most recent call last):
+  File "/tmp/nia-root-extract/check_root_extract.py", line 126, in <module>
+    main()
+    ~~~~^^
+  File "/tmp/nia-root-extract/check_root_extract.py", line 112, in main
+    assert cases['full-linux-root']['returncode'] == 0, cases['full-linux-root']
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'returncode': 1, 'stdout': '', 'stderr': '{"result":"failed","reason":"archive"}\n'}

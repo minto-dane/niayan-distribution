@@ -22,3 +22,12 @@ i18n-release-check:
 hardening-check:
 	python3 -B -m unittest discover -s hardening -p test_hardening.py -v
 	python3 -m compileall -q hardening
+
+.PHONY: native-worker native-worker-check
+native-worker:
+	$(MAKE) -C native/worker
+
+# Run in a disposable VM/container with an explicit nodev/nosuid/noexec mount.
+native-worker-check: native-worker
+	test -n "$(WORKER_TEST_BASE)"
+	python3 -B native/worker/check_root_extract.py --worker "$(CURDIR)/build/native-worker/root-extract" --target-base "$(WORKER_TEST_BASE)" --report "$(CURDIR)/build/native-worker/check.json"

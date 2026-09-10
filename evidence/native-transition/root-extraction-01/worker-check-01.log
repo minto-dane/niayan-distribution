@@ -1,0 +1,10 @@
+Running as unit: run-p389875-i390175.scope; invocation ID: 107595a0d503411b8a9dd7d55a9c6238
+limited-exec: {"scope": "run-p389875-i390175.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Traceback (most recent call last):
+  File "/workspace/check_root_extract.py", line 126, in <module>
+    main()
+    ~~~~^^
+  File "/workspace/check_root_extract.py", line 112, in main
+    assert cases['full-linux-root']['returncode'] == 0, cases['full-linux-root']
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'returncode': 1, 'stdout': '', 'stderr': '{"result":"failed","reason":"metadata"}\n'}
