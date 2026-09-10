@@ -1,0 +1,122 @@
+{
+  "result": "pass",
+  "stage": "56565656565656565656565656565656",
+  "record": {
+    "effects_applied": false,
+    "intent_sha256": "44b8101995c39d5b49a6a2f016dfe244acc4e98418dc08d102e1bf5f9bc41bd1",
+    "physical_revalidation": false,
+    "published": false,
+    "state": "extracted",
+    "version": 1,
+    "worker_exit": 0,
+    "worker_sha256": "65b1d101670af68843c66e4fb44db78eccb4cf5b88214f8df951b87313377e22"
+  },
+  "uid": 987,
+  "boot_id": "9d68ebd4-5898-411d-91e4-e032a11fe762",
+  "service_properties": "MainPID=1868\nMemoryMax=1073741824\nMemorySwapMax=0\nTasksMax=32\nCapabilityBoundingSet=cap_chown cap_dac_override cap_fowner cap_fsetid cap_sys_chroot cap_mknod cap_setfcap\nNoNewPrivileges=yes\n",
+  "worker_sha256": "65b1d101670af68843c66e4fb44db78eccb4cf5b88214f8df951b87313377e22",
+  "device_view": {
+    "random": {
+      "mode": 8630,
+      "rdev": 264
+    },
+    "urandom": {
+      "mode": 8630,
+      "rdev": 265
+    },
+    "zero": {
+      "mode": 8630,
+      "rdev": 261
+    },
+    "null": {
+      "mode": 8630,
+      "rdev": 259
+    }
+  },
+  "readonly_temporary_directories": true,
+  "automatic_initialization": false,
+  "automatic_activation": false,
+  "production_storage_bootstrap": true,
+  "bootstrap_completion": {
+    "admission_configured": false,
+    "format": 1,
+    "gid": 987,
+    "intent_sha256": "2ef48f230447c67f54de7a95bdb570724354c01b565c0d470d094b32f431b5b6",
+    "published": false,
+    "service_activated": false,
+    "state": "storage-initialized",
+    "uid": 987
+  },
+  "bootstrap_refusal_cases": [
+    "missing-native-initializer",
+    "preexisting-core",
+    "preexisting-roots",
+    "preexisting-bootstrap.json",
+    "preexisting-bootstrap-complete.json",
+    "native-root-refusal",
+    "completed-bootstrap-retry"
+  ],
+  "bootstrap_files": {
+    "/var/lib/niaos/bootstrap.json": [
+      78,
+      "2ef48f230447c67f54de7a95bdb570724354c01b565c0d470d094b32f431b5b6"
+    ],
+    "/var/lib/niaos/bootstrap-complete.json": [
+      31242,
+      "23d95bb0c8896f3b04083f7e2ab83e08bd38c51e5310c54491464107dcedaa0d"
+    ],
+    "/var/lib/niaos/core/store/store.lock": [
+      29238,
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    "/var/lib/niaos/roots/bank.json": [
+      31240,
+      "f0798576b3c4af2cbd8b289d572df90c49a7f963d1365047cb5538235fa9c8b4"
+    ],
+    "/var/lib/niaos/roots/bank.lock": [
+      31241,
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ]
+  },
+  "installed_root_changed": false,
+  "production_admission_policy": false,
+  "after_reboot": {
+    "effects_applied": false,
+    "intent_sha256": "44b8101995c39d5b49a6a2f016dfe244acc4e98418dc08d102e1bf5f9bc41bd1",
+    "physical_revalidation": false,
+    "published": false,
+    "state": "extracted",
+    "version": 1,
+    "worker_exit": 0,
+    "worker_sha256": "65b1d101670af68843c66e4fb44db78eccb4cf5b88214f8df951b87313377e22"
+  },
+  "missing_state_cases": [
+    {
+      "missing": "/var/lib/niaos/roots/bank.lock",
+      "activation_exit": 1,
+      "diagnostic": "Assertion failed on job for niaos-root-preparation.service.\n"
+    },
+    {
+      "missing": "/var/lib/niaos/core/store/store.lock",
+      "activation_exit": 1,
+      "diagnostic": "Assertion failed on job for niaos-root-preparation.service.\n"
+    },
+    {
+      "missing": "/etc/niaos/root-preparation.json",
+      "activation_exit": 1,
+      "diagnostic": "Assertion failed on job for niaos-root-preparation.service.\n"
+    }
+  ],
+  "missing_state_not_recreated": true,
+  "after_restoration": {
+    "effects_applied": false,
+    "intent_sha256": "44b8101995c39d5b49a6a2f016dfe244acc4e98418dc08d102e1bf5f9bc41bd1",
+    "physical_revalidation": false,
+    "published": false,
+    "state": "extracted",
+    "version": 1,
+    "worker_exit": 0,
+    "worker_sha256": "65b1d101670af68843c66e4fb44db78eccb4cf5b88214f8df951b87313377e22"
+  },
+  "bootstrap_persisted_after_reboot": true
+}

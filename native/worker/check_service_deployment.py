@@ -7,7 +7,6 @@ import json
 import os
 from pathlib import Path
 import pwd
-import signal
 import socket
 import stat
 import subprocess
@@ -23,6 +22,14 @@ SERVICE = 'niaos-root-preparation.service'
 
 def run(*args, **kwargs):
     return subprocess.run(args, check=True, **kwargs)
+
+
+def check_bootstrap_after_reboot(result):
+    assert result['boot_id'] != Path('/proc/sys/kernel/random/boot_id').read_text().strip()
+    for filename, expected in result['bootstrap_files'].items():
+        path = Path(filename)
+        assert [path.stat().st_ino, hashlib.sha256(path.read_bytes()).hexdigest()] == expected
+    result['bootstrap_persisted_after_reboot'] = True
 
 
 def request(uid, gid, stage, expect_failure=False):
@@ -55,7 +62,7 @@ def main():
     assert account.pw_uid > 0 and account.pw_shell == '/usr/sbin/nologin'
     if args.after_reboot:
         result = json.loads(args.report.read_text())
-        assert result['boot_id'] != Path('/proc/sys/kernel/random/boot_id').read_text().strip()
+        check_bootstrap_after_reboot(result)
         result['after_reboot'] = request(account.pw_uid, account.pw_gid, result['stage'])
         # Missing ownership state and policy stay missing on ordinary activation.
         failures = []
@@ -93,39 +100,67 @@ def main():
     assert not BANK.exists() and not CORE.exists(), 'installation must not initialize native state'
     assert subprocess.run(['systemctl', 'is-active', '--quiet', SERVICE]).returncode != 0
     assert subprocess.run(['systemctl', 'is-enabled', '--quiet', 'niaos-root-preparation.socket']).returncode != 0
+    bootstrap = ['/usr/bin/python3', '-I', '/usr/libexec/niaos/storage_bootstrap.py', '--initialize']
+    native = Path('/usr/libexec/nia/pkg_store_bootstrap')
+    assert native.is_file(), 'install the component package before explicit bootstrap'
+    refusal_cases = []
+    # No fixture driver participates in initialization. These are deliberately
+    # incomplete installer inputs, confined to this disposable VM.
+    held = native.with_name(native.name + '.test-held')
+    native.rename(held)
+    try:
+        denied = subprocess.run(bootstrap, capture_output=True, timeout=70)
+        assert denied.returncode != 0 and not CORE.exists() and not BANK.exists()
+        refusal_cases.append('missing-native-initializer')
+    finally:
+        held.rename(native)
     CORE.parent.mkdir(mode=0o755, exist_ok=True)
-    CORE.mkdir(mode=0o700); os.chown(CORE, account.pw_uid, account.pw_gid)
-    store = CORE / 'store'; store.mkdir(mode=0o700); os.chown(store, account.pw_uid, account.pw_gid)
-    BANK.mkdir(mode=0o700)
-    run('systemctl', 'start', 'var-lib-niaos-roots.mount')
+    for name in ('core', 'roots', 'bootstrap.json', 'bootstrap-complete.json'):
+        placeholder = CORE.parent / name
+        if name in ('core', 'roots'):
+            placeholder.mkdir(mode=0o700)
+        else:
+            placeholder.write_bytes(b'{"incomplete-test":true}\n'); placeholder.chmod(0o600)
+        before = (placeholder.stat().st_ino, placeholder.stat().st_mode)
+        try:
+            denied = subprocess.run(bootstrap, capture_output=True, timeout=70)
+            assert denied.returncode != 0
+            assert before == (placeholder.stat().st_ino, placeholder.stat().st_mode)
+            assert set(CORE.parent.iterdir()) == {placeholder}
+            refusal_cases.append('preexisting-' + name)
+        finally:
+            if placeholder.is_dir(): placeholder.rmdir()
+            else: placeholder.unlink()
+    root_refusal = subprocess.run([str(native), 'initialize', str(CORE / 'store')], capture_output=True)
+    assert root_refusal.returncode != 0 and b'status=DENIED' in root_refusal.stdout and not CORE.exists()
+    refusal_cases.append('native-root-refusal')
+    run(*bootstrap)
+    intent = CORE.parent / 'bootstrap.json'
+    complete = CORE.parent / 'bootstrap-complete.json'
+    completion = json.loads(complete.read_text())
+    assert completion['intent_sha256'] == hashlib.sha256(intent.read_bytes()).hexdigest()
+    assert completion['state'] == 'storage-initialized' and completion['service_activated'] is False
+    assert subprocess.run(['systemctl', 'is-active', '--quiet', SERVICE]).returncode != 0
+    assert subprocess.run(['systemctl', 'is-active', '--quiet', 'niaos-root-preparation.socket']).returncode != 0
+    assert subprocess.run(['systemctl', 'is-enabled', '--quiet', 'niaos-root-preparation.socket']).returncode != 0
+    fixed = [intent, complete, CORE / 'store/store.lock', BANK / 'bank.json', BANK / 'bank.lock']
+    snapshot = {str(p): (p.stat().st_ino, hashlib.sha256(p.read_bytes()).hexdigest()) for p in fixed}
+    denied = subprocess.run(bootstrap, capture_output=True, timeout=70)
+    assert denied.returncode != 0
+    assert snapshot == {str(p): (p.stat().st_ino, hashlib.sha256(p.read_bytes()).hexdigest()) for p in fixed}
+    refusal_cases.append('completed-bootstrap-retry')
+    store = CORE / 'store'
     required = os.ST_NODEV | os.ST_NOSUID | os.ST_NOEXEC
     assert os.statvfs(BANK).f_flag & required == required
+    # Fixture authorization is activated only for this test, after real bootstrap.
+    run('systemctl', 'enable', '--now', 'niaos-root-preparation.socket')
     worker = Path('/usr/libexec/niaos/root-extract')
-    command = [str(args.runtime / 'lib/ld-linux-x86-64.so.2'), '--library-path', str(args.runtime / 'lib'),
-        str(args.runtime / 'driver'), str(store), str(args.runtime / 'fixtures'), SOCKET,
-        hashlib.sha256(worker.read_bytes()).hexdigest()]
+    command = [str(args.runtime / 'driver'), str(store), str(args.runtime / 'fixtures'), SOCKET,
+        hashlib.sha256(worker.read_bytes()).hexdigest(), 'existing-store']
     with (args.report.parent / 'native-service.log').open('wb') as log:
-        child = subprocess.Popen(command, user=account.pw_uid, group=account.pw_gid, extra_groups=[],
-            stdout=log, stderr=subprocess.STDOUT, env={'PATH': '/usr/bin:/bin', 'LC_ALL': 'C.UTF-8'})
-        try:
-            deadline = time.monotonic() + 30
-            while not (store / 'store.lock').exists():
-                if child.poll() is not None or time.monotonic() >= deadline:
-                    raise RuntimeError('native CAS initialization failed')
-                time.sleep(0.005)
-            # Coordinate only the owned fixture process while provisioning its
-            # independent bank. The native SDK itself initializes its CAS.
-            os.kill(child.pid, signal.SIGSTOP)
-            try:
-                run('/usr/bin/python3', '-I', '/usr/libexec/niaos/root_bank.py',
-                    '--config', str(POLICY), '--provision-bank')
-                run('systemctl', 'enable', '--now', 'niaos-root-preparation.socket')
-            finally:
-                os.kill(child.pid, signal.SIGCONT)
-            assert child.wait(timeout=180) == 0
-        finally:
-            if child.poll() is None:
-                child.kill(); child.wait()
+        run(*command, user=account.pw_uid, group=account.pw_gid, extra_groups=[],
+            stdout=log, stderr=subprocess.STDOUT, env={'PATH': '/usr/bin:/bin', 'LC_ALL': 'C.UTF-8'},
+            timeout=180)
     stages = [p for p in BANK.iterdir() if p.is_dir()]
     assert len(stages) == 1
     record = request(account.pw_uid, account.pw_gid, stages[0].name)
@@ -156,7 +191,9 @@ def main():
         'service_properties': props, 'worker_sha256': hashlib.sha256(worker.read_bytes()).hexdigest(),
         'device_view': devices, 'readonly_temporary_directories': True,
         'automatic_initialization': False, 'automatic_activation': False,
-        'installed_root_changed': False, 'production_admission_policy': False}
+        'production_storage_bootstrap': True, 'bootstrap_completion': completion,
+        'bootstrap_refusal_cases': refusal_cases, 'bootstrap_files': snapshot,
+        'running_root_switched': False, 'production_admission_policy': False}
     args.report.write_text(json.dumps(result, indent=2) + '\n')
 
 

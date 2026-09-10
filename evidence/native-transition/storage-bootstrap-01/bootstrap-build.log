@@ -1,0 +1,26 @@
+Setup
+   [mkdir]        object directory for project Pkgcore
+   [mkdir]        exec directory for project Pkgcore
+Compile
+   [Ada]          pkg_store_bootstrap.adb
+   [C]            pkg_deb_stream.c
+   [C]            pkg_deb_decode.c
+   [C]            root_preparation.c
+   [Ada]          mc_posix.ads
+   [Ada]          mc_runtime.adb
+   [Ada]          mc_store.adb
+   [Ada]          mc_types.adb
+   [Ada]          mc_dirents.adb
+   [Ada]          mc_hex.adb
+   [Ada]          mc_sha256.adb
+   [Ada]          mc_fs.adb
+   [Ada]          mc_codec.adb
+   [Ada]          mc_paths.adb
+   [Ada]          mc_text.adb
+Bind
+   [gprbind]      pkg_store_bootstrap.bexch
+   [Ada]          pkg_store_bootstrap.ali
+Link
+   [archive]      libpkgcore.a
+   [index]        libpkgcore.a
+   [link]         pkg_store_bootstrap.adb

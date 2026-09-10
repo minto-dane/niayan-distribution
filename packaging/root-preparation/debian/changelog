@@ -1,3 +1,10 @@
+niaos-root-preparation (0.2.0) unstable; urgency=medium
+
+  * Add explicit internal native storage bootstrap with durable intent.
+  * Keep normal activation separate from initialization and admission policy.
+
+ -- NiaOS Developers <developers@niaos.invalid>  Thu, 10 Sep 2026 12:00:00 +0000
+
 niaos-root-preparation (0.1.0) unstable; urgency=medium
 
   * Package the internal socket-activated root preparation service.

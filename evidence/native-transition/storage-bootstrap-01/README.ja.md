@@ -1,0 +1,68 @@
+# 明示的native storage bootstrapの配備受入
+
+最終source subjectは`d0386ba03efcdc61a7055f40488ccbe565e647190345e1509f9e8a9f3ff5443c`。初回の全受入subjectは
+`bae6db5e1f60a3624e8b4e838a729fee1670988a6a2c8e427f8022a049e8699e`。
+差はVM試験工具一つだけで、再起動後のbootstrap記録照合の追加と報告field名の明確化である。
+追加の照合は受入済み電源断diskから新しい差分を作り、実行済み。製品の19配布入力と358個の
+compile/test sourceは全一致。詳細はinput-verification.jsonと二つのsource-inputs.json。
+
+## 実装
+
+内部pkg_store_bootstrapは既存MC_Store.Initialize/Openを呼び、非rootの空private CASだけを
+明示初期化する。共有API/永続形式は変更しない。checkも欠損を補完しない。
+root側のstorage_bootstrap.pyは固定path・v2 policy・専用account・停止済みunitを必須とし、
+排他的なintentをfsyncしてからdirectory/CAS/保護mount/bankを順に作る。最後だけ別の完了記録を
+fsyncする。停止・途中状態を削除してやり直さず、socket/供給認可/公開を自動有効化しない。
+詳細はdistribution/native/service-deployment.ja.mdとADR-0089。
+
+前回のライセンス変更で四つの現行READMEに残っていたMIT licensedという説明もBSDへ訂正した。
+LICENSE/SPDXは既にBSDで、第三者原本・歴史・過去証跡は不変。検査に現行READMEの整合性を追加した。
+
+## 検証
+
+Debian 13開発環境のGNAT 14で内部ELFと変更したroot archive試験driverを実compileした。
+今回のpkgcoreビルドは過去の固定SDKの再実行ではなく、版をbuildinfoで記録したDebian 13ビルドである。
+一時領域の18場合は新規/再初期化/構造欠損/実予約競合/非private/symlink等を確認し、拒否時と
+check時の内容/inode/modeの不変を確認した。配布DEBから取り出した実ELFでも同じ18場合が成功。
+通常のroot archive SDKは201 assertion。変更のない全suiteと全証明・カオスcampaignは再実行していない。
+
+pkgcore commitは`a3640276f48d88656b6d4b1af91b86adf416eb0c`。正規のcomponent輸出工具で
+clean commitをそのままDEB sourceへ出力し、全5 appをlinkした。既に実行済みの関連試験以外の
+全suiteを繰り返さないため、DEB_BUILD_OPTIONS=parallel=1 nocheckを明示した。
+別directoryで主DEBとdbgsymが一致した。主DEBは
+`82c26c92b235a57a1b2aa8fddc506a914a24fcdff8d49e2997f9daebf45ee175`。
+実ELFの依存から生成されたlibgnat-14等を、使い捨てVMへ通常のdpkgで導入した。
+開発builderのdpkg利用は稼働NiaOSの管理入口としての採用ではない。
+
+root準備0.2.0も固定Debian 13 builderの別directoryで主DEBとdbgsymが一致した。主DEBは
+`a86a0ffd44854f33a455d16db51588cb30e501327aed05ba00a83cf7934f0667`。
+実配布物の内部bootstrapからnative CASを作り、以後のfixture driverは既存CASを開くだけである。
+以前のSIGSTOPによる試験調整は使わない。専用UID987・実unit・元人工DEBで207 assertionが成功した。
+実root準備workerは従前の`65b1d101670af68843c66e4fb44db78eccb4cf5b88214f8df951b87313377e22`。
+
+VMでは未配置ELF・既存core/roots/開始記録/完了記録・native root実行・完了後の再実行の七場合を
+拒否した。初期化成功後もsocketは無効・停止のままである。fixture検証のためだけに明示有効化した。
+再起動後の履歴、bank lock/CAS lock/policyの欠損拒否と元inode復元が成功した。
+vm-durability-03では開始/完了記録とlockの内容/inodeの保持を追加で照合し、別途、記録した
+initializer/policy/worker hashを実配布入力へ照合した。記録hashは独立認可ではない。
+
+元のvm-bootstrap-02/result.jsonには旧名installed_root_changed=falseが残る。これは準備した
+世代を稼働rootへ切り替えていないという範囲であり、VMへDEBを導入していないという意味ではない。
+現行試験工具ではrunning_root_switchedへ改名した。このfield名変更は新たな実行試験ではない。
+
+初回component packageはbuild-essential不足でcompile前に停止した。依存を導入して再開した。
+最初のVMはKVM権限のため起動前に停止した。Distroboxの既存一般userで実行し直し、
+host device権限やnamespace制約を緩和していない。初回ログも保持する。
+最初の文書検査でADR必須節と生成API indexの更新漏れを検出し、文書/正規inventoryを補って
+再検査した。検査を無効化せず、traceability・構成・local link・licenseの検査が成功した。
+
+## 実行環境と残る条件
+
+外側は3 GiB/swap0/CPU1/pids128、VMは2 GiB/1 vCPU、重い処理は逐次実行した。
+全jobとVMは終了済み。VM disk/秘密鍵/library/DEBはGitへ入れない。
+私有labはnative-storage-bootstrap-01。公開repository/Releaseはまだ作成していない。
+
+今回の成果は内部storage配備境界であり、全installerや本番認可の完成ではない。
+独立供給/世代認可provider、導入先選択と保守環境の統合、容量予約/物理再検証/GC、
+全DEB効果、実boot切替/復旧、APT完全置換ISOと全言語翻訳は未完。
+既存ISO09/10はAPT比較基準のままで、独立設計レビュー・本番認定・実機認定は未承認である。

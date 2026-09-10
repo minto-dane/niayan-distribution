@@ -1,0 +1,10 @@
+{
+  "niaos-pkgcore-dbgsym_0.1.0+gita3640276f48d_amd64.deb": {
+    "sha256": "0bba56a1e7bfb5d02d64ab9053991471ea1440844ba4c2901e8531e403f3ec54",
+    "identical": true
+  },
+  "niaos-pkgcore_0.1.0+gita3640276f48d_amd64.deb": {
+    "sha256": "82c26c92b235a57a1b2aa8fddc506a914a24fcdff8d49e2997f9daebf45ee175",
+    "identical": true
+  }
+}

@@ -1,0 +1,2 @@
+qemu-system-x86_64: -accel kvm: Could not access KVM kernel module: Permission denied
+qemu-system-x86_64: -accel kvm: failed to initialize kvm: Permission denied

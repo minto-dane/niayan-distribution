@@ -1,0 +1,16 @@
+{
+  "format": 1,
+  "source_subject": "bae6db5e1f60a3624e8b4e838a729fee1670988a6a2c8e427f8022a049e8699e",
+  "service_inputs": 19,
+  "all_service_inputs_identical": true,
+  "compiled_native_and_test_source_files": 358,
+  "all_compiled_sources_identical": true,
+  "core_component_commit": "a3640276f48d88656b6d4b1af91b86adf416eb0c",
+  "final_source_subject": "d0386ba03efcdc61a7055f40488ccbe565e647190345e1509f9e8a9f3ff5443c",
+  "later_test_only_changes": [
+    "check_bootstrap_after_reboot checks durable intent/completion and lock identities; executed on fresh overlay of the powered-off accepted VM",
+    "rename installed_root_changed to running_root_switched in future test reports; earlier original reports retain their legacy field name"
+  ],
+  "production_inputs_changed_after_vm_acceptance": false,
+  "independent_bootstrap_record_input_comparison": true
+}

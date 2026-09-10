@@ -1,0 +1,114 @@
+{
+  "check_service_deployment.py": {
+    "sha256": "e99aa7ad1642f135ff01f57fb0af11a4eac9dc13a5c244095122ad61b5fea55c",
+    "mode": 420
+  },
+  "component.deb": {
+    "sha256": "82c26c92b235a57a1b2aa8fddc506a914a24fcdff8d49e2997f9daebf45ee175",
+    "mode": 420
+  },
+  "dependencies/libgnat-14_14.2.0-19_amd64.deb": {
+    "sha256": "1edd2b13324d41e70c25a0172c3c90e4a413aae3312ea0489116e2b573c57885",
+    "mode": 420
+  },
+  "runtime/driver": {
+    "sha256": "f46842ad0fd07f29f86e99abe3bdbbdd058d5f4e334e8510516bbc46be45ef5d",
+    "mode": 493
+  },
+  "runtime/fixtures/base.deb": {
+    "sha256": "5232f16949588621eb448b5279fb7980798b6e215da39e592465e7b7295bc63f",
+    "mode": 420
+  },
+  "runtime/fixtures/conflicting.deb": {
+    "sha256": "ee46fc545ce0166e307a522cd019a79dc6382a750d8178a7030b7aab44fc0dfa",
+    "mode": 420
+  },
+  "runtime/fixtures/manifest.json": {
+    "sha256": "cb18fab92f1fd1aa9553dd573c2a50ba5f5f19593c5b870df489165ce2a638e6",
+    "mode": 420
+  },
+  "runtime/fixtures/overlay.deb": {
+    "sha256": "b0ecd5748c3fad84146740449a32eddc4c4a5e5df6ceab7cce0016f80690a73f",
+    "mode": 420
+  },
+  "source/debian/changelog": {
+    "sha256": "1e938c114f4266f9058ff9764b7601062846f8a148fdaec531c19005eecc2829",
+    "mode": 420
+  },
+  "source/debian/control": {
+    "sha256": "72c938f7a282ef4b358971b0b09d4e515759b070a672cb60f5c05b5e615c97a6",
+    "mode": 420
+  },
+  "source/debian/copyright": {
+    "sha256": "d02b877c8e6ddaba077bb74845e145ccbc74e9a3be7c63560b6ac5baad14d03f",
+    "mode": 420
+  },
+  "source/debian/niaos-root-preparation.install": {
+    "sha256": "0d7b758d59041f0635e6dc626c80a39050c592c86cda2992af2799cd38c9b28a",
+    "mode": 420
+  },
+  "source/debian/niaos-root-preparation.service": {
+    "sha256": "2a42b2a281cd490b172c94acc78710df54232a988c441e1f96606f348be0816e",
+    "mode": 420
+  },
+  "source/debian/niaos-root-preparation.socket": {
+    "sha256": "f9d4b6daf88cc87ae7b81818858e1f9a562ffdc438a967cc21db89efd4c1ec70",
+    "mode": 420
+  },
+  "source/debian/niaos-root-preparation.sysusers": {
+    "sha256": "acf4e9ab0c6534bbd6022eff8b4e7a491b3dfc4f17ac0bf8e852084a54dc075c",
+    "mode": 420
+  },
+  "source/debian/rules": {
+    "sha256": "90beb78a2b20c77e2d562bc3c416a15c201a430c216753a66cadbb67f3b4ba9b",
+    "mode": 493
+  },
+  "source/debian/source/format": {
+    "sha256": "e8e18df40bcd69d6aa404282679186d9b8256ac63a5b4e80d7f081e8a0095a2e",
+    "mode": 420
+  },
+  "source/deployment/dev/null": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "mode": 420
+  },
+  "source/deployment/dev/random": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "mode": 420
+  },
+  "source/deployment/dev/urandom": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "mode": 420
+  },
+  "source/deployment/dev/zero": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "mode": 420
+  },
+  "source/deployment/root-preparation.json": {
+    "sha256": "c4f58ec9047a68c03d65753045a9aa0df5db8ddfad498c3c746dfd96b53aad4b",
+    "mode": 420
+  },
+  "source/deployment/var-lib-niaos-roots.mount": {
+    "sha256": "989caa9465e0f0c83d052a7db681502149af80d8b0ca1070e8f9c0bc700fbd68",
+    "mode": 420
+  },
+  "source/native/root_bank.py": {
+    "sha256": "75e785ec34d649f8986beede1e0f427397b836bd3501752d1fc00948df92e3ba",
+    "mode": 420
+  },
+  "source/native/storage_bootstrap.py": {
+    "sha256": "6afa0b76a3285e55e093814e6e27837be99ffe0966fd288adc3a5af60b37739b",
+    "mode": 420
+  },
+  "source/native/worker/Makefile": {
+    "sha256": "b940d5324337a78c8bab5386ee6d2c0a5b583923c8db87b8c0e3cc0e29c23fef",
+    "mode": 420
+  },
+  "source/native/worker/root_extract.c": {
+    "sha256": "ca24d925c5b564aa08e84cccfad11c83dc9b78508c39be830e18daeecafcbb3c",
+    "mode": 420
+  },
+  "source/source-inputs.json": {
+    "sha256": "dc2d991c6f0143bc4ea2f3335a9027423d199790c813dc27cdfa368a080e131a",
+    "mode": 420
+  }
+}

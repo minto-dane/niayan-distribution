@@ -1,0 +1,9 @@
+dpkg-buildpackage: info: source package niaos-pkgcore
+dpkg-buildpackage: info: source version 0.1.0+gita3640276f48d
+dpkg-buildpackage: info: source distribution unstable
+dpkg-buildpackage: info: source changed by NiaOS Developers <developers@niaos.invalid>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture amd64
+dpkg-checkbuilddeps: error: unmet build dependencies: build-essential:native
+dpkg-buildpackage: error: build dependencies/conflicts unsatisfied; aborting
+dpkg-buildpackage: hint: satisfy build dependencies with your package manager frontend

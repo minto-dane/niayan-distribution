@@ -38,22 +38,37 @@ DEB_BUILD_OPTIONS=parallel=1 dpkg-buildpackage -us -uc
 呼ぶ。unitは`dh_installsystemd --no-enable --no-start`で導入する。インストール時にCASやbankを
 初期化せず、socket/serviceも有効化・起動しない。設定変更を無条件に上書きしない。
 
-製品installerは、利用者の導入先と初期化意図を確認した後、次の順序を所有する必要がある。
+製品installerは、導入先を起動した保守環境で、初期化意図を確定し、他の管理処理を停止してから
+内部工具を一度だけ呼ぶ。この工具は現在稼働している名前空間の固定path専用であり、任意の
+`--root`やホスト上の別directoryを導入先として受け付けない。対象OSの通常利用開始前に行う。
 
-1. root管理の`/var/lib/niaos`の下へ上表の二つの専用directoryを用意する。
-   既存状態・symlink・予期しない所有を新規状態として採用しない。
-2. `nia-pkg`のnative SDKで空の`core/store`へ`MC_Store.Initialize`を実行する。
-   手作業で`store.lock`だけを作らない。このSDKを呼ぶ製品installer/controllerは未接続である。
-3. `var-lib-niaos-roots.mount`を開始する。unitは既存directoryを必須とする。
-4. rootで内部工具を一度だけ呼ぶ。
-   `python3 -I /usr/libexec/niaos/root_bank.py --config /etc/niaos/root-preparation.json --provision-bank`
-   既存の空保護mountだけを対象とし、CASは初期化しない。エラー時も初期化済み・部分状態が
-   残り得るため、削除や再実行で成功扱いにせず独立復旧へ渡す。
-5. 独立供給・世代認可policyと、採用workerの期待SHA-256をcoreへ配備した後に
-   `niaos-root-preparation.socket`を有効化する。サービスが報告するhashから自己承認しない。
+```sh
+python3 -I /usr/libexec/niaos/storage_bootstrap.py --initialize
+```
 
-これは内部配備契約であり、一般利用者向けの別パッケージ管理CLIではない。
-受入VMでは手順2を既存の人工fixture driverで実行する。本番認可としてそのfixtureを導入しない。
+事前に新しい`niaos-pkgcore`の内部`/usr/libexec/nia/pkg_store_bootstrap`を配置する。
+root準備service自体はFDを受ける別境界なのでpkgcoreはSuggestsとし、明示bootstrapが実ELFの存在・
+root所有と保護pathを必須検査する。存在しない・古い成果物の場合は拒否または未完のまま停止する。
+両成果物の同時配備と実dependencyの受入はinstallerの配布入力に記録する。
+
+1. 専用account、root所有のv2既定policy、実ELF、全unitのloaded/inactive状態を事前確認する。
+   親pathをroot所有・他者書込不可・symlinkなしで開く。既存core/bank/初期化記録を採用しない。
+2. root専用の`bootstrap.json`を排他的作成してfsyncする。競合する初期化はこの記録で止まる。
+   core/storeを専用UIDの0700、rootsをrootの0700で新設し、親directoryも同期する。
+3. 補助groupを外した`nia-pkg`で内部ELFの`initialize`を実行し、正規`MC_Store.Initialize`を呼ぶ。
+   続く`check`は正規`MC_Store.Open`で実予約と必須構造を再確認する。root実行・欠損修復は拒否する。
+4. 保護mountを開始し、既存の内部bank provisionerを呼ぶ。成功後だけroot専用
+   `bootstrap-complete.json`を排他的作成・fsyncし、初期intentのSHA-256へ束縛する。
+5. 完了記録も通常socketの有効化・供給認可・物理再検証・公開を意味しない。別途、独立した
+   供給/世代認可policyと期待worker SHA-256をcoreへ配備してからsocketを有効化する。
+
+エラー・停止・timeout後は初期化済みの部分状態が残り得る。自動rollback・再送・reset・記録削除は
+行わず、別の復旧判断へ渡す。最初の親directoryの作成だけで止まった場合もmodeが契約に一致しなければ
+拒否する。記録した実ELF hashは配備履歴であり、独立した信頼根や実行認可ではない。
+内部工具の応答はlocaleに依存しないversion付き機械形式とし、公開管理UI側が表示を翻訳する。
+
+これは内部配備契約であり、一般利用者向けの別パッケージ管理CLIではない。VM受入でもこの同じ
+初期化経路を実行し、その後だけ人工fixture driverで既存CASを開く。fixtureの認可は本番配備しない。
 設定v1の数値`client_uid`も引き続き読める。v2のaccount名は起動時に実UIDへ解決し、
 未存在・root・型不正・余分なkeyを受け付けない。accountを削除して同UIDを別用途へ再利用しない。
 

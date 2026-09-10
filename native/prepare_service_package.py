@@ -13,7 +13,7 @@ def prepare(destination):
     packaging = distribution / 'packaging/root-preparation'
     files = [(p, p.relative_to(packaging)) for p in sorted(packaging.rglob('*')) if not p.is_dir()]
     files += [(distribution / name, Path(name)) for name in
-              ('native/root_bank.py', 'native/worker/root_extract.c', 'native/worker/Makefile')]
+              ('native/root_bank.py', 'native/storage_bootstrap.py', 'native/worker/root_extract.c', 'native/worker/Makefile')]
     # Review all inputs before creating a fresh output. No upstream patching,
     # recursive workspace export, installed-state discovery or hidden download.
     checked = []

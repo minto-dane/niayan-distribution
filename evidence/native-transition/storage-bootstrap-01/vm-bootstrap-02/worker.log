@@ -1,0 +1,3 @@
+Linux niaos-builder 6.12.107+deb13-cloud-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.107-1 (2026-08-29) x86_64 GNU/Linux
+{"format": 1, "status": "storage-initialized", "service_activated": false}
+Created symlink '/etc/systemd/system/sockets.target.wants/niaos-root-preparation.socket' → '/usr/lib/systemd/system/niaos-root-preparation.socket'.

@@ -1,0 +1,96 @@
+{
+  "format": 1,
+  "result": "pass",
+  "cases": [
+    {
+      "case": "empty-is-not-initialized",
+      "exit": 2,
+      "result": "format=nia-store-bootstrap-1\nstatus=CORRUPT"
+    },
+    {
+      "case": "initialize",
+      "exit": 0,
+      "result": "format=nia-store-bootstrap-1\nstatus=OK"
+    },
+    {
+      "case": "duplicate-initialization",
+      "exit": 2,
+      "result": "format=nia-store-bootstrap-1\nstatus=CONFLICT"
+    },
+    {
+      "case": "check",
+      "exit": 0,
+      "result": "format=nia-store-bootstrap-1\nstatus=OK"
+    },
+    {
+      "case": "missing-store.lock",
+      "exit": 2,
+      "result": "format=nia-store-bootstrap-1\nstatus=CORRUPT"
+    },
+    {
+      "case": "no-reinitialize-missing-store.lock",
+      "exit": 2,
+      "result": "format=nia-store-bootstrap-1\nstatus=CONFLICT"
+    },
+    {
+      "case": "missing-objects",
+      "exit": 2,
+      "result": "format=nia-store-bootstrap-1\nstatus=CORRUPT"
+    },
+    {
+      "case": "no-reinitialize-missing-objects",
+      "exit": 2,
+      "result": "format=nia-store-bootstrap-1\nstatus=CONFLICT"
+    },
+    {
+      "case": "missing-incoming",
+      "exit": 2,
+      "result": "format=nia-store-bootstrap-1\nstatus=CORRUPT"
+    },
+    {
+      "case": "no-reinitialize-missing-incoming",
+      "exit": 2,
+      "result": "format=nia-store-bootstrap-1\nstatus=CONFLICT"
+    },
+    {
+      "case": "missing-pins",
+      "exit": 2,
+      "result": "format=nia-store-bootstrap-1\nstatus=CORRUPT"
+    },
+    {
+      "case": "no-reinitialize-missing-pins",
+      "exit": 2,
+      "result": "format=nia-store-bootstrap-1\nstatus=CONFLICT"
+    },
+    {
+      "case": "reservation-conflict",
+      "exit": 2,
+      "result": "format=nia-store-bootstrap-1\nstatus=CONFLICT"
+    },
+    {
+      "case": "reservation-released",
+      "exit": 0,
+      "result": "format=nia-store-bootstrap-1\nstatus=OK"
+    },
+    {
+      "case": "nonprivate-root",
+      "exit": 2,
+      "result": "format=nia-store-bootstrap-1\nstatus=DENIED"
+    },
+    {
+      "case": "symlink-root",
+      "exit": 2,
+      "result": "format=nia-store-bootstrap-1\nstatus=IO_ERROR"
+    },
+    {
+      "case": "missing-root",
+      "exit": 2,
+      "result": "format=nia-store-bootstrap-1\nstatus=IO_ERROR"
+    },
+    {
+      "case": "no-repair-operation",
+      "exit": 64,
+      "result": "format=nia-store-bootstrap-1\nstatus=INVALID_INPUT"
+    }
+  ]
+}

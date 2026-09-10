@@ -1,0 +1,7 @@
+{
+  "readback_exit": 0,
+  "qemu_exit": 0,
+  "ram_mib": 2048,
+  "vcpus": 1,
+  "base_read_only": true
+}
