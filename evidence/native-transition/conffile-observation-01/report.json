@@ -1,0 +1,31 @@
+{
+  "format": 1,
+  "source_subject": "0ba58e153141ae24583f7c8b2f7e2105fc07a82349c65134f2c4f3dc94c8e64b",
+  "production_qualified": false,
+  "accepted_log": "test-04.log",
+  "observation_assertions": 69,
+  "choice_assertions": 154,
+  "result": "pass",
+  "compile_input_count": 380,
+  "fixture_input_count": 22,
+  "kernel_limits": {
+    "memory_bytes": 3221225472,
+    "swap_bytes": 0,
+    "cpu_percent": 100,
+    "pids": 128
+  },
+  "prior_failure": "test-02.log: missing Byte operator visibility in added test; corrected before final forced compilation",
+  "scope": "durable retained observation readback and snapshot capture integration",
+  "not_repeated": [
+    "full suite",
+    "unchanged formal proofs",
+    "old chaos campaigns",
+    "VM"
+  ],
+  "remaining": [
+    "full attribute selection and root namespace/archive application",
+    "privileged complete observation and authenticated UI",
+    "full managed admission, generation retention/recovery and boot",
+    "remaining DEB effects, native ISO, translations and production tasks"
+  ]
+}

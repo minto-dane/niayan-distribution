@@ -1,0 +1,17 @@
+{
+  "source_package": "dpkg",
+  "version": "1.22.22",
+  "archive_sha256": "d5ea9f132deec8030b50ab2a02ade2b49f0c7a195805a302c8301156fe833a57",
+  "matches_retained_dsc": true,
+  "members_read": [
+    {
+      "path": "dpkg-1.22.22/src/main/configure.c",
+      "sha256": "7ef86e78a25b94aa7a20f0290d9abf98c7ecea8818b35a3b41f6743c33bef9ca"
+    },
+    {
+      "path": "dpkg-1.22.22/lib/dpkg/file.c",
+      "sha256": "3990ac2053058fe5d80048737c4bdaf00b20c99812f7fd857a852a94db42f25b"
+    }
+  ],
+  "scope": "read-only upstream ownership/mode behavior review; no upstream code copied or changed; not a new signature verification"
+}

@@ -1,0 +1,46 @@
+Running as unit: run-p740419-i740719.scope; invocation ID: 0b147e8b05ff4fd0b4b99c7eb0a60d6c
+limited-exec: {"scope": "run-p740419-i740719.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Compile
+   [Ada]          run_conffile_observation_tests.adb
+   [Ada]          run_conffile_choice_tests.adb
+   [C]            pkg_deb_stream.c
+   [C]            archive_observer.c
+   [C]            pkg_deb_decode.c
+   [C]            root_preparation.c
+   [C]            conffile_snapshot.c
+   [Ada]          mc_clock.adb
+   [Ada]          mc_posix.ads
+   [Ada]          mc_runtime.adb
+   [Ada]          mc_store.adb
+   [Ada]          mc_types.adb
+   [Ada]          pkg_conffile_observation.adb
+   [Ada]          pkg_conffile_snapshot.adb
+   [Ada]          pkg_conffile_transition.adb
+   [Ada]          pkg_deb_payload.adb
+   [Ada]          test_support.adb
+   [Ada]          mc_codec.adb
+   [Ada]          mc_fs.adb
+   [Ada]          mc_hex.adb
+   [Ada]          mc_sha256.adb
+   [Ada]          pkg_conffile_choice.adb
+   [Ada]          mc_kernel_read.adb
+   [Ada]          mc_dirents.adb
+   [Ada]          pkg_deb_container.adb
+   [Ada]          pkg_deb_data_stream.adb
+   [Ada]          pkg_tar_framing.adb
+   [Ada]          mc_paths.adb
+   [Ada]          mc_text.adb
+   [Ada]          pkg_deb_conffiles.adb
+   [Ada]          pkg_deb_control.adb
+Bind
+   [gprbind]      run_conffile_observation_tests.bexch
+   [Ada]          run_conffile_observation_tests.ali
+   [gprbind]      run_conffile_choice_tests.bexch
+   [Ada]          run_conffile_choice_tests.ali
+Link
+   [archive]      libtests.a
+   [index]        libtests.a
+   [link]         run_conffile_observation_tests.adb
+   [link]         run_conffile_choice_tests.adb
+PASS assertions= 53
+PASS assertions= 154

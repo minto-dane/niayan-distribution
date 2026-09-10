@@ -21,6 +21,7 @@ FS_IOC_GETFLAGS、可視xattrの名前/valueを保持する。可視ACLは元の
 取得未対応を勝手にzeroへ置換しない。btimeだけはkernelの明示的な有無を保持する。
 
 同じinodeの属性を内容hashの前後で比較し、rootからも再openして比較する。
+[検査付きreader](conffile-observation.ja.md)で保存metadataと内容を読戻し、Cが返した内容/サイズにも一致させる。
 内容は64 KiB単位で既存CAS Writerへ保存し、WriterのSHA-256検証を通す。
 版付きmetadataも保存した後、もう一度namespace/内容/属性を読み直す。
 成功時だけCurrentとmetadata hashを返す。空fileは実SHA-256を持ち、Missingは内容hashがzeroである。

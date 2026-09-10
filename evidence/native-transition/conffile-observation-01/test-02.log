@@ -1,0 +1,7 @@
+Running as unit: run-p740965-i741265.scope; invocation ID: 7856a29c053f4aafb96b12536df11f9b
+limited-exec: {"scope": "run-p740965-i741265.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Compile
+   [Ada]          run_conffile_observation_tests.adb
+run_conffile_observation_tests.adb:101:84: error: operator for type "Interfaces.Unsigned_8" is not directly visible
+run_conffile_observation_tests.adb:101:84: error: use clause would make operation legal
+gprbuild: *** compilation phase failed
