@@ -1,0 +1,3 @@
+Running as unit: run-p273894-i274194.scope; invocation ID: 247e67eb479d4a569f332b388fe4c33a
+limited-exec: {"scope": "run-p273894-i274194.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+/home/nia/devbox/niaos/nia-os-consent/assurance/evidence/engineering-et4nt8o9/report.json

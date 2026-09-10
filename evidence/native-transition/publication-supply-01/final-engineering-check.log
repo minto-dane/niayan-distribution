@@ -1,0 +1,17 @@
+Running as unit: run-p280013-i280313.scope; invocation ID: a6f05bbb269048ba99af52615e1fd0b0
+limited-exec: {"scope": "run-p280013-i280313.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+{
+  "format": 1,
+  "checks": "traceability-and-source-inventory",
+  "result": "pass",
+  "requirements": 120,
+  "decisions": 80,
+  "hazards": 106,
+  "fault_cases": 120,
+  "canonical_ada_files": 545,
+  "registered_ada_tests": 73,
+  "source_subject": "a260ae0b1dbe60ba7d88e9057b7edbb2bece78a74a9cc4a9162226d1b62f2a54",
+  "ada_executed": false,
+  "formal_proof": false,
+  "production_approval": false
+}

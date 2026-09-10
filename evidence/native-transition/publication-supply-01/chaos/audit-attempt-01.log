@@ -1,0 +1,7 @@
+Running as unit: run-p278574-i278874.scope; invocation ID: a6bf0d2ab20b4a3fba0bffc3f5762bae
+limited-exec: {"scope": "run-p278574-i278874.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Traceback (most recent call last):
+  File "/evidence/audit-chaos.py", line 67, in <module>
+    offset=196+struct.unpack_from('>I',plan,192)[0];assert plan[offset+168:offset+200]==sha(descriptor)
+                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

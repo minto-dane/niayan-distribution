@@ -1,0 +1,35 @@
+{
+  "result": "pass-for-private-publication-lab",
+  "source_subject": "a260ae0b1dbe60ba7d88e9057b7edbb2bece78a74a9cc4a9162226d1b62f2a54",
+  "completed_campaigns": [
+    "attempt-02",
+    "attempt-03"
+  ],
+  "seeds": [
+    20260910,
+    20260911
+  ],
+  "case_count": 134,
+  "counts": {
+    "io-error": 40,
+    "kill": 40,
+    "required-reference-loss": 16,
+    "structure-loss": 14,
+    "retained-corruption": 12,
+    "deadline-delay": 8,
+    "kill-then-loss": 4
+  },
+  "observed_false_successes": 0,
+  "recovery_ms": {
+    "p50": 2658.575106997887,
+    "p95": 2771.4390000001004,
+    "max": 3136.7984710013843
+  },
+  "scope": "actual admitted/accepted native publication state and WAL; synthetic stage effects and test authorities; no physical power loss or real root/boot",
+  "lab_capabilities": [
+    "SYS_PTRACE",
+    "DAC_READ_SEARCH"
+  ],
+  "native_runtime_hardening_changed": false,
+  "explicit_lab_restore_is_not_product_automatic_repair": true
+}

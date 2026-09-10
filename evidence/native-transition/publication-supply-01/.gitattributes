@@ -1,0 +1,4 @@
+# Hash-addressed checkpoint and state bytes are opaque evidence, not text.
+chaos/**/checkpoint/** binary -whitespace
+chaos/**/*.root-state binary -whitespace
+chaos/**/*.journal binary -whitespace

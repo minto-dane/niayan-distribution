@@ -1,0 +1,6 @@
+Package: empty-package
+Version: 1
+Architecture: all
+Maintainer: Fixture <fixture@example.invalid>
+Description: candidate fixture
+ 日本語の説明

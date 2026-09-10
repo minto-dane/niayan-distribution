@@ -1,0 +1,3 @@
+FAIL: open existing lab store without initializationCORRUPT
+
+raised TEST_SUPPORT.FAILURE : open existing lab store without initializationCORRUPT

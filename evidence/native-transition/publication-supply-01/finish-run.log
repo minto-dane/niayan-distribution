@@ -1,0 +1,9 @@
+Running as unit: run-p274909-i275209.scope; invocation ID: 0627c86412bb4e6d808532a5a38b14c0
+limited-exec: {"scope": "run-p274909-i275209.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+PASS 31 pkgcore executables and 18 applications identical; 31 ELF checks; exact source copies; seven unchanged mathematical input sets
+Starting publication attempt-01
+Traceback (most recent call last):
+  File "/home/nia/devbox/niaos/.work/native-publication-supply-02/finish.py", line 34, in <module>
+    assert result.returncode==0,name
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError: attempt-01

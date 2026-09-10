@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/workspace/pkgcore/tests/compare_current_catalog.py", line 175, in <module>
+    args=parser.parse_args();result=check(args.root,args.state,args.cas,args.bank,args.media,args.native)
+                                    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/pkgcore/tests/compare_current_catalog.py", line 79, in check
+    assert supply_map[160:224] == frame[56:120]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

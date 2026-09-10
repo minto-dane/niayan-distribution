@@ -1,0 +1,14 @@
+Starting publication attempt-02
+Passed publication attempt-02
+Starting publication attempt-03
+Passed publication attempt-03
+Traceback (most recent call last):
+  File "/home/nia/devbox/niaos/.work/native-publication-supply-02/finish.py", line 39, in <module>
+    subprocess.run(['python3',str(work/'run-container.py'),'python3','-B','/evidence/audit-chaos.py'],
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                   cwd=root,stdout=log,stderr=subprocess.STDOUT,check=True)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/subprocess.py", line 577, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['python3', '/home/nia/devbox/niaos/.work/native-publication-supply-02/run-container.py', 'python3', '-B', '/evidence/audit-chaos.py']' returned non-zero exit status 1.

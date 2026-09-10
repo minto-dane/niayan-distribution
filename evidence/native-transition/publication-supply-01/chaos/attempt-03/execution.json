@@ -1,0 +1,32 @@
+{
+  "source_subject": "a260ae0b1dbe60ba7d88e9057b7edbb2bece78a74a9cc4a9162226d1b62f2a54",
+  "image": "sha256:4ec0d3adaef0afc8ce1eccdb621d46911ea2ebc11ddaa9e86f15e4ce59776d4c",
+  "uid": 1000,
+  "network": "none",
+  "lab_capabilities": [
+    "SYS_PTRACE",
+    "DAC_READ_SEARCH"
+  ],
+  "kernel_limits": {
+    "memory_bytes": 3221225472,
+    "swap_bytes": 0,
+    "cpu_cores": 1,
+    "pids": 128
+  },
+  "command": [
+    "python3",
+    "/home/nia/devbox/niaos/.work/native-publication-supply-02/run-chaos-container.py",
+    "python3",
+    "-B",
+    "/evidence/chaos/campaign.py",
+    "--seed",
+    "20260911",
+    "--output",
+    "/evidence/chaos/attempt-03"
+  ],
+  "returncode": 0,
+  "sources": {
+    "chaos/campaign.py": "9af322e16448ee952909d677a216ad7abd7e61c48f452c8f27b462901541b9ba",
+    "run-chaos-container.py": "e45f62f50843cf1719b83187c7d8a274fc58645f0b8db8a22b0ddb5c6d8ed573"
+  }
+}

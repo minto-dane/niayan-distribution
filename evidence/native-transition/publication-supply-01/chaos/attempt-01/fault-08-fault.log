@@ -1,0 +1,3 @@
+FAIL: native and descriptor observation share accepted state checks
+
+raised TEST_SUPPORT.FAILURE : native and descriptor observation share accepted state checks

@@ -1,0 +1,14 @@
+{
+  "different_from_final_pkgcore": [
+    "README.md",
+    "runtime/pkg_file_engine.adb",
+    "runtime/pkg_file_engine.ads",
+    "runtime/pkg_generation_manifest.ads",
+    "runtime/pkg_generation_publisher.adb",
+    "runtime/pkg_supply_map.ads",
+    "tests/compare_current_catalog.py",
+    "tests/run_generation_publication_tests.adb",
+    "tests/run_supply_map_tests.adb"
+  ],
+  "scope": "diagnostic source only; later qualification is separate"
+}

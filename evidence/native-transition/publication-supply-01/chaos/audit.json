@@ -1,0 +1,28 @@
+{
+  "result": "pass",
+  "campaigns": [
+    {
+      "path": "attempt-02",
+      "seed": 20260910,
+      "case_count": 67,
+      "report_sha256": "68e4152bb4d6048c0356e654e8f6937b73846f7aefcdf13ff7035c7685caad61"
+    },
+    {
+      "path": "attempt-03",
+      "seed": 20260911,
+      "case_count": 67,
+      "report_sha256": "41ca3255e4f2f287048284aa5352493799cb7eaa237c3a4372ce44940f7dff77"
+    }
+  ],
+  "counts": {
+    "io-error": 40,
+    "kill": 40,
+    "required-reference-loss": 16,
+    "structure-loss": 14,
+    "retained-corruption": 12,
+    "deadline-delay": 8,
+    "kill-then-loss": 4
+  },
+  "case_count": 134,
+  "scope": "independent pinned plans, v4 manifest/policy/map/signature, observed root.state and WAL chains, actual injection traces and recorded recovery"
+}

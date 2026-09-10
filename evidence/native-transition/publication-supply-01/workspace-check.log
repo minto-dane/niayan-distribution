@@ -1,0 +1,57 @@
+Running as unit: run-p247768-i248068.scope; invocation ID: 7da7f80a812b43b78b2d06d8861b1494
+limited-exec: {"scope": "run-p247768-i248068.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+python3 assurance/ci/run-engineering-checks.py --mode build --include-host-observers
+/workspace/assurance/evidence/engineering-rywmvx8i/report.json
+sh capsulecore/ci/test-consent.sh
+test_activation_requires_user (test_consent.ConsentTests.test_activation_requires_user) ... ok
+test_active_grant (test_consent.ConsentTests.test_active_grant) ... ok
+test_allow_is_not_effect (test_consent.ConsentTests.test_allow_is_not_effect) ... ok
+test_cancelled_ui_no_grant (test_consent.ConsentTests.test_cancelled_ui_no_grant) ... ok
+test_clock_before_prompt (test_consent.ConsentTests.test_clock_before_prompt) ... ok
+test_confirm_revoke (test_consent.ConsentTests.test_confirm_revoke) ... ok
+test_exact_context_fields (test_consent.ConsentTests.test_exact_context_fields) ... ok
+test_exact_question_fields (test_consent.ConsentTests.test_exact_question_fields) ... ok
+test_expiry_not_revocation_confirmation (test_consent.ConsentTests.test_expiry_not_revocation_confirmation) ... ok
+test_finite_event_sequences (test_consent.ConsentTests.test_finite_event_sequences) ... ok
+test_invalid_reply_clock (test_consent.ConsentTests.test_invalid_reply_clock) ... ok
+test_lease_boundary (test_consent.ConsentTests.test_lease_boundary) ... ok
+test_lock_revokes_use (test_consent.ConsentTests.test_lock_revokes_use) ... ok
+test_no_revoke_replay (test_consent.ConsentTests.test_no_revoke_replay) ... ok
+test_no_user_asserted_confirmation (test_consent.ConsentTests.test_no_user_asserted_confirmation) ... ok
+test_portal_cannot_reenter_as_dialog (test_consent.ConsentTests.test_portal_cannot_reenter_as_dialog) ... ok
+test_portal_grant_requires_consent (test_consent.ConsentTests.test_portal_grant_requires_consent) ... ok
+test_portal_records_intent_before_user (test_consent.ConsentTests.test_portal_records_intent_before_user) ... ok
+test_portal_unknown_requires_recovery (test_consent.ConsentTests.test_portal_unknown_requires_recovery) ... ok
+test_resource_different (test_consent.ConsentTests.test_resource_different) ... ok
+test_restart_does_not_resurrect (test_consent.ConsentTests.test_restart_does_not_resurrect) ... ok
+test_revocation_requires_observation (test_consent.ConsentTests.test_revocation_requires_observation) ... ok
+test_stale_approval (test_consent.ConsentTests.test_stale_approval) ... ok
+test_unknown_effect (test_consent.ConsentTests.test_unknown_effect) ... ok
+test_all_crash_points_never_issue_before_anchor (test_consent.DurableOrderingModel.test_all_crash_points_never_issue_before_anchor) ... ok
+test_capacity_retains_closure_reserve (test_consent.DurableOrderingModel.test_capacity_retains_closure_reserve) ... ok
+test_extra_descriptors_are_rejected_and_closed (test_consent.KernelChannelTests.test_extra_descriptors_are_rejected_and_closed) ... ok
+test_oversized_record_is_observable (test_consent.KernelChannelTests.test_oversized_record_is_observable) ... ok
+test_sender_credentials (test_consent.KernelChannelTests.test_sender_credentials) ... ok
+test_frame (test_consent.RequestFrameTests.test_frame) ... ok
+test_length_and_reserved (test_consent.RequestFrameTests.test_length_and_reserved) ... ok
+test_no_boolean_grant_field (test_consent.RequestFrameTests.test_no_boolean_grant_field) ... ok
+
+----------------------------------------------------------------------
+Ran 32 tests in 0.003s
+
+OK
+test_allow_response_is_zero (test_native_access.NativeAccessTests.test_allow_response_is_zero) ... ok
+test_backend_lost_after_reply (test_native_access.NativeAccessTests.test_backend_lost_after_reply) ... ok
+test_cancel_response_not_success (test_native_access.NativeAccessTests.test_cancel_response_not_success) ... ok
+test_deny_response_not_success (test_native_access.NativeAccessTests.test_deny_response_not_success) ... ok
+test_invalid_enum (test_native_access.NativeAccessTests.test_invalid_enum) ... ok
+test_no_backend (test_native_access.NativeAccessTests.test_no_backend) ... ok
+test_owner_pinned (test_native_access.NativeAccessTests.test_owner_pinned) ... ok
+test_timeout_closes_known_request (test_native_access.NativeAccessTests.test_timeout_closes_known_request) ... ok
+test_unknown_result_field (test_native_access.NativeAccessTests.test_unknown_result_field) ... ok
+test_wrong_signature (test_native_access.NativeAccessTests.test_wrong_signature) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.155s
+
+OK

@@ -51,11 +51,12 @@ Check_Retentionはmapとすべての直接参照、供給記録の全参照の�
 
 Context.BeforeはこのSDKにとって呼出側の主張である。実root.stateから選ばれた基準であることを
 公開主体が同じwriter予約下で証明する必要がある。妥当なdescriptor原本の存在だけでは不十分である。
-この段階ではgeneration manifest、accepted pointer、pin、実行器を変更しない。
-次の接続ではmapをmanifest経由で認可対象の物理計画に束縛し、保持するtyped rootへ含める必要がある。
-新規admissionと、既に記録されたtransactionの復旧は区別しなければならない。途中で供給期限を過ぎた
-transactionを新規導入扱いすることや、古い記録だけで新規実行を許すことは避ける。
-実際のadmission記録・復旧規則、製品key/policy配備、rollbackに耐える時計/floorは未完である。
+NIAGEN04は保持policyを介してmapを認可対象の物理計画へ束縛する。
+Publishは実root.stateと完全journalを監査し、新規admissionと記録済みtransactionの復旧を区別する。
+詳細は[公開供給ポリシー](publication-supply.ja.md)。Recheck_Atは保持観測時刻で署名・原本を
+検査する内部APIであり、それ自身が記録済み状態を証明するわけではない。新規admissionでは
+Verify又はVerify_Intervalと独立した現在policy/時刻を使用しなければならない。
+製品key/policy配備、rollbackに耐える時計/floor、失効後回復、全量性能、typed GCは未完である。
 
 公開管理コマンドや第二の導入済みDBは追加しない。独立署名接続は開発用fixtureであり本番鍵ではない。
 標準checkでは実TUF/OpenPGP発行結果をnative mapまで渡し、Pythonで正規preimageを独立に組み立てて照合する。

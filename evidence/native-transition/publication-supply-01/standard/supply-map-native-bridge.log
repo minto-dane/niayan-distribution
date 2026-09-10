@@ -1,0 +1,5 @@
+SUPPLY_MAP 88a8729288f42edc4d00ff5ae01b264619927e1ae64e985b0cf4f29ad5dbd3f6
+SUPPLY_CATALOG 2432612c7f7d784942642dc205cf03d25680734d18045a4b2eaee09a14074bc4
+SUPPLY_CLOSURE 5b2c6d05ae7113c12c0d031331ca827dae608185e6ab026db325436dc270fb41
+PASS assertions= 40
+PASS real supply issuance -> native catalog/difference -> independently encoded map

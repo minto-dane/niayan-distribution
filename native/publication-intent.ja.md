@@ -46,7 +46,7 @@ batch recordはそのheaderの直後に置く。版番号を書き換えた降�
 検査記録が欠けていればstage/native読取/公開を拒否し、再作成によって欠落を隠さない。
 GCには検査記録の正確な基準descriptorとcatalog参照を辿る規則も必要である。GC自体の実装ではない。
 
-新しいPublishはNIAGEN03を必須とする。NIAGEN02のnative読取とNIAGEN01の構造読取は維持する。
+現在のPublishは[NIAGEN04と供給policy](publication-supply.ja.md)を必須とする。NIAGEN02/03のnative読取とNIAGEN01の構造読取は維持する。
 旧版の公開計画の再実行も新しいPublishでは拒否するため、旧版で途中のtransactionがある場合は
 保持した旧実装で復旧を終えてから移行する必要がある。本番の旧版移行・実起動受入は未完である。
 
