@@ -1,0 +1,58 @@
+{
+  "result": "pass",
+  "cases": [
+    {
+      "post_admission_denied": false,
+      "bank": {
+        "effects_applied": false,
+        "intent_sha256": "b2d74ac2988fd99af25cde170bca48293e24389595cced58f60d9a3923087625",
+        "published": false,
+        "state": "extracted",
+        "version": 1,
+        "worker_exit": 0,
+        "worker_sha256": "3bea15d8539df962e1b7e1d267f4fef7865c236bd6a8ad60743363625a2b3dd5",
+        "physical_revalidation": false
+      },
+      "intent": {
+        "archive": "a64e38fbe2b8128484ea1a8629f855b56ab9770cc35f38735a24fbad3b510914",
+        "deadline_ms": 608898,
+        "entries": 13,
+        "generation": "a8056f575cee147fe2b21beb134ed9725b277d2f24087e7d62632bc088f656ae",
+        "root_manifest": "b3851e79dd567d87b202db155d14800c903b220dee878968ee58f6d4964ade21",
+        "size": 13312,
+        "stage": "56565656565656565656565656565656",
+        "version": 1
+      },
+      "native_driver_exit": 0,
+      "actual_peer_and_reservation": true
+    },
+    {
+      "post_admission_denied": true,
+      "bank": {
+        "effects_applied": false,
+        "intent_sha256": "06564d37ebb529b8548331e794b900d5937abc6a6a97ccc07dbbc33ad150b191",
+        "published": false,
+        "state": "extracted",
+        "version": 1,
+        "worker_exit": 0,
+        "worker_sha256": "3bea15d8539df962e1b7e1d267f4fef7865c236bd6a8ad60743363625a2b3dd5",
+        "physical_revalidation": false
+      },
+      "intent": {
+        "archive": "a64e38fbe2b8128484ea1a8629f855b56ab9770cc35f38735a24fbad3b510914",
+        "deadline_ms": 676420,
+        "entries": 13,
+        "generation": "a8056f575cee147fe2b21beb134ed9725b277d2f24087e7d62632bc088f656ae",
+        "root_manifest": "b3851e79dd567d87b202db155d14800c903b220dee878968ee58f6d4964ade21",
+        "size": 13312,
+        "stage": "56565656565656565656565656565656",
+        "version": 1
+      },
+      "native_driver_exit": 0,
+      "actual_peer_and_reservation": true
+    }
+  ],
+  "site_policy": false,
+  "installed_root_changed": false,
+  "boot_tested": false
+}

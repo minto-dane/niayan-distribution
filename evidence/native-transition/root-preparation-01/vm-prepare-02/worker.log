@@ -1,0 +1,12 @@
+Linux niaos-builder 6.12.107+deb13-cloud-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.107-1 (2026-08-29) x86_64 GNU/Linux
+TARGET                      FSTYPE OPTIONS
+/var/lib/nia-root-bank-test ext4   rw,nosuid,nodev,noexec,relatime,discard,errors=remount-ro
+{"post_denied": false, "worker": {"exit": 1, "stderr": "{\"result\":\"failed\",\"reason\":\"verification\",\"entry\":6,\"detail\":3}\n", "stdout": "", "truncated": false, "version": 1}}
+Traceback (most recent call last):
+  File "/tmp/nia-root-extract/check_root_preparation.py", line 96, in <module>
+    main()
+    ~~~~^^
+  File "/tmp/nia-root-extract/check_root_preparation.py", line 68, in main
+    assert exit_code == 0, log_path
+           ^^^^^^^^^^^^^^
+AssertionError: /tmp/nia-root-extract/native-prepare.log

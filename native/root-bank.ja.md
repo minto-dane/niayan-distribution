@@ -36,12 +36,15 @@ SCM_RIGHTSには読取専用tar FDとO_RDWRの実CAS予約FDの二つを付け�
 これは予約の保持であり、予約前に行うべきsite認可を証明するものではない。
 信頼されたcallerは同じ予約内でNIAGEN05/NIAROOT1、catalog/closure、元DEB、論理所有権、
 供給とsite効果契約を検査し、その結果から依頼とtar FDを導出しなければならない。
-本番SDKのこのadapterと呼出し後の再検査は未接続である。
+本番SDKのadapterと呼出し後の再検査は[root-preparation.ja.md](root-preparation.ja.md)を参照。
+本番の認可providerとservice配置は引き続き必要である。
 
 stage directoryを新規作成してbankをfsyncし、intent.jsonを排他的に作成・fsyncしてから
 空rootを作りworkerを起動する。既存stageは上書きしない。workerには有限の期限と三つのFDを渡す。
 終了code、stdoutの全結果、stderrを照合し、intentのhash、実行fileのhash、終了codeを含む
-result.jsonを排他的に保存・fsyncする。成功状態はextractedまでで、publishedとeffects_appliedはfalse。
+result.jsonを排他的に保存・fsyncする。
+終了codeと各512 byteまでのstdout/stderrをworker.jsonへ保護して記録し、切詰めを明示する。
+診断の記録はterminal resultや実行認可ではない。成功状態はextractedまでで、publishedとeffects_appliedはfalse。
 worker自身も全入力と実inode/内容を読み戻してsyncfsする。
 
 ## 再起動・障害の意味

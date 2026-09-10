@@ -213,6 +213,12 @@ class Bank:
                 raise
             if len(stdout) > MAX_PACKET or len(stderr) > MAX_PACKET:
                 raise Rejected('worker-output')
+            # Protected, bounded diagnostics are not a terminal success record.
+            new_record(parent, 'worker.json', {
+                'version': 1, 'exit': child.returncode,
+                'stdout': stdout[:512].decode('utf-8', errors='replace'),
+                'stderr': stderr[:512].decode('utf-8', errors='replace'),
+                'truncated': len(stdout) > 512 or len(stderr) > 512})
             wanted = {'result': 'extracted', 'profile': 'linux-inode-v1', 'archive_sha256': request['archive'],
                       'entries': request['entries'], 'published': False}
             success = child.returncode == 0 and not stderr and json.loads(stdout, object_pairs_hook=unique) == wanted

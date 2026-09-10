@@ -1,0 +1,6 @@
+Linux niaos-builder 6.12.107+deb13-cloud-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.107-1 (2026-08-29) x86_64 GNU/Linux
+TARGET                      FSTYPE OPTIONS
+/var/lib/nia-root-bank-test ext4   rw,nosuid,nodev,noexec,relatime,discard,errors=remount-ro
+{"post_denied": false, "worker": {"exit": 0, "stderr": "", "stdout": "{\"result\":\"extracted\",\"profile\":\"linux-inode-v1\",\"archive_sha256\":\"a64e38fbe2b8128484ea1a8629f855b56ab9770cc35f38735a24fbad3b510914\",\"entries\":13,\"published\":false}\n", "truncated": false, "version": 1}}
+{"post_denied": true, "worker": {"exit": 0, "stderr": "", "stdout": "{\"result\":\"extracted\",\"profile\":\"linux-inode-v1\",\"archive_sha256\":\"a64e38fbe2b8128484ea1a8629f855b56ab9770cc35f38735a24fbad3b510914\",\"entries\":13,\"published\":false}\n", "truncated": false, "version": 1}}
+PASS native admission and retained archive through actual root preparation service

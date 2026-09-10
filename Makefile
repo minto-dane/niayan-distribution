@@ -36,3 +36,9 @@ native-worker-check: native-worker
 native-bank-check: native-worker
 	test -n "$(WORKER_TEST_BASE)"
 	python3 -B native/worker/check_root_bank.py --worker "$(CURDIR)/build/native-worker/root-extract" --base "$(WORKER_TEST_BASE)" --report "$(CURDIR)/build/native-worker/bank-check.json"
+
+# Requires a separately built native Ada fixture driver in a disposable VM.
+.PHONY: native-preparation-check
+native-preparation-check: native-worker
+	test -n "$(WORKER_TEST_BASE)" -a -n "$(NATIVE_DRIVER)" -a -n "$(NATIVE_LOADER)" -a -n "$(NATIVE_LIBRARIES)" -a -n "$(NATIVE_FIXTURES)"
+	python3 -B native/worker/check_root_preparation.py --worker "$(CURDIR)/build/native-worker/root-extract" --driver "$(NATIVE_DRIVER)" --loader "$(NATIVE_LOADER)" --libraries "$(NATIVE_LIBRARIES)" --fixtures "$(NATIVE_FIXTURES)" --base "$(WORKER_TEST_BASE)" --report "$(CURDIR)/build/native-worker/preparation-check.json"

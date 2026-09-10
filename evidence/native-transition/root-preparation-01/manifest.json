@@ -1,0 +1,253 @@
+{
+  "format": 1,
+  "files": {
+    "README.ja.md": {
+      "size": 3050,
+      "sha256": "1cd34dca69a6d1f828d94a561c0e2165da945887355b7470b8c3b64aee8aa33d"
+    },
+    "build-01.log": {
+      "size": 2963,
+      "sha256": "f6c2f3e2ba1366febf4a57cd80b237535afb7ed2e95196ba6eaf7f7478ad1595"
+    },
+    "build-02.log": {
+      "size": 662,
+      "sha256": "74428e08017a994519bb1e64cbe5d0ab31a27417d5abe08ef1975e8d77f01890"
+    },
+    "build-final.log": {
+      "size": 2963,
+      "sha256": "03d7fef39ac4f3929609aef8fd29e708e1fedac4760d35b3324bbe734f929ff8"
+    },
+    "dev-image.id": {
+      "size": 71,
+      "sha256": "316e74b25debd12c12df99feb7ff7d3d4db424086b43c7d0a0c84aa4f309c7c6"
+    },
+    "engineering-check.json": {
+      "size": 399,
+      "sha256": "a6100cf354c3205db94e1cc070221262bbbf07a8978b57ff80f54a78e22d7318"
+    },
+    "engineering-lint.json": {
+      "size": 187211,
+      "sha256": "dfabf164a46a419ce47b964ed85248d41711c785c4ff8a9a4a66b2b89a6055a6"
+    },
+    "executed-source-inputs.json": {
+      "size": 104083,
+      "sha256": "6b4f3d9105a80d4d560a114f9814bc92c01bf472af2d4cf3209cce642e7f6ba4"
+    },
+    "package-runtime.py": {
+      "size": 686,
+      "sha256": "eb719a9396e2abb6a7cbdfdac6e8cde5ba841a76df0ab9cc42384f91507acd11"
+    },
+    "rebind/assurance-contract.log": {
+      "size": 4077,
+      "sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6"
+    },
+    "rebind/capsulecore-contract.log": {
+      "size": 4077,
+      "sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6"
+    },
+    "rebind/configcore-contract.log": {
+      "size": 4077,
+      "sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6"
+    },
+    "rebind/controlcore-contract.log": {
+      "size": 4077,
+      "sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6"
+    },
+    "rebind/manager-check.log": {
+      "size": 129,
+      "sha256": "36dd9a8702a250c7a4aef1e2805c407dd2ea1daa428e81771f9d617793b4c8d3"
+    },
+    "rebind/manager-profile.log": {
+      "size": 129,
+      "sha256": "36dd9a8702a250c7a4aef1e2805c407dd2ea1daa428e81771f9d617793b4c8d3"
+    },
+    "rebind/native-resolver-check.log": {
+      "size": 124,
+      "sha256": "23467682c67fc0c09bbe6ec7f2fe29c73495fe125e64b41af812d05be11d1a1c"
+    },
+    "rebind/pkgcore-contract.log": {
+      "size": 4077,
+      "sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6"
+    },
+    "rebind/public-manager-fixtures.log": {
+      "size": 52,
+      "sha256": "f99aebf22898749530735b980b8160c6925927cf52d95e8677b9a1895ee7552b"
+    },
+    "rebind/public-shared-fixtures.log": {
+      "size": 97,
+      "sha256": "10e329e234a75adbab1231d3de34e1911080e0f9458db013e125f83173d44a4c"
+    },
+    "rebind/report.json": {
+      "size": 8501,
+      "sha256": "699915fedcfb685344f337aa6e4e501f472f160745e8e435f380dd9dc8e1aaf2"
+    },
+    "rebind/resolver-check.log": {
+      "size": 146,
+      "sha256": "ea654155ba9fde2f1e89c1e5866808d8d0bdaaeb171ae56d488af92a4da1b555"
+    },
+    "rebind/resolver-profile.log": {
+      "size": 146,
+      "sha256": "ea654155ba9fde2f1e89c1e5866808d8d0bdaaeb171ae56d488af92a4da1b555"
+    },
+    "rebind/resolvercore-contract.log": {
+      "size": 4077,
+      "sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6"
+    },
+    "rebind/shared-contract.log": {
+      "size": 252,
+      "sha256": "419af85b5e27ebc83b91ab7e59059d6c15328e6b127e3231d512b6a734fa4849"
+    },
+    "rebind/source-inventory.log": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "rebind/statecore-contract.log": {
+      "size": 4077,
+      "sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6"
+    },
+    "rebind/traceability.log": {
+      "size": 399,
+      "sha256": "53784ac626cee7b9acd36c6bcfb8251de4d915a1e8cdc2ca02e756e6f625f31b"
+    },
+    "rebind.log": {
+      "size": 360,
+      "sha256": "aa186fe25a9d38b0f994fb73ce6f20d8b343064e58cd4cfdc686bcf8adc05ad3"
+    },
+    "report.json": {
+      "size": 3657,
+      "sha256": "4e009759e89546affe7a33143aee151f7f02479a3051395e8943bd31df3d6e4d"
+    },
+    "root-refusal.log": {
+      "size": 304,
+      "sha256": "fbcf55d5ad8982b425e6fb5748d9014f14f565325a729c5aadabe6187683fc03"
+    },
+    "root-refusal.py": {
+      "size": 388,
+      "sha256": "e3a8fba3ce2364a979ccf61623f14e21904f52cf13993214ea8a7e2b0b09c739"
+    },
+    "run-container.py": {
+      "size": 1466,
+      "sha256": "652720f47e801e8ca796f7792821edada2a0ec5bbee6832d2e409318beb2a61d"
+    },
+    "runtime-02.log": {
+      "size": 263,
+      "sha256": "daa260bfedc988121641d723fcbc3f38cd73d8dbca579d6810b23eb3e5afaa5c"
+    },
+    "runtime-final.log": {
+      "size": 263,
+      "sha256": "4f09ec0c49c0f84b4e128291a58a03f080ed94777a8b8512d5a1e3b52a2892b9"
+    },
+    "runtime.log": {
+      "size": 263,
+      "sha256": "94c61d066bc9d3f03a4b9a3438edc17a3219e1e64144e426a55f7ab085fad38f"
+    },
+    "scp-wrapper": {
+      "size": 114,
+      "sha256": "cd54f482577916a7237c5cb2ade0e188f0f096310b27892a6d31c70512b6394b"
+    },
+    "ssh-tools.json": {
+      "size": 1709,
+      "sha256": "1c0697ca47476ed2f9676fff1b5ab2f5c5646e093acc12876e9aa4eab9bd9aed"
+    },
+    "ssh-wrapper": {
+      "size": 114,
+      "sha256": "5fd14d9ee1449de164814a42b4cc2ff6ed093b6fbb22e005a48e300cec9c5f09"
+    },
+    "standard.log": {
+      "size": 285,
+      "sha256": "7dacd9cf4eecb59cfac3488348eab55ee6904d0e9d0035f821e9d31a3499b75d"
+    },
+    "standard.py": {
+      "size": 321,
+      "sha256": "415e94adf4888356538cd58335786e4c135332efbc191cb2425735b4d33351c4"
+    },
+    "vm-01.log": {
+      "size": 618,
+      "sha256": "ca9f8d7ba8d0247fa9e80e6c7a86d78546fc005f65300d72863da5708c4e2745"
+    },
+    "vm-02/known_hosts": {
+      "size": 99,
+      "sha256": "9f6efb7fd91941bd67f467002bfe7e91dfaab03a4858976d39a378756ce5a550"
+    },
+    "vm-02.log": {
+      "size": 618,
+      "sha256": "769d24c8a8ed8d0b8b144db3a5244114b9467ffab1938e88d6bcfa3f5524a0af"
+    },
+    "vm-03.log": {
+      "size": 524,
+      "sha256": "893a450041c254826d98f1a753c849b8b9fce1a2cadbd0bb6d66207c93404bbf"
+    },
+    "vm-check.py": {
+      "size": 4069,
+      "sha256": "d7c1731e32f345a90e917818ad0c58e6233a2954bab931232d92167266db014b"
+    },
+    "vm-prepare-01/exit.json": {
+      "size": 162,
+      "sha256": "946333f37cc43ed30008126785d8f81f317b6352143251298e379f51b3a0868c"
+    },
+    "vm-prepare-01/native-prepare.log": {
+      "size": 1358,
+      "sha256": "a83d9fc6eb97c3a36f3790b6e6e8a2718eebbe99b8738042b2ce73e6aa2364b7"
+    },
+    "vm-prepare-01/qemu.log": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "vm-prepare-01/ssh-ready.log": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "vm-prepare-01/worker.log": {
+      "size": 612,
+      "sha256": "8270087409fd41eba9269c524a08689e20ce67fc522767c800ab0193fc64191a"
+    },
+    "vm-prepare-02/exit.json": {
+      "size": 162,
+      "sha256": "946333f37cc43ed30008126785d8f81f317b6352143251298e379f51b3a0868c"
+    },
+    "vm-prepare-02/native-prepare.log": {
+      "size": 1358,
+      "sha256": "a83d9fc6eb97c3a36f3790b6e6e8a2718eebbe99b8738042b2ce73e6aa2364b7"
+    },
+    "vm-prepare-02/qemu.log": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "vm-prepare-02/ssh-ready.log": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "vm-prepare-02/worker.log": {
+      "size": 770,
+      "sha256": "05c261e99b5349f85a3fcefa1ac47ed87694a50060b6af0a8d2eb41b798526ec"
+    },
+    "vm-prepare-03/exit.json": {
+      "size": 162,
+      "sha256": "a886d7f57d2f799c44d0f1caff29285696ae8101698feb484acc3c8cba895d83"
+    },
+    "vm-prepare-03/native-deny-post.log": {
+      "size": 1216,
+      "sha256": "2cf410642aa49f109c0d115a42a087ecc0ba3c5d09e6b83ca7f34704c4e2ef11"
+    },
+    "vm-prepare-03/native-prepare.log": {
+      "size": 1216,
+      "sha256": "2cf410642aa49f109c0d115a42a087ecc0ba3c5d09e6b83ca7f34704c4e2ef11"
+    },
+    "vm-prepare-03/qemu.log": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "vm-prepare-03/result.json": {
+      "size": 2046,
+      "sha256": "fe5b8020f6b345d2c85721c121bbf012bc76272e0f5101f88e913702d7134afc"
+    },
+    "vm-prepare-03/ssh-ready.log": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "vm-prepare-03/worker.log": {
+      "size": 916,
+      "sha256": "dee819e825dc3142f19f267f00da5eb6260a680283244e1098fcb927e812cf8f"
+    }
+  }
+}

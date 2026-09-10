@@ -1,0 +1,13 @@
+Running as unit: run-p450689-i450989.scope; invocation ID: 16e214ba72c54953992b73dd4915a731
+limited-exec: {"scope": "run-p450689-i450989.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Compile
+   [Ada]          run_generation_stage_tests.adb
+   [Ada]          root_archive_stage_test.adb
+Bind
+   [gprbind]      run_root_archive_tests.bexch
+   [Ada]          run_root_archive_tests.ali
+   [gprbind]      run_generation_stage_tests.bexch
+   [Ada]          run_generation_stage_tests.ali
+Link
+   [link]         run_root_archive_tests.adb
+   [link]         run_generation_stage_tests.adb
