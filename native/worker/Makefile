@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 CC ?= cc
 CPPFLAGS += -D_FORTIFY_SOURCE=3
 CFLAGS ?= -O2 -g

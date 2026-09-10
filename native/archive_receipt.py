@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Issue a native original-supply receipt after both existing authenticators.
 
 The caller supplies a protected, scoped signing provider and its independent

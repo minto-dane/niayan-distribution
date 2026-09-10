@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Reference lifecycle cases: retrigger, package waits and exact attempt replay."""
 import json
 from pathlib import Path

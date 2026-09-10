@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Shared authenticated supply intake using the upstream TUF client.
 
 The cache is trusted supply state, not an installed-package database. Bootstrap

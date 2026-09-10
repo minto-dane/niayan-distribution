@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: MIT */
+/* SPDX-License-Identifier: BSD-3-Clause */
 #define _GNU_SOURCE
 #include <archive.h>
 #include <archive_entry.h>

@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 # Not enabled by this source distribution; read-only, incomplete platform observation.
 [Unit]
 Description=Nia local host observations (not an execution permit)

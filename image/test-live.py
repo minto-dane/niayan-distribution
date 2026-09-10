@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Boot actual media with QEMU; optional outbound APT metadata acceptance."""
 import argparse
 import hashlib

@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Actual catalogs/CLI locale behavior and immutable operation/artifact values."""
 import concurrent.futures
 import gettext

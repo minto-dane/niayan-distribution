@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Executable source/policy tests and bounded Linux read-only probes, not Ada proof."""
 import copy, hashlib, json, os, sys, tempfile, unittest
 from pathlib import Path

@@ -1,0 +1,16 @@
+Running as unit: run-p570039-i570339.scope; invocation ID: 8a110219ec1b4aabade2b688ef178746
+limited-exec: {"scope": "run-p570039-i570339.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+python3 dev/check-licenses.py
+{
+  "format": 1,
+  "result": "pass",
+  "current_files_checked": 2385,
+  "historical_or_fixture_files_preserved": 1102,
+  "failures": [],
+  "scope": "project-authored current tree and canonical sibling notices",
+  "external_package_relicensing": false,
+  "publication_approval": false
+}
+python3 assurance/ci/run-engineering-checks.py --mode build --include-host-observers
+/workspace/assurance/evidence/engineering-u612e8i0/report.json
+make: *** [Makefile:22: check] Error 1

@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Independent, exact-artifact reproduction receipts; never bless a package name.
 
 Receipts report an observer's claim, not a proof that the rebuilder or source is

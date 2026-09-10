@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Stage distribution inputs; never edit component or upstream source trees."""
 import argparse
 import hashlib

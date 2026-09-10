@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Collect exact sources; record APT and historical HTTPS provenance separately."""
 import argparse
 import gzip

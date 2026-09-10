@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Complete signed-kernel sources without changing the base collection record."""
 import argparse
 import hashlib

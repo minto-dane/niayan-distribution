@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Export exact internal service sources into a new Debian source directory."""
 import argparse
 import hashlib

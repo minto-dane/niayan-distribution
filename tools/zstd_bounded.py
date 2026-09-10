@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Bounded single-frame libzstd bridge for unprivileged intake.
 
 Native libzstd is part of the tool's TCB, not a proven SPARK implementation.

@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 SHELL := /bin/sh
 .PHONY: image-check native-check tool-check hardening-check i18n-check i18n-release-check
 image-check: native-check hardening-check

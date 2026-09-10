@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Exercise real public artifact entry points with no available system writer."""
 from pathlib import Path
 import subprocess

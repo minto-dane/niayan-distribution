@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Bounded reference state for deferred DEB triggers, without handler execution.
 
 State bytes may be bound into a transaction's existing CAS/WAL. This module has

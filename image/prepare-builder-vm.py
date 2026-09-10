@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Verify and prepare a disposable VM; requires qemu-img and xorriso."""
 import argparse
 import hashlib

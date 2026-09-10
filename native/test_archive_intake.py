@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Both real TUF and OpenPGP signatures must authenticate original DEB intake."""
 import copy
 from datetime import datetime, timedelta, timezone

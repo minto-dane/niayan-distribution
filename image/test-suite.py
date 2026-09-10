@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Run the KDE image acceptance matrix sequentially inside a bounded builder."""
 import argparse
 import hashlib

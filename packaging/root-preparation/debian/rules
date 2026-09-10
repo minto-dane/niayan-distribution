@@ -1,5 +1,5 @@
 #!/usr/bin/make -f
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 export DEB_BUILD_MAINT_OPTIONS = hardening=+all reproducible=+all
 export DEB_CFLAGS_MAINT_APPEND = -ffile-prefix-map=$(CURDIR)=/usr/src/niaos/root-preparation -gno-record-gcc-switches
 include /usr/share/dpkg/buildflags.mk

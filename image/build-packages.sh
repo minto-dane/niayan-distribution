@@ -1,5 +1,5 @@
 #!/bin/sh
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 # Run unprivileged in the pinned builder, with the prepared directory at /build.
 set -eu
 [ "$(id -u)" -ne 0 ] || { echo 'Build packages as an ordinary user' >&2; exit 78; }

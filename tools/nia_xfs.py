@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """XFS product contract, closed evidence checks, and non-authorizing local inventory.
 
 No ioctl, mount, formatting, repair, helper execution, service change, or network.

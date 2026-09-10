@@ -1,0 +1,79 @@
+{
+  "result": "lexical-import-boundary-pass",
+  "files": 16,
+  "imports": [
+    {
+      "source": "resolver_admission.ads",
+      "unit": "mc_types"
+    },
+    {
+      "source": "resolver_admission.ads",
+      "unit": "resolver_model"
+    },
+    {
+      "source": "resolver_builder.ads",
+      "unit": "mc_types"
+    },
+    {
+      "source": "resolver_builder.ads",
+      "unit": "resolver_model"
+    },
+    {
+      "source": "resolver_cnf.ads",
+      "unit": "mc_types"
+    },
+    {
+      "source": "resolver_cnf.ads",
+      "unit": "resolver_model"
+    },
+    {
+      "source": "resolver_lrat.adb",
+      "unit": "resolver_proof"
+    },
+    {
+      "source": "resolver_lrat.ads",
+      "unit": "mc_types"
+    },
+    {
+      "source": "resolver_lrat.ads",
+      "unit": "resolver_cnf"
+    },
+    {
+      "source": "resolver_lrat.ads",
+      "unit": "resolver_proof"
+    },
+    {
+      "source": "resolver_model.ads",
+      "unit": "mc_types"
+    },
+    {
+      "source": "resolver_proof.ads",
+      "unit": "mc_types"
+    },
+    {
+      "source": "resolver_proof.ads",
+      "unit": "resolver_cnf"
+    },
+    {
+      "source": "resolver_verify.ads",
+      "unit": "mc_types"
+    },
+    {
+      "source": "resolver_verify.ads",
+      "unit": "resolver_model"
+    },
+    {
+      "source": "resolver_wire.adb",
+      "unit": "mc_codec"
+    },
+    {
+      "source": "resolver_wire.ads",
+      "unit": "mc_types"
+    },
+    {
+      "source": "resolver_wire.ads",
+      "unit": "resolver_model"
+    }
+  ],
+  "formal_proof": false
+}

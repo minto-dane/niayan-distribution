@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Stable public error codes and translatable messages, independent of errno text.
 
 Internal exception details remain available to SDK callers. Do not interpolate

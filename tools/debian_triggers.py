@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Native DEB trigger declarations and activation routing, without execution.
 
 The caller supplies independently authenticated package identities and the

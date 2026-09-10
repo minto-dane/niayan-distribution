@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Local epkg construction and emgr display, without installed-state authority.
 
 The native artifact carries whole DEBs and typed contract references. Display

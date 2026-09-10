@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Actual public CLI, system CA trust and fixed policy in a disposable container.
 
 Run only in native/Containerfile's private test image as root with network=none.

@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 # Read-only check; no autofsck policy override, no repairs, no trim, no shutdown.
 [Unit]
 Description=Nia XFS read-only metadata scrub for %f

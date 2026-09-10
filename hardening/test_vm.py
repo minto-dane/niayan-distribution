@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Exercise the baseline in a disposable Live VM, including real Japanese input.
 
 The ISO is read-only. Settings affect the guest RAM overlay only. This is runtime

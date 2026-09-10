@@ -1,0 +1,790 @@
+{
+  "write": true,
+  "changes": [
+    {
+      "path": "assurance/app/platformctl.adb",
+      "from_sha256": "54f8a8e09dcd4778ddd309d8eff6b0410830d05b6b7ed9a2dbf176518ab1ffb1",
+      "to_sha256": "ff9976fda2b2b85d185e55123cf39515d5f433f074fc45b5bd5ba9dafab0c170",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "assurance/runtime/mc_fault_auth.adb",
+      "from_sha256": "88fce0bbb7ae934d1fc1f52aebd0724f3729d7f90258a331f4b4ef2db4a6fd94",
+      "to_sha256": "d6ad1994840e0be3f5f83c2cd58af1e6e15d3eff88340265422fcb4b9a9ad6ce",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "assurance/runtime/mc_fault_auth.ads",
+      "from_sha256": "ab45134cf7e2755b69dd1baa9fd4cff73a5abd3832b2788f517a3b50e21d83f7",
+      "to_sha256": "1f39a74ebb96b3f18d4431d477380889c9ba261f66994d4036c390e2d77ea9b2",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "assurance/src/mc_accounting.adb",
+      "from_sha256": "c1c25dfe692e44362c265ff41deda24dfd8648feba0ad94c9db823871e3c797d",
+      "to_sha256": "ac50ee770c2a7feb384600db8bfe3a796473021175bf1c58880846f2ef73178b",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "assurance/src/mc_accounting.ads",
+      "from_sha256": "b291defe00d07a3c48daaae458b33ed31f21e1183f1f041762b7f10fd2d6e051",
+      "to_sha256": "525750f13c2fe645640045bdbccbada49800e78dd4006b63ab259a71587cc751",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "assurance/src/mc_attestation.adb",
+      "from_sha256": "16782519f3f00fb8f7dac4c051a6dcfbeeab9b7d62800fdcfc1eec182629862b",
+      "to_sha256": "5df64d0097739582d88ba2c588773e57b89740a096c7c86d84ba8e7e2883aaca",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "assurance/src/mc_attestation.ads",
+      "from_sha256": "b531a1a64174bd34defa48c7a963f5ad8e4adb785a6ea27e448b049585c8ab31",
+      "to_sha256": "d22860906bc70504f7a4fc4cd710c0ffd94c5a6f327a78b36bb09b96521e3882",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "assurance/src/mc_breakglass.adb",
+      "from_sha256": "b225535b081cd883d8954deb84b6e69733bca4d3867900353f3c0668eaf7fa5d",
+      "to_sha256": "259a87e8d4429e2cf255ed37cd1708c8fb2a168970e485a2ff63e7888207764a",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "assurance/src/mc_breakglass.ads",
+      "from_sha256": "224ab28f3f9d1d0a1c8f0d536e16e17bce0c185fe03a931e410728d2815a282a",
+      "to_sha256": "a551c5aa0c5c009411815ad1c56458b5bb6d0796bcecfa9384a54dee688a53c6",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "assurance/src/mc_commissioning.adb",
+      "from_sha256": "eaa0f8d77e8c0f38718fd8ed3a317c592972ee02fdf1aa0e0bb26dd4ad3ae936",
+      "to_sha256": "b985c34a7d249ea591df421136fba56c92d83b6e3d3bac1377a956dd77393fd5",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "assurance/src/mc_commissioning.ads",
+      "from_sha256": "3cf7c192cabde385d588e98613755c6cdea179d782fb7bde52d7b65159805332",
+      "to_sha256": "585720401180b6c3ee350adb3e889257b7efe809f0d4942507dbdaaa471b97e4",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "assurance/src/mc_diagnostic_bundle.adb",
+      "from_sha256": "3b8ecb0d7197420a135d13bca56d85eea8081e40cd736d884e6e53a3fbd590ab",
+      "to_sha256": "ae52ac7adf3a970c6adcfcdc3ccd29e847098485bd76b1a58290397ea1a5ee74",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "assurance/src/mc_diagnostic_bundle.ads",
+      "from_sha256": "3043930a771280b13046c2020390acafe2f62f2b335caddc0917945471e33f09",
+      "to_sha256": "664f5586f1cb4e63e2011b4f8617974b58999ea9664241582e9190d2340a1743",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "assurance/src/mc_fault_report.adb",
+      "from_sha256": "6eb0cfa6bcdd382e4c0e5f7d20cf345545449e5220c29493f052e7da5284c61c",
+      "to_sha256": "1967be7d39fffe9da63576934deeed52b74cc8110ad32348ed6001844e4e11d4",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "assurance/src/mc_fault_report.ads",
+      "from_sha256": "801ddf752b92ecb55fc638c5c711bc448922a0824f0aa412c6c54ecb913c5d5e",
+      "to_sha256": "4429626af5ca62eb872a83e06394d8307b4f2a1ebdee27de85ffd840150ea01d",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "assurance/src/mc_faults.adb",
+      "from_sha256": "2bb4cce922a800e23de292830d308c6fd7a0c970ea22f57bbe4c8fa948bb6a6b",
+      "to_sha256": "4d659a850f580d70a6930e67342dcc6771dc84821a871e73004ba9cfb1ddba40",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "assurance/src/mc_faults.ads",
+      "from_sha256": "287a49d397c868ad71dd84a7ecee28559ed29a5821554d57cabd1a50591fc4b1",
+      "to_sha256": "d78482ba8b3c0f9c5086f5079a1df9aef398fc45661e87a02e1b8b9fc1d22e76",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "assurance/src/mc_generation.adb",
+      "from_sha256": "6dcbb9a71640f77c605d6c4ddd11fd590886872f1d393c52b3a68e5802fdfbc3",
+      "to_sha256": "c053bd85007f0d295e75e924602e36299c266790ec9f1556023cbc5c0533bfc3",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "assurance/src/mc_generation.ads",
+      "from_sha256": "ec0bc20872c67ae86ed064f5047ece7b81cad772f3e60918fdc4d75d172729a6",
+      "to_sha256": "78f99b4e7ab72a5dc2965ded5821db317f63cda2504bed7bb34014c8cb808709",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "assurance/src/mc_incidents.adb",
+      "from_sha256": "a8ad7864c98d2db5f9a68179e51d9b79c25bead4937cab8ca267de3e169c3d36",
+      "to_sha256": "f9236fa69ef65f23929eff0bce5c508bf5c21e25e66cf4510811be14fa4cd833",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "assurance/src/mc_incidents.ads",
+      "from_sha256": "1df793c982b59650eddfd0b4078f8fa2853a322c2318b50e2d381d7f13d6e5cc",
+      "to_sha256": "26b62609213f60f614a62a29e1377e1a3afe17b50af895d44107e5104ed80da3",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "assurance/src/mc_maintenance.adb",
+      "from_sha256": "56ff8534859213ac93b57780fcc8f7eb1c297980e9cb9bc6717ce10710b6046e",
+      "to_sha256": "10e3ebc6d6ecc0b456aab28b38686efd87dc64635a00d4f325f594ee3f843049",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "assurance/src/mc_maintenance.ads",
+      "from_sha256": "efd9440d42b0a997a9b26727aa61baaab00d1ba1b1eabe10fe9ff1e78ee26408",
+      "to_sha256": "291510017d21f55a41647b8162cbd322cb2f2eff3b647a2220bfd7ad5bb6bf0a",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "assurance/src/mc_platform_profile.adb",
+      "from_sha256": "0ab187ac3a8cf706dc97efe5c6e030ba46461ba7aac52f09f660c02b0676d5d0",
+      "to_sha256": "8fce04711ad3f188612fe6acd3c18e81ad6aade67774ade32a62577e08090781",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "assurance/src/mc_platform_profile.ads",
+      "from_sha256": "d4e4a19c2874efb8efbb501c416cc45092be2428a9d8469e347e73a3f7430094",
+      "to_sha256": "6911318bd031bca5a31caa68216aaed151b4e729589a80d888db183b5a770495",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "assurance/src/mc_system_baseline.adb",
+      "from_sha256": "471c1ccc08b552cdbf2e6e319a2cac4f7db4d188c55b84185b3940f8a8be89d9",
+      "to_sha256": "972b77add245946c54ddd95ad9e4e1ce0deb89a152b7b1981216756591140a77",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "assurance/src/mc_system_baseline.ads",
+      "from_sha256": "90229e5bb01a6a985b6ca5395bc66a01ba3b85bf53bd35f06d08e7bda7af2845",
+      "to_sha256": "61ed8f1a18a9edfdc5cf46413ad0a42f662081e367188b2c42e070a28ae9c479",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "assurance/tests/run_platform_assurance_tests.adb",
+      "from_sha256": "aa4114d0f302d0e61614316ba52831fabb4e925b1752048293042c540f870359",
+      "to_sha256": "34da1b3ff49b9e32af5b759dad21e86e39fb1bb88c5740987972ba2601df4188",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "pkgcore/src/pkg_acceptance.adb",
+      "from_sha256": "9bb0b307008761ad55c1ca00d929e54efa872ca031bc0a5843cb2175af702697",
+      "to_sha256": "b2c91c3eca27fc7c1c57d809c4a3c0859fb0c1bff0fee9f44ae8347f9ad43ca4",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "pkgcore/src/pkg_acceptance.ads",
+      "from_sha256": "4e547d5ae345c9143e2c9fe0feeab9b0ed3b2be7c9281363a8d45cd1471042bf",
+      "to_sha256": "69cfc4c09795ce13fc8a341a9c1bc95ce0c7712455572766c30759de8b51bbd8",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "pkgcore/src/pkg_activation.adb",
+      "from_sha256": "c5ecef60f1c0f2f378cc554d62a6ceec76e8ed0d28f26f230107d69acf3a3fca",
+      "to_sha256": "a7943300d912e5d2905e9f94dedc52043585fe35188edada20b111505c4ef018",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "pkgcore/src/pkg_activation.ads",
+      "from_sha256": "efec8f8c60d990f7e39415edf0cb81b84bd16d8496335a80104a29bba79035ed",
+      "to_sha256": "b04e8a1ec35ed85f25c18f16e5eac36aa4209c887bef6266f786164f6fdc3a73",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "pkgcore/src/pkg_advisory.adb",
+      "from_sha256": "8f52748bf8c354f5240fbe579b2504517f648c766ac579fe3f4883b8f7535f7b",
+      "to_sha256": "8c10916f6ba50d8de707c467fd866dff3771a7b1275cea08524cb46816146411",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "pkgcore/src/pkg_advisory.ads",
+      "from_sha256": "8ed0b5e8c1d70234513a102e6de909e3ba3e67548cdcc0fa28160c9374c8b553",
+      "to_sha256": "56f52abd5e76dffc9bfe616da4981e50730d81b387d4df133f44bd8b4415a7ef",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "pkgcore/src/pkg_change_set.adb",
+      "from_sha256": "8a7859c69399100679eb7c5e131828c4ca28242936e78d5e07dd6ea20cc61caf",
+      "to_sha256": "44dd137fdf4e2a60dd9a0e701264258eeb1f008764c527ea7632a9e6611f8cf5",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "pkgcore/src/pkg_change_set.ads",
+      "from_sha256": "7a259adbb816559506721a37c681a632a2f965001744471430b06a09b5032c59",
+      "to_sha256": "daf716d0ae18735b10fb7884230db72ce1ff96c4bba3923fa3f89a07b9f8de1d",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "pkgcore/src/pkg_exposure_policy.adb",
+      "from_sha256": "24611ce9d45be802d8ba4154274e13e9fb9238f53a63fedd756a1ce6368c2ff1",
+      "to_sha256": "9a4b57e22b8c970fe0dc0bdc7af2c1ff9f1a50d39d8f82d4ffe6474d13635d9d",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "pkgcore/src/pkg_exposure_policy.ads",
+      "from_sha256": "04fc760c7af11f6ae03c94a047b26d2f86038f1688863104ff09853a2fac2a02",
+      "to_sha256": "15900a1bb1820aae9d31e669a6b4adc0ac5b3d0a55bc448d1a8a1300d4a42e9c",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "pkgcore/src/pkg_holds.adb",
+      "from_sha256": "294a1036212c9351827badaeff94120059aaa7e0d588c55886b1a9727f10e0ae",
+      "to_sha256": "617c676d9988e58a901aab6d1ceddcb166ca21c428044c43fdc0e000a4f3627e",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "pkgcore/src/pkg_holds.ads",
+      "from_sha256": "4abf4ce8640d709df5d083479d6360f388af4bb38fc69fc38a3273aab5351d3e",
+      "to_sha256": "024f5ada55cf13b59310227005d4703c23dbde558fc47535cb6b8f743c74dcce",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "pkgcore/src/pkg_incorporation.adb",
+      "from_sha256": "978edc51d474ffe686edddf9b9a4a17f21096c433ead583decc59917854bd71d",
+      "to_sha256": "b7aab936095381c7d37ff4dfe95771ece66702bec71358fdda3a212a0641231d",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "pkgcore/src/pkg_incorporation.ads",
+      "from_sha256": "6721193657493a6a246ed12f5e8a45ebca68028b39681e2571c5a73362bb585d",
+      "to_sha256": "03d17a5b5e41f8e9a44454701d82e5e374704f03572a6cb1a1d2043071112735",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "pkgcore/src/pkg_maintenance_bundle.adb",
+      "from_sha256": "ebe97ec3d142ad9c7fa3c2fc4376ecd8578e0882e722cedde9902e43cb0aedcc",
+      "to_sha256": "578b1738b811bc29916a5dfae45e429685bfdb9aec518692c4a47e1b09194c96",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "pkgcore/src/pkg_maintenance_bundle.ads",
+      "from_sha256": "4604b9252948866d12ace0a4e5f0da7053afc40fa3b6e67fd03ea798ec6e4bc6",
+      "to_sha256": "e7713b39d4113e67c0aeb71366e738560bddd85966849222176ef930614dc471",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "pkgcore/src/pkg_provenance.adb",
+      "from_sha256": "54fc59bb12fc16c2fe332b92a674346c088dc6302e9ab806135a9f854edbb7cc",
+      "to_sha256": "0588d8f53c91f0efa175f48a871f15a12bea95069c8b5ad310c7edfa387d598d",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "pkgcore/src/pkg_provenance.ads",
+      "from_sha256": "f58dbac0b34841bd8134a52d06ed576b1edeb80a1f1013c980e5ce7635ee4b85",
+      "to_sha256": "6cbc596747fdcf51c2307f0212572fe01000f3bfa19db623bf7f06a3559ae253",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "pkgcore/src/pkg_repository_trust.adb",
+      "from_sha256": "d8630c82375d8a320eed21bef4597ffdcdf7d26835670c99b9f6efb3899f16a3",
+      "to_sha256": "21cc3a72813e11f766a10bf268305491c5c2f4e8487ef5bf222315a419c9408a",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "pkgcore/src/pkg_repository_trust.ads",
+      "from_sha256": "ee0ee84a65b845cf169525af56f0833b8d42e322e9c3a44e4e8077a8e0f892d1",
+      "to_sha256": "ca5cd5a2cf1bd7fcada9c800897c921d86df24a413754e8da1bfb507bc7bb5e8",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "pkgcore/src/pkg_rollback_contract.adb",
+      "from_sha256": "d33f3e38731be47785ce5bdb5aa8db90992667027215902aed79e358224faaf9",
+      "to_sha256": "72a5365c66b2e775eefd07739fa0ef4419da5f21649787e3bf1e8004e28bba76",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "pkgcore/src/pkg_rollback_contract.ads",
+      "from_sha256": "9ca07f65e5b6971d829a9f79c73bde0e486d993aa0685d63cd188875382a5956",
+      "to_sha256": "1990832fe0fe75a9b1ad70034565e7a06592e5cd0d22c0618fa15f749c3c1fab",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "pkgcore/tests/run_enterprise_pkg_tests.adb",
+      "from_sha256": "4b25d46c384138a52a0c8367147f75047860a558d86df5ba6a9e0867e19a48e1",
+      "to_sha256": "9cabc8eb35976bf70bd7859e9af6acc66b5e008ebdc0f6485a606bed7455909a",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "statecore/src/state_authority.adb",
+      "from_sha256": "d14736a1a1c64be5f30d54d438aa3eaa90cafd186b75072f81ec19fb767e3568",
+      "to_sha256": "0c1a1470655138e7437891650e543bb86440f22dc0548ea2b1de0896ae7a6512",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "statecore/src/state_authority.ads",
+      "from_sha256": "6f162d78e08140a7bdaf2d8cbd50376a9bf6ab0904dbbd5fdb7467a19f355663",
+      "to_sha256": "be00361c436f7023c30467c8e1805eae77c55d9e18cae88dc92bc86372af85f1",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "statecore/src/state_boot_acceptance.adb",
+      "from_sha256": "7919a976cd17f613f8dbdbb3d2d7339a9ac9e0a9a4c426402fc06731626ecd59",
+      "to_sha256": "7c4b2a4a0efc2e69c822f4dd53e15bb2214250db4fd7dd212c0d798d8c904a29",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "statecore/src/state_boot_acceptance.ads",
+      "from_sha256": "24be61c15f0452ff8818f164ad1d11a775912096a7ca066f4a395c7252112d67",
+      "to_sha256": "e38cb3ef3b6727c60ad1262e46f7b95ffe408b938fcdbf36b3b699e63cea5e2a",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "statecore/src/state_capacity_guard.adb",
+      "from_sha256": "1aa7ff43956c16dba8d5ae81f3f2ee0f2215a0775c9dfde5f1f20d3684749f9b",
+      "to_sha256": "ed0fb842e66a7ba2da6949f7d8e6e6a33dd41761d517ad7959e56b0292c91490",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "statecore/src/state_capacity_guard.ads",
+      "from_sha256": "4d5347775fa8af037f49e8e4ee306a07498c2714aeeb43cfb877c5b158a8a2ae",
+      "to_sha256": "1a59f4e74afcc43581f4794849ab7b0bdf8146d0dbc8762e366dc49172c92e86",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "statecore/src/state_crash_evidence.adb",
+      "from_sha256": "e2ea6ea9d8a4ab69cb1497858ae1d1009d5a9b33e80bef3ae9110bbf66b530b8",
+      "to_sha256": "a17fe0043ea2c6ed6ef5de4645108492f8d8e1e2615866bab01b5c68d771547e",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "statecore/src/state_crash_evidence.ads",
+      "from_sha256": "eb5b94e0ea79c137446274457808a7225753f60518d91d4b7b93100a7a99c131",
+      "to_sha256": "fca3c3f6a84dab797704c4f7288f9ab1393a0bc248870d8b149f8209fcc5d595",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "statecore/src/state_degraded_mode.adb",
+      "from_sha256": "9e31f5544322bcab71f69b5fcff8479b93979cb2febe8367b6c99567f206510c",
+      "to_sha256": "da19dc1bcfbc60dd835f40330e58b6a4cc5bc6140af7bdb560ad2c0ccede82b4",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "statecore/src/state_degraded_mode.ads",
+      "from_sha256": "f1be28beacc2c30f88edefd067893fd0e023791fc295ffa0bf0484a77090b5b7",
+      "to_sha256": "3a77951dbb063d959f1c0519785d9f7b0a448764cbf5852b6035a92bff3f829b",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "statecore/src/state_fault_correlation.adb",
+      "from_sha256": "829da4fb75eacc37076fb81ab6e573f415f8339a0e3f22645caafc0d202e9a50",
+      "to_sha256": "3436de2e584ef6e06ca5e2f7ce230524d2580fa436563007d2cab4a0b1554e7e",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "statecore/src/state_fault_correlation.ads",
+      "from_sha256": "8f567cb95482acdca7b5c59574645900ab2d1c5fcdfcaf2430730fcfa34a9923",
+      "to_sha256": "f51c5aec6f9e65579241a9f2f4b9b8bd51cce855f74d3ee80a424f70f813fb19",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "statecore/src/state_fru_health.adb",
+      "from_sha256": "334077a6b5e8610c5c8bbc67b134a62287c7a756f1a1b55cbf2d75af9accaa1e",
+      "to_sha256": "e68b5f1ad1f879b959c2cf04c65ccd48f045a5f495165ba12ee0d9d840e9bdf4",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "statecore/src/state_fru_health.ads",
+      "from_sha256": "284820f76cfda795af416350db1083560b9defcda6cdc275ff224f7ec10633ff",
+      "to_sha256": "c40ca522995577adb1941f4519bfa715279f54a51d9387dc7f3a9718fcaed35c",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "statecore/src/state_inventory.adb",
+      "from_sha256": "c1f029bc8bfd432e782dca5ced3a0d62e995e100fed1e113006779b0d2265836",
+      "to_sha256": "f08cbd6e6a5950565bca5f1f6bfbef1e01e9e644300c721cf5739d55ec55ae6e",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "statecore/src/state_inventory.ads",
+      "from_sha256": "49b222b5beae909aeabedd6614f0c7b27f987a890dabf04657d69ce10461abbe",
+      "to_sha256": "eb598c56d0332485391c33a2470a94f1d1d2949663ac82cd322c5fbf4ca9ba23",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "statecore/src/state_kernel_health.adb",
+      "from_sha256": "ec148163858eff7b585c3b1052e83f6160db07d60cd28d9beec9c7ae9ab8c0be",
+      "to_sha256": "59777b4a6fe4754a7ed77c3c85724006f107e24eda8f29a78deef32981636c62",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "statecore/src/state_kernel_health.ads",
+      "from_sha256": "891afc0073bd50b1bd10300eb104a15b5b9a2bad4d073de03f917a91b296e5e4",
+      "to_sha256": "b99211f0c88460b1616eca09fba4420301d70a2782a6aeeb14f077a20922ddf3",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "statecore/src/state_kernel_maintenance.adb",
+      "from_sha256": "c2f55eb3da2eaa53f3c8f08a29a0361a31a590e4f51cb8c311809910f9c38564",
+      "to_sha256": "b1bc8b25c2ef24112574fc003c5d896e306f493d0c8dee8fb9f8f82867c7d35c",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "statecore/src/state_kernel_maintenance.ads",
+      "from_sha256": "2eef458264c1ee5f6498e4314345bc07eaee0ba7e643a77b59832a4086ba9383",
+      "to_sha256": "cfeefd6a6adf92ab13ea981d2a4815613c93626e99918a36aaaf67d9060594b1",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "statecore/src/state_network_integrity.adb",
+      "from_sha256": "812c2255a91491a910e63a57ac0a707cdb9a750c7cdd91203b5718387fd9b077",
+      "to_sha256": "d56b25f2792d8b9d7387f497abf76ee756e9874d4b0aba130a5b24b34d5ff886",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "statecore/src/state_network_integrity.ads",
+      "from_sha256": "9c3a9f5608643447b95959684718a84dbb9be5fd3e616c3e7fc8468164de67c6",
+      "to_sha256": "19934b2a415c400bc5432f7e315a0f105b4690b9d9166a78172fdc219031cf76",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "statecore/src/state_node_lifecycle.adb",
+      "from_sha256": "f4c464ec7d173c113e6da51f4e86827858bcb8c3eba5c87c3600d719e4316639",
+      "to_sha256": "c9668846abfc38426261a1e5c0375ef090999d1ec542b6f2ae24de98a3874831",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "statecore/src/state_node_lifecycle.ads",
+      "from_sha256": "04eacb85e580cfe4f3b4fba39d8934cbe5f593521841f2f9b45ef976d889625c",
+      "to_sha256": "7fd1a1bb506e37f53f7a4b02f4d0d60101a3a0392d7af7fa88197e4ad649323b",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "statecore/src/state_platform_health.adb",
+      "from_sha256": "725ba4a798fe3f98b279c04849da9f255da7e55544006483a03c014f260221c4",
+      "to_sha256": "527a3751f089bd35a19264ab45927afb7dd3025f4a549051f9cfa7301413f662",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "statecore/src/state_platform_health.ads",
+      "from_sha256": "1f45692f4840ee53291d8391597a3ecbac273efce2d5061c6247bf958e896c53",
+      "to_sha256": "a3d8497f7dd7ec834470a2dff709dd514f201537426b68bf30950636970717f0",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "statecore/src/state_power_integrity.adb",
+      "from_sha256": "502d2236c65753af4400df2db7f769a5b4cd94a939870eb6414319eda92b8fe7",
+      "to_sha256": "60b5816d2b7d505d8b9c90550a517001814767ad7f34680569dcb506651ead0a",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "statecore/src/state_power_integrity.ads",
+      "from_sha256": "9d117333ce71a4c774ed27c10a6f99c2d5f19c2547c3cdd0a90cdf9d88ca7ba1",
+      "to_sha256": "9ea3de9547cb76d4afe94e83eb131f8e0b020e097875f7a4e9887aee6a742f0c",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "statecore/src/state_ras.adb",
+      "from_sha256": "ba288f69586b629321aa504715d3c25229ab5cb039a312332ae59b152ab90e4f",
+      "to_sha256": "8ad485621772bc7397edfd706834e4fb65e43bcb88f79a6f741a68e91f785c7d",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "statecore/src/state_ras.ads",
+      "from_sha256": "88cb8282b234f655b5a63a9c89ace37c2c73c8fc50fe9cb6fcbba7f77a154c1b",
+      "to_sha256": "753af2e2741d97cb37fbda4dbcef9915cb7ad9fa64b2114e626fb2f11054b013",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "statecore/src/state_recovery_objective.adb",
+      "from_sha256": "76f048c3c32902c93ccea7dbcd4045402bf0f6236e71dc17e179415558b8c67d",
+      "to_sha256": "85a4f4a4266d582be04eed5297259eced97080518268c478811ed5ac50de6ec6",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "statecore/src/state_recovery_objective.ads",
+      "from_sha256": "ba7330f673da4f14a32b1efaa878a62b347720466b1a5434ca7716c9e5222c42",
+      "to_sha256": "d168ddf293bc67b6e681c8e0f2a1c5ef774aa0c6d1ac81c91a20f07190bb2ae1",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "statecore/src/state_resilience_controller.adb",
+      "from_sha256": "a6c027690df711ca9330076d79452dc0283644f45c5ed7108aa0a75da74c9aa9",
+      "to_sha256": "d58dc2b23d18d41a2ae640a2291dfd79afeb1d2a05e615c1f3f4b97746f0b80c",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "statecore/src/state_resilience_controller.ads",
+      "from_sha256": "a008ad118ae03b9a4337aea9a0becf16a9df0fc85ec4853f6232a313ae6d22d1",
+      "to_sha256": "005e0f369d5a3be24485d7ba3d714f35976127b6e22bc4f56aedc8386f2ffe6c",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "statecore/src/state_self_test.adb",
+      "from_sha256": "35aa53a59de7e9897c9e6f82237b4f80b89c661828e8949c2e7e2b9890bcf82f",
+      "to_sha256": "88a8c46d8fa42b3677a4bac3684220ce39d2d7121749d14a8d8ade85ac434972",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "statecore/src/state_self_test.ads",
+      "from_sha256": "1797770919e076a4b43fba340162bd96d2fed49322dd997905f034971c845f78",
+      "to_sha256": "5a308d01fea3f41cc55765e567680a086d6eb992b242d25501ee78cd90c58ff3",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "statecore/src/state_serviceability.adb",
+      "from_sha256": "4e8fd9d187cc7289a3e86d93eb043bbc866b3167f39731d33c68982a8b8d4867",
+      "to_sha256": "a4549cc94b4c260f012ad3a86e88699479d4d7e9e4bad70de7e8498f121ab2a7",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "statecore/src/state_serviceability.ads",
+      "from_sha256": "203483dccf2526e38a1a1ffa98da04d574831450b16d0a604f4e6014298e7f7e",
+      "to_sha256": "667a8bba097cf6a37274a3a96513e0f1127d824b05588c4d23392d5777163450",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "statecore/src/state_storage_integrity.adb",
+      "from_sha256": "f4e347501014aacabba6c04b506089763228592ad6cce9a8ee1eb18534f2ef84",
+      "to_sha256": "c292bf6ed99ffda5ee46907b1923403b57cdcd3a956f3bd794b021f1d271fbbe",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "statecore/src/state_storage_integrity.ads",
+      "from_sha256": "f6de94aa2ee066a88d31701826bddfa2e9e4900255121f1bedec7a94fd837293",
+      "to_sha256": "213be52364a99587b13c9671dd2a5191cad09a2a53fa53632a2bd9dd5c781592",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "statecore/src/state_time_integrity.adb",
+      "from_sha256": "90038f0629319fc63cd516d2a0cd41f0ad1ea091c36cff22f7ce73dbf70bdd84",
+      "to_sha256": "3b2df78998eb2f65cd8af185fcfa01c33462abe93ddb005e49575e98198095c7",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "statecore/src/state_time_integrity.ads",
+      "from_sha256": "6bd4a94d1df33454719b2ec811a1e3d7db0fd2d42ee12768c5d93dfbf2b2339a",
+      "to_sha256": "e8a794064a4d6b51ccfb2f71b63cb9d1989ed4c799231367a4a84e569eb77e9c",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "statecore/src/state_wlm.adb",
+      "from_sha256": "131542b84af6be42685016fd0a1dab34fe62598b52deb664262b08b0fc77f89a",
+      "to_sha256": "3c46a8115861fa37fe95ff2d65494cffa0aeccb174bafae63e2f716ab1001c8c",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "statecore/src/state_wlm.ads",
+      "from_sha256": "757c0090935558821a8c7f038f1d99af01ab42a88d86672daa84ae52f2bb64b5",
+      "to_sha256": "d56affe54194662c60ceca3364e79717d8781a4d1a4dbe0d6233ac1e1b695c2f",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "statecore/src/state_workload_safety.adb",
+      "from_sha256": "5eb345180e7344186db3fa829de1a7c06923db06775ae1d9754d8017b1f2a692",
+      "to_sha256": "46ee081230957b3685a74213b78be864c05ebc3842f33c4fa2c023cf96a48e87",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "statecore/src/state_workload_safety.ads",
+      "from_sha256": "239444e9cb9fdb662db363d36ece975fcc35a4cd2f219114d74a7891131bdc74",
+      "to_sha256": "0a6ef6a98f8d1a0883a32051cce6b4b371bbedceab65ea59db66c27d5f037e75",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    },
+    {
+      "path": "statecore/tests/run_ras_platform_tests.adb",
+      "from_sha256": "0c667de708decea700d6fe0af2cb6f772bd60acc155c01dda211e10dd1f82a6c",
+      "to_sha256": "5c788724c033dd70fa8ad58e0809cb0ab64a4c2136792a4af562427fe1dcc7fc",
+      "adr": "assurance/docs/engineering/adr/ADR-0088.ja.md",
+      "scope": "User-directed BSD-3-Clause notices; algorithms unchanged; canonical source and generated profiles refreshed",
+      "validation": "source-inspected; native-validation-recorded-separately; independent-review-pending"
+    }
+  ],
+  "production_approval": false
+}

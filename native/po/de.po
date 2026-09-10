@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 # German translations for the Nia management interface.
 # Copyright (C) 2026 NiaOS contributors.
 msgid ""

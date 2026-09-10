@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 # Source scope: statecore/app/hostctl.adb, statecore/runtime/state_host_probe.adb,
 # assurance/runtime/mc_kernel_read.adb and mc_clock.adb.
 # hostctl is a read-only observer, never a package mutation worker.

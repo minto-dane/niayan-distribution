@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Development-only real supply issuer -> exact native source map check."""
 import argparse
 import hashlib

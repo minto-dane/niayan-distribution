@@ -1,0 +1,6 @@
+Running as unit: run-p567922-i568222.scope; invocation ID: 0689ea0183b5440792e8c3fc6c55b578
+limited-exec: {"scope": "run-p567922-i568222.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+python3 assurance/ci/rebind-development.py --write --acknowledge-incompatible-change --public-test-only
+/home/nia/devbox/niaos/nia-os-consent/assurance/evidence/development-rebind-655nwedx/report.json
+python3 assurance/ci/sync-component-ci.py --write
+Component CI and all registered test runners match the canonical plan.

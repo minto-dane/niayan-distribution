@@ -1,5 +1,5 @@
 #!/bin/sh
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 # Only the dedicated disposable VM. This rewrites that VM's APT sources.
 set -eu
 test "$(id -u)" -eq 0

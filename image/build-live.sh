@@ -1,5 +1,5 @@
 #!/bin/sh
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 # Prepared /build only, inside the pinned container with private mount namespace.
 set -eu
 [ "$(id -u)" -eq 0 ] || { echo 'live-build requires root inside its builder' >&2; exit 78; }

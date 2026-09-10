@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Inventory an offline Debian root before designing its Nia-only replacement.
 
 Reads status and retained control files; never calls APT/dpkg, runs maintainer

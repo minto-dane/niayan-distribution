@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Fresh verification of retained real signed metadata, without remote access."""
 from contextlib import contextmanager
 from datetime import datetime, timedelta, timezone

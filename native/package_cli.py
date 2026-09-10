@@ -1,5 +1,5 @@
 #!/usr/bin/python3 -I
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Nia management command grammar. Requests are untrusted, never execution grants.
 
 Development entry points: local interim artifact construction/display work; the

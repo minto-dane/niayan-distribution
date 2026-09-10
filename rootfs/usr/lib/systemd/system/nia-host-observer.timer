@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 # No Install section: explicit qualification and activation are required.
 [Unit]
 Description=Nia host observation scheduling (manual enrollment)

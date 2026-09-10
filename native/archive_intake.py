@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Join shared TUF policy authentication to the original Debian archive chain.
 
 No installed database, writer, signing key, admission certificate or public CLI.

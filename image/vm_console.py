@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Bounded QEMU serial/QMP driver for the image acceptance tests."""
 import json
 import base64

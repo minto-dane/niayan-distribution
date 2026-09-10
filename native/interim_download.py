@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Public interim download action through the shared authenticated repository."""
 from __future__ import annotations
 

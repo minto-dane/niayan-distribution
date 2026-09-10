@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 # Instantiated per admitted filesystem; never auto-enabled by package import.
 [Unit]
 Description=Nia periodic XFS metadata check for %f

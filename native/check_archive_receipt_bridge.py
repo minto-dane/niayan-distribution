@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Development-only real TUF/OpenPGP -> scoped receipt -> native CAS check."""
 import argparse
 import hashlib

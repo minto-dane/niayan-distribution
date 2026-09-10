@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Internal privileged preparation service; never selects an installed root.
 
 Only a configured core UID may submit a previously admitted generation. The

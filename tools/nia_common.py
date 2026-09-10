@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Bounded offline build-tool primitives. Not part of the privileged SPARK core."""
 from __future__ import annotations
 import hashlib, json, os, stat, uuid

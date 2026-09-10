@@ -1,5 +1,5 @@
 #!/usr/bin/python3 -I
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Observe upload urgency and advisory fixes without installing or granting trust.
 
 Urgency is upload metadata, not vulnerability severity. Advisory bytes supplied

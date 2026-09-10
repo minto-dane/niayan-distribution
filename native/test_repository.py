@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Real TUF metadata signatures and cache lifecycle; no production signing keys."""
 import copy
 from datetime import datetime, timedelta, timezone

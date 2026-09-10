@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 # New-user default. im-config provides run_im; user changes take precedence.
 # KWin must launch Fcitx on Wayland to pass its input-method socket.
 case "$XDG_SESSION_TYPE:$XDG_CURRENT_DESKTOP" in

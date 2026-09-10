@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Trigger syntax, real DEB observation, and independently specified event cases."""
 import io
 import sys

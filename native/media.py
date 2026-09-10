@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Original DEB media inventory. No installed state, extraction or execution.
 
 The .toc is an unsigned, reproducible cache, never a supply trust anchor. Every

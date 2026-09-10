@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Actual native DEB/GPG test fixtures, no installation, no service operations."""
 import base64,copy,email.utils,gzip,hashlib,io,json,lzma,os,random,shutil,subprocess,sys,tarfile,tempfile,time,unittest
 from pathlib import Path

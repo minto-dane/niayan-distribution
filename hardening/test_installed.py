@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Install hardening in a fresh VM disk overlay and verify it after Secure Boot.
 
 Accepts only a regular qcow2 fixture from image/test-install.py. The original

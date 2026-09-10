@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Build/check standard PO/POT/MO catalogs using GNU gettext, not a PO parser.
 
 Run with --write after editing source or translations. The default checks all

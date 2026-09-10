@@ -1,5 +1,5 @@
 #!/bin/sh
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 # Destructive only inside a fresh, disposable builder container; never on host.
 set -eu
 [ -f /run/.containerenv ] || [ -f /.dockerenv ] || { echo 'Disposable container required' >&2; exit 78; }

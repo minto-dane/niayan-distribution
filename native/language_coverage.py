@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Report Debian target coverage; an English fallback is not a translation.
 
 The full-language release gate fails while any target has no complete catalog.

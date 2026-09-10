@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 # Provision only after exact native-tool and filesystem qualification.
 # No [Install]: importing this unit does not enable monitoring or repair.
 [Unit]

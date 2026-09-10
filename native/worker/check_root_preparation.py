@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Disposable VM integration: native stage admission, real broker and worker.
 
 The Ada driver uses exact artificial fixture authorization, never site policy.

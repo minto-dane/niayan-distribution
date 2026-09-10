@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Validate Nia recovery domains. No disk formatting, mounting or authorization."""
 from nia_common import Invalid, fields, relative
 

@@ -1,0 +1,464 @@
+{
+  "format": 1,
+  "mode": "build",
+  "created_utc": "2026-09-10T16:34:29.186211+00:00",
+  "production_approval": false,
+  "ada_execution": "not-run",
+  "formal_proof": "not-run",
+  "temporary_io_tree": "/tmp/mission-engineering-tests-pezc3jmb",
+  "checks": [
+    {
+      "name": "traceability",
+      "result": "pass",
+      "layer": "source"
+    },
+    {
+      "argv": [
+        "gprbuild",
+        "--version"
+      ],
+      "cwd": "/workspace",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 369,
+      "seconds": 0.012,
+      "log_sha256": "580b7d8d6b27ce742268f9fa3342c978e0240a050fb3ec9fb44ea3f063b5e8ca",
+      "name": "gprbuild-version",
+      "layer": "tool-identification"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "assurance/tests/engineering",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "cwd": "/workspace",
+      "result": "fail",
+      "returncode": 1,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 17683,
+      "seconds": 10.062,
+      "log_sha256": "bfa4ce7faacb0db9560f2a435fd290490c505fac92f1ebbc4aa6f8f950351918",
+      "name": "engineering-unittests",
+      "layer": "source-and-reference"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "assurance/ci/sync-component-ci.py"
+      ],
+      "cwd": "/workspace",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 71,
+      "seconds": 0.462,
+      "log_sha256": "e46a10320f07874e9bf758914c1cea6f1cde6ed4e70b81a989379528d1c3812f",
+      "name": "component-ci-generated",
+      "layer": "source"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "controlcore/tests/reference",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "cwd": "/workspace",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 4879,
+      "seconds": 0.094,
+      "log_sha256": "684919cdea099708dfe05c9804d9cebbe89e9b830de91292d8693a57454ee4b9",
+      "name": "manager-reference-tests",
+      "layer": "source-and-reference"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "configcore/tests",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "cwd": "/workspace",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 3229,
+      "seconds": 0.069,
+      "log_sha256": "5f930b1b51ce5c23c4ae0e8bf8301ba588b3a1112496d1140b2de01b3e8aefa9",
+      "name": "configuration-reference-tests",
+      "layer": "reference-and-limited-native-probe"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "resolvercore/tests",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "cwd": "/workspace",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 6707,
+      "seconds": 0.15,
+      "log_sha256": "c77e52898a1c47eabe23020b84e29ef038c4111573e5ee5ff6ff1d9f492f1300",
+      "name": "resolution-reference-tests",
+      "layer": "reference-and-untrusted-proposal-tool-tests"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "assurance/tests_py",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "cwd": "/workspace",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 5151,
+      "seconds": 2.74,
+      "log_sha256": "f807cbafc3a4f7c543a519d8763b4fdde41a2b689830fe50de94fdb050cc6a7f",
+      "name": "cohort-recovery-tests",
+      "layer": "actual-nonprivileged-cryptography-and-io"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "capsulecore/tests_py",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "cwd": "/workspace",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 8739,
+      "seconds": 0.532,
+      "log_sha256": "49ead8e93d34cdd8d9f0fe282c5eb0e819190d1365194521217459c8752d5e85",
+      "name": "capsule-policy-tree-tests",
+      "layer": "reference-and-actual-candidate-tree-io"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "ci/profile.py"
+      ],
+      "cwd": "/workspace/resolvercore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 146,
+      "seconds": 0.032,
+      "log_sha256": "779598d3fad82a0ed2dc0fa1f93b40c30b63d618de025f25183b9d4eded986c6",
+      "name": "resolver-source-profile",
+      "layer": "source"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "ci/check-neutral.py"
+      ],
+      "cwd": "/workspace/resolvercore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 1527,
+      "seconds": 0.027,
+      "log_sha256": "9924a0e4760c31c44af6d27b6aeb0921e82fce58ec82e233c686c8eaa7aad157",
+      "name": "resolver-neutral-boundary",
+      "layer": "source"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "ci/check-resolver.py"
+      ],
+      "cwd": "/workspace/pkgcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 124,
+      "seconds": 0.023,
+      "log_sha256": "80195ce208fe98e527685828890060b6923f5da48e35ef9e6a80cd028ee5a248",
+      "name": "native-resolver-lock",
+      "layer": "source"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "distribution/tests",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "cwd": "/workspace",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 18241,
+      "seconds": 2.713,
+      "log_sha256": "9ec5bc336503096e8c9304f7e8c12b99e3b8c2f973faa6bbe12eda8706d5d188",
+      "name": "distribution-tool-tests",
+      "layer": "actual-build-tool-tests"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "assurance/ci/nia-product-audit.py"
+      ],
+      "cwd": "/workspace",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 1259,
+      "seconds": 0.177,
+      "log_sha256": "1193c33273032c048f5da6af955eb7177cf82aabf1b0c6cb03ca49da7bd7b5ba",
+      "name": "nia-product-audit",
+      "layer": "source-product-coherence"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "assurance/ci/unified-audit.py"
+      ],
+      "cwd": "/workspace",
+      "result": "fail",
+      "returncode": 1,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 856,
+      "seconds": 0.191,
+      "log_sha256": "1c4dcb4bfef91976fada89550c4e01b1c4c087a54be77970be927b78124f2f64",
+      "name": "unified-architecture-audit",
+      "layer": "source"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "assurance/ci/engineering.py",
+        "lint"
+      ],
+      "cwd": "/workspace",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 188101,
+      "seconds": 0.366,
+      "log_sha256": "a2e48e1ec1171546d307f346a9d9629581e59d6f98bfa2a8179d394bc23032af",
+      "name": "syntax-and-doc-links",
+      "layer": "source"
+    },
+    {
+      "argv": [
+        "/bin/sh",
+        "ci/check-contract.sh"
+      ],
+      "cwd": "/workspace/assurance",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 4077,
+      "seconds": 0.014,
+      "log_sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6",
+      "name": "assurance-contract",
+      "layer": "source"
+    },
+    {
+      "argv": [
+        "/bin/sh",
+        "ci/check-contract.sh"
+      ],
+      "cwd": "/workspace/pkgcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 4077,
+      "seconds": 0.013,
+      "log_sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6",
+      "name": "pkgcore-contract",
+      "layer": "source"
+    },
+    {
+      "argv": [
+        "/bin/sh",
+        "ci/check-contract.sh"
+      ],
+      "cwd": "/workspace/statecore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 4077,
+      "seconds": 0.015,
+      "log_sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6",
+      "name": "statecore-contract",
+      "layer": "source"
+    },
+    {
+      "argv": [
+        "/bin/sh",
+        "ci/check-contract.sh"
+      ],
+      "cwd": "/workspace/controlcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 4077,
+      "seconds": 0.013,
+      "log_sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6",
+      "name": "controlcore-contract",
+      "layer": "source"
+    },
+    {
+      "argv": [
+        "/bin/sh",
+        "ci/check-contract.sh"
+      ],
+      "cwd": "/workspace/configcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 4077,
+      "seconds": 0.013,
+      "log_sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6",
+      "name": "configcore-contract",
+      "layer": "source"
+    },
+    {
+      "argv": [
+        "/bin/sh",
+        "ci/check-contract.sh"
+      ],
+      "cwd": "/workspace/resolvercore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 4077,
+      "seconds": 0.03,
+      "log_sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6",
+      "name": "resolvercore-contract",
+      "layer": "source"
+    },
+    {
+      "argv": [
+        "/bin/sh",
+        "ci/check-contract.sh"
+      ],
+      "cwd": "/workspace/capsulecore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 4077,
+      "seconds": 0.015,
+      "log_sha256": "dffdd38a2ccdecf862f520d15641f99d953272091cd5a46733c8456084d54ba6",
+      "name": "capsulecore-contract",
+      "layer": "source"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "ci/manager-profile.py"
+      ],
+      "cwd": "/workspace/controlcore",
+      "result": "pass",
+      "returncode": 0,
+      "leader_reaped": true,
+      "external_effects_checked": false,
+      "log_bytes": 129,
+      "seconds": 0.033,
+      "log_sha256": "9d5193617d810af0dcbdc5caac4fcf87ff0c22d0acade53e376265b2ba5ac3a2",
+      "name": "manager-implementation-profile",
+      "layer": "source"
+    }
+  ],
+  "environment": {
+    "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+    "kernel": "6.12.107+deb13-amd64",
+    "architecture": "x86_64",
+    "gprbuild": "/usr/bin/gprbuild",
+    "gnatprove": null,
+    "native_fixture_tools": {
+      "gpg": "/usr/bin/gpg",
+      "gpgv": "/usr/bin/gpgv",
+      "gpg-agent": "/usr/bin/gpg-agent",
+      "gpgconf": "/usr/bin/gpgconf",
+      "dpkg-deb": "/usr/bin/dpkg-deb"
+    }
+  },
+  "source_subject_before": "e8835db7da6440f4ce5a86cc72cc00215860c727fac76fb5bbaabd3c576e9c8a",
+  "result": "fail",
+  "error": "source checks failed; build/proof not attempted",
+  "temporary_io_tree_removed": true,
+  "ended_utc": "2026-09-10T16:34:47.510304+00:00"
+}

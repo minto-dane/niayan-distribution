@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Small packaging regressions; the boot and install tests use real VMs."""
 import importlib.util
 import hashlib

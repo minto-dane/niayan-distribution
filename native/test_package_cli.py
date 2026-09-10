@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Public command semantics, invalid combinations, and real entry-point behavior."""
 import contextlib
 import io

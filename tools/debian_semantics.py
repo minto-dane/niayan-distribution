@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Native DEB semantics for offline comparison. Never delegates trust to libsolv.
 
 Single amd64/all binary input profile. Explicit foreign-architecture requests are

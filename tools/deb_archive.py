@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Read a bounded DEB without installing, executing, or extracting to the host.
 
 Observations are content-bound, not signed execution grants. This is an offline

@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Build a content-bound CANDIDATE catalog, never a running host's package DB.
 
 The CLI supplies freshly re-inspected, archive-authenticated observations. This

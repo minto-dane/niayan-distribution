@@ -1,5 +1,5 @@
 #!/bin/sh
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 # Run inside the bounded tool container; SSH listens on host loopback only.
 set -eu
 cd /vm

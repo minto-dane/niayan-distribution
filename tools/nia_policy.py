@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Product policy and explicit implementation/readiness boundaries."""
 from __future__ import annotations
 from nia_common import Invalid,fields,canonical

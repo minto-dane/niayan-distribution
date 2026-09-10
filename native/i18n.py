@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Per-invocation gettext presentation; never changes parser or process locale.
 
 Only bundled catalogs are loaded. Language is a display preference, never part

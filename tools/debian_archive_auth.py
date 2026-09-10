@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Authenticate an OFFLINE Debian snapshot without APT or host package writes.
 
 Trust anchor policy is supplied independently, not taken from the mirror. This

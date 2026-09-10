@@ -1,5 +1,5 @@
 #!/usr/bin/python3 -I
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Deterministic, bounded construction and inspection of native interim packages.
 
 This is an unprivileged artifact codec, not an installed-package database or

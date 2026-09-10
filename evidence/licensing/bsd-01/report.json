@@ -1,0 +1,57 @@
+{
+  "format": 1,
+  "result": "pass-for-licensing-transition-and-native-validation",
+  "source_subject": "4267f3a6f8668bcfb1283c270fbeaa04b9e97d81bb2095b67bdc9aec32ed4643",
+  "standard_source_subject": "e8835db7da6440f4ce5a86cc72cc00215860c727fac76fb5bbaabd3c576e9c8a",
+  "final_source_delta": [
+    {
+      "path": "distribution/packaging/root-preparation/debian/copyright",
+      "build_sha256": "ae6f3e65aaaf2f45619ff602aa7593732e0a875cbc2300525b53d58ea5f98d3d",
+      "final_sha256": "d02b877c8e6ddaba077bb74845e145ccbc74e9a3be7c63560b6ac5baad14d03f"
+    }
+  ],
+  "delta_scope": "After standard validation, package copyright also retains the existing Mission Core attribution. No compiled/test code changed. Final package sources and VM acceptance include that notice.",
+  "mechanical_spdx_files": 895,
+  "standard_checks": 124,
+  "registered_ada_mains": 75,
+  "python_discovered": 597,
+  "python_skipped": 11,
+  "new_formal_proof": false,
+  "historical_evidence_rewritten": false,
+  "third_party_relicensed": false,
+  "vm_result": "pass; installed service, 207 native assertions, reboot, three independent missing-state cases and restoration",
+  "package_sha256": "538dda41e2357d74d9706626f9dc6ec721e82846fd54ec348a542bf8a62f54b9",
+  "dbgsym_sha256": "06edbca453b1f09bbfeefc143bf6b54f6d2948e5dde9177a93aa9388bb0a46c1",
+  "worker_sha256": "65b1d101670af68843c66e4fb44db78eccb4cf5b88214f8df951b87313377e22",
+  "package_source_inputs_equal": 18,
+  "native_driver_sha256": "d97c25c44c076980c71ab211b6b890e0c37254000b582521b68f7d2b62356051",
+  "driver_note": "Recompiled from a new source export; bytes identical to prior accepted root-preparation driver. Shared profile changes do not imply every binary changes.",
+  "sdk_image": "sha256:4ec0d3adaef0afc8ce1eccdb621d46911ea2ebc11ddaa9e86f15e4ce59776d4c",
+  "vm_tool_image": "sha256:7f92f64938b87b862dd962a93b558fb0caea13493745c684fbddfc190a723617",
+  "limits": {
+    "outer_ram_gib": 3,
+    "swap": 0,
+    "cpu": 1,
+    "pids": 128,
+    "vm_ram_mib": 2048,
+    "vm_vcpus": 1
+  },
+  "github_owner_authorized": "minto-dane",
+  "github_auth_login_verified": true,
+  "remote_created": false,
+  "release_published": false,
+  "production_qualified": false,
+  "goal_complete": false,
+  "handoff_document_delta": [
+    {
+      "path": "AGENTS.md",
+      "build_sha256": "b0ccfca8b9919ce1bc3aa15d60ebb50b85cbba00dc0d8a9555719fa3fc7842f5",
+      "final_sha256": "bea91920d749dfa51caadd7ded43d1a256211f13483692fee806767fc554155b"
+    },
+    {
+      "path": "STATUS.ja.md",
+      "build_sha256": "78c834af458770aef728a01f0370040b2571e7415c5174400b1ab726713def4b",
+      "final_sha256": "01690aeb3f3dd6fe99328892ee0b9234c798f1b6e069137113353e4504c5a984"
+    }
+  ]
+}

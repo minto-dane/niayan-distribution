@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Authenticate an interim artifact and its exact references in one supply session.
 
 Authentication of contract bytes is deliberately separate from interpreting

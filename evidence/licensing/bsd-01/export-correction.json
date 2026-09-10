@@ -1,0 +1,11 @@
+{
+  "cause": "referenced evidence documentation omitted from private export; no product source defect",
+  "copied_exact_documents": [
+    "distribution/evidence/debian13/accepted-09/README.ja.md",
+    "distribution/evidence/debian13/accepted-09/source-collection/README.ja.md",
+    "distribution/evidence/hardening/desktop-01/README.ja.md",
+    "distribution/evidence/native-transition/final-set-01/README.ja.md",
+    "distribution/evidence/native-transition/generation-image-01/README.ja.md",
+    "distribution/evidence/native-transition/selected-catalog-01/README.ja.md"
+  ]
+}

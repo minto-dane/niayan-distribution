@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Read effective Linux mitigations or first-party ELF properties; never apply settings."""
 from __future__ import annotations
 
@@ -29,7 +29,7 @@ def load_policy(path):
 
 
 def render(policy):
-    return ('# SPDX-License-Identifier: MIT\n'
+    return ('# SPDX-License-Identifier: BSD-3-Clause\n'
             '# Generated from hardening/baseline.json; see hardening/README.ja.md.\n'
             '# Administrator overrides belong in /etc/sysctl.d/90-niaos-local.conf.\n'
             + ''.join(f'{name} = {row["value"]}\n' for name, row in policy['sysctl'].items()))

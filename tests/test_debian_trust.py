@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Real signatures and original DEBs for explicitly pinned Debian 13 supply."""
 import copy
 import email.utils

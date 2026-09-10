@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """A real scoped signer only receives fully authenticated archive observations."""
 import copy
 from datetime import datetime, timedelta, timezone

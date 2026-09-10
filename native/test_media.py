@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: BSD-3-Clause
 """Public media commands on disposable original DEBs and real filesystem IO."""
 import errno
 import fcntl

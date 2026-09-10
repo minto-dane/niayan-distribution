@@ -1,0 +1,6 @@
+ROOT_GENERATION aaa568ce811508f7a666d0c1bc5102bbdc2ac024e0958b3a1d0f33aecc6f5a9e
+ROOT_PLAN 09fb921ce3ca50aeeb76ee4bd6a801945508ebd6af1d82d1677e152f35d53fbf
+ROOT_ARCHIVE b930c18ec428f9d8af5dbf1a6fdaf5ce9ed974c1de8174bab79127247d492251
+PASS assertions= 142
+{"accepted_generation": 1, "accepted_plan": "09fb921ce3ca50aeeb76ee4bd6a801945508ebd6af1d82d1677e152f35d53fbf", "actual_boot": false, "actual_staged_archive": true, "archive": "b930c18ec428f9d8af5dbf1a6fdaf5ce9ed974c1de8174bab79127247d492251", "generation_manifest": "aaa568ce811508f7a666d0c1bc5102bbdc2ac024e0958b3a1d0f33aecc6f5a9e", "original_spans_exact": true, "paths": 10, "privileged_extraction": false, "production_authorization": false, "result": "pass", "root_manifest": "10418d3be97153f1491ef97b4a7afe34e7edb1706f67bae0f8844a0167111056"}
+PASS root publication variant; private fixture removed
