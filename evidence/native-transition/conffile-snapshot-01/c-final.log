@@ -1,0 +1,4 @@
+Running as unit: run-p732836-i733136.scope; invocation ID: 230e42acc28945c69d7aec8aa516be70
+limited-exec: {"scope": "run-p732836-i733136.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+check-snapshot: tests/conffile-snapshot/check.c:70: main: Assertion `nia_conffile_recheck(s, deadline()) == 5' failed.
+Aborted

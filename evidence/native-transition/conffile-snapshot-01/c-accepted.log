@@ -1,0 +1,17 @@
+Running as unit: run-p733110-i733410.scope; invocation ID: 9097781b4373431a9d7a62996fc2d810
+limited-exec: {"scope": "run-p733110-i733410.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+PASS raw paths, absence, contents, inode replacement, deletion, mode, xattrs, POSIX ACL, links, signed timestamps, atime, permission denial, bounds and deadline
+gcc (Debian 14.2.0-19) 14.2.0
+Copyright (C) 2024 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+GPRBUILD Pro 18.0w (19940713) (x86_64-linux-gnu)
+Copyright (C) 2004-2016, AdaCore
+This is free software; see the source for copying conditions.
+See your AdaCore support agreement for details of warranty and support.
+If you do not have a current support agreement, then there is absolutely
+no warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR
+PURPOSE.
+
+Linux 6.12.107+deb13-amd64

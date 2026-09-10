@@ -3,6 +3,8 @@
 `Pkg_Deb_Conffiles`は元DEBからconffiles宣言と対応payloadを読み、`Pkg_Conffile_Transition`は
 旧vendor・現在の内容・新vendorの三つを比較する。判断ADR-0095。
 実行認可が要求するConfiguration/Side_Effectsの意味を実装する工程で、全効果の完成ではない。
+実localの保存と変更検知は[設定snapshot](conffile-snapshot.ja.md)へ接続する内部SDKを追加した。
+特権属性の完全観測、利用者選択と実root公開は引き続き未完である。
 
 ## 元DEBへの束縛
 

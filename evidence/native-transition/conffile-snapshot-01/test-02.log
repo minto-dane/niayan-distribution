@@ -1,0 +1,34 @@
+Running as unit: run-p731819-i732119.scope; invocation ID: dbb9aa16d451445183afcb7ef0b64f72
+limited-exec: {"scope": "run-p731819-i732119.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Compile
+   [Ada]          run_conffile_snapshot_tests.adb
+   [C]            pkg_deb_stream.c
+   [C]            archive_observer.c
+   [C]            pkg_deb_decode.c
+   [C]            root_preparation.c
+   [C]            conffile_snapshot.c
+   [Ada]          mc_clock.adb
+   [Ada]          mc_posix.ads
+   [Ada]          mc_runtime.adb
+   [Ada]          mc_sha256.adb
+   [Ada]          mc_store.adb
+   [Ada]          mc_types.adb
+   [Ada]          pkg_conffile_snapshot.adb
+   [Ada]          pkg_conffile_transition.adb
+   [Ada]          test_support.adb
+   [Ada]          mc_hex.adb
+   [Ada]          mc_kernel_read.adb
+   [Ada]          mc_codec.adb
+   [Ada]          mc_dirents.adb
+   [Ada]          mc_fs.adb
+   [Ada]          mc_paths.adb
+   [Ada]          mc_text.adb
+Bind
+   [gprbind]      run_conffile_snapshot_tests.bexch
+   [Ada]          run_conffile_snapshot_tests.ali
+Link
+   [archive]      libtests.a
+   [index]        libtests.a
+   [link]         run_conffile_snapshot_tests.adb
+PASS raw paths, absence, contents, inode replacement, deletion, mode, xattrs, links, signed timestamps, atime, bounds and deadline
+PASS assertions= 41

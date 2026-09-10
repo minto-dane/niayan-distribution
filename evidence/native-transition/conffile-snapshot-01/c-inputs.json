@@ -1,0 +1,17 @@
+{
+  "files": [
+    {
+      "path": "pkgcore/runtime/conffile_snapshot.c",
+      "sha256": "d0333b1f3b5c1b800e92533a87d0edec186df3c833d28b0a6847030daab9db2a"
+    },
+    {
+      "path": "pkgcore/runtime/conffile_snapshot.h",
+      "sha256": "d84fe09aa2b543d9b4ccc0716398f78e30eb43586ee7fd7ea589c27db01aaf54"
+    },
+    {
+      "path": "pkgcore/tests/conffile-snapshot/check.c",
+      "sha256": "689373f5d7c381819b4eb9f3424ac0b325a57f10ce59bac0add54ada34426b6e"
+    }
+  ],
+  "all_match": true
+}

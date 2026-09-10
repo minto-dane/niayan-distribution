@@ -1,0 +1,5 @@
+Running as unit: run-p731413-i731713.scope; invocation ID: f09f6d23fc324066a7e65e4aeaf6dda9
+limited-exec: {"scope": "run-p731413-i731713.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+gprbuild: "run_conffile_snapshot_tests" up to date
+PASS raw paths, absence, contents, inode replacement, deletion, mode, xattrs, links, signed timestamps, atime, bounds and deadline
+PASS assertions= 33
