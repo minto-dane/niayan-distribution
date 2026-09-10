@@ -1,0 +1,37 @@
+{
+  "format": 1,
+  "source_subject": "f28773a5a30a4129de0bd7746e6aff68397ef40f3e8bb18e3d45af604a0ce17e",
+  "production_qualified": false,
+  "accepted_log": "test-05.log",
+  "root_configuration_assertions": 136,
+  "choice_assertions": 270,
+  "result": "pass",
+  "compile_input_count": 383,
+  "fixture_input_count": 25,
+  "reproduced_deb_fixtures": 24,
+  "kernel_limits": {
+    "memory_bytes": 3221225472,
+    "swap_bytes": 0,
+    "cpu_percent": 100,
+    "pids": 128
+  },
+  "prior_failures": [
+    "test-01: test identifier was an Ada reserved word",
+    "test-02: duplicate scope type declaration and local access lifetime rejected",
+    "test-03: generic equality argument supplied in comparison position; corrected with named equality association"
+  ],
+  "intermediate_result": "test-04 passed 133 root-configuration and 270 choice assertions before adding retention readback for all choices; not the final source",
+  "scope": "verified NIAROOT1 ownership and live configuration choices projected into a complete candidate namespace, with base and choice references",
+  "not_repeated": [
+    "full suite",
+    "unchanged formal proofs",
+    "old chaos campaigns",
+    "VM"
+  ],
+  "remaining": [
+    "configured tar serialization and full attribute application",
+    "inode/hardlink effects and complete historical configuration coverage",
+    "privileged observation, authenticated UI and managed admission",
+    "generation retention/recovery, root/boot, remaining DEB effects, native ISO and all translations"
+  ]
+}

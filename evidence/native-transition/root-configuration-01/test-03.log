@@ -1,0 +1,31 @@
+Running as unit: run-p748366-i748666.scope; invocation ID: 0c98699c00b64ec2988d9b74a20d8000
+limited-exec: {"scope": "run-p748366-i748666.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Compile
+   [Ada]          run_root_configuration_tests.adb
+   [Ada]          run_conffile_choice_tests.adb
+   [C]            pkg_deb_stream.c
+   [C]            archive_observer.c
+   [C]            pkg_deb_decode.c
+   [C]            root_preparation.c
+   [C]            conffile_snapshot.c
+   [Ada]          mc_clock.adb
+   [Ada]          mc_fs.adb
+   [Ada]          mc_posix.ads
+   [Ada]          mc_runtime.adb
+   [Ada]          mc_store.adb
+   [Ada]          mc_types.adb
+   [Ada]          pkg_catalog_retention.adb
+   [Ada]          pkg_catalog_store.adb
+   [Ada]          pkg_conffile_choice.adb
+   [Ada]          pkg_conffile_transition.adb
+   [Ada]          pkg_deb_metadata.adb
+   [Ada]          pkg_deb_payload.adb
+   [Ada]          pkg_payload_index.adb
+   [Ada]          pkg_root_archive.adb
+   [Ada]          pkg_root_configuration.adb
+pkg_root_configuration.adb:45:07: error: instantiation error at a-ciorma.ads:46
+pkg_root_configuration.adb:45:07: error: no visible subprogram matches the specification for "="
+pkg_root_configuration.adb:45:07: error: instantiation error at a-ciorma.ads:46
+pkg_root_configuration.adb:45:07: error: default "=" on "Scope" is not directly visible
+pkg_root_configuration.adb:45:90: error: operator for type "String" is not declared in "C"
+gprbuild: *** compilation phase failed

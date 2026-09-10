@@ -85,3 +85,5 @@ root/intentの真正性、原本の供給認証、package所有権、boot/phase/
 特権属性observer、残る属性適用方針・全namespace計画、世代保持とpin/GC、recordの独立したdurable reader、
 再起動後の復旧、実root/boot公開は未完である。live sessionの再確認をcrash recoveryの代替にしない。
 snapshotは楽観的観測で、privileged writerを凍結せず隠れた属性の完全性を認定しない。
+
+設定と元rootの配置検査は[root配置への接続](root-configuration.ja.md)を参照。

@@ -1,0 +1,7 @@
+Running as unit: run-p747853-i748153.scope; invocation ID: b6acda012f2340caa4563dfda76a77a8
+limited-exec: {"scope": "run-p747853-i748153.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Compile
+   [Ada]          run_root_configuration_tests.adb
+run_root_configuration_tests.adb:67:14: error: reserved word "entry" cannot be used as identifier
+run_root_configuration_tests.adb:72:04: error: "end Entry;" expected
+gprbuild: *** compilation phase failed

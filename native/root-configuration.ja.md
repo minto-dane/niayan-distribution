@@ -1,0 +1,41 @@
+# 設定を含むroot配置
+
+`Pkg_Root_Configuration.Prepare`は既存NIAROOT1の所有権検査とlive設定選択を組み合わせ、
+最終path順の配置を作る。判断ADR-0100。新しいDBや実行成功callbackは追加しない。
+
+1. 元manifestのcatalog/保持閉包/元tarを再観測し、native architectureで既存の所有権判定を行う。
+2. そのmanifestのclaim選択を読み、元の全pathを配置候補へ入れる。
+3. 設定選択のroot ID/transaction/context一致、同じStore予約と現在の観測を確認する。
+4. 対象の元entryを完全属性参照付きの設定効果で置換する。欠落を選んだ対象は配置から除く。
+5. 退避entryを加え、全incoming conffiles宣言の選択網羅、親directory、重複とlink依存を検査する。
+6. 最後にすべての選択を再確認する。失敗時は配置と入力bindingをすべて消す。
+
+対象が元payloadにある場合、その選択ownerはincoming原本と一致し、regularでなければならない。
+別packageのclaim、既存directory、他の設定entryを暗黙に上書きしない。退避名は元payloadにも
+他の対象/退避にも存在してはならない。入力順で同名entryの勝者を選ばない。
+incoming原本はcandidate catalogに含まれ、全incoming宣言に対応する設定選択が必要である。
+旧宣言が省略された設定や通常削除後の設定は、上位の履歴計画から明示的に渡す必要がある。
+この検査だけで全過去設定の列挙が完成したとはみなさない。複数原本の同名conffileは別途統合方針が必要である。
+
+出力のrootと全親pathはdirectoryとして残る必要がある。元hardlinkが変更対象を参照する場合は
+別のinode効果計画を要求してUnsupportedとする。リンク先を別の内容へ暗黙に付け替えない。
+削除対象を新vendorの元tarから再び混入させないため、後段はこの最終配置を使う必要がある。
+元tarを全展開しただけのrootを設定適用済みとして公開してはならない。
+
+`Read_Entry`のPathは元payloadと同じroot相対のraw byte列である。root自体は空文字列。
+Base_Claimが非zeroなら、Bindingで保持した元manifest/catalogに対する元claim番号である。
+zeroならConfigurationに対象または退避の完全なFile_Effectを返す。そのPathとSource_Pathは
+設定SDKと同じ絶対表記のraw byte列である。設定entryには元のdecision/closure hashも保持する。
+`Read_Choice`は入力順の全候補/選択/閉包を保持する。fileが一つも残らない選択もここから参照できる。
+ファイル配置から消えたことを履歴や保持義務の消失にしない。
+
+入力choiceへの参照はPrepareの間だけ借り、呼出し側が生存を管理する。出力は独立したsnapshotで、
+Read_Entry/Read_Choiceはlive再確認ではない。実行前に元の全選択を再確認または再準備する必要がある。
+最大4,096 choiceと既存のpayload/名前量/有限期限を使い、実行環境の資源制限も維持する。
+
+## 未完の接続
+
+配置は元archiveと設定効果を結ぶ内部計画であり、設定済みtarの直列化や実rootへの適用はまだ行わない。
+全属性の適用順序、ACL/capability/chown/chmod、flagsと時刻、linkを含むinode効果、全過去設定の網羅、
+特権observerとroot/contextの真正性、全managed認可、世代保持と復旧/boot公開も必要である。
+元NIAROOT1の成功や配置の検査成功を、これらの認可・適用・公開の成功に置き換えない。

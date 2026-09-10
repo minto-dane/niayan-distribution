@@ -1,0 +1,7 @@
+Running as unit: run-p748085-i748385.scope; invocation ID: 2fcb885063f644eab370a4ee5c09ccf3
+limited-exec: {"scope": "run-p748085-i748385.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Compile
+   [Ada]          run_root_configuration_tests.adb
+run_root_configuration_tests.adb:58:24: error: non-local pointer cannot point to local object
+pkg_conffile_choice.ads:74:09: error: "Scope" conflicts with declaration at line 15
+gprbuild: *** compilation phase failed
