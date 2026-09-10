@@ -1,0 +1,27 @@
+{
+  "reason": "ENOSPC during retained integration run; superseded ISO 01/03 build outputs, no open users found",
+  "latest_iso_and_sources_untouched": true,
+  "rows": [
+    {
+      "path": "/home/nia/devbox/niaos/.work/distro-artifacts-01/niaos-0.1.0-amd64-amd64.hybrid.iso",
+      "sha256": "8da0bf7bb8d5696bd9e0aee4a58a02e8e52bc57768cbd14fec422938c6efba23",
+      "size": 3734011904,
+      "allocated_bytes": 3734016000,
+      "record": "/home/nia/devbox/niaos/.work/distro-artifacts-01/record-01/report.json",
+      "record_sha256": "bd5b2c4327ba26460ea221d08c3ed60f39d6a3d7f734689bd3666935bf89673c"
+    },
+    {
+      "path": "/home/nia/devbox/niaos/.work/distro-artifacts-03/niaos-0.1.0-amd64.hybrid.iso",
+      "sha256": "2c9ef21212d0556c3eafdeacabc3839f7adf6b127a01c8436e00476b24c5110a",
+      "size": 3640655872,
+      "allocated_bytes": 3640659968,
+      "record": "/home/nia/devbox/niaos/.work/distro-artifacts-03/record-03/report.json",
+      "record_sha256": "24899b8bfc304a1919fb08826da508a676df1b98d81ef54171f977285ab280a1"
+    }
+  ],
+  "removed": [
+    "/home/nia/devbox/niaos/.work/distro-artifacts-01/niaos-0.1.0-amd64-amd64.hybrid.iso",
+    "/home/nia/devbox/niaos/.work/distro-artifacts-03/niaos-0.1.0-amd64.hybrid.iso"
+  ],
+  "free_bytes_after": 8103571456
+}

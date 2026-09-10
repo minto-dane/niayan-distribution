@@ -60,3 +60,16 @@ Verify又はVerify_Intervalと独立した現在policy/時刻を使用しなけ�
 
 公開管理コマンドや第二の導入済みDBは追加しない。独立署名接続は開発用fixtureであり本番鍵ではない。
 標準checkでは実TUF/OpenPGP発行結果をnative mapまで渡し、Pythonで正規preimageを独立に組み立てて照合する。
+
+## 共有参照の前段検査
+
+全receiptの構造を読んだ後、必須6原本のhashを呼出し内の有界集合へ集める。
+同じ原本を複数の役割・行で参照していても、前段では一度だけ実CAS bytesをrehashする。
+集合の上限は6×Max_Entriesで、全原本を検査してからnative再構築を開始する。
+構造保持のCheck_Retentionも同じ方式を使う。次の呼出しには集合を持ち越さない。
+これは必要な原本の集合であり、成功済み検査のcacheや認可ではない。
+
+各receiptの独立署名・scope/key/floor/期限、個別のVerify_Original/Recheck_Originalと
+元DEB/control照合、catalog/closureの再観測は維持する。したがって全体のI/Oが固有原本数だけに
+比例するとは主張しない。公開API、永続形式、pin、writer予約、欠損を再生成前に拒否する境界は不変。
+同じ原本を共有する複数行、複数役割、呼出し間の欠損と復元を検査対象とする。

@@ -1,0 +1,17 @@
+{
+  "result": "only-handoff-documents-changed",
+  "source_subject": "3da6f36e9b51de7ca3b0e35d5658d8e990826dad341917fb123b78c7dd2f043c",
+  "qualified_input_count": 3374,
+  "changes": [
+    {
+      "path": "AGENTS.md",
+      "qualified_sha256": "a0acfc8fd7a5843c6e10c3c040b3bfd15ff14c0c7e0a5238177e523ae0478362",
+      "handoff_sha256": "aa53334aab55a54250cde5c49949a2417f8fb605a8149214384760e3deb277d9"
+    },
+    {
+      "path": "STATUS.ja.md",
+      "qualified_sha256": "2e01592be51ca7e23406fe41b2f062ac3861b5a4304a93c36bba57c174373eed",
+      "handoff_sha256": "ef6e765d47f9b5337ce911afe8a6b9c5c7a2929b92ca558427163c7e415de746"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+-- SPDX-License-Identifier: MIT
+project Bench is
+   for Languages use ("Ada", "C");
+   for Source_Dirs use ("src", "vendor/resolver/src", "runtime", "vendor/contracts/src", "vendor/contracts/runtime", "tests", "benchmark");
+   for Object_Dir use "build/bench02-obj";
+   for Exec_Dir use "build/bench-bin";
+   for Main use ("run_shared_preflight_benchmark.adb");
+   package Compiler is
+      for Default_Switches ("C") use ("-std=c11", "-Wall", "-Wextra", "-Werror", "-fstack-protector-strong", "-fPIE", "-D_FORTIFY_SOURCE=3", "-ffile-prefix-map=" & Bench'Project_Dir & "=/usr/src/niaos/pkgcore/", "-g", "-gno-record-gcc-switches", "-O1");
+      for Default_Switches ("Ada") use ("-gnat2022", "-gnata", "-gnato", "-gnatVa", "-gnatwe", "-fstack-protector-strong", "-fPIE", "-ffile-prefix-map=" & Bench'Project_Dir & "=/usr/src/niaos/pkgcore/", "-g", "-gno-record-gcc-switches", "-O1");
+   end Compiler;
+   package Linker is
+      for Default_Switches ("Ada") use
+        ("-lsodium", "-larchive", "-lz", "-lbz2", "-llzma", "-lzstd", "-lcurl", "-lxml2", "-pie", "-Wl,-z,relro,-z,now,-z,noexecstack");
+   end Linker;
+end Bench;

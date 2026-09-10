@@ -1,0 +1,7 @@
+{
+  "different_from_final_pkgcore": [
+    "runtime/pkg_supply_map.adb",
+    "tests/run_supply_map_tests.adb"
+  ],
+  "production_baseline_commit": "3d618f309c2de39a1784c1fad65f2226c371e960"
+}

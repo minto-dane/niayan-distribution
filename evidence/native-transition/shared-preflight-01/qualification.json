@@ -1,0 +1,35 @@
+{
+  "result": "pass",
+  "source_subject": "3da6f36e9b51de7ca3b0e35d5658d8e990826dad341917fb123b78c7dd2f043c",
+  "image": "sha256:4ec0d3adaef0afc8ce1eccdb621d46911ea2ebc11ddaa9e86f15e4ce59776d4c",
+  "checks": [
+    {
+      "name": "resumed-standard",
+      "returncode": 0,
+      "log_sha256": "a475ba267ac7af270c1c18584e0e68c93f83d6dbf17585abf53843ed0686b8fe"
+    },
+    {
+      "name": "independent-build",
+      "returncode": 0,
+      "log_sha256": "02608e9144d3040f2d744e0d2ae0a3f14c5ea9e2dca9fb151c450499a6518730"
+    },
+    {
+      "name": "independent-test-build",
+      "returncode": 0,
+      "log_sha256": "9ddaaab0d08d0e4321e82249b263af5135552f2c9946007b50189c1cfe9a979d"
+    },
+    {
+      "name": "root-refusal",
+      "returncode": 0,
+      "log_sha256": "044df82bfae4c5f1571f2a4f3b5beedbd5f318ff22b25ba9cf0a46ba5f6dea9d"
+    },
+    {
+      "name": "engineering-lint",
+      "returncode": 0,
+      "log_sha256": "339ea4e67fb6c4005deedb78168047ec0983489145c7e946b1c9bcf2c174d4ec"
+    }
+  ],
+  "production_approval": false,
+  "formal_proof": "not-repeated-input-comparison-required",
+  "source_subject_after": "3da6f36e9b51de7ca3b0e35d5658d8e990826dad341917fb123b78c7dd2f043c"
+}

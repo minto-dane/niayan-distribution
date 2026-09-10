@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/nia/devbox/niaos/.work/native-shared-preflight-01/benchmark.py", line 9, in <module>
+    subprocess.run(command+['sh','-ec','cd /workspace/pkgcore; gprbuild -s -j1 -p -P bench.gpr'],env=env,stdout=log,stderr=subprocess.STDOUT,check=True)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/subprocess.py", line 577, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['python3', '-B', '/home/nia/devbox/niaos/.work/native-shared-preflight-01/run-container.py', 'sh', '-ec', 'cd /workspace/pkgcore; gprbuild -s -j1 -p -P bench.gpr']' returned non-zero exit status 4.

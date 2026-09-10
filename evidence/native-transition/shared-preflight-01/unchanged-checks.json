@@ -1,0 +1,15 @@
+{
+  "baseline": "publication-supply-01",
+  "baseline_input_map_sha256": "cdbb936a6c4e8a27a0eaccc303c4687ae9ec7466536755f1b8b9c9d3bb269114",
+  "c_input_count": 2,
+  "all_c_inputs_unchanged": true,
+  "proof": "seven exact input sets compared separately; no rerun",
+  "not_repeated": [
+    "native Python/image suite",
+    "private D-Bus",
+    "host duplicate source suite",
+    "C ASan/UBSan",
+    "134-case publication campaign"
+  ],
+  "scope": "Prior results remain bound to their own source subject. New checks cover the changed map path, shared loss/recovery and actual publication callers. No new persistence format or write primitive."
+}

@@ -1,0 +1,96 @@
+{
+  "status": "pass",
+  "rows": [
+    {
+      "label": "baseline",
+      "packages": 1,
+      "phase_ms": {
+        "1": 357,
+        "2": 327,
+        "3": 61
+      },
+      "objects": {
+        "MAP": "9becb99fbba7a0c01ce1b454a8b89cd6af5d334e052ee015bfde5ecffd7ec250",
+        "CATALOG": "5d659001f045d09c07b4e987e5ced9ebd388f2f013725d2584e869d87994715b",
+        "CLOSURE": "bfb0a1b6907756df17042c359256b35907f182370bde16c28f48c7e5b8f7df03"
+      },
+      "log_sha256": "2d7ffd0016ed2b47f7f0b7ef8408518c3f385986456265e5631c65382491bbd4"
+    },
+    {
+      "label": "baseline",
+      "packages": 16,
+      "phase_ms": {
+        "1": 6000,
+        "2": 5147,
+        "3": 779
+      },
+      "objects": {
+        "MAP": "161d8132c0a405e80775605d2ed471210134993112022e8e3146fc45b09bbb90",
+        "CATALOG": "7e9fc0ca923a4c11fa280567b2bffea90882e093c032f831285af2b28f4844b8",
+        "CLOSURE": "2cc6bae5432fb79125abe37affc43546ac49d65acf42ef20e15487268ac13509"
+      },
+      "log_sha256": "f499b3b83c02b0397841a6b0794baf057be98634110cc54258401507f9754e91"
+    },
+    {
+      "label": "baseline",
+      "packages": 64,
+      "phase_ms": {
+        "1": 21078,
+        "2": 21105,
+        "3": 3074
+      },
+      "objects": {
+        "MAP": "5f8f34b20de51c222bcc6cc7ab25a671f8023754bc5b7c6bc0ba4134638b2dec",
+        "CATALOG": "0680d8d21a5e4e5f040c39c2e2cfdd563c563f4aed7ca97ca6e0f4b6937bb9b6",
+        "CLOSURE": "70a0491f70d89a233d4d86ed408ca3ee2592f3b8772fce54c2d059ac96258c0d"
+      },
+      "log_sha256": "e350f5f44cf7ff168e06374d3760ca11447d9cb6eea05b0f5a97d275c20070d6"
+    },
+    {
+      "label": "candidate",
+      "packages": 1,
+      "phase_ms": {
+        "1": 335,
+        "2": 298,
+        "3": 48
+      },
+      "objects": {
+        "MAP": "9becb99fbba7a0c01ce1b454a8b89cd6af5d334e052ee015bfde5ecffd7ec250",
+        "CATALOG": "5d659001f045d09c07b4e987e5ced9ebd388f2f013725d2584e869d87994715b",
+        "CLOSURE": "bfb0a1b6907756df17042c359256b35907f182370bde16c28f48c7e5b8f7df03"
+      },
+      "log_sha256": "87dffdc8436679105725e1bf334d1b42570324a95bbd81b8e1d0bd2b9ad170ac"
+    },
+    {
+      "label": "candidate",
+      "packages": 16,
+      "phase_ms": {
+        "1": 4548,
+        "2": 3630,
+        "3": 49
+      },
+      "objects": {
+        "MAP": "161d8132c0a405e80775605d2ed471210134993112022e8e3146fc45b09bbb90",
+        "CATALOG": "7e9fc0ca923a4c11fa280567b2bffea90882e093c032f831285af2b28f4844b8",
+        "CLOSURE": "2cc6bae5432fb79125abe37affc43546ac49d65acf42ef20e15487268ac13509"
+      },
+      "log_sha256": "18aa25cf9155bb04c65008e9c86bca23575ade7edec4d6b64d970537ca3b22de"
+    },
+    {
+      "label": "candidate",
+      "packages": 64,
+      "phase_ms": {
+        "1": 14740,
+        "2": 14821,
+        "3": 72
+      },
+      "objects": {
+        "MAP": "5f8f34b20de51c222bcc6cc7ab25a671f8023754bc5b7c6bc0ba4134638b2dec",
+        "CATALOG": "0680d8d21a5e4e5f040c39c2e2cfdd563c563f4aed7ca97ca6e0f4b6937bb9b6",
+        "CLOSURE": "70a0491f70d89a233d4d86ed408ca3ee2592f3b8772fce54c2d059ac96258c0d"
+      },
+      "log_sha256": "70a4177fd8465f8ba7f5a39fe8b8082e4e03f0d58b50db8eefe80665f1a0dc18"
+    }
+  ],
+  "scope": "one sample per point, hot local cache, 4x2MiB shared inputs and tiny native DEBs; not production throughput or a statistical latency estimate"
+}

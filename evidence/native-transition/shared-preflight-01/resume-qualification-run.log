@@ -1,0 +1,11 @@
+Starting resumed-standard
+Passed resumed-standard
+Starting independent-build
+Passed independent-build
+Starting independent-test-build
+Passed independent-test-build
+Starting root-refusal
+Passed root-refusal
+Starting engineering-lint
+Passed engineering-lint
+PASS all requested gates; source subject 3da6f36e9b51de7ca3b0e35d5658d8e990826dad341917fb123b78c7dd2f043c

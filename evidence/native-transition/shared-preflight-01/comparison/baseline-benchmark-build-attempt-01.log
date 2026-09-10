@@ -1,0 +1,9 @@
+Running as unit: run-p283587-i283887.scope; invocation ID: 4d13e037226e484aab2ed7f81ba0e852
+limited-exec: {"scope": "run-p283587-i283887.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Setup
+   [mkdir]        object directory for project Bench
+   [mkdir]        exec directory for project Bench
+Compile
+   [Ada]          run_shared_preflight_benchmark.adb
+run_shared_preflight_benchmark.adb:25:13: warning: variable "Initial_Map" is read but never assigned [-gnatwv]
+gprbuild: *** compilation phase failed

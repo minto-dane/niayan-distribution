@@ -1,0 +1,9 @@
+SUPPLY_RECEIPT cc9df4957f99ba55fdac9bdad24d94ef21606325bf8cf50fcb3817f246db4c16
+SUPPLY_ORIGINAL c9f9c68f8ae68b701562303a38b67e60a966249ebaacbd8e7303a17b18b0f624
+SUPPLY_CONTROL c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae
+PASS assertions= 31
+PASS archive receipt bridge accepted
+PASS archive receipt bridge wrong-key
+PASS archive receipt bridge wrong-scope
+PASS archive receipt bridge different-control
+PASS archive receipt bridge damaged-receipt

@@ -1,0 +1,58 @@
+{
+  "result": "pass",
+  "rows": [
+    {
+      "label": "baseline",
+      "packages": 16,
+      "shared_object_bytes": 2097152,
+      "phase_read_bytes": {
+        "1": {
+          "6d75695d93deb1bf5805617cfba166466cf60dc0a99a8014fa58893f358f33b8": 100663296,
+          "80e4f8bd46c3f5355d3576cbfeb78b298868ef51d2f66cb48e6134a4f3edb67b": 100663296,
+          "90ddf113285fb791bf0729d64464e6b8d743d2b4991b31bebccc5bff88933991": 100663296,
+          "cd7a9b2ac02e67b2fbe40e8667ab9b29b23c38dd68470ede213de67b97867ec9": 100663296
+        },
+        "2": {
+          "6d75695d93deb1bf5805617cfba166466cf60dc0a99a8014fa58893f358f33b8": 100663296,
+          "80e4f8bd46c3f5355d3576cbfeb78b298868ef51d2f66cb48e6134a4f3edb67b": 100663296,
+          "90ddf113285fb791bf0729d64464e6b8d743d2b4991b31bebccc5bff88933991": 100663296,
+          "cd7a9b2ac02e67b2fbe40e8667ab9b29b23c38dd68470ede213de67b97867ec9": 100663296
+        },
+        "3": {
+          "6d75695d93deb1bf5805617cfba166466cf60dc0a99a8014fa58893f358f33b8": 33554432,
+          "80e4f8bd46c3f5355d3576cbfeb78b298868ef51d2f66cb48e6134a4f3edb67b": 33554432,
+          "90ddf113285fb791bf0729d64464e6b8d743d2b4991b31bebccc5bff88933991": 33554432,
+          "cd7a9b2ac02e67b2fbe40e8667ab9b29b23c38dd68470ede213de67b97867ec9": 33554432
+        }
+      },
+      "trace_sha256": "534e42ddc13ed18a76987646177241129597d681905a215552ae9abe8bfded36"
+    },
+    {
+      "label": "candidate",
+      "packages": 16,
+      "shared_object_bytes": 2097152,
+      "phase_read_bytes": {
+        "1": {
+          "6d75695d93deb1bf5805617cfba166466cf60dc0a99a8014fa58893f358f33b8": 35651584,
+          "80e4f8bd46c3f5355d3576cbfeb78b298868ef51d2f66cb48e6134a4f3edb67b": 35651584,
+          "90ddf113285fb791bf0729d64464e6b8d743d2b4991b31bebccc5bff88933991": 35651584,
+          "cd7a9b2ac02e67b2fbe40e8667ab9b29b23c38dd68470ede213de67b97867ec9": 35651584
+        },
+        "2": {
+          "6d75695d93deb1bf5805617cfba166466cf60dc0a99a8014fa58893f358f33b8": 35651584,
+          "80e4f8bd46c3f5355d3576cbfeb78b298868ef51d2f66cb48e6134a4f3edb67b": 35651584,
+          "90ddf113285fb791bf0729d64464e6b8d743d2b4991b31bebccc5bff88933991": 35651584,
+          "cd7a9b2ac02e67b2fbe40e8667ab9b29b23c38dd68470ede213de67b97867ec9": 35651584
+        },
+        "3": {
+          "6d75695d93deb1bf5805617cfba166466cf60dc0a99a8014fa58893f358f33b8": 2097152,
+          "80e4f8bd46c3f5355d3576cbfeb78b298868ef51d2f66cb48e6134a4f3edb67b": 2097152,
+          "90ddf113285fb791bf0729d64464e6b8d743d2b4991b31bebccc5bff88933991": 2097152,
+          "cd7a9b2ac02e67b2fbe40e8667ab9b29b23c38dd68470ede213de67b97867ec9": 2097152
+        }
+      },
+      "trace_sha256": "386604c418b28975a366ca80673820dd57162cd5425a0e3108857b944f9b34ff"
+    }
+  ],
+  "scope": "actual shared CAS bytes read in marked phases; tracing capabilities are private lab only; no cached trust"
+}
