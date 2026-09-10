@@ -1,0 +1,4520 @@
+{
+  "schema": "org.niaos.cas-chaos/v1",
+  "seed": 20260911,
+  "result": "pass",
+  "uid": 1000,
+  "started_utc": 1789004488.3902013,
+  "cases": [
+    {
+      "id": "fault-000",
+      "kind": "kill",
+      "syscall": "write",
+      "nth": 11,
+      "baseline": "write(7</tmp/nia-chaos-baseline-u3lka96t/incoming/1d32aee14161d134788b0445dfb94504>, \"\\2303\\4j\\242\\n\\310\\26\\t+\\6\\1\\4\\1\\332G\\17\\1\\1\\7@\\v\\303\\355\\266\\360\\242X$ \\2629\\374F\\361q`\\276\\36\\273GO\\312(\\16\\177\\17n\\326\\324\\206\\361\\35\\264\\26Nia artificial fixture\\210\\220\\4\"..., 223) = 223",
+      "injection": "write:signal=SIGKILL:when=11",
+      "hit": "write(7</tmp/nia-chaos-fault-nm7bfzf_/incoming/b40c0743c7e7563988a866e83efe20e0>, \"\\2303\\4j\\242\\n\\310\\26\\t+\\6\\1\\4\\1\\332G\\17\\1\\1\\7@\\v\\303\\355\\266\\360\\242X$ \\2629\\374F\\361q`\\276\\36\\273GO\\312(\\16\\177\\17n\\326\\324\\206\\361\\35\\264\\26Nia artificial fixture\\210\\220\\4\"..., 223) = ?",
+      "fault_returncode": -9,
+      "acknowledged": [
+        "ACK original.deb eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+        "ACK control c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+        "ACK policy 4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+        "ACK InRelease 7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+        "ACK Packages 413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2"
+      ],
+      "state_after_fault": {
+        "objects": {
+          "objects/41/3a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2": {
+            "sha256": "413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2",
+            "size": 232
+          },
+          "objects/4e/58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          },
+          "objects/7f/430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d": {
+            "sha256": "7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+            "size": 523
+          },
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          }
+        },
+        "incoming": {
+          "incoming/b40c0743c7e7563988a866e83efe20e0": {
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "size": 0
+          }
+        },
+        "missing": [
+          "receipt",
+          "keyring"
+        ]
+      },
+      "outcome_after_fault": "IO_ERROR",
+      "recovery_ms": 184.50175100042543,
+      "incoming_after_recovery": {
+        "incoming/b40c0743c7e7563988a866e83efe20e0": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size": 0
+        }
+      },
+      "result": "pass"
+    },
+    {
+      "id": "fault-001",
+      "kind": "kill",
+      "syscall": "fsync",
+      "nth": 2,
+      "baseline": "fsync(8</tmp/nia-chaos-baseline-u3lka96t/incoming>) = 0",
+      "injection": "fsync:signal=SIGKILL:when=2",
+      "hit": "fsync(8</tmp/nia-chaos-fault-acg43b0z/incoming>) = ?",
+      "fault_returncode": -9,
+      "acknowledged": [],
+      "state_after_fault": {
+        "objects": {},
+        "incoming": {
+          "incoming/6abc9357c1f94131e5a30ca16d6ed12f": {
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "size": 0
+          }
+        },
+        "missing": [
+          "receipt",
+          "policy",
+          "original.deb",
+          "control",
+          "InRelease",
+          "Packages",
+          "keyring"
+        ]
+      },
+      "outcome_after_fault": "IO_ERROR",
+      "recovery_ms": 197.03802700132655,
+      "incoming_after_recovery": {
+        "incoming/6abc9357c1f94131e5a30ca16d6ed12f": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size": 0
+        }
+      },
+      "result": "pass"
+    },
+    {
+      "id": "fault-002",
+      "kind": "kill",
+      "syscall": "renameat2",
+      "nth": 1,
+      "baseline": "renameat2(8</tmp/nia-chaos-baseline-u3lka96t/incoming>, \"82759688c17dde62715dcdcd602c40c1\", 7</tmp/nia-chaos-baseline-u3lka96t/objects/ee>, \"f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0\", RENAME_NOREPLACE) = 0",
+      "injection": "renameat2:signal=SIGKILL:when=1",
+      "hit": "renameat2(8</tmp/nia-chaos-fault-pqco93pc/incoming>, \"f6c29f23c03a2d2f527561754aaa9757\", 7</tmp/nia-chaos-fault-pqco93pc/objects/ee>, \"f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0\", RENAME_NOREPLACE) = ?",
+      "fault_returncode": -9,
+      "acknowledged": [],
+      "state_after_fault": {
+        "objects": {},
+        "incoming": {
+          "incoming/f6c29f23c03a2d2f527561754aaa9757": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          }
+        },
+        "missing": [
+          "receipt",
+          "policy",
+          "original.deb",
+          "control",
+          "InRelease",
+          "Packages",
+          "keyring"
+        ]
+      },
+      "outcome_after_fault": "IO_ERROR",
+      "recovery_ms": 187.67033199947036,
+      "incoming_after_recovery": {
+        "incoming/f6c29f23c03a2d2f527561754aaa9757": {
+          "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+          "size": 848
+        }
+      },
+      "result": "pass"
+    },
+    {
+      "id": "fault-003",
+      "kind": "kill",
+      "syscall": "write",
+      "nth": 13,
+      "baseline": "write(7</tmp/nia-chaos-baseline-u3lka96t/incoming/1e553dc8a20e45ef48ab9461f759f8a1>, \"NIASUP011\\24708UKu\\200#\\37\\24\\217\\344_\\303)\\223\\33\\204^A\\363\\223\\221I\\271o\\326O\\30/mNX\\270\\363\\272\\35M\\367G\\230\\217h\\327\\374\\251\\225\\330\\301h\\236\\271-\\350\\363\\30yn\\315\\321\\340\\3068\\356\\365\\272<\\325\\6\\20\\324\"..., 320) = 320",
+      "injection": "write:signal=SIGKILL:when=13",
+      "hit": "write(7</tmp/nia-chaos-fault-cm1r_ekn/incoming/a3c4be1d6d4dd9d0a10434145b8e0159>, \"NIASUP011\\24708UKu\\200#\\37\\24\\217\\344_\\303)\\223\\33\\204^A\\363\\223\\221I\\271o\\326O\\30/mNX\\270\\363\\272\\35M\\367G\\230\\217h\\327\\374\\251\\225\\330\\301h\\236\\271-\\350\\363\\30yn\\315\\321\\340\\3068\\356\\365\\272<\\325\\6\\20\\324\"..., 320) = ?",
+      "fault_returncode": -9,
+      "acknowledged": [
+        "ACK original.deb eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+        "ACK control c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+        "ACK policy 4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+        "ACK InRelease 7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+        "ACK Packages 413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2",
+        "ACK keyring c3e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314"
+      ],
+      "state_after_fault": {
+        "objects": {
+          "objects/41/3a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2": {
+            "sha256": "413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2",
+            "size": 232
+          },
+          "objects/4e/58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          },
+          "objects/7f/430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d": {
+            "sha256": "7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+            "size": 523
+          },
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/c3/e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314": {
+            "sha256": "c3e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314",
+            "size": 223
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          }
+        },
+        "incoming": {
+          "incoming/a3c4be1d6d4dd9d0a10434145b8e0159": {
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "size": 0
+          }
+        },
+        "missing": [
+          "receipt"
+        ]
+      },
+      "outcome_after_fault": "IO_ERROR",
+      "recovery_ms": 151.51701200011303,
+      "incoming_after_recovery": {
+        "incoming/a3c4be1d6d4dd9d0a10434145b8e0159": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size": 0
+        }
+      },
+      "result": "pass"
+    },
+    {
+      "id": "fault-004",
+      "kind": "io-error",
+      "syscall": "write",
+      "nth": 7,
+      "error": "ENOSPC",
+      "baseline": "write(7</tmp/nia-chaos-baseline-u3lka96t/incoming/906941d34efc4c7796b91515fcf17e92>, \"-----BEGIN PGP SIGNED MESSAGE-----\\nHash: SHA512\\n\\nOrigin: Debian\\nLabel: Debian\\nSu\"..., 523) = 523",
+      "injection": "write:error=ENOSPC:when=7",
+      "hit": "write(7</tmp/nia-chaos-fault-xk49obdi/incoming/c80a7f3c0207cf3e6f46ca4ac5838178>, \"-----BEGIN PGP SIGNED MESSAGE-----\\nHash: SHA512\\n\\nOrigin: Debian\\nLabel: Debian\\nSu\"..., 523) = -1 ENOSPC (No space left on device) (INJECTED)",
+      "fault_returncode": 11,
+      "acknowledged": [
+        "ACK original.deb eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+        "ACK control c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+        "ACK policy 4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638"
+      ],
+      "state_after_fault": {
+        "objects": {
+          "objects/4e/58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          },
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          }
+        },
+        "incoming": {
+          "incoming/c80a7f3c0207cf3e6f46ca4ac5838178": {
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "size": 0
+          }
+        },
+        "missing": [
+          "receipt",
+          "InRelease",
+          "Packages",
+          "keyring"
+        ]
+      },
+      "outcome_after_fault": "IO_ERROR",
+      "recovery_ms": 178.27630899955693,
+      "incoming_after_recovery": {
+        "incoming/c80a7f3c0207cf3e6f46ca4ac5838178": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size": 0
+        }
+      },
+      "result": "pass"
+    },
+    {
+      "id": "fault-005",
+      "kind": "io-error",
+      "syscall": "fsync",
+      "nth": 2,
+      "error": "EIO",
+      "baseline": "fsync(8</tmp/nia-chaos-baseline-u3lka96t/incoming>) = 0",
+      "injection": "fsync:error=EIO:when=2",
+      "hit": "fsync(8</tmp/nia-chaos-fault-2qsn6i1b/incoming>) = -1 EIO (Input/output error) (INJECTED)",
+      "fault_returncode": 11,
+      "acknowledged": [],
+      "state_after_fault": {
+        "objects": {},
+        "incoming": {
+          "incoming/817a166ef17505fc427cb09f8a62bdb2": {
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "size": 0
+          }
+        },
+        "missing": [
+          "receipt",
+          "policy",
+          "original.deb",
+          "control",
+          "InRelease",
+          "Packages",
+          "keyring"
+        ]
+      },
+      "outcome_after_fault": "IO_ERROR",
+      "recovery_ms": 182.01806799879705,
+      "incoming_after_recovery": {
+        "incoming/817a166ef17505fc427cb09f8a62bdb2": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size": 0
+        }
+      },
+      "result": "pass"
+    },
+    {
+      "id": "fault-006",
+      "kind": "io-error",
+      "syscall": "fsync",
+      "nth": 19,
+      "error": "EIO",
+      "baseline": "fsync(9</tmp/nia-chaos-baseline-u3lka96t/objects>) = 0",
+      "injection": "fsync:error=EIO:when=19",
+      "hit": "fsync(9</tmp/nia-chaos-fault-vxe4khnv/objects>) = -1 EIO (Input/output error) (INJECTED)",
+      "fault_returncode": 11,
+      "acknowledged": [
+        "ACK original.deb eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+        "ACK control c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+        "ACK policy 4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638"
+      ],
+      "state_after_fault": {
+        "objects": {
+          "objects/4e/58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          },
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          }
+        },
+        "incoming": {
+          "incoming/e506afc729364338b3698ba4ab55cfb6": {
+            "sha256": "7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+            "size": 523
+          }
+        },
+        "missing": [
+          "receipt",
+          "InRelease",
+          "Packages",
+          "keyring"
+        ]
+      },
+      "outcome_after_fault": "IO_ERROR",
+      "recovery_ms": 173.5395920004521,
+      "incoming_after_recovery": {
+        "incoming/e506afc729364338b3698ba4ab55cfb6": {
+          "sha256": "7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+          "size": 523
+        }
+      },
+      "result": "pass"
+    },
+    {
+      "id": "fault-007",
+      "kind": "io-error",
+      "syscall": "write",
+      "nth": 3,
+      "error": "ENOSPC",
+      "baseline": "write(7</tmp/nia-chaos-baseline-u3lka96t/incoming/689ba16516d855e137af6e0b710bba9c>, \"Package: nia-test\\nVersion: 1:2.0~rc1-3\\nArchitecture: all\\nMaintainer: Nia synthet\"..., 125) = 125",
+      "injection": "write:error=ENOSPC:when=3",
+      "hit": "write(7</tmp/nia-chaos-fault-aq34id_o/incoming/b05a122766f851ffd4e471ca6a3f45e3>, \"Package: nia-test\\nVersion: 1:2.0~rc1-3\\nArchitecture: all\\nMaintainer: Nia synthet\"..., 125) = -1 ENOSPC (No space left on device) (INJECTED)",
+      "fault_returncode": 11,
+      "acknowledged": [
+        "ACK original.deb eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0"
+      ],
+      "state_after_fault": {
+        "objects": {
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          }
+        },
+        "incoming": {
+          "incoming/b05a122766f851ffd4e471ca6a3f45e3": {
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "size": 0
+          }
+        },
+        "missing": [
+          "receipt",
+          "policy",
+          "control",
+          "InRelease",
+          "Packages",
+          "keyring"
+        ]
+      },
+      "outcome_after_fault": "IO_ERROR",
+      "recovery_ms": 214.24405399920943,
+      "incoming_after_recovery": {
+        "incoming/b05a122766f851ffd4e471ca6a3f45e3": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size": 0
+        }
+      },
+      "result": "pass"
+    },
+    {
+      "id": "fault-008",
+      "kind": "kill",
+      "syscall": "fsync",
+      "nth": 3,
+      "baseline": "fsync(7</tmp/nia-chaos-baseline-u3lka96t/incoming/82759688c17dde62715dcdcd602c40c1>) = 0",
+      "injection": "fsync:signal=SIGKILL:when=3",
+      "hit": "fsync(7</tmp/nia-chaos-fault-e2ok6ojx/incoming/d4242e6140ef004d9c0d1bcb1f5aa205>) = ?",
+      "fault_returncode": -9,
+      "acknowledged": [],
+      "state_after_fault": {
+        "objects": {},
+        "incoming": {
+          "incoming/d4242e6140ef004d9c0d1bcb1f5aa205": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          }
+        },
+        "missing": [
+          "receipt",
+          "policy",
+          "original.deb",
+          "control",
+          "InRelease",
+          "Packages",
+          "keyring"
+        ]
+      },
+      "outcome_after_fault": "IO_ERROR",
+      "recovery_ms": 203.3197740001924,
+      "incoming_after_recovery": {
+        "incoming/d4242e6140ef004d9c0d1bcb1f5aa205": {
+          "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+          "size": 848
+        }
+      },
+      "result": "pass"
+    },
+    {
+      "id": "fault-009",
+      "kind": "io-error",
+      "syscall": "renameat2",
+      "nth": 2,
+      "error": "EIO",
+      "baseline": "renameat2(8</tmp/nia-chaos-baseline-u3lka96t/incoming>, \"689ba16516d855e137af6e0b710bba9c\", 7</tmp/nia-chaos-baseline-u3lka96t/objects/c1>, \"5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae\", RENAME_NOREPLACE) = 0",
+      "injection": "renameat2:error=EIO:when=2",
+      "hit": "renameat2(8</tmp/nia-chaos-fault-wr3kylf2/incoming>, \"740f9a41184f0e32274196d3d22507a4\", 7</tmp/nia-chaos-fault-wr3kylf2/objects/c1>, \"5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae\", RENAME_NOREPLACE) = -1 EIO (Input/output error) (INJECTED)",
+      "fault_returncode": 11,
+      "acknowledged": [
+        "ACK original.deb eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0"
+      ],
+      "state_after_fault": {
+        "objects": {
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          }
+        },
+        "incoming": {
+          "incoming/740f9a41184f0e32274196d3d22507a4": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          }
+        },
+        "missing": [
+          "receipt",
+          "policy",
+          "control",
+          "InRelease",
+          "Packages",
+          "keyring"
+        ]
+      },
+      "outcome_after_fault": "IO_ERROR",
+      "recovery_ms": 197.82980299896735,
+      "incoming_after_recovery": {
+        "incoming/740f9a41184f0e32274196d3d22507a4": {
+          "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+          "size": 125
+        }
+      },
+      "result": "pass"
+    },
+    {
+      "id": "fault-010",
+      "kind": "kill",
+      "syscall": "renameat2",
+      "nth": 3,
+      "baseline": "renameat2(8</tmp/nia-chaos-baseline-u3lka96t/incoming>, \"9c8e6a4edce890daee2915358c88ea46\", 7</tmp/nia-chaos-baseline-u3lka96t/objects/4e>, \"58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638\", RENAME_NOREPLACE) = 0",
+      "injection": "renameat2:signal=SIGKILL:when=3",
+      "hit": "renameat2(8</tmp/nia-chaos-fault-s_bu8pwg/incoming>, \"2cb761215f830a866ddcb8d5049db878\", 7</tmp/nia-chaos-fault-s_bu8pwg/objects/4e>, \"58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638\", RENAME_NOREPLACE) = ?",
+      "fault_returncode": -9,
+      "acknowledged": [
+        "ACK original.deb eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+        "ACK control c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae"
+      ],
+      "state_after_fault": {
+        "objects": {
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          }
+        },
+        "incoming": {
+          "incoming/2cb761215f830a866ddcb8d5049db878": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          }
+        },
+        "missing": [
+          "receipt",
+          "policy",
+          "InRelease",
+          "Packages",
+          "keyring"
+        ]
+      },
+      "outcome_after_fault": "IO_ERROR",
+      "recovery_ms": 175.63587299991923,
+      "incoming_after_recovery": {
+        "incoming/2cb761215f830a866ddcb8d5049db878": {
+          "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+          "size": 583
+        }
+      },
+      "result": "pass"
+    },
+    {
+      "id": "fault-011",
+      "kind": "kill",
+      "syscall": "fsync",
+      "nth": 31,
+      "baseline": "fsync(7</tmp/nia-chaos-baseline-u3lka96t/objects/c3>) = 0",
+      "injection": "fsync:signal=SIGKILL:when=31",
+      "hit": "fsync(7</tmp/nia-chaos-fault-1ovhagd1/objects/c3>) = ?",
+      "fault_returncode": -9,
+      "acknowledged": [
+        "ACK original.deb eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+        "ACK control c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+        "ACK policy 4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+        "ACK InRelease 7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+        "ACK Packages 413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2"
+      ],
+      "state_after_fault": {
+        "objects": {
+          "objects/41/3a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2": {
+            "sha256": "413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2",
+            "size": 232
+          },
+          "objects/4e/58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          },
+          "objects/7f/430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d": {
+            "sha256": "7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+            "size": 523
+          },
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/c3/e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314": {
+            "sha256": "c3e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314",
+            "size": 223
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          }
+        },
+        "incoming": {},
+        "missing": [
+          "receipt"
+        ]
+      },
+      "outcome_after_fault": "IO_ERROR",
+      "recovery_ms": 187.33745100144006,
+      "incoming_after_recovery": {},
+      "result": "pass"
+    },
+    {
+      "id": "fault-012",
+      "kind": "io-error",
+      "syscall": "renameat2",
+      "nth": 7,
+      "error": "EIO",
+      "baseline": "renameat2(8</tmp/nia-chaos-baseline-u3lka96t/incoming>, \"1e553dc8a20e45ef48ab9461f759f8a1\", 7</tmp/nia-chaos-baseline-u3lka96t/objects/04>, \"fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e\", RENAME_NOREPLACE) = 0",
+      "injection": "renameat2:error=EIO:when=7",
+      "hit": "renameat2(8</tmp/nia-chaos-fault-k1pfbuqt/incoming>, \"fb8b6bd2ee8478a6efa4a8d3335ecd4e\", 7</tmp/nia-chaos-fault-k1pfbuqt/objects/04>, \"fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e\", RENAME_NOREPLACE) = -1 EIO (Input/output error) (INJECTED)",
+      "fault_returncode": 11,
+      "acknowledged": [
+        "ACK original.deb eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+        "ACK control c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+        "ACK policy 4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+        "ACK InRelease 7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+        "ACK Packages 413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2",
+        "ACK keyring c3e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314"
+      ],
+      "state_after_fault": {
+        "objects": {
+          "objects/41/3a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2": {
+            "sha256": "413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2",
+            "size": 232
+          },
+          "objects/4e/58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          },
+          "objects/7f/430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d": {
+            "sha256": "7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+            "size": 523
+          },
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/c3/e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314": {
+            "sha256": "c3e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314",
+            "size": 223
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          }
+        },
+        "incoming": {
+          "incoming/fb8b6bd2ee8478a6efa4a8d3335ecd4e": {
+            "sha256": "04fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e",
+            "size": 320
+          }
+        },
+        "missing": [
+          "receipt"
+        ]
+      },
+      "outcome_after_fault": "IO_ERROR",
+      "recovery_ms": 176.73075600032462,
+      "incoming_after_recovery": {
+        "incoming/fb8b6bd2ee8478a6efa4a8d3335ecd4e": {
+          "sha256": "04fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e",
+          "size": 320
+        }
+      },
+      "result": "pass"
+    },
+    {
+      "id": "fault-013",
+      "kind": "kill",
+      "syscall": "write",
+      "nth": 9,
+      "baseline": "write(7</tmp/nia-chaos-baseline-u3lka96t/incoming/3d941e66d7af23e549cd0e3a96478b74>, \"\\3757zXZ\\0\\0\\4\\346\\326\\264F\\2\\0!\\1\\26\\0\\0\\0t/\\345\\243\\340\\0\\300\\0\\245]\\0(\\30Hf\\333\\3320\\205\\376\\26\\352\\356\\274IX\\321\\4\\33l\\177\\314a\\345:\\375b)\\10V\\237\\202V\\243-\\24\\226s{\\206\\277#.n\\373Uz\\226\\f\\321\"..., 232) = 232",
+      "injection": "write:signal=SIGKILL:when=9",
+      "hit": "write(7</tmp/nia-chaos-fault-b8d5rjvj/incoming/b5baee3851a6b8c9a9c3e06c7345ae9d>, \"\\3757zXZ\\0\\0\\4\\346\\326\\264F\\2\\0!\\1\\26\\0\\0\\0t/\\345\\243\\340\\0\\300\\0\\245]\\0(\\30Hf\\333\\3320\\205\\376\\26\\352\\356\\274IX\\321\\4\\33l\\177\\314a\\345:\\375b)\\10V\\237\\202V\\243-\\24\\226s{\\206\\277#.n\\373Uz\\226\\f\\321\"..., 232) = ?",
+      "fault_returncode": -9,
+      "acknowledged": [
+        "ACK original.deb eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+        "ACK control c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+        "ACK policy 4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+        "ACK InRelease 7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d"
+      ],
+      "state_after_fault": {
+        "objects": {
+          "objects/4e/58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          },
+          "objects/7f/430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d": {
+            "sha256": "7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+            "size": 523
+          },
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          }
+        },
+        "incoming": {
+          "incoming/b5baee3851a6b8c9a9c3e06c7345ae9d": {
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "size": 0
+          }
+        },
+        "missing": [
+          "receipt",
+          "Packages",
+          "keyring"
+        ]
+      },
+      "outcome_after_fault": "IO_ERROR",
+      "recovery_ms": 190.03632600106357,
+      "incoming_after_recovery": {
+        "incoming/b5baee3851a6b8c9a9c3e06c7345ae9d": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size": 0
+        }
+      },
+      "result": "pass"
+    },
+    {
+      "id": "fault-014",
+      "kind": "io-error",
+      "syscall": "renameat2",
+      "nth": 1,
+      "error": "EIO",
+      "baseline": "renameat2(8</tmp/nia-chaos-baseline-u3lka96t/incoming>, \"82759688c17dde62715dcdcd602c40c1\", 7</tmp/nia-chaos-baseline-u3lka96t/objects/ee>, \"f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0\", RENAME_NOREPLACE) = 0",
+      "injection": "renameat2:error=EIO:when=1",
+      "hit": "renameat2(8</tmp/nia-chaos-fault-48wfcjy_/incoming>, \"65214eb13a68795eb9991c5bd5624a8e\", 7</tmp/nia-chaos-fault-48wfcjy_/objects/ee>, \"f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0\", RENAME_NOREPLACE) = -1 EIO (Input/output error) (INJECTED)",
+      "fault_returncode": 11,
+      "acknowledged": [],
+      "state_after_fault": {
+        "objects": {},
+        "incoming": {
+          "incoming/65214eb13a68795eb9991c5bd5624a8e": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          }
+        },
+        "missing": [
+          "receipt",
+          "policy",
+          "original.deb",
+          "control",
+          "InRelease",
+          "Packages",
+          "keyring"
+        ]
+      },
+      "outcome_after_fault": "IO_ERROR",
+      "recovery_ms": 186.40505100120208,
+      "incoming_after_recovery": {
+        "incoming/65214eb13a68795eb9991c5bd5624a8e": {
+          "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+          "size": 848
+        }
+      },
+      "result": "pass"
+    },
+    {
+      "id": "fault-015",
+      "kind": "kill",
+      "syscall": "fsync",
+      "nth": 5,
+      "baseline": "fsync(8</tmp/nia-chaos-baseline-u3lka96t/incoming>) = 0",
+      "injection": "fsync:signal=SIGKILL:when=5",
+      "hit": "fsync(8</tmp/nia-chaos-fault-krl1u23t/incoming>) = ?",
+      "fault_returncode": -9,
+      "acknowledged": [],
+      "state_after_fault": {
+        "objects": {
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          }
+        },
+        "incoming": {},
+        "missing": [
+          "receipt",
+          "policy",
+          "control",
+          "InRelease",
+          "Packages",
+          "keyring"
+        ]
+      },
+      "outcome_after_fault": "IO_ERROR",
+      "recovery_ms": 189.4511219998094,
+      "incoming_after_recovery": {},
+      "result": "pass"
+    },
+    {
+      "id": "fault-016",
+      "kind": "io-error",
+      "syscall": "fsync",
+      "nth": 31,
+      "error": "EIO",
+      "baseline": "fsync(7</tmp/nia-chaos-baseline-u3lka96t/objects/c3>) = 0",
+      "injection": "fsync:error=EIO:when=31",
+      "hit": "fsync(7</tmp/nia-chaos-fault-uepfp8oe/objects/c3>) = -1 EIO (Input/output error) (INJECTED)",
+      "fault_returncode": 11,
+      "acknowledged": [
+        "ACK original.deb eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+        "ACK control c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+        "ACK policy 4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+        "ACK InRelease 7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+        "ACK Packages 413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2"
+      ],
+      "state_after_fault": {
+        "objects": {
+          "objects/41/3a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2": {
+            "sha256": "413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2",
+            "size": 232
+          },
+          "objects/4e/58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          },
+          "objects/7f/430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d": {
+            "sha256": "7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+            "size": 523
+          },
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/c3/e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314": {
+            "sha256": "c3e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314",
+            "size": 223
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          }
+        },
+        "incoming": {},
+        "missing": [
+          "receipt"
+        ]
+      },
+      "outcome_after_fault": "IO_ERROR",
+      "recovery_ms": 184.49157199938782,
+      "incoming_after_recovery": {},
+      "result": "pass"
+    },
+    {
+      "id": "fault-017",
+      "kind": "kill",
+      "syscall": "renameat2",
+      "nth": 4,
+      "baseline": "renameat2(8</tmp/nia-chaos-baseline-u3lka96t/incoming>, \"906941d34efc4c7796b91515fcf17e92\", 7</tmp/nia-chaos-baseline-u3lka96t/objects/7f>, \"430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d\", RENAME_NOREPLACE) = 0",
+      "injection": "renameat2:signal=SIGKILL:when=4",
+      "hit": "renameat2(8</tmp/nia-chaos-fault-rmsowuju/incoming>, \"be5836cbe6b884834c489472f44bf231\", 7</tmp/nia-chaos-fault-rmsowuju/objects/7f>, \"430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d\", RENAME_NOREPLACE) = ?",
+      "fault_returncode": -9,
+      "acknowledged": [
+        "ACK original.deb eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+        "ACK control c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+        "ACK policy 4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638"
+      ],
+      "state_after_fault": {
+        "objects": {
+          "objects/4e/58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          },
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          }
+        },
+        "incoming": {
+          "incoming/be5836cbe6b884834c489472f44bf231": {
+            "sha256": "7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+            "size": 523
+          }
+        },
+        "missing": [
+          "receipt",
+          "InRelease",
+          "Packages",
+          "keyring"
+        ]
+      },
+      "outcome_after_fault": "IO_ERROR",
+      "recovery_ms": 204.46318800168228,
+      "incoming_after_recovery": {
+        "incoming/be5836cbe6b884834c489472f44bf231": {
+          "sha256": "7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+          "size": 523
+        }
+      },
+      "result": "pass"
+    },
+    {
+      "id": "fault-018",
+      "kind": "io-error",
+      "syscall": "fsync",
+      "nth": 8,
+      "error": "EIO",
+      "baseline": "fsync(7</tmp/nia-chaos-baseline-u3lka96t/incoming/689ba16516d855e137af6e0b710bba9c>) = 0",
+      "injection": "fsync:error=EIO:when=8",
+      "hit": "fsync(7</tmp/nia-chaos-fault-0914vi72/incoming/ba33989c9b091aeb3922cc593221b824>) = -1 EIO (Input/output error) (INJECTED)",
+      "fault_returncode": 11,
+      "acknowledged": [
+        "ACK original.deb eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0"
+      ],
+      "state_after_fault": {
+        "objects": {
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          }
+        },
+        "incoming": {
+          "incoming/ba33989c9b091aeb3922cc593221b824": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          }
+        },
+        "missing": [
+          "receipt",
+          "policy",
+          "control",
+          "InRelease",
+          "Packages",
+          "keyring"
+        ]
+      },
+      "outcome_after_fault": "IO_ERROR",
+      "recovery_ms": 195.72473599873774,
+      "incoming_after_recovery": {
+        "incoming/ba33989c9b091aeb3922cc593221b824": {
+          "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+          "size": 125
+        }
+      },
+      "result": "pass"
+    },
+    {
+      "id": "fault-019",
+      "kind": "io-error",
+      "syscall": "renameat2",
+      "nth": 3,
+      "error": "EIO",
+      "baseline": "renameat2(8</tmp/nia-chaos-baseline-u3lka96t/incoming>, \"9c8e6a4edce890daee2915358c88ea46\", 7</tmp/nia-chaos-baseline-u3lka96t/objects/4e>, \"58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638\", RENAME_NOREPLACE) = 0",
+      "injection": "renameat2:error=EIO:when=3",
+      "hit": "renameat2(8</tmp/nia-chaos-fault-ks8pkj00/incoming>, \"1c49e5d37a200630f20a03af6819292e\", 7</tmp/nia-chaos-fault-ks8pkj00/objects/4e>, \"58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638\", RENAME_NOREPLACE) = -1 EIO (Input/output error) (INJECTED)",
+      "fault_returncode": 11,
+      "acknowledged": [
+        "ACK original.deb eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+        "ACK control c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae"
+      ],
+      "state_after_fault": {
+        "objects": {
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          }
+        },
+        "incoming": {
+          "incoming/1c49e5d37a200630f20a03af6819292e": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          }
+        },
+        "missing": [
+          "receipt",
+          "policy",
+          "InRelease",
+          "Packages",
+          "keyring"
+        ]
+      },
+      "outcome_after_fault": "IO_ERROR",
+      "recovery_ms": 188.78256700008933,
+      "incoming_after_recovery": {
+        "incoming/1c49e5d37a200630f20a03af6819292e": {
+          "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+          "size": 583
+        }
+      },
+      "result": "pass"
+    },
+    {
+      "id": "fault-020",
+      "kind": "kill",
+      "syscall": "renameat2",
+      "nth": 5,
+      "baseline": "renameat2(8</tmp/nia-chaos-baseline-u3lka96t/incoming>, \"3d941e66d7af23e549cd0e3a96478b74\", 7</tmp/nia-chaos-baseline-u3lka96t/objects/41>, \"3a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2\", RENAME_NOREPLACE) = 0",
+      "injection": "renameat2:signal=SIGKILL:when=5",
+      "hit": "renameat2(8</tmp/nia-chaos-fault-ae9rxmyt/incoming>, \"c876f77b3fb6fef28eedaf3c1c46fd2f\", 7</tmp/nia-chaos-fault-ae9rxmyt/objects/41>, \"3a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2\", RENAME_NOREPLACE) = ?",
+      "fault_returncode": -9,
+      "acknowledged": [
+        "ACK original.deb eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+        "ACK control c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+        "ACK policy 4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+        "ACK InRelease 7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d"
+      ],
+      "state_after_fault": {
+        "objects": {
+          "objects/4e/58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          },
+          "objects/7f/430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d": {
+            "sha256": "7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+            "size": 523
+          },
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          }
+        },
+        "incoming": {
+          "incoming/c876f77b3fb6fef28eedaf3c1c46fd2f": {
+            "sha256": "413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2",
+            "size": 232
+          }
+        },
+        "missing": [
+          "receipt",
+          "Packages",
+          "keyring"
+        ]
+      },
+      "outcome_after_fault": "IO_ERROR",
+      "recovery_ms": 184.50009799926192,
+      "incoming_after_recovery": {
+        "incoming/c876f77b3fb6fef28eedaf3c1c46fd2f": {
+          "sha256": "413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2",
+          "size": 232
+        }
+      },
+      "result": "pass"
+    },
+    {
+      "id": "fault-021",
+      "kind": "kill",
+      "syscall": "write",
+      "nth": 1,
+      "baseline": "write(7</tmp/nia-chaos-baseline-u3lka96t/incoming/82759688c17dde62715dcdcd602c40c1>, \"!<arch>\\ndebian-binary   1789004488  0     0     100644  4         `\\n2.0\\ncontrol.\"..., 848) = 848",
+      "injection": "write:signal=SIGKILL:when=1",
+      "hit": "write(7</tmp/nia-chaos-fault-degxudev/incoming/4993756e97037bc83a7109201cffd5ef>, \"!<arch>\\ndebian-binary   1789004488  0     0     100644  4         `\\n2.0\\ncontrol.\"..., 848) = ?",
+      "fault_returncode": -9,
+      "acknowledged": [],
+      "state_after_fault": {
+        "objects": {},
+        "incoming": {
+          "incoming/4993756e97037bc83a7109201cffd5ef": {
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "size": 0
+          }
+        },
+        "missing": [
+          "receipt",
+          "policy",
+          "original.deb",
+          "control",
+          "InRelease",
+          "Packages",
+          "keyring"
+        ]
+      },
+      "outcome_after_fault": "IO_ERROR",
+      "recovery_ms": 198.31925700054853,
+      "incoming_after_recovery": {
+        "incoming/4993756e97037bc83a7109201cffd5ef": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size": 0
+        }
+      },
+      "result": "pass"
+    },
+    {
+      "id": "fault-022",
+      "kind": "io-error",
+      "syscall": "renameat2",
+      "nth": 6,
+      "error": "EIO",
+      "baseline": "renameat2(8</tmp/nia-chaos-baseline-u3lka96t/incoming>, \"1d32aee14161d134788b0445dfb94504\", 7</tmp/nia-chaos-baseline-u3lka96t/objects/c3>, \"e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314\", RENAME_NOREPLACE) = 0",
+      "injection": "renameat2:error=EIO:when=6",
+      "hit": "renameat2(8</tmp/nia-chaos-fault-3gx9g4vk/incoming>, \"1a642696f4577763d7f1e7c9d58774d2\", 7</tmp/nia-chaos-fault-3gx9g4vk/objects/c3>, \"e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314\", RENAME_NOREPLACE) = -1 EIO (Input/output error) (INJECTED)",
+      "fault_returncode": 11,
+      "acknowledged": [
+        "ACK original.deb eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+        "ACK control c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+        "ACK policy 4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+        "ACK InRelease 7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+        "ACK Packages 413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2"
+      ],
+      "state_after_fault": {
+        "objects": {
+          "objects/41/3a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2": {
+            "sha256": "413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2",
+            "size": 232
+          },
+          "objects/4e/58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          },
+          "objects/7f/430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d": {
+            "sha256": "7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+            "size": 523
+          },
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          }
+        },
+        "incoming": {
+          "incoming/1a642696f4577763d7f1e7c9d58774d2": {
+            "sha256": "c3e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314",
+            "size": 223
+          }
+        },
+        "missing": [
+          "receipt",
+          "keyring"
+        ]
+      },
+      "outcome_after_fault": "IO_ERROR",
+      "recovery_ms": 172.4130000002333,
+      "incoming_after_recovery": {
+        "incoming/1a642696f4577763d7f1e7c9d58774d2": {
+          "sha256": "c3e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314",
+          "size": 223
+        }
+      },
+      "result": "pass"
+    },
+    {
+      "id": "fault-023",
+      "kind": "kill",
+      "syscall": "fsync",
+      "nth": 17,
+      "baseline": "fsync(8</tmp/nia-chaos-baseline-u3lka96t/incoming>) = 0",
+      "injection": "fsync:signal=SIGKILL:when=17",
+      "hit": "fsync(8</tmp/nia-chaos-fault-3kpsq3as/incoming>) = ?",
+      "fault_returncode": -9,
+      "acknowledged": [
+        "ACK original.deb eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+        "ACK control c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+        "ACK policy 4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638"
+      ],
+      "state_after_fault": {
+        "objects": {
+          "objects/4e/58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          },
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          }
+        },
+        "incoming": {
+          "incoming/611e03fb94e7c5ab6e5b0c5d1caf6f55": {
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "size": 0
+          }
+        },
+        "missing": [
+          "receipt",
+          "InRelease",
+          "Packages",
+          "keyring"
+        ]
+      },
+      "outcome_after_fault": "IO_ERROR",
+      "recovery_ms": 205.99776999915775,
+      "incoming_after_recovery": {
+        "incoming/611e03fb94e7c5ab6e5b0c5d1caf6f55": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size": 0
+        }
+      },
+      "result": "pass"
+    },
+    {
+      "id": "fault-024",
+      "kind": "kill",
+      "syscall": "renameat2",
+      "nth": 6,
+      "baseline": "renameat2(8</tmp/nia-chaos-baseline-u3lka96t/incoming>, \"1d32aee14161d134788b0445dfb94504\", 7</tmp/nia-chaos-baseline-u3lka96t/objects/c3>, \"e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314\", RENAME_NOREPLACE) = 0",
+      "injection": "renameat2:signal=SIGKILL:when=6",
+      "hit": "renameat2(8</tmp/nia-chaos-fault-vvq3xfno/incoming>, \"9a410b210b503fb6b3258aad548f19c6\", 7</tmp/nia-chaos-fault-vvq3xfno/objects/c3>, \"e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314\", RENAME_NOREPLACE) = ?",
+      "fault_returncode": -9,
+      "acknowledged": [
+        "ACK original.deb eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+        "ACK control c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+        "ACK policy 4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+        "ACK InRelease 7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+        "ACK Packages 413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2"
+      ],
+      "state_after_fault": {
+        "objects": {
+          "objects/41/3a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2": {
+            "sha256": "413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2",
+            "size": 232
+          },
+          "objects/4e/58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          },
+          "objects/7f/430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d": {
+            "sha256": "7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+            "size": 523
+          },
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          }
+        },
+        "incoming": {
+          "incoming/9a410b210b503fb6b3258aad548f19c6": {
+            "sha256": "c3e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314",
+            "size": 223
+          }
+        },
+        "missing": [
+          "receipt",
+          "keyring"
+        ]
+      },
+      "outcome_after_fault": "IO_ERROR",
+      "recovery_ms": 169.25058199922205,
+      "incoming_after_recovery": {
+        "incoming/9a410b210b503fb6b3258aad548f19c6": {
+          "sha256": "c3e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314",
+          "size": 223
+        }
+      },
+      "result": "pass"
+    },
+    {
+      "id": "fault-025",
+      "kind": "io-error",
+      "syscall": "write",
+      "nth": 1,
+      "error": "ENOSPC",
+      "baseline": "write(7</tmp/nia-chaos-baseline-u3lka96t/incoming/82759688c17dde62715dcdcd602c40c1>, \"!<arch>\\ndebian-binary   1789004488  0     0     100644  4         `\\n2.0\\ncontrol.\"..., 848) = 848",
+      "injection": "write:error=ENOSPC:when=1",
+      "hit": "write(7</tmp/nia-chaos-fault-mglac784/incoming/15e7f7cf9b160fb44a74cf26eece3710>, \"!<arch>\\ndebian-binary   1789004488  0     0     100644  4         `\\n2.0\\ncontrol.\"..., 848) = -1 ENOSPC (No space left on device) (INJECTED)",
+      "fault_returncode": 11,
+      "acknowledged": [],
+      "state_after_fault": {
+        "objects": {},
+        "incoming": {
+          "incoming/15e7f7cf9b160fb44a74cf26eece3710": {
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "size": 0
+          }
+        },
+        "missing": [
+          "receipt",
+          "policy",
+          "original.deb",
+          "control",
+          "InRelease",
+          "Packages",
+          "keyring"
+        ]
+      },
+      "outcome_after_fault": "IO_ERROR",
+      "recovery_ms": 204.7880840000289,
+      "incoming_after_recovery": {
+        "incoming/15e7f7cf9b160fb44a74cf26eece3710": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size": 0
+        }
+      },
+      "result": "pass"
+    },
+    {
+      "id": "fault-026",
+      "kind": "io-error",
+      "syscall": "write",
+      "nth": 13,
+      "error": "ENOSPC",
+      "baseline": "write(7</tmp/nia-chaos-baseline-u3lka96t/incoming/1e553dc8a20e45ef48ab9461f759f8a1>, \"NIASUP011\\24708UKu\\200#\\37\\24\\217\\344_\\303)\\223\\33\\204^A\\363\\223\\221I\\271o\\326O\\30/mNX\\270\\363\\272\\35M\\367G\\230\\217h\\327\\374\\251\\225\\330\\301h\\236\\271-\\350\\363\\30yn\\315\\321\\340\\3068\\356\\365\\272<\\325\\6\\20\\324\"..., 320) = 320",
+      "injection": "write:error=ENOSPC:when=13",
+      "hit": "write(7</tmp/nia-chaos-fault-q2gc2rl6/incoming/cc24b84c07fe9e6231be4438d6acaa30>, \"NIASUP011\\24708UKu\\200#\\37\\24\\217\\344_\\303)\\223\\33\\204^A\\363\\223\\221I\\271o\\326O\\30/mNX\\270\\363\\272\\35M\\367G\\230\\217h\\327\\374\\251\\225\\330\\301h\\236\\271-\\350\\363\\30yn\\315\\321\\340\\3068\\356\\365\\272<\\325\\6\\20\\324\"..., 320) = -1 ENOSPC (No space left on device) (INJECTED)",
+      "fault_returncode": 11,
+      "acknowledged": [
+        "ACK original.deb eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+        "ACK control c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+        "ACK policy 4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+        "ACK InRelease 7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+        "ACK Packages 413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2",
+        "ACK keyring c3e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314"
+      ],
+      "state_after_fault": {
+        "objects": {
+          "objects/41/3a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2": {
+            "sha256": "413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2",
+            "size": 232
+          },
+          "objects/4e/58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          },
+          "objects/7f/430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d": {
+            "sha256": "7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+            "size": 523
+          },
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/c3/e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314": {
+            "sha256": "c3e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314",
+            "size": 223
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          }
+        },
+        "incoming": {
+          "incoming/cc24b84c07fe9e6231be4438d6acaa30": {
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "size": 0
+          }
+        },
+        "missing": [
+          "receipt"
+        ]
+      },
+      "outcome_after_fault": "IO_ERROR",
+      "recovery_ms": 172.44433899941214,
+      "incoming_after_recovery": {
+        "incoming/cc24b84c07fe9e6231be4438d6acaa30": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size": 0
+        }
+      },
+      "result": "pass"
+    },
+    {
+      "id": "fault-027",
+      "kind": "io-error",
+      "syscall": "fsync",
+      "nth": 3,
+      "error": "EIO",
+      "baseline": "fsync(7</tmp/nia-chaos-baseline-u3lka96t/incoming/82759688c17dde62715dcdcd602c40c1>) = 0",
+      "injection": "fsync:error=EIO:when=3",
+      "hit": "fsync(7</tmp/nia-chaos-fault-4m6oy3am/incoming/ff0ddab028d21eca82965d856ad9b913>) = -1 EIO (Input/output error) (INJECTED)",
+      "fault_returncode": 11,
+      "acknowledged": [],
+      "state_after_fault": {
+        "objects": {},
+        "incoming": {
+          "incoming/ff0ddab028d21eca82965d856ad9b913": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          }
+        },
+        "missing": [
+          "receipt",
+          "policy",
+          "original.deb",
+          "control",
+          "InRelease",
+          "Packages",
+          "keyring"
+        ]
+      },
+      "outcome_after_fault": "IO_ERROR",
+      "recovery_ms": 194.13342699954228,
+      "incoming_after_recovery": {
+        "incoming/ff0ddab028d21eca82965d856ad9b913": {
+          "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+          "size": 848
+        }
+      },
+      "result": "pass"
+    },
+    {
+      "id": "fault-028",
+      "kind": "io-error",
+      "syscall": "renameat2",
+      "nth": 4,
+      "error": "EIO",
+      "baseline": "renameat2(8</tmp/nia-chaos-baseline-u3lka96t/incoming>, \"906941d34efc4c7796b91515fcf17e92\", 7</tmp/nia-chaos-baseline-u3lka96t/objects/7f>, \"430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d\", RENAME_NOREPLACE) = 0",
+      "injection": "renameat2:error=EIO:when=4",
+      "hit": "renameat2(8</tmp/nia-chaos-fault-4zouwahz/incoming>, \"d87e81af98319505a766b83e9b4b14c1\", 7</tmp/nia-chaos-fault-4zouwahz/objects/7f>, \"430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d\", RENAME_NOREPLACE) = -1 EIO (Input/output error) (INJECTED)",
+      "fault_returncode": 11,
+      "acknowledged": [
+        "ACK original.deb eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+        "ACK control c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+        "ACK policy 4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638"
+      ],
+      "state_after_fault": {
+        "objects": {
+          "objects/4e/58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          },
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          }
+        },
+        "incoming": {
+          "incoming/d87e81af98319505a766b83e9b4b14c1": {
+            "sha256": "7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+            "size": 523
+          }
+        },
+        "missing": [
+          "receipt",
+          "InRelease",
+          "Packages",
+          "keyring"
+        ]
+      },
+      "outcome_after_fault": "IO_ERROR",
+      "recovery_ms": 187.40850200083514,
+      "incoming_after_recovery": {
+        "incoming/d87e81af98319505a766b83e9b4b14c1": {
+          "sha256": "7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+          "size": 523
+        }
+      },
+      "result": "pass"
+    },
+    {
+      "id": "fault-029",
+      "kind": "io-error",
+      "syscall": "write",
+      "nth": 5,
+      "error": "ENOSPC",
+      "baseline": "write(7</tmp/nia-chaos-baseline-u3lka96t/incoming/9c8e6a4edce890daee2915358c88ea46>, \"{\\\"created_at\\\":1789004428,\\\"schema\\\":\\\"org.niaos.archive-supply/v1\\\",\\\"security_epoch\\\"\"..., 583) = 583",
+      "injection": "write:error=ENOSPC:when=5",
+      "hit": "write(7</tmp/nia-chaos-fault-td60k0pu/incoming/b1e188eac9c72e5bb602015cf542bcd1>, \"{\\\"created_at\\\":1789004428,\\\"schema\\\":\\\"org.niaos.archive-supply/v1\\\",\\\"security_epoch\\\"\"..., 583) = -1 ENOSPC (No space left on device) (INJECTED)",
+      "fault_returncode": 11,
+      "acknowledged": [
+        "ACK original.deb eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+        "ACK control c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae"
+      ],
+      "state_after_fault": {
+        "objects": {
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          }
+        },
+        "incoming": {
+          "incoming/b1e188eac9c72e5bb602015cf542bcd1": {
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "size": 0
+          }
+        },
+        "missing": [
+          "receipt",
+          "policy",
+          "InRelease",
+          "Packages",
+          "keyring"
+        ]
+      },
+      "outcome_after_fault": "IO_ERROR",
+      "recovery_ms": 175.64578000019537,
+      "incoming_after_recovery": {
+        "incoming/b1e188eac9c72e5bb602015cf542bcd1": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size": 0
+        }
+      },
+      "result": "pass"
+    },
+    {
+      "id": "fault-030",
+      "kind": "kill",
+      "syscall": "renameat2",
+      "nth": 2,
+      "baseline": "renameat2(8</tmp/nia-chaos-baseline-u3lka96t/incoming>, \"689ba16516d855e137af6e0b710bba9c\", 7</tmp/nia-chaos-baseline-u3lka96t/objects/c1>, \"5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae\", RENAME_NOREPLACE) = 0",
+      "injection": "renameat2:signal=SIGKILL:when=2",
+      "hit": "renameat2(8</tmp/nia-chaos-fault-34p3y97t/incoming>, \"94284e2bd5b51c9820cf38874e07d51c\", 7</tmp/nia-chaos-fault-34p3y97t/objects/c1>, \"5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae\", RENAME_NOREPLACE) = ?",
+      "fault_returncode": -9,
+      "acknowledged": [
+        "ACK original.deb eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0"
+      ],
+      "state_after_fault": {
+        "objects": {
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          }
+        },
+        "incoming": {
+          "incoming/94284e2bd5b51c9820cf38874e07d51c": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          }
+        },
+        "missing": [
+          "receipt",
+          "policy",
+          "control",
+          "InRelease",
+          "Packages",
+          "keyring"
+        ]
+      },
+      "outcome_after_fault": "IO_ERROR",
+      "recovery_ms": 181.0175310001796,
+      "incoming_after_recovery": {
+        "incoming/94284e2bd5b51c9820cf38874e07d51c": {
+          "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+          "size": 125
+        }
+      },
+      "result": "pass"
+    },
+    {
+      "id": "fault-031",
+      "kind": "kill",
+      "syscall": "fsync",
+      "nth": 16,
+      "baseline": "fsync(7</tmp/nia-chaos-baseline-u3lka96t/objects/4e>) = 0",
+      "injection": "fsync:signal=SIGKILL:when=16",
+      "hit": "fsync(7</tmp/nia-chaos-fault-th7k3r1g/objects/4e>) = ?",
+      "fault_returncode": -9,
+      "acknowledged": [
+        "ACK original.deb eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+        "ACK control c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae"
+      ],
+      "state_after_fault": {
+        "objects": {
+          "objects/4e/58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          },
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          }
+        },
+        "incoming": {},
+        "missing": [
+          "receipt",
+          "InRelease",
+          "Packages",
+          "keyring"
+        ]
+      },
+      "outcome_after_fault": "IO_ERROR",
+      "recovery_ms": 172.79053399943223,
+      "incoming_after_recovery": {},
+      "result": "pass"
+    },
+    {
+      "id": "fault-032",
+      "kind": "io-error",
+      "syscall": "write",
+      "nth": 11,
+      "error": "ENOSPC",
+      "baseline": "write(7</tmp/nia-chaos-baseline-u3lka96t/incoming/1d32aee14161d134788b0445dfb94504>, \"\\2303\\4j\\242\\n\\310\\26\\t+\\6\\1\\4\\1\\332G\\17\\1\\1\\7@\\v\\303\\355\\266\\360\\242X$ \\2629\\374F\\361q`\\276\\36\\273GO\\312(\\16\\177\\17n\\326\\324\\206\\361\\35\\264\\26Nia artificial fixture\\210\\220\\4\"..., 223) = 223",
+      "injection": "write:error=ENOSPC:when=11",
+      "hit": "write(7</tmp/nia-chaos-fault-m3ju17ou/incoming/7dd6556a00242e6c4541978a382c10db>, \"\\2303\\4j\\242\\n\\310\\26\\t+\\6\\1\\4\\1\\332G\\17\\1\\1\\7@\\v\\303\\355\\266\\360\\242X$ \\2629\\374F\\361q`\\276\\36\\273GO\\312(\\16\\177\\17n\\326\\324\\206\\361\\35\\264\\26Nia artificial fixture\\210\\220\\4\"..., 223) = -1 ENOSPC (No space left on device) (INJECTED)",
+      "fault_returncode": 11,
+      "acknowledged": [
+        "ACK original.deb eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+        "ACK control c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+        "ACK policy 4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+        "ACK InRelease 7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+        "ACK Packages 413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2"
+      ],
+      "state_after_fault": {
+        "objects": {
+          "objects/41/3a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2": {
+            "sha256": "413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2",
+            "size": 232
+          },
+          "objects/4e/58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          },
+          "objects/7f/430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d": {
+            "sha256": "7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+            "size": 523
+          },
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          }
+        },
+        "incoming": {
+          "incoming/7dd6556a00242e6c4541978a382c10db": {
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "size": 0
+          }
+        },
+        "missing": [
+          "receipt",
+          "keyring"
+        ]
+      },
+      "outcome_after_fault": "IO_ERROR",
+      "recovery_ms": 190.46528599938028,
+      "incoming_after_recovery": {
+        "incoming/7dd6556a00242e6c4541978a382c10db": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size": 0
+        }
+      },
+      "result": "pass"
+    },
+    {
+      "id": "fault-033",
+      "kind": "io-error",
+      "syscall": "fsync",
+      "nth": 24,
+      "error": "EIO",
+      "baseline": "fsync(9</tmp/nia-chaos-baseline-u3lka96t/objects>) = 0",
+      "injection": "fsync:error=EIO:when=24",
+      "hit": "fsync(9</tmp/nia-chaos-fault-32f_dh3y/objects>) = -1 EIO (Input/output error) (INJECTED)",
+      "fault_returncode": 11,
+      "acknowledged": [
+        "ACK original.deb eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+        "ACK control c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+        "ACK policy 4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+        "ACK InRelease 7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d"
+      ],
+      "state_after_fault": {
+        "objects": {
+          "objects/4e/58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          },
+          "objects/7f/430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d": {
+            "sha256": "7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+            "size": 523
+          },
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          }
+        },
+        "incoming": {
+          "incoming/499a4d4a418f637da7611c096829517a": {
+            "sha256": "413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2",
+            "size": 232
+          }
+        },
+        "missing": [
+          "receipt",
+          "Packages",
+          "keyring"
+        ]
+      },
+      "outcome_after_fault": "IO_ERROR",
+      "recovery_ms": 195.12815400048567,
+      "incoming_after_recovery": {
+        "incoming/499a4d4a418f637da7611c096829517a": {
+          "sha256": "413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2",
+          "size": 232
+        }
+      },
+      "result": "pass"
+    },
+    {
+      "id": "fault-034",
+      "kind": "kill",
+      "syscall": "write",
+      "nth": 3,
+      "baseline": "write(7</tmp/nia-chaos-baseline-u3lka96t/incoming/689ba16516d855e137af6e0b710bba9c>, \"Package: nia-test\\nVersion: 1:2.0~rc1-3\\nArchitecture: all\\nMaintainer: Nia synthet\"..., 125) = 125",
+      "injection": "write:signal=SIGKILL:when=3",
+      "hit": "write(7</tmp/nia-chaos-fault-27p5dcnn/incoming/6360cff8eb93e587f25a4ded791c22f7>, \"Package: nia-test\\nVersion: 1:2.0~rc1-3\\nArchitecture: all\\nMaintainer: Nia synthet\"..., 125) = ?",
+      "fault_returncode": -9,
+      "acknowledged": [
+        "ACK original.deb eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0"
+      ],
+      "state_after_fault": {
+        "objects": {
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          }
+        },
+        "incoming": {
+          "incoming/6360cff8eb93e587f25a4ded791c22f7": {
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "size": 0
+          }
+        },
+        "missing": [
+          "receipt",
+          "policy",
+          "control",
+          "InRelease",
+          "Packages",
+          "keyring"
+        ]
+      },
+      "outcome_after_fault": "IO_ERROR",
+      "recovery_ms": 203.97507599955134,
+      "incoming_after_recovery": {
+        "incoming/6360cff8eb93e587f25a4ded791c22f7": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size": 0
+        }
+      },
+      "result": "pass"
+    },
+    {
+      "id": "fault-035",
+      "kind": "kill",
+      "syscall": "fsync",
+      "nth": 8,
+      "baseline": "fsync(7</tmp/nia-chaos-baseline-u3lka96t/incoming/689ba16516d855e137af6e0b710bba9c>) = 0",
+      "injection": "fsync:signal=SIGKILL:when=8",
+      "hit": "fsync(7</tmp/nia-chaos-fault-t89ydz5e/incoming/3af75b3c43992ec2968eedeea6f066c3>) = ?",
+      "fault_returncode": -9,
+      "acknowledged": [
+        "ACK original.deb eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0"
+      ],
+      "state_after_fault": {
+        "objects": {
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          }
+        },
+        "incoming": {
+          "incoming/3af75b3c43992ec2968eedeea6f066c3": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          }
+        },
+        "missing": [
+          "receipt",
+          "policy",
+          "control",
+          "InRelease",
+          "Packages",
+          "keyring"
+        ]
+      },
+      "outcome_after_fault": "IO_ERROR",
+      "recovery_ms": 198.4995330003585,
+      "incoming_after_recovery": {
+        "incoming/3af75b3c43992ec2968eedeea6f066c3": {
+          "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+          "size": 125
+        }
+      },
+      "result": "pass"
+    },
+    {
+      "id": "fault-036",
+      "kind": "io-error",
+      "syscall": "fsync",
+      "nth": 17,
+      "error": "EIO",
+      "baseline": "fsync(8</tmp/nia-chaos-baseline-u3lka96t/incoming>) = 0",
+      "injection": "fsync:error=EIO:when=17",
+      "hit": "fsync(8</tmp/nia-chaos-fault-r8osf5g9/incoming>) = -1 EIO (Input/output error) (INJECTED)",
+      "fault_returncode": 11,
+      "acknowledged": [
+        "ACK original.deb eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+        "ACK control c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+        "ACK policy 4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638"
+      ],
+      "state_after_fault": {
+        "objects": {
+          "objects/4e/58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          },
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          }
+        },
+        "incoming": {
+          "incoming/402897b75e290749f8ef9fe7a8d2f371": {
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "size": 0
+          }
+        },
+        "missing": [
+          "receipt",
+          "InRelease",
+          "Packages",
+          "keyring"
+        ]
+      },
+      "outcome_after_fault": "IO_ERROR",
+      "recovery_ms": 182.28904399984458,
+      "incoming_after_recovery": {
+        "incoming/402897b75e290749f8ef9fe7a8d2f371": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size": 0
+        }
+      },
+      "result": "pass"
+    },
+    {
+      "id": "fault-037",
+      "kind": "kill",
+      "syscall": "fsync",
+      "nth": 13,
+      "baseline": "fsync(7</tmp/nia-chaos-baseline-u3lka96t/incoming/9c8e6a4edce890daee2915358c88ea46>) = 0",
+      "injection": "fsync:signal=SIGKILL:when=13",
+      "hit": "fsync(7</tmp/nia-chaos-fault-msw7e3ru/incoming/9403225ade6388e58348d7868ebd74a2>) = ?",
+      "fault_returncode": -9,
+      "acknowledged": [
+        "ACK original.deb eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+        "ACK control c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae"
+      ],
+      "state_after_fault": {
+        "objects": {
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          }
+        },
+        "incoming": {
+          "incoming/9403225ade6388e58348d7868ebd74a2": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          }
+        },
+        "missing": [
+          "receipt",
+          "policy",
+          "InRelease",
+          "Packages",
+          "keyring"
+        ]
+      },
+      "outcome_after_fault": "IO_ERROR",
+      "recovery_ms": 187.361835000047,
+      "incoming_after_recovery": {
+        "incoming/9403225ade6388e58348d7868ebd74a2": {
+          "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+          "size": 583
+        }
+      },
+      "result": "pass"
+    },
+    {
+      "id": "fault-038",
+      "kind": "kill",
+      "syscall": "renameat2",
+      "nth": 7,
+      "baseline": "renameat2(8</tmp/nia-chaos-baseline-u3lka96t/incoming>, \"1e553dc8a20e45ef48ab9461f759f8a1\", 7</tmp/nia-chaos-baseline-u3lka96t/objects/04>, \"fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e\", RENAME_NOREPLACE) = 0",
+      "injection": "renameat2:signal=SIGKILL:when=7",
+      "hit": "renameat2(8</tmp/nia-chaos-fault-1ap9qsbv/incoming>, \"1557bdba28d1cdac0b78668c45b61768\", 7</tmp/nia-chaos-fault-1ap9qsbv/objects/04>, \"fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e\", RENAME_NOREPLACE) = ?",
+      "fault_returncode": -9,
+      "acknowledged": [
+        "ACK original.deb eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+        "ACK control c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+        "ACK policy 4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+        "ACK InRelease 7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+        "ACK Packages 413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2",
+        "ACK keyring c3e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314"
+      ],
+      "state_after_fault": {
+        "objects": {
+          "objects/41/3a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2": {
+            "sha256": "413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2",
+            "size": 232
+          },
+          "objects/4e/58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          },
+          "objects/7f/430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d": {
+            "sha256": "7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+            "size": 523
+          },
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/c3/e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314": {
+            "sha256": "c3e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314",
+            "size": 223
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          }
+        },
+        "incoming": {
+          "incoming/1557bdba28d1cdac0b78668c45b61768": {
+            "sha256": "04fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e",
+            "size": 320
+          }
+        },
+        "missing": [
+          "receipt"
+        ]
+      },
+      "outcome_after_fault": "IO_ERROR",
+      "recovery_ms": 161.48745999998937,
+      "incoming_after_recovery": {
+        "incoming/1557bdba28d1cdac0b78668c45b61768": {
+          "sha256": "04fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e",
+          "size": 320
+        }
+      },
+      "result": "pass"
+    },
+    {
+      "id": "fault-039",
+      "kind": "io-error",
+      "syscall": "renameat2",
+      "nth": 5,
+      "error": "EIO",
+      "baseline": "renameat2(8</tmp/nia-chaos-baseline-u3lka96t/incoming>, \"3d941e66d7af23e549cd0e3a96478b74\", 7</tmp/nia-chaos-baseline-u3lka96t/objects/41>, \"3a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2\", RENAME_NOREPLACE) = 0",
+      "injection": "renameat2:error=EIO:when=5",
+      "hit": "renameat2(8</tmp/nia-chaos-fault-37ujkb6p/incoming>, \"d45773a614126776eb3f77f59bccba5e\", 7</tmp/nia-chaos-fault-37ujkb6p/objects/41>, \"3a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2\", RENAME_NOREPLACE) = -1 EIO (Input/output error) (INJECTED)",
+      "fault_returncode": 11,
+      "acknowledged": [
+        "ACK original.deb eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+        "ACK control c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+        "ACK policy 4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+        "ACK InRelease 7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d"
+      ],
+      "state_after_fault": {
+        "objects": {
+          "objects/4e/58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          },
+          "objects/7f/430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d": {
+            "sha256": "7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+            "size": 523
+          },
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          }
+        },
+        "incoming": {
+          "incoming/d45773a614126776eb3f77f59bccba5e": {
+            "sha256": "413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2",
+            "size": 232
+          }
+        },
+        "missing": [
+          "receipt",
+          "Packages",
+          "keyring"
+        ]
+      },
+      "outcome_after_fault": "IO_ERROR",
+      "recovery_ms": 191.43041700044705,
+      "incoming_after_recovery": {
+        "incoming/d45773a614126776eb3f77f59bccba5e": {
+          "sha256": "413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2",
+          "size": 232
+        }
+      },
+      "result": "pass"
+    },
+    {
+      "id": "fault-040",
+      "kind": "io-error",
+      "syscall": "fsync",
+      "nth": 13,
+      "error": "EIO",
+      "baseline": "fsync(7</tmp/nia-chaos-baseline-u3lka96t/incoming/9c8e6a4edce890daee2915358c88ea46>) = 0",
+      "injection": "fsync:error=EIO:when=13",
+      "hit": "fsync(7</tmp/nia-chaos-fault-n312x4s6/incoming/ba39a14e3b021c364b905653954877bd>) = -1 EIO (Input/output error) (INJECTED)",
+      "fault_returncode": 11,
+      "acknowledged": [
+        "ACK original.deb eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+        "ACK control c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae"
+      ],
+      "state_after_fault": {
+        "objects": {
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          }
+        },
+        "incoming": {
+          "incoming/ba39a14e3b021c364b905653954877bd": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          }
+        },
+        "missing": [
+          "receipt",
+          "policy",
+          "InRelease",
+          "Packages",
+          "keyring"
+        ]
+      },
+      "outcome_after_fault": "IO_ERROR",
+      "recovery_ms": 244.8266520004836,
+      "incoming_after_recovery": {
+        "incoming/ba39a14e3b021c364b905653954877bd": {
+          "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+          "size": 583
+        }
+      },
+      "result": "pass"
+    },
+    {
+      "id": "fault-041",
+      "kind": "kill",
+      "syscall": "fsync",
+      "nth": 36,
+      "baseline": "fsync(7</tmp/nia-chaos-baseline-u3lka96t/objects/04>) = 0",
+      "injection": "fsync:signal=SIGKILL:when=36",
+      "hit": "fsync(7</tmp/nia-chaos-fault-r1ioc9tz/objects/04>) = ?",
+      "fault_returncode": -9,
+      "acknowledged": [
+        "ACK original.deb eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+        "ACK control c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+        "ACK policy 4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+        "ACK InRelease 7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+        "ACK Packages 413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2",
+        "ACK keyring c3e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314"
+      ],
+      "state_after_fault": {
+        "objects": {
+          "objects/04/fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e": {
+            "sha256": "04fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e",
+            "size": 320
+          },
+          "objects/41/3a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2": {
+            "sha256": "413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2",
+            "size": 232
+          },
+          "objects/4e/58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          },
+          "objects/7f/430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d": {
+            "sha256": "7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+            "size": 523
+          },
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/c3/e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314": {
+            "sha256": "c3e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314",
+            "size": 223
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          }
+        },
+        "incoming": {},
+        "missing": []
+      },
+      "outcome_after_fault": "OK",
+      "recovery_ms": 181.09937400004128,
+      "incoming_after_recovery": {},
+      "result": "pass"
+    },
+    {
+      "id": "fault-042",
+      "kind": "kill",
+      "syscall": "write",
+      "nth": 7,
+      "baseline": "write(7</tmp/nia-chaos-baseline-u3lka96t/incoming/906941d34efc4c7796b91515fcf17e92>, \"-----BEGIN PGP SIGNED MESSAGE-----\\nHash: SHA512\\n\\nOrigin: Debian\\nLabel: Debian\\nSu\"..., 523) = 523",
+      "injection": "write:signal=SIGKILL:when=7",
+      "hit": "write(7</tmp/nia-chaos-fault-zecpopy0/incoming/d4721e4396718bd08ddb0d63e96c5364>, \"-----BEGIN PGP SIGNED MESSAGE-----\\nHash: SHA512\\n\\nOrigin: Debian\\nLabel: Debian\\nSu\"..., 523) = ?",
+      "fault_returncode": -9,
+      "acknowledged": [
+        "ACK original.deb eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+        "ACK control c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+        "ACK policy 4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638"
+      ],
+      "state_after_fault": {
+        "objects": {
+          "objects/4e/58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          },
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          }
+        },
+        "incoming": {
+          "incoming/d4721e4396718bd08ddb0d63e96c5364": {
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "size": 0
+          }
+        },
+        "missing": [
+          "receipt",
+          "InRelease",
+          "Packages",
+          "keyring"
+        ]
+      },
+      "outcome_after_fault": "IO_ERROR",
+      "recovery_ms": 167.7284920006059,
+      "incoming_after_recovery": {
+        "incoming/d4721e4396718bd08ddb0d63e96c5364": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size": 0
+        }
+      },
+      "result": "pass"
+    },
+    {
+      "id": "fault-043",
+      "kind": "io-error",
+      "syscall": "fsync",
+      "nth": 5,
+      "error": "EIO",
+      "baseline": "fsync(8</tmp/nia-chaos-baseline-u3lka96t/incoming>) = 0",
+      "injection": "fsync:error=EIO:when=5",
+      "hit": "fsync(8</tmp/nia-chaos-fault-crs7z9j6/incoming>) = -1 EIO (Input/output error) (INJECTED)",
+      "fault_returncode": 11,
+      "acknowledged": [],
+      "state_after_fault": {
+        "objects": {
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          }
+        },
+        "incoming": {},
+        "missing": [
+          "receipt",
+          "policy",
+          "control",
+          "InRelease",
+          "Packages",
+          "keyring"
+        ]
+      },
+      "outcome_after_fault": "IO_ERROR",
+      "recovery_ms": 177.449766000791,
+      "incoming_after_recovery": {},
+      "result": "pass"
+    },
+    {
+      "id": "fault-044",
+      "kind": "kill",
+      "syscall": "fsync",
+      "nth": 24,
+      "baseline": "fsync(9</tmp/nia-chaos-baseline-u3lka96t/objects>) = 0",
+      "injection": "fsync:signal=SIGKILL:when=24",
+      "hit": "fsync(9</tmp/nia-chaos-fault-p13xtipm/objects>) = ?",
+      "fault_returncode": -9,
+      "acknowledged": [
+        "ACK original.deb eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+        "ACK control c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+        "ACK policy 4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+        "ACK InRelease 7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d"
+      ],
+      "state_after_fault": {
+        "objects": {
+          "objects/4e/58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          },
+          "objects/7f/430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d": {
+            "sha256": "7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+            "size": 523
+          },
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          }
+        },
+        "incoming": {
+          "incoming/5724a4fea98543b88a1f3f415d6730e7": {
+            "sha256": "413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2",
+            "size": 232
+          }
+        },
+        "missing": [
+          "receipt",
+          "Packages",
+          "keyring"
+        ]
+      },
+      "outcome_after_fault": "IO_ERROR",
+      "recovery_ms": 181.1498280003434,
+      "incoming_after_recovery": {
+        "incoming/5724a4fea98543b88a1f3f415d6730e7": {
+          "sha256": "413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2",
+          "size": 232
+        }
+      },
+      "result": "pass"
+    },
+    {
+      "id": "fault-045",
+      "kind": "kill",
+      "syscall": "write",
+      "nth": 5,
+      "baseline": "write(7</tmp/nia-chaos-baseline-u3lka96t/incoming/9c8e6a4edce890daee2915358c88ea46>, \"{\\\"created_at\\\":1789004428,\\\"schema\\\":\\\"org.niaos.archive-supply/v1\\\",\\\"security_epoch\\\"\"..., 583) = 583",
+      "injection": "write:signal=SIGKILL:when=5",
+      "hit": "write(7</tmp/nia-chaos-fault-6d2n8y6a/incoming/46d5b3b49e0ffeafd345439eec26941c>, \"{\\\"created_at\\\":1789004428,\\\"schema\\\":\\\"org.niaos.archive-supply/v1\\\",\\\"security_epoch\\\"\"..., 583) = ?",
+      "fault_returncode": -9,
+      "acknowledged": [
+        "ACK original.deb eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+        "ACK control c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae"
+      ],
+      "state_after_fault": {
+        "objects": {
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          }
+        },
+        "incoming": {
+          "incoming/46d5b3b49e0ffeafd345439eec26941c": {
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "size": 0
+          }
+        },
+        "missing": [
+          "receipt",
+          "policy",
+          "InRelease",
+          "Packages",
+          "keyring"
+        ]
+      },
+      "outcome_after_fault": "IO_ERROR",
+      "recovery_ms": 183.44431900004565,
+      "incoming_after_recovery": {
+        "incoming/46d5b3b49e0ffeafd345439eec26941c": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size": 0
+        }
+      },
+      "result": "pass"
+    },
+    {
+      "id": "fault-046",
+      "kind": "io-error",
+      "syscall": "fsync",
+      "nth": 16,
+      "error": "EIO",
+      "baseline": "fsync(7</tmp/nia-chaos-baseline-u3lka96t/objects/4e>) = 0",
+      "injection": "fsync:error=EIO:when=16",
+      "hit": "fsync(7</tmp/nia-chaos-fault-je29r859/objects/4e>) = -1 EIO (Input/output error) (INJECTED)",
+      "fault_returncode": 11,
+      "acknowledged": [
+        "ACK original.deb eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+        "ACK control c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae"
+      ],
+      "state_after_fault": {
+        "objects": {
+          "objects/4e/58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          },
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          }
+        },
+        "incoming": {},
+        "missing": [
+          "receipt",
+          "InRelease",
+          "Packages",
+          "keyring"
+        ]
+      },
+      "outcome_after_fault": "IO_ERROR",
+      "recovery_ms": 167.34569700020074,
+      "incoming_after_recovery": {},
+      "result": "pass"
+    },
+    {
+      "id": "fault-047",
+      "kind": "kill",
+      "syscall": "fsync",
+      "nth": 26,
+      "baseline": "fsync(7</tmp/nia-chaos-baseline-u3lka96t/objects/41>) = 0",
+      "injection": "fsync:signal=SIGKILL:when=26",
+      "hit": "fsync(7</tmp/nia-chaos-fault-yi8dnx3h/objects/41>) = ?",
+      "fault_returncode": -9,
+      "acknowledged": [
+        "ACK original.deb eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+        "ACK control c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+        "ACK policy 4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+        "ACK InRelease 7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d"
+      ],
+      "state_after_fault": {
+        "objects": {
+          "objects/41/3a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2": {
+            "sha256": "413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2",
+            "size": 232
+          },
+          "objects/4e/58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          },
+          "objects/7f/430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d": {
+            "sha256": "7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+            "size": 523
+          },
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          }
+        },
+        "incoming": {},
+        "missing": [
+          "receipt",
+          "keyring"
+        ]
+      },
+      "outcome_after_fault": "IO_ERROR",
+      "recovery_ms": 176.21674700058065,
+      "incoming_after_recovery": {},
+      "result": "pass"
+    },
+    {
+      "id": "fault-048",
+      "kind": "io-error",
+      "syscall": "fsync",
+      "nth": 36,
+      "error": "EIO",
+      "baseline": "fsync(7</tmp/nia-chaos-baseline-u3lka96t/objects/04>) = 0",
+      "injection": "fsync:error=EIO:when=36",
+      "hit": "fsync(7</tmp/nia-chaos-fault-6qdjbelh/objects/04>) = -1 EIO (Input/output error) (INJECTED)",
+      "fault_returncode": 11,
+      "acknowledged": [
+        "ACK original.deb eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+        "ACK control c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+        "ACK policy 4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+        "ACK InRelease 7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+        "ACK Packages 413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2",
+        "ACK keyring c3e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314"
+      ],
+      "state_after_fault": {
+        "objects": {
+          "objects/04/fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e": {
+            "sha256": "04fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e",
+            "size": 320
+          },
+          "objects/41/3a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2": {
+            "sha256": "413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2",
+            "size": 232
+          },
+          "objects/4e/58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          },
+          "objects/7f/430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d": {
+            "sha256": "7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+            "size": 523
+          },
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/c3/e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314": {
+            "sha256": "c3e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314",
+            "size": 223
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          }
+        },
+        "incoming": {},
+        "missing": []
+      },
+      "outcome_after_fault": "OK",
+      "recovery_ms": 167.13787099979527,
+      "incoming_after_recovery": {},
+      "result": "pass"
+    },
+    {
+      "id": "fault-049",
+      "kind": "io-error",
+      "syscall": "write",
+      "nth": 9,
+      "error": "ENOSPC",
+      "baseline": "write(7</tmp/nia-chaos-baseline-u3lka96t/incoming/3d941e66d7af23e549cd0e3a96478b74>, \"\\3757zXZ\\0\\0\\4\\346\\326\\264F\\2\\0!\\1\\26\\0\\0\\0t/\\345\\243\\340\\0\\300\\0\\245]\\0(\\30Hf\\333\\3320\\205\\376\\26\\352\\356\\274IX\\321\\4\\33l\\177\\314a\\345:\\375b)\\10V\\237\\202V\\243-\\24\\226s{\\206\\277#.n\\373Uz\\226\\f\\321\"..., 232) = 232",
+      "injection": "write:error=ENOSPC:when=9",
+      "hit": "write(7</tmp/nia-chaos-fault-fj5lxyl2/incoming/a645b38e25c9e6b84e0cc1b0a8327507>, \"\\3757zXZ\\0\\0\\4\\346\\326\\264F\\2\\0!\\1\\26\\0\\0\\0t/\\345\\243\\340\\0\\300\\0\\245]\\0(\\30Hf\\333\\3320\\205\\376\\26\\352\\356\\274IX\\321\\4\\33l\\177\\314a\\345:\\375b)\\10V\\237\\202V\\243-\\24\\226s{\\206\\277#.n\\373Uz\\226\\f\\321\"..., 232) = -1 ENOSPC (No space left on device) (INJECTED)",
+      "fault_returncode": 11,
+      "acknowledged": [
+        "ACK original.deb eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+        "ACK control c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+        "ACK policy 4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+        "ACK InRelease 7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d"
+      ],
+      "state_after_fault": {
+        "objects": {
+          "objects/4e/58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          },
+          "objects/7f/430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d": {
+            "sha256": "7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+            "size": 523
+          },
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          }
+        },
+        "incoming": {
+          "incoming/a645b38e25c9e6b84e0cc1b0a8327507": {
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "size": 0
+          }
+        },
+        "missing": [
+          "receipt",
+          "Packages",
+          "keyring"
+        ]
+      },
+      "outcome_after_fault": "IO_ERROR",
+      "recovery_ms": 206.47395699961635,
+      "incoming_after_recovery": {
+        "incoming/a645b38e25c9e6b84e0cc1b0a8327507": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size": 0
+        }
+      },
+      "result": "pass"
+    },
+    {
+      "id": "fault-050",
+      "kind": "io-error",
+      "syscall": "fsync",
+      "nth": 26,
+      "error": "EIO",
+      "baseline": "fsync(7</tmp/nia-chaos-baseline-u3lka96t/objects/41>) = 0",
+      "injection": "fsync:error=EIO:when=26",
+      "hit": "fsync(7</tmp/nia-chaos-fault-57ngrnfh/objects/41>) = -1 EIO (Input/output error) (INJECTED)",
+      "fault_returncode": 11,
+      "acknowledged": [
+        "ACK original.deb eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+        "ACK control c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+        "ACK policy 4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+        "ACK InRelease 7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d"
+      ],
+      "state_after_fault": {
+        "objects": {
+          "objects/41/3a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2": {
+            "sha256": "413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2",
+            "size": 232
+          },
+          "objects/4e/58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          },
+          "objects/7f/430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d": {
+            "sha256": "7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+            "size": 523
+          },
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          }
+        },
+        "incoming": {},
+        "missing": [
+          "receipt",
+          "keyring"
+        ]
+      },
+      "outcome_after_fault": "IO_ERROR",
+      "recovery_ms": 184.6199310002703,
+      "incoming_after_recovery": {},
+      "result": "pass"
+    },
+    {
+      "id": "fault-051",
+      "kind": "kill",
+      "syscall": "fsync",
+      "nth": 19,
+      "baseline": "fsync(9</tmp/nia-chaos-baseline-u3lka96t/objects>) = 0",
+      "injection": "fsync:signal=SIGKILL:when=19",
+      "hit": "fsync(9</tmp/nia-chaos-fault-4ii02zm4/objects>) = ?",
+      "fault_returncode": -9,
+      "acknowledged": [
+        "ACK original.deb eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+        "ACK control c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+        "ACK policy 4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638"
+      ],
+      "state_after_fault": {
+        "objects": {
+          "objects/4e/58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          },
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          }
+        },
+        "incoming": {
+          "incoming/01b5652e2bae95044e4b19d724a83ab8": {
+            "sha256": "7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+            "size": 523
+          }
+        },
+        "missing": [
+          "receipt",
+          "InRelease",
+          "Packages",
+          "keyring"
+        ]
+      },
+      "outcome_after_fault": "IO_ERROR",
+      "recovery_ms": 168.47101699931954,
+      "incoming_after_recovery": {
+        "incoming/01b5652e2bae95044e4b19d724a83ab8": {
+          "sha256": "7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+          "size": 523
+        }
+      },
+      "result": "pass"
+    },
+    {
+      "id": "kill-corrupt-0",
+      "kind": "kill-then-corrupt",
+      "nth": 3,
+      "hit": "renameat2(8</tmp/nia-chaos-combined-d10y08qn/incoming>, \"e24149fa88bcb2676a20a1df88f00120\", 7</tmp/nia-chaos-combined-d10y08qn/objects/4e>, \"58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638\", RENAME_NOREPLACE) = ?",
+      "object": "original.deb",
+      "offset": 486,
+      "state_after_fault": {
+        "objects": {
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "0af64c5f9da609dad16dff203f09073a674bbaf0419b55897471926f6ff7e062",
+            "size": 848
+          }
+        },
+        "incoming": {
+          "incoming/e24149fa88bcb2676a20a1df88f00120": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          }
+        },
+        "missing": [
+          "receipt",
+          "policy",
+          "InRelease",
+          "Packages",
+          "keyring"
+        ]
+      },
+      "explicit_lab_quarantine": true,
+      "recovery_ms": 173.26967799999693,
+      "result": "pass"
+    },
+    {
+      "id": "kill-corrupt-1",
+      "kind": "kill-then-corrupt",
+      "nth": 5,
+      "hit": "renameat2(8</tmp/nia-chaos-combined-hjljyn24/incoming>, \"c39afe5c0744493ed6c0c4ff5ce01924\", 7</tmp/nia-chaos-combined-hjljyn24/objects/41>, \"3a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2\", RENAME_NOREPLACE) = ?",
+      "object": "policy",
+      "offset": 369,
+      "state_after_fault": {
+        "objects": {
+          "objects/4e/58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638": {
+            "sha256": "af6acf4a4ce6517f1f1e357fea17a5acc22f705310d591345af94ec90e08d46d",
+            "size": 583
+          },
+          "objects/7f/430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d": {
+            "sha256": "7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+            "size": 523
+          },
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          }
+        },
+        "incoming": {
+          "incoming/c39afe5c0744493ed6c0c4ff5ce01924": {
+            "sha256": "413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2",
+            "size": 232
+          }
+        },
+        "missing": [
+          "receipt",
+          "Packages",
+          "keyring"
+        ]
+      },
+      "explicit_lab_quarantine": true,
+      "recovery_ms": 169.45536200000788,
+      "result": "pass"
+    },
+    {
+      "id": "kill-corrupt-2",
+      "kind": "kill-then-corrupt",
+      "nth": 2,
+      "hit": "renameat2(8</tmp/nia-chaos-combined-qeb1btdc/incoming>, \"4d5641b5e2c6d8e2816ad3f44b5c2c6f\", 7</tmp/nia-chaos-combined-qeb1btdc/objects/c1>, \"5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae\", RENAME_NOREPLACE) = ?",
+      "object": "original.deb",
+      "offset": 726,
+      "state_after_fault": {
+        "objects": {
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "c387267464131cefdeefe38430564d7d810fb27fc9c21dd62e682f7cfec7c88b",
+            "size": 848
+          }
+        },
+        "incoming": {
+          "incoming/4d5641b5e2c6d8e2816ad3f44b5c2c6f": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          }
+        },
+        "missing": [
+          "receipt",
+          "policy",
+          "control",
+          "InRelease",
+          "Packages",
+          "keyring"
+        ]
+      },
+      "explicit_lab_quarantine": true,
+      "recovery_ms": 214.49821699934546,
+      "result": "pass"
+    },
+    {
+      "id": "kill-corrupt-3",
+      "kind": "kill-then-corrupt",
+      "nth": 7,
+      "hit": "renameat2(8</tmp/nia-chaos-combined-1z6alwbd/incoming>, \"5e1b6593ce5cc30644a0eb4f8cfbb6fa\", 7</tmp/nia-chaos-combined-1z6alwbd/objects/04>, \"fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e\", RENAME_NOREPLACE) = ?",
+      "object": "InRelease",
+      "offset": 333,
+      "state_after_fault": {
+        "objects": {
+          "objects/41/3a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2": {
+            "sha256": "413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2",
+            "size": 232
+          },
+          "objects/4e/58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          },
+          "objects/7f/430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d": {
+            "sha256": "5836bf73554929cf2a2d13ab5193fc6a0469df0a88b5d8a97d89232aae5b559b",
+            "size": 523
+          },
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/c3/e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314": {
+            "sha256": "c3e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314",
+            "size": 223
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          }
+        },
+        "incoming": {
+          "incoming/5e1b6593ce5cc30644a0eb4f8cfbb6fa": {
+            "sha256": "04fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e",
+            "size": 320
+          }
+        },
+        "missing": [
+          "receipt"
+        ]
+      },
+      "explicit_lab_quarantine": true,
+      "recovery_ms": 170.16792300091765,
+      "result": "pass"
+    },
+    {
+      "id": "damage-receipt-bitflip",
+      "kind": "corruption",
+      "object": "receipt",
+      "damage": "bitflip",
+      "offset": 277,
+      "outcome_after_fault": "CORRUPT",
+      "state_after_fault": {
+        "objects": {
+          "objects/04/fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e": {
+            "sha256": "e485cc1f53e3d555329b4eece7626350ce3a6eacaada86d28a277b99e3200253",
+            "size": 320
+          },
+          "objects/41/3a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2": {
+            "sha256": "413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2",
+            "size": 232
+          },
+          "objects/4e/58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          },
+          "objects/61/9a7e0e028c14ece4f83d4bd23fd3954c8213f7689a3c1f71beaace9c3c0e46": {
+            "sha256": "619a7e0e028c14ece4f83d4bd23fd3954c8213f7689a3c1f71beaace9c3c0e46",
+            "size": 428
+          },
+          "objects/6a/483aacea69cb29a5b5f3d3539c38e6c6545123cd6b21b9602613ed7d9ea914": {
+            "sha256": "6a483aacea69cb29a5b5f3d3539c38e6c6545123cd6b21b9602613ed7d9ea914",
+            "size": 19
+          },
+          "objects/7f/430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d": {
+            "sha256": "7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+            "size": 523
+          },
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/c3/e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314": {
+            "sha256": "c3e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314",
+            "size": 223
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          },
+          "objects/fa/963b921ac859d27a8869c9e6328e577599dd20ba70da3f5259014fda030a70": {
+            "sha256": "fa963b921ac859d27a8869c9e6328e577599dd20ba70da3f5259014fda030a70",
+            "size": 77
+          }
+        },
+        "incoming": {},
+        "missing": []
+      },
+      "explicit_lab_quarantine": true,
+      "recovery_ms": 145.76229600061197,
+      "result": "pass"
+    },
+    {
+      "id": "damage-receipt-truncate",
+      "kind": "corruption",
+      "object": "receipt",
+      "damage": "truncate",
+      "offset": 212,
+      "outcome_after_fault": "CORRUPT",
+      "state_after_fault": {
+        "objects": {
+          "objects/04/fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e": {
+            "sha256": "81066e0c3111c7d5c4497a38d09d207461d2d348600d0d6e86e7d7cec0d9f957",
+            "size": 212
+          },
+          "objects/41/3a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2": {
+            "sha256": "413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2",
+            "size": 232
+          },
+          "objects/4e/58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          },
+          "objects/61/9a7e0e028c14ece4f83d4bd23fd3954c8213f7689a3c1f71beaace9c3c0e46": {
+            "sha256": "619a7e0e028c14ece4f83d4bd23fd3954c8213f7689a3c1f71beaace9c3c0e46",
+            "size": 428
+          },
+          "objects/6a/483aacea69cb29a5b5f3d3539c38e6c6545123cd6b21b9602613ed7d9ea914": {
+            "sha256": "6a483aacea69cb29a5b5f3d3539c38e6c6545123cd6b21b9602613ed7d9ea914",
+            "size": 19
+          },
+          "objects/7f/430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d": {
+            "sha256": "7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+            "size": 523
+          },
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/c3/e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314": {
+            "sha256": "c3e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314",
+            "size": 223
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          },
+          "objects/fa/963b921ac859d27a8869c9e6328e577599dd20ba70da3f5259014fda030a70": {
+            "sha256": "fa963b921ac859d27a8869c9e6328e577599dd20ba70da3f5259014fda030a70",
+            "size": 77
+          }
+        },
+        "incoming": {},
+        "missing": []
+      },
+      "explicit_lab_quarantine": true,
+      "recovery_ms": 150.18556799986982,
+      "result": "pass"
+    },
+    {
+      "id": "damage-receipt-missing",
+      "kind": "corruption",
+      "object": "receipt",
+      "damage": "missing",
+      "offset": 45,
+      "outcome_after_fault": "IO_ERROR",
+      "state_after_fault": {
+        "objects": {
+          "objects/41/3a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2": {
+            "sha256": "413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2",
+            "size": 232
+          },
+          "objects/4e/58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          },
+          "objects/61/9a7e0e028c14ece4f83d4bd23fd3954c8213f7689a3c1f71beaace9c3c0e46": {
+            "sha256": "619a7e0e028c14ece4f83d4bd23fd3954c8213f7689a3c1f71beaace9c3c0e46",
+            "size": 428
+          },
+          "objects/6a/483aacea69cb29a5b5f3d3539c38e6c6545123cd6b21b9602613ed7d9ea914": {
+            "sha256": "6a483aacea69cb29a5b5f3d3539c38e6c6545123cd6b21b9602613ed7d9ea914",
+            "size": 19
+          },
+          "objects/7f/430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d": {
+            "sha256": "7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+            "size": 523
+          },
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/c3/e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314": {
+            "sha256": "c3e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314",
+            "size": 223
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          },
+          "objects/fa/963b921ac859d27a8869c9e6328e577599dd20ba70da3f5259014fda030a70": {
+            "sha256": "fa963b921ac859d27a8869c9e6328e577599dd20ba70da3f5259014fda030a70",
+            "size": 77
+          }
+        },
+        "incoming": {},
+        "missing": [
+          "receipt"
+        ]
+      },
+      "explicit_lab_quarantine": false,
+      "recovery_ms": 167.77522600023076,
+      "result": "pass"
+    },
+    {
+      "id": "damage-policy-bitflip",
+      "kind": "corruption",
+      "object": "policy",
+      "damage": "bitflip",
+      "offset": 329,
+      "outcome_after_fault": "CORRUPT",
+      "state_after_fault": {
+        "objects": {
+          "objects/04/fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e": {
+            "sha256": "04fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e",
+            "size": 320
+          },
+          "objects/41/3a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2": {
+            "sha256": "413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2",
+            "size": 232
+          },
+          "objects/4e/58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638": {
+            "sha256": "88e00f6003dbc2df8a1983cb52782f03480a79c2ff36687a18756ba6694c8041",
+            "size": 583
+          },
+          "objects/61/9a7e0e028c14ece4f83d4bd23fd3954c8213f7689a3c1f71beaace9c3c0e46": {
+            "sha256": "619a7e0e028c14ece4f83d4bd23fd3954c8213f7689a3c1f71beaace9c3c0e46",
+            "size": 428
+          },
+          "objects/6a/483aacea69cb29a5b5f3d3539c38e6c6545123cd6b21b9602613ed7d9ea914": {
+            "sha256": "6a483aacea69cb29a5b5f3d3539c38e6c6545123cd6b21b9602613ed7d9ea914",
+            "size": 19
+          },
+          "objects/7f/430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d": {
+            "sha256": "7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+            "size": 523
+          },
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/c3/e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314": {
+            "sha256": "c3e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314",
+            "size": 223
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          },
+          "objects/fa/963b921ac859d27a8869c9e6328e577599dd20ba70da3f5259014fda030a70": {
+            "sha256": "fa963b921ac859d27a8869c9e6328e577599dd20ba70da3f5259014fda030a70",
+            "size": 77
+          }
+        },
+        "incoming": {},
+        "missing": []
+      },
+      "explicit_lab_quarantine": true,
+      "recovery_ms": 144.75607900021714,
+      "result": "pass"
+    },
+    {
+      "id": "damage-policy-truncate",
+      "kind": "corruption",
+      "object": "policy",
+      "damage": "truncate",
+      "offset": 512,
+      "outcome_after_fault": "CORRUPT",
+      "state_after_fault": {
+        "objects": {
+          "objects/04/fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e": {
+            "sha256": "04fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e",
+            "size": 320
+          },
+          "objects/41/3a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2": {
+            "sha256": "413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2",
+            "size": 232
+          },
+          "objects/4e/58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638": {
+            "sha256": "86b551248b777b3b392b0e1a0ee06023fe3b16c9f72610859d18f7475ecc9c77",
+            "size": 512
+          },
+          "objects/61/9a7e0e028c14ece4f83d4bd23fd3954c8213f7689a3c1f71beaace9c3c0e46": {
+            "sha256": "619a7e0e028c14ece4f83d4bd23fd3954c8213f7689a3c1f71beaace9c3c0e46",
+            "size": 428
+          },
+          "objects/6a/483aacea69cb29a5b5f3d3539c38e6c6545123cd6b21b9602613ed7d9ea914": {
+            "sha256": "6a483aacea69cb29a5b5f3d3539c38e6c6545123cd6b21b9602613ed7d9ea914",
+            "size": 19
+          },
+          "objects/7f/430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d": {
+            "sha256": "7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+            "size": 523
+          },
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/c3/e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314": {
+            "sha256": "c3e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314",
+            "size": 223
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          },
+          "objects/fa/963b921ac859d27a8869c9e6328e577599dd20ba70da3f5259014fda030a70": {
+            "sha256": "fa963b921ac859d27a8869c9e6328e577599dd20ba70da3f5259014fda030a70",
+            "size": 77
+          }
+        },
+        "incoming": {},
+        "missing": []
+      },
+      "explicit_lab_quarantine": true,
+      "recovery_ms": 141.50148699991405,
+      "result": "pass"
+    },
+    {
+      "id": "damage-policy-missing",
+      "kind": "corruption",
+      "object": "policy",
+      "damage": "missing",
+      "offset": 176,
+      "outcome_after_fault": "IO_ERROR",
+      "state_after_fault": {
+        "objects": {
+          "objects/04/fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e": {
+            "sha256": "04fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e",
+            "size": 320
+          },
+          "objects/41/3a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2": {
+            "sha256": "413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2",
+            "size": 232
+          },
+          "objects/61/9a7e0e028c14ece4f83d4bd23fd3954c8213f7689a3c1f71beaace9c3c0e46": {
+            "sha256": "619a7e0e028c14ece4f83d4bd23fd3954c8213f7689a3c1f71beaace9c3c0e46",
+            "size": 428
+          },
+          "objects/6a/483aacea69cb29a5b5f3d3539c38e6c6545123cd6b21b9602613ed7d9ea914": {
+            "sha256": "6a483aacea69cb29a5b5f3d3539c38e6c6545123cd6b21b9602613ed7d9ea914",
+            "size": 19
+          },
+          "objects/7f/430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d": {
+            "sha256": "7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+            "size": 523
+          },
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/c3/e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314": {
+            "sha256": "c3e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314",
+            "size": 223
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          },
+          "objects/fa/963b921ac859d27a8869c9e6328e577599dd20ba70da3f5259014fda030a70": {
+            "sha256": "fa963b921ac859d27a8869c9e6328e577599dd20ba70da3f5259014fda030a70",
+            "size": 77
+          }
+        },
+        "incoming": {},
+        "missing": [
+          "policy"
+        ]
+      },
+      "explicit_lab_quarantine": false,
+      "recovery_ms": 155.08361399952264,
+      "result": "pass"
+    },
+    {
+      "id": "damage-original.deb-bitflip",
+      "kind": "corruption",
+      "object": "original.deb",
+      "damage": "bitflip",
+      "offset": 417,
+      "outcome_after_fault": "CORRUPT",
+      "state_after_fault": {
+        "objects": {
+          "objects/04/fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e": {
+            "sha256": "04fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e",
+            "size": 320
+          },
+          "objects/41/3a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2": {
+            "sha256": "413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2",
+            "size": 232
+          },
+          "objects/4e/58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          },
+          "objects/61/9a7e0e028c14ece4f83d4bd23fd3954c8213f7689a3c1f71beaace9c3c0e46": {
+            "sha256": "619a7e0e028c14ece4f83d4bd23fd3954c8213f7689a3c1f71beaace9c3c0e46",
+            "size": 428
+          },
+          "objects/6a/483aacea69cb29a5b5f3d3539c38e6c6545123cd6b21b9602613ed7d9ea914": {
+            "sha256": "6a483aacea69cb29a5b5f3d3539c38e6c6545123cd6b21b9602613ed7d9ea914",
+            "size": 19
+          },
+          "objects/7f/430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d": {
+            "sha256": "7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+            "size": 523
+          },
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/c3/e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314": {
+            "sha256": "c3e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314",
+            "size": 223
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "3f89e4f2a0b6e9f3a4964909316171eb0f4f1771c4c30aadde353d17c3200010",
+            "size": 848
+          },
+          "objects/fa/963b921ac859d27a8869c9e6328e577599dd20ba70da3f5259014fda030a70": {
+            "sha256": "fa963b921ac859d27a8869c9e6328e577599dd20ba70da3f5259014fda030a70",
+            "size": 77
+          }
+        },
+        "incoming": {},
+        "missing": []
+      },
+      "explicit_lab_quarantine": true,
+      "recovery_ms": 167.93509599847312,
+      "result": "pass"
+    },
+    {
+      "id": "damage-original.deb-truncate",
+      "kind": "corruption",
+      "object": "original.deb",
+      "damage": "truncate",
+      "offset": 704,
+      "outcome_after_fault": "CORRUPT",
+      "state_after_fault": {
+        "objects": {
+          "objects/04/fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e": {
+            "sha256": "04fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e",
+            "size": 320
+          },
+          "objects/41/3a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2": {
+            "sha256": "413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2",
+            "size": 232
+          },
+          "objects/4e/58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          },
+          "objects/61/9a7e0e028c14ece4f83d4bd23fd3954c8213f7689a3c1f71beaace9c3c0e46": {
+            "sha256": "619a7e0e028c14ece4f83d4bd23fd3954c8213f7689a3c1f71beaace9c3c0e46",
+            "size": 428
+          },
+          "objects/6a/483aacea69cb29a5b5f3d3539c38e6c6545123cd6b21b9602613ed7d9ea914": {
+            "sha256": "6a483aacea69cb29a5b5f3d3539c38e6c6545123cd6b21b9602613ed7d9ea914",
+            "size": 19
+          },
+          "objects/7f/430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d": {
+            "sha256": "7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+            "size": 523
+          },
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/c3/e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314": {
+            "sha256": "c3e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314",
+            "size": 223
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "ea5fde2d255add47a3a9e68d5ecb7e3f2c2c8647f9a2a2bc288cbc8cc62f0a2a",
+            "size": 704
+          },
+          "objects/fa/963b921ac859d27a8869c9e6328e577599dd20ba70da3f5259014fda030a70": {
+            "sha256": "fa963b921ac859d27a8869c9e6328e577599dd20ba70da3f5259014fda030a70",
+            "size": 77
+          }
+        },
+        "incoming": {},
+        "missing": []
+      },
+      "explicit_lab_quarantine": true,
+      "recovery_ms": 162.37031700075022,
+      "result": "pass"
+    },
+    {
+      "id": "damage-original.deb-missing",
+      "kind": "corruption",
+      "object": "original.deb",
+      "damage": "missing",
+      "offset": 807,
+      "outcome_after_fault": "IO_ERROR",
+      "state_after_fault": {
+        "objects": {
+          "objects/04/fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e": {
+            "sha256": "04fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e",
+            "size": 320
+          },
+          "objects/41/3a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2": {
+            "sha256": "413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2",
+            "size": 232
+          },
+          "objects/4e/58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          },
+          "objects/61/9a7e0e028c14ece4f83d4bd23fd3954c8213f7689a3c1f71beaace9c3c0e46": {
+            "sha256": "619a7e0e028c14ece4f83d4bd23fd3954c8213f7689a3c1f71beaace9c3c0e46",
+            "size": 428
+          },
+          "objects/6a/483aacea69cb29a5b5f3d3539c38e6c6545123cd6b21b9602613ed7d9ea914": {
+            "sha256": "6a483aacea69cb29a5b5f3d3539c38e6c6545123cd6b21b9602613ed7d9ea914",
+            "size": 19
+          },
+          "objects/7f/430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d": {
+            "sha256": "7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+            "size": 523
+          },
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/c3/e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314": {
+            "sha256": "c3e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314",
+            "size": 223
+          },
+          "objects/fa/963b921ac859d27a8869c9e6328e577599dd20ba70da3f5259014fda030a70": {
+            "sha256": "fa963b921ac859d27a8869c9e6328e577599dd20ba70da3f5259014fda030a70",
+            "size": 77
+          }
+        },
+        "incoming": {},
+        "missing": [
+          "original.deb"
+        ]
+      },
+      "explicit_lab_quarantine": false,
+      "recovery_ms": 155.44586000032723,
+      "result": "pass"
+    },
+    {
+      "id": "damage-control-bitflip",
+      "kind": "corruption",
+      "object": "control",
+      "damage": "bitflip",
+      "offset": 42,
+      "outcome_after_fault": "CORRUPT",
+      "state_after_fault": {
+        "objects": {
+          "objects/04/fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e": {
+            "sha256": "04fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e",
+            "size": 320
+          },
+          "objects/41/3a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2": {
+            "sha256": "413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2",
+            "size": 232
+          },
+          "objects/4e/58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          },
+          "objects/61/9a7e0e028c14ece4f83d4bd23fd3954c8213f7689a3c1f71beaace9c3c0e46": {
+            "sha256": "619a7e0e028c14ece4f83d4bd23fd3954c8213f7689a3c1f71beaace9c3c0e46",
+            "size": 428
+          },
+          "objects/6a/483aacea69cb29a5b5f3d3539c38e6c6545123cd6b21b9602613ed7d9ea914": {
+            "sha256": "6a483aacea69cb29a5b5f3d3539c38e6c6545123cd6b21b9602613ed7d9ea914",
+            "size": 19
+          },
+          "objects/7f/430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d": {
+            "sha256": "7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+            "size": 523
+          },
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "41e37348619f342af46811ae2481cc62494cc52df81a18fd500211f47fb02683",
+            "size": 125
+          },
+          "objects/c3/e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314": {
+            "sha256": "c3e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314",
+            "size": 223
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          },
+          "objects/fa/963b921ac859d27a8869c9e6328e577599dd20ba70da3f5259014fda030a70": {
+            "sha256": "fa963b921ac859d27a8869c9e6328e577599dd20ba70da3f5259014fda030a70",
+            "size": 77
+          }
+        },
+        "incoming": {},
+        "missing": []
+      },
+      "explicit_lab_quarantine": true,
+      "recovery_ms": 148.46459599903028,
+      "result": "pass"
+    },
+    {
+      "id": "damage-control-truncate",
+      "kind": "corruption",
+      "object": "control",
+      "damage": "truncate",
+      "offset": 94,
+      "outcome_after_fault": "CORRUPT",
+      "state_after_fault": {
+        "objects": {
+          "objects/04/fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e": {
+            "sha256": "04fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e",
+            "size": 320
+          },
+          "objects/41/3a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2": {
+            "sha256": "413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2",
+            "size": 232
+          },
+          "objects/4e/58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          },
+          "objects/61/9a7e0e028c14ece4f83d4bd23fd3954c8213f7689a3c1f71beaace9c3c0e46": {
+            "sha256": "619a7e0e028c14ece4f83d4bd23fd3954c8213f7689a3c1f71beaace9c3c0e46",
+            "size": 428
+          },
+          "objects/6a/483aacea69cb29a5b5f3d3539c38e6c6545123cd6b21b9602613ed7d9ea914": {
+            "sha256": "6a483aacea69cb29a5b5f3d3539c38e6c6545123cd6b21b9602613ed7d9ea914",
+            "size": 19
+          },
+          "objects/7f/430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d": {
+            "sha256": "7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+            "size": 523
+          },
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "e83eec1e0a3f158e1b3f4482555a64144926eb7105632a550b4138a86b9753fb",
+            "size": 94
+          },
+          "objects/c3/e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314": {
+            "sha256": "c3e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314",
+            "size": 223
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          },
+          "objects/fa/963b921ac859d27a8869c9e6328e577599dd20ba70da3f5259014fda030a70": {
+            "sha256": "fa963b921ac859d27a8869c9e6328e577599dd20ba70da3f5259014fda030a70",
+            "size": 77
+          }
+        },
+        "incoming": {},
+        "missing": []
+      },
+      "explicit_lab_quarantine": true,
+      "recovery_ms": 178.4638579993043,
+      "result": "pass"
+    },
+    {
+      "id": "damage-control-missing",
+      "kind": "corruption",
+      "object": "control",
+      "damage": "missing",
+      "offset": 71,
+      "outcome_after_fault": "IO_ERROR",
+      "state_after_fault": {
+        "objects": {
+          "objects/04/fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e": {
+            "sha256": "04fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e",
+            "size": 320
+          },
+          "objects/41/3a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2": {
+            "sha256": "413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2",
+            "size": 232
+          },
+          "objects/4e/58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          },
+          "objects/61/9a7e0e028c14ece4f83d4bd23fd3954c8213f7689a3c1f71beaace9c3c0e46": {
+            "sha256": "619a7e0e028c14ece4f83d4bd23fd3954c8213f7689a3c1f71beaace9c3c0e46",
+            "size": 428
+          },
+          "objects/6a/483aacea69cb29a5b5f3d3539c38e6c6545123cd6b21b9602613ed7d9ea914": {
+            "sha256": "6a483aacea69cb29a5b5f3d3539c38e6c6545123cd6b21b9602613ed7d9ea914",
+            "size": 19
+          },
+          "objects/7f/430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d": {
+            "sha256": "7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+            "size": 523
+          },
+          "objects/c3/e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314": {
+            "sha256": "c3e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314",
+            "size": 223
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          },
+          "objects/fa/963b921ac859d27a8869c9e6328e577599dd20ba70da3f5259014fda030a70": {
+            "sha256": "fa963b921ac859d27a8869c9e6328e577599dd20ba70da3f5259014fda030a70",
+            "size": 77
+          }
+        },
+        "incoming": {},
+        "missing": [
+          "control"
+        ]
+      },
+      "explicit_lab_quarantine": false,
+      "recovery_ms": 159.65379000044777,
+      "result": "pass"
+    },
+    {
+      "id": "damage-InRelease-bitflip",
+      "kind": "corruption",
+      "object": "InRelease",
+      "damage": "bitflip",
+      "offset": 468,
+      "outcome_after_fault": "CORRUPT",
+      "state_after_fault": {
+        "objects": {
+          "objects/04/fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e": {
+            "sha256": "04fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e",
+            "size": 320
+          },
+          "objects/41/3a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2": {
+            "sha256": "413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2",
+            "size": 232
+          },
+          "objects/4e/58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          },
+          "objects/61/9a7e0e028c14ece4f83d4bd23fd3954c8213f7689a3c1f71beaace9c3c0e46": {
+            "sha256": "619a7e0e028c14ece4f83d4bd23fd3954c8213f7689a3c1f71beaace9c3c0e46",
+            "size": 428
+          },
+          "objects/6a/483aacea69cb29a5b5f3d3539c38e6c6545123cd6b21b9602613ed7d9ea914": {
+            "sha256": "6a483aacea69cb29a5b5f3d3539c38e6c6545123cd6b21b9602613ed7d9ea914",
+            "size": 19
+          },
+          "objects/7f/430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d": {
+            "sha256": "92b8bf5f1f68270a6bc969719b6519993c13d7470f281190b65f7624715f0b1b",
+            "size": 523
+          },
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/c3/e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314": {
+            "sha256": "c3e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314",
+            "size": 223
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          },
+          "objects/fa/963b921ac859d27a8869c9e6328e577599dd20ba70da3f5259014fda030a70": {
+            "sha256": "fa963b921ac859d27a8869c9e6328e577599dd20ba70da3f5259014fda030a70",
+            "size": 77
+          }
+        },
+        "incoming": {},
+        "missing": []
+      },
+      "explicit_lab_quarantine": true,
+      "recovery_ms": 139.75454899991746,
+      "result": "pass"
+    },
+    {
+      "id": "damage-InRelease-truncate",
+      "kind": "corruption",
+      "object": "InRelease",
+      "damage": "truncate",
+      "offset": 298,
+      "outcome_after_fault": "CORRUPT",
+      "state_after_fault": {
+        "objects": {
+          "objects/04/fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e": {
+            "sha256": "04fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e",
+            "size": 320
+          },
+          "objects/41/3a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2": {
+            "sha256": "413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2",
+            "size": 232
+          },
+          "objects/4e/58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          },
+          "objects/61/9a7e0e028c14ece4f83d4bd23fd3954c8213f7689a3c1f71beaace9c3c0e46": {
+            "sha256": "619a7e0e028c14ece4f83d4bd23fd3954c8213f7689a3c1f71beaace9c3c0e46",
+            "size": 428
+          },
+          "objects/6a/483aacea69cb29a5b5f3d3539c38e6c6545123cd6b21b9602613ed7d9ea914": {
+            "sha256": "6a483aacea69cb29a5b5f3d3539c38e6c6545123cd6b21b9602613ed7d9ea914",
+            "size": 19
+          },
+          "objects/7f/430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d": {
+            "sha256": "c6bacde4fa1d07e46b9512ab6f55c2f99733644d30b39d16b40fa41e13cb816d",
+            "size": 298
+          },
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/c3/e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314": {
+            "sha256": "c3e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314",
+            "size": 223
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          },
+          "objects/fa/963b921ac859d27a8869c9e6328e577599dd20ba70da3f5259014fda030a70": {
+            "sha256": "fa963b921ac859d27a8869c9e6328e577599dd20ba70da3f5259014fda030a70",
+            "size": 77
+          }
+        },
+        "incoming": {},
+        "missing": []
+      },
+      "explicit_lab_quarantine": true,
+      "recovery_ms": 144.88763400004245,
+      "result": "pass"
+    },
+    {
+      "id": "damage-InRelease-missing",
+      "kind": "corruption",
+      "object": "InRelease",
+      "damage": "missing",
+      "offset": 153,
+      "outcome_after_fault": "IO_ERROR",
+      "state_after_fault": {
+        "objects": {
+          "objects/04/fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e": {
+            "sha256": "04fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e",
+            "size": 320
+          },
+          "objects/41/3a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2": {
+            "sha256": "413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2",
+            "size": 232
+          },
+          "objects/4e/58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          },
+          "objects/61/9a7e0e028c14ece4f83d4bd23fd3954c8213f7689a3c1f71beaace9c3c0e46": {
+            "sha256": "619a7e0e028c14ece4f83d4bd23fd3954c8213f7689a3c1f71beaace9c3c0e46",
+            "size": 428
+          },
+          "objects/6a/483aacea69cb29a5b5f3d3539c38e6c6545123cd6b21b9602613ed7d9ea914": {
+            "sha256": "6a483aacea69cb29a5b5f3d3539c38e6c6545123cd6b21b9602613ed7d9ea914",
+            "size": 19
+          },
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/c3/e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314": {
+            "sha256": "c3e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314",
+            "size": 223
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          },
+          "objects/fa/963b921ac859d27a8869c9e6328e577599dd20ba70da3f5259014fda030a70": {
+            "sha256": "fa963b921ac859d27a8869c9e6328e577599dd20ba70da3f5259014fda030a70",
+            "size": 77
+          }
+        },
+        "incoming": {},
+        "missing": [
+          "InRelease"
+        ]
+      },
+      "explicit_lab_quarantine": false,
+      "recovery_ms": 154.28754100139486,
+      "result": "pass"
+    },
+    {
+      "id": "damage-Packages-bitflip",
+      "kind": "corruption",
+      "object": "Packages",
+      "damage": "bitflip",
+      "offset": 180,
+      "outcome_after_fault": "CORRUPT",
+      "state_after_fault": {
+        "objects": {
+          "objects/04/fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e": {
+            "sha256": "04fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e",
+            "size": 320
+          },
+          "objects/41/3a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2": {
+            "sha256": "750a860358c111fbb8b68226c4b4f01f05936f865dc81d2758cf1f561e261ca2",
+            "size": 232
+          },
+          "objects/4e/58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          },
+          "objects/61/9a7e0e028c14ece4f83d4bd23fd3954c8213f7689a3c1f71beaace9c3c0e46": {
+            "sha256": "619a7e0e028c14ece4f83d4bd23fd3954c8213f7689a3c1f71beaace9c3c0e46",
+            "size": 428
+          },
+          "objects/6a/483aacea69cb29a5b5f3d3539c38e6c6545123cd6b21b9602613ed7d9ea914": {
+            "sha256": "6a483aacea69cb29a5b5f3d3539c38e6c6545123cd6b21b9602613ed7d9ea914",
+            "size": 19
+          },
+          "objects/7f/430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d": {
+            "sha256": "7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+            "size": 523
+          },
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/c3/e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314": {
+            "sha256": "c3e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314",
+            "size": 223
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          },
+          "objects/fa/963b921ac859d27a8869c9e6328e577599dd20ba70da3f5259014fda030a70": {
+            "sha256": "fa963b921ac859d27a8869c9e6328e577599dd20ba70da3f5259014fda030a70",
+            "size": 77
+          }
+        },
+        "incoming": {},
+        "missing": []
+      },
+      "explicit_lab_quarantine": true,
+      "recovery_ms": 163.67009100031282,
+      "result": "pass"
+    },
+    {
+      "id": "damage-Packages-truncate",
+      "kind": "corruption",
+      "object": "Packages",
+      "damage": "truncate",
+      "offset": 204,
+      "outcome_after_fault": "CORRUPT",
+      "state_after_fault": {
+        "objects": {
+          "objects/04/fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e": {
+            "sha256": "04fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e",
+            "size": 320
+          },
+          "objects/41/3a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2": {
+            "sha256": "281c3990106d3660379885ab511a52badef8119556eeab545c4fd81f576a1a4f",
+            "size": 204
+          },
+          "objects/4e/58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          },
+          "objects/61/9a7e0e028c14ece4f83d4bd23fd3954c8213f7689a3c1f71beaace9c3c0e46": {
+            "sha256": "619a7e0e028c14ece4f83d4bd23fd3954c8213f7689a3c1f71beaace9c3c0e46",
+            "size": 428
+          },
+          "objects/6a/483aacea69cb29a5b5f3d3539c38e6c6545123cd6b21b9602613ed7d9ea914": {
+            "sha256": "6a483aacea69cb29a5b5f3d3539c38e6c6545123cd6b21b9602613ed7d9ea914",
+            "size": 19
+          },
+          "objects/7f/430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d": {
+            "sha256": "7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+            "size": 523
+          },
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/c3/e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314": {
+            "sha256": "c3e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314",
+            "size": 223
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          },
+          "objects/fa/963b921ac859d27a8869c9e6328e577599dd20ba70da3f5259014fda030a70": {
+            "sha256": "fa963b921ac859d27a8869c9e6328e577599dd20ba70da3f5259014fda030a70",
+            "size": 77
+          }
+        },
+        "incoming": {},
+        "missing": []
+      },
+      "explicit_lab_quarantine": true,
+      "recovery_ms": 172.78089899991755,
+      "result": "pass"
+    },
+    {
+      "id": "damage-Packages-missing",
+      "kind": "corruption",
+      "object": "Packages",
+      "damage": "missing",
+      "offset": 41,
+      "outcome_after_fault": "IO_ERROR",
+      "state_after_fault": {
+        "objects": {
+          "objects/04/fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e": {
+            "sha256": "04fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e",
+            "size": 320
+          },
+          "objects/4e/58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          },
+          "objects/61/9a7e0e028c14ece4f83d4bd23fd3954c8213f7689a3c1f71beaace9c3c0e46": {
+            "sha256": "619a7e0e028c14ece4f83d4bd23fd3954c8213f7689a3c1f71beaace9c3c0e46",
+            "size": 428
+          },
+          "objects/6a/483aacea69cb29a5b5f3d3539c38e6c6545123cd6b21b9602613ed7d9ea914": {
+            "sha256": "6a483aacea69cb29a5b5f3d3539c38e6c6545123cd6b21b9602613ed7d9ea914",
+            "size": 19
+          },
+          "objects/7f/430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d": {
+            "sha256": "7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+            "size": 523
+          },
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/c3/e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314": {
+            "sha256": "c3e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314",
+            "size": 223
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          },
+          "objects/fa/963b921ac859d27a8869c9e6328e577599dd20ba70da3f5259014fda030a70": {
+            "sha256": "fa963b921ac859d27a8869c9e6328e577599dd20ba70da3f5259014fda030a70",
+            "size": 77
+          }
+        },
+        "incoming": {},
+        "missing": [
+          "Packages"
+        ]
+      },
+      "explicit_lab_quarantine": false,
+      "recovery_ms": 162.75754900016182,
+      "result": "pass"
+    },
+    {
+      "id": "damage-keyring-bitflip",
+      "kind": "corruption",
+      "object": "keyring",
+      "damage": "bitflip",
+      "offset": 184,
+      "outcome_after_fault": "CORRUPT",
+      "state_after_fault": {
+        "objects": {
+          "objects/04/fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e": {
+            "sha256": "04fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e",
+            "size": 320
+          },
+          "objects/41/3a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2": {
+            "sha256": "413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2",
+            "size": 232
+          },
+          "objects/4e/58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          },
+          "objects/61/9a7e0e028c14ece4f83d4bd23fd3954c8213f7689a3c1f71beaace9c3c0e46": {
+            "sha256": "619a7e0e028c14ece4f83d4bd23fd3954c8213f7689a3c1f71beaace9c3c0e46",
+            "size": 428
+          },
+          "objects/6a/483aacea69cb29a5b5f3d3539c38e6c6545123cd6b21b9602613ed7d9ea914": {
+            "sha256": "6a483aacea69cb29a5b5f3d3539c38e6c6545123cd6b21b9602613ed7d9ea914",
+            "size": 19
+          },
+          "objects/7f/430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d": {
+            "sha256": "7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+            "size": 523
+          },
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/c3/e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314": {
+            "sha256": "fbb983aa94afe5ee1e0e58040e83d0eeacf0e8a355e37b9e1f81b91afe561290",
+            "size": 223
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          },
+          "objects/fa/963b921ac859d27a8869c9e6328e577599dd20ba70da3f5259014fda030a70": {
+            "sha256": "fa963b921ac859d27a8869c9e6328e577599dd20ba70da3f5259014fda030a70",
+            "size": 77
+          }
+        },
+        "incoming": {},
+        "missing": []
+      },
+      "explicit_lab_quarantine": true,
+      "recovery_ms": 178.41233199942508,
+      "result": "pass"
+    },
+    {
+      "id": "damage-keyring-truncate",
+      "kind": "corruption",
+      "object": "keyring",
+      "damage": "truncate",
+      "offset": 67,
+      "outcome_after_fault": "CORRUPT",
+      "state_after_fault": {
+        "objects": {
+          "objects/04/fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e": {
+            "sha256": "04fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e",
+            "size": 320
+          },
+          "objects/41/3a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2": {
+            "sha256": "413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2",
+            "size": 232
+          },
+          "objects/4e/58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          },
+          "objects/61/9a7e0e028c14ece4f83d4bd23fd3954c8213f7689a3c1f71beaace9c3c0e46": {
+            "sha256": "619a7e0e028c14ece4f83d4bd23fd3954c8213f7689a3c1f71beaace9c3c0e46",
+            "size": 428
+          },
+          "objects/6a/483aacea69cb29a5b5f3d3539c38e6c6545123cd6b21b9602613ed7d9ea914": {
+            "sha256": "6a483aacea69cb29a5b5f3d3539c38e6c6545123cd6b21b9602613ed7d9ea914",
+            "size": 19
+          },
+          "objects/7f/430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d": {
+            "sha256": "7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+            "size": 523
+          },
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/c3/e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314": {
+            "sha256": "e7f6b4d98bef2c355587196513c624c71bb384d2f6deef2e7a080b23a916c6e7",
+            "size": 67
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          },
+          "objects/fa/963b921ac859d27a8869c9e6328e577599dd20ba70da3f5259014fda030a70": {
+            "sha256": "fa963b921ac859d27a8869c9e6328e577599dd20ba70da3f5259014fda030a70",
+            "size": 77
+          }
+        },
+        "incoming": {},
+        "missing": []
+      },
+      "explicit_lab_quarantine": true,
+      "recovery_ms": 162.673361999623,
+      "result": "pass"
+    },
+    {
+      "id": "damage-keyring-missing",
+      "kind": "corruption",
+      "object": "keyring",
+      "damage": "missing",
+      "offset": 189,
+      "outcome_after_fault": "IO_ERROR",
+      "state_after_fault": {
+        "objects": {
+          "objects/04/fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e": {
+            "sha256": "04fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e",
+            "size": 320
+          },
+          "objects/41/3a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2": {
+            "sha256": "413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2",
+            "size": 232
+          },
+          "objects/4e/58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638": {
+            "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+            "size": 583
+          },
+          "objects/61/9a7e0e028c14ece4f83d4bd23fd3954c8213f7689a3c1f71beaace9c3c0e46": {
+            "sha256": "619a7e0e028c14ece4f83d4bd23fd3954c8213f7689a3c1f71beaace9c3c0e46",
+            "size": 428
+          },
+          "objects/6a/483aacea69cb29a5b5f3d3539c38e6c6545123cd6b21b9602613ed7d9ea914": {
+            "sha256": "6a483aacea69cb29a5b5f3d3539c38e6c6545123cd6b21b9602613ed7d9ea914",
+            "size": 19
+          },
+          "objects/7f/430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d": {
+            "sha256": "7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+            "size": 523
+          },
+          "objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae": {
+            "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+            "size": 125
+          },
+          "objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0": {
+            "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+            "size": 848
+          },
+          "objects/fa/963b921ac859d27a8869c9e6328e577599dd20ba70da3f5259014fda030a70": {
+            "sha256": "fa963b921ac859d27a8869c9e6328e577599dd20ba70da3f5259014fda030a70",
+            "size": 77
+          }
+        },
+        "incoming": {},
+        "missing": [
+          "keyring"
+        ]
+      },
+      "explicit_lab_quarantine": false,
+      "recovery_ms": 164.5062509996933,
+      "result": "pass"
+    },
+    {
+      "id": "missing-structure-store-lock",
+      "kind": "structural-loss",
+      "missing": "store.lock",
+      "recovery_ms": 177.24967299909622,
+      "explicit_lab_restore": true,
+      "result": "pass"
+    },
+    {
+      "id": "missing-structure-objects",
+      "kind": "structural-loss",
+      "missing": "objects",
+      "recovery_ms": 170.7971739997447,
+      "explicit_lab_restore": true,
+      "result": "pass"
+    },
+    {
+      "id": "missing-structure-incoming",
+      "kind": "structural-loss",
+      "missing": "incoming",
+      "recovery_ms": 158.7592020005104,
+      "explicit_lab_restore": true,
+      "result": "pass"
+    },
+    {
+      "id": "missing-structure-pins",
+      "kind": "structural-loss",
+      "missing": "pins",
+      "recovery_ms": 153.67940599935537,
+      "explicit_lab_restore": true,
+      "result": "pass"
+    },
+    {
+      "id": "delay-014",
+      "kind": "deadline-delay",
+      "nth": 14,
+      "baseline": "pread64(3</tmp/nia-chaos-baseline-u3lka96t/objects/04/fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e>, \"NIASUP011\\24708UKu\\200#\\37\\24\\217\\344_\\303)\\223\\33\\204^A\\363\\223\\221I\\271o\\326O\\30/mNX\\270\\363\\272\\35M\\367G\\230\\217h\\327\\374\\251\\225\\330\\301h\\236\\271-\\350\\363\\30yn\\315\\321\\340\\3068\\356\\365\\272<\\325\\6\\20\\324\"..., 65536, 0) = 320",
+      "hit": "pread64(3</tmp/nia-chaos-delay-poppm29g/objects/04/fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e>, \"NIASUP011\\24708UKu\\200#\\37\\24\\217\\344_\\303)\\223\\33\\204^A\\363\\223\\221I\\271o\\326O\\30/mNX\\270\\363\\272\\35M\\367G\\230\\217h\\327\\374\\251\\225\\330\\301h\\236\\271-\\350\\363\\30yn\\315\\321\\340\\3068\\356\\365\\272<\\325\\6\\20\\324\"..., 65536, 0) = 320 (DELAYED)",
+      "outcome_after_fault": "STALE",
+      "elapsed_ms": 621.9130319987016,
+      "deadline_ms": 200,
+      "injected_delay_ms": 600,
+      "recovery_ms": 240.231366999069,
+      "result": "pass"
+    },
+    {
+      "id": "delay-016",
+      "kind": "deadline-delay",
+      "nth": 16,
+      "baseline": "pread64(3</tmp/nia-chaos-baseline-u3lka96t/objects/04/fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e>, \"\", 65536, 320) = 0",
+      "hit": "pread64(3</tmp/nia-chaos-delay-i95r0i34/objects/04/fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e>, \"\", 65536, 320) = 0 (DELAYED)",
+      "outcome_after_fault": "STALE",
+      "elapsed_ms": 617.693958000018,
+      "deadline_ms": 200,
+      "injected_delay_ms": 600,
+      "recovery_ms": 178.31344600017474,
+      "result": "pass"
+    },
+    {
+      "id": "delay-047",
+      "kind": "deadline-delay",
+      "nth": 47,
+      "baseline": "pread64(3</tmp/nia-chaos-baseline-u3lka96t/objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0>, \"!<arch>\\ndebian-binary   1789004488  0     0     100644  4         `\\n2.0\\ncontrol.\"..., 65536, 0) = 848",
+      "hit": "pread64(3</tmp/nia-chaos-delay-n0jhwboj/objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0>, \"!<arch>\\ndebian-binary   1789004488  0     0     100644  4         `\\n2.0\\ncontrol.\"..., 65536, 0) = 848 (DELAYED)",
+      "outcome_after_fault": "STALE",
+      "elapsed_ms": 625.8286030006275,
+      "deadline_ms": 200,
+      "injected_delay_ms": 600,
+      "recovery_ms": 160.63545999895723,
+      "result": "pass"
+    },
+    {
+      "id": "delay-056",
+      "kind": "deadline-delay",
+      "nth": 56,
+      "baseline": "pread64(3</tmp/nia-chaos-baseline-u3lka96t/objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0>, \"data.tar.xz     1789004488  0     0     100644  228       `\\n\", 60, 560) = 60",
+      "hit": "pread64(3</tmp/nia-chaos-delay-r0l06cs3/objects/ee/f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0>, \"data.tar.xz     1789004488  0     0     100644  228       `\\n\", 60, 560) = 60 (DELAYED)",
+      "outcome_after_fault": "STALE",
+      "elapsed_ms": 626.9333129985171,
+      "deadline_ms": 200,
+      "injected_delay_ms": 600,
+      "recovery_ms": 145.29507299994293,
+      "result": "pass"
+    },
+    {
+      "id": "delay-071",
+      "kind": "deadline-delay",
+      "nth": 71,
+      "baseline": "pread64(7</tmp/nia-chaos-baseline-u3lka96t/objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae>, \"\", 65536, 125) = 0",
+      "hit": "pread64(7</tmp/nia-chaos-delay-rcvidxt6/objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae>, \"\", 65536, 125) = 0 (DELAYED)",
+      "outcome_after_fault": "STALE",
+      "elapsed_ms": 665.485389999958,
+      "deadline_ms": 200,
+      "injected_delay_ms": 600,
+      "recovery_ms": 173.74056700100482,
+      "result": "pass"
+    },
+    {
+      "id": "delay-028",
+      "kind": "deadline-delay",
+      "nth": 28,
+      "baseline": "pread64(3</tmp/nia-chaos-baseline-u3lka96t/objects/7f/430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d>, \"\", 65013, 523) = 0",
+      "hit": "pread64(3</tmp/nia-chaos-delay-zw58gwqb/objects/7f/430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d>, \"\", 65013, 523) = 0 (DELAYED)",
+      "outcome_after_fault": "STALE",
+      "elapsed_ms": 620.1303399993776,
+      "deadline_ms": 200,
+      "injected_delay_ms": 600,
+      "recovery_ms": 167.86468499958573,
+      "result": "pass"
+    },
+    {
+      "id": "delay-066",
+      "kind": "deadline-delay",
+      "nth": 66,
+      "baseline": "pread64(7</tmp/nia-chaos-baseline-u3lka96t/objects/6a/483aacea69cb29a5b5f3d3539c38e6c6545123cd6b21b9602613ed7d9ea914>, \"/etc/nia-test.conf\\n\", 65536, 0) = 19",
+      "hit": "pread64(7</tmp/nia-chaos-delay-rc45l994/objects/6a/483aacea69cb29a5b5f3d3539c38e6c6545123cd6b21b9602613ed7d9ea914>, \"/etc/nia-test.conf\\n\", 65536, 0) = 19 (DELAYED)",
+      "outcome_after_fault": "STALE",
+      "elapsed_ms": 660.8727069997258,
+      "deadline_ms": 200,
+      "injected_delay_ms": 600,
+      "recovery_ms": 180.35308199978317,
+      "result": "pass"
+    },
+    {
+      "id": "delay-079",
+      "kind": "deadline-delay",
+      "nth": 79,
+      "baseline": "pread64(3</tmp/nia-chaos-baseline-u3lka96t/objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae>, \"\", 16777091, 125) = 0",
+      "hit": "pread64(3</tmp/nia-chaos-delay-hbdvlsj1/objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae>, \"\", 16777091, 125) = 0 (DELAYED)",
+      "outcome_after_fault": "STALE",
+      "elapsed_ms": 685.9628170004726,
+      "deadline_ms": 200,
+      "injected_delay_ms": 600,
+      "recovery_ms": 141.36679699913657,
+      "result": "pass"
+    },
+    {
+      "id": "stop-resume-0",
+      "kind": "stop-lock-resume",
+      "child_pid": 732,
+      "pidfd": true,
+      "observed_stop_signal": 19,
+      "pause_seconds": 0.1507373046132215,
+      "stop_to_refusal_ms": 154.97938900080044,
+      "recovery_ms": 148.7620709995099,
+      "result": "pass"
+    },
+    {
+      "id": "stop-resume-1",
+      "kind": "stop-lock-resume",
+      "child_pid": 739,
+      "pidfd": true,
+      "observed_stop_signal": 19,
+      "pause_seconds": 0.1165911271152276,
+      "stop_to_refusal_ms": 122.13444899862225,
+      "recovery_ms": 161.5124759991886,
+      "result": "pass"
+    },
+    {
+      "id": "stop-resume-2",
+      "kind": "stop-lock-resume",
+      "child_pid": 746,
+      "pidfd": true,
+      "observed_stop_signal": 19,
+      "pause_seconds": 0.12972271801391275,
+      "stop_to_refusal_ms": 134.2499800011865,
+      "recovery_ms": 151.66826199856587,
+      "result": "pass"
+    }
+  ],
+  "driver_sha256": "5d2c5a708dd56f18c13f83bd822b8ce8e2c94743db73ef0c9ef956693eedd7d5",
+  "strace_sha256": "69f88291a4e47f258b8e32b089c919a247509f063ef3d6afe5389939051102b3",
+  "limits": {
+    "memory_bytes": 3221225472,
+    "swap_bytes": 0,
+    "cpu_cores": 1,
+    "pids": 128
+  },
+  "scope": "per-original authenticated receipt, real native CAS import/reopen/verification",
+  "physical_power_loss": false,
+  "boot_or_generation_transaction_qualification": false,
+  "public_inputs": {
+    "receipt": {
+      "sha256": "04fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e",
+      "size": 320
+    },
+    "policy": {
+      "sha256": "4e58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638",
+      "size": 583
+    },
+    "original.deb": {
+      "sha256": "eef5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0",
+      "size": 848
+    },
+    "control": {
+      "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+      "size": 125
+    },
+    "InRelease": {
+      "sha256": "7f430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d",
+      "size": 523
+    },
+    "Packages": {
+      "sha256": "413a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2",
+      "size": 232
+    },
+    "keyring": {
+      "sha256": "c3e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314",
+      "size": 223
+    },
+    "public-key": {
+      "sha256": "997ef1d99318299db9bf69c5fa6d89ff8cfb7d9850b5992abe6b240dc94acbf6",
+      "size": 32
+    },
+    "scope": {
+      "sha256": "3eab3407fd82a0d12476808f1bdd584be78b71692203589dbef13285a4f9769d",
+      "size": 32
+    }
+  },
+  "schedule": [
+    {
+      "kind": "kill",
+      "syscall": "write",
+      "nth": 11,
+      "baseline": "write(7</tmp/nia-chaos-baseline-u3lka96t/incoming/1d32aee14161d134788b0445dfb94504>, \"\\2303\\4j\\242\\n\\310\\26\\t+\\6\\1\\4\\1\\332G\\17\\1\\1\\7@\\v\\303\\355\\266\\360\\242X$ \\2629\\374F\\361q`\\276\\36\\273GO\\312(\\16\\177\\17n\\326\\324\\206\\361\\35\\264\\26Nia artificial fixture\\210\\220\\4\"..., 223) = 223"
+    },
+    {
+      "kind": "kill",
+      "syscall": "fsync",
+      "nth": 2,
+      "baseline": "fsync(8</tmp/nia-chaos-baseline-u3lka96t/incoming>) = 0"
+    },
+    {
+      "kind": "kill",
+      "syscall": "renameat2",
+      "nth": 1,
+      "baseline": "renameat2(8</tmp/nia-chaos-baseline-u3lka96t/incoming>, \"82759688c17dde62715dcdcd602c40c1\", 7</tmp/nia-chaos-baseline-u3lka96t/objects/ee>, \"f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0\", RENAME_NOREPLACE) = 0"
+    },
+    {
+      "kind": "kill",
+      "syscall": "write",
+      "nth": 13,
+      "baseline": "write(7</tmp/nia-chaos-baseline-u3lka96t/incoming/1e553dc8a20e45ef48ab9461f759f8a1>, \"NIASUP011\\24708UKu\\200#\\37\\24\\217\\344_\\303)\\223\\33\\204^A\\363\\223\\221I\\271o\\326O\\30/mNX\\270\\363\\272\\35M\\367G\\230\\217h\\327\\374\\251\\225\\330\\301h\\236\\271-\\350\\363\\30yn\\315\\321\\340\\3068\\356\\365\\272<\\325\\6\\20\\324\"..., 320) = 320"
+    },
+    {
+      "kind": "io-error",
+      "syscall": "write",
+      "nth": 7,
+      "error": "ENOSPC",
+      "baseline": "write(7</tmp/nia-chaos-baseline-u3lka96t/incoming/906941d34efc4c7796b91515fcf17e92>, \"-----BEGIN PGP SIGNED MESSAGE-----\\nHash: SHA512\\n\\nOrigin: Debian\\nLabel: Debian\\nSu\"..., 523) = 523"
+    },
+    {
+      "kind": "io-error",
+      "syscall": "fsync",
+      "nth": 2,
+      "error": "EIO",
+      "baseline": "fsync(8</tmp/nia-chaos-baseline-u3lka96t/incoming>) = 0"
+    },
+    {
+      "kind": "io-error",
+      "syscall": "fsync",
+      "nth": 19,
+      "error": "EIO",
+      "baseline": "fsync(9</tmp/nia-chaos-baseline-u3lka96t/objects>) = 0"
+    },
+    {
+      "kind": "io-error",
+      "syscall": "write",
+      "nth": 3,
+      "error": "ENOSPC",
+      "baseline": "write(7</tmp/nia-chaos-baseline-u3lka96t/incoming/689ba16516d855e137af6e0b710bba9c>, \"Package: nia-test\\nVersion: 1:2.0~rc1-3\\nArchitecture: all\\nMaintainer: Nia synthet\"..., 125) = 125"
+    },
+    {
+      "kind": "kill",
+      "syscall": "fsync",
+      "nth": 3,
+      "baseline": "fsync(7</tmp/nia-chaos-baseline-u3lka96t/incoming/82759688c17dde62715dcdcd602c40c1>) = 0"
+    },
+    {
+      "kind": "io-error",
+      "syscall": "renameat2",
+      "nth": 2,
+      "error": "EIO",
+      "baseline": "renameat2(8</tmp/nia-chaos-baseline-u3lka96t/incoming>, \"689ba16516d855e137af6e0b710bba9c\", 7</tmp/nia-chaos-baseline-u3lka96t/objects/c1>, \"5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae\", RENAME_NOREPLACE) = 0"
+    },
+    {
+      "kind": "kill",
+      "syscall": "renameat2",
+      "nth": 3,
+      "baseline": "renameat2(8</tmp/nia-chaos-baseline-u3lka96t/incoming>, \"9c8e6a4edce890daee2915358c88ea46\", 7</tmp/nia-chaos-baseline-u3lka96t/objects/4e>, \"58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638\", RENAME_NOREPLACE) = 0"
+    },
+    {
+      "kind": "kill",
+      "syscall": "fsync",
+      "nth": 31,
+      "baseline": "fsync(7</tmp/nia-chaos-baseline-u3lka96t/objects/c3>) = 0"
+    },
+    {
+      "kind": "io-error",
+      "syscall": "renameat2",
+      "nth": 7,
+      "error": "EIO",
+      "baseline": "renameat2(8</tmp/nia-chaos-baseline-u3lka96t/incoming>, \"1e553dc8a20e45ef48ab9461f759f8a1\", 7</tmp/nia-chaos-baseline-u3lka96t/objects/04>, \"fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e\", RENAME_NOREPLACE) = 0"
+    },
+    {
+      "kind": "kill",
+      "syscall": "write",
+      "nth": 9,
+      "baseline": "write(7</tmp/nia-chaos-baseline-u3lka96t/incoming/3d941e66d7af23e549cd0e3a96478b74>, \"\\3757zXZ\\0\\0\\4\\346\\326\\264F\\2\\0!\\1\\26\\0\\0\\0t/\\345\\243\\340\\0\\300\\0\\245]\\0(\\30Hf\\333\\3320\\205\\376\\26\\352\\356\\274IX\\321\\4\\33l\\177\\314a\\345:\\375b)\\10V\\237\\202V\\243-\\24\\226s{\\206\\277#.n\\373Uz\\226\\f\\321\"..., 232) = 232"
+    },
+    {
+      "kind": "io-error",
+      "syscall": "renameat2",
+      "nth": 1,
+      "error": "EIO",
+      "baseline": "renameat2(8</tmp/nia-chaos-baseline-u3lka96t/incoming>, \"82759688c17dde62715dcdcd602c40c1\", 7</tmp/nia-chaos-baseline-u3lka96t/objects/ee>, \"f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0\", RENAME_NOREPLACE) = 0"
+    },
+    {
+      "kind": "kill",
+      "syscall": "fsync",
+      "nth": 5,
+      "baseline": "fsync(8</tmp/nia-chaos-baseline-u3lka96t/incoming>) = 0"
+    },
+    {
+      "kind": "io-error",
+      "syscall": "fsync",
+      "nth": 31,
+      "error": "EIO",
+      "baseline": "fsync(7</tmp/nia-chaos-baseline-u3lka96t/objects/c3>) = 0"
+    },
+    {
+      "kind": "kill",
+      "syscall": "renameat2",
+      "nth": 4,
+      "baseline": "renameat2(8</tmp/nia-chaos-baseline-u3lka96t/incoming>, \"906941d34efc4c7796b91515fcf17e92\", 7</tmp/nia-chaos-baseline-u3lka96t/objects/7f>, \"430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d\", RENAME_NOREPLACE) = 0"
+    },
+    {
+      "kind": "io-error",
+      "syscall": "fsync",
+      "nth": 8,
+      "error": "EIO",
+      "baseline": "fsync(7</tmp/nia-chaos-baseline-u3lka96t/incoming/689ba16516d855e137af6e0b710bba9c>) = 0"
+    },
+    {
+      "kind": "io-error",
+      "syscall": "renameat2",
+      "nth": 3,
+      "error": "EIO",
+      "baseline": "renameat2(8</tmp/nia-chaos-baseline-u3lka96t/incoming>, \"9c8e6a4edce890daee2915358c88ea46\", 7</tmp/nia-chaos-baseline-u3lka96t/objects/4e>, \"58b8f3ba1d4df747988f68d7fca995d8c1689eb92de8f318796ecdd1e0c638\", RENAME_NOREPLACE) = 0"
+    },
+    {
+      "kind": "kill",
+      "syscall": "renameat2",
+      "nth": 5,
+      "baseline": "renameat2(8</tmp/nia-chaos-baseline-u3lka96t/incoming>, \"3d941e66d7af23e549cd0e3a96478b74\", 7</tmp/nia-chaos-baseline-u3lka96t/objects/41>, \"3a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2\", RENAME_NOREPLACE) = 0"
+    },
+    {
+      "kind": "kill",
+      "syscall": "write",
+      "nth": 1,
+      "baseline": "write(7</tmp/nia-chaos-baseline-u3lka96t/incoming/82759688c17dde62715dcdcd602c40c1>, \"!<arch>\\ndebian-binary   1789004488  0     0     100644  4         `\\n2.0\\ncontrol.\"..., 848) = 848"
+    },
+    {
+      "kind": "io-error",
+      "syscall": "renameat2",
+      "nth": 6,
+      "error": "EIO",
+      "baseline": "renameat2(8</tmp/nia-chaos-baseline-u3lka96t/incoming>, \"1d32aee14161d134788b0445dfb94504\", 7</tmp/nia-chaos-baseline-u3lka96t/objects/c3>, \"e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314\", RENAME_NOREPLACE) = 0"
+    },
+    {
+      "kind": "kill",
+      "syscall": "fsync",
+      "nth": 17,
+      "baseline": "fsync(8</tmp/nia-chaos-baseline-u3lka96t/incoming>) = 0"
+    },
+    {
+      "kind": "kill",
+      "syscall": "renameat2",
+      "nth": 6,
+      "baseline": "renameat2(8</tmp/nia-chaos-baseline-u3lka96t/incoming>, \"1d32aee14161d134788b0445dfb94504\", 7</tmp/nia-chaos-baseline-u3lka96t/objects/c3>, \"e4eb4616a69aca476f84428c33d6f7a7fdd35145881840775204c7a3b66314\", RENAME_NOREPLACE) = 0"
+    },
+    {
+      "kind": "io-error",
+      "syscall": "write",
+      "nth": 1,
+      "error": "ENOSPC",
+      "baseline": "write(7</tmp/nia-chaos-baseline-u3lka96t/incoming/82759688c17dde62715dcdcd602c40c1>, \"!<arch>\\ndebian-binary   1789004488  0     0     100644  4         `\\n2.0\\ncontrol.\"..., 848) = 848"
+    },
+    {
+      "kind": "io-error",
+      "syscall": "write",
+      "nth": 13,
+      "error": "ENOSPC",
+      "baseline": "write(7</tmp/nia-chaos-baseline-u3lka96t/incoming/1e553dc8a20e45ef48ab9461f759f8a1>, \"NIASUP011\\24708UKu\\200#\\37\\24\\217\\344_\\303)\\223\\33\\204^A\\363\\223\\221I\\271o\\326O\\30/mNX\\270\\363\\272\\35M\\367G\\230\\217h\\327\\374\\251\\225\\330\\301h\\236\\271-\\350\\363\\30yn\\315\\321\\340\\3068\\356\\365\\272<\\325\\6\\20\\324\"..., 320) = 320"
+    },
+    {
+      "kind": "io-error",
+      "syscall": "fsync",
+      "nth": 3,
+      "error": "EIO",
+      "baseline": "fsync(7</tmp/nia-chaos-baseline-u3lka96t/incoming/82759688c17dde62715dcdcd602c40c1>) = 0"
+    },
+    {
+      "kind": "io-error",
+      "syscall": "renameat2",
+      "nth": 4,
+      "error": "EIO",
+      "baseline": "renameat2(8</tmp/nia-chaos-baseline-u3lka96t/incoming>, \"906941d34efc4c7796b91515fcf17e92\", 7</tmp/nia-chaos-baseline-u3lka96t/objects/7f>, \"430681db399ac651e92953bb9c5fbf4ee254b69a0ff7a62f7cbe595ea8552d\", RENAME_NOREPLACE) = 0"
+    },
+    {
+      "kind": "io-error",
+      "syscall": "write",
+      "nth": 5,
+      "error": "ENOSPC",
+      "baseline": "write(7</tmp/nia-chaos-baseline-u3lka96t/incoming/9c8e6a4edce890daee2915358c88ea46>, \"{\\\"created_at\\\":1789004428,\\\"schema\\\":\\\"org.niaos.archive-supply/v1\\\",\\\"security_epoch\\\"\"..., 583) = 583"
+    },
+    {
+      "kind": "kill",
+      "syscall": "renameat2",
+      "nth": 2,
+      "baseline": "renameat2(8</tmp/nia-chaos-baseline-u3lka96t/incoming>, \"689ba16516d855e137af6e0b710bba9c\", 7</tmp/nia-chaos-baseline-u3lka96t/objects/c1>, \"5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae\", RENAME_NOREPLACE) = 0"
+    },
+    {
+      "kind": "kill",
+      "syscall": "fsync",
+      "nth": 16,
+      "baseline": "fsync(7</tmp/nia-chaos-baseline-u3lka96t/objects/4e>) = 0"
+    },
+    {
+      "kind": "io-error",
+      "syscall": "write",
+      "nth": 11,
+      "error": "ENOSPC",
+      "baseline": "write(7</tmp/nia-chaos-baseline-u3lka96t/incoming/1d32aee14161d134788b0445dfb94504>, \"\\2303\\4j\\242\\n\\310\\26\\t+\\6\\1\\4\\1\\332G\\17\\1\\1\\7@\\v\\303\\355\\266\\360\\242X$ \\2629\\374F\\361q`\\276\\36\\273GO\\312(\\16\\177\\17n\\326\\324\\206\\361\\35\\264\\26Nia artificial fixture\\210\\220\\4\"..., 223) = 223"
+    },
+    {
+      "kind": "io-error",
+      "syscall": "fsync",
+      "nth": 24,
+      "error": "EIO",
+      "baseline": "fsync(9</tmp/nia-chaos-baseline-u3lka96t/objects>) = 0"
+    },
+    {
+      "kind": "kill",
+      "syscall": "write",
+      "nth": 3,
+      "baseline": "write(7</tmp/nia-chaos-baseline-u3lka96t/incoming/689ba16516d855e137af6e0b710bba9c>, \"Package: nia-test\\nVersion: 1:2.0~rc1-3\\nArchitecture: all\\nMaintainer: Nia synthet\"..., 125) = 125"
+    },
+    {
+      "kind": "kill",
+      "syscall": "fsync",
+      "nth": 8,
+      "baseline": "fsync(7</tmp/nia-chaos-baseline-u3lka96t/incoming/689ba16516d855e137af6e0b710bba9c>) = 0"
+    },
+    {
+      "kind": "io-error",
+      "syscall": "fsync",
+      "nth": 17,
+      "error": "EIO",
+      "baseline": "fsync(8</tmp/nia-chaos-baseline-u3lka96t/incoming>) = 0"
+    },
+    {
+      "kind": "kill",
+      "syscall": "fsync",
+      "nth": 13,
+      "baseline": "fsync(7</tmp/nia-chaos-baseline-u3lka96t/incoming/9c8e6a4edce890daee2915358c88ea46>) = 0"
+    },
+    {
+      "kind": "kill",
+      "syscall": "renameat2",
+      "nth": 7,
+      "baseline": "renameat2(8</tmp/nia-chaos-baseline-u3lka96t/incoming>, \"1e553dc8a20e45ef48ab9461f759f8a1\", 7</tmp/nia-chaos-baseline-u3lka96t/objects/04>, \"fadb6822166755f50f3a824f76e266477d877e7690f450e3566486fba9f38e\", RENAME_NOREPLACE) = 0"
+    },
+    {
+      "kind": "io-error",
+      "syscall": "renameat2",
+      "nth": 5,
+      "error": "EIO",
+      "baseline": "renameat2(8</tmp/nia-chaos-baseline-u3lka96t/incoming>, \"3d941e66d7af23e549cd0e3a96478b74\", 7</tmp/nia-chaos-baseline-u3lka96t/objects/41>, \"3a09e74739bb86462d6504d705a763d5063abdcdbce5e8b1f9822b1349d2e2\", RENAME_NOREPLACE) = 0"
+    },
+    {
+      "kind": "io-error",
+      "syscall": "fsync",
+      "nth": 13,
+      "error": "EIO",
+      "baseline": "fsync(7</tmp/nia-chaos-baseline-u3lka96t/incoming/9c8e6a4edce890daee2915358c88ea46>) = 0"
+    },
+    {
+      "kind": "kill",
+      "syscall": "fsync",
+      "nth": 36,
+      "baseline": "fsync(7</tmp/nia-chaos-baseline-u3lka96t/objects/04>) = 0"
+    },
+    {
+      "kind": "kill",
+      "syscall": "write",
+      "nth": 7,
+      "baseline": "write(7</tmp/nia-chaos-baseline-u3lka96t/incoming/906941d34efc4c7796b91515fcf17e92>, \"-----BEGIN PGP SIGNED MESSAGE-----\\nHash: SHA512\\n\\nOrigin: Debian\\nLabel: Debian\\nSu\"..., 523) = 523"
+    },
+    {
+      "kind": "io-error",
+      "syscall": "fsync",
+      "nth": 5,
+      "error": "EIO",
+      "baseline": "fsync(8</tmp/nia-chaos-baseline-u3lka96t/incoming>) = 0"
+    },
+    {
+      "kind": "kill",
+      "syscall": "fsync",
+      "nth": 24,
+      "baseline": "fsync(9</tmp/nia-chaos-baseline-u3lka96t/objects>) = 0"
+    },
+    {
+      "kind": "kill",
+      "syscall": "write",
+      "nth": 5,
+      "baseline": "write(7</tmp/nia-chaos-baseline-u3lka96t/incoming/9c8e6a4edce890daee2915358c88ea46>, \"{\\\"created_at\\\":1789004428,\\\"schema\\\":\\\"org.niaos.archive-supply/v1\\\",\\\"security_epoch\\\"\"..., 583) = 583"
+    },
+    {
+      "kind": "io-error",
+      "syscall": "fsync",
+      "nth": 16,
+      "error": "EIO",
+      "baseline": "fsync(7</tmp/nia-chaos-baseline-u3lka96t/objects/4e>) = 0"
+    },
+    {
+      "kind": "kill",
+      "syscall": "fsync",
+      "nth": 26,
+      "baseline": "fsync(7</tmp/nia-chaos-baseline-u3lka96t/objects/41>) = 0"
+    },
+    {
+      "kind": "io-error",
+      "syscall": "fsync",
+      "nth": 36,
+      "error": "EIO",
+      "baseline": "fsync(7</tmp/nia-chaos-baseline-u3lka96t/objects/04>) = 0"
+    },
+    {
+      "kind": "io-error",
+      "syscall": "write",
+      "nth": 9,
+      "error": "ENOSPC",
+      "baseline": "write(7</tmp/nia-chaos-baseline-u3lka96t/incoming/3d941e66d7af23e549cd0e3a96478b74>, \"\\3757zXZ\\0\\0\\4\\346\\326\\264F\\2\\0!\\1\\26\\0\\0\\0t/\\345\\243\\340\\0\\300\\0\\245]\\0(\\30Hf\\333\\3320\\205\\376\\26\\352\\356\\274IX\\321\\4\\33l\\177\\314a\\345:\\375b)\\10V\\237\\202V\\243-\\24\\226s{\\206\\277#.n\\373Uz\\226\\f\\321\"..., 232) = 232"
+    },
+    {
+      "kind": "io-error",
+      "syscall": "fsync",
+      "nth": 26,
+      "error": "EIO",
+      "baseline": "fsync(7</tmp/nia-chaos-baseline-u3lka96t/objects/41>) = 0"
+    },
+    {
+      "kind": "kill",
+      "syscall": "fsync",
+      "nth": 19,
+      "baseline": "fsync(9</tmp/nia-chaos-baseline-u3lka96t/objects>) = 0"
+    }
+  ],
+  "completed_utc": 1789004527.5576754,
+  "case_count": 92,
+  "counts": {
+    "corruption": 21,
+    "deadline-delay": 8,
+    "io-error": 26,
+    "kill": 26,
+    "kill-then-corrupt": 4,
+    "stop-lock-resume": 3,
+    "structural-loss": 4
+  },
+  "observed_false_successes": 0,
+  "untriggered_faults_counted": 0,
+  "recovery_ms": {
+    "p50": 175.64578000019537,
+    "p95": 205.99776999915775,
+    "max": 244.8266520004836
+  },
+  "public_inputs_unchanged": true
+}

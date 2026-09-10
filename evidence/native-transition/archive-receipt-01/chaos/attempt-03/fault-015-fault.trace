@@ -1,0 +1,8 @@
+pread64(3</usr/lib/x86_64-linux-gnu/libc.so.6>, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0H\3\0\0\0\0\0\0H\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0\240\1\36\0\0\0\0\0\240\1\36\0\0\0\0\0"..., 840, 64) = 840
+pread64(3</usr/lib/x86_64-linux-gnu/libc.so.6>, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0H\3\0\0\0\0\0\0H\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0\240\1\36\0\0\0\0\0\240\1\36\0\0\0\0\0"..., 840, 64) = 840
+fsync(3</tmp/nia-chaos-fault-zx39_fc6>) = 0
+fsync(8</tmp/nia-chaos-fault-zx39_fc6/incoming>) = 0
+pread64(3</evidence/chaos/attempt-03/public-fixture/original.deb>, "!<arch>\ndebian-binary   1789004362  0     0     100644  4         `\n2.0\ncontrol."..., 65536, 0) = 848
+pread64(3</evidence/chaos/attempt-03/public-fixture/original.deb>, "", 64688, 848) = 0
+write(7</tmp/nia-chaos-fault-zx39_fc6/incoming/328b13ace4631ef1877595df9c68b103>, "!<arch>\ndebian-binary   1789004362  0     0     100644  4         `\n2.0\ncontrol."..., 848) = ?
++++ killed by SIGKILL +++

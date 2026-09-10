@@ -1,0 +1,10 @@
+Running as unit: run-p114643-i114943.scope; invocation ID: 02746294021a42ed8b02df604eb81055
+limited-exec: {"scope": "run-p114643-i114943.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Traceback (most recent call last):
+  File "/workspace/distribution/native/check_archive_receipt_bridge.py", line 10, in <module>
+    import test_archive_receipt as fixtures
+  File "/workspace/distribution/native/test_archive_receipt.py", line 19, in <module>
+    import test_repository as repository_tests
+  File "/workspace/distribution/native/test_repository.py", line 12, in <module>
+    from securesystemslib.signer import CryptoSigner
+ModuleNotFoundError: No module named 'securesystemslib'

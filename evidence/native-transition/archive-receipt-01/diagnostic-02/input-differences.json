@@ -1,0 +1,13 @@
+{
+  "different_from_qualified_inputs": [
+    "pkgcore/README.md",
+    "pkgcore/tests.gpr",
+    "pkgcore/ci/generation-root-refusal-test.sh",
+    "pkgcore/ci/test-all.sh",
+    "distribution/native/check_archive_receipt_bridge.py",
+    "distribution/native/archive-supply.ja.md",
+    "distribution/native/acceptance.json",
+    "distribution/native/README.ja.md"
+  ],
+  "image": "sha256:0c04329a1343a0f1ae82ab931ffc7a7e5cbfdccbf18948e0576366fbf5bb249a"
+}

@@ -1,0 +1,10 @@
+Running as unit: run-p113624-i113924.scope; invocation ID: d719e26f15ed4f698427694b80ec9182
+limited-exec: {"scope": "run-p113624-i113924.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Setup
+   [mkdir]        object directory for project Tests
+   [mkdir]        exec directory for project Tests
+Compile
+   [Ada]          run_archive_supply_tests.adb
+run_archive_supply_tests.adb:127:44: error: operator for type "Interfaces.Unsigned_64" is not directly visible
+run_archive_supply_tests.adb:127:44: error: use clause would make operation legal
+gprbuild: *** compilation phase failed

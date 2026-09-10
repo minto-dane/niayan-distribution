@@ -1,0 +1,20 @@
+# Debian 13 component development environment; image tooling is in distribution/image.
+FROM docker.io/library/debian:13.6-slim@sha256:abc9cb88a5587630d7f915f47b23b0668fe250fbfc6457aa4d52b534c1bbf73f
+ARG DEBIAN_FRONTEND=noninteractive
+# Immutable, signed package indexes. Expiry is disabled only for this historical
+# build environment; archive authentication and package hashes remain enforced.
+RUN rm /etc/apt/sources.list.d/debian.sources && \
+    printf '%s\n' \
+      'deb [check-valid-until=no] http://snapshot.debian.org/archive/debian/20260907T000000Z trixie main' \
+      'deb [check-valid-until=no] http://snapshot.debian.org/archive/debian/20260907T000000Z trixie-updates main' \
+      'deb [check-valid-until=no] http://snapshot.debian.org/archive/debian-security/20260907T000000Z trixie-security main' \
+      > /etc/apt/sources.list
+COPY dev/packages.txt /tmp/nia-build-packages.txt
+RUN apt-get update && \
+    xargs -r -n 1 apt-get install -y --no-install-recommends < /tmp/nia-build-packages.txt && \
+    rm -rf /var/lib/apt/lists/* && \
+    useradd --create-home --uid 1000 --shell /bin/sh builder
+ENV LANG=C.UTF-8 LC_ALL=C.UTF-8 PYTHONDONTWRITEBYTECODE=1
+USER builder
+WORKDIR /workspace
+CMD ["make", "check"]

@@ -1,0 +1,335 @@
+{
+  "result": "pass",
+  "checks": [
+    {
+      "path": "build/bin/pkg_recoveryctl",
+      "sha256": "9d0ea3352ddeba4c2a6501f5806ea375c0c7d6474578761e7b11b2894f86ac8f",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      }
+    },
+    {
+      "path": "build/bin/pkg_scrubctl",
+      "sha256": "b17cc6886463430a76f6f6ceefbe07dc70f610aec7b08e67e95792f8265ad174",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      }
+    },
+    {
+      "path": "build/bin/pkg_worker",
+      "sha256": "a117cfb1072add7c3fe47e5f8c4fa354584d8654fd73a74fbf407b0d5ae0fa5f",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      }
+    },
+    {
+      "path": "build/bin/pkgctl",
+      "sha256": "0dfa1516f3b2e2aeeb64d59fc70ad06c1fb456403c54e833b72429aef6bb232d",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      }
+    },
+    {
+      "path": "build/test-bin/run_archive_supply_tests",
+      "sha256": "f6bc0d0164fca326160885132b56cec62d6e087027fa4cfba92776ee9440623d",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      }
+    },
+    {
+      "path": "build/test-bin/run_catalog_store_tests",
+      "sha256": "70da0884906a382e5debe4821be0a4f017594fd7f4996e0064a3aba2c44d2c7f",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      }
+    },
+    {
+      "path": "build/test-bin/run_composition_tests",
+      "sha256": "dae370f1708ef9f7be9919208c777588890627fcdca50a225078b9b289775978",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      }
+    },
+    {
+      "path": "build/test-bin/run_deb_container_tests",
+      "sha256": "10fcc2ae80f19e3600b82eb30f9b057db0bf76b6bf3d8df6bfc22b43fe81ccc1",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      }
+    },
+    {
+      "path": "build/test-bin/run_deb_control_tests",
+      "sha256": "1cf611c566a59940292ddad2653d27c70be99a1112caa2075c6890ddf7a2374b",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      }
+    },
+    {
+      "path": "build/test-bin/run_deb_data_stream_tests",
+      "sha256": "a45c9d3d3f3c5c206a6bc874019b96b892063258c9d0d9f62006bed15e78bc5d",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      }
+    },
+    {
+      "path": "build/test-bin/run_deb_final_set_tests",
+      "sha256": "78ad232b169034f636c515e3527d3a96c1309063cc3730afaab726abc9f7ebb9",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      }
+    },
+    {
+      "path": "build/test-bin/run_deb_metadata_tests",
+      "sha256": "8ef6769bb7ffbe4d6d88407b0f09ddcb0a20dde9a6be0ce24e8aa5118d2a5021",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      }
+    },
+    {
+      "path": "build/test-bin/run_deb_payload_tests",
+      "sha256": "01d605c10825a43774b7664aecc15a7e9f1823a636f5d79eb8688c72678bdf68",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      }
+    },
+    {
+      "path": "build/test-bin/run_deb_relations_tests",
+      "sha256": "2f1b8572d0120d00cacfafde2567db06bf691a449312ec1a6ebbdc1364c79fb6",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      }
+    },
+    {
+      "path": "build/test-bin/run_deb_semantics_tests",
+      "sha256": "3a14cd488dd95867356c81778ecef77336670bb810b8261c54d1773a60857a5c",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      }
+    },
+    {
+      "path": "build/test-bin/run_deb_transition_tests",
+      "sha256": "3a152b7b594378238c0e8aafa237d49dc690a5d3a46801bf2ca3ad7a0d1b0a7e",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      }
+    },
+    {
+      "path": "build/test-bin/run_enterprise_pkg_tests",
+      "sha256": "67f89cf53c8b99575bd5535a40598fddd10ca5490f6661fa82a672a175cb8120",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      }
+    },
+    {
+      "path": "build/test-bin/run_file_engine_tests",
+      "sha256": "2afee0c3cf37f272fd4df1a117ce6b9b3b436725d84f371972d7d9c52b3254e9",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      }
+    },
+    {
+      "path": "build/test-bin/run_file_replay_tests",
+      "sha256": "0930e52c45a178b467be5a1adab9a49d16f395f42bc137885b1d2c83722e6a43",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      }
+    },
+    {
+      "path": "build/test-bin/run_generation_publication_tests",
+      "sha256": "31c1eb50f3f9ac0fd1213c6f2841928eb9b4ce9a974f3c1c5902d69d9bef3a30",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      }
+    },
+    {
+      "path": "build/test-bin/run_generation_stage_tests",
+      "sha256": "279a6519e58c994d5b35588dbf5040a4908f16852f31eef3ece862960dbd9356",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      }
+    },
+    {
+      "path": "build/test-bin/run_journal_io_tests",
+      "sha256": "6e6972ac10335293399fd40a06ef8df26d10796a7b449c0a30ff6797e630cd54",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      }
+    },
+    {
+      "path": "build/test-bin/run_payload_index_tests",
+      "sha256": "102f631a46c311819dff94b6fb16859ac20ac5f70b19b44ae8e57dd2bb0d686e",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      }
+    },
+    {
+      "path": "build/test-bin/run_pkg_resolution_tests",
+      "sha256": "224adfd6b4afcf788c29ef64a6b2928170f785681be6e90a2bb22da082bdd67f",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      }
+    },
+    {
+      "path": "build/test-bin/run_pkg_tests",
+      "sha256": "7058d30905fafd2bd65b9486410925e38918d0a577923632e4be9884d169eea6",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      }
+    },
+    {
+      "path": "build/test-bin/run_repair_tests",
+      "sha256": "cd238b85b4dc128ac14fac1b5632e63a33d3a8d4f7e961c0dc30bd7e25cdaeb5",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      }
+    },
+    {
+      "path": "build/test-bin/run_retention_batch_tests",
+      "sha256": "caf0528b14fc019e2da0a9d70cb85fef661edfdb005d18311402183b495e71dc",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      }
+    },
+    {
+      "path": "build/test-bin/run_rpm_tests",
+      "sha256": "3f985cafee7f8fdeba742ae6e395556140a1ff59f995504825732c1329c2980d",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      }
+    },
+    {
+      "path": "build/test-bin/run_selected_catalog_tests",
+      "sha256": "2e82f3508246e3d894426db9a178a52382372425d559f5e73819467bd0e7cf28",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      }
+    },
+    {
+      "path": "build/test-bin/run_v2_pkg_tests",
+      "sha256": "1a9e05da0fdc09b5642d6c60565268b0e94e91e6f5f7ed8602a95004c825ff5e",
+      "properties": {
+        "pie": true,
+        "non_executable_stack": true,
+        "relro": true,
+        "bind_now": true,
+        "no_writable_executable_load": true
+      }
+    }
+  ]
+}

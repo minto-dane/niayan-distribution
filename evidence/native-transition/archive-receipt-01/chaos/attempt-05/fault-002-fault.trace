@@ -1,0 +1,12 @@
+pread64(3</usr/lib/x86_64-linux-gnu/libc.so.6>, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0H\3\0\0\0\0\0\0H\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0\240\1\36\0\0\0\0\0\240\1\36\0\0\0\0\0"..., 840, 64) = 840
+pread64(3</usr/lib/x86_64-linux-gnu/libc.so.6>, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0H\3\0\0\0\0\0\0H\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0\240\1\36\0\0\0\0\0\240\1\36\0\0\0\0\0"..., 840, 64) = 840
+fsync(3</tmp/nia-chaos-fault-pqco93pc>) = 0
+fsync(8</tmp/nia-chaos-fault-pqco93pc/incoming>) = 0
+pread64(3</evidence/chaos/attempt-05/public-fixture/original.deb>, "!<arch>\ndebian-binary   1789004488  0     0     100644  4         `\n2.0\ncontrol."..., 65536, 0) = 848
+pread64(3</evidence/chaos/attempt-05/public-fixture/original.deb>, "", 64688, 848) = 0
+write(7</tmp/nia-chaos-fault-pqco93pc/incoming/f6c29f23c03a2d2f527561754aaa9757>, "!<arch>\ndebian-binary   1789004488  0     0     100644  4         `\n2.0\ncontrol."..., 848) = 848
+pread64(3</evidence/chaos/attempt-05/public-fixture/original.deb>, "", 65536, 848) = 0
+fsync(7</tmp/nia-chaos-fault-pqco93pc/incoming/f6c29f23c03a2d2f527561754aaa9757>) = 0
+fsync(9</tmp/nia-chaos-fault-pqco93pc/objects>) = 0
+renameat2(8</tmp/nia-chaos-fault-pqco93pc/incoming>, "f6c29f23c03a2d2f527561754aaa9757", 7</tmp/nia-chaos-fault-pqco93pc/objects/ee>, "f5ba3cd50610d463567daac66c04c0295a56fda8c4dd0654b4b011edd187b0", RENAME_NOREPLACE) = ?
++++ killed by SIGKILL +++

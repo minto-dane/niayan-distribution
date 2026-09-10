@@ -230,6 +230,7 @@
         "native/interim_intake.py",
         "native/interim_download.py",
         "native/archive_intake.py",
+        "native/archive_receipt.py",
         "tools/debian_archive_auth.py"
       ],
       "tests": [
@@ -239,6 +240,8 @@
         "native/check_download_cli.py",
         "native/test_archive_intake.py",
         "native/test_repository_revalidation.py",
+        "native/test_archive_receipt.py",
+        "native/check_archive_receipt_bridge.py",
         "tests/test_debian_trust.py"
       ],
       "evidence": [

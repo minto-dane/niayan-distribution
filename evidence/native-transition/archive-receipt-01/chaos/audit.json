@@ -1,0 +1,28 @@
+{
+  "result": "pass",
+  "campaigns": [
+    {
+      "campaign": "attempt-04",
+      "cases": 92,
+      "seed": 20260910,
+      "report_sha256": "757c6cfc6af4aae4b34b1a160a77a29597a2b87341994e660527bfb915f33073"
+    },
+    {
+      "campaign": "attempt-05",
+      "cases": 92,
+      "seed": 20260911,
+      "report_sha256": "7e7135d6647cebfe2fe1b7d0b0f04841bbe293cfd20b52277744afca34efb771"
+    }
+  ],
+  "counts": {
+    "io-error": 52,
+    "kill": 52,
+    "kill-then-corrupt": 8,
+    "corruption": 42,
+    "structural-loss": 8,
+    "deadline-delay": 16,
+    "stop-lock-resume": 6
+  },
+  "case_count": 184,
+  "scope": "public signatures, original hashes, real fault traces and successful recovery logs"
+}

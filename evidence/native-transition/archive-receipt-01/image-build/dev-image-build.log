@@ -1,0 +1,311 @@
+Running as unit: run-p115108-i115408.scope; invocation ID: cfa02d6b7e884f8ca63b5975b1ec2388
+limited-exec: {"scope": "run-p115108-i115408.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+STEP 1/9: FROM docker.io/library/debian:13.6-slim@sha256:abc9cb88a5587630d7f915f47b23b0668fe250fbfc6457aa4d52b534c1bbf73f
+STEP 2/9: ARG DEBIAN_FRONTEND=noninteractive
+--> Using cache c3cf4b79a0f06910671e56f2b158522c0b07c68c8d1676927b6eddd1dec56961
+--> c3cf4b79a0f0
+STEP 3/9: RUN rm /etc/apt/sources.list.d/debian.sources &&     printf '%s\n'       'deb [check-valid-until=no] http://snapshot.debian.org/archive/debian/20260907T000000Z trixie main'       'deb [check-valid-until=no] http://snapshot.debian.org/archive/debian/20260907T000000Z trixie-updates main'       'deb [check-valid-until=no] http://snapshot.debian.org/archive/debian-security/20260907T000000Z trixie-security main'       > /etc/apt/sources.list
+--> Using cache aa6d72b91808472e02dab5b081ba4c23bcfd1ddb36c554c89f8b326c681fb2ab
+--> aa6d72b91808
+STEP 4/9: COPY dev/packages.txt /tmp/nia-build-packages.txt
+--> 6656c21d1b1f
+STEP 5/9: RUN apt-get update &&     xargs -r apt-get install -y --no-install-recommends < /tmp/nia-build-packages.txt &&     rm -rf /var/lib/apt/lists/* &&     useradd --create-home --uid 1000 --shell /bin/sh builder
+Get:1 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie InRelease [140 kB]
+Get:2 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie-updates InRelease [47.3 kB]
+Get:3 http://snapshot.debian.org/archive/debian-security/20260907T000000Z trixie-security InRelease [43.4 kB]
+Get:4 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 Packages [9673 kB]
+Get:5 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie-updates/main amd64 Packages [4412 B]
+Get:6 http://snapshot.debian.org/archive/debian-security/20260907T000000Z trixie-security/main amd64 Packages [251 kB]
+Fetched 10.2 MB in 1s (12.8 MB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+dpkg is already the newest version (1.22.22).
+dpkg set to manually installed.
+The following additional packages will be installed:
+  adduser binutils binutils-common binutils-x86-64-linux-gnu comerr-dev cpp
+  cpp-14 cpp-14-x86-64-linux-gnu cpp-x86-64-linux-gnu dbus-bin dbus-daemon
+  dbus-session-bus-common dbus-system-bus-common gcc-14
+  gcc-14-x86-64-linux-gnu gcc-x86-64-linux-gnu gettext-base git-man gnat-14
+  gnat-14-x86-64-linux-gnu gprconfig-kb krb5-multidev libacl1-dev libapparmor1
+  libarchive13t64 libasan8 libassuan9 libatomic1 libattr1-dev libbinutils
+  libbrotli-dev libbrotli1 libc-dev-bin libcap-dev libcc1-0 libcom-err2
+  libcrypt-dev libctf-nobfd0 libctf0 libcurl3t64-gnutls libcurl4t64
+  libdbus-1-3 liberror-perl libevent-2.1-7t64 libexpat1 libext2fs-dev
+  libext2fs2t64 libffi8 libgcc-14-dev libgcrypt20 libgdbm-compat4t64
+  libgdbm6t64 libgmp-dev libgmpxx4ldbl libgnat-14 libgnatprj12
+  libgnutls-dane0t64 libgnutls-openssl27t64 libgnutls28-dev libgnutls30t64
+  libgomp1 libgpg-error0 libgprofng0 libgssapi-krb5-2 libgssrpc4t64 libhwasan0
+  libidn2-0 libidn2-dev libisl23 libitm1 libjansson4 libk5crypto3
+  libkadm5clnt-mit12 libkadm5srv-mit12 libkdb5-10t64 libkeyutils1 libkrb5-3
+  libkrb5-dev libkrb5support0 libksba8 libldap-dev libldap2 liblsan0
+  liblz4-dev libmpc3 libmpfr6 libncursesw6 libnghttp2-14 libnghttp2-dev
+  libnghttp3-9 libnghttp3-dev libngtcp2-16 libngtcp2-crypto-gnutls8
+  libnpth0t64 libp11-kit-dev libp11-kit0 libperl5.40 libpkgconf3 libpsl-dev
+  libpsl5t64 libpython3-stdlib libpython3.13-minimal libpython3.13-stdlib
+  libquadmath0 libreadline8t64 librtmp-dev librtmp1 libsasl2-2
+  libsasl2-modules-db libsframe1 libsodium23 libssh2-1-dev libssh2-1t64
+  libssl-dev libssl3t64 libtasn1-6 libtasn1-6-dev libtsan2 libubsan1
+  libunbound8 libunistring5 libxml2 libxmlada-dom9 libxmlada-input8
+  libxmlada-sax8 libxmlada-schema8 libxmlada-unicode8 libxxhash-dev
+  linux-libc-dev media-types netbase nettle-dev openssl
+  openssl-provider-legacy perl perl-modules-5.40 pinentry-curses pkgconf
+  pkgconf-bin python3-bcrypt python3-certifi python3-cffi-backend
+  python3-chardet python3-charset-normalizer python3-idna python3-minimal
+  python3-requests python3-securesystemslib python3-urllib3 python3.13
+  python3.13-minimal readline-common rpcsvc-proto
+Suggested packages:
+  liblocale-gettext-perl cron quota binutils-doc gprofng-gui binutils-gold
+  doc-base cpp-doc gcc-14-locales cpp-14-doc default-dbus-session-bus
+  | dbus-session-bus gcc-multilib manpages-dev autoconf automake libtool flex
+  bison gdb gcc-doc gcc-14-multilib gcc-14-doc gdb-x86-64-linux-gnu autopoint
+  gettext-doc libasprintf-dev libgettextpo-dev gnulib-l10n git-doc git-email
+  git-gui gitk gitweb git-cvs git-mediawiki git-svn ada-reference-manual-2012
+  gnat-14-doc gnat-14-sjlj dbus-user-session libpam-systemd pinentry-gnome3
+  scdaemon tpm2daemon gnupg g++ gfortran gprbuild-doc krb5-doc lrzip
+  libc-devtools glibc-doc dpkg-dev libcurl4-doc libidn-dev rng-tools gdbm-l10n
+  gmp-doc libgmp10-doc libmpfr-dev dns-root-data gnutls-bin gnutls-doc
+  krb5-user liblzma-doc libnghttp2-doc p11-kit-doc sensible-utils libssl-doc
+  make-doc perl-doc libterm-readline-gnu-perl | libterm-readline-perl-perl
+  libtap-harness-archive-perl pinentry-doc python3-doc python3-tk python3-venv
+  python-charset-normalizer-doc python-cryptography-doc
+  python3-cryptography-vectors python3-openssl python3-socks
+  python-requests-doc python3-brotli python3.13-venv python3.13-doc
+  binfmt-support readline-doc
+Recommended packages:
+  bash-completion patch less ssh-client gnupg bzip2-doc manpages manpages-dev
+  libgpg-error-l10n krb5-locales libldap-common libgpm2 publicsuffix
+  libsasl2-modules libtasn1-doc python3-asn1crypto python3-nacl
+  python3-pykcs11
+The following NEW packages will be installed:
+  adduser binutils binutils-common binutils-x86-64-linux-gnu ca-certificates
+  comerr-dev cpp cpp-14 cpp-14-x86-64-linux-gnu cpp-x86-64-linux-gnu curl dbus
+  dbus-bin dbus-daemon dbus-session-bus-common dbus-system-bus-common gcc
+  gcc-14 gcc-14-x86-64-linux-gnu gcc-x86-64-linux-gnu gettext gettext-base git
+  git-man gnat gnat-14 gnat-14-x86-64-linux-gnu gpg gpg-agent gpgconf gpgv
+  gprbuild gprconfig-kb krb5-multidev libacl1-dev libapparmor1 libarchive-dev
+  libarchive13t64 libasan8 libassuan9 libatomic1 libattr1-dev libbinutils
+  libbrotli-dev libbrotli1 libbz2-dev libc-dev-bin libc6-dev libcap-dev
+  libcc1-0 libcom-err2 libcrypt-dev libctf-nobfd0 libctf0 libcurl3t64-gnutls
+  libcurl4-openssl-dev libcurl4t64 libdbus-1-3 liberror-perl libevent-2.1-7t64
+  libexpat1 libext2fs-dev libext2fs2t64 libffi8 libgcc-14-dev libgcrypt20
+  libgdbm-compat4t64 libgdbm6t64 libgmp-dev libgmpxx4ldbl libgnat-14
+  libgnatprj12 libgnutls-dane0t64 libgnutls-openssl27t64 libgnutls28-dev
+  libgnutls30t64 libgomp1 libgpg-error0 libgprofng0 libgssapi-krb5-2
+  libgssrpc4t64 libhwasan0 libidn2-0 libidn2-dev libisl23 libitm1 libjansson4
+  libk5crypto3 libkadm5clnt-mit12 libkadm5srv-mit12 libkdb5-10t64 libkeyutils1
+  libkrb5-3 libkrb5-dev libkrb5support0 libksba8 libldap-dev libldap2 liblsan0
+  liblz4-dev liblzma-dev libmpc3 libmpfr6 libncursesw6 libnghttp2-14
+  libnghttp2-dev libnghttp3-9 libnghttp3-dev libngtcp2-16
+  libngtcp2-crypto-gnutls8 libnpth0t64 libp11-kit-dev libp11-kit0 libperl5.40
+  libpkgconf3 libpsl-dev libpsl5t64 libpython3-stdlib libpython3.13-minimal
+  libpython3.13-stdlib libquadmath0 libreadline8t64 librtmp-dev librtmp1
+  libsasl2-2 libsasl2-modules-db libsframe1 libsodium-dev libsodium23
+  libssh2-1-dev libssh2-1t64 libssl-dev libsystemd-dev libtasn1-6
+  libtasn1-6-dev libtsan2 libubsan1 libunbound8 libunistring5 libxml2
+  libxml2-dev libxmlada-dom9 libxmlada-input8 libxmlada-sax8 libxmlada-schema8
+  libxmlada-unicode8 libxxhash-dev libzstd-dev linux-libc-dev make media-types
+  netbase nettle-dev openssl perl perl-modules-5.40 pinentry-curses pkg-config
+  pkgconf pkgconf-bin python3 python3-bcrypt python3-certifi
+  python3-cffi-backend python3-chardet python3-charset-normalizer
+  python3-cryptography python3-idna python3-minimal python3-requests
+  python3-securesystemslib python3-tuf python3-urllib3 python3.13
+  python3.13-minimal readline-common ripgrep rpcsvc-proto xz-utils zlib1g-dev
+  zstd
+The following packages will be upgraded:
+  libssl3t64 openssl-provider-legacy
+2 upgraded, 181 newly installed, 0 to remove and 0 not upgraded.
+Need to get 153 MB of archives.
+After this operation, 634 MB of additional disk space will be used.
+Ign:128 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libattr1-dev amd64 1:2.5.2-3
+Ign:131 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libbz2-dev amd64 1.0.8-6
+Ign:133 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libext2fs-dev amd64 1.47.2-3+b11
+Ign:137 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libxml2-dev amd64 2.12.7+dfsg+really2.9.14-2.1+deb13u3
+Ign:138 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libzstd-dev amd64 1.5.7+dfsg-1
+Ign:140 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libgmp-dev amd64 2:6.3.0+dfsg-3
+Ign:137 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libxml2-dev amd64 2.12.7+dfsg+really2.9.14-2.1+deb13u3
+Get:128 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libattr1-dev amd64 1:2.5.2-3 [36.5 kB]
+Get:131 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libbz2-dev amd64 1.0.8-6 [31.4 kB]
+Get:133 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libext2fs-dev amd64 1.47.2-3+b11 [299 kB]
+Ign:137 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libxml2-dev amd64 2.12.7+dfsg+really2.9.14-2.1+deb13u3
+Get:138 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libzstd-dev amd64 1.5.7+dfsg-1 [371 kB]
+Get:140 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libgmp-dev amd64 2:6.3.0+dfsg-3 [642 kB]
+Ign:154 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libpsl-dev amd64 0.21.2-1.1+b1
+Ign:162 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 librtmp-dev amd64 2.4+20151223.gitfa8646d.1-2+b5
+Ign:165 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libcurl4-openssl-dev amd64 8.14.1-2+deb13u4
+Get:137 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libxml2-dev amd64 2.12.7+dfsg+really2.9.14-2.1+deb13u3 [795 kB]
+Ign:168 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libsystemd-dev amd64 257.13-1~deb13u1
+Ign:162 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 librtmp-dev amd64 2.4+20151223.gitfa8646d.1-2+b5
+Get:154 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libpsl-dev amd64 0.21.2-1.1+b1 [77.6 kB]
+Ign:165 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libcurl4-openssl-dev amd64 8.14.1-2+deb13u4
+Ign:168 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libsystemd-dev amd64 257.13-1~deb13u1
+Ign:177 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 python3-idna all 3.10-1+deb13u1
+Ign:165 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libcurl4-openssl-dev amd64 8.14.1-2+deb13u4
+Ign:162 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 librtmp-dev amd64 2.4+20151223.gitfa8646d.1-2+b5
+Ign:179 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 python3-requests all 2.32.3+dfsg-5+deb13u1
+Ign:181 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 python3-tuf all 5.1.0-2
+Ign:182 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 ripgrep amd64 14.1.1-1+b4
+Err:165 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libcurl4-openssl-dev amd64 8.14.1-2+deb13u4
+  TooManyRequests 503  No healthy backends [IP: 146.75.38.132 80]
+Err:162 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 librtmp-dev amd64 2.4+20151223.gitfa8646d.1-2+b5
+  504  Gateway Timeout [IP: 146.75.38.132 80]
+  TooManyRequests 503  first byte timeout [IP: 146.75.38.132 80]
+  TooManyRequests 503  No healthy backends [IP: 146.75.38.132 80]
+Ign:182 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 ripgrep amd64 14.1.1-1+b4
+Ign:181 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 python3-tuf all 5.1.0-2
+Ign:179 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 python3-requests all 2.32.3+dfsg-5+deb13u1
+Ign:168 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libsystemd-dev amd64 257.13-1~deb13u1
+Ign:177 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 python3-idna all 3.10-1+deb13u1
+Get:1 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libdbus-1-3 amd64 1.16.2-2 [178 kB]
+Get:2 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 dbus-bin amd64 1.16.2-2 [80.0 kB]
+Get:3 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 dbus-session-bus-common all 1.16.2-2 [52.3 kB]
+Get:4 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libapparmor1 amd64 4.1.0-1 [43.7 kB]
+Get:5 http://snapshot.debian.org/archive/debian-security/20260907T000000Z trixie-security/main amd64 libexpat1 amd64 2.8.3-1~deb13u1 [123 kB]
+Get:6 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 dbus-daemon amd64 1.16.2-2 [159 kB]
+Err:168 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libsystemd-dev amd64 257.13-1~deb13u1
+  504  Gateway Timeout [IP: 146.75.38.132 80]
+  TooManyRequests 503  No healthy backends [IP: 146.75.38.132 80]
+Ign:177 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 python3-idna all 3.10-1+deb13u1
+Ign:181 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 python3-tuf all 5.1.0-2
+Ign:179 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 python3-requests all 2.32.3+dfsg-5+deb13u1
+Ign:182 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 ripgrep amd64 14.1.1-1+b4
+Get:7 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 adduser all 3.152 [191 kB]
+Get:8 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 dbus-system-bus-common all 1.16.2-2 [53.5 kB]
+Get:9 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 dbus amd64 1.16.2-2 [71.6 kB]
+Get:10 http://snapshot.debian.org/archive/debian-security/20260907T000000Z trixie-security/main amd64 openssl-provider-legacy amd64 3.5.7-1~deb13u2 [316 kB]
+Get:11 http://snapshot.debian.org/archive/debian-security/20260907T000000Z trixie-security/main amd64 libssl3t64 amd64 3.5.7-1~deb13u2 [2454 kB]
+Get:12 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie-updates/main amd64 libpython3.13-minimal amd64 3.13.5-2+deb13u4 [863 kB]
+Get:13 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie-updates/main amd64 python3.13-minimal amd64 3.13.5-2+deb13u4 [2217 kB]
+Err:179 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 python3-requests all 2.32.3+dfsg-5+deb13u1
+  TooManyRequests 503  No healthy backends [IP: 146.75.38.132 80]
+Err:177 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 python3-idna all 3.10-1+deb13u1
+  TooManyRequests 503  No healthy backends [IP: 146.75.38.132 80]
+Err:182 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 ripgrep amd64 14.1.1-1+b4
+  TooManyRequests 503  No healthy backends [IP: 146.75.38.132 80]
+Err:181 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 python3-tuf all 5.1.0-2
+  TooManyRequests 503  No healthy backends [IP: 146.75.38.132 80]
+Get:14 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 python3-minimal amd64 3.13.5-1 [27.2 kB]
+Get:15 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 media-types all 13.0.0 [29.3 kB]
+Get:16 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 netbase all 6.5 [12.4 kB]
+Get:17 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libffi8 amd64 3.4.8-2 [24.1 kB]
+Get:18 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libncursesw6 amd64 6.5+20250216-2 [135 kB]
+Get:19 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 readline-common all 8.2-6 [69.4 kB]
+Get:20 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libreadline8t64 amd64 8.2-6 [169 kB]
+Get:21 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie-updates/main amd64 libpython3.13-stdlib amd64 3.13.5-2+deb13u4 [1957 kB]
+Get:22 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie-updates/main amd64 python3.13 amd64 3.13.5-2+deb13u4 [757 kB]
+Get:23 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libpython3-stdlib amd64 3.13.5-1 [10.2 kB]
+Get:24 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 python3 amd64 3.13.5-1 [28.2 kB]
+Get:25 http://snapshot.debian.org/archive/debian-security/20260907T000000Z trixie-security/main amd64 openssl amd64 3.5.7-1~deb13u2 [1507 kB]
+Get:26 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 ca-certificates all 20250419 [162 kB]
+Get:27 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 gettext-base amd64 0.23.1-2 [243 kB]
+Get:28 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 perl-modules-5.40 all 5.40.1-6 [3019 kB]
+Get:29 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libgdbm6t64 amd64 1.24-2 [75.2 kB]
+Get:30 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libgdbm-compat4t64 amd64 1.24-2 [50.3 kB]
+Get:31 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libperl5.40 amd64 5.40.1-6 [4341 kB]
+Get:32 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 perl amd64 5.40.1-6 [267 kB]
+Get:33 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 xz-utils amd64 5.8.1-1+deb13u1 [659 kB]
+Get:34 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libsframe1 amd64 2.44-3 [78.4 kB]
+Get:35 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 binutils-common amd64 2.44-3 [2509 kB]
+Get:36 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libbinutils amd64 2.44-3 [534 kB]
+Get:37 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libgprofng0 amd64 2.44-3 [808 kB]
+Get:38 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libctf-nobfd0 amd64 2.44-3 [156 kB]
+Get:39 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libctf0 amd64 2.44-3 [88.6 kB]
+Get:40 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libjansson4 amd64 2.14-2+b3 [39.8 kB]
+Get:41 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 binutils-x86-64-linux-gnu amd64 2.44-3 [1014 kB]
+Get:42 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 binutils amd64 2.44-3 [265 kB]
+Get:43 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libc-dev-bin amd64 2.41-12+deb13u3 [59.8 kB]
+Get:44 http://snapshot.debian.org/archive/debian-security/20260907T000000Z trixie-security/main amd64 linux-libc-dev all 6.12.107-1 [2919 kB]
+Get:45 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libcrypt-dev amd64 1:4.4.38-1 [119 kB]
+Get:46 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 rpcsvc-proto amd64 1.4.3-1 [63.3 kB]
+Get:47 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libc6-dev amd64 2.41-12+deb13u3 [1992 kB]
+Get:48 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libcom-err2 amd64 1.47.2-3+b11 [25.0 kB]
+Get:49 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 comerr-dev amd64 2.1-1.47.2-3+b11 [56.7 kB]
+Get:50 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libisl23 amd64 0.27-1 [659 kB]
+Get:51 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libmpfr6 amd64 4.2.2-1 [729 kB]
+Get:52 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libmpc3 amd64 1.3.1-1+b3 [52.2 kB]
+Get:53 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 cpp-14-x86-64-linux-gnu amd64 14.2.0-19 [11.0 MB]
+Get:54 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 cpp-14 amd64 14.2.0-19 [1280 B]
+Get:55 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 cpp-x86-64-linux-gnu amd64 4:14.2.0-1 [4840 B]
+Get:56 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 cpp amd64 4:14.2.0-1 [1568 B]
+Get:57 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libbrotli1 amd64 1.1.0-2+b7 [307 kB]
+Get:58 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libkrb5support0 amd64 1.21.3-5+deb13u1 [33.1 kB]
+Get:59 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libk5crypto3 amd64 1.21.3-5+deb13u1 [81.2 kB]
+Get:60 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libkeyutils1 amd64 1.6.3-6 [9456 B]
+Get:61 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libkrb5-3 amd64 1.21.3-5+deb13u1 [326 kB]
+Get:62 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libgssapi-krb5-2 amd64 1.21.3-5+deb13u1 [138 kB]
+Get:63 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libunistring5 amd64 1.3-2 [477 kB]
+Get:64 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libidn2-0 amd64 2.3.8-2 [109 kB]
+Get:65 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libsasl2-modules-db amd64 2.1.28+dfsg1-9 [19.8 kB]
+Get:66 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libsasl2-2 amd64 2.1.28+dfsg1-9 [57.5 kB]
+Get:67 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libldap2 amd64 2.6.10+dfsg-1 [194 kB]
+Get:68 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libnghttp2-14 amd64 1.64.0-1.1+deb13u1 [76.2 kB]
+Get:69 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libnghttp3-9 amd64 1.8.0-1 [67.7 kB]
+Get:70 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libpsl5t64 amd64 0.21.2-1.1+b1 [57.2 kB]
+Get:71 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libp11-kit0 amd64 0.25.5-3 [425 kB]
+Get:72 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libtasn1-6 amd64 4.20.0-2+deb13u1 [50.1 kB]
+Get:73 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libgnutls30t64 amd64 3.8.9-3+deb13u4 [1469 kB]
+Get:74 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 librtmp1 amd64 2.4+20151223.gitfa8646d.1-2+b5 [58.8 kB]
+Get:75 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libssh2-1t64 amd64 1.11.1-1+deb13u1 [245 kB]
+Get:76 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libcurl4t64 amd64 8.14.1-2+deb13u4 [392 kB]
+Get:77 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 curl amd64 8.14.1-2+deb13u4 [270 kB]
+Get:78 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libcc1-0 amd64 14.2.0-19 [42.8 kB]
+Get:79 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libgomp1 amd64 14.2.0-19 [137 kB]
+Get:80 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libitm1 amd64 14.2.0-19 [26.0 kB]
+Get:81 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libatomic1 amd64 14.2.0-19 [9308 B]
+Get:82 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libasan8 amd64 14.2.0-19 [2725 kB]
+Get:83 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 liblsan0 amd64 14.2.0-19 [1204 kB]
+Get:84 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libtsan2 amd64 14.2.0-19 [2460 kB]
+Get:85 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libubsan1 amd64 14.2.0-19 [1074 kB]
+Get:86 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libhwasan0 amd64 14.2.0-19 [1488 kB]
+Get:87 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libquadmath0 amd64 14.2.0-19 [145 kB]
+Get:88 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libgcc-14-dev amd64 14.2.0-19 [2672 kB]
+Get:89 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 gcc-14-x86-64-linux-gnu amd64 14.2.0-19 [21.4 MB]
+Get:90 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 gcc-14 amd64 14.2.0-19 [540 kB]
+Get:91 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 gcc-x86-64-linux-gnu amd64 4:14.2.0-1 [1436 B]
+Get:92 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 gcc amd64 4:14.2.0-1 [5136 B]
+Get:93 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libxml2 amd64 2.12.7+dfsg+really2.9.14-2.1+deb13u3 [700 kB]
+Get:94 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 gettext amd64 0.23.1-2 [1680 kB]
+Get:95 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libngtcp2-16 amd64 1.11.0-1+deb13u1 [132 kB]
+Get:96 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libngtcp2-crypto-gnutls8 amd64 1.11.0-1+deb13u1 [29.5 kB]
+Get:97 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libcurl3t64-gnutls amd64 8.14.1-2+deb13u4 [384 kB]
+Get:98 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 liberror-perl all 0.17030-1 [26.9 kB]
+Get:99 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 git-man all 1:2.47.3-0+deb13u1 [2205 kB]
+Get:100 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 git amd64 1:2.47.3-0+deb13u1 [8862 kB]
+Get:101 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libgnat-14 amd64 14.2.0-19 [1275 kB]
+Ign:102 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 gnat-14-x86-64-linux-gnu amd64 14.2.0-19
+Get:103 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 gnat-14 amd64 14.2.0-19 [7536 B]
+Ign:104 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 gnat all 14.1
+Get:105 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libgpg-error0 amd64 1.51-4 [82.1 kB]
+Get:106 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libassuan9 amd64 3.0.2-2 [61.5 kB]
+Get:107 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libgcrypt20 amd64 1.11.0-7+deb13u1 [843 kB]
+Get:108 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 gpgconf amd64 2.4.7-21+deb13u1+b4 [129 kB]
+Get:109 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libksba8 amd64 1.6.7-2+b1 [136 kB]
+Get:110 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libnpth0t64 amd64 1.8-3 [23.2 kB]
+Get:111 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 gpg amd64 2.4.7-21+deb13u1+b4 [634 kB]
+Get:112 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 pinentry-curses amd64 1.3.1-2 [86.4 kB]
+Ign:104 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 gnat all 14.1
+Ign:102 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 gnat-14-x86-64-linux-gnu amd64 14.2.0-19
+Get:113 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 gpg-agent amd64 2.4.7-21+deb13u1+b4 [271 kB]
+Get:114 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 gpgv amd64 2.4.7-21+deb13u1+b4 [241 kB]
+Get:115 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libxmlada-unicode8 amd64 25.0.0-4 [474 kB]
+Ign:116 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libxmlada-input8 amd64 25.0.0-4
+Ign:117 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libxmlada-sax8 amd64 25.0.0-4
+Ign:118 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libxmlada-dom9 amd64 25.0.0-4
+Ign:119 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libxmlada-schema8 amd64 25.0.0-4
+Get:120 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libgnatprj12 amd64 2025.0.0-4 [1548 kB]
+Get:121 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 gprconfig-kb all 25.0.0-2 [30.6 kB]
+Ign:102 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 gnat-14-x86-64-linux-gnu amd64 14.2.0-19
+Ign:119 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libxmlada-schema8 amd64 25.0.0-4
+Get:118 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libxmlada-dom9 amd64 25.0.0-4 [56.3 kB]
+Ign:117 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libxmlada-sax8 amd64 25.0.0-4
+Ign:116 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libxmlada-input8 amd64 25.0.0-4
+Ign:104 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 gnat all 14.1
+Get:122 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 gprbuild amd64 2025.0.0-4 [8031 kB]
+Get:123 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libgssrpc4t64 amd64 1.21.3-5+deb13u1 [60.1 kB]
+Get:124 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libkadm5clnt-mit12 amd64 1.21.3-5+deb13u1 [42.6 kB]
+Get:125 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libkdb5-10t64 amd64 1.21.3-5+deb13u1 [42.8 kB]
+Get:126 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 libkadm5srv-mit12 amd64 1.21.3-5+deb13u1 [54.4 kB]
+Get:104 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 gnat all 14.1 [3392 B]
+Get:102 http://snapshot.debian.org/archive/debian/20260907T000000Z trixie/main amd64 gnat-14-x86-64-linux-gnu amd64 14.2.0-19 [19.5 MB]
+subprocess exited on terminated

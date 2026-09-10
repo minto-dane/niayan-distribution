@@ -1,0 +1,13 @@
+Running as unit: run-p160997-i161297.scope; invocation ID: 7099a433f4b34d81b2f27908b48abcc3
+limited-exec: {"scope": "run-p160997-i161297.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Traceback (most recent call last):
+  File "/evidence/chaos/campaign.py", line 324, in <module>
+    main()
+    ~~~~^^
+  File "/evidence/chaos/campaign.py", line 170, in main
+    for nth, line in chosen(possible, 12):
+                     ~~~~~~^^^^^^^^^^^^^^
+  File "/evidence/chaos/campaign.py", line 149, in chosen
+    assert values
+           ^^^^^^
+AssertionError

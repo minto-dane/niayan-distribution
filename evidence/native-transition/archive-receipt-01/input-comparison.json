@@ -1,0 +1,25 @@
+{
+  "result": "pass",
+  "copies": [
+    {
+      "path": "/home/nia/devbox/niaos/nia-os-consent",
+      "inputs": 3364,
+      "matches": true
+    },
+    {
+      "path": "/home/nia/devbox/niaos/.work/native-supply-receipt-01/workspace",
+      "inputs": 3364,
+      "matches": true
+    },
+    {
+      "path": "/home/nia/devbox/niaos/.work/native-supply-receipt-01/independent-long-path",
+      "inputs": 3364,
+      "matches": true
+    },
+    {
+      "path": "/home/nia/devbox/niaos/.work/native-supply-receipt-01/sanitized",
+      "inputs": 952,
+      "matches": true
+    }
+  ]
+}

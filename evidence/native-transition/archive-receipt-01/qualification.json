@@ -1,0 +1,65 @@
+{
+  "result": "pass",
+  "source_subject": "5727fd06deab52a4accf7bca5f48d61192df4936271b7e1a659ada887511bc27",
+  "image": "sha256:4ec0d3adaef0afc8ce1eccdb621d46911ea2ebc11ddaa9e86f15e4ce59776d4c",
+  "checks": [
+    {
+      "name": "image-packages",
+      "returncode": 0,
+      "log_sha256": "8241b73e4a0d73a61d4097d44efc87f24639b96a2237edac90c35132bd7ec8dd"
+    },
+    {
+      "name": "workspace-check",
+      "returncode": 0,
+      "log_sha256": "8436beadff3bf3b8164bd5cf59442310ccf0611a374677e028689edbc4cdbe20"
+    },
+    {
+      "name": "native-image-check",
+      "returncode": 0,
+      "log_sha256": "9545a36c685ff162d59a243ed2086d9fc59a2d6ac6e5f05437e2efa64a861355"
+    },
+    {
+      "name": "independent-build",
+      "returncode": 0,
+      "log_sha256": "3a8600424db811051be922a387f6b4baaf153df322e7cd097ffdbfb2e3680ee3"
+    },
+    {
+      "name": "independent-test-build",
+      "returncode": 0,
+      "log_sha256": "bcdac5ccc99db0d2fdb239deb4bf506b4589772cdc3f9951166a1791876003d5"
+    },
+    {
+      "name": "pkgcore-independent-ci",
+      "returncode": 0,
+      "log_sha256": "fbfc5aea3021b5be08ff2114e3137c198e6a14095c4c5df7bd87623fb40bfdd0"
+    },
+    {
+      "name": "root-refusal",
+      "returncode": 0,
+      "log_sha256": "002bd3373747f8b288e4634354a0488c37f061bf7c1de7f2489416f7d1ab89e5"
+    },
+    {
+      "name": "issuer-root-refusal",
+      "returncode": 0,
+      "log_sha256": "2cef5869bb22b88a98816d88a6c100f6ee0de5f2ec5154c4a46aa4c20ff6d4f4"
+    },
+    {
+      "name": "sanitized",
+      "returncode": 0,
+      "log_sha256": "5a6b451220969ea8af6b26912917cdddba9a5b9215b1ff0a324de7d7c8866484"
+    },
+    {
+      "name": "host-source-check",
+      "returncode": 0,
+      "log_sha256": "32ddfe94b62f4fbfbeded528ad654c4be5b518d52b04300982d93eca08f1f844"
+    },
+    {
+      "name": "engineering-lint",
+      "returncode": 0,
+      "log_sha256": "ddc7aebe4a97afe8ebad0af9ee4069ddbb7c0f03f84484dad69f7ae4f7173f34"
+    }
+  ],
+  "production_approval": false,
+  "formal_proof": "not-repeated-input-comparison-required",
+  "source_subject_after": "5727fd06deab52a4accf7bca5f48d61192df4936271b7e1a659ada887511bc27"
+}

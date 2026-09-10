@@ -1,0 +1,41 @@
+{
+  "result": "pass-for-scoped-lab-only",
+  "source_subject": "5727fd06deab52a4accf7bca5f48d61192df4936271b7e1a659ada887511bc27",
+  "seeds": [
+    20260910,
+    20260911
+  ],
+  "completed_campaigns": 2,
+  "case_count": 184,
+  "counts": {
+    "corruption": 42,
+    "deadline-delay": 16,
+    "io-error": 52,
+    "kill": 52,
+    "kill-then-corrupt": 8,
+    "stop-lock-resume": 6,
+    "structural-loss": 8
+  },
+  "observed_false_successes": 0,
+  "recovery_ms": {
+    "p50": 171.09328999868012,
+    "p95": 214.24405399920943,
+    "max": 445.49137800095195
+  },
+  "prior_attempts": [
+    "insufficient trace visibility",
+    "missing proc FD path visibility",
+    "81 completed cases, later delay not reached before deadline"
+  ],
+  "prior_attempts_in_completed_totals": false,
+  "lab_capabilities": [
+    "SYS_PTRACE",
+    "DAC_READ_SEARCH"
+  ],
+  "runtime_hardening_modified": false,
+  "network": "none",
+  "uid": 1000,
+  "quarantine_and_structural_restore_are_explicit_lab_actions": true,
+  "crash_recovery_can_leave_unreferenced_incoming_objects": true,
+  "physical_power_loss_and_boot_and_full_transactions": "not qualified"
+}

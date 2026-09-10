@@ -1,0 +1,9 @@
+{
+  "seed": 20260910,
+  "image": "sha256:4ec0d3adaef0afc8ce1eccdb621d46911ea2ebc11ddaa9e86f15e4ce59776d4c",
+  "adapter_sha256": "a6d2dfcf46851f690aba7be50d35bd51faefeb6499499a0e02aec08bb7bcbb5e",
+  "campaign_sha256": "045c8f66d9f5ded748e7ada86e854db23d18eb4e5a98ceb6cba1e3a41b611287",
+  "network": "none",
+  "uid": 1000,
+  "capabilities_added": []
+}

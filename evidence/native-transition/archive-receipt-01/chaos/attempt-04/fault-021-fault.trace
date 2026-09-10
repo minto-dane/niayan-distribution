@@ -1,0 +1,13 @@
+pread64(3</usr/lib/x86_64-linux-gnu/libc.so.6>, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0H\3\0\0\0\0\0\0H\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0\240\1\36\0\0\0\0\0\240\1\36\0\0\0\0\0"..., 840, 64) = 840
+pread64(3</usr/lib/x86_64-linux-gnu/libc.so.6>, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0H\3\0\0\0\0\0\0H\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0\240\1\36\0\0\0\0\0\240\1\36\0\0\0\0\0"..., 840, 64) = 840
+fsync(3</tmp/nia-chaos-fault-1pxh16_0>) = 0
+fsync(8</tmp/nia-chaos-fault-1pxh16_0/incoming>) = 0
+pread64(3</evidence/chaos/attempt-04/public-fixture/original.deb>, "!<arch>\ndebian-binary   1789004419  0     0     100644  4         `\n2.0\ncontrol."..., 65536, 0) = 848
+pread64(3</evidence/chaos/attempt-04/public-fixture/original.deb>, "", 64688, 848) = 0
+write(7</tmp/nia-chaos-fault-1pxh16_0/incoming/7eb5c79679008b7ac58175f908a3cb58>, "!<arch>\ndebian-binary   1789004419  0     0     100644  4         `\n2.0\ncontrol."..., 848) = 848
+pread64(3</evidence/chaos/attempt-04/public-fixture/original.deb>, "", 65536, 848) = 0
+fsync(7</tmp/nia-chaos-fault-1pxh16_0/incoming/7eb5c79679008b7ac58175f908a3cb58>) = 0
+fsync(9</tmp/nia-chaos-fault-1pxh16_0/objects>) = 0
+renameat2(8</tmp/nia-chaos-fault-1pxh16_0/incoming>, "7eb5c79679008b7ac58175f908a3cb58", 7</tmp/nia-chaos-fault-1pxh16_0/objects/60>, "73b9ba124894f83053688c1a4cc45277dd9185b984217a0f9c79ec56573500", RENAME_NOREPLACE) = 0
+fsync(8</tmp/nia-chaos-fault-1pxh16_0/incoming>) = -1 EIO (Input/output error) (INJECTED)
+write(1<pipe:[429328]>, "FAIL import-original.deb INDETERMINATE\n", 39) = 39

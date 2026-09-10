@@ -1,0 +1,292 @@
+{
+  "schema": "org.niaos.native-development-traceability/v1",
+  "scope": "development requirements and hazards; not an execution authorization",
+  "decision": "docs/decisions/0002-native-package-authority.ja.md",
+  "requirements": [
+    {
+      "id": "NATIVE-001",
+      "requirement": "Nia is the sole installed-package and ownership writer",
+      "state": "not-integrated",
+      "hazard": "independent APT/dpkg/PackageKit or Nia writers can publish conflicting state",
+      "implementation": [
+        "native/audit_transition.py"
+      ],
+      "tests": [
+        "native/test_transition.py"
+      ],
+      "evidence": [
+        "evidence/native-transition/initial-09/inventory.json"
+      ],
+      "remaining": "connect the actual native executor, GUI and automatic updates; prove absence of other writers in a new image"
+    },
+    {
+      "id": "NATIVE-002",
+      "requirement": "Preserve native dependency and effect semantics without falsified compatibility",
+      "state": "inventory-tested-effect-conversion-incomplete",
+      "hazard": "dropping metadata or executing unmodeled scripts violates update and rollback contracts",
+      "implementation": [
+        "tools/deb_archive.py",
+        "tools/debian_semantics.py",
+        "native/audit_transition.py",
+        "tools/debian_triggers.py",
+        "tools/debian_trigger_state.py",
+        "../pkgcore/runtime/pkg_deb_container.adb",
+        "../pkgcore/runtime/pkg_deb_control.adb",
+        "../pkgcore/runtime/pkg_deb_decode.c",
+        "../pkgcore/runtime/pkg_deb_fields.adb",
+        "../pkgcore/runtime/pkg_deb_metadata.adb",
+        "../pkgcore/runtime/pkg_deb_relations.adb",
+        "../pkgcore/runtime/pkg_deb_stream.c",
+        "../pkgcore/runtime/pkg_deb_data_stream.adb",
+        "../pkgcore/runtime/pkg_tar_framing.adb",
+        "../pkgcore/runtime/pkg_deb_payload.adb",
+        "../pkgcore/runtime/pkg_deb_final_set.adb",
+        "../pkgcore/runtime/pkg_deb_transition.adb"
+      ],
+      "tests": [
+        "native/test_transition.py",
+        "tests/test_nia_intake.py",
+        "tests/test_debian_triggers.py",
+        "tests/test_debian_trigger_state.py",
+        "../pkgcore/tests/run_deb_container_tests.adb",
+        "../pkgcore/tests/run_deb_control_tests.adb",
+        "../pkgcore/tests/run_deb_metadata_tests.adb",
+        "../pkgcore/tests/run_deb_relations_tests.adb",
+        "../pkgcore/tests/run_deb_data_stream_tests.adb",
+        "../pkgcore/tests/run_deb_payload_tests.adb",
+        "../pkgcore/tests/compare_deb_payload.py",
+        "../pkgcore/tests/run_deb_final_set_tests.adb",
+        "../pkgcore/tests/check_deb_final_set_upstream.py",
+        "../pkgcore/tests/run_deb_transition_tests.adb",
+        "../pkgcore/tests/compare_deb_transition.py"
+      ],
+      "evidence": [
+        "evidence/native-transition/initial-09/inventory.json",
+        "evidence/native-transition/triggers-localization-01/README.ja.md",
+        "evidence/native-transition/trigger-state-01/README.ja.md",
+        "evidence/native-transition/deb-container-01/README.ja.md",
+        "evidence/native-transition/deb-control-01/README.ja.md",
+        "evidence/native-transition/deb-metadata-01/README.ja.md",
+        "evidence/native-transition/deb-relations-01/README.ja.md",
+        "evidence/native-transition/deb-data-stream-01/README.ja.md",
+        "evidence/native-transition/deb-payload-01/README.ja.md",
+        "evidence/native-transition/final-set-01/README.ja.md",
+        "evidence/native-transition/transition-plan-01/README.ja.md"
+      ],
+      "remaining": "authenticate baseline and selected artifacts; validate protection migration, bootstrap, every adopted phase, generated output and implicit trigger"
+    },
+    {
+      "id": "NATIVE-003",
+      "requirement": "Bounded staging must retain one recoverable root/catalog publication boundary",
+      "state": "isolated-generation-sdk-implemented-target-activation-not-integrated",
+      "hazard": "individually committed file-plan chunks expose a partially updated system",
+      "implementation": [
+        "../pkgcore/runtime/pkg_generation_manifest.adb",
+        "../pkgcore/runtime/pkg_generation_stage.adb",
+        "../pkgcore/runtime/pkg_generation_descriptor.adb",
+        "../pkgcore/runtime/pkg_generation_publisher.adb",
+        "../pkgcore/runtime/pkg_payload_index.adb",
+        "../pkgcore/runtime/pkg_selected_catalog.adb",
+        "../pkgcore/runtime/pkg_catalog_store.adb",
+        "../pkgcore/runtime/pkg_catalog_retention.adb"
+      ],
+      "tests": [
+        "../pkgcore/tests/run_generation_stage_tests.adb",
+        "../pkgcore/tests/run_generation_publication_tests.adb",
+        "../pkgcore/tests/run_payload_index_tests.adb",
+        "../pkgcore/tests/compare_payload_index.py",
+        "../pkgcore/tests/run_selected_catalog_tests.adb",
+        "../pkgcore/tests/compare_selected_catalog.py",
+        "../pkgcore/tests/run_catalog_store_tests.adb",
+        "../pkgcore/tests/compare_catalog_store.py",
+        "../pkgcore/tests/compare_current_catalog.py",
+        "../pkgcore/tests/compare_catalog_retention.py"
+      ],
+      "evidence": [
+        "evidence/native-transition/generation-01/README.ja.md",
+        "evidence/native-transition/publication-01/README.ja.md",
+        "evidence/native-transition/payload-index-01/README.ja.md",
+        "evidence/native-transition/selected-catalog-01/README.ja.md",
+        "evidence/native-transition/catalog-store-01/README.ja.md",
+        "evidence/native-transition/current-catalog-01/README.ja.md",
+        "evidence/native-transition/catalog-retention-01/README.ja.md"
+      ],
+      "remaining": "Bind the caller selection to authenticated resolver/policy results; validate full relationship and cross-architecture coexistence/phase semantics; resolve effective ownership, aliases and native contracts; connect production authority/effects, whole-generation/effect/trust/recovery CAS pin closure and safe GC and privileged metadata; capacity reservation, fsync/space/power-loss fault tests, actual mount/boot activation and recovery, independent trust rollback"
+    },
+    {
+      "id": "HARD-001",
+      "requirement": "Check real mitigation values and exact first-party artifacts",
+      "state": "listed-baseline-and-elf-tests-passed",
+      "hazard": "a configuration flag or successful build is mistaken for effective protection",
+      "implementation": [
+        "hardening/audit.py",
+        "hardening/baseline.json"
+      ],
+      "tests": [
+        "hardening/test_hardening.py",
+        "hardening/test_vm.py",
+        "hardening/test_installed.py"
+      ],
+      "evidence": [
+        "evidence/native-transition/initial-09/elf.json",
+        "evidence/hardening/desktop-01/report.json"
+      ],
+      "remaining": "native image integration, hardware and performance qualification"
+    },
+    {
+      "id": "HARD-002",
+      "requirement": "Constrain the read-only Nia observer while preserving its documented observations",
+      "state": "live-and-persistent-vm-tests-passed",
+      "hazard": "profile presence is mistaken for actual enforcement or required reads are silently lost",
+      "implementation": [
+        "hardening/rootfs/etc/apparmor.d/nia-hostctl",
+        "hardening/rootfs/usr/lib/systemd/system/niaos-hostctl-confinement.service"
+      ],
+      "tests": [
+        "hardening/test_vm.py",
+        "hardening/test_installed.py"
+      ],
+      "evidence": [
+        "evidence/hardening/desktop-01/report.json"
+      ],
+      "remaining": "connect installation, enablement and updates to native configuration effects; this does not confine all Nia workers"
+    },
+    {
+      "id": "NATIVE-004",
+      "requirement": "Expose only the adopted public command family for Nia-owned management; retain independent external tools",
+      "state": "grammar-tested-runtime-not-integrated",
+      "hazard": "aliases or wrappers create ambiguous ownership or present unavailable operations as usable",
+      "implementation": [
+        "native/package_cli.py",
+        "native/management-commands.json"
+      ],
+      "tests": [
+        "native/test_package_cli.py"
+      ],
+      "evidence": [],
+      "remaining": "native transport, public packaging, real command output, interactive UI and absence of legacy public aliases in new image"
+    },
+    {
+      "id": "NATIVE-005",
+      "requirement": "Manage native interim fixes in the same catalog and transaction authority as normal packages",
+      "state": "artifact-build-display-authenticated-fetch-tested-runtime-not-integrated",
+      "hazard": "independent fix database, stale base binding or uncoordinated holds permit inconsistent updates",
+      "implementation": [
+        "native/interim_package.py",
+        "native/interim_commands.py",
+        "native/package_cli.py",
+        "native/interim_intake.py",
+        "native/interim_download.py",
+        "native/repository.py"
+      ],
+      "tests": [
+        "native/test_interim_package.py",
+        "native/test_interim_commands.py",
+        "native/test_interim_intake.py",
+        "native/check_download_cli.py"
+      ],
+      "evidence": [
+        "evidence/management-interface/repository-01/README.ja.md"
+      ],
+      "remaining": "Contract semantics and Debian archive chain, independent time/trust floor, current base, emgr execution and shared holds/ownership; normal-update supersession, interruption and recovery acceptance"
+    },
+    {
+      "id": "NATIVE-006",
+      "requirement": "Keep upload urgency, advisory identity, source fix version, vulnerability severity and authenticated authority distinct",
+      "state": "offline-observation-tested",
+      "hazard": "upload urgency or a textual advisory match is mistaken for signed fix authorization or absence of vulnerabilities",
+      "implementation": [
+        "native/update_metadata.py"
+      ],
+      "tests": [
+        "native/test_update_metadata.py"
+      ],
+      "evidence": [],
+      "remaining": "authenticated current advisory intake, full metadata coverage and instfix/catalog integration"
+    },
+    {
+      "id": "NATIVE-007",
+      "requirement": "Adopted commands must match the reference behavior and response interface, not merely parse its syntax",
+      "state": "development-response-tests-only-reference-not-qualified",
+      "hazard": "different status, exit codes, prompts or output fields mislead users and break administrative scripts",
+      "implementation": [
+        "native/interim_commands.py",
+        "native/interim_download.py"
+      ],
+      "tests": [
+        "native/test_interim_commands.py",
+        "native/check_download_cli.py"
+      ],
+      "evidence": [],
+      "remaining": "per-command output and behavior fixtures, TTY/non-TTY, stdout/stderr, quiet/verbose, locale, delimiter-safe native versions, cancellation, partial failure and recovery; real catalog/executor and UI acceptance"
+    },
+    {
+      "id": "NATIVE-008",
+      "requirement": "Authenticate shared repository supply and persist complete metadata version floors before returning targets",
+      "state": "signed-fixture-https-and-checkpoint-tests-passed-production-trust-not-provisioned",
+      "hazard": "Untrusted bootstrap, stale metadata, out-of-scope delegation, partial cache publication or mistaken execution authority admits unsafe supply",
+      "implementation": [
+        "native/repository.py",
+        "native/interim_intake.py",
+        "native/interim_download.py",
+        "native/archive_intake.py",
+        "tools/debian_archive_auth.py"
+      ],
+      "tests": [
+        "native/test_repository.py",
+        "native/test_repository_https.py",
+        "native/test_interim_intake.py",
+        "native/check_download_cli.py",
+        "native/test_archive_intake.py",
+        "native/test_repository_revalidation.py",
+        "tests/test_debian_trust.py"
+      ],
+      "evidence": [
+        "evidence/management-interface/repository-01/README.ja.md"
+      ],
+      "remaining": "Production keys and provisioning, independent rollback-resistant trust floor/time, service isolation and deadline, contract semantics, interim artifact Debian archive chain, native CAS/publication-plan binding under the live reservation, actual power-loss qualification and managed-engine integration"
+    },
+    {
+      "id": "NATIVE-009",
+      "requirement": "Support all Debian 13 language and locale targets without changing command grammar, signed inputs, outcomes or transaction authority",
+      "state": "english-source-and-seven-cli-catalogs-tested-all-languages-and-graphical-acceptance-pending",
+      "hazard": "Translated identifiers or locale-sensitive parsing change authorization or recovery; malformed translations and terminal controls obscure outcomes",
+      "implementation": [
+        "native/i18n.py",
+        "native/diagnostics.py",
+        "native/i18n_catalogs.py",
+        "native/package_cli.py",
+        "native/interim_commands.py",
+        "native/interim_download.py",
+        "native/debian-languages.json",
+        "native/language_coverage.py"
+      ],
+      "tests": [
+        "native/test_i18n.py",
+        "native/check_download_cli.py"
+      ],
+      "evidence": [
+        "evidence/management-interface/localization-01/README.ja.md",
+        "evidence/native-transition/triggers-localization-01/README.ja.md"
+      ],
+      "remaining": "Complete translations for all pinned Debian language targets; TUI/GUI integration and fonts/shaping/RTL/cell-width/accessibility/IME acceptance, translation review and reference response qualification; English fallback never qualifies as a completed translation"
+    },
+    {
+      "id": "NATIVE-010",
+      "requirement": "Build deterministic original-DEB media indexes without granting installed-state or supply authority",
+      "state": "local-media-index-and-listing-tested-installed-service-not-integrated",
+      "hazard": "stale or partial media indexes substitute fabricated package identity, trust or installed state",
+      "implementation": [
+        "native/media.py",
+        "native/package_cli.py"
+      ],
+      "tests": [
+        "native/test_media.py"
+      ],
+      "evidence": [
+        "evidence/management-interface/media-01/README.ja.md"
+      ],
+      "remaining": "Authenticated admission, native installed service, complete reference-response qualification, reference-aware media retention and real power-loss qualification"
+    }
+  ]
+}

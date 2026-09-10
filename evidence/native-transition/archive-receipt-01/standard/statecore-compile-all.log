@@ -1,0 +1,310 @@
+./ci/check-contract.sh
+runtime/mc_admin.adb: OK
+runtime/mc_admin.ads: OK
+runtime/mc_atomic.adb: OK
+runtime/mc_atomic.ads: OK
+runtime/mc_authentic.adb: OK
+runtime/mc_authentic.ads: OK
+runtime/mc_checkpoint_store.adb: OK
+runtime/mc_checkpoint_store.ads: OK
+runtime/mc_cli.adb: OK
+runtime/mc_cli.ads: OK
+runtime/mc_clock.adb: OK
+runtime/mc_clock.ads: OK
+runtime/mc_command.adb: OK
+runtime/mc_command.ads: OK
+runtime/mc_config_auth.adb: OK
+runtime/mc_config_auth.ads: OK
+runtime/mc_control_io.adb: OK
+runtime/mc_control_io.ads: OK
+runtime/mc_durable.adb: OK
+runtime/mc_durable.ads: OK
+runtime/mc_fault_auth.adb: OK
+runtime/mc_fault_auth.ads: OK
+runtime/mc_file_io.adb: OK
+runtime/mc_file_io.ads: OK
+runtime/mc_fs.adb: OK
+runtime/mc_fs.ads: OK
+runtime/mc_gate.adb: OK
+runtime/mc_gate.ads: OK
+runtime/mc_https.adb: OK
+runtime/mc_https.ads: OK
+runtime/mc_ingress.adb: OK
+runtime/mc_ingress.ads: OK
+runtime/mc_kernel_read.adb: OK
+runtime/mc_kernel_read.ads: OK
+runtime/mc_keys.adb: OK
+runtime/mc_keys.ads: OK
+runtime/mc_layout.adb: OK
+runtime/mc_layout.ads: OK
+runtime/mc_log.adb: OK
+runtime/mc_log.ads: OK
+runtime/mc_posix.ads: OK
+runtime/mc_qualification_auth.adb: OK
+runtime/mc_qualification_auth.ads: OK
+runtime/mc_receiver_ledger.adb: OK
+runtime/mc_receiver_ledger.ads: OK
+runtime/mc_request_files.adb: OK
+runtime/mc_request_files.ads: OK
+runtime/mc_runtime.adb: OK
+runtime/mc_runtime.ads: OK
+runtime/mc_signatures.adb: OK
+runtime/mc_signatures.ads: OK
+runtime/mc_site_policy.adb: OK
+runtime/mc_site_policy.ads: OK
+runtime/mc_stop_barrier_auth.adb: OK
+runtime/mc_stop_barrier_auth.ads: OK
+runtime/mc_store.adb: OK
+runtime/mc_store.ads: OK
+runtime/mc_tools.adb: OK
+runtime/mc_tools.ads: OK
+runtime/mc_xml.adb: OK
+runtime/mc_xml.ads: OK
+src/mc_accounting.adb: OK
+src/mc_accounting.ads: OK
+src/mc_attestation.adb: OK
+src/mc_attestation.ads: OK
+src/mc_authorization.adb: OK
+src/mc_authorization.ads: OK
+src/mc_backups.adb: OK
+src/mc_backups.ads: OK
+src/mc_base64.adb: OK
+src/mc_base64.ads: OK
+src/mc_breakglass.adb: OK
+src/mc_breakglass.ads: OK
+src/mc_checkpoint.adb: OK
+src/mc_checkpoint.ads: OK
+src/mc_codec.adb: OK
+src/mc_codec.ads: OK
+src/mc_commissioning.adb: OK
+src/mc_commissioning.ads: OK
+src/mc_compatibility.adb: OK
+src/mc_compatibility.ads: OK
+src/mc_config_receipt.adb: OK
+src/mc_config_receipt.ads: OK
+src/mc_contract_profile.ads: OK
+src/mc_control.adb: OK
+src/mc_control.ads: OK
+src/mc_control_codec.adb: OK
+src/mc_control_codec.ads: OK
+src/mc_diagnostic_bundle.adb: OK
+src/mc_diagnostic_bundle.ads: OK
+src/mc_dirents.adb: OK
+src/mc_dirents.ads: OK
+src/mc_fault_report.adb: OK
+src/mc_fault_report.ads: OK
+src/mc_faults.adb: OK
+src/mc_faults.ads: OK
+src/mc_generation.adb: OK
+src/mc_generation.ads: OK
+src/mc_golden.adb: OK
+src/mc_golden.ads: OK
+src/mc_health_golden.adb: OK
+src/mc_health_golden.ads: OK
+src/mc_health_report.adb: OK
+src/mc_health_report.ads: OK
+src/mc_hex.adb: OK
+src/mc_hex.ads: OK
+src/mc_incidents.adb: OK
+src/mc_incidents.ads: OK
+src/mc_journal_budget.ads: OK
+src/mc_json.adb: OK
+src/mc_json.ads: OK
+src/mc_log_format.adb: OK
+src/mc_log_format.ads: OK
+src/mc_maintenance.adb: OK
+src/mc_maintenance.ads: OK
+src/mc_numbers.adb: OK
+src/mc_numbers.ads: OK
+src/mc_paths.adb: OK
+src/mc_paths.ads: OK
+src/mc_platform_profile.adb: OK
+src/mc_platform_profile.ads: OK
+src/mc_properties.adb: OK
+src/mc_properties.ads: OK
+src/mc_protocol.adb: OK
+src/mc_protocol.ads: OK
+src/mc_qualification.adb: OK
+src/mc_qualification.ads: OK
+src/mc_recovery_cohort.adb: OK
+src/mc_recovery_cohort.ads: OK
+src/mc_release.adb: OK
+src/mc_release.ads: OK
+src/mc_replay.adb: OK
+src/mc_replay.ads: OK
+src/mc_request_replay.adb: OK
+src/mc_request_replay.ads: OK
+src/mc_requests.adb: OK
+src/mc_requests.ads: OK
+src/mc_retry_budget.adb: OK
+src/mc_retry_budget.ads: OK
+src/mc_sha256.adb: OK
+src/mc_sha256.ads: OK
+src/mc_stop_barrier.adb: OK
+src/mc_stop_barrier.ads: OK
+src/mc_system_baseline.adb: OK
+src/mc_system_baseline.ads: OK
+src/mc_text.adb: OK
+src/mc_text.ads: OK
+src/mc_time_guard.adb: OK
+src/mc_time_guard.ads: OK
+src/mc_types.adb: OK
+src/mc_types.ads: OK
+src/mc_witness.adb: OK
+src/mc_witness.ads: OK
+gprbuild -s -j1 -p -c -u -P statecore.gpr
+Setup
+   [mkdir]        object directory for project Statecore
+   [mkdir]        exec directory for project Statecore
+Compile
+   [Ada]          state_recovery_worker.adb
+   [Ada]          statectl.adb
+   [Ada]          hostctl.adb
+   [Ada]          state_healing_admin.adb
+   [Ada]          state_worker.adb
+   [Ada]          mc_fault_auth.adb
+   [Ada]          mc_fs.adb
+   [Ada]          mc_atomic.adb
+   [Ada]          mc_config_auth.adb
+   [Ada]          mc_site_policy.adb
+   [Ada]          mc_authentic.adb
+   [Ada]          mc_receiver_ledger.adb
+   [Ada]          mc_xml.adb
+   [Ada]          mc_clock.adb
+   [Ada]          mc_posix.ads
+   [Ada]          mc_qualification_auth.adb
+   [Ada]          mc_durable.adb
+   [Ada]          mc_checkpoint_store.adb
+   [Ada]          mc_admin.adb
+   [Ada]          mc_stop_barrier_auth.adb
+   [Ada]          mc_command.adb
+   [Ada]          mc_file_io.adb
+   [Ada]          mc_request_files.adb
+   [Ada]          mc_signatures.adb
+   [Ada]          mc_runtime.adb
+   [Ada]          mc_cli.adb
+   [Ada]          mc_kernel_read.adb
+   [Ada]          mc_https.adb
+   [Ada]          mc_log.adb
+   [Ada]          mc_ingress.adb
+   [Ada]          mc_layout.adb
+   [Ada]          mc_keys.adb
+   [Ada]          mc_gate.adb
+   [Ada]          mc_tools.adb
+   [Ada]          mc_store.adb
+   [Ada]          mc_control_io.adb
+   [Ada]          mc_backups.adb
+   [Ada]          mc_health_golden.adb
+   [Ada]          mc_maintenance.adb
+   [Ada]          mc_witness.adb
+   [Ada]          mc_control_codec.adb
+   [Ada]          mc_retry_budget.adb
+   [Ada]          mc_hex.adb
+   [Ada]          mc_authorization.adb
+   [Ada]          mc_system_baseline.adb
+   [Ada]          mc_contract_profile.ads
+   [Ada]          mc_checkpoint.adb
+   [Ada]          mc_accounting.adb
+   [Ada]          mc_stop_barrier.adb
+   [Ada]          mc_numbers.adb
+   [Ada]          mc_protocol.adb
+   [Ada]          mc_platform_profile.adb
+   [Ada]          mc_properties.adb
+   [Ada]          mc_attestation.adb
+   [Ada]          mc_control.adb
+   [Ada]          mc_recovery_cohort.adb
+   [Ada]          mc_health_report.adb
+   [Ada]          mc_codec.adb
+   [Ada]          mc_journal_budget.ads
+   [Ada]          mc_sha256.adb
+   [Ada]          mc_fault_report.adb
+   [Ada]          mc_compatibility.adb
+   [Ada]          mc_log_format.adb
+   [Ada]          mc_time_guard.adb
+   [Ada]          mc_breakglass.adb
+   [Ada]          mc_commissioning.adb
+   [Ada]          mc_release.adb
+   [Ada]          mc_request_replay.adb
+   [Ada]          mc_text.adb
+   [Ada]          mc_generation.adb
+   [Ada]          mc_requests.adb
+   [Ada]          mc_paths.adb
+   [Ada]          mc_replay.adb
+   [Ada]          mc_faults.adb
+   [Ada]          mc_base64.adb
+   [Ada]          mc_diagnostic_bundle.adb
+   [Ada]          mc_qualification.adb
+   [Ada]          mc_incidents.adb
+   [Ada]          mc_json.adb
+   [Ada]          mc_golden.adb
+   [Ada]          mc_types.adb
+   [Ada]          mc_config_receipt.adb
+   [Ada]          mc_dirents.adb
+   [Ada]          state_readmission_store.adb
+   [Ada]          state_nm_checkpoint.adb
+   [Ada]          state_healing_journal.adb
+   [Ada]          state_host_probe.adb
+   [Ada]          state_healing_engine.adb
+   [Ada]          state_rollout_store.adb
+   [Ada]          state_barrier_store.adb
+   [Ada]          state_binding.adb
+   [Ada]          state_executor.adb
+   [Ada]          state_systemd_control.adb
+   [Ada]          state_network_controller.adb
+   [Ada]          state_systemd.adb
+   [Ada]          state_strict_coordinator.adb
+   [Ada]          state_disaster_store.adb
+   [Ada]          state_pacemaker.adb
+   [Ada]          state_etcd.adb
+   [Ada]          state_coordinator.adb
+   [Ada]          state_readmission.adb
+   [Ada]          state_healing_codec.adb
+   [Ada]          state_power_integrity.adb
+   [Ada]          state_xfs_health.adb
+   [Ada]          state_workload_safety.adb
+   [Ada]          state_serviceability.adb
+   [Ada]          state_etcd_wire.adb
+   [Ada]          state_inventory.adb
+   [Ada]          state_fault_correlation.adb
+   [Ada]          state_etcd_limits.ads
+   [Ada]          state_failover.adb
+   [Ada]          state_authority.adb
+   [Ada]          state_healing.adb
+   [Ada]          state_self_test.adb
+   [Ada]          state_unit.adb
+   [Ada]          state_dependency_graph.adb
+   [Ada]          state_boot_assessment.adb
+   [Ada]          state_rollout.adb
+   [Ada]          state_boot.adb
+   [Ada]          state_ras.adb
+   [Ada]          state_fru_health.adb
+   [Ada]          state_healing_repair_claim.adb
+   [Ada]          state_budget.adb
+   [Ada]          state_degraded_mode.adb
+   [Ada]          state_service_catalogue.adb
+   [Ada]          state_kernel_health.adb
+   [Ada]          state_operation.adb
+   [Ada]          state_crash_evidence.adb
+   [Ada]          state_resilience_controller.adb
+   [Ada]          state_rollout_codec.adb
+   [Ada]          state_boot_acceptance.adb
+   [Ada]          state_platform_health.adb
+   [Ada]          state_reservation_safety.adb
+   [Ada]          state_changes.adb
+   [Ada]          state_service.adb
+   [Ada]          state_wlm.adb
+   [Ada]          state_topology.adb
+   [Ada]          state_config_merge.adb
+   [Ada]          state_kernel_maintenance.adb
+   [Ada]          state_time_integrity.adb
+   [Ada]          state_node_lifecycle.adb
+   [Ada]          state_config.adb
+   [Ada]          state_healing_request.adb
+   [Ada]          state_network_change.adb
+   [Ada]          state_capacity_guard.adb
+   [Ada]          state_recovery_objective.adb
+   [Ada]          state_host_admission.adb
+   [Ada]          state_cluster_safety.adb
+   [Ada]          state_network_integrity.adb
+   [Ada]          state_disaster.adb
+   [Ada]          state_storage_integrity.adb

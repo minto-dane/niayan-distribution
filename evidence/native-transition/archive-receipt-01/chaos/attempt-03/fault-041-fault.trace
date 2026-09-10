@@ -1,0 +1,21 @@
+pread64(3</usr/lib/x86_64-linux-gnu/libc.so.6>, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0H\3\0\0\0\0\0\0H\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0\240\1\36\0\0\0\0\0\240\1\36\0\0\0\0\0"..., 840, 64) = 840
+pread64(3</usr/lib/x86_64-linux-gnu/libc.so.6>, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0H\3\0\0\0\0\0\0H\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0\240\1\36\0\0\0\0\0\240\1\36\0\0\0\0\0"..., 840, 64) = 840
+fsync(3</tmp/nia-chaos-fault-ch2mxx6m>) = 0
+fsync(8</tmp/nia-chaos-fault-ch2mxx6m/incoming>) = 0
+pread64(3</evidence/chaos/attempt-03/public-fixture/original.deb>, "!<arch>\ndebian-binary   1789004362  0     0     100644  4         `\n2.0\ncontrol."..., 65536, 0) = 848
+pread64(3</evidence/chaos/attempt-03/public-fixture/original.deb>, "", 64688, 848) = 0
+write(7</tmp/nia-chaos-fault-ch2mxx6m/incoming/ac3f65e05c29c35d3645c4db221517dc>, "!<arch>\ndebian-binary   1789004362  0     0     100644  4         `\n2.0\ncontrol."..., 848) = 848
+pread64(3</evidence/chaos/attempt-03/public-fixture/original.deb>, "", 65536, 848) = 0
+fsync(7</tmp/nia-chaos-fault-ch2mxx6m/incoming/ac3f65e05c29c35d3645c4db221517dc>) = 0
+fsync(9</tmp/nia-chaos-fault-ch2mxx6m/objects>) = 0
+renameat2(8</tmp/nia-chaos-fault-ch2mxx6m/incoming>, "ac3f65e05c29c35d3645c4db221517dc", 7</tmp/nia-chaos-fault-ch2mxx6m/objects/15>, "5fe13e88db88d3219cbddcacf5a6a8147c8bc3f807b876481867dff50941f3", RENAME_NOREPLACE) = 0
+fsync(8</tmp/nia-chaos-fault-ch2mxx6m/incoming>) = 0
+fsync(7</tmp/nia-chaos-fault-ch2mxx6m/objects/15>) = 0
+write(1<pipe:[424736]>, "ACK original.deb 155fe13e88db88d3219cbddcacf5a6a8147c8bc3f807b876481867dff50941f"..., 82) = 82
+fsync(8</tmp/nia-chaos-fault-ch2mxx6m/incoming>) = 0
+pread64(3</evidence/chaos/attempt-03/public-fixture/control>, "Package: nia-test\nVersion: 1:2.0~rc1-3\nArchitecture: all\nMaintainer: Nia synthet"..., 65536, 0) = 125
+pread64(3</evidence/chaos/attempt-03/public-fixture/control>, "", 65411, 125) = 0
+write(7</tmp/nia-chaos-fault-ch2mxx6m/incoming/6941b89a6bdb1dd170e0d8f27acfcbb0>, "Package: nia-test\nVersion: 1:2.0~rc1-3\nArchitecture: all\nMaintainer: Nia synthet"..., 125) = 125
+pread64(3</evidence/chaos/attempt-03/public-fixture/control>, "", 65536, 125) = 0
+fsync(7</tmp/nia-chaos-fault-ch2mxx6m/incoming/6941b89a6bdb1dd170e0d8f27acfcbb0>) = ?
++++ killed by SIGKILL +++

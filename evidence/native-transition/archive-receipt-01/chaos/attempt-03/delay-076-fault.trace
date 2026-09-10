@@ -1,0 +1,97 @@
+pread64(3</usr/lib/x86_64-linux-gnu/libc.so.6>, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0H\3\0\0\0\0\0\0H\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0\240\1\36\0\0\0\0\0\240\1\36\0\0\0\0\0"..., 840, 64) = 840
+pread64(3</usr/lib/x86_64-linux-gnu/libc.so.6>, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0H\3\0\0\0\0\0\0H\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0\240\1\36\0\0\0\0\0\240\1\36\0\0\0\0\0"..., 840, 64) = 840
+fsync(3</tmp/nia-chaos-delay-814jne_l>) = 0
+pread64(3</evidence/chaos/attempt-03/public-fixture/original.deb>, "!<arch>\ndebian-binary   1789004362  0     0     100644  4         `\n2.0\ncontrol."..., 65536, 0) = 848
+pread64(3</evidence/chaos/attempt-03/public-fixture/original.deb>, "", 64688, 848) = 0
+pread64(3</evidence/chaos/attempt-03/public-fixture/original.deb>, "", 65536, 848) = 0
+pread64(3</evidence/chaos/attempt-03/public-fixture/control>, "Package: nia-test\nVersion: 1:2.0~rc1-3\nArchitecture: all\nMaintainer: Nia synthet"..., 65536, 0) = 125
+pread64(3</evidence/chaos/attempt-03/public-fixture/control>, "", 65411, 125) = 0
+pread64(3</evidence/chaos/attempt-03/public-fixture/control>, "", 65536, 125) = 0
+pread64(3</evidence/chaos/attempt-03/public-fixture/receipt>, "NIASUP01+\331b\345|a\327m\\Q\236\373\310\347J\321\25\376\340l@{\365<\300\374\2109\33\225\310\2255\333\277\3525`\247>\260\331\2414\235\262\\\03556%]hq|\270\"\255f\253|0\375w\25_\341>\210\333\210\323"..., 65536, 0) = 320
+pread64(3</evidence/chaos/attempt-03/public-fixture/receipt>, "", 65216, 320) = 0
+pread64(3</evidence/chaos/attempt-03/public-fixture/receipt>, "", 65536, 320) = 0
+pread64(3</evidence/chaos/attempt-03/public-fixture/public-key>, "\306\10\303\356\4 \34\332\17\354e\273\274\25\200\363\33T\361 \377N\271\37\270h\240\361\307x\376\215", 32, 0) = 32
+pread64(3</evidence/chaos/attempt-03/public-fixture/scope>, "+\331b\345|a\327m\\Q\236\373\310\347J\321\25\376\340l@{\365<\300\374\2109\33\225\310\225", 32, 0) = 32
+pread64(3</tmp/nia-chaos-delay-814jne_l/objects/4c/535a76d3ef270c722f83b4c2e7b6b32b65ee8e474dd5792d934647b16cffd0>, "NIASUP01+\331b\345|a\327m\\Q\236\373\310\347J\321\25\376\340l@{\365<\300\374\2109\33\225\310\2255\333\277\3525`\247>\260\331\2414\235\262\\\03556%]hq|\270\"\255f\253|0\375w\25_\341>\210\333\210\323"..., 65536, 0) = 320
+pread64(3</tmp/nia-chaos-delay-814jne_l/objects/4c/535a76d3ef270c722f83b4c2e7b6b32b65ee8e474dd5792d934647b16cffd0>, "", 65216, 320) = 0
+pread64(3</tmp/nia-chaos-delay-814jne_l/objects/4c/535a76d3ef270c722f83b4c2e7b6b32b65ee8e474dd5792d934647b16cffd0>, "", 65536, 320) = 0
+pread64(3</tmp/nia-chaos-delay-814jne_l/objects/4c/535a76d3ef270c722f83b4c2e7b6b32b65ee8e474dd5792d934647b16cffd0>, "NIASUP01+\331b\345|a\327m\\Q\236\373\310\347J\321\25\376\340l@{\365<\300\374\2109\33\225\310\2255\333\277\3525`\247>\260\331\2414\235\262\\\03556%]hq|\270\"\255f\253|0\375w\25_\341>\210\333\210\323"..., 320, 0) = 320
+pread64(3</tmp/nia-chaos-delay-814jne_l/objects/35/dbbfea3560a73eb0d9a1349db25c1d3536255d68717cb822ad66ab7c30fd77>, "{\"created_at\":1789004302,\"schema\":\"org.niaos.archive-supply/v1\",\"security_epoch\""..., 65536, 0) = 583
+pread64(3</tmp/nia-chaos-delay-814jne_l/objects/35/dbbfea3560a73eb0d9a1349db25c1d3536255d68717cb822ad66ab7c30fd77>, "", 64953, 583) = 0
+pread64(3</tmp/nia-chaos-delay-814jne_l/objects/35/dbbfea3560a73eb0d9a1349db25c1d3536255d68717cb822ad66ab7c30fd77>, "", 65536, 583) = 0
+pread64(3</tmp/nia-chaos-delay-814jne_l/objects/15/5fe13e88db88d3219cbddcacf5a6a8147c8bc3f807b876481867dff50941f3>, "!<arch>\ndebian-binary   1789004362  0     0     100644  4         `\n2.0\ncontrol."..., 65536, 0) = 848
+pread64(3</tmp/nia-chaos-delay-814jne_l/objects/15/5fe13e88db88d3219cbddcacf5a6a8147c8bc3f807b876481867dff50941f3>, "", 64688, 848) = 0
+pread64(3</tmp/nia-chaos-delay-814jne_l/objects/15/5fe13e88db88d3219cbddcacf5a6a8147c8bc3f807b876481867dff50941f3>, "", 65536, 848) = 0
+pread64(3</tmp/nia-chaos-delay-814jne_l/objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae>, "Package: nia-test\nVersion: 1:2.0~rc1-3\nArchitecture: all\nMaintainer: Nia synthet"..., 65536, 0) = 125
+pread64(3</tmp/nia-chaos-delay-814jne_l/objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae>, "", 65411, 125) = 0
+pread64(3</tmp/nia-chaos-delay-814jne_l/objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae>, "", 65536, 125) = 0
+pread64(3</tmp/nia-chaos-delay-814jne_l/objects/65/e058e4a20a7d623f1a368a7575c62d72585b340bcf7928beaa43015ab6c218>, "-----BEGIN PGP SIGNED MESSAGE-----\nHash: SHA512\n\nOrigin: Debian\nLabel: Debian\nSu"..., 65536, 0) = 523
+pread64(3</tmp/nia-chaos-delay-814jne_l/objects/65/e058e4a20a7d623f1a368a7575c62d72585b340bcf7928beaa43015ab6c218>, "", 65013, 523) = 0
+pread64(3</tmp/nia-chaos-delay-814jne_l/objects/65/e058e4a20a7d623f1a368a7575c62d72585b340bcf7928beaa43015ab6c218>, "", 65536, 523) = 0
+pread64(3</tmp/nia-chaos-delay-814jne_l/objects/9c/bcd5ae85e839978e98fecd4b6536e67e07fd20d22ac5c0e05ba34dd897e063>, "\3757zXZ\0\0\4\346\326\264F\2\0!\1\26\0\0\0t/\345\243\340\0\300\0\245]\0(\30Hf\333\3320\205\376\26\352\356\274IX\321\4\33l\177\314a\345:\375b)\10V\237\202V\243-\24\226s{\206\277#.n\373Uz\226\f\321"..., 65536, 0) = 232
+pread64(3</tmp/nia-chaos-delay-814jne_l/objects/9c/bcd5ae85e839978e98fecd4b6536e67e07fd20d22ac5c0e05ba34dd897e063>, "", 65304, 232) = 0
+pread64(3</tmp/nia-chaos-delay-814jne_l/objects/9c/bcd5ae85e839978e98fecd4b6536e67e07fd20d22ac5c0e05ba34dd897e063>, "", 65536, 232) = 0
+pread64(3</tmp/nia-chaos-delay-814jne_l/objects/fe/49d0956522d36d85e635c2d64e50cb5b52f9b6da2a5f4a0a36633ffdc7eeff>, "\2303\4j\242\nJ\26\t+\6\1\4\1\332G\17\1\1\7@\257j\5\230`\27\244\326,D\32\310\4\22\337\373:2\223N\25\230\207\363Ix\2\230\240\v\232\266\264\26Nia artificial fixture\210\220\4"..., 65536, 0) = 223
+pread64(3</tmp/nia-chaos-delay-814jne_l/objects/fe/49d0956522d36d85e635c2d64e50cb5b52f9b6da2a5f4a0a36633ffdc7eeff>, "", 65313, 223) = 0
+pread64(3</tmp/nia-chaos-delay-814jne_l/objects/fe/49d0956522d36d85e635c2d64e50cb5b52f9b6da2a5f4a0a36633ffdc7eeff>, "", 65536, 223) = 0
+pread64(3</tmp/nia-chaos-delay-814jne_l/objects/15/5fe13e88db88d3219cbddcacf5a6a8147c8bc3f807b876481867dff50941f3>, "!<arch>\ndebian-binary   1789004362  0     0     100644  4         `\n2.0\ncontrol."..., 65536, 0) = 848
+pread64(3</tmp/nia-chaos-delay-814jne_l/objects/15/5fe13e88db88d3219cbddcacf5a6a8147c8bc3f807b876481867dff50941f3>, "", 64688, 848) = 0
+pread64(3</tmp/nia-chaos-delay-814jne_l/objects/15/5fe13e88db88d3219cbddcacf5a6a8147c8bc3f807b876481867dff50941f3>, "", 65536, 848) = 0
+pread64(3</tmp/nia-chaos-delay-814jne_l/objects/15/5fe13e88db88d3219cbddcacf5a6a8147c8bc3f807b876481867dff50941f3>, "!<arch>\n", 8, 0) = 8
+pread64(3</tmp/nia-chaos-delay-814jne_l/objects/15/5fe13e88db88d3219cbddcacf5a6a8147c8bc3f807b876481867dff50941f3>, "debian-binary   1789004362  0     0     100644  4         `\n", 60, 8) = 60
+pread64(3</tmp/nia-chaos-delay-814jne_l/objects/15/5fe13e88db88d3219cbddcacf5a6a8147c8bc3f807b876481867dff50941f3>, "2.0\n", 4, 68) = 4
+pread64(3</tmp/nia-chaos-delay-814jne_l/objects/15/5fe13e88db88d3219cbddcacf5a6a8147c8bc3f807b876481867dff50941f3>, "2.0\n", 4, 68) = 4
+pread64(3</tmp/nia-chaos-delay-814jne_l/objects/15/5fe13e88db88d3219cbddcacf5a6a8147c8bc3f807b876481867dff50941f3>, "control.tar.xz  1789004362  0     0     100644  428       `\n", 60, 72) = 60
+pread64(3</tmp/nia-chaos-delay-814jne_l/objects/15/5fe13e88db88d3219cbddcacf5a6a8147c8bc3f807b876481867dff50941f3>, "\3757zXZ\0\0\4\346\326\264F\4\300\354\2\200P!\1\26\0\0\0\0\0\0\0|>\270\354\340'\377\1d]\0\27\v\274\34}\1\225\300\35J>y\25\302\314&\243c\26a\254\222R=\30\341\5]\375\302\377\204\370y\16\324v\364'\243\325"..., 428, 132) = 428
+pread64(3</tmp/nia-chaos-delay-814jne_l/objects/15/5fe13e88db88d3219cbddcacf5a6a8147c8bc3f807b876481867dff50941f3>, "data.tar.xz     1789004362  0     0     100644  228       `\n", 60, 560) = 60
+pread64(3</tmp/nia-chaos-delay-814jne_l/objects/15/5fe13e88db88d3219cbddcacf5a6a8147c8bc3f807b876481867dff50941f3>, "\3757zXZ\0\0\4\346\326\264F\4\300\242\1\200P!\1\26\0\0\0\0\0\0\0\303\360P\333\340'\377\0\232]\0\27\v\274\34}\1\225\300\35J>y\25\302\314&\243c\26a\254\222R=\30\341\5]\375\302\377\204\370y\16\324v\364'\243\325"..., 228, 620) = 228
+pread64(3</tmp/nia-chaos-delay-814jne_l/objects/15/5fe13e88db88d3219cbddcacf5a6a8147c8bc3f807b876481867dff50941f3>, "!<arch>\ndebian-binary   1789004362  0     0     100644  4         `\n2.0\ncontrol."..., 65536, 0) = 848
+pread64(3</tmp/nia-chaos-delay-814jne_l/objects/15/5fe13e88db88d3219cbddcacf5a6a8147c8bc3f807b876481867dff50941f3>, "", 64688, 848) = 0
+pread64(3</tmp/nia-chaos-delay-814jne_l/objects/15/5fe13e88db88d3219cbddcacf5a6a8147c8bc3f807b876481867dff50941f3>, "", 65536, 848) = 0
+pread64(3</tmp/nia-chaos-delay-814jne_l/objects/15/5fe13e88db88d3219cbddcacf5a6a8147c8bc3f807b876481867dff50941f3>, "!<arch>\n", 8, 0) = 8
+pread64(3</tmp/nia-chaos-delay-814jne_l/objects/15/5fe13e88db88d3219cbddcacf5a6a8147c8bc3f807b876481867dff50941f3>, "debian-binary   1789004362  0     0     100644  4         `\n", 60, 8) = 60
+pread64(3</tmp/nia-chaos-delay-814jne_l/objects/15/5fe13e88db88d3219cbddcacf5a6a8147c8bc3f807b876481867dff50941f3>, "2.0\n", 4, 68) = 4
+pread64(3</tmp/nia-chaos-delay-814jne_l/objects/15/5fe13e88db88d3219cbddcacf5a6a8147c8bc3f807b876481867dff50941f3>, "2.0\n", 4, 68) = 4
+pread64(3</tmp/nia-chaos-delay-814jne_l/objects/15/5fe13e88db88d3219cbddcacf5a6a8147c8bc3f807b876481867dff50941f3>, "control.tar.xz  1789004362  0     0     100644  428       `\n", 60, 72) = 60
+pread64(3</tmp/nia-chaos-delay-814jne_l/objects/15/5fe13e88db88d3219cbddcacf5a6a8147c8bc3f807b876481867dff50941f3>, "\3757zXZ\0\0\4\346\326\264F\4\300\354\2\200P!\1\26\0\0\0\0\0\0\0|>\270\354\340'\377\1d]\0\27\v\274\34}\1\225\300\35J>y\25\302\314&\243c\26a\254\222R=\30\341\5]\375\302\377\204\370y\16\324v\364'\243\325"..., 428, 132) = 428
+pread64(3</tmp/nia-chaos-delay-814jne_l/objects/15/5fe13e88db88d3219cbddcacf5a6a8147c8bc3f807b876481867dff50941f3>, "data.tar.xz     1789004362  0     0     100644  228       `\n", 60, 560) = 60
+pread64(3</tmp/nia-chaos-delay-814jne_l/objects/15/5fe13e88db88d3219cbddcacf5a6a8147c8bc3f807b876481867dff50941f3>, "\3757zXZ\0\0\4\346\326\264F\4\300\242\1\200P!\1\26\0\0\0\0\0\0\0\303\360P\333\340'\377\0\232]\0\27\v\274\34}\1\225\300\35J>y\25\302\314&\243c\26a\254\222R=\30\341\5]\375\302\377\204\370y\16\324v\364'\243\325"..., 228, 620) = 228
+fsync(8</tmp/nia-chaos-delay-814jne_l/incoming>) = 0
+pread64(3</tmp/nia-chaos-delay-814jne_l/objects/15/5fe13e88db88d3219cbddcacf5a6a8147c8bc3f807b876481867dff50941f3>, "\3757zXZ\0\0\4\346\326\264F\4\300\354\2\200P!\1\26\0\0\0\0\0\0\0|>\270\354\340'\377\1d]\0\27\v\274\34}\1\225\300\35J>y\25\302\314&\243c\26a\254\222R=\30\341\5]\375\302\377\204\370y\16\324v\364'\243\325"..., 428, 132) = 428
+write(7</tmp/nia-chaos-delay-814jne_l/incoming/9dbe645b08d4c6fcfe08236da910fd47>, "\3757zXZ\0\0\4\346\326\264F\4\300\354\2\200P!\1\26\0\0\0\0\0\0\0|>\270\354\340'\377\1d]\0\27\v\274\34}\1\225\300\35J>y\25\302\314&\243c\26a\254\222R=\30\341\5]\375\302\377\204\370y\16\324v\364'\243\325"..., 428) = 428
+fsync(7</tmp/nia-chaos-delay-814jne_l/incoming/9dbe645b08d4c6fcfe08236da910fd47>) = 0
+renameat2(8</tmp/nia-chaos-delay-814jne_l/incoming>, "9dbe645b08d4c6fcfe08236da910fd47", 7</tmp/nia-chaos-delay-814jne_l/objects/3b>, "51eba9a436737de69ce97da166d7defb8d05b70bbdffa187bc5dd4225ea0c7", RENAME_NOREPLACE) = -1 EEXIST (File exists)
+pread64(7</tmp/nia-chaos-delay-814jne_l/objects/3b/51eba9a436737de69ce97da166d7defb8d05b70bbdffa187bc5dd4225ea0c7>, "\3757zXZ\0\0\4\346\326\264F\4\300\354\2\200P!\1\26\0\0\0\0\0\0\0|>\270\354\340'\377\1d]\0\27\v\274\34}\1\225\300\35J>y\25\302\314&\243c\26a\254\222R=\30\341\5]\375\302\377\204\370y\16\324v\364'\243\325"..., 65536, 0) = 428
+pread64(7</tmp/nia-chaos-delay-814jne_l/objects/3b/51eba9a436737de69ce97da166d7defb8d05b70bbdffa187bc5dd4225ea0c7>, "", 65108, 428) = 0
+pread64(7</tmp/nia-chaos-delay-814jne_l/objects/3b/51eba9a436737de69ce97da166d7defb8d05b70bbdffa187bc5dd4225ea0c7>, "", 65536, 428) = 0
+fsync(8</tmp/nia-chaos-delay-814jne_l/incoming>) = 0
+pread64(3</tmp/nia-chaos-delay-814jne_l/objects/3b/51eba9a436737de69ce97da166d7defb8d05b70bbdffa187bc5dd4225ea0c7>, "\3757zXZ\0\0\4\346\326\264F\4\300\354\2\200P!\1\26\0\0\0\0\0\0\0|>\270\354\340'\377\1d]\0\27\v\274\34}\1\225\300\35J>y\25\302\314&\243c\26a\254\222R=\30\341\5]\375\302\377\204\370y\16\324v\364'\243\325"..., 65536, 0) = 428
+pread64(3</tmp/nia-chaos-delay-814jne_l/objects/3b/51eba9a436737de69ce97da166d7defb8d05b70bbdffa187bc5dd4225ea0c7>, "", 65108, 428) = 0
+pread64(3</tmp/nia-chaos-delay-814jne_l/objects/3b/51eba9a436737de69ce97da166d7defb8d05b70bbdffa187bc5dd4225ea0c7>, "", 65536, 428) = 0
+pread64(3</tmp/nia-chaos-delay-814jne_l/objects/3b/51eba9a436737de69ce97da166d7defb8d05b70bbdffa187bc5dd4225ea0c7>, "\3757zXZ\0\0\4\346\326\264F\4\300\354\2\200P!\1\26\0\0\0\0\0\0\0|>\270\354\340'\377\1d]\0\27\v\274\34}\1\225\300\35J>y\25\302\314&\243c\26a\254\222R=\30\341\5]\375\302\377\204\370y\16\324v\364'\243\325"..., 428, 0) = 428
+fsync(8</tmp/nia-chaos-delay-814jne_l/incoming>) = 0
+write(7</tmp/nia-chaos-delay-814jne_l/incoming/226fe1524ed374a74668da9319aea5ca>, "/etc/nia-test.conf\n", 19) = 19
+fsync(7</tmp/nia-chaos-delay-814jne_l/incoming/226fe1524ed374a74668da9319aea5ca>) = 0
+renameat2(8</tmp/nia-chaos-delay-814jne_l/incoming>, "226fe1524ed374a74668da9319aea5ca", 7</tmp/nia-chaos-delay-814jne_l/objects/6a>, "483aacea69cb29a5b5f3d3539c38e6c6545123cd6b21b9602613ed7d9ea914", RENAME_NOREPLACE) = -1 EEXIST (File exists)
+pread64(7</tmp/nia-chaos-delay-814jne_l/objects/6a/483aacea69cb29a5b5f3d3539c38e6c6545123cd6b21b9602613ed7d9ea914>, "/etc/nia-test.conf\n", 65536, 0) = 19
+pread64(7</tmp/nia-chaos-delay-814jne_l/objects/6a/483aacea69cb29a5b5f3d3539c38e6c6545123cd6b21b9602613ed7d9ea914>, "", 65517, 19) = 0
+pread64(7</tmp/nia-chaos-delay-814jne_l/objects/6a/483aacea69cb29a5b5f3d3539c38e6c6545123cd6b21b9602613ed7d9ea914>, "", 65536, 19) = 0
+fsync(8</tmp/nia-chaos-delay-814jne_l/incoming>) = 0
+fsync(8</tmp/nia-chaos-delay-814jne_l/incoming>) = 0
+write(7</tmp/nia-chaos-delay-814jne_l/incoming/956990262fe322f7c078ed8e11f8d336>, "Package: nia-test\nVersion: 1:2.0~rc1-3\nArchitecture: all\nMaintainer: Nia synthet"..., 125) = 125
+fsync(7</tmp/nia-chaos-delay-814jne_l/incoming/956990262fe322f7c078ed8e11f8d336>) = 0
+renameat2(8</tmp/nia-chaos-delay-814jne_l/incoming>, "956990262fe322f7c078ed8e11f8d336", 7</tmp/nia-chaos-delay-814jne_l/objects/c1>, "5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae", RENAME_NOREPLACE) = -1 EEXIST (File exists)
+pread64(7</tmp/nia-chaos-delay-814jne_l/objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae>, "Package: nia-test\nVersion: 1:2.0~rc1-3\nArchitecture: all\nMaintainer: Nia synthet"..., 65536, 0) = 125
+pread64(7</tmp/nia-chaos-delay-814jne_l/objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae>, "", 65411, 125) = 0
+pread64(7</tmp/nia-chaos-delay-814jne_l/objects/c1/5e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae>, "", 65536, 125) = 0
+fsync(8</tmp/nia-chaos-delay-814jne_l/incoming>) = 0
+fsync(8</tmp/nia-chaos-delay-814jne_l/incoming>) = 0
+write(7</tmp/nia-chaos-delay-814jne_l/incoming/5f122ba0b9ef4fb7f0a172faa8a221d8>, "#!/bin/sh\necho forbidden > /tmp/nia-intake-test-8daz_zlu/SCRIPT_WAS_EXECUTED\n", 77) = 77
+fsync(7</tmp/nia-chaos-delay-814jne_l/incoming/5f122ba0b9ef4fb7f0a172faa8a221d8>) = 0
+renameat2(8</tmp/nia-chaos-delay-814jne_l/incoming>, "5f122ba0b9ef4fb7f0a172faa8a221d8", 7</tmp/nia-chaos-delay-814jne_l/objects/f5>, "8c6cb6d3f470f32c7b239e8d33f16036c840dcebc35cac74d44b2e91db4c5f", RENAME_NOREPLACE) = -1 EEXIST (File exists)
+pread64(7</tmp/nia-chaos-delay-814jne_l/objects/f5/8c6cb6d3f470f32c7b239e8d33f16036c840dcebc35cac74d44b2e91db4c5f>, "#!/bin/sh\necho forbidden > /tmp/nia-intake-test-8daz_zlu/SCRIPT_WAS_EXECUTED\n", 65536, 0) = 77
+pread64(7</tmp/nia-chaos-delay-814jne_l/objects/f5/8c6cb6d3f470f32c7b239e8d33f16036c840dcebc35cac74d44b2e91db4c5f>, "", 65459, 77) = 0
+pread64(7</tmp/nia-chaos-delay-814jne_l/objects/f5/8c6cb6d3f470f32c7b239e8d33f16036c840dcebc35cac74d44b2e91db4c5f>, "", 65536, 77) = 0
+fsync(8</tmp/nia-chaos-delay-814jne_l/incoming>) = 0
+write(1<pipe:[428150]>, "RESULT STALE 0000000000000000000000000000000000000000000000000000000000000000\n", 78) = 78
+write(1<pipe:[428150]>, "DONE\n", 5)    = 5

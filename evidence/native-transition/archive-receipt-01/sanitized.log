@@ -1,0 +1,51 @@
+Running as unit: run-p156724-i157024.scope; invocation ID: d0c42a9838bf464295013183849810d5
+limited-exec: {"scope": "run-p156724-i157024.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Setup
+   [mkdir]        object directory for project Tests
+   [mkdir]        exec directory for project Tests
+Compile
+   [Ada]          run_archive_supply_tests.adb
+   [C]            pkg_deb_stream.c
+   [C]            pkg_deb_decode.c
+   [Ada]          mc_clock.adb
+   [Ada]          mc_codec.adb
+   [Ada]          mc_fs.adb
+   [Ada]          mc_hex.adb
+   [Ada]          mc_posix.ads
+   [Ada]          mc_runtime.adb
+   [Ada]          mc_store.adb
+   [Ada]          mc_types.adb
+   [Ada]          pkg_archive_supply.adb
+   [Ada]          pkg_deb_metadata.adb
+   [Ada]          test_support.adb
+   [Ada]          mc_kernel_read.adb
+   [Ada]          mc_paths.adb
+   [Ada]          mc_sha256.adb
+   [Ada]          mc_dirents.adb
+   [Ada]          mc_text.adb
+   [Ada]          mc_authentic.adb
+   [Ada]          mc_signatures.adb
+   [Ada]          pkg_deb_container.adb
+   [Ada]          pkg_deb_control.adb
+   [Ada]          pkg_deb_relations.adb
+   [Ada]          pkg_deb_fields.adb
+   [Ada]          mc_protocol.adb
+   [Ada]          pkg_deb_versions.adb
+   [Ada]          pkg_deb_semantics.adb
+Bind
+   [gprbind]      run_archive_supply_tests.bexch
+   [Ada]          run_archive_supply_tests.ali
+Link
+   [archive]      libtests.a
+   [index]        libtests.a
+   [link]         run_archive_supply_tests.adb
+PASS assertions= 789
+SUPPLY_RECEIPT 241cc5f25ea1b1c81fea1b523d1f0188b31707252d9c9912c690fd5865fc1750
+SUPPLY_ORIGINAL ec62f518c98ea5368a79d33ea106df620afd87273d9df4ff19d62a3f76865009
+SUPPLY_CONTROL c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae
+PASS assertions= 31
+PASS archive receipt bridge accepted
+PASS archive receipt bridge wrong-key
+PASS archive receipt bridge wrong-scope
+PASS archive receipt bridge different-control
+PASS archive receipt bridge damaged-receipt

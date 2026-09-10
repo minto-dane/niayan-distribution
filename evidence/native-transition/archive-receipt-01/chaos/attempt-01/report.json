@@ -1,0 +1,58 @@
+{
+  "schema": "org.niaos.cas-chaos/v1",
+  "seed": 20260910,
+  "result": "failed",
+  "uid": 1000,
+  "started_utc": 1789004235.2923613,
+  "cases": [],
+  "driver_sha256": "5d2c5a708dd56f18c13f83bd822b8ce8e2c94743db73ef0c9ef956693eedd7d5",
+  "strace_sha256": "69f88291a4e47f258b8e32b089c919a247509f063ef3d6afe5389939051102b3",
+  "limits": {
+    "memory_bytes": 3221225472,
+    "swap_bytes": 0,
+    "cpu_cores": 1,
+    "pids": 128
+  },
+  "scope": "per-original authenticated receipt, real native CAS import/reopen/verification",
+  "physical_power_loss": false,
+  "boot_or_generation_transaction_qualification": false,
+  "public_inputs": {
+    "receipt": {
+      "sha256": "3cb14db30822c9086c3b5f4e5886e7a07f0ca84b101b99979a35b8eb6eb99538",
+      "size": 320
+    },
+    "policy": {
+      "sha256": "a731f71240d378784097e9049c4b03aa078dffa0f0908bb527ddbc98885cbd99",
+      "size": 583
+    },
+    "original.deb": {
+      "sha256": "246495ecd9e964fbbc8d7170674c861e0877c47a2e52e1d6741e081d80b074a5",
+      "size": 848
+    },
+    "control": {
+      "sha256": "c15e5346c8cc38aa50241e3350fced5682318ca66d63f9ff59983cd669e03fae",
+      "size": 125
+    },
+    "InRelease": {
+      "sha256": "33440835eeec104e20dd536bb581662621ddf2f7518c21c96fccd4fc984f1123",
+      "size": 523
+    },
+    "Packages": {
+      "sha256": "a8837bcd362bc237fc07f38cb67f5915c0e63d87fa08819032aad44bc71b3ad8",
+      "size": 228
+    },
+    "keyring": {
+      "sha256": "2e12896d95e816c7667fdbd1622dd782a71686b6f2458b38d26486fbffddaa6f",
+      "size": 223
+    },
+    "public-key": {
+      "sha256": "a13289991b5a5a924b432865c8305879d86a6895a7a408e0ddbee4596b22f4b0",
+      "size": 32
+    },
+    "scope": {
+      "sha256": "d24a68ad00d36596fae85305712e7aa2a99ca3849ea6682cb39567d06975c48d",
+      "size": 32
+    }
+  },
+  "failure": "AssertionError()"
+}

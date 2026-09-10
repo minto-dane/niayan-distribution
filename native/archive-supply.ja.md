@@ -76,6 +76,10 @@ native CASへ取り込んだ元DEB/control hashを正確に照合し、供給認
 公開計画と同じ予約へ束縛するmanaged adapterは未完である。現在世代・全phase・効果契約・同意・
 所有権・healthの認可も別途必要。`execution_permit`と`native_cas_bound`はfalseのまま返す。
 
+別の[供給記録発行API](archive-receipt.ja.md)は、この実認証を行ってから正確なhashと期限へ署名し、
+nativeの一原本検証へ接続する。任意の観測recordを署名するAPIではない。鍵/providerの本番配備と
+全公開計画への接続は未完であり、この観測API自身のfalse flagを変更しない。
+
 ## 検証
 
 `tests/test_debian_trust.py`は実OpenPGP署名とDEBを使い、明示pin、期限、日付floor、suite、

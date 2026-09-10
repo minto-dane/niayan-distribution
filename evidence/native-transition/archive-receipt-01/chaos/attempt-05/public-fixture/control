@@ -1,0 +1,5 @@
+Package: nia-test
+Version: 1:2.0~rc1-3
+Architecture: all
+Maintainer: Nia synthetic fixture
+Description: not for installation
