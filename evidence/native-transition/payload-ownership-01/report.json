@@ -1,0 +1,106 @@
+{
+  "result": "pass-for-logical-ownership-integration-only",
+  "recorded_utc": "2026-09-10T06:54:05.837489+00:00",
+  "source_subject": "ff7439ce30fecc5c5c16794c59fced58948429d44e8d48914c67fc1effd34738",
+  "pkgcore_input_files": 768,
+  "build_to_final_difference": [
+    "ci/test-all.sh"
+  ],
+  "build_to_final_difference_explanation": "Only generated CI registration changed after the build copy; all Ada, C, fixtures, project and oracle inputs match.",
+  "image": "sha256:4ec0d3adaef0afc8ce1eccdb621d46911ea2ebc11ddaa9e86f15e4ce59776d4c",
+  "ada_assertions": {
+    "ownership": 279,
+    "root": 199,
+    "stage": 1211,
+    "publication": 2023,
+    "root-publication": 142
+  },
+  "uid0_assertions": 7,
+  "ada_mains_executed": 4,
+  "ada_invocations": 7,
+  "registered_ada_mains": 75,
+  "all_registered_mains_executed": false,
+  "runner_regression_tests": 43,
+  "source_checks": {
+    "source_subject_before": "ff7439ce30fecc5c5c16794c59fced58948429d44e8d48914c67fc1effd34738",
+    "source_subject_after": "ff7439ce30fecc5c5c16794c59fced58948429d44e8d48914c67fc1effd34738",
+    "checks": [
+      {
+        "name": "engineering-check",
+        "returncode": 0
+      },
+      {
+        "name": "engineering-lint",
+        "returncode": 0
+      },
+      {
+        "name": "generated-ci",
+        "returncode": 0
+      },
+      {
+        "name": "runner-regression",
+        "returncode": 0
+      }
+    ],
+    "result": "pass"
+  },
+  "binary_sha256": {
+    "run_payload_ownership_tests": "4f662df61a870058297be0df650c8d2e80a8047b882241bb3a522cb1c42b8cb0",
+    "run_root_archive_tests": "eac4ca58ade0d46271206ed8a027b2a4a0d7e9dfc16aeb2af75f716a86ba7378",
+    "run_generation_stage_tests": "d46375edbaaa5db5a1913b2dfcdb65a0611ac6c380b62cf3dbd9ccf6d58c6744",
+    "run_generation_publication_tests": "d8dfe85f8eb474925150abd67eb4eeb46b331c74e41b5e298b224b4783b263b2"
+  },
+  "root_oracle": {
+    "result": "pass",
+    "manifest": "e1ac44f326568ab34fe69752a82e99fb76ee9f5ab6f1bf422c354389ae311ecf",
+    "archive": "523ebbcbad55ace7443ada3e4f47715f4126574fc2d2c7a2124572db7068ec41",
+    "original_debs": 3,
+    "selected_paths": 13,
+    "archive_bytes": 13312,
+    "entry_types": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "exact_original_spans": true,
+    "hardlink_targets_precede_links": true,
+    "physical_extraction": false,
+    "production_authorization": false,
+    "generation_manifest": "14695903c49d58c906b513cbfaa10027de67bb771f7137792d5ba5ac0f246c4a",
+    "generation_pin": true,
+    "staged_archive_exact": true
+  },
+  "root_publication_oracle": {
+    "accepted_generation": 1,
+    "accepted_plan": "09fb921ce3ca50aeeb76ee4bd6a801945508ebd6af1d82d1677e152f35d53fbf",
+    "actual_boot": false,
+    "actual_staged_archive": true,
+    "archive": "b930c18ec428f9d8af5dbf1a6fdaf5ce9ed974c1de8174bab79127247d492251",
+    "generation_manifest": "aaa568ce811508f7a666d0c1bc5102bbdc2ac024e0958b3a1d0f33aecc6f5a9e",
+    "original_spans_exact": true,
+    "paths": 10,
+    "privileged_extraction": false,
+    "production_authorization": false,
+    "result": "pass",
+    "root_manifest": "10418d3be97153f1491ef97b4a7afe34e7edb1706f67bae0f8844a0167111056"
+  },
+  "reference_source": {
+    "package": "dpkg",
+    "version": "1.22.22",
+    "archive": "dpkg_1.22.22.tar.xz",
+    "sha256": "d5ea9f132deec8030b50ab2a02ade2b49f0c7a195805a302c8301156fe833a57",
+    "origin": "distribution/evidence/debian13/accepted-09/source-collection/source-files-manifest.json",
+    "files": [
+      "src/main/archives.c",
+      "src/main/depcon.c"
+    ],
+    "upstream_modified": false
+  },
+  "production_authorization": false,
+  "privileged_extraction": false,
+  "actual_boot": false
+}

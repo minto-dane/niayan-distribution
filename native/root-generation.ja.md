@@ -26,8 +26,9 @@ tarを一つの通常ファイルとしてstagingするため、payload内のdev
 
 ## 検査と復旧
 
-`Pkg_Root_Archive.Verify_Target`は、明示したenclosing catalogとclosureをNIAROOT1へ照合し、
-全原本と既存tarを検査して再組立て結果を比較する。欠損を再生成で隠さず、失敗出力をzeroにする。
+`Pkg_Root_Archive.Verify_Ownership`は、明示したenclosing catalogとclosureをNIAROOT1へ照合し、
+全原本と既存tarを検査して再組立て結果を比較する。
+同じ保持intentのnative architectureを用い、[論理所有権](payload-ownership.ja.md)を検査する。欠損を再生成で隠さず、失敗出力をzeroにする。
 新しいRoot_V5のCheck_Retentionは、供給policyとintentの既存検査を維持したうえで、この検査と
 batchのtree/root.tar内容hashの一致を要求する。planのI/O後に期限付き原本検査を行う。
 

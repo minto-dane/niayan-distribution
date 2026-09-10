@@ -1,0 +1,23 @@
+{
+  "source_subject_before": "ff7439ce30fecc5c5c16794c59fced58948429d44e8d48914c67fc1effd34738",
+  "source_subject_after": "ff7439ce30fecc5c5c16794c59fced58948429d44e8d48914c67fc1effd34738",
+  "checks": [
+    {
+      "name": "engineering-check",
+      "returncode": 0
+    },
+    {
+      "name": "engineering-lint",
+      "returncode": 0
+    },
+    {
+      "name": "generated-ci",
+      "returncode": 0
+    },
+    {
+      "name": "runner-regression",
+      "returncode": 0
+    }
+  ],
+  "result": "pass"
+}

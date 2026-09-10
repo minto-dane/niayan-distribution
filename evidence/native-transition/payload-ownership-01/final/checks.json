@@ -1,0 +1,104 @@
+[
+  {
+    "name": "build",
+    "argv": [
+      "gprbuild",
+      "-j1",
+      "-P",
+      "tests.gpr",
+      "run_payload_ownership_tests.adb",
+      "run_root_archive_tests.adb",
+      "run_generation_stage_tests.adb",
+      "run_generation_publication_tests.adb"
+    ],
+    "returncode": 0
+  },
+  {
+    "name": "ownership",
+    "argv": [
+      "build/test-bin/run_payload_ownership_tests",
+      "/evidence/final/ownership/store",
+      "tests/fixtures/payload-ownership"
+    ],
+    "returncode": 0
+  },
+  {
+    "name": "root",
+    "argv": [
+      "build/test-bin/run_root_archive_tests",
+      "/evidence/final/root/store",
+      "tests/fixtures/root-archive"
+    ],
+    "returncode": 0
+  },
+  {
+    "name": "root-oracle",
+    "argv": [
+      "python3",
+      "tests/compare_root_archive.py",
+      "--media",
+      "tests/fixtures/root-archive",
+      "--native",
+      "/evidence/final/root.log",
+      "--cas",
+      "/evidence/final/root/store",
+      "--output",
+      "/evidence/final/root-oracle.json"
+    ],
+    "returncode": 0
+  },
+  {
+    "name": "stage",
+    "argv": [
+      "build/test-bin/run_generation_stage_tests",
+      "/evidence/final/stage/root",
+      "/evidence/final/stage/state",
+      "/evidence/final/stage/store"
+    ],
+    "returncode": 0
+  },
+  {
+    "name": "publication",
+    "argv": [
+      "build/test-bin/run_generation_publication_tests",
+      "/evidence/final/publication/root",
+      "/evidence/final/publication/state",
+      "/evidence/final/publication/store",
+      "/evidence/final/publication/bank",
+      "tests/fixtures/selected-catalog"
+    ],
+    "returncode": 0
+  },
+  {
+    "name": "publication-oracle",
+    "argv": [
+      "python3",
+      "tests/compare_current_catalog.py",
+      "--root",
+      "/evidence/final/publication/root",
+      "--state",
+      "/evidence/final/publication/state",
+      "--cas",
+      "/evidence/final/publication/store",
+      "--bank",
+      "/evidence/final/publication/bank",
+      "--media",
+      "tests/fixtures/selected-catalog",
+      "--native",
+      "/evidence/final/publication.log",
+      "--output",
+      "/evidence/final/publication-oracle.json"
+    ],
+    "returncode": 0
+  },
+  {
+    "name": "root-publication",
+    "argv": [
+      "python3",
+      "tests/check_root_publication.py",
+      "--driver",
+      "build/test-bin/run_generation_publication_tests"
+    ],
+    "returncode": 0
+  }
+]

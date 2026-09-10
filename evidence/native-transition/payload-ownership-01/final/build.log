@@ -1,0 +1,4 @@
+gprbuild: "run_payload_ownership_tests" up to date
+gprbuild: "run_root_archive_tests" up to date
+gprbuild: "run_generation_stage_tests" up to date
+gprbuild: "run_generation_publication_tests" up to date
