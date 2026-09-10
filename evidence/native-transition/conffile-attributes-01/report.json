@@ -1,0 +1,30 @@
+{
+  "format": 1,
+  "source_subject": "097b5508227fd5dc012cc68d526bee88fe2873a38184bb1e1c47c7653e3bfba8",
+  "production_qualified": false,
+  "accepted_log": "test-02.log",
+  "choice_assertions": 270,
+  "result": "pass",
+  "compile_input_count": 380,
+  "fixture_input_count": 22,
+  "kernel_limits": {
+    "memory_bytes": 3221225472,
+    "swap_bytes": 0,
+    "cpu_percent": 100,
+    "pids": 128
+  },
+  "prior_failure": "test-01.log: test incorrectly assumed source 0644 uid=0 gid=0; original fixture is 0640 uid=1001 gid=1002; corrected expectation, runtime unchanged",
+  "scope": "NIACCH02 full attribute source references, numeric permission inheritance and live rechecked effects",
+  "not_repeated": [
+    "full suite",
+    "unchanged formal proofs",
+    "old chaos campaigns",
+    "VM"
+  ],
+  "remaining": [
+    "full attribute application including ACL/capability interactions and namespace/link/root assembly",
+    "privileged complete observation and authenticated UI",
+    "full managed admission, generation retention/recovery and boot",
+    "remaining DEB effects, native ISO, all translations and production tasks"
+  ]
+}

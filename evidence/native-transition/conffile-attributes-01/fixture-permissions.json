@@ -1,0 +1,10 @@
+{
+  "source": "pkgcore/tests/fixtures/conffiles/updated.deb",
+  "sha256": "04a3d75ffb271fc69403b85590dffab53c733c35053c761ea5b84cb7be331685",
+  "entry": "./etc/fixture.conf",
+  "mode_octal": "0640",
+  "uid": 1001,
+  "gid": 1002,
+  "inspection": "Python tarfile read of original data.tar; no extraction or source modification",
+  "test_01_failure": "new test incorrectly assumed 0644 uid=0 gid=0; corrected expectation to actual fixture bytes"
+}
