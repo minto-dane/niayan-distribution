@@ -1,0 +1,11 @@
+Running as unit: run-p311591-i311891.scope; invocation ID: b98cf9120f2a4c3a9fa7e2dc6b2a52e2
+limited-exec: {"scope": "run-p311591-i311891.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Compile
+   [Ada]          run_root_archive_tests.adb
+Bind
+   [gprbind]      run_root_archive_tests.bexch
+   [Ada]          run_root_archive_tests.ali
+Link
+   [link]         run_root_archive_tests.adb
+Root archive fixtures: 3 match
+PASS root archive original-span oracle: 13 paths

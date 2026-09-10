@@ -1,0 +1,17 @@
+Running as unit: run-p312625-i312925.scope; invocation ID: 82b1eb8d2ccd4810828347626ba0d088
+limited-exec: {"scope": "run-p312625-i312925.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+{
+  "format": 1,
+  "checks": "traceability-and-source-inventory",
+  "result": "pass",
+  "requirements": 121,
+  "decisions": 81,
+  "hazards": 107,
+  "fault_cases": 121,
+  "canonical_ada_files": 547,
+  "registered_ada_tests": 74,
+  "source_subject": "b187ec0edc5a5b741d43e24c58d025ed84a56ffa9b74e890611b3e76f2007e57",
+  "ada_executed": false,
+  "formal_proof": false,
+  "production_approval": false
+}

@@ -1,0 +1,25 @@
+Running as unit: run-p306419-i306719.scope; invocation ID: 4940ab45812843d4a7c7b53f9d9ad70a
+limited-exec: {"scope": "run-p306419-i306719.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Setup
+   [mkdir]        object directory for project Tests
+   [mkdir]        exec directory for project Tests
+Compile
+   [Ada]          run_root_archive_tests.adb
+   [C]            pkg_deb_stream.c
+   [C]            pkg_deb_decode.c
+   [Ada]          mc_clock.adb
+   [Ada]          mc_fs.adb
+   [Ada]          mc_hex.adb
+   [Ada]          mc_posix.ads
+   [Ada]          mc_runtime.adb
+   [Ada]          mc_store.adb
+   [Ada]          mc_types.adb
+   [Ada]          pkg_catalog_retention.adb
+   [Ada]          pkg_catalog_store.adb
+   [Ada]          pkg_deb_metadata.adb
+   [Ada]          pkg_deb_payload.adb
+   [Ada]          pkg_payload_index.adb
+   [Ada]          pkg_root_archive.adb
+pkg_root_archive.adb:180:88: warning: assignment to pass-by-copy formal may have no effect [enabled by default]
+pkg_root_archive.adb:180:88: warning: "raise" statement may result in abnormal return (RM 6.4.1(17)) [enabled by default]
+gprbuild: *** compilation phase failed

@@ -1,0 +1,43 @@
+Running as unit: run-p306753-i307053.scope; invocation ID: ab27f555e769455eb308961aed832224
+limited-exec: {"scope": "run-p306753-i307053.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Compile
+   [Ada]          pkg_root_archive.adb
+   [Ada]          pkg_selected_catalog.adb
+   [Ada]          test_support.adb
+   [Ada]          mc_kernel_read.adb
+   [Ada]          mc_codec.adb
+   [Ada]          mc_paths.adb
+   [Ada]          mc_sha256.adb
+   [Ada]          mc_dirents.adb
+   [Ada]          mc_text.adb
+   [Ada]          pkg_deb_container.adb
+   [Ada]          pkg_deb_control.adb
+   [Ada]          pkg_deb_relations.adb
+   [Ada]          pkg_deb_fields.adb
+   [Ada]          pkg_deb_data_stream.adb
+   [Ada]          pkg_tar_framing.adb
+   [Ada]          pkg_deb_semantics.adb
+   [Ada]          pkg_deb_versions.adb
+Bind
+   [gprbind]      run_root_archive_tests.bexch
+   [Ada]          run_root_archive_tests.ali
+Link
+   [archive]      libtests.a
+   [index]        libtests.a
+   [link]         run_root_archive_tests.adb
+MANIFEST 65a954d321ca8b379efa9c371bdd0add589e4d0721f25e7b74c51766aa8086e4
+ARCHIVE 523ebbcbad55ace7443ada3e4f47715f4126574fc2d2c7a2124572db7068ec41
+CHOICE 212410eaeddaaa6664e30576da37a01a99554b2e9dceed0d70985d7a9e25e596 1
+CHOICE 212410eaeddaaa6664e30576da37a01a99554b2e9dceed0d70985d7a9e25e596 8
+CHOICE 212410eaeddaaa6664e30576da37a01a99554b2e9dceed0d70985d7a9e25e596 4
+CHOICE 212410eaeddaaa6664e30576da37a01a99554b2e9dceed0d70985d7a9e25e596 7
+CHOICE 212410eaeddaaa6664e30576da37a01a99554b2e9dceed0d70985d7a9e25e596 2
+CHOICE 212410eaeddaaa6664e30576da37a01a99554b2e9dceed0d70985d7a9e25e596 5
+CHOICE b0ecd5748c3fad84146740449a32eddc4c4a5e5df6ceab7cce0016f80690a73f 4
+CHOICE 212410eaeddaaa6664e30576da37a01a99554b2e9dceed0d70985d7a9e25e596 9
+CHOICE 212410eaeddaaa6664e30576da37a01a99554b2e9dceed0d70985d7a9e25e596 3
+CHOICE b2af62acfb65256e95e2555c3046596aedf6974fa746f8f425c14b6ea35867ca 3
+CHOICE b2af62acfb65256e95e2555c3046596aedf6974fa746f8f425c14b6ea35867ca 4
+CHOICE 212410eaeddaaa6664e30576da37a01a99554b2e9dceed0d70985d7a9e25e596 6
+CHOICE 212410eaeddaaa6664e30576da37a01a99554b2e9dceed0d70985d7a9e25e596 10
+PASS assertions= 112

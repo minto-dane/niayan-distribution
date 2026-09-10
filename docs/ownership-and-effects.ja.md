@@ -52,7 +52,12 @@ DependsとPre-Depends、BreaksとConflicts、Replaces、versioned Provides、Mul
 
 `debian_archive_auth.py`は実gpgvとSHA-256鎖で原本を検査し、`deb_archive.py`はホストへ展開せず属性を観測する。`nia_catalog.py`はNia所有権候補を生成する。`Pkg_Deb_Versions`/`Pkg_Deb_Semantics`は独立したSPARKソースである。
 
-ただし、候補catalogを管理下rootと一つの復旧protocolで確定するwriter、全effect handler、初期root assemblyは未完了。既存file engineの`/`拒否は二重管理互換性のためではなく、ホスト全体の資格化が終わっていないため維持する。
+`Pkg_Root_Archive`は全pathの採用元を明示して、元DEBの属性を含む実payload spanを一つの
+tarとNIAROOT1へ組み立てる。[仕様と本番接続の境界](../native/root-archive.ja.md)を参照。
+構造検査はReplacesやsite policyによる所有権変更の認可を代行しない。
+
+候補catalogを管理下rootと一つの復旧protocolで確定するwriter、全effect handler、
+特権分離されたroot展開とboot接続は未完了。既存file engineの`/`拒否は二重管理互換性のためではなく、ホスト全体の資格化が終わっていないため維持する。
 
 一次資料: https://www.debian.org/doc/debian-policy/ch-maintainerscripts.html
 https://www.debian.org/doc/debian-policy/ch-relationships.html
