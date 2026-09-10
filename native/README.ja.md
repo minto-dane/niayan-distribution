@@ -22,6 +22,7 @@ root/catalogを単一の論理世代として確定する。実mount/bootと稼�
 [媒体索引と一覧](media.ja.md)をinutoc・installp・geninstallへ接続した。
 [緊急修正成果物](interim-package.ja.md)の決定的な作成と読取をepkg/emgrへ接続した。
 [共通の供給認証](repository.ja.md)と`emgr_download_ifix`のHTTPS取得も実装した。
+[Debian 13原本とTUF供給policyの認証](archive-supply.ja.md)で、明示したInReleaseから元DEB/controlを照合する。
 署名済み成果物と参照の認証は、稼働システムへの適用許可とは別に検査する。
 [多言語表示](localization.ja.md)は共通のgettext層を使用し、操作要求と表示言語を分離する。
 外部ソフトウェアの管理コマンドは包まず、Niaの管理操作の入口だけを統一する。

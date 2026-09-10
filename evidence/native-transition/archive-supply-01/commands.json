@@ -1,0 +1,17 @@
+{
+  "limits": {
+    "memory_bytes": 3221225472,
+    "swap_bytes": 0,
+    "cpu_cores": 1,
+    "pids": 128
+  },
+  "serial_execution": true,
+  "network": "enabled only for pinned test-image builds and bounded official artifact acquisition; disabled in qualification containers",
+  "native_image_command": "make image-check",
+  "source_commands": "run-engineering-checks.py --mode source in fixed development image and host",
+  "new_dependencies_scope": "test image only: dpkg, gnupg, gpgv, zstd; no development host package installation",
+  "upstream_source_changed": false,
+  "ada_runtime_changed": false,
+  "security_limits_changed": false,
+  "first_attempt": "missing zstd in separate tool check; preserved, fixed dependency and CI target, rebuilt image and used fresh workspace"
+}

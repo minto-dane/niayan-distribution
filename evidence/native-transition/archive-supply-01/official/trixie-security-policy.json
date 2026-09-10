@@ -1,0 +1,23 @@
+{
+  "schema": "org.niaos.debian-trust/v2",
+  "keyring_sha256": "506b815cbb32d9b6066b4a2aa524071e071761e7e7f68c3ac74f3061ba852017",
+  "primary_fingerprints": [
+    "05AB90340C0C5E797F44A8C8254CF3B5AEC0A8F0",
+    "5E04A1E3223A19A20706E20F9904613D4CCE68C6"
+  ],
+  "minimum_signatures": 1,
+  "max_age_seconds": 604800,
+  "future_skew_seconds": 60,
+  "release": {
+    "codename": "trixie-security",
+    "suite": "stable-security",
+    "architecture": "amd64",
+    "components": [
+      "contrib",
+      "main"
+    ],
+    "inrelease_sha256": "cc6ed06fb531a6fb6eb223044752e55e5fa0fcf7865dbd4cb607e06985c3017d",
+    "minimum_date": 1788392608,
+    "expires": 1789083808
+  }
+}

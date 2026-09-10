@@ -1,0 +1,78 @@
+{
+  "result": "pass",
+  "baseline_root_commit": "c015455",
+  "baseline_subject": "5c4bcdd2d488b40e6cf4a2582ca5171121ff281528febda7ccfd2f971ec42b9a",
+  "copies": [
+    {
+      "path": "/home/nia/devbox/niaos/nia-os-consent",
+      "inputs": 3355,
+      "matches": true
+    },
+    {
+      "path": "/home/nia/devbox/niaos/.work/native-archive-supply-01/workspace",
+      "inputs": 3355,
+      "matches": true
+    }
+  ],
+  "added": [
+    "assurance/docs/engineering/adr/ADR-0077.ja.md",
+    "distribution/native/archive-supply.ja.md",
+    "distribution/native/archive_intake.py",
+    "distribution/native/test_archive_intake.py",
+    "distribution/tests/test_debian_trust.py"
+  ],
+  "removed": [],
+  "changed": [
+    "assurance/engineering/adrs.json",
+    "assurance/engineering/fault-cases.json",
+    "assurance/engineering/hazards.json",
+    "assurance/engineering/requirements.json",
+    "distribution/Makefile",
+    "distribution/native/README.ja.md",
+    "distribution/native/acceptance.json",
+    "distribution/native/repository.ja.md",
+    "distribution/native/test-packages.txt",
+    "distribution/tools/deb_archive.py",
+    "distribution/tools/debian_archive_auth.py"
+  ],
+  "unchanged_component_inputs": [
+    {
+      "repository": "assurance",
+      "inputs": 364,
+      "unchanged": true
+    },
+    {
+      "repository": "pkgcore",
+      "inputs": 722,
+      "unchanged": true
+    },
+    {
+      "repository": "statecore",
+      "inputs": 346,
+      "unchanged": true
+    },
+    {
+      "repository": "controlcore",
+      "inputs": 235,
+      "unchanged": true
+    },
+    {
+      "repository": "configcore",
+      "inputs": 213,
+      "unchanged": true
+    },
+    {
+      "repository": "resolvercore",
+      "inputs": 216,
+      "unchanged": true
+    },
+    {
+      "repository": "capsulecore",
+      "inputs": 220,
+      "unchanged": true
+    }
+  ],
+  "ada_build_repeated": false,
+  "proof_repeated": false,
+  "scope": "Every component input outside docs/engineering unchanged; Python supply and test environment changes qualified separately"
+}

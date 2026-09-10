@@ -1,0 +1,6 @@
+{
+  "package": "debian-archive-keyring",
+  "version": "2025.1",
+  "source": "preinstalled development OS /usr/share/keyrings/debian-archive-keyring.pgp",
+  "production_trust_provisioned": false
+}

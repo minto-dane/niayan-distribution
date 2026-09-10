@@ -1,0 +1,24 @@
+{
+  "schema": "org.niaos.debian-trust/v2",
+  "keyring_sha256": "506b815cbb32d9b6066b4a2aa524071e071761e7e7f68c3ac74f3061ba852017",
+  "primary_fingerprints": [
+    "B8B80B5B623EAB6AD8775C45B7C5D7D6350947F8",
+    "04B54C3CDCA79751B16BC6B5225629DF75B188BD",
+    "41587F7DB8C774BCCF131416762F67A0B2C39DE4"
+  ],
+  "minimum_signatures": 1,
+  "max_age_seconds": 604800,
+  "future_skew_seconds": 60,
+  "release": {
+    "codename": "trixie-updates",
+    "suite": "stable-updates",
+    "architecture": "amd64",
+    "components": [
+      "contrib",
+      "main"
+    ],
+    "inrelease_sha256": "9d625801dc9df8b8c60d44e2918f8d8a401cd60651fffb9ccab77d97467c2779",
+    "minimum_date": 1788392608,
+    "expires": 1789083808
+  }
+}

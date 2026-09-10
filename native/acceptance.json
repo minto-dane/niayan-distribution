@@ -228,18 +228,22 @@
       "implementation": [
         "native/repository.py",
         "native/interim_intake.py",
-        "native/interim_download.py"
+        "native/interim_download.py",
+        "native/archive_intake.py",
+        "tools/debian_archive_auth.py"
       ],
       "tests": [
         "native/test_repository.py",
         "native/test_repository_https.py",
         "native/test_interim_intake.py",
-        "native/check_download_cli.py"
+        "native/check_download_cli.py",
+        "native/test_archive_intake.py",
+        "tests/test_debian_trust.py"
       ],
       "evidence": [
         "evidence/management-interface/repository-01/README.ja.md"
       ],
-      "remaining": "Production keys and provisioning, independent rollback-resistant trust floor/time, service isolation and deadline, contract semantics and Debian archive chain, actual power-loss qualification and managed-engine integration"
+      "remaining": "Production keys and provisioning, independent rollback-resistant trust floor/time, service isolation and deadline, contract semantics, interim artifact Debian archive chain, native CAS/publication-plan binding under the live reservation, actual power-loss qualification and managed-engine integration"
     },
     {
       "id": "NATIVE-009",

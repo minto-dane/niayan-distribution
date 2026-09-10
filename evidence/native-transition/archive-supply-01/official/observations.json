@@ -1,0 +1,489 @@
+{
+  "accepted_at": 1788997408,
+  "keyring_sha256": "506b815cbb32d9b6066b4a2aa524071e071761e7e7f68c3ac74f3061ba852017",
+  "scope": "Official Debian signatures and bytes; locally selected test pins, not provisioned production Nia policy",
+  "production_policy_provisioned": false,
+  "installed": false,
+  "downloads": [
+    {
+      "url": "https://ftp.debian.org/debian/dists/trixie/InRelease",
+      "path": "dists/trixie/InRelease",
+      "sha256": "98b25b5cd185c59d34aa6e4c3e9b5b8f01bbe9d104fe2dcfbcd30dc0a14a59ed",
+      "size": 140416
+    },
+    {
+      "url": "https://ftp.debian.org/debian/dists/trixie-updates/InRelease",
+      "path": "dists/trixie-updates/InRelease",
+      "sha256": "9d625801dc9df8b8c60d44e2918f8d8a401cd60651fffb9ccab77d97467c2779",
+      "size": 47340
+    },
+    {
+      "url": "https://security.debian.org/debian-security/dists/trixie-security/InRelease",
+      "path": "dists/trixie-security/InRelease",
+      "sha256": "cc6ed06fb531a6fb6eb223044752e55e5fa0fcf7865dbd4cb607e06985c3017d",
+      "size": 43409
+    },
+    {
+      "url": "https://ftp.debian.org/debian/dists/trixie/contrib/binary-amd64/Packages.xz",
+      "path": "dists/trixie/contrib/binary-amd64/Packages.xz",
+      "sha256": "9979608b93622d99f0b8bd1143c8ba7039a5d23bd3fcebb8331a1b4b531c96d2",
+      "size": 53848
+    },
+    {
+      "url": "https://ftp.debian.org/debian/pool/contrib/b/b43-fwcutter/b43-fwcutter_019-14_amd64.deb",
+      "path": "pool/contrib/b/b43-fwcutter/b43-fwcutter_019-14_amd64.deb",
+      "sha256": "0a0b3667a6de85a850ba1a0778aec334e0970dcaab2a03b31d0630f1978933c7",
+      "size": 26304
+    },
+    {
+      "url": "https://ftp.debian.org/debian/dists/trixie/contrib/source/Sources.xz",
+      "path": "dists/trixie/contrib/source/Sources.xz",
+      "sha256": "d0ec315ba17b9de6732ab2cd6fbe1b3da0790006235b6e9c10747fdad9ddceef",
+      "size": 52276
+    },
+    {
+      "url": "https://ftp.debian.org/debian/pool/contrib/b/b43-fwcutter/b43-fwcutter_019-14.dsc",
+      "path": "pool/contrib/b/b43-fwcutter/b43-fwcutter_019-14.dsc",
+      "sha256": "5bf2f7803f564cd62e960994901b9937e1cd8ec515b7cc0b09f9a0123ea58059",
+      "size": 2127
+    },
+    {
+      "url": "https://ftp.debian.org/debian/pool/contrib/b/b43-fwcutter/b43-fwcutter_019.orig.tar.bz2",
+      "path": "pool/contrib/b/b43-fwcutter/b43-fwcutter_019.orig.tar.bz2",
+      "sha256": "d6ea85310df6ae08e7f7e46d8b975e17fc867145ee249307413cfbe15d7121ce",
+      "size": 46769
+    },
+    {
+      "url": "https://ftp.debian.org/debian/pool/contrib/b/b43-fwcutter/b43-fwcutter_019-14.debian.tar.xz",
+      "path": "pool/contrib/b/b43-fwcutter/b43-fwcutter_019-14.debian.tar.xz",
+      "sha256": "be36d9b6bf6a647b6668f8f3589c672d0cbc73c647f1555a03996d54d768a0e7",
+      "size": 21356
+    }
+  ],
+  "observations": {
+    "trixie": {
+      "schema": "org.niaos.release-authentication/v1",
+      "execution_permit": false,
+      "inrelease_sha256": "98b25b5cd185c59d34aa6e4c3e9b5b8f01bbe9d104fe2dcfbcd30dc0a14a59ed",
+      "release_sha256": "e89b36ee4d4e03b06573468d52c2a8be91ebdbda754c192f9e1a731ad738652f",
+      "policy_sha256": "47c5fb2d63290362e4848c325a934c45b6849d3c8c582be1887618c611d83130",
+      "primary_signers": [
+        "04B54C3CDCA79751B16BC6B5225629DF75B188BD",
+        "41587F7DB8C774BCCF131416762F67A0B2C39DE4",
+        "B8B80B5B623EAB6AD8775C45B7C5D7D6350947F8"
+      ],
+      "codename": "trixie",
+      "suite": "stable",
+      "accepted_at": 1788997408,
+      "valid_until": 1789083808,
+      "upstream_valid_until": null,
+      "artifacts_authenticated": false
+    },
+    "trixie-updates": {
+      "schema": "org.niaos.release-authentication/v1",
+      "execution_permit": false,
+      "inrelease_sha256": "9d625801dc9df8b8c60d44e2918f8d8a401cd60651fffb9ccab77d97467c2779",
+      "release_sha256": "eaeb239c7fe4ef5cbc51de33903d33338a884c40aff148aa3d56619d20d41598",
+      "policy_sha256": "f6ce6c4a8808b9ab2d7339a8f2f27b4de152861b2e0a8cdf9b3471ef30354a08",
+      "primary_signers": [
+        "04B54C3CDCA79751B16BC6B5225629DF75B188BD",
+        "B8B80B5B623EAB6AD8775C45B7C5D7D6350947F8"
+      ],
+      "codename": "trixie-updates",
+      "suite": "stable-updates",
+      "accepted_at": 1788997408,
+      "valid_until": 1789083808,
+      "upstream_valid_until": "Wed, 16 Sep 2026 20:08:13 UTC",
+      "artifacts_authenticated": false
+    },
+    "trixie-security": {
+      "schema": "org.niaos.release-authentication/v1",
+      "execution_permit": false,
+      "inrelease_sha256": "cc6ed06fb531a6fb6eb223044752e55e5fa0fcf7865dbd4cb607e06985c3017d",
+      "release_sha256": "99c84c1f95f5bb3f3659146d3208a0e95e1caa45cc09f809538936bd3977ba37",
+      "policy_sha256": "e35c8f05a5348d12a41420532b41b134ff1aab6b6a2825504f37513d94dd34ff",
+      "primary_signers": [
+        "05AB90340C0C5E797F44A8C8254CF3B5AEC0A8F0",
+        "5E04A1E3223A19A20706E20F9904613D4CCE68C6"
+      ],
+      "codename": "trixie-security",
+      "suite": "stable-security",
+      "accepted_at": 1788997408,
+      "valid_until": 1789083808,
+      "upstream_valid_until": "Wed, 16 Sep 2026 20:42:37 UTC",
+      "artifacts_authenticated": false
+    },
+    "binary": {
+      "schema": "org.niaos.intake-authentication/v1",
+      "execution_permit": false,
+      "release_sha256": "e89b36ee4d4e03b06573468d52c2a8be91ebdbda754c192f9e1a731ad738652f",
+      "inrelease_sha256": "98b25b5cd185c59d34aa6e4c3e9b5b8f01bbe9d104fe2dcfbcd30dc0a14a59ed",
+      "index_sha256": "9979608b93622d99f0b8bd1143c8ba7039a5d23bd3fcebb8331a1b4b531c96d2",
+      "primary_signers": [
+        "04B54C3CDCA79751B16BC6B5225629DF75B188BD",
+        "41587F7DB8C774BCCF131416762F67A0B2C39DE4",
+        "B8B80B5B623EAB6AD8775C45B7C5D7D6350947F8"
+      ],
+      "accepted_at": 1788997408,
+      "valid_until": 1789083808,
+      "component": "contrib",
+      "source_family": "debian",
+      "codename": "trixie",
+      "observation": {
+        "schema": "org.niaos.deb-observation/v1",
+        "execution_permit": false,
+        "archive_authenticated": true,
+        "artifact_sha256": "0a0b3667a6de85a850ba1a0778aec334e0970dcaab2a03b31d0630f1978933c7",
+        "format": "deb",
+        "identity": {
+          "package": "b43-fwcutter",
+          "version": "1:019-14",
+          "architecture": "amd64"
+        },
+        "raw_control_sha256": "063ea3c70eed0a0f9341e1f707714ba4ff2ae7f7e9a99b056a199e03a96affdb",
+        "fields": {
+          "package": "b43-fwcutter",
+          "version": "1:019-14",
+          "architecture": "amd64",
+          "maintainer": "Debian QA Group <packages@qa.debian.org>",
+          "installed-size": "97",
+          "depends": "debconf (>= 0.5) | debconf-2.0, libc6 (>= 2.34)",
+          "section": "contrib/utils",
+          "priority": "optional",
+          "homepage": "https://wireless.wiki.kernel.org/en/users/drivers/b43",
+          "description": "utility for extracting Broadcom 43xx firmware\nThis package provides a tool for extracting BCM43xx wireless chip\nfirmware from Broadcom's proprietary driver files.\n.\nIt is used by the firmware-b43(legacy)-installer packages as part of\nthe automated process of downloading and installing firmware."
+        },
+        "relationships": {
+          "depends": [
+            [
+              {
+                "name": "debconf",
+                "architecture": "unqualified",
+                "operator": ">=",
+                "version": "0.5"
+              },
+              {
+                "name": "debconf-2.0",
+                "architecture": "unqualified",
+                "operator": "",
+                "version": ""
+              }
+            ],
+            [
+              {
+                "name": "libc6",
+                "architecture": "unqualified",
+                "operator": ">=",
+                "version": "2.34"
+              }
+            ]
+          ],
+          "pre-depends": [],
+          "recommends": [],
+          "suggests": [],
+          "enhances": [],
+          "breaks": [],
+          "conflicts": [],
+          "replaces": [],
+          "provides": [],
+          "built-using": [],
+          "static-built-using": []
+        },
+        "control_inventory": [
+          {
+            "path": "config",
+            "kind": "regular",
+            "mode": 493,
+            "uid": 0,
+            "gid": 0,
+            "size": 126,
+            "mtime": 1752472361,
+            "sha256": "4c165010067e5b38255414593a7ef7923059b82121f653f4f7d1794d8dcd7051",
+            "link": "",
+            "xattrs": {}
+          },
+          {
+            "path": "control",
+            "kind": "regular",
+            "mode": 420,
+            "uid": 0,
+            "gid": 0,
+            "size": 609,
+            "mtime": 1752472361,
+            "sha256": "063ea3c70eed0a0f9341e1f707714ba4ff2ae7f7e9a99b056a199e03a96affdb",
+            "link": "",
+            "xattrs": {}
+          },
+          {
+            "path": "md5sums",
+            "kind": "regular",
+            "mode": 420,
+            "uid": 0,
+            "gid": 0,
+            "size": 420,
+            "mtime": 1752472361,
+            "sha256": "022dd167ccdeb468b714703dfbde0bc23ace2c68a8760a3e7562dffcb8fb0faf",
+            "link": "",
+            "xattrs": {}
+          },
+          {
+            "path": "postinst",
+            "kind": "regular",
+            "mode": 493,
+            "uid": 0,
+            "gid": 0,
+            "size": 147,
+            "mtime": 1752472361,
+            "sha256": "25901ca97ca13aa347bf97d6186d348dfaab8d5f659a267a454e468ff21b430d",
+            "link": "",
+            "xattrs": {}
+          },
+          {
+            "path": "postrm",
+            "kind": "regular",
+            "mode": 493,
+            "uid": 0,
+            "gid": 0,
+            "size": 214,
+            "mtime": 1752472361,
+            "sha256": "c731f0c0da75870e0454a597124dede134fd4b1dde145586c62142205c819829",
+            "link": "",
+            "xattrs": {}
+          },
+          {
+            "path": "templates",
+            "kind": "regular",
+            "mode": 420,
+            "uid": 0,
+            "gid": 0,
+            "size": 7954,
+            "mtime": 1752472361,
+            "sha256": "a8741d9a71bc6c37a54d0b321c1809f9b127ee5c103b9e157f5f26affb34973d",
+            "link": "",
+            "xattrs": {}
+          }
+        ],
+        "file_inventory": [
+          {
+            "path": "usr",
+            "kind": "directory",
+            "mode": 493,
+            "uid": 0,
+            "gid": 0,
+            "size": 0,
+            "mtime": 1752472361,
+            "sha256": null,
+            "link": "",
+            "xattrs": {}
+          },
+          {
+            "path": "usr/bin",
+            "kind": "directory",
+            "mode": 493,
+            "uid": 0,
+            "gid": 0,
+            "size": 0,
+            "mtime": 1752472361,
+            "sha256": null,
+            "link": "",
+            "xattrs": {}
+          },
+          {
+            "path": "usr/bin/b43-fwcutter",
+            "kind": "regular",
+            "mode": 493,
+            "uid": 0,
+            "gid": 0,
+            "size": 65728,
+            "mtime": 1752472361,
+            "sha256": "61bfbf5e376794cce8e1a88d2dd60eee4d8e04f2e8c8689dbc496c4c5f40fe87",
+            "link": "",
+            "xattrs": {}
+          },
+          {
+            "path": "usr/share",
+            "kind": "directory",
+            "mode": 493,
+            "uid": 0,
+            "gid": 0,
+            "size": 0,
+            "mtime": 1752472361,
+            "sha256": null,
+            "link": "",
+            "xattrs": {}
+          },
+          {
+            "path": "usr/share/doc",
+            "kind": "directory",
+            "mode": 493,
+            "uid": 0,
+            "gid": 0,
+            "size": 0,
+            "mtime": 1752472361,
+            "sha256": null,
+            "link": "",
+            "xattrs": {}
+          },
+          {
+            "path": "usr/share/doc/b43-fwcutter",
+            "kind": "directory",
+            "mode": 493,
+            "uid": 0,
+            "gid": 0,
+            "size": 0,
+            "mtime": 1752472361,
+            "sha256": null,
+            "link": "",
+            "xattrs": {}
+          },
+          {
+            "path": "usr/share/doc/b43-fwcutter/README",
+            "kind": "regular",
+            "mode": 420,
+            "uid": 0,
+            "gid": 0,
+            "size": 1680,
+            "mtime": 1752472361,
+            "sha256": "65e4efb8e0c7ddab783afdc169b6f2e467e3f56f69e55df98568d9fcb29958de",
+            "link": "",
+            "xattrs": {}
+          },
+          {
+            "path": "usr/share/doc/b43-fwcutter/changelog.Debian.gz",
+            "kind": "regular",
+            "mode": 420,
+            "uid": 0,
+            "gid": 0,
+            "size": 1495,
+            "mtime": 1752472361,
+            "sha256": "d792e54833f4d521603372ddb60014db5696bd3302aee82202d03075bbb466f9",
+            "link": "",
+            "xattrs": {}
+          },
+          {
+            "path": "usr/share/doc/b43-fwcutter/changelog.gz",
+            "kind": "regular",
+            "mode": 420,
+            "uid": 0,
+            "gid": 0,
+            "size": 266,
+            "mtime": 1752471744,
+            "sha256": "bcc795e11bdc406e776baf9b3672b8157141bbc111c82789583e90e7c8dc17a8",
+            "link": "",
+            "xattrs": {}
+          },
+          {
+            "path": "usr/share/doc/b43-fwcutter/copyright",
+            "kind": "regular",
+            "mode": 420,
+            "uid": 0,
+            "gid": 0,
+            "size": 5189,
+            "mtime": 1752471744,
+            "sha256": "cf3986f778bf38293b09f0e1c6e6afb7d879531c2c9b299ede46c95a9a729a20",
+            "link": "",
+            "xattrs": {}
+          },
+          {
+            "path": "usr/share/man",
+            "kind": "directory",
+            "mode": 493,
+            "uid": 0,
+            "gid": 0,
+            "size": 0,
+            "mtime": 1752472361,
+            "sha256": null,
+            "link": "",
+            "xattrs": {}
+          },
+          {
+            "path": "usr/share/man/man1",
+            "kind": "directory",
+            "mode": 493,
+            "uid": 0,
+            "gid": 0,
+            "size": 0,
+            "mtime": 1752472361,
+            "sha256": null,
+            "link": "",
+            "xattrs": {}
+          },
+          {
+            "path": "usr/share/man/man1/b43-fwcutter.1.gz",
+            "kind": "regular",
+            "mode": 420,
+            "uid": 0,
+            "gid": 0,
+            "size": 631,
+            "mtime": 1752472361,
+            "sha256": "e146014a8ab21be97ca8f71bba2c53bbf933f917c49d9e08a62da0ec440e8f19",
+            "link": "",
+            "xattrs": {}
+          }
+        ],
+        "conffiles": [],
+        "effect_members": [
+          {
+            "member": "config",
+            "sha256": "4c165010067e5b38255414593a7ef7923059b82121f653f4f7d1794d8dcd7051"
+          },
+          {
+            "member": "postinst",
+            "sha256": "25901ca97ca13aa347bf97d6186d348dfaab8d5f659a267a454e468ff21b430d"
+          },
+          {
+            "member": "postrm",
+            "sha256": "c731f0c0da75870e0454a597124dede134fd4b1dde145586c62142205c819829"
+          }
+        ],
+        "trigger_declarations": [],
+        "unknown_control_members": [],
+        "unmodeled_fields": [],
+        "runtime_dependencies_preserved": true,
+        "maintainer_scripts_executed": false,
+        "needs_reviewed_effect_contract": true,
+        "native_database_created": false
+      },
+      "dependency_universe_complete": false,
+      "reproduced": false,
+      "native_scripts_executed": false
+    },
+    "source": {
+      "source_manifest": {
+        "schema": "org.niaos.source-manifest/v1",
+        "distribution": "debian",
+        "codename": "trixie",
+        "inrelease_sha256": "98b25b5cd185c59d34aa6e4c3e9b5b8f01bbe9d104fe2dcfbcd30dc0a14a59ed",
+        "sources_index_sha256": "d0ec315ba17b9de6732ab2cd6fbe1b3da0790006235b6e9c10747fdad9ddceef",
+        "name": "b43-fwcutter",
+        "version": "1:019-14",
+        "dsc_sha256": "5bf2f7803f564cd62e960994901b9937e1cd8ec515b7cc0b09f9a0123ea58059",
+        "files": [
+          {
+            "path": "pool/contrib/b/b43-fwcutter/b43-fwcutter_019-14.debian.tar.xz",
+            "size": 21356,
+            "sha256": "be36d9b6bf6a647b6668f8f3589c672d0cbc73c647f1555a03996d54d768a0e7"
+          },
+          {
+            "path": "pool/contrib/b/b43-fwcutter/b43-fwcutter_019-14.dsc",
+            "size": 2127,
+            "sha256": "5bf2f7803f564cd62e960994901b9937e1cd8ec515b7cc0b09f9a0123ea58059"
+          },
+          {
+            "path": "pool/contrib/b/b43-fwcutter/b43-fwcutter_019.orig.tar.bz2",
+            "size": 46769,
+            "sha256": "d6ea85310df6ae08e7f7e46d8b975e17fc867145ee249307413cfbe15d7121ce"
+          }
+        ]
+      },
+      "source_manifest_sha256": "403f1a9143e85c17d98700f37c150f16ed711d7d131731a4715d5a36b74f66e9",
+      "binary_sha256": "0a0b3667a6de85a850ba1a0778aec334e0970dcaab2a03b31d0630f1978933c7",
+      "execution_permit": false,
+      "source_authenticated": true,
+      "source_rebuilt": false,
+      "reproduced": false,
+      "redistribution_rights_reviewed": false,
+      "source_signature_separately_checked": false
+    }
+  }
+}

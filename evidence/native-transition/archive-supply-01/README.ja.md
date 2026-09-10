@@ -1,0 +1,48 @@
+# Debian 13原本供給と共通TUF policyの接続検証
+
+基準root commitは`c015455`。対象subjectは
+`aac58be4b71cb2356b1db2d5e55d371125483df1797d360882b4cd82076c3e5b`。
+実行結果の集計はreport.json、原本の一覧とhashはSHA256SUMSを参照する。
+仕様はnative/archive-supply.ja.md、判断はADR-0077。
+
+旧Forky固定の読取器を、明示したTrixie/pocket・suite・architecture・component・InRelease pin・
+日付floor・期限で検査するv2へ拡張した。旧v1は比較工具用に維持し、新しいnative供給入口では拒否する。
+通常ReleaseにValid-Untilがなくても、独立の有限期限と最大経過時間を必須とする。
+期限付きmetadataの延命、署名検査の無効化、上流パッチ、依存宣言の改変は行っていない。
+巨大な未使用Contentsの宣言サイズを実読取の要求と混同せず、選んだindexの容量制限を維持した。
+
+共通TUF Repositoryで認証したpolicyからDebianの署名・Packages・元DEB/controlへ接続した。
+本番のpolicy配備、独立trust floor/時刻の保管、元DEB/control hashをnative CASと公開計画へ
+同じwriter予約で束縛するmanaged adapterは未完。返却は観測値で、実行許可や署名済みadmissionではない。
+TUF targetの再読取は同じ有界session内であり、最新remote policyのrefreshとは主張しない。
+
+固定native test imageのmake image-checkで、工具173・native134・hardening4・image16試験が成功。
+新しいOpenPGP原本試験15件とTUF接続試験12件を含む。必須工具がない場合は失敗とする。
+公開download CLIの実rootコンテナ検査と、archive intakeの実UID0拒否も成功した。
+ホストと固定開発コンテナのsource検査はそれぞれ24工程成功。Python単体試験597件発見、
+各source実行11件skipであり、skipを成功した実行に数えない。
+両source reportの前後subjectは上記と一致した。
+
+workspace3355入力は元repoと新規コピーで完全一致した。七コンポーネントの
+docs/engineering以外の全入力、及び七つの数学的入力集合は前工程と不変。
+Ada build、71 main、バイナリ再現性、SPARK証明を今回の新しい実行結果として数えない。
+対応する前工程の証跡はpublication-intent-01。今回はPython供給経路と検査環境を検証した。
+
+公式公開アーカイブからTrixie本体・updates・securityのInReleaseを取得し、事前に
+導入済みのDebian archive keyringと明示した許可fingerprintで署名を検証した。
+通常配布のb43-fwcutter元DEBと対応するSourcesの全3ファイルも照合した。
+取得URL、時刻、原本hash、実観測はofficial/observations.jsonへ保存した。
+公式原本の検査用pinは観測時にローカル選択したものであり、本番Nia policy配備の証明ではない。
+原本、公開keyring、署名付きmetadataと全対応ソースを保存し、固定native image・networkなしで
+当初の観測時刻を指定して全観測結果を完全再現した。現在の期限で無期限に受理する試験ではない。
+binaryとソースは実行・導入・展開していない。再構築やライセンス全体の監査を示す結果でもない。
+
+初回native test imageではmake image-checkが成功したが、別に行った全工具検査がzstd不足で失敗した。
+初回のimage ID・依存リスト・source一覧・ログをattempts/へ保持する。
+zstdを検査依存へ追加し、tool-checkを標準native-checkの依存へ組み込んだ。
+新規workspaceと再構築imageで最終資格検査を行い、初回結果を更新後の入力へ流用していない。
+
+検査はmemory3 GiB・swap0・CPU1コア分・pids128の外側scopeで直列実行。
+test image構築と公式原本取得にはnetworkを使い、資格検査コンテナではnetworkを無効化した。
+追加依存は検査用dpkg・gnupg・gpgv・zstdであり、稼働NiaOSへ別のpackage writerを追加する変更ではない。
+実DEBの全効果、実root/boot、完全置換ISO、安全なGC、全言語翻訳は引き続き未完である。

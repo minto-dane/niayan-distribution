@@ -86,3 +86,7 @@ loopback HTTPSでは一時的な試験CAを使い、実TLSと署名検証、証�
 
 導入済みcatalog、managed engine、GUI、完全置換ISOと実更新・復旧は引き続き未接続。
 認証済み観測をJSONへ保存しても、別プロセスはその成功フラグを実行許可として信用しない。
+
+通常DEBについては[Debian 13原本供給](archive-supply.ja.md)で、TUF targetとして認証した
+明示policyとDebian InRelease/Packages/元DEBの認証を接続した。native CASと公開計画への
+実行時の束縛は未完であり、既存interim intakeの参照認証とDEB archive認証も混同しない。

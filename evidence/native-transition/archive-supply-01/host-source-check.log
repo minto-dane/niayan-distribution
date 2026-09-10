@@ -1,0 +1,3 @@
+Running as unit: run-p102541-i102841.scope; invocation ID: 93d7654aae6e4af99fd13f1e637ab719
+limited-exec: {"scope": "run-p102541-i102841.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+/home/nia/devbox/niaos/nia-os-consent/assurance/evidence/engineering-0bb1jn4o/report.json

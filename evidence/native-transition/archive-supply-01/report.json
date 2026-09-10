@@ -1,0 +1,52 @@
+{
+  "format": 1,
+  "result": "pass-for-debian13-archive-supply-observation-only",
+  "baseline_root_commit": "c015455",
+  "source_subject": "aac58be4b71cb2356b1db2d5e55d371125483df1797d360882b4cd82076c3e5b",
+  "source_checks": {
+    "container": 24,
+    "host": 24
+  },
+  "source_python_tests_discovered": 597,
+  "source_skipped_each": 11,
+  "native_image_tests": {
+    "tools": 173,
+    "native": 134,
+    "hardening": 4,
+    "image": 16
+  },
+  "public_download_cli_cases": 6,
+  "archive_root_refusal": true,
+  "new_openpgp_tests": 15,
+  "new_tuf_archive_tests": 12,
+  "official_releases": [
+    "trixie",
+    "trixie-updates",
+    "trixie-security"
+  ],
+  "official_binary": {
+    "package": "b43-fwcutter",
+    "version": "1:019-14",
+    "architecture": "amd64"
+  },
+  "official_source_files": 3,
+  "official_offline_replay": "exact observations at original observation time",
+  "native_test_image": "sha256:b626ca976c8ba342df3377e3ad068e29bf45b4c3ad0f7f8927f0551dd09c07dd",
+  "development_image": "0c04329a1343a0f1ae82ab931ffc7a7e5cbfdccbf18948e0576366fbf5bb249a",
+  "source_inputs": 3355,
+  "identical_source_copies": 2,
+  "component_code_build_test_input_sets_unchanged": 7,
+  "proof_input_sets_unchanged": 7,
+  "new_ada_build": false,
+  "new_ada_execution": false,
+  "new_formal_proof": false,
+  "new_binary_reproducibility_run": false,
+  "production_policy_provisioned": false,
+  "rollback_resistant_trust_floor_implemented": false,
+  "native_cas_plan_binding_implemented": false,
+  "production_admission_implemented": false,
+  "physical_deb_payload_applied": false,
+  "boot_tested": false,
+  "apt_fully_replaced": false,
+  "all_languages_translated": false
+}

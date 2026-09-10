@@ -1,0 +1,6 @@
+Running as unit: run-p87597-i87897.scope; invocation ID: 40862afa967c48d3a238d3494a100944
+limited-exec: {"scope": "run-p87597-i87897.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Authenticated official Release trixie
+Authenticated official Release trixie-updates
+Authenticated official Release trixie-security
+Authenticated original binary and corresponding complete Sources inventory

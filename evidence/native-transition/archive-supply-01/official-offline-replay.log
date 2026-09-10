@@ -1,0 +1,3 @@
+Running as unit: run-p99776-i100076.scope; invocation ID: 8ac9dfaaf0a348a2890503b4f72d4a52
+limited-exec: {"scope": "run-p99776-i100076.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+PASS exact offline replay: three official Releases, original DEB and complete associated Sources inventory; observation time fixed, no installation
