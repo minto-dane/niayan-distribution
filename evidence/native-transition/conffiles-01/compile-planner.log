@@ -1,0 +1,10 @@
+Running as unit: run-p719132-i719432.scope; invocation ID: cb1d3aaabe344c54a5b384c6920f3882
+limited-exec: {"scope": "run-p719132-i719432.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Compile
+   [Ada]          run_archive_observer_tests.adb
+   [Ada]          pkg_supply_planner.adb
+Bind
+   [gprbind]      run_archive_observer_tests.bexch
+   [Ada]          run_archive_observer_tests.ali
+Link
+   [link]         run_archive_observer_tests.adb

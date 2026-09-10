@@ -1,0 +1,9 @@
+{
+  "initial_compile": "test conditional syntax corrected; first log retained",
+  "initial_deb_probe": "missing sbin in PATH stopped before installation; private-root rerun used explicit PATH",
+  "native_declarations": "ASCII MC_Text rejected a non-UTF-8 filename; changed declaration path to native bounded byte strings",
+  "supply_planner": "same ASCII restriction found in request paths; changed to bounded byte strings and tested native UTF-8 preservation plus packaged VM",
+  "content_comparison": "initial content/backup matrix passed; metadata audit found removal flag must retain old baseline",
+  "metadata_comparison": "upstream-03 found three omitted-and-locally-absent cases where the active baseline is dropped; corrected in final upstream-04 with zero mismatches",
+  "source_qualification": "new decisions and original reader only; local inode/attribute snapshot, consent/backup namespace, root construction and managed publication still require integration"
+}

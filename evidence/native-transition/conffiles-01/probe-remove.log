@@ -1,0 +1,8 @@
+Running as unit: run-p715225-i715525.scope; invocation ID: ea302d88da92420db1f0129d0ba2da85
+limited-exec: {"scope": "run-p715225-i715525.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+dpkg-deb: warning: root directory /home/nia/devbox/niaos/.work/native-conffiles-01/probe-package has unusual owner or group 1000:1000
+dpkg-deb: warning: ignoring 1 warning about the control file(s)
+tracked 0 [('fixture.conf.dpkg-old', 'local\n')]
+
+untracked 0 [('fixture.conf.dpkg-old', 'local\n')]
+

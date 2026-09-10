@@ -1,0 +1,20 @@
+limited-exec: {"scope": "run-p714967-i715267.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+(Reading database ... 3 files and directories currently installed.)
+Preparing to unpack .../native-conffiles-01/probe2.deb ...
+Unpacking conf-fixture (2) over (1) ...
+Setting up conf-fixture (2) ...
+Running as unit: run-p714967-i715267.scope; invocation ID: 4ceed790cc4b41bfa86daa4e153ba837
+
+Configuration file '/etc/fixture.conf' (actually '/home/nia/devbox/niaos/.work/native-conffiles-01/probe-root/etc/fixture.conf')
+ ==> Deleted (by you or by a script) since installation.
+ ==> Package distributor has shipped an updated version.
+   What would you like to do about it ?  Your options are:
+    Y or I  : install the package maintainer's version
+    N or O  : keep your currently-installed version
+      D     : show the differences between the versions
+      Z     : start a shell to examine the situation
+ The default action is to keep your current version.
+*** fixture.conf (Y/I/N/O/D/Z) [default=N] ? dpkg: error processing package conf-fixture (--install):
+ end of file on stdin at conffile prompt
+Errors were encountered while processing:
+ conf-fixture

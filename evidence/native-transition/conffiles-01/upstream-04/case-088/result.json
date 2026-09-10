@@ -1,0 +1,19 @@
+{
+  "case": 88,
+  "tracked": true,
+  "local": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+  "incoming": "new",
+  "choice": "KEEP_LOCAL",
+  "mode": "INSTALL_UPGRADE",
+  "native": {
+    "EFFECT": "RETAIN",
+    "CONTENT": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+    "BACKUP": "VENDOR_BACKUP",
+    "BACKUP_CONTENT": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+    "NEXT_VENDOR": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c"
+  },
+  "upstream_exit": 0,
+  "upstream_question": false,
+  "actual": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+  "matches": true
+}

@@ -1,0 +1,2410 @@
+{
+  "upstream": "Debian 'dpkg' package management program version 1.22.22 (amd64).",
+  "cases": 126,
+  "mismatches": [],
+  "script_free": true,
+  "host_root_changed": false,
+  "results": [
+    {
+      "case": 0,
+      "tracked": false,
+      "local": "0000000000000000000000000000000000000000000000000000000000000000",
+      "incoming": "same",
+      "choice": "UNRESOLVED",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "REPLACE",
+        "CONTENT": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+      "matches": true
+    },
+    {
+      "case": 1,
+      "tracked": false,
+      "local": "0000000000000000000000000000000000000000000000000000000000000000",
+      "incoming": "same",
+      "choice": "KEEP_LOCAL",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "REPLACE",
+        "CONTENT": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+      "matches": true
+    },
+    {
+      "case": 2,
+      "tracked": false,
+      "local": "0000000000000000000000000000000000000000000000000000000000000000",
+      "incoming": "same",
+      "choice": "USE_VENDOR",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "REPLACE",
+        "CONTENT": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+      "matches": true
+    },
+    {
+      "case": 3,
+      "tracked": false,
+      "local": "0000000000000000000000000000000000000000000000000000000000000000",
+      "incoming": "new",
+      "choice": "UNRESOLVED",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "REPLACE",
+        "CONTENT": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "matches": true
+    },
+    {
+      "case": 4,
+      "tracked": false,
+      "local": "0000000000000000000000000000000000000000000000000000000000000000",
+      "incoming": "new",
+      "choice": "KEEP_LOCAL",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "REPLACE",
+        "CONTENT": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "matches": true
+    },
+    {
+      "case": 5,
+      "tracked": false,
+      "local": "0000000000000000000000000000000000000000000000000000000000000000",
+      "incoming": "new",
+      "choice": "USE_VENDOR",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "REPLACE",
+        "CONTENT": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "matches": true
+    },
+    {
+      "case": 6,
+      "tracked": false,
+      "local": "0000000000000000000000000000000000000000000000000000000000000000",
+      "incoming": "omitted",
+      "choice": "UNRESOLVED",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000",
+      "matches": true
+    },
+    {
+      "case": 7,
+      "tracked": false,
+      "local": "0000000000000000000000000000000000000000000000000000000000000000",
+      "incoming": "omitted",
+      "choice": "KEEP_LOCAL",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000",
+      "matches": true
+    },
+    {
+      "case": 8,
+      "tracked": false,
+      "local": "0000000000000000000000000000000000000000000000000000000000000000",
+      "incoming": "omitted",
+      "choice": "USE_VENDOR",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000",
+      "matches": true
+    },
+    {
+      "case": 9,
+      "tracked": false,
+      "local": "0000000000000000000000000000000000000000000000000000000000000000",
+      "incoming": "removed",
+      "choice": "UNRESOLVED",
+      "mode": "REMOVE_ON_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000",
+      "matches": true
+    },
+    {
+      "case": 10,
+      "tracked": false,
+      "local": "0000000000000000000000000000000000000000000000000000000000000000",
+      "incoming": "removed",
+      "choice": "KEEP_LOCAL",
+      "mode": "REMOVE_ON_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000",
+      "matches": true
+    },
+    {
+      "case": 11,
+      "tracked": false,
+      "local": "0000000000000000000000000000000000000000000000000000000000000000",
+      "incoming": "removed",
+      "choice": "USE_VENDOR",
+      "mode": "REMOVE_ON_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000",
+      "matches": true
+    },
+    {
+      "case": 12,
+      "tracked": false,
+      "local": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+      "incoming": "same",
+      "choice": "UNRESOLVED",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+      "matches": true
+    },
+    {
+      "case": 13,
+      "tracked": false,
+      "local": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+      "incoming": "same",
+      "choice": "KEEP_LOCAL",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+      "matches": true
+    },
+    {
+      "case": 14,
+      "tracked": false,
+      "local": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+      "incoming": "same",
+      "choice": "USE_VENDOR",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+      "matches": true
+    },
+    {
+      "case": 15,
+      "tracked": false,
+      "local": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+      "incoming": "new",
+      "choice": "UNRESOLVED",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "REQUIRE_CHOICE",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "upstream_exit": 1,
+      "upstream_question": true,
+      "actual": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+      "matches": true
+    },
+    {
+      "case": 16,
+      "tracked": false,
+      "local": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+      "incoming": "new",
+      "choice": "KEEP_LOCAL",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+        "BACKUP": "VENDOR_BACKUP",
+        "BACKUP_CONTENT": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+        "NEXT_VENDOR": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+      "matches": true
+    },
+    {
+      "case": 17,
+      "tracked": false,
+      "local": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+      "incoming": "new",
+      "choice": "USE_VENDOR",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "REPLACE",
+        "CONTENT": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+        "BACKUP": "LOCAL_BACKUP",
+        "BACKUP_CONTENT": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+        "NEXT_VENDOR": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "matches": true
+    },
+    {
+      "case": 18,
+      "tracked": false,
+      "local": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+      "incoming": "omitted",
+      "choice": "UNRESOLVED",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+      "matches": true
+    },
+    {
+      "case": 19,
+      "tracked": false,
+      "local": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+      "incoming": "omitted",
+      "choice": "KEEP_LOCAL",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+      "matches": true
+    },
+    {
+      "case": 20,
+      "tracked": false,
+      "local": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+      "incoming": "omitted",
+      "choice": "USE_VENDOR",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+      "matches": true
+    },
+    {
+      "case": 21,
+      "tracked": false,
+      "local": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+      "incoming": "removed",
+      "choice": "UNRESOLVED",
+      "mode": "REMOVE_ON_UPGRADE",
+      "native": {
+        "EFFECT": "BACKUP_AND_DELETE",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "LOCAL_BACKUP",
+        "BACKUP_CONTENT": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+        "NEXT_VENDOR": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000",
+      "matches": true
+    },
+    {
+      "case": 22,
+      "tracked": false,
+      "local": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+      "incoming": "removed",
+      "choice": "KEEP_LOCAL",
+      "mode": "REMOVE_ON_UPGRADE",
+      "native": {
+        "EFFECT": "BACKUP_AND_DELETE",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "LOCAL_BACKUP",
+        "BACKUP_CONTENT": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+        "NEXT_VENDOR": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000",
+      "matches": true
+    },
+    {
+      "case": 23,
+      "tracked": false,
+      "local": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+      "incoming": "removed",
+      "choice": "USE_VENDOR",
+      "mode": "REMOVE_ON_UPGRADE",
+      "native": {
+        "EFFECT": "BACKUP_AND_DELETE",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "LOCAL_BACKUP",
+        "BACKUP_CONTENT": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+        "NEXT_VENDOR": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000",
+      "matches": true
+    },
+    {
+      "case": 24,
+      "tracked": false,
+      "local": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+      "incoming": "same",
+      "choice": "UNRESOLVED",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "REQUIRE_CHOICE",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "upstream_exit": 1,
+      "upstream_question": true,
+      "actual": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+      "matches": true
+    },
+    {
+      "case": 25,
+      "tracked": false,
+      "local": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+      "incoming": "same",
+      "choice": "KEEP_LOCAL",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+        "BACKUP": "VENDOR_BACKUP",
+        "BACKUP_CONTENT": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+      "matches": true
+    },
+    {
+      "case": 26,
+      "tracked": false,
+      "local": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+      "incoming": "same",
+      "choice": "USE_VENDOR",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "REPLACE",
+        "CONTENT": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+        "BACKUP": "LOCAL_BACKUP",
+        "BACKUP_CONTENT": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+      "matches": true
+    },
+    {
+      "case": 27,
+      "tracked": false,
+      "local": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+      "incoming": "new",
+      "choice": "UNRESOLVED",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "REQUIRE_CHOICE",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "upstream_exit": 1,
+      "upstream_question": true,
+      "actual": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+      "matches": true
+    },
+    {
+      "case": 28,
+      "tracked": false,
+      "local": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+      "incoming": "new",
+      "choice": "KEEP_LOCAL",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+        "BACKUP": "VENDOR_BACKUP",
+        "BACKUP_CONTENT": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+        "NEXT_VENDOR": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+      "matches": true
+    },
+    {
+      "case": 29,
+      "tracked": false,
+      "local": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+      "incoming": "new",
+      "choice": "USE_VENDOR",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "REPLACE",
+        "CONTENT": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+        "BACKUP": "LOCAL_BACKUP",
+        "BACKUP_CONTENT": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+        "NEXT_VENDOR": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "matches": true
+    },
+    {
+      "case": 30,
+      "tracked": false,
+      "local": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+      "incoming": "omitted",
+      "choice": "UNRESOLVED",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+      "matches": true
+    },
+    {
+      "case": 31,
+      "tracked": false,
+      "local": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+      "incoming": "omitted",
+      "choice": "KEEP_LOCAL",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+      "matches": true
+    },
+    {
+      "case": 32,
+      "tracked": false,
+      "local": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+      "incoming": "omitted",
+      "choice": "USE_VENDOR",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+      "matches": true
+    },
+    {
+      "case": 33,
+      "tracked": false,
+      "local": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+      "incoming": "removed",
+      "choice": "UNRESOLVED",
+      "mode": "REMOVE_ON_UPGRADE",
+      "native": {
+        "EFFECT": "BACKUP_AND_DELETE",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "LOCAL_BACKUP",
+        "BACKUP_CONTENT": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+        "NEXT_VENDOR": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000",
+      "matches": true
+    },
+    {
+      "case": 34,
+      "tracked": false,
+      "local": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+      "incoming": "removed",
+      "choice": "KEEP_LOCAL",
+      "mode": "REMOVE_ON_UPGRADE",
+      "native": {
+        "EFFECT": "BACKUP_AND_DELETE",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "LOCAL_BACKUP",
+        "BACKUP_CONTENT": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+        "NEXT_VENDOR": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000",
+      "matches": true
+    },
+    {
+      "case": 35,
+      "tracked": false,
+      "local": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+      "incoming": "removed",
+      "choice": "USE_VENDOR",
+      "mode": "REMOVE_ON_UPGRADE",
+      "native": {
+        "EFFECT": "BACKUP_AND_DELETE",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "LOCAL_BACKUP",
+        "BACKUP_CONTENT": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+        "NEXT_VENDOR": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000",
+      "matches": true
+    },
+    {
+      "case": 36,
+      "tracked": false,
+      "local": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "incoming": "same",
+      "choice": "UNRESOLVED",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "REQUIRE_CHOICE",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "upstream_exit": 1,
+      "upstream_question": true,
+      "actual": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "matches": true
+    },
+    {
+      "case": 37,
+      "tracked": false,
+      "local": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "incoming": "same",
+      "choice": "KEEP_LOCAL",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+        "BACKUP": "VENDOR_BACKUP",
+        "BACKUP_CONTENT": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "matches": true
+    },
+    {
+      "case": 38,
+      "tracked": false,
+      "local": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "incoming": "same",
+      "choice": "USE_VENDOR",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "REPLACE",
+        "CONTENT": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+        "BACKUP": "LOCAL_BACKUP",
+        "BACKUP_CONTENT": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+      "matches": true
+    },
+    {
+      "case": 39,
+      "tracked": false,
+      "local": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "incoming": "new",
+      "choice": "UNRESOLVED",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "matches": true
+    },
+    {
+      "case": 40,
+      "tracked": false,
+      "local": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "incoming": "new",
+      "choice": "KEEP_LOCAL",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "matches": true
+    },
+    {
+      "case": 41,
+      "tracked": false,
+      "local": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "incoming": "new",
+      "choice": "USE_VENDOR",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "matches": true
+    },
+    {
+      "case": 42,
+      "tracked": false,
+      "local": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "incoming": "omitted",
+      "choice": "UNRESOLVED",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "matches": true
+    },
+    {
+      "case": 43,
+      "tracked": false,
+      "local": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "incoming": "omitted",
+      "choice": "KEEP_LOCAL",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "matches": true
+    },
+    {
+      "case": 44,
+      "tracked": false,
+      "local": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "incoming": "omitted",
+      "choice": "USE_VENDOR",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "matches": true
+    },
+    {
+      "case": 45,
+      "tracked": false,
+      "local": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "incoming": "removed",
+      "choice": "UNRESOLVED",
+      "mode": "REMOVE_ON_UPGRADE",
+      "native": {
+        "EFFECT": "BACKUP_AND_DELETE",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "LOCAL_BACKUP",
+        "BACKUP_CONTENT": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+        "NEXT_VENDOR": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000",
+      "matches": true
+    },
+    {
+      "case": 46,
+      "tracked": false,
+      "local": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "incoming": "removed",
+      "choice": "KEEP_LOCAL",
+      "mode": "REMOVE_ON_UPGRADE",
+      "native": {
+        "EFFECT": "BACKUP_AND_DELETE",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "LOCAL_BACKUP",
+        "BACKUP_CONTENT": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+        "NEXT_VENDOR": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000",
+      "matches": true
+    },
+    {
+      "case": 47,
+      "tracked": false,
+      "local": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "incoming": "removed",
+      "choice": "USE_VENDOR",
+      "mode": "REMOVE_ON_UPGRADE",
+      "native": {
+        "EFFECT": "BACKUP_AND_DELETE",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "LOCAL_BACKUP",
+        "BACKUP_CONTENT": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+        "NEXT_VENDOR": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000",
+      "matches": true
+    },
+    {
+      "case": 48,
+      "tracked": false,
+      "local": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "incoming": "same",
+      "choice": "UNRESOLVED",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "REQUIRE_CHOICE",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "upstream_exit": 1,
+      "upstream_question": true,
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "case": 49,
+      "tracked": false,
+      "local": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "incoming": "same",
+      "choice": "KEEP_LOCAL",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "BACKUP": "VENDOR_BACKUP",
+        "BACKUP_CONTENT": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "case": 50,
+      "tracked": false,
+      "local": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "incoming": "same",
+      "choice": "USE_VENDOR",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "REPLACE",
+        "CONTENT": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+        "BACKUP": "LOCAL_BACKUP",
+        "BACKUP_CONTENT": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+      "matches": true
+    },
+    {
+      "case": 51,
+      "tracked": false,
+      "local": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "incoming": "new",
+      "choice": "UNRESOLVED",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "REQUIRE_CHOICE",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "upstream_exit": 1,
+      "upstream_question": true,
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "case": 52,
+      "tracked": false,
+      "local": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "incoming": "new",
+      "choice": "KEEP_LOCAL",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "BACKUP": "VENDOR_BACKUP",
+        "BACKUP_CONTENT": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+        "NEXT_VENDOR": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "case": 53,
+      "tracked": false,
+      "local": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "incoming": "new",
+      "choice": "USE_VENDOR",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "REPLACE",
+        "CONTENT": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+        "BACKUP": "LOCAL_BACKUP",
+        "BACKUP_CONTENT": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "NEXT_VENDOR": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "matches": true
+    },
+    {
+      "case": 54,
+      "tracked": false,
+      "local": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "incoming": "omitted",
+      "choice": "UNRESOLVED",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "case": 55,
+      "tracked": false,
+      "local": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "incoming": "omitted",
+      "choice": "KEEP_LOCAL",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "case": 56,
+      "tracked": false,
+      "local": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "incoming": "omitted",
+      "choice": "USE_VENDOR",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "case": 57,
+      "tracked": false,
+      "local": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "incoming": "removed",
+      "choice": "UNRESOLVED",
+      "mode": "REMOVE_ON_UPGRADE",
+      "native": {
+        "EFFECT": "BACKUP_AND_DELETE",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "LOCAL_BACKUP",
+        "BACKUP_CONTENT": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "NEXT_VENDOR": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000",
+      "matches": true
+    },
+    {
+      "case": 58,
+      "tracked": false,
+      "local": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "incoming": "removed",
+      "choice": "KEEP_LOCAL",
+      "mode": "REMOVE_ON_UPGRADE",
+      "native": {
+        "EFFECT": "BACKUP_AND_DELETE",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "LOCAL_BACKUP",
+        "BACKUP_CONTENT": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "NEXT_VENDOR": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000",
+      "matches": true
+    },
+    {
+      "case": 59,
+      "tracked": false,
+      "local": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "incoming": "removed",
+      "choice": "USE_VENDOR",
+      "mode": "REMOVE_ON_UPGRADE",
+      "native": {
+        "EFFECT": "BACKUP_AND_DELETE",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "LOCAL_BACKUP",
+        "BACKUP_CONTENT": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "NEXT_VENDOR": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000",
+      "matches": true
+    },
+    {
+      "case": 60,
+      "tracked": true,
+      "local": "0000000000000000000000000000000000000000000000000000000000000000",
+      "incoming": "same",
+      "choice": "UNRESOLVED",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000",
+      "matches": true
+    },
+    {
+      "case": 61,
+      "tracked": true,
+      "local": "0000000000000000000000000000000000000000000000000000000000000000",
+      "incoming": "same",
+      "choice": "KEEP_LOCAL",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000",
+      "matches": true
+    },
+    {
+      "case": 62,
+      "tracked": true,
+      "local": "0000000000000000000000000000000000000000000000000000000000000000",
+      "incoming": "same",
+      "choice": "USE_VENDOR",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000",
+      "matches": true
+    },
+    {
+      "case": 63,
+      "tracked": true,
+      "local": "0000000000000000000000000000000000000000000000000000000000000000",
+      "incoming": "new",
+      "choice": "UNRESOLVED",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "REQUIRE_CHOICE",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "upstream_exit": 1,
+      "upstream_question": true,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000",
+      "matches": true
+    },
+    {
+      "case": 64,
+      "tracked": true,
+      "local": "0000000000000000000000000000000000000000000000000000000000000000",
+      "incoming": "new",
+      "choice": "KEEP_LOCAL",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "VENDOR_BACKUP",
+        "BACKUP_CONTENT": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+        "NEXT_VENDOR": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000",
+      "matches": true
+    },
+    {
+      "case": 65,
+      "tracked": true,
+      "local": "0000000000000000000000000000000000000000000000000000000000000000",
+      "incoming": "new",
+      "choice": "USE_VENDOR",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "REPLACE",
+        "CONTENT": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "matches": true
+    },
+    {
+      "case": 66,
+      "tracked": true,
+      "local": "0000000000000000000000000000000000000000000000000000000000000000",
+      "incoming": "omitted",
+      "choice": "UNRESOLVED",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000",
+      "matches": true
+    },
+    {
+      "case": 67,
+      "tracked": true,
+      "local": "0000000000000000000000000000000000000000000000000000000000000000",
+      "incoming": "omitted",
+      "choice": "KEEP_LOCAL",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000",
+      "matches": true
+    },
+    {
+      "case": 68,
+      "tracked": true,
+      "local": "0000000000000000000000000000000000000000000000000000000000000000",
+      "incoming": "omitted",
+      "choice": "USE_VENDOR",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000",
+      "matches": true
+    },
+    {
+      "case": 69,
+      "tracked": true,
+      "local": "0000000000000000000000000000000000000000000000000000000000000000",
+      "incoming": "removed",
+      "choice": "UNRESOLVED",
+      "mode": "REMOVE_ON_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000",
+      "matches": true
+    },
+    {
+      "case": 70,
+      "tracked": true,
+      "local": "0000000000000000000000000000000000000000000000000000000000000000",
+      "incoming": "removed",
+      "choice": "KEEP_LOCAL",
+      "mode": "REMOVE_ON_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000",
+      "matches": true
+    },
+    {
+      "case": 71,
+      "tracked": true,
+      "local": "0000000000000000000000000000000000000000000000000000000000000000",
+      "incoming": "removed",
+      "choice": "USE_VENDOR",
+      "mode": "REMOVE_ON_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000",
+      "matches": true
+    },
+    {
+      "case": 72,
+      "tracked": true,
+      "local": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+      "incoming": "same",
+      "choice": "UNRESOLVED",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+      "matches": true
+    },
+    {
+      "case": 73,
+      "tracked": true,
+      "local": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+      "incoming": "same",
+      "choice": "KEEP_LOCAL",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+      "matches": true
+    },
+    {
+      "case": 74,
+      "tracked": true,
+      "local": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+      "incoming": "same",
+      "choice": "USE_VENDOR",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+      "matches": true
+    },
+    {
+      "case": 75,
+      "tracked": true,
+      "local": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+      "incoming": "new",
+      "choice": "UNRESOLVED",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "REPLACE",
+        "CONTENT": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "matches": true
+    },
+    {
+      "case": 76,
+      "tracked": true,
+      "local": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+      "incoming": "new",
+      "choice": "KEEP_LOCAL",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "REPLACE",
+        "CONTENT": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "matches": true
+    },
+    {
+      "case": 77,
+      "tracked": true,
+      "local": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+      "incoming": "new",
+      "choice": "USE_VENDOR",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "REPLACE",
+        "CONTENT": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "matches": true
+    },
+    {
+      "case": 78,
+      "tracked": true,
+      "local": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+      "incoming": "omitted",
+      "choice": "UNRESOLVED",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+      "matches": true
+    },
+    {
+      "case": 79,
+      "tracked": true,
+      "local": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+      "incoming": "omitted",
+      "choice": "KEEP_LOCAL",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+      "matches": true
+    },
+    {
+      "case": 80,
+      "tracked": true,
+      "local": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+      "incoming": "omitted",
+      "choice": "USE_VENDOR",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+      "matches": true
+    },
+    {
+      "case": 81,
+      "tracked": true,
+      "local": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+      "incoming": "removed",
+      "choice": "UNRESOLVED",
+      "mode": "REMOVE_ON_UPGRADE",
+      "native": {
+        "EFFECT": "DELETE",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000",
+      "matches": true
+    },
+    {
+      "case": 82,
+      "tracked": true,
+      "local": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+      "incoming": "removed",
+      "choice": "KEEP_LOCAL",
+      "mode": "REMOVE_ON_UPGRADE",
+      "native": {
+        "EFFECT": "DELETE",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000",
+      "matches": true
+    },
+    {
+      "case": 83,
+      "tracked": true,
+      "local": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+      "incoming": "removed",
+      "choice": "USE_VENDOR",
+      "mode": "REMOVE_ON_UPGRADE",
+      "native": {
+        "EFFECT": "DELETE",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000",
+      "matches": true
+    },
+    {
+      "case": 84,
+      "tracked": true,
+      "local": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+      "incoming": "same",
+      "choice": "UNRESOLVED",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+      "matches": true
+    },
+    {
+      "case": 85,
+      "tracked": true,
+      "local": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+      "incoming": "same",
+      "choice": "KEEP_LOCAL",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+      "matches": true
+    },
+    {
+      "case": 86,
+      "tracked": true,
+      "local": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+      "incoming": "same",
+      "choice": "USE_VENDOR",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+      "matches": true
+    },
+    {
+      "case": 87,
+      "tracked": true,
+      "local": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+      "incoming": "new",
+      "choice": "UNRESOLVED",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "REQUIRE_CHOICE",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "upstream_exit": 1,
+      "upstream_question": true,
+      "actual": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+      "matches": true
+    },
+    {
+      "case": 88,
+      "tracked": true,
+      "local": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+      "incoming": "new",
+      "choice": "KEEP_LOCAL",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+        "BACKUP": "VENDOR_BACKUP",
+        "BACKUP_CONTENT": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+        "NEXT_VENDOR": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+      "matches": true
+    },
+    {
+      "case": 89,
+      "tracked": true,
+      "local": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+      "incoming": "new",
+      "choice": "USE_VENDOR",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "REPLACE",
+        "CONTENT": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+        "BACKUP": "LOCAL_BACKUP",
+        "BACKUP_CONTENT": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+        "NEXT_VENDOR": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "matches": true
+    },
+    {
+      "case": 90,
+      "tracked": true,
+      "local": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+      "incoming": "omitted",
+      "choice": "UNRESOLVED",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+      "matches": true
+    },
+    {
+      "case": 91,
+      "tracked": true,
+      "local": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+      "incoming": "omitted",
+      "choice": "KEEP_LOCAL",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+      "matches": true
+    },
+    {
+      "case": 92,
+      "tracked": true,
+      "local": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+      "incoming": "omitted",
+      "choice": "USE_VENDOR",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+      "matches": true
+    },
+    {
+      "case": 93,
+      "tracked": true,
+      "local": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+      "incoming": "removed",
+      "choice": "UNRESOLVED",
+      "mode": "REMOVE_ON_UPGRADE",
+      "native": {
+        "EFFECT": "BACKUP_AND_DELETE",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "LOCAL_BACKUP",
+        "BACKUP_CONTENT": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000",
+      "matches": true
+    },
+    {
+      "case": 94,
+      "tracked": true,
+      "local": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+      "incoming": "removed",
+      "choice": "KEEP_LOCAL",
+      "mode": "REMOVE_ON_UPGRADE",
+      "native": {
+        "EFFECT": "BACKUP_AND_DELETE",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "LOCAL_BACKUP",
+        "BACKUP_CONTENT": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000",
+      "matches": true
+    },
+    {
+      "case": 95,
+      "tracked": true,
+      "local": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+      "incoming": "removed",
+      "choice": "USE_VENDOR",
+      "mode": "REMOVE_ON_UPGRADE",
+      "native": {
+        "EFFECT": "BACKUP_AND_DELETE",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "LOCAL_BACKUP",
+        "BACKUP_CONTENT": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000",
+      "matches": true
+    },
+    {
+      "case": 96,
+      "tracked": true,
+      "local": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "incoming": "same",
+      "choice": "UNRESOLVED",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "matches": true
+    },
+    {
+      "case": 97,
+      "tracked": true,
+      "local": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "incoming": "same",
+      "choice": "KEEP_LOCAL",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "matches": true
+    },
+    {
+      "case": 98,
+      "tracked": true,
+      "local": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "incoming": "same",
+      "choice": "USE_VENDOR",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "matches": true
+    },
+    {
+      "case": 99,
+      "tracked": true,
+      "local": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "incoming": "new",
+      "choice": "UNRESOLVED",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "matches": true
+    },
+    {
+      "case": 100,
+      "tracked": true,
+      "local": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "incoming": "new",
+      "choice": "KEEP_LOCAL",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "matches": true
+    },
+    {
+      "case": 101,
+      "tracked": true,
+      "local": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "incoming": "new",
+      "choice": "USE_VENDOR",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "matches": true
+    },
+    {
+      "case": 102,
+      "tracked": true,
+      "local": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "incoming": "omitted",
+      "choice": "UNRESOLVED",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "matches": true
+    },
+    {
+      "case": 103,
+      "tracked": true,
+      "local": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "incoming": "omitted",
+      "choice": "KEEP_LOCAL",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "matches": true
+    },
+    {
+      "case": 104,
+      "tracked": true,
+      "local": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "incoming": "omitted",
+      "choice": "USE_VENDOR",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "matches": true
+    },
+    {
+      "case": 105,
+      "tracked": true,
+      "local": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "incoming": "removed",
+      "choice": "UNRESOLVED",
+      "mode": "REMOVE_ON_UPGRADE",
+      "native": {
+        "EFFECT": "BACKUP_AND_DELETE",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "LOCAL_BACKUP",
+        "BACKUP_CONTENT": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000",
+      "matches": true
+    },
+    {
+      "case": 106,
+      "tracked": true,
+      "local": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "incoming": "removed",
+      "choice": "KEEP_LOCAL",
+      "mode": "REMOVE_ON_UPGRADE",
+      "native": {
+        "EFFECT": "BACKUP_AND_DELETE",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "LOCAL_BACKUP",
+        "BACKUP_CONTENT": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000",
+      "matches": true
+    },
+    {
+      "case": 107,
+      "tracked": true,
+      "local": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "incoming": "removed",
+      "choice": "USE_VENDOR",
+      "mode": "REMOVE_ON_UPGRADE",
+      "native": {
+        "EFFECT": "BACKUP_AND_DELETE",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "LOCAL_BACKUP",
+        "BACKUP_CONTENT": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000",
+      "matches": true
+    },
+    {
+      "case": 108,
+      "tracked": true,
+      "local": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "incoming": "same",
+      "choice": "UNRESOLVED",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "case": 109,
+      "tracked": true,
+      "local": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "incoming": "same",
+      "choice": "KEEP_LOCAL",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "case": 110,
+      "tracked": true,
+      "local": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "incoming": "same",
+      "choice": "USE_VENDOR",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "case": 111,
+      "tracked": true,
+      "local": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "incoming": "new",
+      "choice": "UNRESOLVED",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "REQUIRE_CHOICE",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "upstream_exit": 1,
+      "upstream_question": true,
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "case": 112,
+      "tracked": true,
+      "local": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "incoming": "new",
+      "choice": "KEEP_LOCAL",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "BACKUP": "VENDOR_BACKUP",
+        "BACKUP_CONTENT": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+        "NEXT_VENDOR": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "case": 113,
+      "tracked": true,
+      "local": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "incoming": "new",
+      "choice": "USE_VENDOR",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "REPLACE",
+        "CONTENT": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+        "BACKUP": "LOCAL_BACKUP",
+        "BACKUP_CONTENT": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "NEXT_VENDOR": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "matches": true
+    },
+    {
+      "case": 114,
+      "tracked": true,
+      "local": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "incoming": "omitted",
+      "choice": "UNRESOLVED",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "case": 115,
+      "tracked": true,
+      "local": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "incoming": "omitted",
+      "choice": "KEEP_LOCAL",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "case": 116,
+      "tracked": true,
+      "local": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "incoming": "omitted",
+      "choice": "USE_VENDOR",
+      "mode": "INSTALL_UPGRADE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "case": 117,
+      "tracked": true,
+      "local": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "incoming": "removed",
+      "choice": "UNRESOLVED",
+      "mode": "REMOVE_ON_UPGRADE",
+      "native": {
+        "EFFECT": "BACKUP_AND_DELETE",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "LOCAL_BACKUP",
+        "BACKUP_CONTENT": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000",
+      "matches": true
+    },
+    {
+      "case": 118,
+      "tracked": true,
+      "local": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "incoming": "removed",
+      "choice": "KEEP_LOCAL",
+      "mode": "REMOVE_ON_UPGRADE",
+      "native": {
+        "EFFECT": "BACKUP_AND_DELETE",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "LOCAL_BACKUP",
+        "BACKUP_CONTENT": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000",
+      "matches": true
+    },
+    {
+      "case": 119,
+      "tracked": true,
+      "local": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "incoming": "removed",
+      "choice": "USE_VENDOR",
+      "mode": "REMOVE_ON_UPGRADE",
+      "native": {
+        "EFFECT": "BACKUP_AND_DELETE",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "LOCAL_BACKUP",
+        "BACKUP_CONTENT": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000",
+      "matches": true
+    },
+    {
+      "case": 120,
+      "tracked": true,
+      "local": "0000000000000000000000000000000000000000000000000000000000000000",
+      "incoming": "omitted",
+      "choice": "UNRESOLVED",
+      "mode": "REMOVE_PACKAGE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000",
+      "matches": true
+    },
+    {
+      "case": 121,
+      "tracked": true,
+      "local": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+      "incoming": "omitted",
+      "choice": "UNRESOLVED",
+      "mode": "REMOVE_PACKAGE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+      "matches": true
+    },
+    {
+      "case": 122,
+      "tracked": true,
+      "local": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+      "incoming": "omitted",
+      "choice": "UNRESOLVED",
+      "mode": "REMOVE_PACKAGE",
+      "native": {
+        "EFFECT": "RETAIN",
+        "CONTENT": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+      "matches": true
+    },
+    {
+      "case": 123,
+      "tracked": true,
+      "local": "0000000000000000000000000000000000000000000000000000000000000000",
+      "incoming": "omitted",
+      "choice": "UNRESOLVED",
+      "mode": "PURGE_PACKAGE",
+      "native": {
+        "EFFECT": "DELETE",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000",
+      "matches": true
+    },
+    {
+      "case": 124,
+      "tracked": true,
+      "local": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+      "incoming": "omitted",
+      "choice": "UNRESOLVED",
+      "mode": "PURGE_PACKAGE",
+      "native": {
+        "EFFECT": "DELETE",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000",
+      "matches": true
+    },
+    {
+      "case": 125,
+      "tracked": true,
+      "local": "efb83f2a277e9f49b38efd505f5cbb93885e721b6bd16b788937c9396174c006",
+      "incoming": "omitted",
+      "choice": "UNRESOLVED",
+      "mode": "PURGE_PACKAGE",
+      "native": {
+        "EFFECT": "DELETE",
+        "CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "BACKUP": "NO_BACKUP",
+        "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+        "NEXT_VENDOR": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "upstream_exit": 0,
+      "upstream_question": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000",
+      "matches": true
+    }
+  ],
+  "source_debs": {
+    "old": "105c182fb8f62687cd4548ed7cab90fe072faaa22ad26e05861cbb80ee6210c2",
+    "same": "e04833ad0bebe23c57db221e25d623da32f1ee747f888ad80be10d5e11879c1d",
+    "new": "d2dbe0e608203aa235ae5f0ad09221997a5bf8c58a804576bb82c883b2aa0c2d",
+    "removed": "e729a53fd61ee5c5802f001fd945a53137e6d45fa4a3a21cfa605fec1be1853c",
+    "omitted": "b32a783c7f0b393c3d4757ea816bbc35e6f652811acb060b2f526f586a8f26fc"
+  }
+}

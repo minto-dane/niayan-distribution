@@ -1,0 +1,5 @@
+Running as unit: run-p716131-i716431.scope; invocation ID: 28f59a4768d54a5aa823353d4263a968
+limited-exec: {"scope": "run-p716131-i716431.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+FAIL: native conffiles byte-nameINVALID_INPUT
+
+raised TEST_SUPPORT.FAILURE : native conffiles byte-nameINVALID_INPUT

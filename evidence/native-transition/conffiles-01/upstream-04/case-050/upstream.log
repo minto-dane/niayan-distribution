@@ -1,0 +1,17 @@
+Selecting previously unselected package conf-fixture.
+(Reading database ... 0 files and directories currently installed.)
+Preparing to unpack .../upstream-04/same.deb ...
+Unpacking conf-fixture (2) ...
+Setting up conf-fixture (2) ...
+Installing new version of config file /etc/fixture.conf ...
+
+Configuration file '/etc/fixture.conf' (actually '/home/nia/devbox/niaos/.work/native-conffiles-01/upstream-04/case-050/root/etc/fixture.conf')
+ ==> File on system created by you or by a script.
+ ==> File also in package provided by package maintainer.
+   What would you like to do about it ?  Your options are:
+    Y or I  : install the package maintainer's version
+    N or O  : keep your currently-installed version
+      D     : show the differences between the versions
+      Z     : start a shell to examine the situation
+ The default action is to keep your current version.
+*** fixture.conf (Y/I/N/O/D/Z) [default=N] ? 

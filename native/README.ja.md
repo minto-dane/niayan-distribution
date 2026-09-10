@@ -1,5 +1,8 @@
 # Niaパッケージ管理への完全置換
 
+[設定ファイル宣言と三者比較](conffiles.ja.md)で、元DEBの設定と利用者の編集/削除を区別する。
+全属性・効果・実rootへの反映と公開認可への接続は引き続き必要である。
+
 [現在site trustによる供給計画](supply-planner.ja.md)は保持原本を実observerへ渡し、
 同じCAS予約で供給map/保持policyへ接続する。公開controllerと全managed認可は別の未完工程である。
 

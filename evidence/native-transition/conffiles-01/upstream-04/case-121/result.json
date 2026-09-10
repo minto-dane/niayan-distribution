@@ -1,0 +1,19 @@
+{
+  "case": 121,
+  "tracked": true,
+  "local": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+  "incoming": "omitted",
+  "choice": "UNRESOLVED",
+  "mode": "REMOVE_PACKAGE",
+  "native": {
+    "EFFECT": "RETAIN",
+    "CONTENT": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+    "BACKUP": "NO_BACKUP",
+    "BACKUP_CONTENT": "0000000000000000000000000000000000000000000000000000000000000000",
+    "NEXT_VENDOR": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee"
+  },
+  "upstream_exit": 0,
+  "upstream_question": false,
+  "actual": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+  "matches": true
+}

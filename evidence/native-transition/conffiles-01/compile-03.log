@@ -1,0 +1,10 @@
+Running as unit: run-p718835-i719135.scope; invocation ID: 5380354fdb7b49b2bd51a990a5e2ab0a
+limited-exec: {"scope": "run-p718835-i719135.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Compile
+   [Ada]          run_conffile_tests.adb
+   [Ada]          pkg_deb_conffiles.adb
+Bind
+   [gprbind]      run_conffile_tests.bexch
+   [Ada]          run_conffile_tests.ali
+Link
+   [link]         run_conffile_tests.adb

@@ -1,0 +1,6 @@
+{
+  "driver_sha256": "16b9852f15069ea5f141232f8b82056024a0ca3fc1aa8916aaaef20006ec7e94",
+  "script_sha256": "e6aebf65890970b4ba80d81304f6f136ac92ed7d36b9cd122b5a3cdaa07eccdf",
+  "scope": "final upstream-04 compares actual script-free installs and config metadata in unprivileged private roots",
+  "tool_version": "dpkg 1.22.22"
+}

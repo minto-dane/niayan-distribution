@@ -1,0 +1,9 @@
+Running as unit: run-p724842-i725142.scope; invocation ID: d871a2d0cff147aeb9555533f5d3935d
+limited-exec: {"scope": "run-p724842-i725142.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Compile
+   [Ada]          pkg_conffile_transition.adb
+Bind
+   [gprbind]      run_conffile_tests.bexch
+   [Ada]          run_conffile_tests.ali
+Link
+   [link]         run_conffile_tests.adb

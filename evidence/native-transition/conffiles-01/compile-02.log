@@ -1,0 +1,17 @@
+Running as unit: run-p715848-i716148.scope; invocation ID: c928edfcd6314932a27c83373597a2d5
+limited-exec: {"scope": "run-p715848-i716148.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Compile
+   [Ada]          run_conffile_tests.adb
+   [C]            pkg_deb_stream.c
+   [C]            archive_observer.c
+   [C]            pkg_deb_decode.c
+   [C]            root_preparation.c
+   [Ada]          pkg_conffile_transition.adb
+   [Ada]          pkg_deb_conffiles.adb
+Bind
+   [gprbind]      run_conffile_tests.bexch
+   [Ada]          run_conffile_tests.ali
+Link
+   [archive]      libtests.a
+   [index]        libtests.a
+   [link]         run_conffile_tests.adb
