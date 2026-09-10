@@ -1,0 +1,13 @@
+{
+  "files": {
+    "pkgcore/runtime/archive_observer.c": "c93dd637dafb7fd7e691ca10138e4432ecde28403e3b4a4adce33c2150c6e8a0",
+    "pkgcore/tests/observer-transport/check.c": "cc5a35c076e1e2a52551704be5d94b0aa218f48f218168abf1597d02a4cf1809"
+  },
+  "instrumentation": [
+    "address",
+    "undefined"
+  ],
+  "compile_command": "cc -std=c11 -Wall -Wextra -Werror -O1 -g -fstack-protector-strong -fsanitize=address,undefined -fno-omit-frame-pointer pkgcore/tests/observer-transport/check.c -lsodium -o <private-output>",
+  "ci_registration": "pkgcore/ci/test-all.sh",
+  "binary_sha256": "a9e71bae798a869447a32c09b22275b3c583ba1c1ad8f78f95d8645f3eb96cd6"
+}

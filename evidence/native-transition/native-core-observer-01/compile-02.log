@@ -1,0 +1,16 @@
+Running as unit: run-p706635-i706935.scope; invocation ID: 40d6a7e4e47946ba81c3e467935bae4a
+limited-exec: {"scope": "run-p706635-i706935.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Compile
+   [Ada]          run_archive_observer_tests.adb
+   [C]            pkg_deb_stream.c
+   [C]            archive_observer.c
+   [C]            pkg_deb_decode.c
+   [C]            root_preparation.c
+   [Ada]          pkg_archive_observer.adb
+Bind
+   [gprbind]      run_archive_observer_tests.bexch
+   [Ada]          run_archive_observer_tests.ali
+Link
+   [archive]      libtests.a
+   [index]        libtests.a
+   [link]         run_archive_observer_tests.adb

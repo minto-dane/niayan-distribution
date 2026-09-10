@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/opt/nia-observer-test/distribution/native/worker/check_archive_observer.py", line 240, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/opt/nia-observer-test/distribution/native/worker/check_archive_observer.py", line 77, in main
+    return client(args.client_output, args.native_mode)
+  File "/opt/nia-observer-test/distribution/native/worker/check_archive_observer.py", line 20, in client
+    from deb_archive import ar_members, decompress, tar_inventory, MAX_CONTROL
+ModuleNotFoundError: No module named 'deb_archive'

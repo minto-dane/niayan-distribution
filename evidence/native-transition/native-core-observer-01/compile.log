@@ -1,0 +1,11 @@
+Running as unit: run-p706478-i706778.scope; invocation ID: ad337507a3ed40f8bf066c22a158faa9
+limited-exec: {"scope": "run-p706478-i706778.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Compile
+   [Ada]          run_archive_observer_tests.adb
+run_archive_observer_tests.adb:18:48: error: operator for type "Interfaces.Unsigned_32" is not directly visible
+run_archive_observer_tests.adb:18:48: error: add with_clause and use_clause for "Interfaces"
+run_archive_observer_tests.adb:50:21: error: operator for type "Interfaces.C.unsigned" is not directly visible
+run_archive_observer_tests.adb:50:21: error: add with_clause and use_clause for "C"
+run_archive_observer_tests.adb:66:44: error: operator for type "Interfaces.Unsigned_32" is not directly visible
+run_archive_observer_tests.adb:66:44: error: add with_clause and use_clause for "Interfaces"
+gprbuild: *** compilation phase failed

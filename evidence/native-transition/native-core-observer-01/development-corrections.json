@@ -1,0 +1,8 @@
+{
+  "initial_compile": "Ada operator visibility missing; corrected before final successful compilation",
+  "vm-native-observer-01": "test helper imported deb_archive before module search path was set; stopped before native request; fixed by deferring fallback-only import",
+  "vm-native-observer-02": "final driver additionally binds receipt through native catalog/closure and supply map/retained policy; all 13 cases passed",
+  "ci_generation": "first generation caught missing ADR registry; registered ADR and added required separate headings, then validation passed",
+  "formal_proof": "proof.gpr mathematical source directories unchanged; not rerun",
+  "full_suite": "unchanged unrelated suites not rerun"
+}

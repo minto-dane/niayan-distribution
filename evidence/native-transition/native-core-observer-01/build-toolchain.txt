@@ -1,0 +1,9 @@
+gcc-14	14.2.0-19
+gnat-14	14.2.0-19
+gprbuild	2025.0.0-4
+libarchive-dev:amd64	3.7.4-4+deb13u1
+libasan8:amd64	14.2.0-19
+libc6-dev:amd64	2.41-12+deb13u3
+libgnat-14:amd64	14.2.0-19
+libsodium-dev:amd64	1.0.18-1+deb13u1
+libubsan1:amd64	14.2.0-19

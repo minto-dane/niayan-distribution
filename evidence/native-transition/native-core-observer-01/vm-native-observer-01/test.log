@@ -1,0 +1,12 @@
+rehash: warning: skipping ca-certificates.crt, it does not contain exactly one certificate or CRL
+Traceback (most recent call last):
+  File "/var/tmp/nia-observer/runtime/distribution/native/worker/check_archive_observer.py", line 240, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/var/tmp/nia-observer/runtime/distribution/native/worker/check_archive_observer.py", line 191, in main
+    run_case('accepted', accepted=True)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/tmp/nia-observer/runtime/distribution/native/worker/check_archive_observer.py", line 178, in run_case
+    assert run.returncode == (0 if accepted else 2), (name, run.returncode, run.stdout, run.stderr)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('accepted', 1, '', 'Traceback (most recent call last):\n  File "/opt/nia-observer-test/distribution/native/worker/check_archive_observer.py", line 240, in <module>\n    raise SystemExit(main())\n                     ~~~~^^\n  File "/opt/nia-observer-test/distribution/native/worker/check_archive_observer.py", line 77, in main\n    return client(args.client_output, args.native_mode)\n  File "/opt/nia-observer-test/distribution/native/worker/check_archive_observer.py", line 20, in client\n    from deb_archive import ar_members, decompress, tar_inventory, MAX_CONTROL\nModuleNotFoundError: No module named \'deb_archive\'\n')

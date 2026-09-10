@@ -1,0 +1,12 @@
+{
+  "source_subject": "e14684a7a7a689fb3071ed2e0bd8ef55e26a9cf554e4aa4ec22213d041320917",
+  "compile_inputs_equal": true,
+  "compile_files": 362,
+  "vm_source_inputs_equal": true,
+  "vm_source_files": 65,
+  "vm_inputs": 79,
+  "driver_sha256": "5c919b286db1c395f14e3870937561610e797e9d39da37f595dcb39f66c16692",
+  "service_package_inputs_unchanged": 22,
+  "service_deb_sha256": "3d393d248edf558e4b6344e2dddc8db280d4cdd308a05a519396ea128bd32c6b",
+  "mismatches": []
+}

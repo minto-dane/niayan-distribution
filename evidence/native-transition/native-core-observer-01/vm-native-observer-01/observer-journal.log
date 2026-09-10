@@ -1,0 +1,8 @@
+Starting niaos-archive-observer-provision.service - NiaOS explicit archive trust cache provisioning...
+niaos-archive-observer-provision.service: Deactivated successfully.
+Finished niaos-archive-observer-provision.service - NiaOS explicit archive trust cache provisioning.
+Starting niaos-archive-observer-provision.service - NiaOS explicit archive trust cache provisioning...
+archive-observer: startup or provisioning rejected
+niaos-archive-observer-provision.service: Main process exited, code=exited, status=1/FAILURE
+niaos-archive-observer-provision.service: Failed with result 'exit-code'.
+Failed to start niaos-archive-observer-provision.service - NiaOS explicit archive trust cache provisioning.

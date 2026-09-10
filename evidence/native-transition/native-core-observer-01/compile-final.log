@@ -1,0 +1,9 @@
+Running as unit: run-p707141-i707441.scope; invocation ID: 853fc2274df14e1b9dfbf2bba7cf36a3
+limited-exec: {"scope": "run-p707141-i707441.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Compile
+   [Ada]          run_archive_observer_tests.adb
+Bind
+   [gprbind]      run_archive_observer_tests.bexch
+   [Ada]          run_archive_observer_tests.ali
+Link
+   [link]         run_archive_observer_tests.adb
