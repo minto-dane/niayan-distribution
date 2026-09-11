@@ -1,0 +1,7 @@
+Linux niaos-builder 6.12.107+deb13-cloud-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.107-1 (2026-08-29) x86_64 GNU/Linux
+PASS physical configured root keep
+PASS physical configured root vendor
+PASS physical configured root links
+PASS physical configured root deleted
+PASS physical configured root restored
+PASS physical configured root empty

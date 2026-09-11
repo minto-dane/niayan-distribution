@@ -1,0 +1,54 @@
+{
+  "files": [
+    {
+      "path": "pkgcore/tests/check_configured_root.py",
+      "sha256": "bfa4795a677b1c85db7eca94cc23987cb44a4c285ea97ba5a34da2fc58c7c0d2"
+    },
+    {
+      "path": "pkgcore/tests/check_configuration_entry.py",
+      "sha256": "daffce468de764f4fc5263f30c647fc1505eded4406bb62d94adcd51f31c7c25"
+    },
+    {
+      "path": "pkgcore/tests/check_tar_output.py",
+      "sha256": "e793e66c662b2f2d756c017a6fbaea50f4160e981c64e13a3bdc6895304d00ab"
+    },
+    {
+      "path": "pkgcore/tests/compare_root_archive.py",
+      "sha256": "c6670e9276d4aa0d7c6f4ede2f59e1e99d45bf0d926ea4fa4c4d1eccd7c9b36a"
+    },
+    {
+      "path": "pkgcore/tests/make_deb_control_fixtures.py",
+      "sha256": "2a53d1d99cafd825120c063c8ccb0aa9a41e3017b246bc627d56ad1ba779ecc6"
+    },
+    {
+      "path": "pkgcore/tests/make_conffile_fixtures.py",
+      "sha256": "5b3c2364df523c952752cb4737f4dded3f3f2bdb02022bc047caf57e8f8e4ac6"
+    },
+    {
+      "path": "pkgcore/tests/make_deb_payload_fixtures.py",
+      "sha256": "08a00e4075f2f84fe14de20175bbf975178b7babfb3cb9e118b892f498eb7819"
+    },
+    {
+      "path": "distribution/native/worker/check_configured_root.py",
+      "sha256": "9cf5dc47df57293a3dda2e9aaeb2be3487c6b26e9a7b09da50172a8180c41cb1"
+    },
+    {
+      "path": "distribution/native/worker/root_extract.c",
+      "sha256": "5cce5310052792369739b223a2861e2b947b6bf6e9a7b1b0e735251c2ca0649e"
+    },
+    {
+      "path": "distribution/native/worker/tar_clocks.c",
+      "sha256": "9c4d1fcc6fca599e8e703bbf9e98b2f113e7f3120f61b1f439b651a317fb15a1"
+    },
+    {
+      "path": "distribution/native/worker/tar_clocks.h",
+      "sha256": "c97a4290629dda99b92c14a21a3b795c4233741d7745f0abcbf6f1acf1ab1f2b"
+    },
+    {
+      "path": "distribution/native/worker/Makefile",
+      "sha256": "4aa001706d4ed2a9d41401b7da1cdeaeb9e365f208053aa685d62751591844b8"
+    }
+  ],
+  "all_match": true,
+  "worker_unchanged": true
+}

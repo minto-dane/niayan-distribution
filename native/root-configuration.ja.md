@@ -40,4 +40,4 @@ Read_Entry/Read_Choiceはlive再確認ではない。実行前に元の全選択
 特権observerとroot/contextの真正性、全managed認可、世代保持と復旧/boot公開も必要である。
 元NIAROOT1/2の成功や配置の検査成功を、これらの認可・適用・公開の成功に置き換えない。
 
-設定entryの出力codecは[PAX出力](configuration-tar.ja.md)を参照。全rootの直列化は未接続である。
+設定entryの出力codecは[PAX出力](configuration-tar.ja.md)、全rootの生成は[設定済みroot](configured-root.ja.md)を参照。

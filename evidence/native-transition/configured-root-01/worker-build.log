@@ -1,0 +1,6 @@
+Running as unit: run-p928386-i928686.scope; invocation ID: 9bde801806da41c4897e7bc9bf08ab30
+limited-exec: {"scope": "run-p928386-i928686.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+make: Entering directory '/workspace/worker'
+mkdir -p /workspace/build
+cc -D_FORTIFY_SOURCE=3 -O2 -g -std=c11 -Wall -Wextra -Werror -fstack-protector-strong -fPIE -pie -Wl,-z,relro,-z,now,-z,noexecstack root_extract.c tar_clocks.c -larchive -lsodium -o /workspace/build/root-extract
+make: Leaving directory '/workspace/worker'

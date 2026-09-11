@@ -1,0 +1,4 @@
+Running as unit: run-p930667-i930967.scope; invocation ID: 8a0af57046ab451f9eecdebbb5f35f0e
+limited-exec: {"scope": "run-p930667-i930967.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+PASS conffile fixtures: 25
+PASS six complete configured roots, original spans, decisions and exact transitive closures

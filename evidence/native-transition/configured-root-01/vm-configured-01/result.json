@@ -1,0 +1,69 @@
+{
+  "result": "pass",
+  "cases": [
+    {
+      "name": "keep",
+      "archive": "4f47151cce949bbab36be35281792af8bb7d5f647ace421c5cc5d02d17bf25b9",
+      "entries": 4,
+      "exact_namespace": true,
+      "original_and_configured_content": true,
+      "numeric_permissions_and_times": true,
+      "configured_attributes": true,
+      "hardlinks": true
+    },
+    {
+      "name": "vendor",
+      "archive": "e6936a69c87e53735d4b135cd5636b9d7f762a976b86b40903b48483747225ff",
+      "entries": 4,
+      "exact_namespace": true,
+      "original_and_configured_content": true,
+      "numeric_permissions_and_times": true,
+      "configured_attributes": true,
+      "hardlinks": true
+    },
+    {
+      "name": "links",
+      "archive": "626eab43a3b67b936e5f4ea556aa3f3abc2ead3ccb336a62e5671dd95334f42e",
+      "entries": 8,
+      "exact_namespace": true,
+      "original_and_configured_content": true,
+      "numeric_permissions_and_times": true,
+      "configured_attributes": true,
+      "hardlinks": true
+    },
+    {
+      "name": "deleted",
+      "archive": "6590ca7ca2b365d4341483fcc6f160eb329f028fc9eda822b3029b86784ee1c9",
+      "entries": 3,
+      "exact_namespace": true,
+      "original_and_configured_content": true,
+      "numeric_permissions_and_times": true,
+      "configured_attributes": true,
+      "hardlinks": true
+    },
+    {
+      "name": "restored",
+      "archive": "e65926165b149284aae9bb476b828fbb09db18c83fcae0c3e9d8d0d0fef9f093",
+      "entries": 3,
+      "exact_namespace": true,
+      "original_and_configured_content": true,
+      "numeric_permissions_and_times": true,
+      "configured_attributes": true,
+      "hardlinks": true
+    },
+    {
+      "name": "empty",
+      "archive": "afd5992bab9fab2d9e08f0f205098abcbba5c3b476f40ad0cc139410f5374017",
+      "entries": 4,
+      "exact_namespace": true,
+      "original_and_configured_content": true,
+      "numeric_permissions_and_times": true,
+      "configured_attributes": true,
+      "hardlinks": true
+    }
+  ],
+  "published": false,
+  "production_authorization": false,
+  "actual_boot": false,
+  "ctime_birthtime_restored": false
+}

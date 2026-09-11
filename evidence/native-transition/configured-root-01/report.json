@@ -1,0 +1,63 @@
+{
+  "format": 1,
+  "result": "pass",
+  "source_subject": "77aeec4ab488bbcb6fcc0fd3e9e1becc45ed0376b5ec75b2fbd7faa46dee33d6",
+  "decision": "ADR-0105",
+  "assertions": {
+    "root_configuration_and_stream": 190
+  },
+  "execution": {
+    "configured_roots": 6,
+    "physical_extractions": 6,
+    "total_physical_entries": 26,
+    "independent_original_spans": true,
+    "exact_transitive_closures": true,
+    "saved_output_loss_refused_without_reconstruction": true,
+    "explicit_rebuild_identity": true,
+    "live_change_deadline_context_capacity_refusals": true,
+    "empty_regular_distinct_from_missing": true,
+    "large_original_content_bytes": 65537
+  },
+  "formats": {
+    "manifest": "NIACRT01",
+    "retention": "NIACRC01",
+    "original_root_formats_unchanged": true
+  },
+  "source_inputs": {
+    "compile": 395,
+    "fixtures": 26,
+    "existing_debs_unchanged": 24,
+    "new_debs": 1,
+    "python_and_worker": 12
+  },
+  "artifacts": {
+    "workspace/pkgcore/build/test-bin/run_root_configuration_tests": "1268b72cc6c564141cb1364cceb8d1c44acfa561a68c5a5f4e6830ddcd5bf79a",
+    "workspace/build/root-extract": "ed188c4f23f9078ecaecfff829de6f4a53ba533f0a36a77c6189d5a09a9a123d",
+    "runtime.tar": "e5e7e1774c9ce225a5bf87f48bfc635fa1971a05e20b33de7e91d2f87a98cdca"
+  },
+  "environment": {
+    "dev_image": "sha256:7f92f64938b87b862dd962a93b558fb0caea13493745c684fbddfc190a723617",
+    "qemu_image": "sha256:7f92f64938b87b862dd962a93b558fb0caea13493745c684fbddfc190a723617",
+    "memory_max": 3221225472,
+    "memory_swap_max": 0,
+    "cpu_quota": "100%",
+    "pids_max": 128,
+    "guest_ram_mib": 2048,
+    "guest_vcpus": 1,
+    "filesystem": "32 MiB ext4 file inside disposable VM; nodev,nosuid,noexec",
+    "worker_source_unchanged": true,
+    "worker_bytes_equal_prior_private_build": true
+  },
+  "scope_notes": [
+    "Initial test-01 passed 174 assertions; final test-02 adds explicit loss/rebuild, capacity, stale source, empty file and large original span cases.",
+    "The independent oracle is repeated in the pinned environment to exercise the standard CI command; it is the same six cases.",
+    "No production plan, root activation, pin or authenticated consent is created; Verify still requires live proposals."
+  ],
+  "production_authorization": false,
+  "generation_integration": false,
+  "durable_recovery_loader": false,
+  "boot_switched": false,
+  "full_suite_repeated": false,
+  "formal_proof": false,
+  "github_published": false
+}
