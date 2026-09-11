@@ -1,0 +1,6 @@
+Running as unit: run-p761472-i761772.scope; invocation ID: 300b58f9ef7e4f2d95e80970ea469e8c
+limited-exec: {"scope": "run-p761472-i761772.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+mkdir -p build-sanitized
+cc -D_FORTIFY_SOURCE=3 -O1 -g -std=c11 -Wall -Wextra -Werror -fsanitize=address,undefined -fno-omit-frame-pointer -fsanitize=address,undefined check_tar_clocks.c tar_clocks.c -larchive -o build-sanitized/check-tar-clocks
+python3 -B check_tar_clocks.py --driver build-sanitized/check-tar-clocks
+PASS tar clocks: 34 independent wire cases (signed limits are format checks only)

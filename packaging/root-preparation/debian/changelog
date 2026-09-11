@@ -1,3 +1,10 @@
+niaos-root-preparation (0.2.1) unstable; urgency=medium
+
+  * Apply canonical signed tar clocks before extraction and verification.
+  * Include bounded clock parsing and independent wire tests in source builds.
+
+ -- NiaOS Developers <developers@niaos.invalid>  Thu, 10 Sep 2026 20:00:00 +0000
+
 niaos-root-preparation (0.2.0) unstable; urgency=medium
 
   * Add explicit internal native storage bootstrap with durable intent.

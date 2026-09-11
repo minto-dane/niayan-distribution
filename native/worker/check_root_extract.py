@@ -16,7 +16,7 @@ import tempfile
 import time
 
 
-def archive():
+def archive(negative=False):
     stream = io.BytesIO()
     with tarfile.open(fileobj=stream, mode='w', format=tarfile.PAX_FORMAT) as writer:
         def entry(name, kind=tarfile.REGTYPE, mode=0o640, uid=42, gid=43,
@@ -28,13 +28,17 @@ def archive():
             item.pax_headers = pax or {}
             item.size = len(content) if kind == tarfile.REGTYPE else 0
             writer.addfile(item, io.BytesIO(content) if item.size else None)
-        entry('.', tarfile.DIRTYPE, 0o755, 0, 0)
-        entry('etc', tarfile.DIRTYPE, 0o2750)
+        entry('.', tarfile.DIRTYPE, 0o755, 0, 0, pax={
+            'mtime': '-41.876543211', 'atime': '-0.999999999'} if negative else None)
+        entry('etc', tarfile.DIRTYPE, 0o2750, pax={
+            'mtime': '0.000000042', 'atime': '-42'} if negative else None)
         entry('etc/value', content=b'value\x00\xff', pax={
-            'mtime': '1700000000.000000007', 'atime': '1700000001.000000009',
+            'mtime': '-0.000000001' if negative else '1700000000.000000007',
+            'atime': '-41.876543211' if negative else '1700000001.000000009',
             'SCHILY.xattr.user.demo': 'value',
             'SCHILY.acl.access': 'user::rw-,user:44:r--,group::r--,mask::r--,other::---'})
-        entry('sym', tarfile.SYMTYPE, 0o777, link='etc/value')
+        entry('sym', tarfile.SYMTYPE, 0o777, link='etc/value', pax={
+            'mtime': '-0.999999999', 'atime': '-0.000000001'} if negative else None)
         entry('alias', tarfile.LNKTYPE, link='etc/value')
         entry('fifo', tarfile.FIFOTYPE, 0o600)
         entry('character', tarfile.CHRTYPE, 0o600, major=1, minor=3)
@@ -44,7 +48,8 @@ def archive():
     return stream.getvalue(), 10
 
 
-def run(worker, base, raw, count, *, digest=None, deadline=None, occupied=False, writable=False):
+def run(worker, base, raw, count, *, digest=None, deadline=None, occupied=False, writable=False,
+        negative=False):
     # No production socket, device path or installed state is used.
     with tempfile.TemporaryDirectory(prefix='root-extract-', dir=base) as work:
         parent = Path(work)
@@ -78,7 +83,20 @@ def run(worker, base, raw, count, *, digest=None, deadline=None, occupied=False,
             # Capture times before the independent Python read changes atime.
             info = value.stat()
             assert (info.st_uid, info.st_gid, stat.S_IMODE(info.st_mode)) == (42, 43, 0o640)
-            assert (info.st_mtime_ns, info.st_atime_ns) == (1700000000000000007, 1700000001000000009)
+            expected = (-1, -41876543211) if negative else (1700000000000000007, 1700000001000000009)
+            assert (info.st_mtime_ns, info.st_atime_ns) == expected
+            if negative:
+                observed = {}
+                for name, expected in [('.', (-41876543211, -999999999)),
+                                       ('etc', (42, -42000000000)),
+                                       ('sym', (-999999999, -1)),
+                                       ('alias', (-1, -41876543211))]:
+                    item = (target / name).lstat()
+                    actual = (item.st_mtime_ns, item.st_atime_ns)
+                    assert actual == expected, (name, actual, expected)
+                    observed[name] = actual
+                observed['etc/value'] = (info.st_mtime_ns, info.st_atime_ns)
+                record['observed_clock_nanoseconds'] = observed
             assert value.read_bytes() == b'value\x00\xff'
             assert os.getxattr(value, 'user.demo') == b'value'
             assert os.getxattr(value, 'system.posix_acl_access')
@@ -91,7 +109,7 @@ def run(worker, base, raw, count, *, digest=None, deadline=None, occupied=False,
             assert stat.S_ISBLK(block.st_mode) and (os.major(block.st_rdev), os.minor(block.st_rdev)) == (8, 1)
             assert (target / '日本語').read_bytes() == b'utf8'
             assert (target / 'raw-\udcff').read_bytes() == b'bytes'
-            assert target.stat().st_mtime_ns == 1700000000000000000
+            assert target.stat().st_mtime_ns == (-41876543211 if negative else 1700000000000000000)
             # Device nodes are observed with lstat only; never opened.
             record['independent_filesystem_check'] = 'pass'
         else:
@@ -114,6 +132,9 @@ def main():
     cases = {}
     cases['full-linux-root'] = run(args.worker, args.target_base, raw, count)
     assert cases['full-linux-root']['returncode'] == 0, cases['full-linux-root']
+    negative_raw, negative_count = archive(negative=True)
+    cases['negative-clocks'] = run(args.worker, args.target_base, negative_raw, negative_count, negative=True)
+    assert cases['negative-clocks']['returncode'] == 0, cases['negative-clocks']
     for name, changes in [('wrong-hash', dict(digest='0' * 64)),
             ('wrong-count', dict(count=count + 1)), ('expired', dict(deadline=0)),
             ('occupied-target', dict(occupied=True)), ('writable-input', dict(writable=True))]:
@@ -123,7 +144,7 @@ def main():
         assert cases[name]['returncode'] != 0, name
     args.report.write_text(json.dumps(dict(result='pass', cases=cases,
         production_authorization=False, actual_boot=False), indent=2) + '\n')
-    print('PASS root extraction: full filesystem observation and five refusal cases')
+    print('PASS root extraction: positive and negative clock roots, full filesystem observation, five refusal cases')
 
 
 if __name__ == '__main__':

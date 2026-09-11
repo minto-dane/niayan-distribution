@@ -1,0 +1,133 @@
+{
+  "result": "pass",
+  "worker": {
+    "distribution/native/worker/root_extract.c": "c3440f25c427a186f47082607b6b7ade790bb3602f92a3a79327e1a0ed37db76",
+    "distribution/native/worker/tar_clocks.c": "9c4d1fcc6fca599e8e703bbf9e98b2f113e7f3120f61b1f439b651a317fb15a1",
+    "distribution/native/worker/tar_clocks.h": "c97a4290629dda99b92c14a21a3b795c4233741d7745f0abcbf6f1acf1ab1f2b",
+    "distribution/native/worker/check_tar_clocks.c": "5418e90a66e9d1fa5c1d5a1b9452af730816771db598e5418b9348a37a696ded",
+    "distribution/native/worker/Makefile": "4aa001706d4ed2a9d41401b7da1cdeaeb9e365f208053aa685d62751591844b8",
+    "distribution/native/worker/check_tar_clocks.py": "20f724f654decd129987c4a202ec1dd4a960863a4b6d7d7b7a52f7c464d09739",
+    "distribution/native/worker/check_root_extract.py": "e378149a97002d3b4f044a9cfb4ad57d4f350924b3b85f45ec5ec91fd2e59380"
+  },
+  "packaged_files": 23,
+  "package_manifest": {
+    "format": 1,
+    "files": {
+      "debian/changelog": {
+        "source": "packaging/root-preparation/debian/changelog",
+        "sha256": "bac8b988ea17727484b06c2e64786740ebc0ad7cf504d102d82767d98fe23b6a",
+        "mode": 420
+      },
+      "debian/control": {
+        "source": "packaging/root-preparation/debian/control",
+        "sha256": "72c938f7a282ef4b358971b0b09d4e515759b070a672cb60f5c05b5e615c97a6",
+        "mode": 420
+      },
+      "debian/copyright": {
+        "source": "packaging/root-preparation/debian/copyright",
+        "sha256": "d02b877c8e6ddaba077bb74845e145ccbc74e9a3be7c63560b6ac5baad14d03f",
+        "mode": 420
+      },
+      "debian/niaos-root-preparation.install": {
+        "source": "packaging/root-preparation/debian/niaos-root-preparation.install",
+        "sha256": "0d7b758d59041f0635e6dc626c80a39050c592c86cda2992af2799cd38c9b28a",
+        "mode": 420
+      },
+      "debian/niaos-root-preparation.service": {
+        "source": "packaging/root-preparation/debian/niaos-root-preparation.service",
+        "sha256": "2a42b2a281cd490b172c94acc78710df54232a988c441e1f96606f348be0816e",
+        "mode": 420
+      },
+      "debian/niaos-root-preparation.socket": {
+        "source": "packaging/root-preparation/debian/niaos-root-preparation.socket",
+        "sha256": "f9d4b6daf88cc87ae7b81818858e1f9a562ffdc438a967cc21db89efd4c1ec70",
+        "mode": 420
+      },
+      "debian/niaos-root-preparation.sysusers": {
+        "source": "packaging/root-preparation/debian/niaos-root-preparation.sysusers",
+        "sha256": "acf4e9ab0c6534bbd6022eff8b4e7a491b3dfc4f17ac0bf8e852084a54dc075c",
+        "mode": 420
+      },
+      "debian/rules": {
+        "source": "packaging/root-preparation/debian/rules",
+        "sha256": "fcb29f27939b38220a391a252552e5b691cf5add6c5b1473136c1ee0205c8a46",
+        "mode": 493
+      },
+      "debian/source/format": {
+        "source": "packaging/root-preparation/debian/source/format",
+        "sha256": "e8e18df40bcd69d6aa404282679186d9b8256ac63a5b4e80d7f081e8a0095a2e",
+        "mode": 420
+      },
+      "deployment/dev/null": {
+        "source": "packaging/root-preparation/deployment/dev/null",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "mode": 420
+      },
+      "deployment/dev/random": {
+        "source": "packaging/root-preparation/deployment/dev/random",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "mode": 420
+      },
+      "deployment/dev/urandom": {
+        "source": "packaging/root-preparation/deployment/dev/urandom",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "mode": 420
+      },
+      "deployment/dev/zero": {
+        "source": "packaging/root-preparation/deployment/dev/zero",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "mode": 420
+      },
+      "deployment/root-preparation.json": {
+        "source": "packaging/root-preparation/deployment/root-preparation.json",
+        "sha256": "c4f58ec9047a68c03d65753045a9aa0df5db8ddfad498c3c746dfd96b53aad4b",
+        "mode": 420
+      },
+      "deployment/var-lib-niaos-roots.mount": {
+        "source": "packaging/root-preparation/deployment/var-lib-niaos-roots.mount",
+        "sha256": "989caa9465e0f0c83d052a7db681502149af80d8b0ca1070e8f9c0bc700fbd68",
+        "mode": 420
+      },
+      "native/root_bank.py": {
+        "source": "native/root_bank.py",
+        "sha256": "75e785ec34d649f8986beede1e0f427397b836bd3501752d1fc00948df92e3ba",
+        "mode": 420
+      },
+      "native/storage_bootstrap.py": {
+        "source": "native/storage_bootstrap.py",
+        "sha256": "6afa0b76a3285e55e093814e6e27837be99ffe0966fd288adc3a5af60b37739b",
+        "mode": 420
+      },
+      "native/worker/root_extract.c": {
+        "source": "native/worker/root_extract.c",
+        "sha256": "c3440f25c427a186f47082607b6b7ade790bb3602f92a3a79327e1a0ed37db76",
+        "mode": 420
+      },
+      "native/worker/tar_clocks.c": {
+        "source": "native/worker/tar_clocks.c",
+        "sha256": "9c4d1fcc6fca599e8e703bbf9e98b2f113e7f3120f61b1f439b651a317fb15a1",
+        "mode": 420
+      },
+      "native/worker/tar_clocks.h": {
+        "source": "native/worker/tar_clocks.h",
+        "sha256": "c97a4290629dda99b92c14a21a3b795c4233741d7745f0abcbf6f1acf1ab1f2b",
+        "mode": 420
+      },
+      "native/worker/check_tar_clocks.c": {
+        "source": "native/worker/check_tar_clocks.c",
+        "sha256": "5418e90a66e9d1fa5c1d5a1b9452af730816771db598e5418b9348a37a696ded",
+        "mode": 420
+      },
+      "native/worker/check_tar_clocks.py": {
+        "source": "native/worker/check_tar_clocks.py",
+        "sha256": "20f724f654decd129987c4a202ec1dd4a960863a4b6d7d7b7a52f7c464d09739",
+        "mode": 420
+      },
+      "native/worker/Makefile": {
+        "source": "native/worker/Makefile",
+        "sha256": "4aa001706d4ed2a9d41401b7da1cdeaeb9e365f208053aa685d62751591844b8",
+        "mode": 420
+      }
+    }
+  }
+}

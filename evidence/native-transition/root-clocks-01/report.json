@@ -1,0 +1,59 @@
+{
+  "format": 1,
+  "result": "pass",
+  "source_subject": "4230d1d819551dc90354ad75318b0e962963e2659f29a4b9a5a00739311f6d1f",
+  "decision": "ADR-0102",
+  "execution": {
+    "wire_cases": 34,
+    "address_undefined_sanitizers": "pass",
+    "direct_worker_vm": "vm-stream-02/result.json",
+    "installed_package_vm": "vm-package-02/result.json",
+    "vm_cases_per_run": 7,
+    "device_nodes_opened": false
+  },
+  "package": {
+    "version": "0.2.1",
+    "independent_build_directories": 2,
+    "main_and_dbgsym_equal": true,
+    "source_files": 23,
+    "hashes": [
+      "e89b465c8c4ca2d862543fb9af36365ad30ad6acb804aa83aacb32b5ee95a40f  build-a/niaos-root-preparation-dbgsym_0.2.1_amd64.deb",
+      "a763fab2de27025e1a48fa1b8dcb541ba26166fd52bcf069409b374480d669f1  build-a/niaos-root-preparation_0.2.1_amd64.deb"
+    ]
+  },
+  "artifacts": {
+    "workspace/build/root-extract": "7bbc83721a25e01c441648bcf9b71001114ede3d4939cfe08952485712651e33",
+    "workspace/build/check-tar-clocks": "94d86c3a96dd7c488bc7c76b00787cc445c4870448e8080152a3cfc0e21cb75a",
+    "workspace/build-sanitized/check-tar-clocks": "7fd8e4e9e8de1125b4bd2cf6c3511db2b7c89e0309a9d5250a1dda43e3e723c3",
+    "runtime.tar": "f2a346d761365426a38d9f860b20df1b15bdebb01a158f1c83d6cc83b8bdb025",
+    "package-input-02.tar": "848365f89c23a7cf383e173b54b34039d22010cd698212f3a0420bbd435f5bab"
+  },
+  "environment": {
+    "dev_image": "sha256:7f92f64938b87b862dd962a93b558fb0caea13493745c684fbddfc190a723617",
+    "qemu_image": "sha256:7f92f64938b87b862dd962a93b558fb0caea13493745c684fbddfc190a723617",
+    "memory_max": 3221225472,
+    "memory_swap_max": 0,
+    "cpu_quota": "100%",
+    "pids_max": 128,
+    "guest_ram_mib": 2048,
+    "guest_vcpus": 1,
+    "guest_storage": "disposable qcow2 over read-only base; extraction target tmpfs nodev/nosuid/noexec"
+  },
+  "intermediate_failures": [
+    {
+      "log": "vm-01.log",
+      "reason": "Distrobox UID 0 cannot open KVM; ordinary-user QEMU succeeds"
+    },
+    {
+      "log": "package-01.log",
+      "reason": "builds succeeded; harness compared stale 0.1.0 filenames against generated 0.2.0 packages; final version is 0.2.1"
+    }
+  ],
+  "production_authorization": false,
+  "actual_boot_switch": false,
+  "filesystem_full_signed_range": false,
+  "ctime_birthtime_restored": false,
+  "full_suite_repeated": false,
+  "formal_proof": false,
+  "github_published": false
+}

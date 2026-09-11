@@ -1,0 +1,4 @@
+Running as unit: run-p759020-i759320.scope; invocation ID: 7c2bbd80fa66487db4c86095931b0f94
+limited-exec: {"scope": "run-p759020-i759320.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+mkdir -p build
+cc -D_FORTIFY_SOURCE=3 -O2 -g -std=c11 -Wall -Wextra -Werror -fstack-protector-strong -fPIE -pie -Wl,-z,relro,-z,now,-z,noexecstack root_extract.c tar_clocks.c -larchive -lsodium -o build/root-extract

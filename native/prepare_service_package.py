@@ -14,7 +14,9 @@ def prepare(destination, component='root-preparation'):
         raise ValueError('unknown internal service component')
     packaging = distribution / 'packaging' / component
     files = [(p, p.relative_to(packaging)) for p in sorted(packaging.rglob('*')) if not p.is_dir()]
-    inputs = ('native/root_bank.py', 'native/storage_bootstrap.py', 'native/worker/root_extract.c', 'native/worker/Makefile')
+    inputs = ('native/root_bank.py', 'native/storage_bootstrap.py', 'native/worker/root_extract.c',
+              'native/worker/tar_clocks.c', 'native/worker/tar_clocks.h',
+              'native/worker/check_tar_clocks.c', 'native/worker/check_tar_clocks.py', 'native/worker/Makefile')
     if component == 'archive-observer':
         inputs = tuple('native/'+name+'.py' for name in ('archive_observer', 'archive_observer_client',
             'archive_credential', 'archive_receipt', 'archive_intake', 'repository'))

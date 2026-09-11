@@ -1,0 +1,5 @@
+Linux niaos-builder 6.12.107+deb13-cloud-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.107-1 (2026-08-29) x86_64 GNU/Linux
+libarchive13t64:amd64	3.7.4-4+deb13u1
+libsodium23:amd64	1.0.18-1+deb13u1
+5201764b052db748fe6ee07d7c2df01bac1a2c5cbe773ac805374c7db5cbe655  /usr/libexec/niaos/root-extract
+PASS root extraction: positive and negative clock roots, full filesystem observation, five refusal cases

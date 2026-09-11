@@ -40,6 +40,18 @@ link先・hardlink inode、device番号、全通常ファイルの長さと内�
 PAXのUTF-8とbinary名は、利用者のUI localeから独立したC.UTF-8で処理する。
 LOCPATH/GCONV_PATHを破棄し、必要なlocale資産をchroot前に読む。
 
+時刻は`tar_clocks.c`の独立cursorで同じ原本FDから補正する。通常headerのmtimeと
+local PAXのmtime/atime/ctime/creationtimeを読み、負の小数をPOSIXのfloor秒と非負nanosecondへ
+変換する。例えば`-0.000000001`は秒-1/nanosecond999999999となる。
+補正はdisk writerへの受渡し前と実inode照合前の双方に適用し、rootの最終時刻にも反映する。
+秒の全signed 64 bitをoverflowなしで扱い、9桁を超える非zero小数、重複時刻、壊れたrecordを拒否する。
+
+cursorはchecksum、body長とzero padding、対応entryの種別/size、完全なzero終端を確認する。
+local PAXまたはGNU long-name/linkを扱い、各拡張1 MiB・累積64 MiB以内とし、混在/重複を拒否する。
+可変長の全entry情報は保持せず、元FDのfile offsetも変更しない。全入力hashと既存認可検査は引き続き必要である。
+これは時刻とentry対応の補正であり、catalog/所有権/全DEB効果を検査する上位層の代替ではない。
+GNU base headerのatime/ctime等は既存readerの整数処理を維持する。
+
 ctimeとbirthtimeはLinuxの通常ファイル操作で任意の原本値へ設定する属性ではないため、
 元tarの履歴として保持する。実inodeのそれらを原本と一致したとは報告しない。
 新しいkernel/LSMが付ける未宣言xattrやラベルは別のsite policyの対象で、宣言xattrだけで
@@ -53,8 +65,10 @@ MAC状態全体を認定しない。表現できないUID・mode・ACL・flags�
 ## buildと受入
 
 固定開発imageのgcc、libarchive-dev、libsodium-devで`make native-worker`を実行する。
+非特権の`make -C native/worker check`は時刻のwire fixtureを検査し、DEB buildからも実行する。
 `make native-worker-check WORKER_TEST_BASE=<専用mount>`は使い捨てのprivileged VMで実行する。
-試験は全7種類と数値属性、ACL/xattr、日本語と非UTF-8の名前、root時刻、入力/件数/期限/既存treeを確認する。
+試験は全7種類と数値属性、ACL/xattr、日本語と非UTF-8の名前、正/負の小数時刻、入力/件数/期限/既存treeを確認する。
+時刻の期待値はreaderから再生成せず、独立した整数nanosecondでroot/各inodeを照合する。
 device nodeはlstatで確認し、開かない。Distroboxの外側でmknodが拒否される場合、その実行を受入成功にしない。
 
 tmpfs上の展開成功を永続媒体の電断試験と呼ばない。内部の永続準備bankは

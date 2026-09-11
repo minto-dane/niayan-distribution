@@ -1,0 +1,66 @@
+{
+  "result": "pass",
+  "cases": {
+    "full-linux-root": {
+      "returncode": 0,
+      "stdout": "{\"result\":\"extracted\",\"profile\":\"linux-inode-v1\",\"archive_sha256\":\"b45a7d94a52c0af84137ba92ae5caca22cee1d072c358ba9dc049ab6507df29a\",\"entries\":10,\"published\":false}\n",
+      "stderr": "",
+      "independent_filesystem_check": "pass"
+    },
+    "negative-clocks": {
+      "returncode": 0,
+      "stdout": "{\"result\":\"extracted\",\"profile\":\"linux-inode-v1\",\"archive_sha256\":\"2405a2dda16482125e5c5d28c5638798948dd4dceef52fc9407d16d2855f490b\",\"entries\":10,\"published\":false}\n",
+      "stderr": "",
+      "observed_clock_nanoseconds": {
+        ".": [
+          -41876543211,
+          -999999999
+        ],
+        "etc": [
+          42,
+          -42000000000
+        ],
+        "sym": [
+          -999999999,
+          -1
+        ],
+        "alias": [
+          -1,
+          -41876543211
+        ],
+        "etc/value": [
+          -1,
+          -41876543211
+        ]
+      },
+      "independent_filesystem_check": "pass"
+    },
+    "wrong-hash": {
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "{\"result\":\"failed\",\"reason\":\"digest\"}\n"
+    },
+    "wrong-count": {
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "{\"result\":\"failed\",\"reason\":\"archive\"}\n"
+    },
+    "expired": {
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "{\"result\":\"failed\",\"reason\":\"arguments\"}\n"
+    },
+    "occupied-target": {
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "{\"result\":\"failed\",\"reason\":\"staging\"}\n"
+    },
+    "writable-input": {
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "{\"result\":\"failed\",\"reason\":\"descriptors\"}\n"
+    }
+  },
+  "production_authorization": false,
+  "actual_boot": false
+}

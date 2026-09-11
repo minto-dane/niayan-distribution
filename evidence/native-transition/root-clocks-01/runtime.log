@@ -1,0 +1,18 @@
+Running as unit: run-p759632-i759932.scope; invocation ID: 18e9d1cc66e74ea9b982dc93f367c7e7
+limited-exec: {"scope": "run-p759632-i759932.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+	linux-vdso.so.1 (0x00007fd6a54b6000)
+	libarchive.so.13 => /lib/x86_64-linux-gnu/libarchive.so.13 (0x00007fd6a53d5000)
+	libsodium.so.23 => /lib/x86_64-linux-gnu/libsodium.so.23 (0x00007fd6a5379000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007fd6a5185000)
+	libnettle.so.8 => /lib/x86_64-linux-gnu/libnettle.so.8 (0x00007fd6a512f000)
+	libacl.so.1 => /lib/x86_64-linux-gnu/libacl.so.1 (0x00007fd6a5122000)
+	liblzma.so.5 => /lib/x86_64-linux-gnu/liblzma.so.5 (0x00007fd6a50f1000)
+	libzstd.so.1 => /lib/x86_64-linux-gnu/libzstd.so.1 (0x00007fd6a5027000)
+	liblz4.so.1 => /lib/x86_64-linux-gnu/liblz4.so.1 (0x00007fd6a5000000)
+	libbz2.so.1.0 => /lib/x86_64-linux-gnu/libbz2.so.1.0 (0x00007fd6a4fed000)
+	libz.so.1 => /lib/x86_64-linux-gnu/libz.so.1 (0x00007fd6a4fcd000)
+	libxml2.so.2 => /lib/x86_64-linux-gnu/libxml2.so.2 (0x00007fd6a4e13000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007fd6a54b8000)
+	libxxhash.so.0 => /lib/x86_64-linux-gnu/libxxhash.so.0 (0x00007fd6a4e00000)
+	libm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007fd6a4d10000)
+

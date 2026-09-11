@@ -28,6 +28,7 @@
 #include <sys/syscall.h>
 #include <time.h>
 #include <unistd.h>
+#include "tar_clocks.h"
 
 /* Internal, non-setuid worker. FD 3 is an authorized uncompressed root tar;
  * FD 4 is its private, root-owned staging parent containing an empty "root".
@@ -308,8 +309,10 @@ int main(int argc, char **argv) {
     struct retained *records = calloc((size_t)count_limit, sizeof(*records));
     if (!records) return fail("memory");
     struct archive_entry *entry; uint64_t entries = 0; int status;
+    struct nia_tar_clocks clocks = {3, in.size, 0, in.deadline, 0};
     while ((status = archive_read_next_header(reader, &entry)) == ARCHIVE_OK) {
         if (++entries > count_limit || now_ms() >= in.deadline) return fail("bounds");
+        if (nia_tar_clocks_next(&clocks, entry) != 1) return fail("clock-framing");
         if (archive_entry_size(entry) < 0 || (uint64_t)archive_entry_size(entry) > in.size)
             return fail("bounds");
         if (!archive_entry_pathname(entry)) return fail("path");
@@ -337,7 +340,7 @@ int main(int argc, char **argv) {
         crypto_hash_sha256_final(&content, records[entries - 1].content);
         if (status != ARCHIVE_EOF || archive_write_finish_entry(writer) != ARCHIVE_OK) return fail("entry");
     }
-    if (status != ARCHIVE_EOF || entries != count_limit) return fail("archive");
+    if (status != ARCHIVE_EOF || entries != count_limit || nia_tar_clocks_next(&clocks, NULL) != 0) return fail("archive");
     /* Read all bytes even when tar EOF precedes the end of the retained file. */
     const void *unused;
     while (in.offset < in.size) if (read_archive(reader, &in, &unused) <= 0) return fail("input");
@@ -357,11 +360,13 @@ int main(int argc, char **argv) {
     archive_entry_free(records[0].entry); records[0].entry = NULL;
     struct archive *disk = archive_read_disk_new();
     reader = archive_read_new(); in.offset = 0; crypto_hash_sha256_init(&in.hash);
+    clocks = (struct nia_tar_clocks){3, in.size, 0, in.deadline, 0};
     if (!disk || !reader || archive_read_disk_set_symlink_physical(disk) != ARCHIVE_OK ||
         archive_read_support_format_tar(reader) != ARCHIVE_OK ||
         archive_read_open(reader, &in, NULL, read_archive, NULL) != ARCHIVE_OK) return fail("verification");
     for (uint64_t i = 0; i < entries; ++i) {
         if (archive_read_next_header(reader, &entry) != ARCHIVE_OK) return fail("verification-input");
+        if (nia_tar_clocks_next(&clocks, entry) != 1) return fail("verification-clocks");
         records[i].entry = entry;  /* Borrowed until the next header. */
         int result = verify(disk, &records[i], &in);
         records[i].entry = NULL;
@@ -371,7 +376,7 @@ int main(int argc, char **argv) {
         }
         if (archive_read_data_skip(reader) != ARCHIVE_OK) return fail("verification-input");
     }
-    if (archive_read_next_header(reader, &entry) != ARCHIVE_EOF) return fail("verification-input");
+    if (archive_read_next_header(reader, &entry) != ARCHIVE_EOF || nia_tar_clocks_next(&clocks, NULL) != 0) return fail("verification-input");
     while (in.offset < in.size) if (read_archive(reader, &in, &unused) <= 0) return fail("verification-input");
     crypto_hash_sha256_final(&in.hash, actual);
     if (sodium_memcmp(expected, actual, sizeof(actual))) return fail("verification-digest");
