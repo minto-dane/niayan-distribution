@@ -1,0 +1,19 @@
+{
+  "removed": [
+    {
+      "path": "vm-sdk-01/test.qcow2",
+      "allocated_bytes": 29958144,
+      "logical_bytes": 30015488
+    },
+    {
+      "path": "vm-sdk-02/test.qcow2",
+      "allocated_bytes": 29958144,
+      "logical_bytes": 30015488
+    }
+  ],
+  "allocated_bytes_removed": 59916288,
+  "visible_qemu_processes": [],
+  "full_host_fd_audit": false,
+  "base_and_accepted_vms_untouched": true,
+  "source_and_final_sdk_build_retained": true
+}

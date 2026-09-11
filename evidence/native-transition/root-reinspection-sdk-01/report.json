@@ -1,0 +1,115 @@
+{
+  "format": 1,
+  "result": "pass-native-frozen-root-reinspection-boundary",
+  "source_subject": "37634928f5bc298f03d256e58849c9204804ba2974a5cdcef00745ba994cb058",
+  "decision": "ADR-0111",
+  "requirement": "REQ-149",
+  "hazard": "HAZ-135",
+  "fault": "FAULT-148",
+  "limits": {
+    "memory_bytes": 3221225472,
+    "swap_bytes": 0,
+    "cpu_cores": 1,
+    "pids": 128,
+    "vm_ram_mib": 2048,
+    "vm_vcpus": 1,
+    "sequential": true
+  },
+  "compiled_mains": [
+    "run_root_configuration_tests",
+    "run_root_archive_tests",
+    "run_generation_stage_tests"
+  ],
+  "final_vm": {
+    "run": "vm-sdk-02",
+    "assertions": {
+      "configured": 477,
+      "plain": 933
+    },
+    "refusal_modes": [
+      "independent observation refused",
+      "wrong expected mount identity",
+      "wrong original extraction deadline",
+      "post-response physical observation changed",
+      "post-response authorization denied"
+    ],
+    "actual_peer_and_archive_and_cas_fds": true,
+    "root_and_records_unchanged": true,
+    "completion_delay_ms": 100,
+    "retained_stage_root_cas_on_success_and_expiry": true,
+    "busy_handle_refused": true,
+    "explicit_close_and_failure_cleanup": true
+  },
+  "regression": {
+    "stage_assertions": 1211
+  },
+  "source_provenance": "source-provenance.json",
+  "service": {
+    "result": "pass",
+    "packaged_drivers_and_tools_equal_current": true,
+    "unchanged_service_version": "0.3.0",
+    "service_deb_sha256": "57733331e9453dde91b9b2e4d667efde7ebca201f73bc856591bf946dd44629f",
+    "worker_sha256": "b55000d2e21d96c8e75a9f36dda4bbcf5c77c9dbf42074fa39b1600b1c113322"
+  },
+  "first_attempt": {
+    "run": "vm-sdk-01",
+    "result": "failed CAS reacquisition immediately after an SDK refusal",
+    "resolution": "Wait for the service peer to close within the same deadline. Bank closes received FDs before peer close. Final VM imposes a 100 ms response-before-FD-close delay.",
+    "original_inputs": [
+      "initial-root_preparation.c",
+      "initial-root_archive_stage_test.adb",
+      "initial-check_root_preparation.py",
+      "initial-runtime-inputs.json"
+    ],
+    "blanket_release_after_transport_failure": false
+  },
+  "source_checks": {
+    "result": "pass",
+    "source_subject_before": "37634928f5bc298f03d256e58849c9204804ba2974a5cdcef00745ba994cb058",
+    "source_subject_after": "37634928f5bc298f03d256e58849c9204804ba2974a5cdcef00745ba994cb058",
+    "checks": [
+      "engineering-check.json",
+      "engineering-lint.json",
+      "unified-audit.json",
+      "license-check.json",
+      "ci-sync.log"
+    ]
+  },
+  "mathematical_src_unchanged": true,
+  "formal_proofs_or_full_suite_repeated": false,
+  "new_reproducibility_claim": false,
+  "ci": {
+    "disposable_vm_make_target_added": true,
+    "remote_run": false
+  },
+  "remaining": [
+    "production independently authenticated freeze/observation provider",
+    "all-writer and bank/mount exclusion through borrowed provider lifetime",
+    "effect-time revocation and mount freshness checks",
+    "actual root/boot publication and phase-specific recovery",
+    "all DEB effects",
+    "generation GC",
+    "complete native replacement ISO",
+    "all language translations"
+  ],
+  "storage_cleanup": {
+    "removed": [
+      {
+        "path": "vm-sdk-01/test.qcow2",
+        "allocated_bytes": 29958144,
+        "logical_bytes": 30015488
+      },
+      {
+        "path": "vm-sdk-02/test.qcow2",
+        "allocated_bytes": 29958144,
+        "logical_bytes": 30015488
+      }
+    ],
+    "allocated_bytes_removed": 59916288,
+    "visible_qemu_processes": [],
+    "full_host_fd_audit": false,
+    "base_and_accepted_vms_untouched": true,
+    "source_and_final_sdk_build_retained": true
+  },
+  "jobs": []
+}

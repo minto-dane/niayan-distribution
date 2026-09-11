@@ -1,0 +1,37 @@
+{
+  "result": "pass",
+  "cases": [
+    {
+      "post_admission_denied": false,
+      "bank": {
+        "effects_applied": false,
+        "intent_sha256": "23a9879bba781976acfbcd06eac6ba02be19973e5daf3d29cf2afabd5d48973f",
+        "published": false,
+        "state": "extracted",
+        "version": 1,
+        "worker_exit": 0,
+        "worker_sha256": "b55000d2e21d96c8e75a9f36dda4bbcf5c77c9dbf42074fa39b1600b1c113322",
+        "physical_revalidation": false
+      },
+      "intent": {
+        "archive": "1521d4304c52372bb92c465e30462d60bfdac16de5c16dcede583dc28d652934",
+        "deadline_ms": 609960,
+        "entries": 4,
+        "generation": "edc9ed1457473dd47d47098ed82282069a771853007fc89230d9456d286b1c77",
+        "root_manifest": "4c07c394964a6c120ce11cfe32ab9dcda53634fa19f1e6895a3aa08cf40f3d0d",
+        "size": 5632,
+        "stage": "56565656565656565656565656565656",
+        "version": 1
+      },
+      "native_driver_exit": 0,
+      "actual_peer_and_reservation": true
+    }
+  ],
+  "site_policy": false,
+  "configured_generation": true,
+  "native_reinspection": true,
+  "frozen_tree_and_records_unchanged": true,
+  "response_before_fd_close_delay_ms": 100,
+  "installed_root_changed": false,
+  "boot_tested": false
+}

@@ -20,20 +20,6 @@ from root_bank import Bank, provision_bank, mount_identity
 from check_root_reinspection import snapshot
 
 
-class DelayedCompletionBank(Bank):
-    """Fixture only: force the response/received-FD-close ordering window."""
-    def connection(self, peer):
-        class DelayedPeer:
-            def __getattr__(self, name):
-                return getattr(peer, name)
-
-            def sendall(self, raw):
-                peer.sendall(raw)
-                time.sleep(0.1)
-
-        super().connection(DelayedPeer())
-
-
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--worker', type=Path, required=True)
@@ -81,8 +67,7 @@ def main():
                         if child.poll() is not None or time.monotonic() >= deadline:
                             raise RuntimeError('native store initialization failed')
                         time.sleep(0.01)
-                    bank_type = DelayedCompletionBank if args.reinspect else Bank
-                    bank = bank_type(bank_path, store / 'store.lock', args.worker, 1000)
+                    bank = Bank(bank_path, store / 'store.lock', args.worker, 1000)
                     bank.serve(listener, requests=1)
                     if args.reinspect:
                         stages = [p for p in bank_path.iterdir() if p.is_dir()]
@@ -153,7 +138,7 @@ def main():
                     listener.close()
     args.report.write_text(json.dumps({'result': 'pass', 'cases': results, 'site_policy': False,
         'configured_generation': args.configured, 'native_reinspection': args.reinspect,
-        'frozen_tree_and_records_unchanged': args.reinspect, 'response_before_fd_close_delay_ms': 100 if args.reinspect else 0, 'installed_root_changed': False, 'boot_tested': False}, indent=2) + '\n')
+        'frozen_tree_and_records_unchanged': args.reinspect, 'installed_root_changed': False, 'boot_tested': False}, indent=2) + '\n')
     print('PASS native admission and retained archive through actual root preparation service')
 
 

@@ -1,0 +1,3 @@
+Running as unit: run-p1005531-i1005831.scope; invocation ID: 33564b643e2548f98c13dd0c2b412013
+limited-exec: {"scope": "run-p1005531-i1005831.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+PASS 401 compile inputs, 32 fixtures, 4 VM tools; seven mathematical src trees unchanged

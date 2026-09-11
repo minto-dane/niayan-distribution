@@ -1,0 +1,7 @@
+{
+  "result": "pass",
+  "packaged_drivers_and_tools_equal_current": true,
+  "unchanged_service_version": "0.3.0",
+  "service_deb_sha256": "57733331e9453dde91b9b2e4d667efde7ebca201f73bc856591bf946dd44629f",
+  "worker_sha256": "b55000d2e21d96c8e75a9f36dda4bbcf5c77c9dbf42074fa39b1600b1c113322"
+}
