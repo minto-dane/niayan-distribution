@@ -1,0 +1,96 @@
+{
+  "format": 1,
+  "result": "pass",
+  "source_subject": "0333e6374ca54ea9e37b9c29f009b3cf78f7ee536668cb3af975248ecea1b115",
+  "decision": "ADR-0104",
+  "assertions": {
+    "configuration_observation_and_conversion": 141,
+    "tar_output": 83,
+    "existing_payload": 814,
+    "root_archive": 831,
+    "root_configuration": 136,
+    "native_entry_roundtrip_each": 26
+  },
+  "configuration": {
+    "source_cases": 4,
+    "native_roundtrips": 4,
+    "physical_entry_extractions": 4,
+    "independent_original_observation": true,
+    "group_owner_and_mask_distinguished": true,
+    "raw_acl_and_xattrs": true,
+    "numeric_identity": true,
+    "unsupported_effects_refused": true,
+    "ci_driver_path_checked": true
+  },
+  "source_inputs": {
+    "compile": 393,
+    "fixtures": 72,
+    "python_tools": 6,
+    "package": 23
+  },
+  "artifacts": {
+    "workspace/pkgcore/build/test-bin/run_conffile_observation_tests": "6f891f34757be56a590e8b1cf6d720f70cc0afc2b33f7e5ff7989da8119cd4ae",
+    "workspace/pkgcore/build/test-bin/run_deb_payload_tests": "c0dd3c76630e3191454ee7731b0ada6f2faec3bf65b981cbaf5ea310cbcc4f8f",
+    "workspace/pkgcore/build/test-bin/run_tar_output_tests": "e7a30592c9e56262e6426def0c139bf0b59b4bfa34bd55b7ff71d37db9ea4601",
+    "workspace/pkgcore/build/test-bin/run_root_archive_tests": "bc6148232de59717d1dd07460773214c6c64b793774aa6e8c61061689c1e2da1",
+    "workspace/pkgcore/build/test-bin/run_root_configuration_tests": "493e7cdba2afedefd377a1fec79bcac54921f27218530c7a44c06e9be01f75ff",
+    "package-input.tar": "47f129ef5b71175514fc1fe942cb7781df2d631653f4a9e7430fe17dd757ab6f"
+  },
+  "package": {
+    "version": "0.2.2",
+    "independent_build_directories": 2,
+    "main_and_dbgsym_equal": true,
+    "hashes": [
+      "909da3a8d32c05c15dcb6e06a47abd68567f8aa7e90f9809bffc7da7564efc69  build-a/niaos-root-preparation-dbgsym_0.2.2_amd64.deb",
+      "467d4b741fb831a75078beb9ef50b770a463e55753ccd8e8077f8d34210894ea  build-a/niaos-root-preparation_0.2.2_amd64.deb"
+    ],
+    "installed_worker_sha256": "6518709ddffb55ac5e351f53ff04f6a3690b58d889a6f7275116dcb367eb174c",
+    "existing_installed_worker_cases": 7,
+    "configuration_cases": 4
+  },
+  "environment": {
+    "dev_image": "sha256:7f92f64938b87b862dd962a93b558fb0caea13493745c684fbddfc190a723617",
+    "qemu_image": "sha256:7f92f64938b87b862dd962a93b558fb0caea13493745c684fbddfc190a723617",
+    "memory_max": 3221225472,
+    "memory_swap_max": 0,
+    "cpu_quota": "100%",
+    "pids_max": 128,
+    "guest_ram_mib": 2048,
+    "guest_vcpus": 1,
+    "configuration_fs": "private 32 MiB ext4 file in disposable VM; nodev,nosuid,noexec"
+  },
+  "intermediate_failures": [
+    {
+      "log": "test-01.log",
+      "reason": "Ada byte operator visibility"
+    },
+    {
+      "log": "test-02.log",
+      "reason": "relative fixture root was not accepted by MC_FS"
+    },
+    {
+      "log": "roundtrip.log",
+      "reason": "independent native roundtrip exposed ACL group-owner/mask mode mismatch; corrected SDK and worker"
+    },
+    {
+      "log": "vm-package-01/worker.log",
+      "reason": "package build, reproducibility and seven existing cases passed; shell could not find mkfs.ext4"
+    },
+    {
+      "log": "vm-entry-02/worker.log",
+      "reason": "guest /tmp inputs disappeared on reboot; reloaded small inputs without rebuilding the installed package"
+    }
+  ],
+  "scope_notes": [
+    "The tar-output target was compiled and run before the separate payload mode correction; its dependency closure does not include that payload body.",
+    "CI driver verification repeats the same four semantic cases; it is not counted as new coverage.",
+    "The old mode interpretation may affect retained derived metadata; no historical hashes are rewritten, and migration/recovery remains unqualified."
+  ],
+  "configured_root_serialization": false,
+  "production_authorization": false,
+  "boot_switched": false,
+  "ctime_birthtime_restored": false,
+  "full_suite_repeated": false,
+  "formal_proof": false,
+  "github_published": false
+}

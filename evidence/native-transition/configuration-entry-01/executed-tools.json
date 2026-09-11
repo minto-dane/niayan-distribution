@@ -1,0 +1,29 @@
+{
+  "files": [
+    {
+      "path": "pkgcore/tests/check_configuration_entry.py",
+      "sha256": "daffce468de764f4fc5263f30c647fc1505eded4406bb62d94adcd51f31c7c25"
+    },
+    {
+      "path": "pkgcore/tests/check_tar_output.py",
+      "sha256": "e793e66c662b2f2d756c017a6fbaea50f4160e981c64e13a3bdc6895304d00ab"
+    },
+    {
+      "path": "pkgcore/tests/compare_root_archive.py",
+      "sha256": "c6670e9276d4aa0d7c6f4ede2f59e1e99d45bf0d926ea4fa4c4d1eccd7c9b36a"
+    },
+    {
+      "path": "pkgcore/tests/make_deb_control_fixtures.py",
+      "sha256": "2a53d1d99cafd825120c063c8ccb0aa9a41e3017b246bc627d56ad1ba779ecc6"
+    },
+    {
+      "path": "distribution/native/worker/check_configuration_entry.py",
+      "sha256": "c0aed9a578793ae42aded89886be42376bdd96901dd8b28873f88f7bd2e5f919"
+    },
+    {
+      "path": "distribution/native/worker/check_root_extract.py",
+      "sha256": "e378149a97002d3b4f044a9cfb4ad57d4f350924b3b85f45ec5ec91fd2e59380"
+    }
+  ],
+  "all_match": true
+}

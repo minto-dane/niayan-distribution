@@ -1,0 +1,121 @@
+{
+  "result": "pass",
+  "cases": [
+    {
+      "name": "local",
+      "archive": "1c4be2c4c82b2c2d4cde80eae898c81c5552ccb0afbe616b30b61a4c8b2511c9",
+      "root_archive": "0f107d3134a8d68d838095649afd51393319ab1a91144b806d7aa494d8451d7a",
+      "source": "78e6a777cfb75d7492e61f904c3df16a701da10852768129f7e11792e469d419",
+      "override": "0000000000000000000000000000000000000000000000000000000000000000",
+      "prefix": "bf34dcdf174c6a1981dbda8a026dde514a03b40b8f8a99cdee5119be7319925c",
+      "content": "ed7002b439e9ac845f22357d822bac1444730fbdb6016d3ec9432297b9ec9f73",
+      "path_hex": "7261772dff",
+      "mode": 416,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 7,
+      "clocks": [
+        -41876543211,
+        123000000456,
+        1789089500043260193,
+        1789089500043260193
+      ],
+      "xattrs": {
+        "757365722e656d707479": "",
+        "757365722e6f62736572766564": "00ff2a"
+      },
+      "acl": "user::rw-,user:1001:r--,group::---,mask::r--,other::---",
+      "flags": [
+        0,
+        545505535
+      ]
+    },
+    {
+      "name": "backup",
+      "archive": "138f7d8311cd565bbcbf661a9c18a10126a77dc663ca0aabcc7c7dde63a5fac4",
+      "root_archive": "a1a4a2db7cf2ee56f94496895a0c132805c2dd9314ec239f3c0182884cfba54d",
+      "source": "78e6a777cfb75d7492e61f904c3df16a701da10852768129f7e11792e469d419",
+      "override": "0000000000000000000000000000000000000000000000000000000000000000",
+      "prefix": "da4a518e734339c07187a13b3b86abd1021afedcaf5ae3a909de717a4f6ad34c",
+      "content": "ed7002b439e9ac845f22357d822bac1444730fbdb6016d3ec9432297b9ec9f73",
+      "path_hex": "6261636b75702dff",
+      "mode": 416,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 7,
+      "clocks": [
+        -41876543211,
+        123000000456,
+        1789089500043260193,
+        1789089500043260193
+      ],
+      "xattrs": {
+        "757365722e656d707479": "",
+        "757365722e6f62736572766564": "00ff2a"
+      },
+      "acl": "user::rw-,user:1001:r--,group::---,mask::r--,other::---",
+      "flags": [
+        0,
+        545505535
+      ]
+    },
+    {
+      "name": "vendor",
+      "archive": "0226e868974d555eba85a2e601ab5c596367897e4589c332f504704f9973148e",
+      "root_archive": "ce660f7ad753fb0599def2a7eae5fe3a71aa21c41952e5390f4edbbe0cb20f24",
+      "source": "7c7c4223e6389e3c2afb799b7dbef0aacd46d4a08689c8e68c6da3000e66987d",
+      "override": "0000000000000000000000000000000000000000000000000000000000000000",
+      "prefix": "8d151ca61bc478e91ea22251969ebb8cea63c84eb1b65da903551038c51eec96",
+      "content": "2c017f919bd66bcef5699ac1f558da8664f72b1339ca24f1a6a6632076f456c6",
+      "path_hex": "76656e646f72",
+      "mode": 416,
+      "uid": 123,
+      "gid": 456,
+      "size": 10,
+      "clocks": [
+        -1,
+        1700000001000000007,
+        1700000002420000000,
+        1700000003750000000
+      ],
+      "xattrs": {
+        "757365722e64656d6f": "76616c7565"
+      },
+      "acl": "user::rw-,user:42:r--,group::r--,mask::r--,other::---",
+      "flags": [
+        64,
+        0
+      ]
+    },
+    {
+      "name": "override",
+      "archive": "cc75202c7bbb9ef5d2904e3856b9d8e5b0d5a0bb438bfd5efb4c12c377d27914",
+      "root_archive": "9beea40eccd070167ac9ab309b33a1c1eb1124d9bfc0e78afe62aa653253ad12",
+      "source": "7c7c4223e6389e3c2afb799b7dbef0aacd46d4a08689c8e68c6da3000e66987d",
+      "override": "0d7bad78cfd7161809028ca76bddd8ec53650993f2ea052534e7a5efbc36ad32",
+      "prefix": "6c41a569f2458ef9b3ff6eea97b4f459a4f5ad644ea8a256f0d687d16fd96257",
+      "content": "2c017f919bd66bcef5699ac1f558da8664f72b1339ca24f1a6a6632076f456c6",
+      "path_hex": "72656e616d65642d76656e646f72",
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 10,
+      "clocks": [
+        -1,
+        1700000001000000007,
+        1700000002420000000,
+        1700000003750000000
+      ],
+      "xattrs": {
+        "757365722e64656d6f": "76616c7565"
+      },
+      "acl": "user::rw-,user:42:r--,group::r--,mask::---,other::---",
+      "flags": [
+        64,
+        0
+      ]
+    }
+  ],
+  "native_payload_read": true,
+  "filesystem_application": false
+}

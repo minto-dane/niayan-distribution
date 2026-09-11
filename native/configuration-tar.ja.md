@@ -56,3 +56,22 @@ localの生ACLとarchive ACL、inode flagsと適用可能flag、ACL/capability�
 Pkg_Deb_Payloadはnative framingの値で補正しており今回の相互読戻しも成功したが、
 root_extract.cは現在upstreamのentry時刻を直接使うため、実適用にはnative時刻への補正が必要である。
 reader-time-probe.logに実値を保持した。旧workerの自己読取/自己比較を負の小数時刻の正しさの根拠にしない。
+
+## 保存属性adapter
+
+`Pkg_Configuration_Entry.Prepare`はFile_Effectから元NIACOBS1またはDEBを読み直し、
+検証した内容のsizeと通常file header prefixのCAS digestを返す。
+source pathとtarget pathを区別するので、backupも元属性を維持する。
+mode/UID/GIDのassertionと内容hashを原本へ照合し、vendor permission overrideは同じsource pathの
+保存ローカル観測へ束縛する。ACLのowner/mask（なければgroup）/otherを数値modeと整合させ、named権限は残す。
+raw POSIX access ACLはsemantic属性に変換し、raw名・空/binary xattrと4時刻は保存する。
+ACLの数値identityを使い、元の表示名は保存原本だけに残す。
+
+表現範囲外のnamed ACL ID、regularのdefault ACL、vendor raw ACLの重複表現、未知のactive statx属性、
+往復一致しないflags、ローカルnlink>1はUnsupportedとなる。extent配置bitは原本観測として保持し、
+移送先へsetする振舞いの指定とはしない。ローカルにない既知の振舞いflagは明示clearする。
+失敗時digest/sizeを消す。完了済みの未参照CAS objectが残る場合はある。
+
+このAPIは保存済み属性の変換だけである。全root stream、content/padding/終端、prefixを含む保持閉包、
+選択のlive再検証と本番認可はcaller側で接続する必要がある。SDKにUID0権限を追加しない。
+ctime/birthtimeは履歴であり、任意の実FS復元を意味しない。判断はADR-0104。

@@ -1,0 +1,52 @@
+Running as unit: run-p772438-i772738.scope; invocation ID: 9fec91f4fbda4bcc894b78e9eab7bb2a
+limited-exec: {"scope": "run-p772438-i772738.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Compile
+   [Ada]          run_conffile_observation_tests.adb
+   [Ada]          run_tar_output_tests.adb
+   [C]            pkg_deb_stream.c
+   [C]            archive_observer.c
+   [C]            pkg_deb_decode.c
+   [C]            root_preparation.c
+   [C]            conffile_snapshot.c
+   [Ada]          configuration_entry_test.adb
+   [Ada]          mc_clock.adb
+   [Ada]          mc_fs.adb
+   [Ada]          mc_hex.adb
+   [Ada]          mc_posix.ads
+   [Ada]          mc_runtime.adb
+   [Ada]          mc_store.adb
+   [Ada]          mc_types.adb
+   [Ada]          pkg_conffile_choice.adb
+   [Ada]          pkg_conffile_observation.adb
+   [Ada]          pkg_conffile_snapshot.adb
+   [Ada]          pkg_conffile_transition.adb
+   [Ada]          pkg_configuration_entry.adb
+   [Ada]          pkg_deb_payload.adb
+   [Ada]          test_support.adb
+   [Ada]          pkg_tar_framing.adb
+   [Ada]          pkg_tar_output.adb
+   [Ada]          mc_kernel_read.adb
+   [Ada]          mc_codec.adb
+   [Ada]          mc_paths.adb
+   [Ada]          mc_sha256.adb
+   [Ada]          mc_dirents.adb
+   [Ada]          mc_text.adb
+   [Ada]          pkg_deb_conffiles.adb
+   [Ada]          pkg_deb_container.adb
+   [Ada]          pkg_deb_data_stream.adb
+   [Ada]          pkg_deb_control.adb
+Bind
+   [gprbind]      run_conffile_observation_tests.bexch
+   [Ada]          run_conffile_observation_tests.ali
+   [gprbind]      run_tar_output_tests.bexch
+   [Ada]          run_tar_output_tests.ali
+Link
+   [archive]      libtests.a
+   [index]        libtests.a
+   [link]         run_conffile_observation_tests.adb
+   [link]         run_tar_output_tests.adb
+ENTRY local 2b034cf5133b903b339148774db83166418af7684292da565ebdb665a64bdff5 d7a5b34402c0609469a4cb9e46c5fb392dfc487393299e1f3be8a96df6c390d8 0000000000000000000000000000000000000000000000000000000000000000 127f1a54df0b0945dc9cdb8666e3a0effac4dd963aa66bcf3784cd49d78ab830 ed7002b439e9ac845f22357d822bac1444730fbdb6016d3ec9432297b9ec9f73
+ENTRY backup f36ecd67f52db0801c89633ac9a9f64052c83affca5723b7136e15455bb37802 d7a5b34402c0609469a4cb9e46c5fb392dfc487393299e1f3be8a96df6c390d8 0000000000000000000000000000000000000000000000000000000000000000 2cdaf2e015cfde3b32776a6f86a0d7c3723984498ac8b959709c8e9806ef76cf ed7002b439e9ac845f22357d822bac1444730fbdb6016d3ec9432297b9ec9f73
+FAIL: adapter original mediaINVALID_INPUT
+
+raised TEST_SUPPORT.FAILURE : adapter original mediaINVALID_INPUT

@@ -198,10 +198,29 @@ static int same_declared_xattrs(struct archive_entry *expected, struct archive_e
     }
     return 0;
 }
+/* libarchive stores ACL_GROUP_OBJ in its entry mode. POSIX st_mode uses
+ * ACL_MASK for the group class when present. Do not set the entry's mode:
+ * doing so would overwrite the distinct original ACL_GROUP_OBJ permissions. */
+static int inode_mode(struct archive_entry *entry, mode_t *mode) {
+    int count = archive_entry_acl_reset(entry, ARCHIVE_ENTRY_ACL_TYPE_ACCESS);
+    if (count < 0 || count > 1024) return -1;
+    *mode = archive_entry_mode(entry);
+    int type, perm, tag, qualifier, mask = 0; const char *name;
+    for (int i = 0; i < count; ++i) {
+        if (archive_entry_acl_next(entry, ARCHIVE_ENTRY_ACL_TYPE_ACCESS,
+            &type, &perm, &tag, &qualifier, &name) != ARCHIVE_OK) return -1;
+        if (type == ARCHIVE_ENTRY_ACL_TYPE_ACCESS && tag == ARCHIVE_ENTRY_ACL_MASK) {
+            if (mask++ || perm < 0 || perm > 7) return -1;
+            *mode = (*mode & ~(mode_t)0070) | (mode_t)(perm << 3);
+        }
+    }
+    return 0;
+}
 static int verify(struct archive *disk, struct retained *record, struct input *in) {
     struct archive_entry *expected = record->entry;
     const char *path = archive_entry_pathname(expected), *hard = archive_entry_hardlink(expected);
-    struct stat st;
+    struct stat st; mode_t expected_mode;
+    if (inode_mode(expected, &expected_mode)) return -3;
     if (!path || now_ms() >= in->deadline || lstat(path, &st)) return -1;
     if (hard) {
         /* Hardlink inode attributes belong to the target entry, not its alias header. */
@@ -209,7 +228,7 @@ static int verify(struct archive *disk, struct retained *record, struct input *i
         return lstat(hard, &target) || st.st_dev != target.st_dev || st.st_ino != target.st_ino ? -2 : 0;
     }
     if ((la_int64_t)st.st_uid != archive_entry_uid(expected) || (la_int64_t)st.st_gid != archive_entry_gid(expected) ||
-        st.st_mode != archive_entry_mode(expected) ||
+        st.st_mode != expected_mode ||
         (archive_entry_mtime_is_set(expected) && (st.st_mtim.tv_sec != archive_entry_mtime(expected) ||
             st.st_mtim.tv_nsec != archive_entry_mtime_nsec(expected))) ||
         (archive_entry_atime_is_set(expected) && (st.st_atim.tv_sec != archive_entry_atime(expected) ||

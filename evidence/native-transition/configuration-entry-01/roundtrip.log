@@ -1,0 +1,13 @@
+Running as unit: run-p773558-i773858.scope; invocation ID: 9dbbdc887a2d457e9455d61977714ff1
+limited-exec: {"scope": "run-p773558-i773858.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Traceback (most recent call last):
+  File "/workspace/pkgcore/tests/check_configuration_entry.py", line 198, in <module>
+    main()
+    ~~~~^^
+  File "/workspace/pkgcore/tests/check_configuration_entry.py", line 190, in main
+    native_check(args.output, name, result)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/pkgcore/tests/check_configuration_entry.py", line 88, in native_check
+    assert list(map(int, attrs[1:])) == [expected[k] for k in ('mode', 'uid', 'gid')] + [0, 0, expected['size'], expected['size'], 1, *expected['flags']]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

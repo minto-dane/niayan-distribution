@@ -1,0 +1,10 @@
+{
+  "format": 1,
+  "result": "pass",
+  "current_files_checked": 2485,
+  "historical_or_fixture_files_preserved": 12506,
+  "failures": [],
+  "scope": "project-authored current tree and canonical sibling notices",
+  "external_package_relicensing": false,
+  "publication_approval": false
+}

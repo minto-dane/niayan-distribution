@@ -1,0 +1,6 @@
+Linux niaos-builder 6.12.107+deb13-cloud-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.107-1 (2026-08-29) x86_64 GNU/Linux
+libarchive13t64:amd64	3.7.4-4+deb13u1
+libsodium23:amd64	1.0.18-1+deb13u1
+6518709ddffb55ac5e351f53ff04f6a3690b58d889a6f7275116dcb367eb174c  /usr/libexec/niaos/root-extract
+PASS root extraction: positive and negative clock roots, full filesystem observation, five refusal cases
+sh: 26: mkfs.ext4: not found

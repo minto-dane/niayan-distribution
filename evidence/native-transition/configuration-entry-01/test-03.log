@@ -1,0 +1,57 @@
+Running as unit: run-p772857-i773157.scope; invocation ID: 24f6cafe4ae242189895045b97a47850
+limited-exec: {"scope": "run-p772857-i773157.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Compile
+   [Ada]          run_conffile_observation_tests.adb
+   [Ada]          run_tar_output_tests.adb
+   [Ada]          run_deb_payload_tests.adb
+   [C]            pkg_deb_stream.c
+   [C]            archive_observer.c
+   [C]            pkg_deb_decode.c
+   [C]            root_preparation.c
+   [C]            conffile_snapshot.c
+   [Ada]          configuration_entry_test.adb
+   [Ada]          mc_clock.adb
+   [Ada]          mc_fs.adb
+   [Ada]          mc_hex.adb
+   [Ada]          mc_posix.ads
+   [Ada]          mc_runtime.adb
+   [Ada]          mc_store.adb
+   [Ada]          mc_types.adb
+   [Ada]          pkg_conffile_choice.adb
+   [Ada]          pkg_conffile_observation.adb
+   [Ada]          pkg_conffile_snapshot.adb
+   [Ada]          pkg_conffile_transition.adb
+   [Ada]          pkg_configuration_entry.adb
+   [Ada]          pkg_deb_payload.adb
+   [Ada]          test_support.adb
+   [Ada]          pkg_tar_framing.adb
+   [Ada]          pkg_tar_output.adb
+   [Ada]          mc_sha256.adb
+   [Ada]          mc_kernel_read.adb
+   [Ada]          mc_codec.adb
+   [Ada]          mc_paths.adb
+   [Ada]          mc_dirents.adb
+   [Ada]          mc_text.adb
+   [Ada]          pkg_deb_conffiles.adb
+   [Ada]          pkg_deb_container.adb
+   [Ada]          pkg_deb_data_stream.adb
+   [Ada]          pkg_deb_control.adb
+Bind
+   [gprbind]      run_conffile_observation_tests.bexch
+   [Ada]          run_conffile_observation_tests.ali
+   [gprbind]      run_tar_output_tests.bexch
+   [Ada]          run_tar_output_tests.ali
+   [gprbind]      run_deb_payload_tests.bexch
+   [Ada]          run_deb_payload_tests.ali
+Link
+   [archive]      libtests.a
+   [index]        libtests.a
+   [link]         run_conffile_observation_tests.adb
+   [link]         run_tar_output_tests.adb
+   [link]         run_deb_payload_tests.adb
+ENTRY local e2d9b6fafee954740213c86e77fed41d2c4f69b452bcf6bf20a867d52f60a868 643b7969ec7fd242f27d0034fce51fc4818d90c5886e505bba2905e72608efdb 0000000000000000000000000000000000000000000000000000000000000000 90ffb185b8d48cfec2cc8ca9259681d8d02bf6fca05bbb13084592240e425d78 ed7002b439e9ac845f22357d822bac1444730fbdb6016d3ec9432297b9ec9f73
+ENTRY backup e61fc867f16095fd9a3c2258f75e0dd07e62be8a88a438d5f22a644ee607900c 643b7969ec7fd242f27d0034fce51fc4818d90c5886e505bba2905e72608efdb 0000000000000000000000000000000000000000000000000000000000000000 e106ff849ae08f6521fe970ba1b670b30a53d9a5d6901b2ba07745b2f6cc35fc ed7002b439e9ac845f22357d822bac1444730fbdb6016d3ec9432297b9ec9f73
+ENTRY vendor 0226e868974d555eba85a2e601ab5c596367897e4589c332f504704f9973148e 7c7c4223e6389e3c2afb799b7dbef0aacd46d4a08689c8e68c6da3000e66987d 0000000000000000000000000000000000000000000000000000000000000000 8d151ca61bc478e91ea22251969ebb8cea63c84eb1b65da903551038c51eec96 2c017f919bd66bcef5699ac1f558da8664f72b1339ca24f1a6a6632076f456c6
+ENTRY override cc75202c7bbb9ef5d2904e3856b9d8e5b0d5a0bb438bfd5efb4c12c377d27914 7c7c4223e6389e3c2afb799b7dbef0aacd46d4a08689c8e68c6da3000e66987d 77ee3edfc8319c046bb24b0b9a666934fb182452e3acb602ae0b6594beceaf3d 6c41a569f2458ef9b3ff6eea97b4f459a4f5ad644ea8a256f0d687d16fd96257 2c017f919bd66bcef5699ac1f558da8664f72b1339ca24f1a6a6632076f456c6
+PASS assertions= 141
+PASS assertions= 83

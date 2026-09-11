@@ -1,0 +1,45 @@
+{
+  "result": "pass",
+  "cases": [
+    {
+      "name": "local",
+      "archive": "0f107d3134a8d68d838095649afd51393319ab1a91144b806d7aa494d8451d7a",
+      "exact_content": true,
+      "numeric_permissions": true,
+      "exact_acl_and_xattrs": true,
+      "flags": true,
+      "signed_nanosecond_mtime_and_atime": true
+    },
+    {
+      "name": "backup",
+      "archive": "a1a4a2db7cf2ee56f94496895a0c132805c2dd9314ec239f3c0182884cfba54d",
+      "exact_content": true,
+      "numeric_permissions": true,
+      "exact_acl_and_xattrs": true,
+      "flags": true,
+      "signed_nanosecond_mtime_and_atime": true
+    },
+    {
+      "name": "vendor",
+      "archive": "ce660f7ad753fb0599def2a7eae5fe3a71aa21c41952e5390f4edbbe0cb20f24",
+      "exact_content": true,
+      "numeric_permissions": true,
+      "exact_acl_and_xattrs": true,
+      "flags": true,
+      "signed_nanosecond_mtime_and_atime": true
+    },
+    {
+      "name": "override",
+      "archive": "9beea40eccd070167ac9ab309b33a1c1eb1124d9bfc0e78afe62aa653253ad12",
+      "exact_content": true,
+      "numeric_permissions": true,
+      "exact_acl_and_xattrs": true,
+      "flags": true,
+      "signed_nanosecond_mtime_and_atime": true
+    }
+  ],
+  "published": false,
+  "production_authorization": false,
+  "actual_boot": false,
+  "ctime_birthtime_restored": false
+}

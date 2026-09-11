@@ -1,0 +1,29 @@
+Running as unit: run-p772175-i772475.scope; invocation ID: 40aca6b9a3754f358d0de09075ca85b2
+limited-exec: {"scope": "run-p772175-i772475.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Setup
+   [mkdir]        object directory for project Tests
+   [mkdir]        exec directory for project Tests
+Compile
+   [Ada]          run_conffile_observation_tests.adb
+   [Ada]          run_tar_output_tests.adb
+   [C]            pkg_deb_stream.c
+   [C]            archive_observer.c
+   [C]            pkg_deb_decode.c
+   [C]            root_preparation.c
+   [C]            conffile_snapshot.c
+   [Ada]          configuration_entry_test.adb
+   [Ada]          mc_clock.adb
+   [Ada]          mc_fs.adb
+   [Ada]          mc_hex.adb
+   [Ada]          mc_posix.ads
+   [Ada]          mc_runtime.adb
+   [Ada]          mc_store.adb
+   [Ada]          mc_types.adb
+   [Ada]          pkg_conffile_choice.adb
+   [Ada]          pkg_conffile_observation.adb
+   [Ada]          pkg_conffile_snapshot.adb
+   [Ada]          pkg_conffile_transition.adb
+   [Ada]          pkg_configuration_entry.adb
+pkg_configuration_entry.adb:120:67: error: operator for type "Interfaces.Unsigned_8" is not directly visible
+pkg_configuration_entry.adb:120:67: error: use clause would make operation legal
+gprbuild: *** compilation phase failed

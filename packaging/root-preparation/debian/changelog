@@ -1,3 +1,10 @@
+niaos-root-preparation (0.2.2) unstable; urgency=medium
+
+  * Verify the inode group class against the access ACL mask.
+  * Preserve distinct group-owner ACL entries during extraction and comparison.
+
+ -- NiaOS Developers <developers@niaos.invalid>  Thu, 10 Sep 2026 21:00:00 +0000
+
 niaos-root-preparation (0.2.1) unstable; urgency=medium
 
   * Apply canonical signed tar clocks before extraction and verification.

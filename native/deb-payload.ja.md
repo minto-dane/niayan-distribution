@@ -74,3 +74,12 @@ PAX時刻の整数絶対値は2^63−1まで。同期I/Oと上流呼出しを制
 `make_deb_payload_fixtures.py`は合成DEBを再生成し、`compare_deb_payload.py`は
 Debian読取工具・Python tarfile・CASの全hashによる独立oracleを提供する。
 このoracleは試験工具であり、展開やインストールを行わない。
+
+## access ACLの実効mode
+
+access ACLにmaskがあるとき、数値modeのgroup classはmaskのpermissionを使う。
+上流archive entryが持つgroup-owner permissionは元ACL blobへそのまま残す。
+これは別の値であり、modeを直すためにarchive entry自体を変更してはならない。
+ADR-0104でSDK読取りと実展開workerのstat照合を修正した。
+従来の誤ったmodeを含む派生metadataは再観測時に異なる。既存hashや原本の書換え、
+旧計画の暗黙移行は行わない。対象旧計画の移行・復旧は別途受入が必要である。

@@ -1,0 +1,293 @@
+{
+  "files": [
+    {
+      "path": "pkgcore/tests/fixtures/root-archive/base.deb",
+      "sha256": "7c7c4223e6389e3c2afb799b7dbef0aacd46d4a08689c8e68c6da3000e66987d"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/root-archive/conflicting.deb",
+      "sha256": "b2af62acfb65256e95e2555c3046596aedf6974fa746f8f425c14b6ea35867ca"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/root-archive/manifest.json",
+      "sha256": "15f89fe256e57f54488f07ae9ef0891f4f27bca1ddea19c48dcc03048ba03e08"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/root-archive/order/a.deb",
+      "sha256": "ede9d3a3370439a9b8ea853224ed2711da68b0509161701022970ecc23714b98"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/root-archive/order/b.deb",
+      "sha256": "d52d5158f7580fb1516796a5c899dd56866c097e17dc8b9f63754897b3ba66e8"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/root-archive/overlay.deb",
+      "sha256": "b0ecd5748c3fad84146740449a32eddc4c4a5e5df6ceab7cce0016f80690a73f"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/conffiles/absent.deb",
+      "sha256": "4c54a8bc6a18757829a12c463c91eabed3ecc0c4498932210cf4a13671cce2dd"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/conffiles/blank.deb",
+      "sha256": "6fcbf38cb7a874215a8184b4c02ea332138906009ffed2111c7b7068a351195b"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/conffiles/byte-name.deb",
+      "sha256": "6dd8883ac48d7ecd0da6517c2d626b0827f7e7817ea7a5edab2990e9800d133b"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/conffiles/duplicate.deb",
+      "sha256": "ef1719a67e1abdd576bfd0cfcb483075ee10b08ad56fd6c0799d53e4fdea4ec2"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/conffiles/empty-component.deb",
+      "sha256": "965289ec8440a1de0195b1740c0e6de7613c3c668f6413f1e2288d781c8e6316"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/conffiles/empty.deb",
+      "sha256": "ce3071530d51abd2f4b5cd17dd69beadea6508cfb1a4d43132ea6231198d51c0"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/conffiles/layout-collision.deb",
+      "sha256": "60c5b58fe40c11aca4f2b4f731c067f5d46907c007f64ffeb9287323035db930"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/conffiles/layout-linked.deb",
+      "sha256": "5d6692bd70640dca6e94d1855bdbc2aaeac7eba070e16d1b38ae496f300c3dad"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/conffiles/layout.deb",
+      "sha256": "006dc15c47275b6a21094e5d4227cd72b4842e69076f4ff2a02d1f52fd43aef1"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/conffiles/manifest.json",
+      "sha256": "6ef56e89b4cd644bb7aa04956e52049e541f339d351803077b58ded0753ba915"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/conffiles/missing.deb",
+      "sha256": "88810305dfd7cb52cc946f7ff3e3c500864d881a5539a6cdd1388c3ee103e48c"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/conffiles/no-final-newline.deb",
+      "sha256": "2a04c80d105d76696dd762d80725b08410c990cd7b8bf0cf3a092e96ca15f6d4"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/conffiles/normal.deb",
+      "sha256": "1278e8099ebf2e5e10dca4ffea5501bed2b25f0ccb3973c5d988c9dad0f682eb"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/conffiles/nul.deb",
+      "sha256": "ea212ace79549843e11630f25541edeae2f5ea9e85dbffe6d2445e0b2842f65c"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/conffiles/omitted.deb",
+      "sha256": "388c9b31a895a5c5dae7c1040dc943964bcc3eab034f540a8e50a6dc4fbb5262"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/conffiles/relative.deb",
+      "sha256": "c216d392590d9b1f36e67044a607918e0d8bb7e9aafe6c428e709ed395a7aaa1"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/conffiles/remove-current.deb",
+      "sha256": "c2951cd51fb0d7f0b95abcc3cfa022d27c0355aa593dc101982d6a442cf126d1"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/conffiles/remove-present.deb",
+      "sha256": "5c1eb8bb1d9ee90e9385b8759a2667ef72772a5bd32febf1fff9b9ee69921f04"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/conffiles/remove.deb",
+      "sha256": "9e6fc838445df4b8753c3f17010e7b7cfe011e4327bfc8025f6b3c1c8f4356eb"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/conffiles/space-name.deb",
+      "sha256": "04a7ed710722cf1544e0c78e2b62ea0685c877def60e36fcda4d64ddadaaa301"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/conffiles/symbolic.deb",
+      "sha256": "41bab01108c810fbff76993222ffb1772e2ea0c39ac0b9dc43800529172b8939"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/conffiles/traversal.deb",
+      "sha256": "891fb8eaadefa27f50cf2c35ce50fdec02f6d8b3af081911a4c3d83153efdf89"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/conffiles/unknown-flag.deb",
+      "sha256": "9c51553db5be294fefd4a59692e92d780fccf57a1b417208c2bf7e520fe4fb41"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/conffiles/updated.deb",
+      "sha256": "04a3d75ffb271fc69403b85590dffab53c733c35053c761ea5b84cb7be331685"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/conffiles/whitespace.deb",
+      "sha256": "0164c484a2dfffea96dddf502518b19a441331cd82d3a66639b417060d5ba717"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/deb-payload/absolute-path.deb",
+      "sha256": "6b8be17e4e4934835a1a3c28746e90e169e44ccce56ebb26c2ca24e174295aeb"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/deb-payload/ancestor.deb",
+      "sha256": "f0cb3f2b99c838c5a2b3d60a7e8939289fde23ad87f4a08ead57d3437819e3c2"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/deb-payload/attributes.deb",
+      "sha256": "f4f6d95e8bf537f53792b950ca317e0bdd5ee05d5766a1711188fa860675373e"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/deb-payload/basic.deb",
+      "sha256": "12b80707238d3ed44016c82f7cf69b541309c40ec3776729099ca897a8301615"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/deb-payload/checksum.deb",
+      "sha256": "1e04aa677a6a62d5c59c333cbc1d28cd92bce6c3a044ca9fefde99c6636d1c6b"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/deb-payload/clock-precision.deb",
+      "sha256": "070b30214a7d37027091419d4433fc7d10e5b189c69616c0f8022b459a21ba57"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/deb-payload/cycle.deb",
+      "sha256": "f9784a3befa5fc6eac44b13bfc2e41b6e7c175dc9062f5adcf4e237e9deb54c0"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/deb-payload/dot-component.deb",
+      "sha256": "d5c849b43c05976a3f36a0a5341617c4685ec9639d2eab87f4bb668d73d7e0fb"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/deb-payload/duplicate-pax.deb",
+      "sha256": "9f460616039d4a884c449691267b8c38afc199d9e62741cf45e1b08ff453b080"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/deb-payload/duplicate.deb",
+      "sha256": "dcd73d365ceebe3c1b5449c8c8d68a4f39738882293904478e9bd42264432652"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/deb-payload/empty-component.deb",
+      "sha256": "d50c2e514ae11ab6f2990c8736ec4e5b59755bbf3796ddec841948bb57d4b399"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/deb-payload/empty-pax-name.deb",
+      "sha256": "f597aaf364f11b57b77b39baaa3ef3b5cb51f961a39fcbccdef46ff6c624ea29"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/deb-payload/empty.deb",
+      "sha256": "940cfc2df801756b185ad6ef15914fa4650e5f17dbe6bb39256b14511acaf4c0"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/deb-payload/escape-link.deb",
+      "sha256": "25ac490cb9b48964edd1ba80e41d9325d268d2f94c62c05d0579d6563c649e01"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/deb-payload/flags.deb",
+      "sha256": "94117f2b1b935e5a0c3458bf791e979b1c91710987a2a12f366f6bfa7e01045c"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/deb-payload/global.deb",
+      "sha256": "ac14db415a95e655222b83b8edd29bc7999cbad67119a1524a46661ca81b4d44"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/deb-payload/gnu-numeric.deb",
+      "sha256": "a25a460b42fa4f3b6e4169ebc5455b39715311b77861bdd820ceb57606450a3a"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/deb-payload/gnu.deb",
+      "sha256": "883fd4506ec9b9a21b92336b43885e193fa976e66882ab22d973bd1014e6ac5c"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/deb-payload/hardlink-directory.deb",
+      "sha256": "5ea8378474c07612e064bfc2e332ff8d91c93ec78679190d05bb2c6b6fcaf511"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/deb-payload/invalid-acl.deb",
+      "sha256": "2ae997817a0780c9cb2fb4101cfdce83271dbe28f81c1bdf013b1a3ac5e68268"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/deb-payload/manifest.json",
+      "sha256": "45890c0473373482e2c798f268e7d46481074617237f5b908b12a0c7a882e960"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/deb-payload/missing-hardlink.deb",
+      "sha256": "890e6a3eb7039c25a9ddbd8731ba9bfc34736daf6c04e2854b77cd1e72ab6d9d"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/deb-payload/multilingual.deb",
+      "sha256": "80e94653963677e84367194b29bcb5e49373183d9e99070501fe6d82a1fdd084"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/deb-payload/negative-clock.deb",
+      "sha256": "650a614e085dbd5d949d4433d4ac0ea89ef37e273e0ba9cfb3c167c56b4b6846"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/deb-payload/negative-zero.deb",
+      "sha256": "ad33c6be4d7e2860601935d68198406d6f46cc230de039dd3265dfbf2f8840d8"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/deb-payload/no-terminator.deb",
+      "sha256": "41a6afa30b1a484f31fbb243f85edd576901a639f50598bab3ed1ff135c4197e"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/deb-payload/numeric-tail.deb",
+      "sha256": "b94825123ad30d194d80043418cb3482f39bd9df8ac5bffb4ff3aa56574b57e3"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/deb-payload/one-terminator.deb",
+      "sha256": "16b8c3e594b93faffc7e63d86ce5fa5ad217ce8154b8c363b5493ed2ddf7645b"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/deb-payload/orphan-local.deb",
+      "sha256": "b571d134c9240998dea855bd678eb93abfd69b1235015adc936612309eb3c88f"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/deb-payload/padding.deb",
+      "sha256": "7fc68e4852b2d518558e468a1d7f9f205cf09d8cddb38674cb1d4ea2475cf64d"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/deb-payload/parent.deb",
+      "sha256": "0550a92867dc87325dc3fb53cacdf98a651bd5c4c224fe312298c7e2451166b9"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/deb-payload/pax.deb",
+      "sha256": "cd00b95a30b306fa94ebd89f3722a91180a9b87a7668e205de99a773c0ea6010"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/deb-payload/repeated-local.deb",
+      "sha256": "995ca9aee6290639cb18a0778d14917af2d1ba85ae26a48a2c9fab38f6df6367"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/deb-payload/sparse-pax.deb",
+      "sha256": "869feeeb54f5814913a867e2b5cab7f9339eea4679579ac390e1a4deab1cc50e"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/deb-payload/too-many-xattrs.deb",
+      "sha256": "fa7090c5b414509f6788852606245b0feb84f8c2d7c5bfbf43599afd920b0ee8"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/deb-payload/trailing.deb",
+      "sha256": "606caa8131565748ca5e48f1c342e48f3c901c8ac34e5ff9677b050ef874b360"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/deb-payload/truncated.deb",
+      "sha256": "3214b13563525dc3c123f9dca923101ef7c9136828c467eedcd9cbb4f538cf83"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/deb-payload/uid-overflow.deb",
+      "sha256": "b797e185fc487198fa025cf19d1128213737199ecb03cfe0a3d0cf33880ce1c0"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/deb-payload/unicode.deb",
+      "sha256": "2c6b28d85e1e2a5fdedc1ae93df0d282be957ee34e47379553b9970080fc6963"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/deb-payload/unknown-flags.deb",
+      "sha256": "c409611a4208d17e6afa2c8416f65b69a367388e2a6a05a290114c94242f259d"
+    },
+    {
+      "path": "pkgcore/tests/fixtures/deb-payload/unknown-pax.deb",
+      "sha256": "f3b2cdad4bb3a6f7bc6c8a29ad6f91bca3d338b69ef174409e0ce68b203cf670"
+    }
+  ],
+  "all_match": true
+}

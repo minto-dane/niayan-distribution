@@ -1,0 +1,5 @@
+6518709ddffb55ac5e351f53ff04f6a3690b58d889a6f7275116dcb367eb174c  /usr/libexec/niaos/root-extract
+PASS physical configuration entry local
+PASS physical configuration entry backup
+PASS physical configuration entry vendor
+PASS physical configuration entry override
