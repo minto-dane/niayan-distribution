@@ -1,0 +1,64 @@
+Running as unit: run-p935981-i936281.scope; invocation ID: 163e2f2acc8b444fb20451dd8c7d27f8
+limited-exec: {"scope": "run-p935981-i936281.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Compile
+   [Ada]          run_root_configuration_tests.adb
+   [C]            pkg_deb_stream.c
+   [C]            archive_observer.c
+   [C]            pkg_deb_decode.c
+   [C]            root_preparation.c
+   [C]            conffile_snapshot.c
+   [Ada]          configured_root_record_test.adb
+   [Ada]          mc_clock.adb
+   [Ada]          mc_fs.adb
+   [Ada]          mc_hex.adb
+   [Ada]          mc_posix.ads
+   [Ada]          mc_runtime.adb
+   [Ada]          mc_store.adb
+   [Ada]          mc_types.adb
+   [Ada]          pkg_catalog_retention.adb
+   [Ada]          pkg_catalog_store.adb
+   [Ada]          pkg_conffile_choice.adb
+   [Ada]          pkg_conffile_transition.adb
+   [Ada]          pkg_configured_root.adb
+   [Ada]          pkg_deb_metadata.adb
+   [Ada]          pkg_deb_payload.adb
+   [Ada]          pkg_payload_index.adb
+   [Ada]          pkg_root_archive.adb
+   [Ada]          pkg_root_configuration.adb
+   [Ada]          pkg_selected_catalog.adb
+   [Ada]          test_support.adb
+   [Ada]          pkg_configured_root_record.adb
+   [Ada]          mc_kernel_read.adb
+   [Ada]          mc_codec.adb
+   [Ada]          mc_paths.adb
+   [Ada]          mc_sha256.adb
+   [Ada]          mc_dirents.adb
+   [Ada]          mc_text.adb
+   [Ada]          pkg_deb_container.adb
+   [Ada]          pkg_deb_control.adb
+   [Ada]          pkg_conffile_observation.adb
+   [Ada]          pkg_conffile_snapshot.adb
+   [Ada]          pkg_deb_conffiles.adb
+   [Ada]          pkg_configuration_entry.adb
+   [Ada]          pkg_tar_framing.adb
+   [Ada]          pkg_deb_relations.adb
+   [Ada]          pkg_deb_fields.adb
+   [Ada]          pkg_deb_data_stream.adb
+   [Ada]          pkg_payload_ownership.adb
+   [Ada]          pkg_deb_semantics.adb
+   [Ada]          pkg_tar_output.adb
+   [Ada]          pkg_deb_versions.adb
+Bind
+   [gprbind]      run_root_configuration_tests.bexch
+   [Ada]          run_root_configuration_tests.ali
+Link
+   [archive]      libtests.a
+   [index]        libtests.a
+   [link]         run_root_configuration_tests.adb
+CONFIGURED keep 65f9db91c0fd8ca291513e2552c09f4aaca8e48ebd0d94c678fa78b074622af4 a14333e46b1f155bc79bb7a93bb2dce5d6fd404e994072fe25c38cbe9752a842 525e1124c69861e44fcecb464207477d329b34a0d86bbbc5e399366588ddc2aa
+CONFIGURED vendor f87ae0931f8d4dad55567f2131f31d0ab03549e4dcb86d5ef071ae2f3780d937 8b88e11641b9a639db15dd1ea11d2d9e0af1900496f3fd9c9a7149dde76f650d f5a7387e878d5750428e2b4a61c34c8d953bb5139c1f137aab8ce050bfb948ba
+CONFIGURED links 9877397934ddf46aff7a5d143794657c3478b886c93373cc9e9674d77f405e29 8d595cb566b23122bd3465febbe0183cf7f863f490680af7731f29081bffd286 bca414b9e991f15d3e2ab35a2d65e3eb9df80097cd1ede9d6e19e8887ecb9f3b
+CONFIGURED deleted a7eb05a87abe0be4a79f6d44cfa17dc971633da73fbcc026b295d11ec41f4fae 6590ca7ca2b365d4341483fcc6f160eb329f028fc9eda822b3029b86784ee1c9 89a0d3d36bafd9a9cd8d5d13454ca3d32492abe8ad3dd9e6c9d5411faf09762f
+CONFIGURED restored fb38575a9ee00abaf4351c87011fb98d5df891d5e9e6a6aacbe9c96fac4617ec e65926165b149284aae9bb476b828fbb09db18c83fcae0c3e9d8d0d0fef9f093 7006ae1ddc07a4646895fea8abbd74c129a1efd6206a3d1b72ec0b7f66673fa4
+CONFIGURED empty 87191fd4863135150ad1854aaa4ef5db0a588a2587db633dba7b559e368b32ed 11a11fed8ad8f186f9236ec69c4dcb2b810cffbab6dbb5e2a84db8a0ccef3c09 8674fb14554a1a58c6ea0fa0dc3d04d1b7f294c1b6c0365c112a41977f732923
+PASS assertions= 190

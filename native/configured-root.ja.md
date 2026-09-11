@@ -48,9 +48,25 @@ strict ascendingなmember digest各32 byteを並べる。この保持記録自�
 最大集合は既存catalog閉包上限+40×最大choice数+8に制限する。
 
 `Verify`は期待manifest/保持記録と元Build引数・live選択を要求する。
-先に保持recordのheader/順序/全member/hashを検査し、再構築結果のmanifestと保持digestを比較する。
+先に以下の保存参照loaderを実行し、その後にlive配置と選択を再検証するBuildのmanifest/保持digestを比較する。
 正しい保存閉包が指す欠損を、検証中に原本から再生成して成功扱いしない。
 再構築が必要ならcallerが別のBuildを明示的に行う。旧記録を書き換える復旧APIではない。
+
+## 保存参照の読込み
+
+`Pkg_Configured_Root_Record.Load`は再起動後にもlive proposalなしでNIACRT01/NIACRC01を読む。
+判断ADR-0106。全保持object、記録のhash/stat、元root/catalogと選択のscope、長さ・順序・サイズ、
+宣言されたcatalog/choice閉包と生成物の和集合を検査する。CASを書かず、欠損を再生成しない。
+成功したViewから元binding/architecture/出力、全選択、設定entry、保持memberを列挙できる。
+削除でfileを残さない選択も含む。失敗は以前のViewを消し、未検証の部分結果を返さない。
+
+最大manifestは1,048,896 byteであり、1 MiB固定bufferに制限しない。
+member列挙はNIACRC01の中身で、NIACRC01自身は含まない。後段の保持rootでは両者が必要である。
+新しい有限期限は読込にだけ適用する。旧proposalの期限は履歴で、実行期限として更新しない。
+
+このLoadは参照整合性の検査である。宣言閉包の原本からの完全性、所有権・配置・設定効果の意味、
+現在のroot状態や認証を検証したものではない。期待digestと返却scopeを後段で認証し、
+実行時には従来のlive Verifyと本番admissionが必要になる。単独でGC・復旧適用の許可に使わない。
 
 ## 実行境界
 
@@ -62,6 +78,6 @@ strict ascendingなmember digest各32 byteを並べる。この保持記録自�
 
 このAPIは保存原本・楽観的live観測に基づく生成器であり、隠れた属性の可視性、変更者の凍結、
 root/contextの真正性、署名付き同意、全managed provider、物理適用の許可を与えない。
-Verifyには生存するproposalが必要で、再起動後のdurable loader/復旧、世代保持・GCへの接続は未完。
+Verifyには生存するproposalが必要で、保存参照の読込から認証済み復旧・世代保持・GCへの接続は未完。
 後段の生成形式・実root準備・公開/bootにも新形式を明示的に接続する必要がある。
 workerの実FS能力や全DEB効果、実ディストリビューションの認定は別の受入条件である。

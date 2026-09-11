@@ -1,0 +1,30 @@
+{
+  "result": "pass",
+  "count": 6,
+  "inputs": [
+    {
+      "path": "pkgcore/tests/check_configured_root.py",
+      "sha256": "bfa4795a677b1c85db7eca94cc23987cb44a4c285ea97ba5a34da2fc58c7c0d2"
+    },
+    {
+      "path": "pkgcore/tests/check_configured_root_record.py",
+      "sha256": "11aa3812a281c39fc46b99f601cac93d026f9cbd532a9fc635e700b621438f83"
+    },
+    {
+      "path": "pkgcore/tests/check_configuration_entry.py",
+      "sha256": "daffce468de764f4fc5263f30c647fc1505eded4406bb62d94adcd51f31c7c25"
+    },
+    {
+      "path": "pkgcore/tests/compare_root_archive.py",
+      "sha256": "c6670e9276d4aa0d7c6f4ede2f59e1e99d45bf0d926ea4fa4c4d1eccd7c9b36a"
+    },
+    {
+      "path": "pkgcore/tests/check_tar_output.py",
+      "sha256": "e793e66c662b2f2d756c017a6fbaea50f4160e981c64e13a3bdc6895304d00ab"
+    },
+    {
+      "path": "pkgcore/tests/make_deb_control_fixtures.py",
+      "sha256": "2a53d1d99cafd825120c063c8ccb0aa9a41e3017b246bc627d56ad1ba779ecc6"
+    }
+  ]
+}

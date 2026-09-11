@@ -1,0 +1,217 @@
+{
+  "result": "pass",
+  "cases": [
+    {
+      "case": "saved-keep",
+      "result": "pass",
+      "fresh_process": true,
+      "cas_objects_unchanged": true
+    },
+    {
+      "case": "saved-vendor",
+      "result": "pass",
+      "fresh_process": true,
+      "cas_objects_unchanged": true
+    },
+    {
+      "case": "saved-links",
+      "result": "pass",
+      "fresh_process": true,
+      "cas_objects_unchanged": true
+    },
+    {
+      "case": "saved-deleted",
+      "result": "pass",
+      "fresh_process": true,
+      "cas_objects_unchanged": true
+    },
+    {
+      "case": "saved-restored",
+      "result": "pass",
+      "fresh_process": true,
+      "cas_objects_unchanged": true
+    },
+    {
+      "case": "saved-empty",
+      "result": "pass",
+      "fresh_process": true,
+      "cas_objects_unchanged": true
+    },
+    {
+      "case": "unknown-format",
+      "result": "pass",
+      "fresh_process": true,
+      "cas_objects_unchanged": true
+    },
+    {
+      "case": "short-header",
+      "result": "pass",
+      "fresh_process": true,
+      "cas_objects_unchanged": true
+    },
+    {
+      "case": "trailing-byte",
+      "result": "pass",
+      "fresh_process": true,
+      "cas_objects_unchanged": true
+    },
+    {
+      "case": "zero-root",
+      "result": "pass",
+      "fresh_process": true,
+      "cas_objects_unchanged": true
+    },
+    {
+      "case": "foreign-context",
+      "result": "pass",
+      "fresh_process": true,
+      "cas_objects_unchanged": true
+    },
+    {
+      "case": "choice-count-bound",
+      "result": "pass",
+      "fresh_process": true,
+      "cas_objects_unchanged": true
+    },
+    {
+      "case": "entry-count-bound",
+      "result": "pass",
+      "fresh_process": true,
+      "cas_objects_unchanged": true
+    },
+    {
+      "case": "root-size-mismatch",
+      "result": "pass",
+      "fresh_process": true,
+      "cas_objects_unchanged": true
+    },
+    {
+      "case": "configuration-at-root",
+      "result": "pass",
+      "fresh_process": true,
+      "cas_objects_unchanged": true
+    },
+    {
+      "case": "duplicate-configuration-position",
+      "result": "pass",
+      "fresh_process": true,
+      "cas_objects_unchanged": true
+    },
+    {
+      "case": "configuration-content-size",
+      "result": "pass",
+      "fresh_process": true,
+      "cas_objects_unchanged": true
+    },
+    {
+      "case": "duplicate-choice",
+      "result": "pass",
+      "fresh_process": true,
+      "cas_objects_unchanged": true
+    },
+    {
+      "case": "extra-retained-member",
+      "result": "pass",
+      "fresh_process": true,
+      "cas_objects_unchanged": true
+    },
+    {
+      "case": "omitted-manifest-member",
+      "result": "pass",
+      "fresh_process": true,
+      "cas_objects_unchanged": true
+    },
+    {
+      "case": "foreign-retention-binding",
+      "result": "pass",
+      "fresh_process": true,
+      "cas_objects_unchanged": true
+    },
+    {
+      "case": "unordered-members",
+      "result": "pass",
+      "fresh_process": true,
+      "cas_objects_unchanged": true
+    },
+    {
+      "case": "duplicate-members",
+      "result": "pass",
+      "fresh_process": true,
+      "cas_objects_unchanged": true
+    },
+    {
+      "case": "choice-closure-binding",
+      "result": "pass",
+      "fresh_process": true,
+      "cas_objects_unchanged": true
+    },
+    {
+      "case": "historical-deadline",
+      "result": "pass",
+      "fresh_process": true,
+      "cas_objects_unchanged": true
+    },
+    {
+      "case": "missing-root",
+      "result": "pass",
+      "fresh_process": true,
+      "cas_objects_unchanged": true
+    },
+    {
+      "case": "missing-manifest",
+      "result": "pass",
+      "fresh_process": true,
+      "cas_objects_unchanged": true
+    },
+    {
+      "case": "missing-retention",
+      "result": "pass",
+      "fresh_process": true,
+      "cas_objects_unchanged": true
+    },
+    {
+      "case": "missing-base",
+      "result": "pass",
+      "fresh_process": true,
+      "cas_objects_unchanged": true
+    },
+    {
+      "case": "missing-proposal",
+      "result": "pass",
+      "fresh_process": true,
+      "cas_objects_unchanged": true
+    },
+    {
+      "case": "missing-decision",
+      "result": "pass",
+      "fresh_process": true,
+      "cas_objects_unchanged": true
+    },
+    {
+      "case": "missing-choice_closure",
+      "result": "pass",
+      "fresh_process": true,
+      "cas_objects_unchanged": true
+    },
+    {
+      "case": "missing-prefix",
+      "result": "pass",
+      "fresh_process": true,
+      "cas_objects_unchanged": true
+    },
+    {
+      "case": "missing-content",
+      "result": "pass",
+      "fresh_process": true,
+      "cas_objects_unchanged": true
+    },
+    {
+      "case": "missing-catalog",
+      "result": "pass",
+      "fresh_process": true,
+      "cas_objects_unchanged": true
+    }
+  ],
+  "count": 35,
+  "scope": "saved reference integrity; no live proposal, execution permission, GC deletion or physical preparation"
+}

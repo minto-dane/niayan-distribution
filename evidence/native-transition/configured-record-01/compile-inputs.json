@@ -1,0 +1,1602 @@
+{
+  "result": "pass",
+  "count": 399,
+  "inputs": [
+    {
+      "path": "pkgcore/src/pkg_acceptance.adb",
+      "sha256": "b2c91c3eca27fc7c1c57d809c4a3c0859fb0c1bff0fee9f44ae8347f9ad43ca4"
+    },
+    {
+      "path": "pkgcore/src/pkg_acceptance.ads",
+      "sha256": "69cfc4c09795ce13fc8a341a9c1bc95ce0c7712455572766c30759de8b51bbd8"
+    },
+    {
+      "path": "pkgcore/src/pkg_activation.adb",
+      "sha256": "a7943300d912e5d2905e9f94dedc52043585fe35188edada20b111505c4ef018"
+    },
+    {
+      "path": "pkgcore/src/pkg_activation.ads",
+      "sha256": "b04e8a1ec35ed85f25c18f16e5eac36aa4209c887bef6266f786164f6fdc3a73"
+    },
+    {
+      "path": "pkgcore/src/pkg_admission.adb",
+      "sha256": "c6779ee5dbade2b1ec48f20deda0444a01e74a33d703cd62dd86db8f27350e13"
+    },
+    {
+      "path": "pkgcore/src/pkg_admission.ads",
+      "sha256": "15eddeda137d41ba529b7e5fb04553349591df2e5c7d807e49d6a3cadf1929e8"
+    },
+    {
+      "path": "pkgcore/src/pkg_advisory.adb",
+      "sha256": "8c10916f6ba50d8de707c467fd866dff3771a7b1275cea08524cb46816146411"
+    },
+    {
+      "path": "pkgcore/src/pkg_advisory.ads",
+      "sha256": "56f52abd5e76dffc9bfe616da4981e50730d81b387d4df133f44bd8b4415a7ef"
+    },
+    {
+      "path": "pkgcore/src/pkg_artifact_grant.adb",
+      "sha256": "f7a9bc587d6e2acbbcf3491a06fd84a60ccd9c48708071b57e8df786f98f88f0"
+    },
+    {
+      "path": "pkgcore/src/pkg_artifact_grant.ads",
+      "sha256": "ce4335302d26955ef5b1472f90808f978ca66a0cf7d85ff127746b43fef0afbb"
+    },
+    {
+      "path": "pkgcore/src/pkg_change_set.adb",
+      "sha256": "44dd137fdf4e2a60dd9a0e701264258eeb1f008764c527ea7632a9e6611f8cf5"
+    },
+    {
+      "path": "pkgcore/src/pkg_change_set.ads",
+      "sha256": "daf716d0ae18735b10fb7884230db72ce1ff96c4bba3923fa3f89a07b9f8de1d"
+    },
+    {
+      "path": "pkgcore/src/pkg_deb_semantics.adb",
+      "sha256": "a34a743d32a4b8fc269799aa61711cbfe4ef6dd18ad259876bc6193cdd81412d"
+    },
+    {
+      "path": "pkgcore/src/pkg_deb_semantics.ads",
+      "sha256": "e3282b362900ba90f668b0f4330e446c2ea44e24b2a8edbbe61a0cb77d31de7d"
+    },
+    {
+      "path": "pkgcore/src/pkg_deb_versions.adb",
+      "sha256": "cd69298bb4f4f26adf88bb0d78e8f45558d6e4f4c3e3af56a3f3dc3a128556ae"
+    },
+    {
+      "path": "pkgcore/src/pkg_deb_versions.ads",
+      "sha256": "d51fda5e674699fc7e506e8d8ae50c6e7d2573803f1bbdadd996ef1d282b7d59"
+    },
+    {
+      "path": "pkgcore/src/pkg_dependency.adb",
+      "sha256": "3c9c44a6f51f569ed4db6a615d1fdf759e0d42b676c2cece573930c500926a3f"
+    },
+    {
+      "path": "pkgcore/src/pkg_dependency.ads",
+      "sha256": "805b7efd78ac3799a268bea0dcd885318933dec46c438477d8c25c768202128b"
+    },
+    {
+      "path": "pkgcore/src/pkg_evr.adb",
+      "sha256": "16bc1d656eb94c2de42faaaf1a7352ea676c99969fe4ab2bd4774cf09698b5c9"
+    },
+    {
+      "path": "pkgcore/src/pkg_evr.ads",
+      "sha256": "b4331623aeef619b5d1780835b4317ef3075d4aa4e03ec3a1214b4ba49afbe5a"
+    },
+    {
+      "path": "pkgcore/src/pkg_exposure_policy.adb",
+      "sha256": "9a4b57e22b8c970fe0dc0bdc7af2c1ff9f1a50d39d8f82d4ffe6474d13635d9d"
+    },
+    {
+      "path": "pkgcore/src/pkg_exposure_policy.ads",
+      "sha256": "15900a1bb1820aae9d31e669a6b4adc0ac5b3d0a55bc448d1a8a1300d4a42e9c"
+    },
+    {
+      "path": "pkgcore/src/pkg_file_plan.adb",
+      "sha256": "fb188db12ceedfe0bffe6183c57cecca445efc5293b19154d13a138f99c3e059"
+    },
+    {
+      "path": "pkgcore/src/pkg_file_plan.ads",
+      "sha256": "292322a2e19350ecb3b4f23e1d7d853717854f7cf4a7c02fd9b4448ef5477452"
+    },
+    {
+      "path": "pkgcore/src/pkg_file_replay.adb",
+      "sha256": "039cc33d89840ae33a1447348205dde26ffdf248d0ffd253e5c14cae50b70dec"
+    },
+    {
+      "path": "pkgcore/src/pkg_file_replay.ads",
+      "sha256": "4711f602c7a31003f577a56dcd16178e7605227a166b12ea08dc83209e63c9f7"
+    },
+    {
+      "path": "pkgcore/src/pkg_holds.adb",
+      "sha256": "617c676d9988e58a901aab6d1ceddcb166ca21c428044c43fdc0e000a4f3627e"
+    },
+    {
+      "path": "pkgcore/src/pkg_holds.ads",
+      "sha256": "024f5ada55cf13b59310227005d4703c23dbde558fc47535cb6b8f743c74dcce"
+    },
+    {
+      "path": "pkgcore/src/pkg_incorporation.adb",
+      "sha256": "b7aab936095381c7d37ff4dfe95771ece66702bec71358fdda3a212a0641231d"
+    },
+    {
+      "path": "pkgcore/src/pkg_incorporation.ads",
+      "sha256": "03d17a5b5e41f8e9a44454701d82e5e374704f03572a6cb1a1d2043071112735"
+    },
+    {
+      "path": "pkgcore/src/pkg_inventory.adb",
+      "sha256": "cc8f117a1c4505eea1dabd16348129cd0644ecc635a44709734aeb55c613cb2e"
+    },
+    {
+      "path": "pkgcore/src/pkg_inventory.ads",
+      "sha256": "5915ca31a5d6b49c44f86ba0875b70f694842cc8b70eb162f6f251c4d3c8e970"
+    },
+    {
+      "path": "pkgcore/src/pkg_journal.adb",
+      "sha256": "70afd351ac77ff62045855584a70841f891a61d1ae0ca316af290a129ee4d1c9"
+    },
+    {
+      "path": "pkgcore/src/pkg_journal.ads",
+      "sha256": "646c0a39b4455620cb88815172e1f99594bf7c3146e06e7c9fbfa7a110af4e20"
+    },
+    {
+      "path": "pkgcore/src/pkg_maintenance_bundle.adb",
+      "sha256": "578b1738b811bc29916a5dfae45e429685bfdb9aec518692c4a47e1b09194c96"
+    },
+    {
+      "path": "pkgcore/src/pkg_maintenance_bundle.ads",
+      "sha256": "e7713b39d4113e67c0aeb71366e738560bddd85966849222176ef930614dc471"
+    },
+    {
+      "path": "pkgcore/src/pkg_payload_map.adb",
+      "sha256": "63fcfd9c65baad4ba5c7ed67906291ce1a311425320436966bbeb704513b8337"
+    },
+    {
+      "path": "pkgcore/src/pkg_payload_map.ads",
+      "sha256": "614aefdc0f2b3bd49d8a815c0b0ce386b7e0432b3aee274f91a7979641a465ff"
+    },
+    {
+      "path": "pkgcore/src/pkg_provenance.adb",
+      "sha256": "0588d8f53c91f0efa175f48a871f15a12bea95069c8b5ad310c7edfa387d598d"
+    },
+    {
+      "path": "pkgcore/src/pkg_provenance.ads",
+      "sha256": "6cbc596747fdcf51c2307f0212572fe01000f3bfa19db623bf7f06a3559ae253"
+    },
+    {
+      "path": "pkgcore/src/pkg_recovery.adb",
+      "sha256": "09188d7fafb4b6542ea6222bd5f475d4a91db98b90eaf48d23ea4ad43359f953"
+    },
+    {
+      "path": "pkgcore/src/pkg_recovery.ads",
+      "sha256": "65a19cab4bcb058072be461670a3e3fa2e7c7cfe3246fa13eabb853ca9a5120d"
+    },
+    {
+      "path": "pkgcore/src/pkg_recovery_catalog.adb",
+      "sha256": "4d4e63869d6cc17fcdd555b20fff45844bcc5006e0c4dc755eaf276dc9b60b4a"
+    },
+    {
+      "path": "pkgcore/src/pkg_recovery_catalog.ads",
+      "sha256": "1bb4a1f4f6c0fd72c6ce32b32ccbb48b1388d126c8772958e2f44a0f3dfa2239"
+    },
+    {
+      "path": "pkgcore/src/pkg_repository_trust.adb",
+      "sha256": "21cc3a72813e11f766a10bf268305491c5c2f4e8487ef5bf222315a419c9408a"
+    },
+    {
+      "path": "pkgcore/src/pkg_repository_trust.ads",
+      "sha256": "ca5cd5a2cf1bd7fcada9c800897c921d86df24a413754e8da1bfb507bc7bb5e8"
+    },
+    {
+      "path": "pkgcore/src/pkg_retention_batch.adb",
+      "sha256": "c3046393923c5f745e46331aeee995dcab2cf41a2a290aaaa1d86741aa790aa3"
+    },
+    {
+      "path": "pkgcore/src/pkg_retention_batch.ads",
+      "sha256": "802e1945a799fa9af27204ec29b44070752bc921cdeef88f256aefddd39043ab"
+    },
+    {
+      "path": "pkgcore/src/pkg_rollback_contract.adb",
+      "sha256": "72a5365c66b2e775eefd07739fa0ef4419da5f21649787e3bf1e8004e28bba76"
+    },
+    {
+      "path": "pkgcore/src/pkg_rollback_contract.ads",
+      "sha256": "1990832fe0fe75a9b1ad70034565e7a06592e5cd0d22c0618fa15f749c3c1fab"
+    },
+    {
+      "path": "pkgcore/src/pkg_root_state.adb",
+      "sha256": "ebb8670bb7811eb2722fa163bd655bb2ebc38c6ecadeb744d5ff4b44c7bf87b8"
+    },
+    {
+      "path": "pkgcore/src/pkg_root_state.ads",
+      "sha256": "6d993085c3e1ae379dcad4eac36e2881e720635f4cefe7f8f2abc118016e4f4e"
+    },
+    {
+      "path": "pkgcore/src/pkg_rpm.adb",
+      "sha256": "628a7207d7d495893ac18db895457a8812e0a77ba26d1f4859241a0bccfb1849"
+    },
+    {
+      "path": "pkgcore/src/pkg_rpm.ads",
+      "sha256": "cf8a2eae9da863b92727d69d35352fb21365181a04b3c26e97801c2a5d09c109"
+    },
+    {
+      "path": "pkgcore/src/pkg_rpm_fields.adb",
+      "sha256": "8102daeef66905b0ad411da66cc7c66c05d38e8f9ca6eba647cbc34b8f11a1b8"
+    },
+    {
+      "path": "pkgcore/src/pkg_rpm_fields.ads",
+      "sha256": "518de8a4894dc6d69d64d371eb04598dda1219730004b2c396f13b8cba6244b0"
+    },
+    {
+      "path": "pkgcore/src/pkg_rpm_resolution.adb",
+      "sha256": "3581660dd9e3a381ad7ae4197710ae31caa9a5f05165d0f092fac1d6994e71e9"
+    },
+    {
+      "path": "pkgcore/src/pkg_rpm_resolution.ads",
+      "sha256": "4f9bfc3339084fd0b78a3dd41d7135ab5501e47e1d1df33e5b291920a03d1ff1"
+    },
+    {
+      "path": "pkgcore/src/pkg_self_repair.adb",
+      "sha256": "618b0dc87ec1ced0516614d709bdacf6e3572ea0f2c2613ec4754866816a7cd3"
+    },
+    {
+      "path": "pkgcore/src/pkg_self_repair.ads",
+      "sha256": "e4395b2aaa49c908209ab17884f872185e9babf4ce4c97967980c13f400568fd"
+    },
+    {
+      "path": "pkgcore/src/pkg_system_composition.adb",
+      "sha256": "3552b4759ed8230f54e3b72fbf3ac7773510efaf67056fd54a0b1df87bd57131"
+    },
+    {
+      "path": "pkgcore/src/pkg_system_composition.ads",
+      "sha256": "86eefdbde250674d782c3e1dea7e677e9a7daeb1c2f1d125c408581359c0083c"
+    },
+    {
+      "path": "pkgcore/src/pkg_transactions.adb",
+      "sha256": "dbc9d91ca881d828d1b13dbddd5b2fe43661cd06a7a76a6d081bd82004ba61ed"
+    },
+    {
+      "path": "pkgcore/src/pkg_transactions.ads",
+      "sha256": "3c4c3158a75008dd9e1bb8c476aa753388679a45f64cb5b4609777dcebdb134a"
+    },
+    {
+      "path": "pkgcore/src/pkg_versions.adb",
+      "sha256": "a32b1fe8ed810ee81099ba97fc4ac1bf812fe138e132e54f93224970d74f5bfc"
+    },
+    {
+      "path": "pkgcore/src/pkg_versions.ads",
+      "sha256": "2e7792ce3ebbd380e6b1d8041b78316a20522562304dc8052252b0c96d9b3241"
+    },
+    {
+      "path": "pkgcore/runtime/archive_observer.c",
+      "sha256": "c93dd637dafb7fd7e691ca10138e4432ecde28403e3b4a4adce33c2150c6e8a0"
+    },
+    {
+      "path": "pkgcore/runtime/conffile_snapshot.c",
+      "sha256": "d0333b1f3b5c1b800e92533a87d0edec186df3c833d28b0a6847030daab9db2a"
+    },
+    {
+      "path": "pkgcore/runtime/conffile_snapshot.h",
+      "sha256": "d84fe09aa2b543d9b4ccc0716398f78e30eb43586ee7fd7ea589c27db01aaf54"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_admin.adb",
+      "sha256": "27a2d39aac595dc0e946a4e6540eda6d0da2579662fd6cfa8802e605f838f209"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_admin.ads",
+      "sha256": "c49d0933ea08e3f850b963ac07a5cfb2c929d20d68ff3f9ba7a5db869fac0c8f"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_archive.adb",
+      "sha256": "4d282fd43c909e5f10796102cb3778da976de64035c26b2abf56804ff7ee2e44"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_archive.ads",
+      "sha256": "534e8187b1205b9886b7b5f38201a46468c0e28795488f2807cc8c204b83a3ec"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_archive_observer.adb",
+      "sha256": "cc44e4c50f7d68f5a954985504e4ddbdd26a507a8e2bb388ef19b64992738bd2"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_archive_observer.ads",
+      "sha256": "7c47966e6993a1d311b199c7e04ad8fd127b5019a65919f113fd7dd1094784af"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_archive_supply.adb",
+      "sha256": "7bd6e0e0a5087cec7e110d1958633fabf9b62cd9fad219fc65004b210485117d"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_archive_supply.ads",
+      "sha256": "37bd57ab9226a42ffe93dcb73a1bdac85170d779b53c0b2a1667e320357bf148"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_catalog_retention.adb",
+      "sha256": "d26a35d0550ac9e2bc4d5924744111aba58ad48f21975ab1e4b5247a067860ab"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_catalog_retention.ads",
+      "sha256": "f7bd3535900e4b0074278428cff2bf0f07ee2611d4da565a0c3d325126f5676d"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_catalog_store.adb",
+      "sha256": "2c8754ec09c5f6e3f58e9981bffe9cb64bd4c6e38695e4efc4082f3a4f0dff58"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_catalog_store.ads",
+      "sha256": "8859b7c04cf25c9d8316c81527a76ff771c33a9e5f8f9192aceced3bdf5a64e3"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_conffile_choice.adb",
+      "sha256": "19660342900a9d33a4a6f3db04cc0f84f967a83e3205ab96be44b9587de10ce5"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_conffile_choice.ads",
+      "sha256": "6264b8855b48fc3084b19fb5b51996f7d2ababb21db178340eda359662aba8b5"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_conffile_observation.adb",
+      "sha256": "66d489e43e5654b77669cce5b555cee1e9560b1131ef73a766313ef61b5d63aa"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_conffile_observation.ads",
+      "sha256": "5067ae19ce96001f4f5288bfdceb1d4551bea10b033dec2d611b8cea9082f73d"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_conffile_snapshot.adb",
+      "sha256": "f1a2fd878ebe502e3cea1dcde417fa95781dbfbecb97e63f9157e2960704d5cd"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_conffile_snapshot.ads",
+      "sha256": "2d55677ac3c55abacba8170ee5b714792ff2da9504a96286875a4de9d36a08a9"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_conffile_transition.adb",
+      "sha256": "46975e5bd56ee6e4f9c57018444a67f61118fff53ba9efeb959d7cf0017808c3"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_conffile_transition.ads",
+      "sha256": "fbd72d631b2497835a9418f32b8eda25c6d0f1ae0fc67c3950e5af1355047344"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_configuration_engine.adb",
+      "sha256": "91b0a8aaee4b95cdf3f0608593747508b2825f770236aca8012dcf141251fa72"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_configuration_engine.ads",
+      "sha256": "88309d640f03c5af9d03ef2618d935ed285ecf32a1dd9ba021663d49d9a3d538"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_configuration_entry.adb",
+      "sha256": "66bc021e2e995662ebcda8dee1d8a1b88f05901351053b97ac9b9b41e2ea4b03"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_configuration_entry.ads",
+      "sha256": "d3c2f57a231e5a90acf0a1ffed09b2679b4b96dbe7c6609bfe55b076a2999a4d"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_configured_root.adb",
+      "sha256": "36a22125982b2765e74c9a32c03bb2988a60bb20feb98f30c5ba0bcf71ec49e9"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_configured_root.ads",
+      "sha256": "e7804978e096034bb5a3e103cf84cb850d1d4739b75dfe69f91afe4ea714d3a4"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_configured_root_record.adb",
+      "sha256": "da2f5d374e549b279c40faa3cf137f65cf778223baddbc631d5a671eeabdfb86"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_configured_root_record.ads",
+      "sha256": "e3b68c781f5280566aab8e89d0b7335f56083c094af4a94e93ca940ba0d0cbbc"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_deb_conffiles.adb",
+      "sha256": "6343da099debbd649efe5d3f2925c1d8a1cb7c968b15baeac08add269e354ce4"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_deb_conffiles.ads",
+      "sha256": "e56692c8a8287aadbcb0bf70572e1c8f3d0d8ae1eb71019feede4f535d522572"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_deb_container.adb",
+      "sha256": "9ddbc833e31ced710bc4e2f212c8c7eb18ca9422ac1fd3c5e1bab7b31d0ec94b"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_deb_container.ads",
+      "sha256": "a71e412196ec58d5ee413933e6ed8c0988094ee4977f0feaa9582d7d6c36cc60"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_deb_control.adb",
+      "sha256": "f4239ed77529bd2e2479913a6b401250ae0dbf2f082689fc02c12691a887ff20"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_deb_control.ads",
+      "sha256": "351e878c1aedeb78a2e8f889b885dbdf62c609fedaa23d6bb3376ec7f36e8a17"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_deb_data_stream.adb",
+      "sha256": "a0955dc0b15d805ae82644029d07df22ab4ff6e6952751e5176b663a6b8f123e"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_deb_data_stream.ads",
+      "sha256": "1878914944b086035ff4cf0be17c5e845ffaa648b96636b05bcf63e069016211"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_deb_decode.c",
+      "sha256": "d0299b6dff8c129d6fd4c91246f17b25bbc5b7c4455c73c08f275b6a424e123b"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_deb_fields.adb",
+      "sha256": "c81f842e929f818381fd37fd895459954d933129fad7004c27853d7d4098a7ef"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_deb_fields.ads",
+      "sha256": "e0f09a32dcd6ea5a2bdee229a757ad0101dadddf1f257e15b3de7dc1dc56d901"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_deb_final_set.adb",
+      "sha256": "2d3e01a1d7a8e9b825fcdc940366ae4d2c04e02a2e9147298ece199b9dec78fb"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_deb_final_set.ads",
+      "sha256": "fb7ac279e508631f64c975d481b66a2e7b751f305bd54bfb7b3da039eea68bb0"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_deb_metadata.adb",
+      "sha256": "fcfa59d088508a57265e6819ac85b97b0564426057a2e85b81e617ae19bc1d70"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_deb_metadata.ads",
+      "sha256": "6fe624917165605a0a4e7fc2d7fb7c30fd7d5be7f4107d43ea0237648bfba037"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_deb_payload.adb",
+      "sha256": "0af9f56c93606c514ba363fce6171f9809a06ac3d0b952f57e48aa926e820a71"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_deb_payload.ads",
+      "sha256": "9136dff99d3d95123c293642cce0ff254a769c138f8f32588fd76d9e2baa22dc"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_deb_relations.adb",
+      "sha256": "2e4e47c4fbf132d46c8c045f7c28cfb74bb930a047332f4c3f62c45ba436d9f6"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_deb_relations.ads",
+      "sha256": "85538091080ca8a0b6cd5b15fba9ad842d5a402df80fd6e847ec3c6dcfc6e352"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_deb_stream.c",
+      "sha256": "320ad46f87de92d902e5823426cdf66c74f6e5367356ebf3df06657f5fefa8eb"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_deb_transition.adb",
+      "sha256": "4a2d1f5eb7fe7a1bbef8d5badce8cd1701a7a3b4785270f79c1ddd7e7fde3e5f"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_deb_transition.ads",
+      "sha256": "9624d707fb44fef802d8813c9f7b87d3a6b966d9f173698aa055cc13085ba82e"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_file_engine.adb",
+      "sha256": "4591374a5f686e393e1294c223753f8ff68b635c4e86d56f9eeead65cc01f5c9"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_file_engine.ads",
+      "sha256": "6b1f961cc6bfe0a7d314fcc0f87cfc67bc2fc263ab104cc22152fe003ea4e8e3"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_generation_descriptor.adb",
+      "sha256": "b5f2cdb5cf235af096de247fe71005c91e5b0d52c0fdae6a0d3188bec61a777a"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_generation_descriptor.ads",
+      "sha256": "cf582c51c09258390c293bcb66a8eb81e2daab974831cf8bb45e3ea1ec6c2adb"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_generation_intent.adb",
+      "sha256": "f49ca85f2f76ee91bfdd40f9d91f73c1f314b28f4c3abd9257262e01ca1cee4f"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_generation_intent.ads",
+      "sha256": "d970a5627a81a8bff247f39c256c463235b287ba7277beaccf96edc9de92c893"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_generation_manifest.adb",
+      "sha256": "c31626dff9aa38019c4ec22d57ca26ec1a4db1031a762bb8b58fdd43119e8213"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_generation_manifest.ads",
+      "sha256": "8c8de3628ca6c03b26a08a5f747e58487c5b7284769fb18656156ee48d163b64"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_generation_publisher.adb",
+      "sha256": "486dcc4ae821b966e22f941d37372fc39d9bdd4fe1de089f639fb560ee3bcd6f"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_generation_publisher.ads",
+      "sha256": "0e616ba63a6de5e0be70f810f14abf60e255d048a1b625a77b60dd9c93c80a72"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_generation_stage.adb",
+      "sha256": "1cbf73b9573fdc0cbbe4de1d061784efaf82eef5d5b55f58b8e40ce72e3cdbe7"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_generation_stage.ads",
+      "sha256": "00a80b5adf8986998cbe03fc033cf9f8c260109e00dda4493e8fd4878628d148"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_image_inspector.adb",
+      "sha256": "94ba40d6cd20ad9cdf0e0cf81a85bbdcb006a537671aac918e1d5bc7921962a3"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_image_inspector.ads",
+      "sha256": "cdd4c0798b794ba7bac94f69b15a37a8f099d0e3552d63e6bdaad77950bdf452"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_journal_io.adb",
+      "sha256": "f7c528f4c0b4dcde76087bc3c3b0538f50caa727c742c6ff40486842d4309f04"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_journal_io.ads",
+      "sha256": "284e89621fe1475591f77d0b61fc1c3ac7860c645fa674d3e66b0d9863519abf"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_managed_engine.adb",
+      "sha256": "a17f2c5d4773548f46355c2ab9130d676b426f832bfae389d156b31eec993964"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_managed_engine.ads",
+      "sha256": "dc96b54c217f26b003b9e3142f4cc151e5fcf8e864f0e9360b72ab0836abb8e4"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_payload_index.adb",
+      "sha256": "72010bb85c818bf07d0fd52cc4d7817e9b043349a22e800334077dfdf46050e4"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_payload_index.ads",
+      "sha256": "fe70138eace22ba4affc59ecb732ace1cf614f3eddfe0fcd764d1faa4975adf6"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_payload_ownership.adb",
+      "sha256": "5c8d22431c38322d2b043ab4f50c06c716794e11f5b4942db96ec202bd6993ac"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_payload_ownership.ads",
+      "sha256": "82f9c09064599a71259ed7188aa8957ac3243aa8eb3889cd3d4cbe4053d6410c"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_plan_compiler.adb",
+      "sha256": "76cb883657592bdd6079c6d81884b016a37a120dad13e2f54540131d04901b23"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_plan_compiler.ads",
+      "sha256": "a2c0203b2ad6fc169dc947c26665e54a42446520747caffeea2b056604e9b001"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_quiescent_engine.adb",
+      "sha256": "4a6599b9c12fb88f3b861d0ea5c2a9b0aed5476b15325f8e8b47b4dfd928621b"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_quiescent_engine.ads",
+      "sha256": "66e0dcf149a8ab097b03a64d9af471b716309dd59763e0e6f1a5d379726844e3"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_recovery_audit.adb",
+      "sha256": "e1eeefe14fac541d97ee1530d62e83b2e17e644c95b10698b8b26928de7258cb"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_recovery_audit.ads",
+      "sha256": "c5713815cca51448fe5d0c270bec9e3ee170645619802414624f4f972642a3df"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_resolution_engine.adb",
+      "sha256": "73e443677a59373135b5a412e5ba5e032ecad7be87f91cbbfa666a01c368f3ba"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_resolution_engine.ads",
+      "sha256": "7bf151d4332db1c9ac1039e06012a5f0d34e890901db055e75b17702c5e21c67"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_root_archive.adb",
+      "sha256": "32637ef070d951f776ccbc9d3f28c1d8309e45705b5b567b6a9b9d17967ae883"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_root_archive.ads",
+      "sha256": "f311f76c8427a2af17a13aef252012a208ab28be5a76a81cd2ed0037aacd70c5"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_root_configuration.adb",
+      "sha256": "68dcd30111dc6a1075e2d7a01417472b400bd6dcef70583d51edf5712b03d411"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_root_configuration.ads",
+      "sha256": "8eae4402846427940d36c15d83099e62ed3f82de1ed08adbe9163f2c83b96a45"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_root_preparation.adb",
+      "sha256": "204568a21f46a78b24226b5738690dbd1d2ace824a1ea95cc8651459a0c79d23"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_root_preparation.ads",
+      "sha256": "06b9313d6f33dec72a80d06e97aec6cba92917485ed375e34f7354264711f90b"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_rpm_auth.adb",
+      "sha256": "5e18caa61f3622e09a175ee33b6be7be601424be6de09f06784ac09f17b49c98"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_rpm_auth.ads",
+      "sha256": "592b0e6020894b6fa40992baf2fa20fae6317fd71e50763f023aa6ed195b3de2"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_rpm_file.adb",
+      "sha256": "3dd4f65192d93f6d9d87a0b8d5d312fdb9d31007251fe03f51305c12da4af000"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_rpm_file.ads",
+      "sha256": "017a51a79085f547c7c38eefd64cc2496a7547a9925107ce7bc06a7cb8a6a459"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_scrubber.adb",
+      "sha256": "be4a5f6d41a471a7b6fe912286f28b53716d3a43914c5cd39fc8a4c05666dedb"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_scrubber.ads",
+      "sha256": "d680d05418efc69bf4a6050e4eaf3a6fbf4a874a76aac12436a54510590e4e24"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_selected_catalog.adb",
+      "sha256": "4eacf8d8a62c59e5eb4ea258b968119aee3ba25d6898ca84d73691cd092036b0"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_selected_catalog.ads",
+      "sha256": "6a0ac89cd44a24d23680273fda2efcfc9a9c91664f0f5b1607343befea8e9315"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_site_supply.adb",
+      "sha256": "36825c4a5337a31fe73ca3cd4518f638200b09e1272121374c4beeee23211a3d"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_site_supply.ads",
+      "sha256": "1ca7fe4dc57fbd5a79fecbb38ebc2d48f06018645faab6a42a4c39340c256df7"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_source.adb",
+      "sha256": "60e48abdcc99897a47be0260fd4430e267c746de35007dcb4e8f3af23ad4a71e"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_source.ads",
+      "sha256": "f2cfdb41a0b9465820de303c56db50b559e09190018aff4e2842423785e2bf16"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_supply_map.adb",
+      "sha256": "1cb109ef53eb6764cddc7a913796ce393cd0528983c10f018a02d739e58a26b9"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_supply_map.ads",
+      "sha256": "1f955d2b9f176b65ec20cdab25cd751463c39060f7cc60e6d5d972cd6a1f17fe"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_supply_planner.adb",
+      "sha256": "78f1a25cd291a6c098d74d16d99a70fcd3685b14076bf57b882515c5cf1f0513"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_supply_planner.ads",
+      "sha256": "9b2775b65c7b827bb90eb5400a265ebf349c5bb66934954d71f7526dcfc2a15a"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_supply_policy.adb",
+      "sha256": "6b1767d8c42c2cff30d54437cb57af5182d5ce27e72d2e5f069761f91229d3ce"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_supply_policy.ads",
+      "sha256": "94e65f0eef9d9a5f0a2b1afb5d3c3b1674bb738ba03df93afcd98cf007b8a8fe"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_tar_framing.adb",
+      "sha256": "138ae7ae6c757d58a2282b6daf12420f410c778e9e267d7e71a0c00b41980a66"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_tar_framing.ads",
+      "sha256": "c28772b11401b8646116fc06848c1b0c585f5a33765740a5f25765b28f8d0a5e"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_tar_output.adb",
+      "sha256": "9f621468b9736990d97a7d95b0cbeba53313cb39d88ebed11f49ffe73e2c812c"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_tar_output.ads",
+      "sha256": "28b7e490ca46de2a52545ff7bd5f29cb762c6c17e63f1c59e611c673927075bf"
+    },
+    {
+      "path": "pkgcore/runtime/root_preparation.c",
+      "sha256": "db855ee657c711cc332622697bccc74c756ef4edabb6db178c03fe4a275219af"
+    },
+    {
+      "path": "pkgcore/tests/conffile-snapshot/check.c",
+      "sha256": "689373f5d7c381819b4eb9f3424ac0b325a57f10ce59bac0add54ada34426b6e"
+    },
+    {
+      "path": "pkgcore/tests/configuration_entry_test.adb",
+      "sha256": "d259c6c7ed0e35e6c09fe1a06833f26f37c51b83f1113addb12234e63f229e12"
+    },
+    {
+      "path": "pkgcore/tests/configuration_entry_test.ads",
+      "sha256": "61dff18232a6996542d893a2cf8a5c3bcdbdc67c8b38ac77c878ca039576c7aa"
+    },
+    {
+      "path": "pkgcore/tests/configured_root_record_test.adb",
+      "sha256": "f55a9a91a9954ca38d2dd686a5fce344850ee50d7906eeac7cff0254847308b7"
+    },
+    {
+      "path": "pkgcore/tests/configured_root_record_test.ads",
+      "sha256": "b2325b8ac66ec7f0ed5829e2441dcd9e726c3a71bd554c65396fa2ce0d49ae59"
+    },
+    {
+      "path": "pkgcore/tests/observer-transport/check.c",
+      "sha256": "cc5a35c076e1e2a52551704be5d94b0aa218f48f218168abf1597d02a4cf1809"
+    },
+    {
+      "path": "pkgcore/tests/recovery_fixtures.adb",
+      "sha256": "7bf62c464cb344dc5f7580252cbd10f2a24ecd5557fc4dbd3dba2c4b4637276a"
+    },
+    {
+      "path": "pkgcore/tests/recovery_fixtures.ads",
+      "sha256": "8d4318daed09a072681091e5d0e2e6ed57de081d31dc1bc8791e1ed2073a8636"
+    },
+    {
+      "path": "pkgcore/tests/root_archive_order_test.adb",
+      "sha256": "2d1a11e92d6691e2c083f5dfcbdd6f52e8fd9d1fbc4d68f3459f7d2f0145c476"
+    },
+    {
+      "path": "pkgcore/tests/root_archive_order_test.ads",
+      "sha256": "1d3f15340d25363cbbf5e7c88d79074111ab2e2c5f53c894b70ac71c1d3378b5"
+    },
+    {
+      "path": "pkgcore/tests/root_archive_stage_test.adb",
+      "sha256": "e6061f88c81223ab2c99140db38f50888bd959bd56fed12010d01932a750456c"
+    },
+    {
+      "path": "pkgcore/tests/root_archive_stage_test.ads",
+      "sha256": "0903af5a10e7339eb0dedd9a8547e2a7c558d8f37d2db19ee2f0bc1617f0f9ba"
+    },
+    {
+      "path": "pkgcore/tests/run_archive_observer_tests.adb",
+      "sha256": "0fea1d79c03b5bdcae622eeca5886eb643ba721ebfb3d426024f6ba131f25893"
+    },
+    {
+      "path": "pkgcore/tests/run_archive_supply_tests.adb",
+      "sha256": "8d96229afaede4427efaaa74b316b435f52b7098fa6152153518eaee0ad9a78b"
+    },
+    {
+      "path": "pkgcore/tests/run_catalog_store_tests.adb",
+      "sha256": "765410674e73daed7fcca21aba53704ba85edab5f4383ce6dc7257babf65c220"
+    },
+    {
+      "path": "pkgcore/tests/run_composition_tests.adb",
+      "sha256": "a91c814db20fa41582b3a2e80e015674e14a14edaa87af118718100dc1b2c00b"
+    },
+    {
+      "path": "pkgcore/tests/run_conffile_choice_tests.adb",
+      "sha256": "0e3a9eb71246b87d3f050ad84589c95373590679362e06fa6d69a2311eb01cb5"
+    },
+    {
+      "path": "pkgcore/tests/run_conffile_observation_tests.adb",
+      "sha256": "18975cf5724e7bfc1370411113151d5055d237599a1b0332ea6d17bf0d1a8748"
+    },
+    {
+      "path": "pkgcore/tests/run_conffile_snapshot_tests.adb",
+      "sha256": "0c0674471c58c29edfc2d952eb03c151a9dd8111198303e6efbef2f87fef3851"
+    },
+    {
+      "path": "pkgcore/tests/run_conffile_tests.adb",
+      "sha256": "92c771bf829770afc0a203834d89257308d998e3897895443af78887e19c567d"
+    },
+    {
+      "path": "pkgcore/tests/run_deb_container_tests.adb",
+      "sha256": "010bffd9234ea063385d763a2eabfe5c9a84888b5bc2da465329ef5536e3ffb5"
+    },
+    {
+      "path": "pkgcore/tests/run_deb_control_tests.adb",
+      "sha256": "69836f988ce6f8f5a33a9b9310e28ab627e010d53acb3485f074833788fc1e3a"
+    },
+    {
+      "path": "pkgcore/tests/run_deb_data_stream_tests.adb",
+      "sha256": "341486fd201a5d63d628d65b4a516cf8cf118c3526051d3a87a56cd83132169f"
+    },
+    {
+      "path": "pkgcore/tests/run_deb_final_set_tests.adb",
+      "sha256": "34decda4da318722a061b7bbc7621cb68d536479c632f98ba18065bb255bf443"
+    },
+    {
+      "path": "pkgcore/tests/run_deb_metadata_tests.adb",
+      "sha256": "ae383d4c46f4040ec4d6d1d75ec30f7645432515575c37ee7189e475468aad89"
+    },
+    {
+      "path": "pkgcore/tests/run_deb_payload_tests.adb",
+      "sha256": "5ea523d0e577dcbccf3da93b75894fcd53c086941322e6f08cb401c53936bf1e"
+    },
+    {
+      "path": "pkgcore/tests/run_deb_relations_tests.adb",
+      "sha256": "e3eb573f929ef1178e61d96fb11ae60282a171da9a0d5540491eddaf1d875f83"
+    },
+    {
+      "path": "pkgcore/tests/run_deb_semantics_tests.adb",
+      "sha256": "f5ae744471097dabca051470d95191cfc3ab34f3cf750fac41b943b6831333b0"
+    },
+    {
+      "path": "pkgcore/tests/run_deb_transition_tests.adb",
+      "sha256": "f003d7ffa579ae4c031cea08abb21913204fec5fcd02538aa3f21631527930bb"
+    },
+    {
+      "path": "pkgcore/tests/run_enterprise_pkg_tests.adb",
+      "sha256": "9cabc8eb35976bf70bd7859e9af6acc66b5e008ebdc0f6485a606bed7455909a"
+    },
+    {
+      "path": "pkgcore/tests/run_file_engine_tests.adb",
+      "sha256": "fcc0903ed4ddedc48bdbdff7097764745acd6d897ffc11229c597fe0efeec0d7"
+    },
+    {
+      "path": "pkgcore/tests/run_file_replay_tests.adb",
+      "sha256": "b8bbf4e018642212a5e5ff644f1fdd7c2ccfdec9e578347ab5512732bf739f05"
+    },
+    {
+      "path": "pkgcore/tests/run_generation_publication_tests.adb",
+      "sha256": "1d66686fdebdd29da7179d87799753bf38afce181c390d0ef7e7c9ee5beb6089"
+    },
+    {
+      "path": "pkgcore/tests/run_generation_stage_tests.adb",
+      "sha256": "c62745ddaed4e37d2c22125729e75e5737937fd3a60d4c5f7f64bac5b29edcbd"
+    },
+    {
+      "path": "pkgcore/tests/run_journal_io_tests.adb",
+      "sha256": "fa7b55fb4bd39533124f2f06b59623da6fcfc52c8187f164c2421a56b89e3673"
+    },
+    {
+      "path": "pkgcore/tests/run_payload_index_tests.adb",
+      "sha256": "fdb3d27577b49f942365129ce96751dedd8e5d6d6081d3bcf8150adce640c927"
+    },
+    {
+      "path": "pkgcore/tests/run_payload_ownership_tests.adb",
+      "sha256": "518aaa4adfce67e3907ef8cfe77d07929536c11b9f9cdf64913c683192a95220"
+    },
+    {
+      "path": "pkgcore/tests/run_pkg_resolution_tests.adb",
+      "sha256": "d3bf3269690c807ad696cab00c9774e8ab3e1315b8b537a444a8e5c9b4a91451"
+    },
+    {
+      "path": "pkgcore/tests/run_pkg_tests.adb",
+      "sha256": "b0d8b75120f8d01f3e6a9828398fbe8f302210ffcfaa6a44b72572ecababf872"
+    },
+    {
+      "path": "pkgcore/tests/run_repair_tests.adb",
+      "sha256": "d4645c81a75d69e02dcd96bf4b7c5234ec6a6e0f3fa34740ade086f32f9d0343"
+    },
+    {
+      "path": "pkgcore/tests/run_retention_batch_tests.adb",
+      "sha256": "8d0dc751b4f1270cfa7daf2967652922f8c3549dded80284df3a6ab8ebcc9e4e"
+    },
+    {
+      "path": "pkgcore/tests/run_root_archive_tests.adb",
+      "sha256": "546ab5b40eb53c067768b0f8c8cdf301ab6e4a58a9b699ccba1e3fb758f07813"
+    },
+    {
+      "path": "pkgcore/tests/run_root_configuration_tests.adb",
+      "sha256": "149acc9d2586504f102e26bc07a1cbd19d6acd42f96e8ffb050d2a0ca1d03f80"
+    },
+    {
+      "path": "pkgcore/tests/run_rpm_tests.adb",
+      "sha256": "644c97ff6a23205995b1f2ba1d1c6e04e1dd67e3960b5190db0db09d253f4fff"
+    },
+    {
+      "path": "pkgcore/tests/run_selected_catalog_tests.adb",
+      "sha256": "304d2bf1915e539556b9d35cd695911adf69eeacc24e3b98e7cbfc55c4bb2736"
+    },
+    {
+      "path": "pkgcore/tests/run_site_supply_tests.adb",
+      "sha256": "658b960326d246105449fa03d20fc9630164715ac7b77fecef60bd1ac164dc6e"
+    },
+    {
+      "path": "pkgcore/tests/run_supply_map_tests.adb",
+      "sha256": "677a56d5a748879efd2dbc8e85bb7f51a20bd237bf53c3fbe434aa25524e4243"
+    },
+    {
+      "path": "pkgcore/tests/run_tar_output_tests.adb",
+      "sha256": "7907a1a85e422227e7ca464311fae2fc315029b425c8736c5985d82e1f45a3c8"
+    },
+    {
+      "path": "pkgcore/tests/run_v2_pkg_tests.adb",
+      "sha256": "2451c9692f024d7f5431743ded4ce39d28814732efd432432a360fe21d96880f"
+    },
+    {
+      "path": "pkgcore/tests/test_support.adb",
+      "sha256": "25d04c8d593e96726f556311ba2a88c5655a68a3a1d446748cfc4d66e8c6a376"
+    },
+    {
+      "path": "pkgcore/tests/test_support.ads",
+      "sha256": "c0610d628dffd452bc6a39fa47ae1181837be2266e00fe99ed2a5a4488e4b136"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_admin.adb",
+      "sha256": "393464653a8df1a911290b7ad9bc4e224d09120a11fdd364316289ac3538b0de"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_admin.ads",
+      "sha256": "bbe6174d63b3589d5896902a706eb975e714d5b61fe04c8c9690a921ba79c5f6"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_atomic.adb",
+      "sha256": "28e1075b53f0caea29053d09b5817b338aae568360d24da11ddb7505d9761c63"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_atomic.ads",
+      "sha256": "d2cf015e9eb3549b895d8048fe98bd350edad2fce5883cb28144816ea4722776"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_authentic.adb",
+      "sha256": "f4744199d1f47af426b2495d192e9bbd7cfc2358b9fd89ced9b299738f79b7cc"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_authentic.ads",
+      "sha256": "1a4e39abf174cd23a1b27018f3f7f08c03e71cef80805105e4d1e2aae073951f"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_checkpoint_store.adb",
+      "sha256": "f3b20be157c8f572e334d78a4bb7e2e264c8087a2e42e81517ad5a49f50979a6"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_checkpoint_store.ads",
+      "sha256": "219bed4f16ba352cb6901d298cea7cfa9c71dc62d8bba5ade3e2a0afcf245de4"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_cli.adb",
+      "sha256": "a4887f1e637c6d6684a6996f6e84f878ef27f4b02ecf754213e6d7d8180a5e79"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_cli.ads",
+      "sha256": "811d51bbf6d754c3f42b6fc5320b1c54e44302467987acd5aa8bc46bf53dfd16"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_clock.adb",
+      "sha256": "bc6cc5c9e8e207e166fe05865fc6c96f3f320f253f5f0584bb1510c4cf8251df"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_clock.ads",
+      "sha256": "5a2a2cd4a2587e91ffc7b1e53ebd493209bcc77204186080ebda7166133ef39c"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_command.adb",
+      "sha256": "d57b6ef93c35f6953de44df20dd6b58daf9aafb69ef4cf2df2a22ae8727e9ed4"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_command.ads",
+      "sha256": "9b9f5dcc0d9daa84fa9c3747cab0c828b09599a5e4f9f2a752a8fc2035eb8351"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_config_auth.adb",
+      "sha256": "934609a69e3d5ea30530a5b2d5967fe383abe6a65fea49180f4f2501ebd380ac"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_config_auth.ads",
+      "sha256": "0ec7557cb78b147c04c7f7c54e77fd65966d7f515c48ff483490a0a0a84c23bb"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_control_io.adb",
+      "sha256": "5195e2ae8286316dbc8365171edbfb85815b230f819c789736ddbbd33490b490"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_control_io.ads",
+      "sha256": "cdd3aa831ebdaaf85fd31ff888c133af0a56fb0c77020950d5e4c348259119fd"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_durable.adb",
+      "sha256": "114f9b24f60f9e33a2e7056854298f289bbd95eed71c1040c28978cf7ef6a484"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_durable.ads",
+      "sha256": "2f76691344520d4a27b5fe37b331fdb32c2ed87f54aa236d65a41949d81e54e5"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_fault_auth.adb",
+      "sha256": "d6ad1994840e0be3f5f83c2cd58af1e6e15d3eff88340265422fcb4b9a9ad6ce"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_fault_auth.ads",
+      "sha256": "1f39a74ebb96b3f18d4431d477380889c9ba261f66994d4036c390e2d77ea9b2"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_file_io.adb",
+      "sha256": "fbc18abc385b637b34f190b86ca9466b57c295d70fb45f49e7457039badfeb3e"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_file_io.ads",
+      "sha256": "c274eae782e0cc9afbf32b904b853208e2aeb5677b9eb78ba2acb03c153f9f67"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_fs.adb",
+      "sha256": "79dd37fe59a251803162d056c3c8ff8f2ce245c9c87fdc0753a8ab2b8bc0afda"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_fs.ads",
+      "sha256": "1551d83212fd36a754e6aa34b0dddeb70e1f4a35728a1a305cc2929aa5519e1d"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_gate.adb",
+      "sha256": "52f12e3bf050f14caebb8a3a594066b3de1b97192e53c8468b418d04e88a1be0"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_gate.ads",
+      "sha256": "e8d7d247c332aa17f7d6ce143c2c60788b4349f05787e8e5c8c96f79314d3d64"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_https.adb",
+      "sha256": "3dfe44530492beb39e1190153b075c7eb35f08757b5b8600a210e3454ca2197e"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_https.ads",
+      "sha256": "fc9c226664d3af7b75f85625612834c0958f458d3b64610a54a826f1dfae39b7"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_ingress.adb",
+      "sha256": "e02ca10b54d6d8636ab2e847eaf97dd88c85fd3c1e1794b0d4de7bdc4e4870f7"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_ingress.ads",
+      "sha256": "74d7dbf1c9fce6f236bf85d95ceca562c019833e6c980e9094711311f6df45cf"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_kernel_read.adb",
+      "sha256": "89ec8b7d6932a6fab37ef5d2d7c83983771283883bb06a6f124a3e0783bafa41"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_kernel_read.ads",
+      "sha256": "902aa098bc178afd2a38948ae51b4f4bfecd3d2b96fa4019f7a68962bdb644a3"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_keys.adb",
+      "sha256": "2cd1edff27ef0915e2e56f3b19b95e98b43ffe6fbb45531be1a901c4643d30db"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_keys.ads",
+      "sha256": "71ca68ae7a4f678207cf26719face4402dd52fb94a9be5e6d2479a310a34dea2"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_layout.adb",
+      "sha256": "25cb83e887ac39efce1024b7821aaaa1ea125ef0dae33d6c37162be4407c0b53"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_layout.ads",
+      "sha256": "61640db00af06b760bae5f437f20225822333057c354e94eef90b643beb65765"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_log.adb",
+      "sha256": "d10a8ca3c0e37c0f458680922fee3d6b05ceeedf2f1687d222c4034661ed0d69"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_log.ads",
+      "sha256": "168f8e0697833bc3d96f5e61ce6754b7e403c478f878180ee913ad733b409be0"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_posix.ads",
+      "sha256": "cae2453f635d461ecf66e56860c7e6422bd29c70c33c1709d292077b7eadb4a3"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_qualification_auth.adb",
+      "sha256": "c218d9c6564c5671f538628f5a288980551d9d2bde839aafa273e159242cc482"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_qualification_auth.ads",
+      "sha256": "eaf425d52fa07636efd7e4bb914c16dec383a9bded61a1b3de36f07fcb02b35d"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_receiver_ledger.adb",
+      "sha256": "4dc14aff58ed393707c2a2946ea1ac1f3118d9fd7d20c7679a1f9753ea889953"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_receiver_ledger.ads",
+      "sha256": "8a3b2022b951b94e8a28658fa26f361c9ef9673e527ef030564812bc681058b5"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_request_files.adb",
+      "sha256": "573bc81228c26144e1debe180dc67df2859b20abc7692f875f450edc55a5323e"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_request_files.ads",
+      "sha256": "1e187679fdb2d04dd024d0781ab56efb026a4d7fcc0dc433096a1730aade9ef5"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_runtime.adb",
+      "sha256": "04f3d7db42a928df9457fc6b5027189d1f77cc086821aa878c6edfb92c30298e"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_runtime.ads",
+      "sha256": "8430ef0c1f526efc4bd4e07ba5ecf0abd82d35574cf71725cecc632a76600559"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_signatures.adb",
+      "sha256": "ec1daa4b274663a7dcc62f90f4e759cca54a63ee0814a924e00b3260711e836c"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_signatures.ads",
+      "sha256": "2b095eeca74dd106f08f351e84af7a4864d28961dd7e18dcc0f834c431fa83f0"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_site_policy.adb",
+      "sha256": "c5a7ab9c395ce4f5526a4b14102615e1c09e3cbad901c4b88ba8eaaf0dd37b08"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_site_policy.ads",
+      "sha256": "14fb79ff5a25330c173040d06c8b7150637352f155af4b52067f43e0ed9e99fc"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_stop_barrier_auth.adb",
+      "sha256": "9e82de8f241b98f66fa3cbb708fd58ced97c501df2e884fba85a3bb274b6906d"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_stop_barrier_auth.ads",
+      "sha256": "ac097e243040511c5c21e8ccdf72648a2c41e0c533edc3d4573e22afcff1939e"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_store.adb",
+      "sha256": "826d5e706ea01c945563d8572633acde435679aeb9afe1a2d619926e52955c53"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_store.ads",
+      "sha256": "72d0a001c56421cdb7765feb9f4156fedfecc31d61200e93240bf0b12e77a7b3"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_tools.adb",
+      "sha256": "7d5f99e000640929d0158c872ee69089404cbcd194bd069cce03a8e4382ec402"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_tools.ads",
+      "sha256": "1ba3e01e1fe3bbbe9485cebab6f34799d9b21492a6668b86b0afab37f41865a2"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_xml.adb",
+      "sha256": "a28d15b12acadf7c9ba894f2f30117cbdad4560e3d89b7e78d7aa747e8ca364e"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/runtime/mc_xml.ads",
+      "sha256": "215e0997f899e8e8e4850ee759720109f6d68f5128dee3c1a44b7cb37c67983a"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_accounting.adb",
+      "sha256": "ac50ee770c2a7feb384600db8bfe3a796473021175bf1c58880846f2ef73178b"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_accounting.ads",
+      "sha256": "525750f13c2fe645640045bdbccbada49800e78dd4006b63ab259a71587cc751"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_attestation.adb",
+      "sha256": "5df64d0097739582d88ba2c588773e57b89740a096c7c86d84ba8e7e2883aaca"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_attestation.ads",
+      "sha256": "d22860906bc70504f7a4fc4cd710c0ffd94c5a6f327a78b36bb09b96521e3882"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_authorization.adb",
+      "sha256": "4cab94bdaf04c1bf3c300e3ddc3e36e2699f298285c4fa9976a3c63897023534"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_authorization.ads",
+      "sha256": "3e9c99bd998decd8c2196b415bed6c40ddf929cd2c13f63c094df4cd30ff2c82"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_backups.adb",
+      "sha256": "e5e71ef14954cf411a2e99d88b133b916a29d69f5d7eea57f639e72e965df166"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_backups.ads",
+      "sha256": "7999c76e41022390cdae57bb0580ffe9c6096b414764ae32813a527412ddbc05"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_base64.adb",
+      "sha256": "735adec98e853c89d690844159d06c560173f4df984e75187316f4b1cd422da3"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_base64.ads",
+      "sha256": "0e86d93e6877ac0006228713bdfa9dcb4100f284dea9405a381ca3afab53fd11"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_breakglass.adb",
+      "sha256": "259a87e8d4429e2cf255ed37cd1708c8fb2a168970e485a2ff63e7888207764a"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_breakglass.ads",
+      "sha256": "a551c5aa0c5c009411815ad1c56458b5bb6d0796bcecfa9384a54dee688a53c6"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_checkpoint.adb",
+      "sha256": "93025bed3e295514c022f69854192ae7c286e7e78eb4673e0869cf8c0c84f3d6"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_checkpoint.ads",
+      "sha256": "d4b34104c37f33572977e5429b33a29531490bf35dc60eda1c35e40bebe4c898"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_codec.adb",
+      "sha256": "083ff5d743956efdea050e3b1bfbdcc7d3e90edead2bc074ac788199db052ece"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_codec.ads",
+      "sha256": "39e9469f30969e1aca8fc182748a15bc2a776f2c43bd845f5f8d277f6636b5ad"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_commissioning.adb",
+      "sha256": "b985c34a7d249ea591df421136fba56c92d83b6e3d3bac1377a956dd77393fd5"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_commissioning.ads",
+      "sha256": "585720401180b6c3ee350adb3e889257b7efe809f0d4942507dbdaaa471b97e4"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_compatibility.adb",
+      "sha256": "06eedd824d8b9415c342d938f4a4bdfdb41336bbe58cc40d954f79bc797b298a"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_compatibility.ads",
+      "sha256": "5e4e979e3748ffd867dcafc295f6aa02bca2e60036d282f2e6f25a1e0edfd957"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_config_receipt.adb",
+      "sha256": "1b2ec6e226d1f6406f0e2136f9fa9f62617eb367302e1538c46e539284de9ff1"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_config_receipt.ads",
+      "sha256": "99e584f5cf7f8c2a98be28f3ced049c4b397a6e495e38b602e64f20fde94ab69"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_contract_profile.ads",
+      "sha256": "52d53c033ed582e81819cb6646ef6ebc40dd72ae241971cd821f0c55588b05c6"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_control.adb",
+      "sha256": "487c40ca6f8daf92c81b9eecc0effaaf2364fb5430d6830422ec51bbad0a76fa"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_control.ads",
+      "sha256": "c60cc48466a7b0eaa525458441931411f04ffbefa115dba288ae202a7376b705"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_control_codec.adb",
+      "sha256": "9a62371c91afa129dc20fa294cc471000af0389e34112daf56a5dbd9da86846d"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_control_codec.ads",
+      "sha256": "9442d69c4a2cc5689da5b681592a934f57a8fd2d5d8464947f4fcc2b4cbef222"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_diagnostic_bundle.adb",
+      "sha256": "ae52ac7adf3a970c6adcfcdc3ccd29e847098485bd76b1a58290397ea1a5ee74"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_diagnostic_bundle.ads",
+      "sha256": "664f5586f1cb4e63e2011b4f8617974b58999ea9664241582e9190d2340a1743"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_dirents.adb",
+      "sha256": "78da2cfde9c7ce5824afc1bd893de5ef3fc403fb9233f9844ee570d0c3da45ec"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_dirents.ads",
+      "sha256": "360facaddb40a306ca8e79ae6d5d16f28e78489ec13e8524b6daff0763dcb969"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_fault_report.adb",
+      "sha256": "1967be7d39fffe9da63576934deeed52b74cc8110ad32348ed6001844e4e11d4"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_fault_report.ads",
+      "sha256": "4429626af5ca62eb872a83e06394d8307b4f2a1ebdee27de85ffd840150ea01d"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_faults.adb",
+      "sha256": "4d659a850f580d70a6930e67342dcc6771dc84821a871e73004ba9cfb1ddba40"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_faults.ads",
+      "sha256": "d78482ba8b3c0f9c5086f5079a1df9aef398fc45661e87a02e1b8b9fc1d22e76"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_generation.adb",
+      "sha256": "c053bd85007f0d295e75e924602e36299c266790ec9f1556023cbc5c0533bfc3"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_generation.ads",
+      "sha256": "78f99b4e7ab72a5dc2965ded5821db317f63cda2504bed7bb34014c8cb808709"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_golden.adb",
+      "sha256": "d7b1ebe2e1aa2d3d824ea1ccfbe5ed3ead591a088a22264a805fd9629cf837c1"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_golden.ads",
+      "sha256": "a8de4a686cefc5ed149bf5ce6b3c7bb8a09be48682e85e8e34fb766b0e44608c"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_health_golden.adb",
+      "sha256": "a6b072294368820738700f4ddcf3365b90859341356a1938b7bc6eecba7c04af"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_health_golden.ads",
+      "sha256": "c60bdc4d32d62bf98bd1f2038d8219515b4f9ee255c6fc967a683cc086849d07"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_health_report.adb",
+      "sha256": "b3142c82df74453332d6aede3410e6c4ee15acb4ab1ccfd077efcc4e50a4e05a"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_health_report.ads",
+      "sha256": "c171a3b7b03614b39edf45d14338ebc8505fc21123df27e2626efefe98089072"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_hex.adb",
+      "sha256": "e82169dfe37734c6559830180c9949df5b09cb0dfa6807c44b7bd724cc6c174d"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_hex.ads",
+      "sha256": "b99cfa8f7e510ad43af2de7ea3a83c343352095ce5053441b1282674e2091ad1"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_incidents.adb",
+      "sha256": "f9236fa69ef65f23929eff0bce5c508bf5c21e25e66cf4510811be14fa4cd833"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_incidents.ads",
+      "sha256": "26b62609213f60f614a62a29e1377e1a3afe17b50af895d44107e5104ed80da3"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_journal_budget.ads",
+      "sha256": "3f71db3a4ffd1d81d5ca91d415e7650a0d386f62f154508d6dbd44d767cc71cb"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_json.adb",
+      "sha256": "321f50f8b9f38628336ba509f39819299571cea43290506da5de6595d398b666"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_json.ads",
+      "sha256": "20bd8edf722d9862c9b17ad25fe5b5dc7cc6690fbeb100c6adfeb341a9e9f7d4"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_log_format.adb",
+      "sha256": "85e4273dc3b7a95909106a4415a0aa5fc69d5354faafb88fe42a5c22d9833ddf"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_log_format.ads",
+      "sha256": "9f442e90c4fdbd223f72afe467de4bc3e2f93d51661b50893252e3d5ba987976"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_maintenance.adb",
+      "sha256": "10e3ebc6d6ecc0b456aab28b38686efd87dc64635a00d4f325f594ee3f843049"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_maintenance.ads",
+      "sha256": "291510017d21f55a41647b8162cbd322cb2f2eff3b647a2220bfd7ad5bb6bf0a"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_numbers.adb",
+      "sha256": "991f4dfdb2296e9ec6eb8e38e24f26a4aa39d17258f71c23a874cfbfc864a7c9"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_numbers.ads",
+      "sha256": "8785aa2d7e3b28c59ba8246b50fa8e8c308becb83d01fea8385d2de489341d9f"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_paths.adb",
+      "sha256": "1c1761a5ab2ddf2f7f13cd894cac639b465fc6727104fd038a0366427e0a7178"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_paths.ads",
+      "sha256": "7c4dee755e35cec843b44dc0a2c6e3d6564baa9cfffd5718e14ee1ce85964d01"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_platform_profile.adb",
+      "sha256": "8fce04711ad3f188612fe6acd3c18e81ad6aade67774ade32a62577e08090781"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_platform_profile.ads",
+      "sha256": "6911318bd031bca5a31caa68216aaed151b4e729589a80d888db183b5a770495"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_properties.adb",
+      "sha256": "8c71a826df863d65c72e473183b35b375e0615e670b4d6aa74305d59e9511261"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_properties.ads",
+      "sha256": "6cb83799933aa82e4ebc07b923f0c98b4125c4f0bd4cc0c921dded2a0ccd17ba"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_protocol.adb",
+      "sha256": "e39dc19db99e6bd0bd7b997956685edb20767e89ac39b7d63c0ae3daf0ab3e41"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_protocol.ads",
+      "sha256": "59d1e10307fa5d26d41f4e4a6952834951b02321922fbcbc5d19bb56f16f18e3"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_qualification.adb",
+      "sha256": "2d5f1b1d3c316091be615749bc5aa4cb59cb2d4a8ac9e870ab36619a70e31ac9"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_qualification.ads",
+      "sha256": "f75a43c4e1ee433967868b768d62d217ae0cb73e0c43dde02add6417bef1e3dc"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_recovery_cohort.adb",
+      "sha256": "09a63cfdf324aeec91ec7ad497d0836bd6634e67971a1eb252fba991f4ac4483"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_recovery_cohort.ads",
+      "sha256": "20aa138e31df59a8d8bd5383e77d716dc4aa8bd04913b5f523e211eefeb2e2f5"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_release.adb",
+      "sha256": "64f006436d053f030c6d0ee332e7adadbe7e3502cefd87217dd74ee421058865"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_release.ads",
+      "sha256": "99454e01d5a20dc3a06dc74e50bc77062f2b1befc2dc9480fcc87c5a78c8632d"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_replay.adb",
+      "sha256": "238ddab74858f4ee0c8e1270c201d60b11bc3710cd7bb3eeae971237ef8f7ab8"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_replay.ads",
+      "sha256": "17d95201105d8bb834535d4c15fa2e428e8bb1f11306fceae8db9e321857e1d2"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_request_replay.adb",
+      "sha256": "0c4940854577671585a262cee156ce8adc216bb57a8d90b8bdaad9a69f7113ba"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_request_replay.ads",
+      "sha256": "133d98b424c50867b32ab48c85788636fbeb91c5290feb63d7490de3beaaf4fd"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_requests.adb",
+      "sha256": "8656cee6480ea7116c4b0769decb89a792c1652588d4e4254916976682771f97"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_requests.ads",
+      "sha256": "69348821912732aabc7ea6c11004298c7abb11c705a08bd20cf72ad279dac39e"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_retry_budget.adb",
+      "sha256": "faadcbbc245169805501336e2aff2173aa820f4ccd50f03f7264a71e7c29606e"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_retry_budget.ads",
+      "sha256": "01b5a1169eaad4e2f62b2f45347345f942c4b7dbbffcde5805f4b43fff9f110f"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_sha256.adb",
+      "sha256": "800057f0b984952bdc89f7266ff25300d54ac1c7bb11d6dfe1adbdcbebfb2373"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_sha256.ads",
+      "sha256": "912d84ac1840cf10de532ed69c490672b29ea8c5aa5a4cdfcfa785cb64b69407"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_stop_barrier.adb",
+      "sha256": "a400ded89e0ac7e422d3a6a8d6fa5cbdd78ab1baf14792463e31fac8ec2d7d06"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_stop_barrier.ads",
+      "sha256": "5e213f836144f61d043b289737152f5971db49bca8874a469072e8b4bb2de4a2"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_system_baseline.adb",
+      "sha256": "972b77add245946c54ddd95ad9e4e1ce0deb89a152b7b1981216756591140a77"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_system_baseline.ads",
+      "sha256": "61ed8f1a18a9edfdc5cf46413ad0a42f662081e367188b2c42e070a28ae9c479"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_text.adb",
+      "sha256": "bf8a39b4ce9226125bd128160a72b330326f61ff71ee8c4df401e2e63121ac2d"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_text.ads",
+      "sha256": "759b8c2efde0c545e8e93f286efc29bd66989bf3f15c575e17e72a5bf914c712"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_time_guard.adb",
+      "sha256": "5ad09fbdcd912ca88a2a8f95a4c240e27b9ec2f89a2d0d20c70f0c89d9b95fe6"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_time_guard.ads",
+      "sha256": "aa9149fdad56b8ac977a98df82e5ff35d7eb1cf1c4ce6651b80f619310584059"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_types.adb",
+      "sha256": "ab98df7efc590791194b085dbca74456d2e87939b7ccb4e8865444a91688cca5"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_types.ads",
+      "sha256": "037226c0f35f4281899cca8da645b4207999506cb5d7c93958bf68f38b3bb6a4"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_witness.adb",
+      "sha256": "66c4b544048aa32aec5b8ec8405562c11a4589f3fd23c441dc5739dfcf167b1d"
+    },
+    {
+      "path": "pkgcore/vendor/contracts/src/mc_witness.ads",
+      "sha256": "ed9f10f47a2fd5ba1f462ccc2b75f47435671cbbd628f02666e9df6a2091638f"
+    },
+    {
+      "path": "pkgcore/vendor/resolver/src/resolver_admission.adb",
+      "sha256": "ae84576a24028a9b3ebf74f36dfc573a56a875106f634fb8e07879ab09c936a6"
+    },
+    {
+      "path": "pkgcore/vendor/resolver/src/resolver_admission.ads",
+      "sha256": "3b29c9f32afb6c5d60dbe92f8bc8dafc0343136fab62f66977e80eacf1f177ca"
+    },
+    {
+      "path": "pkgcore/vendor/resolver/src/resolver_builder.adb",
+      "sha256": "5c659aa76adcddfb8f105599dcb85ae0e23a01b8ed3dc89165bba69955fbd9f9"
+    },
+    {
+      "path": "pkgcore/vendor/resolver/src/resolver_builder.ads",
+      "sha256": "c8249ad823b44c0b300c061244620c6b2d72bf4eddbef7130e4d2209459939fe"
+    },
+    {
+      "path": "pkgcore/vendor/resolver/src/resolver_cnf.adb",
+      "sha256": "272296a98b8b6f04efa21eb8d4dc91bf44cea3f61c6f423c8529cdd3867c7021"
+    },
+    {
+      "path": "pkgcore/vendor/resolver/src/resolver_cnf.ads",
+      "sha256": "fac72f77a1ddc22758baaf2cecc0da77ed9d20176624edbe7316f961d0fd9216"
+    },
+    {
+      "path": "pkgcore/vendor/resolver/src/resolver_lrat.adb",
+      "sha256": "d824c956298c1c3542b3f2001046975a549bd3e2298fd203844e8e15a10aa491"
+    },
+    {
+      "path": "pkgcore/vendor/resolver/src/resolver_lrat.ads",
+      "sha256": "01f35a2906b7e58c873b1a78c3132b14b397dd19607ef6e80db1a48447d841ab"
+    },
+    {
+      "path": "pkgcore/vendor/resolver/src/resolver_model.adb",
+      "sha256": "4104f2cd1d08165b50ef03b637566d72d1d64fdefa9f0f4561b0a11616fc2b23"
+    },
+    {
+      "path": "pkgcore/vendor/resolver/src/resolver_model.ads",
+      "sha256": "ad6dde2fa0a247992db1e0a71d51624974afcdb8c07079d02282463d45f5281b"
+    },
+    {
+      "path": "pkgcore/vendor/resolver/src/resolver_proof.adb",
+      "sha256": "2646dabeef929a452b63be9392e75706941bd9500b3b09d2c7c2879c4df708b7"
+    },
+    {
+      "path": "pkgcore/vendor/resolver/src/resolver_proof.ads",
+      "sha256": "65d584894382a08f1c0680894538883f0791279cf4b20c217516476a87f6676e"
+    },
+    {
+      "path": "pkgcore/vendor/resolver/src/resolver_verify.adb",
+      "sha256": "967cdd85850e70864f839affedcadb1d5af6577110ff6625f6305feee6a05ec9"
+    },
+    {
+      "path": "pkgcore/vendor/resolver/src/resolver_verify.ads",
+      "sha256": "932721d584cf935f34585b40a28d36fb1f3796a947c4a8b7fe92cb8c1b4ca6d1"
+    },
+    {
+      "path": "pkgcore/vendor/resolver/src/resolver_wire.adb",
+      "sha256": "ea35c27be2344270e97228e58ffa8b8f59ea85f8d219dcea3f170b0f627e4a61"
+    },
+    {
+      "path": "pkgcore/vendor/resolver/src/resolver_wire.ads",
+      "sha256": "397ea9acb556f27df61c68bc95a5fac4c4686d2dd7c26edc3b7a1e0dc6ea9b26"
+    },
+    {
+      "path": "pkgcore/tests.gpr",
+      "sha256": "2c3be9a963b175374272ecc8ae6d4be2320cde23587fffe878c26bed241167d4"
+    }
+  ]
+}

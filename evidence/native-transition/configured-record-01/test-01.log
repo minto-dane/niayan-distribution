@@ -1,0 +1,55 @@
+Running as unit: run-p935277-i935577.scope; invocation ID: 4b4dfcc07cfe4a82a7d6c0fb9104f4a6
+limited-exec: {"scope": "run-p935277-i935577.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Compile
+   [Ada]          run_root_configuration_tests.adb
+   [C]            pkg_deb_stream.c
+   [C]            archive_observer.c
+   [C]            pkg_deb_decode.c
+   [C]            root_preparation.c
+   [C]            conffile_snapshot.c
+   [Ada]          configured_root_record_test.adb
+   [Ada]          mc_clock.adb
+   [Ada]          mc_fs.adb
+   [Ada]          mc_hex.adb
+   [Ada]          mc_posix.ads
+   [Ada]          mc_runtime.adb
+   [Ada]          mc_store.adb
+   [Ada]          mc_types.adb
+   [Ada]          pkg_catalog_retention.adb
+   [Ada]          pkg_catalog_store.adb
+   [Ada]          pkg_conffile_choice.adb
+   [Ada]          pkg_conffile_transition.adb
+   [Ada]          pkg_configured_root.adb
+   [Ada]          pkg_deb_metadata.adb
+   [Ada]          pkg_deb_payload.adb
+   [Ada]          pkg_payload_index.adb
+   [Ada]          pkg_root_archive.adb
+   [Ada]          pkg_root_configuration.adb
+   [Ada]          pkg_selected_catalog.adb
+   [Ada]          test_support.adb
+   [Ada]          pkg_configured_root_record.adb
+pkg_configured_root_record.adb:141:46: error: operator for type "Interfaces.Unsigned_8" is not directly visible
+pkg_configured_root_record.adb:141:46: error: use clause would make operation legal
+pkg_configured_root_record.adb:141:99: error: operator for type "Interfaces.Unsigned_8" is not directly visible
+pkg_configured_root_record.adb:141:99: error: use clause would make operation legal
+pkg_configured_root_record.adb:150:36: error: operator for type "Interfaces.Unsigned_8" is not directly visible
+pkg_configured_root_record.adb:150:36: error: use clause would make operation legal
+pkg_configured_root_record.adb:151:36: error: operator for type "Interfaces.Unsigned_8" is not directly visible
+pkg_configured_root_record.adb:151:36: error: use clause would make operation legal
+pkg_configured_root_record.adb:151:63: error: operator for type "Interfaces.Unsigned_8" is not directly visible
+pkg_configured_root_record.adb:151:63: error: use clause would make operation legal
+pkg_configured_root_record.adb:151:90: error: operator for type "Interfaces.Unsigned_8" is not directly visible
+pkg_configured_root_record.adb:151:90: error: use clause would make operation legal
+pkg_configured_root_record.adb:157:84: error: operator for type "Interfaces.Unsigned_8" is not directly visible
+pkg_configured_root_record.adb:157:84: error: use clause would make operation legal
+pkg_configured_root_record.adb:158:35: error: operator for type "Interfaces.Unsigned_8" is not directly visible
+pkg_configured_root_record.adb:158:35: error: use clause would make operation legal
+pkg_configured_root_record.adb:158:61: error: operator for type "Interfaces.Unsigned_8" is not directly visible
+pkg_configured_root_record.adb:158:61: error: use clause would make operation legal
+pkg_configured_root_record.adb:158:87: error: operator for type "Interfaces.Unsigned_8" is not directly visible
+pkg_configured_root_record.adb:158:87: error: use clause would make operation legal
+pkg_configured_root_record.adb:158:113: error: operator for type "Interfaces.Unsigned_8" is not directly visible
+pkg_configured_root_record.adb:158:113: error: use clause would make operation legal
+pkg_configured_root_record.adb:161:33: error: operator for type "Interfaces.Unsigned_8" is not directly visible
+pkg_configured_root_record.adb:161:33: error: use clause would make operation legal
+gprbuild: *** compilation phase failed

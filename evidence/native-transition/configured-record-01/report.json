@@ -1,0 +1,43 @@
+{
+  "result": "pass",
+  "source_subject": "78bfa9040cd90d8374765d1fc20dd46224aad6792e60c11935e099537e45baa0",
+  "pinned_image": "sha256:7f92f64938b87b862dd962a93b558fb0caea13493745c684fbddfc190a723617",
+  "tests": {
+    "root_configuration_assertions": 190,
+    "independent_complete_root_cases": 6,
+    "saved_record_final_cases": 35,
+    "saved_record_initial_cases": 34
+  },
+  "inputs": {
+    "compile": 399,
+    "conffile_fixtures": 26,
+    "python_tools": 6
+  },
+  "limits": {
+    "memory_max": 3221225472,
+    "swap_max": 0,
+    "cpu_quota": "100%",
+    "pids_max": 128
+  },
+  "scope": "Read-only saved reference integrity and existing live configured-root verification. Every final saved-record case reopens the store in a fresh ordinary-UID process without a live proposal; CAS object set and contents are unchanged.",
+  "not_qualified": [
+    "source-derived nested closure completeness by the saved reader alone",
+    "ownership/layout or choice semantics by saved reader alone",
+    "authenticated root/context or user consent",
+    "live proposal recovery",
+    "generation pin and GC deletion",
+    "physical preparation/publication/boot integration",
+    "complete native-authority ISO",
+    "full language translations"
+  ],
+  "unchanged": [
+    "shared vendor and mathematical sources",
+    "root extraction worker",
+    "all existing DEB fixtures"
+  ],
+  "initial_failure": "Initial forced compile refused invisible Byte operators; added use type Byte. Final forced compile and all affected tests passed.",
+  "notes": [
+    "Saved record 34-case oracle was extended with one historical-deadline case; final 35 cases use the current Python source.",
+    "No VM, full-suite, proof or old chaos rerun; no record format migration or public command added."
+  ]
+}
