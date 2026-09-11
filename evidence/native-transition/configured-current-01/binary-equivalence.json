@@ -1,0 +1,8 @@
+{
+  "result": "pass",
+  "sha256": "44df0a7061e8c92dc381e4fb5f450a074f9e1dcf1e3b720c5dc7437a89a062a0",
+  "initial": "test-02.log",
+  "final": "compile-03.log",
+  "change": "One documentation-only comment line in pkg_configured_root_record.ads. Forced final build exactly matches executed root-test binary.",
+  "bytes": 9684672
+}

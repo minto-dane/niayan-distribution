@@ -1,0 +1,58 @@
+Running as unit: run-p951003-i951303.scope; invocation ID: cd8f2a46b02f43dea9a8659385ed67eb
+limited-exec: {"scope": "run-p951003-i951303.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Compile
+   [Ada]          run_root_configuration_tests.adb
+   [C]            pkg_deb_stream.c
+   [C]            archive_observer.c
+   [C]            pkg_deb_decode.c
+   [C]            root_preparation.c
+   [C]            conffile_snapshot.c
+   [Ada]          configured_root_record_test.adb
+   [Ada]          mc_clock.adb
+   [Ada]          mc_fs.adb
+   [Ada]          mc_hex.adb
+   [Ada]          mc_posix.ads
+   [Ada]          mc_runtime.adb
+   [Ada]          mc_store.adb
+   [Ada]          mc_types.adb
+   [Ada]          pkg_catalog_retention.adb
+   [Ada]          pkg_catalog_store.adb
+   [Ada]          pkg_conffile_choice.adb
+   [Ada]          pkg_conffile_transition.adb
+   [Ada]          pkg_configured_root.adb
+   [Ada]          pkg_deb_metadata.adb
+   [Ada]          pkg_deb_payload.adb
+   [Ada]          pkg_payload_index.adb
+   [Ada]          pkg_root_archive.adb
+   [Ada]          pkg_root_configuration.adb
+   [Ada]          pkg_selected_catalog.adb
+   [Ada]          test_support.adb
+   [Ada]          pkg_configured_root_record.adb
+   [Ada]          mc_kernel_read.adb
+   [Ada]          mc_codec.adb
+   [Ada]          mc_paths.adb
+   [Ada]          mc_sha256.adb
+   [Ada]          mc_dirents.adb
+   [Ada]          mc_text.adb
+   [Ada]          pkg_deb_container.adb
+   [Ada]          pkg_deb_control.adb
+   [Ada]          pkg_conffile_observation.adb
+   [Ada]          pkg_conffile_snapshot.adb
+   [Ada]          pkg_deb_conffiles.adb
+   [Ada]          pkg_configuration_entry.adb
+   [Ada]          pkg_tar_framing.adb
+   [Ada]          pkg_deb_relations.adb
+   [Ada]          pkg_deb_fields.adb
+   [Ada]          pkg_deb_data_stream.adb
+   [Ada]          pkg_payload_ownership.adb
+   [Ada]          pkg_deb_semantics.adb
+   [Ada]          pkg_tar_output.adb
+   [Ada]          pkg_deb_versions.adb
+Bind
+   [gprbind]      run_root_configuration_tests.bexch
+   [Ada]          run_root_configuration_tests.ali
+Link
+   [archive]      libtests.a
+   [index]        libtests.a
+   [link]         run_root_configuration_tests.adb
+44df0a7061e8c92dc381e4fb5f450a074f9e1dcf1e3b720c5dc7437a89a062a0  build/test-bin/run_root_configuration_tests

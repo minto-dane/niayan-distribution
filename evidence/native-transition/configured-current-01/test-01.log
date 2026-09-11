@@ -1,0 +1,27 @@
+Running as unit: run-p949262-i949562.scope; invocation ID: 4d91c3b2d56c4d92a5e0d8b2a5ce0f52
+limited-exec: {"scope": "run-p949262-i949562.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Compile
+   [Ada]          run_conffile_choice_tests.adb
+   [Ada]          run_root_configuration_tests.adb
+   [C]            pkg_deb_stream.c
+   [C]            archive_observer.c
+   [C]            pkg_deb_decode.c
+   [C]            root_preparation.c
+   [C]            conffile_snapshot.c
+   [Ada]          mc_clock.adb
+   [Ada]          mc_codec.adb
+   [Ada]          mc_fs.adb
+   [Ada]          mc_hex.adb
+   [Ada]          mc_posix.ads
+   [Ada]          mc_runtime.adb
+   [Ada]          mc_sha256.adb
+   [Ada]          mc_store.adb
+   [Ada]          mc_types.adb
+   [Ada]          pkg_conffile_choice.adb
+   [Ada]          pkg_conffile_transition.adb
+   [Ada]          pkg_deb_payload.adb
+   [Ada]          test_support.adb
+   [Ada]          configured_root_record_test.adb
+configured_root_record_test.adb:16:29: error: operator for type "Interfaces.C.int" is not directly visible
+configured_root_record_test.adb:16:29: error: use clause would make operation legal
+gprbuild: *** compilation phase failed

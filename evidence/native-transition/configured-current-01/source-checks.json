@@ -1,0 +1,12 @@
+{
+  "result": "pass",
+  "source_subject_before": "972bb968e5f4def48ad3496808add2ede374315cc2e6c1266fc82ab0661d9b19",
+  "source_subject_after": "972bb968e5f4def48ad3496808add2ede374315cc2e6c1266fc82ab0661d9b19",
+  "checks": [
+    "engineering-check.json",
+    "engineering-lint.json",
+    "unified-audit.json",
+    "license-check.json",
+    "ci-sync.log"
+  ]
+}

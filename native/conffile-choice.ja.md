@@ -16,6 +16,18 @@
 
 ## 候補を変えない
 
+CAS予約を取り直した場合は、旧proposalをそのまま使わず`Reobserve`に現在のroot FD、
+独立した期待root/transaction/context、保存proposal/decision/closureと新規観測の有限期限を渡す。
+原本・宣言・inode/属性/内容と退避先を通常のPrepare/Resolveで再観測し、旧記録と比較する。
+違ってよいのは新規観測の期限と、それに由来する新proposal参照だけである。
+保存閉包は再観測したsourceと旧記録IDから厳密に導出して比較する。判断ADR-0107。
+
+返却する新proposal/decision/closureは現在の予約に属し、旧記録や期限を書き換えない。
+後続のRecheckにもその同じ予約が必要になる。失敗時は新sessionとdigest出力を消す。
+新しい未pin CAS objectが残る場合がある。新しい観測期限は同意・失効や実行許可の更新ではない。
+期待root FD/scope・保存選択の認可は上位providerの責務で、OS再起動時のmount identity移行や
+設定適用後の復旧をこの比較で受理するものではない。
+
 候補には原本・宣言・内容・local metadata、context/transaction、初期BOOTTIME期限を束縛する。
 後の期限指定で初期期限を延ばさない。選択前に同じlocal snapshotを再確認する。
 別候補、未解決の必須選択、選択の再束縛を拒否する。確認不要な場合に選択値を暗黙無視せず、

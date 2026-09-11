@@ -70,6 +70,18 @@ member列挙はNIACRC01の中身で、NIACRC01自身は含まない。後段の�
 
 ## 実行境界
 
+世代engineがCAS予約を開き直した場合は`Verify_Current`で現在のroot FDと独立した期待bindingを渡す。
+保存参照を先に検査し、`Pkg_Conffile_Choice.Reobserve`で全選択を現在のinode/属性/内容/退避先から
+再観測する。通常Buildで原本・所有権・配置・完全tarを照合し、choiceの新しいsession参照を除く
+manifest全byteと出力tarを保存物に一致させる。返却直前にも新しい選択をlive確認する。判断ADR-0107。
+
+これは読取専用Loadとは異なり、未pinの新規観測/派生CAS objectを作ることがある。
+既存のproposalを復活させたり、旧期限・保存hash・世代記録を上書きしたりはしない。
+返すarchiveは一致を検証した保存物である。新規観測の期限は認可期限の更新ではない。
+本番providerはroot FD、期待scope、保存選択と利用を独立して認可する必要がある。
+mount/inode identityの変化、実適用後のaccepted状態、boot後の復旧は別の規則を必要とし、
+現在の比較で相違を無視することはない。現状の受入は同じmount namespaceでのプロセス再起動である。
+
 最大entry数は既存rootの524288、choiceは4096、最終tarはcallerのLimit以下かつCASの8 GiB以下。
 元tarごとの既存framing上限と名前量制限、有限期限、UID0拒否を維持する。
 既存の同期hash/decodeと同じく外側のプロセス資源制限も必要である。
@@ -78,6 +90,7 @@ member列挙はNIACRC01の中身で、NIACRC01自身は含まない。後段の�
 
 このAPIは保存原本・楽観的live観測に基づく生成器であり、隠れた属性の可視性、変更者の凍結、
 root/contextの真正性、署名付き同意、全managed provider、物理適用の許可を与えない。
-Verifyには生存するproposalが必要で、保存参照の読込から認証済み復旧・世代保持・GCへの接続は未完。
+Verifyには生存するproposalが必要で、Verify_Currentは新しい予約で全選択を再観測する。
+これらから認証済み復旧・世代保持・GCへの接続は未完。
 後段の生成形式・実root準備・公開/bootにも新形式を明示的に接続する必要がある。
 workerの実FS能力や全DEB効果、実ディストリビューションの認定は別の受入条件である。

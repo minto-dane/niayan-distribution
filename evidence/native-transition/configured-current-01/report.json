@@ -1,0 +1,47 @@
+{
+  "result": "pass",
+  "source_subject": "972bb968e5f4def48ad3496808add2ede374315cc2e6c1266fc82ab0661d9b19",
+  "pinned_image": "sha256:7f92f64938b87b862dd962a93b558fb0caea13493745c684fbddfc190a723617",
+  "tests": {
+    "conffile_choice_assertions": 297,
+    "fresh_choice_paths": 9,
+    "root_configuration_assertions": 192,
+    "current_observation_cases": 13,
+    "independent_complete_root_cases": 6,
+    "saved_record_cases": 35
+  },
+  "inputs": {
+    "compile": 399,
+    "conffile_fixtures": 26,
+    "python_tools": 7
+  },
+  "limits": {
+    "memory_max": 3221225472,
+    "swap_max": 0,
+    "cpu_quota": "100%",
+    "pids_max": 128
+  },
+  "scope": "Fresh current-root verification after reopening CAS in a new process in the same mount namespace. Historical source/record digests remain unchanged; fresh unpinned session/cache objects can be created.",
+  "not_qualified": [
+    "authenticated expected root FD/scope and saved consent",
+    "request freshness and revocation admission",
+    "generation manifest/pin integration",
+    "stage/preparation/publication integration",
+    "OS reboot identity migration",
+    "accepted-state recovery after effects",
+    "generation GC",
+    "complete native-authority ISO",
+    "full language translations"
+  ],
+  "unchanged": [
+    "shared vendor and mathematical sources",
+    "root extraction worker",
+    "existing DEB fixtures"
+  ],
+  "initial_failure": "Initial forced compile stopped in test helper on FD type operator visibility. Corrected declaration order; test-02 passed all affected tests.",
+  "final_compile": "Only one API comment changed after execution. compile-03 forced a rebuild and compared the root driver byte-for-byte against the executed binary; identical.",
+  "notes": [
+    "Current verification must run in the same mount namespace as the captured fixture; changed mount/inode identities are not normalized.",
+    "No VM, full-suite, proof, old chaos, public command or generation format change."
+  ]
+}
