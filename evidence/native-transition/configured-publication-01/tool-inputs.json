@@ -1,0 +1,10 @@
+{
+  "tests/check_configured_publication.py": "b3031d117440a6e290466642339c08e14f168974684aae4c5b31ea51415ccad5",
+  "tests/compare_root_publication.py": "fec5927fd41f6cbd3e67f119862ec2ba53784520ea7e63e73da32977a177f38a",
+  "tests/check_root_publication.py": "1f9d3b71a08874dbd754deb16cd08ce3966cca566c391853a8093ae85a0e420e",
+  "tests/compare_root_archive.py": "c6670e9276d4aa0d7c6f4ede2f59e1e99d45bf0d926ea4fa4c4d1eccd7c9b36a",
+  "tests/check_configured_root_current.py": "dc794e39199290f7761bc6f29d80c9c9ef6cc638b67edd0d202b7c3bc807f67f",
+  "tests/check_configured_root.py": "bfa4795a677b1c85db7eca94cc23987cb44a4c285ea97ba5a34da2fc58c7c0d2",
+  "tests/check_configuration_entry.py": "daffce468de764f4fc5263f30c647fc1505eded4406bb62d94adcd51f31c7c25",
+  "tests/compare_current_catalog.py": "57952315a60ee5a78ab62590da97784da5de3f188dba1d2943e77f0f50bb3ffb"
+}

@@ -1,0 +1,13 @@
+{
+  "tested": {
+    "run_generation_publication_tests": "0bc408b6044c2a3af5df4274e597a948bad3136c73e858988264e5d5f907aa05",
+    "run_generation_stage_tests": "f36a8efc9f419d941a61486529c9f3bd4b02e56129594e1e204390beb1681e17",
+    "run_root_configuration_tests": "d21f401effe0dbe69d3e82259e847a59fb059ffc1972cabdaa55797f7a9cde0f"
+  },
+  "final": {
+    "run_generation_publication_tests": "0bc408b6044c2a3af5df4274e597a948bad3136c73e858988264e5d5f907aa05",
+    "run_generation_stage_tests": "f36a8efc9f419d941a61486529c9f3bd4b02e56129594e1e204390beb1681e17",
+    "run_root_configuration_tests": "d21f401effe0dbe69d3e82259e847a59fb059ffc1972cabdaa55797f7a9cde0f"
+  },
+  "identical": true
+}

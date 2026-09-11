@@ -1,0 +1,156 @@
+Running as unit: run-p979329-i979629.scope; invocation ID: c099cf1ed361484a9879eb84eb43b5f2
+limited-exec: {"scope": "run-p979329-i979629.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+removed native-configuration-entry-01/vm-package-01/test.qcow2
+removed native-root-bank-01/vm-bank-01/test.qcow2
+removed native-root-bank-01/vm-bank-03/test.qcow2
+removed native-root-bank-01/vm-bank-02/test.qcow2
+removed native-root-order-01/vm-order-01/test.qcow2
+removed native-root-clocks-01/vm-stream-02/test.qcow2
+removed native-root-clocks-01/vm-package-02/test.qcow2
+removed native-root-clocks-01/vm-package-01/test.qcow2
+removed native-root-clocks-01/vm-stream/test.qcow2
+removed native-configured-generation-01/vm-preparation-02/test.qcow2
+removed native-configured-generation-01/vm-preparation-01/test.qcow2
+removed native-configured-generation-01/vm-preparation-03/test.qcow2
+removed native-site-supply-01/vm-site-01/test.qcow2
+removed native-archive-credential-01/vm-credential-01/test.qcow2
+removed native-archive-credential-01/vm-credential-05/test.qcow2
+removed native-archive-credential-01/vm-credential-04/test.qcow2
+removed native-archive-credential-01/vm-credential-03/test.qcow2
+removed native-archive-credential-01/vm-credential-02/test.qcow2
+removed native-configured-root-01/vm-configured-01/test.qcow2
+removed native-supply-planner-01/vm-supply-planner-01/test.qcow2
+removed native-conffiles-01/vm-byte-planner-01/test.qcow2
+removed native-root-preparation-01/vm-prepare-01/test.qcow2
+removed native-root-preparation-01/vm-prepare-02/test.qcow2
+removed native-root-preparation-01/vm-prepare-03/test.qcow2
+removed native-service-deployment-01/vm-repackage-01/test.qcow2
+removed native-service-deployment-01/vm-inspect-02/test.qcow2
+removed native-service-deployment-01/vm-service-01/test.qcow2
+removed native-service-deployment-01/vm-service-03/test.qcow2
+removed native-service-deployment-01/vm-resume-03/test.qcow2
+removed native-service-deployment-01/vm-service-02/test.qcow2
+removed native-service-deployment-01/vm-resume-04/test.qcow2
+removed native-archive-observer-01/vm-observer-02/test.qcow2
+removed native-archive-observer-01/vm-observer-01/test.qcow2
+removed native-storage-bootstrap-01/vm-bootstrap-02/test.qcow2
+removed native-storage-bootstrap-01/vm-bootstrap-01/test.qcow2
+removed native-storage-bootstrap-01/vm-durability-03/test.qcow2
+removed native-root-extract-01/vm-02/test.qcow2
+removed native-root-extract-01/vm/test.qcow2
+removed native-root-extract-01/vm-03/test.qcow2
+removed native-root-extract-01/vm-final/test.qcow2
+removed native-root-extract-01/vm-stream/test.qcow2
+removed bsd-license-transition-01/vm-bsd-service-01/test.qcow2
+removed native-core-observer-01/vm-native-observer-01/test.qcow2
+removed native-core-observer-01/vm-native-observer-02/test.qcow2
+removed distro-artifacts-05/niaos-0.1.0-amd64.hybrid.iso
+removed distro-artifacts-07/niaos-0.1.0-amd64.hybrid.iso
+removed distro-artifacts-03/install-uefi-01/installed.qcow2
+removed nia-hardening-installed-01/acceptance/installed.qcow2
+removed cache native-publication-intent-01/workspace/statecore/build
+removed cache native-publication-intent-01/workspace/assurance/build
+removed cache native-publication-intent-01/workspace/resolvercore/build
+removed cache native-publication-intent-01/workspace/pkgcore/build
+removed cache native-publication-intent-01/workspace/controlcore/build
+removed cache native-publication-intent-01/workspace/capsulecore/build
+removed cache native-publication-intent-01/workspace/configcore/build
+removed cache native-configuration-entry-01/workspace/pkgcore/build
+removed cache native-generation-retention-01/workspace/statecore/build
+removed cache native-generation-retention-01/workspace/assurance/build
+removed cache native-generation-retention-01/workspace/resolvercore/build
+removed cache native-generation-retention-01/workspace/pkgcore/build
+removed cache native-generation-retention-01/workspace/controlcore/build
+removed cache native-generation-retention-01/workspace/capsulecore/build
+removed cache native-generation-retention-01/workspace/configcore/build
+removed cache native-root-order-01/workspace/pkgcore/build
+removed cache native-supply-receipt-01/workspace/statecore/build
+removed cache native-supply-receipt-01/workspace/assurance/build
+removed cache native-supply-receipt-01/workspace/resolvercore/build
+removed cache native-supply-receipt-01/workspace/pkgcore/build
+removed cache native-supply-receipt-01/workspace/controlcore/build
+removed cache native-supply-receipt-01/workspace/capsulecore/build
+removed cache native-supply-receipt-01/workspace/configcore/build
+removed cache native-conffile-observation-01/workspace/pkgcore/build
+removed cache native-configured-generation-01/workspace/pkgcore/build
+removed cache current-transition-qualification-02/workspace/statecore/build
+removed cache current-transition-qualification-02/workspace/assurance/build
+removed cache current-transition-qualification-02/workspace/resolvercore/build
+removed cache current-transition-qualification-02/workspace/pkgcore/build
+removed cache current-transition-qualification-02/workspace/controlcore/build
+removed cache current-transition-qualification-02/workspace/capsulecore/build
+removed cache current-transition-qualification-02/workspace/configcore/build
+removed cache native-configured-record-01/workspace/pkgcore/build
+removed cache native-publication-supply-02/workspace/statecore/build
+removed cache native-publication-supply-02/workspace/assurance/build
+removed cache native-publication-supply-02/workspace/resolvercore/build
+removed cache native-publication-supply-02/workspace/pkgcore/build
+removed cache native-publication-supply-02/workspace/controlcore/build
+removed cache native-publication-supply-02/workspace/capsulecore/build
+removed cache native-publication-supply-02/workspace/configcore/build
+removed cache native-root-archive-01/workspace/pkgcore/build
+removed cache native-site-supply-01/workspace/pkgcore/build
+removed cache native-supply-map-01/workspace/statecore/build
+removed cache native-supply-map-01/workspace/assurance/build
+removed cache native-supply-map-01/workspace/resolvercore/build
+removed cache native-supply-map-01/workspace/pkgcore/build
+removed cache native-supply-map-01/workspace/controlcore/build
+removed cache native-supply-map-01/workspace/capsulecore/build
+removed cache native-supply-map-01/workspace/configcore/build
+removed cache native-configured-tar-01/workspace/pkgcore/build
+removed cache native-configured-root-01/workspace/pkgcore/build
+removed cache native-conffile-attributes-01/workspace/pkgcore/build
+removed cache native-root-generation-01/workspace/pkgcore/build
+removed cache native-supply-planner-01/workspace/pkgcore/build
+removed cache native-conffile-snapshot-01/workspace/pkgcore/build
+removed cache native-conffiles-01/workspace/pkgcore/build
+removed cache fixed-current-acceptance/workspace/statecore/build
+removed cache fixed-current-acceptance/workspace/assurance/build
+removed cache fixed-current-acceptance/workspace/resolvercore/build
+removed cache fixed-current-acceptance/workspace/pkgcore/build
+removed cache fixed-current-acceptance/workspace/controlcore/build
+removed cache fixed-current-acceptance/workspace/capsulecore/build
+removed cache fixed-current-acceptance/workspace/configcore/build
+removed cache native-supply-map-02/workspace/statecore/build
+removed cache native-supply-map-02/workspace/assurance/build
+removed cache native-supply-map-02/workspace/resolvercore/build
+removed cache native-supply-map-02/workspace/pkgcore/build
+removed cache native-supply-map-02/workspace/controlcore/build
+removed cache native-supply-map-02/workspace/capsulecore/build
+removed cache native-supply-map-02/workspace/configcore/build
+removed cache native-catalog-retention-01/workspace/statecore/build
+removed cache native-catalog-retention-01/workspace/assurance/build
+removed cache native-catalog-retention-01/workspace/resolvercore/build
+removed cache native-catalog-retention-01/workspace/pkgcore/build
+removed cache native-catalog-retention-01/workspace/controlcore/build
+removed cache native-catalog-retention-01/workspace/capsulecore/build
+removed cache native-catalog-retention-01/workspace/configcore/build
+removed cache native-root-preparation-01/workspace/pkgcore/build
+removed cache native-storage-bootstrap-01/workspace/pkgcore/build
+removed cache native-configured-current-01/workspace/pkgcore/build
+removed cache native-generation-transition-01/workspace/statecore/build
+removed cache native-generation-transition-01/workspace/assurance/build
+removed cache native-generation-transition-01/workspace/resolvercore/build
+removed cache native-generation-transition-01/workspace/pkgcore/build
+removed cache native-generation-transition-01/workspace/controlcore/build
+removed cache native-generation-transition-01/workspace/capsulecore/build
+removed cache native-generation-transition-01/workspace/configcore/build
+removed cache native-root-configuration-01/workspace/pkgcore/build
+removed cache native-shared-preflight-02/workspace/statecore/build
+removed cache native-shared-preflight-02/workspace/assurance/build
+removed cache native-shared-preflight-02/workspace/resolvercore/build
+removed cache native-shared-preflight-02/workspace/pkgcore/build
+removed cache native-shared-preflight-02/workspace/controlcore/build
+removed cache native-shared-preflight-02/workspace/capsulecore/build
+removed cache native-shared-preflight-02/workspace/configcore/build
+removed cache bsd-license-transition-01/workspace/statecore/build
+removed cache bsd-license-transition-01/workspace/assurance/build
+removed cache bsd-license-transition-01/workspace/resolvercore/build
+removed cache bsd-license-transition-01/workspace/pkgcore/build
+removed cache bsd-license-transition-01/workspace/controlcore/build
+removed cache bsd-license-transition-01/workspace/capsulecore/build
+removed cache bsd-license-transition-01/workspace/configcore/build
+removed cache native-core-observer-01/workspace/pkgcore/build
+removed cache native-conffile-choice-01/workspace/pkgcore/build
+removed cache native-publication-supply-01/workspace/pkgcore/build
+reclaimed available GiB 12.156558990478516

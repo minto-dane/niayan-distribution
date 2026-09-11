@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/nia/devbox/niaos/nia-os-consent/assurance/ci/sync-component-ci.py", line 204, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/home/nia/devbox/niaos/nia-os-consent/assurance/ci/sync-component-ci.py", line 192, in main
+    eng.validate(ROOT)
+    ~~~~~~~~~~~~^^^^^^
+  File "/home/nia/devbox/niaos/nia-os-consent/assurance/ci/engineering.py", line 163, in validate
+    raise Invalid(f'{d["id"]}: missing {heading}')
+engineering.Invalid: ADR-0109: missing ## 検証と残る条件

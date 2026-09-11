@@ -1,0 +1,467 @@
+{
+  "files": [
+    {
+      "path": "native-configuration-entry-01/vm-package-01/test.qcow2",
+      "size": 33685504,
+      "allocated": 33628160,
+      "uid": 1000,
+      "inode": 8306636
+    },
+    {
+      "path": "native-root-bank-01/vm-bank-01/test.qcow2",
+      "size": 22347776,
+      "allocated": 22290432,
+      "uid": 1000,
+      "inode": 8946697
+    },
+    {
+      "path": "native-root-bank-01/vm-bank-03/test.qcow2",
+      "size": 23068672,
+      "allocated": 23011328,
+      "uid": 1000,
+      "inode": 8829219
+    },
+    {
+      "path": "native-root-bank-01/vm-bank-02/test.qcow2",
+      "size": 22347776,
+      "allocated": 22290432,
+      "uid": 1000,
+      "inode": 8946844
+    },
+    {
+      "path": "native-root-order-01/vm-order-01/test.qcow2",
+      "size": 21954560,
+      "allocated": 21897216,
+      "uid": 1000,
+      "inode": 8305181
+    },
+    {
+      "path": "native-root-clocks-01/vm-stream-02/test.qcow2",
+      "size": 22085632,
+      "allocated": 22028288,
+      "uid": 1000,
+      "inode": 8302990
+    },
+    {
+      "path": "native-root-clocks-01/vm-package-02/test.qcow2",
+      "size": 31588352,
+      "allocated": 31531008,
+      "uid": 1000,
+      "inode": 8303077
+    },
+    {
+      "path": "native-root-clocks-01/vm-package-01/test.qcow2",
+      "size": 27918336,
+      "allocated": 27860992,
+      "uid": 1000,
+      "inode": 8303033
+    },
+    {
+      "path": "native-root-clocks-01/vm-stream/test.qcow2",
+      "size": 197888,
+      "allocated": 200704,
+      "uid": 0,
+      "inode": 8302983
+    },
+    {
+      "path": "native-configured-generation-01/vm-preparation-02/test.qcow2",
+      "size": 22478848,
+      "allocated": 22421504,
+      "uid": 1000,
+      "inode": 9320571
+    },
+    {
+      "path": "native-configured-generation-01/vm-preparation-01/test.qcow2",
+      "size": 21889024,
+      "allocated": 21831680,
+      "uid": 1000,
+      "inode": 9320564
+    },
+    {
+      "path": "native-configured-generation-01/vm-preparation-03/test.qcow2",
+      "size": 22413312,
+      "allocated": 22355968,
+      "uid": 1000,
+      "inode": 9320580
+    },
+    {
+      "path": "native-site-supply-01/vm-site-01/test.qcow2",
+      "size": 123273216,
+      "allocated": 123215872,
+      "uid": 1000,
+      "inode": 7124025
+    },
+    {
+      "path": "native-archive-credential-01/vm-credential-01/test.qcow2",
+      "size": 86245376,
+      "allocated": 86188032,
+      "uid": 1000,
+      "inode": 7124214
+    },
+    {
+      "path": "native-archive-credential-01/vm-credential-05/test.qcow2",
+      "size": 86769664,
+      "allocated": 86712320,
+      "uid": 1000,
+      "inode": 7124262
+    },
+    {
+      "path": "native-archive-credential-01/vm-credential-04/test.qcow2",
+      "size": 86245376,
+      "allocated": 86188032,
+      "uid": 1000,
+      "inode": 7124250
+    },
+    {
+      "path": "native-archive-credential-01/vm-credential-03/test.qcow2",
+      "size": 86245376,
+      "allocated": 86188032,
+      "uid": 1000,
+      "inode": 7124238
+    },
+    {
+      "path": "native-archive-credential-01/vm-credential-02/test.qcow2",
+      "size": 86245376,
+      "allocated": 86188032,
+      "uid": 1000,
+      "inode": 7124226
+    },
+    {
+      "path": "native-configured-root-01/vm-configured-01/test.qcow2",
+      "size": 21889024,
+      "allocated": 21831680,
+      "uid": 1000,
+      "inode": 8434024
+    },
+    {
+      "path": "native-supply-planner-01/vm-supply-planner-01/test.qcow2",
+      "size": 153092096,
+      "allocated": 153034752,
+      "uid": 1000,
+      "inode": 7253747
+    },
+    {
+      "path": "native-conffiles-01/vm-byte-planner-01/test.qcow2",
+      "size": 152895488,
+      "allocated": 152707072,
+      "uid": 1000,
+      "inode": 7388837
+    },
+    {
+      "path": "native-root-preparation-01/vm-prepare-01/test.qcow2",
+      "size": 100466688,
+      "allocated": 91037696,
+      "uid": 1000,
+      "inode": 6074601
+    },
+    {
+      "path": "native-root-preparation-01/vm-prepare-02/test.qcow2",
+      "size": 100728832,
+      "allocated": 91299840,
+      "uid": 1000,
+      "inode": 6074610
+    },
+    {
+      "path": "native-root-preparation-01/vm-prepare-03/test.qcow2",
+      "size": 103284736,
+      "allocated": 88219648,
+      "uid": 1000,
+      "inode": 6075750
+    },
+    {
+      "path": "native-service-deployment-01/vm-repackage-01/test.qcow2",
+      "size": 18939904,
+      "allocated": 18882560,
+      "uid": 1000,
+      "inode": 6076495
+    },
+    {
+      "path": "native-service-deployment-01/vm-inspect-02/test.qcow2",
+      "size": 15925248,
+      "allocated": 15867904,
+      "uid": 1000,
+      "inode": 6076252
+    },
+    {
+      "path": "native-service-deployment-01/vm-service-01/test.qcow2",
+      "size": 76480512,
+      "allocated": 76423168,
+      "uid": 1000,
+      "inode": 6076197
+    },
+    {
+      "path": "native-service-deployment-01/vm-service-03/test.qcow2",
+      "size": 157810688,
+      "allocated": 157753344,
+      "uid": 1000,
+      "inode": 6076288
+    },
+    {
+      "path": "native-service-deployment-01/vm-resume-03/test.qcow2",
+      "size": 16711680,
+      "allocated": 16654336,
+      "uid": 1000,
+      "inode": 6076311
+    },
+    {
+      "path": "native-service-deployment-01/vm-service-02/test.qcow2",
+      "size": 152502272,
+      "allocated": 152444928,
+      "uid": 1000,
+      "inode": 6076234
+    },
+    {
+      "path": "native-service-deployment-01/vm-resume-04/test.qcow2",
+      "size": 17039360,
+      "allocated": 16982016,
+      "uid": 1000,
+      "inode": 6076333
+    },
+    {
+      "path": "native-archive-observer-01/vm-observer-02/test.qcow2",
+      "size": 95879168,
+      "allocated": 95756288,
+      "uid": 1000,
+      "inode": 7125010
+    },
+    {
+      "path": "native-archive-observer-01/vm-observer-01/test.qcow2",
+      "size": 95944704,
+      "allocated": 95756288,
+      "uid": 1000,
+      "inode": 7124788
+    },
+    {
+      "path": "native-storage-bootstrap-01/vm-bootstrap-02/test.qcow2",
+      "size": 137625600,
+      "allocated": 137568256,
+      "uid": 1000,
+      "inode": 6864188
+    },
+    {
+      "path": "native-storage-bootstrap-01/vm-bootstrap-01/test.qcow2",
+      "size": 197888,
+      "allocated": 200704,
+      "uid": 0,
+      "inode": 6864183
+    },
+    {
+      "path": "native-storage-bootstrap-01/vm-durability-03/test.qcow2",
+      "size": 16318464,
+      "allocated": 16261120,
+      "uid": 1000,
+      "inode": 6077941
+    },
+    {
+      "path": "native-root-extract-01/vm-02/test.qcow2",
+      "size": 22413312,
+      "allocated": 22355968,
+      "uid": 1000,
+      "inode": 8946620
+    },
+    {
+      "path": "native-root-extract-01/vm/test.qcow2",
+      "size": 197888,
+      "allocated": 200704,
+      "uid": 1000,
+      "inode": 8946597
+    },
+    {
+      "path": "native-root-extract-01/vm-03/test.qcow2",
+      "size": 21823488,
+      "allocated": 21766144,
+      "uid": 1000,
+      "inode": 8946702
+    },
+    {
+      "path": "native-root-extract-01/vm-final/test.qcow2",
+      "size": 22216704,
+      "allocated": 22159360,
+      "uid": 1000,
+      "inode": 8946711
+    },
+    {
+      "path": "native-root-extract-01/vm-stream/test.qcow2",
+      "size": 22085632,
+      "allocated": 22028288,
+      "uid": 1000,
+      "inode": 8946732
+    },
+    {
+      "path": "bsd-license-transition-01/vm-bsd-service-01/test.qcow2",
+      "size": 157614080,
+      "allocated": 157556736,
+      "uid": 1000,
+      "inode": 6077581
+    },
+    {
+      "path": "native-core-observer-01/vm-native-observer-01/test.qcow2",
+      "size": 90832896,
+      "allocated": 90775552,
+      "uid": 1000,
+      "inode": 7126564
+    },
+    {
+      "path": "native-core-observer-01/vm-native-observer-02/test.qcow2",
+      "size": 150274048,
+      "allocated": 150216704,
+      "uid": 1000,
+      "inode": 7126580
+    },
+    {
+      "path": "distro-artifacts-05/niaos-0.1.0-amd64.hybrid.iso",
+      "size": 3640655872,
+      "allocated": 3640659968,
+      "uid": 1000,
+      "inode": 393218
+    },
+    {
+      "path": "distro-artifacts-07/niaos-0.1.0-amd64.hybrid.iso",
+      "size": 3640655872,
+      "allocated": 3640659968,
+      "uid": 1000,
+      "inode": 6569232
+    },
+    {
+      "path": "distro-artifacts-03/install-uefi-01/installed.qcow2",
+      "size": 197120,
+      "allocated": 200704,
+      "uid": 1000,
+      "inode": 6454619
+    },
+    {
+      "path": "nia-hardening-installed-01/acceptance/installed.qcow2",
+      "size": 23592960,
+      "allocated": 23535616,
+      "uid": 1000,
+      "inode": 6690860
+    }
+  ],
+  "directories": [
+    "native-publication-intent-01/workspace/statecore/build",
+    "native-publication-intent-01/workspace/assurance/build",
+    "native-publication-intent-01/workspace/resolvercore/build",
+    "native-publication-intent-01/workspace/pkgcore/build",
+    "native-publication-intent-01/workspace/controlcore/build",
+    "native-publication-intent-01/workspace/capsulecore/build",
+    "native-publication-intent-01/workspace/configcore/build",
+    "native-configuration-entry-01/workspace/pkgcore/build",
+    "native-generation-retention-01/workspace/statecore/build",
+    "native-generation-retention-01/workspace/assurance/build",
+    "native-generation-retention-01/workspace/resolvercore/build",
+    "native-generation-retention-01/workspace/pkgcore/build",
+    "native-generation-retention-01/workspace/controlcore/build",
+    "native-generation-retention-01/workspace/capsulecore/build",
+    "native-generation-retention-01/workspace/configcore/build",
+    "native-root-order-01/workspace/pkgcore/build",
+    "native-supply-receipt-01/workspace/statecore/build",
+    "native-supply-receipt-01/workspace/assurance/build",
+    "native-supply-receipt-01/workspace/resolvercore/build",
+    "native-supply-receipt-01/workspace/pkgcore/build",
+    "native-supply-receipt-01/workspace/controlcore/build",
+    "native-supply-receipt-01/workspace/capsulecore/build",
+    "native-supply-receipt-01/workspace/configcore/build",
+    "native-conffile-observation-01/workspace/pkgcore/build",
+    "native-configured-generation-01/workspace/pkgcore/build",
+    "current-transition-qualification-02/workspace/statecore/build",
+    "current-transition-qualification-02/workspace/assurance/build",
+    "current-transition-qualification-02/workspace/resolvercore/build",
+    "current-transition-qualification-02/workspace/pkgcore/build",
+    "current-transition-qualification-02/workspace/controlcore/build",
+    "current-transition-qualification-02/workspace/capsulecore/build",
+    "current-transition-qualification-02/workspace/configcore/build",
+    "native-configured-record-01/workspace/pkgcore/build",
+    "native-publication-supply-02/workspace/statecore/build",
+    "native-publication-supply-02/workspace/assurance/build",
+    "native-publication-supply-02/workspace/resolvercore/build",
+    "native-publication-supply-02/workspace/pkgcore/build",
+    "native-publication-supply-02/workspace/controlcore/build",
+    "native-publication-supply-02/workspace/capsulecore/build",
+    "native-publication-supply-02/workspace/configcore/build",
+    "native-root-archive-01/workspace/pkgcore/build",
+    "native-site-supply-01/workspace/pkgcore/build",
+    "native-supply-map-01/workspace/statecore/build",
+    "native-supply-map-01/workspace/assurance/build",
+    "native-supply-map-01/workspace/resolvercore/build",
+    "native-supply-map-01/workspace/pkgcore/build",
+    "native-supply-map-01/workspace/controlcore/build",
+    "native-supply-map-01/workspace/capsulecore/build",
+    "native-supply-map-01/workspace/configcore/build",
+    "native-configured-tar-01/workspace/pkgcore/build",
+    "native-configured-root-01/workspace/pkgcore/build",
+    "native-conffile-attributes-01/workspace/pkgcore/build",
+    "native-root-generation-01/workspace/pkgcore/build",
+    "native-supply-planner-01/workspace/pkgcore/build",
+    "native-conffile-snapshot-01/workspace/pkgcore/build",
+    "native-conffiles-01/workspace/pkgcore/build",
+    "fixed-current-acceptance/workspace/statecore/build",
+    "fixed-current-acceptance/workspace/assurance/build",
+    "fixed-current-acceptance/workspace/resolvercore/build",
+    "fixed-current-acceptance/workspace/pkgcore/build",
+    "fixed-current-acceptance/workspace/controlcore/build",
+    "fixed-current-acceptance/workspace/capsulecore/build",
+    "fixed-current-acceptance/workspace/configcore/build",
+    "native-supply-map-02/workspace/statecore/build",
+    "native-supply-map-02/workspace/assurance/build",
+    "native-supply-map-02/workspace/resolvercore/build",
+    "native-supply-map-02/workspace/pkgcore/build",
+    "native-supply-map-02/workspace/controlcore/build",
+    "native-supply-map-02/workspace/capsulecore/build",
+    "native-supply-map-02/workspace/configcore/build",
+    "native-catalog-retention-01/workspace/statecore/build",
+    "native-catalog-retention-01/workspace/assurance/build",
+    "native-catalog-retention-01/workspace/resolvercore/build",
+    "native-catalog-retention-01/workspace/pkgcore/build",
+    "native-catalog-retention-01/workspace/controlcore/build",
+    "native-catalog-retention-01/workspace/capsulecore/build",
+    "native-catalog-retention-01/workspace/configcore/build",
+    "native-root-preparation-01/workspace/pkgcore/build",
+    "native-storage-bootstrap-01/workspace/pkgcore/build",
+    "native-configured-current-01/workspace/pkgcore/build",
+    "native-generation-transition-01/workspace/statecore/build",
+    "native-generation-transition-01/workspace/assurance/build",
+    "native-generation-transition-01/workspace/resolvercore/build",
+    "native-generation-transition-01/workspace/pkgcore/build",
+    "native-generation-transition-01/workspace/controlcore/build",
+    "native-generation-transition-01/workspace/capsulecore/build",
+    "native-generation-transition-01/workspace/configcore/build",
+    "native-root-configuration-01/workspace/pkgcore/build",
+    "native-shared-preflight-02/workspace/statecore/build",
+    "native-shared-preflight-02/workspace/assurance/build",
+    "native-shared-preflight-02/workspace/resolvercore/build",
+    "native-shared-preflight-02/workspace/pkgcore/build",
+    "native-shared-preflight-02/workspace/controlcore/build",
+    "native-shared-preflight-02/workspace/capsulecore/build",
+    "native-shared-preflight-02/workspace/configcore/build",
+    "bsd-license-transition-01/workspace/statecore/build",
+    "bsd-license-transition-01/workspace/assurance/build",
+    "bsd-license-transition-01/workspace/resolvercore/build",
+    "bsd-license-transition-01/workspace/pkgcore/build",
+    "bsd-license-transition-01/workspace/controlcore/build",
+    "bsd-license-transition-01/workspace/capsulecore/build",
+    "bsd-license-transition-01/workspace/configcore/build",
+    "native-core-observer-01/workspace/pkgcore/build",
+    "native-conffile-choice-01/workspace/pkgcore/build",
+    "native-publication-supply-01/workspace/pkgcore/build"
+  ],
+  "preserve": [
+    "native-configured-publication-01",
+    "distro-builder-vm",
+    "distro-artifacts-09",
+    "distro-artifacts-09/corresponding-sources",
+    "podman-root",
+    "all source trees and sealed evidence"
+  ],
+  "before_statvfs": [
+    4096,
+    4096,
+    58863594,
+    4044026,
+    1035719,
+    15024128,
+    13175796,
+    13175796,
+    4096,
+    255
+  ]
+}

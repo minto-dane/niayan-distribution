@@ -1,0 +1,1135 @@
+{
+  "result": "pass",
+  "removed": [
+    {
+      "path": "native-configuration-entry-01/vm-package-01/test.qcow2",
+      "kind": "disposable-image",
+      "allocated": 33628160
+    },
+    {
+      "path": "native-root-bank-01/vm-bank-01/test.qcow2",
+      "kind": "disposable-image",
+      "allocated": 22290432
+    },
+    {
+      "path": "native-root-bank-01/vm-bank-03/test.qcow2",
+      "kind": "disposable-image",
+      "allocated": 23011328
+    },
+    {
+      "path": "native-root-bank-01/vm-bank-02/test.qcow2",
+      "kind": "disposable-image",
+      "allocated": 22290432
+    },
+    {
+      "path": "native-root-order-01/vm-order-01/test.qcow2",
+      "kind": "disposable-image",
+      "allocated": 21897216
+    },
+    {
+      "path": "native-root-clocks-01/vm-stream-02/test.qcow2",
+      "kind": "disposable-image",
+      "allocated": 22028288
+    },
+    {
+      "path": "native-root-clocks-01/vm-package-02/test.qcow2",
+      "kind": "disposable-image",
+      "allocated": 31531008
+    },
+    {
+      "path": "native-root-clocks-01/vm-package-01/test.qcow2",
+      "kind": "disposable-image",
+      "allocated": 27860992
+    },
+    {
+      "path": "native-root-clocks-01/vm-stream/test.qcow2",
+      "kind": "disposable-image",
+      "allocated": 200704
+    },
+    {
+      "path": "native-configured-generation-01/vm-preparation-02/test.qcow2",
+      "kind": "disposable-image",
+      "allocated": 22421504
+    },
+    {
+      "path": "native-configured-generation-01/vm-preparation-01/test.qcow2",
+      "kind": "disposable-image",
+      "allocated": 21831680
+    },
+    {
+      "path": "native-configured-generation-01/vm-preparation-03/test.qcow2",
+      "kind": "disposable-image",
+      "allocated": 22355968
+    },
+    {
+      "path": "native-site-supply-01/vm-site-01/test.qcow2",
+      "kind": "disposable-image",
+      "allocated": 123215872
+    },
+    {
+      "path": "native-archive-credential-01/vm-credential-01/test.qcow2",
+      "kind": "disposable-image",
+      "allocated": 86188032
+    },
+    {
+      "path": "native-archive-credential-01/vm-credential-05/test.qcow2",
+      "kind": "disposable-image",
+      "allocated": 86712320
+    },
+    {
+      "path": "native-archive-credential-01/vm-credential-04/test.qcow2",
+      "kind": "disposable-image",
+      "allocated": 86188032
+    },
+    {
+      "path": "native-archive-credential-01/vm-credential-03/test.qcow2",
+      "kind": "disposable-image",
+      "allocated": 86188032
+    },
+    {
+      "path": "native-archive-credential-01/vm-credential-02/test.qcow2",
+      "kind": "disposable-image",
+      "allocated": 86188032
+    },
+    {
+      "path": "native-configured-root-01/vm-configured-01/test.qcow2",
+      "kind": "disposable-image",
+      "allocated": 21831680
+    },
+    {
+      "path": "native-supply-planner-01/vm-supply-planner-01/test.qcow2",
+      "kind": "disposable-image",
+      "allocated": 153034752
+    },
+    {
+      "path": "native-conffiles-01/vm-byte-planner-01/test.qcow2",
+      "kind": "disposable-image",
+      "allocated": 152707072
+    },
+    {
+      "path": "native-root-preparation-01/vm-prepare-01/test.qcow2",
+      "kind": "disposable-image",
+      "allocated": 91037696
+    },
+    {
+      "path": "native-root-preparation-01/vm-prepare-02/test.qcow2",
+      "kind": "disposable-image",
+      "allocated": 91299840
+    },
+    {
+      "path": "native-root-preparation-01/vm-prepare-03/test.qcow2",
+      "kind": "disposable-image",
+      "allocated": 88219648
+    },
+    {
+      "path": "native-service-deployment-01/vm-repackage-01/test.qcow2",
+      "kind": "disposable-image",
+      "allocated": 18882560
+    },
+    {
+      "path": "native-service-deployment-01/vm-inspect-02/test.qcow2",
+      "kind": "disposable-image",
+      "allocated": 15867904
+    },
+    {
+      "path": "native-service-deployment-01/vm-service-01/test.qcow2",
+      "kind": "disposable-image",
+      "allocated": 76423168
+    },
+    {
+      "path": "native-service-deployment-01/vm-service-03/test.qcow2",
+      "kind": "disposable-image",
+      "allocated": 157753344
+    },
+    {
+      "path": "native-service-deployment-01/vm-resume-03/test.qcow2",
+      "kind": "disposable-image",
+      "allocated": 16654336
+    },
+    {
+      "path": "native-service-deployment-01/vm-service-02/test.qcow2",
+      "kind": "disposable-image",
+      "allocated": 152444928
+    },
+    {
+      "path": "native-service-deployment-01/vm-resume-04/test.qcow2",
+      "kind": "disposable-image",
+      "allocated": 16982016
+    },
+    {
+      "path": "native-archive-observer-01/vm-observer-02/test.qcow2",
+      "kind": "disposable-image",
+      "allocated": 95756288
+    },
+    {
+      "path": "native-archive-observer-01/vm-observer-01/test.qcow2",
+      "kind": "disposable-image",
+      "allocated": 95756288
+    },
+    {
+      "path": "native-storage-bootstrap-01/vm-bootstrap-02/test.qcow2",
+      "kind": "disposable-image",
+      "allocated": 137568256
+    },
+    {
+      "path": "native-storage-bootstrap-01/vm-bootstrap-01/test.qcow2",
+      "kind": "disposable-image",
+      "allocated": 200704
+    },
+    {
+      "path": "native-storage-bootstrap-01/vm-durability-03/test.qcow2",
+      "kind": "disposable-image",
+      "allocated": 16261120
+    },
+    {
+      "path": "native-root-extract-01/vm-02/test.qcow2",
+      "kind": "disposable-image",
+      "allocated": 22355968
+    },
+    {
+      "path": "native-root-extract-01/vm/test.qcow2",
+      "kind": "disposable-image",
+      "allocated": 200704
+    },
+    {
+      "path": "native-root-extract-01/vm-03/test.qcow2",
+      "kind": "disposable-image",
+      "allocated": 21766144
+    },
+    {
+      "path": "native-root-extract-01/vm-final/test.qcow2",
+      "kind": "disposable-image",
+      "allocated": 22159360
+    },
+    {
+      "path": "native-root-extract-01/vm-stream/test.qcow2",
+      "kind": "disposable-image",
+      "allocated": 22028288
+    },
+    {
+      "path": "bsd-license-transition-01/vm-bsd-service-01/test.qcow2",
+      "kind": "disposable-image",
+      "allocated": 157556736
+    },
+    {
+      "path": "native-core-observer-01/vm-native-observer-01/test.qcow2",
+      "kind": "disposable-image",
+      "allocated": 90775552
+    },
+    {
+      "path": "native-core-observer-01/vm-native-observer-02/test.qcow2",
+      "kind": "disposable-image",
+      "allocated": 150216704
+    },
+    {
+      "path": "distro-artifacts-05/niaos-0.1.0-amd64.hybrid.iso",
+      "kind": "disposable-image",
+      "allocated": 3640659968
+    },
+    {
+      "path": "distro-artifacts-07/niaos-0.1.0-amd64.hybrid.iso",
+      "kind": "disposable-image",
+      "allocated": 3640659968
+    },
+    {
+      "path": "distro-artifacts-03/install-uefi-01/installed.qcow2",
+      "kind": "disposable-image",
+      "allocated": 200704
+    },
+    {
+      "path": "nia-hardening-installed-01/acceptance/installed.qcow2",
+      "kind": "disposable-image",
+      "allocated": 23535616
+    },
+    {
+      "path": "native-publication-intent-01/workspace/statecore/build",
+      "kind": "generated-build-cache",
+      "allocated": 20443136,
+      "files": 1323
+    },
+    {
+      "path": "native-publication-intent-01/workspace/assurance/build",
+      "kind": "generated-build-cache",
+      "allocated": 16838656,
+      "files": 973
+    },
+    {
+      "path": "native-publication-intent-01/workspace/resolvercore/build",
+      "kind": "generated-build-cache",
+      "allocated": 6483968,
+      "files": 533
+    },
+    {
+      "path": "native-publication-intent-01/workspace/pkgcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 90988544,
+      "files": 1578
+    },
+    {
+      "path": "native-publication-intent-01/workspace/controlcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 12345344,
+      "files": 711
+    },
+    {
+      "path": "native-publication-intent-01/workspace/capsulecore/build",
+      "kind": "generated-build-cache",
+      "allocated": 7802880,
+      "files": 635
+    },
+    {
+      "path": "native-publication-intent-01/workspace/configcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 7995392,
+      "files": 640
+    },
+    {
+      "path": "native-configuration-entry-01/workspace/pkgcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 45576192,
+      "files": 328
+    },
+    {
+      "path": "native-generation-retention-01/workspace/statecore/build",
+      "kind": "generated-build-cache",
+      "allocated": 20443136,
+      "files": 1323
+    },
+    {
+      "path": "native-generation-retention-01/workspace/assurance/build",
+      "kind": "generated-build-cache",
+      "allocated": 16838656,
+      "files": 973
+    },
+    {
+      "path": "native-generation-retention-01/workspace/resolvercore/build",
+      "kind": "generated-build-cache",
+      "allocated": 6483968,
+      "files": 533
+    },
+    {
+      "path": "native-generation-retention-01/workspace/pkgcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 87719936,
+      "files": 1568
+    },
+    {
+      "path": "native-generation-retention-01/workspace/controlcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 12341248,
+      "files": 711
+    },
+    {
+      "path": "native-generation-retention-01/workspace/capsulecore/build",
+      "kind": "generated-build-cache",
+      "allocated": 7802880,
+      "files": 635
+    },
+    {
+      "path": "native-generation-retention-01/workspace/configcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 7991296,
+      "files": 640
+    },
+    {
+      "path": "native-root-order-01/workspace/pkgcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 91910144,
+      "files": 666
+    },
+    {
+      "path": "native-supply-receipt-01/workspace/statecore/build",
+      "kind": "generated-build-cache",
+      "allocated": 20443136,
+      "files": 1323
+    },
+    {
+      "path": "native-supply-receipt-01/workspace/assurance/build",
+      "kind": "generated-build-cache",
+      "allocated": 16838656,
+      "files": 973
+    },
+    {
+      "path": "native-supply-receipt-01/workspace/resolvercore/build",
+      "kind": "generated-build-cache",
+      "allocated": 6479872,
+      "files": 533
+    },
+    {
+      "path": "native-supply-receipt-01/workspace/pkgcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 92033024,
+      "files": 1599
+    },
+    {
+      "path": "native-supply-receipt-01/workspace/controlcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 12341248,
+      "files": 711
+    },
+    {
+      "path": "native-supply-receipt-01/workspace/capsulecore/build",
+      "kind": "generated-build-cache",
+      "allocated": 7802880,
+      "files": 635
+    },
+    {
+      "path": "native-supply-receipt-01/workspace/configcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 7991296,
+      "files": 640
+    },
+    {
+      "path": "native-conffile-observation-01/workspace/pkgcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 68263936,
+      "files": 659
+    },
+    {
+      "path": "native-configured-generation-01/workspace/pkgcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 80863232,
+      "files": 400
+    },
+    {
+      "path": "current-transition-qualification-02/workspace/statecore/build",
+      "kind": "generated-build-cache",
+      "allocated": 20439040,
+      "files": 1323
+    },
+    {
+      "path": "current-transition-qualification-02/workspace/assurance/build",
+      "kind": "generated-build-cache",
+      "allocated": 16842752,
+      "files": 973
+    },
+    {
+      "path": "current-transition-qualification-02/workspace/resolvercore/build",
+      "kind": "generated-build-cache",
+      "allocated": 6479872,
+      "files": 533
+    },
+    {
+      "path": "current-transition-qualification-02/workspace/pkgcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 89157632,
+      "files": 1568
+    },
+    {
+      "path": "current-transition-qualification-02/workspace/controlcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 12341248,
+      "files": 711
+    },
+    {
+      "path": "current-transition-qualification-02/workspace/capsulecore/build",
+      "kind": "generated-build-cache",
+      "allocated": 7802880,
+      "files": 635
+    },
+    {
+      "path": "current-transition-qualification-02/workspace/configcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 7991296,
+      "files": 640
+    },
+    {
+      "path": "native-configured-record-01/workspace/pkgcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 29110272,
+      "files": 196
+    },
+    {
+      "path": "native-publication-supply-02/workspace/statecore/build",
+      "kind": "generated-build-cache",
+      "allocated": 20443136,
+      "files": 1323
+    },
+    {
+      "path": "native-publication-supply-02/workspace/assurance/build",
+      "kind": "generated-build-cache",
+      "allocated": 16838656,
+      "files": 973
+    },
+    {
+      "path": "native-publication-supply-02/workspace/resolvercore/build",
+      "kind": "generated-build-cache",
+      "allocated": 6479872,
+      "files": 533
+    },
+    {
+      "path": "native-publication-supply-02/workspace/pkgcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 98684928,
+      "files": 1630
+    },
+    {
+      "path": "native-publication-supply-02/workspace/controlcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 12341248,
+      "files": 711
+    },
+    {
+      "path": "native-publication-supply-02/workspace/capsulecore/build",
+      "kind": "generated-build-cache",
+      "allocated": 7802880,
+      "files": 635
+    },
+    {
+      "path": "native-publication-supply-02/workspace/configcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 7991296,
+      "files": 640
+    },
+    {
+      "path": "native-root-archive-01/workspace/pkgcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 15781888,
+      "files": 136
+    },
+    {
+      "path": "native-site-supply-01/workspace/pkgcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 49950720,
+      "files": 597
+    },
+    {
+      "path": "native-supply-map-01/workspace/statecore/build",
+      "kind": "generated-build-cache",
+      "allocated": 20443136,
+      "files": 1323
+    },
+    {
+      "path": "native-supply-map-01/workspace/assurance/build",
+      "kind": "generated-build-cache",
+      "allocated": 16838656,
+      "files": 973
+    },
+    {
+      "path": "native-supply-map-01/workspace/resolvercore/build",
+      "kind": "generated-build-cache",
+      "allocated": 6479872,
+      "files": 533
+    },
+    {
+      "path": "native-supply-map-01/workspace/pkgcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 97865728,
+      "files": 1620
+    },
+    {
+      "path": "native-supply-map-01/workspace/controlcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 12341248,
+      "files": 711
+    },
+    {
+      "path": "native-supply-map-01/workspace/capsulecore/build",
+      "kind": "generated-build-cache",
+      "allocated": 7802880,
+      "files": 635
+    },
+    {
+      "path": "native-supply-map-01/workspace/configcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 7991296,
+      "files": 640
+    },
+    {
+      "path": "native-configured-tar-01/workspace/pkgcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 83304448,
+      "files": 686
+    },
+    {
+      "path": "native-configured-root-01/workspace/pkgcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 25993216,
+      "files": 188
+    },
+    {
+      "path": "native-conffile-attributes-01/workspace/pkgcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 68374528,
+      "files": 659
+    },
+    {
+      "path": "native-root-generation-01/workspace/pkgcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 41451520,
+      "files": 304
+    },
+    {
+      "path": "native-supply-planner-01/workspace/pkgcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 56139776,
+      "files": 614
+    },
+    {
+      "path": "native-conffile-snapshot-01/workspace/pkgcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 60334080,
+      "files": 636
+    },
+    {
+      "path": "native-conffiles-01/workspace/pkgcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 59613184,
+      "files": 632
+    },
+    {
+      "path": "fixed-current-acceptance/workspace/statecore/build",
+      "kind": "generated-build-cache",
+      "allocated": 20443136,
+      "files": 1323
+    },
+    {
+      "path": "fixed-current-acceptance/workspace/assurance/build",
+      "kind": "generated-build-cache",
+      "allocated": 16834560,
+      "files": 973
+    },
+    {
+      "path": "fixed-current-acceptance/workspace/resolvercore/build",
+      "kind": "generated-build-cache",
+      "allocated": 6479872,
+      "files": 533
+    },
+    {
+      "path": "fixed-current-acceptance/workspace/pkgcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 18014208,
+      "files": 1146
+    },
+    {
+      "path": "fixed-current-acceptance/workspace/controlcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 12341248,
+      "files": 711
+    },
+    {
+      "path": "fixed-current-acceptance/workspace/capsulecore/build",
+      "kind": "generated-build-cache",
+      "allocated": 7802880,
+      "files": 635
+    },
+    {
+      "path": "fixed-current-acceptance/workspace/configcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 7991296,
+      "files": 640
+    },
+    {
+      "path": "native-supply-map-02/workspace/statecore/build",
+      "kind": "generated-build-cache",
+      "allocated": 20443136,
+      "files": 1323
+    },
+    {
+      "path": "native-supply-map-02/workspace/assurance/build",
+      "kind": "generated-build-cache",
+      "allocated": 16838656,
+      "files": 973
+    },
+    {
+      "path": "native-supply-map-02/workspace/resolvercore/build",
+      "kind": "generated-build-cache",
+      "allocated": 6479872,
+      "files": 533
+    },
+    {
+      "path": "native-supply-map-02/workspace/pkgcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 97865728,
+      "files": 1620
+    },
+    {
+      "path": "native-supply-map-02/workspace/controlcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 12341248,
+      "files": 711
+    },
+    {
+      "path": "native-supply-map-02/workspace/capsulecore/build",
+      "kind": "generated-build-cache",
+      "allocated": 7798784,
+      "files": 635
+    },
+    {
+      "path": "native-supply-map-02/workspace/configcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 7991296,
+      "files": 640
+    },
+    {
+      "path": "native-catalog-retention-01/workspace/statecore/build",
+      "kind": "generated-build-cache",
+      "allocated": 20434944,
+      "files": 1323
+    },
+    {
+      "path": "native-catalog-retention-01/workspace/assurance/build",
+      "kind": "generated-build-cache",
+      "allocated": 16842752,
+      "files": 973
+    },
+    {
+      "path": "native-catalog-retention-01/workspace/resolvercore/build",
+      "kind": "generated-build-cache",
+      "allocated": 6479872,
+      "files": 533
+    },
+    {
+      "path": "native-catalog-retention-01/workspace/pkgcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 82358272,
+      "files": 1568
+    },
+    {
+      "path": "native-catalog-retention-01/workspace/controlcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 12341248,
+      "files": 711
+    },
+    {
+      "path": "native-catalog-retention-01/workspace/capsulecore/build",
+      "kind": "generated-build-cache",
+      "allocated": 7798784,
+      "files": 635
+    },
+    {
+      "path": "native-catalog-retention-01/workspace/configcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 7991296,
+      "files": 640
+    },
+    {
+      "path": "native-root-preparation-01/workspace/pkgcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 32317440,
+      "files": 250
+    },
+    {
+      "path": "native-storage-bootstrap-01/workspace/pkgcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 25350144,
+      "files": 381
+    },
+    {
+      "path": "native-configured-current-01/workspace/pkgcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 33034240,
+      "files": 206
+    },
+    {
+      "path": "native-generation-transition-01/workspace/statecore/build",
+      "kind": "generated-build-cache",
+      "allocated": 10829824,
+      "files": 785
+    },
+    {
+      "path": "native-generation-transition-01/workspace/assurance/build",
+      "kind": "generated-build-cache",
+      "allocated": 5804032,
+      "files": 428
+    },
+    {
+      "path": "native-generation-transition-01/workspace/resolvercore/build",
+      "kind": "generated-build-cache",
+      "allocated": 5001216,
+      "files": 446
+    },
+    {
+      "path": "native-generation-transition-01/workspace/pkgcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 89157632,
+      "files": 1568
+    },
+    {
+      "path": "native-generation-transition-01/workspace/controlcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 8060928,
+      "files": 483
+    },
+    {
+      "path": "native-generation-transition-01/workspace/capsulecore/build",
+      "kind": "generated-build-cache",
+      "allocated": 4759552,
+      "files": 466
+    },
+    {
+      "path": "native-generation-transition-01/workspace/configcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 5197824,
+      "files": 471
+    },
+    {
+      "path": "native-root-configuration-01/workspace/pkgcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 78286848,
+      "files": 662
+    },
+    {
+      "path": "native-shared-preflight-02/workspace/statecore/build",
+      "kind": "generated-build-cache",
+      "allocated": 20443136,
+      "files": 1323
+    },
+    {
+      "path": "native-shared-preflight-02/workspace/assurance/build",
+      "kind": "generated-build-cache",
+      "allocated": 16838656,
+      "files": 973
+    },
+    {
+      "path": "native-shared-preflight-02/workspace/resolvercore/build",
+      "kind": "generated-build-cache",
+      "allocated": 6483968,
+      "files": 533
+    },
+    {
+      "path": "native-shared-preflight-02/workspace/pkgcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 100966400,
+      "files": 1630
+    },
+    {
+      "path": "native-shared-preflight-02/workspace/controlcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 12341248,
+      "files": 711
+    },
+    {
+      "path": "native-shared-preflight-02/workspace/capsulecore/build",
+      "kind": "generated-build-cache",
+      "allocated": 7802880,
+      "files": 635
+    },
+    {
+      "path": "native-shared-preflight-02/workspace/configcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 7991296,
+      "files": 640
+    },
+    {
+      "path": "bsd-license-transition-01/workspace/statecore/build",
+      "kind": "generated-build-cache",
+      "allocated": 20439040,
+      "files": 1323
+    },
+    {
+      "path": "bsd-license-transition-01/workspace/assurance/build",
+      "kind": "generated-build-cache",
+      "allocated": 16842752,
+      "files": 973
+    },
+    {
+      "path": "bsd-license-transition-01/workspace/resolvercore/build",
+      "kind": "generated-build-cache",
+      "allocated": 6479872,
+      "files": 533
+    },
+    {
+      "path": "bsd-license-transition-01/workspace/pkgcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 119050240,
+      "files": 1697
+    },
+    {
+      "path": "bsd-license-transition-01/workspace/controlcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 12341248,
+      "files": 711
+    },
+    {
+      "path": "bsd-license-transition-01/workspace/capsulecore/build",
+      "kind": "generated-build-cache",
+      "allocated": 7798784,
+      "files": 635
+    },
+    {
+      "path": "bsd-license-transition-01/workspace/configcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 7991296,
+      "files": 640
+    },
+    {
+      "path": "native-core-observer-01/workspace/pkgcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 55943168,
+      "files": 612
+    },
+    {
+      "path": "native-conffile-choice-01/workspace/pkgcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 64495616,
+      "files": 645
+    },
+    {
+      "path": "native-publication-supply-01/workspace/pkgcore/build",
+      "kind": "generated-build-cache",
+      "allocated": 75710464,
+      "files": 668
+    }
+  ],
+  "free_before": 5158129664,
+  "free_after": 18211135488,
+  "reclaimed_available": 13053005824,
+  "preserved": [
+    "native-configured-publication-01",
+    "distro-builder-vm",
+    "distro-artifacts-09",
+    "distro-artifacts-09/corresponding-sources",
+    "podman-root",
+    "all source trees and sealed evidence"
+  ],
+  "qemu_running": false,
+  "open_file_check": "no candidate in visible process descriptors; completed private outputs only",
+  "restricted_process_descriptors": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    11,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    29,
+    30,
+    31,
+    32,
+    33,
+    35,
+    36,
+    37,
+    38,
+    39,
+    41,
+    42,
+    43,
+    44,
+    45,
+    47,
+    48,
+    49,
+    50,
+    51,
+    53,
+    54,
+    55,
+    56,
+    57,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    104,
+    110,
+    111,
+    112,
+    115,
+    118,
+    184,
+    222,
+    226,
+    233,
+    234,
+    259,
+    264,
+    265,
+    266,
+    267,
+    268,
+    269,
+    270,
+    325,
+    326,
+    327,
+    328,
+    329,
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338,
+    339,
+    340,
+    341,
+    342,
+    344,
+    345,
+    381,
+    382,
+    383,
+    384,
+    385,
+    386,
+    387,
+    388,
+    389,
+    390,
+    391,
+    392,
+    393,
+    394,
+    395,
+    396,
+    397,
+    398,
+    399,
+    400,
+    401,
+    402,
+    403,
+    513,
+    514,
+    515,
+    516,
+    524,
+    525,
+    565,
+    566,
+    642,
+    657,
+    663,
+    676,
+    808,
+    835,
+    852,
+    853,
+    975,
+    976,
+    977,
+    978,
+    979,
+    992,
+    1014,
+    1016,
+    1017,
+    1021,
+    1023,
+    1039,
+    1040,
+    1041,
+    1042,
+    1047,
+    1050,
+    1051,
+    1053,
+    1055,
+    1068,
+    1090,
+    1091,
+    1118,
+    1164,
+    1165,
+    1166,
+    1250,
+    1307,
+    1426,
+    1531,
+    1817,
+    1851,
+    1862,
+    1948,
+    2019,
+    2509,
+    2510,
+    2511,
+    2578,
+    2624,
+    169877,
+    171056,
+    171395,
+    177751,
+    192555,
+    285342,
+    286225,
+    286226,
+    933597,
+    933599,
+    933659,
+    933660,
+    946301,
+    946304,
+    950951,
+    957774,
+    958962,
+    960126,
+    963207,
+    963230,
+    964245,
+    969291,
+    970561,
+    970850,
+    971712,
+    972055,
+    973010,
+    973375,
+    974235,
+    974323,
+    974482,
+    974709,
+    974865,
+    974866,
+    975410,
+    976309,
+    977006,
+    977127,
+    977139,
+    977151,
+    978074,
+    978192,
+    978609,
+    978873,
+    978874,
+    978911,
+    979175
+  ],
+  "source_files_removed": false,
+  "sealed_evidence_removed": false
+}

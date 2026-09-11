@@ -1,0 +1,24 @@
+Running as unit: run-p975669-i975969.scope; invocation ID: 95b3994779d547c48d723ea1de96a280
+limited-exec: {"scope": "run-p975669-i975969.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+CURRENT_CATALOG 920f612db89a26478b17b51cfca85b9918a68147e74dba4cc4c99585174f0b30 1 84684261a3754dc348604068fb41c5a4dee9a2aeb8b6041cfa73658ba3c2b0b5 1ff832e577bfbfd87409d62a7fd13e9019622bc53a1b2f605b30837831894fcc 1 3
+CURRENT_UPDATE 920f612db89a26478b17b51cfca85b9918a68147e74dba4cc4c99585174f0b30 84684261a3754dc348604068fb41c5a4dee9a2aeb8b6041cfa73658ba3c2b0b5 84684261a3754dc348604068fb41c5a4dee9a2aeb8b6041cfa73658ba3c2b0b5 68cbc89b01e3cbc1e1e7f1006973ef92c0e764ad19a63a8112ca5c989155cb0b b86e7b7e22f667e1fe0109719c6801ee124c3d3494899de6860886f22068e63d 5ffb5a403e14a50be2fadb13f0c88aa6865f8e712ac31c81e6e68c7d7c0e44eb 983f8eec8663bd8fc6fd9cca03279e8d53e47f9fa14ffa1e4fe21823e1ffc08c 0
+CURRENT_CATALOG 920f612db89a26478b17b51cfca85b9918a68147e74dba4cc4c99585174f0b30 1 84684261a3754dc348604068fb41c5a4dee9a2aeb8b6041cfa73658ba3c2b0b5 1ff832e577bfbfd87409d62a7fd13e9019622bc53a1b2f605b30837831894fcc 1 3
+CURRENT_UPDATE 920f612db89a26478b17b51cfca85b9918a68147e74dba4cc4c99585174f0b30 84684261a3754dc348604068fb41c5a4dee9a2aeb8b6041cfa73658ba3c2b0b5 84684261a3754dc348604068fb41c5a4dee9a2aeb8b6041cfa73658ba3c2b0b5 68cbc89b01e3cbc1e1e7f1006973ef92c0e764ad19a63a8112ca5c989155cb0b b86e7b7e22f667e1fe0109719c6801ee124c3d3494899de6860886f22068e63d 5ffb5a403e14a50be2fadb13f0c88aa6865f8e712ac31c81e6e68c7d7c0e44eb 983f8eec8663bd8fc6fd9cca03279e8d53e47f9fa14ffa1e4fe21823e1ffc08c 0
+CONFIGURED_TERMINAL source_changed unavailable_provider commit_pending forward_final
+ROOT_GENERATION 1d5f534703f43a3e6257bf850c20b8ad5083c2588efcaf83af5e603b08512129
+ROOT_PLAN 773d1c8991c53f33da3b1aae49b2e277feb39f2e6f065cdfbe56bc7163959162
+ROOT_ARCHIVE 9d1eb348c34293633b0c452e9756e94481f610930e5b06044f4de4d9de5ddadb
+PASS assertions= 251
+Traceback (most recent call last):
+  File "/workspace/pkgcore/tests/check_configured_publication.py", line 64, in <module>
+    main()
+    ~~~~^^
+  File "/workspace/pkgcore/tests/check_configured_publication.py", line 56, in main
+    run(args.driver, args.case.resolve())
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/pkgcore/tests/check_configured_publication.py", line 35, in run
+    report = check(case / 'root', case / 'state', case / 'store', case / 'bank', media, log)
+  File "/workspace/pkgcore/tests/compare_root_publication.py", line 85, in check
+    assert set(entries) == {'.', './etc', './etc/fixture.conf', './etc/fixture.conf.save'}
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

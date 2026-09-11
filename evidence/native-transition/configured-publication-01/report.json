@@ -1,0 +1,80 @@
+{
+  "result": "pass",
+  "source_subject": "ab72f448d25ce2e710d147ebb65a076f6062d2fa3d8298e898de7f7e0d30809f",
+  "pinned_image": "sha256:7f92f64938b87b862dd962a93b558fb0caea13493745c684fbddfc190a723617",
+  "tests": {
+    "configured_publication_assertions": 251,
+    "new_source_handoff_assertions": 95,
+    "active_source_handoff_assertions": 125,
+    "fresh_process_accepted_recovery": true,
+    "missing_terminal_evidence_cases": 6,
+    "legacy_v4_publication_assertions": 2023,
+    "legacy_v5_publication_assertions": 142,
+    "legacy_stage_assertions": 1211,
+    "configured_generation_assertions": 358,
+    "current_observation_cases": 13,
+    "independent_complete_roots": 6,
+    "legacy_publication_oracles": "pass"
+  },
+  "inputs": {
+    "compile": 401,
+    "fixtures": 41,
+    "python_tools": 8
+  },
+  "limits": {
+    "memory_max": 3221225472,
+    "swap_max": 0,
+    "cpu_quota": "100%",
+    "pids_max": 128
+  },
+  "binaries": {
+    "tested": {
+      "run_generation_publication_tests": "0bc408b6044c2a3af5df4274e597a948bad3136c73e858988264e5d5f907aa05",
+      "run_generation_stage_tests": "f36a8efc9f419d941a61486529c9f3bd4b02e56129594e1e204390beb1681e17",
+      "run_root_configuration_tests": "d21f401effe0dbe69d3e82259e847a59fb059ffc1972cabdaa55797f7a9cde0f"
+    },
+    "final": {
+      "run_generation_publication_tests": "0bc408b6044c2a3af5df4274e597a948bad3136c73e858988264e5d5f907aa05",
+      "run_generation_stage_tests": "f36a8efc9f419d941a61486529c9f3bd4b02e56129594e1e204390beb1681e17",
+      "run_root_configuration_tests": "d21f401effe0dbe69d3e82259e847a59fb059ffc1972cabdaa55797f7a9cde0f"
+    },
+    "identical": true
+  },
+  "scope": "Logical v6 archive publication: fresh configuration verification after actual engine CAS reacquisition for new and in-flight work; distinct retained-stage type only for exact already-accepted terminal metadata reconciliation. No physical installed root or boot switch.",
+  "failures_retained": [
+    {
+      "log": "test-01.log",
+      "reason": "Native 251 assertions passed; new Python oracle incorrectly assumed every tar path had ./ spelling. Corrected to the existing canonical path helper; final test-02 passed."
+    },
+    {
+      "log": "ci-sync-write.log",
+      "reason": "New ADR lacked the required verification-and-remaining-conditions heading. Corrected document heading; final traceability and CI generation checks passed."
+    }
+  ],
+  "execution_provenance": "compile-01 force-built three affected mains. Final publication fixture additions were force-built in test-02 and all changed-scope tests passed. A one-line API comment clarification was then force-built for all three mains in compile-03; each final binary exactly matches the tested binary. compile-01/02/final input manifests retain the source history. No runtime behavior changed between test-02 and final.",
+  "not_repeated": [
+    "unchanged full suite",
+    "formal proofs",
+    "previous chaos campaigns",
+    "performance experiments",
+    "VM worker qualification: worker/service unchanged"
+  ],
+  "not_qualified": [
+    "production source/authentication/quiescence providers",
+    "extracted filesystem qualification and physical activation recovery",
+    "OS reboot/mount identity migration",
+    "generation GC",
+    "all DEB effects",
+    "real installed-root and boot switch",
+    "complete native-authority ISO",
+    "full-language translations"
+  ],
+  "github": {
+    "writes_performed": false,
+    "existing_repository": "minto-dane/niaos",
+    "collision": "different private kernel project",
+    "candidate_workspace": "minto-dane/niaos-distribution",
+    "remote_ci_executed": false
+  },
+  "cleanup_evidence": "distribution/evidence/maintenance/storage-cleanup-20260911"
+}

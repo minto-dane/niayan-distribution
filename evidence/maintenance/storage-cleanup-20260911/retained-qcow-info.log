@@ -1,0 +1,151 @@
+Running as unit: run-p978853-i979153.scope; invocation ID: 0a7a69083e464c7aa1c98d4d3a893569
+limited-exec: {"scope": "run-p978853-i979153.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+{
+  "distro-builder-vm/builder.qcow2": {
+    "children": [
+      {
+        "name": "file",
+        "info": {
+          "children": [],
+          "virtual-size": 72037892096,
+          "filename": "/workspace/distro-builder-vm/builder.qcow2",
+          "format": "file",
+          "actual-size": 58834296832,
+          "format-specific": {
+            "type": "file",
+            "data": {}
+          },
+          "dirty-flag": false
+        }
+      }
+    ],
+    "backing-filename-format": "qcow2",
+    "virtual-size": 85899345920,
+    "filename": "/workspace/distro-builder-vm/builder.qcow2",
+    "cluster-size": 65536,
+    "format": "qcow2",
+    "actual-size": 58834296832,
+    "format-specific": {
+      "type": "qcow2",
+      "data": {
+        "compat": "1.1",
+        "compression-type": "zlib",
+        "lazy-refcounts": false,
+        "refcount-bits": 16,
+        "corrupt": false,
+        "extended-l2": false
+      }
+    },
+    "full-backing-filename": "/workspace/distro-builder-vm/base.qcow2",
+    "backing-filename": "base.qcow2",
+    "dirty-flag": false
+  },
+  "distro-builder-vm/base.qcow2": {
+    "children": [
+      {
+        "name": "file",
+        "info": {
+          "children": [],
+          "virtual-size": 339214336,
+          "filename": "/workspace/distro-builder-vm/base.qcow2",
+          "format": "file",
+          "actual-size": 339218432,
+          "format-specific": {
+            "type": "file",
+            "data": {}
+          },
+          "dirty-flag": false
+        }
+      }
+    ],
+    "virtual-size": 3221225472,
+    "filename": "/workspace/distro-builder-vm/base.qcow2",
+    "cluster-size": 65536,
+    "format": "qcow2",
+    "actual-size": 339218432,
+    "format-specific": {
+      "type": "qcow2",
+      "data": {
+        "compat": "1.1",
+        "compression-type": "zlib",
+        "lazy-refcounts": false,
+        "refcount-bits": 16,
+        "corrupt": false,
+        "extended-l2": false
+      }
+    },
+    "dirty-flag": false
+  },
+  "distro-artifacts-09/acceptance-01/install-bios-network/installed.qcow2": {
+    "children": [
+      {
+        "name": "file",
+        "info": {
+          "children": [],
+          "virtual-size": 10148577280,
+          "filename": "/workspace/distro-artifacts-09/acceptance-01/install-bios-network/installed.qcow2",
+          "format": "file",
+          "actual-size": 10148687872,
+          "format-specific": {
+            "type": "file",
+            "data": {}
+          },
+          "dirty-flag": false
+        }
+      }
+    ],
+    "virtual-size": 34359738368,
+    "filename": "/workspace/distro-artifacts-09/acceptance-01/install-bios-network/installed.qcow2",
+    "cluster-size": 65536,
+    "format": "qcow2",
+    "actual-size": 10148687872,
+    "format-specific": {
+      "type": "qcow2",
+      "data": {
+        "compat": "1.1",
+        "compression-type": "zlib",
+        "lazy-refcounts": false,
+        "refcount-bits": 16,
+        "corrupt": false,
+        "extended-l2": false
+      }
+    },
+    "dirty-flag": false
+  },
+  "distro-artifacts-09/acceptance-01/install-uefi-offline/installed.qcow2": {
+    "children": [
+      {
+        "name": "file",
+        "info": {
+          "children": [],
+          "virtual-size": 9282191360,
+          "filename": "/workspace/distro-artifacts-09/acceptance-01/install-uefi-offline/installed.qcow2",
+          "format": "file",
+          "actual-size": 9282277376,
+          "format-specific": {
+            "type": "file",
+            "data": {}
+          },
+          "dirty-flag": false
+        }
+      }
+    ],
+    "virtual-size": 34359738368,
+    "filename": "/workspace/distro-artifacts-09/acceptance-01/install-uefi-offline/installed.qcow2",
+    "cluster-size": 65536,
+    "format": "qcow2",
+    "actual-size": 9282277376,
+    "format-specific": {
+      "type": "qcow2",
+      "data": {
+        "compat": "1.1",
+        "compression-type": "zlib",
+        "lazy-refcounts": false,
+        "refcount-bits": 16,
+        "corrupt": false,
+        "extended-l2": false
+      }
+    },
+    "dirty-flag": false
+  }
+}

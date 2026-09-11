@@ -115,4 +115,23 @@ stageのprovision/advance/inspect/prepare-root/root-preparedで照合し、Advan
 CASを取得する二箇所でも`Check_Inputs`を使用する。`stage:advance-inputs`での拒否はPrepare/Resumeより前に
 止まる。全effectの元Authorizeも維持し、操作途中でsource排他を解放しない。
 実準備は[接続手順](root-preparation.ja.md)に従う。設定適用前のsourceを使うこの経路を、
-適用後のaccepted復旧に使用してはならない。publisherのv4/v5制限は維持し、v6の公開はまだUnsupportedである。
+適用後のaccepted復旧に使用してはならない。公開と受理済み記録の修復は次節の別経路を使う。
+
+## 設定済み世代の公開と受理済み記録修復
+
+判断ADR-0109。publisherはNIAGEN06を受理し、追加generic `Observe_Configuration_Source`を
+既定拒否とする。新規公開と未受理の再開では、stage検査と実公開engineのCAS予約取得後の両方で
+現在sourceを全照合する。`publication:configuration`も独立認可と操作全体のsource排他を必要とする。
+active transactionだけでは省略できない。保存記録の期限は新規の同意へ更新しない。
+
+すでに要求planが実root.stateに受理されている場合だけ、別の限定型`Retained_Generation`を使う。
+`stage:inspect-retained`、`stage:inspect-retained-batch`、`stage:inspected-retained`の認可と
+全物理stage、pin、journal/receipt、保存閉包の照合が必要である。通常の現在証拠へ変換できない。
+公開engineの予約下でtarget generation/accepted plan/catalogと完全な同一journalを再確認し、
+`Commit_Pending`か`Forward_Final`の場合だけ`finish-terminal`を許可する。下位engineは全after-imageと
+元health receiptを照合して記録を修復する。現在の供給trust/失効とmanaged認可も維持する。
+
+この修復では古いsource FDを必要としない。sourceが変わっていても、新しい設定適用や公開決定を
+実行するわけではない。必須record、物理tar、journalやpinが欠落した場合は状態を維持して拒否する。
+`check_configured_publication.py`で実DEB、検査後source変更、accepted窓、新プロセスと欠落を検査する。
+実root/boot切替や抽出後filesystemの資格確認、本番provider、mount identity移行は未完である。

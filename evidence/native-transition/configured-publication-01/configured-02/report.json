@@ -1,0 +1,24 @@
+{
+  "result": "pass",
+  "accepted_generation": 1,
+  "accepted_plan": "4a070960bac6aec4c54520b2cb6445e9ddd88ce3707138e1a644c5716e100d24",
+  "generation_manifest": "782fd4016487cbae00de43128f5e90cc0ade8fd87f237b2178cbf34dd5a904aa",
+  "root_manifest": "ae79b659bb5b5cd7b6a344208acb007f58e717bd61e094505fe06f586ccc069d",
+  "archive": "2e0c1680ece6eee13ca678bd2a015ab546dabf51dce71bf45222dd3827e806d4",
+  "paths": 4,
+  "actual_staged_archive": true,
+  "original_spans_exact": false,
+  "configured_local_preserved": true,
+  "privileged_extraction": false,
+  "actual_boot": false,
+  "production_authorization": false,
+  "fresh_process_terminal_recovery": true,
+  "terminal_missing_evidence_refusals": [
+    "configured-record",
+    "configuration-closure",
+    "physical-archive",
+    "stage-journal",
+    "publication-journal",
+    "generation-pin"
+  ]
+}
