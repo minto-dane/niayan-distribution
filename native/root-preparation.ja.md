@@ -11,7 +11,7 @@ service/account/設定の配布物は[service-deployment.ja.md](service-deployme
    世代lockとroot lockを保持する。新経路はroot archiveを持つv5だけを受け付ける。
 2. CASを再予約してmanifest pinと全保持内容・元DEB・論理所有権を再検証する。
    `stage:prepare-root`で、同じmanifest/stage/transaction/epoch/fenceの現在認可を確認する。
-3. 同じCAS内のNIAROOT1からtar hash・サイズ・entry数を読み、hash検査済みの読取専用FDを開く。
+3. 同じCAS内のNIAROOT1/2からtar hash・サイズ・entry数を読み、hash検査済みの読取専用FDを開く。
    受渡し直前にも`stage:prepare-root`を呼ぶ。CASの実予約FDとtar FDをSCM_RIGHTSで渡す。
 4. 応答後も三つの予約を保持し、manifest binding・pin・全保持内容を再読し、
    `stage:root-prepared`で現在認可と期限を再確認する。その後に予約を解放する。

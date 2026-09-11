@@ -1,0 +1,64 @@
+{
+  "format": 1,
+  "result": "pass",
+  "source_subject": "cbc8eb5c0fa7511cb5a17e7f593cb27f5d5c363e683d3203b174d621ca94c56e",
+  "decision": "ADR-0103",
+  "assertions": {
+    "root_archive": 831,
+    "root_configuration": 136,
+    "root_publication_variant": 142
+  },
+  "order": {
+    "owner_combinations": 8,
+    "distinct_output_archives": 1,
+    "physical_extractions": 1,
+    "entries_per_archive": 11,
+    "original_spans_exact": true,
+    "legacy_byte_verification": true,
+    "suitable_legacy_admission": true,
+    "unsuitable_legacy_admission": "Unsupported; both outputs cleared"
+  },
+  "source_inputs": {
+    "compile": 390,
+    "fixtures": 37,
+    "python_tools": 6
+  },
+  "artifacts": {
+    "workspace/pkgcore/build/test-bin/run_root_archive_tests": "c56cabc2921acdaba004e428c6c0f4620d8490a5507cf7b196833ab924f5c895",
+    "workspace/pkgcore/build/test-bin/run_root_configuration_tests": "4e5a60b47a9cdffa25571c4cc5fb2d16c6924b7d7a40da6ed0f05b1b79738c8c",
+    "workspace/pkgcore/build/test-bin/run_generation_publication_tests": "488fe32a36aba5a8736ddd393c100179449beb5a0835d33a5b354eaecc9ad86c",
+    "runtime.tar": "69ebf7aea70ef2e1c2194686df95a98fdcfd937ff244c521f64b3ce6e64dbfce"
+  },
+  "environment": {
+    "dev_image": "sha256:7f92f64938b87b862dd962a93b558fb0caea13493745c684fbddfc190a723617",
+    "qemu_image": "sha256:7f92f64938b87b862dd962a93b558fb0caea13493745c684fbddfc190a723617",
+    "memory_max": 3221225472,
+    "memory_swap_max": 0,
+    "cpu_quota": "100%",
+    "pids_max": 128,
+    "guest_ram_mib": 2048,
+    "guest_vcpus": 1,
+    "worker_evidence": "root-clocks-01",
+    "worker_unchanged": true
+  },
+  "intermediate_failures": [
+    {
+      "log": "test-01.log",
+      "reason": "test CAS directory was not private; worker source compiled successfully"
+    },
+    {
+      "log": "test-02.log",
+      "reason": "fixture expected directory header without the slash emitted by tarfile; fixed expectation"
+    },
+    {
+      "log": "test-03.log",
+      "reason": "test stage directories remained in the parent of the earlier case; final run uses a fresh case parent"
+    }
+  ],
+  "boot_switched": false,
+  "production_authorization": false,
+  "configured_root_serialization": false,
+  "formal_proof": false,
+  "full_suite_repeated": false,
+  "github_published": false
+}

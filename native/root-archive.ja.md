@@ -1,7 +1,7 @@
 # 元DEBからのrootアーカイブ組立て
 
 `Pkg_Root_Archive`は、保持閉包を検査した選択catalogから、実payloadを一つのtarと
-NIAROOT1 manifestへ組み立てる内部SDKである。旧file-planが表現できないhardlink、
+NIAROOT2 manifestへ組み立てる内部SDKである。旧file-planが表現できないhardlink、
 device、FIFO、負の時刻、PAX/GNU属性を切り捨てず、元tarのレコードをそのままコピーする。
 本番rootへの展開、maintainer scriptの効果、公開認可、起動切替はこのAPIの仕事に含めない。
 
@@ -12,10 +12,11 @@ device、FIFO、負の時刻、PAX/GNU属性を切り捨てず、元tarのレコ
 空pathのrootと全祖先pathは選択済みdirectoryでなければならない。全pathの網羅と順序、
 hardlinkの直接参照先が同じ元DEBから選ばれていることを検査する。
 
-出力はdirectory群、その他の順で、各群は元DEB hashと元tar内位置を基準にする。
-hardlinkは直接参照先を先に出力する。元DEBの検査済みgraphを保持し、循環検査は反復処理で行う。
-directoryの親子順はpackageをまたいで保証しない。将来の展開器はdirectoryの一時作成と
-最終属性の適用を分離し、子の作成が親の最終属性を壊さないようにする必要がある。
+出力はdirectory群、その他の順とする。NIAROOT2ではdirectoryをcanonical raw path順に並べ、
+空pathのrootを最初に、全親を子より前に出力する。採用元packageと元tarの掲載順に依存しない。
+その他は元DEB hashと元tar内位置を基準に、hardlinkの直接参照先を先に出力する。
+元DEBの検査済みgraphを保持し、循環検査は反復処理で行う。最終順でもroot/親先行を再確認する。
+展開器は子作成後にdirectoryの最終属性を確定する。親の自動生成で順序の欠陥を隠さない。
 
 各レコードのlocal PAX/GNU拡張header、通常header、bodyとpaddingを元tarからコピーする。
 全体末尾だけを二つのzero blockに揃える。保持されたctime/creationtimeの情報が
@@ -27,7 +28,7 @@ directoryの親子順はpackageをまたいで保証しない。将来の展開�
 
 | 0起点offset | bytes | 内容 |
 | --- | --- | --- |
-| 0 | 8 | NIAROOT1 |
+| 0 | 8 | NIAROOT2（旧形式NIAROOT1） |
 | 8 | 32 | 選択catalog hash |
 | 40 | 32 | catalog保持閉包 hash |
 | 72 | 32 | payload index fingerprint |
@@ -47,6 +48,13 @@ root tarも呼出側の有限容量上限と8 GiB以内に制限する。全量O
 UID0を拒否し、失敗時の出力digestはzeroにする。失敗した呼出しでも未参照の完全なCAS objectが
 残り得る。非成功を「書込みなし」と解釈しない。
 
+NIAROOT1のdirectory順は元DEB hash/元tar位置であった。`Verify`と`Verify_Target`は旧順を使い、
+保持済みの全byte列を再検証する。既存manifest/tarを書き換えず、v2を旧hashの代わりに返さない。
+`Verify_Ownership`は実展開側にも接続されるため、旧形式でもroot/親先行を追加検査する。
+既存の適切な順序は受理し、不適切な順序は`Unsupported`で両digestをzeroにする。
+旧記録の照合成功は実展開の成功ではない。移行する場合は、新しいBuildのv2 manifestを
+供給・認可・世代planへ改めて束縛する。accepted状態の暗黙更新や自動移行は行わない。
+
 ## 本番接続で残ること
 
 構造が正しい選択でも、所有権変更が認可済みとは限らない。Replaces、共有所有、conffile、
@@ -59,5 +67,7 @@ NIAGEN05を通して既存の世代pin・公開/復旧へ接続した。[root世
 今回の検証対象は人工DEBの実payload組立てであり、ディストリビューション完成ではない。
 
 通常のcomponent CIと統合runnerに専用Ada driverを登録し、Python tarfileによる独立読取で
-元DEBの選択span・全属性・path網羅・hardlink順とNIAROOT1の選択番号を照合する。
+元DEBの選択span・全属性・path網羅・root/親先行・hardlink順とNIAROOT2の選択番号を照合する。
+逆順directoryを持つ二つの元packageから、root/親/子の採用元を8通り組み替える。
+旧形式の完全byte読戻しと、適切/不適切な旧順の実展開検査の区別も確認する。
 欠損や復元は私有CASに限定する。変更のない試験・証明・既存カオスcampaignを重複実行しない。

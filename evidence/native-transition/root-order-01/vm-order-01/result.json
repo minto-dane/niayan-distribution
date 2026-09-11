@@ -1,0 +1,27 @@
+{
+  "result": "pass",
+  "cases": [
+    {
+      "source_owner_cases": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "archive": "8208f6edc817f9061aca028ca990e84e3673a934e66b59c094e3a403ce4e2755",
+      "entries": 11,
+      "actual_parent_directories": true,
+      "numeric_attributes": true,
+      "exact_content": true,
+      "negative_nanosecond_mtime": true,
+      "hardlink_chains": true
+    }
+  ],
+  "published": false,
+  "production_authorization": false,
+  "actual_boot": false
+}

@@ -1,12 +1,12 @@
 # rootアーカイブを保持する世代
 
-NIAGEN05は、[NIAROOT1](root-archive.ja.md)を既存の世代manifestへ束縛する。
+NIAGEN05は、[NIAROOT1/2](root-archive.ja.md)を既存の世代manifestへ束縛する。
 packageごとの採用claim、catalogと閉包、実tarが、世代descriptorと物理公開計画を経て
 既存のManaged認可対象になる。別のinstalled DBや、root選択だけの未束縛sidecarは作らない。
 
 ## 形式と物理staging
 
-NIAGEN04の224 byte headerに、NIAROOT1 hashの32 bytesを追加する。tagはNIAGEN05。
+NIAGEN04の224 byte headerに、NIAROOT1/2 hashの32 bytesを追加する。tagはNIAGEN05。
 0起点offset224がRoot_Archive、分割recordの開始は256。既存のcatalog、closure、intent、
 supply policy、stage/transaction、epoch/fenceの意味は維持する。Root_Archiveは必須で、
 旧形式へ非zeroのRoot_Archiveを渡せない。旧形式のbytesとtransaction導出は変えない。
@@ -18,7 +18,7 @@ v5のbatch transactionはNIAGEN05と既存transaction ID、batch番号から導�
 | --- | --- | --- |
 | 1 | catalog | 選択catalogの原本 |
 | 2 | tree | staging directory |
-| 3 | tree/root.tar | NIAROOT1から再検証した実tar |
+| 3 | tree/root.tar | NIAROOT1/2から再検証した実tar |
 
 tarを一つの通常ファイルとしてstagingするため、payload内のdevice、hardlink、全属性を
 旧file-planのinode表現へ切り詰めない。格納ファイルの属性と内包されたrootの属性は別である。
@@ -26,7 +26,7 @@ tarを一つの通常ファイルとしてstagingするため、payload内のdev
 
 ## 検査と復旧
 
-`Pkg_Root_Archive.Verify_Ownership`は、明示したenclosing catalogとclosureをNIAROOT1へ照合し、
+`Pkg_Root_Archive.Verify_Ownership`は、明示したenclosing catalogとclosureをNIAROOT1/2へ照合し、
 全原本と既存tarを検査して再組立て結果を比較する。
 同じ保持intentのnative architectureを用い、[論理所有権](payload-ownership.ja.md)を検査する。欠損を再生成で隠さず、失敗出力をzeroにする。
 新しいRoot_V5のCheck_Retentionは、供給policyとintentの既存検査を維持したうえで、この検査と
@@ -34,7 +34,7 @@ batchのtree/root.tar内容hashの一致を要求する。planのI/O後に期限
 
 StageのProvision/Advance/Inspect/Verify_And_Hold、Publish前、StageからEngineへCAS予約を
 渡した後のcomposed guard、基準世代と現在世代のnative観測に同じ保持検査が入る。
-既存transaction pin → NIAGEN05 → NIAROOT1 → catalog/closure/元原本/実tarを保持する。
+既存transaction pin → NIAGEN05 → NIAROOT1/2 → catalog/closure/元原本/実tarを保持する。
 pinは削除しない。全履歴と全typed参照を走査する本番GCは引き続き未実装である。
 
 新規公開の供給期限と独立policy、記録済み復旧での実root.state/WAL監査は変更しない。

@@ -1,0 +1,11 @@
+{
+  "result": "pass",
+  "files": {
+    "pkgcore/tests/compare_root_archive.py": "c6670e9276d4aa0d7c6f4ede2f59e1e99d45bf0d926ea4fa4c4d1eccd7c9b36a",
+    "pkgcore/tests/compare_root_order.py": "b13ebcea3456ba831f4b800b0ecaeabbe07386c6ff65267d7de7a55939612212",
+    "pkgcore/tests/compare_root_publication.py": "d1e880c26c705b8c5e2c098340e7d4e4b565d9b9bc6e419c12e670156533e7c1",
+    "pkgcore/tests/make_root_archive_fixtures.py": "7f63a84a18d6e6f258b2baa609c28458094f54647e5d4343f84909f972c62c9b",
+    "pkgcore/tests/make_root_preparation_fixtures.py": "aa3faf85726782ae7fdd614cf948cdce3934d59eda70cebac0c3c0823a2e2c43",
+    "distribution/native/worker/check_root_order.py": "883cd5449e930c8214198d70313a55ce7d09f7715815efff367c8ec01dd3259d"
+  }
+}
