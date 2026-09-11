@@ -78,6 +78,7 @@ requestの形式もprepareと同じで、現在の有限deadlineを与える。�
 呼出し側は全writerとmount管理を同じbank/CAS排他へ従わせ、rootをサービスから実際にread-onlyと
 観測できるnodev/nosuid/noexec mountへ固定する。単なるread-only bind viewでは、別のviewからの
 書込を止められない。サービスはfreezeやremountを代行せず、書込可能なrootを拒否する。
+専用ext4 filesystemを扱う独立controller部品は[root-freeze.ja.md](root-freeze.ja.md)を参照。
 
 workerの`--verify`で全期待tar/inodeと閉じたnamespaceを照合し、実rootのmount ID/device/inodeを返す。
 サービスは自身が保持するFDとその値を照合し、終了後にも同一entry/mount、保護条件、CAS予約、

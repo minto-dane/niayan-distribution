@@ -1,0 +1,6 @@
+Running as unit: run-p1018910-i1019210.scope; invocation ID: 03da38c26fed4818a3a0692e6fcd5301
+limited-exec: {"scope": "run-p1018910-i1019210.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Formatting '/evidence/vm-package-01/test.qcow2', fmt=qcow2 cluster_size=65536 extended_l2=off compression_type=zlib size=85899345920 backing_file=/vm-base/builder.qcow2 backing_fmt=qcow2 lazy_refcounts=off refcount_bits=16
+VM SSH ready
+Guest worker test exit 1
+/evidence/ssh-bin/scp: /home/builder/nia-bank-freeze-01/bank.json: No such file or directory

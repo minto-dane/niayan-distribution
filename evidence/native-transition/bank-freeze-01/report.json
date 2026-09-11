@@ -1,0 +1,56 @@
+{
+  "result": "pass-with-production-boundaries-open",
+  "source_subject": "df59c0171fd025fea8a5e4437847edb94a2361cbb63bbc880f69862a70c5a210",
+  "adr": "ADR-0112",
+  "requirement": "REQ-150",
+  "hazard": "HAZ-136",
+  "fault": "FAULT-149",
+  "package_version": "0.4.0",
+  "two_builds_byte_equal": [
+    "main DEB",
+    "dbgsym DEB",
+    "source dsc",
+    "source tar.xz"
+  ],
+  "standalone_freeze_result": "vm-test-02/freeze/result.json",
+  "bank_regression_result": "vm-test-02/bank.json",
+  "sdk_results": "vm-test-05",
+  "assertions": {
+    "configured": 482,
+    "plain": 937
+  },
+  "assertion_count_includes_clock_waits": true,
+  "limits": {
+    "memory_bytes": 3221225472,
+    "swap_bytes": 0,
+    "cpus": 1,
+    "pids": 128,
+    "vm_ram_mib": 2048,
+    "vm_vcpus": 1
+  },
+  "old_sdk_reused": true,
+  "sdk_sources_unchanged": true,
+  "worker_unchanged": true,
+  "full_suites_and_proofs_repeated": false,
+  "failed_attempts": {
+    "vm-package-01": "Package builds passed; fixture mmap changed expected root atime, rejected by unchanged worker. Probe separated from expected root.",
+    "vm-test-02": "Controller and Bank passed; SDK request timed out before extraction; initial backing nested on CAS filesystem.",
+    "vm-test-03": "Independent bank backing did not resolve SDK wait; first request timeout.",
+    "vm-test-04": "Same SDK timeout; live observation captured ext4 fsync/journal wait on persistent guest-backed CAS loop device.",
+    "vm-test-05": "Both SDK variants passed with the previous accepted guest RAM-backed ext4 CAS layout."
+  },
+  "durable_storage_performance_tested": false,
+  "power_loss_tested": false,
+  "production_controller_deployed": false,
+  "active_root_or_boot_switched": false,
+  "remaining": [
+    "dedicated bank provisioning and durable device identity",
+    "authenticated controller RPC and authority lifetime",
+    "effect-time freshness and boot switch/recovery",
+    "production source/consent/supply providers",
+    "all DEB effects",
+    "generation GC",
+    "complete replacement ISO",
+    "all-language translations"
+  ]
+}

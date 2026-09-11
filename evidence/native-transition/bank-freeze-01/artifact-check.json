@@ -1,0 +1,215 @@
+{
+  "result": "pass",
+  "unchanged_sdk_compile_inputs": 401,
+  "unchanged_fixtures": 32,
+  "source_package_inputs": {
+    "debian/changelog": {
+      "source": "packaging/root-preparation/debian/changelog",
+      "sha256": "09a58b0cce1a2c125a1c9347601d5aa5bf0fb967b401f7f4ae560c62d07e31a8",
+      "mode": 420
+    },
+    "debian/control": {
+      "source": "packaging/root-preparation/debian/control",
+      "sha256": "72c938f7a282ef4b358971b0b09d4e515759b070a672cb60f5c05b5e615c97a6",
+      "mode": 420
+    },
+    "debian/copyright": {
+      "source": "packaging/root-preparation/debian/copyright",
+      "sha256": "d02b877c8e6ddaba077bb74845e145ccbc74e9a3be7c63560b6ac5baad14d03f",
+      "mode": 420
+    },
+    "debian/niaos-root-preparation.install": {
+      "source": "packaging/root-preparation/debian/niaos-root-preparation.install",
+      "sha256": "e10ac8ac7c4f01fd8e3de13a7a797ac0dc866d97ba5658c3894af6da2ed553fe",
+      "mode": 420
+    },
+    "debian/niaos-root-preparation.service": {
+      "source": "packaging/root-preparation/debian/niaos-root-preparation.service",
+      "sha256": "2a42b2a281cd490b172c94acc78710df54232a988c441e1f96606f348be0816e",
+      "mode": 420
+    },
+    "debian/niaos-root-preparation.socket": {
+      "source": "packaging/root-preparation/debian/niaos-root-preparation.socket",
+      "sha256": "f9d4b6daf88cc87ae7b81818858e1f9a562ffdc438a967cc21db89efd4c1ec70",
+      "mode": 420
+    },
+    "debian/niaos-root-preparation.sysusers": {
+      "source": "packaging/root-preparation/debian/niaos-root-preparation.sysusers",
+      "sha256": "acf4e9ab0c6534bbd6022eff8b4e7a491b3dfc4f17ac0bf8e852084a54dc075c",
+      "mode": 420
+    },
+    "debian/rules": {
+      "source": "packaging/root-preparation/debian/rules",
+      "sha256": "1985673b3f6c3a749afffef7f45780989bd90e0ec323dac1b38ca1601c1935d6",
+      "mode": 493
+    },
+    "debian/source/format": {
+      "source": "packaging/root-preparation/debian/source/format",
+      "sha256": "e8e18df40bcd69d6aa404282679186d9b8256ac63a5b4e80d7f081e8a0095a2e",
+      "mode": 420
+    },
+    "deployment/dev/null": {
+      "source": "packaging/root-preparation/deployment/dev/null",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mode": 420
+    },
+    "deployment/dev/random": {
+      "source": "packaging/root-preparation/deployment/dev/random",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mode": 420
+    },
+    "deployment/dev/urandom": {
+      "source": "packaging/root-preparation/deployment/dev/urandom",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mode": 420
+    },
+    "deployment/dev/zero": {
+      "source": "packaging/root-preparation/deployment/dev/zero",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mode": 420
+    },
+    "deployment/root-preparation.json": {
+      "source": "packaging/root-preparation/deployment/root-preparation.json",
+      "sha256": "c4f58ec9047a68c03d65753045a9aa0df5db8ddfad498c3c746dfd96b53aad4b",
+      "mode": 420
+    },
+    "deployment/var-lib-niaos-roots.mount": {
+      "source": "packaging/root-preparation/deployment/var-lib-niaos-roots.mount",
+      "sha256": "989caa9465e0f0c83d052a7db681502149af80d8b0ca1070e8f9c0bc700fbd68",
+      "mode": 420
+    },
+    "native/root_bank.py": {
+      "source": "native/root_bank.py",
+      "sha256": "b4fdfc29721138fe387ac0e127961a20f7cb4c5d2abd20adf35ab186cc39b86b",
+      "mode": 420
+    },
+    "native/root_freeze.py": {
+      "source": "native/root_freeze.py",
+      "sha256": "32755886feb3a6b054fd43a3543579e22e1ae73c52eecfa15954ccb273be4d5b",
+      "mode": 420
+    },
+    "native/storage_bootstrap.py": {
+      "source": "native/storage_bootstrap.py",
+      "sha256": "6afa0b76a3285e55e093814e6e27837be99ffe0966fd288adc3a5af60b37739b",
+      "mode": 420
+    },
+    "native/worker/root_extract.c": {
+      "source": "native/worker/root_extract.c",
+      "sha256": "afb3471598ae2055220733d0e19997fbd3f2e93d34a6303761547180476c840d",
+      "mode": 420
+    },
+    "native/worker/tar_clocks.c": {
+      "source": "native/worker/tar_clocks.c",
+      "sha256": "9c4d1fcc6fca599e8e703bbf9e98b2f113e7f3120f61b1f439b651a317fb15a1",
+      "mode": 420
+    },
+    "native/worker/tar_clocks.h": {
+      "source": "native/worker/tar_clocks.h",
+      "sha256": "c97a4290629dda99b92c14a21a3b795c4233741d7745f0abcbf6f1acf1ab1f2b",
+      "mode": 420
+    },
+    "native/worker/check_tar_clocks.c": {
+      "source": "native/worker/check_tar_clocks.c",
+      "sha256": "5418e90a66e9d1fa5c1d5a1b9452af730816771db598e5418b9348a37a696ded",
+      "mode": 420
+    },
+    "native/worker/check_tar_clocks.py": {
+      "source": "native/worker/check_tar_clocks.py",
+      "sha256": "20f724f654decd129987c4a202ec1dd4a960863a4b6d7d7b7a52f7c464d09739",
+      "mode": 420
+    },
+    "native/worker/Makefile": {
+      "source": "native/worker/Makefile",
+      "sha256": "4aa001706d4ed2a9d41401b7da1cdeaeb9e365f208053aa685d62751591844b8",
+      "mode": 420
+    }
+  },
+  "runtime_inputs": {
+    "lib/ld-linux-x86-64.so.2": "438c546d8e8cc48496bf3a95f753051afd9db66a629a74e31a9ded71586b56e0",
+    "lib/libacl.so.1": "3c03774961231d8485a4dba36ec359a95939a84719799c58cd26173e44bbde90",
+    "lib/libarchive.so.13": "9b8d5d966c7544aeaef792c4a3568ee9ae58f807b9d71922754d024a59ff37b9",
+    "lib/libbz2.so.1.0": "c630f057efedc12f848710d71f40283895591e5b4608539f387895c64e0553da",
+    "lib/libc.so.6": "fa430b8f298f817a266046af84a77533185ad6fc4406c7d3787b5a0a0c207826",
+    "lib/libgcc_s.so.1": "30c61ab012a4241bed033725a09b61f5fdd3bb7df95ee852d0b096520524c7af",
+    "lib/libgnat-14.so": "89e703c6ca4f3dbc226295b3101ab8870f704d134a0bddc10fb6b8d839a93e16",
+    "lib/liblz4.so.1": "67bf8b84af77e962e09be661944f7c61393c4806746734e36db9fbdaebc1de36",
+    "lib/liblzma.so.5": "01e05a4b5268805a10a2414a8904fb1fb45c60626dce53b5ea19c1d491049b99",
+    "lib/libm.so.6": "6d567d53e895273ca14a1f9dc164fc6c8d39aed2f60aa46a733c2784228915f3",
+    "lib/libnettle.so.8": "34ac695c167a593d3587bd88592d33d53e5dc4035984f84446100962f57376fd",
+    "lib/libsodium.so.23": "85e2e494494f4f50c4b6d2b4ae90e885da1bfdefd52c4cc5767fd10abff62505",
+    "lib/libxml2.so.2": "8f2643af68a9eba917929046806dabd1848867068d0eee0f6799288a8e886963",
+    "lib/libxxhash.so.0": "7dd49b353facbee50c371d0559ce29db5afee5ac33249ca5c7068420fb642762",
+    "lib/libz.so.1": "85590dd58edf5445e18bc7193e5ebc01ac5841f1ae187e97705a662e90c6421e",
+    "lib/libzstd.so.1": "27f07c9a49c2c956bcfb64cd4712976586a66facbf15fc7f09bc37413b5f2b21",
+    "source/debian/changelog": "09a58b0cce1a2c125a1c9347601d5aa5bf0fb967b401f7f4ae560c62d07e31a8",
+    "source/debian/control": "72c938f7a282ef4b358971b0b09d4e515759b070a672cb60f5c05b5e615c97a6",
+    "source/debian/copyright": "d02b877c8e6ddaba077bb74845e145ccbc74e9a3be7c63560b6ac5baad14d03f",
+    "source/debian/niaos-root-preparation.install": "e10ac8ac7c4f01fd8e3de13a7a797ac0dc866d97ba5658c3894af6da2ed553fe",
+    "source/debian/niaos-root-preparation.service": "2a42b2a281cd490b172c94acc78710df54232a988c441e1f96606f348be0816e",
+    "source/debian/niaos-root-preparation.socket": "f9d4b6daf88cc87ae7b81818858e1f9a562ffdc438a967cc21db89efd4c1ec70",
+    "source/debian/niaos-root-preparation.sysusers": "acf4e9ab0c6534bbd6022eff8b4e7a491b3dfc4f17ac0bf8e852084a54dc075c",
+    "source/debian/rules": "1985673b3f6c3a749afffef7f45780989bd90e0ec323dac1b38ca1601c1935d6",
+    "source/debian/source/format": "e8e18df40bcd69d6aa404282679186d9b8256ac63a5b4e80d7f081e8a0095a2e",
+    "source/deployment/dev/null": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source/deployment/dev/random": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source/deployment/dev/urandom": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source/deployment/dev/zero": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source/deployment/root-preparation.json": "c4f58ec9047a68c03d65753045a9aa0df5db8ddfad498c3c746dfd96b53aad4b",
+    "source/deployment/var-lib-niaos-roots.mount": "989caa9465e0f0c83d052a7db681502149af80d8b0ca1070e8f9c0bc700fbd68",
+    "source/native/root_bank.py": "b4fdfc29721138fe387ac0e127961a20f7cb4c5d2abd20adf35ab186cc39b86b",
+    "source/native/root_freeze.py": "32755886feb3a6b054fd43a3543579e22e1ae73c52eecfa15954ccb273be4d5b",
+    "source/native/storage_bootstrap.py": "6afa0b76a3285e55e093814e6e27837be99ffe0966fd288adc3a5af60b37739b",
+    "source/native/worker/Makefile": "4aa001706d4ed2a9d41401b7da1cdeaeb9e365f208053aa685d62751591844b8",
+    "source/native/worker/check_tar_clocks.c": "5418e90a66e9d1fa5c1d5a1b9452af730816771db598e5418b9348a37a696ded",
+    "source/native/worker/check_tar_clocks.py": "20f724f654decd129987c4a202ec1dd4a960863a4b6d7d7b7a52f7c464d09739",
+    "source/native/worker/root_extract.c": "afb3471598ae2055220733d0e19997fbd3f2e93d34a6303761547180476c840d",
+    "source/native/worker/tar_clocks.c": "9c4d1fcc6fca599e8e703bbf9e98b2f113e7f3120f61b1f439b651a317fb15a1",
+    "source/native/worker/tar_clocks.h": "c97a4290629dda99b92c14a21a3b795c4233741d7745f0abcbf6f1acf1ab1f2b",
+    "source/source-inputs.json": "95cd49e11171ad9cc9d1fd724201a2c42685dd38e70b1f519b633488d8795d3c",
+    "drivers/run_root_archive_tests": "500fa56df8b57d2abfb1dcc190417f8472a23fa8a4498cca3a51a16e97fc5e7b",
+    "drivers/run_root_configuration_tests": "1b0542cecd8b48cffbc3d2322564f98ef9e6de17a58fecaa766725791ee96a80",
+    "tests/root_bank.py": "b4fdfc29721138fe387ac0e127961a20f7cb4c5d2abd20adf35ab186cc39b86b",
+    "tests/root_freeze.py": "32755886feb3a6b054fd43a3543579e22e1ae73c52eecfa15954ccb273be4d5b",
+    "tests/worker/check_root_extract.py": "e378149a97002d3b4f044a9cfb4ad57d4f350924b3b85f45ec5ec91fd2e59380",
+    "tests/worker/check_root_bank.py": "005e43f75cb3097bc8253e1483697ecff905385c33a4433ece58061d197a36f9",
+    "tests/worker/check_root_reinspection.py": "728e6e2b4beda51347ff28decc951df6b1da281266b3769391b75ff0759c1c58",
+    "tests/worker/check_root_preparation.py": "45ab52da26366996b4341b125fa03438f30302f84cca24ad42181561b5b8db0a",
+    "tests/worker/check_root_freeze.py": "aa83adebd16f0cab918be88e3415b5b45328029937187bde088b31245614420c",
+    "fixtures-configured/space-name.deb": "04a7ed710722cf1544e0c78e2b62ea0685c877def60e36fcda4d64ddadaaa301",
+    "fixtures-configured/layout.deb": "006dc15c47275b6a21094e5d4227cd72b4842e69076f4ff2a02d1f52fd43aef1",
+    "fixtures-configured/absent.deb": "4c54a8bc6a18757829a12c463c91eabed3ecc0c4498932210cf4a13671cce2dd",
+    "fixtures-configured/blank.deb": "6fcbf38cb7a874215a8184b4c02ea332138906009ffed2111c7b7068a351195b",
+    "fixtures-configured/manifest.json": "9028f5c576b7431066f5c11e0163819331d0e30c1556a686f860edc974576d20",
+    "fixtures-configured/layout-linked.deb": "5d6692bd70640dca6e94d1855bdbc2aaeac7eba070e16d1b38ae496f300c3dad",
+    "fixtures-configured/relative.deb": "c216d392590d9b1f36e67044a607918e0d8bb7e9aafe6c428e709ed395a7aaa1",
+    "fixtures-configured/no-final-newline.deb": "2a04c80d105d76696dd762d80725b08410c990cd7b8bf0cf3a092e96ca15f6d4",
+    "fixtures-configured/duplicate.deb": "ef1719a67e1abdd576bfd0cfcb483075ee10b08ad56fd6c0799d53e4fdea4ec2",
+    "fixtures-configured/layout-collision.deb": "60c5b58fe40c11aca4f2b4f731c067f5d46907c007f64ffeb9287323035db930",
+    "fixtures-configured/remove.deb": "9e6fc838445df4b8753c3f17010e7b7cfe011e4327bfc8025f6b3c1c8f4356eb",
+    "fixtures-configured/nul.deb": "ea212ace79549843e11630f25541edeae2f5ea9e85dbffe6d2445e0b2842f65c",
+    "fixtures-configured/unknown-flag.deb": "9c51553db5be294fefd4a59692e92d780fccf57a1b417208c2bf7e520fe4fb41",
+    "fixtures-configured/normal.deb": "1278e8099ebf2e5e10dca4ffea5501bed2b25f0ccb3973c5d988c9dad0f682eb",
+    "fixtures-configured/updated.deb": "04a3d75ffb271fc69403b85590dffab53c733c35053c761ea5b84cb7be331685",
+    "fixtures-configured/layout-stream.deb": "6de0fd5f214f9c133fa019c1df8ad2857f8933d3b53726a98bfb48d6a50b8138",
+    "fixtures-configured/omitted.deb": "388c9b31a895a5c5dae7c1040dc943964bcc3eab034f540a8e50a6dc4fbb5262",
+    "fixtures-configured/missing.deb": "88810305dfd7cb52cc946f7ff3e3c500864d881a5539a6cdd1388c3ee103e48c",
+    "fixtures-configured/byte-name.deb": "6dd8883ac48d7ecd0da6517c2d626b0827f7e7817ea7a5edab2990e9800d133b",
+    "fixtures-configured/whitespace.deb": "0164c484a2dfffea96dddf502518b19a441331cd82d3a66639b417060d5ba717",
+    "fixtures-configured/empty-component.deb": "965289ec8440a1de0195b1740c0e6de7613c3c668f6413f1e2288d781c8e6316",
+    "fixtures-configured/empty.deb": "ce3071530d51abd2f4b5cd17dd69beadea6508cfb1a4d43132ea6231198d51c0",
+    "fixtures-configured/traversal.deb": "891fb8eaadefa27f50cf2c35ce50fdec02f6d8b3af081911a4c3d83153efdf89",
+    "fixtures-configured/remove-current.deb": "c2951cd51fb0d7f0b95abcc3cfa022d27c0355aa593dc101982d6a442cf126d1",
+    "fixtures-configured/remove-present.deb": "5c1eb8bb1d9ee90e9385b8759a2667ef72772a5bd32febf1fff9b9ee69921f04",
+    "fixtures-configured/symbolic.deb": "41bab01108c810fbff76993222ffb1772e2ea0c39ac0b9dc43800529172b8939",
+    "fixtures-plain/overlay.deb": "b0ecd5748c3fad84146740449a32eddc4c4a5e5df6ceab7cce0016f80690a73f",
+    "fixtures-plain/manifest.json": "9b6c99def9a7efdec9c34a08d1e7834f20bcafd3f470c37b76d395f65b8fa822",
+    "fixtures-plain/base.deb": "5232f16949588621eb448b5279fb7980798b6e215da39e592465e7b7295bc63f",
+    "fixtures-plain/conflicting.deb": "ee46fc545ce0166e307a522cd019a79dc6382a750d8178a7030b7aab44fc0dfa",
+    "fixtures-plain/order/a.deb": "ede9d3a3370439a9b8ea853224ed2711da68b0509161701022970ecc23714b98",
+    "fixtures-plain/order/b.deb": "d52d5158f7580fb1516796a5c899dd56866c097e17dc8b9f63754897b3ba66e8",
+    "service.deb": "6753d8c9ceb67e29a3961202bafec45584996745fb4da51377cbe2ae2cccfdf9"
+  },
+  "package_input_sha256": "d5bb1f2871e80e4e32b5c0881659825e85a09066ddaf92744c7d88fea972ca7c",
+  "prior_sdk_evidence": "distribution/evidence/native-transition/root-reinspection-sdk-01",
+  "current_worker_sha256": "b55000d2e21d96c8e75a9f36dda4bbcf5c77c9dbf42074fa39b1600b1c113322"
+}

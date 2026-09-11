@@ -59,3 +59,8 @@ native-reinspection-check: native-worker
 native-reinspection-sdk-check: native-worker
 	test -n "$(WORKER_TEST_BASE)" -a -n "$(NATIVE_DRIVER)" -a -n "$(NATIVE_LOADER)" -a -n "$(NATIVE_LIBRARIES)" -a -n "$(NATIVE_FIXTURES)"
 	python3 -B native/worker/check_root_preparation.py --reinspect --worker "$(CURDIR)/build/native-worker/root-extract" --driver "$(NATIVE_DRIVER)" --loader "$(NATIVE_LOADER)" --libraries "$(NATIVE_LIBRARIES)" --fixtures "$(NATIVE_FIXTURES)" --base "$(WORKER_TEST_BASE)" --report "$(CURDIR)/build/native-worker/reinspection-sdk-check.json"
+
+.PHONY: native-freeze-check
+native-freeze-check: native-worker
+	test -n "$(BANK_TEST_ROOT)"
+	python3 -B native/worker/check_root_freeze.py --worker "$(CURDIR)/build/native-worker/root-extract" --bank "$(BANK_TEST_ROOT)" --report "$(CURDIR)/build/native-worker/freeze-check.json"

@@ -1,0 +1,239 @@
+    PID    PPID   UID STAT WCHAN                               COMMAND         COMMAND
+      1       0     0 Ss   do_epoll_wait                       systemd         /sbin/init
+      2       0     0 S    kthreadd                            kthreadd        [kthreadd]
+      3       2     0 S    kthread_worker_fn                   pool_workqueue_ [pool_workqueue_release]
+      4       2     0 I<   rescuer_thread                      kworker/R-kvfre [kworker/R-kvfree_rcu_reclaim]
+      5       2     0 I<   rescuer_thread                      kworker/R-rcu_g [kworker/R-rcu_gp]
+      6       2     0 I<   rescuer_thread                      kworker/R-sync_ [kworker/R-sync_wq]
+      7       2     0 I<   rescuer_thread                      kworker/R-slub_ [kworker/R-slub_flushwq]
+      8       2     0 I<   rescuer_thread                      kworker/R-netns [kworker/R-netns]
+      9       2     0 I    worker_thread                       kworker/0:0-cgr [kworker/0:0-cgroup_offline]
+     10       2     0 I    worker_thread                       kworker/0:1-cgr [kworker/0:1-cgroup_free]
+     11       2     0 I<   worker_thread                       kworker/0:0H-kb [kworker/0:0H-kblockd]
+     12       2     0 I    worker_thread                       kworker/u4:0-ev [kworker/u4:0-events_unbound]
+     13       2     0 I<   rescuer_thread                      kworker/R-mm_pe [kworker/R-mm_percpu_wq]
+     14       2     0 I    rcu_tasks_one_gp                    rcu_tasks_kthre [rcu_tasks_kthread]
+     15       2     0 I    rcu_tasks_one_gp                    rcu_tasks_rude_ [rcu_tasks_rude_kthread]
+     16       2     0 I    rcu_tasks_one_gp                    rcu_tasks_trace [rcu_tasks_trace_kthread]
+     17       2     0 S    smpboot_thread_fn                   ksoftirqd/0     [ksoftirqd/0]
+     18       2     0 I    rcu_gp_fqs_loop                     rcu_preempt     [rcu_preempt]
+     19       2     0 S    kthread_worker_fn                   rcu_exp_par_gp_ [rcu_exp_par_gp_kthread_worker/0]
+     20       2     0 S    kthread_worker_fn                   rcu_exp_gp_kthr [rcu_exp_gp_kthread_worker]
+     21       2     0 S    smpboot_thread_fn                   migration/0     [migration/0]
+     22       2     0 S    smpboot_thread_fn                   idle_inject/0   [idle_inject/0]
+     23       2     0 S    smpboot_thread_fn                   cpuhp/0         [cpuhp/0]
+     25       2     0 S    devtmpfs_work_loop                  kdevtmpfs       [kdevtmpfs]
+     26       2     0 I<   rescuer_thread                      kworker/R-inet_ [kworker/R-inet_frag_wq]
+     27       2     0 S    kauditd_thread                      kauditd         [kauditd]
+     28       2     0 S    watchdog                            khungtaskd      [khungtaskd]
+     29       2     0 I    worker_thread                       kworker/u4:1-as [kworker/u4:1-async]
+     30       2     0 S    oom_reaper                          oom_reaper      [oom_reaper]
+     31       2     0 I    worker_thread                       kworker/u4:2-ev [kworker/u4:2-events_unbound]
+     32       2     0 I<   rescuer_thread                      kworker/R-write [kworker/R-writeback]
+     33       2     0 S    kcompactd                           kcompactd0      [kcompactd0]
+     34       2     0 SN   ksm_scan_thread                     ksmd            [ksmd]
+     35       2     0 SN   khugepaged                          khugepaged      [khugepaged]
+     36       2     0 I<   rescuer_thread                      kworker/R-kinte [kworker/R-kintegrityd]
+     37       2     0 I<   rescuer_thread                      kworker/R-kbloc [kworker/R-kblockd]
+     38       2     0 I<   rescuer_thread                      kworker/R-blkcg [kworker/R-blkcg_punt_bio]
+     39       2     0 S    irq_thread                          irq/9-acpi      [irq/9-acpi]
+     40       2     0 I<   rescuer_thread                      kworker/R-tpm_d [kworker/R-tpm_dev_wq]
+     41       2     0 I<   rescuer_thread                      kworker/R-quota [kworker/R-quota_events_unbound]
+     42       2     0 I<   worker_thread                       kworker/0:1H-kb [kworker/0:1H-kblockd]
+     43       2     0 S    kswapd                              kswapd0         [kswapd0]
+     46       2     0 I    worker_thread                       kworker/u4:3-lo [kworker/u4:3-loop1]
+     51       2     0 I<   rescuer_thread                      kworker/R-kthro [kworker/R-kthrotld]
+     55       2     0 I<   rescuer_thread                      kworker/R-acpi_ [kworker/R-acpi_thermal_pm]
+     56       2     0 I<   rescuer_thread                      kworker/R-nvme- [kworker/R-nvme-wq]
+     57       2     0 I<   rescuer_thread                      kworker/R-nvme- [kworker/R-nvme-reset-wq]
+     58       2     0 I<   rescuer_thread                      kworker/R-nvme- [kworker/R-nvme-delete-wq]
+     59       2     0 I<   rescuer_thread                      kworker/R-nvme- [kworker/R-nvme-auth-wq]
+     60       2     0 I<   rescuer_thread                      kworker/R-mld   [kworker/R-mld]
+     61       2     0 I<   rescuer_thread                      kworker/R-ipv6_ [kworker/R-ipv6_addrconf]
+     66       2     0 I<   rescuer_thread                      kworker/R-kstrp [kworker/R-kstrp]
+     68       2     0 I<   worker_thread                       kworker/u5:0    [kworker/u5:0]
+    170       2     0 I    worker_thread                       kworker/0:2-eve [kworker/0:2-events]
+    172       2     0 I<   rescuer_thread                      kworker/R-ata_s [kworker/R-ata_sff]
+    173       2     0 S    scsi_error_handler                  scsi_eh_0       [scsi_eh_0]
+    174       2     0 I<   rescuer_thread                      kworker/R-scsi_ [kworker/R-scsi_tmf_0]
+    175       2     0 S    scsi_error_handler                  scsi_eh_1       [scsi_eh_1]
+    176       2     0 I<   rescuer_thread                      kworker/R-scsi_ [kworker/R-scsi_tmf_1]
+    177       2     0 S    scsi_error_handler                  scsi_eh_2       [scsi_eh_2]
+    178       2     0 I<   rescuer_thread                      kworker/R-scsi_ [kworker/R-scsi_tmf_2]
+    179       2     0 S    scsi_error_handler                  scsi_eh_3       [scsi_eh_3]
+    180       2     0 I<   rescuer_thread                      kworker/R-scsi_ [kworker/R-scsi_tmf_3]
+    181       2     0 S    scsi_error_handler                  scsi_eh_4       [scsi_eh_4]
+    182       2     0 I<   rescuer_thread                      kworker/R-scsi_ [kworker/R-scsi_tmf_4]
+    183       2     0 S    scsi_error_handler                  scsi_eh_5       [scsi_eh_5]
+    184       2     0 I<   rescuer_thread                      kworker/R-scsi_ [kworker/R-scsi_tmf_5]
+    185       2     0 I    worker_thread                       kworker/u4:4-fl [kworker/u4:4-flush-254:0]
+    186       2     0 I    worker_thread                       kworker/u4:5-lo [kworker/u4:5-loop0]
+    187       2     0 I    worker_thread                       kworker/u4:6-sc [kworker/u4:6-scsi_tmf_0]
+    188       2     0 I    worker_thread                       kworker/u4:7-sc [kworker/u4:7-scsi_tmf_1]
+    189       2     0 I    worker_thread                       kworker/u4:8-sc [kworker/u4:8-scsi_tmf_2]
+    190       2     0 I    worker_thread                       kworker/u4:9-sc [kworker/u4:9-scsi_tmf_3]
+    191       2     0 I    worker_thread                       kworker/u4:10-s [kworker/u4:10-scsi_tmf_4]
+    192       2     0 I    worker_thread                       kworker/u4:11-s [kworker/u4:11-scsi_tmf_5]
+    193       2     0 I    worker_thread                       kworker/u4:12-e [kworker/u4:12-events_unbound]
+    194       2     0 I    worker_thread                       kworker/u4:13   [kworker/u4:13]
+    203       2     0 I<   worker_thread                       kworker/0:2H    [kworker/0:2H]
+    211       2     0 S    -                                   jbd2/vda1-8     [jbd2/vda1-8]
+    212       2     0 I<   rescuer_thread                      kworker/R-ext4- [kworker/R-ext4-rsv-conversion]
+    266       2     0 I    worker_thread                       kworker/0:3     [kworker/0:3]
+    284       1     0 Ss   do_epoll_wait                       systemd-journal /usr/lib/systemd/systemd-journald
+    328       1   990 Ss   do_epoll_wait                       systemd-resolve /usr/lib/systemd/systemd-resolved
+    329       1   997 Ssl  do_epoll_wait                       systemd-timesyn /usr/lib/systemd/systemd-timesyncd
+    336       1     0 Ss   do_epoll_wait                       systemd-udevd   /usr/lib/systemd/systemd-udevd
+    338       2     0 S    psi_rtpoll_worker                   psimon          [psimon]
+    344       1   998 Ss   do_epoll_wait                       systemd-network /usr/lib/systemd/systemd-networkd
+    364       2     0 I<   rescuer_thread                      kworker/R-crypt [kworker/R-cryptd]
+    569       1   996 Ss   do_epoll_wait                       dbus-daemon     /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+    573       1     0 Ss   do_epoll_wait                       systemd-logind  /usr/lib/systemd/systemd-logind
+    589       1     0 Ss+  do_select                           agetty          /sbin/agetty -o -- \u --noreset --noclear - linux
+    591       1     0 Ss+  do_select                           agetty          /sbin/agetty -o -- \u --noreset --noclear --keep-baud 115200,57600,38400,9600 - vt220
+    595       1     0 Ss   do_sys_poll                         sshd            sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+    596       1     0 Ss   futex_wait_queue                    unattended-upgr /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+    607       2     0 S    psi_rtpoll_worker                   psimon          [psimon]
+    609       1  1000 Ss   do_epoll_wait                       systemd         /usr/lib/systemd/systemd --user
+    611     609  1000 S    do_sigtimedwait.isra.0              (sd-pam)        (sd-pam)
+    646     595     0 Ss   do_sys_poll                         sshd-session    sshd-session: builder [priv]
+    654     646  1000 S    do_sys_poll                         sshd-session    sshd-session: builder@notty
+    655     654  1000 Ss   do_wait                             sh              sh -s
+    706       2     0 D    jbd2_journal_commit_transaction     jbd2/loop0-8    [jbd2/loop0-8]
+    707       2     0 I<   rescuer_thread                      kworker/R-ext4- [kworker/R-ext4-rsv-conversion]
+    720     655     0 S    do_sys_poll                         sudo            sudo python3 tests/worker/check_root_preparation.py --reinspect --freeze-bank --configured --worker /usr/libexec/niaos/root-extract --driver /home/builder/nia-bank-freeze-04/drivers/run_root_configuration_tests --loader /home/builder/nia-bank-freeze-04/lib/ld-linux-x86-64.so.2 --libraries /home/builder/nia-bank-freeze-04/lib --fixtures /home/builder/nia-bank-freeze-04/fixtures-configured --base /run/nia-root-extract-test --report /home/builder/nia-bank-freeze-04/configured/result.json
+    722     720     0 S    do_sys_poll                         python3         python3 tests/worker/check_root_preparation.py --reinspect --freeze-bank --configured --worker /usr/libexec/niaos/root-extract --driver /home/builder/nia-bank-freeze-04/drivers/run_root_configuration_tests --loader /home/builder/nia-bank-freeze-04/lib/ld-linux-x86-64.so.2 --libraries /home/builder/nia-bank-freeze-04/lib --fixtures /home/builder/nia-bank-freeze-04/fixtures-configured --base /run/nia-root-extract-test --report /home/builder/nia-bank-freeze-04/configured/result.json
+    725       2     0 S    kjournald2                          jbd2/loop1-8    [jbd2/loop1-8]
+    726       2     0 I<   rescuer_thread                      kworker/R-ext4- [kworker/R-ext4-rsv-conversion]
+    727     722  1000 D    jbd2_log_wait_commit                ld-linux-x86-64 /home/builder/nia-bank-freeze-04/lib/ld-linux-x86-64.so.2 --library-path /home/builder/nia-bank-freeze-04/lib /home/builder/nia-bank-freeze-04/drivers/run_root_configuration_tests /run/nia-root-extract-test/prepare-40zk3p2y/client/store /run/nia-root-extract-test/prepare-40zk3p2y/client/source /home/builder/nia-bank-freeze-04/fixtures-configured /run/nia-root-extract-test/prepare-40zk3p2y/prepare.sock b55000d2e21d96c8e75a9f36dda4bbcf5c77c9dbf42074fa39b1600b1c113322 reinspect
+    730     595     0 Ss   do_sys_poll                         sshd-session    sshd-session: builder [priv]
+    738     730  1000 S    do_sys_poll                         sshd-session    sshd-session: builder@notty
+    739     738     0 Ss   do_sys_poll                         sudo            sudo sh -c ps -eo pid,ppid,uid,stat,wchan:35,comm,args; df -h /run/nia-root-extract-test; for p in /proc/[0-9]*; do case $(cat $p/comm 2>/dev/null) in ld-linux*|run_root*) echo PROCESS=$p; cat $p/stack $p/syscall $p/status; ls -l $p/fd;; esac; done; dmesg | tail -40
+    741     739     0 S    do_wait                             sh              sh -c ps -eo pid,ppid,uid,stat,wchan:35,comm,args; df -h /run/nia-root-extract-test; for p in /proc/[0-9]*; do case $(cat $p/comm 2>/dev/null) in ld-linux*|run_root*) echo PROCESS=$p; cat $p/stack $p/syscall $p/status; ls -l $p/fd;; esac; done; dmesg | tail -40
+    742     741     0 R    -                                   ps              ps -eo pid,ppid,uid,stat,wchan:35,comm,args
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/loop0       26M  438K   23M   2% /run/nia-root-extract-test
+PROCESS=/proc/727
+[<0>] jbd2_log_wait_commit+0xdb/0x150
+[<0>] __jbd2_journal_force_commit+0x53/0xc0
+[<0>] jbd2_journal_force_commit+0x20/0x30
+[<0>] ext4_sync_file+0x248/0x2b0
+[<0>] do_fsync+0x39/0x70
+[<0>] __x64_sys_fsync+0x13/0x20
+[<0>] do_syscall_64+0x87/0x180
+[<0>] entry_SYSCALL_64_after_hwframe+0x76/0x7e
+running
+Name:	ld-linux-x86-64
+Umask:	0077
+State:	R (running)
+Tgid:	727
+Ngid:	0
+Pid:	727
+PPid:	722
+TracerPid:	0
+Uid:	1000	1000	1000	1000
+Gid:	1000	1000	1000	1000
+FDSize:	64
+Groups:	 
+NStgid:	727
+NSpid:	727
+NSpgid:	655
+NSsid:	655
+Kthread:	0
+VmPeak:	   79680 kB
+VmSize:	   46908 kB
+VmLck:	       0 kB
+VmPin:	       0 kB
+VmHWM:	   39892 kB
+VmRSS:	   39892 kB
+RssAnon:	   30464 kB
+RssFile:	    9428 kB
+RssShmem:	       0 kB
+VmData:	   24652 kB
+VmStk:	    5728 kB
+VmExe:	     160 kB
+VmLib:	   10508 kB
+VmPTE:	     128 kB
+VmSwap:	       0 kB
+HugetlbPages:	       0 kB
+CoreDumping:	0
+THP_enabled:	1
+untag_mask:	0xffffffffffffffff
+Threads:	1
+SigQ:	0/7798
+SigPnd:	0000000000000000
+ShdPnd:	0000000000000000
+SigBlk:	0000000000000000
+SigIgn:	0000000000001000
+SigCgt:	00000000000004e8
+CapInh:	0000000000000000
+CapPrm:	0000000000000000
+CapEff:	0000000000000000
+CapBnd:	000001ffffffffff
+CapAmb:	0000000000000000
+NoNewPrivs:	0
+Seccomp:	0
+Seccomp_filters:	0
+Speculation_Store_Bypass:	thread vulnerable
+SpeculationIndirectBranch:	conditional enabled
+Cpus_allowed:	1
+Cpus_allowed_list:	0
+Mems_allowed:	00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000001
+Mems_allowed_list:	0
+voluntary_ctxt_switches:	3588
+nonvoluntary_ctxt_switches:	2150
+x86_Thread_features:	
+x86_Thread_features_locked:	
+total 0
+lrwx------ 1 root root 64 Sep 11 11:17 0 -> /dev/null
+l-wx------ 1 root root 64 Sep 11 11:17 1 -> /home/builder/nia-bank-freeze-04/configured/native-prepare.log
+lr-x------ 1 root root 64 Sep 11 11:17 10 -> /run/nia-root-extract-test/prepare-40zk3p2y/client/store/objects/49/7693ca90e83776882ae880aa8bc9e558040a448f184745fabaec68a7013bc2
+lr-x------ 1 root root 64 Sep 11 11:17 11 -> /run/nia-root-extract-test/prepare-40zk3p2y/client/source/etc/fixture.conf
+l-wx------ 1 root root 64 Sep 11 11:17 2 -> /home/builder/nia-bank-freeze-04/configured/native-prepare.log
+l--------- 1 root root 64 Sep 11 11:17 3 -> /run/nia-root-extract-test/prepare-40zk3p2y/client/source
+lr-x------ 1 root root 64 Sep 11 11:17 4 -> /run/nia-root-extract-test/prepare-40zk3p2y/client/store
+lrwx------ 1 root root 64 Sep 11 11:17 5 -> /run/nia-root-extract-test/prepare-40zk3p2y/client/store/store.lock
+lr-x------ 1 root root 64 Sep 11 11:17 6 -> /home/builder/nia-bank-freeze-04/fixtures-configured
+l--------- 1 root root 64 Sep 11 11:17 7 -> /run/nia-root-extract-test/prepare-40zk3p2y/client/source
+l--------- 1 root root 64 Sep 11 11:17 8 -> /run/nia-root-extract-test/prepare-40zk3p2y/client/source
+l--------- 1 root root 64 Sep 11 11:17 9 -> /run/nia-root-extract-test/prepare-40zk3p2y/client/source
+[    4.541282] systemd[1]: systemd-tpm2-setup-early.service - Early TPM SRK Setup skipped, unmet condition check ConditionSecurity=measured-uki
+[    4.549702] systemd[1]: Starting systemd-udev-load-credentials.service - Load udev Rules from Credentials...
+[    4.557658] systemd[1]: Starting systemd-udev-trigger.service - Coldplug All udev Devices...
+[    4.580040] systemd[1]: Mounted dev-hugepages.mount - Huge Pages File System.
+[    4.587020] systemd[1]: Mounted dev-mqueue.mount - POSIX Message Queue File System.
+[    4.595295] systemd[1]: Mounted run-lock.mount - Legacy Locks Directory /run/lock.
+[    4.601823] systemd[1]: Mounted sys-kernel-debug.mount - Kernel Debug File System.
+[    4.609748] systemd[1]: Mounted sys-kernel-tracing.mount - Kernel Trace File System.
+[    4.620061] systemd[1]: Mounted tmp.mount - Temporary Directory /tmp.
+[    4.627789] systemd[1]: Finished kmod-static-nodes.service - Create List of Static Device Nodes.
+[    4.637079] systemd[1]: Started systemd-journald.service - Journal Service.
+[    4.921280] EXT4-fs (vda1): re-mounted a88eaa57-e875-4855-a3cb-c231758653f8 r/w.
+[    4.973505] EXT4-fs (vda1): resizing filesystem from 20938747 to 20938747 blocks
+[    4.989924] systemd-journald[284]: Received client request to flush runtime journal.
+[    5.646152] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input2
+[    5.662385] cryptd: max_cpu_qlen set to 1000
+[    5.727337] sr 2:0:0:0: Attached scsi generic sg0 type 5
+[    5.765569] ACPI: button: Power Button [PWRF]
+[    5.811927] AES CTR mode by8 optimization enabled
+[    6.068506] kvm_amd: TSC scaling supported
+[    6.069475] kvm_amd: Nested Virtualization enabled
+[    6.070503] kvm_amd: Nested Paging enabled
+[    6.071388] kvm_amd: LBR virtualization supported
+[    6.072887] kvm_amd: Virtual VMLOAD VMSAVE supported
+[    6.074294] kvm_amd: Virtual GIF supported
+[    6.201917] audit: type=1400 audit(1789125419.784:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="1password" pid=466 comm="apparmor_parser"
+[    6.207631] audit: type=1400 audit(1789125419.788:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="Discord" pid=467 comm="apparmor_parser"
+[    6.218485] audit: type=1400 audit(1789125419.792:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name=4D6F6E676F444220436F6D70617373 pid=468 comm="apparmor_parser"
+[    6.231613] audit: type=1400 audit(1789125419.804:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="QtWebEngineProcess" pid=469 comm="apparmor_parser"
+[    6.243188] audit: type=1400 audit(1789125419.824:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="Xorg" pid=470 comm="apparmor_parser"
+[    6.250945] audit: type=1400 audit(1789125419.828:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="balena-etcher" pid=473 comm="apparmor_parser"
+[    6.259502] audit: type=1400 audit(1789125419.836:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="brave" pid=474 comm="apparmor_parser"
+[    6.262477] audit: type=1400 audit(1789125419.836:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="buildah" pid=476 comm="apparmor_parser"
+[    6.265317] audit: type=1400 audit(1789125419.840:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="busybox" pid=477 comm="apparmor_parser"
+[    6.270488] audit: type=1400 audit(1789125419.852:11): apparmor="STATUS" operation="profile_load" profile="unconfined" name="cam" pid=478 comm="apparmor_parser"
+[   10.910689] loop: module loaded
+[   10.912439] loop0: detected capacity change from 0 to 65536
+[   10.922490] EXT4-fs (loop0): mounted filesystem 5aab6abe-7e19-41c5-aab4-263a83171dcd r/w with ordered data mode. Quota mode: none.
+[   11.051022] loop1: detected capacity change from 0 to 65536
+[   11.062846] EXT4-fs (loop1): mounted filesystem 9edf3e71-50ad-4183-9c97-288510fb426a r/w with ordered data mode. Quota mode: none.

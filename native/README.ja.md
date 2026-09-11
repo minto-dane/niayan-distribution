@@ -8,6 +8,7 @@
 
 [製品判断](../docs/decisions/0002-native-package-authority.ja.md)に従うTrixie置換工程。
 [隔離rootの実展開worker](root-extraction.ja.md)を実装した。認可済みサービス・永続bankとbootへの接続は未完。
+[専用bankの書込排他](root-freeze.ja.md)を内部controller部品として実装した。製品のbank配備とcontroller接続は未完。
 [受理済み世代のnative catalog観測](current-catalog.ja.md)を同じ排他区間へ接続した。
 [確定済み世代からの更新計画](current-transition.ja.md)は同じ予約で候補の保持と通常更新を検査する。
 [公開計画へ束縛したnative検査記録](publication-intent.ja.md)を保存し、公開時の必須再検査へ接続する。

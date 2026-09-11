@@ -1,3 +1,11 @@
+niaos-root-preparation (0.4.0) unstable; urgency=medium
+
+  * Add an internal controller primitive for dedicated ext4 bank write exclusion.
+  * Preserve read-only storage after handle close and all late failures.
+  * Hold the exclusive bank reservation using a read-only descriptor.
+
+ -- NiaOS Developers <developers@niaos.invalid>  Fri, 11 Sep 2026 10:59:14 +0000
+
 niaos-root-preparation (0.3.0) unstable; urgency=medium
 
   * Reinspect explicitly frozen roots against retained archives without writes.

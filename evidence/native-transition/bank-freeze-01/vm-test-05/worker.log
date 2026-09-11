@@ -1,0 +1,8 @@
+Linux niaos-builder 6.12.107+deb13-cloud-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.107-1 (2026-08-29) x86_64 GNU/Linux
+libarchive13t64:amd64	3.7.4-4+deb13u1
+libsodium23:amd64	1.0.18-1+deb13u1
+b55000d2e21d96c8e75a9f36dda4bbcf5c77c9dbf42074fa39b1600b1c113322  /usr/libexec/niaos/root-extract
+{"post_denied": false, "worker": {"exit": 0, "stderr": "", "stdout": "{\"result\":\"extracted\",\"profile\":\"linux-inode-v1\",\"archive_sha256\":\"fa0ad0744147ad89ad726a615b5986c8bb17e58923411d5d9d96271e68987898\",\"entries\":4,\"published\":false}\n", "truncated": false, "version": 1}}
+PASS native admission and retained archive through actual root preparation service
+{"post_denied": false, "worker": {"exit": 0, "stderr": "", "stdout": "{\"result\":\"extracted\",\"profile\":\"linux-inode-v1\",\"archive_sha256\":\"a64e38fbe2b8128484ea1a8629f855b56ab9770cc35f38735a24fbad3b510914\",\"entries\":13,\"published\":false}\n", "truncated": false, "version": 1}}
+PASS native admission and retained archive through actual root preparation service

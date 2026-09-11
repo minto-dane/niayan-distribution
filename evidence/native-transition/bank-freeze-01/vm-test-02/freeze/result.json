@@ -1,0 +1,26 @@
+{
+  "result": "pass",
+  "cases": {
+    "wrong-bank-refused": true,
+    "shared-subtree-refused": true,
+    "child-mount-refused": true,
+    "writable-fd-refused": true,
+    "writable-mapping-refused": true,
+    "frozen-observation": {
+      "original_deadline_ms": 69722,
+      "root": {
+        "mount_id": 216,
+        "inode": 15,
+        "device_major": 7,
+        "device_minor": 1
+      }
+    },
+    "all-mount-views-readonly": true,
+    "readonly-bank-lock-retained": true,
+    "close-invalidates-without-thaw": true,
+    "readonly-restart-and-reinspection": true,
+    "privileged-remount-change-refused": true
+  },
+  "host_or_active_root_changed": false,
+  "site_authorization": false
+}

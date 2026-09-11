@@ -1,0 +1,18 @@
+{
+  "removed": [
+    {
+      "path": "/home/nia/devbox/niaos/.work/native-bank-freeze-01/vm-package-01/test.qcow2",
+      "logical_bytes": 536805376,
+      "allocated_bytes": 536166400
+    }
+  ],
+  "allocated_bytes": 536166400,
+  "all_five_qemu_runs_exited": true,
+  "shared_disposable_overlay": true,
+  "preserved": [
+    "builder base and accepted VMs",
+    "package sources and built packages",
+    "logs and input archives",
+    "previous accepted SDK build"
+  ]
+}

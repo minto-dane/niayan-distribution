@@ -57,11 +57,9 @@ def main():
         with tempfile.TemporaryDirectory(prefix='prepare-', dir=args.base) as temporary:
             base = Path(temporary); base.chmod(0o711)
             bank_path = base / 'bank'; bank_path.mkdir(mode=0o700)
-            bank_mounted = False; backing = None
+            bank_mounted = False
             if args.freeze_bank:
-                # Keep the loop backing outside the native CAS filesystem.
-                backing = tempfile.TemporaryDirectory(prefix='bank-backing-', dir='/tmp')
-                disk = Path(backing.name)/'bank.ext4'
+                disk = base/'bank.ext4'
                 with disk.open('xb') as output: output.truncate(32 * 1024**2)
                 subprocess.run(['mkfs.ext4', '-q', '-F', str(disk)], check=True)
                 subprocess.run(['mount', '-o', 'loop,nodev,nosuid,noexec', str(disk), str(bank_path)], check=True)
@@ -97,16 +95,7 @@ def main():
                         time.sleep(0.01)
                     bank_type = DelayedCompletionBank if args.reinspect else Bank
                     bank = bank_type(bank_path, store / 'store.lock', args.worker, 1000)
-                    ready_until = time.monotonic() + 120
-                    listener.settimeout(1)
-                    while True:
-                        try: bank.serve(listener, requests=1); break
-                        except TimeoutError:
-                            if child.poll() is not None:
-                                raise RuntimeError('native driver exited before service request: '+str(child.returncode))
-                            if time.monotonic() >= ready_until:
-                                raise TimeoutError('native preparation request')
-                    listener.settimeout(120)
+                    bank.serve(listener, requests=1)
                     if args.reinspect:
                         stages = [p for p in bank_path.iterdir() if p.is_dir()]
                         assert len(stages) == 1
@@ -149,13 +138,6 @@ def main():
                         bridge.rename(client_path / 'frozen-root.txt')
                         bank.serve(listener, requests=5)
                     exit_code = child.wait(timeout=120)
-                    if args.freeze_bank:
-                        archive_fd = os.open(store/'objects'/intent['archive'][:2]/intent['archive'][2:], os.O_RDONLY)
-                        lease_fd = os.open(store/'store.lock', os.O_RDWR)
-                        try:
-                            fcntl.flock(lease_fd, fcntl.LOCK_EX | fcntl.LOCK_NB)
-                            assert controller.observe(archive_fd, lease_fd) == physical
-                        finally: os.close(archive_fd); os.close(lease_fd)
                     if args.reinspect:
                         assert snapshot(frozen) == before
                         assert [(stage/n).read_bytes() for n in ('intent.json', 'result.json')] == records
@@ -205,8 +187,6 @@ def main():
                         bank.close()
                     if bank_mounted:
                         subprocess.run(['umount', str(bank_path)], check=True)
-                    if backing is not None:
-                        backing.cleanup()
                     if frozen is not None and not args.freeze_bank:
                         subprocess.run(['umount', str(frozen)], check=True)
                     listener.close()

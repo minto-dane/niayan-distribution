@@ -1,0 +1,59 @@
+{
+  "result": "pass",
+  "cases": {
+    "unauthorized-peer": {
+      "published": false,
+      "state": "refused-or-indeterminate"
+    },
+    "wrong-reservation": {
+      "published": false,
+      "state": "refused-or-indeterminate"
+    },
+    "prepare": {
+      "effects_applied": false,
+      "intent_sha256": "9ed76c1d9d76f0f23ea2956fdabd9f4c1fbe1aa80e132aed58b93b09d1ab4481",
+      "published": false,
+      "state": "extracted",
+      "version": 1,
+      "worker_exit": 0,
+      "worker_sha256": "b55000d2e21d96c8e75a9f36dda4bbcf5c77c9dbf42074fa39b1600b1c113322"
+    },
+    "duplicate": {
+      "published": false,
+      "state": "refused-or-indeterminate"
+    },
+    "inspect": {
+      "effects_applied": false,
+      "intent_sha256": "9ed76c1d9d76f0f23ea2956fdabd9f4c1fbe1aa80e132aed58b93b09d1ab4481",
+      "physical_revalidation": false,
+      "published": false,
+      "state": "extracted",
+      "version": 1,
+      "worker_exit": 0,
+      "worker_sha256": "b55000d2e21d96c8e75a9f36dda4bbcf5c77c9dbf42074fa39b1600b1c113322"
+    },
+    "restart": {
+      "effects_applied": false,
+      "intent_sha256": "9ed76c1d9d76f0f23ea2956fdabd9f4c1fbe1aa80e132aed58b93b09d1ab4481",
+      "published": false,
+      "state": "extracted",
+      "version": 1,
+      "worker_exit": 0,
+      "worker_sha256": "b55000d2e21d96c8e75a9f36dda4bbcf5c77c9dbf42074fa39b1600b1c113322",
+      "physical_revalidation": false
+    },
+    "interrupted": {
+      "state": "interrupted",
+      "published": false,
+      "physical_revalidation": false
+    },
+    "service-killed": {
+      "state": "interrupted",
+      "published": false,
+      "physical_revalidation": false
+    }
+  },
+  "storage": "caller-specified mount",
+  "installed_root_changed": false,
+  "native_admission_provider": false
+}

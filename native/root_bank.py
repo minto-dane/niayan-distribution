@@ -167,7 +167,7 @@ class Bank:
             self.directory = os.open(path, os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW | os.O_CLOEXEC)
             private_directory(self.directory)
             protected_mount(self.directory)
-            self.lock = os.open('bank.lock', os.O_RDWR | os.O_NOFOLLOW | os.O_CLOEXEC | os.O_NONBLOCK, dir_fd=self.directory)
+            self.lock = os.open('bank.lock', os.O_RDONLY | os.O_NOFOLLOW | os.O_CLOEXEC | os.O_NONBLOCK, dir_fd=self.directory)
             info = os.fstat(self.lock)
             if not stat.S_ISREG(info.st_mode) or info.st_uid or info.st_nlink != 1 or stat.S_IMODE(info.st_mode) != 0o600:
                 raise Rejected('bank-lock')
