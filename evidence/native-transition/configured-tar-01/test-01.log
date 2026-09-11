@@ -1,0 +1,11 @@
+Running as unit: run-p752378-i752678.scope; invocation ID: b13cc978d90d462390365573481e6c86
+limited-exec: {"scope": "run-p752378-i752678.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Compile
+   [Ada]          run_tar_output_tests.adb
+run_tar_output_tests.adb:14:43: error: operator for type "Interfaces.Integer_64" is not directly visible
+run_tar_output_tests.adb:14:43: error: use clause would make operation legal
+run_tar_output_tests.adb:15:19: error: operator for type "Interfaces.Integer_64" is not directly visible
+run_tar_output_tests.adb:15:19: error: use clause would make operation legal
+run_tar_output_tests.adb:54:73: error: operator for type "Interfaces.Integer_64" is not directly visible
+run_tar_output_tests.adb:54:73: error: use clause would make operation legal
+gprbuild: *** compilation phase failed

@@ -1,0 +1,46 @@
+{
+  "format": 1,
+  "source_subject": "74b1d80006cd2fb2638b165826ba4407a28a0a15cc6290742bc7dc3ab3933d22",
+  "production_qualified": false,
+  "accepted_log": "test-04.log",
+  "tar_output_assertions": 79,
+  "existing_payload_assertions": 814,
+  "native_roundtrip_assertions": [
+    26,
+    26
+  ],
+  "independent_roundtrip_archives": 2,
+  "result": "pass",
+  "compile_input_count": 386,
+  "existing_fixture_input_count": 41,
+  "interop_input_count": 2,
+  "kernel_limits": {
+    "memory_bytes": 3221225472,
+    "swap_bytes": 0,
+    "cpu_percent": 100,
+    "pids": 128
+  },
+  "prior_failures": [
+    "test-01: missing visibility for signed timestamp operators in new test",
+    "test-03: SCHILY encoded attribute names not decoded by pinned upstream reader, long encoded name refused by existing payload bound; new raw-attribute output switched to LIBARCHIVE extension"
+  ],
+  "intermediate_result": "test-02 passed 49 output and 814 existing payload assertions before independent semantic roundtrip; not full acceptance",
+  "upstream_observations": [
+    "Pinned libarchive 3.7.4 writer changed supplied negative fractional clock values and omitted the supplied birthtime in this fixture",
+    "SCHILY percent-encoded xattr names were returned literally; LIBARCHIVE names and values roundtripped including empty values",
+    "Direct upstream clock decoding differs from canonical negative decimal times; existing native payload framing corrects it, current root worker still requires correction"
+  ],
+  "scope": "bounded regular-file PAX/header output and strict native framing extensions, independent Python and original-DEB payload readback",
+  "not_repeated": [
+    "full suite",
+    "unchanged formal proofs",
+    "old chaos campaigns",
+    "VM"
+  ],
+  "remaining": [
+    "canonical clock correction in real root extraction worker",
+    "source-attribute adapters and complete configured-root tar stream/CAS binding",
+    "full attribute/inode application and historical configuration coverage",
+    "managed admission, privileged observers, retention/recovery, root/boot, remaining DEB effects, native ISO and all translations"
+  ]
+}

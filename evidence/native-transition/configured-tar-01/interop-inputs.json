@@ -1,0 +1,12 @@
+{
+  "files": [
+    {
+      "path": "pkgcore/tests/check_tar_output.py",
+      "sha256": "e793e66c662b2f2d756c017a6fbaea50f4160e981c64e13a3bdc6895304d00ab"
+    },
+    {
+      "path": "pkgcore/tests/make_deb_control_fixtures.py",
+      "sha256": "2a53d1d99cafd825120c063c8ccb0aa9a41e3017b246bc627d56ad1ba779ecc6"
+    }
+  ]
+}

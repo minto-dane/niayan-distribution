@@ -1,0 +1,16 @@
+{
+  "accepted_log": "test-04.log",
+  "argv": [
+    "python3",
+    "/home/nia/devbox/niaos/.work/native-configured-tar-01/run-container.py",
+    "sh",
+    "-c",
+    "set -e; cd pkgcore; gprbuild -f -P tests.gpr -j1 run_tar_output_tests.adb run_deb_payload_tests.adb; build/test-bin/run_tar_output_tests /evidence/store-03 /evidence/export-03; build/test-bin/run_deb_payload_tests /evidence/payload-store-03 /workspace/pkgcore/tests/fixtures/deb-payload; python3 tests/check_tar_output.py /evidence/export-03; build/test-bin/run_deb_payload_tests /evidence/native-03/normal-store /evidence/export-03 normal.deb > /evidence/export-03/normal.native.log; build/test-bin/run_deb_payload_tests /evidence/native-03/full-range-store /evidence/export-03 full-range.deb > /evidence/export-03/full-range.native.log; python3 tests/check_tar_output.py /evidence/export-03 --native-stores /evidence/native-03"
+  ],
+  "probes": [
+    "python3 /evidence/writer-probe.py",
+    "python3 /evidence/reader-probe.py",
+    "python3 /evidence/writer-probe-libarchive.py; python3 /evidence/reader-probe-libarchive.py",
+    "python3 /evidence/reader-time-probe.py"
+  ]
+}

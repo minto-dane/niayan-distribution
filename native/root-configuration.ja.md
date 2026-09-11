@@ -39,3 +39,5 @@ Read_Entry/Read_Choiceはlive再確認ではない。実行前に元の全選択
 全属性の適用順序、ACL/capability/chown/chmod、flagsと時刻、linkを含むinode効果、全過去設定の網羅、
 特権observerとroot/contextの真正性、全managed認可、世代保持と復旧/boot公開も必要である。
 元NIAROOT1の成功や配置の検査成功を、これらの認可・適用・公開の成功に置き換えない。
+
+設定entryの出力codecは[PAX出力](configuration-tar.ja.md)を参照。全rootの直列化は未接続である。

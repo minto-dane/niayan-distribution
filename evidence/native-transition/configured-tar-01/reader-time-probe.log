@@ -1,0 +1,48 @@
+Running as unit: run-p755779-i756079.scope; invocation ID: 66a29d5c77404ca2a292662734144dd6
+limited-exec: {"scope": "run-p755779-i756079.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+{
+  "xattrs": [
+    {
+      "name_length": 10,
+      "name_hex": "757365722e7261772dff",
+      "value_hex": "78"
+    },
+    {
+      "name_length": 210,
+      "name_hex": "757365722e6c6f6e672dffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "value_hex": "6c617267652d6b6579"
+    },
+    {
+      "name_length": 10,
+      "name_hex": "757365722e656d707479",
+      "value_hex": ""
+    },
+    {
+      "name_length": 11,
+      "name_hex": "757365722e62696e617279",
+      "value_hex": "00ff7f"
+    }
+  ],
+  "clocks": {
+    "mtime": {
+      "present": true,
+      "seconds": -41,
+      "nanoseconds": 876543211
+    },
+    "atime": {
+      "present": true,
+      "seconds": 123,
+      "nanoseconds": 456
+    },
+    "ctime": {
+      "present": true,
+      "seconds": 0,
+      "nanoseconds": 999999999
+    },
+    "birthtime": {
+      "present": true,
+      "seconds": 0,
+      "nanoseconds": 42
+    }
+  }
+}
