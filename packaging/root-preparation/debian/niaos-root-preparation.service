@@ -3,7 +3,8 @@
 Description=NiaOS internal root preparation
 BindsTo=var-lib-niaos-roots.mount
 After=var-lib-niaos-roots.mount
-Requires=niaos-root-preparation.socket
+Requires=niaos-root-preparation.socket niaos-root-bank-check.service
+After=niaos-root-bank-check.service
 AssertPathExists=/etc/niaos/root-preparation.json
 AssertPathExists=/var/lib/niaos/roots/bank.json
 AssertPathExists=/var/lib/niaos/roots/bank.lock

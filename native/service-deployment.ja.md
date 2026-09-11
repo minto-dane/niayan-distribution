@@ -30,7 +30,7 @@ DEB_BUILD_OPTIONS=parallel=1 dpkg-buildpackage -us -uc
 |`nia-pkg`|sysusersが割り当てる非root固定account、nologin。数値UIDは決め打ちしない|
 |`/etc/niaos/root-preparation.json`|root:root 0600、conffile。v2で`client_user=nia-pkg`を指定|
 |`/var/lib/niaos/core`|nia-pkg専用0700。native SDKのCASはこの下の`store`|
-|`/var/lib/niaos/roots`|root専用0700。nodev/nosuid/noexecのbind mountを必須とする非公開bank|
+|`/var/lib/niaos/roots`|root専用0700。明示選択したGPT/ext4上の非公開bank。通常mountはro,nodev,nosuid,noexec|
 |`/run/niaos/root-preparation.sock`|root:nia-pkg 0660のseqpacket。socket activationでFD 3を渡す|
 |`/usr/libexec/niaos/`|root管理のdaemonとELF worker|
 
@@ -38,6 +38,7 @@ DEB_BUILD_OPTIONS=parallel=1 dpkg-buildpackage -us -uc
 呼ぶ。unitは`dh_installsystemd --no-enable --no-start`で導入する。インストール時にCASやbankを
 初期化せず、socket/serviceも有効化・起動しない。設定変更を無条件に上書きしない。
 
+0.5.0では[専用bankの配備](bank-device.ja.md)に従い、空のGPT/ext4とroot所有のdevice planを事前に用意する。
 製品installerは、導入先を起動した保守環境で、初期化意図を確定し、他の管理処理を停止してから
 内部工具を一度だけ呼ぶ。この工具は現在稼働している名前空間の固定path専用であり、任意の
 `--root`やホスト上の別directoryを導入先として受け付けない。対象OSの通常利用開始前に行う。
@@ -57,9 +58,11 @@ root所有と保護pathを必須検査する。存在しない・古い成果物
    core/storeを専用UIDの0700、rootsをrootの0700で新設し、親directoryも同期する。
 3. 補助groupを外した`nia-pkg`で内部ELFの`initialize`を実行し、正規`MC_Store.Initialize`を呼ぶ。
    続く`check`は正規`MC_Store.Open`で実予約と必須構造を再確認する。root実行・欠損修復は拒否する。
-4. 保護mountを開始し、既存の内部bank provisionerを呼ぶ。成功後だけroot専用
+4. 選択deviceのread-only mount設定を配備し、初期化区間だけread-writeで既存bank provisionerを呼ぶ。
+   read-onlyへ戻して実deviceを再確認した後だけroot専用
    `bootstrap-complete.json`を排他的作成・fsyncし、初期intentのSHA-256へ束縛する。
-5. 完了記録も通常socketの有効化・供給認可・物理再検証・公開を意味しない。別途、独立した
+5. 起動前の独立oneshot guardも選択情報と実block device/保護mount・初期化記録を再照合する。
+   完了記録も通常socketの有効化・供給認可・物理再検証・公開を意味しない。別途、独立した
    供給/世代認可policyと期待worker SHA-256をcoreへ配備してからsocketを有効化する。
 
 エラー・停止・timeout後は初期化済みの部分状態が残り得る。自動rollback・再送・reset・記録削除は

@@ -1,0 +1,34 @@
+# SPDX-License-Identifier: BSD-3-Clause
+[Unit]
+Description=NiaOS root bank device identity check
+BindsTo=var-lib-niaos-roots.mount
+After=var-lib-niaos-roots.mount
+Before=niaos-root-preparation.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 -I /usr/libexec/niaos/storage_bootstrap.py --check-bank
+User=root
+Group=root
+UMask=0077
+NoNewPrivileges=yes
+CapabilityBoundingSet=CAP_DAC_READ_SEARCH
+ProtectSystem=strict
+ProtectHome=yes
+PrivateTmp=yes
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectKernelLogs=yes
+ProtectControlGroups=yes
+RestrictAddressFamilies=AF_UNIX
+RestrictNamespaces=yes
+SystemCallArchitectures=native
+LockPersonality=yes
+MemoryDenyWriteExecute=yes
+LimitCORE=0
+LimitNOFILE=64
+MemoryMax=128M
+MemorySwapMax=0
+CPUQuota=100%
+TasksMax=8
+TimeoutStartSec=45

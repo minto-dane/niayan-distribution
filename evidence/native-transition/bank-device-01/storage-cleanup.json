@@ -1,0 +1,32 @@
+{
+  "removed": [
+    {
+      "path": "/home/nia/devbox/niaos/.work/native-bank-device-01/vm-package-01/test.qcow2",
+      "logical_bytes": 48693248,
+      "allocated_bytes": 48635904
+    },
+    {
+      "path": "/home/nia/devbox/niaos/.work/native-bank-device-01/vm-package-01/bank.raw",
+      "logical_bytes": 67108864,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "/home/nia/devbox/niaos/.work/native-bank-device-01/vm-package-02/test.qcow2",
+      "logical_bytes": 50593792,
+      "allocated_bytes": 50536448
+    },
+    {
+      "path": "/home/nia/devbox/niaos/.work/native-bank-device-01/vm-package-02/bank.raw",
+      "logical_bytes": 67108864,
+      "allocated_bytes": 4665344
+    }
+  ],
+  "allocated_bytes": 103841792,
+  "all_vm_jobs_exited": true,
+  "preserved": [
+    "builder base/accepted VMs",
+    "source packages and build outputs",
+    "input archives and logs",
+    "accepted native initializer and SDK builds"
+  ]
+}

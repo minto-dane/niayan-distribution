@@ -8,7 +8,7 @@ Rules-Requires-Root: no
 
 Package: niaos-root-preparation
 Architecture: amd64
-Depends: ${shlibs:Depends}, ${misc:Depends}, python3, systemd (>= 257), mount
+Depends: ${shlibs:Depends}, ${misc:Depends}, python3, systemd (>= 257), mount, util-linux
 Suggests: niaos-pkgcore
 Description: Internal NiaOS root preparation service
  Materializes retained native root archives in protected inactive storage.

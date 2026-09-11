@@ -6,4 +6,3 @@ deployment/root-preparation.json etc/niaos
 deployment/var-lib-niaos-roots.mount usr/lib/systemd/system
 deployment/dev usr/lib/niaos/root-preparation
 native/bank_device.py usr/libexec/niaos
-debian/niaos-root-bank-check.service usr/lib/systemd/system

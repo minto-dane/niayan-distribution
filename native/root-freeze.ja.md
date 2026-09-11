@@ -9,7 +9,7 @@ handleのClose後まで維持する。SDKの世代/root/CAS予約や供給認証
 対象は明示的に選ばれた専用ext4 filesystemのroot directoryだけである。期待mount ID/device/inodeを
 controllerから受け取り、保持FDとkernelのmountinfoへ照合する。bankはroot所有0700、nodev/nosuid/noexec、
 ext4 root inode 2、mount root `/`でなければならない。現在の`/`と同じdevice、subtree、子mount、
-未対応mount flagは拒否する。現在の標準bind bankを専用領域と誤認して再mountしない。
+未対応mount flagは拒否する。旧標準のbind bankを専用領域と誤認して再mountしない。
 容量確保・初期化・device identityの永続的な配備は独立installerの責務で、本APIはdeviceを作成/formatしない。
 
 元のextracted記録、worker hash、intentの全選択field、実CAS leaseとarchive FDを照合する。
@@ -48,6 +48,7 @@ sysrqを使う、filesystemを修復する、暗黙にremount,rwする処理は�
 `check_root_preparation.py --reinspect --freeze-bank`はこの部品の実観測とkernel排他を使い、native SDKへ接続する。
 bridgeと認可/供給鍵はVM fixtureであり本番providerではない。通常世代と設定済み世代の両方を扱う。
 
-0.4.0には部品を含めるが、defaultのbind bankは維持し、本機のstorageを勝手に移行しない。
-製品installerによる専用bankの配備、認証したcontrollerのRPC/寿命管理、device/mount排他、実root/boot切替と
+0.5.0の明示的bootstrapは[専用GPT/ext4 bank](bank-device.ja.md)を配備し、通常mountをread-onlyとする。
+旧bind bankの自動移行は行わない。完全置換ISOのpartition recipe、認証したcontrollerのRPC/寿命管理、
+device/mount排他、実root/boot切替と
 段階別復旧は未完である。全DEB効果、GC、完全置換ISO、全言語翻訳も別の未完要件として残る。

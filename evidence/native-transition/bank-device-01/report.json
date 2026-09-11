@@ -1,0 +1,48 @@
+{
+  "result": "pass-with-production-boundaries-open",
+  "source_subject": "746a5a7d63171fb0666b3b9741596fc529ef7b8ebd39656ebe07c73e27311288",
+  "adr": "ADR-0113",
+  "requirement": "REQ-151",
+  "hazard": "HAZ-137",
+  "fault": "FAULT-150",
+  "package_version": "0.5.0",
+  "two_builds_byte_equal": [
+    "main DEB",
+    "dbgsym DEB",
+    "source dsc",
+    "source tar.xz"
+  ],
+  "vm_result": "vm-package-02/result.json",
+  "actual_reboot": true,
+  "installer_used_actual_native_initializer": true,
+  "initializer_reused_from": "niaos-pkgcore_0.1.0+gita3640276f48d",
+  "initializer_sha256": "1a163c364f589b77f1fc30bc6a4a5f44232c631c9d70b4152ffd4847cf154300",
+  "limits": {
+    "memory_bytes": 3221225472,
+    "swap_bytes": 0,
+    "cpus": 1,
+    "pids": 128,
+    "vm_ram_mib": 2048,
+    "vm_vcpus": 1
+  },
+  "failed_attempts": {
+    "vm-package-01": "New guard unit was not installed; explicit install manifest entry added. Final package and unit acceptance passed in fresh VM 02."
+  },
+  "no_upstream_source_patches": true,
+  "worker_unchanged": true,
+  "ada_sources_unchanged": true,
+  "full_suites_or_proofs_repeated": false,
+  "old_service_fixture_suite_repeated": false,
+  "host_or_active_root_switched": false,
+  "production_iso_rebuilt": false,
+  "power_loss_tested": false,
+  "remaining": [
+    "complete-replacement ISO partition recipe/UI",
+    "authenticated controller RPC and full mount/device authority lifetime",
+    "bank slots and generation GC",
+    "production source/consent/supply providers",
+    "all DEB effects",
+    "real root/boot switch and recovery",
+    "all language translations"
+  ]
+}

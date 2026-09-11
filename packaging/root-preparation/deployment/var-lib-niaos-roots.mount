@@ -1,11 +1,14 @@
 # SPDX-License-Identifier: BSD-3-Clause
 [Unit]
-Description=NiaOS inactive root storage protection
+Description=NiaOS dedicated inactive root storage
 AssertPathIsDirectory=/var/lib/niaos/roots
+AssertPathExists=/etc/niaos/root-bank-device.json
 Before=niaos-root-preparation.service
 
 [Mount]
-What=/var/lib/niaos/roots
+# The explicit installer supplies the selected PARTUUID in a protected drop-in.
+What=/dev/niaos-unprovisioned-root-bank
 Where=/var/lib/niaos/roots
-Type=none
-Options=bind,nodev,nosuid,noexec
+Type=ext4
+Options=ro,nodev,nosuid,noexec
+TimeoutSec=30

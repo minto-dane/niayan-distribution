@@ -1,0 +1,35 @@
+Format: 1.8
+Date: Fri, 11 Sep 2026 11:30:00 +0000
+Source: niaos-root-preparation
+Binary: niaos-root-preparation niaos-root-preparation-dbgsym
+Architecture: source amd64
+Version: 0.5.0
+Distribution: trixie
+Urgency: medium
+Maintainer: NiaOS Developers <developers@niaos.invalid>
+Changed-By: NiaOS Developers <developers@niaos.invalid>
+Description:
+ niaos-root-preparation - Internal NiaOS root preparation service
+Changes:
+ niaos-root-preparation (0.5.0) trixie; urgency=medium
+ .
+   * Require explicit GPT/ext4 bank selection for fresh storage bootstrap.
+   * Mount banks read-only on startup and verify current device identity.
+Checksums-Sha1:
+ 5ab22f0dcc14d02054602901268cf7ac69390b6a 660 niaos-root-preparation_0.5.0.dsc
+ f298020ed75069eb6494f180b88c57354b967eb1 27548 niaos-root-preparation_0.5.0.tar.xz
+ 6015ff59f95eb09e13e9476387805e8e28b04f34 31864 niaos-root-preparation-dbgsym_0.5.0_amd64.deb
+ 544e8292a851c61188eccbdca8a6cc6fdbb363ce 6530 niaos-root-preparation_0.5.0_amd64.buildinfo
+ 3176f51bb831c42dd8601877b6a52fec55354245 28336 niaos-root-preparation_0.5.0_amd64.deb
+Checksums-Sha256:
+ 8e51997122851125c70fa45cb8545266d5d0ae97fc97c98f8e57b50af3f4e9ff 660 niaos-root-preparation_0.5.0.dsc
+ 2703f195c9db91e0513c7833cac9047000306835af51d9363c63a487bf38a8c3 27548 niaos-root-preparation_0.5.0.tar.xz
+ f0b783dcb6f1ae86b4ca59169f70fa0a181f5b26cf12a0baa4be5561cf85eed8 31864 niaos-root-preparation-dbgsym_0.5.0_amd64.deb
+ b419a1a5f7212a3910e7acbd7c5c327c27188b3d39850760aba0e9f12e233ff8 6530 niaos-root-preparation_0.5.0_amd64.buildinfo
+ f7a6803154ab8565b1b4426376c94a4c41cf007154d8554f7717e6a055732ac6 28336 niaos-root-preparation_0.5.0_amd64.deb
+Files:
+ e76f3bef5ca9caa43d075b3dcf5dcf81 660 admin optional niaos-root-preparation_0.5.0.dsc
+ 234b534be5b7d4c4987cfdc459c21159 27548 admin optional niaos-root-preparation_0.5.0.tar.xz
+ c82aa08e994b61ac85a68c4e426f50d1 31864 debug optional niaos-root-preparation-dbgsym_0.5.0_amd64.deb
+ f9b9b7238be556061b7879ca20d735a4 6530 admin optional niaos-root-preparation_0.5.0_amd64.buildinfo
+ 976aa2647352214440e64f68f3ad6797 28336 admin optional niaos-root-preparation_0.5.0_amd64.deb

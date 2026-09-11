@@ -55,9 +55,11 @@ def main():
     parser.add_argument('--runtime', type=Path, required=True)
     parser.add_argument('--report', type=Path, required=True)
     parser.add_argument('--after-reboot', action='store_true')
+    parser.add_argument('--device-plan', type=Path, required=True, help='explicit root-owned GPT/ext4 plan already installed at /etc/niaos/root-bank-device.json')
     args = parser.parse_args()
     if os.getuid() or Path('/proc/1/comm').read_text().strip() != 'systemd':
         parser.error('requires root in a disposable systemd VM')
+    assert args.device_plan == Path('/etc/niaos/root-bank-device.json') and args.device_plan.is_file()
     account = pwd.getpwnam('nia-pkg')
     assert account.pw_uid > 0 and account.pw_shell == '/usr/sbin/nologin'
     if args.after_reboot:
@@ -71,6 +73,7 @@ def main():
             # not a socket left disabled by the previous activation failure.
             run('systemctl', 'stop', 'niaos-root-preparation.socket', SERVICE)
             held = target.with_name(target.name + '.test-held')
+            if target == BANK/'bank.lock': run('mount', '-o', 'remount,rw,nodev,nosuid,noexec', str(BANK))
             target.rename(held)
             try:
                 run('systemctl', 'start', 'niaos-root-preparation.socket')
@@ -83,7 +86,8 @@ def main():
             finally:
                 run('systemctl', 'stop', 'niaos-root-preparation.socket', SERVICE)
                 held.rename(target)
-                run('systemctl', 'reset-failed', SERVICE, 'niaos-root-preparation.socket')
+                if target == BANK/'bank.lock': run('mount', '-o', 'remount,ro,nodev,nosuid,noexec', str(BANK))
+                run('systemctl', 'reset-failed', SERVICE, 'niaos-root-preparation.socket', 'niaos-root-bank-check.service')
                 # systemd 257 reset-failed does not clear the socket's separate
                 # trigger rate counter. Respect its default two-second window;
                 # never disable the production rate limit to make a test pass.
@@ -152,6 +156,8 @@ def main():
     store = CORE / 'store'
     required = os.ST_NODEV | os.ST_NOSUID | os.ST_NOEXEC
     assert os.statvfs(BANK).f_flag & required == required
+    # Explicit test controller opens this initialized bank for fixture extraction.
+    run('mount', '-o', 'remount,rw,nodev,nosuid,noexec', str(BANK))
     # Fixture authorization is activated only for this test, after real bootstrap.
     run('systemctl', 'enable', '--now', 'niaos-root-preparation.socket')
     worker = Path('/usr/libexec/niaos/root-extract')
