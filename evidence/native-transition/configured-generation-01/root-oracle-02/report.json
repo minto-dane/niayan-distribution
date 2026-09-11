@@ -1,0 +1,274 @@
+{
+  "result": "pass",
+  "cases": [
+    {
+      "name": "keep",
+      "manifest": "392b95aa4f730b2667edd439d74efd4fc189d6bd95824aae035cadf672af9dd4",
+      "archive": "93a60ed50f889f066d57d3a65dee0447f420182362e0914b68b9053126de9944",
+      "retained": "2f24901671d443bef0f2841a6a41a56ba879646095df09f075854add2021b678",
+      "entries": 4,
+      "configuration": {
+        "etc/fixture.conf": {
+          "content": "25bf8e1a2393f1108d37029b3df5593236c755742ec93465bbafa9b290bddcf6",
+          "size": 5,
+          "mode": 384,
+          "uid": 1000,
+          "gid": 1000,
+          "clocks": [
+            1789106958653486900,
+            1789106958653486900,
+            1789106958653486900,
+            1789106958653486900
+          ],
+          "xattrs": {},
+          "acl": null,
+          "flags": [
+            0,
+            545505535
+          ]
+        },
+        "etc/fixture.conf.save": {
+          "content": "480c2336b410f1ad5f8bf1b28944490255804b65350c527787e74ebdd511e3a4",
+          "size": 7,
+          "mode": 384,
+          "uid": 1000,
+          "gid": 1000,
+          "clocks": [
+            1788739200000000000,
+            null,
+            null,
+            null
+          ],
+          "xattrs": {},
+          "acl": null,
+          "flags": [
+            0,
+            0
+          ]
+        }
+      },
+      "retained_objects": 23,
+      "exact_closure": true,
+      "original_spans": true,
+      "parent_and_hardlink_order": true
+    },
+    {
+      "name": "vendor",
+      "manifest": "2f1a2a8b48e036b4581139973e3d5f4c7eb0fabab819fb0ad0b85e3fb93275b6",
+      "archive": "45e25b6c29891929c85c331fa9f6c2895c14626647860cb6253fab54c840bdc7",
+      "retained": "739c57add0ff17ff7ec92e03e3dd1f3c6a38983c0ebcd027d802b265d1058462",
+      "entries": 4,
+      "configuration": {
+        "etc/fixture.conf": {
+          "content": "480c2336b410f1ad5f8bf1b28944490255804b65350c527787e74ebdd511e3a4",
+          "size": 7,
+          "mode": 384,
+          "uid": 1000,
+          "gid": 1000,
+          "clocks": [
+            1788739200000000000,
+            null,
+            null,
+            null
+          ],
+          "xattrs": {},
+          "acl": null,
+          "flags": [
+            0,
+            0
+          ]
+        },
+        "etc/fixture.conf.save": {
+          "content": "25bf8e1a2393f1108d37029b3df5593236c755742ec93465bbafa9b290bddcf6",
+          "size": 5,
+          "mode": 384,
+          "uid": 1000,
+          "gid": 1000,
+          "clocks": [
+            1789106958653486900,
+            1789106958653486900,
+            1789106958653486900,
+            1789106958653486900
+          ],
+          "xattrs": {},
+          "acl": null,
+          "flags": [
+            0,
+            545505535
+          ]
+        }
+      },
+      "retained_objects": 23,
+      "exact_closure": true,
+      "original_spans": true,
+      "parent_and_hardlink_order": true
+    },
+    {
+      "name": "links",
+      "manifest": "4ada0f595ea89edc98ea4075cf7ee202350cb150518b4d7bf73fed12373c435b",
+      "archive": "93a4783bdfd4133968574ffcff825f5965be2ad20c8284712458eef303f472a2",
+      "retained": "369ddc89d3c5b7e330fe5a39d155a0189083cd796056a78980636165e3d75207",
+      "entries": 8,
+      "configuration": {
+        "etc/fixture.conf": {
+          "content": "25bf8e1a2393f1108d37029b3df5593236c755742ec93465bbafa9b290bddcf6",
+          "size": 5,
+          "mode": 384,
+          "uid": 1000,
+          "gid": 1000,
+          "clocks": [
+            1789106958653486900,
+            1789106958653486900,
+            1789106958653486900,
+            1789106958653486900
+          ],
+          "xattrs": {},
+          "acl": null,
+          "flags": [
+            0,
+            545505535
+          ]
+        },
+        "etc/fixture.conf.save": {
+          "content": "480c2336b410f1ad5f8bf1b28944490255804b65350c527787e74ebdd511e3a4",
+          "size": 7,
+          "mode": 384,
+          "uid": 1000,
+          "gid": 1000,
+          "clocks": [
+            0,
+            null,
+            null,
+            null
+          ],
+          "xattrs": {},
+          "acl": null,
+          "flags": [
+            0,
+            0
+          ]
+        }
+      },
+      "retained_objects": 25,
+      "exact_closure": true,
+      "original_spans": true,
+      "parent_and_hardlink_order": true
+    },
+    {
+      "name": "deleted",
+      "manifest": "d90fe456584b7ef5177d2dfc6c3f189104890b54171ee2619163a7635064a823",
+      "archive": "6590ca7ca2b365d4341483fcc6f160eb329f028fc9eda822b3029b86784ee1c9",
+      "retained": "7b4c33dbc8d0752f77dfeab67ec7b659d08d5aef19dce0be8db8af424368c22a",
+      "entries": 3,
+      "configuration": {
+        "etc/fixture.conf.save": {
+          "content": "480c2336b410f1ad5f8bf1b28944490255804b65350c527787e74ebdd511e3a4",
+          "size": 7,
+          "mode": 416,
+          "uid": 1001,
+          "gid": 1002,
+          "clocks": [
+            1788739200000000000,
+            null,
+            null,
+            null
+          ],
+          "xattrs": {},
+          "acl": null,
+          "flags": [
+            0,
+            0
+          ]
+        }
+      },
+      "retained_objects": 21,
+      "exact_closure": true,
+      "original_spans": true,
+      "parent_and_hardlink_order": true
+    },
+    {
+      "name": "restored",
+      "manifest": "647e5ee8cd6741d90d205f6b6b133020ae59f72ddae6fd123f2ff2150ad24301",
+      "archive": "e65926165b149284aae9bb476b828fbb09db18c83fcae0c3e9d8d0d0fef9f093",
+      "retained": "fa6d6bc20ca6fcd0ae7e2d6729d9070dc8ab35316ba242cc9d5a9909515cfea9",
+      "entries": 3,
+      "configuration": {
+        "etc/fixture.conf": {
+          "content": "480c2336b410f1ad5f8bf1b28944490255804b65350c527787e74ebdd511e3a4",
+          "size": 7,
+          "mode": 416,
+          "uid": 1001,
+          "gid": 1002,
+          "clocks": [
+            1788739200000000000,
+            null,
+            null,
+            null
+          ],
+          "xattrs": {},
+          "acl": null,
+          "flags": [
+            0,
+            0
+          ]
+        }
+      },
+      "retained_objects": 20,
+      "exact_closure": true,
+      "original_spans": true,
+      "parent_and_hardlink_order": true
+    },
+    {
+      "name": "empty",
+      "manifest": "a7d72b16b0c1d8557e08ae2fe075b73760c2958f17af8ac0468689d15db6889f",
+      "archive": "99bba1e41ea6ba4cf09eecd06515108d3be924e72b78df7349e00b023a87f3fd",
+      "retained": "4c46adb05b66de35395b09773d2d58a7c1a0a24554f1ce3b09d7afebe536d8a2",
+      "entries": 4,
+      "configuration": {
+        "etc/fixture.conf": {
+          "content": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size": 0,
+          "mode": 384,
+          "uid": 1000,
+          "gid": 1000,
+          "clocks": [
+            1789106989877222104,
+            1789106989877222104,
+            1789106989877222104,
+            1789106989877222104
+          ],
+          "xattrs": {},
+          "acl": null,
+          "flags": [
+            0,
+            545505535
+          ]
+        },
+        "etc/fixture.conf.save": {
+          "content": "480c2336b410f1ad5f8bf1b28944490255804b65350c527787e74ebdd511e3a4",
+          "size": 7,
+          "mode": 384,
+          "uid": 1000,
+          "gid": 1000,
+          "clocks": [
+            1788739200000000000,
+            null,
+            null,
+            null
+          ],
+          "xattrs": {},
+          "acl": null,
+          "flags": [
+            0,
+            0
+          ]
+        }
+      },
+      "retained_objects": 23,
+      "exact_closure": true,
+      "original_spans": true,
+      "parent_and_hardlink_order": true
+    }
+  ],
+  "actual_boot": false
+}

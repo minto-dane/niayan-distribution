@@ -28,6 +28,7 @@ def main():
     parser.add_argument('--fixtures', type=Path, required=True)
     parser.add_argument('--base', type=Path, required=True)
     parser.add_argument('--report', type=Path, required=True)
+    parser.add_argument('--configured', action='store_true', help='exercise configured generation driver and source root')
     args = parser.parse_args()
     if os.getuid() or os.geteuid():
         parser.error('requires a disposable privileged VM')
@@ -45,6 +46,9 @@ def main():
             os.chown(address, 1000, 1000); os.chmod(address, 0o600)
             command = [str(args.loader), '--library-path', str(args.libraries), str(args.driver),
                 str(store), str(args.fixtures), address, hashlib.sha256(args.worker.read_bytes()).hexdigest()]
+            if args.configured:
+                source = client_path / 'source'; source.mkdir(mode=0o700); os.chown(source, 1000, 1000)
+                command.insert(command.index(str(args.fixtures)), str(source))
             if deny_post:
                 command.append('deny-post')
             log_path = args.report.parent / ('native-deny-post.log' if deny_post else 'native-prepare.log')
@@ -75,7 +79,25 @@ def main():
                     # fixture hashes, were delivered from the retained context.
                     expected = (client_path / 'archive-stage-state/generation.manifest').read_bytes()
                     assert intent['generation'] == hashlib.sha256(expected).hexdigest()
-                    assert intent['root_manifest'] == expected[224:256].hex()
+                    assert expected[:8] == (b'NIAGEN06' if args.configured else b'NIAGEN05')
+                    assert len(expected) == (384 if args.configured else 320)
+                    offset = 256 if args.configured else 224
+                    assert intent['root_manifest'] == expected[offset:offset + 32].hex()
+                    if args.configured:
+                        address = expected[256:288].hex()
+                        saved = (store / 'objects' / address[:2] / address[2:]).read_bytes()
+                        assert hashlib.sha256(saved).hexdigest() == address and saved[:8] == b'NIACRT01'
+                        assert saved[8:40] == expected[224:256]  # base manifest is retained separately
+                        assert saved[184:200] == expected[24:40] and saved[200:232] == expected[160:192]
+                        assert saved[264:296].hex() == intent['archive']
+                        # The worker extracted the selected empty local file and
+                        # preserved incoming content at the admitted backup path.
+                        tree = stages[0] / 'root'
+                        assert (tree / 'etc/fixture.conf').is_file() and (tree / 'etc/fixture.conf').read_bytes() == b''
+                        assert (tree / 'etc/fixture.conf.save').is_file()
+                        assert (tree / 'etc/fixture.conf.save').read_bytes() == b'second\n'
+                        assert not (source / 'etc/fixture.conf.save').exists()
+                        assert (source / 'etc/fixture.conf').read_bytes() == b''
                     assert intent['stage'] == expected[8:24].hex()
                     tar = (client_path / 'archive-stage-root/tree/root.tar').read_bytes()
                     assert intent['archive'] == hashlib.sha256(tar).hexdigest() and intent['size'] == len(tar)
@@ -88,7 +110,7 @@ def main():
                         bank.close()
                     listener.close()
     args.report.write_text(json.dumps({'result': 'pass', 'cases': results, 'site_policy': False,
-        'installed_root_changed': False, 'boot_tested': False}, indent=2) + '\n')
+        'configured_generation': args.configured, 'installed_root_changed': False, 'boot_tested': False}, indent=2) + '\n')
     print('PASS native admission and retained archive through actual root preparation service')
 
 

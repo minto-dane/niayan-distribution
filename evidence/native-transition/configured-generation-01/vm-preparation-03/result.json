@@ -1,0 +1,59 @@
+{
+  "result": "pass",
+  "cases": [
+    {
+      "post_admission_denied": false,
+      "bank": {
+        "effects_applied": false,
+        "intent_sha256": "9ad1499954380b4a6a1172799160f470f9c546427c89d520bf4bce9f12c0c62f",
+        "published": false,
+        "state": "extracted",
+        "version": 1,
+        "worker_exit": 0,
+        "worker_sha256": "459d3c8062d2a0ae8ad08e1a2e7cc79cdfb3a7686416fc4eb138ef6a99ffd98f",
+        "physical_revalidation": false
+      },
+      "intent": {
+        "archive": "c4f32afed04bfb0fae46f052aeeb93934a0c7d43e608141441b9fb9bbad70a4d",
+        "deadline_ms": 608943,
+        "entries": 4,
+        "generation": "912e3331f8ab227639a3d05bc98ebffe98ee1611a8540052229ccfaf66062ed4",
+        "root_manifest": "b1d127fd955798b46cc6e3b54c1887e9362a9b5b5c18dc4b9488024b7c3d2b31",
+        "size": 5632,
+        "stage": "56565656565656565656565656565656",
+        "version": 1
+      },
+      "native_driver_exit": 0,
+      "actual_peer_and_reservation": true
+    },
+    {
+      "post_admission_denied": true,
+      "bank": {
+        "effects_applied": false,
+        "intent_sha256": "6325072579c900acb12166de4d42c2c2889f23767fd88ca6b8b1cb6e75a77072",
+        "published": false,
+        "state": "extracted",
+        "version": 1,
+        "worker_exit": 0,
+        "worker_sha256": "459d3c8062d2a0ae8ad08e1a2e7cc79cdfb3a7686416fc4eb138ef6a99ffd98f",
+        "physical_revalidation": false
+      },
+      "intent": {
+        "archive": "41296c0cbc53c1470e9e0e01427add9376c6a810899008094423f47341f2edab",
+        "deadline_ms": 615401,
+        "entries": 4,
+        "generation": "2dcc2d7a8f94624e752889e39d6833650e54c1b6d3c3d89c429895e83325805e",
+        "root_manifest": "efda249ee08b665e2907751a6b98c5de99eff95e47954470996e2932ae976f4a",
+        "size": 5632,
+        "stage": "56565656565656565656565656565656",
+        "version": 1
+      },
+      "native_driver_exit": 0,
+      "actual_peer_and_reservation": true
+    }
+  ],
+  "site_policy": false,
+  "configured_generation": true,
+  "installed_root_changed": false,
+  "boot_tested": false
+}

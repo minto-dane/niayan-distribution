@@ -1,0 +1,23 @@
+{
+  "unchanged": true,
+  "evidence": "distribution/evidence/native-transition/configured-root-01/report.json",
+  "private_worker_sha256": "ed188c4f23f9078ecaecfff829de6f4a53ba533f0a36a77c6189d5a09a9a123d",
+  "source_files": [
+    {
+      "path": "distribution/native/worker/root_extract.c",
+      "sha256": "5cce5310052792369739b223a2861e2b947b6bf6e9a7b1b0e735251c2ca0649e"
+    },
+    {
+      "path": "distribution/native/worker/tar_clocks.c",
+      "sha256": "9c4d1fcc6fca599e8e703bbf9e98b2f113e7f3120f61b1f439b651a317fb15a1"
+    },
+    {
+      "path": "distribution/native/worker/tar_clocks.h",
+      "sha256": "c97a4290629dda99b92c14a21a3b795c4233741d7745f0abcbf6f1acf1ab1f2b"
+    },
+    {
+      "path": "distribution/native/worker/Makefile",
+      "sha256": "4aa001706d4ed2a9d41401b7da1cdeaeb9e365f208053aa685d62751591844b8"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "result": "pass",
+  "source_subject": "d46d244395105b30d2571a84ed87524b39e3f94704efd9dcaae2a896ba00d267",
+  "pinned_image": "sha256:7f92f64938b87b862dd962a93b558fb0caea13493745c684fbddfc190a723617",
+  "tests": {
+    "configured_generation_assertions": 358,
+    "current_observation_cases": 13,
+    "independent_complete_roots": 6,
+    "legacy_root_assertions": 831,
+    "legacy_stage_assertions": 1211,
+    "legacy_publication_assertions": 142,
+    "legacy_publication_oracle": "pass",
+    "configured_preparation_vm_cases": 2,
+    "vm_assertions_per_case": 367
+  },
+  "inputs": {
+    "compile": 401,
+    "fixtures": 32,
+    "python_tools": 9,
+    "unchanged_worker_sources": 4
+  },
+  "limits": {
+    "memory_max": 3221225472,
+    "swap_max": 0,
+    "cpu_quota": "100%",
+    "pids_max": 128,
+    "vm_ram_mib": 2048,
+    "vm_vcpus": 1
+  },
+  "binaries": {
+    "configured_driver": "6fcfc0d344bdd5725601386066a84eda63ddfeff6693ae755b05fe0fe789ae7f",
+    "worker": "ed188c4f23f9078ecaecfff829de6f4a53ba533f0a36a77c6189d5a09a9a123d",
+    "stage_driver": "b6e3f41f1d32035ed9b076e6d05384c405bbd760f09d0ea8974ece810e23e06d",
+    "publication_driver": "155ad05e5061c3e8c229c221412cb216f29be79e1d4d7d5ba14db87c10d2a5f3"
+  },
+  "scope": "Explicit NIAGEN06 saved bindings and existing generation pin, independent source provider with default denial, full current verification on actual stage/engine CAS reservations, private staging and real FD-based preparation service. No installed root or boot change.",
+  "preparation": {
+    "actual_service_and_worker": true,
+    "worker_source_and_bytes_unchanged_from": "configured-root-01",
+    "output": "empty selected local configuration and incoming vendor backup",
+    "source_contents_preserved": true,
+    "post_admission_denial": "Indeterminate; extracted private tree retained, published=false",
+    "filesystem": "disposable ext4 loop with nodev/nosuid/noexec",
+    "vm_exit": 0
+  },
+  "failures_retained": [
+    {
+      "log": "test-02.log",
+      "reason": "Additional wrong-source test attempted to obtain a File FD from a private Root type. Test helper corrected to open an explicit O_PATH directory FD; test-03 passes."
+    },
+    {
+      "log": "test-03.log",
+      "reason": "After all Ada/oracle tests passed, runtime packaging compared the accepted private worker against the different installed-package binary hash. Corrected the expected identity from the prior private-build evidence; no worker bytes changed."
+    },
+    {
+      "log": "vm-preparation-01/worker.log",
+      "reason": "Harness created its disposable disk as ordinary user after protecting the runtime directory; corrected explicit privileged fixture creation. No native driver ran."
+    },
+    {
+      "log": "vm-preparation-02/native-prepare.log",
+      "reason": "Implicit runtime archive directories inherited a group-writable guest umask; native media protection correctly refused. Added explicit 0755 directory records and umask022 to the harness; final VM cases pass."
+    }
+  ],
+  "execution_provenance": "test-01 force-compiled four affected mains and ran initial configured/legacy root and stage coverage. test-01-inputs.json retains the earlier shared test helper. Subsequent changes only added configured-only test coverage. test-03 force-compiled both users of that helper and executed final configured/current tests plus the legacy publication variant. Production runtime inputs were identical in all runs. Final VM used the exact final configured driver hash.",
+  "not_qualified": [
+    "production source/authentication/quiescence and supply providers",
+    "configured publication: existing v4/v5 whitelist still refuses v6",
+    "accepted-state recovery after configuration effects",
+    "OS reboot/mount identity migration",
+    "generation GC",
+    "all DEB effects",
+    "real installed-root and boot switch",
+    "complete native-authority ISO",
+    "full-language translations"
+  ],
+  "not_repeated": [
+    "unchanged full suite",
+    "formal proofs",
+    "old chaos campaigns",
+    "performance experiments"
+  ],
+  "unchanged": [
+    "shared vendor and mathematical sources",
+    "upstream packages",
+    "privileged worker and service wire",
+    "existing DEB fixtures",
+    "v1..v5 generation encodings and transaction derivation"
+  ]
+}

@@ -1,0 +1,108 @@
+Running as unit: run-p960108-i960408.scope; invocation ID: b2edc11d8b9745e2bac806639eb6d69b
+limited-exec: {"scope": "run-p960108-i960408.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Compile
+   [Ada]          run_root_configuration_tests.adb
+   [Ada]          run_root_archive_tests.adb
+   [C]            pkg_deb_stream.c
+   [C]            archive_observer.c
+   [C]            pkg_deb_decode.c
+   [C]            root_preparation.c
+   [C]            conffile_snapshot.c
+   [Ada]          configured_root_record_test.adb
+   [Ada]          mc_clock.adb
+   [Ada]          mc_fs.adb
+   [Ada]          mc_hex.adb
+   [Ada]          mc_posix.ads
+   [Ada]          mc_runtime.adb
+   [Ada]          mc_store.adb
+   [Ada]          mc_types.adb
+   [Ada]          pkg_catalog_retention.adb
+   [Ada]          pkg_catalog_store.adb
+   [Ada]          pkg_conffile_choice.adb
+   [Ada]          pkg_conffile_transition.adb
+   [Ada]          pkg_configured_root.adb
+   [Ada]          pkg_deb_metadata.adb
+   [Ada]          pkg_deb_payload.adb
+   [Ada]          pkg_payload_index.adb
+   [Ada]          pkg_root_archive.adb
+   [Ada]          pkg_root_configuration.adb
+   [Ada]          pkg_selected_catalog.adb
+   [Ada]          root_archive_stage_test.adb
+   [Ada]          test_support.adb
+   [Ada]          mc_codec.adb
+   [Ada]          root_archive_order_test.adb
+   [Ada]          pkg_configured_root_record.adb
+   [Ada]          mc_kernel_read.adb
+   [Ada]          mc_paths.adb
+   [Ada]          mc_sha256.adb
+   [Ada]          mc_dirents.adb
+   [Ada]          mc_text.adb
+   [Ada]          pkg_deb_container.adb
+   [Ada]          pkg_deb_control.adb
+   [Ada]          pkg_conffile_observation.adb
+   [Ada]          pkg_conffile_snapshot.adb
+   [Ada]          pkg_deb_conffiles.adb
+   [Ada]          pkg_configuration_entry.adb
+   [Ada]          pkg_tar_framing.adb
+   [Ada]          pkg_deb_relations.adb
+   [Ada]          pkg_deb_fields.adb
+   [Ada]          pkg_deb_data_stream.adb
+   [Ada]          pkg_payload_ownership.adb
+   [Ada]          pkg_deb_semantics.adb
+   [Ada]          mc_atomic.adb
+   [Ada]          mc_log.adb
+   [Ada]          mc_log_format.adb
+   [Ada]          pkg_archive_supply.adb
+   [Ada]          pkg_deb_final_set.adb
+   [Ada]          pkg_file_engine.adb
+   [Ada]          pkg_file_plan.adb
+   [Ada]          pkg_file_replay.adb
+   [Ada]          pkg_generation_configuration.adb
+   [Ada]          pkg_generation_descriptor.adb
+   [Ada]          pkg_generation_intent.adb
+   [Ada]          pkg_generation_manifest.adb
+   [Ada]          pkg_generation_stage.adb
+   [Ada]          pkg_image_inspector.adb
+   [Ada]          pkg_recovery_audit.adb
+   [Ada]          pkg_root_preparation.adb
+   [Ada]          pkg_root_state.adb
+   [Ada]          pkg_supply_map.adb
+   [Ada]          pkg_supply_policy.adb
+   [Ada]          pkg_tar_output.adb
+   [Ada]          pkg_deb_versions.adb
+   [Ada]          mc_journal_budget.ads
+   [Ada]          mc_authentic.adb
+   [Ada]          mc_signatures.adb
+   [Ada]          pkg_deb_transition.adb
+   [Ada]          mc_protocol.adb
+Bind
+   [gprbind]      run_root_configuration_tests.bexch
+   [Ada]          run_root_configuration_tests.ali
+   [gprbind]      run_root_archive_tests.bexch
+   [Ada]          run_root_archive_tests.ali
+Link
+   [archive]      libtests.a
+   [index]        libtests.a
+   [link]         run_root_configuration_tests.adb
+   [link]         run_root_archive_tests.adb
+CONFIGURED keep 392b95aa4f730b2667edd439d74efd4fc189d6bd95824aae035cadf672af9dd4 93a60ed50f889f066d57d3a65dee0447f420182362e0914b68b9053126de9944 2f24901671d443bef0f2841a6a41a56ba879646095df09f075854add2021b678
+CONFIGURED vendor 2f1a2a8b48e036b4581139973e3d5f4c7eb0fabab819fb0ad0b85e3fb93275b6 45e25b6c29891929c85c331fa9f6c2895c14626647860cb6253fab54c840bdc7 739c57add0ff17ff7ec92e03e3dd1f3c6a38983c0ebcd027d802b265d1058462
+CONFIGURED links 4ada0f595ea89edc98ea4075cf7ee202350cb150518b4d7bf73fed12373c435b 93a4783bdfd4133968574ffcff825f5965be2ad20c8284712458eef303f472a2 369ddc89d3c5b7e330fe5a39d155a0189083cd796056a78980636165e3d75207
+CONFIGURED deleted d90fe456584b7ef5177d2dfc6c3f189104890b54171ee2619163a7635064a823 6590ca7ca2b365d4341483fcc6f160eb329f028fc9eda822b3029b86784ee1c9 7b4c33dbc8d0752f77dfeab67ec7b659d08d5aef19dce0be8db8af424368c22a
+CONFIGURED restored 647e5ee8cd6741d90d205f6b6b133020ae59f72ddae6fd123f2ff2150ad24301 e65926165b149284aae9bb476b828fbb09db18c83fcae0c3e9d8d0d0fef9f093 fa6d6bc20ca6fcd0ae7e2d6729d9070dc8ab35316ba242cc9d5a9909515cfea9
+CONFIGURED empty a7d72b16b0c1d8557e08ae2fe075b73760c2958f17af8ac0468689d15db6889f 99bba1e41ea6ba4cf09eecd06515108d3be924e72b78df7349e00b023a87f3fd 4c46adb05b66de35395b09773d2d58a7c1a0a24554f1ce3b09d7afebe536d8a2
+GENERATION_MANIFEST c8fbaa53b9d38eed59fd5ac2ff09619c23719c7b070b6f6746fdd10e530afc28
+CONFIGURED_STAGE_SOURCE_CALLS 15
+PASS assertions= 358
+PASS configured root current observations: 13
+PASS six complete configured roots, original spans, decisions and exact transitive closures
+ROOT_GENERATION 190daf9305b35c387a73da15337e6d10fa20bae8d75b08d957908d6dd15d9174
+ROOT_PLAN e3086af85adb01d286156835a6be72e87114bfe82b3834e59598a92d8a951285
+ROOT_ARCHIVE b930c18ec428f9d8af5dbf1a6fdaf5ce9ed974c1de8174bab79127247d492251
+PASS assertions= 142
+PASS legacy root publication independent oracle
+Traceback (most recent call last):
+  File "/evidence/package-runtime.py", line 6, in <module>
+    assert hashlib.sha256(worker.read_bytes()).hexdigest()=='6518709ddffb55ac5e351f53ff04f6a3690b58d889a6f7275116dcb367eb174c'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

@@ -1,0 +1,17 @@
+Linux niaos-builder 6.12.107+deb13-cloud-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.107-1 (2026-08-29) x86_64 GNU/Linux
+TARGET                     FSTYPE OPTIONS
+/run/nia-root-extract-test ext4   rw,nosuid,nodev,noexec,relatime
+Traceback (most recent call last):
+  File "/tmp/nia-root-extract/native/worker/check_root_preparation.py", line 118, in <module>
+    main()
+    ~~~~^^
+  File "/tmp/nia-root-extract/native/worker/check_root_preparation.py", line 67, in main
+    bank.serve(listener, requests=1)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/nia-root-extract/native/root_bank.py", line 298, in serve
+    peer, _ = listener.accept()
+              ~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/socket.py", line 295, in accept
+    fd, addr = self._accept()
+               ~~~~~~~~~~~~^^
+TimeoutError: timed out

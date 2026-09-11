@@ -91,6 +91,28 @@ mount/inode identityの変化、実適用後のaccepted状態、boot後の復旧
 このAPIは保存原本・楽観的live観測に基づく生成器であり、隠れた属性の可視性、変更者の凍結、
 root/contextの真正性、署名付き同意、全managed provider、物理適用の許可を与えない。
 Verifyには生存するproposalが必要で、Verify_Currentは新しい予約で全選択を再観測する。
-これらから認証済み復旧・世代保持・GCへの接続は未完。
-後段の生成形式・実root準備・公開/bootにも新形式を明示的に接続する必要がある。
+世代保持と実root準備への接続は次節のNIAGEN06を使う。
+認証済み復旧・GC・公開/bootへの接続は未完。
 workerの実FS能力や全DEB効果、実ディストリビューションの認定は別の受入条件である。
+
+## 設定済み世代 NIAGEN06
+
+判断ADR-0108。v5の256 byte headerと元Root_Archive参照を維持し、0始まりoffset256へ
+NIACRT01 digest、288へNIACRC01 digestを追加する。headerは320 byte、その後は既存の
+plan/receipt各32 byteのbatchである。v6は一つの三entry batchでcatalog、tree、tree/root.tarを格納する。
+NIAGEN01..05の形式・transaction導出は変更しない。設定欄を旧形式へ持ち込むことは拒否する。
+
+保存設定の元manifest/catalog/closure、intentのroot/architecture、世代Transaction_ID、Context=Intentを
+照合する。stageのroot IDは現在の設定元root IDと別である。元所有権も検証し、batchのtar digestを
+設定済み出力へ一致させる。既存の世代pinで両recordを保持する。GCの型付き参照走査は別途必要である。
+
+`Pkg_Generation_Stage`の追加generic `Observe_Configuration`は既定拒否であり、旧instantiationが
+v6を暗黙に受理することはない。providerはgeneration/root/transaction/contextと保存選択、失効、phaseを
+独立に認可し、設定元の借用FDと操作全体のsource排他を提供する。SDKはそのFDを閉じない。
+providerの成功後も`Pkg_Generation_Configuration.Check_Current`から通常の全root照合を必ず行う。
+
+stageのprovision/advance/inspect/prepare-root/root-preparedで照合し、Advanceの内側engineが
+CASを取得する二箇所でも`Check_Inputs`を使用する。`stage:advance-inputs`での拒否はPrepare/Resumeより前に
+止まる。全effectの元Authorizeも維持し、操作途中でsource排他を解放しない。
+実準備は[接続手順](root-preparation.ja.md)に従う。設定適用前のsourceを使うこの経路を、
+適用後のaccepted復旧に使用してはならない。publisherのv4/v5制限は維持し、v6の公開はまだUnsupportedである。

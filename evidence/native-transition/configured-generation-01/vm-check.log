@@ -1,0 +1,7 @@
+Running as unit: run-p961639-i961939.scope; invocation ID: 9ec5ebbeb76f45699629cde350cde3aa
+limited-exec: {"scope": "run-p961639-i961939.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Formatting '/evidence/vm-preparation-01/test.qcow2', fmt=qcow2 cluster_size=65536 extended_l2=off compression_type=zlib size=85899345920 backing_file=/vm-base/builder.qcow2 backing_fmt=qcow2 lazy_refcounts=off refcount_bits=16
+VM SSH ready
+Guest worker test exit 1
+/evidence/ssh-bin/scp: remote readdir("/tmp/nia-root-extract/"): Permission denied
+/evidence/ssh-bin/scp: /tmp/nia-root-extract/native-*.log: No such file or directory

@@ -1,0 +1,42 @@
+{
+  "result": "pass",
+  "count": 9,
+  "inputs": [
+    {
+      "path": "pkgcore/tests/check_configured_root_current.py",
+      "sha256": "dc794e39199290f7761bc6f29d80c9c9ef6cc638b67edd0d202b7c3bc807f67f"
+    },
+    {
+      "path": "pkgcore/tests/check_configured_root.py",
+      "sha256": "bfa4795a677b1c85db7eca94cc23987cb44a4c285ea97ba5a34da2fc58c7c0d2"
+    },
+    {
+      "path": "pkgcore/tests/compare_root_archive.py",
+      "sha256": "c6670e9276d4aa0d7c6f4ede2f59e1e99d45bf0d926ea4fa4c4d1eccd7c9b36a"
+    },
+    {
+      "path": "pkgcore/tests/check_configuration_entry.py",
+      "sha256": "daffce468de764f4fc5263f30c647fc1505eded4406bb62d94adcd51f31c7c25"
+    },
+    {
+      "path": "pkgcore/tests/check_tar_output.py",
+      "sha256": "e793e66c662b2f2d756c017a6fbaea50f4160e981c64e13a3bdc6895304d00ab"
+    },
+    {
+      "path": "pkgcore/tests/make_deb_control_fixtures.py",
+      "sha256": "2a53d1d99cafd825120c063c8ccb0aa9a41e3017b246bc627d56ad1ba779ecc6"
+    },
+    {
+      "path": "pkgcore/tests/compare_root_publication.py",
+      "sha256": "d1e880c26c705b8c5e2c098340e7d4e4b565d9b9bc6e419c12e670156533e7c1"
+    },
+    {
+      "path": "distribution/native/root_bank.py",
+      "sha256": "75e785ec34d649f8986beede1e0f427397b836bd3501752d1fc00948df92e3ba"
+    },
+    {
+      "path": "distribution/native/worker/check_root_preparation.py",
+      "sha256": "589a66c50e2f1377e1115f2824533e45a13868075eead7cc9e0ec6ef62f35bf6"
+    }
+  ]
+}

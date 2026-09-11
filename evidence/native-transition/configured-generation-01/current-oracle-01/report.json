@@ -1,0 +1,124 @@
+{
+  "result": "pass",
+  "count": 13,
+  "cases": [
+    {
+      "case": "current-keep",
+      "result": "pass",
+      "expected": "reject",
+      "current": true,
+      "manifest": "a1dd3661ed5178beb881f31d7c0b311f4ac0f1bb01f63030ed7047efb5646c5e",
+      "retained": "397908696f9c5a470f11af2e0319adf65fc434d63a6a5d0e7ba2b85127ffa690",
+      "historical_records_unchanged": true
+    },
+    {
+      "case": "current-vendor",
+      "result": "pass",
+      "expected": "reject",
+      "current": true,
+      "manifest": "250c3fa1c2b66313214e8d79614d2e9768128392cd26c89c92a97326c47a0a1d",
+      "retained": "4c52d13d309d92ecaddaf7b8088e59d3e91a0f6243b2a37ea30c6f771c940f0e",
+      "historical_records_unchanged": true
+    },
+    {
+      "case": "current-links",
+      "result": "pass",
+      "expected": "reject",
+      "current": true,
+      "manifest": "b9b2f29ff67af40d69f87228b7aaa60306bbaa845c44e059340dbeffc392ddfe",
+      "retained": "e0d96e4410063b19498a77dd0365cc66a56d15c0273b6589730ee7c54f3399e5",
+      "historical_records_unchanged": true
+    },
+    {
+      "case": "current-deleted",
+      "result": "pass",
+      "expected": "reject",
+      "current": true,
+      "manifest": "bd84c2e7f45075c08042861e78d48dca40b631b4f3013f39a95932ddca319da6",
+      "retained": "d10d5fd77138f3e6c6718a04d37252b62922e48bf29efae776d4f9291a7d0220",
+      "historical_records_unchanged": true
+    },
+    {
+      "case": "current-restored",
+      "result": "pass",
+      "expected": "reject",
+      "current": true,
+      "manifest": "2938c5b5a9ec0fac381142af2aa3adac0b75ca18718bf51833d80a5450e338e4",
+      "retained": "b736919433fa9eee1da2c62cd5db27aa0cf59bf8407fddb6dbad5b00fd4ce5d4",
+      "historical_records_unchanged": true
+    },
+    {
+      "case": "current-empty",
+      "result": "pass",
+      "expected": "accept",
+      "current": true,
+      "manifest": "0d9b492e437fa6f292cb05c77ad5bf4a1f22941b5944b91e45d3e2d1f7788d80",
+      "retained": "98fae6caccc23cf90ff3f89f02b2230c1878b0114f1fc6a4b29efccc5228f08f",
+      "historical_records_unchanged": true
+    },
+    {
+      "case": "ownership-binding-saved",
+      "result": "pass",
+      "expected": "accept",
+      "current": false,
+      "manifest": "a3f6a91ebc7d5145cae7e54deb8c63dcd94fe1a8928a21f4c71915705d623d39",
+      "retained": "b642372f4cba30db37b27eccbc5fe16313da95a48aee2e3f10a02313e5cc5646",
+      "historical_records_unchanged": true
+    },
+    {
+      "case": "ownership-binding-current",
+      "result": "pass",
+      "expected": "reject",
+      "current": true,
+      "manifest": "a3f6a91ebc7d5145cae7e54deb8c63dcd94fe1a8928a21f4c71915705d623d39",
+      "retained": "b642372f4cba30db37b27eccbc5fe16313da95a48aee2e3f10a02313e5cc5646",
+      "historical_records_unchanged": true
+    },
+    {
+      "case": "configuration-prefix-saved",
+      "result": "pass",
+      "expected": "accept",
+      "current": false,
+      "manifest": "9c0cd3e4421c539a8ae0c69d795577c1bbed1fd21b60b5d6d8e5c60ece83851b",
+      "retained": "288be0bde3dbac997f833da6df77561d1241ae1a2e3b7fa7ca4038738a68c1e5",
+      "historical_records_unchanged": true
+    },
+    {
+      "case": "configuration-prefix-current",
+      "result": "pass",
+      "expected": "reject",
+      "current": true,
+      "manifest": "9c0cd3e4421c539a8ae0c69d795577c1bbed1fd21b60b5d6d8e5c60ece83851b",
+      "retained": "288be0bde3dbac997f833da6df77561d1241ae1a2e3b7fa7ca4038738a68c1e5",
+      "historical_records_unchanged": true
+    },
+    {
+      "case": "root-bytes-saved",
+      "result": "pass",
+      "expected": "accept",
+      "current": false,
+      "manifest": "af1e098b14e5f66c5120ca2f8e75ac17fb155a7ddb1ed30e2a0bb7a055e1db3f",
+      "retained": "f1308c521d5df0808cc0bd03e5ce0acc7ddff132db3725304d74e096eb5cc985",
+      "historical_records_unchanged": true
+    },
+    {
+      "case": "root-bytes-current",
+      "result": "pass",
+      "expected": "reject",
+      "current": true,
+      "manifest": "af1e098b14e5f66c5120ca2f8e75ac17fb155a7ddb1ed30e2a0bb7a055e1db3f",
+      "retained": "f1308c521d5df0808cc0bd03e5ce0acc7ddff132db3725304d74e096eb5cc985",
+      "historical_records_unchanged": true
+    },
+    {
+      "case": "historical-observation-current",
+      "result": "pass",
+      "expected": "accept",
+      "current": true,
+      "manifest": "fc962bb6145ddde03ad78dc3977f6b253c3dc6363c7d0fedd52381f0be2422bc",
+      "retained": "50d1086f0f8ac139fb2d026ffcf3368c23e47a3ab7b4fa9459b82d4cfdb65382",
+      "historical_records_unchanged": true
+    }
+  ],
+  "scope": "fresh current-source verification in the same mount namespace, not admission or reboot identity migration"
+}

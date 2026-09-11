@@ -1,6 +1,6 @@
 # 保持したnative世代から実展開への接続
 
-`Pkg_Generation_Stage.Prepare_Root`はNIAGEN05の検証済み世代を内部root準備サービスへ渡す。
+`Pkg_Generation_Stage.Prepare_Root`はNIAGEN05/06の検証済み世代を内部root準備サービスへ渡す。
 単独のtar hashやサービス応答を公開認可にせず、既存のmandatory Authorizeを使う。
 service/account/設定の配布物は[service-deployment.ja.md](service-deployment.ja.md)を参照。
 製品の認可provider・installer/controller・公開コマンド・bootとの接続は別に必要である。
@@ -8,15 +8,18 @@ service/account/設定の配布物は[service-deployment.ja.md](service-deployme
 ## 呼出しの順序
 
 1. 有限期限と非特権callerを確認し、Verify_And_Holdで世代の全実体・journal・保持閉包を検査する。
-   世代lockとroot lockを保持する。新経路はroot archiveを持つv5だけを受け付ける。
+   世代lockとroot lockを保持する。root archiveを持つv5、または設定済みrootを明示的に束縛するv6を受け付ける。
 2. CASを再予約してmanifest pinと全保持内容・元DEB・論理所有権を再検証する。
    `stage:prepare-root`で、同じmanifest/stage/transaction/epoch/fenceの現在認可を確認する。
-3. 同じCAS内のNIAROOT1/2からtar hash・サイズ・entry数を読み、hash検査済みの読取専用FDを開く。
+3. 同じCAS内のNIAROOT1/2（v5）またはNIACRT01（v6）からtar hash・サイズ・entry数を読み、
+   hash検査済みの読取専用FDを開く。v6のroot_manifestは設定済みNIACRT01のdigestである。
    受渡し直前にも`stage:prepare-root`を呼ぶ。CASの実予約FDとtar FDをSCM_RIGHTSで渡す。
 4. 応答後も三つの予約を保持し、manifest binding・pin・全保持内容を再読し、
    `stage:root-prepared`で現在認可と期限を再確認する。その後に予約を解放する。
 
-既存Verify_And_HoldのCAS解放契約や世代wireは変更しない。
+v6では保存閉包の検査と、独立source providerから借用した現在のrootでのVerify_Currentも必須である。
+応答後にも再観測する。providerは操作全体にわたるsource排他を保持し、既定providerは拒否する。
+既存Verify_And_HoldのCAS解放契約とv1..v5のwireは変更しない。
 新経路だけがCASを再取得し、その後の全工程を同じ予約で行う。
 MC_Store.Native_Reservationは内部の借用FDを返すAPIであり、閉鎖・解錠・書込を許可しない。
 共有契約の正本で追加し、既存の生成工具でvendorと依存profileを更新する。
@@ -52,3 +55,9 @@ bankの過去結果を読むだけでは物理再検証や公開許可になら�
 [symlink(7)](https://man7.org/linux/man-pages/man7/symlink.7.html)、
 [chown(2)](https://man7.org/linux/man-pages/man2/chown.2.html)の所有者-1の意味にも従う。
 workerの属性照合を緩めたり、上流DEBを書き換えて配備したりしない。
+
+設定済み世代のVM試験は`worker/check_root_preparation.py --configured`を使う。
+同じmainが実構築・stage/engineの再予約・inspectionを行い、現在の空local設定とvendor退避を
+実workerで展開する。Python側も世代wire、保存recordとscope、送信した出力digest、展開内容、
+設定元の内容保持と退避先非作成を照合する。展開後の認可拒否でも非公開bankのextracted状態を保持する。
+このfixture用providerと鍵を本番adapterとして配備しない。
