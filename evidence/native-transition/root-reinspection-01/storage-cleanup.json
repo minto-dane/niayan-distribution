@@ -1,0 +1,34 @@
+{
+  "removed": [
+    {
+      "path": "vm-reinspection-01/test.qcow2",
+      "logical_bytes": 197888,
+      "allocated_bytes": 200704,
+      "reason": "completed private disposable VM overlay; source, packages and reports retained"
+    },
+    {
+      "path": "vm-reinspection-02/test.qcow2",
+      "logical_bytes": 22347776,
+      "allocated_bytes": 22290432,
+      "reason": "completed private disposable VM overlay; source, packages and reports retained"
+    },
+    {
+      "path": "vm-package-03/test.qcow2",
+      "logical_bytes": 28704768,
+      "allocated_bytes": 28647424,
+      "reason": "completed private disposable VM overlay; source, packages and reports retained"
+    },
+    {
+      "path": "vm-package-05/test.qcow2",
+      "logical_bytes": 41746432,
+      "allocated_bytes": 41689088,
+      "reason": "completed private disposable VM overlay; source, packages and reports retained"
+    }
+  ],
+  "allocated_bytes_removed": 92827648,
+  "free_bytes_before": 19673673728,
+  "free_bytes_after": 19766501376,
+  "visible_qemu_processes": [],
+  "full_host_fd_audit": false,
+  "base_and_accepted_vms_untouched": true
+}

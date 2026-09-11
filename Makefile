@@ -48,3 +48,8 @@ native-preparation-check: native-worker
 native-service-source:
 	test -n "$(SERVICE_SOURCE)"
 	python3 -B native/prepare_service_package.py --output "$(SERVICE_SOURCE)"
+
+.PHONY: native-reinspection-check
+native-reinspection-check: native-worker
+	test -n "$(WORKER_TEST_BASE)"
+	python3 -B native/worker/check_root_reinspection.py --worker "$(CURDIR)/build/native-worker/root-extract" --base "$(WORKER_TEST_BASE)" --report "$(CURDIR)/build/native-worker/reinspection-check.json"

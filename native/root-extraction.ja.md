@@ -78,3 +78,20 @@ tmpfs上の展開成功を永続媒体の電断試験と呼ばない。内部の
 [読取と展開のAPI](https://github.com/libarchive/libarchive/wiki/Examples)、
 [chrootの制約](https://man7.org/linux/man-pages/man2/chroot.2.html)、
 [tarの文字コード処理](https://github.com/libarchive/libarchive/blob/v3.7.4/libarchive/archive_read_support_format_tar.c)。
+
+## 読み取り専用rootの再検査
+
+ADR-0110。既存の七つの引数に末尾`--verify`を加えると、新たに展開せず既存rootを検査する。
+保護された親、実CAS予約、有限期限は同じで、rootの実mountはread-only/nodev/nosuid/noexecを必須とする。
+呼出し側が全writerとmountの排他を保持する。rootのowner/mode/内容は元tarの期待値と照合する。
+
+全tarを二回hashし、元のinode profileで照合する。再検査ではxattr集合の完全一致も要求し、
+追加されたuser/security属性を暗黙に許容しない。全pathを有界・相対・一意とし、openat2の
+BENEATH/NO_SYMLINKS/NO_XDEVを使用する。全期待directoryの列挙で余分な項目を拒否し、
+非directory inodeのgroupと実nlinkを照合して宣言以外のhardlinkを拒否する。
+
+disk writer、root時刻設定、symlink時刻復元、syncfsを実行しない。read-only mount上の読取で
+atime更新も行わない。成功時はverified、archive/entriesと実mount ID/device/inodeを返す。
+ctime/birthtime、未宣言flags、MAC policy全体をこの照合で認定しない。適用後の任意なrootを
+元tarと同じと仮定せず、全DEB効果を反映する期待値と段階別の検査は別に必要である。
+元のextracted応答や公開/起動stateは変更しない。[bank](root-bank.ja.md)が現在照合を仲介する。

@@ -1,0 +1,18 @@
+{
+  "result": "pass",
+  "source_export_and_package_match_current_source": true,
+  "source_files": 23,
+  "tests": {
+    "native/root_bank.py": "a82c7145015edd52a5767fd10a06ae6133913befb6b4c8f3a2bc30690f5f70aa",
+    "native/worker/check_root_extract.py": "e378149a97002d3b4f044a9cfb4ad57d4f350924b3b85f45ec5ec91fd2e59380",
+    "native/worker/check_root_bank.py": "005e43f75cb3097bc8253e1483697ecff905385c33a4433ece58061d197a36f9",
+    "native/worker/check_root_reinspection.py": "728e6e2b4beda51347ff28decc951df6b1da281266b3769391b75ff0759c1c58"
+  },
+  "packages": {
+    "niaos-root-preparation-dbgsym_0.3.0_amd64.deb": "15e88c57dbd6617832418152fc96bb1bb2281cf24a712566ab98717f3c05804c",
+    "niaos-root-preparation_0.3.0_amd64.deb": "57733331e9453dde91b9b2e4d667efde7ebca201f73bc856591bf946dd44629f",
+    "niaos-root-preparation_0.3.0.dsc": "d1be9b5a6fdc55b18e138e10c8920eaf2d09f0512b48e3261fecf57a54132f53",
+    "niaos-root-preparation_0.3.0.tar.xz": "b4b0b19782bfaf99ccc73e3067b9144becb2484dc31d559c2da655c97e567650"
+  },
+  "installed_worker_sha256": "b55000d2e21d96c8e75a9f36dda4bbcf5c77c9dbf42074fa39b1600b1c113322"
+}

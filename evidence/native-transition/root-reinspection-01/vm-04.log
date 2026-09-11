@@ -1,0 +1,10 @@
+Running as unit: run-p987597-i987897.scope; invocation ID: 0152176c71f54c9da89f8d4ecceaa658
+limited-exec: {"scope": "run-p987597-i987897.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+VM SSH ready
+Guest worker test exit 1
+/evidence/ssh-bin/scp: /tmp/nia-root-reinspection-final/extraction.json: No such file or directory
+/evidence/ssh-bin/scp: /tmp/nia-root-reinspection-final/bank.json: No such file or directory
+/evidence/ssh-bin/scp: /tmp/nia-root-reinspection-final/build-a.log: No such file or directory
+/evidence/ssh-bin/scp: /tmp/nia-root-reinspection-final/build-b.log: No such file or directory
+/evidence/ssh-bin/scp: /tmp/nia-root-reinspection-final/package-sha256.txt: No such file or directory
+/evidence/ssh-bin/scp: /tmp/nia-root-reinspection-final/install.log: No such file or directory

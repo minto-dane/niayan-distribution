@@ -1,0 +1,16 @@
+Linux niaos-builder 6.12.107+deb13-cloud-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.107-1 (2026-08-29) x86_64 GNU/Linux
+libarchive13t64:amd64	3.7.4-4+deb13u1
+libsodium23:amd64	1.0.18-1+deb13u1
+b55000d2e21d96c8e75a9f36dda4bbcf5c77c9dbf42074fa39b1600b1c113322  /usr/libexec/niaos/root-extract
+PASS root extraction: positive and negative clock roots, full filesystem observation, five refusal cases
+PASS actual root bank peer/FD/worker, retained reservation and restart
+PASS physical reinspection healthy
+PASS physical reinspection content
+PASS physical reinspection missing
+PASS physical reinspection extra
+PASS physical reinspection xattr
+PASS physical reinspection mode
+PASS physical reinspection outside-link
+PASS physical reinspection symlink
+PASS physical reinspection child-mount
+PASS frozen root reinspection, namespace, metadata, reservation and actual FD RPC

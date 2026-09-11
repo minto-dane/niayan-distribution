@@ -1,0 +1,36 @@
+Format: 1.8
+Date: Fri, 11 Sep 2026 08:11:41 +0000
+Source: niaos-root-preparation
+Binary: niaos-root-preparation niaos-root-preparation-dbgsym
+Architecture: source amd64
+Version: 0.3.0
+Distribution: unstable
+Urgency: medium
+Maintainer: NiaOS Developers <developers@niaos.invalid>
+Changed-By: NiaOS Developers <developers@niaos.invalid>
+Description:
+ niaos-root-preparation - Internal NiaOS root preparation service
+Changes:
+ niaos-root-preparation (0.3.0) unstable; urgency=medium
+ .
+   * Reinspect explicitly frozen roots against retained archives without writes.
+   * Bind fresh observations to the mount and inode under the caller reservation.
+   * Require complete namespaces, exact xattrs and declared inode link groups.
+Checksums-Sha1:
+ b965f6530b14246173bee9a17c3e0ab32891428e 660 niaos-root-preparation_0.3.0.dsc
+ 0e63468372cf76a5a2aae604200afc196f7ea9fb 23112 niaos-root-preparation_0.3.0.tar.xz
+ 9a112685d1c107b48180b2936432d34aee59dc70 31844 niaos-root-preparation-dbgsym_0.3.0_amd64.deb
+ 946e166de122ac46bd845275d1b4eb74e90a2e34 6530 niaos-root-preparation_0.3.0_amd64.buildinfo
+ b167b53dda7c7c626a0430cf0c63c6152849e08f 23720 niaos-root-preparation_0.3.0_amd64.deb
+Checksums-Sha256:
+ d1be9b5a6fdc55b18e138e10c8920eaf2d09f0512b48e3261fecf57a54132f53 660 niaos-root-preparation_0.3.0.dsc
+ b4b0b19782bfaf99ccc73e3067b9144becb2484dc31d559c2da655c97e567650 23112 niaos-root-preparation_0.3.0.tar.xz
+ 15e88c57dbd6617832418152fc96bb1bb2281cf24a712566ab98717f3c05804c 31844 niaos-root-preparation-dbgsym_0.3.0_amd64.deb
+ 861c52cc6f03f4d42c82c4a6dc1d0c74e059a1246f1cf3fdd5e2c3043797dbce 6530 niaos-root-preparation_0.3.0_amd64.buildinfo
+ 57733331e9453dde91b9b2e4d667efde7ebca201f73bc856591bf946dd44629f 23720 niaos-root-preparation_0.3.0_amd64.deb
+Files:
+ 95597e330ce6e06761f2c0dd15ac64e6 660 admin optional niaos-root-preparation_0.3.0.dsc
+ 6df7fe45f82cda9023700297c459efd0 23112 admin optional niaos-root-preparation_0.3.0.tar.xz
+ 2e64a05ec412c295f2aa55d99def3829 31844 debug optional niaos-root-preparation-dbgsym_0.3.0_amd64.deb
+ 90ddebcffdce35ed472c6f69d89c33e7 6530 admin optional niaos-root-preparation_0.3.0_amd64.buildinfo
+ 06c3f31dc04ac392bf90f0c0c1bf97ec 23720 admin optional niaos-root-preparation_0.3.0_amd64.deb

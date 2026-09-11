@@ -17,6 +17,12 @@ jobs:
           docker run --rm --network=none --user "$(id -u):$(id -g)" \
             --memory=3g --memory-swap=3g --cpus=1 --pids-limit=128 \
             -e HOME=/tmp -v "$PWD:/source" nia-native-tests
+      - name: Compile the native root worker with warnings as errors
+        run: |
+          docker run --rm --network=none --user "$(id -u):$(id -g)" \
+            --memory=3g --memory-swap=3g --cpus=1 --pids-limit=128 \
+            -e HOME=/tmp -v "$PWD:/source" nia-native-tests \
+            make native-worker
       - name: Exercise the public download command in a disposable root container
         run: |
           docker run --rm --network=none --user 0:0 \

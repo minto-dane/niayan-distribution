@@ -1,0 +1,8 @@
+Running as unit: run-p985198-i985498.scope; invocation ID: ae369ece8ebc4d2c9c8e585fa75dd95b
+limited-exec: {"scope": "run-p985198-i985498.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Formatting '/evidence/vm-reinspection-01/test.qcow2', fmt=qcow2 cluster_size=65536 extended_l2=off compression_type=zlib size=85899345920 backing_file=/vm-base/builder.qcow2 backing_fmt=qcow2 lazy_refcounts=off refcount_bits=16
+Traceback (most recent call last):
+  File "/evidence/vm-check-01.py", line 17, in <module>
+    if vm.poll() is not None:raise RuntimeError('QEMU stopped: '+str(vm.returncode))
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: QEMU stopped: 1

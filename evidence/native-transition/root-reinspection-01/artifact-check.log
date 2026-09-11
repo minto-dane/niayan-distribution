@@ -1,0 +1,3 @@
+Running as unit: run-p989820-i990120.scope; invocation ID: bb47bcfe6a69467c9a2ebc74b42cbfd6
+limited-exec: {"scope": "run-p989820-i990120.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+PASS exported source, packaged source, actual ELF, service and VM test inputs

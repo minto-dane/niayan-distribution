@@ -78,6 +78,18 @@ def private_directory(fd):
     return info
 
 
+def mount_identity(fd):
+    # Kernel-owned per-descriptor identity; no caller-provided filesystem path.
+    with open(f'/proc/self/fdinfo/{fd}', 'rb') as source:
+        raw = source.read(4097)
+    if len(raw) > 4096:
+        raise Rejected('mount-identity')
+    values = [line.split(b':', 1)[1].strip() for line in raw.splitlines() if line.startswith(b'mnt_id:')]
+    if len(values) != 1 or not values[0].isdigit() or int(values[0]) <= 0:
+        raise Rejected('mount-identity')
+    return int(values[0])
+
+
 def protected_mount(fd):
     required = os.ST_NODEV | os.ST_NOSUID | os.ST_NOEXEC
     if os.fstatvfs(fd).f_flag & required != required:
@@ -177,11 +189,7 @@ class Bank:
                 os.close(fd)
                 setattr(self, key, -1)
 
-    def prepare(self, request, archive_fd, lease_fd):
-        validate_request(request)
-        now = int(time.clock_gettime(time.CLOCK_BOOTTIME) * 1000)
-        if request['size'] < 1024 or request['size'] % 512 or not 0 < request['deadline_ms'] - now <= 600000:
-            raise Rejected('deadline-or-size')
+    def check_inputs(self, request, archive_fd, lease_fd):
         expected, lease = os.fstat(self.reservation), os.fstat(lease_fd)
         if lease.st_uid != self.client_uid or stat.S_IMODE(lease.st_mode) != 0o600 or lease.st_size != 0 or identity(expected) != identity(lease) or expected.st_nlink != 1 or lease.st_nlink != 1 or fcntl.fcntl(lease_fd, fcntl.F_GETFL) & os.O_ACCMODE != os.O_RDWR:
             raise Rejected('reservation-identity')
@@ -190,6 +198,83 @@ class Bank:
         source = os.fstat(archive_fd)
         if not stat.S_ISREG(source.st_mode) or source.st_size != request['size'] or fcntl.fcntl(archive_fd, fcntl.F_GETFL) & os.O_ACCMODE != os.O_RDONLY:
             raise Rejected('archive-descriptor')
+
+    def verify(self, request, archive_fd, lease_fd):
+        """Fresh inspection of an already extracted, independently read-only root.
+
+        The caller supplies newly admitted bindings and a finite current deadline.
+        This returns a point-in-time observation, not a durable publication permit.
+        No intent/result is rewritten and no interrupted extraction is resumed.
+        """
+        validate_request(request)
+        remaining = (request['deadline_ms'] - time.clock_gettime(time.CLOCK_BOOTTIME) * 1000) / 1000
+        if not 0 < remaining <= 600:
+            raise Rejected('deadline')
+        self.check_inputs(request, archive_fd, lease_fd)
+        stage = request['stage']
+        result = self.inspect(stage)
+        if result['state'] != 'extracted' or result['worker_sha256'] != self.worker_hash:
+            raise Rejected('extracted-worker-binding')
+        parent = os.open(stage, os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW | os.O_CLOEXEC, dir_fd=self.directory)
+        try:
+            private_directory(parent)
+            intent = read_record(parent, 'intent.json')
+            if any(request[key] != intent[key] for key in FIELDS - {'deadline_ms'}):
+                raise Rejected('verification-binding')
+            target = os.open('root', os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW | os.O_CLOEXEC, dir_fd=parent)
+            try:
+                protected_mount(target)
+                if not os.fstatvfs(target).f_flag & os.ST_RDONLY:
+                    raise Rejected('read-only-root')
+                before = os.fstat(target)
+                args = [self.worker, request['archive'], str(request['size']), str(request['entries']), str(request['deadline_ms']),
+                        str(archive_fd), str(parent), str(lease_fd), '--verify']
+                child = subprocess.Popen(args, executable=f'/proc/self/fd/{self.worker_fd}',
+                    pass_fds=(archive_fd, parent, lease_fd, self.worker_fd), stdin=subprocess.DEVNULL,
+                    stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                    env={'PATH': '/usr/sbin:/usr/bin:/sbin:/bin', 'LC_ALL': 'C.UTF-8'})
+                try:
+                    stdout, stderr = child.communicate(timeout=remaining + 1)
+                except BaseException:
+                    child.kill(); child.communicate(); raise
+                if child.returncode or stderr or len(stdout) > MAX_PACKET:
+                    raise Rejected('physical-verification')
+                observed = json.loads(stdout, object_pairs_hook=unique)
+                expected = {'result': 'verified', 'profile': 'linux-inode-v1', 'archive_sha256': request['archive'],
+                    'entries': request['entries'], 'published': False, 'inode': before.st_ino,
+                    'device_major': os.major(before.st_dev), 'device_minor': os.minor(before.st_dev),
+                    'mount_id': mount_identity(target)}
+                if type(observed) is not dict or set(observed) != set(expected) or any(
+                    type(observed[key]) is not type(value) or observed[key] != value for key, value in expected.items()
+                ) or type(observed['mount_id']) is not int or observed['mount_id'] <= 0:
+                    raise Rejected('verification-response')
+                # Keep an FD to the inspected tree and reject a changed entry or
+                # accepted extraction record before returning the observation.
+                current = os.open('root', os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW | os.O_CLOEXEC, dir_fd=parent)
+                try:
+                    unchanged = identity(os.fstat(current)) == identity(before) and mount_identity(current) == expected['mount_id']
+                    protected_mount(current)
+                    unchanged = unchanged and bool(os.fstatvfs(current).f_flag & os.ST_RDONLY)
+                finally:
+                    os.close(current)
+                self.check_inputs(request, archive_fd, lease_fd)
+                if not unchanged or self.inspect(stage) != result:
+                    raise Rejected('verification-changed')
+                if request['deadline_ms'] <= time.clock_gettime(time.CLOCK_BOOTTIME) * 1000:
+                    raise Rejected('deadline')
+                return dict(result, physical_revalidation=True, observation=observed,
+                    verification_deadline_ms=request['deadline_ms'])
+            finally:
+                os.close(target)
+        finally:
+            os.close(parent)
+
+    def prepare(self, request, archive_fd, lease_fd):
+        validate_request(request)
+        now = int(time.clock_gettime(time.CLOCK_BOOTTIME) * 1000)
+        if request['size'] < 1024 or request['size'] % 512 or not 0 < request['deadline_ms'] - now <= 600000:
+            raise Rejected('deadline-or-size')
+        self.check_inputs(request, archive_fd, lease_fd)
         stage = request['stage']
         os.mkdir(stage, mode=0o700, dir_fd=self.directory)
         os.fsync(self.directory)
@@ -277,6 +362,8 @@ class Bank:
             request = decode(raw)
             if type(request) is dict and set(request) == {'inspect'} and not descriptors:
                 result = self.inspect(request['inspect'])
+            elif type(request) is dict and set(request) == {'verify'} and len(descriptors) == 2:
+                result = self.verify(request['verify'], *descriptors)
             elif len(descriptors) == 2:
                 result = self.prepare(request, *descriptors)
             else:

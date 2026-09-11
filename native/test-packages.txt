@@ -1,9 +1,13 @@
 ca-certificates
 dpkg
-git
+gcc
 gettext
+git
 gnupg
 gpgv
+libarchive-dev
+libc6-dev
+libsodium-dev
 make
 python3
 python3-cryptography

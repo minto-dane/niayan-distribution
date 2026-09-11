@@ -250,8 +250,7 @@ static int verify(struct archive *disk, struct retained *record, struct input *i
     if ((actual_set & set) != set || (actual_set & clear)) error = -7;
     if (same_acl(expected, observed)) error = -8;
     if (same_declared_xattrs(expected, observed) || (rechecking &&
-        (archive_entry_xattr_count(expected) != archive_entry_xattr_count(observed) ||
-         same_declared_xattrs(observed, expected)))) error = -9;
+        archive_entry_xattr_count(expected) != archive_entry_xattr_count(observed))) error = -9;
     if (S_ISLNK(st.st_mode)) {
         const char *want = archive_entry_symlink(expected), *got = archive_entry_symlink(observed);
         if (!want || !got || strcmp(want, got)) error = -10;
@@ -396,7 +395,7 @@ int main(int argc, char **argv) {
     if (rechecking && !(fs.f_flag & ST_RDONLY)) return fail("read-only-root");
     struct statx root_identity;
     if (rechecking && (statx(target, "", AT_EMPTY_PATH | AT_SYMLINK_NOFOLLOW, STATX_BASIC_STATS | STATX_MNT_ID, &root_identity) ||
-        (root_identity.stx_mask & (STATX_MNT_ID | STATX_INO)) != (STATX_MNT_ID | STATX_INO))) return fail("root-identity");
+        !(root_identity.stx_mask & STATX_MNT_ID))) return fail("root-identity");
     if (dup2(target, 5) < 0) return fail("descriptors");
     if (target != 5) close(target);
     if (fchdir(5) || chroot(".") || chdir("/")) return fail("chroot");
