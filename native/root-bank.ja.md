@@ -88,3 +88,7 @@ verification_deadline_msを返す。inspectは引き続きphysical_revalidation:
 この観測は一時点のもの。root/leaseの継続保持と本番認可を伴うSDKへの引渡し、freezeの管理、実切替/boot、
 全DEB効果は未完である。応答を保存して将来の起動許可として再利用しない。
 `make native-reinspection-check WORKER_TEST_BASE=<使い捨てVMの専用mount>`で実worker・実FD RPCを検査する。
+
+内部controllerの権限縮小childだけは、検査済みのbank lock OFDを`inherited_lock`で共有できる。
+元のpath/owner/mode/link数を確認し、同じOFDをCLOEXECで複製する。公開RPCで任意lockを採用する変更ではない。
+[初回bank session](root-session.ja.md)を参照。

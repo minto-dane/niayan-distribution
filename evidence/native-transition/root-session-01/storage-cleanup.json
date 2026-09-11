@@ -1,0 +1,82 @@
+{
+  "removed": [
+    {
+      "path": "/home/nia/devbox/niaos/.work/native-root-session-01/vm-package-01/test.qcow2",
+      "logical_bytes": 50266112,
+      "allocated_bytes": 50208768
+    },
+    {
+      "path": "/home/nia/devbox/niaos/.work/native-root-session-01/vm-package-01/bank.raw",
+      "logical_bytes": 67108864,
+      "allocated_bytes": 4681728
+    },
+    {
+      "path": "/home/nia/devbox/niaos/.work/native-root-session-01/vm-package-02/test.qcow2",
+      "logical_bytes": 49414144,
+      "allocated_bytes": 49356800
+    },
+    {
+      "path": "/home/nia/devbox/niaos/.work/native-root-session-01/vm-package-02/bank.raw",
+      "logical_bytes": 67108864,
+      "allocated_bytes": 4661248
+    },
+    {
+      "path": "/home/nia/devbox/niaos/.work/native-root-session-01/vm-test-03/test.qcow2",
+      "logical_bytes": 46530560,
+      "allocated_bytes": 46473216
+    },
+    {
+      "path": "/home/nia/devbox/niaos/.work/native-root-session-01/vm-test-03/bank.raw",
+      "logical_bytes": 67108864,
+      "allocated_bytes": 4681728
+    },
+    {
+      "path": "/home/nia/devbox/niaos/.work/native-root-session-01/vm-test-04/test.qcow2",
+      "logical_bytes": 45613056,
+      "allocated_bytes": 45555712
+    },
+    {
+      "path": "/home/nia/devbox/niaos/.work/native-root-session-01/vm-test-04/bank.raw",
+      "logical_bytes": 67108864,
+      "allocated_bytes": 4681728
+    },
+    {
+      "path": "/home/nia/devbox/niaos/.work/native-root-session-01/vm-test-05/test.qcow2",
+      "logical_bytes": 45547520,
+      "allocated_bytes": 45490176
+    },
+    {
+      "path": "/home/nia/devbox/niaos/.work/native-root-session-01/vm-test-05/bank.raw",
+      "logical_bytes": 67108864,
+      "allocated_bytes": 4681728
+    },
+    {
+      "path": "/home/nia/devbox/niaos/.work/native-root-session-01/vm-test-06/test.qcow2",
+      "logical_bytes": 45547520,
+      "allocated_bytes": 45490176
+    },
+    {
+      "path": "/home/nia/devbox/niaos/.work/native-root-session-01/vm-test-06/bank.raw",
+      "logical_bytes": 67108864,
+      "allocated_bytes": 8728576
+    },
+    {
+      "path": "/home/nia/devbox/niaos/.work/native-root-session-01/vm-package-07/test.qcow2",
+      "logical_bytes": 50528256,
+      "allocated_bytes": 50470912
+    },
+    {
+      "path": "/home/nia/devbox/niaos/.work/native-root-session-01/vm-package-07/bank.raw",
+      "logical_bytes": 67108864,
+      "allocated_bytes": 4681728
+    }
+  ],
+  "allocated_bytes": 369844224,
+  "all_vm_jobs_exited": true,
+  "preserved": [
+    "builder base and accepted VMs",
+    "package sources and build outputs for all attempts",
+    "input archives and logs",
+    "accepted SDK and native initializer builds"
+  ]
+}

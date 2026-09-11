@@ -10,6 +10,8 @@ AssertPathExists=/var/lib/niaos/roots/bank.json
 AssertPathExists=/var/lib/niaos/roots/bank.lock
 AssertPathExists=/var/lib/niaos/core/store/store.lock
 
+AssertPathExists=!/var/lib/niaos/root-session.json
+
 [Service]
 Type=exec
 User=root

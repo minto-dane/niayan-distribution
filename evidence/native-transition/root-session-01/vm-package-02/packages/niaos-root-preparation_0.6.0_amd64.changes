@@ -1,0 +1,36 @@
+Format: 1.8
+Date: Fri, 11 Sep 2026 12:00:00 +0000
+Source: niaos-root-preparation
+Binary: niaos-root-preparation niaos-root-preparation-dbgsym
+Architecture: source amd64
+Version: 0.6.0
+Distribution: trixie
+Urgency: medium
+Maintainer: NiaOS Developers <developers@niaos.invalid>
+Changed-By: NiaOS Developers <developers@niaos.invalid>
+Description:
+ niaos-root-preparation - Internal NiaOS root preparation service
+Changes:
+ niaos-root-preparation (0.6.0) trixie; urgency=medium
+ .
+   * Add root-supervisor sessions for first-use dedicated bank preparation.
+   * Retain bank reservation through readonly observation and explicit release.
+   * Reduce child capabilities and seal storage after controller service stop.
+Checksums-Sha1:
+ c7aa7d1777b96d0faefdeb88c7f7f17b624053d2 660 niaos-root-preparation_0.6.0.dsc
+ 17dce0e3986992fc6c2eed6792b4d7affbee4c92 31388 niaos-root-preparation_0.6.0.tar.xz
+ 212bc5ae21742dbedadaa895c56efc5fece66929 31860 niaos-root-preparation-dbgsym_0.6.0_amd64.deb
+ 7e564872414b535d7010ee5fedf031263557cf04 6530 niaos-root-preparation_0.6.0_amd64.buildinfo
+ 1083beca0cf397cbd0b165680ddfd1b8144d026a 32220 niaos-root-preparation_0.6.0_amd64.deb
+Checksums-Sha256:
+ c28138bd86368a3025346b3c009f57787475dd45cb20f79cc29a75f7a76434b2 660 niaos-root-preparation_0.6.0.dsc
+ 998485c787051280cb4c8e32d1f5cf6005abdb65a9f9ea28f030dfa25c4a0911 31388 niaos-root-preparation_0.6.0.tar.xz
+ 989c21a7e5941e10cefb471b63c898855e384a7345964a2929544ce66208e362 31860 niaos-root-preparation-dbgsym_0.6.0_amd64.deb
+ 64f19279242c07f6ed7c52835d6e62f6d942a6ea28ef86ea40559228dc85abdf 6530 niaos-root-preparation_0.6.0_amd64.buildinfo
+ c914680d0ea4363d81b53f210d70031c441303e34f2d35580bd9abdf40c853c3 32220 niaos-root-preparation_0.6.0_amd64.deb
+Files:
+ 4ac5a15faf18d71643bc1cdd75fbca41 660 admin optional niaos-root-preparation_0.6.0.dsc
+ fbf85eca17f09a4964e3ebe94a1fc7b6 31388 admin optional niaos-root-preparation_0.6.0.tar.xz
+ 7f9b8fb9d6adbf44ed000d2587b9ba19 31860 debug optional niaos-root-preparation-dbgsym_0.6.0_amd64.deb
+ 83982b24839182371a67f030a2f2bae4 6530 admin optional niaos-root-preparation_0.6.0_amd64.buildinfo
+ fa9a62f5f828adc00ff8d4df9c6e7e8b 32220 admin optional niaos-root-preparation_0.6.0_amd64.deb

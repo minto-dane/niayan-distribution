@@ -1,0 +1,26 @@
+Sep 11 20:09:16 niaos-builder systemd[1]: Mounting var-lib-niaos-roots.mount - NiaOS dedicated inactive root storage...
+Sep 11 20:09:16 niaos-builder systemd[1]: Mounted var-lib-niaos-roots.mount - NiaOS dedicated inactive root storage.
+Sep 11 20:09:16 niaos-builder systemd[1]: Starting niaos-root-bank-check.service - NiaOS root bank device identity check...
+Sep 11 20:09:16 niaos-builder python3[953]: {"format": 1, "identity": {"device_major": 254, "device_minor": 17, "inode": 2, "mount_id": 326}, "readonly": true, "status": "bank-device-checked"}
+Sep 11 20:09:16 niaos-builder systemd[1]: niaos-root-bank-check.service: Deactivated successfully.
+Sep 11 20:09:16 niaos-builder systemd[1]: Finished niaos-root-bank-check.service - NiaOS root bank device identity check.
+Sep 11 20:09:16 niaos-builder systemd[1]: Starting niaos-root-preparation.service - NiaOS internal root preparation...
+Sep 11 20:09:16 niaos-builder systemd[1]: Started niaos-root-preparation.service - NiaOS internal root preparation.
+Sep 11 20:09:17 niaos-builder systemd[1]: Stopping niaos-root-preparation.service - NiaOS internal root preparation...
+Sep 11 20:09:17 niaos-builder systemd[1]: niaos-root-preparation.service: Deactivated successfully.
+Sep 11 20:09:17 niaos-builder systemd[1]: Stopped niaos-root-preparation.service - NiaOS internal root preparation.
+Sep 11 20:09:17 niaos-builder systemd[1]: Starting niaos-root-bank-check.service - NiaOS root bank device identity check...
+Sep 11 20:09:17 niaos-builder python3[969]: {"format": 1, "identity": {"device_major": 254, "device_minor": 17, "inode": 2, "mount_id": 326}, "readonly": true, "status": "bank-device-checked"}
+Sep 11 20:09:17 niaos-builder systemd[1]: niaos-root-bank-check.service: Deactivated successfully.
+Sep 11 20:09:17 niaos-builder systemd[1]: Finished niaos-root-bank-check.service - NiaOS root bank device identity check.
+Sep 11 20:09:17 niaos-builder systemd[1]: Starting niaos-root-session.service - NiaOS dedicated bank session controller...
+Sep 11 20:09:17 niaos-builder systemd[1]: Started niaos-root-session.service - NiaOS dedicated bank session controller.
+Sep 11 20:09:17 niaos-builder python3[974]: {"error":"Rejected","event":"controller-refusal","reason":"controller-worker-pin"}
+Sep 11 20:09:17 niaos-builder python3[974]: {"error":"Rejected","event":"controller-refusal","reason":"controller-bank-selection"}
+Sep 11 20:09:17 niaos-builder python3[974]: {"error":"Rejected","event":"controller-refusal","reason":"controller-device-plan"}
+Sep 11 20:09:17 niaos-builder python3[974]: {"error":"Rejected","event":"controller-refusal","reason":"controller-request"}
+Sep 11 20:09:17 niaos-builder systemd[1]: niaos-root-session.service: Sent signal SIGKILL to main process 974 (python3) on client request.
+Sep 11 20:09:17 niaos-builder systemd[1]: niaos-root-session.service: Killed unit cgroup with SIGKILL on client request.
+Sep 11 20:09:17 niaos-builder systemd[1]: niaos-root-session.service: Main process exited, code=killed, status=9/KILL
+Sep 11 20:09:17 niaos-builder systemd[1]: niaos-root-session.service: Control process exited, code=killed, status=9/KILL
+Sep 11 20:09:17 niaos-builder systemd[1]: niaos-root-session.service: Failed with result 'signal'.

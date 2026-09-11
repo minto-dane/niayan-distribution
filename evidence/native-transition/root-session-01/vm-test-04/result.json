@@ -1,0 +1,38 @@
+{
+  "result": "pass",
+  "ending": "disconnect",
+  "unauthorized_user_refused": true,
+  "refusals": [
+    "wrong-worker",
+    "wrong-mount",
+    "wrong-device-plan",
+    "missing-descriptors"
+  ],
+  "ready": {
+    "deadline_ms": 73497,
+    "observation": {
+      "original_deadline_ms": 73497,
+      "root": {
+        "device_major": 254,
+        "device_minor": 17,
+        "inode": 15,
+        "mount_id": 68
+      }
+    },
+    "published": false,
+    "stage": "11111111111111111111111111111111",
+    "state": "frozen",
+    "version": 1
+  },
+  "cas_reacquired_before_observe": true,
+  "bank_retained_until_end": true,
+  "original_tree_and_records_unchanged": true,
+  "bank_readonly_after_end": true,
+  "attempt_sha256": "13c92b308bc174b667bc59194c21449eefde343630627dc756dad5cc72e7d181",
+  "reused_bank_refused": true,
+  "stop_hook_after_privileged_drift": false,
+  "boot_id": "4d7dcaa5-c279-41f6-87d3-ae34ee79a56b",
+  "site_admission_fixture": true,
+  "native_sdk_connected": false,
+  "boot_switched": false
+}

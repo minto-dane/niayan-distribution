@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: BSD-3-Clause
+[Unit]
+Description=NiaOS independent bank seal after controller failure
+Requires=var-lib-niaos-roots.mount
+After=var-lib-niaos-roots.mount niaos-root-session.service
+
+[Service]
+Type=oneshot
+User=root
+Group=root
+ExecStart=/usr/bin/python3 -I /usr/libexec/niaos/root_session.py --seal-bank
+UMask=0077
+NoNewPrivileges=yes
+CapabilityBoundingSet=CAP_SYS_ADMIN CAP_DAC_OVERRIDE
+RestrictAddressFamilies=AF_UNIX
+RestrictNamespaces=yes
+SystemCallArchitectures=native
+LockPersonality=yes
+MemoryDenyWriteExecute=yes
+LimitCORE=0
+LimitNOFILE=64
+MemoryMax=128M
+MemorySwapMax=0
+CPUQuota=100%
+TasksMax=8
+TimeoutStartSec=45

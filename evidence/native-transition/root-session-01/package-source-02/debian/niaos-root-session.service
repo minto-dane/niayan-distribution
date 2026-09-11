@@ -1,0 +1,33 @@
+# SPDX-License-Identifier: BSD-3-Clause
+[Unit]
+Description=NiaOS dedicated bank session controller
+BindsTo=var-lib-niaos-roots.mount
+Requires=niaos-root-session.socket niaos-root-bank-check.service
+After=var-lib-niaos-roots.mount niaos-root-bank-check.service
+
+[Service]
+Type=exec
+User=root
+Group=root
+ExecStart=/usr/bin/python3 -I /usr/libexec/niaos/root_session.py
+ExecStopPost=/usr/bin/python3 -I /usr/libexec/niaos/root_session.py --seal-bank
+UMask=0077
+Restart=no
+KillMode=control-group
+OOMPolicy=kill
+TimeoutStopSec=15
+NoNewPrivileges=yes
+CapabilityBoundingSet=CAP_SYS_ADMIN CAP_SETPCAP CAP_CHOWN CAP_DAC_OVERRIDE CAP_FOWNER CAP_FSETID CAP_MKNOD CAP_SETFCAP CAP_SYS_CHROOT
+# The controller owns host mount changes. Namespace-producing protection
+# directives would change the independently expected mount identity.
+RestrictAddressFamilies=AF_UNIX
+RestrictNamespaces=yes
+SystemCallArchitectures=native
+LockPersonality=yes
+MemoryDenyWriteExecute=yes
+LimitCORE=0
+LimitNOFILE=64
+MemoryMax=1G
+MemorySwapMax=0
+CPUQuota=100%
+TasksMax=32

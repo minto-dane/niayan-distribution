@@ -1,0 +1,4 @@
+989c21a7e5941e10cefb471b63c898855e384a7345964a2929544ce66208e362  build-a/niaos-root-preparation-dbgsym_0.6.0_amd64.deb
+fff04ad032de0768e34af8d2390f307dcbe892d0521540c395d4c8859d9f55a1  build-a/niaos-root-preparation_0.6.0_amd64.deb
+c450ff0e9804a0a9cb2dbced6899a6b589ae88d1e315296c2222c23ba4967dc2  build-a/niaos-root-preparation_0.6.0.dsc
+e660b3cd49205191fdfc06245f96a4350d429570fdf5a8d9cf3e97d7ea1aec5a  build-a/niaos-root-preparation_0.6.0.tar.xz

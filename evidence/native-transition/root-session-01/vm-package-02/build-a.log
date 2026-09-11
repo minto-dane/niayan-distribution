@@ -1,0 +1,83 @@
+dpkg-buildpackage: info: source package niaos-root-preparation
+dpkg-buildpackage: info: source version 0.6.0
+dpkg-buildpackage: info: source distribution trixie
+dpkg-buildpackage: info: source changed by NiaOS Developers <developers@niaos.invalid>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture amd64
+ debian/rules clean
+dh clean
+   debian/rules override_dh_auto_clean
+make[1]: Entering directory '/home/builder/nia-root-session-02/build-a/source'
+/usr/bin/make -C native/worker clean
+make[2]: Entering directory '/home/builder/nia-root-session-02/build-a/source/native/worker'
+rm -f ../../build/native-worker/root-extract ../../build/native-worker/check-tar-clocks
+make[2]: Leaving directory '/home/builder/nia-root-session-02/build-a/source/native/worker'
+rm -rf build native/__pycache__
+make[1]: Leaving directory '/home/builder/nia-root-session-02/build-a/source'
+   dh_clean
+ dpkg-source -b .
+dpkg-source: info: using source format '3.0 (native)'
+dpkg-source: info: building niaos-root-preparation in niaos-root-preparation_0.6.0.tar.xz
+dpkg-source: info: building niaos-root-preparation in niaos-root-preparation_0.6.0.dsc
+ debian/rules binary
+dh binary
+   dh_update_autotools_config
+   dh_autoreconf
+   debian/rules override_dh_auto_build
+make[1]: Entering directory '/home/builder/nia-root-session-02/build-a/source'
+/usr/bin/make -C native/worker BUILD=../../build/native-worker -j1
+make[2]: Entering directory '/home/builder/nia-root-session-02/build-a/source/native/worker'
+mkdir -p ../../build/native-worker
+cc -Wdate-time -D_FORTIFY_SOURCE=3 -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/home/builder/nia-root-session-02/build-a/source=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -ffile-prefix-map=/home/builder/nia-root-session-02/build-a/source=/usr/src/niaos/root-preparation -gno-record-gcc-switches -std=c11 -Wall -Wextra -Werror -fstack-protector-strong -fPIE -Wl,-z,relro -Wl,-z,now -pie -Wl,-z,relro,-z,now,-z,noexecstack root_extract.c tar_clocks.c -larchive -lsodium -o ../../build/native-worker/root-extract
+make[2]: Leaving directory '/home/builder/nia-root-session-02/build-a/source/native/worker'
+make[1]: Leaving directory '/home/builder/nia-root-session-02/build-a/source'
+   debian/rules override_dh_auto_test
+make[1]: Entering directory '/home/builder/nia-root-session-02/build-a/source'
+/usr/bin/make -C native/worker BUILD=../../build/native-worker check -j1
+make[2]: Entering directory '/home/builder/nia-root-session-02/build-a/source/native/worker'
+mkdir -p ../../build/native-worker
+cc -Wdate-time -D_FORTIFY_SOURCE=3 -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/home/builder/nia-root-session-02/build-a/source=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -ffile-prefix-map=/home/builder/nia-root-session-02/build-a/source=/usr/src/niaos/root-preparation -gno-record-gcc-switches -std=c11 -Wall -Wextra -Werror -fstack-protector-strong -fPIE -Wl,-z,relro -Wl,-z,now -pie -Wl,-z,relro,-z,now,-z,noexecstack check_tar_clocks.c tar_clocks.c -larchive -o ../../build/native-worker/check-tar-clocks
+python3 -B check_tar_clocks.py --driver ../../build/native-worker/check-tar-clocks
+PASS tar clocks: 34 independent wire cases (signed limits are format checks only)
+make[2]: Leaving directory '/home/builder/nia-root-session-02/build-a/source/native/worker'
+python3 -B -m py_compile native/root_bank.py native/root_freeze.py native/bank_device.py native/storage_bootstrap.py native/root_session.py native/root_session_worker.py
+make[1]: Leaving directory '/home/builder/nia-root-session-02/build-a/source'
+   create-stamp debian/debhelper-build-stamp
+   dh_prep
+   dh_install
+   debian/rules execute_after_dh_install
+make[1]: Entering directory '/home/builder/nia-root-session-02/build-a/source'
+dh_installsysusers
+make[1]: Leaving directory '/home/builder/nia-root-session-02/build-a/source'
+   dh_installdocs
+   dh_installchangelogs
+   dh_installinit
+   debian/rules override_dh_installsystemd
+make[1]: Entering directory '/home/builder/nia-root-session-02/build-a/source'
+dh_installsystemd --no-enable --no-start
+make[1]: Leaving directory '/home/builder/nia-root-session-02/build-a/source'
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+   dh_compress
+   debian/rules override_dh_fixperms
+make[1]: Entering directory '/home/builder/nia-root-session-02/build-a/source'
+dh_fixperms
+chmod 0600 debian/niaos-root-preparation/etc/niaos/root-preparation.json
+make[1]: Leaving directory '/home/builder/nia-root-session-02/build-a/source'
+   dh_missing
+   dh_dwz -a
+   dh_strip -a
+   dh_makeshlibs -a
+   dh_shlibdeps -a
+   dh_installdeb
+   dh_gencontrol
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package 'niaos-root-preparation' in '../niaos-root-preparation_0.6.0_amd64.deb'.
+dpkg-deb: building package 'niaos-root-preparation-dbgsym' in '../niaos-root-preparation-dbgsym_0.6.0_amd64.deb'.
+ dpkg-genbuildinfo -O../niaos-root-preparation_0.6.0_amd64.buildinfo
+ dpkg-genchanges -O../niaos-root-preparation_0.6.0_amd64.changes
+dpkg-genchanges: info: including full source code in upload
+ dpkg-source --after-build .
+dpkg-buildpackage: info: full upload; Debian-native package (full source is included)

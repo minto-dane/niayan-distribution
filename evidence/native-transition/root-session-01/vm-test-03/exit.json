@@ -1,0 +1,8 @@
+{
+  "worker_exit": 0,
+  "qemu_exit": 0,
+  "base_read_only": true,
+  "ram_mib": 2048,
+  "vcpus": 1,
+  "network": "restricted guest; container loopback SSH only"
+}

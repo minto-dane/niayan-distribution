@@ -151,7 +151,7 @@ def provision_bank(path):
 
 
 class Bank:
-    def __init__(self, path, reservation_path, worker, client_uid):
+    def __init__(self, path, reservation_path, worker, client_uid, *, inherited_lock=None):
         if os.getuid() or os.geteuid() or type(client_uid) is not int or client_uid <= 0:
             raise Rejected('privilege')
         self.directory = self.lock = self.reservation = self.worker_fd = -1
@@ -171,6 +171,16 @@ class Bank:
             info = os.fstat(self.lock)
             if not stat.S_ISREG(info.st_mode) or info.st_uid or info.st_nlink != 1 or stat.S_IMODE(info.st_mode) != 0o600:
                 raise Rejected('bank-lock')
+            if inherited_lock is not None:
+                # A private supervisor may share its already held bank OFD with
+                # a worker whose capability bounding set has been reduced.
+                held = os.fstat(inherited_lock)
+                if (identity(held) != identity(info) or held.st_uid or held.st_nlink != 1
+                        or stat.S_IMODE(held.st_mode) != 0o600
+                        or fcntl.fcntl(inherited_lock, fcntl.F_GETFL) & os.O_ACCMODE != os.O_RDONLY):
+                    raise Rejected('inherited-bank-reservation')
+                duplicate = fcntl.fcntl(inherited_lock, fcntl.F_DUPFD_CLOEXEC, 3)
+                os.close(self.lock); self.lock = duplicate
             fcntl.flock(self.lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
             if read_record(self.directory, 'bank.json') != {'version': 1, 'purpose': 'inactive-root-preparation'}:
                 raise Rejected('bank-format')

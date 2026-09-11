@@ -1,0 +1,38 @@
+Sep 11 20:06:57 niaos-builder systemd[1]: Mounting var-lib-niaos-roots.mount - NiaOS dedicated inactive root storage...
+Sep 11 20:06:57 niaos-builder systemd[1]: Mounted var-lib-niaos-roots.mount - NiaOS dedicated inactive root storage.
+Sep 11 20:06:58 niaos-builder systemd[1]: Starting niaos-root-bank-check.service - NiaOS root bank device identity check...
+Sep 11 20:06:58 niaos-builder python3[967]: {"format": 1, "identity": {"device_major": 254, "device_minor": 17, "inode": 2, "mount_id": 327}, "readonly": true, "status": "bank-device-checked"}
+Sep 11 20:06:58 niaos-builder systemd[1]: niaos-root-bank-check.service: Deactivated successfully.
+Sep 11 20:06:58 niaos-builder systemd[1]: Finished niaos-root-bank-check.service - NiaOS root bank device identity check.
+Sep 11 20:06:58 niaos-builder systemd[1]: Starting niaos-root-preparation.service - NiaOS internal root preparation...
+Sep 11 20:06:58 niaos-builder systemd[1]: Started niaos-root-preparation.service - NiaOS internal root preparation.
+Sep 11 20:06:58 niaos-builder systemd[1]: Stopping niaos-root-preparation.service - NiaOS internal root preparation...
+Sep 11 20:06:58 niaos-builder systemd[1]: niaos-root-preparation.service: Deactivated successfully.
+Sep 11 20:06:58 niaos-builder systemd[1]: Stopped niaos-root-preparation.service - NiaOS internal root preparation.
+Sep 11 20:06:58 niaos-builder systemd[1]: Starting niaos-root-bank-check.service - NiaOS root bank device identity check...
+Sep 11 20:06:58 niaos-builder python3[982]: {"format": 1, "identity": {"device_major": 254, "device_minor": 17, "inode": 2, "mount_id": 327}, "readonly": true, "status": "bank-device-checked"}
+Sep 11 20:06:58 niaos-builder systemd[1]: niaos-root-bank-check.service: Deactivated successfully.
+Sep 11 20:06:58 niaos-builder systemd[1]: Finished niaos-root-bank-check.service - NiaOS root bank device identity check.
+Sep 11 20:06:58 niaos-builder systemd[1]: Starting niaos-root-session.service - NiaOS dedicated bank session controller...
+Sep 11 20:06:58 niaos-builder systemd[1]: Started niaos-root-session.service - NiaOS dedicated bank session controller.
+Sep 11 20:06:58 niaos-builder python3[987]: {"error":"Rejected","event":"controller-refusal","reason":"controller-worker-pin"}
+Sep 11 20:06:58 niaos-builder python3[987]: {"error":"Rejected","event":"controller-refusal","reason":"controller-bank-selection"}
+Sep 11 20:06:58 niaos-builder python3[987]: {"error":"Rejected","event":"controller-refusal","reason":"controller-device-plan"}
+Sep 11 20:06:58 niaos-builder python3[987]: {"error":"Rejected","event":"controller-refusal","reason":"controller-request"}
+Sep 11 20:06:59 niaos-builder python3[987]: {"error":"Rejected","event":"controller-refusal","reason":"controller-bank-not-fresh"}
+Sep 11 20:06:59 niaos-builder systemd[1]: Stopping niaos-root-session.service - NiaOS dedicated bank session controller...
+Sep 11 20:06:59 niaos-builder python3[1007]: {"published":false,"state":"bank-sealed-after-stop","version":1}
+Sep 11 20:06:59 niaos-builder systemd[1]: niaos-root-session.service: Deactivated successfully.
+Sep 11 20:06:59 niaos-builder systemd[1]: Stopped niaos-root-session.service - NiaOS dedicated bank session controller.
+Sep 11 20:07:00 niaos-builder systemd[1]: Unmounting var-lib-niaos-roots.mount - NiaOS dedicated inactive root storage...
+Sep 11 20:07:00 niaos-builder systemd[1]: var-lib-niaos-roots.mount: Deactivated successfully.
+Sep 11 20:07:00 niaos-builder systemd[1]: Unmounted var-lib-niaos-roots.mount - NiaOS dedicated inactive root storage.
+-- Boot 017edd0d5fc9419ea18225303b6cf31f --
+Sep 11 20:07:10 niaos-builder systemd[1]: Mounting var-lib-niaos-roots.mount - NiaOS dedicated inactive root storage...
+Sep 11 20:07:10 niaos-builder systemd[1]: Mounted var-lib-niaos-roots.mount - NiaOS dedicated inactive root storage.
+Sep 11 20:07:10 niaos-builder systemd[1]: Starting niaos-root-bank-check.service - NiaOS root bank device identity check...
+Sep 11 20:07:11 niaos-builder python3[657]: {"format": 1, "identity": {"device_major": 254, "device_minor": 17, "inode": 2, "mount_id": 326}, "readonly": true, "status": "bank-device-checked"}
+Sep 11 20:07:11 niaos-builder systemd[1]: niaos-root-bank-check.service: Deactivated successfully.
+Sep 11 20:07:11 niaos-builder systemd[1]: Finished niaos-root-bank-check.service - NiaOS root bank device identity check.
+Sep 11 20:07:11 niaos-builder systemd[1]: niaos-root-preparation.service: Starting requested but asserts failed.
+Sep 11 20:07:11 niaos-builder systemd[1]: Assertion failed for niaos-root-preparation.service - NiaOS internal root preparation.

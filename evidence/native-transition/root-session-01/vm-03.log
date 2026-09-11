@@ -1,0 +1,6 @@
+Running as unit: run-p1132653-i1132953.scope; invocation ID: ab33dfaa48d54c0b8907d0a6f83dc6c2
+limited-exec: {"scope": "run-p1132653-i1132953.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Formatting '/evidence/vm-test-03/test.qcow2', fmt=qcow2 cluster_size=65536 extended_l2=off compression_type=zlib size=85899345920 backing_file=/vm-base/builder.qcow2 backing_fmt=qcow2 lazy_refcounts=off refcount_bits=16
+Formatting '/evidence/vm-test-03/bank.raw', fmt=raw size=67108864
+VM SSH ready
+Guest worker test exit 0

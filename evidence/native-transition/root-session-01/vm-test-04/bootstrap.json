@@ -1,0 +1,58 @@
+{
+  "result": "awaiting-reboot",
+  "plan": {
+    "version": 1,
+    "partition_uuid": "8ebcbeaf-2978-4caa-ae49-09b3a1dd59aa",
+    "filesystem_uuid": "0f082bed-1ca9-4486-a460-c9e11caadac7",
+    "size_bytes": 65011712
+  },
+  "observed": {
+    "format": 1,
+    "identity": {
+      "device_major": 254,
+      "device_minor": 17,
+      "inode": 2,
+      "mount_id": 68
+    },
+    "readonly": true,
+    "status": "bank-device-checked"
+  },
+  "snapshot": {
+    "bootstrap.json": [
+      29255,
+      "e6944e417e91ebbf1b22b83a1509cba292a3b54e0639d5415eb46f92894a479a"
+    ],
+    "bootstrap-complete.json": [
+      29684,
+      "67dabab5d6e74dc74d83566865dc04bf425f2b730f938e7daf9daeafd4d4aacd"
+    ],
+    "core/store/store.lock": [
+      29496,
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    "roots/bank.json": [
+      11,
+      "f0798576b3c4af2cbd8b289d572df90c49a7f963d1365047cb5538235fa9c8b4"
+    ],
+    "roots/bank.lock": [
+      13,
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ]
+  },
+  "boot_id": "4d7dcaa5-c279-41f6-87d3-ae34ee79a56b",
+  "bootstrap_refusal_cases": [
+    "missing-device-plan",
+    "incorrect-filesystem_uuid",
+    "incorrect-size_bytes",
+    "preexisting-core",
+    "preexisting-roots",
+    "preexisting-bootstrap.json",
+    "preexisting-bootstrap-complete.json"
+  ],
+  "retry_refused": true,
+  "service_activated_only_by_test": true,
+  "service_properties": "CapabilityBoundingSet=cap_chown cap_dac_override cap_fowner cap_fsetid cap_sys_chroot cap_mknod cap_setfcap\nActiveState=active\n",
+  "installer_formats_device": false,
+  "boot_switch_tested": false,
+  "site_authorization": false
+}

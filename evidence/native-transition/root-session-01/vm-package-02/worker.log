@@ -1,0 +1,27 @@
+Checking that no-one is using this disk right now ... OK
+
+Disk /dev/vdb: 64 MiB, 67108864 bytes, 131072 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+>>> Script header accepted.
+>>> Created a new GPT disklabel (GUID: A4F30CBD-D660-46DD-9F15-AC776A28E3F5).
+/dev/vdb1: Created a new partition 1 of type 'Linux filesystem' and of size 62 MiB.
+/dev/vdb2: Done.
+
+New situation:
+Disklabel type: gpt
+Disk identifier: A4F30CBD-D660-46DD-9F15-AC776A28E3F5
+
+Device     Start    End Sectors Size Type
+/dev/vdb1   2048 129023  126976  62M Linux filesystem
+
+The partition table has been altered.
+Calling ioctl() to re-read partition table.
+Syncing disks.
+Linux niaos-builder 6.12.107+deb13-cloud-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.107-1 (2026-08-29) x86_64 GNU/Linux
+b55000d2e21d96c8e75a9f36dda4bbcf5c77c9dbf42074fa39b1600b1c113322  /usr/libexec/niaos/root-extract
+1a163c364f589b77f1fc30bc6a4a5f44232c631c9d70b4152ffd4847cf154300  /usr/libexec/nia/pkg_store_bootstrap
+cat: '/run/prior-session/*/result.json': No such file or directory
+cat: '/run/prior-session/*/worker.json': No such file or directory

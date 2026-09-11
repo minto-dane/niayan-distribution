@@ -46,8 +46,8 @@ root準備serviceは`niaos-root-bank-check.service`を先に要求する。onesh
 追加しない。検査serviceだけがraw deviceをread-onlyでprobeし、CAP_DAC_READ_SEARCH、128 MiB、swap0、
 CPU1、Tasks8、起動45秒で制限する。kernel I/O待ちの厳密な終了時刻は保証しない。
 
-unitは導入時に自動有効化しない。通常のmount開始はread-onlyである。後続の認証済みcontrollerが
-非公開bankを準備用に開く操作と、その全寿命の排他を実装する必要がある。root準備serviceの
+unitは導入時に自動有効化しない。通常のmount開始はread-onlyである。初回の空bankは[root supervisor session](root-session.ja.md)で準備できる。
+本番admission/native SDKとの接続、slot管理と外部writerを含む全寿命の排他は引き続き必要である。root準備serviceの
 手動有効化だけで実展開・公開・boot切替が完成したとはしない。
 
 ## 検証

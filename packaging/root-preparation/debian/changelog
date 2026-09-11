@@ -1,3 +1,12 @@
+niaos-root-preparation (0.6.0) trixie; urgency=medium
+
+  * Add root-supervisor sessions for first-use dedicated bank preparation.
+  * Retain bank reservation through readonly observation and explicit release.
+  * Reduce child capabilities and seal storage after controller service stop.
+  * Isolate failure sealing from the controller cgroup.
+
+ -- NiaOS Developers <developers@niaos.invalid>  Fri, 11 Sep 2026 12:00:00 +0000
+
 niaos-root-preparation (0.5.0) trixie; urgency=medium
 
   * Require explicit GPT/ext4 bank selection for fresh storage bootstrap.
