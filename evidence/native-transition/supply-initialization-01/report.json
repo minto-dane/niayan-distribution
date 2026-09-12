@@ -1,0 +1,69 @@
+{
+  "result": "pass",
+  "package": "niaos-root-preparation",
+  "version": "0.10.0",
+  "component": {
+    "component": "pkgcore",
+    "commit": "03f1b1a2ce396668169577f5f3d7b07ee9227fd0",
+    "package": "niaos-pkgcore",
+    "version": "0.1.0+git03f1b1a2ce39"
+  },
+  "package_and_corresponding_sources_match": true,
+  "source_hashes": {
+    "pkgcore/app/pkg_supply_observe.adb": "0b6afed0b40157759014a960babc6d828e80363d990d53b3fc042f16dd9bdbbb",
+    "distribution/native/supply_initialize.py": "782a1b48133b2b25a6d56ec11500dc6e6874e61e39109b80feff0a58065fc756",
+    "distribution/native/test_supply_initialize.py": "6c96adf8ffea5a61e82e7997139c3a6ceee425e5f49bb68e85a85800592d5681",
+    "distribution/native/worker/check_supply_initialize.py": "4f595029a59da39c29b777f44770520ac65a12a615a809abe62b9f83c5ea740d",
+    "distribution/native/prepare_service_package.py": "cf2fa93a0c21ba5cd8d49986d17c94d1b40c6cddd695eadfc341d741c84c6b39",
+    "distribution/native/handoff-mypy.ini": "c7af412864888094be4d487b5bfd24ed819e8b3156d3558bc5ef53726cd96ab0",
+    "distribution/Makefile": "e954f362f2550a6d0a7dd031fd759fcb459749ec35689f903f24f53c670a1cf6",
+    "assurance/docs/engineering/adr/ADR-0123.ja.md": "453d74eef0a811dd4bfe838470b26bb973b76d500da1f24fb3b2b7a9a9ffbf91"
+  },
+  "artifacts": {
+    "vm/niaos-pkgcore_0.1.0+git03f1b1a2ce39_amd64.changes": "810dbf90a474c67871e9a712d2825bf8276c5d6d5490ae988c8280cc488f59d4",
+    "vm/niaos-pkgcore_0.1.0+git03f1b1a2ce39.dsc": "d35ee261848d8e37498d93cda68220064031adde1b2af29bd4151c495ba643d6",
+    "vm/niaos-pkgcore_0.1.0+git03f1b1a2ce39_amd64.buildinfo": "bb2376322fb9a0ed645d5bfbcf87bee4d74370ced066141a81a12963f5a608e0",
+    "vm/niaos-pkgcore_0.1.0+git03f1b1a2ce39.tar.xz": "b05fc349ff654f30d8b3c3a5eb9cb2e1a05d52c02d49bc3e82a41b8d5610932c",
+    "vm/niaos-pkgcore_0.1.0+git03f1b1a2ce39_amd64.deb": "b2d786b2ed95ba208e2729ebeb58c038f8ac2492d9f4b82d300fc1f0e329a650",
+    "vm-final/niaos-root-preparation-dbgsym_0.10.0_amd64.deb": "3df126e807def237a9f74c56ccd0137f2d5f461abebde7528d43077bd2a7f8c4",
+    "vm-final/niaos-root-preparation_0.10.0_amd64.buildinfo": "6d2112bf096f5b7170ca4ae92d2bb424648fd45a11e1b26b72c6b3529183f316",
+    "vm-final/niaos-root-preparation_0.10.0_amd64.changes": "e70352ee6f30e6b7499fb7e4ceede0f82e8ff5ba33917a80635627dd76c57b22",
+    "vm-final/niaos-root-preparation_0.10.0.tar.xz": "654c02c5d2761384793ddaee9e158b189c87c355efe3132353653c3e9f47c34f",
+    "vm-final/niaos-root-preparation_0.10.0.dsc": "bbfa1f708d6dc3b84bfe34f74e0088f1fb540d525f33d2279fae988790417cfb",
+    "vm-final/niaos-root-preparation_0.10.0_amd64.deb": "deecd8828aef3e1e5b3f40ab52ee580dbdb5fcbf6848349d47bfea3e8e5ba67f",
+    "vm-final/niaos-pkgcore_0.1.0+git03f1b1a2ce39_amd64.deb": "b2d786b2ed95ba208e2729ebeb58c038f8ac2492d9f4b82d300fc1f0e329a650"
+  },
+  "vm_runner_image": "sha256:7f92f64938b87b862dd962a93b558fb0caea13493745c684fbddfc190a723617",
+  "limits": {
+    "memory_bytes": 3221225472,
+    "swap_bytes": 0,
+    "vcpus": 1,
+    "pids": 128,
+    "vm_memory_mib": 2048
+  },
+  "tests": {
+    "unit_cases": 6,
+    "vm_cases": 6,
+    "nonroot_installer_refused": true,
+    "strict_typing": "pass",
+    "finite_control_only": true
+  },
+  "production_complete": false,
+  "whole_runtime_formally_verified": false,
+  "real_power_loss_tested": false,
+  "reproducibility_rebuild_this_version": false,
+  "attempts": [
+    {
+      "result": "missing-build-tool",
+      "detail": "Initial compile image did not contain dpkg-buildpackage; no package produced. Standard package build used dedicated Debian VM."
+    },
+    {
+      "result": "pass-before-review",
+      "detail": "Initial package VM passed six cases; review then corrected FD cleanup ownership and bounded paths. This preliminary package is not the final artifact."
+    },
+    {
+      "result": "pass",
+      "detail": "Rebuilt corrected root-preparation package and reran six integration cases. Reused byte-identical pkgcore DEB. Unchanged whole component suites and C/SPARK proofs were not repeated."
+    }
+  ]
+}

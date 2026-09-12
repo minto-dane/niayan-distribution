@@ -1,0 +1,11 @@
+test_control_history_is_one_way (test_supply_initialize.SupplyInitializationTests.test_control_history_is_one_way) ... ok
+test_directory_close_error_keeps_reused_fd (test_supply_initialize.SupplyInitializationTests.test_directory_close_error_keeps_reused_fd) ... ok
+test_file_parent_close_error_releases_child (test_supply_initialize.SupplyInitializationTests.test_file_parent_close_error_releases_child) ... ok
+test_interrupted_link_is_retained (test_supply_initialize.SupplyInitializationTests.test_interrupted_link_is_retained) ... ok
+test_no_replace_publication (test_supply_initialize.SupplyInitializationTests.test_no_replace_publication) ... ok
+test_unbounded_paths_are_refused_before_open (test_supply_initialize.SupplyInitializationTests.test_unbounded_paths_are_refused_before_open) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.002s
+
+OK

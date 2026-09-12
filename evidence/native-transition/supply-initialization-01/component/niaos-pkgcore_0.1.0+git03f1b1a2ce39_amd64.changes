@@ -1,0 +1,34 @@
+Format: 1.8
+Date: Mon, 07 Sep 2026 00:00:00 +0000
+Source: niaos-pkgcore
+Binary: niaos-pkgcore niaos-pkgcore-dbgsym
+Architecture: source amd64
+Version: 0.1.0+git03f1b1a2ce39
+Distribution: unstable
+Urgency: medium
+Maintainer: minto-dane <205936182+minto-dane@users.noreply.github.com>
+Changed-By: minto-dane <205936182+minto-dane@users.noreply.github.com>
+Description:
+ niaos-pkgcore - niayan pkgcore development tools
+Changes:
+ niaos-pkgcore (0.1.0+git03f1b1a2ce39) unstable; urgency=medium
+ .
+   * Package unmodified component commit 03f1b1a2ce396668169577f5f3d7b07ee9227fd0.
+Checksums-Sha1:
+ b1e536124bf729a0fa27964baf3065662379e26a 750 niaos-pkgcore_0.1.0+git03f1b1a2ce39.dsc
+ a4d3ed3f39d995f9d9118d633e81a50f8645db7d 511056 niaos-pkgcore_0.1.0+git03f1b1a2ce39.tar.xz
+ 352159bb85af15f8458b8725a458276ed3866ce0 1856360 niaos-pkgcore-dbgsym_0.1.0+git03f1b1a2ce39_amd64.deb
+ b1922888e5588955dbad230d97841cac9c7e038a 8593 niaos-pkgcore_0.1.0+git03f1b1a2ce39_amd64.buildinfo
+ 379aba636cd5134e0ca652c9ea37fe0e287e1652 697640 niaos-pkgcore_0.1.0+git03f1b1a2ce39_amd64.deb
+Checksums-Sha256:
+ d35ee261848d8e37498d93cda68220064031adde1b2af29bd4151c495ba643d6 750 niaos-pkgcore_0.1.0+git03f1b1a2ce39.dsc
+ b05fc349ff654f30d8b3c3a5eb9cb2e1a05d52c02d49bc3e82a41b8d5610932c 511056 niaos-pkgcore_0.1.0+git03f1b1a2ce39.tar.xz
+ e5d32126fc23154ceff96c65972caf5eac3c59ae8f976542e4bf79e495a788dc 1856360 niaos-pkgcore-dbgsym_0.1.0+git03f1b1a2ce39_amd64.deb
+ bb2376322fb9a0ed645d5bfbcf87bee4d74370ced066141a81a12963f5a608e0 8593 niaos-pkgcore_0.1.0+git03f1b1a2ce39_amd64.buildinfo
+ b2d786b2ed95ba208e2729ebeb58c038f8ac2492d9f4b82d300fc1f0e329a650 697640 niaos-pkgcore_0.1.0+git03f1b1a2ce39_amd64.deb
+Files:
+ a8c5a34a2a8c0f0b539a70cb3d9eecab 750 admin optional niaos-pkgcore_0.1.0+git03f1b1a2ce39.dsc
+ b2fa9f8716d4fe4a1fa1a76390b8a084 511056 admin optional niaos-pkgcore_0.1.0+git03f1b1a2ce39.tar.xz
+ 74268d5df6697acab741c24d35a35385 1856360 debug optional niaos-pkgcore-dbgsym_0.1.0+git03f1b1a2ce39_amd64.deb
+ 3d4c0df360c425ead23039c2153f0283 8593 admin optional niaos-pkgcore_0.1.0+git03f1b1a2ce39_amd64.buildinfo
+ 2d8b9af41fad2fae0bfe0e1d0b5c6445 697640 admin optional niaos-pkgcore_0.1.0+git03f1b1a2ce39_amd64.deb

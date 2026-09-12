@@ -1,0 +1,58 @@
+{
+  "result": "pass",
+  "cases": [
+    {
+      "case": "success",
+      "exit": 0,
+      "native_observer_exit": 0,
+      "retry_refused": true,
+      "state_preserved": true,
+      "stderr": ""
+    },
+    {
+      "case": "bad-floor",
+      "exit": 1,
+      "native_observer_exit": 2,
+      "retry_refused": true,
+      "state_preserved": true,
+      "stderr": "Traceback (most recent call last):\n  File \"/home/builder/niayan-monitor/check_supply_initialize.py\", line 140, in <module>\n    main()\n    ~~~~^^\n  File \"/home/builder/niayan-monitor/check_supply_initialize.py\", line 78, in main\n    child(args.child)\n    ~~~~~^^^^^^^^^^^^\n  File \"/home/builder/niayan-monitor/check_supply_initialize.py\", line 66, in child\n    installer.initialize(str(INPUT/(case+'.bin')), str(INPUT/(case+'.floor')), ROOT, REQUEST)\n    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/libexec/niaos/supply_initialize.py\", line 216, in initialize\n    verify(CONFIG+'/supply/pending', BASE+'/trust/pending', root, request)\n    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/libexec/niaos/supply_initialize.py\", line 164, in verify\n    raise Rejected('native-supply-observation-refused')\nsupply_initialize.Rejected: native-supply-observation-refused\n"
+    },
+    {
+      "case": "expired",
+      "exit": 1,
+      "native_observer_exit": 2,
+      "retry_refused": true,
+      "state_preserved": true,
+      "stderr": "Traceback (most recent call last):\n  File \"/home/builder/niayan-monitor/check_supply_initialize.py\", line 140, in <module>\n    main()\n    ~~~~^^\n  File \"/home/builder/niayan-monitor/check_supply_initialize.py\", line 78, in main\n    child(args.child)\n    ~~~~~^^^^^^^^^^^^\n  File \"/home/builder/niayan-monitor/check_supply_initialize.py\", line 66, in child\n    installer.initialize(str(INPUT/(case+'.bin')), str(INPUT/(case+'.floor')), ROOT, REQUEST)\n    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/libexec/niaos/supply_initialize.py\", line 216, in initialize\n    verify(CONFIG+'/supply/pending', BASE+'/trust/pending', root, request)\n    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/libexec/niaos/supply_initialize.py\", line 164, in verify\n    raise Rejected('native-supply-observation-refused')\nsupply_initialize.Rejected: native-supply-observation-refused\n"
+    },
+    {
+      "case": "kill-before-floor",
+      "exit": -9,
+      "native_observer_exit": 2,
+      "retry_refused": true,
+      "state_preserved": true,
+      "stderr": ""
+    },
+    {
+      "case": "kill-linked-floor",
+      "exit": -9,
+      "native_observer_exit": 2,
+      "retry_refused": true,
+      "state_preserved": true,
+      "stderr": ""
+    },
+    {
+      "case": "kill-committed-floor",
+      "exit": -9,
+      "native_observer_exit": 0,
+      "retry_refused": true,
+      "state_preserved": true,
+      "stderr": ""
+    }
+  ],
+  "nonroot_installer_refused": true,
+  "fixture_public_key_only": true,
+  "production_keys_provisioned": false,
+  "real_power_loss_tested": false,
+  "whole_runtime_proof": false
+}

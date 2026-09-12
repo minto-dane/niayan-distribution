@@ -71,11 +71,36 @@ OSの時計を変更しない。正しい時計の確立、volumeごとrollback�
 
 ## 内部配備確認
 
+初回の配備前検査には`pkg_supply_observe --planning POLICY_DIRECTORY FLOOR_DIRECTORY ROOT_ID REQUEST_ID`
+を使う。公開用の仮のplan/retained-policy/mapは不要で、既存のplanning用readerを呼ぶ。
+成功時はplanning=trueとzero mapを表示する。公開用の七引数は変更していない。
+
 `pkg_supply_observe`はcomponent DEBの `/usr/libexec/nia/` にだけ配置する読取専用工具である。
 二つのdirectory、root/transaction identity、plan/retained policy/map hashの七引数を受け、
 5秒のBOOTTIME deadlineでOpen/Observeを行う。出力はversion付き固定機械形式で、
 公開管理UI側が必要な翻訳を行う。成功にもexecution_permit=falseを出力する。
 公開の別管理コマンド、世代更新入口、署名発行サービスではない。
+
+## 初回配備
+
+対応するpkgcoreとroot-preparation 0.10.0の導入後、installerは以下の内部工具を使える。
+ROOT_ID/REQUEST_IDは認可済み配備contextから与える、zeroでない32文字の小文字hex。
+POLICY_INPUT/FLOOR_INPUTはadministratorが準備した独立の原本を指す絶対pathで、
+祖先もroot所有・他者書込不可・symlinkなしを要求する。既存の/etc/niaosと/var/lib/niaosも保護する。
+
+```text
+/usr/bin/python3 -I /usr/libexec/niaos/supply_initialize.py --initialize POLICY_INPUT FLOOR_INPUT ROOT_ID REQUEST_ID
+```
+
+native readerをnia-pkgとして起動し、stageと公開後の両方で方針/floorを検査する。
+方針は/etc/niaos/supply/supply.bin、floorは/var/lib/niaos/trust/supply.floorへ配備する。
+既存のsupply/trust directoryや初回記録があれば拒否する。原本の意味不正や処理中断で残った
+pending/記録も消さず、認可された復旧を要求する。鍵やfloorをこの工具から生成しない。
+
+方針だけが公開された状態、hardlinkが二つ残った状態はreaderが拒否する。
+floorまで公開された後の応答喪失では、整合した組が既に読める場合があるため結果は不確定。
+同じ初期化を繰り返さず、完了記録を実行許可に転用しない。配布物に本番鍵や既定allowは含めない。
+実root identityの認可、原本の署名/由来と独立floorのrollback耐性、方針更新と復旧は別に必要である。
 
 ## 検証と残る範囲
 

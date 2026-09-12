@@ -1,0 +1,150 @@
+{
+  "format": 1,
+  "files": {
+    "debian/changelog": {
+      "source": "packaging/root-preparation/debian/changelog",
+      "sha256": "dff1797fdddc6329ae659ba09585819b17847e89fd223ce32e957ca65aae7430",
+      "mode": 420
+    },
+    "debian/control": {
+      "source": "packaging/root-preparation/debian/control",
+      "sha256": "262b52cb71284643e668874f0b0aab869aab885decc7cd966793bfaacd88ee1d",
+      "mode": 420
+    },
+    "debian/copyright": {
+      "source": "packaging/root-preparation/debian/copyright",
+      "sha256": "d02b877c8e6ddaba077bb74845e145ccbc74e9a3be7c63560b6ac5baad14d03f",
+      "mode": 420
+    },
+    "debian/niaos-root-bank-check.service": {
+      "source": "packaging/root-preparation/debian/niaos-root-bank-check.service",
+      "sha256": "549dae2b6a0886f1f1aaeb84f9dc650a3ee4adfcdacbe53b8b9065c0fa5604ca",
+      "mode": 420
+    },
+    "debian/niaos-root-preparation.install": {
+      "source": "packaging/root-preparation/debian/niaos-root-preparation.install",
+      "sha256": "ba2faa9d97aeae559e2eb0acabe258feb25a0354f32d086f2a61beb8945e7fbb",
+      "mode": 420
+    },
+    "debian/niaos-root-preparation.preinst": {
+      "source": "packaging/root-preparation/debian/niaos-root-preparation.preinst",
+      "sha256": "21b904b078c2f146cfb2ac94b3bc8a726c1d7d12876876bf8a40b01c45727c69",
+      "mode": 493
+    },
+    "debian/niaos-root-preparation.sysusers": {
+      "source": "packaging/root-preparation/debian/niaos-root-preparation.sysusers",
+      "sha256": "acf4e9ab0c6534bbd6022eff8b4e7a491b3dfc4f17ac0bf8e852084a54dc075c",
+      "mode": 420
+    },
+    "debian/niaos-root-session-seal.service": {
+      "source": "packaging/root-preparation/debian/niaos-root-session-seal.service",
+      "sha256": "02a3498b77d84f5544f932fe2887c3310c3db220c7f4352aa1bc7835cff2297a",
+      "mode": 420
+    },
+    "debian/niaos-root-session.service": {
+      "source": "packaging/root-preparation/debian/niaos-root-session.service",
+      "sha256": "ba2da790aad360faef4b32dc44a8344f97022733d31a8d10c11c6facbd24c9fb",
+      "mode": 420
+    },
+    "debian/niaos-root-session.socket": {
+      "source": "packaging/root-preparation/debian/niaos-root-session.socket",
+      "sha256": "c405f99d92d17dfb929c3b3473e96bc0baaee573c258f00bb9a76b7ed69ffaf0",
+      "mode": 420
+    },
+    "debian/rules": {
+      "source": "packaging/root-preparation/debian/rules",
+      "sha256": "e1cf70c95a9b6a4d1c1cf8e3b31f507b6d765e6a48057bde73be08697c5287f3",
+      "mode": 493
+    },
+    "debian/source/format": {
+      "source": "packaging/root-preparation/debian/source/format",
+      "sha256": "e8e18df40bcd69d6aa404282679186d9b8256ac63a5b4e80d7f081e8a0095a2e",
+      "mode": 420
+    },
+    "deployment/org.niaos.package.policy": {
+      "source": "packaging/root-preparation/deployment/org.niaos.package.policy",
+      "sha256": "cdcc9fc395f28c2c6f2464281457f666382f31d7a706ee4c550a26274e9cf29e",
+      "mode": 420
+    },
+    "deployment/root-preparation.json": {
+      "source": "packaging/root-preparation/deployment/root-preparation.json",
+      "sha256": "c4f58ec9047a68c03d65753045a9aa0df5db8ddfad498c3c746dfd96b53aad4b",
+      "mode": 420
+    },
+    "deployment/var-lib-niaos-roots.mount": {
+      "source": "packaging/root-preparation/deployment/var-lib-niaos-roots.mount",
+      "sha256": "1b279a022d722846f20b03f0f756f94f388d5610992baa66c5cf8c0a75762300",
+      "mode": 420
+    },
+    "native/root_bank.py": {
+      "source": "native/root_bank.py",
+      "sha256": "308f4d619ca9f0ebaba8c82fbbb1d5e27e7a7c6eb7f8b599e9cd5b4307b27afc",
+      "mode": 420
+    },
+    "native/root_freeze.py": {
+      "source": "native/root_freeze.py",
+      "sha256": "32755886feb3a6b054fd43a3543579e22e1ae73c52eecfa15954ccb273be4d5b",
+      "mode": 420
+    },
+    "native/bank_device.py": {
+      "source": "native/bank_device.py",
+      "sha256": "fd019c8484dfba026671c4fa430e8f08da4e8ca62d79904ded8188beb2c82399",
+      "mode": 420
+    },
+    "native/root_session.py": {
+      "source": "native/root_session.py",
+      "sha256": "c50ac1bbde2a2025fc1bc9488fd23de7b18dfe07e782ef14a356a91f5bad7796",
+      "mode": 420
+    },
+    "native/root_session_worker.py": {
+      "source": "native/root_session_worker.py",
+      "sha256": "14c4b469d4e0fcd534db5f49d7d1d18c65324fee90e4dc9718485bf96abb3708",
+      "mode": 420
+    },
+    "native/root_worker_monitor.py": {
+      "source": "native/root_worker_monitor.py",
+      "sha256": "666cd0e62353a6cbec3fed01339714902447fbc2a794f4ca487d76972f89576e",
+      "mode": 420
+    },
+    "native/storage_bootstrap.py": {
+      "source": "native/storage_bootstrap.py",
+      "sha256": "cfc235aa9bf63add64a405999185234da065984134ea1dd3cca7a0c0aecc7989",
+      "mode": 420
+    },
+    "native/supply_initialize.py": {
+      "source": "native/supply_initialize.py",
+      "sha256": "782a1b48133b2b25a6d56ec11500dc6e6874e61e39109b80feff0a58065fc756",
+      "mode": 420
+    },
+    "native/worker/root_extract.c": {
+      "source": "native/worker/root_extract.c",
+      "sha256": "afb3471598ae2055220733d0e19997fbd3f2e93d34a6303761547180476c840d",
+      "mode": 420
+    },
+    "native/worker/tar_clocks.c": {
+      "source": "native/worker/tar_clocks.c",
+      "sha256": "9c4d1fcc6fca599e8e703bbf9e98b2f113e7f3120f61b1f439b651a317fb15a1",
+      "mode": 420
+    },
+    "native/worker/tar_clocks.h": {
+      "source": "native/worker/tar_clocks.h",
+      "sha256": "c97a4290629dda99b92c14a21a3b795c4233741d7745f0abcbf6f1acf1ab1f2b",
+      "mode": 420
+    },
+    "native/worker/check_tar_clocks.c": {
+      "source": "native/worker/check_tar_clocks.c",
+      "sha256": "5418e90a66e9d1fa5c1d5a1b9452af730816771db598e5418b9348a37a696ded",
+      "mode": 420
+    },
+    "native/worker/check_tar_clocks.py": {
+      "source": "native/worker/check_tar_clocks.py",
+      "sha256": "20f724f654decd129987c4a202ec1dd4a960863a4b6d7d7b7a52f7c464d09739",
+      "mode": 420
+    },
+    "native/worker/Makefile": {
+      "source": "native/worker/Makefile",
+      "sha256": "4aa001706d4ed2a9d41401b7da1cdeaeb9e365f208053aa685d62751591844b8",
+      "mode": 420
+    }
+  }
+}

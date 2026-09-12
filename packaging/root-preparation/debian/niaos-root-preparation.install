@@ -2,6 +2,7 @@ build/native-worker/root-extract usr/libexec/niaos
 native/root_bank.py usr/libexec/niaos
 native/root_freeze.py usr/libexec/niaos
 native/storage_bootstrap.py usr/libexec/niaos
+native/supply_initialize.py usr/libexec/niaos
 deployment/root-preparation.json etc/niaos
 deployment/var-lib-niaos-roots.mount usr/lib/systemd/system
 native/bank_device.py usr/libexec/niaos

@@ -1,0 +1,20 @@
+{
+  "disks": [
+    {
+      "path": "vm/system.qcow2",
+      "allocated_bytes": 126033920,
+      "state": "removed-after-successful-exit-and-exclusive-lock"
+    },
+    {
+      "path": "vm-final/system.qcow2",
+      "allocated_bytes": 69083136,
+      "state": "removed-after-successful-exit-and-exclusive-lock"
+    }
+  ],
+  "retained": [
+    "packages",
+    "corresponding sources",
+    "logs",
+    "shared builder"
+  ]
+}

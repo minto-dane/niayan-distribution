@@ -1,0 +1,35 @@
+Format: 1.8
+Date: Sat, 12 Sep 2026 23:00:00 +0000
+Source: niaos-root-preparation
+Binary: niaos-root-preparation niaos-root-preparation-dbgsym
+Architecture: source amd64
+Version: 0.10.0
+Distribution: trixie
+Urgency: medium
+Maintainer: NiaOS Developers <developers@niaos.invalid>
+Changed-By: NiaOS Developers <developers@niaos.invalid>
+Description:
+ niaos-root-preparation - Internal NiaOS protected root session controller
+Changes:
+ niaos-root-preparation (0.10.0) trixie; urgency=medium
+ .
+   * Add explicit initial supply policy/floor provisioning through the native
+     nonroot reader, preserving interrupted attempts and refusing replacement.
+Checksums-Sha1:
+ 47666c5d3603df3e32ea4bf76093e79a0f69ab4a 664 niaos-root-preparation_0.10.0.dsc
+ 452fe9ab16f7d7752254228f6f14d9930887719b 35276 niaos-root-preparation_0.10.0.tar.xz
+ 066b84024b5c6defeddf4535fc02353fc8db5b5d 31844 niaos-root-preparation-dbgsym_0.10.0_amd64.deb
+ 2c37fb3d0183104d0a5c507cb1158dac28c27c47 6540 niaos-root-preparation_0.10.0_amd64.buildinfo
+ 55f448be79283b49299972b7e0e668b905235b97 36268 niaos-root-preparation_0.10.0_amd64.deb
+Checksums-Sha256:
+ bbfa1f708d6dc3b84bfe34f74e0088f1fb540d525f33d2279fae988790417cfb 664 niaos-root-preparation_0.10.0.dsc
+ 654c02c5d2761384793ddaee9e158b189c87c355efe3132353653c3e9f47c34f 35276 niaos-root-preparation_0.10.0.tar.xz
+ 3df126e807def237a9f74c56ccd0137f2d5f461abebde7528d43077bd2a7f8c4 31844 niaos-root-preparation-dbgsym_0.10.0_amd64.deb
+ 6d2112bf096f5b7170ca4ae92d2bb424648fd45a11e1b26b72c6b3529183f316 6540 niaos-root-preparation_0.10.0_amd64.buildinfo
+ deecd8828aef3e1e5b3f40ab52ee580dbdb5fcbf6848349d47bfea3e8e5ba67f 36268 niaos-root-preparation_0.10.0_amd64.deb
+Files:
+ 39bad0bb283727b5d6d49d9229ba0e51 664 admin optional niaos-root-preparation_0.10.0.dsc
+ a392718fb9559f5ebd209a4eeb12f0d2 35276 admin optional niaos-root-preparation_0.10.0.tar.xz
+ 27196863cd9cfe7e1ea3f33e292b9cc8 31844 debug optional niaos-root-preparation-dbgsym_0.10.0_amd64.deb
+ 0cc004901be6a9784b9bee3a997a14c8 6540 admin optional niaos-root-preparation_0.10.0_amd64.buildinfo
+ 497f7ce826fb8ddb7758b42d94bb8b65 36268 admin optional niaos-root-preparation_0.10.0_amd64.deb
