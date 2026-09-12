@@ -1,0 +1,24 @@
+{
+  "result": "pass",
+  "native_prepare": true,
+  "native_reinspect": true,
+  "independent_root": {
+    "mount_id": 67,
+    "inode": 15,
+    "device_major": 254,
+    "device_minor": 17
+  },
+  "controller_cleanup_eof": true,
+  "boundaries": [
+    "close-root",
+    "hold",
+    "prepare-root",
+    "reinspect-root",
+    "root-prepared",
+    "root-reinspected"
+  ],
+  "native_supply_and_consent_fixture": true,
+  "generation_sdk_connected": false,
+  "boot_switched": false,
+  "whole_runtime_proof": false
+}

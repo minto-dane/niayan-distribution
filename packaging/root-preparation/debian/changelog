@@ -1,3 +1,12 @@
+niaos-root-preparation (0.12.0) trixie; urgency=medium
+
+  * Integrate private native handoffs and operator checks with a nonblocking
+    root controller client, independent physical observation and cancellation.
+  * Keep native supply and exact-plan consent admission mandatory; no public
+    launcher or implicitly enabled service is added.
+
+ -- NiaOS Developers <developers@niaos.invalid>  Sun, 13 Sep 2026 01:00:00 +0000
+
 niaos-root-preparation (0.11.0) trixie; urgency=medium
 
   * Add the private asynchronous native operator observer for supervisors.

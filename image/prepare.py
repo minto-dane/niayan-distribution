@@ -17,6 +17,9 @@ HERE = Path(__file__).resolve().parent
 DIST = HERE.parent
 COMPONENTS = ('assurance', 'pkgcore', 'statecore', 'controlcore',
               'configcore', 'resolvercore', 'capsulecore')
+SERVICES = (('management', 'niayan-management'),
+            ('root-preparation', 'niaos-root-preparation'),
+            ('archive-observer', 'niaos-archive-observer'))
 
 
 def write(path, text, mode=0o644):
@@ -86,7 +89,9 @@ override_dh_auto_configure:
 override_dh_auto_build:
 	$(MAKE) build JOBS=1
 override_dh_auto_test:
+ifeq (,$(filter nocheck,$(DEB_BUILD_OPTIONS)))
 	$(MAKE) test JOBS=1
+endif
 override_dh_auto_install:
 override_dh_auto_clean:
 	rm -rf build
@@ -115,7 +120,8 @@ def prepare(output, workspace, desktop):
     spec = importlib.util.spec_from_file_location('package_export', DIST / 'native/prepare_service_package.py')
     exporter = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(exporter)
-    exporter.prepare(package_dir / 'niayan-management', 'management')
+    for component, package in SERVICES:
+        exporter.prepare(package_dir / package, component)
     components = [stage_component(workspace, package_dir / ('niaos-' + name), name)
                   for name in COMPONENTS]
     live = output / 'live'
@@ -142,7 +148,8 @@ def prepare(output, workspace, desktop):
           'Acquire::ForceIPv4 "true";\nAcquire::http::Timeout "30";\n'
           'Acquire::https::Timeout "30";\n')
     meta = 'niaos-base' if desktop == 'server' else 'niaos-desktop-' + desktop
-    write(live / 'config/package-lists/niaos.list.chroot', meta + '\nniayan-management\n' +
+    write(live / 'config/package-lists/niaos.list.chroot', meta + '\n' +
+          '\n'.join(package for _, package in SERVICES) + '\n' +
           '\n'.join(row['package'] for row in components) + '\n')
     write(live / 'config/package-lists/live.list.chroot_live',
           'live-boot\nlive-config\nlive-config-systemd\n')
@@ -161,9 +168,10 @@ def prepare(output, workspace, desktop):
                 raise ValueError(f'non-regular distribution input: {path}')
             if path.is_file():
                 distribution_inputs[str(path.relative_to(DIST))] = hashlib.sha256(path.read_bytes()).hexdigest()
-    management_sources = json.loads((package_dir / 'niayan-management/source-inputs.json').read_text())
-    for row in management_sources['files'].values():
-        distribution_inputs[row['source']] = row['sha256']
+    for _, package in SERVICES:
+        service_sources = json.loads((package_dir / package / 'source-inputs.json').read_text())
+        for row in service_sources['files'].values():
+            distribution_inputs[row['source']] = row['sha256']
     distribution_inputs['native/prepare_service_package.py'] = hashlib.sha256(
         (DIST / 'native/prepare_service_package.py').read_bytes()).hexdigest()
     distribution_inputs['LICENSE'] = hashlib.sha256((DIST / 'LICENSE').read_bytes()).hexdigest()

@@ -178,10 +178,13 @@ class Channel:
                     return
         raise Rejected('poll-budget-exhausted')
 
-    def receive(self) -> tuple[int, int]:
+    def receive(self, *, wait: bool = True) -> tuple[int, int]:
         self._advance(Event.RECEIVE)
         try:
-            self._wait(select.POLLIN)
+            if wait:
+                self._wait(select.POLLIN)
+            else:
+                self._alive()
             # The stdlib stub leaves the unused address untyped. Contain it as
             # object; authentication uses kernel credentials, never that value.
             message: tuple[bytes, list[tuple[int, int, bytes]], int, object] = self._peer().recvmsg(
@@ -221,14 +224,15 @@ class Channel:
         if poll.poll(0):
             raise Rejected('cancel-or-disconnect')
 
-    def complete(self) -> None:
+    def complete(self, *, wait: bool = True) -> None:
         # Caller has completed its root session request, independent observation
         # and current admission rechecks. No callback is silently supplied here.
         self._advance(Event.COMPLETE)
         try:
             self._release_inputs()
             self._current()
-            self._wait(select.POLLOUT)
+            if wait:
+                self._wait(select.POLLOUT)
             self._current()
             opcode = b'NIAHRK01' if isinstance(self.scope, ReinspectionScope) else b'NIAHOK01'
             reply = opcode + hashlib.sha256(self.expected).digest()

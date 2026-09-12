@@ -40,14 +40,12 @@ class Decision:
 
 
 class Peer:
-    def __init__(self,directory,uid,gid,*,close_fds=()):
+    def __init__(self,directory,uid,gid):
         self.path=directory/'peer.sock'
         listener=socket.socket(socket.AF_UNIX,socket.SOCK_SEQPACKET);listener.bind(str(self.path));self.path.chmod(0o666);listener.listen(1);listener.settimeout(5)
         self.parent,child=multiprocessing.Pipe()
         def client():
-            self.parent.close();listener.close()
-            for fd in close_fds:os.close(fd)
-            os.setgroups([]);os.setgid(gid);os.setuid(uid)
+            self.parent.close();listener.close();os.setgroups([]);os.setgid(gid);os.setuid(uid)
             peer=socket.socket(socket.AF_UNIX,socket.SOCK_SEQPACKET);peer.connect(str(self.path));peer.sendall(b'fixture-request')
             while True:
                 command=child.recv()
@@ -61,7 +59,7 @@ class Peer:
         self.parent.send('close');self.process.join(5);assert self.process.exitcode==0
     def close(self):
         if self.process.is_alive():self.disconnect()
-        self.peer.close();self.parent.close();self.process.close();self.path.unlink(missing_ok=True)
+        self.peer.close();self.parent.close();self.process.close();self.path.unlink()
 
 
 def rule(allow):

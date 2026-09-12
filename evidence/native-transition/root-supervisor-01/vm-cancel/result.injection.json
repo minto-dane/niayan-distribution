@@ -1,0 +1,14 @@
+{
+  "worker_stopped": true,
+  "revocation_seconds": 0.17734274000000028,
+  "bank_readonly": true,
+  "original_attempt_preserved": true,
+  "completion": {
+    "bank_readonly": true,
+    "boot_authorized": false,
+    "published": false,
+    "stage": "11111111111111111111111111111111",
+    "state": "session-ended",
+    "version": 1
+  }
+}

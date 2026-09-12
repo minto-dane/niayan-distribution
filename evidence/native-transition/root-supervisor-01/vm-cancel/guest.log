@@ -1,0 +1,53 @@
+Checking that no-one is using this disk right now ... OK
+
+Disk /dev/vdb: 64 MiB, 67108864 bytes, 131072 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+>>> Script header accepted.
+>>> Created a new GPT disklabel (GUID: EC4A29EE-F90F-4927-9A29-E2DEE73BD74A).
+/dev/vdb1: Created a new partition 1 of type 'Linux filesystem' and of size 62 MiB.
+/dev/vdb2: Done.
+
+New situation:
+Disklabel type: gpt
+Disk identifier: EC4A29EE-F90F-4927-9A29-E2DEE73BD74A
+
+Device     Start    End Sectors Size Type
+/dev/vdb1   2048 129023  126976  62M Linux filesystem
+
+The partition table has been altered.
+Calling ioctl() to re-read partition table.
+Syncing disks.
+Traceback (most recent call last):
+  File "/home/builder/niayan-monitor/check_root_supervisor.py", line 203, in main
+    assert parent.poll(5) and parent.recv() == 2
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/builder/niayan-monitor/check_root_supervisor.py", line 257, in <module>
+    main()
+    ~~~~^^
+  File "/home/builder/niayan-monitor/check_root_supervisor.py", line 238, in main
+    peer.close()
+    ~~~~~~~~~~^^
+  File "/home/builder/niayan-monitor/check_operator_authorization.py", line 62, in close
+    self.peer.close();self.parent.close();self.process.close();self.path.unlink()
+                                                               ~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/pathlib/_local.py", line 748, in unlink
+    os.unlink(self)
+    ~~~~~~~~~^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/niayan-supervisor-cjpszsaz/peer.sock'
+Traceback (most recent call last):
+  File "/home/builder/niayan-monitor/check_root_supervisor.py", line 160, in main
+  File "/usr/lib/python3.13/multiprocessing/connection.py", line 250, in recv
+    buf = self._recv_bytes()
+  File "/usr/lib/python3.13/multiprocessing/connection.py", line 430, in _recv_bytes
+    buf = self._recv(4)
+  File "/usr/lib/python3.13/multiprocessing/connection.py", line 395, in _recv
+    chunk = read(handle, remaining)
+ConnectionResetError: [Errno 104] Connection reset by peer

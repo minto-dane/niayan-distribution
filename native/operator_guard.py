@@ -112,6 +112,7 @@ class OperatorGuard:
         self.peer_pidfd = self.pidfd = -1
         self.child: subprocess.Popen[bytes] | None = None
         self.original_deadline = deadline
+        self.plan, self.request = plan, request
         self.sent_at = self.next_deadline = 0
         self.buffer = bytearray()
         if (os.getuid() or os.geteuid() or type(interactive) is not bool

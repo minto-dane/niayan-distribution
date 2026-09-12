@@ -1,0 +1,27 @@
+[
+  {
+    "scenario": "vm-normal",
+    "name": "component.deb",
+    "sha256": "ea7f08b48154536d500c6d8ec1c88a7b040228e583d799c3c466aafdd8ab4a1b"
+  },
+  {
+    "scenario": "vm-normal",
+    "name": "niaos-root-preparation-dbgsym_0.12.0_amd64.deb",
+    "sha256": "e10e7d2dbc5fc156adf68350abbc90630c4853e75a7f2cdf0970756b069f9023"
+  },
+  {
+    "scenario": "vm-normal",
+    "name": "niaos-root-preparation_0.12.0_amd64.deb",
+    "sha256": "0c7444e527fc39f9c0de85785c594df9548d9e1e3b01de5ba0d4dc87379bc2ca"
+  },
+  {
+    "scenario": "vm-cancel",
+    "name": "component.deb",
+    "sha256": "ea7f08b48154536d500c6d8ec1c88a7b040228e583d799c3c466aafdd8ab4a1b"
+  },
+  {
+    "scenario": "vm-cancel",
+    "name": "niaos-root-preparation_0.12.0_amd64.deb",
+    "sha256": "0c7444e527fc39f9c0de85785c594df9548d9e1e3b01de5ba0d4dc87379bc2ca"
+  }
+]

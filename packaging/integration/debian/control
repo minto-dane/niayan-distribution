@@ -23,7 +23,8 @@ Description: niayan defaults using supported configuration interfaces
 
 Package: niaos-base
 Architecture: all
-Depends: ${misc:Depends}, niaos-defaults, niayan-management, linux-image-amd64, systemd-sysv,
+Depends: ${misc:Depends}, niaos-defaults, niayan-management, niaos-root-preparation,
+ niaos-archive-observer, niaos-pkgcore, linux-image-amd64, systemd-sysv,
  network-manager, systemd-timesyncd, ca-certificates, sudo, apparmor,
  cryptsetup-initramfs, xfsprogs, e2fsprogs, locales, less, nano
 Description: niayan base system metapackage

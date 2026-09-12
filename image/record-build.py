@@ -56,6 +56,10 @@ def main():
         raise ValueError('completed regular ISO artifacts are required')
     output.mkdir(parents=True, exist_ok=False)
     shutil.copy2(build / 'input-manifest.json', output / 'input-manifest.json')
+    mode_path = build / 'package-build-mode'
+    build_mode = mode_path.read_text().strip() if mode_path.is_file() else 'unrecorded'
+    if mode_path.is_file():
+        shutil.copy2(mode_path, output / mode_path.name)
     # Preserve the recipe that live-build actually used, including generated
     # configuration. Never copy VM seed, SSH keys, host home or cloud disk.
     for name in ('auto', 'config'):
@@ -71,7 +75,7 @@ def main():
             artifacts.append(identity(path, build))
     configuration = [identity(path, output) for path in sorted(output.rglob('*'))
                      if path.is_file() and not path.is_symlink()]
-    report = {'result': 'recorded', 'artifacts': artifacts,
+    report = {'result': 'recorded', 'artifacts': artifacts, 'package_build_mode': build_mode,
               'staged_configuration': configuration,
               'claims': {'boot_tested': False, 'installed_tested': False,
                          'iso_bit_reproducible': False, 'production_qualified': False}}

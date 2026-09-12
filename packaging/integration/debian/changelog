@@ -1,3 +1,10 @@
+niaos-integration (0.3.0) trixie; urgency=medium
+
+  * Include the native root controller and authenticated supply observer in
+    the Debian development image without implicitly activating them.
+
+ -- minto-dane <205936182+minto-dane@users.noreply.github.com>  Sun, 13 Sep 2026 01:00:00 +0000
+
 niaos-integration (0.2.0) unstable; urgency=medium
 
   * Adopt niayan as the public OS name and distribution identity.

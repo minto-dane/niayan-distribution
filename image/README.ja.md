@@ -1,6 +1,6 @@
 # Debian 13イメージの構築
 
-2026-09-12: 現在のレシピは公開名niayan、開発版0.2.0を使用する。
+2026-09-12: 現在のレシピは公開名niayan、開発版0.3.0を使用する。
 受入済みの旧ISOとは入力が異なるため、そのVM受入・再現性結果を本版へ流用しない。
 旧ISOを再現する場合は受入記録のdistribution commitをcheckoutする。
 内部DEB名とdiversion所有者は維持し、OS名の変更で既存所有権を切断しない。
@@ -13,6 +13,13 @@
 開発版。既存の7コンポーネントを改変せずにDEB化し、Debian 13 Trixieの公式パッケージと組み合わせる。[設計判断](../docs/decisions/0001-debian13.ja.md)。
 
 amd64・KDEの実ISOについて[構築と6項目のVM受入記録](../evidence/debian13/accepted-09/README.ja.md)を保存している。同じ入力からのISO 09/10が実バイト列で一致し、[対応ソース1,415組の収集・補完・照合](../evidence/debian13/accepted-09/source-collection/README.ja.md)も完了した。下記手順の記載だけを成功結果とはせず、対象hashを確認する。
+
+開発中は`build-packages.sh --development`（引数省略時も同じ）で
+`DEB_BUILD_OPTIONS="parallel=1 nocheck"`を用い、パッケージ試験を実行しない。
+リリース前は`build-packages.sh --release`で試験を有効にする。配布CIは明示的に後者を使う。
+モードは`package-build-mode`とビルド記録へ保存し、試験省略ビルドを出荷検証済みにしない。
+root-preparationとarchive-observerも独自DEB・対応ソース・入力hashの対象に含める。
+サービスの自動起動や暗黙のstorage/trust初期化は行わない。
 
 ## 入力と成果物
 

@@ -1,0 +1,12 @@
+{
+  "command": "gprbuild -p -j1 -c -u -P pkgcore/pkgcore.gpr pkg_generation_execution.adb",
+  "result": "compiled",
+  "inputs": {
+    "pkgcore/runtime/pkg_generation_execution.ads": "0446f239bb28d8742d61e311065bb8dda887a1147f702b00ffcb0babc944c9e8",
+    "pkgcore/runtime/pkg_generation_execution.adb": "67b1d926b6e99f972c958a545fb38e6cd2e3d53b0104d39ad8c046aef5d46001",
+    "pkgcore/pkgcore.gpr": "49d20e718feef1749a1dde0e4769b45776c5b4098150cd834a151c0711f69368"
+  },
+  "executable_linked": false,
+  "behavior_tested": false,
+  "formally_verified": false
+}
