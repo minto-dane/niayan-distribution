@@ -1,0 +1,26 @@
+{
+  "databaseId": 34716711208,
+  "headSha": "da623192ca889bba126ea71c111349a6e9d0e05c",
+  "conclusion": "success",
+  "url": "https://github.com/minto-dane/niayan/actions/runs/34716711208",
+  "createdAt": "2026-09-12T20:18:31Z",
+  "updatedAt": "2026-09-12T20:19:14Z",
+  "artifacts": {
+    "acceptance.log": "089e5b9dbb0cf26771ded3ecc07d74a74a6e68d7a725bd169c4331d3687f672f",
+    "build.log": "04fc0d24b424c41a82a784dc19ce73d743ea3e0d92ed5a264820e16ff70e1a0b",
+    "packages/niaos-base_0.2.0_all.deb": "b49270c149899a736cabe4bedf440548c82cc2d2ebfe5b72edaa85516e89c1a2",
+    "packages/niaos-defaults_0.2.0_all.deb": "7c6f4c5ddc1fb24d3b6418860db77db3793fafca3096c36a6329925f9e0c674f",
+    "packages/niaos-desktop-gnome_0.2.0_all.deb": "b0ea176029de4fd612d306f52de250bb9285f3d87610c5c508f00b6531d66baf",
+    "packages/niaos-desktop-kde_0.2.0_all.deb": "b197766d5975820ee4c8d466af0ee28b95ce158e0b6ed4abe88568782875e26b",
+    "packages/niaos-integration_0.2.0.dsc": "1cae4850484491d1623f3ddb521148a3f1eeb96c8af518416c803466e5c4f229",
+    "packages/niaos-integration_0.2.0.tar.xz": "e1013366623b56e36738d46c292fccc42e61bc206973866549e19f77206454b9",
+    "packages/niaos-integration_0.2.0_amd64.buildinfo": "58d943bc6d634ee0cf4a25db0840c23a122142a1402b10e3a67132911b3809d6",
+    "packages/niaos-integration_0.2.0_amd64.changes": "0d82033676d761879473e1c5310a1124309d31b8b9a5a2f6491d95ef99eb646a",
+    "packages/niaos-release_0.2.0_all.deb": "0fda53ffe5800d7206ace057343a28f97836194afadc4e4733c8b19b6a7c657c",
+    "packages/niayan-management_0.1.1.dsc": "ca42dda46ca67dc2c7fd77a4ae051631f4c2867e14b0435c6c71854358fde615",
+    "packages/niayan-management_0.1.1.tar.xz": "635bb73921413a0ca14c2261301c4aac689e60ac73d77c507c864d70035c0db7",
+    "packages/niayan-management_0.1.1_all.deb": "5020e488d2b23c0e52020598cd56836db204af25c96c70d907df8a9d363fb8cb",
+    "packages/niayan-management_0.1.1_amd64.buildinfo": "0d54385266c7c8a7225b8eefd65552a321074e21c452b1abf26a3d1b728938c2",
+    "packages/niayan-management_0.1.1_amd64.changes": "52fc7896393174ce9ef24ea5a3eb5da890cb6c492dcab4f7d1c261962b4033cb"
+  }
+}

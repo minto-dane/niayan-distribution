@@ -1,0 +1,30 @@
+{
+  "scope": "existing artifacts from the two successful CI runs; no additional build",
+  "packages": [
+    {
+      "name": "niaos-base_0.2.0_all.deb",
+      "sha256": "b49270c149899a736cabe4bedf440548c82cc2d2ebfe5b72edaa85516e89c1a2",
+      "byte_equal": true
+    },
+    {
+      "name": "niaos-defaults_0.2.0_all.deb",
+      "sha256": "7c6f4c5ddc1fb24d3b6418860db77db3793fafca3096c36a6329925f9e0c674f",
+      "byte_equal": true
+    },
+    {
+      "name": "niaos-desktop-gnome_0.2.0_all.deb",
+      "sha256": "b0ea176029de4fd612d306f52de250bb9285f3d87610c5c508f00b6531d66baf",
+      "byte_equal": true
+    },
+    {
+      "name": "niaos-desktop-kde_0.2.0_all.deb",
+      "sha256": "b197766d5975820ee4c8d466af0ee28b95ce158e0b6ed4abe88568782875e26b",
+      "byte_equal": true
+    },
+    {
+      "name": "niaos-release_0.2.0_all.deb",
+      "sha256": "0fda53ffe5800d7206ace057343a28f97836194afadc4e4733c8b19b6a7c657c",
+      "byte_equal": true
+    }
+  ]
+}
