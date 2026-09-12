@@ -23,6 +23,7 @@ import bank_device
 from root_bank import Bank, Rejected, canonical, decode, read_policy, validate_request
 from root_freeze import FrozenRoot, clock_check, filesystem, readonly_filesystem
 from storage_bootstrap import BASE, POLICY, check_bank, record, root_directory, protected_file
+from root_worker_monitor import run_worker
 
 CHILD = '/usr/libexec/niaos/root_session_worker.py'
 ATTEMPT = 'root-session.json'
@@ -66,18 +67,13 @@ def writable(fd):
         number=ctypes.get_errno();raise OSError(number,os.strerror(number))
 
 
-def child_operation(bank, operation, request, archive, lease):
+def child_operation(bank, operation, request, archive, lease, peer, pidfd):
     args=['/usr/bin/setpriv','--bounding-set='+CAPS,'--inh-caps=-all','--ambient-caps=-all',
           '--no-new-privs','--pdeathsig','KILL','/usr/bin/python3','-I',CHILD,'--operation',operation,
           '--archive-fd',str(archive),'--lease-fd',str(lease),'--bank-lock-fd',str(bank.lock),'--parent',str(os.getpid()),'--worker-sha256',bank.worker_hash]
-    child=subprocess.Popen(args,pass_fds=(archive,lease,bank.lock),stdin=subprocess.PIPE,stdout=subprocess.PIPE,stderr=subprocess.PIPE,
-                           env={'PATH':'/usr/sbin:/usr/bin:/sbin:/bin','LC_ALL':'C.UTF-8'})
-    try:
-        stdout,stderr=child.communicate(canonical(request),timeout=remaining(request['deadline_ms']))
-    except BaseException:
-        child.kill();child.communicate();raise
-    if child.returncode or stderr or len(stdout)>4096:
-        print(canonical({'event':'controller-worker-failed','operation':operation,'exit':child.returncode,'diagnostic':stderr[:1024].decode('utf-8',errors='replace')}).decode(),file=sys.stderr,end='')
+    status,stdout,stderr=run_worker(args,canonical(request),(archive,lease,bank.lock),peer,pidfd,request['deadline_ms'])
+    if status or stderr:
+        print(canonical({'event':'controller-worker-failed','operation':operation,'exit':status,'diagnostic':stderr.decode('utf-8',errors='replace')}).decode(),file=sys.stderr,end='')
         raise Rejected('controller-worker')
     result=decode(stdout)
     if result.pop('child_capability_mask',None)!=MASK:raise Rejected('controller-worker-capabilities')
@@ -129,12 +125,12 @@ def serve_session(peer):
         attempt=True
         try:
             peer_alive(pidfd);remaining(deadline);writable(bank.directory)
-            prepared=child_operation(bank,'prepare',request,*descriptors)
+            prepared=child_operation(bank,'prepare',request,*descriptors,peer,pidfd)
             if dict(prepared,physical_revalidation=False)!=bank.inspect(request['stage']) or prepared['state']!='extracted':raise Rejected('controller-extraction')
         finally:
             readonly_filesystem(bank.directory)
         frozen=FrozenRoot();frozen.acquire(bank,request,*descriptors,expected)
-        verified=child_operation(bank,'verify',request,*descriptors)
+        verified=child_operation(bank,'verify',request,*descriptors,peer,pidfd)
         if not verified.get('physical_revalidation'):raise Rejected('controller-reinspection')
         observation=frozen.observe(*descriptors)
         current_plan,current_raw=bank_device.selection()

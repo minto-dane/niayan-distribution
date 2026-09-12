@@ -1,0 +1,13 @@
+test_bounded_output (test_root_worker_monitor.MonitorTests.test_bounded_output) ... ok
+test_cancel_before_spawn (test_root_worker_monitor.MonitorTests.test_cancel_before_spawn) ... ok
+test_deadline (test_root_worker_monitor.MonitorTests.test_deadline) ... ok
+test_disconnect_stops_group (test_root_worker_monitor.MonitorTests.test_disconnect_stops_group) ... ok
+test_finite_lifecycle (test_root_worker_monitor.MonitorTests.test_finite_lifecycle) ... ok
+test_normal_and_nonzero (test_root_worker_monitor.MonitorTests.test_normal_and_nonzero) ... ok
+test_queued_cancel_stops_group (test_root_worker_monitor.MonitorTests.test_queued_cancel_stops_group) ... ok
+test_requester_death_stops_group (test_root_worker_monitor.MonitorTests.test_requester_death_stops_group) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.284s
+
+OK

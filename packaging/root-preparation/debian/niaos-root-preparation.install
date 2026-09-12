@@ -8,6 +8,7 @@ native/bank_device.py usr/libexec/niaos
 debian/niaos-root-bank-check.service usr/lib/systemd/system
 native/root_session.py usr/libexec/niaos
 native/root_session_worker.py usr/libexec/niaos
+native/root_worker_monitor.py usr/libexec/niaos
 debian/niaos-root-session.service usr/lib/systemd/system
 debian/niaos-root-session.socket usr/lib/systemd/system
 debian/niaos-root-session-seal.service usr/lib/systemd/system

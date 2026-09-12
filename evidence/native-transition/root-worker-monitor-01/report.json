@@ -1,0 +1,62 @@
+{
+  "result": "pass",
+  "package": "niaos-root-preparation",
+  "version": "0.9.0",
+  "package_and_corresponding_sources_match": true,
+  "source_hashes": {
+    "distribution/native/root_worker_monitor.py": "666cd0e62353a6cbec3fed01339714902447fbc2a794f4ca487d76972f89576e",
+    "distribution/native/root_session.py": "c50ac1bbde2a2025fc1bc9488fd23de7b18dfe07e782ef14a356a91f5bad7796",
+    "distribution/native/test_root_worker_monitor.py": "fb902c58149efd25aa0a3a82f97cf97544d6fdc5698bc3b76e99dfe5acba3324",
+    "distribution/native/worker/check_root_session_cancel.py": "7ecf82ce1671039b858259eed6c072aa0fc75094fe56fb13780d41abb1250877",
+    "distribution/native/worker/check_root_session.py": "36680e2d48cb271e62cc90e75bdb1f49566e875631d9ea8688ca87b5ce3c40ec",
+    "distribution/native/worker/check_root_reinspection.py": "69748fce97e75d7bb4e58120e02ca9348954e78d1d18af5e66984027b4957326",
+    "distribution/native/worker/check_root_extract.py": "e378149a97002d3b4f044a9cfb4ad57d4f350924b3b85f45ec5ec91fd2e59380",
+    "distribution/native/handoff-mypy.ini": "c7af412864888094be4d487b5bfd24ed819e8b3156d3558bc5ef53726cd96ab0",
+    "distribution/Makefile": "ea536d84550a66f5a6fce28d5fc6c4f7c910cff36ee342f242ea64e731f14d3d",
+    "assurance/docs/engineering/adr/ADR-0122.ja.md": "303511f734302c6682fc8d445a5fc8781fae4c8b3a4f043a4de7f8a387c80338"
+  },
+  "artifacts": {
+    "component.deb": "82c26c92b235a57a1b2aa8fddc506a914a24fcdff8d49e2997f9daebf45ee175",
+    "niaos-root-preparation-dbgsym_0.9.0_amd64.deb": "d348d73ceaf5dd6686ec9f0fcaca8da2d4f3408adb1b39f511457f74fde861df",
+    "niaos-root-preparation_0.9.0.dsc": "75717a7a443856106acfe6357755b6dc713072d9a9ab8f0c95d3cd815467b54e",
+    "niaos-root-preparation_0.9.0.tar.xz": "c84ff894361c7f0a2d59f8c64dae5705ee86474d4a8ee45b05bb7a1dc17d4baa",
+    "niaos-root-preparation_0.9.0_amd64.buildinfo": "7ee45ce67423526d8cb081096ec4451ae7057cc48812e959c06c2631b08737cb",
+    "niaos-root-preparation_0.9.0_amd64.changes": "5793bd979a7caa1061cca2eb4b0f6b512166f94f8728a3c86b1cf7557aafc5eb",
+    "niaos-root-preparation_0.9.0_amd64.deb": "4793155b6694320f6d448943ec70bf444740dd90b604cf328bf256b66400c43b"
+  },
+  "tools": {
+    "python": "Python 3.13.5",
+    "mypy": "mypy 1.15.0 (compiled: yes)"
+  },
+  "vm_runner_image": "sha256:7f92f64938b87b862dd962a93b558fb0caea13493745c684fbddfc190a723617",
+  "limits": {
+    "memory_bytes": 3221225472,
+    "swap_bytes": 0,
+    "vcpus": 1,
+    "pids": 128,
+    "vm_memory_mib": 2048
+  },
+  "tests": {
+    "owned_process_cases": 8,
+    "finite_control_only": true,
+    "normal_session": "prepare/freeze/verify/observe/close",
+    "actual_cancel": "SIGSTOP native worker, peer disconnect, pidfd exit, readonly, retained attempt, retry refused"
+  },
+  "production_complete": false,
+  "whole_runtime_formally_verified": false,
+  "reproducibility_rebuild_this_version": false,
+  "attempts": [
+    {
+      "result": "test-cleanup-error",
+      "detail": "Initial three cancellation cases reached cleanup after successful checks; already exited descendant pidfds raised ESRCH. Test cleanup now closes these FDs and accepts only ProcessLookupError for the final best-effort kill."
+    },
+    {
+      "result": "kvm-permission-refused",
+      "detail": "Initial root VM runner could not access KVM. Used existing nonroot runner identity; no host device permission changes."
+    },
+    {
+      "result": "pass",
+      "detail": "One package build, two disposable VMs for cancellation and normal flow. No unchanged C/SPARK proof or full suite rerun."
+    }
+  ]
+}

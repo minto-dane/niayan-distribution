@@ -1,0 +1,23 @@
+Checking that no-one is using this disk right now ... OK
+
+Disk /dev/vdb: 64 MiB, 67108864 bytes, 131072 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+>>> Script header accepted.
+>>> Created a new GPT disklabel (GUID: E91E9FA3-7AF1-4C3B-9FB2-0F50B2BBA1EF).
+/dev/vdb1: Created a new partition 1 of type 'Linux filesystem' and of size 62 MiB.
+/dev/vdb2: Done.
+
+New situation:
+Disklabel type: gpt
+Disk identifier: E91E9FA3-7AF1-4C3B-9FB2-0F50B2BBA1EF
+
+Device     Start    End Sectors Size Type
+/dev/vdb1   2048 129023  126976  62M Linux filesystem
+
+The partition table has been altered.
+Calling ioctl() to re-read partition table.
+Syncing disks.
+PASS privileged root session: close

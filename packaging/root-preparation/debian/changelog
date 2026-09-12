@@ -1,3 +1,10 @@
+niaos-root-preparation (0.9.0) trixie; urgency=medium
+
+  * Monitor requester lifetime during extraction and physical reinspection.
+  * Bound worker pipe capture and stop its process group before reaping.
+
+ -- NiaOS Developers <developers@niaos.invalid>  Sat, 12 Sep 2026 20:00:00 +0000
+
 niaos-root-preparation (0.8.0) unstable; urgency=medium
 
   * Retire the separate preparation socket and RPC implementation.

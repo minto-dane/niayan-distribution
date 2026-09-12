@@ -1,0 +1,14 @@
+Sep 12 20:38:31 niaos-builder systemd[1]: Starting niaos-root-session.service - NiaOS dedicated bank session controller...
+Sep 12 20:38:31 niaos-builder systemd[1]: Started niaos-root-session.service - NiaOS dedicated bank session controller.
+Sep 12 20:38:32 niaos-builder python3[1182]: {"error":"Rejected","event":"controller-refusal","reason":"controller-worker-pin"}
+Sep 12 20:38:32 niaos-builder python3[1182]: {"error":"Rejected","event":"controller-refusal","reason":"controller-bank-selection"}
+Sep 12 20:38:32 niaos-builder python3[1182]: {"error":"Rejected","event":"controller-refusal","reason":"controller-device-plan"}
+Sep 12 20:38:32 niaos-builder python3[1182]: {"error":"Rejected","event":"controller-refusal","reason":"controller-request"}
+Sep 12 20:38:32 niaos-builder python3[1182]: {"error":"FileNotFoundError","event":"controller-refusal","reason":"[Errno 2] No such file or directory: 'bank.lock'"}
+Sep 12 20:38:32 niaos-builder python3[1182]: {"error":"FileNotFoundError","event":"controller-refusal","reason":"[Errno 2] No such file or directory: '/var/lib/niaos/core/store/store.lock'"}
+Sep 12 20:38:32 niaos-builder python3[1182]: {"error":"FileNotFoundError","event":"controller-refusal","reason":"[Errno 2] No such file or directory: '/etc/niaos/root-preparation.json'"}
+Sep 12 20:38:32 niaos-builder python3[1182]: {"error":"Rejected","event":"controller-refusal","reason":"controller-bank-not-fresh"}
+Sep 12 20:38:32 niaos-builder systemd[1]: Stopping niaos-root-session.service - NiaOS dedicated bank session controller...
+Sep 12 20:38:32 niaos-builder python3[1212]: {"published":false,"state":"bank-sealed-after-stop","version":1}
+Sep 12 20:38:32 niaos-builder systemd[1]: niaos-root-session.service: Deactivated successfully.
+Sep 12 20:38:32 niaos-builder systemd[1]: Stopped niaos-root-session.service - NiaOS dedicated bank session controller.

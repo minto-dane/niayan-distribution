@@ -1,0 +1,4 @@
+Sep 12 20:36:51 niaos-builder systemd[1]: Starting niaos-root-session.service - NiaOS dedicated bank session controller...
+Sep 12 20:36:51 niaos-builder systemd[1]: Started niaos-root-session.service - NiaOS dedicated bank session controller.
+Sep 12 20:36:51 niaos-builder python3[1733]: {"error":"Rejected","event":"controller-refusal","reason":"worker-requester-ended-or-cancelled"}
+Sep 12 20:36:51 niaos-builder python3[1733]: {"error":"Rejected","event":"controller-refusal","reason":"controller-bank-not-fresh"}

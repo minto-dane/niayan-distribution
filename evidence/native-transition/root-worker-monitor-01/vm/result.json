@@ -1,0 +1,18 @@
+{
+  "result": "pass",
+  "stopped_native_worker_cancelled": true,
+  "cancellation_seconds": 0.07599937600000217,
+  "completion": {
+    "bank_readonly": true,
+    "boot_authorized": false,
+    "published": false,
+    "stage": "44444444444444444444444444444444",
+    "state": "session-ended",
+    "version": 1
+  },
+  "bank_readonly": true,
+  "retry_refused": true,
+  "attempt_sha256": "41b34a5651393e07dc134bd81d4861053082b34f53f220a0a79b26a833d419d3",
+  "whole_runtime_proof": false,
+  "production_authorization": false
+}
