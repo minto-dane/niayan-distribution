@@ -1,0 +1,6 @@
+niayan-management (0.1.0) unstable; urgency=medium
+
+  * Package adopted management commands, required modules and translations.
+  * Keep native runtime and trust provisioning explicit.
+
+ -- minto-dane <205936182+minto-dane@users.noreply.github.com>  Sat, 12 Sep 2026 00:00:00 +0000

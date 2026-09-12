@@ -1,8 +1,8 @@
 # SPDX-License-Identifier: BSD-3-Clause
 # Traditional Chinese translations for the Nia management interface.
-# Copyright (C) 2026 NiaOS contributors.
+# Copyright (C) 2026 niayan contributors.
 msgid ""
-msgstr "Project-Id-Version: nia-management 1\nReport-Msgid-Bugs-To: \nPO-Revision-Date: 2026-09-09 00:00+0000\nLast-Translator: NiaOS contributors\nLanguage-Team: Traditional Chinese\nLanguage: zh_TW\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=1; plural=0;\n"
+msgstr "Project-Id-Version: nia-management 1\nReport-Msgid-Bugs-To: \nPO-Revision-Date: 2026-09-09 00:00+0000\nLast-Translator: niayan contributors\nLanguage-Team: Traditional Chinese\nLanguage: zh_TW\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=1; plural=0;\n"
 
 msgid "-I accepts only installp option flags"
 msgstr "-I 僅接受 installp 選項旗標"
@@ -97,8 +97,8 @@ msgstr "位置"
 msgid "Nia requires an explicit -d SOURCE for apply"
 msgstr "Nia 在套用時要求明確指定 -d SOURCE"
 
-msgid "NiaOS development interface; native service is not connected.\nLocal epkg template builds and emgr -d displays are available.\nemgr_download_ifix requires provisioned authenticated repository policy.\nInstalled-package operations and interactive packaging are unavailable.\nDebian package names/versions are retained. Other reference-platform options are rejected."
-msgstr "NiaOS 開發介面；尚未連接原生服務。\n可使用 epkg 從本機範本建置，以及使用 emgr -d 顯示內容。\nemgr_download_ifix 需要已設定且經過驗證的套件庫政策。\n尚不支援已安裝套件操作和互動式套件建立。\n保留 Debian 套件的名稱和版本。其他參考平台選項將被拒絕。"
+msgid "niayan development interface; native service is not connected.\nLocal epkg template builds and emgr -d displays are available.\nemgr_download_ifix requires provisioned authenticated repository policy.\nInstalled-package operations and interactive packaging are unavailable.\nDebian package names/versions are retained. Other reference-platform options are rejected."
+msgstr "niayan 開發介面；尚未連接原生服務。\n可使用 epkg 從本機範本建置，以及使用 emgr -d 顯示內容。\nemgr_download_ifix 需要已設定且經過驗證的套件庫政策。\n尚不支援已安裝套件操作和互動式套件建立。\n保留 Debian 套件的名稱和版本。其他參考平台選項將被拒絕。"
 
 msgid "PACKAGE"
 msgstr "套件"

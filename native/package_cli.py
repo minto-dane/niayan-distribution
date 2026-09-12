@@ -315,7 +315,7 @@ def main(command: str, argv: list[str]) -> int:
         return 2
     if argv == ['--help']:
         write_text(sys.stdout, HELP[command] + '\n\n' + ui.message(
-            'NiaOS development interface; native service is not connected.\n'
+            'niayan development interface; native service is not connected.\n'
             'Local epkg template builds and emgr -d displays are available.\n'
             'emgr_download_ifix requires provisioned authenticated repository policy.\n'
             'Installed-package operations and interactive packaging are unavailable.\n'

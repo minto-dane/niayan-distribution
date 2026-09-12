@@ -1,0 +1,18 @@
+Source: niayan-management
+Section: admin
+Priority: optional
+Maintainer: minto-dane <205936182+minto-dane@users.noreply.github.com>
+Homepage: https://github.com/minto-dane/niayan
+Build-Depends: debhelper-compat (= 13), dh-python, python3
+Standards-Version: 4.7.2
+Rules-Requires-Root: no
+
+Package: niayan-management
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}, python3-tuf (>= 5.1), python3-requests, python3-cryptography, libzstd1, ca-certificates
+Description: niayan management commands and localized artifact tools
+ Adopted package management interfaces with media indexing and listing,
+ local interim package construction and display, and authenticated download.
+ Installed-package mutations and queries require the native controller,
+ whose production integration is still under development. No alternate
+ package database, privileged launcher or automatic service is installed.

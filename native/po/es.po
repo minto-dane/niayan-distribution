@@ -1,8 +1,8 @@
 # SPDX-License-Identifier: BSD-3-Clause
 # Spanish translations for the Nia management interface.
-# Copyright (C) 2026 NiaOS contributors.
+# Copyright (C) 2026 niayan contributors.
 msgid ""
-msgstr "Project-Id-Version: nia-management 1\nReport-Msgid-Bugs-To: \nPO-Revision-Date: 2026-09-09 00:00+0000\nLast-Translator: NiaOS contributors\nLanguage-Team: Spanish\nLanguage: es\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=(n != 1);\n"
+msgstr "Project-Id-Version: nia-management 1\nReport-Msgid-Bugs-To: \nPO-Revision-Date: 2026-09-09 00:00+0000\nLast-Translator: niayan contributors\nLanguage-Team: Spanish\nLanguage: es\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "-I accepts only installp option flags"
 msgstr "-I solo admite opciones de installp"
@@ -97,8 +97,8 @@ msgstr "UBICACIÓN"
 msgid "Nia requires an explicit -d SOURCE for apply"
 msgstr "Nia requiere -d SOURCE explícito para aplicar"
 
-msgid "NiaOS development interface; native service is not connected.\nLocal epkg template builds and emgr -d displays are available.\nemgr_download_ifix requires provisioned authenticated repository policy.\nInstalled-package operations and interactive packaging are unavailable.\nDebian package names/versions are retained. Other reference-platform options are rejected."
-msgstr "Interfaz de desarrollo de NiaOS; el servicio nativo no está conectado.\nEstán disponibles la creación local de plantillas con epkg y la visualización con emgr -d.\nemgr_download_ifix requiere una política de repositorio autenticada y configurada.\nNo están disponibles las operaciones sobre paquetes instalados ni la creación interactiva de paquetes.\nSe conservan los nombres y versiones de los paquetes Debian. Se rechazan las demás opciones de la plataforma de referencia."
+msgid "niayan development interface; native service is not connected.\nLocal epkg template builds and emgr -d displays are available.\nemgr_download_ifix requires provisioned authenticated repository policy.\nInstalled-package operations and interactive packaging are unavailable.\nDebian package names/versions are retained. Other reference-platform options are rejected."
+msgstr "Interfaz de desarrollo de niayan; el servicio nativo no está conectado.\nEstán disponibles la creación local de plantillas con epkg y la visualización con emgr -d.\nemgr_download_ifix requiere una política de repositorio autenticada y configurada.\nNo están disponibles las operaciones sobre paquetes instalados ni la creación interactiva de paquetes.\nSe conservan los nombres y versiones de los paquetes Debian. Se rechazan las demás opciones de la plataforma de referencia."
 
 msgid "PACKAGE"
 msgstr "PAQUETE"

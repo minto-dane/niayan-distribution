@@ -1,0 +1,6 @@
+#!/usr/bin/make -f
+# SPDX-License-Identifier: BSD-3-Clause
+%:
+	dh $@ --with python3
+override_dh_python3:
+	dh_python3 /usr/lib/niayan/management

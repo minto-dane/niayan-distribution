@@ -265,7 +265,7 @@ msgid "Invoke as: {commands}"
 msgstr ""
 
 msgid ""
-"NiaOS development interface; native service is not connected.\n"
+"niayan development interface; native service is not connected.\n"
 "Local epkg template builds and emgr -d displays are available.\n"
 "emgr_download_ifix requires provisioned authenticated repository policy.\n"
 "Installed-package operations and interactive packaging are unavailable.\n"

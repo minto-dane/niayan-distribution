@@ -34,7 +34,9 @@ case "$NIA_DESKTOP" in
     ;;
   server) ;;
 esac
-test -x /usr/bin/nia
+test ! -e /usr/bin/nia
+test -x /usr/bin/installp
+installp --help
 test -x /usr/libexec/nia/hostctl
 /usr/libexec/nia/hostctl inspect
 printf '\nNIAOS_APT_CONFIGURATION\n'

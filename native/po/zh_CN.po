@@ -1,8 +1,8 @@
 # SPDX-License-Identifier: BSD-3-Clause
 # Simplified Chinese translations for the Nia management interface.
-# Copyright (C) 2026 NiaOS contributors.
+# Copyright (C) 2026 niayan contributors.
 msgid ""
-msgstr "Project-Id-Version: nia-management 1\nReport-Msgid-Bugs-To: \nPO-Revision-Date: 2026-09-09 00:00+0000\nLast-Translator: NiaOS contributors\nLanguage-Team: Simplified Chinese\nLanguage: zh_CN\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=1; plural=0;\n"
+msgstr "Project-Id-Version: nia-management 1\nReport-Msgid-Bugs-To: \nPO-Revision-Date: 2026-09-09 00:00+0000\nLast-Translator: niayan contributors\nLanguage-Team: Simplified Chinese\nLanguage: zh_CN\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=1; plural=0;\n"
 
 msgid "-I accepts only installp option flags"
 msgstr "-I 仅接受 installp 选项标志"
@@ -97,8 +97,8 @@ msgstr "位置"
 msgid "Nia requires an explicit -d SOURCE for apply"
 msgstr "Nia 在应用时要求显式指定 -d SOURCE"
 
-msgid "NiaOS development interface; native service is not connected.\nLocal epkg template builds and emgr -d displays are available.\nemgr_download_ifix requires provisioned authenticated repository policy.\nInstalled-package operations and interactive packaging are unavailable.\nDebian package names/versions are retained. Other reference-platform options are rejected."
-msgstr "NiaOS 开发接口；尚未连接原生服务。\n可以使用 epkg 从本地模板构建，以及使用 emgr -d 显示内容。\nemgr_download_ifix 需要已配置且经过认证的仓库策略。\n尚不支持已安装软件包操作和交互式软件包创建。\n保留 Debian 软件包的名称和版本。其他参考平台选项将被拒绝。"
+msgid "niayan development interface; native service is not connected.\nLocal epkg template builds and emgr -d displays are available.\nemgr_download_ifix requires provisioned authenticated repository policy.\nInstalled-package operations and interactive packaging are unavailable.\nDebian package names/versions are retained. Other reference-platform options are rejected."
+msgstr "niayan 开发接口；尚未连接原生服务。\n可以使用 epkg 从本地模板构建，以及使用 emgr -d 显示内容。\nemgr_download_ifix 需要已配置且经过认证的仓库策略。\n尚不支持已安装软件包操作和交互式软件包创建。\n保留 Debian 软件包的名称和版本。其他参考平台选项将被拒绝。"
 
 msgid "PACKAGE"
 msgstr "软件包"

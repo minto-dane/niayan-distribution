@@ -1,0 +1,4 @@
+native/*.py usr/lib/niayan/management/native
+native/bin usr/lib/niayan/management/native
+native/locale usr/lib/niayan/management/native
+tools/*.py usr/lib/niayan/management/tools

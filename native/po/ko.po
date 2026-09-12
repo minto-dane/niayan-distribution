@@ -1,8 +1,8 @@
 # SPDX-License-Identifier: BSD-3-Clause
 # Korean translations for the Nia management interface.
-# Copyright (C) 2026 NiaOS contributors.
+# Copyright (C) 2026 niayan contributors.
 msgid ""
-msgstr "Project-Id-Version: nia-management 1\nReport-Msgid-Bugs-To: \nPO-Revision-Date: 2026-09-09 00:00+0000\nLast-Translator: NiaOS contributors\nLanguage-Team: Korean\nLanguage: ko\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=1; plural=0;\n"
+msgstr "Project-Id-Version: nia-management 1\nReport-Msgid-Bugs-To: \nPO-Revision-Date: 2026-09-09 00:00+0000\nLast-Translator: niayan contributors\nLanguage-Team: Korean\nLanguage: ko\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=1; plural=0;\n"
 
 msgid "-I accepts only installp option flags"
 msgstr "-I에는 installp 옵션 플래그만 사용할 수 있습니다"
@@ -97,8 +97,8 @@ msgstr "위치"
 msgid "Nia requires an explicit -d SOURCE for apply"
 msgstr "Nia에서 적용하려면 -d SOURCE를 명시해야 합니다"
 
-msgid "NiaOS development interface; native service is not connected.\nLocal epkg template builds and emgr -d displays are available.\nemgr_download_ifix requires provisioned authenticated repository policy.\nInstalled-package operations and interactive packaging are unavailable.\nDebian package names/versions are retained. Other reference-platform options are rejected."
-msgstr "NiaOS 개발 인터페이스입니다. 네이티브 서비스는 연결되지 않았습니다.\nepkg를 통한 로컬 템플릿 빌드와 emgr -d를 통한 표시는 사용할 수 있습니다.\nemgr_download_ifix에는 구성되고 인증된 저장소 정책이 필요합니다.\n설치된 패키지 작업과 대화형 패키지 생성은 사용할 수 없습니다.\nDebian 패키지 이름과 버전은 유지됩니다. 그 밖의 참조 플랫폼 옵션은 거부됩니다."
+msgid "niayan development interface; native service is not connected.\nLocal epkg template builds and emgr -d displays are available.\nemgr_download_ifix requires provisioned authenticated repository policy.\nInstalled-package operations and interactive packaging are unavailable.\nDebian package names/versions are retained. Other reference-platform options are rejected."
+msgstr "niayan 개발 인터페이스입니다. 네이티브 서비스는 연결되지 않았습니다.\nepkg를 통한 로컬 템플릿 빌드와 emgr -d를 통한 표시는 사용할 수 있습니다.\nemgr_download_ifix에는 구성되고 인증된 저장소 정책이 필요합니다.\n설치된 패키지 작업과 대화형 패키지 생성은 사용할 수 없습니다.\nDebian 패키지 이름과 버전은 유지됩니다. 그 밖의 참조 플랫폼 옵션은 거부됩니다."
 
 msgid "PACKAGE"
 msgstr "패키지"

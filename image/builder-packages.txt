@@ -31,3 +31,7 @@ rsync
 seabios
 squashfs-tools
 xorriso
+dh-python
+gettext
+python3-requests
+python3-tuf

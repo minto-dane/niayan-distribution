@@ -10,7 +10,7 @@ import stat
 
 def prepare(destination, component='root-preparation'):
     distribution = Path(__file__).resolve().parents[1]
-    if component not in ('root-preparation', 'archive-observer'):
+    if component not in ('root-preparation', 'archive-observer', 'management'):
         raise ValueError('unknown internal service component')
     packaging = distribution / 'packaging' / component
     files = [(p, p.relative_to(packaging)) for p in sorted(packaging.rglob('*')) if not p.is_dir()]
@@ -22,6 +22,18 @@ def prepare(destination, component='root-preparation'):
             'archive_credential', 'archive_receipt', 'archive_intake', 'repository'))
         inputs += tuple('tools/'+name+'.py' for name in ('nia_common', 'debian_archive_auth',
             'deb_archive', 'debian_semantics', 'debian_triggers'))
+    if component == 'management':
+        inputs = tuple('native/' + name + '.py' for name in (
+            'package_cli', 'i18n', 'diagnostics', 'media', 'interim_commands',
+            'interim_package', 'interim_download', 'interim_intake', 'repository'))
+        inputs += tuple('tools/' + name + '.py' for name in (
+            'nia_common', 'deb_archive', 'debian_semantics', 'debian_triggers', 'zstd_bounded'))
+        inputs += tuple('native/bin/' + name for name in (
+            'installp', 'lslpp', 'lppchk', 'install_all_updates', 'instfix', 'inutoc',
+            'geninstall', 'suma', 'lppmgr', 'epkg', 'emgr', 'emgr_download_ifix'))
+        inputs += tuple(str(path.relative_to(distribution)) for path in
+                        sorted((distribution / 'native/locale').glob('*/LC_MESSAGES/*.mo')))
+        inputs += ('LICENSE', 'LICENSING.md', 'LICENSES/MIT-legacy.txt')
     files += [(distribution / name, Path(name)) for name in inputs]
     # Review all inputs before creating a fresh output. No upstream patching,
     # recursive workspace export, installed-state discovery or hidden download.
@@ -45,6 +57,6 @@ def prepare(destination, component='root-preparation'):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path, required=True)
-    parser.add_argument('--component', choices=('root-preparation', 'archive-observer'), default='root-preparation')
+    parser.add_argument('--component', choices=('root-preparation', 'archive-observer', 'management'), default='root-preparation')
     args = parser.parse_args()
     prepare(args.output, args.component)

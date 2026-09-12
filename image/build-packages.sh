@@ -6,7 +6,7 @@ set -eu
 export DEB_BUILD_OPTIONS=parallel=1 TZ=UTC
 . /build/live/nia-image.env
 export SOURCE_DATE_EPOCH
-for package in niaos-integration niaos-assurance niaos-pkgcore niaos-statecore \
+for package in niaos-integration niayan-management niaos-assurance niaos-pkgcore niaos-statecore \
                niaos-controlcore niaos-configcore niaos-resolvercore niaos-capsulecore
 do
     (cd "/build/packages/$package"; dpkg-buildpackage -us -uc)

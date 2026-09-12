@@ -1,0 +1,12 @@
+usr/lib/niayan/management/native/bin/installp usr/bin/installp
+usr/lib/niayan/management/native/bin/lslpp usr/bin/lslpp
+usr/lib/niayan/management/native/bin/lppchk usr/bin/lppchk
+usr/lib/niayan/management/native/bin/install_all_updates usr/bin/install_all_updates
+usr/lib/niayan/management/native/bin/instfix usr/bin/instfix
+usr/lib/niayan/management/native/bin/inutoc usr/bin/inutoc
+usr/lib/niayan/management/native/bin/geninstall usr/bin/geninstall
+usr/lib/niayan/management/native/bin/suma usr/bin/suma
+usr/lib/niayan/management/native/bin/lppmgr usr/bin/lppmgr
+usr/lib/niayan/management/native/bin/epkg usr/bin/epkg
+usr/lib/niayan/management/native/bin/emgr usr/bin/emgr
+usr/lib/niayan/management/native/bin/emgr_download_ifix usr/bin/emgr_download_ifix

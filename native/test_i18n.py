@@ -208,7 +208,7 @@ class LocalizationTests(unittest.TestCase):
                     result = self.run_command(command, ['--help'], {'LANG': language})
                     self.assertEqual((result.returncode, result.stderr), (0, ''))
                     self.assertTrue(result.stdout.startswith(HELP[command] + '\n'))
-                    self.assertNotIn('NiaOS development interface', result.stdout)
+                    self.assertNotIn('niayan development interface', result.stdout)
                 invalid = self.run_command('installp', ['-d', '/one', '-d', '/two', 'package'], {'LANG': language})
                 self.assertEqual((invalid.returncode, invalid.stdout), (2, ''))
                 self.assertIn('-d', invalid.stderr)

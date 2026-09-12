@@ -1,8 +1,8 @@
 # SPDX-License-Identifier: BSD-3-Clause
 # Japanese translations for the Nia management interface.
-# Copyright (C) 2026 NiaOS contributors.
+# Copyright (C) 2026 niayan contributors.
 msgid ""
-msgstr "Project-Id-Version: nia-management 1\nReport-Msgid-Bugs-To: \nPO-Revision-Date: 2026-09-09 00:00+0000\nLast-Translator: NiaOS contributors\nLanguage-Team: Japanese\nLanguage: ja\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=1; plural=0;\n"
+msgstr "Project-Id-Version: nia-management 1\nReport-Msgid-Bugs-To: \nPO-Revision-Date: 2026-09-09 00:00+0000\nLast-Translator: niayan contributors\nLanguage-Team: Japanese\nLanguage: ja\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=1; plural=0;\n"
 
 msgid "-I accepts only installp option flags"
 msgstr "-I には installp のオプションだけを指定してください"
@@ -100,8 +100,8 @@ msgstr "場所"
 msgid "Nia requires an explicit -d SOURCE for apply"
 msgstr "適用には -d SOURCE を明示的に指定してください"
 
-msgid "NiaOS development interface; native service is not connected.\nLocal epkg template builds and emgr -d displays are available.\nemgr_download_ifix requires provisioned authenticated repository policy.\nInstalled-package operations and interactive packaging are unavailable.\nDebian package names/versions are retained. Other reference-platform options are rejected."
-msgstr "NiaOS の開発用インターフェイスです。管理サービスは未接続です。\nepkg のテンプレート作成と emgr -d の成果物表示を使用できます。\nemgr_download_ifix には、認証されたリポジトリのポリシーをあらかじめ配備する必要があります。\n導入済みパッケージの操作と対話形式の作成はまだ使用できません。\nDebian のパッケージ名と版を維持します。参照環境のその他のオプションは受け付けません。"
+msgid "niayan development interface; native service is not connected.\nLocal epkg template builds and emgr -d displays are available.\nemgr_download_ifix requires provisioned authenticated repository policy.\nInstalled-package operations and interactive packaging are unavailable.\nDebian package names/versions are retained. Other reference-platform options are rejected."
+msgstr "niayan の開発用インターフェイスです。管理サービスは未接続です。\nepkg のテンプレート作成と emgr -d の成果物表示を使用できます。\nemgr_download_ifix には、認証されたリポジトリのポリシーをあらかじめ配備する必要があります。\n導入済みパッケージの操作と対話形式の作成はまだ使用できません。\nDebian のパッケージ名と版を維持します。参照環境のその他のオプションは受け付けません。"
 
 msgid "PACKAGE"
 msgstr "パッケージ"

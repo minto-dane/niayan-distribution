@@ -3,6 +3,7 @@
 """Stage distribution inputs; never edit component or upstream source trees."""
 import argparse
 import hashlib
+import importlib.util
 import io
 import json
 import os
@@ -111,6 +112,10 @@ def prepare(output, workspace, desktop):
     shutil.copy2(DIST / 'LICENSE', integration / 'debian/copyright')
     for name in ('rules', 'niaos-release.preinst', 'niaos-release.postrm'):
         (integration / 'debian' / name).chmod(0o755)
+    spec = importlib.util.spec_from_file_location('package_export', DIST / 'native/prepare_service_package.py')
+    exporter = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(exporter)
+    exporter.prepare(package_dir / 'niayan-management', 'management')
     components = [stage_component(workspace, package_dir / ('niaos-' + name), name)
                   for name in COMPONENTS]
     live = output / 'live'
@@ -137,7 +142,7 @@ def prepare(output, workspace, desktop):
           'Acquire::ForceIPv4 "true";\nAcquire::http::Timeout "30";\n'
           'Acquire::https::Timeout "30";\n')
     meta = 'niaos-base' if desktop == 'server' else 'niaos-desktop-' + desktop
-    write(live / 'config/package-lists/niaos.list.chroot', meta + '\n' +
+    write(live / 'config/package-lists/niaos.list.chroot', meta + '\nniayan-management\n' +
           '\n'.join(row['package'] for row in components) + '\n')
     write(live / 'config/package-lists/live.list.chroot_live',
           'live-boot\nlive-config\nlive-config-systemd\n')
@@ -156,6 +161,11 @@ def prepare(output, workspace, desktop):
                 raise ValueError(f'non-regular distribution input: {path}')
             if path.is_file():
                 distribution_inputs[str(path.relative_to(DIST))] = hashlib.sha256(path.read_bytes()).hexdigest()
+    management_sources = json.loads((package_dir / 'niayan-management/source-inputs.json').read_text())
+    for row in management_sources['files'].values():
+        distribution_inputs[row['source']] = row['sha256']
+    distribution_inputs['native/prepare_service_package.py'] = hashlib.sha256(
+        (DIST / 'native/prepare_service_package.py').read_bytes()).hexdigest()
     distribution_inputs['LICENSE'] = hashlib.sha256((DIST / 'LICENSE').read_bytes()).hexdigest()
     write(output / 'input-manifest.json', json.dumps({'lock': lock, 'desktop': desktop,
           'components': components, 'distribution_inputs': distribution_inputs,

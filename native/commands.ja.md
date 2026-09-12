@@ -7,8 +7,9 @@
 `inutoc`の索引作成とinstallp/geninstallの[媒体一覧](media.ja.md)も原本DEB読取器へ接続した。
 `emgr_download_ifix -L URL [-P DIRECTORY]`は[共通の供給認証](repository.ja.md)を使い、
 あらかじめ配備されたroot所有policyと信頼cacheに従って成果物を取得する。
-稼働実行器やcatalogには接続していない。`bin/`は開発用の入口であり、
-パッケージやISOには組み込んでいない。稼働状態の変更・照会・事前検査は終了値1で未接続を返す。
+稼働実行器やcatalogには接続していない。`bin/`の12入口と実装・7翻訳catalogを`niayan-management`へ同梱する。
+入口は/usr/binから保護された内部実装へのsymlinkとし、python3 -Iで起動する。
+開発ISOの構築レシピにも組み込み、旧nia aliasは撤去する。稼働状態の変更・照会・事前検査は終了値1で未接続を返す。
 ローカル成果物操作の成功とヘルプは終了値0、構文エラーは2となる。
 
 ```sh

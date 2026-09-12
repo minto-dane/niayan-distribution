@@ -135,3 +135,14 @@ sudo python3 /release/complete-sources.py --sources /build/corresponding-sources
 workspaceには手動起動の`Debian 13 packages` workflowも置く。独自DEBを順にビルド・試験し、識別情報の復元を確認して、対応する独自source packageと一緒に成果物を保存する。GitHub上での実行結果とローカルでの実行結果は別に扱う。
 
 ビルド入力が固定されていても、ISO全体のビット再現性は別の比較が必要。既存18実行ファイルの再現一致をISOの再現一致へ転記しない。`source=false`の開発ISOだけを一般公開しない。上流sourceの保管と公開用の署名・連絡先整備が必要である。
+
+## 採用管理コマンドの配布
+
+`niayan-management`は12入口、実際に使う14 Python module、7翻訳catalogを明示選択して配布する。
+`prepare_service_package.py`の共通export経路が正本のbytes/mode/hashを記録し、イメージmanifestも
+その全入力へ束縛する。worker、試験鍵、人工fixture、試験器をこのpackageへ混ぜない。
+既存管理器の単純なpublic aliasだったniaはsource/main/artifactから撤去した。
+内部missionctl/mission_signは元の内部用途で維持する。
+
+媒体索引・媒体一覧・緊急修正のローカル作成/表示と認証付き取得は利用できる。
+導入済み台帳への操作、TUI、完全置換は未接続のままであり、APT版ISOを完成製品として出荷しない。

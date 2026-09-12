@@ -1,0 +1,65 @@
+Running as unit: run-p1520502-i1520802.scope; invocation ID: 3c9ce9113527497e86007331b4de0ab6
+limited-exec: {"scope": "run-p1520502-i1520802.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+dpkg-buildpackage: info: source package niayan-management
+dpkg-buildpackage: info: source version 0.1.0
+dpkg-buildpackage: info: source distribution unstable
+dpkg-buildpackage: info: source changed by minto-dane <205936182+minto-dane@users.noreply.github.com>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture amd64
+ debian/rules clean
+dh clean --with python3
+   dh_clean
+ dpkg-source -b .
+dpkg-source: info: using source format '3.0 (native)'
+dpkg-source: info: building niayan-management in niayan-management_0.1.0.tar.xz
+dpkg-source: info: building niayan-management in niayan-management_0.1.0.dsc
+ debian/rules binary
+dh binary --with python3
+   dh_update_autotools_config
+   dh_autoreconf
+   create-stamp debian/debhelper-build-stamp
+   dh_prep
+   dh_auto_install --destdir=debian/niayan-management/
+   dh_install
+   dh_installdocs
+   dh_installchangelogs
+   debian/rules override_dh_python3
+make[1]: Entering directory '/home/nia/devbox/niaos/.work/niayan-publication-01/niayan-management'
+dh_python3 /usr/lib/niayan/management
+I: dh_python3 tools:114: replacing shebang in debian/niayan-management/usr/lib/niayan/management/native/package_cli.py
+I: dh_python3 tools:114: replacing shebang in debian/niayan-management/usr/lib/niayan/management/native/bin/emgr
+I: dh_python3 tools:114: replacing shebang in debian/niayan-management/usr/lib/niayan/management/native/bin/emgr_download_ifix
+I: dh_python3 tools:114: replacing shebang in debian/niayan-management/usr/lib/niayan/management/native/bin/epkg
+I: dh_python3 tools:114: replacing shebang in debian/niayan-management/usr/lib/niayan/management/native/bin/geninstall
+I: dh_python3 tools:114: replacing shebang in debian/niayan-management/usr/lib/niayan/management/native/bin/install_all_updates
+I: dh_python3 tools:114: replacing shebang in debian/niayan-management/usr/lib/niayan/management/native/bin/installp
+I: dh_python3 tools:114: replacing shebang in debian/niayan-management/usr/lib/niayan/management/native/bin/instfix
+I: dh_python3 tools:114: replacing shebang in debian/niayan-management/usr/lib/niayan/management/native/bin/inutoc
+I: dh_python3 tools:114: replacing shebang in debian/niayan-management/usr/lib/niayan/management/native/bin/lppchk
+I: dh_python3 tools:114: replacing shebang in debian/niayan-management/usr/lib/niayan/management/native/bin/lppmgr
+I: dh_python3 tools:114: replacing shebang in debian/niayan-management/usr/lib/niayan/management/native/bin/lslpp
+I: dh_python3 tools:114: replacing shebang in debian/niayan-management/usr/lib/niayan/management/native/bin/suma
+make[1]: Leaving directory '/home/nia/devbox/niaos/.work/niayan-publication-01/niayan-management'
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+	Normalized debian/niayan-management/usr/lib/niayan/management/native/locale/de/LC_MESSAGES/nia-management.mo
+	Normalized debian/niayan-management/usr/lib/niayan/management/native/locale/zh_TW/LC_MESSAGES/nia-management.mo
+	Normalized debian/niayan-management/usr/lib/niayan/management/native/locale/fr/LC_MESSAGES/nia-management.mo
+	Normalized debian/niayan-management/usr/lib/niayan/management/native/locale/ko/LC_MESSAGES/nia-management.mo
+	Normalized debian/niayan-management/usr/lib/niayan/management/native/locale/ja/LC_MESSAGES/nia-management.mo
+	Normalized debian/niayan-management/usr/lib/niayan/management/native/locale/es/LC_MESSAGES/nia-management.mo
+	Normalized debian/niayan-management/usr/lib/niayan/management/native/locale/zh_CN/LC_MESSAGES/nia-management.mo
+   dh_compress
+   dh_fixperms
+   dh_missing
+   dh_installdeb
+   dh_gencontrol
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package 'niayan-management' in '../niayan-management_0.1.0_all.deb'.
+ dpkg-genbuildinfo -O../niayan-management_0.1.0_amd64.buildinfo
+ dpkg-genchanges -O../niayan-management_0.1.0_amd64.changes
+dpkg-genchanges: info: including full source code in upload
+ dpkg-source --after-build .
+dpkg-buildpackage: info: full upload; Debian-native package (full source is included)
