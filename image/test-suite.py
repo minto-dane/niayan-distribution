@@ -8,7 +8,7 @@ from pathlib import Path
 import subprocess
 import sys
 import time
-from vm_console import install_interrupt_handler, tool_hashes
+from vm_console import install_interrupt_handler, tool_hashes, retire_install_disks
 
 HERE = Path(__file__).resolve().parent
 
@@ -18,6 +18,8 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--iso', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
+    parser.add_argument('--retain-disks', action='store_true',
+                        help='keep successful installation disks for an explicit follow-up; failures always retain them')
     args = parser.parse_args()
     iso = args.iso.resolve(strict=True)
     if not iso.is_file():
@@ -35,7 +37,8 @@ def main():
           '--firmware', 'secure-boot', '--mirror-policy', 'media']),
     ]
     report = {'result': 'incomplete', 'desktop': 'kde', 'test_tools_sha256': tool_hashes(),
-              'tests': [], 'production_qualified': False,
+              'tests': [], 'production_qualified': False, 'disk_cleanup': [],
+              'disk_retention': 'explicit' if args.retain_disks else 'until-suite-success',
               'scope': 'QEMU BIOS/UEFI/Secure Boot, Japanese input, offline/online installation and APT metadata'}
     with iso.open('rb') as stream:
         report['iso_sha256'] = hashlib.file_digest(stream, 'sha256').hexdigest()
@@ -60,6 +63,10 @@ def main():
                 raise ValueError('child did not report acceptance: ' + name)
             row['result'] = 'pass'
             save()
+        # installed-secure-boot still needs the UEFI disk; retire only after the
+        # complete matrix and its QEMU processes have finished successfully.
+        if not args.retain_disks:
+            retire_install_disks(output, report['disk_cleanup'])
         report['result'] = 'pass'
     except BaseException as error:
         report['result'] = 'fail'

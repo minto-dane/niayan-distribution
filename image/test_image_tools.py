@@ -3,6 +3,7 @@
 import importlib.util
 import hashlib
 import io
+import json
 from pathlib import Path
 import subprocess
 import socket
@@ -11,7 +12,7 @@ import tarfile
 import unittest
 from unittest import mock
 import time
-from vm_console import Guest
+from vm_console import Guest, retire_install_disks
 
 HERE = Path(__file__).resolve().parent
 spec = importlib.util.spec_from_file_location('collect_sources', HERE / 'collect-sources.py')
@@ -237,6 +238,99 @@ class SerialAcceptance(unittest.TestCase):
                         guest.expect(b'NIAOS_LIVE_PROBE_PASS', b'NIAOS_LIVE_PROBE_FAIL')
                 finally:
                     guest.close()
+
+
+class DiskRetirement(unittest.TestCase):
+    def fixture(self, root):
+        paths = [root / name / 'installed.qcow2' for name in
+                 ('install-uefi-offline', 'install-bios-network')]
+        for path in paths:
+            path.parent.mkdir()
+            path.write_bytes(b'owned fixture disk')
+        (root / 'report.json').write_text('{"preserve":true}')
+        return paths
+
+    def test_success_removes_only_disks_and_records_allocation(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            paths = self.fixture(root)
+            records = []
+            retire_install_disks(root, records)
+            self.assertTrue(all(not path.exists() for path in paths))
+            self.assertEqual([row['state'] for row in records], ['removed', 'removed'])
+            self.assertTrue(all(row['logical_bytes'] == len(b'owned fixture disk') for row in records))
+            self.assertEqual(json.loads((root / 'report.json').read_text()), {'preserve': True})
+            with self.assertRaises(ValueError):
+                retire_install_disks(root, records)
+
+    def test_second_symlink_refuses_before_first_deletion(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            first, second = self.fixture(root)
+            second.unlink()
+            second.symlink_to(first)
+            with self.assertRaises(OSError):
+                retire_install_disks(root, [])
+            self.assertEqual(first.read_bytes(), b'owned fixture disk')
+            self.assertTrue(second.is_symlink())
+
+    def test_busy_disk_refuses_before_any_deletion(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            paths = self.fixture(root)
+            code = ('import fcntl,sys; f=open(sys.argv[1],"r+b"); '
+                    'fcntl.lockf(f,fcntl.LOCK_EX); print("locked",flush=True); sys.stdin.read()')
+            with subprocess.Popen(['python3', '-I', '-c', code, str(paths[1])],
+                                  stdin=subprocess.PIPE, stdout=subprocess.PIPE) as child:
+                try:
+                    self.assertEqual(child.stdout.readline(), b'locked\n')
+                    with self.assertRaises(BlockingIOError):
+                        retire_install_disks(root, [])
+                    self.assertTrue(all(path.is_file() for path in paths))
+                finally:
+                    child.communicate(timeout=3)
+
+    def test_suite_retirement_follows_complete_matrix(self):
+        spec = importlib.util.spec_from_file_location('image_suite', HERE / 'test-suite.py')
+        suite = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(suite)
+        for mode in ('normal', 'retain', 'failure'):
+            with self.subTest(mode=mode), tempfile.TemporaryDirectory() as temporary:
+                root = Path(temporary)
+                iso = root / 'fixture.iso'
+                iso.write_bytes(b'fixture')
+                output = root / 'acceptance'
+                completed = []
+
+                def run(command, **kwargs):
+                    target = Path(command[command.index('--output') + 1])
+                    target.mkdir()
+                    if target.name.startswith('install-'):
+                        (target / 'installed.qcow2').write_bytes(b'owned fixture disk')
+                    if target.name == 'installed-secure-boot':
+                        self.assertTrue((output/'install-uefi-offline/installed.qcow2').is_file())
+                        self.assertTrue((output/'install-bios-network/installed.qcow2').is_file())
+                        if mode == 'failure':
+                            raise subprocess.CalledProcessError(1, command)
+                    (target / 'report.json').write_text('{"result":"pass"}')
+                    completed.append(target.name)
+
+                argv = ['test-suite.py', '--iso', str(iso), '--output', str(output)]
+                if mode == 'retain':
+                    argv.append('--retain-disks')
+                with mock.patch.object(suite.sys, 'argv', argv), \
+                     mock.patch.object(suite, 'install_interrupt_handler'), \
+                     mock.patch.object(suite.subprocess, 'run', side_effect=run):
+                    if mode == 'failure':
+                        with self.assertRaises(subprocess.CalledProcessError):
+                            suite.main()
+                    else:
+                        suite.main()
+                report = json.loads((output / 'report.json').read_text())
+                self.assertEqual(report['result'], 'fail' if mode == 'failure' else 'pass')
+                self.assertEqual(len(completed), 5 if mode == 'failure' else 6)
+                self.assertEqual((output/'install-uefi-offline/installed.qcow2').exists(), mode != 'normal')
+                self.assertTrue(iso.is_file())
 
 
 if __name__ == '__main__':

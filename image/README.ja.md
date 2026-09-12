@@ -89,7 +89,7 @@ sh dev/run-limited.sh sudo -n podman \
 
 ## VM受入
 
-KDEの一括受入は、ビルダー内で`python3 /source/test-suite.py --iso <ISO> --output <新規ディレクトリ>`を実行する。BIOSと日本語入力、UEFIとAPT取得、Secure Boot、UEFIオフライン導入、BIOSオンライン導入、導入済みディスクのSecure Bootを必ず順番に実行し、途中の失敗で停止する。外側containerには`--device /dev/kvm`とネットワークを許可し、全体を同じ資源制限へ入れる。2つの試験diskとログのために追加で25 GiB程度の空きを用意する。以下の工具は個別実行にも使える。
+KDEの一括受入は、ビルダー内で`python3 /source/test-suite.py --iso <ISO> --output <新規ディレクトリ>`を実行する。BIOSと日本語入力、UEFIとAPT取得、Secure Boot、UEFIオフライン導入、BIOSオンライン導入、導入済みディスクのSecure Bootを必ず順番に実行し、途中の失敗で停止する。外側containerには`--device /dev/kvm`とネットワークを許可し、全体を同じ資源制限へ入れる。実行中は2つの試験diskとログのために追加で25 GiB程度の空きを用意する。全項目成功後は2つの導入diskだけを削除し、reportに記録する。ISO・ログは保持する。追加調査用にdiskを残す場合は`--retain-disks`を明示する。失敗時は調査のためdiskを保持し、使用後に整理する。個別工具は呼出元がdiskの寿命を管理する。
 
 `test-live.py --iso /build/live/<生成ISO> --output /build/test-bios --firmware bios`をビルダー内で実行する。`uefi`と`secure-boot`は別の新規出力ディレクトリで実行する。QEMUへ渡すのはISOと専用OVMF変数ファイルだけ。ホストdisk・HOME・bus・networkはゲストへ渡さない。`/dev/kvm`を使用できればKVM、それ以外はTCGで起動し、メモリ2048 MiB・1 vCPUに固定する。
 

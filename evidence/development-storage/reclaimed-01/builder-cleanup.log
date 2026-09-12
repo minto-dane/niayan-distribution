@@ -1,0 +1,17 @@
+{
+  "removed": [
+    "/build-03",
+    "/build-04",
+    "/build-05",
+    "/build-06",
+    "/build-07",
+    "/build-08",
+    "/build-09"
+  ],
+  "preserved_records": "/build/retired-build-records-20260912.tar.xz",
+  "records_sha256": "f44005240a3f65dd936a616770c56f6b7d21e19c4242039a9a567595fcbc3a10",
+  "installed_packages_sha256": "ef52f95adcc57fdb3172c1a34f2a73294f15be947cd419754f63f1fe17669001"
+}
+/: 38.6 GiB (41490366464 bytes) trimmed
+Filesystem       1B-blocks        Used   Available Use% Mounted on
+/dev/vda1      84331524096 16801116160 64052293632  21% /

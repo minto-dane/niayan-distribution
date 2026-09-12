@@ -1,0 +1,24 @@
+{
+  "result": "pass",
+  "real_qemu_lock_refused": true,
+  "no_disk_removed_while_busy": true,
+  "closed_disks_retired": true,
+  "records": [
+    {
+      "path": "install-uefi-offline/installed.qcow2",
+      "state": "removed",
+      "device": 65025,
+      "inode": 9094144,
+      "logical_bytes": 196616,
+      "allocated_bytes_before": 200704
+    },
+    {
+      "path": "install-bios-network/installed.qcow2",
+      "state": "removed",
+      "device": 65025,
+      "inode": 9094146,
+      "logical_bytes": 196616,
+      "allocated_bytes_before": 200704
+    }
+  ]
+}

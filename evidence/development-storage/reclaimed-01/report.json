@@ -1,0 +1,23 @@
+{
+  "result": "pass",
+  "scope": "development storage reclamation and successful image-suite disk retention; no production runtime change",
+  "sources": {
+    "distribution/image/vm_console.py": "a1e8445b6f77b9f84f474dd09ab3d4e2047f59ba18e7a5f39c9f9cd955e9a38d",
+    "distribution/image/test-suite.py": "3da67486dc859a8d91317f7e550451548a83194a434fe7733a7b89f16e62e82c",
+    "distribution/image/test_image_tools.py": "8508dac9f40ed7a4b16f32e97e9944796ff8d21e4efd444472e4966afcc91e38"
+  },
+  "host_allocated_bytes_reclaimed": 59774562304,
+  "host_available_bytes": 64118833152,
+  "vm_image": "sha256:7f92f64938b87b862dd962a93b558fb0caea13493745c684fbddfc190a723617",
+  "limits": {
+    "memory_bytes": 3221225472,
+    "swap_bytes": 0,
+    "vcpus": 1,
+    "pids": 128,
+    "vm_memory_mib": 2048
+  },
+  "native_production_connection_complete": false,
+  "post_validation_edits": [
+    "Removed an unused os import from the test file; production helper and suite logic are unchanged."
+  ]
+}

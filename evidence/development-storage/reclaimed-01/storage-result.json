@@ -1,0 +1,27 @@
+{
+  "removed": [
+    {
+      "path": "/home/nia/devbox/niaos/.work/distro-artifacts-09/acceptance-01/install-bios-network/installed.qcow2",
+      "allocated_bytes": 10148687872,
+      "logical_bytes": 10148577280,
+      "acceptance_result": "pass"
+    },
+    {
+      "path": "/home/nia/devbox/niaos/.work/distro-artifacts-09/acceptance-01/install-uefi-offline/installed.qcow2",
+      "allocated_bytes": 9282277376,
+      "logical_bytes": 9282191360,
+      "acceptance_result": "pass"
+    }
+  ],
+  "allocated_bytes": 19430965248,
+  "preserved": [
+    "accepted ISO",
+    "corresponding sources",
+    "acceptance logs",
+    "builder and toolchains"
+  ],
+  "builder_allocated_before": 58834296832,
+  "builder_allocated_after": 18490699776,
+  "builder_logical_size": 72037892096,
+  "host_available_bytes": 64118833152
+}

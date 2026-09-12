@@ -3,7 +3,10 @@
 import json
 import base64
 import hashlib
+import fcntl
+import os
 from pathlib import Path
+import stat
 import socket
 import signal
 import shutil
@@ -25,6 +28,51 @@ def tool_hashes():
     return {name: hashlib.sha256((root / name).read_bytes()).hexdigest()
             for name in ('vm_console.py', 'test-live.py', 'test-install.py', 'test-suite.py',
                          'fixtures/install-vm.cfg', 'fixtures/install-network.cfg')}
+
+
+def retire_install_disks(output, records):
+    """Remove only this completed suite's two disks, after every Guest exited.
+
+    Preflight both before removing either. Whole-file POSIX write locks conflict
+    with QEMU's image locks. The fresh private output directory remains owned by
+    the suite; this is not a general cache deletion or cross-user cleanup API.
+    Preserve partial cleanup records if an unlink fails; never repeat blindly.
+    """
+    if records:
+        raise ValueError('disk retirement cannot be repeated')
+    owned = []
+    parent = os.open(output, os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW | os.O_CLOEXEC)
+    try:
+        for name in ('install-uefi-offline', 'install-bios-network'):
+            directory = os.open(name, os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW | os.O_CLOEXEC,
+                                dir_fd=parent)
+            owned.append(directory)
+            fd = os.open('installed.qcow2', os.O_RDWR | os.O_NOFOLLOW | os.O_CLOEXEC, dir_fd=directory)
+            owned.append(fd)
+            info = os.fstat(fd)
+            if not stat.S_ISREG(info.st_mode) or info.st_nlink != 1 or info.st_uid != os.geteuid():
+                raise ValueError('suite disk must be an exclusively owned regular file')
+            fcntl.lockf(fd, fcntl.LOCK_EX | fcntl.LOCK_NB)
+            records.append(dict(path=name+'/installed.qcow2', state='retained',
+                                device=info.st_dev, inode=info.st_ino, logical_bytes=info.st_size,
+                                allocated_bytes_before=info.st_blocks*512))
+        for index, row in enumerate(records):
+            directory = owned[2*index]
+            current = os.stat('installed.qcow2', dir_fd=directory, follow_symlinks=False)
+            if (current.st_dev, current.st_ino) != (row['device'], row['inode']):
+                raise ValueError('suite disk changed during cleanup')
+            os.unlink('installed.qcow2', dir_fd=directory)
+            row['state'] = 'removed'
+            os.fsync(directory)
+    finally:
+        failures = []
+        for fd in [*reversed(owned), parent]:
+            try:
+                os.close(fd)
+            except OSError as error:
+                failures.append(error)
+        if failures:
+            raise OSError('suite disk cleanup could not close all descriptors') from failures[0]
 
 
 def firmware_args(mode, output):

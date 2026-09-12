@@ -1,0 +1,47 @@
+test_busy_disk_refuses_before_any_deletion (test_image_tools.DiskRetirement.test_busy_disk_refuses_before_any_deletion) ... ok
+test_second_symlink_refuses_before_first_deletion (test_image_tools.DiskRetirement.test_second_symlink_refuses_before_first_deletion) ... ok
+test_success_removes_only_disks_and_records_allocation (test_image_tools.DiskRetirement.test_success_removes_only_disks_and_records_allocation) ... ok
+test_suite_retirement_follows_complete_matrix (test_image_tools.DiskRetirement.test_suite_retirement_follows_complete_matrix) ... Running live-bios
+Running live-uefi-network
+Running live-secure-boot
+Running install-uefi-offline
+Running install-bios-network
+Running installed-secure-boot
+Running live-bios
+Running live-uefi-network
+Running live-secure-boot
+Running install-uefi-offline
+Running install-bios-network
+Running installed-secure-boot
+Running live-bios
+Running live-uefi-network
+Running live-secure-boot
+Running install-uefi-offline
+Running install-bios-network
+Running installed-secure-boot
+ok
+test_equal_bytes_require_equal_inputs_and_changed_bytes_fail (test_image_tools.ImageComparison.test_equal_bytes_require_equal_inputs_and_changed_bytes_fail) ... ok
+test_committed_file_modes_do_not_depend_on_checkout_permissions (test_image_tools.PreparationBoundaries.test_committed_file_modes_do_not_depend_on_checkout_permissions) ... ok
+test_dirty_component_refused_before_copy (test_image_tools.PreparationBoundaries.test_dirty_component_refused_before_copy) ... ok
+test_existing_output_is_not_overwritten (test_image_tools.PreparationBoundaries.test_existing_output_is_not_overwritten) ... ok
+test_failure_already_received_after_login_is_not_lost (test_image_tools.SerialAcceptance.test_failure_already_received_after_login_is_not_lost) ... ok
+test_additional_source_requires_exact_version (test_image_tools.SourceAssociation.test_additional_source_requires_exact_version) ... ok
+test_binary_nmu_uses_explicit_source_version_and_epoch (test_image_tools.SourceAssociation.test_binary_nmu_uses_explicit_source_version_and_epoch) ... ok
+test_historical_architectures_are_alternatives_and_errors_fail (test_image_tools.SourceAssociation.test_historical_architectures_are_alternatives_and_errors_fail) ... Historical download: fixture=1.0 (amd64)
+debsnap: No binary packages found for fixture version 1.0 on amd64
+Historical download: fixture=1.0 (all)
+Historical download: fixture=1.0 (amd64)
+TLS retrieval failedok
+test_installer_build_identity_preserves_source_version (test_image_tools.SourceAssociation.test_installer_build_identity_preserves_source_version) ... ok
+test_live_inventory_requires_every_exact_binary_version (test_image_tools.SourceAssociation.test_live_inventory_requires_every_exact_binary_version) ... ok
+test_missing_source_field_preserves_identity (test_image_tools.SourceAssociation.test_missing_source_field_preserves_identity) ... ok
+test_no_invented_bin_nmu_source_version (test_image_tools.SourceAssociation.test_no_invented_bin_nmu_source_version) ... ok
+test_signed_kernel_source_control_closes_missing_udeb_reference (test_image_tools.SourceAssociation.test_signed_kernel_source_control_closes_missing_udeb_reference) ... ok
+test_signed_wrapper_retains_actual_kernel_and_static_sources (test_image_tools.SourceAssociation.test_signed_wrapper_retains_actual_kernel_and_static_sources) ... ok
+test_source_archives_are_checked_against_exact_control (test_image_tools.SourceAssociation.test_source_archives_are_checked_against_exact_control) ... ok
+test_source_name_without_version_preserves_binary_version (test_image_tools.SourceAssociation.test_source_name_without_version_preserves_binary_version) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.175s
+
+OK
