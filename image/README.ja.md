@@ -1,5 +1,11 @@
 # Debian 13イメージの構築
 
+2026-09-12: 現在のレシピは公開名niayan、開発版0.2.0を使用する。
+受入済みの旧ISOとは入力が異なるため、そのVM受入・再現性結果を本版へ流用しない。
+旧ISOを再現する場合は受入記録のdistribution commitをcheckoutする。
+内部DEB名とdiversion所有者は維持し、OS名の変更で既存所有権を切断しない。
+
+
 ここは受入済みAPT基準版の再現手順。最新の製品方針は
 [Niaへの完全置換](../docs/decisions/0002-native-package-authority.ja.md)であり、
 このレシピだけでNia-only製品が生成されるわけではない。
@@ -46,7 +52,7 @@ sudo -n podman run --rm --network=slirp4netns --cap-add=SYS_ADMIN \
   localhost/niaos-image-builder:20260908 sh /source/build-live.sh
 ```
 
-`--desktop`は`kde`・`gnome`・`server`。最初の受入対象はKDEで、選択肢の存在を全ての受入成功とは扱わない。GNOMEとKDEを同時にイメージへ導入しない。Liveユーザーは`niaos`、パスワードはDebian Live標準の`live`。Live専用で、インストーラーで作る永続ユーザーのパスワードとは別である。
+`--desktop`は`kde`・`gnome`・`server`。最初の受入対象はKDEで、選択肢の存在を全ての受入成功とは扱わない。GNOMEとKDEを同時にイメージへ導入しない。Liveユーザーは`niayan`、パスワードはDebian Live標準の`live`。Live専用で、インストーラーで作る永続ユーザーのパスワードとは別である。
 
 KDEでは標準KConfigの`/etc/xdg/kwinrc`でFcitx 5をWayland入力メソッドに選ぶ。新規ユーザーの`.xinputrc`は、KDE WaylandではKWinに起動を任せ、X11ではim-configを使用する。これは[FcitxのWayland手順](https://fcitx-im.org/wiki/Using_Fcitx_5_on_Wayland)に沿った設定である。既存ユーザーの設定は上書きしない。既存DebianユーザーへDEBだけを追加する場合は、KDEの「仮想キーボード」でFcitx 5を選び、Waylandセッションではim-configによる二重起動を避ける設定を別途行う。
 

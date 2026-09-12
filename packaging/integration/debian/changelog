@@ -1,3 +1,10 @@
+niaos-integration (0.2.0) unstable; urgency=medium
+
+  * Adopt niayan as the public OS name and distribution identity.
+  * Preserve package identities and reversible upstream diversions.
+
+ -- minto-dane <205936182+minto-dane@users.noreply.github.com>  Sat, 12 Sep 2026 00:00:00 +0000
+
 niaos-integration (0.1.0) unstable; urgency=medium
 
   * Package the Debian 13 derivative's identity and supported configuration.

@@ -1,14 +1,22 @@
 {
   "schema": "org.niaos.image-inputs/v1",
-  "release": "0.1.0",
+  "release": "0.2.0",
   "distribution": "trixie",
   "architecture": "amd64",
   "snapshot": "20260907T000000Z",
   "source_date_epoch": 1788739200,
-  "archive_areas": ["main", "non-free-firmware"],
+  "archive_areas": [
+    "main",
+    "non-free-firmware"
+  ],
   "builder": "localhost/niaos-image-builder:20260908",
-  "bootloaders": ["syslinux", "grub-efi"],
+  "bootloaders": [
+    "syslinux",
+    "grub-efi"
+  ],
   "secure_boot": "enable",
   "installer": "live",
-  "installer_packages": {"apt-mirror-setup": "1:0.198"}
+  "installer_packages": {
+    "apt-mirror-setup": "1:0.198"
+  }
 }

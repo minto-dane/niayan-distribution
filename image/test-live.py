@@ -13,7 +13,7 @@ PROBE = r'''set -eu
 trap 'printf "\nNIAOS_LIVE_PROBE_FAIL\n"' EXIT
 cat /etc/os-release
 . /etc/os-release
-test "$ID" = niaos
+test "$ID" = niayan
 test "$VERSION_CODENAME" = trixie
 test "$(cat /proc/1/comm)" = systemd
 audit=$(dpkg --audit)
@@ -25,12 +25,12 @@ case "$NIA_DESKTOP" in
   kde)
     dpkg-query -W niaos-desktop-kde
     systemctl is-active display-manager
-    if [ "$NIA_RUNTIME" = live ]; then timeout 90 sh -c 'until pgrep -u niaos -x plasmashell >/dev/null && ! pgrep -u niaos -x ksplashqml >/dev/null; do sleep 1; done'; fi
+    if [ "$NIA_RUNTIME" = live ]; then timeout 90 sh -c 'until pgrep -u niayan -x plasmashell >/dev/null && ! pgrep -u niayan -x ksplashqml >/dev/null; do sleep 1; done'; fi
     ;;
   gnome)
     dpkg-query -W niaos-desktop-gnome
     systemctl is-active display-manager
-    if [ "$NIA_RUNTIME" = live ]; then timeout 90 sh -c 'until pgrep -u niaos -x gnome-shell >/dev/null; do sleep 1; done'; fi
+    if [ "$NIA_RUNTIME" = live ]; then timeout 90 sh -c 'until pgrep -u niayan -x gnome-shell >/dev/null; do sleep 1; done'; fi
     ;;
   server) ;;
 esac
@@ -58,7 +58,7 @@ fi
 apt-config dump | grep 'origin=Debian,codename=trixie-security,label=Debian-Security'
 if [ "$NIA_RUNTIME" = installed ]; then
   test ! -d /run/live/medium
-  test -z "$(getent passwd niaos)"
+  test -z "$(getent passwd niayan)"
 fi
 case "$NIA_BOOT_MODE" in
   bios) test ! -d /sys/firmware/efi ;;
@@ -160,7 +160,7 @@ def main():
             if args.iso:
                 guest.boot_default_entry()
             guest.expect(b'login:')
-            guest.send('niaos\n' if mode == 'live' else 'niatest\n')
+            guest.send('niayan\n' if mode == 'live' else 'niatest\n')
             # PAM uses the selected locale (e.g. Japanese パスワード:).
             guest.expect(b':')
             guest.send('live\n' if mode == 'live' else 'niaos-test-only\n')

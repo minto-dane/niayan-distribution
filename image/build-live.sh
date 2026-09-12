@@ -7,7 +7,7 @@ set -eu
 cd /build/live
 . ./nia-image.env
 export SOURCE_DATE_EPOCH TZ=UTC
-test -f config/packages.chroot/niaos-release_0.1.0_all.deb
+test -f config/packages.chroot/niaos-release_0.2.0_all.deb
 # Fail before bootstrap in user namespaces that cannot create device nodes on
 # this filesystem. A regular file at /dev/null can make APT wait indefinitely.
 probe=$(mktemp -d .nia-device-check.XXXXXXXX)

@@ -4,10 +4,10 @@ set -eu
 # The generated config is disposable. This entry point and lock.json are inputs.
 . ./nia-image.env
 export SOURCE_DATE_EPOCH TZ=UTC
-volume=$(printf 'NIAOS_%s_%s' "$NIA_RELEASE" "$NIA_ARCHITECTURE" | tr '[:lower:].-' '[:upper:]__')
+volume=$(printf 'NIAYAN_%s_%s' "$NIA_RELEASE" "$NIA_ARCHITECTURE" | tr '[:lower:].-' '[:upper:]__')
 lb config noauto --ignore-system-defaults \
     --mode debian --distribution "$NIA_CODENAME" --architectures "$NIA_ARCHITECTURE" \
-    --binary-image iso-hybrid --image-name "niaos-$NIA_RELEASE" \
+    --binary-image iso-hybrid --image-name "niayan-$NIA_RELEASE" \
     --archive-areas "$NIA_ARCHIVE_AREAS" \
     --debootstrap-options '--include=ca-certificates' \
     --mirror-bootstrap "http://snapshot.debian.org/archive/debian/$NIA_SNAPSHOT/" \
@@ -22,9 +22,9 @@ lb config noauto --ignore-system-defaults \
     --bootloaders "$NIA_BOOTLOADERS" --uefi-secure-boot "$NIA_SECURE_BOOT" \
     --linux-flavours amd64 --debian-installer "$NIA_INSTALLER" \
     --debian-installer-distribution "$NIA_CODENAME" --debian-installer-gui true \
-    --bootappend-live 'boot=live components username=niaos hostname=niaos locales=ja_JP.UTF-8 keyboard-layouts=jp console=tty0 console=ttyS0,115200n8' \
-    --iso-application 'NiaOS Debian 13 derivative' \
-    --iso-publisher 'NiaOS development project' --iso-volume "$volume" \
+    --bootappend-live 'boot=live components username=niayan hostname=niayan locales=ja_JP.UTF-8 keyboard-layouts=jp console=tty0 console=ttyS0,115200n8' \
+    --iso-application 'niayan Debian 13 derivative' \
+    --iso-publisher 'niayan development project' --iso-volume "$volume" \
     --checksums sha256 --memtest none --win32-loader false \
     --chroot-squashfs-compression-type zstd --chroot-squashfs-compression-level 15 \
     --source false --utc-time true "$@"

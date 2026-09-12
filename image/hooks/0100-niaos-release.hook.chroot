@@ -3,8 +3,8 @@
 # live-build temporarily copies Debian's os-release during bootstrap. Restore
 # the standard link to our package-owned identity before that diversion ends.
 set -eu
-test "$(. /usr/lib/os-release; printf '%s' "$ID")" = niaos
+test "$(. /usr/lib/os-release; printf '%s' "$ID")" = niayan
 test "$(dpkg-divert --truename /etc/os-release)" = /etc/os-release.debootstrap
 grep -qx 'IMAGE_ID=live' /etc/os-release
 ln -sfn ../usr/lib/os-release /etc/os-release
-test "$(. /etc/os-release; printf '%s' "$ID")" = niaos
+test "$(. /etc/os-release; printf '%s' "$ID")" = niayan

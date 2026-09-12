@@ -57,7 +57,7 @@ def stage_component(workspace, dest, component):
     write(debian / 'control', f'''Source: {package}
 Section: admin
 Priority: optional
-Maintainer: NiaOS Developers <developers@niaos.invalid>
+Maintainer: minto-dane <205936182+minto-dane@users.noreply.github.com>
 Build-Depends: debhelper-compat (= 13), gnat, gprbuild, python3,
  libsodium-dev, libarchive-dev, libcurl4-openssl-dev, libxml2-dev, libsystemd-dev
 Standards-Version: 4.7.2
@@ -66,15 +66,15 @@ Rules-Requires-Root: no
 Package: {package}
 Architecture: amd64
 Depends: ${{shlibs:Depends}}, ${{misc:Depends}}
-Description: NiaOS {component} development tools
- Independently maintained NiaOS component, built from its recorded Git commit.
+Description: niayan {component} development tools
+ Independently maintained niayan component, built from its recorded Git commit.
  These tools do not replace APT/dpkg or automatically activate host services.
 ''')
     write(debian / 'changelog', f'''{package} ({version}) unstable; urgency=medium
 
   * Package unmodified component commit {commit}.
 
- -- NiaOS Developers <developers@niaos.invalid>  Mon, 07 Sep 2026 00:00:00 +0000
+ -- minto-dane <205936182+minto-dane@users.noreply.github.com>  Mon, 07 Sep 2026 00:00:00 +0000
 ''')
     write(debian / 'source/format', '3.0 (native)\n')
     write(debian / 'rules', '''#!/usr/bin/make -f

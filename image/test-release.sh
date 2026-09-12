@@ -3,17 +3,17 @@
 # Destructive only inside a fresh, disposable builder container; never on host.
 set -eu
 [ -f /run/.containerenv ] || [ -f /.dockerenv ] || { echo 'Disposable container required' >&2; exit 78; }
-package=/build/packages/niaos-release_0.1.0_all.deb
+package=/build/packages/niaos-release_0.2.0_all.deb
 original=$(sha256sum /usr/lib/os-release | cut -d ' ' -f 1)
 dpkg -i "$package"
-test "$(. /etc/os-release; echo "$ID")" = niaos
+test "$(. /etc/os-release; echo "$ID")" = niayan
 test "$(sha256sum /usr/lib/os-release.debian | cut -d ' ' -f 1)" = "$original"
 dpkg -i "$package"
-test "$(. /etc/os-release; echo "$ID")" = niaos
+test "$(. /etc/os-release; echo "$ID")" = niayan
 if [ "$#" -eq 1 ]; then
     test "$(dpkg-deb -f "$1" Package)" = base-files
     dpkg -i "$1"
-    test "$(. /etc/os-release; echo "$ID")" = niaos
+    test "$(. /etc/os-release; echo "$ID")" = niayan
     test "$(sha256sum /usr/lib/os-release.debian | cut -d ' ' -f 1)" = "$original"
     echo 'NIAOS_RELEASE_BASE_FILES_REINSTALL_PASS'
 elif [ "$#" -ne 0 ]; then
