@@ -12,3 +12,4 @@ native/root_session_worker.py usr/libexec/niaos
 debian/niaos-root-session.service usr/lib/systemd/system
 debian/niaos-root-session.socket usr/lib/systemd/system
 debian/niaos-root-session-seal.service usr/lib/systemd/system
+deployment/org.niaos.package.policy usr/share/polkit-1/actions

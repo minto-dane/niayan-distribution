@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-License-Identifier: BSD-3-Clause -->
+<!DOCTYPE policyconfig PUBLIC "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN" "http://www.freedesktop.org/standards/PolicyKit/1/policyconfig.dtd">
+<policyconfig>
+  <vendor>NiaOS</vendor>
+  <action id="org.niaos.package.manage">
+    <description>Manage NiaOS software</description>
+    <description xml:lang="ja">NiaOSのソフトウェアを管理する</description>
+    <message>Administrator authentication is required to manage NiaOS software.</message>
+    <message xml:lang="ja">NiaOSのソフトウェア管理には管理者認証が必要です。</message>
+    <defaults>
+      <allow_any>no</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin</allow_active>
+    </defaults>
+  </action>
+</policyconfig>

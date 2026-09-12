@@ -1,0 +1,10 @@
+org.niaos.package.manage:
+  description:       Manage NiaOS software
+  message:           Administrator authentication is required to manage NiaOS software.
+  vendor:            NiaOS
+  vendor_url:        
+  icon:              
+  implicit any:      no
+  implicit inactive: auth_admin
+  implicit active:   auth_admin
+

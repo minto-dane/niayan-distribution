@@ -1,0 +1,4 @@
+Linux niaos-builder 6.12.107+deb13-cloud-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.107-1 (2026-08-29) x86_64 GNU/Linux
+b55000d2e21d96c8e75a9f36dda4bbcf5c77c9dbf42074fa39b1600b1c113322  /usr/libexec/niaos/root-extract
+cdcc9fc395f28c2c6f2464281457f666382f31d7a706ee4c550a26274e9cf29e  /usr/share/polkit-1/actions/org.niaos.package.policy
+PASS real polkit operator authorization 14

@@ -1,0 +1,31 @@
+{
+  "result": "pass",
+  "compile_inputs": 418,
+  "noncompile_changes_after_export": [
+    "pkgcore/ci/test-all.sh",
+    "pkgcore/packaging/rpm/mission-pkgcore.spec"
+  ],
+  "controller_package_sha256": "56191f395fe77ac532dc6b7b4b7b78a31d0bc47436487fc01204d537e46d4346",
+  "package_files_checked": [
+    "usr/lib/systemd/system/niaos-root-bank-check.service",
+    "usr/lib/systemd/system/niaos-root-preparation.service",
+    "usr/lib/systemd/system/niaos-root-preparation.socket",
+    "usr/lib/systemd/system/niaos-root-session-seal.service",
+    "usr/lib/systemd/system/niaos-root-session.service",
+    "usr/lib/systemd/system/niaos-root-session.socket",
+    "usr/lib/systemd/system/var-lib-niaos-roots.mount",
+    "usr/libexec/niaos/bank_device.py",
+    "usr/libexec/niaos/root_bank.py",
+    "usr/libexec/niaos/root_freeze.py",
+    "usr/libexec/niaos/root_session.py",
+    "usr/libexec/niaos/root_session_worker.py",
+    "usr/libexec/niaos/storage_bootstrap.py",
+    "usr/share/polkit-1/actions/org.niaos.package.policy"
+  ],
+  "package_export_files": 32,
+  "native_transport_library_sha256": "d87a19da393a7d5eb1add90a606e6dd3fd2a501058ac940bf7b47266c4b7588d",
+  "ada_main_sha256": "e62bfc563ed55e4b11813aed0332f4ff043a7f5a71465a21546874bb8accf404",
+  "runtime_files": 10,
+  "existing_apps_built": 6,
+  "rpm_build_executed": false
+}

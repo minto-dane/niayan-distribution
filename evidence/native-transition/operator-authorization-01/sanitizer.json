@@ -1,0 +1,19 @@
+{
+  "result": "pass",
+  "checks": [
+    "normal",
+    "deny",
+    "challenge",
+    "retained",
+    "large-detail",
+    "many-details",
+    "bad-signature",
+    "changed",
+    "silent",
+    "forked-check-denied",
+    "nonroot-supervisor-denied",
+    "deadline-upper-bound"
+  ],
+  "real_polkit": false,
+  "physical_effects": false
+}

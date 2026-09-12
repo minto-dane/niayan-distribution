@@ -1,0 +1,26 @@
+{
+  "result": "pass",
+  "checks": [
+    "default-denies-without-authentication",
+    "real-pidfd-subject-and-exact-rule",
+    "busy-handle",
+    "context-mismatch-poisons",
+    "borrowed-peer-preserved",
+    "unapproved-plan",
+    "unapproved-request",
+    "ada-live-ffi-fixed-system-bus",
+    "live-rule-revocation-and-poison",
+    "authority-restart-invalidates",
+    "cancel-packet-invalidates",
+    "peer-exit-invalidates",
+    "finite-deadline-no-renewal",
+    "wrong-actor-denied"
+  ],
+  "library_sha256": "d87a19da393a7d5eb1add90a606e6dd3fd2a501058ac940bf7b47266c4b7588d",
+  "test_rule_removed": true,
+  "polkit_version": "126-2",
+  "authentication_dialog_exercised": false,
+  "native_admission": false,
+  "exact_plan_consent": false,
+  "boot_switched": false
+}

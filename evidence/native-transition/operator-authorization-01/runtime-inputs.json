@@ -1,0 +1,42 @@
+[
+  {
+    "path": "operator-authorization.so",
+    "sha256": "d87a19da393a7d5eb1add90a606e6dd3fd2a501058ac940bf7b47266c4b7588d"
+  },
+  {
+    "path": "operator-ada",
+    "sha256": "e62bfc563ed55e4b11813aed0332f4ff043a7f5a71465a21546874bb8accf404"
+  },
+  {
+    "path": "check_operator_authorization.py",
+    "sha256": "224976b400d5f3ce769754d9ca7e1cb0bad559e04b2bd870bc1a2e9abc515804"
+  },
+  {
+    "path": "dependencies/libduktape207_2.7.0-2+b2_amd64.deb",
+    "sha256": "2d92606f49cf79e23fb4ea67ab7702d52e016a671d32edc51482c4f1e3bade7c"
+  },
+  {
+    "path": "dependencies/libgnat-14_14.2.0-19_amd64.deb",
+    "sha256": "1edd2b13324d41e70c25a0172c3c90e4a413aae3312ea0489116e2b573c57885"
+  },
+  {
+    "path": "dependencies/libpolkit-agent-1-0_126-2_amd64.deb",
+    "sha256": "51e009b34beaf895f87c22a1579f4a46157381342af8f5f5090944d8de0026b5"
+  },
+  {
+    "path": "dependencies/libpolkit-gobject-1-0_126-2_amd64.deb",
+    "sha256": "7f8dd1d863614ab3842906985355c74a7738437c723b7b3736e8db33c3586702"
+  },
+  {
+    "path": "dependencies/polkitd_126-2_amd64.deb",
+    "sha256": "d5a9482759b4f7379eb0d83f7afb49b315165adcfd38ebb00512bb27b7cc5d74"
+  },
+  {
+    "path": "dependencies/sgml-base_1.31+nmu1_all.deb",
+    "sha256": "a355b832d9f0f4dc9eca1a661080db5dc118e6c435f107a5c4dd201d7af59ba8"
+  },
+  {
+    "path": "dependencies/xml-core_0.19_all.deb",
+    "sha256": "079ec5e10b1c49aa23a6c53ae8e55e33aec121d1c87a131d2172bdabc3f4030e"
+  }
+]

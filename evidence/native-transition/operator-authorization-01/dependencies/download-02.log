@@ -1,0 +1,7 @@
+Get:1 http://deb.debian.org/debian trixie/main amd64 libduktape207 amd64 2.7.0-2+b2 [135 kB]
+Get:2 http://deb.debian.org/debian trixie/main amd64 libpolkit-agent-1-0 amd64 126-2 [26.4 kB]
+Get:3 http://deb.debian.org/debian trixie/main amd64 libpolkit-gobject-1-0 amd64 126-2 [48.0 kB]
+Get:4 http://deb.debian.org/debian trixie/main amd64 polkitd amd64 126-2 [122 kB]
+Get:5 http://deb.debian.org/debian trixie/main amd64 sgml-base all 1.31+nmu1 [10.9 kB]
+Get:6 http://deb.debian.org/debian trixie/main amd64 xml-core all 0.19 [20.1 kB]
+Fetched 362 kB in 0s (4274 kB/s)

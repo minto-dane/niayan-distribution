@@ -1,0 +1,10 @@
+Running as unit: run-p1388037-i1388337.scope; invocation ID: 03414a9755f74b6ea24ae0060ae5b6c9
+limited-exec: {"scope": "run-p1388037-i1388337.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+tests/helpers/operator_authority_fixture.c: In function ‘main’:
+tests/helpers/operator_authority_fixture.c:56:5: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+   56 |     if(argc!=2 || getuid())return 2;mode_path=argv[1];
+      |     ^~
+tests/helpers/operator_authority_fixture.c:56:37: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   56 |     if(argc!=2 || getuid())return 2;mode_path=argv[1];
+      |                                     ^~~~~~~~~
+cc1: all warnings being treated as errors

@@ -1,0 +1,27 @@
+Running as unit: run-p1384895-i1385195.scope; invocation ID: a46ab071a652454195cfb83364960856
+limited-exec: {"scope": "run-p1384895-i1385195.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Setup
+   [mkdir]        object directory for project Tests
+   [mkdir]        exec directory for project Tests
+Compile
+   [Ada]          run_operator_authorization_tests.adb
+   [C]            operator_authorization.c
+   [C]            pkg_deb_stream.c
+   [C]            archive_observer.c
+   [C]            pkg_deb_decode.c
+   [C]            root_preparation.c
+   [C]            conffile_snapshot.c
+   [C]            root_session.c
+   [Ada]          mc_clock.adb
+   [Ada]          mc_types.adb
+   [Ada]          pkg_operator_authorization.adb
+   [Ada]          mc_hex.adb
+   [Ada]          mc_kernel_read.adb
+   [Ada]          mc_posix.ads
+Bind
+   [gprbind]      run_operator_authorization_tests.bexch
+   [Ada]          run_operator_authorization_tests.ali
+Link
+   [archive]      libtests.a
+   [index]        libtests.a
+   [link]         run_operator_authorization_tests.adb

@@ -1,0 +1,7 @@
+{
+  "result": "pass",
+  "ada_main_sha256": "e62bfc563ed55e4b11813aed0332f4ff043a7f5a71465a21546874bb8accf404",
+  "source_files": 883,
+  "independent_build_directory": "/evidence/independent-source-long/pkgcore",
+  "full_components_rebuilt": false
+}

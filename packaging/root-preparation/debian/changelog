@@ -1,3 +1,10 @@
+niaos-root-preparation (0.7.0) trixie; urgency=medium
+
+  * Install the administrator authentication policy for native management.
+  * Require explicit per-request authentication without retained grants.
+
+ -- NiaOS Developers <developers@niaos.invalid>  Sat, 12 Sep 2026 00:00:00 +0000
+
 niaos-root-preparation (0.6.0) trixie; urgency=medium
 
   * Add root-supervisor sessions for first-use dedicated bank preparation.
