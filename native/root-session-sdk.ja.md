@@ -1,7 +1,8 @@
 # root supervisorのnative session接続
 
 `Pkg_Root_Session`と`root_session.c`は、独立したroot管理プロセスが0.6.0のcontrollerを呼ぶ内部SDKである。
-既存`Pkg_Generation_Stage`と`Pkg_Root_Preparation`の非root制約、認可callback、永続形式は変更しない。
+`Pkg_Generation_Stage`の非root制約、認可callback、永続形式は維持する。
+旧Pkg_Root_Preparation RPCはADR-0120で廃止した。共通identity型はPkg_Root_Identityへ分離する。
 公開コマンド、権限昇格入口、稼働世代のwriterは追加しない。本番site認可/供給/同意providerと
 非root世代SDKからsupervisorへ渡す認証済みhandoffは、まだ接続していない。
 

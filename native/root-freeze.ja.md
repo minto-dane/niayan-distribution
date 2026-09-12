@@ -45,10 +45,10 @@ sysrqを使う、filesystemを修復する、暗黙にremount,rwする処理は�
 `native/worker/check_root_freeze.py`は明示した使い捨てext4 bankだけを対象とする。誤identity、subtree、
 子mount、開いた書込FD/書込mmapの拒否、別mountからの書込不能、実worker再検査、read-only bankでの
 排他/再起動、Closeによる非thaw、明示した特権remount後の拒否を確認する。
-`check_root_preparation.py --reinspect --freeze-bank`はこの部品の実観測とkernel排他を使い、native SDKへ接続する。
-bridgeと認可/供給鍵はVM fixtureであり本番providerではない。通常世代と設定済み世代の両方を扱う。
+旧SDK直結serviceのfixture bridgeはADR-0120で廃止した。SDKの予約/期限試験は
+root_archive_stage_test.adb、実session/worker/凍結はcheck_root_session.pyへ分離する。
+本番SDKと独立観測controllerを接続した受入は未完である。
 
-0.5.0の明示的bootstrapは[専用GPT/ext4 bank](bank-device.ja.md)を配備し、通常mountをread-onlyとする。
 旧bind bankの自動移行は行わない。完全置換ISOのpartition recipe、認証したcontrollerのRPC/寿命管理、
 device/mount排他、実root/boot切替と
 段階別復旧は未完である。全DEB効果、GC、完全置換ISO、全言語翻訳も別の未完要件として残る。

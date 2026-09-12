@@ -55,7 +55,7 @@ SYS_ADMIN/DAC_OVERRIDE、128 MiB、swap0、CPU1、Tasks8でRO化だけを行う�
 完了を捏造しない。電断でhookが動くとは主張せず、通常再起動は既存unitのRO mountと必須初期化検査を使う。
 kernel I/O待ちの厳密な実時間上限は未保証である。再初期化、試行record削除、RWへの自動復帰は行わない。
 
-初回使用recordができたbankでは旧root-preparation.serviceの再起動もassertionで拒否する。
+旧root-preparation service/socketはADR-0120で撤去した。初回使用recordは消去・再初期化しない。
 controllerが保持中なら元Bank lockも第二writerを拒否する。既に元serviceが予約中ならcontroller側が拒否する。
 完成済みrootを含むfilesystem全体を後の更新でRWに戻してはならない。bank slotの割当て・保持・GCと
 更新用bankへの切替は次工程であり、本版は単一bankを再利用しない。
@@ -71,7 +71,7 @@ tar parserへ渡さない。controller自身の侵害を封じる完全なsandbo
 `worker/check_root_session.py`は使い捨てVMの明示専用partitionと実配布packageを使用する。
 非root接続、誤worker/mount/device plan/FD、実worker準備・再検査、CASの再取得とBank保持、observe/close、
 切断・期限切れ・controller強制終了を検査する。強制終了caseは保持中に試験だけでRWへ変え、stop hookのRO復帰を確認する。
-全tree/元記録の不変、使用済みbank拒否、通常caseの再起動後ROと旧writer拒否も確認する。
+全tree/元記録の不変、使用済みbank拒否、通常caseの再起動後ROと旧受付不在も確認する。
 人工requestとarchiveはsite認可ではなく、native SDK全世代処理や書込中の物理電断を受入したことにはしない。
 
 根拠: [Debian 13 setpriv](https://manpages.debian.org/trixie/util-linux/setpriv.1.en.html)、

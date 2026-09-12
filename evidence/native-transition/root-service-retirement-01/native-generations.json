@@ -1,0 +1,18 @@
+{
+  "result": "pass",
+  "mains": [
+    [
+      "build/test-bin/run_root_archive_tests",
+      "/evidence/generations-final/v5/store",
+      "tests/fixtures/root-archive"
+    ],
+    [
+      "build/test-bin/run_root_configuration_tests",
+      "/evidence/generations-final/v6/store",
+      "/evidence/generations-final/v6/root",
+      "/workspace/pkgcore/tests/fixtures/conffiles"
+    ]
+  ],
+  "scope": "both v5 and configured v6 enter real generation SDK and explicit reinspection transport, including post-source refusal in v6; synthetic authority/identity, no physical root or boot",
+  "record_note": "v5 actually used a relative media argument, resolved by its main; v6 used an absolute media argument. The repeatable harness normalizes both."
+}

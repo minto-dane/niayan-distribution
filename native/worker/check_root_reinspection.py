@@ -1,14 +1,12 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: BSD-3-Clause
-"""Frozen private roots: actual service/worker inspection and bounded faults."""
+"""Frozen private roots: shared bank/worker inspection and bounded faults."""
 import argparse
-import array
 import fcntl
 import hashlib
 import json
 import os
 from pathlib import Path
-import socket
 import stat
 import subprocess
 import sys
@@ -16,7 +14,7 @@ import tempfile
 import time
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from root_bank import Bank, Rejected, canonical, provision_bank
+from root_bank import Bank, Rejected, provision_bank
 from check_root_extract import archive
 
 
@@ -123,29 +121,6 @@ def main():
                         results['wrong-generation-refused'] = True
                         bank.close(); bank = Bank(bank_path, lock, args.worker, 1000)
                         results['restart'] = bank.verify(fresh, source_fd, lease_fd)['physical_revalidation']
-                        # Actual authorized socket peer; the parent service owns
-                        # its bank reservation while the client drops credentials.
-                        os.close(lease_fd); lease_fd = -1
-                        address = str(base/'socket')
-                        listener = socket.socket(socket.AF_UNIX, socket.SOCK_SEQPACKET)
-                        listener.bind(address); listener.listen(1); os.chown(address, 1000, 1000); os.chmod(address, 0o600)
-                        child = os.fork()
-                        if child == 0:
-                            try:
-                                listener.close(); bank.close(); os.close(source_fd)
-                                os.setgroups([]); os.setgid(1000); os.setuid(1000)
-                                peer = socket.socket(socket.AF_UNIX, socket.SOCK_SEQPACKET); peer.connect(address)
-                                a = os.open(source, os.O_RDONLY); lease = os.open(lock, os.O_RDWR)
-                                fcntl.flock(lease, fcntl.LOCK_EX | fcntl.LOCK_NB)
-                                peer.sendmsg([canonical({'verify': fresh})], [(socket.SOL_SOCKET, socket.SCM_RIGHTS, array.array('i', [a, lease]))])
-                                reply = json.loads(peer.recv(4096)); assert reply['physical_revalidation'] and not reply['published']
-                                os._exit(0)
-                            except BaseException:
-                                import traceback; traceback.print_exc(); os._exit(1)
-                        bank.serve(listener, requests=1); listener.close()
-                        _, status = os.waitpid(child, 0); assert status == 0
-                        results['authorized-fd-rpc'] = True
-                        assert snapshot(target) == before
                     print('PASS physical reinspection', case, flush=True)
                 finally:
                     if nested: subprocess.run(['umount', str(target/'etc')], check=True)
@@ -155,7 +130,7 @@ def main():
         finally: bank.close()
     args.report.write_text(json.dumps(dict(result='pass', cases=results, root_and_records_unchanged=True,
         actual_boot=False, production_authorization=False), indent=2)+'\n')
-    print('PASS frozen root reinspection, namespace, metadata, reservation and actual FD RPC')
+    print('PASS frozen root reinspection, namespace, metadata, and retained reservation')
 
 
 if __name__ == '__main__':

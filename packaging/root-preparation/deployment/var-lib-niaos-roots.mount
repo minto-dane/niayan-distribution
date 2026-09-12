@@ -3,7 +3,7 @@
 Description=NiaOS dedicated inactive root storage
 AssertPathIsDirectory=/var/lib/niaos/roots
 AssertPathExists=/etc/niaos/root-bank-device.json
-Before=niaos-root-preparation.service
+Before=niaos-root-session.service
 
 [Mount]
 # The explicit installer supplies the selected PARTUUID in a protected drop-in.

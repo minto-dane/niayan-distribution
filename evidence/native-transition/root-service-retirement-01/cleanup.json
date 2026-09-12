@@ -1,0 +1,86 @@
+{
+  "result": "pass",
+  "deleted": [
+    {
+      "path": "/home/nia/devbox/niaos/.work/native-reinspection-transport-01/workspace-01",
+      "logical_bytes": 48670178,
+      "allocated_bytes": 51281920
+    },
+    {
+      "path": "/home/nia/devbox/niaos/.work/native-reinspection-transport-01/workspace",
+      "logical_bytes": 61412398,
+      "allocated_bytes": 64032768
+    },
+    {
+      "path": "/home/nia/devbox/niaos/.work/native-reinspection-transport-01/native-check",
+      "logical_bytes": 1907617,
+      "allocated_bytes": 6778880
+    },
+    {
+      "path": "/home/nia/devbox/niaos/.work/root-service-retirement-01/native-check-deadline-01",
+      "logical_bytes": 426851,
+      "allocated_bytes": 626688
+    },
+    {
+      "path": "/home/nia/devbox/niaos/.work/root-service-retirement-01/native-check/archive",
+      "logical_bytes": 657179,
+      "allocated_bytes": 978944
+    },
+    {
+      "path": "/home/nia/devbox/niaos/.work/root-service-retirement-01/native-check/configured",
+      "logical_bytes": 252663,
+      "allocated_bytes": 405504
+    },
+    {
+      "path": "/home/nia/devbox/niaos/.work/root-service-retirement-01/native-check/stage",
+      "logical_bytes": 984349,
+      "allocated_bytes": 5369856
+    },
+    {
+      "path": "/home/nia/devbox/niaos/.work/root-service-retirement-01/root-refusal",
+      "logical_bytes": 384859,
+      "allocated_bytes": 430080
+    },
+    {
+      "path": "/home/nia/devbox/niaos/.work/root-service-retirement-01/generations-final/v5",
+      "logical_bytes": 657179,
+      "allocated_bytes": 978944
+    },
+    {
+      "path": "/home/nia/devbox/niaos/.work/root-service-retirement-01/generations-final/v6",
+      "logical_bytes": 1047882,
+      "allocated_bytes": 1490944
+    },
+    {
+      "path": "/home/nia/devbox/niaos/.work/root-service-retirement-01/generations-final/v6-media-refused",
+      "logical_bytes": 24576,
+      "allocated_bytes": 24576
+    },
+    {
+      "path": "/home/nia/devbox/niaos/.work/root-service-retirement-01/vm-package-01/test.qcow2",
+      "logical_bytes": 78249984,
+      "allocated_bytes": 78061568
+    },
+    {
+      "path": "/home/nia/devbox/niaos/.work/root-service-retirement-01/vm-package-01/bank.raw",
+      "logical_bytes": 67108864,
+      "allocated_bytes": 4677632
+    },
+    {
+      "path": "/home/nia/devbox/niaos/.work/root-service-retirement-01/vm-unstarted-01",
+      "logical_bytes": 4096,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "/home/nia/devbox/niaos/.work/root-service-retirement-01/vm-kvm-refused-01",
+      "logical_bytes": 67311172,
+      "allocated_bytes": 221184
+    }
+  ],
+  "allocated_bytes": 215363584,
+  "retained_current_build": true,
+  "retained_package_and_source": true,
+  "shared_builder_and_images_untouched": true,
+  "unrelated_processes_stopped": false,
+  "host_device_permissions_changed": false
+}

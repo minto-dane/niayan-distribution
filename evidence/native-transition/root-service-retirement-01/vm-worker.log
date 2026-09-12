@@ -1,0 +1,35 @@
+PASS shared root bank, retained reservation, duplicate refusal and process loss
+PASS physical reinspection healthy
+PASS physical reinspection content
+PASS physical reinspection missing
+PASS physical reinspection extra
+PASS physical reinspection xattr
+PASS physical reinspection mode
+PASS physical reinspection outside-link
+PASS physical reinspection symlink
+PASS physical reinspection child-mount
+PASS frozen root reinspection, namespace, metadata, and retained reservation
+Checking that no-one is using this disk right now ... OK
+
+Disk /dev/vdb: 64 MiB, 67108864 bytes, 131072 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+>>> Script header accepted.
+>>> Created a new GPT disklabel (GUID: 982E93AD-04FC-42CD-A62C-8EA3BA1B6227).
+/dev/vdb1: Created a new partition 1 of type 'Linux filesystem' and of size 62 MiB.
+/dev/vdb2: Done.
+
+New situation:
+Disklabel type: gpt
+Disk identifier: 982E93AD-04FC-42CD-A62C-8EA3BA1B6227
+
+Device     Start    End Sectors Size Type
+/dev/vdb1   2048 129023  126976  62M Linux filesystem
+
+The partition table has been altered.
+Calling ioctl() to re-read partition table.
+Syncing disks.
+PASS dedicated bank bootstrap; awaiting reboot
+PASS root controller package replacement: live

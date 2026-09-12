@@ -1,0 +1,14 @@
+Running as unit: run-p1508476-i1508776.scope; invocation ID: 940ce65427ac4e4bae5d824d4da79a2f
+limited-exec: {"scope": "run-p1508476-i1508776.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Compile
+   [Ada]          run_root_archive_tests.adb
+   [Ada]          run_root_configuration_tests.adb
+   [Ada]          configured_root_record_test.adb
+Bind
+   [gprbind]      run_root_archive_tests.bexch
+   [Ada]          run_root_archive_tests.ali
+   [gprbind]      run_root_configuration_tests.bexch
+   [Ada]          run_root_configuration_tests.ali
+Link
+   [link]         run_root_archive_tests.adb
+   [link]         run_root_configuration_tests.adb

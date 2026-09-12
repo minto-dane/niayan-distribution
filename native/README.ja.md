@@ -1,5 +1,8 @@
 # Niaパッケージ管理への完全置換
 
+旧root準備service/RPCは廃止した。共有Bankと保持root sessionを使用する。
+[配備とオフライン更新条件](service-deployment.ja.md)を参照。本番admission/同意/bootへの接続は未完である。
+
 [非特権世代のroot handoff](root-handoff.ja.md)は元の認可・予約を保持する内部通信境界である。
 本番supervisorへの接続とC全体の形式検証は未完。言語別の必須検証基準はADR-0117に従う。
 

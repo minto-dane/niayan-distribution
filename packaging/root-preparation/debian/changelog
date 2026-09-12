@@ -1,3 +1,11 @@
+niaos-root-preparation (0.8.0) unstable; urgency=medium
+
+  * Retire the separate preparation socket and RPC implementation.
+  * Keep protected bank operations under the held root session controller.
+  * Require an offline target for control-plane upgrades.
+
+ -- NiaOS Developers <developers@niaos.invalid>  Sat, 12 Sep 2026 15:00:00 +0000
+
 niaos-root-preparation (0.7.0) trixie; urgency=medium
 
   * Install the administrator authentication policy for native management.

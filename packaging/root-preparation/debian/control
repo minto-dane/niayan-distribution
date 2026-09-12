@@ -10,7 +10,7 @@ Package: niaos-root-preparation
 Architecture: amd64
 Depends: ${shlibs:Depends}, ${misc:Depends}, python3, systemd (>= 257), mount, util-linux, polkitd (>= 126)
 Suggests: niaos-pkgcore
-Description: Internal NiaOS root preparation service
+Description: Internal NiaOS protected root session controller
  Materializes retained native root archives in protected inactive storage.
  The native core owns admission and the installed package state.
  Initial storage provisioning and activation are explicit installer actions.

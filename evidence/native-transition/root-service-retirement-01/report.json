@@ -1,0 +1,76 @@
+{
+  "format": 1,
+  "result": "pass",
+  "source_subject": "daac325557fae401f562333cb5cf1ff84c0bc5c7603736dc4d1ee5e3e4320ba8",
+  "source_parents": {
+    ".": "5c5b0bf89ae63643aec59d978961863f634c03f3",
+    "pkgcore": "41c57d395ed9904999ee594295ddaf4f81d9f69c",
+    "distribution": "5c473a59cad576161c420fad62fe730ea651e3a2",
+    "assurance": "396f2183bfed99c8a4d421474885d03f872fe7ba"
+  },
+  "decision": "ADR-0120",
+  "requirements": [
+    "REQ-158"
+  ],
+  "hazards": [
+    "HAZ-144",
+    "HAZ-145"
+  ],
+  "fault_cases": [
+    "FAULT-157",
+    "FAULT-158"
+  ],
+  "package_version": "0.8.0",
+  "package_sha256": "ba88f35d97df513ee0c3a194944f407c312038eb225ce311a48057e32067473e",
+  "build_image": "sha256:76d5c00dfa833ce7ae67a192c5663d9bcd5c4104153f5933431dae88c097918c",
+  "vm_runner_image": "sha256:7f92f64938b87b862dd962a93b558fb0caea13493745c684fbddfc190a723617",
+  "limits": {
+    "memory_bytes": 3221225472,
+    "swap_bytes": 0,
+    "cpu_cores": 1,
+    "pids": 128,
+    "vm_ram_mib": 2048,
+    "vm_vcpus": 1
+  },
+  "retired": [
+    "separate preparation service/socket",
+    "old C/Ada preparation/reinspection RPC",
+    "service-only dev view",
+    "obsolete service VM bridges and CLI fixture arguments"
+  ],
+  "native_mains": [
+    "run_root_archive_tests",
+    "run_root_configuration_tests",
+    "run_conffile_observation_tests",
+    "run_generation_stage_tests",
+    "run_root_session_tests"
+  ],
+  "configured_v6_checked": true,
+  "root_session_transport_checks": 29,
+  "uid0_native_gate_checked": true,
+  "vm_checked": [
+    "shared bank exclusion and duplicate refusal",
+    "durable intent followed by owned process SIGKILL",
+    "physical root reinspection",
+    "offline package unpack removes obsolete files",
+    "live upgrade rejection on old package and active new listener",
+    "explicit device bootstrap and readonly reboot",
+    "missing bank lock/CAS lock/policy refusal through actual session",
+    "actual prepare/freeze/observe/close and second readonly reboot"
+  ],
+  "package_reproducibility": [
+    "main DEB",
+    "debug DEB",
+    "DSC",
+    "source tar.xz"
+  ],
+  "cleanup_allocated_bytes": 215363584,
+  "proof_scope": "No new formal proof run. Mathematical src/vendor unchanged; deleted old C RPC. Runtime/FFI proof and coding-rule qualification remain incomplete.",
+  "production_approval": false,
+  "boot_switch_tested": false,
+  "full_deb_effects": false,
+  "native_generation_to_physical_controller_connected": false,
+  "complete_offline_configure_tested": false,
+  "actual_storage_power_loss_tested": false,
+  "remote_published": false
+}

@@ -55,7 +55,8 @@ unitは導入時に自動有効化しない。通常のmount開始はread-only�
 `worker/check_bank_device.py`は使い捨てVMの明示partitionで実native initializerと導入済みunitを使う。
 選択欠損/UUID/容量不一致、既存/未完状態と再初期化の拒否、read-only再起動、guard経由のservice開始、
 選択変更によるservice拒否とbank lock欠損時の非修復を確認する。試験自身の明示復元を製品復旧とは数えない。
-既存のサービス/SDK試験では`check_service_deployment.py --device-plan /etc/niaos/root-bank-device.json`を指定する。
+配備/bootstrap/再起動試験は`check_bank_device.py`へ統合した。
+旧受付を経由する試験は廃止し、実要求時の欠損拒否は`check_root_session.py`で確認する。
 その試験は独立に用意した新規partitionのplanを必要とする。
 
 完全置換ISOのpartition recipe/UI、認証済みcontrollerとbank slot管理、全DEB効果、実root/boot切替・復旧は未完。

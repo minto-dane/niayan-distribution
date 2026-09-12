@@ -1,8 +1,8 @@
 # 非特権世代からroot supervisorへの準備要求
 
 内部SDKのみ。public listener/launcherや本番supervisorを配備するものではない。
-`Pkg_Generation_Stage.Prepare_Root_Using`は必須transportの前後で元の認可・内容・設定を照合し、
-実stage/root/CAS予約を保持する。旧`Prepare_Root`も同じ共通処理を利用する。
+`Pkg_Generation_Stage.Prepare_Root`は必須transportの前後で元の認可・内容・設定を照合し、
+実stage/root/CAS予約を保持する。準備・再検査は明示的なtransportを必須とし、SDKに旧socket直結入口やUsing別名を残さない。
 
 `Pkg_Root_Handoff`はrootが起動前に作成したAF_UNIX/SOCK_SEQPACKET pairの子側FDを借用する。
 両端で起動前にSO_PASSCREDを有効にする。C側はroot peerのSO_PEERCREDとSO_PEERPIDFDを保持し、
@@ -60,3 +60,9 @@ Linuxのclose失敗を同じFD番号への再試行で補わない。入力の�
 実transition関数の全到達制御状態の検査を行う。独立履歴の順序/回数/終端性を検査し、
 探索深さで省略しない。モデルと実際のI/O経路との対応は状態変更位置と境界試験で確認する。
 これは全Python/OS/FD実装の形式証明ではなく、製品の本番認定を与えない。
+
+再検査も`Reinspect_Root_And_Hold`の必須transportへ実archive/CAS FDを渡す。
+`Observe_Root`は前後の独立観測として別に必要で、元期限と物理identityの不一致を拒否する。
+これは保持root sessionを接続可能にするSDK境界であり、跨UID protocol自体の完成ではない。
+旧service/RPCは廃止した。共有Bankと必要な試験は保持sessionの経路へ移す。
+撤去判断・ACID境界・オフライン更新条件はassuranceのADR-0120に記録する。

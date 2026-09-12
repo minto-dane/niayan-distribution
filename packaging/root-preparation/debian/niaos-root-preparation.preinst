@@ -1,0 +1,21 @@
+#!/bin/sh
+# SPDX-License-Identifier: BSD-3-Clause
+set -eu
+
+case "$1" in
+    install|upgrade)
+        # An instantaneous unit-state check cannot exclude later activation or
+        # an outstanding worker. Replace this control plane in an offline target.
+        # A fresh image/VM install may proceed without activating any service.
+        if [ -d /run/systemd/system ] && {
+            [ "$1" = upgrade ] || [ -n "${2:-}" ] ||
+            [ -e /usr/libexec/niaos/root_bank.py ] ||
+            [ -e /var/lib/niaos/bootstrap.json ];
+        }; then
+            echo 'NiaOS root controller upgrade requires an offline target; no services or storage were changed.' >&2
+            exit 1
+        fi
+        ;;
+esac
+
+#DEBHELPER#

@@ -1,0 +1,17 @@
+{
+  "result": "pass",
+  "cases": {
+    "live_upgrade_refused": true,
+    "code_and_storage_unchanged": true,
+    "unit_states_and_pids_unchanged": true,
+    "units": {
+      "niaos-root-preparation.service": "MainPID=0\nActiveState=inactive\n",
+      "niaos-root-preparation.socket": "ActiveState=inactive\n",
+      "niaos-root-session.service": "MainPID=0\nActiveState=inactive\n",
+      "niaos-root-session.socket": "ActiveState=inactive\n"
+    },
+    "stderr": "NiaOS root controller upgrade requires an offline target; no services or storage were changed.\ndpkg: error processing archive /home/builder/nia-retirement/build-a/niaos-root-preparation_0.8.0_amd64.deb (--unpack):\n new niaos-root-preparation package pre-installation script subprocess returned error exit status 1\nErrors were encountered while processing:\n /home/builder/nia-retirement/build-a/niaos-root-preparation_0.8.0_amd64.deb\n"
+  },
+  "old_sha256": "56191f395fe77ac532dc6b7b4b7b78a31d0bc47436487fc01204d537e46d4346",
+  "new_sha256": "ba88f35d97df513ee0c3a194944f407c312038eb225ce311a48057e32067473e"
+}

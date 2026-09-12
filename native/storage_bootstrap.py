@@ -128,7 +128,7 @@ def initialize():
         raise ValueError('initializer-not-elf')
     protected_file(BANK_TOOL)
     worker = protected_file(WORKER, executable=True)
-    for unit in ('niaos-root-preparation.socket', 'niaos-root-preparation.service', 'niaos-root-bank-check.service', 'niaos-root-session.service', 'niaos-root-session.socket', MOUNT):
+    for unit in ('niaos-root-bank-check.service', 'niaos-root-session.service', 'niaos-root-session.socket', MOUNT):
         state = run('/usr/bin/systemctl', 'show', unit, '--property=ActiveState', '--value',
                     capture_output=True).stdout
         if state != b'inactive\n':

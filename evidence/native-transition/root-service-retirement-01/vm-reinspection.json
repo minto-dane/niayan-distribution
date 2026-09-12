@@ -1,0 +1,41 @@
+{
+  "result": "pass",
+  "cases": {
+    "writable-refused": true,
+    "healthy": {
+      "effects_applied": false,
+      "intent_sha256": "55d753ce5ccc3d0ce6b5eca52fae47aa40b2edd541cce8d7bc13cf5a754dbbe1",
+      "published": false,
+      "state": "extracted",
+      "version": 1,
+      "worker_exit": 0,
+      "worker_sha256": "b55000d2e21d96c8e75a9f36dda4bbcf5c77c9dbf42074fa39b1600b1c113322",
+      "physical_revalidation": true,
+      "observation": {
+        "result": "verified",
+        "profile": "linux-inode-v1",
+        "archive_sha256": "b45a7d94a52c0af84137ba92ae5caca22cee1d072c358ba9dc049ab6507df29a",
+        "entries": 10,
+        "mount_id": 215,
+        "inode": 33,
+        "device_major": 0,
+        "device_minor": 53,
+        "published": false
+      },
+      "verification_deadline_ms": 68647
+    },
+    "wrong-generation-refused": true,
+    "restart": true,
+    "content": "physical-verification",
+    "missing": "physical-verification",
+    "extra": "physical-verification",
+    "xattr": "physical-verification",
+    "mode": "physical-verification",
+    "outside-link": "physical-verification",
+    "symlink": "physical-verification",
+    "child-mount": "physical-verification"
+  },
+  "root_and_records_unchanged": true,
+  "actual_boot": false,
+  "production_authorization": false
+}

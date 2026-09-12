@@ -1,0 +1,16 @@
+{
+  "result": "pass",
+  "cases": {
+    "wrong-reservation": true,
+    "bank-exclusion": true,
+    "duplicate-refused": true,
+    "prepare-and-reopen": true,
+    "durable-intent-process-loss": true,
+    "interrupted-not-reinitialized": true,
+    "caller-reservation-retained": true
+  },
+  "installed_root_changed": false,
+  "socket_transport_tested": false,
+  "native_admission_provider": false,
+  "storage_power_loss_tested": false
+}

@@ -1,0 +1,41 @@
+{
+  "attempts": [
+    {
+      "step": "native-build",
+      "result": "setup-refused",
+      "detail": "Wrong tests.gpr path; compiler did not run. Corrected to pkgcore/tests.gpr."
+    },
+    {
+      "step": "expiry-fixture",
+      "result": "stale-as-required",
+      "detail": "3 second fixture budget expired during native verification under CPU1. Increased only the test budget to 30 seconds, then waited for actual expiry; product deadline checks and resource limits unchanged."
+    },
+    {
+      "step": "vm-launch",
+      "result": "setup-refused",
+      "detail": "Compiler image has no qemu-img. Used the separately pinned VM tool image. No image build or OS install was attempted in that container."
+    },
+    {
+      "step": "vm-launch-as-container-root",
+      "result": "kvm-permission-refused",
+      "detail": "Used the existing non-root VM runner identity on retry; no /dev/kvm permission change."
+    },
+    {
+      "step": "vm-shared-bank-test",
+      "result": "setup-refused",
+      "detail": "Flat guest harness needed PYTHONPATH=/usr/libexec/niaos. Reused built package and stopped VM overlay; no repeat package build."
+    },
+    {
+      "step": "v6-coverage",
+      "result": "coverage-corrected",
+      "detail": "run_conffile_observation_tests checks entries, not configured generation. Added actual run_root_configuration_tests and retained the correction in the report."
+    },
+    {
+      "step": "v6-media",
+      "result": "setup-refused",
+      "detail": "MC_FS required an absolute media path; no configured-generation work ran in this attempt. Corrected the harness only."
+    }
+  ],
+  "limits_raised": false,
+  "unrelated_processes_stopped": false
+}

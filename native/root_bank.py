@@ -1,12 +1,9 @@
 # SPDX-License-Identifier: BSD-3-Clause
-"""Internal privileged preparation service; never selects an installed root.
+"""Shared protected bank operations for the root session and explicit bootstrap.
 
-Only a configured core UID may submit a previously admitted generation. The
-actual CAS lock OFD accompanies the archive FD and remains held by the worker.
-No public management command, default authority or package database is added.
+No listener, admission policy, installed-state database or boot selection lives
+here. The session controller owns the lifetime of the bank and worker.
 """
-import array
-import contextlib
 import fcntl
 import hashlib
 import json
@@ -14,9 +11,7 @@ import os
 import pwd
 from pathlib import Path
 import re
-import socket
 import stat
-import struct
 import subprocess
 import time
 
@@ -132,7 +127,7 @@ def read_record(directory, name):
 
 
 def provision_bank(path):
-    """Explicit protected bootstrap only; serve() never provisions missing state."""
+    """Explicit protected bootstrap only; ordinary session startup never provisions missing state."""
     if os.getuid() or os.geteuid():
         raise Rejected('privilege')
     fd = os.open(path, os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW | os.O_CLOEXEC)
@@ -348,54 +343,6 @@ class Bank:
         finally:
             os.close(parent)
 
-    def connection(self, peer):
-        descriptors = []
-        try:
-            _, uid, _ = struct.unpack('3i', peer.getsockopt(socket.SOL_SOCKET, socket.SO_PEERCRED, 12))
-            if uid != self.client_uid:
-                raise Rejected('peer')
-            peer.settimeout(2)
-            raw, controls, flags, _ = peer.recvmsg(MAX_PACKET, socket.CMSG_SPACE(8), socket.MSG_CMSG_CLOEXEC)
-            invalid_control = False
-            for level, kind, data in controls:
-                if level != socket.SOL_SOCKET or kind != socket.SCM_RIGHTS:
-                    invalid_control = True
-                    continue
-                values = array.array('i')
-                invalid_control |= bool(len(data) % values.itemsize)
-                values.frombytes(data[:len(data) - len(data) % values.itemsize])
-                descriptors.extend(values)
-            if invalid_control:
-                raise Rejected('control')
-            if flags & (socket.MSG_TRUNC | socket.MSG_CTRUNC):
-                raise Rejected('truncated')
-            request = decode(raw)
-            if type(request) is dict and set(request) == {'inspect'} and not descriptors:
-                result = self.inspect(request['inspect'])
-            elif type(request) is dict and set(request) == {'verify'} and len(descriptors) == 2:
-                result = self.verify(request['verify'], *descriptors)
-            elif len(descriptors) == 2:
-                result = self.prepare(request, *descriptors)
-            else:
-                raise Rejected('descriptors')
-            peer.sendall(canonical(result))
-        except (OSError, ValueError, subprocess.SubprocessError):
-            with contextlib.suppress(OSError):
-                peer.sendall(canonical({'state': 'refused-or-indeterminate', 'published': False}))
-        finally:
-            for fd in descriptors:
-                os.close(fd)
-            peer.close()
-
-    def serve(self, listener, *, requests=None):
-        if listener.family != socket.AF_UNIX or listener.type != socket.SOCK_SEQPACKET:
-            raise Rejected('listener')
-        count = 0
-        while requests is None or count < requests:
-            peer, _ = listener.accept()
-            self.connection(peer)
-            count += 1
-
 
 def read_policy(path):
     fd = os.open(path, os.O_RDONLY | os.O_NOFOLLOW | os.O_CLOEXEC | os.O_NONBLOCK)
@@ -425,31 +372,18 @@ def read_policy(path):
 
 
 def main():
-    """Internal daemon or explicit bootstrap; neither initializes a CAS."""
+    """Explicit installer bootstrap; never initializes a CAS or accepts RPC."""
     import argparse
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--config', required=True, type=Path)
-    parser.add_argument('--provision-bank', action='store_true')
+    parser.add_argument('--provision-bank', action='store_true', required=True)
     args = parser.parse_args()
     if os.getuid() or os.geteuid():
         raise Rejected('privilege')
     policy = read_policy(args.config)
-    if args.provision_bank:
-        # Existing empty protected mount only, explicitly requested by installer.
-        # Never recreate or initialize the independently owned native CAS.
-        provision_bank(policy['bank'])
-        bank = Bank(policy['bank'], policy['reservation'], policy['worker'], policy['client_uid'])
-        bank.close()
-        return
-    if os.environ.get('LISTEN_PID') != str(os.getpid()) or os.environ.get('LISTEN_FDS') != '1':
-        raise Rejected('activation')
-    listener = socket.socket(fileno=3)
+    provision_bank(policy['bank'])
     bank = Bank(policy['bank'], policy['reservation'], policy['worker'], policy['client_uid'])
-    try:
-        bank.serve(listener)
-    finally:
-        bank.close()
-        listener.close()
+    bank.close()
 
 
 if __name__ == '__main__':

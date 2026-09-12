@@ -55,8 +55,9 @@ def main():
         result=json.loads(args.report.read_text());assert result['boot_id']!=Path('/proc/sys/kernel/random/boot_id').read_text().strip()
         run('systemctl','start','var-lib-niaos-roots.mount');assert check_bank()['readonly']
         assert hashlib.sha256((BASE/'root-session.json').read_bytes()).hexdigest()==result['attempt_sha256']
-        denied=subprocess.run(['systemctl','start','niaos-root-preparation.socket','niaos-root-preparation.service'],capture_output=True,timeout=45)
-        assert denied.returncode!=0
+        for obsolete in ('niaos-root-preparation.socket', 'niaos-root-preparation.service'):
+            assert run('systemctl','show',obsolete,'--property=LoadState','--value').stdout == b'not-found\n'
+        assert not Path('/run/niaos/root-preparation.sock').exists()
         result['reboot_readonly_and_old_writer_refused']=True;args.report.write_text(json.dumps(result,indent=2)+'\n');return
     assert not (BASE/'root-session.json').exists()
     account=pwd.getpwnam('nia-pkg');policy=Path('/etc/niaos/root-bank-device.json').read_bytes()
@@ -81,6 +82,25 @@ def main():
         peer=connect();send(peer,changed,fds);frames=terminal(peer)
         assert frames==[dict(version=1,state='refused-or-indeterminate',published=False)],frames
         assert not (BASE/'root-session.json').exists() and check_bank()['readonly'];refusals.append(name)
+    # Missing ownership inputs must remain missing even when the controller is
+    # already listening. Pass otherwise valid bindings and actual borrowed FDs.
+    for target in (BANK/'bank.lock', BASE/'core/store/store.lock', Path('/etc/niaos/root-preparation.json')):
+        saved = (target.stat().st_ino, target.read_bytes())
+        held = target.with_name(target.name+'.test-held')
+        if target == BANK/'bank.lock': run('mount','-o','remount,rw,nodev,nosuid,noexec',str(BANK))
+        target.rename(held)
+        if target == BANK/'bank.lock': run('mount','-o','remount,ro,nodev,nosuid,noexec',str(BANK))
+        try:
+            peer=connect();send(peer,message,(source,original));frames=terminal(peer)
+            assert frames==[dict(version=1,state='refused-or-indeterminate',published=False)],frames
+            assert not target.exists() and not (BASE/'root-session.json').exists()
+            assert os.statvfs(BANK).f_flag & os.ST_RDONLY
+            refusals.append('missing-'+str(target.relative_to('/')))
+        finally:
+            if target == BANK/'bank.lock': run('mount','-o','remount,rw,nodev,nosuid,noexec',str(BANK))
+            held.rename(target)
+            if target == BANK/'bank.lock': run('mount','-o','remount,ro,nodev,nosuid,noexec',str(BANK))
+        assert saved == (target.stat().st_ino, target.read_bytes())
     peer=connect();send(peer,message,(source,original));ready=json.loads(peer.recv(4096))
     assert ready['state']=='frozen' and not ready['published'],ready
     os.close(original);original=-1

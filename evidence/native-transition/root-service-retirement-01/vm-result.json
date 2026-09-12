@@ -1,0 +1,42 @@
+{
+  "result": "pass",
+  "ending": "close",
+  "unauthorized_user_refused": true,
+  "refusals": [
+    "wrong-worker",
+    "wrong-mount",
+    "wrong-device-plan",
+    "missing-descriptors",
+    "missing-var/lib/niaos/roots/bank.lock",
+    "missing-var/lib/niaos/core/store/store.lock",
+    "missing-etc/niaos/root-preparation.json"
+  ],
+  "ready": {
+    "deadline_ms": 67819,
+    "observation": {
+      "original_deadline_ms": 67819,
+      "root": {
+        "device_major": 254,
+        "device_minor": 17,
+        "inode": 16,
+        "mount_id": 94
+      }
+    },
+    "published": false,
+    "stage": "11111111111111111111111111111111",
+    "state": "frozen",
+    "version": 1
+  },
+  "cas_reacquired_before_observe": true,
+  "bank_retained_until_end": true,
+  "original_tree_and_records_unchanged": true,
+  "bank_readonly_after_end": true,
+  "attempt_sha256": "c6e8b85f6fa8a28176c93814ac9190ee1af37593b0fb1adf6d304174fec3f958",
+  "reused_bank_refused": true,
+  "stop_hook_after_privileged_drift": false,
+  "boot_id": "9e293d63-c4dc-4913-8cc8-67fb5a4fe28d",
+  "site_admission_fixture": true,
+  "native_sdk_connected": false,
+  "boot_switched": false,
+  "reboot_readonly_and_old_writer_refused": true
+}

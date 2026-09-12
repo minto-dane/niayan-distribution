@@ -3,7 +3,7 @@
 Description=NiaOS root bank device identity check
 BindsTo=var-lib-niaos-roots.mount
 After=var-lib-niaos-roots.mount
-Before=niaos-root-preparation.service
+Before=niaos-root-session.service
 
 [Service]
 Type=oneshot

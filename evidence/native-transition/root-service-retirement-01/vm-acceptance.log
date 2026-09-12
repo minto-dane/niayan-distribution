@@ -1,0 +1,4 @@
+Running as unit: run-p1507661-i1507961.scope; invocation ID: 545538458b3e4f69aa8ff5ffce1541b7
+limited-exec: {"scope": "run-p1507661-i1507961.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+VM SSH ready
+Guest worker test exit 0

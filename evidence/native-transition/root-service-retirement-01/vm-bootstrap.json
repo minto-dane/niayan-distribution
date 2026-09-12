@@ -1,0 +1,76 @@
+{
+  "result": "pass",
+  "plan": {
+    "version": 1,
+    "partition_uuid": "fd7a1318-cad1-4d03-8ec9-e4d979d6eda6",
+    "filesystem_uuid": "c0658542-3bd0-4b40-b255-d8c36f1f37b6",
+    "size_bytes": 65011712
+  },
+  "observed": {
+    "format": 1,
+    "identity": {
+      "device_major": 254,
+      "device_minor": 17,
+      "inode": 2,
+      "mount_id": 68
+    },
+    "readonly": true,
+    "status": "bank-device-checked"
+  },
+  "snapshot": {
+    "bootstrap.json": [
+      20458,
+      "6104a26eb312eaa5ed8a032ce52775110a75cc24dae92f260c1538e98f7bf4b3"
+    ],
+    "bootstrap-complete.json": [
+      20474,
+      "9cf3c69e0c2af25f5f6ed0fcb3d83026e5b81ed57ace6f0107400998e9be2199"
+    ],
+    "core/store/store.lock": [
+      20467,
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    "roots/bank.json": [
+      11,
+      "f0798576b3c4af2cbd8b289d572df90c49a7f963d1365047cb5538235fa9c8b4"
+    ],
+    "roots/bank.lock": [
+      13,
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ]
+  },
+  "boot_id": "75119dd2-cbd1-4429-a0a8-fd1a314ccccf",
+  "bootstrap_refusal_cases": [
+    "missing-device-plan",
+    "incorrect-filesystem_uuid",
+    "incorrect-size_bytes",
+    "missing-native-initializer",
+    "native-root-refusal",
+    "preexisting-core",
+    "preexisting-roots",
+    "preexisting-bootstrap.json",
+    "preexisting-bootstrap-complete.json"
+  ],
+  "retry_refused": true,
+  "service_activated_only_by_test": true,
+  "service_properties": "CapabilityBoundingSet=cap_chown cap_dac_override cap_fowner cap_fsetid cap_setpcap cap_sys_chroot cap_sys_admin cap_mknod cap_setfcap\nActiveState=active\n",
+  "installer_formats_device": false,
+  "boot_switch_tested": false,
+  "site_authorization": false,
+  "reboot_readonly": true,
+  "device_guard_activated": true,
+  "changed_plan_blocks_service": true,
+  "missing_lock_not_recreated": true,
+  "after_reboot": {
+    "format": 1,
+    "identity": {
+      "device_major": 254,
+      "device_minor": 17,
+      "inode": 2,
+      "mount_id": 94
+    },
+    "readonly": true,
+    "status": "bank-device-checked"
+  },
+  "restored_original_state": true
+}

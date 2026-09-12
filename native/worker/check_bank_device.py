@@ -12,8 +12,8 @@ PLAN = Path('/etc/niaos/root-bank-device.json')
 BASE = Path('/var/lib/niaos')
 BANK = BASE/'roots'
 BOOTSTRAP = ['/usr/bin/python3', '-I', '/usr/libexec/niaos/storage_bootstrap.py']
-SERVICE = 'niaos-root-preparation.service'
-SOCKET = 'niaos-root-preparation.socket'
+SERVICE = 'niaos-root-session.service'
+SOCKET = 'niaos-root-session.socket'
 GUARD = 'niaos-root-bank-check.service'
 MOUNT = 'var-lib-niaos-roots.mount'
 
@@ -91,6 +91,17 @@ def main():
         assert denied.returncode != 0 and not (BASE/'bootstrap.json').exists()
         cases.append('incorrect-'+field)
     write_plan(plan)
+    native = Path('/usr/libexec/nia/pkg_store_bootstrap')
+    held = native.with_name(native.name+'.test-held')
+    native.rename(held)
+    try:
+        denied = subprocess.run(BOOTSTRAP+['--initialize'],capture_output=True,timeout=75)
+        assert denied.returncode != 0 and not (BASE/'bootstrap.json').exists()
+    finally: held.rename(native)
+    cases.append('missing-native-initializer')
+    denied = subprocess.run([str(native),'initialize',str(BASE/'core/store')],capture_output=True,timeout=15)
+    assert denied.returncode != 0 and b'status=DENIED' in denied.stdout and not (BASE/'core').exists()
+    cases.append('native-root-refusal')
     BASE.mkdir(mode=0o755,exist_ok=True)
     for name in ('core','roots','bootstrap.json','bootstrap-complete.json'):
         p=BASE/name
@@ -115,7 +126,7 @@ def main():
     assert subprocess.run(['systemctl','is-enabled','--quiet',SOCKET]).returncode!=0
     run('systemctl','start',SOCKET,SERVICE)
     properties=run('systemctl','show',SERVICE,'--property=ActiveState','--property=CapabilityBoundingSet').stdout.decode()
-    assert 'ActiveState=active' in properties and 'cap_sys_admin' not in properties
+    assert 'ActiveState=active' in properties and 'cap_sys_admin' in properties
     run('systemctl','stop',SOCKET,SERVICE)
     result=dict(result='awaiting-reboot',plan=plan,observed=observed,snapshot=saved,
                 boot_id=Path('/proc/sys/kernel/random/boot_id').read_text().strip(),bootstrap_refusal_cases=cases,

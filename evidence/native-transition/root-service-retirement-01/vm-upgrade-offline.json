@@ -1,0 +1,13 @@
+{
+  "result": "pass",
+  "cases": {
+    "offline_unpack": true,
+    "obsolete_package_files_removed": true,
+    "shared_bank_retained": true,
+    "recovery_record_unchanged": true,
+    "configured_in_chroot": false,
+    "stdout": "(Reading database ... 41 files and directories currently installed.)\nPreparing to unpack .../niaos-root-preparation_0.8.0_amd64.deb ...\nUnpacking niaos-root-preparation (0.8.0) over (0.7.0) ...\n"
+  },
+  "old_sha256": "56191f395fe77ac532dc6b7b4b7b78a31d0bc47436487fc01204d537e46d4346",
+  "new_sha256": "ba88f35d97df513ee0c3a194944f407c312038eb225ce311a48057e32067473e"
+}
