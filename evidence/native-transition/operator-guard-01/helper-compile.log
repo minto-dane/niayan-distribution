@@ -1,0 +1,25 @@
+Compile
+   [Ada]          pkg_operator_guard.adb
+   [C]            operator_authorization.c
+   [C]            pkg_deb_stream.c
+   [C]            archive_observer.c
+   [C]            root_handoff_wire.c
+   [C]            root_handoff.c
+   [C]            pkg_deb_decode.c
+   [C]            conffile_snapshot.c
+   [C]            root_session.c
+   [Ada]          mc_clock.adb
+   [Ada]          mc_codec.adb
+   [Ada]          mc_hex.adb
+   [Ada]          mc_posix.ads
+   [Ada]          mc_runtime.adb
+   [Ada]          mc_types.adb
+   [Ada]          pkg_operator_authorization.adb
+   [Ada]          mc_kernel_read.adb
+Bind
+   [gprbind]      pkg_operator_guard.bexch
+   [Ada]          pkg_operator_guard.ali
+Link
+   [archive]      libpkgcore.a
+   [index]        libpkgcore.a
+   [link]         pkg_operator_guard.adb

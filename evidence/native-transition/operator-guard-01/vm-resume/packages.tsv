@@ -1,0 +1,8 @@
+gcc	4:14.2.0-1
+gnat	14.1
+gprbuild	2025.0.0-4
+libarchive13t64:amd64	3.7.4-4+deb13u1
+libgnat-14:amd64	14.2.0-19
+libsodium23:amd64	1.0.18-1+deb13u1
+libsystemd0:amd64	257.13-1~deb13u1
+python3	3.13.5-1

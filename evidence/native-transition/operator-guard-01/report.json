@@ -1,0 +1,75 @@
+{
+  "result": "pass",
+  "package": "niaos-root-preparation",
+  "version": "0.11.0",
+  "component": {
+    "component": "pkgcore",
+    "commit": "61a4df3cbbdf4b75fe8190a8398f9f1f3587c101",
+    "package": "niaos-pkgcore",
+    "version": "0.1.0+git61a4df3cbbdf"
+  },
+  "package_and_corresponding_sources_match": true,
+  "source_hashes": {
+    "pkgcore/app/pkg_operator_guard.adb": "56dcce467c0bf4fcd611f350a3ecf80c058009a04aa8e8c69998ced18e33a2e3",
+    "pkgcore/runtime/operator_authorization.c": "d938686aa7ce9b85082b28a499bed989eada1eb0b4d07ecb5e108a3853e622ea",
+    "pkgcore/runtime/pkg_operator_authorization.adb": "71a83bd90b7dfdb537a554d782c575ce0f5e59d20d7e6367e667113faf93a30e",
+    "pkgcore/pkgcore.gpr": "49d20e718feef1749a1dde0e4769b45776c5b4098150cd834a151c0711f69368",
+    "pkgcore/packaging/nia/artifact.json": "6604a433c839fc7838db8333db921b410804b938d887f1a14ece3987aae36bab",
+    "distribution/native/operator_guard.py": "5dfb302d2912d00654e4ce42797ee0b9a6315d1d375f610b1a092c66a546b5a6",
+    "distribution/native/test_operator_guard.py": "799327b16712a60e227ebc38ef3168621c1428c6d42bb28f97d1bef7e36823c9",
+    "distribution/native/worker/check_operator_guard.py": "d7b690c3d8f3936f6bfc32558ba5013c7746ba7e95e43caac3e54bcdf0606f3a",
+    "distribution/native/worker/check_operator_authorization.py": "224976b400d5f3ce769754d9ca7e1cb0bad559e04b2bd870bc1a2e9abc515804",
+    "distribution/native/prepare_service_package.py": "e20af8621eb7509791821eab6eb09520a9268eaf31c3f4f949c2536f9a507186",
+    "distribution/native/handoff-mypy.ini": "c7af412864888094be4d487b5bfd24ed819e8b3156d3558bc5ef53726cd96ab0",
+    "assurance/docs/engineering/adr/ADR-0125.ja.md": "4be8f29876861b7ab3dda1d16efe522af9ea51ad5bedfd4addbab46fbcd75ef3"
+  },
+  "installed_helper_sha256": "4278ff853fc751831ba58254040bb4b2ed9392269a4cd9bbdb97be8cb6898d8d",
+  "artifacts": {
+    "vm/niaos-pkgcore_0.1.0+git61a4df3cbbdf_amd64.buildinfo": "6d39f17362a0767ad42d529d0729da07878a31f7b44b381b519f30159fbdd3ad",
+    "vm/niaos-pkgcore_0.1.0+git61a4df3cbbdf_amd64.changes": "c15ce043f9b6e22fbb5e639b76ae7e52c2d57ea14d75a310b8a7da5d15485367",
+    "vm/niaos-pkgcore_0.1.0+git61a4df3cbbdf.dsc": "da5544d8dcfc40c58070dbf1aee9552a8d95f325e0cde3ec6b6244f41fe0687c",
+    "vm/niaos-pkgcore_0.1.0+git61a4df3cbbdf.tar.xz": "e44beef384b5010dc82618f7f783f1cb3dd4ee3042a50c6c29e178626f8be39f",
+    "vm/niaos-pkgcore_0.1.0+git61a4df3cbbdf_amd64.deb": "ea7f08b48154536d500c6d8ec1c88a7b040228e583d799c3c466aafdd8ab4a1b",
+    "vm-final/niaos-root-preparation_0.11.0.tar.xz": "e03471b8f572148ca5af64b73bb3b914738174ac7f4d00687ea25e3f328b8c81",
+    "vm-final/niaos-root-preparation-dbgsym_0.11.0_amd64.deb": "dcaf46dd97156df3021ed794218046d74e16ed9ac4c99430ce6a2a4efedbfa70",
+    "vm-final/niaos-root-preparation_0.11.0_amd64.changes": "5c055dd0e0138643d5c2479146537ac6f4e3e060922f2420170ad6b0eefc9e99",
+    "vm-final/niaos-root-preparation_0.11.0.dsc": "62c3767fb4257e9f1401b904153047e4c565c8d9539cb1822d157ef86669ad5f",
+    "vm-final/niaos-root-preparation_0.11.0_amd64.deb": "d5ced02d1cc4b0b3772734e16cdd137691671debc06dfaeaec43ca28b195d274",
+    "vm-final/niaos-root-preparation_0.11.0_amd64.buildinfo": "a50231951cf17d171bc7f6af489b978ff028ae0ad124832a7fe3226b4dbb8b62",
+    "vm-final/niaos-pkgcore_0.1.0+git61a4df3cbbdf_amd64.deb": "ea7f08b48154536d500c6d8ec1c88a7b040228e583d799c3c466aafdd8ab4a1b"
+  },
+  "limits": {
+    "memory_bytes": 3221225472,
+    "swap_bytes": 0,
+    "vcpus": 1,
+    "pids": 128,
+    "vm_memory_mib": 2048
+  },
+  "compile_image": "sha256:76d5c00dfa833ce7ae67a192c5663d9bcd5c4104153f5933431dae88c097918c",
+  "vm_runner_image": "sha256:7f92f64938b87b862dd962a93b558fb0caea13493745c684fbddfc190a723617",
+  "tests": {
+    "unit_cases": 3,
+    "actual_polkit_cases": 11,
+    "finite_control_only": true,
+    "strict_typing": "pass"
+  },
+  "production_complete": false,
+  "whole_runtime_formally_verified": false,
+  "physical_effects_exercised": false,
+  "authentication_dialog_exercised": false,
+  "reproducibility_rebuild_this_version": false,
+  "attempts": [
+    {
+      "result": "compile-and-typing-corrected",
+      "detail": "Initial helper referenced Get64 instead of existing U64; strict parent typing required decoding integer fields without Any. Corrected before package build."
+    },
+    {
+      "result": "test-harness-start-limit",
+      "detail": "The first VM harness restarted polkit for every case and hit systemd start-limit-hit; previous-boot journal is in vm-resume/guest.log. Removed unnecessary restarts and reused the installed packages for ten successful cases."
+    },
+    {
+      "result": "freshness-bound-added",
+      "detail": "Review found first authorization replies also need an age bound while waiting for initial interaction. Added it and the stale-first-reply case; rebuilt only root-preparation and accepted eleven cases with the byte-identical existing pkgcore DEB."
+    }
+  ]
+}

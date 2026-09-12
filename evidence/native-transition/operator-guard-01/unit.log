@@ -1,0 +1,8 @@
+test_all_control_histories (test_operator_guard.OperatorGuardTests.test_all_control_histories) ... ok
+test_helper_directory_close_does_not_close_reused_number (test_operator_guard.OperatorGuardTests.test_helper_directory_close_does_not_close_reused_number) ... ok
+test_unprivileged_constructor_refuses_before_spawn (test_operator_guard.OperatorGuardTests.test_unprivileged_constructor_refuses_before_spawn) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.016s
+
+OK

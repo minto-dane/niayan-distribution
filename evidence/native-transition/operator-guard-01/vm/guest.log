@@ -1,0 +1,28 @@
+Traceback (most recent call last):
+  File "/home/builder/niayan-monitor/check_operator_guard.py", line 62, in main
+    run('systemctl', 'restart', 'polkit.service')
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/builder/niayan-monitor/check_operator_authorization.py", line 25, in run
+    def run(*args):return subprocess.run(args,check=True,capture_output=True,timeout=20)
+                          ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/subprocess.py", line 577, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '('systemctl', 'restart', 'polkit.service')' returned non-zero exit status 1.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/builder/niayan-monitor/check_operator_guard.py", line 142, in <module>
+    main()
+    ~~~~^^
+  File "/home/builder/niayan-monitor/check_operator_guard.py", line 135, in main
+    run('systemctl', 'restart', 'polkit.service')
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/builder/niayan-monitor/check_operator_authorization.py", line 25, in run
+    def run(*args):return subprocess.run(args,check=True,capture_output=True,timeout=20)
+                          ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/subprocess.py", line 577, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '('systemctl', 'restart', 'polkit.service')' returned non-zero exit status 1.

@@ -61,3 +61,31 @@ fixture ruleはbuilderという利用者と固定plan/requestだけを許可し�
 [PolkitUnixProcess](https://polkit.pages.freedesktop.org/polkit/PolkitUnixProcess.html)、
 [upstreamのpidfd wire処理](https://github.com/polkit-org/polkit/blob/126/src/polkit/polkitsubject.c)。
 API説明のint32表記だけに依存せず、実装のUNIX_FD handleとUIDの組を実Debian版へ照合した。
+
+## 非同期の親側接続
+
+`pkg_operator_guard`は同じnative SDKを実行する内部root子processで、component DEBの
+`/usr/libexec/nia/`へ配置する。root-preparation 0.11.0の`operator_guard.py`は
+その保護ELFをFDで固定し、別processのpolkit待ちとroot supervisorのevent loopを分離する。
+新規の公開管理コマンドや常駐serviceを追加せず、このobserverからpackage操作は実行しない。
+
+親は認証・計画同意の応答を消費した実accepted peer、不変のadmitted plan/request、
+最大120秒の元BOOTTIME期限と対話可否を`OperatorGuard`へ渡す。`request_check()`で
+一件の確認を要求し、`descriptors()`と`next_deadline`を他のworker/controllerと共に監視する。
+`receive()`は未到着ならNone、成功なら一度だけ番号とnativeの開始/終了時刻を返す。
+NoneやPENDINGを認可として扱わず、同じ観測を後の効果へ使い回さない。
+
+初回待ちは対話を含む元期限、それ以後の再確認は最大1000 ms。初回も終了後1000 msを
+過ぎた返答を拒否する。peer取消/切断/終了、helper終了/無応答、期限、順序/形式/時刻不一致は
+objectを失効させる。自動再認証/再試行はなく、callerは全終了経路でcloseを実行する。
+closeは専用groupを停止して回収し、所有FDを解放する。借用peerは閉じない。
+
+子の要求はbig-endian64のsequence（1〜1200）、応答はNIAOPR01にsequence、
+Check開始BOOTTIME ms、終了BOOTTIME msを続けた32 byteである。contextは子起動時に
+固定され、各確認でnative SDKへ同じplan/requestを渡す。このprivate観測は署名grantではない。
+子の標準pipeとargvから新しい実行権限を作らず、公開UIの翻訳対象にも含めない。
+
+親APIだけでbackground監視が成立したとはしない。callerは期限通りpollし、実効果境界で
+新しい確認とその他の必須guardを実施し、失効時に実worker/controllerを停止しなければならない。
+Closeの成功は既に開始した効果のrollback、他のwriterの停止や認証画面の消失を証明しない。
+本番supervisor/正確な計画同意への接続と全runtimeの形式保証はADR-0125に従い未完である。

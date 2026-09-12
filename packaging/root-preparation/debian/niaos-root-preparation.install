@@ -14,3 +14,4 @@ debian/niaos-root-session.service usr/lib/systemd/system
 debian/niaos-root-session.socket usr/lib/systemd/system
 debian/niaos-root-session-seal.service usr/lib/systemd/system
 deployment/org.niaos.package.policy usr/share/polkit-1/actions
+native/operator_guard.py usr/libexec/niaos

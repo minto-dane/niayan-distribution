@@ -1,0 +1,21 @@
+{
+  "result": "pass",
+  "cases": [
+    "default-deny",
+    "valid",
+    "wrong-plan",
+    "rule-change",
+    "cancel",
+    "peer-exit",
+    "helper-stall",
+    "authority-restart",
+    "duplicate-pending",
+    "bad-sequence"
+  ],
+  "test_rule_removed": true,
+  "actual_native_polkit": true,
+  "authentication_dialog_exercised": false,
+  "exact_plan_consent": false,
+  "physical_effects": false,
+  "whole_runtime_proof": false
+}
