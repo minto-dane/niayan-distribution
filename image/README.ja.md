@@ -146,3 +146,7 @@ workspaceには手動起動の`Debian 13 packages` workflowも置く。独自DEB
 
 媒体索引・媒体一覧・緊急修正のローカル作成/表示と認証付き取得は利用できる。
 導入済み台帳への操作、TUI、完全置換は未接続のままであり、APT版ISOを完成製品として出荷しない。
+
+小さな配布checkpointでは同じContainerfileの`--target package-builder`を使う。
+固定base digestと署名付きsnapshotの設定は共通で、GNAT/QEMU/firmware/live-buildを導入しない。
+通常のISO構築は既定の最終stage image-builderを使う。
