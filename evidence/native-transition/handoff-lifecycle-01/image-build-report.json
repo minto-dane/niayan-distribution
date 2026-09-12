@@ -1,0 +1,29 @@
+{
+  "result": "pass",
+  "exit_code": 0,
+  "reason": null,
+  "minimum_free_bytes": 4004278272,
+  "elapsed_seconds": 257.1031455170014,
+  "command": [
+    "podman",
+    "--cgroup-manager=cgroupfs",
+    "--events-backend=file",
+    "--storage-driver=vfs",
+    "--root",
+    "/home/nia/devbox/niaos/.work/podman-root",
+    "--runroot",
+    "/home/nia/devbox/niaos/.work/root-handoff-lifecycle-01/podman-run",
+    "--tmpdir",
+    "/home/nia/devbox/niaos/.work/root-handoff-lifecycle-01/podman-tmp",
+    "--transient-store",
+    "build",
+    "--isolation=chroot",
+    "--network=host",
+    "--layers=false",
+    "--iidfile",
+    "/home/nia/devbox/niaos/.work/root-handoff-lifecycle-01/new-dev-image.id",
+    "-f",
+    "/home/nia/devbox/niaos/.work/root-handoff-lifecycle-01/build-context/dev/Containerfile",
+    "/home/nia/devbox/niaos/.work/root-handoff-lifecycle-01/build-context"
+  ]
+}

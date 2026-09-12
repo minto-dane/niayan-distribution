@@ -10,16 +10,12 @@ from __future__ import annotations
 
 import array
 from dataclasses import dataclass
-from enum import Enum, auto
 import hashlib
 import os
 import select
 import socket
 import struct
-import sys
 import time
-
-MAX_POLLS = 1200
 
 
 class Rejected(ValueError):
@@ -27,46 +23,7 @@ class Rejected(ValueError):
 
 
 def now_ms() -> int:
-    return time.clock_gettime_ns(time.CLOCK_BOOTTIME) // 1000000
-
-
-class Phase(Enum):
-    STARTING = auto()
-    READY = auto()
-    RECEIVING = auto()
-    RECEIVED = auto()
-    COMPLETING = auto()
-    COMPLETE = auto()
-    FAILED = auto()
-    CLOSED = auto()
-
-
-class Event(Enum):
-    OPEN = auto()
-    RECEIVE = auto()
-    ACCEPT = auto()
-    COMPLETE = auto()
-    ACK = auto()
-    FAIL = auto()
-    CLOSE = auto()
-
-
-def transition(phase: Phase, event: Event) -> Phase:
-    """The runtime's finite control relation; it grants no external authority."""
-    if event is Event.CLOSE:
-        return Phase.CLOSED
-    if event is Event.FAIL and phase not in (Phase.CLOSED, Phase.COMPLETE):
-        return Phase.FAILED
-    for before, action, after in (
-        (Phase.STARTING, Event.OPEN, Phase.READY),
-        (Phase.READY, Event.RECEIVE, Phase.RECEIVING),
-        (Phase.RECEIVING, Event.ACCEPT, Phase.RECEIVED),
-        (Phase.RECEIVED, Event.COMPLETE, Phase.COMPLETING),
-        (Phase.COMPLETING, Event.ACK, Phase.COMPLETE),
-    ):
-        if phase is before and event is action:
-            return after
-    raise Rejected('invalid-channel-transition')
+    return int(time.clock_gettime(time.CLOCK_BOOTTIME) * 1000)
 
 
 @dataclass(frozen=True)
@@ -103,10 +60,10 @@ class Channel:
     Single owning process/task; close does not shut down a parent's forked copy.
     """
     def __init__(self, peer: socket.socket, child_pid: int, child_uid: int, scope: Scope) -> None:
-        self.peer: socket.socket | None = None
+        self.peer = None
         self.pidfd = -1
-        self.descriptors: list[int] = []
-        self.phase = Phase.STARTING
+        self.descriptors = []
+        self.received = self.used = self.finished = False
         self.owner = os.getpid()
         if (os.getuid() or os.geteuid() or type(child_pid) is not int or child_pid <= 0
                 or type(child_uid) is not int or not 0 < child_uid <= 2**31 - 1):
@@ -125,19 +82,9 @@ class Channel:
             self.pidfd = os.pidfd_open(child_pid)
             os.set_inheritable(self.pidfd, False)
             self._alive()
-            self._advance(Event.OPEN)
         except BaseException:
             self.close()
             raise
-
-    def _advance(self, event: Event) -> None:
-        self.phase = transition(self.phase, event)
-
-    def _peer(self) -> socket.socket:
-        peer = self.peer
-        if peer is None or self.phase is Phase.CLOSED:
-            raise Rejected('channel-closed')
-        return peer
 
     def _alive(self) -> None:
         if self.owner != os.getpid() or os.getuid() or os.geteuid() or now_ms() >= self.scope.deadline:
@@ -146,31 +93,27 @@ class Channel:
             raise Rejected('child-exited')
 
     def _wait(self, events: int) -> None:
-        peer = self._peer()
-        for _ in range(MAX_POLLS):
+        while True:
             self._alive()
             poll = select.poll()
-            poll.register(peer.fileno(), events)
+            poll.register(self.peer.fileno(), events)
             poll.register(self.pidfd, select.POLLIN)
             for fd, flags in poll.poll(min(1000, max(1, self.scope.deadline - now_ms()))):
                 if fd == self.pidfd or flags & (select.POLLERR | select.POLLHUP | select.POLLNVAL):
                     raise Rejected('child-or-channel-ended')
                 if flags & events:
                     return
-        raise Rejected('poll-budget-exhausted')
 
     def receive(self) -> tuple[int, int]:
-        self._advance(Event.RECEIVE)
+        if self.used:
+            raise Rejected('request-already-attempted')
+        self.used = True
         try:
             self._wait(select.POLLIN)
-            # The stdlib stub leaves the unused address untyped. Contain it as
-            # object; authentication uses kernel credentials, never that value.
-            message: tuple[bytes, list[tuple[int, int, bytes]], int, object] = self._peer().recvmsg(
+            raw, controls, flags, _ = self.peer.recvmsg(
                 193, socket.CMSG_SPACE(12) + socket.CMSG_SPACE(16 * 4),
                 socket.MSG_DONTWAIT | socket.MSG_CMSG_CLOEXEC)
-            raw, controls, flags, _ = message
-            credentials: list[tuple[int, int, int]] = []
-            invalid = bool(flags & ~(socket.MSG_CMSG_CLOEXEC | socket.MSG_EOR))
+            credentials, invalid = [], bool(flags & ~(socket.MSG_CMSG_CLOEXEC | socket.MSG_EOR))
             for level, kind, data in controls:
                 if level == socket.SOL_SOCKET and kind == socket.SCM_RIGHTS:
                     values = array.array('i')
@@ -178,73 +121,51 @@ class Channel:
                     values.frombytes(data[:len(data) - len(data) % values.itemsize])
                     self.descriptors.extend(values)
                 elif level == socket.SOL_SOCKET and kind == socket.SCM_CREDENTIALS and len(data) == 12:
-                    credentials.append((int.from_bytes(data[0:4], byteorder=sys.byteorder, signed=True),
-                                        int.from_bytes(data[4:8], byteorder=sys.byteorder, signed=True),
-                                        int.from_bytes(data[8:12], byteorder=sys.byteorder, signed=True)))
+                    credentials.append(struct.unpack('3i', data))
                 else:
                     invalid = True
-            if (invalid or len(credentials) != 1 or credentials[0][0] != self.child_pid
-                    or credentials[0][1] != self.child_uid
+            if (invalid or len(credentials) != 1 or credentials[0][:2] != (self.child_pid, self.child_uid)
                     or len(self.descriptors) != 2 or raw != self.expected):
                 raise Rejected('sender-scope-or-descriptors')
             self._current()
-            self._advance(Event.ACCEPT)
+            self.received = True
             return self.descriptors[0], self.descriptors[1]
         except BaseException:
-            self._advance(Event.FAIL)
             self._release_inputs()
             raise
 
     def _current(self) -> None:
         self._alive()
         poll = select.poll()
-        poll.register(self._peer().fileno(), select.POLLIN)
+        poll.register(self.peer.fileno(), select.POLLIN)
         if poll.poll(0):
             raise Rejected('cancel-or-disconnect')
 
     def complete(self) -> None:
         # Caller has completed its root session request, independent observation
         # and current admission rechecks. No callback is silently supplied here.
-        self._advance(Event.COMPLETE)
-        try:
-            self._release_inputs()
-            self._current()
-            self._wait(select.POLLOUT)
-            self._current()
-            reply = b'NIAHOK01' + hashlib.sha256(self.expected).digest()
-            if self._peer().send(reply, socket.MSG_DONTWAIT | socket.MSG_NOSIGNAL) != len(reply):
-                raise Rejected('uncertain-reply')
-            self._advance(Event.ACK)
-        except BaseException:
-            self._advance(Event.FAIL)
-            raise
+        if not self.received or self.finished:
+            raise Rejected('not-received-or-finished')
+        self.finished = True
+        self._release_inputs()
+        self._current()
+        self._wait(select.POLLOUT)
+        reply = b'NIAHOK01' + hashlib.sha256(self.expected).digest()
+        if self.peer.send(reply, socket.MSG_DONTWAIT | socket.MSG_NOSIGNAL) != len(reply):
+            raise Rejected('uncertain-reply')
 
     def _release_inputs(self) -> None:
-        # Detach before closing. On Linux a close error must not be retried:
-        # the numeric FD may already have been reused. Attempt every release.
-        descriptors, self.descriptors = self.descriptors, []
-        errors: list[OSError] = []
-        for fd in descriptors:
-            try:
-                os.close(fd)
-            except OSError as error:
-                errors.append(error)
-        if errors:
-            raise ExceptionGroup('handoff-input-release', errors)
+        while self.descriptors:
+            os.close(self.descriptors.pop())
 
     def close(self) -> None:
-        self._advance(Event.CLOSE)
-        try:
-            self._release_inputs()
-        finally:
-            pidfd, self.pidfd = self.pidfd, -1
-            try:
-                if pidfd >= 0:
-                    os.close(pidfd)
-            finally:
-                peer, self.peer = self.peer, None
-                if peer is not None:
-                    peer.close()
+        self._release_inputs()
+        if self.pidfd >= 0:
+            os.close(self.pidfd)
+            self.pidfd = -1
+        if self.peer is not None:
+            self.peer.close()
+            self.peer = None
 
     def __enter__(self) -> Channel:
         return self

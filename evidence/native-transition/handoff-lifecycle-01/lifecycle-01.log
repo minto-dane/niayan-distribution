@@ -1,0 +1,17 @@
+Running as unit: run-p1437892-i1438192.scope; invocation ID: 501316bd5d7843c2bd82a1c47f6b1e1c
+limited-exec: {"scope": "run-p1437892-i1438192.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+test_cancel_arriving_during_writable_wait_prevents_reply (test_handoff_lifecycle.LifecycleTests.test_cancel_arriving_during_writable_wait_prevents_reply) ... ok
+test_closed_rejects_operations_without_io (test_handoff_lifecycle.LifecycleTests.test_closed_rejects_operations_without_io) ... ok
+test_completion_release_failure_prevents_reply (test_handoff_lifecycle.LifecycleTests.test_completion_release_failure_prevents_reply) ... ok
+test_exhaustive_control (test_handoff_lifecycle.LifecycleTests.test_exhaustive_control) ... ok
+test_model_detects_completion_without_receive (test_handoff_lifecycle.LifecycleTests.test_model_detects_completion_without_receive) ... ok
+test_model_detects_reopening_failure (test_handoff_lifecycle.LifecycleTests.test_model_detects_reopening_failure) ... ok
+test_pidfd_close_error_does_not_skip_socket (test_handoff_lifecycle.LifecycleTests.test_pidfd_close_error_does_not_skip_socket) ... ok
+test_poll_has_finite_call_budget (test_handoff_lifecycle.LifecycleTests.test_poll_has_finite_call_budget) ... ok
+test_receive_failure_is_terminal (test_handoff_lifecycle.LifecycleTests.test_receive_failure_is_terminal) ... ok
+test_release_error_still_closes_all_and_does_not_retry_reused_number (test_handoff_lifecycle.LifecycleTests.test_release_error_still_closes_all_and_does_not_retry_reused_number) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.068s
+
+OK

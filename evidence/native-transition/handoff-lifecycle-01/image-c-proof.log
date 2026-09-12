@@ -1,0 +1,2 @@
+python3 dev/c-proof.py --cbmc "cbmc" --output "/evidence/image-c-proof"
+{"result": "pass", "scope": "canonical handoff wire validator and its reachable helpers only", "production_qualified": false}

@@ -1,0 +1,9 @@
+{
+  "distribution/native/root_handoff.py": "9a1a98b5fdd66e64a2528b2516ec48a8d9ecdfcbc72fe1347f55e40afeb7550b",
+  "distribution/native/check_handoff_lifecycle.py": "620e6d638eef2f02085af918cd42cdb74bb99ee5105a28ca0cb9b42414f8f277",
+  "distribution/native/test_handoff_lifecycle.py": "bf92072b26ebd073835f46f1f071982f2747b4485d8fd13e46956b22cfa2251b",
+  "distribution/native/handoff-mypy.ini": "c7af412864888094be4d487b5bfd24ed819e8b3156d3558bc5ef53726cd96ab0",
+  "distribution/Makefile": "61956ed9391133b3994b2dc4c9c33c990e175fa98f6fca2dda1934ce887d667f",
+  "dev/packages.txt": "199f91fb5995ccf6e552a4d1254ea673d91fd3e3088fe6d7054296453a657c79",
+  "dev/README.ja.md": "adfa8863d2d7f9b938b72f54af41436d06ba5156961d935835a1e9c2ca5202f5"
+}

@@ -6,9 +6,14 @@ image-check: native-check hardening-check
 	python3 -m compileall -q image release
 	@set -eu; for script in image/*.sh image/auto/config image/hooks/*.hook.chroot; do sh -n "$$script"; done
 
-native-check: i18n-check tool-check
+native-check: i18n-check tool-check handoff-check
 	python3 -B -m unittest discover -s native -p 'test_*.py' -v
 	python3 -m compileall -q native
+
+.PHONY: handoff-check
+handoff-check:
+	python3 -m mypy --config-file native/handoff-mypy.ini --no-incremental native/root_handoff.py native/check_handoff_lifecycle.py
+	python3 -B native/check_handoff_lifecycle.py
 
 tool-check:
 	python3 -B -m unittest discover -s tests -p 'test_*.py' -v

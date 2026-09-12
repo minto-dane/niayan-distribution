@@ -1,0 +1,12 @@
+{
+  "Makefile": "681a6e6d010d189c3f3b1692a3952fc8bd780b220923f79a89cc418b69e979db",
+  "dev/c-proof.py": "5b5df5ba07118c9fc6e742305e0c1a0d8a06e91bd0afbb4b4ff4199e6b8614ac",
+  "dev/limited-exec.py": "42d8bad6a2270131f47e44aab1845612d6d7d4d9f37248cf467c10632cd8032a",
+  "pkgcore/runtime/root_handoff_wire.c": "a1429178ea9011bb65891121a93c568cbc730f739df0bd59a8fd7e2ac8e0a084",
+  "pkgcore/runtime/root_handoff_wire.h": "024286eda26479f8aaecba11af4c8e2b693df3b9515a42c273f9d8aee57c4f54",
+  "pkgcore/tests/proof/root_handoff_wire.c": "992dbf9f8ab98a16a8d769a43d7759cfecd48c9f618405535922a03ff3e46393",
+  "distribution/Makefile": "61956ed9391133b3994b2dc4c9c33c990e175fa98f6fca2dda1934ce887d667f",
+  "distribution/native/root_handoff.py": "9a1a98b5fdd66e64a2528b2516ec48a8d9ecdfcbc72fe1347f55e40afeb7550b",
+  "distribution/native/check_handoff_lifecycle.py": "620e6d638eef2f02085af918cd42cdb74bb99ee5105a28ca0cb9b42414f8f277",
+  "distribution/native/handoff-mypy.ini": "c7af412864888094be4d487b5bfd24ed819e8b3156d3558bc5ef53726cd96ab0"
+}

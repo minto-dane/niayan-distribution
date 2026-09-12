@@ -47,3 +47,16 @@ borrowed channelの所有者は物理排他の全寿命を保持し、SDK Close/
 再検査handoff、本番launcher、現在供給/世代admission、正確な同意、root controllerへの製品接続は未完。
 新C基準への全transport適合と形式検証も未完であり、純粋wire検査の証明だけでは本番受入しない。
 ADR-0117/0118とimplementation-assurance.ja.mdに従う。
+
+## root Channelの制御と解放
+
+ADR-0119によりroot側は明示的な有限状態を使う。受信・応答の試行はI/Oの前に記録し、
+失敗はFAILED、closeはCLOSEDへ移す。どちらからも受信や応答を再開しない。
+closeは所有参照を先に取り外し、FDのOSErrorでも残りの入力FDとpidfd/socketの解放を試みる。
+Linuxのclose失敗を同じFD番号への再試行で補わない。入力の解放エラーは成功応答を禁止する。
+元期限を維持し、waitは最大1200 poll呼出しでも終了する。
+
+`make handoff-check`はroot_handoff.pyとcheck_handoff_lifecycle.pyの厳格型検査と、
+実transition関数の全到達制御状態の検査を行う。独立履歴の順序/回数/終端性を検査し、
+探索深さで省略しない。モデルと実際のI/O経路との対応は状態変更位置と境界試験で確認する。
+これは全Python/OS/FD実装の形式証明ではなく、製品の本番認定を与えない。

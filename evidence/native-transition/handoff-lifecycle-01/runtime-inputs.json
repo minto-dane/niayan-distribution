@@ -1,0 +1,13 @@
+{
+  "inputs": {
+    "distribution/native/root_handoff.py": "9a1a98b5fdd66e64a2528b2516ec48a8d9ecdfcbc72fe1347f55e40afeb7550b",
+    "pkgcore/tests/check_root_handoff.py": "4495b42d33c7d98bad4f9de2156caa1cba27093831e6c9fa109996a7e388d7f2"
+  },
+  "reused_build_input_count": 425,
+  "reused_artifacts": {
+    "root-handoff.so": "c0c53d35e07e82a3056f7025087148bce90db35d9c3677305f1f9a5de4158df4",
+    "run_root_handoff_tests": "ff7efefccf51033e420bbaa55ae20c6d2975f6a9cbb72df361d873810b8311ae"
+  },
+  "previous_evidence": "distribution/evidence/native-transition/root-handoff-01",
+  "new_c_or_ada_compilation": false
+}

@@ -1,0 +1,8 @@
+{
+  "result": "pass",
+  "scope": "finite channel control and ghost history only",
+  "complete_runtime_proof": false,
+  "configurations": 15,
+  "accepted_edges": 29,
+  "rejected_edges": 76
+}

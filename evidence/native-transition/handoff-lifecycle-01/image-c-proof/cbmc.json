@@ -1,0 +1,2349 @@
+[
+  {
+    "program": "CBMC 6.6.0 (cbmc-6.6.0)"
+  },
+  {
+    "messageText": "CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Type-checking root_handoff_wire",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Type-checking root_handoff_wire#0",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Generating GOTO Program",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Adding CPROVER library (x86_64)",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Removal of function pointers and virtual functions",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Generic Property Instrumentation",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Starting Bounded Model Checking",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Passing problem to propositional reduction",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "converting SSA",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Running propositional reduction",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "SAT checker: instance is UNSATISFIABLE",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "result": [
+      {
+        "description": "arithmetic overflow on unsigned to signed type conversion in (signed long int)index",
+        "property": "nia_handoff_wire_valid.overflow.1",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "34",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer NULL in packet + (signed long int)index",
+        "property": "nia_handoff_wire_valid.pointer_arithmetic.1",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "34",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer invalid in packet + (signed long int)index",
+        "property": "nia_handoff_wire_valid.pointer_arithmetic.2",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "34",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: deallocated dynamic object in packet + (signed long int)index",
+        "property": "nia_handoff_wire_valid.pointer_arithmetic.3",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "34",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: dead object in packet + (signed long int)index",
+        "property": "nia_handoff_wire_valid.pointer_arithmetic.4",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "34",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer outside object bounds in packet + (signed long int)index",
+        "property": "nia_handoff_wire_valid.pointer_arithmetic.5",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "34",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: invalid integer address in packet + (signed long int)index",
+        "property": "nia_handoff_wire_valid.pointer_arithmetic.6",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "34",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: pointer NULL in packet[(signed long int)index]",
+        "property": "nia_handoff_wire_valid.pointer_dereference.1",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "34",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: pointer invalid in packet[(signed long int)index]",
+        "property": "nia_handoff_wire_valid.pointer_dereference.2",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "34",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: deallocated dynamic object in packet[(signed long int)index]",
+        "property": "nia_handoff_wire_valid.pointer_dereference.3",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "34",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: dead object in packet[(signed long int)index]",
+        "property": "nia_handoff_wire_valid.pointer_dereference.4",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "34",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: pointer outside object bounds in packet[(signed long int)index]",
+        "property": "nia_handoff_wire_valid.pointer_dereference.5",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "34",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: invalid integer address in packet[(signed long int)index]",
+        "property": "nia_handoff_wire_valid.pointer_dereference.6",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "34",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "array 'magic' upper bound in magic[(signed long int)index]",
+        "property": "nia_handoff_wire_valid.array_bounds.1",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "34",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "arithmetic overflow on unsigned + in index + 1ul",
+        "property": "nia_handoff_wire_valid.overflow.2",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "33",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "arithmetic overflow on unsigned to signed type conversion in (signed long int)index",
+        "property": "nia_handoff_wire_valid.overflow.3",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "39",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer NULL in packet + (signed long int)index",
+        "property": "nia_handoff_wire_valid.pointer_arithmetic.7",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "39",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer invalid in packet + (signed long int)index",
+        "property": "nia_handoff_wire_valid.pointer_arithmetic.8",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "39",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: deallocated dynamic object in packet + (signed long int)index",
+        "property": "nia_handoff_wire_valid.pointer_arithmetic.9",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "39",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: dead object in packet + (signed long int)index",
+        "property": "nia_handoff_wire_valid.pointer_arithmetic.10",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "39",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer outside object bounds in packet + (signed long int)index",
+        "property": "nia_handoff_wire_valid.pointer_arithmetic.11",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "39",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: invalid integer address in packet + (signed long int)index",
+        "property": "nia_handoff_wire_valid.pointer_arithmetic.12",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "39",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: pointer NULL in packet[(signed long int)index]",
+        "property": "nia_handoff_wire_valid.pointer_dereference.7",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "39",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: pointer invalid in packet[(signed long int)index]",
+        "property": "nia_handoff_wire_valid.pointer_dereference.8",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "39",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: deallocated dynamic object in packet[(signed long int)index]",
+        "property": "nia_handoff_wire_valid.pointer_dereference.9",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "39",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: dead object in packet[(signed long int)index]",
+        "property": "nia_handoff_wire_valid.pointer_dereference.10",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "39",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: pointer outside object bounds in packet[(signed long int)index]",
+        "property": "nia_handoff_wire_valid.pointer_dereference.11",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "39",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: invalid integer address in packet[(signed long int)index]",
+        "property": "nia_handoff_wire_valid.pointer_dereference.12",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "39",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "arithmetic overflow on unsigned + in index + 1ul",
+        "property": "nia_handoff_wire_valid.overflow.4",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "38",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer NULL in packet + (signed long int)8",
+        "property": "nia_handoff_wire_valid.pointer_arithmetic.13",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "44",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer invalid in packet + (signed long int)8",
+        "property": "nia_handoff_wire_valid.pointer_arithmetic.14",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "44",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: deallocated dynamic object in packet + (signed long int)8",
+        "property": "nia_handoff_wire_valid.pointer_arithmetic.15",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "44",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: dead object in packet + (signed long int)8",
+        "property": "nia_handoff_wire_valid.pointer_arithmetic.16",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "44",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer outside object bounds in packet + (signed long int)8",
+        "property": "nia_handoff_wire_valid.pointer_arithmetic.17",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "44",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: invalid integer address in packet + (signed long int)8",
+        "property": "nia_handoff_wire_valid.pointer_arithmetic.18",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "44",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "arithmetic overflow on unsigned * in (unsigned long int)32 * block",
+        "property": "nia_handoff_wire_valid.overflow.5",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "44",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "arithmetic overflow on unsigned to signed type conversion in (signed long int)((unsigned long int)32 * block)",
+        "property": "nia_handoff_wire_valid.overflow.6",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "44",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer NULL in packet + (signed long int)8 + (signed long int)((unsigned long int)32 * block)",
+        "property": "nia_handoff_wire_valid.pointer_arithmetic.19",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "44",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer invalid in packet + (signed long int)8 + (signed long int)((unsigned long int)32 * block)",
+        "property": "nia_handoff_wire_valid.pointer_arithmetic.20",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "44",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: deallocated dynamic object in packet + (signed long int)8 + (signed long int)((unsigned long int)32 * block)",
+        "property": "nia_handoff_wire_valid.pointer_arithmetic.21",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "44",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: dead object in packet + (signed long int)8 + (signed long int)((unsigned long int)32 * block)",
+        "property": "nia_handoff_wire_valid.pointer_arithmetic.22",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "44",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer outside object bounds in packet + (signed long int)8 + (signed long int)((unsigned long int)32 * block)",
+        "property": "nia_handoff_wire_valid.pointer_arithmetic.23",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "44",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: invalid integer address in packet + (signed long int)8 + (signed long int)((unsigned long int)32 * block)",
+        "property": "nia_handoff_wire_valid.pointer_arithmetic.24",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "44",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "arithmetic overflow on unsigned + in block + 1ul",
+        "property": "nia_handoff_wire_valid.overflow.7",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "43",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer NULL in packet + (signed long int)136",
+        "property": "nia_handoff_wire_valid.pointer_arithmetic.25",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "48",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer invalid in packet + (signed long int)136",
+        "property": "nia_handoff_wire_valid.pointer_arithmetic.26",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "48",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: deallocated dynamic object in packet + (signed long int)136",
+        "property": "nia_handoff_wire_valid.pointer_arithmetic.27",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "48",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: dead object in packet + (signed long int)136",
+        "property": "nia_handoff_wire_valid.pointer_arithmetic.28",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "48",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer outside object bounds in packet + (signed long int)136",
+        "property": "nia_handoff_wire_valid.pointer_arithmetic.29",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "48",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: invalid integer address in packet + (signed long int)136",
+        "property": "nia_handoff_wire_valid.pointer_arithmetic.30",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "48",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer NULL in packet + (signed long int)168",
+        "property": "nia_handoff_wire_valid.pointer_arithmetic.31",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "48",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer invalid in packet + (signed long int)168",
+        "property": "nia_handoff_wire_valid.pointer_arithmetic.32",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "48",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: deallocated dynamic object in packet + (signed long int)168",
+        "property": "nia_handoff_wire_valid.pointer_arithmetic.33",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "48",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: dead object in packet + (signed long int)168",
+        "property": "nia_handoff_wire_valid.pointer_arithmetic.34",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "48",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer outside object bounds in packet + (signed long int)168",
+        "property": "nia_handoff_wire_valid.pointer_arithmetic.35",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "48",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: invalid integer address in packet + (signed long int)168",
+        "property": "nia_handoff_wire_valid.pointer_arithmetic.36",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "48",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer NULL in packet + (signed long int)152",
+        "property": "nia_handoff_wire_valid.pointer_arithmetic.37",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "51",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer invalid in packet + (signed long int)152",
+        "property": "nia_handoff_wire_valid.pointer_arithmetic.38",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "51",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: deallocated dynamic object in packet + (signed long int)152",
+        "property": "nia_handoff_wire_valid.pointer_arithmetic.39",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "51",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: dead object in packet + (signed long int)152",
+        "property": "nia_handoff_wire_valid.pointer_arithmetic.40",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "51",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer outside object bounds in packet + (signed long int)152",
+        "property": "nia_handoff_wire_valid.pointer_arithmetic.41",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "51",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: invalid integer address in packet + (signed long int)152",
+        "property": "nia_handoff_wire_valid.pointer_arithmetic.42",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "51",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer NULL in packet + (signed long int)160",
+        "property": "nia_handoff_wire_valid.pointer_arithmetic.43",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "52",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer invalid in packet + (signed long int)160",
+        "property": "nia_handoff_wire_valid.pointer_arithmetic.44",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "52",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: deallocated dynamic object in packet + (signed long int)160",
+        "property": "nia_handoff_wire_valid.pointer_arithmetic.45",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "52",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: dead object in packet + (signed long int)160",
+        "property": "nia_handoff_wire_valid.pointer_arithmetic.46",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "52",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer outside object bounds in packet + (signed long int)160",
+        "property": "nia_handoff_wire_valid.pointer_arithmetic.47",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "52",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: invalid integer address in packet + (signed long int)160",
+        "property": "nia_handoff_wire_valid.pointer_arithmetic.48",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "nia_handoff_wire_valid",
+          "line": "52",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "arithmetic overflow on unsigned to signed type conversion in (signed long int)index",
+        "property": "read_u64.overflow.1",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "read_u64",
+          "line": "8",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer NULL in bytes + (signed long int)index",
+        "property": "read_u64.pointer_arithmetic.1",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "read_u64",
+          "line": "8",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer invalid in bytes + (signed long int)index",
+        "property": "read_u64.pointer_arithmetic.2",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "read_u64",
+          "line": "8",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: deallocated dynamic object in bytes + (signed long int)index",
+        "property": "read_u64.pointer_arithmetic.3",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "read_u64",
+          "line": "8",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: dead object in bytes + (signed long int)index",
+        "property": "read_u64.pointer_arithmetic.4",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "read_u64",
+          "line": "8",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer outside object bounds in bytes + (signed long int)index",
+        "property": "read_u64.pointer_arithmetic.5",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "read_u64",
+          "line": "8",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: invalid integer address in bytes + (signed long int)index",
+        "property": "read_u64.pointer_arithmetic.6",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "read_u64",
+          "line": "8",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: pointer NULL in bytes[(signed long int)index]",
+        "property": "read_u64.pointer_dereference.1",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "read_u64",
+          "line": "8",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: pointer invalid in bytes[(signed long int)index]",
+        "property": "read_u64.pointer_dereference.2",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "read_u64",
+          "line": "8",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: deallocated dynamic object in bytes[(signed long int)index]",
+        "property": "read_u64.pointer_dereference.3",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "read_u64",
+          "line": "8",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: dead object in bytes[(signed long int)index]",
+        "property": "read_u64.pointer_dereference.4",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "read_u64",
+          "line": "8",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: pointer outside object bounds in bytes[(signed long int)index]",
+        "property": "read_u64.pointer_dereference.5",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "read_u64",
+          "line": "8",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: invalid integer address in bytes[(signed long int)index]",
+        "property": "read_u64.pointer_dereference.6",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "read_u64",
+          "line": "8",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "arithmetic overflow on unsigned + in index + 1ul",
+        "property": "read_u64.overflow.2",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "read_u64",
+          "line": "7",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "arithmetic overflow on unsigned to signed type conversion in (signed long int)index",
+        "property": "identity_present.overflow.1",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "identity_present",
+          "line": "21",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer NULL in bytes + (signed long int)index",
+        "property": "identity_present.pointer_arithmetic.1",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "identity_present",
+          "line": "21",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer invalid in bytes + (signed long int)index",
+        "property": "identity_present.pointer_arithmetic.2",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "identity_present",
+          "line": "21",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: deallocated dynamic object in bytes + (signed long int)index",
+        "property": "identity_present.pointer_arithmetic.3",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "identity_present",
+          "line": "21",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: dead object in bytes + (signed long int)index",
+        "property": "identity_present.pointer_arithmetic.4",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "identity_present",
+          "line": "21",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer outside object bounds in bytes + (signed long int)index",
+        "property": "identity_present.pointer_arithmetic.5",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "identity_present",
+          "line": "21",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: invalid integer address in bytes + (signed long int)index",
+        "property": "identity_present.pointer_arithmetic.6",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "identity_present",
+          "line": "21",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: pointer NULL in bytes[(signed long int)index]",
+        "property": "identity_present.pointer_dereference.1",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "identity_present",
+          "line": "21",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: pointer invalid in bytes[(signed long int)index]",
+        "property": "identity_present.pointer_dereference.2",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "identity_present",
+          "line": "21",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: deallocated dynamic object in bytes[(signed long int)index]",
+        "property": "identity_present.pointer_dereference.3",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "identity_present",
+          "line": "21",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: dead object in bytes[(signed long int)index]",
+        "property": "identity_present.pointer_dereference.4",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "identity_present",
+          "line": "21",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: pointer outside object bounds in bytes[(signed long int)index]",
+        "property": "identity_present.pointer_dereference.5",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "identity_present",
+          "line": "21",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: invalid integer address in bytes[(signed long int)index]",
+        "property": "identity_present.pointer_dereference.6",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "identity_present",
+          "line": "21",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "arithmetic overflow on unsigned + in index + 1ul",
+        "property": "identity_present.overflow.2",
+        "sourceLocation": {
+          "file": "pkgcore/runtime/root_handoff_wire.c",
+          "function": "identity_present",
+          "line": "19",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer NULL in p + (signed long int)0",
+        "property": "reference_integer.pointer_arithmetic.1",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "12",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer invalid in p + (signed long int)0",
+        "property": "reference_integer.pointer_arithmetic.2",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "12",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: deallocated dynamic object in p + (signed long int)0",
+        "property": "reference_integer.pointer_arithmetic.3",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "12",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: dead object in p + (signed long int)0",
+        "property": "reference_integer.pointer_arithmetic.4",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "12",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer outside object bounds in p + (signed long int)0",
+        "property": "reference_integer.pointer_arithmetic.5",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "12",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: invalid integer address in p + (signed long int)0",
+        "property": "reference_integer.pointer_arithmetic.6",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "12",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: pointer NULL in p[(signed long int)0]",
+        "property": "reference_integer.pointer_dereference.1",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "12",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: pointer invalid in p[(signed long int)0]",
+        "property": "reference_integer.pointer_dereference.2",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "12",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: deallocated dynamic object in p[(signed long int)0]",
+        "property": "reference_integer.pointer_dereference.3",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "12",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: dead object in p[(signed long int)0]",
+        "property": "reference_integer.pointer_dereference.4",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "12",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: pointer outside object bounds in p[(signed long int)0]",
+        "property": "reference_integer.pointer_dereference.5",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "12",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: invalid integer address in p[(signed long int)0]",
+        "property": "reference_integer.pointer_dereference.6",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "12",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer NULL in p + (signed long int)1",
+        "property": "reference_integer.pointer_arithmetic.7",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "12",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer invalid in p + (signed long int)1",
+        "property": "reference_integer.pointer_arithmetic.8",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "12",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: deallocated dynamic object in p + (signed long int)1",
+        "property": "reference_integer.pointer_arithmetic.9",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "12",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: dead object in p + (signed long int)1",
+        "property": "reference_integer.pointer_arithmetic.10",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "12",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer outside object bounds in p + (signed long int)1",
+        "property": "reference_integer.pointer_arithmetic.11",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "12",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: invalid integer address in p + (signed long int)1",
+        "property": "reference_integer.pointer_arithmetic.12",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "12",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: pointer NULL in p[(signed long int)1]",
+        "property": "reference_integer.pointer_dereference.7",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "12",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: pointer invalid in p[(signed long int)1]",
+        "property": "reference_integer.pointer_dereference.8",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "12",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: deallocated dynamic object in p[(signed long int)1]",
+        "property": "reference_integer.pointer_dereference.9",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "12",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: dead object in p[(signed long int)1]",
+        "property": "reference_integer.pointer_dereference.10",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "12",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: pointer outside object bounds in p[(signed long int)1]",
+        "property": "reference_integer.pointer_dereference.11",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "12",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: invalid integer address in p[(signed long int)1]",
+        "property": "reference_integer.pointer_dereference.12",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "12",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer NULL in p + (signed long int)2",
+        "property": "reference_integer.pointer_arithmetic.13",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "13",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer invalid in p + (signed long int)2",
+        "property": "reference_integer.pointer_arithmetic.14",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "13",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: deallocated dynamic object in p + (signed long int)2",
+        "property": "reference_integer.pointer_arithmetic.15",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "13",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: dead object in p + (signed long int)2",
+        "property": "reference_integer.pointer_arithmetic.16",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "13",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer outside object bounds in p + (signed long int)2",
+        "property": "reference_integer.pointer_arithmetic.17",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "13",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: invalid integer address in p + (signed long int)2",
+        "property": "reference_integer.pointer_arithmetic.18",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "13",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: pointer NULL in p[(signed long int)2]",
+        "property": "reference_integer.pointer_dereference.13",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "13",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: pointer invalid in p[(signed long int)2]",
+        "property": "reference_integer.pointer_dereference.14",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "13",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: deallocated dynamic object in p[(signed long int)2]",
+        "property": "reference_integer.pointer_dereference.15",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "13",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: dead object in p[(signed long int)2]",
+        "property": "reference_integer.pointer_dereference.16",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "13",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: pointer outside object bounds in p[(signed long int)2]",
+        "property": "reference_integer.pointer_dereference.17",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "13",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: invalid integer address in p[(signed long int)2]",
+        "property": "reference_integer.pointer_dereference.18",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "13",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer NULL in p + (signed long int)3",
+        "property": "reference_integer.pointer_arithmetic.19",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "13",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer invalid in p + (signed long int)3",
+        "property": "reference_integer.pointer_arithmetic.20",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "13",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: deallocated dynamic object in p + (signed long int)3",
+        "property": "reference_integer.pointer_arithmetic.21",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "13",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: dead object in p + (signed long int)3",
+        "property": "reference_integer.pointer_arithmetic.22",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "13",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer outside object bounds in p + (signed long int)3",
+        "property": "reference_integer.pointer_arithmetic.23",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "13",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: invalid integer address in p + (signed long int)3",
+        "property": "reference_integer.pointer_arithmetic.24",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "13",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: pointer NULL in p[(signed long int)3]",
+        "property": "reference_integer.pointer_dereference.19",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "13",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: pointer invalid in p[(signed long int)3]",
+        "property": "reference_integer.pointer_dereference.20",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "13",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: deallocated dynamic object in p[(signed long int)3]",
+        "property": "reference_integer.pointer_dereference.21",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "13",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: dead object in p[(signed long int)3]",
+        "property": "reference_integer.pointer_dereference.22",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "13",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: pointer outside object bounds in p[(signed long int)3]",
+        "property": "reference_integer.pointer_dereference.23",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "13",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: invalid integer address in p[(signed long int)3]",
+        "property": "reference_integer.pointer_dereference.24",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "13",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer NULL in p + (signed long int)4",
+        "property": "reference_integer.pointer_arithmetic.25",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "14",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer invalid in p + (signed long int)4",
+        "property": "reference_integer.pointer_arithmetic.26",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "14",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: deallocated dynamic object in p + (signed long int)4",
+        "property": "reference_integer.pointer_arithmetic.27",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "14",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: dead object in p + (signed long int)4",
+        "property": "reference_integer.pointer_arithmetic.28",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "14",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer outside object bounds in p + (signed long int)4",
+        "property": "reference_integer.pointer_arithmetic.29",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "14",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: invalid integer address in p + (signed long int)4",
+        "property": "reference_integer.pointer_arithmetic.30",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "14",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: pointer NULL in p[(signed long int)4]",
+        "property": "reference_integer.pointer_dereference.25",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "14",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: pointer invalid in p[(signed long int)4]",
+        "property": "reference_integer.pointer_dereference.26",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "14",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: deallocated dynamic object in p[(signed long int)4]",
+        "property": "reference_integer.pointer_dereference.27",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "14",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: dead object in p[(signed long int)4]",
+        "property": "reference_integer.pointer_dereference.28",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "14",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: pointer outside object bounds in p[(signed long int)4]",
+        "property": "reference_integer.pointer_dereference.29",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "14",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: invalid integer address in p[(signed long int)4]",
+        "property": "reference_integer.pointer_dereference.30",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "14",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer NULL in p + (signed long int)5",
+        "property": "reference_integer.pointer_arithmetic.31",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "14",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer invalid in p + (signed long int)5",
+        "property": "reference_integer.pointer_arithmetic.32",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "14",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: deallocated dynamic object in p + (signed long int)5",
+        "property": "reference_integer.pointer_arithmetic.33",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "14",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: dead object in p + (signed long int)5",
+        "property": "reference_integer.pointer_arithmetic.34",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "14",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer outside object bounds in p + (signed long int)5",
+        "property": "reference_integer.pointer_arithmetic.35",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "14",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: invalid integer address in p + (signed long int)5",
+        "property": "reference_integer.pointer_arithmetic.36",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "14",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: pointer NULL in p[(signed long int)5]",
+        "property": "reference_integer.pointer_dereference.31",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "14",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: pointer invalid in p[(signed long int)5]",
+        "property": "reference_integer.pointer_dereference.32",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "14",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: deallocated dynamic object in p[(signed long int)5]",
+        "property": "reference_integer.pointer_dereference.33",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "14",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: dead object in p[(signed long int)5]",
+        "property": "reference_integer.pointer_dereference.34",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "14",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: pointer outside object bounds in p[(signed long int)5]",
+        "property": "reference_integer.pointer_dereference.35",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "14",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: invalid integer address in p[(signed long int)5]",
+        "property": "reference_integer.pointer_dereference.36",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "14",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer NULL in p + (signed long int)6",
+        "property": "reference_integer.pointer_arithmetic.37",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "15",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer invalid in p + (signed long int)6",
+        "property": "reference_integer.pointer_arithmetic.38",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "15",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: deallocated dynamic object in p + (signed long int)6",
+        "property": "reference_integer.pointer_arithmetic.39",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "15",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: dead object in p + (signed long int)6",
+        "property": "reference_integer.pointer_arithmetic.40",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "15",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer outside object bounds in p + (signed long int)6",
+        "property": "reference_integer.pointer_arithmetic.41",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "15",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: invalid integer address in p + (signed long int)6",
+        "property": "reference_integer.pointer_arithmetic.42",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "15",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: pointer NULL in p[(signed long int)6]",
+        "property": "reference_integer.pointer_dereference.37",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "15",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: pointer invalid in p[(signed long int)6]",
+        "property": "reference_integer.pointer_dereference.38",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "15",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: deallocated dynamic object in p[(signed long int)6]",
+        "property": "reference_integer.pointer_dereference.39",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "15",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: dead object in p[(signed long int)6]",
+        "property": "reference_integer.pointer_dereference.40",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "15",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: pointer outside object bounds in p[(signed long int)6]",
+        "property": "reference_integer.pointer_dereference.41",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "15",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: invalid integer address in p[(signed long int)6]",
+        "property": "reference_integer.pointer_dereference.42",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "15",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer NULL in p + (signed long int)7",
+        "property": "reference_integer.pointer_arithmetic.43",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "15",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer invalid in p + (signed long int)7",
+        "property": "reference_integer.pointer_arithmetic.44",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "15",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: deallocated dynamic object in p + (signed long int)7",
+        "property": "reference_integer.pointer_arithmetic.45",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "15",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: dead object in p + (signed long int)7",
+        "property": "reference_integer.pointer_arithmetic.46",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "15",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: pointer outside object bounds in p + (signed long int)7",
+        "property": "reference_integer.pointer_arithmetic.47",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "15",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: invalid integer address in p + (signed long int)7",
+        "property": "reference_integer.pointer_arithmetic.48",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "15",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: pointer NULL in p[(signed long int)7]",
+        "property": "reference_integer.pointer_dereference.43",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "15",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: pointer invalid in p[(signed long int)7]",
+        "property": "reference_integer.pointer_dereference.44",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "15",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: deallocated dynamic object in p[(signed long int)7]",
+        "property": "reference_integer.pointer_dereference.45",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "15",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: dead object in p[(signed long int)7]",
+        "property": "reference_integer.pointer_dereference.46",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "15",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: pointer outside object bounds in p[(signed long int)7]",
+        "property": "reference_integer.pointer_dereference.47",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "15",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dereference failure: invalid integer address in p[(signed long int)7]",
+        "property": "reference_integer.pointer_dereference.48",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "reference_integer",
+          "line": "15",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: dead object in packet + (signed long int)152",
+        "property": "proof_handoff_wire.pointer_arithmetic.1",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "proof_handoff_wire",
+          "line": "28",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: dead object in packet + (signed long int)160",
+        "property": "proof_handoff_wire.pointer_arithmetic.2",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "proof_handoff_wire",
+          "line": "29",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "pointer arithmetic: dead object in packet + (signed long int)168",
+        "property": "proof_handoff_wire.pointer_arithmetic.3",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "proof_handoff_wire",
+          "line": "33",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "arithmetic overflow on unsigned to signed type conversion in (signed long int)index",
+        "property": "proof_handoff_wire.overflow.1",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "proof_handoff_wire",
+          "line": "37",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "array 'packet' upper bound in packet[(signed long int)index]",
+        "property": "proof_handoff_wire.array_bounds.1",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "proof_handoff_wire",
+          "line": "37",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "arithmetic overflow on unsigned + in index + 1ul",
+        "property": "proof_handoff_wire.overflow.2",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "proof_handoff_wire",
+          "line": "36",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "arithmetic overflow on unsigned * in (unsigned long int)32 * block",
+        "property": "proof_handoff_wire.overflow.3",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "proof_handoff_wire",
+          "line": "44",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "arithmetic overflow on unsigned + in (unsigned long int)8 + (unsigned long int)32 * block",
+        "property": "proof_handoff_wire.overflow.4",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "proof_handoff_wire",
+          "line": "44",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "arithmetic overflow on unsigned + in (unsigned long int)8 + (unsigned long int)32 * block + index",
+        "property": "proof_handoff_wire.overflow.5",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "proof_handoff_wire",
+          "line": "44",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "arithmetic overflow on unsigned to signed type conversion in (signed long int)((unsigned long int)8 + (unsigned long int)32 * block + index)",
+        "property": "proof_handoff_wire.overflow.6",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "proof_handoff_wire",
+          "line": "44",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "array 'packet' upper bound in packet[(signed long int)((unsigned long int)8 + (unsigned long int)32 * block + index)]",
+        "property": "proof_handoff_wire.array_bounds.2",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "proof_handoff_wire",
+          "line": "44",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "arithmetic overflow on unsigned + in index + 1ul",
+        "property": "proof_handoff_wire.overflow.7",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "proof_handoff_wire",
+          "line": "42",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "arithmetic overflow on unsigned + in block + 1ul",
+        "property": "proof_handoff_wire.overflow.8",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "proof_handoff_wire",
+          "line": "39",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "assertion observed == expected",
+        "property": "proof_handoff_wire.assertion.1",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "proof_handoff_wire",
+          "line": "50",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "assertion observed == 0 || observed == 1",
+        "property": "proof_handoff_wire.assertion.2",
+        "sourceLocation": {
+          "file": "pkgcore/tests/proof/root_handoff_wire.c",
+          "function": "proof_handoff_wire",
+          "line": "51",
+          "workingDirectory": "/workspace"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "dynamically allocated memory never freed in __CPROVER_memory_leak == NULL",
+        "property": "__CPROVER__start.memory-leak.1",
+        "sourceLocation": {
+          "function": "__CPROVER__start"
+        },
+        "status": "SUCCESS"
+      }
+    ]
+  },
+  {
+    "messageText": "VERIFICATION SUCCESSFUL",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "cProverStatus": "success"
+  }
+]

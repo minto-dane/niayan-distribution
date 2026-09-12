@@ -1,0 +1,14 @@
+{
+  "result": "pass",
+  "fault_tests": 10,
+  "model": {
+    "result": "pass",
+    "scope": "finite channel control and ghost history only",
+    "complete_runtime_proof": false,
+    "configurations": 15,
+    "accepted_edges": 29,
+    "rejected_edges": 76
+  },
+  "optimized_checker_refused": true,
+  "complete_runtime_proof": false
+}

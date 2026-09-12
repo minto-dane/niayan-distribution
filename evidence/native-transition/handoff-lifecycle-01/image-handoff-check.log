@@ -1,0 +1,13 @@
+make: Entering directory '/workspace/distribution'
+python3 -m mypy --config-file native/handoff-mypy.ini --no-incremental native/root_handoff.py native/check_handoff_lifecycle.py
+Success: no issues found in 2 source files
+python3 -B native/check_handoff_lifecycle.py
+{
+  "result": "pass",
+  "scope": "finite channel control and ghost history only",
+  "complete_runtime_proof": false,
+  "configurations": 15,
+  "accepted_edges": 29,
+  "rejected_edges": 76
+}
+make: Leaving directory '/workspace/distribution'

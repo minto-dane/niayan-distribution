@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/evidence/check_handoff_lifecycle.py", line 66, in <module>
+    report.update(check())
+                  ~~~~~^^
+  File "/evidence/check_handoff_lifecycle.py", line 28, in check
+    raise RuntimeError('assertions must be enabled for exhaustive checking')
+RuntimeError: assertions must be enabled for exhaustive checking

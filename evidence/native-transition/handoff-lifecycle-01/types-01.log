@@ -1,0 +1,6 @@
+Running as unit: run-p1436408-i1436708.scope; invocation ID: f2d73dae6a394345aafcbf5dbca711f0
+limited-exec: {"scope": "run-p1436408-i1436708.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+distribution/native/root_handoff.py:165: error: Expression type contains "Any" (has type "tuple[bytes, list[tuple[int, int, bytes]], int, Any]")  [misc]
+distribution/native/root_handoff.py:165: error: Expression has type "Any"  [misc]
+distribution/native/root_handoff.py:182: error: Expression type contains "Any" (has type "tuple[int, int]")  [misc]
+Found 3 errors in 1 file (checked 1 source file)

@@ -1,0 +1,55 @@
+Running as unit: run-p1435275-i1435575.scope; invocation ID: 3ca45c52fdbd48418151284bf6af896f
+limited-exec: {"scope": "run-p1435275-i1435575.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  python3-mypy python3-mypy-extensions python3-psutil
+  python3-typing-extensions
+Suggested packages:
+  mypy-doc
+Recommended packages:
+  python3-typeshed python3-lxml python3-setuptools python3-orjson
+The following NEW packages will be installed:
+  mypy python3-mypy python3-mypy-extensions python3-psutil
+  python3-typing-extensions
+0 upgraded, 5 newly installed, 0 to remove and 1 not upgraded.
+Need to get 9021 kB of archives.
+After this operation, 44.1 MB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian trixie/main amd64 python3-mypy-extensions all 1.0.0-1 [6064 B]
+Get:2 http://deb.debian.org/debian trixie/main amd64 python3-typing-extensions all 4.13.2-1 [90.5 kB]
+Get:3 http://deb.debian.org/debian trixie/main amd64 python3-psutil amd64 7.0.0-2 [220 kB]
+Get:4 http://deb.debian.org/debian trixie/main amd64 python3-mypy amd64 1.15.0-5 [8628 kB]
+Get:5 http://deb.debian.org/debian trixie/main amd64 mypy all 1.15.0-5 [76.2 kB]
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+debconf: unable to initialize frontend: Teletype
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Noninteractive
+Fetched 9021 kB in 0s (44.5 MB/s)
+Selecting previously unselected package python3-mypy-extensions.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 39064 files and directories currently installed.)
+Preparing to unpack .../python3-mypy-extensions_1.0.0-1_all.deb ...
+Unpacking python3-mypy-extensions (1.0.0-1) ...
+Selecting previously unselected package python3-typing-extensions.
+Preparing to unpack .../python3-typing-extensions_4.13.2-1_all.deb ...
+Unpacking python3-typing-extensions (4.13.2-1) ...
+Selecting previously unselected package python3-psutil.
+Preparing to unpack .../python3-psutil_7.0.0-2_amd64.deb ...
+Unpacking python3-psutil (7.0.0-2) ...
+Selecting previously unselected package python3-mypy.
+Preparing to unpack .../python3-mypy_1.15.0-5_amd64.deb ...
+Unpacking python3-mypy (1.15.0-5) ...
+Selecting previously unselected package mypy.
+Preparing to unpack .../archives/mypy_1.15.0-5_all.deb ...
+Unpacking mypy (1.15.0-5) ...
+Setting up python3-mypy-extensions (1.0.0-1) ...
+Setting up python3-psutil (7.0.0-2) ...
+Setting up python3-typing-extensions (4.13.2-1) ...
+Setting up python3-mypy (1.15.0-5) ...
+Setting up mypy (1.15.0-5) ...
+Processing triggers for man-db (2.13.1-1) ...

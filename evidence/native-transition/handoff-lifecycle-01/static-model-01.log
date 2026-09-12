@@ -1,0 +1,8 @@
+Running as unit: run-p1438205-i1438505.scope; invocation ID: 873df808174447a9ad381e00611087b2
+limited-exec: {"scope": "run-p1438205-i1438505.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+make: Entering directory '/home/nia/devbox/niaos/nia-os-consent/distribution'
+python3 -m mypy --config-file native/handoff-mypy.ini --no-incremental native/root_handoff.py native/check_handoff_lifecycle.py
+native/check_handoff_lifecycle.py:62: error: Expression type contains "Any" (has type "dict[Any, Any]")  [misc]
+Found 1 error in 1 file (checked 2 source files)
+make: *** [Makefile:15: handoff-check] Error 1
+make: Leaving directory '/home/nia/devbox/niaos/nia-os-consent/distribution'

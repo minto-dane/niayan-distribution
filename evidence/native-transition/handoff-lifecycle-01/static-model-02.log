@@ -1,0 +1,15 @@
+Running as unit: run-p1438604-i1438904.scope; invocation ID: 659b1e17a6154b1a9bcd18835362c6bf
+limited-exec: {"scope": "run-p1438604-i1438904.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+make: Entering directory '/home/nia/devbox/niaos/nia-os-consent/distribution'
+python3 -m mypy --config-file native/handoff-mypy.ini --no-incremental native/root_handoff.py native/check_handoff_lifecycle.py
+Success: no issues found in 2 source files
+python3 -B native/check_handoff_lifecycle.py
+{
+  "result": "pass",
+  "scope": "finite channel control and ghost history only",
+  "complete_runtime_proof": false,
+  "configurations": 15,
+  "accepted_edges": 29,
+  "rejected_edges": 76
+}
+make: Leaving directory '/home/nia/devbox/niaos/nia-os-consent/distribution'
