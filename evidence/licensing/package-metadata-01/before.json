@@ -1,0 +1,17 @@
+{
+  "format": 1,
+  "result": "fail",
+  "current_files_checked": 2542,
+  "historical_or_fixture_files_preserved": 13434,
+  "failures": [
+    "assurance/packaging/rpm/mission-assurance.spec: current RPM license must be BSD-3-Clause",
+    "pkgcore/packaging/rpm/mission-pkgcore.spec: current RPM license must be BSD-3-Clause",
+    "statecore/packaging/rpm/mission-statecore.spec: current RPM license must be BSD-3-Clause",
+    "controlcore/packaging/rpm/mission-controlcore.spec: current RPM license must be BSD-3-Clause",
+    "configcore/packaging/rpm/mission-configcore.spec: current RPM license must be BSD-3-Clause",
+    "resolvercore/packaging/rpm/mission-resolvercore.spec: current RPM license must be BSD-3-Clause"
+  ],
+  "scope": "project-authored current tree and canonical sibling notices",
+  "external_package_relicensing": false,
+  "publication_approval": false
+}

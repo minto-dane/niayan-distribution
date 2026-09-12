@@ -1,0 +1,32 @@
+[
+  {
+    "path": "assurance/packaging/rpm/mission-assurance.spec",
+    "before_sha256": "97795c1c6327c1d88be22483aa008004240d23a93b146b01c7bd23fd5b0dd647",
+    "after_sha256": "0c096bae75fa281a6fd65aa7c2efb03a87c2ca14150ba598bacef16b55af9bdb"
+  },
+  {
+    "path": "pkgcore/packaging/rpm/mission-pkgcore.spec",
+    "before_sha256": "c5d7cd338302bc6e034342d00ed4d032dc58a76225f378acfd195f4d8cd93b0b",
+    "after_sha256": "8a2e7c5432ddfbe59d5fa9415a6d4b329283e6ad058992142be2a221d35edcae"
+  },
+  {
+    "path": "statecore/packaging/rpm/mission-statecore.spec",
+    "before_sha256": "942d344ea7f0fe2cc1314241c0a25038e4acde498bea2ca8ea4cd8631739c3e1",
+    "after_sha256": "3e31d49a5ab4f399f2adcae465a50a1eb78d85ba13ffebc0519457e4b1b402f9"
+  },
+  {
+    "path": "controlcore/packaging/rpm/mission-controlcore.spec",
+    "before_sha256": "d6b92ebe4d3494cb402ff401890635f6ca51deb85dc4b322878664812c79cb14",
+    "after_sha256": "331f7acaf004978da94ca8d781d32640a80739567194468fc19d162bfea247bd"
+  },
+  {
+    "path": "configcore/packaging/rpm/mission-configcore.spec",
+    "before_sha256": "a2913758f51af6964e65d52a227d00938de57e3a74cbcf13df0cd8dc3b5907b0",
+    "after_sha256": "02778285d92b7ee2cfe5e278485177d2f227dfc08eb184b66a9c0d9e8f45a84b"
+  },
+  {
+    "path": "resolvercore/packaging/rpm/mission-resolvercore.spec",
+    "before_sha256": "7ab0a1e2aa6cb6ff4019fc458d79e7ea163459047431c09fd20fef7e3671db48",
+    "after_sha256": "94438d77dd8a70b97234b9d7a29c3efee1de3b182c3acd51135bbcc8aee9e026"
+  }
+]

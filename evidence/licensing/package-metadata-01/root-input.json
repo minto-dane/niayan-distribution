@@ -1,0 +1,6 @@
+{
+  "path": "dev/check-licenses.py",
+  "sha256": "5140fca227e64108ba3c32da7549e293cfdf0c63d20741b2d1c2b90563784ffe",
+  "source_subject_excludes_workspace_root": true,
+  "final_check": "license-check-final.json"
+}
