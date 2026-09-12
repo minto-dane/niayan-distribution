@@ -1,0 +1,14 @@
+Running as unit: run-p1372361-i1372661.scope; invocation ID: 83e428899dc0403c801ca1f116cd85fe
+limited-exec: {"scope": "run-p1372361-i1372661.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+PASS engineering-check.json
+PASS engineering-lint.json
+PASS unified-audit.json
+PASS license-check.json
+Traceback (most recent call last):
+  File "/home/nia/devbox/niaos/.work/native-root-session-sdk-01/source-checks.py", line 15, in <module>
+    subprocess.run([sys.executable,'-B',*args],cwd=root,stdout=output,stderr=subprocess.STDOUT,check=True,timeout=120)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/subprocess.py", line 577, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['/usr/bin/python3', '-B', 'assurance/ci/sync-component-ci.py']' returned non-zero exit status 1.

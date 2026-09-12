@@ -1,0 +1,10 @@
+Running as unit: run-p1372273-i1372573.scope; invocation ID: 546bcb38bdce489d8f1c12c9387437e1
+limited-exec: {"scope": "run-p1372273-i1372573.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Traceback (most recent call last):
+  File "/home/nia/devbox/niaos/.work/native-root-session-sdk-01/source-checks.py", line 15, in <module>
+    subprocess.run([sys.executable,'-B',*args],cwd=root,stdout=output,stderr=subprocess.STDOUT,check=True,timeout=120)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/subprocess.py", line 577, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['/usr/bin/python3', '-B', 'assurance/ci/engineering.py', 'check']' returned non-zero exit status 1.

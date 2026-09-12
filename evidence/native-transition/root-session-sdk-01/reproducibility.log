@@ -1,0 +1,30 @@
+Running as unit: run-p1371909-i1372209.scope; invocation ID: 2b770ff6e09347b9a716105394a1c6bb
+limited-exec: {"scope": "run-p1371909-i1372209.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Setup
+   [mkdir]        object directory for project Tests
+   [mkdir]        exec directory for project Tests
+Compile
+   [Ada]          run_root_session_tests.adb
+   [C]            pkg_deb_stream.c
+   [C]            archive_observer.c
+   [C]            pkg_deb_decode.c
+   [C]            root_preparation.c
+   [C]            conffile_snapshot.c
+   [C]            root_session.c
+   [Ada]          mc_clock.adb
+   [Ada]          mc_types.adb
+   [Ada]          pkg_root_preparation.adb
+   [Ada]          pkg_root_session.adb
+   [Ada]          mc_hex.adb
+   [Ada]          mc_kernel_read.adb
+   [Ada]          mc_posix.ads
+Bind
+   [gprbind]      run_root_session_tests.bexch
+   [Ada]          run_root_session_tests.ali
+Link
+   [archive]      libtests.a
+   [index]        libtests.a
+   [link]         run_root_session_tests.adb
+PASS root session Ada API
+PASS root session Ada API
+PASS selected Ada executable independent build b72206be3a5177b62255cd47750957db06a43de122895b6104708096483032aa

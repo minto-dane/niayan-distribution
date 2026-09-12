@@ -8,7 +8,7 @@
 
 [製品判断](../docs/decisions/0002-native-package-authority.ja.md)に従うTrixie置換工程。
 [隔離rootの実展開worker](root-extraction.ja.md)を実装した。認可済みサービス・永続bankとbootへの接続は未完。
-[初回root準備のcontroller session](root-session.ja.md)を追加した。本番admissionとnative SDK adapter、bank slot管理は未接続。
+[初回root準備のcontroller session](root-session.ja.md)を追加した。[root supervisor用native SDK](root-session-sdk.ja.md)も追加した。本番admission・非root世代SDKへのhandoffとbank slot管理は未接続。
 [専用bankの書込排他](root-freeze.ja.md)を内部controller部品として実装した。[専用bankの明示配備](bank-device.ja.md)を追加した。完全置換ISOのpartition recipeとcontroller接続は未完。
 [受理済み世代のnative catalog観測](current-catalog.ja.md)を同じ排他区間へ接続した。
 [確定済み世代からの更新計画](current-transition.ja.md)は同じ予約で候補の保持と通常更新を検査する。

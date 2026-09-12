@@ -1,0 +1,24 @@
+Running as unit: run-p1369706-i1370006.scope; invocation ID: 0c2ec39dde8e4fc89093ec83dc51a7f8
+limited-exec: {"scope": "run-p1369706-i1370006.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Compile
+   [Ada]          run_root_session_tests.adb
+   [C]            pkg_deb_stream.c
+   [C]            archive_observer.c
+   [C]            pkg_deb_decode.c
+   [C]            root_preparation.c
+   [C]            conffile_snapshot.c
+   [C]            root_session.c
+   [Ada]          mc_clock.adb
+   [Ada]          mc_types.adb
+   [Ada]          pkg_root_preparation.adb
+   [Ada]          pkg_root_session.adb
+   [Ada]          mc_hex.adb
+   [Ada]          mc_kernel_read.adb
+   [Ada]          mc_posix.ads
+Bind
+   [gprbind]      run_root_session_tests.bexch
+   [Ada]          run_root_session_tests.ali
+Link
+   [archive]      libtests.a
+   [index]        libtests.a
+   [link]         run_root_session_tests.adb

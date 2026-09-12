@@ -1,0 +1,29 @@
+{
+  "result": "pass",
+  "source_subject": "d7d795ce6286962f21fbfd61df1c851cc3c98fb939c705b4d103d0e14569dbbc",
+  "adr": "ADR-0115",
+  "requirement": "REQ-153",
+  "hazard": "HAZ-139",
+  "fault": "FAULT-152",
+  "transport_checks": 29,
+  "sanitized_transport_checks": 28,
+  "asan_leak_detection": false,
+  "asan_note": "Interpreter-wide leak reporting disabled; address/UB errors abort; descriptor lifecycle explicitly checked.",
+  "selected_ada_build_reproducible": true,
+  "vm_native_controller_connected": true,
+  "generation_sdk_handoff_connected": false,
+  "site_admission_connected": false,
+  "boot_switched": false,
+  "controller_package_version": "0.6.0",
+  "controller_rebuilt": false,
+  "compile_inputs": 413,
+  "unchanged_delivered_controller_files": 13,
+  "failures_retained": [
+    "Initial Ada mixed-width others aggregate compile error, corrected explicit fields. Original failing input snapshot was not retained; the log is diagnostic only.",
+    "First passing protocol run used a threaded peer and emitted a fork warning; final peers are separate processes.",
+    "ADR required headings and generated test runner initially failed source checks, then corrected."
+  ],
+  "allocated_bytes_reclaimed": 49909760,
+  "jobs": [],
+  "remote_published": false
+}

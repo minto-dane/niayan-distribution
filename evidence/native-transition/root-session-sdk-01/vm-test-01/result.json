@@ -1,0 +1,22 @@
+{
+  "result": "pass",
+  "native_prepare": true,
+  "independent_root": {
+    "mount_id": 69,
+    "inode": 15,
+    "device_major": 254,
+    "device_minor": 17
+  },
+  "cas_reacquired": true,
+  "bank_retained": true,
+  "native_observe": true,
+  "close_eof_acknowledged": true,
+  "closed_observe_refused": true,
+  "tree_and_records_unchanged": true,
+  "bank_readonly_after_close": true,
+  "worker_sha256": "b55000d2e21d96c8e75a9f36dda4bbcf5c77c9dbf42074fa39b1600b1c113322",
+  "native_library_sha256": "7fdea19c1aaf352fa8c9d1615c6f120fa86bfdc445a2a2ca435b662ab35f4aae",
+  "site_admission_fixture": true,
+  "generation_sdk_connected": false,
+  "boot_switched": false
+}

@@ -13,7 +13,7 @@ SO_PEERCREDの接続元UID0/PIDに加え、各messageのSCM_CREDENTIALSを照合
 
 ここで信頼する主体はroot管理面である。独立したsite署名や利用者consentの証明をRPC内で検証したとはしない。
 root管理面を侵害したprocessや、root権限によるrecord/unit/raw-device改変への防御境界ではない。
-本番の認可providerとnative SDKへのadapterは未接続で、通常導入時にsocketを有効化しない。
+[root supervisor用native SDK](root-session-sdk.ja.md)を追加した。本番の認可providerと非root世代SDKへのhandoffは未接続で、通常導入時にsocketを有効化しない。
 
 最初の正規JSON messageは、version=1、operation=prepare-freeze、既存Bank requestの全field、
 独立期待worker SHA-256・device plan SHA-256・現在boot ID・bankのmount/device/inodeを含む。

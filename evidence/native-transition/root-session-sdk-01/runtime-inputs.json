@@ -1,0 +1,52 @@
+[
+  {
+    "path": "check_bank_device.py",
+    "sha256": "60d84662a90d2718909aaf6605fb39f2fa15edb4b0ba3955f28a4ba74b1255ba",
+    "origin": "accepted runtime-07.tar"
+  },
+  {
+    "path": "check_root_session.py",
+    "sha256": "77aaaed68827905ac356e3ee716f99bd0581a26748d11643bf9cf0deb4d6ff60",
+    "origin": "accepted runtime-07.tar"
+  },
+  {
+    "path": "check_root_extract.py",
+    "sha256": "e378149a97002d3b4f044a9cfb4ad57d4f350924b3b85f45ec5ec91fd2e59380",
+    "origin": "accepted runtime-07.tar"
+  },
+  {
+    "path": "check_root_reinspection.py",
+    "sha256": "728e6e2b4beda51347ff28decc951df6b1da281266b3769391b75ff0759c1c58",
+    "origin": "accepted runtime-07.tar"
+  },
+  {
+    "path": "component.deb",
+    "sha256": "82c26c92b235a57a1b2aa8fddc506a914a24fcdff8d49e2997f9daebf45ee175",
+    "origin": "accepted runtime-07.tar"
+  },
+  {
+    "path": "dependencies/libgnat-14_14.2.0-19_amd64.deb",
+    "sha256": "1edd2b13324d41e70c25a0172c3c90e4a413aae3312ea0489116e2b573c57885",
+    "origin": "accepted runtime-07.tar"
+  },
+  {
+    "path": "service.deb",
+    "sha256": "1da636f597df849c971868984d3dfea813ca3fa1bf838a09bab4ac35e2a43820",
+    "origin": "/home/nia/devbox/niaos/.work/native-root-session-01/vm-package-07/packages/niaos-root-preparation_0.6.0_amd64.deb"
+  },
+  {
+    "path": "root-session.so",
+    "sha256": "7fdea19c1aaf352fa8c9d1615c6f120fa86bfdc445a2a2ca435b662ab35f4aae",
+    "origin": "/home/nia/devbox/niaos/.work/native-root-session-sdk-01/root-session.so"
+  },
+  {
+    "path": "check_root_session_transport.py",
+    "sha256": "5d0ccc0d944c9c0e64070e2559f7bf69175d425de592b6704fb0c0925440b59a",
+    "origin": "/home/nia/devbox/niaos/nia-os-consent/pkgcore/tests/check_root_session_transport.py"
+  },
+  {
+    "path": "check_root_session_sdk.py",
+    "sha256": "3163ccd1c3d3b165c80ee4c45f06c9030ccb308db2a06bfb2122b2b9a6aff47b",
+    "origin": "/home/nia/devbox/niaos/nia-os-consent/distribution/native/worker/check_root_session_sdk.py"
+  }
+]

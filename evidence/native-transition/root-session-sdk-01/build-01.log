@@ -1,0 +1,9 @@
+Running as unit: run-p1368435-i1368735.scope; invocation ID: fe5182ca87894551806646cf4a3e1632
+limited-exec: {"scope": "run-p1368435-i1368735.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Setup
+   [mkdir]        object directory for project Tests
+   [mkdir]        exec directory for project Tests
+Compile
+   [Ada]          run_root_session_tests.adb
+run_root_session_tests.adb:13:60: error: components in "others" choice must have same type
+gprbuild: *** compilation phase failed
