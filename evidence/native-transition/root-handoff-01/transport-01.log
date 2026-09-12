@@ -1,0 +1,28 @@
+Running as unit: run-p1414832-i1415132.scope; invocation ID: 6a500903ff284766a9df36aebbd53520
+limited-exec: {"scope": "run-p1414832-i1415132.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+PASS normal
+PASS scope-mismatch
+PASS extra-request-fds
+PASS truncated-request-controls
+PASS descendant-sender
+PASS bad-reply
+PASS trailing-reply
+PASS reply-fds
+PASS truncated-reply-controls
+PASS silent
+Traceback (most recent call last):
+  File "/workspace/pkgcore/tests/check_root_handoff.py", line 168, in <module>
+    main()
+    ~~~~^^
+  File "/workspace/pkgcore/tests/check_root_handoff.py", line 149, in main
+    assert status == 0 and (mode == 'ada' or details == b'pass'), (mode, status, details)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('cancel-before-completion', 256, b"ConnectionResetError(104, 'Connection reset by peer')")
+Traceback (most recent call last):
+  File "/evidence/check.py", line 6, in <module>
+    subprocess.run(['python3',str(root/'tests/check_root_handoff.py'),str(work/'root_handoff.py'),str(work/'root-handoff.so'),str(root/'build/test-bin/run_root_handoff_tests'),str(work/'transport-01.json')],check=True,timeout=60)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/subprocess.py", line 577, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['python3', '/workspace/pkgcore/tests/check_root_handoff.py', '/evidence/root_handoff.py', '/evidence/root-handoff.so', '/workspace/pkgcore/build/test-bin/run_root_handoff_tests', '/evidence/transport-01.json']' returned non-zero exit status 1.

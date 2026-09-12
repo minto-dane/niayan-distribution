@@ -1,0 +1,9 @@
+{
+  "result": "pass",
+  "mains": [
+    "build/test-bin/run_root_handoff_tests",
+    "build/test-bin/run_root_archive_tests",
+    "build/test-bin/run_conffile_observation_tests"
+  ],
+  "scope": "new Ada API and v5/v6 native stage transport boundary regressions; synthetic authority, no physical extraction"
+}

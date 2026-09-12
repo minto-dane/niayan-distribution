@@ -1,0 +1,18 @@
+{
+  "result": "pass",
+  "compile_input_count": 425,
+  "noncompile_changes_since_export": [
+    "pkgcore/ci/setup-container.sh",
+    "pkgcore/ci/test-all.sh"
+  ],
+  "artifacts": {
+    "root-handoff.so": "c0c53d35e07e82a3056f7025087148bce90db35d9c3677305f1f9a5de4158df4",
+    "root-handoff-sanitizer.so": "2d5f9d20cea5525f359172012371af53ae4b1ec0621a3507c94f368f152ad34c",
+    "root_handoff.py": "2922cc4cad7a085bdef04b9fd9d8cbcbc10a441777c28c71fe83aab8b8e590ba",
+    "workspace/pkgcore/build/test-bin/run_root_handoff_tests": "ff7efefccf51033e420bbaa55ae20c6d2975f6a9cbb72df361d873810b8311ae",
+    "workspace/pkgcore/build/test-bin/run_root_archive_tests": "d66e95d668be62564e01c480729d2baf3446209728d8ad4f4eaf8aa48364eb45",
+    "workspace/pkgcore/build/test-bin/run_conffile_observation_tests": "e794fc62c35bdf32ee7fe21e78e1ddcf5d4afd6b5a55ea29add4796a8ed17f7b"
+  },
+  "complete_formal_transport_proof": false,
+  "production_qualified": false
+}

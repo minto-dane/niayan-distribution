@@ -1,0 +1,11 @@
+Running as unit: run-p1423463-i1423763.scope; invocation ID: a6d7ffb523884646ac7796de935cada2
+limited-exec: {"scope": "run-p1423463-i1423763.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+PASS build/test-bin/run_root_handoff_tests
+Traceback (most recent call last):
+  File "/evidence/native-check.py", line 9, in <module>
+    with (out/(str(index)+'.log')).open('w') as log:subprocess.run(command,cwd=root,stdout=log,stderr=subprocess.STDOUT,check=True,timeout=600)
+                                                    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/subprocess.py", line 577, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['build/test-bin/run_root_archive_tests', '/evidence/native-check/archive/store', 'tests/fixtures/root-archive']' returned non-zero exit status 1.

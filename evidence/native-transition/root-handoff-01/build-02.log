@@ -1,0 +1,10 @@
+Running as unit: run-p1421826-i1422126.scope; invocation ID: f31e9d07d6f14f409d3458de74d8abc2
+limited-exec: {"scope": "run-p1421826-i1422126.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+Compile
+   [C]            root_handoff_wire.c
+Link
+   [archive]      libtests.a
+   [index]        libtests.a
+   [link]         run_root_handoff_tests.adb
+   [link]         run_root_archive_tests.adb
+   [link]         run_conffile_observation_tests.adb

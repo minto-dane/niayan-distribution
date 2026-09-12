@@ -1,0 +1,3 @@
+Running as unit: run-p1432617-i1432917.scope; invocation ID: 8ad7a10f0e9a4e648d9a819f9e552393
+limited-exec: {"scope": "run-p1432617-i1432917.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+{"result": "pass", "scope": "canonical handoff wire validator and its reachable helpers only", "production_qualified": false}

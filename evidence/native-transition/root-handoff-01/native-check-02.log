@@ -1,0 +1,5 @@
+Running as unit: run-p1424003-i1424303.scope; invocation ID: 5a594cbd80434871ad17103e12de802a
+limited-exec: {"scope": "run-p1424003-i1424303.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+PASS build/test-bin/run_root_handoff_tests
+PASS build/test-bin/run_root_archive_tests
+PASS build/test-bin/run_conffile_observation_tests

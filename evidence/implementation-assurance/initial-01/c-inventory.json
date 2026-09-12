@@ -1,0 +1,119 @@
+{
+  "files": [
+    {
+      "path": "pkgcore/runtime/archive_observer.c",
+      "sha256": "c93dd637dafb7fd7e691ca10138e4432ecde28403e3b4a4adce33c2150c6e8a0",
+      "role": "runtime",
+      "formal_scope": "not established by this evidence",
+      "coding_standard_compliance": "not established"
+    },
+    {
+      "path": "pkgcore/runtime/conffile_snapshot.c",
+      "sha256": "d0333b1f3b5c1b800e92533a87d0edec186df3c833d28b0a6847030daab9db2a",
+      "role": "runtime",
+      "formal_scope": "not established by this evidence",
+      "coding_standard_compliance": "not established"
+    },
+    {
+      "path": "pkgcore/runtime/operator_authorization.c",
+      "sha256": "d938686aa7ce9b85082b28a499bed989eada1eb0b4d07ecb5e108a3853e622ea",
+      "role": "runtime",
+      "formal_scope": "not established by this evidence",
+      "coding_standard_compliance": "not established"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_deb_decode.c",
+      "sha256": "d0299b6dff8c129d6fd4c91246f17b25bbc5b7c4455c73c08f275b6a424e123b",
+      "role": "runtime",
+      "formal_scope": "not established by this evidence",
+      "coding_standard_compliance": "not established"
+    },
+    {
+      "path": "pkgcore/runtime/pkg_deb_stream.c",
+      "sha256": "320ad46f87de92d902e5823426cdf66c74f6e5367356ebf3df06657f5fefa8eb",
+      "role": "runtime",
+      "formal_scope": "not established by this evidence",
+      "coding_standard_compliance": "not established"
+    },
+    {
+      "path": "pkgcore/runtime/root_handoff.c",
+      "sha256": "69f2f51c2bfde7787b387395c38846113d500315ce6f0cb6fc7c0f985d37b688",
+      "role": "runtime",
+      "formal_scope": "not established by this evidence",
+      "coding_standard_compliance": "not established"
+    },
+    {
+      "path": "pkgcore/runtime/root_handoff_wire.c",
+      "sha256": "a1429178ea9011bb65891121a93c568cbc730f739df0bd59a8fd7e2ac8e0a084",
+      "role": "runtime",
+      "formal_scope": "wire canonicality and memory/integer checks only",
+      "coding_standard_compliance": "not established"
+    },
+    {
+      "path": "pkgcore/runtime/root_preparation.c",
+      "sha256": "f768a36dacb46233c3fbf93fff6f5dcac4be20388763fb623e2d8a361683f335",
+      "role": "runtime",
+      "formal_scope": "not established by this evidence",
+      "coding_standard_compliance": "not established"
+    },
+    {
+      "path": "pkgcore/runtime/root_session.c",
+      "sha256": "92d848ae7bc020ae6b5918047edaa991160c522b259f9ce8002bbaa8e1b56b5e",
+      "role": "runtime",
+      "formal_scope": "not established by this evidence",
+      "coding_standard_compliance": "not established"
+    },
+    {
+      "path": "pkgcore/tests/conffile-snapshot/check.c",
+      "sha256": "689373f5d7c381819b4eb9f3424ac0b325a57f10ce59bac0add54ada34426b6e",
+      "role": "verification",
+      "formal_scope": "not established by this evidence",
+      "coding_standard_compliance": "not established"
+    },
+    {
+      "path": "pkgcore/tests/helpers/operator_authority_fixture.c",
+      "sha256": "6991f9d445e733d811a6d67d38bbb5d82307927ac4c23038decd326fcc17850e",
+      "role": "verification",
+      "formal_scope": "not established by this evidence",
+      "coding_standard_compliance": "not established"
+    },
+    {
+      "path": "pkgcore/tests/observer-transport/check.c",
+      "sha256": "cc5a35c076e1e2a52551704be5d94b0aa218f48f218168abf1597d02a4cf1809",
+      "role": "verification",
+      "formal_scope": "not established by this evidence",
+      "coding_standard_compliance": "not established"
+    },
+    {
+      "path": "pkgcore/tests/proof/root_handoff_wire.c",
+      "sha256": "992dbf9f8ab98a16a8d769a43d7759cfecd48c9f618405535922a03ff3e46393",
+      "role": "verification",
+      "formal_scope": "not established by this evidence",
+      "coding_standard_compliance": "not established"
+    },
+    {
+      "path": "distribution/native/worker/check_tar_clocks.c",
+      "sha256": "5418e90a66e9d1fa5c1d5a1b9452af730816771db598e5418b9348a37a696ded",
+      "role": "verification",
+      "formal_scope": "not established by this evidence",
+      "coding_standard_compliance": "not established"
+    },
+    {
+      "path": "distribution/native/worker/root_extract.c",
+      "sha256": "afb3471598ae2055220733d0e19997fbd3f2e93d34a6303761547180476c840d",
+      "role": "runtime",
+      "formal_scope": "not established by this evidence",
+      "coding_standard_compliance": "not established"
+    },
+    {
+      "path": "distribution/native/worker/tar_clocks.c",
+      "sha256": "9c4d1fcc6fca599e8e703bbf9e98b2f113e7f3120f61b1f439b651a317fb15a1",
+      "role": "runtime",
+      "formal_scope": "not established by this evidence",
+      "coding_standard_compliance": "not established"
+    }
+  ],
+  "runtime_units": 11,
+  "total_units": 16,
+  "complete_c_assurance": false
+}

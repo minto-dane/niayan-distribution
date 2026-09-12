@@ -1,0 +1,7 @@
+{
+  "pkgcore/runtime/root_handoff_wire.c": "a1429178ea9011bb65891121a93c568cbc730f739df0bd59a8fd7e2ac8e0a084",
+  "pkgcore/runtime/root_handoff_wire.h": "024286eda26479f8aaecba11af4c8e2b693df3b9515a42c273f9d8aee57c4f54",
+  "pkgcore/tests/proof/root_handoff_wire.c": "992dbf9f8ab98a16a8d769a43d7759cfecd48c9f618405535922a03ff3e46393",
+  "dev/c-proof.py": "5b5df5ba07118c9fc6e742305e0c1a0d8a06e91bd0afbb4b4ff4199e6b8614ac",
+  "dev/limited-exec.py": "42d8bad6a2270131f47e44aab1845612d6d7d4d9f37248cf467c10632cd8032a"
+}

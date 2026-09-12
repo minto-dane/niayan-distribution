@@ -1,0 +1,17 @@
+Running as unit: run-p1422219-i1422519.scope; invocation ID: 5364aae9ae3b498a92f6b832dca4e056
+limited-exec: {"scope": "run-p1422219-i1422519.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+PASS normal
+PASS scope-mismatch
+PASS extra-request-fds
+PASS truncated-request-controls
+PASS descendant-sender
+PASS bad-reply
+PASS trailing-reply
+PASS reply-fds
+PASS truncated-reply-controls
+PASS silent
+PASS cancel-before-completion
+PASS forked-handle
+PASS no-passcred
+PASS root handoff Ada API
+PASS ada
