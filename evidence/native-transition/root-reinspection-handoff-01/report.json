@@ -1,0 +1,36 @@
+{
+  "result": "pass",
+  "scope": "Preparation/reinspection handoff protocol and SDK, not physical root operation or production supervisor",
+  "source_hashes": {
+    "pkgcore/runtime/root_handoff.c": "aeb7c51a37e448c51f90a41f5e31716740ba3ab74567d30eacd7097358df9352",
+    "pkgcore/runtime/root_handoff_wire.c": "cf36c588bb0c25f4bf6f78fdff93ce1fc4cb1c9603e57b0d09fba1ba98a7fb39",
+    "pkgcore/runtime/root_handoff_wire.h": "7beca8cb2a7c2fc5a9239b84aa2b5f53bde590e9015f5551ff8f577bfa7f8e95",
+    "pkgcore/runtime/pkg_root_handoff.adb": "3fe6e25b09805572f30b29fc9f2c21f7e74e215a43b15a2c52cfa1b7024da914",
+    "pkgcore/runtime/pkg_root_handoff.ads": "2e78f582252b2c25d61a25c4463e0c19d6b335d656e3762492ebabf547e22f31",
+    "pkgcore/tests/run_root_handoff_tests.adb": "570701f6f7fd4454679a917c670b0cd0e7d054d4b7b6c86f418d53f1d93de833",
+    "pkgcore/tests/check_root_handoff.py": "c99f406853170a305a9165d09aab3d1d166dff43208589e8df4c5a059fa53f90",
+    "pkgcore/tests/proof/root_handoff_wire.c": "53732ce58e46c6d2591ba43404b2c82f7c68457cf48a2f81b719654735b00e6e",
+    "distribution/native/root_handoff.py": "56704d66693178b650002222c8b43dbeebd41214780b48795257b285e9c8ce61",
+    "dev/c-proof.py": "acf1933bdfa6359eb6b8e49a8a5e76b1087c12348cba74acd3d22916ea13acef",
+    "assurance/docs/engineering/adr/ADR-0124.ja.md": "e8e4559a942570e54968a768a82df82dece2d5c49cbde78388b1197d3b862851"
+  },
+  "binaries": {
+    "root-handoff.so": "2a7dbee5912ac6ce53198dcf3646e8329cda27e23c70a818632119752f5b2fd8",
+    "workspace/pkgcore/build/test-bin/run_root_handoff_tests": "1a943ebe6b889e7d5c59ae060e37e80fcb813cbb0b2e1bbdffc62cfa54862958"
+  },
+  "image": "sha256:76d5c00dfa833ce7ae67a192c5663d9bcd5c4104153f5933431dae88c097918c",
+  "limits": {
+    "memory_bytes": 3221225472,
+    "swap_bytes": 0,
+    "vcpus": 1,
+    "pids": 128
+  },
+  "transport_cases": 32,
+  "pure_validator_proof_properties": 288,
+  "strict_typing": "pass",
+  "production_complete": false,
+  "whole_c_or_ffi_proof": false,
+  "physical_reinspection_exercised": false,
+  "packaged_deployment": false,
+  "unchanged_whole_suites_repeated": false
+}

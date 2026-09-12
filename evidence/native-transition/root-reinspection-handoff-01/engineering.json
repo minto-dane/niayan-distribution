@@ -1,0 +1,15 @@
+{
+  "format": 1,
+  "checks": "traceability-and-source-inventory",
+  "result": "pass",
+  "requirements": 161,
+  "decisions": 124,
+  "hazards": 148,
+  "fault_cases": 161,
+  "canonical_ada_files": 593,
+  "registered_ada_tests": 86,
+  "source_subject": "914aa3d3c1152a1a63670b869e33f9703884130c7f8b102e974e8fbef107857f",
+  "ada_executed": false,
+  "formal_proof": false,
+  "production_approval": false
+}

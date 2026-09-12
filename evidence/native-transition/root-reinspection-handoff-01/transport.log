@@ -1,0 +1,35 @@
+Running as unit: run-p1551017-i1551317.scope; invocation ID: 4d2e612dcb0d4c16bebe737038571fdd
+limited-exec: {"scope": "run-p1551017-i1551317.scope", "kernel_limits": {"memory.max": "3221225472", "memory.swap.max": "0", "cpu.max": "100000 100000", "pids.max": "128"}}
+PASS normal
+PASS scope-mismatch
+PASS extra-request-fds
+PASS truncated-request-controls
+PASS descendant-sender
+PASS bad-reply
+PASS trailing-reply
+PASS reply-fds
+PASS truncated-reply-controls
+PASS silent
+PASS cancel-before-completion
+PASS forked-handle
+PASS no-passcred
+PASS root handoff Ada API
+PASS ada
+PASS reinspect-normal
+PASS reinspect-scope-mismatch
+PASS reinspect-extra-request-fds
+PASS reinspect-truncated-request-controls
+PASS reinspect-descendant-sender
+PASS reinspect-bad-reply
+PASS reinspect-trailing-reply
+PASS reinspect-reply-fds
+PASS reinspect-truncated-reply-controls
+PASS reinspect-silent
+PASS reinspect-cancel-before-completion
+PASS reinspect-forked-handle
+PASS reinspect-no-passcred
+PASS root handoff Ada API
+PASS reinspect-ada
+PASS reinspect-root-mismatch
+PASS reinspect-original-mismatch
+PASS reinspect-prepare-reply

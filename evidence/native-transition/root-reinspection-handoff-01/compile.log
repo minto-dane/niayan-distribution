@@ -1,0 +1,28 @@
+Setup
+   [mkdir]        object directory for project Tests
+   [mkdir]        exec directory for project Tests
+Compile
+   [Ada]          run_root_handoff_tests.adb
+   [C]            operator_authorization.c
+   [C]            pkg_deb_stream.c
+   [C]            archive_observer.c
+   [C]            root_handoff_wire.c
+   [C]            root_handoff.c
+   [C]            pkg_deb_decode.c
+   [C]            conffile_snapshot.c
+   [C]            root_session.c
+   [Ada]          mc_clock.adb
+   [Ada]          mc_types.adb
+   [Ada]          pkg_root_handoff.adb
+   [Ada]          pkg_root_identity.ads
+   [Ada]          mc_hex.adb
+   [Ada]          mc_kernel_read.adb
+   [Ada]          mc_posix.ads
+   [Ada]          mc_codec.adb
+Bind
+   [gprbind]      run_root_handoff_tests.bexch
+   [Ada]          run_root_handoff_tests.ali
+Link
+   [archive]      libtests.a
+   [index]        libtests.a
+   [link]         run_root_handoff_tests.adb

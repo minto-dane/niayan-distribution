@@ -1,4 +1,4 @@
-# 非特権世代からroot supervisorへの準備要求
+# 非特権世代からroot supervisorへの準備・再検査要求
 
 内部SDKのみ。public listener/launcherや本番supervisorを配備するものではない。
 `Pkg_Generation_Stage.Prepare_Root`は必須transportの前後で元の認可・内容・設定を照合し、
@@ -35,7 +35,7 @@ root controllerは引き続きFDの実体・OFD・原本・device/worker等を�
 
 ## 寿命と異常
 
-C Sessionとroot Channelはそれぞれ一度の準備要求に限る。送信試行後は再試行せず、不明な結果をIndeterminateとする。
+C Sessionとroot Channelはそれぞれ一度の準備または再検査要求に限る。送信試行後は再試行せず、不明な結果をIndeterminateとする。
 rootのreceive失敗後は再受信できず、complete失敗後は再送できない。別channelを用いた再試行の可否は
 native履歴・永続attempt・新しい認可で判断する別問題で、このSDKだけで全体の重複実行を防止したとはしない。
 
@@ -44,7 +44,7 @@ completeは受信FDコピーを閉じてから応答する。取消packet、切�
 その後の全寿命監視、取消による資源遮断とcontroller終了は呼出側の責務で、背景監視を実装したものではない。
 borrowed channelの所有者は物理排他の全寿命を保持し、SDK Close/Finalizeをremote cleanup完了として扱わない。
 
-再検査handoff、本番launcher、現在供給/世代admission、正確な同意、root controllerへの製品接続は未完。
+再検査handoffの要求/応答を追加した。本番launcher、現在供給/世代admission、正確な同意、root controllerへの製品接続は未完。
 新C基準への全transport適合と形式検証も未完であり、純粋wire検査の証明だけでは本番受入しない。
 ADR-0117/0118とimplementation-assurance.ja.mdに従う。
 
@@ -63,6 +63,35 @@ Linuxのclose失敗を同じFD番号への再試行で補わない。入力の�
 
 再検査も`Reinspect_Root_And_Hold`の必須transportへ実archive/CAS FDを渡す。
 `Observe_Root`は前後の独立観測として別に必要で、元期限と物理identityの不一致を拒否する。
-これは保持root sessionを接続可能にするSDK境界であり、跨UID protocol自体の完成ではない。
+跨UID protocolは以下のReinspectで接続できる。これは保持root sessionを接続可能にするSDK境界であり、
+本番の認可/同意providerと全寿命supervisorの完成ではない。
 旧service/RPCは廃止した。共有Bankと必要な試験は保持sessionの経路へ移す。
 撤去判断・ACID境界・オフライン更新条件はassuranceのADR-0120に記録する。
+
+## 再検査要求
+
+`Pkg_Root_Handoff.Reinspect`は別のprivate channelを使い、既に保持しているrootの再検査を要求する。
+起動時に用意したFDを借用し、root側は独立に導いた`ReinspectionScope`をChannelへ渡す。
+準備channelを再利用せず、元のcontroller sessionと物理排他は保持し続ける。
+再検査の失敗を新規展開に切り替えたり、別channelで自動再試行したりしない。
+
+要求は224 byte固定。offset 8〜175は準備と同じ構成で、168は今回の交換期限である。
+
+| byte offset | 長さ | 内容 |
+|---|---:|---|
+| 0 | 8 | ASCII NIAHRV01 |
+| 176 | 8 | 元の展開期限 |
+| 184 / 192 | 各8 | 独立に期待するmount ID / inode |
+| 200 / 204 | 各4 | device major / minor |
+| 208 | 16 | すべてzero |
+
+元期限は正のsigned64、mount/inodeはzeroでないunsigned64、deviceはunsigned32。
+wire上の元期限は保存値への束縛であり、それを根拠に失効したcontroller sessionを復活させない。
+応答はNIAHRK01と全224 byteのSHA-256。準備用の応答はhashが正しくても再検査成功にはならない。
+native側では有効な要求の送信試行によりSessionが消費され、以後どちらの操作もConflictとなる。
+
+supervisorは同じ保持controllerのObserve、独立root観測、現在の供給/認可/同意を確認してから
+completeする。受信した期待値を独立観測の代わりにせず、受信FDのコピー解放を応答より先に行う。
+新しいwire validatorと準備validatorの形式証明は288 propertyを通過した。範囲は純粋な形式検査と
+メモリ境界のみ。実Ada/C/Pythonの32通信caseで送信者/FD/期限/取消/再送/対象不一致を検査した。
+OS全体・全C transportの証明、実物理再検査と本番認可を含む一貫した経路の受入は別に必要である。

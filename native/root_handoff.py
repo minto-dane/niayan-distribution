@@ -93,6 +93,25 @@ class Scope:
                 + self.stage + struct.pack('>QQQ', self.size, self.entries, self.deadline) + bytes(16))
 
 
+@dataclass(frozen=True)
+class ReinspectionScope(Scope):
+    original_deadline: int
+    mount_id: int
+    inode: int
+    device_major: int
+    device_minor: int
+
+    def wire(self) -> bytes:
+        common = super().wire()
+        values = (self.original_deadline, self.mount_id, self.inode, self.device_major, self.device_minor)
+        if (any(type(value) is not int for value in values)
+                or not 0 < self.original_deadline <= 2**63 - 1
+                or not 0 < self.mount_id <= 2**64 - 1 or not 0 < self.inode <= 2**64 - 1
+                or not 0 <= self.device_major <= 2**32 - 1 or not 0 <= self.device_minor <= 2**32 - 1):
+            raise Rejected('reinspection-identity')
+        return (b'NIAHRV01' + common[8:176] + struct.pack('>QQQII', *values) + bytes(16))
+
+
 class Channel:
     """Own duplicates and received FDs only; never close/reap/kill the caller's child.
 
@@ -166,7 +185,7 @@ class Channel:
             # The stdlib stub leaves the unused address untyped. Contain it as
             # object; authentication uses kernel credentials, never that value.
             message: tuple[bytes, list[tuple[int, int, bytes]], int, object] = self._peer().recvmsg(
-                193, socket.CMSG_SPACE(12) + socket.CMSG_SPACE(16 * 4),
+                len(self.expected) + 1, socket.CMSG_SPACE(12) + socket.CMSG_SPACE(16 * 4),
                 socket.MSG_DONTWAIT | socket.MSG_CMSG_CLOEXEC)
             raw, controls, flags, _ = message
             credentials: list[tuple[int, int, int]] = []
@@ -211,7 +230,8 @@ class Channel:
             self._current()
             self._wait(select.POLLOUT)
             self._current()
-            reply = b'NIAHOK01' + hashlib.sha256(self.expected).digest()
+            opcode = b'NIAHRK01' if isinstance(self.scope, ReinspectionScope) else b'NIAHOK01'
+            reply = opcode + hashlib.sha256(self.expected).digest()
             if self._peer().send(reply, socket.MSG_DONTWAIT | socket.MSG_NOSIGNAL) != len(reply):
                 raise Rejected('uncertain-reply')
             self._advance(Event.ACK)
