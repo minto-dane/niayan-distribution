@@ -2,19 +2,19 @@
 
 `root_supervisor.Supervisor`は内部のroot所有者が使う処理で、公開listenerや
 認可済み要求を作るlauncherではない。独立に選択したScope、bank FD、device plan/boot、
-実operator peer、確認済みPlanConsentと必須Admission providerを渡す。
+実operator peer、確認済みPlanConsent、計画時のBindingを持つSupplyGuardと必須Admission providerを渡す。
 同意とoperatorは同一の元socketへ固定する。providerは現在の供給・世代予約を
 有限・非blockingで検査し、失敗時は例外にする。既定実装は用意しない。
 
 `prepare(Channel)`は非root子のnative要求を受信し、現在認可を確認してから既存controllerへ
 実archive/CAS FDを渡す。認証対話中はcontrollerへ接続しない。応答中も同じloopで
-operator/子/peer/controller/元BOOTTIME期限を監視し、最後に独立root FDと元記録を照合する。
+operator/供給observer/子/peer/controller/元BOOTTIME期限を監視し、最後に独立root FDと元記録を照合する。
 応答に記されたinodeを期待値へ転用しない。FDコピーの解放後だけnative ACKを送る。
 
 `reinspect(Channel)`は別のchannelで元期限と独立identityを固定し、同じcontrollerの
 Observeへ接続する。元sessionの寿命を延長しない。保持中の待機は`wait_readable`を使い、
 ownerが別のblocking作業を行わない。背景threadが自動的に監視していると仮定しない。
-各効果境界では新しいoperator観測を消費し、継続中は250ms間隔で再確認を要求する。
+各効果境界では新しいoperator観測と供給観測を要求し、継続中は250ms間隔で再確認を要求する。
 実OSの停止時間やpolkit外部条件まで保証する値ではない。
 
 取消/失敗時はcontroller接続を最初に切り、既存worker monitorへ停止を伝える。
@@ -32,9 +32,10 @@ Adaの追加provider phaseは`execution:bind`、`execution:advance`、`execution
 `execution:root-prepared`、`execution:reinspect-root`、`execution:root-reinspected`、
 `execution:held`、`execution:held-observed`。既存Stage内部の必須phaseも引き続き実行される。
 採用コマンドの要求/同意transportは[計画同意](plan-consent.ja.md)へ実装した。
-本番planner/供給/世代provider、採用コマンドからのlauncherへの全体接続は未完。
+供給設定の継続観測は[SupplyGuard](supply-guard.ja.md)に接続した。
+本番planner/世代provider、独立供給anchor、採用コマンドからのlauncherへの全体接続は未完。
 この接続がない状態でservicesを公開・自動起動してはならない。
 
-現行sourceの全面レビュー/形式保証/負の試験/実機受入はリリース直前に行う。
+現行sourceのコンパイル/型検査/全面レビュー/形式保証/負の試験/実機受入はリリース直前に行う。
 途中のfixture実行結果は[evidence](../evidence/native-transition/root-supervisor-01/README.ja.md)に
 対象sourceと失敗を含めて保持する。部分成功を全製品の安全性やACID保証に読み替えない。

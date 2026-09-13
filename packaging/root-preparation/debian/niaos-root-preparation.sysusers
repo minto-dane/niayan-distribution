@@ -1,2 +1,3 @@
 # SPDX-License-Identifier: BSD-3-Clause
 u nia-pkg - "NiaOS native package core" /nonexistent /usr/sbin/nologin
+u nia-trust - "NiaOS read-only supply observation" /nonexistent /usr/sbin/nologin

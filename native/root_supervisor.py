@@ -3,8 +3,8 @@
 
 No listener or public launch path. A trusted launcher must supply the native
 admission provider and independently selected scope. That provider must check
-current supply, generation reservation and exact-plan consent, without blocking
-or converting polkit's observation into any of those permissions.
+the admitted supply binding, retained map/receipts and generation reservation,
+without blocking or treating observer replies as publication permission.
 """
 from __future__ import annotations
 
@@ -16,6 +16,7 @@ from operator_guard import OperatorGuard, Phase as OperatorPhase
 from plan_consent import PlanConsent
 from root_handoff import Channel, Phase as ChannelPhase, ReinspectionScope, Rejected, Scope, now_ms
 from root_session_client import Phase as SessionPhase, RootIdentity, RootSession
+from supply_guard import Binding as SupplyBinding, SupplyGuard, Phase as SupplyPhase
 
 
 class Admission(Protocol):
@@ -24,12 +25,15 @@ class Admission(Protocol):
     Implementations must retain their real native reservations throughout this
     supervisor's lifetime and provide a bounded, nonblocking check. There is no
     default implementation. A successful mock is not production admission.
+    Every supply field must equal the planner's retained, admitted context;
+    never accept a replacement binding selected by the observer or the CLI.
     """
-    def check(self, scope: Scope, plan: bytes, request: bytes, boundary: str) -> None: ...
+    def check(self, scope: Scope, plan: bytes, request: bytes, supply: SupplyBinding,
+              boundary: str) -> None: ...
 
 
 class Supervisor:
-    """Own the supplied session/operator/channels; borrow native admission.
+    """Own the supplied session/operator/supply/channels; borrow native admission.
 
     One original deadline, no automatic retry or regenerated request. Callers
     use a with block and retain the nonroot child and native admission until
@@ -37,17 +41,24 @@ class Supervisor:
     remote worker cancellation/sealing remain the controller's responsibility.
     """
     def __init__(self, session: RootSession, operator: OperatorGuard, admission: Admission,
-                 *, consent: PlanConsent) -> None:
+                 *, consent: PlanConsent, supply: SupplyGuard) -> None:
         self.owner = os.getpid()
         self.session, self.operator, self.admission = session, operator, admission
         self.consent = consent
+        self.supply = supply
         self.channels: list[Channel] = []
         self.closed = False
         self.observation = 0
         self.observed_at = 0
         self.next_check = now_ms()
+        self.supply_observation = self.supply_observed_at = 0
+        self.next_supply_check = self.next_check
         if (os.getuid() or os.geteuid() or session.phase is not SessionPhase.NEW
                 or operator.phase is not OperatorPhase.NEW
+                or supply.phase is not SupplyPhase.NEW
+                or supply.binding.generation != session.scope.generation
+                or supply.binding.plan != operator.plan
+                or supply.binding.deadline != session.scope.deadline
                 or session.scope.deadline != operator.original_deadline):
             raise Rejected('supervisor-context')
         consent.check(operator.plan, session.scope.generation, operator.request, session.scope.deadline)
@@ -64,13 +75,15 @@ class Supervisor:
         self.consent.check(self.operator.plan, self.session.scope.generation,
                            self.operator.request, self.session.scope.deadline)
         self.operator.descriptors()
+        self.supply.descriptors()
         for channel in self.channels:
             channel._alive()
             if channel.phase in (ChannelPhase.RECEIVED, ChannelPhase.COMPLETE):
                 channel._current()
             elif channel.phase is not ChannelPhase.READY:
                 raise Rejected('supervisor-channel-state')
-        self.admission.check(self.session.scope, self.operator.plan, self.operator.request, 'hold')
+        self.admission.check(self.session.scope, self.operator.plan, self.operator.request,
+                             self.supply.binding, 'hold')
 
     def _operator(self) -> None:
         if self.operator.phase is OperatorPhase.PENDING:
@@ -82,12 +95,28 @@ class Supervisor:
         elif now_ms() >= self.next_check:
             self.operator.request_check()
 
-    def _wait(self, target: int | None = None, *, sequence: int | None = None) -> None:
+    def _supply(self) -> None:
+        if self.supply.phase is SupplyPhase.PENDING:
+            observed = self.supply.receive()
+            if observed is not None:
+                self.supply_observation = observed.sequence
+                self.supply_observed_at = observed.finished
+                self.next_supply_check = min(self.supply.binding.deadline, observed.finished + 250)
+        elif now_ms() >= self.next_supply_check:
+            self.supply.request_check()
+
+    def _wait(self, target: int | None = None, *, sequence: int | None = None,
+              supply_sequence: int | None = None) -> None:
         for _ in range(16_384):
             self._current()
             self._operator()
+            self._supply()
             self._current()
-            if sequence is not None and self.observation > sequence:
+            if ((sequence is not None or supply_sequence is not None)
+                    and (sequence is None or self.observation > sequence)
+                    and (supply_sequence is None or self.supply_observation > supply_sequence)
+                    and self.operator.phase is OperatorPhase.OBSERVED
+                    and self.supply.phase is SupplyPhase.OBSERVED):
                 return
             poll = select.poll()
             descriptors = self.operator.descriptors()
@@ -97,6 +126,10 @@ class Supervisor:
                 poll.register(fd, select.POLLIN)
             if self.operator.phase is OperatorPhase.PENDING:
                 poll.register(descriptors[0], select.POLLIN)
+            supply_descriptors = self.supply.descriptors()
+            poll.register(supply_descriptors[1], select.POLLIN)
+            if self.supply.phase is SupplyPhase.PENDING:
+                poll.register(supply_descriptors[0], select.POLLIN)
             controller = self.session.descriptor()
             if controller is not None:
                 poll.register(controller, select.POLLIN)
@@ -108,6 +141,8 @@ class Supervisor:
             if target is not None:
                 poll.register(target, select.POLLIN)
             until = self.operator.next_deadline if self.operator.phase is OperatorPhase.PENDING else self.next_check
+            until = min(until, self.supply.next_deadline if self.supply.phase is SupplyPhase.PENDING
+                        else self.next_supply_check)
             events = poll.poll(max(1, min(250, until - now_ms())))
             self._current()
             for fd, flags in events:
@@ -123,14 +158,16 @@ class Supervisor:
 
     def _checkpoint(self, boundary: str) -> None:
         self._current()
-        previous = self.operator.sequence
         # A check already pending before this boundary is not its fresh check.
-        if self.operator.phase is OperatorPhase.PENDING:
-            self._wait(sequence=previous - 1)
-        previous = self.operator.sequence
+        if self.operator.phase is OperatorPhase.PENDING or self.supply.phase is SupplyPhase.PENDING:
+            self._wait(sequence=self.operator.sequence - 1,
+                       supply_sequence=self.supply.sequence - 1)
+        previous, previous_supply = self.operator.sequence, self.supply.sequence
         self.operator.request_check()
-        self._wait(sequence=previous)
-        self.admission.check(self.session.scope, self.operator.plan, self.operator.request, boundary)
+        self.supply.request_check()
+        self._wait(sequence=previous, supply_sequence=previous_supply)
+        self.admission.check(self.session.scope, self.operator.plan, self.operator.request,
+                             self.supply.binding, boundary)
         self._effect_current()
 
     def _effect_current(self) -> None:
@@ -138,6 +175,9 @@ class Supervisor:
         if (self.operator.phase is not OperatorPhase.OBSERVED or not self.observation
                 or not 0 <= now_ms() - self.observed_at <= 1000):
             raise Rejected('supervisor-stale-effect-authorization')
+        if (self.supply.phase is not SupplyPhase.OBSERVED or not self.supply_observation
+                or not 0 <= now_ms() - self.supply_observed_at <= 1000):
+            raise Rejected('supervisor-stale-effect-supply')
 
     def _accept(self, channel: Channel) -> tuple[int, int]:
         if channel in self.channels or len(self.channels) >= 2:
@@ -223,7 +263,8 @@ class Supervisor:
         self.closed = True
         failures: list[BaseException] = []
         # End the effect path first. Observer close can wait up to five seconds.
-        for release in (self.session.abort, *(c.close for c in self.channels), self.consent.close, self.operator.close):
+        for release in (self.session.abort, *(c.close for c in self.channels), self.consent.close,
+                        self.supply.close, self.operator.close):
             try:
                 release()
             except BaseException as error:

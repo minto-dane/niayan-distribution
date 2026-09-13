@@ -1,3 +1,11 @@
+niaos-root-preparation (0.14.0) trixie; urgency=medium
+
+  * Require continuous native supply observations bound to the planned inputs.
+  * Isolate the read-only observer from package workers and signing identities.
+  * Keep current generation admission mandatory at every root effect boundary.
+
+ -- minto-dane <205936182+minto-dane@users.noreply.github.com>  Sun, 13 Sep 2026 03:00:00 +0000
+
 niaos-root-preparation (0.13.0) trixie; urgency=medium
 
   * Require exact-plan consent bound to the operator connection in root supervision.
