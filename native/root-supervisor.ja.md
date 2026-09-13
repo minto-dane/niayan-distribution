@@ -2,8 +2,9 @@
 
 `root_supervisor.Supervisor`は内部のroot所有者が使う処理で、公開listenerや
 認可済み要求を作るlauncherではない。独立に選択したScope、bank FD、device plan/boot、
-実operator peerと必須Admission providerを渡す。providerは現在の供給・世代予約・
-正確な計画同意を有限・非blockingで検査し、失敗時は例外にする。既定実装は用意しない。
+実operator peer、確認済みPlanConsentと必須Admission providerを渡す。
+同意とoperatorは同一の元socketへ固定する。providerは現在の供給・世代予約を
+有限・非blockingで検査し、失敗時は例外にする。既定実装は用意しない。
 
 `prepare(Channel)`は非root子のnative要求を受信し、現在認可を確認してから既存controllerへ
 実archive/CAS FDを渡す。認証対話中はcontrollerへ接続しない。応答中も同じloopで
@@ -30,7 +31,8 @@ root準備後に再検査してgeneration/root/CAS予約を保持する。借用
 Adaの追加provider phaseは`execution:bind`、`execution:advance`、`execution:prepare-root`、
 `execution:root-prepared`、`execution:reinspect-root`、`execution:root-reinspected`、
 `execution:held`、`execution:held-observed`。既存Stage内部の必須phaseも引き続き実行される。
-本番provider、採用コマンドからのlauncher、署名された正確な計画同意は未接続。
+採用コマンドの要求/同意transportは[計画同意](plan-consent.ja.md)へ実装した。
+本番planner/供給/世代provider、採用コマンドからのlauncherへの全体接続は未完。
 この接続がない状態でservicesを公開・自動起動してはならない。
 
 現行sourceの全面レビュー/形式保証/負の試験/実機受入はリリース直前に行う。

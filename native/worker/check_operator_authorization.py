@@ -42,21 +42,30 @@ class Decision:
 class Peer:
     def __init__(self,directory,uid,gid,*,close_fds=()):
         self.path=directory/'peer.sock'
-        listener=socket.socket(socket.AF_UNIX,socket.SOCK_SEQPACKET);listener.bind(str(self.path));self.path.chmod(0o666);listener.listen(1);listener.settimeout(5)
+        listener=socket.socket(socket.AF_UNIX,socket.SOCK_SEQPACKET);listener.setsockopt(socket.SOL_SOCKET,socket.SO_PASSCRED,1);listener.bind(str(self.path));self.path.chmod(0o666);listener.listen(1);listener.settimeout(5)
         self.parent,child=multiprocessing.Pipe()
         def client():
             self.parent.close();listener.close()
             for fd in close_fds:os.close(fd)
             os.setgroups([]);os.setgid(gid);os.setuid(uid)
-            peer=socket.socket(socket.AF_UNIX,socket.SOCK_SEQPACKET);peer.connect(str(self.path));peer.sendall(b'fixture-request')
+            peer=socket.socket(socket.AF_UNIX,socket.SOCK_SEQPACKET);peer.setsockopt(socket.SOL_SOCKET,socket.SO_PASSCRED,1);peer.connect(str(self.path));peer.sendall(b'fixture-request')
             while True:
                 command=child.recv()
                 if command=='cancel':peer.sendall(b'cancel');child.send('sent')
+                elif command=='confirm-plan':
+                    from plan_consent import Offer, receive, read_presentation, release, response
+                    raw,actor,owned=receive(peer,160)
+                    try:
+                        assert actor[1]==0 and len(owned)==1
+                        offer=Offer.decode(raw);read_presentation(owned[0],offer)
+                        peer.sendall(response(offer,True));child.send('confirmed')
+                    finally:release(owned)
                 else:break
             peer.close();child.close()
         self.process=multiprocessing.get_context('fork').Process(target=client);self.process.start();child.close()
         self.peer,_=listener.accept();listener.close();assert self.peer.recv(64)==b'fixture-request'
     def cancel(self):self.parent.send('cancel');assert self.parent.recv()=='sent'
+    def confirm_plan(self):self.parent.send('confirm-plan');assert self.parent.recv()=='confirmed'
     def disconnect(self):
         self.parent.send('close');self.process.join(5);assert self.process.exitcode==0
     def close(self):

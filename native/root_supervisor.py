@@ -13,6 +13,7 @@ import select
 from typing import Protocol
 
 from operator_guard import OperatorGuard, Phase as OperatorPhase
+from plan_consent import PlanConsent
 from root_handoff import Channel, Phase as ChannelPhase, ReinspectionScope, Rejected, Scope, now_ms
 from root_session_client import Phase as SessionPhase, RootIdentity, RootSession
 
@@ -35,9 +36,11 @@ class Supervisor:
     after exit. Closing disconnects the controller before reaping the operator;
     remote worker cancellation/sealing remain the controller's responsibility.
     """
-    def __init__(self, session: RootSession, operator: OperatorGuard, admission: Admission) -> None:
+    def __init__(self, session: RootSession, operator: OperatorGuard, admission: Admission,
+                 *, consent: PlanConsent) -> None:
         self.owner = os.getpid()
         self.session, self.operator, self.admission = session, operator, admission
+        self.consent = consent
         self.channels: list[Channel] = []
         self.closed = False
         self.observation = 0
@@ -47,11 +50,19 @@ class Supervisor:
                 or operator.phase is not OperatorPhase.NEW
                 or session.scope.deadline != operator.original_deadline):
             raise Rejected('supervisor-context')
+        consent.check(operator.plan, session.scope.generation, operator.request, session.scope.deadline)
+        if consent.peer is None or operator.peer is None:
+            raise Rejected('supervisor-confirmed-peer-required')
+        confirmed, authenticated = os.fstat(consent.peer.fileno()), os.fstat(operator.peer.fileno())
+        if (confirmed.st_dev, confirmed.st_ino) != (authenticated.st_dev, authenticated.st_ino):
+            raise Rejected('supervisor-consent-and-operator-peer-differ')
 
     def _current(self) -> None:
         if self.closed or self.owner != os.getpid() or os.getuid() or os.geteuid():
             raise Rejected('supervisor-owner-or-ended')
         self.session.current()
+        self.consent.check(self.operator.plan, self.session.scope.generation,
+                           self.operator.request, self.session.scope.deadline)
         self.operator.descriptors()
         for channel in self.channels:
             channel._alive()
@@ -212,7 +223,7 @@ class Supervisor:
         self.closed = True
         failures: list[BaseException] = []
         # End the effect path first. Observer close can wait up to five seconds.
-        for release in (self.session.abort, *(c.close for c in self.channels), self.operator.close):
+        for release in (self.session.abort, *(c.close for c in self.channels), self.consent.close, self.operator.close):
             try:
                 release()
             except BaseException as error:

@@ -32,6 +32,7 @@ from operator_guard import OperatorGuard
 from root_handoff import Channel, Scope, ReinspectionScope, now_ms
 from root_session_client import RootSession
 from root_supervisor import Supervisor
+from plan_consent import Offer, PlanConsent
 from storage_bootstrap import check_bank
 
 
@@ -188,10 +189,18 @@ def main():
             bank = os.open('/var/lib/niaos/roots', os.O_RDONLY | os.O_DIRECTORY | os.O_CLOEXEC)
             session = RootSession(scope, bank, hashlib.sha256(Path('/etc/niaos/root-bank-device.json').read_bytes()).digest(),
                 Path('/proc/sys/kernel/random/boot_id').read_text().strip())
+            text = b'Fixture: prepare an inactive root. No catalog or boot activation.\n'
+            offer = Offer(bytes.fromhex(REQUEST.decode()), bytes.fromhex(PLAN.decode()), scope.generation,
+                hashlib.sha256(text).digest(), scope.deadline, len(text),
+                bytes.fromhex(Path('/proc/sys/kernel/random/boot_id').read_text().strip().replace('-', '')))
+            consent = PlanConsent(peer.peer, offer)
+            consent.send_offer(text)
+            peer.confirm_plan()
+            assert consent.receive_confirmation()
             guard = OperatorGuard(peer.peer, bytes.fromhex(PLAN.decode()), bytes.fromhex(REQUEST.decode()),
                                   scope.deadline, interactive=False)
             admission = FixtureAdmission(scope)
-            supervisor = Supervisor(session, guard, admission)
+            supervisor = Supervisor(session, guard, admission, consent=consent)
             channel = Channel(pairs[0][0], pid, account.pw_uid, scope)
             pairs[0][0].close()
             parent.send('begin')

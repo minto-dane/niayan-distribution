@@ -1,3 +1,10 @@
+niaos-root-preparation (0.13.0) trixie; urgency=medium
+
+  * Require exact-plan consent bound to the operator connection in root supervision.
+  * Add authenticated adopted-request decoding without enabling a public launcher.
+
+ -- minto-dane <205936182+minto-dane@users.noreply.github.com>  Sun, 13 Sep 2026 02:00:00 +0000
+
 niaos-root-preparation (0.12.0) trixie; urgency=medium
 
   * Integrate private native handoffs and operator checks with a nonblocking

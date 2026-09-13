@@ -14,7 +14,7 @@ override_dh_auto_build:
 	$(MAKE) -C native/worker BUILD=../../build/native-worker -j1
 override_dh_auto_test:
 	$(MAKE) -C native/worker BUILD=../../build/native-worker check -j1
-	python3 -B -m py_compile native/root_bank.py native/root_freeze.py native/bank_device.py native/storage_bootstrap.py native/root_session.py native/root_session_worker.py native/root_worker_monitor.py native/supply_initialize.py native/operator_guard.py native/root_handoff.py native/root_session_client.py native/root_supervisor.py
+	python3 -B -m py_compile native/root_bank.py native/root_freeze.py native/bank_device.py native/storage_bootstrap.py native/root_session.py native/root_session_worker.py native/root_worker_monitor.py native/supply_initialize.py native/operator_guard.py native/root_handoff.py native/root_session_client.py native/root_supervisor.py native/plan_consent.py native/management_receiver.py native/management_grammar.py native/i18n.py
 override_dh_auto_install:
 override_dh_fixperms:
 	dh_fixperms

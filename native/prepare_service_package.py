@@ -14,7 +14,7 @@ def prepare(destination, component='root-preparation'):
         raise ValueError('unknown internal service component')
     packaging = distribution / 'packaging' / component
     files = [(p, p.relative_to(packaging)) for p in sorted(packaging.rglob('*')) if not p.is_dir()]
-    inputs = ('native/root_bank.py', 'native/root_freeze.py', 'native/bank_device.py', 'native/root_session.py', 'native/root_session_worker.py', 'native/root_worker_monitor.py', 'native/storage_bootstrap.py', 'native/supply_initialize.py', 'native/operator_guard.py', 'native/root_handoff.py', 'native/root_session_client.py', 'native/root_supervisor.py', 'native/worker/root_extract.c',
+    inputs = ('native/root_bank.py', 'native/root_freeze.py', 'native/bank_device.py', 'native/root_session.py', 'native/root_session_worker.py', 'native/root_worker_monitor.py', 'native/storage_bootstrap.py', 'native/supply_initialize.py', 'native/operator_guard.py', 'native/root_handoff.py', 'native/root_session_client.py', 'native/root_supervisor.py', 'native/plan_consent.py', 'native/management_receiver.py', 'native/management_grammar.py', 'native/i18n.py', 'native/worker/root_extract.c',
               'native/worker/tar_clocks.c', 'native/worker/tar_clocks.h',
               'native/worker/check_tar_clocks.c', 'native/worker/check_tar_clocks.py', 'native/worker/Makefile')
     if component == 'archive-observer':
@@ -24,7 +24,7 @@ def prepare(destination, component='root-preparation'):
             'deb_archive', 'debian_semantics', 'debian_triggers'))
     if component == 'management':
         inputs = tuple('native/' + name + '.py' for name in (
-            'package_cli', 'i18n', 'diagnostics', 'media', 'interim_commands',
+            'package_cli', 'management_grammar', 'management_client', 'plan_consent', 'i18n', 'diagnostics', 'media', 'interim_commands',
             'interim_package', 'interim_download', 'interim_intake', 'repository'))
         inputs += tuple('tools/' + name + '.py' for name in (
             'nia_common', 'deb_archive', 'debian_semantics', 'debian_triggers', 'zstd_bounded'))

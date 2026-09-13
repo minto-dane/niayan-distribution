@@ -2,358 +2,17 @@
 # Korean translations for the Nia management interface.
 # Copyright (C) 2026 NiaOS contributors.
 msgid ""
-msgstr "Project-Id-Version: nia-management 1\nReport-Msgid-Bugs-To: \nPO-Revision-Date: 2026-09-09 00:00+0000\nLast-Translator: NiaOS contributors\nLanguage-Team: Korean\nLanguage: ko\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=1; plural=0;\n"
-
-msgid "-I accepts only installp option flags"
-msgstr "-I에는 installp 옵션 플래그만 사용할 수 있습니다"
-
-msgid "-m must be 1, 2 or 3"
-msgstr "-m은 1, 2 또는 3이어야 합니다"
-
-msgid "-p requires -k FIX"
-msgstr "-p에는 -k FIX가 필요합니다"
-
-msgid "-r and -m are mutually exclusive"
-msgstr "-r과 -m은 함께 사용할 수 없습니다"
-
-msgid "-s cannot be combined with -x or -w"
-msgstr "-s는 -x 또는 -w와 함께 사용할 수 없습니다"
-
-msgid "-v does not accept file operands"
-msgstr "-v에는 파일 피연산자를 사용할 수 없습니다"
-
-msgid "A required file or directory does not exist."
-msgstr "필요한 파일 또는 디렉터리가 없습니다."
-
-msgid "A symbolic link was encountered where an ordinary path is required."
-msgstr "일반 경로가 필요한 위치에 심볼릭 링크가 있습니다."
-
-msgid "ABSTRACT"
-msgstr "요약"
-
-msgid "ACTIVATION"
-msgstr "활성화 조건"
-
-msgid "ADVISORIES"
-msgstr "수정 공지"
-
-msgid "An input/output operation failed; completion is not established."
-msgstr "입출력 작업이 실패했습니다. 작업 완료 여부를 확인하지 못했습니다."
-
-msgid "BASE LEVEL"
-msgstr "기본 버전"
-
-msgid "BASE SHA256"
-msgstr "기본 SHA256"
-
-msgid "CONFLICTS"
-msgstr "충돌 항목"
-
-msgid "CONTROL EFFECT"
-msgstr "제어 스크립트 효과"
-
-msgid "CREATED AT"
-msgstr "생성 시각"
-
-msgid "DLTarget must be absolute"
-msgstr "DLTarget은 절대 경로여야 합니다"
-
-msgid "Downloaded interim fix: {path}"
-msgstr "임시 수정 다운로드 완료: {path}"
-
-msgid "EFFECT CONTRACT SHA256"
-msgstr "효과 계약 SHA256"
-
-msgid "EFIX LABEL"
-msgstr "긴급 수정 레이블"
-
-msgid "EXPIRES AT"
-msgstr "만료 시각"
-
-msgid "FILE NUMBER"
-msgstr "파일 번호"
-
-msgid "FILE TYPE"
-msgstr "파일 유형"
-
-msgid "Foreign TL/SP/ML/PTF are not Nia release identifiers"
-msgstr "다른 플랫폼의 TL/SP/ML/PTF는 Nia 릴리스 식별자가 아닙니다"
-
-msgid "Invalid command option: {option}."
-msgstr "잘못된 명령 옵션: {option}."
-
-msgid "Invoke as: {commands}"
-msgstr "호출 방법: {commands}"
-
-msgid "LEVEL"
-msgstr "버전"
-
-msgid "LINK"
-msgstr "링크"
-
-msgid "LOCATION"
-msgstr "위치"
-
-msgid "Nia requires an explicit -d SOURCE for apply"
-msgstr "Nia에서 적용하려면 -d SOURCE를 명시해야 합니다"
-
-msgid "niayan development interface; native service is not connected.\nLocal epkg template builds and emgr -d displays are available.\nemgr_download_ifix requires provisioned authenticated repository policy.\nInstalled-package operations and interactive packaging are unavailable.\nDebian package names/versions are retained. Other reference-platform options are rejected."
-msgstr "niayan 개발 인터페이스입니다. 네이티브 서비스는 연결되지 않았습니다.\nepkg를 통한 로컬 템플릿 빌드와 emgr -d를 통한 표시는 사용할 수 있습니다.\nemgr_download_ifix에는 구성되고 인증된 저장소 정책이 필요합니다.\n설치된 패키지 작업과 대화형 패키지 생성은 사용할 수 없습니다.\nDebian 패키지 이름과 버전은 유지됩니다. 그 밖의 참조 플랫폼 옵션은 거부됩니다."
-
-msgid "PACKAGE"
-msgstr "패키지"
-
-msgid "PACKAGE SHA256"
-msgstr "패키지 SHA256"
-
-msgid "PRE-REQUISITES"
-msgstr "사전 요구 사항"
-
-msgid "PUBLISHER AUTHENTICATION"
-msgstr "게시자 인증"
-
-msgid "Package file is: {path}"
-msgstr "패키지 파일: {path}"
-
-msgid "Permission to access a required file or directory was denied."
-msgstr "필요한 파일 또는 디렉터리에 대한 접근 권한이 거부되었습니다."
-
-msgid "REBOOT REQUIRED"
-msgstr "재부팅 필요"
-
-msgid "ROLLBACK CONTRACT SHA256"
-msgstr "롤백 계약 SHA256"
-
-msgid "Repository authentication failed; no artifact was accepted."
-msgstr "저장소 인증이 실패했습니다. 어떤 산출물도 수락하지 않았습니다."
-
-msgid "Repository download failed; check the connection and repository configuration."
-msgstr "저장소 다운로드가 실패했습니다. 연결과 저장소 구성을 확인하세요."
-
-msgid "Repository policy changed during download; retry with the current policy."
-msgstr "다운로드 중 저장소 정책이 변경되었습니다. 현재 정책으로 다시 시도하세요."
-
-msgid "Repository policy ownership or permissions are not trusted."
-msgstr "저장소 정책의 소유자 또는 권한을 신뢰할 수 없습니다."
-
-msgid "SECURITY EPOCH"
-msgstr "보안 에포크"
-
-msgid "SHA256"
-msgstr "SHA256"
-
-msgid "SIZE"
-msgstr "크기"
-
-msgid "SUPERSEDE"
-msgstr "대체 항목"
-
-msgid "Storage is full; the operation did not complete."
-msgstr "저장 공간이 가득 찼습니다. 작업이 완료되지 않았습니다."
-
-msgid "TARGET SHA256"
-msgstr "대상 SHA256"
-
-msgid "The authenticated reference differs from the package manifest."
-msgstr "인증된 참조가 패키지 매니페스트와 다릅니다."
-
-msgid "The command label differs from the package control file."
-msgstr "명령 레이블이 패키지 제어 파일과 다릅니다."
-
-msgid "The download URL is outside the configured repository."
-msgstr "다운로드 URL이 구성된 저장소 범위 밖에 있습니다."
-
-msgid "The input is invalid or is not supported by this operation."
-msgstr "입력이 잘못되었거나 이 작업에서 지원되지 않습니다."
-
-msgid "The interim package expired during download."
-msgstr "다운로드 중 임시 수정 패키지가 만료되었습니다."
-
-msgid "The interim package has expired or is not yet valid."
-msgstr "임시 수정 패키지가 만료되었거나 아직 유효하지 않습니다."
-
-msgid "The interim package is older than the trusted security minimum."
-msgstr "임시 수정 패키지가 신뢰하는 최소 보안 기준보다 오래되었습니다."
-
-msgid "The operation could not be completed."
-msgstr "작업을 완료할 수 없습니다."
-
-msgid "The original package identity differs from the manifest."
-msgstr "원본 패키지 식별 정보가 매니페스트와 다릅니다."
-
-msgid "The output already exists and was not overwritten."
-msgstr "출력이 이미 존재하며 덮어쓰지 않았습니다."
-
-msgid "The package size or checksum does not match."
-msgstr "패키지 크기 또는 체크섬이 일치하지 않습니다."
-
-msgid "The repository is in use; retry after the current operation finishes."
-msgstr "저장소를 사용 중입니다. 현재 작업이 끝난 후 다시 시도하세요."
-
-msgid "The requested artifact is absent from the authenticated repository."
-msgstr "요청한 산출물이 인증된 저장소에 없습니다."
-
-msgid "The storage quota was exceeded; the operation did not complete."
-msgstr "저장 용량 할당량을 초과했습니다. 작업이 완료되지 않았습니다."
-
-msgid "all cannot be combined with names"
-msgstr "all은 이름과 함께 사용할 수 없습니다"
-
-msgid "at most one package for lock display"
-msgstr "잠금 표시에는 패키지를 최대 하나만 지정할 수 있습니다"
-
-msgid "at most one task ID"
-msgstr "작업 ID는 최대 하나만 지정할 수 있습니다"
-
-msgid "attribute edits for this SUMA action are not supported"
-msgstr "이 SUMA 작업에서는 속성 편집이 지원되지 않습니다"
-
-msgid "command input limit exceeded"
-msgstr "명령 입력 제한을 초과했습니다"
-
-msgid "conflicting geninstall actions"
-msgstr "geninstall 작업이 충돌합니다"
-
-msgid "conflicting installp actions"
-msgstr "installp 작업이 충돌합니다"
-
-msgid "conflicting interim actions"
-msgstr "임시 수정 작업이 충돌합니다"
-
-msgid "cron field out of range"
-msgstr "cron 필드가 범위를 벗어났습니다"
-
-msgid "cron step out of range"
-msgstr "cron 간격이 범위를 벗어났습니다"
-
-msgid "empty argument or control character"
-msgstr "빈 인수 또는 제어 문자입니다"
-
-msgid "empty fix keyword list"
-msgstr "수정 키워드 목록이 비어 있습니다"
-
-msgid "geninstall -I must select apply, not commit alone"
-msgstr "geninstall -I에는 커밋만이 아닌 적용 작업을 선택해야 합니다"
-
-msgid "incorrect task ID count"
-msgstr "작업 ID 개수가 잘못되었습니다"
-
-msgid "interim number must be a positive integer"
-msgstr "임시 수정 번호는 양의 정수여야 합니다"
-
-msgid "inutoc accepts at most one directory"
-msgstr "inutoc에는 디렉터리를 최대 하나만 지정할 수 있습니다"
-
-msgid "invalid interim fix label"
-msgstr "임시 수정 레이블이 잘못되었습니다"
-
-msgid "media listing requires -d SOURCE and no operands"
-msgstr "미디어 목록을 표시하려면 -d SOURCE가 필요하며 피연산자는 지정할 수 없습니다"
-
-msgid "missing or unsupported value for -{option}"
-msgstr "-{option}의 값이 없거나 지원되지 않습니다"
-
-msgid "name packages explicitly for reject/remove"
-msgstr "거부하거나 제거할 패키지 이름을 명시하세요"
-
-msgid "none"
-msgstr "없음"
-
-msgid "not established"
-msgstr "확인되지 않음"
-
-msgid "not verified"
-msgstr "검증되지 않음"
-
-msgid "option is not valid for this action"
-msgstr "이 작업에는 해당 옵션을 사용할 수 없습니다"
-
-msgid "options must precede operands; leading-dash operands are unsupported"
-msgstr "옵션은 피연산자 앞에 와야 합니다. 하이픈으로 시작하는 피연산자는 지원되지 않습니다"
-
-msgctxt "reboot-required"
-msgid "no"
-msgstr "아니요"
-
-msgctxt "reboot-required"
-msgid "yes"
-msgstr "예"
-
-msgid "recovery covers the interrupted transaction; no operands allowed"
-msgstr "복구는 중단된 트랜잭션을 대상으로 합니다. 피연산자는 허용되지 않습니다"
-
-msgid "repeated -{option}"
-msgstr "-{option}이 반복되었습니다"
-
-msgid "schedule needs five cron fields"
-msgstr "일정에는 cron 필드 다섯 개가 필요합니다"
-
-msgid "specify -L URL, without operands"
-msgstr "피연산자 없이 -L URL을 지정하세요"
-
-msgid "specify -d SOURCE"
-msgstr "-d SOURCE를 지정하세요"
-
-msgid "specify -d SOURCE, without operands"
-msgstr "피연산자 없이 -d SOURCE를 지정하세요"
-
-msgid "specify -d SOURCE, without package operands"
-msgstr "패키지 피연산자 없이 -d SOURCE를 지정하세요"
-
-msgid "specify -e PACKAGE_FILE"
-msgstr "-e PACKAGE_FILE을 지정하세요"
-
-msgid "specify -x, -w or -s"
-msgstr "-x, -w 또는 -s를 지정하세요"
-
-msgid "specify exactly one action from {actions}"
-msgstr "{actions}에서 작업을 정확히 하나 지정하세요"
-
-msgid "specify one interim fix label"
-msgstr "임시 수정 레이블을 하나 지정하세요"
-
-msgid "specify one interim package with -e or as an operand"
-msgstr "-e 또는 피연산자로 임시 수정 패키지를 하나 지정하세요"
-
-msgid "specify one selector for remove, at most one for list/check"
-msgstr "제거에는 선택 조건을 하나, 목록 표시나 검사에는 최대 하나 지정하세요"
-
-msgid "specify operands or -f LIST"
-msgstr "피연산자 또는 -f LIST를 지정하세요"
-
-msgid "task IDs must be numeric"
-msgstr "작업 ID는 숫자여야 합니다"
-
-msgid "unknown package command"
-msgstr "알 수 없는 패키지 명령입니다"
-
-msgid "unknown, duplicate or malformed SUMA attribute"
-msgstr "알 수 없거나 중복되거나 형식이 잘못된 SUMA 속성입니다"
-
-msgid "unsupported SUMA Action"
-msgstr "지원되지 않는 SUMA Action입니다"
-
-msgid "unsupported cron field"
-msgstr "지원되지 않는 cron 필드입니다"
-
-msgid "unsupported installp flags in -I"
-msgstr "-I에 지원되지 않는 installp 옵션 플래그가 있습니다"
-
-msgid "use -k for fix keywords"
-msgstr "수정 키워드에는 -k를 사용하세요"
-
-msgid "verbosity must be 1, 2 or 3"
-msgstr "상세 수준은 1, 2 또는 3이어야 합니다"
-
-msgid "{command}: {action}: native package service is not connected; no operation or preview was performed."
-msgstr "{command}: {action}: 네이티브 패키지 서비스가 연결되지 않았습니다. 어떤 작업이나 미리 보기도 수행하지 않았습니다."
-
-msgid "{label}: {value}"
-msgstr "{label}: {value}"
-
-
-msgid "Local media indexing and listing are available through inutoc, installp and geninstall."
-msgstr "inutoc, installp, geninstall을 통해 로컬 매체의 색인을 만들고 목록을 표시할 수 있습니다."
+msgstr ""
+"Project-Id-Version: nia-management 1\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-09-09 00:00+0000\n"
+"Last-Translator: NiaOS contributors\n"
+"Language-Team: Korean\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 msgid "The media index is stale; rebuild it with inutoc."
 msgstr "매체 색인이 오래되었습니다. inutoc으로 다시 만드십시오."
@@ -361,5 +20,402 @@ msgstr "매체 색인이 오래되었습니다. inutoc으로 다시 만드십시
 msgid "The media changed during inspection; retry after changes have finished."
 msgstr "검사 중에 매체가 변경되었습니다. 변경이 끝난 후 다시 시도하십시오."
 
+msgid "The command label differs from the package control file."
+msgstr "명령 레이블이 패키지 제어 파일과 다릅니다."
+
+msgid "The original package identity differs from the manifest."
+msgstr "원본 패키지 식별 정보가 매니페스트와 다릅니다."
+
+msgid "The package size or checksum does not match."
+msgstr "패키지 크기 또는 체크섬이 일치하지 않습니다."
+
+msgid "The interim package has expired or is not yet valid."
+msgstr "임시 수정 패키지가 만료되었거나 아직 유효하지 않습니다."
+
+msgid "The interim package expired during download."
+msgstr "다운로드 중 임시 수정 패키지가 만료되었습니다."
+
+msgid "The interim package is older than the trusted security minimum."
+msgstr "임시 수정 패키지가 신뢰하는 최소 보안 기준보다 오래되었습니다."
+
+msgid "The authenticated reference differs from the package manifest."
+msgstr "인증된 참조가 패키지 매니페스트와 다릅니다."
+
+msgid ""
+"Repository policy changed during download; retry with the current policy."
+msgstr ""
+"다운로드 중 저장소 정책이 변경되었습니다. 현재 정책으로 다시 시도하세요."
+
+msgid "Repository policy ownership or permissions are not trusted."
+msgstr "저장소 정책의 소유자 또는 권한을 신뢰할 수 없습니다."
+
+msgid "The download URL is outside the configured repository."
+msgstr "다운로드 URL이 구성된 저장소 범위 밖에 있습니다."
+
+msgid "The requested artifact is absent from the authenticated repository."
+msgstr "요청한 산출물이 인증된 저장소에 없습니다."
+
+msgid "A required file or directory does not exist."
+msgstr "필요한 파일 또는 디렉터리가 없습니다."
+
+msgid "The output already exists and was not overwritten."
+msgstr "출력이 이미 존재하며 덮어쓰지 않았습니다."
+
+msgid "Permission to access a required file or directory was denied."
+msgstr "필요한 파일 또는 디렉터리에 대한 접근 권한이 거부되었습니다."
+
+msgid "Storage is full; the operation did not complete."
+msgstr "저장 공간이 가득 찼습니다. 작업이 완료되지 않았습니다."
+
+msgid "The storage quota was exceeded; the operation did not complete."
+msgstr "저장 용량 할당량을 초과했습니다. 작업이 완료되지 않았습니다."
+
+msgid "A symbolic link was encountered where an ordinary path is required."
+msgstr "일반 경로가 필요한 위치에 심볼릭 링크가 있습니다."
+
+msgid "The repository is in use; retry after the current operation finishes."
+msgstr "저장소를 사용 중입니다. 현재 작업이 끝난 후 다시 시도하세요."
+
+msgid "An input/output operation failed; completion is not established."
+msgstr "입출력 작업이 실패했습니다. 작업 완료 여부를 확인하지 못했습니다."
+
+msgid "The input is invalid or is not supported by this operation."
+msgstr "입력이 잘못되었거나 이 작업에서 지원되지 않습니다."
+
+msgid ""
+"Repository download failed; check the connection and repository "
+"configuration."
+msgstr "저장소 다운로드가 실패했습니다. 연결과 저장소 구성을 확인하세요."
+
+msgid "Repository authentication failed; no artifact was accepted."
+msgstr "저장소 인증이 실패했습니다. 어떤 산출물도 수락하지 않았습니다."
+
+msgid "The operation could not be completed."
+msgstr "작업을 완료할 수 없습니다."
+
+msgid "schedule needs five cron fields"
+msgstr "일정에는 cron 필드 다섯 개가 필요합니다"
+
+msgid "unsupported cron field"
+msgstr "지원되지 않는 cron 필드입니다"
+
+msgid "cron step out of range"
+msgstr "cron 간격이 범위를 벗어났습니다"
+
+msgid "cron field out of range"
+msgstr "cron 필드가 범위를 벗어났습니다"
+
+msgid "unknown package command"
+msgstr "알 수 없는 패키지 명령입니다"
+
+msgid "command input limit exceeded"
+msgstr "명령 입력 제한을 초과했습니다"
+
+msgid "empty argument or control character"
+msgstr "빈 인수 또는 제어 문자입니다"
+
+#, python-brace-format
+msgid "Invalid command option: {option}."
+msgstr "잘못된 명령 옵션: {option}."
+
+msgid "unknown, duplicate or malformed SUMA attribute"
+msgstr "알 수 없거나 중복되거나 형식이 잘못된 SUMA 속성입니다"
+
+#, python-brace-format
+msgid "repeated -{option}"
+msgstr "-{option}이 반복되었습니다"
+
+#, python-brace-format
+msgid "missing or unsupported value for -{option}"
+msgstr "-{option}의 값이 없거나 지원되지 않습니다"
+
+msgid "options must precede operands; leading-dash operands are unsupported"
+msgstr ""
+"옵션은 피연산자 앞에 와야 합니다. 하이픈으로 시작하는 피연산자는 지원되지 않"
+"습니다"
+
+msgid "option is not valid for this action"
+msgstr "이 작업에는 해당 옵션을 사용할 수 없습니다"
+
+#, python-brace-format
+msgid "specify exactly one action from {actions}"
+msgstr "{actions}에서 작업을 정확히 하나 지정하세요"
+
+msgid "conflicting installp actions"
+msgstr "installp 작업이 충돌합니다"
+
+msgid "specify operands or -f LIST"
+msgstr "피연산자 또는 -f LIST를 지정하세요"
+
+msgid "all cannot be combined with names"
+msgstr "all은 이름과 함께 사용할 수 없습니다"
+
+msgid "name packages explicitly for reject/remove"
+msgstr "거부하거나 제거할 패키지 이름을 명시하세요"
+
+msgid "Nia requires an explicit -d SOURCE for apply"
+msgstr "Nia에서 적용하려면 -d SOURCE를 명시해야 합니다"
+
+msgid "media listing requires -d SOURCE and no operands"
+msgstr ""
+"미디어 목록을 표시하려면 -d SOURCE가 필요하며 피연산자는 지정할 수 없습니다"
+
+msgid "recovery covers the interrupted transaction; no operands allowed"
+msgstr "복구는 중단된 트랜잭션을 대상으로 합니다. 피연산자는 허용되지 않습니다"
+
+msgid "-m must be 1, 2 or 3"
+msgstr "-m은 1, 2 또는 3이어야 합니다"
+
+msgid "-v does not accept file operands"
+msgstr "-v에는 파일 피연산자를 사용할 수 없습니다"
+
+msgid "specify -d SOURCE, without package operands"
+msgstr "패키지 피연산자 없이 -d SOURCE를 지정하세요"
+
+msgid "use -k for fix keywords"
+msgstr "수정 키워드에는 -k를 사용하세요"
+
+msgid "specify -d SOURCE"
+msgstr "-d SOURCE를 지정하세요"
+
+msgid "-p requires -k FIX"
+msgstr "-p에는 -k FIX가 필요합니다"
+
+msgid "empty fix keyword list"
+msgstr "수정 키워드 목록이 비어 있습니다"
+
+msgid "inutoc accepts at most one directory"
+msgstr "inutoc에는 디렉터리를 최대 하나만 지정할 수 있습니다"
+
+msgid "conflicting geninstall actions"
+msgstr "geninstall 작업이 충돌합니다"
+
+msgid "unsupported installp flags in -I"
+msgstr "-I에 지원되지 않는 installp 옵션 플래그가 있습니다"
+
+msgid "-I accepts only installp option flags"
+msgstr "-I에는 installp 옵션 플래그만 사용할 수 있습니다"
+
+msgid "geninstall -I must select apply, not commit alone"
+msgstr "geninstall -I에는 커밋만이 아닌 적용 작업을 선택해야 합니다"
+
+msgid "task IDs must be numeric"
+msgstr "작업 ID는 숫자여야 합니다"
+
+msgid "attribute edits for this SUMA action are not supported"
+msgstr "이 SUMA 작업에서는 속성 편집이 지원되지 않습니다"
+
+msgid "incorrect task ID count"
+msgstr "작업 ID 개수가 잘못되었습니다"
+
+msgid "at most one task ID"
+msgstr "작업 ID는 최대 하나만 지정할 수 있습니다"
+
+msgid "specify -x, -w or -s"
+msgstr "-x, -w 또는 -s를 지정하세요"
+
+msgid "-s cannot be combined with -x or -w"
+msgstr "-s는 -x 또는 -w와 함께 사용할 수 없습니다"
+
+msgid "Foreign TL/SP/ML/PTF are not Nia release identifiers"
+msgstr "다른 플랫폼의 TL/SP/ML/PTF는 Nia 릴리스 식별자가 아닙니다"
+
+msgid "unsupported SUMA Action"
+msgstr "지원되지 않는 SUMA Action입니다"
+
+msgid "DLTarget must be absolute"
+msgstr "DLTarget은 절대 경로여야 합니다"
+
+msgid "specify -L URL, without operands"
+msgstr "피연산자 없이 -L URL을 지정하세요"
+
+msgid "specify one interim fix label"
+msgstr "임시 수정 레이블을 하나 지정하세요"
+
+msgid "invalid interim fix label"
+msgstr "임시 수정 레이블이 잘못되었습니다"
+
+msgid "conflicting interim actions"
+msgstr "임시 수정 작업이 충돌합니다"
+
+msgid "specify one interim package with -e or as an operand"
+msgstr "-e 또는 피연산자로 임시 수정 패키지를 하나 지정하세요"
+
+msgid "specify one selector for remove, at most one for list/check"
+msgstr "제거에는 선택 조건을 하나, 목록 표시나 검사에는 최대 하나 지정하세요"
+
+msgid "interim number must be a positive integer"
+msgstr "임시 수정 번호는 양의 정수여야 합니다"
+
+msgid "at most one package for lock display"
+msgstr "잠금 표시에는 패키지를 최대 하나만 지정할 수 있습니다"
+
+msgid "specify -e PACKAGE_FILE"
+msgstr "-e PACKAGE_FILE을 지정하세요"
+
+msgid "verbosity must be 1, 2 or 3"
+msgstr "상세 수준은 1, 2 또는 3이어야 합니다"
+
+msgid "specify -d SOURCE, without operands"
+msgstr "피연산자 없이 -d SOURCE를 지정하세요"
+
+msgid "-r and -m are mutually exclusive"
+msgstr "-r과 -m은 함께 사용할 수 없습니다"
+
+#, python-brace-format
+msgid "Invoke as: {commands}"
+msgstr "호출 방법: {commands}"
+
+msgid ""
+"niayan development interface; native service is not connected.\n"
+"Local epkg template builds and emgr -d displays are available.\n"
+"emgr_download_ifix requires provisioned authenticated repository policy.\n"
+"Installed-package operations and interactive packaging are unavailable.\n"
+"Debian package names/versions are retained. Other reference-platform options "
+"are rejected."
+msgstr ""
+"niayan 개발 인터페이스입니다. 네이티브 서비스는 연결되지 않았습니다.\n"
+"epkg를 통한 로컬 템플릿 빌드와 emgr -d를 통한 표시는 사용할 수 있습니다.\n"
+"emgr_download_ifix에는 구성되고 인증된 저장소 정책이 필요합니다.\n"
+"설치된 패키지 작업과 대화형 패키지 생성은 사용할 수 없습니다.\n"
+"Debian 패키지 이름과 버전은 유지됩니다. 그 밖의 참조 플랫폼 옵션은 거부됩니"
+"다."
+
+msgid ""
+"Local media indexing and listing are available through inutoc, installp and "
+"geninstall."
+msgstr ""
+"inutoc, installp, geninstall을 통해 로컬 매체의 색인을 만들고 목록을 표시할 "
+"수 있습니다."
+
+#, python-brace-format
+msgid "{label}: {value}"
+msgstr "{label}: {value}"
+
+msgid "EFIX LABEL"
+msgstr "긴급 수정 레이블"
+
+msgid "ABSTRACT"
+msgstr "요약"
+
+msgid "REBOOT REQUIRED"
+msgstr "재부팅 필요"
+
+msgctxt "reboot-required"
+msgid "yes"
+msgstr "예"
+
+msgid "not established"
+msgstr "확인되지 않음"
+
+msgctxt "reboot-required"
+msgid "no"
+msgstr "아니요"
+
+msgid "PRE-REQUISITES"
+msgstr "사전 요구 사항"
+
+msgid "none"
+msgstr "없음"
+
+msgid "SUPERSEDE"
+msgstr "대체 항목"
+
+msgid "CONFLICTS"
+msgstr "충돌 항목"
+
+msgid "ADVISORIES"
+msgstr "수정 공지"
+
+msgid "PACKAGE SHA256"
+msgstr "패키지 SHA256"
+
+msgid "CREATED AT"
+msgstr "생성 시각"
+
+msgid "EXPIRES AT"
+msgstr "만료 시각"
+
+msgid "SECURITY EPOCH"
+msgstr "보안 에포크"
+
+msgid "ROLLBACK CONTRACT SHA256"
+msgstr "롤백 계약 SHA256"
+
+msgid "PUBLISHER AUTHENTICATION"
+msgstr "게시자 인증"
+
+msgid "not verified"
+msgstr "검증되지 않음"
+
+msgid "PACKAGE"
+msgstr "패키지"
+
+msgid "LEVEL"
+msgstr "버전"
+
+msgid "BASE LEVEL"
+msgstr "기본 버전"
+
+msgid "ACTIVATION"
+msgstr "활성화 조건"
+
+msgid "CONTROL EFFECT"
+msgstr "제어 스크립트 효과"
+
+msgid "BASE SHA256"
+msgstr "기본 SHA256"
+
+msgid "TARGET SHA256"
+msgstr "대상 SHA256"
+
+msgid "EFFECT CONTRACT SHA256"
+msgstr "효과 계약 SHA256"
+
+msgid "FILE NUMBER"
+msgstr "파일 번호"
+
+msgid "LOCATION"
+msgstr "위치"
+
+msgid "FILE TYPE"
+msgstr "파일 유형"
+
+msgid "SIZE"
+msgstr "크기"
+
+msgid "SHA256"
+msgstr "SHA256"
+
+msgid "LINK"
+msgstr "링크"
+
+#, python-brace-format
+msgid "Package file is: {path}"
+msgstr "패키지 파일: {path}"
+
+#, python-brace-format
+msgid "Downloaded interim fix: {path}"
+msgstr "임시 수정 다운로드 완료: {path}"
+
 msgid "ARCHITECTURE"
 msgstr "아키텍처"
+
+msgid ""
+"Approve exactly this plan? Type yes to continue; any other answer cancels."
+msgstr ""
+"이 계획을 그대로 승인하시겠습니까? 계속하려면 yes를 입력하세요. 다른 응답은 "
+"취소합니다."
+
+msgid "Plan cancelled; no confirmation was granted."
+msgstr "계획을 취소했습니다. 동의가 부여되지 않았습니다."
+
+msgid "The request outcome is unconfirmed. No automatic retry was performed."
+msgstr "요청 결과를 확인할 수 없습니다. 자동으로 다시 시도하지 않았습니다."
+
+msgid "The native package service is unavailable; no request was sent."
+msgstr "네이티브 패키지 서비스를 사용할 수 없어 요청을 보내지 않았습니다."
+
+#, python-brace-format
+msgid "Diagnostic: {reason}"
+msgstr "진단: {reason}"

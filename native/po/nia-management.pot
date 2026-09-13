@@ -94,6 +94,24 @@ msgstr ""
 msgid "The operation could not be completed."
 msgstr ""
 
+#, python-brace-format
+msgid "Invoke as: {commands}"
+msgstr ""
+
+msgid ""
+"niayan development interface; native service is not connected.\n"
+"Local epkg template builds and emgr -d displays are available.\n"
+"emgr_download_ifix requires provisioned authenticated repository policy.\n"
+"Installed-package operations and interactive packaging are unavailable.\n"
+"Debian package names/versions are retained. Other reference-platform options "
+"are rejected."
+msgstr ""
+
+msgid ""
+"Local media indexing and listing are available through inutoc, installp and "
+"geninstall."
+msgstr ""
+
 msgid "schedule needs five cron fields"
 msgstr ""
 
@@ -261,30 +279,6 @@ msgid "-r and -m are mutually exclusive"
 msgstr ""
 
 #, python-brace-format
-msgid "Invoke as: {commands}"
-msgstr ""
-
-msgid ""
-"niayan development interface; native service is not connected.\n"
-"Local epkg template builds and emgr -d displays are available.\n"
-"emgr_download_ifix requires provisioned authenticated repository policy.\n"
-"Installed-package operations and interactive packaging are unavailable.\n"
-"Debian package names/versions are retained. Other reference-platform options "
-"are rejected."
-msgstr ""
-
-msgid ""
-"Local media indexing and listing are available through inutoc, installp and "
-"geninstall."
-msgstr ""
-
-#, python-brace-format
-msgid ""
-"{command}: {action}: native package service is not connected; no operation "
-"or preview was performed."
-msgstr ""
-
-#, python-brace-format
 msgid "{label}: {value}"
 msgstr ""
 
@@ -395,4 +389,21 @@ msgid "Downloaded interim fix: {path}"
 msgstr ""
 
 msgid "ARCHITECTURE"
+msgstr ""
+
+msgid ""
+"Approve exactly this plan? Type yes to continue; any other answer cancels."
+msgstr ""
+
+msgid "Plan cancelled; no confirmation was granted."
+msgstr ""
+
+msgid "The request outcome is unconfirmed. No automatic retry was performed."
+msgstr ""
+
+msgid "The native package service is unavailable; no request was sent."
+msgstr ""
+
+#, python-brace-format
+msgid "Diagnostic: {reason}"
 msgstr ""

@@ -2,358 +2,17 @@
 # Traditional Chinese translations for the Nia management interface.
 # Copyright (C) 2026 NiaOS contributors.
 msgid ""
-msgstr "Project-Id-Version: nia-management 1\nReport-Msgid-Bugs-To: \nPO-Revision-Date: 2026-09-09 00:00+0000\nLast-Translator: NiaOS contributors\nLanguage-Team: Traditional Chinese\nLanguage: zh_TW\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=1; plural=0;\n"
-
-msgid "-I accepts only installp option flags"
-msgstr "-I 僅接受 installp 選項旗標"
-
-msgid "-m must be 1, 2 or 3"
-msgstr "-m 必須為 1、2 或 3"
-
-msgid "-p requires -k FIX"
-msgstr "-p 需要 -k FIX"
-
-msgid "-r and -m are mutually exclusive"
-msgstr "-r 與 -m 不能同時使用"
-
-msgid "-s cannot be combined with -x or -w"
-msgstr "-s 不能與 -x 或 -w 一起使用"
-
-msgid "-v does not accept file operands"
-msgstr "-v 不接受檔案運算元"
-
-msgid "A required file or directory does not exist."
-msgstr "必要的檔案或目錄不存在。"
-
-msgid "A symbolic link was encountered where an ordinary path is required."
-msgstr "需要一般路徑的位置存在符號連結。"
-
-msgid "ABSTRACT"
-msgstr "摘要"
-
-msgid "ACTIVATION"
-msgstr "啟用條件"
-
-msgid "ADVISORIES"
-msgstr "修正公告"
-
-msgid "An input/output operation failed; completion is not established."
-msgstr "輸入/輸出操作失敗；尚未確認操作是否完成。"
-
-msgid "BASE LEVEL"
-msgstr "基礎版本"
-
-msgid "BASE SHA256"
-msgstr "基礎 SHA256"
-
-msgid "CONFLICTS"
-msgstr "衝突項目"
-
-msgid "CONTROL EFFECT"
-msgstr "控制指令碼效果"
-
-msgid "CREATED AT"
-msgstr "建立時間"
-
-msgid "DLTarget must be absolute"
-msgstr "DLTarget 必須是絕對路徑"
-
-msgid "Downloaded interim fix: {path}"
-msgstr "已下載暫時修正：{path}"
-
-msgid "EFFECT CONTRACT SHA256"
-msgstr "效果契約 SHA256"
-
-msgid "EFIX LABEL"
-msgstr "緊急修正標籤"
-
-msgid "EXPIRES AT"
-msgstr "到期時間"
-
-msgid "FILE NUMBER"
-msgstr "檔案編號"
-
-msgid "FILE TYPE"
-msgstr "檔案類型"
-
-msgid "Foreign TL/SP/ML/PTF are not Nia release identifiers"
-msgstr "其他平台的 TL/SP/ML/PTF 不是 Nia 發行版本識別碼"
-
-msgid "Invalid command option: {option}."
-msgstr "無效的命令選項：{option}。"
-
-msgid "Invoke as: {commands}"
-msgstr "呼叫方式：{commands}"
-
-msgid "LEVEL"
-msgstr "版本"
-
-msgid "LINK"
-msgstr "連結"
-
-msgid "LOCATION"
-msgstr "位置"
-
-msgid "Nia requires an explicit -d SOURCE for apply"
-msgstr "Nia 在套用時要求明確指定 -d SOURCE"
-
-msgid "niayan development interface; native service is not connected.\nLocal epkg template builds and emgr -d displays are available.\nemgr_download_ifix requires provisioned authenticated repository policy.\nInstalled-package operations and interactive packaging are unavailable.\nDebian package names/versions are retained. Other reference-platform options are rejected."
-msgstr "niayan 開發介面；尚未連接原生服務。\n可使用 epkg 從本機範本建置，以及使用 emgr -d 顯示內容。\nemgr_download_ifix 需要已設定且經過驗證的套件庫政策。\n尚不支援已安裝套件操作和互動式套件建立。\n保留 Debian 套件的名稱和版本。其他參考平台選項將被拒絕。"
-
-msgid "PACKAGE"
-msgstr "套件"
-
-msgid "PACKAGE SHA256"
-msgstr "套件 SHA256"
-
-msgid "PRE-REQUISITES"
-msgstr "先決條件"
-
-msgid "PUBLISHER AUTHENTICATION"
-msgstr "發布者驗證"
-
-msgid "Package file is: {path}"
-msgstr "套件檔案：{path}"
-
-msgid "Permission to access a required file or directory was denied."
-msgstr "存取必要檔案或目錄的權限遭拒。"
-
-msgid "REBOOT REQUIRED"
-msgstr "需要重新啟動"
-
-msgid "ROLLBACK CONTRACT SHA256"
-msgstr "回復契約 SHA256"
-
-msgid "Repository authentication failed; no artifact was accepted."
-msgstr "套件庫驗證失敗；未接受任何產物。"
-
-msgid "Repository download failed; check the connection and repository configuration."
-msgstr "套件庫下載失敗；請檢查連線和套件庫設定。"
-
-msgid "Repository policy changed during download; retry with the current policy."
-msgstr "下載期間套件庫政策已變更；請使用目前的政策重試。"
-
-msgid "Repository policy ownership or permissions are not trusted."
-msgstr "套件庫政策的擁有者或權限不可信任。"
-
-msgid "SECURITY EPOCH"
-msgstr "安全紀元"
-
-msgid "SHA256"
-msgstr "SHA256"
-
-msgid "SIZE"
-msgstr "大小"
-
-msgid "SUPERSEDE"
-msgstr "取代項目"
-
-msgid "Storage is full; the operation did not complete."
-msgstr "儲存空間已滿；操作未完成。"
-
-msgid "TARGET SHA256"
-msgstr "目標 SHA256"
-
-msgid "The authenticated reference differs from the package manifest."
-msgstr "經過驗證的參照與套件清單不一致。"
-
-msgid "The command label differs from the package control file."
-msgstr "命令標籤與套件控制檔案不一致。"
-
-msgid "The download URL is outside the configured repository."
-msgstr "下載 URL 不在設定的套件庫範圍內。"
-
-msgid "The input is invalid or is not supported by this operation."
-msgstr "輸入無效或此操作不支援該輸入。"
-
-msgid "The interim package expired during download."
-msgstr "暫時修正套件在下載期間已過期。"
-
-msgid "The interim package has expired or is not yet valid."
-msgstr "暫時修正套件已過期或尚未生效。"
-
-msgid "The interim package is older than the trusted security minimum."
-msgstr "暫時修正套件低於可信任的最低安全要求。"
-
-msgid "The operation could not be completed."
-msgstr "無法完成操作。"
-
-msgid "The original package identity differs from the manifest."
-msgstr "原始套件識別與清單不一致。"
-
-msgid "The output already exists and was not overwritten."
-msgstr "輸出已存在，未被覆寫。"
-
-msgid "The package size or checksum does not match."
-msgstr "套件大小或校驗和不符。"
-
-msgid "The repository is in use; retry after the current operation finishes."
-msgstr "套件庫正在使用中；請在目前的操作完成後重試。"
-
-msgid "The requested artifact is absent from the authenticated repository."
-msgstr "經過驗證的套件庫中不存在要求的產物。"
-
-msgid "The storage quota was exceeded; the operation did not complete."
-msgstr "已超過儲存配額；操作未完成。"
-
-msgid "all cannot be combined with names"
-msgstr "all 不能與名稱一起使用"
-
-msgid "at most one package for lock display"
-msgstr "顯示鎖定資訊時最多只能指定一個套件"
-
-msgid "at most one task ID"
-msgstr "最多只能指定一個工作 ID"
-
-msgid "attribute edits for this SUMA action are not supported"
-msgstr "此 SUMA 操作不支援編輯屬性"
-
-msgid "command input limit exceeded"
-msgstr "命令輸入超過限制"
-
-msgid "conflicting geninstall actions"
-msgstr "geninstall 操作互相衝突"
-
-msgid "conflicting installp actions"
-msgstr "installp 操作互相衝突"
-
-msgid "conflicting interim actions"
-msgstr "暫時修正操作互相衝突"
-
-msgid "cron field out of range"
-msgstr "cron 欄位超出範圍"
-
-msgid "cron step out of range"
-msgstr "cron 間隔值超出範圍"
-
-msgid "empty argument or control character"
-msgstr "引數為空或包含控制字元"
-
-msgid "empty fix keyword list"
-msgstr "修正關鍵字清單為空"
-
-msgid "geninstall -I must select apply, not commit alone"
-msgstr "geninstall -I 必須選擇套用操作，不能僅選擇提交操作"
-
-msgid "incorrect task ID count"
-msgstr "工作 ID 數量不正確"
-
-msgid "interim number must be a positive integer"
-msgstr "暫時修正編號必須是正整數"
-
-msgid "inutoc accepts at most one directory"
-msgstr "inutoc 最多接受一個目錄"
-
-msgid "invalid interim fix label"
-msgstr "暫時修正標籤無效"
-
-msgid "media listing requires -d SOURCE and no operands"
-msgstr "列出媒體內容需要 -d SOURCE，且不能提供運算元"
-
-msgid "missing or unsupported value for -{option}"
-msgstr "-{option} 的值缺漏或不受支援"
-
-msgid "name packages explicitly for reject/remove"
-msgstr "拒絕或移除時請明確指定套件名稱"
-
-msgid "none"
-msgstr "無"
-
-msgid "not established"
-msgstr "尚未確認"
-
-msgid "not verified"
-msgstr "未驗證"
-
-msgid "option is not valid for this action"
-msgstr "此操作不能使用該選項"
-
-msgid "options must precede operands; leading-dash operands are unsupported"
-msgstr "選項必須位於運算元之前；不支援以連字號開頭的運算元"
-
-msgctxt "reboot-required"
-msgid "no"
-msgstr "否"
-
-msgctxt "reboot-required"
-msgid "yes"
-msgstr "是"
-
-msgid "recovery covers the interrupted transaction; no operands allowed"
-msgstr "復原針對中斷的交易；不允許提供運算元"
-
-msgid "repeated -{option}"
-msgstr "重複指定了 -{option}"
-
-msgid "schedule needs five cron fields"
-msgstr "排程需要五個 cron 欄位"
-
-msgid "specify -L URL, without operands"
-msgstr "請指定 -L URL，不要提供運算元"
-
-msgid "specify -d SOURCE"
-msgstr "請指定 -d SOURCE"
-
-msgid "specify -d SOURCE, without operands"
-msgstr "請指定 -d SOURCE，不要提供運算元"
-
-msgid "specify -d SOURCE, without package operands"
-msgstr "請指定 -d SOURCE，不要提供套件運算元"
-
-msgid "specify -e PACKAGE_FILE"
-msgstr "請指定 -e PACKAGE_FILE"
-
-msgid "specify -x, -w or -s"
-msgstr "請指定 -x、-w 或 -s"
-
-msgid "specify exactly one action from {actions}"
-msgstr "請從 {actions} 中指定且僅指定一個操作"
-
-msgid "specify one interim fix label"
-msgstr "請指定一個暫時修正標籤"
-
-msgid "specify one interim package with -e or as an operand"
-msgstr "請使用 -e 或運算元指定一個暫時修正套件"
-
-msgid "specify one selector for remove, at most one for list/check"
-msgstr "移除時請指定一個選取條件；列出或檢查時最多指定一個"
-
-msgid "specify operands or -f LIST"
-msgstr "請指定運算元或 -f LIST"
-
-msgid "task IDs must be numeric"
-msgstr "工作 ID 必須為數字"
-
-msgid "unknown package command"
-msgstr "未知的套件命令"
-
-msgid "unknown, duplicate or malformed SUMA attribute"
-msgstr "SUMA 屬性未知、重複或格式錯誤"
-
-msgid "unsupported SUMA Action"
-msgstr "不支援的 SUMA Action"
-
-msgid "unsupported cron field"
-msgstr "不支援的 cron 欄位"
-
-msgid "unsupported installp flags in -I"
-msgstr "-I 中包含不支援的 installp 選項旗標"
-
-msgid "use -k for fix keywords"
-msgstr "請使用 -k 指定修正關鍵字"
-
-msgid "verbosity must be 1, 2 or 3"
-msgstr "詳細程度必須為 1、2 或 3"
-
-msgid "{command}: {action}: native package service is not connected; no operation or preview was performed."
-msgstr "{command}：{action}：尚未連接原生套件服務；未執行任何操作或預覽。"
-
-msgid "{label}: {value}"
-msgstr "{label}：{value}"
-
-
-msgid "Local media indexing and listing are available through inutoc, installp and geninstall."
-msgstr "可透過 inutoc、installp 和 geninstall 建立本機媒體索引並列出內容。"
+msgstr ""
+"Project-Id-Version: nia-management 1\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-09-09 00:00+0000\n"
+"Last-Translator: NiaOS contributors\n"
+"Language-Team: Traditional Chinese\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 msgid "The media index is stale; rebuild it with inutoc."
 msgstr "媒體索引已過時；請使用 inutoc 重新建立。"
@@ -361,5 +20,393 @@ msgstr "媒體索引已過時；請使用 inutoc 重新建立。"
 msgid "The media changed during inspection; retry after changes have finished."
 msgstr "檢查期間媒體發生了變更；請在變更完成後重試。"
 
+msgid "The command label differs from the package control file."
+msgstr "命令標籤與套件控制檔案不一致。"
+
+msgid "The original package identity differs from the manifest."
+msgstr "原始套件識別與清單不一致。"
+
+msgid "The package size or checksum does not match."
+msgstr "套件大小或校驗和不符。"
+
+msgid "The interim package has expired or is not yet valid."
+msgstr "暫時修正套件已過期或尚未生效。"
+
+msgid "The interim package expired during download."
+msgstr "暫時修正套件在下載期間已過期。"
+
+msgid "The interim package is older than the trusted security minimum."
+msgstr "暫時修正套件低於可信任的最低安全要求。"
+
+msgid "The authenticated reference differs from the package manifest."
+msgstr "經過驗證的參照與套件清單不一致。"
+
+msgid ""
+"Repository policy changed during download; retry with the current policy."
+msgstr "下載期間套件庫政策已變更；請使用目前的政策重試。"
+
+msgid "Repository policy ownership or permissions are not trusted."
+msgstr "套件庫政策的擁有者或權限不可信任。"
+
+msgid "The download URL is outside the configured repository."
+msgstr "下載 URL 不在設定的套件庫範圍內。"
+
+msgid "The requested artifact is absent from the authenticated repository."
+msgstr "經過驗證的套件庫中不存在要求的產物。"
+
+msgid "A required file or directory does not exist."
+msgstr "必要的檔案或目錄不存在。"
+
+msgid "The output already exists and was not overwritten."
+msgstr "輸出已存在，未被覆寫。"
+
+msgid "Permission to access a required file or directory was denied."
+msgstr "存取必要檔案或目錄的權限遭拒。"
+
+msgid "Storage is full; the operation did not complete."
+msgstr "儲存空間已滿；操作未完成。"
+
+msgid "The storage quota was exceeded; the operation did not complete."
+msgstr "已超過儲存配額；操作未完成。"
+
+msgid "A symbolic link was encountered where an ordinary path is required."
+msgstr "需要一般路徑的位置存在符號連結。"
+
+msgid "The repository is in use; retry after the current operation finishes."
+msgstr "套件庫正在使用中；請在目前的操作完成後重試。"
+
+msgid "An input/output operation failed; completion is not established."
+msgstr "輸入/輸出操作失敗；尚未確認操作是否完成。"
+
+msgid "The input is invalid or is not supported by this operation."
+msgstr "輸入無效或此操作不支援該輸入。"
+
+msgid ""
+"Repository download failed; check the connection and repository "
+"configuration."
+msgstr "套件庫下載失敗；請檢查連線和套件庫設定。"
+
+msgid "Repository authentication failed; no artifact was accepted."
+msgstr "套件庫驗證失敗；未接受任何產物。"
+
+msgid "The operation could not be completed."
+msgstr "無法完成操作。"
+
+msgid "schedule needs five cron fields"
+msgstr "排程需要五個 cron 欄位"
+
+msgid "unsupported cron field"
+msgstr "不支援的 cron 欄位"
+
+msgid "cron step out of range"
+msgstr "cron 間隔值超出範圍"
+
+msgid "cron field out of range"
+msgstr "cron 欄位超出範圍"
+
+msgid "unknown package command"
+msgstr "未知的套件命令"
+
+msgid "command input limit exceeded"
+msgstr "命令輸入超過限制"
+
+msgid "empty argument or control character"
+msgstr "引數為空或包含控制字元"
+
+#, python-brace-format
+msgid "Invalid command option: {option}."
+msgstr "無效的命令選項：{option}。"
+
+msgid "unknown, duplicate or malformed SUMA attribute"
+msgstr "SUMA 屬性未知、重複或格式錯誤"
+
+#, python-brace-format
+msgid "repeated -{option}"
+msgstr "重複指定了 -{option}"
+
+#, python-brace-format
+msgid "missing or unsupported value for -{option}"
+msgstr "-{option} 的值缺漏或不受支援"
+
+msgid "options must precede operands; leading-dash operands are unsupported"
+msgstr "選項必須位於運算元之前；不支援以連字號開頭的運算元"
+
+msgid "option is not valid for this action"
+msgstr "此操作不能使用該選項"
+
+#, python-brace-format
+msgid "specify exactly one action from {actions}"
+msgstr "請從 {actions} 中指定且僅指定一個操作"
+
+msgid "conflicting installp actions"
+msgstr "installp 操作互相衝突"
+
+msgid "specify operands or -f LIST"
+msgstr "請指定運算元或 -f LIST"
+
+msgid "all cannot be combined with names"
+msgstr "all 不能與名稱一起使用"
+
+msgid "name packages explicitly for reject/remove"
+msgstr "拒絕或移除時請明確指定套件名稱"
+
+msgid "Nia requires an explicit -d SOURCE for apply"
+msgstr "Nia 在套用時要求明確指定 -d SOURCE"
+
+msgid "media listing requires -d SOURCE and no operands"
+msgstr "列出媒體內容需要 -d SOURCE，且不能提供運算元"
+
+msgid "recovery covers the interrupted transaction; no operands allowed"
+msgstr "復原針對中斷的交易；不允許提供運算元"
+
+msgid "-m must be 1, 2 or 3"
+msgstr "-m 必須為 1、2 或 3"
+
+msgid "-v does not accept file operands"
+msgstr "-v 不接受檔案運算元"
+
+msgid "specify -d SOURCE, without package operands"
+msgstr "請指定 -d SOURCE，不要提供套件運算元"
+
+msgid "use -k for fix keywords"
+msgstr "請使用 -k 指定修正關鍵字"
+
+msgid "specify -d SOURCE"
+msgstr "請指定 -d SOURCE"
+
+msgid "-p requires -k FIX"
+msgstr "-p 需要 -k FIX"
+
+msgid "empty fix keyword list"
+msgstr "修正關鍵字清單為空"
+
+msgid "inutoc accepts at most one directory"
+msgstr "inutoc 最多接受一個目錄"
+
+msgid "conflicting geninstall actions"
+msgstr "geninstall 操作互相衝突"
+
+msgid "unsupported installp flags in -I"
+msgstr "-I 中包含不支援的 installp 選項旗標"
+
+msgid "-I accepts only installp option flags"
+msgstr "-I 僅接受 installp 選項旗標"
+
+msgid "geninstall -I must select apply, not commit alone"
+msgstr "geninstall -I 必須選擇套用操作，不能僅選擇提交操作"
+
+msgid "task IDs must be numeric"
+msgstr "工作 ID 必須為數字"
+
+msgid "attribute edits for this SUMA action are not supported"
+msgstr "此 SUMA 操作不支援編輯屬性"
+
+msgid "incorrect task ID count"
+msgstr "工作 ID 數量不正確"
+
+msgid "at most one task ID"
+msgstr "最多只能指定一個工作 ID"
+
+msgid "specify -x, -w or -s"
+msgstr "請指定 -x、-w 或 -s"
+
+msgid "-s cannot be combined with -x or -w"
+msgstr "-s 不能與 -x 或 -w 一起使用"
+
+msgid "Foreign TL/SP/ML/PTF are not Nia release identifiers"
+msgstr "其他平台的 TL/SP/ML/PTF 不是 Nia 發行版本識別碼"
+
+msgid "unsupported SUMA Action"
+msgstr "不支援的 SUMA Action"
+
+msgid "DLTarget must be absolute"
+msgstr "DLTarget 必須是絕對路徑"
+
+msgid "specify -L URL, without operands"
+msgstr "請指定 -L URL，不要提供運算元"
+
+msgid "specify one interim fix label"
+msgstr "請指定一個暫時修正標籤"
+
+msgid "invalid interim fix label"
+msgstr "暫時修正標籤無效"
+
+msgid "conflicting interim actions"
+msgstr "暫時修正操作互相衝突"
+
+msgid "specify one interim package with -e or as an operand"
+msgstr "請使用 -e 或運算元指定一個暫時修正套件"
+
+msgid "specify one selector for remove, at most one for list/check"
+msgstr "移除時請指定一個選取條件；列出或檢查時最多指定一個"
+
+msgid "interim number must be a positive integer"
+msgstr "暫時修正編號必須是正整數"
+
+msgid "at most one package for lock display"
+msgstr "顯示鎖定資訊時最多只能指定一個套件"
+
+msgid "specify -e PACKAGE_FILE"
+msgstr "請指定 -e PACKAGE_FILE"
+
+msgid "verbosity must be 1, 2 or 3"
+msgstr "詳細程度必須為 1、2 或 3"
+
+msgid "specify -d SOURCE, without operands"
+msgstr "請指定 -d SOURCE，不要提供運算元"
+
+msgid "-r and -m are mutually exclusive"
+msgstr "-r 與 -m 不能同時使用"
+
+#, python-brace-format
+msgid "Invoke as: {commands}"
+msgstr "呼叫方式：{commands}"
+
+msgid ""
+"niayan development interface; native service is not connected.\n"
+"Local epkg template builds and emgr -d displays are available.\n"
+"emgr_download_ifix requires provisioned authenticated repository policy.\n"
+"Installed-package operations and interactive packaging are unavailable.\n"
+"Debian package names/versions are retained. Other reference-platform options "
+"are rejected."
+msgstr ""
+"niayan 開發介面；尚未連接原生服務。\n"
+"可使用 epkg 從本機範本建置，以及使用 emgr -d 顯示內容。\n"
+"emgr_download_ifix 需要已設定且經過驗證的套件庫政策。\n"
+"尚不支援已安裝套件操作和互動式套件建立。\n"
+"保留 Debian 套件的名稱和版本。其他參考平台選項將被拒絕。"
+
+msgid ""
+"Local media indexing and listing are available through inutoc, installp and "
+"geninstall."
+msgstr "可透過 inutoc、installp 和 geninstall 建立本機媒體索引並列出內容。"
+
+#, python-brace-format
+msgid "{label}: {value}"
+msgstr "{label}：{value}"
+
+msgid "EFIX LABEL"
+msgstr "緊急修正標籤"
+
+msgid "ABSTRACT"
+msgstr "摘要"
+
+msgid "REBOOT REQUIRED"
+msgstr "需要重新啟動"
+
+msgctxt "reboot-required"
+msgid "yes"
+msgstr "是"
+
+msgid "not established"
+msgstr "尚未確認"
+
+msgctxt "reboot-required"
+msgid "no"
+msgstr "否"
+
+msgid "PRE-REQUISITES"
+msgstr "先決條件"
+
+msgid "none"
+msgstr "無"
+
+msgid "SUPERSEDE"
+msgstr "取代項目"
+
+msgid "CONFLICTS"
+msgstr "衝突項目"
+
+msgid "ADVISORIES"
+msgstr "修正公告"
+
+msgid "PACKAGE SHA256"
+msgstr "套件 SHA256"
+
+msgid "CREATED AT"
+msgstr "建立時間"
+
+msgid "EXPIRES AT"
+msgstr "到期時間"
+
+msgid "SECURITY EPOCH"
+msgstr "安全紀元"
+
+msgid "ROLLBACK CONTRACT SHA256"
+msgstr "回復契約 SHA256"
+
+msgid "PUBLISHER AUTHENTICATION"
+msgstr "發布者驗證"
+
+msgid "not verified"
+msgstr "未驗證"
+
+msgid "PACKAGE"
+msgstr "套件"
+
+msgid "LEVEL"
+msgstr "版本"
+
+msgid "BASE LEVEL"
+msgstr "基礎版本"
+
+msgid "ACTIVATION"
+msgstr "啟用條件"
+
+msgid "CONTROL EFFECT"
+msgstr "控制指令碼效果"
+
+msgid "BASE SHA256"
+msgstr "基礎 SHA256"
+
+msgid "TARGET SHA256"
+msgstr "目標 SHA256"
+
+msgid "EFFECT CONTRACT SHA256"
+msgstr "效果契約 SHA256"
+
+msgid "FILE NUMBER"
+msgstr "檔案編號"
+
+msgid "LOCATION"
+msgstr "位置"
+
+msgid "FILE TYPE"
+msgstr "檔案類型"
+
+msgid "SIZE"
+msgstr "大小"
+
+msgid "SHA256"
+msgstr "SHA256"
+
+msgid "LINK"
+msgstr "連結"
+
+#, python-brace-format
+msgid "Package file is: {path}"
+msgstr "套件檔案：{path}"
+
+#, python-brace-format
+msgid "Downloaded interim fix: {path}"
+msgstr "已下載暫時修正：{path}"
+
 msgid "ARCHITECTURE"
 msgstr "架構"
+
+msgid ""
+"Approve exactly this plan? Type yes to continue; any other answer cancels."
+msgstr "是否核准此完整計畫？輸入 yes 繼續，其他任何回答皆取消。"
+
+msgid "Plan cancelled; no confirmation was granted."
+msgstr "計畫已取消，未授予同意。"
+
+msgid "The request outcome is unconfirmed. No automatic retry was performed."
+msgstr "無法確認請求結果。未自動重試。"
+
+msgid "The native package service is unavailable; no request was sent."
+msgstr "原生套件服務無法使用，未傳送請求。"
+
+#, python-brace-format
+msgid "Diagnostic: {reason}"
+msgstr "診斷：{reason}"

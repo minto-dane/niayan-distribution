@@ -12,7 +12,7 @@ native-check: i18n-check tool-check handoff-check
 
 .PHONY: handoff-check
 handoff-check:
-	python3 -m mypy --config-file native/handoff-mypy.ini --no-incremental native/root_handoff.py native/check_handoff_lifecycle.py native/root_worker_monitor.py native/supply_initialize.py native/operator_guard.py native/root_session_client.py native/root_supervisor.py
+	python3 -m mypy --config-file native/handoff-mypy.ini --no-incremental native/root_handoff.py native/check_handoff_lifecycle.py native/root_worker_monitor.py native/supply_initialize.py native/operator_guard.py native/root_session_client.py native/root_supervisor.py native/plan_consent.py native/management_receiver.py native/management_client.py native/management_grammar.py native/i18n.py
 	python3 -B native/check_handoff_lifecycle.py
 
 tool-check:

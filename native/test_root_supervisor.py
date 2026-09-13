@@ -22,6 +22,7 @@ class SupervisorFailures(unittest.TestCase):
         channel.close.side_effect = lambda: calls.append('handoff')
         operator.close.side_effect = lambda: calls.append('operator')
         supervisor = Supervisor.__new__(Supervisor)
+        supervisor.consent = Mock()
         supervisor.session, supervisor.operator, supervisor.channels = session, operator, [channel]
         with self.assertRaises(BaseExceptionGroup):
             supervisor.close()
@@ -31,6 +32,7 @@ class SupervisorFailures(unittest.TestCase):
 
     def test_native_admission_refusal_disconnects_without_prepare(self):
         supervisor = Supervisor.__new__(Supervisor)
+        supervisor.consent = Mock()
         supervisor.owner, supervisor.closed = os.getpid(), False
         supervisor.channels = []
         session, operator, admission = Mock(), Mock(), Mock()

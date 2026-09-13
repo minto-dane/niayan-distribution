@@ -2,366 +2,17 @@
 # Japanese translations for the Nia management interface.
 # Copyright (C) 2026 NiaOS contributors.
 msgid ""
-msgstr "Project-Id-Version: nia-management 1\nReport-Msgid-Bugs-To: \nPO-Revision-Date: 2026-09-09 00:00+0000\nLast-Translator: NiaOS contributors\nLanguage-Team: Japanese\nLanguage: ja\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=1; plural=0;\n"
-
-msgid "-I accepts only installp option flags"
-msgstr "-I には installp のオプションだけを指定してください"
-
-msgid "-m must be 1, 2 or 3"
-msgstr "-m には 1、2、3 のいずれかを指定してください"
-
-msgid "-p requires -k FIX"
-msgstr "-p には -k FIX の指定が必要です"
-
-msgid "-r and -m are mutually exclusive"
-msgstr "-r と -m は同時に指定できません"
-
-msgid "-s cannot be combined with -x or -w"
-msgstr "-s は -x または -w と同時に指定できません"
-
-msgid "-v does not accept file operands"
-msgstr "-v にはファイルを指定できません"
-
-msgid "A required file or directory does not exist."
-msgstr "必要なファイルまたはディレクトリが存在しません。"
-
-msgid "A symbolic link was encountered where an ordinary path is required."
-msgstr "通常のパスが必要な場所にシンボリックリンクがあります。"
-
-msgid "ABSTRACT"
-msgstr "概要"
-
-msgid "ACTIVATION"
-msgstr "有効化条件"
-
-msgid "ADVISORIES"
-msgstr "修正告知"
-
-msgid "An input/output operation failed; completion is not established."
-msgstr "入出力処理に失敗しました。操作の完了は確認できていません。"
-
-msgid "BASE LEVEL"
-msgstr "適用前の版"
-
-msgid "BASE SHA256"
-msgstr "適用前の SHA256"
-
-msgid "CONFLICTS"
-msgstr "競合"
-
-msgid "CONTROL EFFECT"
-msgstr "制御処理"
-
-msgid "CREATED AT"
-msgstr "作成時刻"
-
-msgid "DLTarget must be absolute"
-msgstr "DLTarget には絶対パスを指定してください"
-
-#, python-brace-format
-msgid "Downloaded interim fix: {path}"
-msgstr "緊急修正を取得しました: {path}"
-
-msgid "EFFECT CONTRACT SHA256"
-msgstr "効果契約の SHA256"
-
-msgid "EFIX LABEL"
-msgstr "緊急修正ラベル"
-
-msgid "EXPIRES AT"
-msgstr "有効期限"
-
-msgid "FILE NUMBER"
-msgstr "ファイル番号"
-
-msgid "FILE TYPE"
-msgstr "ファイル種別"
-
-msgid "Foreign TL/SP/ML/PTF are not Nia release identifiers"
-msgstr "TL/SP/ML/PTF は Nia のリリース識別子として使用できません"
-
-#, python-brace-format
-msgid "Invalid command option: {option}."
-msgstr "コマンドオプションが無効です: {option}"
-
-#, python-brace-format
-msgid "Invoke as: {commands}"
-msgstr "次のコマンド名で実行してください: {commands}"
-
-msgid "LEVEL"
-msgstr "版"
-
-msgid "LINK"
-msgstr "リンク先"
-
-msgid "LOCATION"
-msgstr "場所"
-
-msgid "Nia requires an explicit -d SOURCE for apply"
-msgstr "適用には -d SOURCE を明示的に指定してください"
-
-msgid "niayan development interface; native service is not connected.\nLocal epkg template builds and emgr -d displays are available.\nemgr_download_ifix requires provisioned authenticated repository policy.\nInstalled-package operations and interactive packaging are unavailable.\nDebian package names/versions are retained. Other reference-platform options are rejected."
-msgstr "niayan の開発用インターフェイスです。管理サービスは未接続です。\nepkg のテンプレート作成と emgr -d の成果物表示を使用できます。\nemgr_download_ifix には、認証されたリポジトリのポリシーをあらかじめ配備する必要があります。\n導入済みパッケージの操作と対話形式の作成はまだ使用できません。\nDebian のパッケージ名と版を維持します。参照環境のその他のオプションは受け付けません。"
-
-msgid "PACKAGE"
-msgstr "パッケージ"
-
-msgid "PACKAGE SHA256"
-msgstr "パッケージの SHA256"
-
-msgid "PRE-REQUISITES"
-msgstr "前提修正"
-
-msgid "PUBLISHER AUTHENTICATION"
-msgstr "発行者の認証"
-
-#, python-brace-format
-msgid "Package file is: {path}"
-msgstr "パッケージファイル: {path}"
-
-msgid "Permission to access a required file or directory was denied."
-msgstr "必要なファイルまたはディレクトリへのアクセスが拒否されました。"
-
-msgid "REBOOT REQUIRED"
-msgstr "再起動の必要性"
-
-msgid "ROLLBACK CONTRACT SHA256"
-msgstr "復旧契約の SHA256"
-
-msgid "Repository authentication failed; no artifact was accepted."
-msgstr "リポジトリの認証に失敗しました。成果物は受け入れていません。"
-
-msgid "Repository download failed; check the connection and repository configuration."
-msgstr "リポジトリからの取得に失敗しました。接続とリポジトリの設定を確認してください。"
-
-msgid "Repository policy changed during download; retry with the current policy."
-msgstr "取得中にリポジトリのポリシーが変更されました。現在のポリシーで再実行してください。"
-
-msgid "Repository policy ownership or permissions are not trusted."
-msgstr "リポジトリのポリシーの所有者またはアクセス権限を信頼できません。"
-
-msgid "SECURITY EPOCH"
-msgstr "セキュリティ世代"
-
-msgid "SHA256"
-msgstr "SHA256"
-
-msgid "SIZE"
-msgstr "サイズ"
-
-msgid "SUPERSEDE"
-msgstr "置き換える修正"
-
-msgid "Storage is full; the operation did not complete."
-msgstr "ストレージの空き容量がありません。操作は完了していません。"
-
-msgid "TARGET SHA256"
-msgstr "適用後の SHA256"
-
-msgid "The authenticated reference differs from the package manifest."
-msgstr "認証済みの参照がパッケージのマニフェストと一致しません。"
-
-msgid "The command label differs from the package control file."
-msgstr "コマンドのラベルがパッケージの制御ファイルと一致しません。"
-
-msgid "The download URL is outside the configured repository."
-msgstr "取得 URL は設定されたリポジトリの範囲外です。"
-
-msgid "The input is invalid or is not supported by this operation."
-msgstr "入力が無効か、この操作では対応していない形式です。"
-
-msgid "The interim package expired during download."
-msgstr "取得中に緊急修正パッケージの有効期限が切れました。"
-
-msgid "The interim package has expired or is not yet valid."
-msgstr "緊急修正パッケージの有効期限が切れているか、まだ有効期間に入っていません。"
-
-msgid "The interim package is older than the trusted security minimum."
-msgstr "緊急修正パッケージが、信頼されたセキュリティ世代の下限より古くなっています。"
-
-msgid "The operation could not be completed."
-msgstr "操作を完了できませんでした。"
-
-msgid "The original package identity differs from the manifest."
-msgstr "原本パッケージの識別情報がマニフェストと一致しません。"
-
-msgid "The output already exists and was not overwritten."
-msgstr "出力先はすでに存在します。上書きしていません。"
-
-msgid "The package size or checksum does not match."
-msgstr "パッケージのサイズまたはチェックサムが一致しません。"
-
-msgid "The repository is in use; retry after the current operation finishes."
-msgstr "リポジトリは使用中です。現在の操作の終了後に再実行してください。"
-
-msgid "The requested artifact is absent from the authenticated repository."
-msgstr "要求された成果物が認証済みリポジトリに存在しません。"
-
-msgid "The storage quota was exceeded; the operation did not complete."
-msgstr "ストレージの使用量上限を超えました。操作は完了していません。"
-
-msgid "all cannot be combined with names"
-msgstr "all と個別の名前は同時に指定できません"
-
-msgid "at most one package for lock display"
-msgstr "保留の表示にはパッケージを 1 つまで指定してください"
-
-msgid "at most one task ID"
-msgstr "タスク ID は 1 つまで指定してください"
-
-msgid "attribute edits for this SUMA action are not supported"
-msgstr "この suma 操作では属性を変更できません"
-
-msgid "command input limit exceeded"
-msgstr "コマンド入力の上限を超えました"
-
-msgid "conflicting geninstall actions"
-msgstr "同時に実行できない geninstall 操作が指定されています"
-
-msgid "conflicting installp actions"
-msgstr "同時に実行できない installp 操作が指定されています"
-
-msgid "conflicting interim actions"
-msgstr "同時に実行できない緊急修正操作が指定されています"
-
-msgid "cron field out of range"
-msgstr "cron フィールドの値が範囲外です"
-
-msgid "cron step out of range"
-msgstr "cron の間隔指定が範囲外です"
-
-msgid "empty argument or control character"
-msgstr "空の引数または制御文字が含まれています"
-
-msgid "empty fix keyword list"
-msgstr "修正キーワードの一覧が空です"
-
-msgid "geninstall -I must select apply, not commit alone"
-msgstr "geninstall -I には適用操作が必要です。確定操作だけでは実行できません"
-
-msgid "incorrect task ID count"
-msgstr "タスク ID の指定数が正しくありません"
-
-msgid "interim number must be a positive integer"
-msgstr "緊急修正番号には正の整数を指定してください"
-
-msgid "inutoc accepts at most one directory"
-msgstr "inutoc にはディレクトリを 1 つまで指定してください"
-
-msgid "invalid interim fix label"
-msgstr "緊急修正ラベルが無効です"
-
-msgid "media listing requires -d SOURCE and no operands"
-msgstr "メディア一覧には -d SOURCE だけを指定し、対象名を付けないでください"
-
-#, python-brace-format
-msgid "missing or unsupported value for -{option}"
-msgstr "-{option} の値が未指定か、対応していない値です"
-
-msgid "name packages explicitly for reject/remove"
-msgstr "取り消しまたは削除の対象パッケージ名を明示してください"
-
-msgctxt "reboot-required"
-msgid "no"
-msgstr "不要"
-
-msgid "none"
-msgstr "なし"
-
-msgid "not established"
-msgstr "未確認"
-
-msgid "not verified"
-msgstr "未検証"
-
-msgid "option is not valid for this action"
-msgstr "この操作には使用できないオプションです"
-
-msgid "options must precede operands; leading-dash operands are unsupported"
-msgstr "オプションは対象名の前に指定してください。ハイフンで始まる対象名には対応していません"
-
-msgid "recovery covers the interrupted transaction; no operands allowed"
-msgstr "復旧は中断されたトランザクションを対象にします。対象名は指定できません"
-
-#, python-brace-format
-msgid "repeated -{option}"
-msgstr "-{option} が重複しています"
-
-msgid "schedule needs five cron fields"
-msgstr "スケジュールには 5 つの cron フィールドが必要です"
-
-msgid "specify -L URL, without operands"
-msgstr "-L URL を指定し、対象名を付けないでください"
-
-msgid "specify -d SOURCE"
-msgstr "-d SOURCE を指定してください"
-
-msgid "specify -d SOURCE, without operands"
-msgstr "-d SOURCE を指定し、対象名を付けないでください"
-
-msgid "specify -d SOURCE, without package operands"
-msgstr "-d SOURCE を指定し、パッケージ名を付けないでください"
-
-msgid "specify -e PACKAGE_FILE"
-msgstr "-e PACKAGE_FILE を指定してください"
-
-msgid "specify -x, -w or -s"
-msgstr "-x、-w、-s のいずれかを指定してください"
-
-#, python-brace-format
-msgid "specify exactly one action from {actions}"
-msgstr "{actions} から操作を 1 つだけ指定してください"
-
-msgid "specify one interim fix label"
-msgstr "緊急修正ラベルを 1 つ指定してください"
-
-msgid "specify one interim package with -e or as an operand"
-msgstr "緊急修正パッケージを -e または対象名として 1 つ指定してください"
-
-msgid "specify one selector for remove, at most one for list/check"
-msgstr "削除には選択条件を 1 つ、一覧または検査には 1 つまで指定してください"
-
-msgid "specify operands or -f LIST"
-msgstr "対象名または -f LIST のどちらかを指定してください"
-
-msgid "task IDs must be numeric"
-msgstr "タスク ID には数字を指定してください"
-
-msgid "unknown package command"
-msgstr "不明なパッケージ管理コマンドです"
-
-msgid "unknown, duplicate or malformed SUMA attribute"
-msgstr "suma の属性が不明、重複、または不正な形式です"
-
-msgid "unsupported SUMA Action"
-msgstr "suma の Action に指定された操作には対応していません"
-
-msgid "unsupported cron field"
-msgstr "対応していない cron フィールドです"
-
-msgid "unsupported installp flags in -I"
-msgstr "-I に対応していない installp オプションがあります"
-
-msgid "use -k for fix keywords"
-msgstr "修正キーワードには -k を使用してください"
-
-msgid "verbosity must be 1, 2 or 3"
-msgstr "表示の詳細度には 1、2、3 のいずれかを指定してください"
-
-msgctxt "reboot-required"
-msgid "yes"
-msgstr "必要"
-
-#, python-brace-format
-msgid "{command}: {action}: native package service is not connected; no operation or preview was performed."
-msgstr "{command}: {action}: パッケージ管理サービスは未接続です。操作や事前検査は実行していません。"
-
-#, python-brace-format
-msgid "{label}: {value}"
-msgstr "{label}: {value}"
-
-msgid "Local media indexing and listing are available through inutoc, installp and geninstall."
-msgstr "ローカル媒体の索引作成と一覧表示は inutoc、installp、geninstall で利用できます。"
+msgstr ""
+"Project-Id-Version: nia-management 1\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-09-09 00:00+0000\n"
+"Last-Translator: NiaOS contributors\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 msgid "The media index is stale; rebuild it with inutoc."
 msgstr "媒体の索引が古くなっています。inutoc で再作成してください。"
@@ -369,5 +20,407 @@ msgstr "媒体の索引が古くなっています。inutoc で再作成して�
 msgid "The media changed during inspection; retry after changes have finished."
 msgstr "検査中に媒体が変更されました。変更が完了してから再試行してください。"
 
+msgid "The command label differs from the package control file."
+msgstr "コマンドのラベルがパッケージの制御ファイルと一致しません。"
+
+msgid "The original package identity differs from the manifest."
+msgstr "原本パッケージの識別情報がマニフェストと一致しません。"
+
+msgid "The package size or checksum does not match."
+msgstr "パッケージのサイズまたはチェックサムが一致しません。"
+
+msgid "The interim package has expired or is not yet valid."
+msgstr ""
+"緊急修正パッケージの有効期限が切れているか、まだ有効期間に入っていません。"
+
+msgid "The interim package expired during download."
+msgstr "取得中に緊急修正パッケージの有効期限が切れました。"
+
+msgid "The interim package is older than the trusted security minimum."
+msgstr ""
+"緊急修正パッケージが、信頼されたセキュリティ世代の下限より古くなっています。"
+
+msgid "The authenticated reference differs from the package manifest."
+msgstr "認証済みの参照がパッケージのマニフェストと一致しません。"
+
+msgid ""
+"Repository policy changed during download; retry with the current policy."
+msgstr ""
+"取得中にリポジトリのポリシーが変更されました。現在のポリシーで再実行してくだ"
+"さい。"
+
+msgid "Repository policy ownership or permissions are not trusted."
+msgstr "リポジトリのポリシーの所有者またはアクセス権限を信頼できません。"
+
+msgid "The download URL is outside the configured repository."
+msgstr "取得 URL は設定されたリポジトリの範囲外です。"
+
+msgid "The requested artifact is absent from the authenticated repository."
+msgstr "要求された成果物が認証済みリポジトリに存在しません。"
+
+msgid "A required file or directory does not exist."
+msgstr "必要なファイルまたはディレクトリが存在しません。"
+
+msgid "The output already exists and was not overwritten."
+msgstr "出力先はすでに存在します。上書きしていません。"
+
+msgid "Permission to access a required file or directory was denied."
+msgstr "必要なファイルまたはディレクトリへのアクセスが拒否されました。"
+
+msgid "Storage is full; the operation did not complete."
+msgstr "ストレージの空き容量がありません。操作は完了していません。"
+
+msgid "The storage quota was exceeded; the operation did not complete."
+msgstr "ストレージの使用量上限を超えました。操作は完了していません。"
+
+msgid "A symbolic link was encountered where an ordinary path is required."
+msgstr "通常のパスが必要な場所にシンボリックリンクがあります。"
+
+msgid "The repository is in use; retry after the current operation finishes."
+msgstr "リポジトリは使用中です。現在の操作の終了後に再実行してください。"
+
+msgid "An input/output operation failed; completion is not established."
+msgstr "入出力処理に失敗しました。操作の完了は確認できていません。"
+
+msgid "The input is invalid or is not supported by this operation."
+msgstr "入力が無効か、この操作では対応していない形式です。"
+
+msgid ""
+"Repository download failed; check the connection and repository "
+"configuration."
+msgstr ""
+"リポジトリからの取得に失敗しました。接続とリポジトリの設定を確認してくださ"
+"い。"
+
+msgid "Repository authentication failed; no artifact was accepted."
+msgstr "リポジトリの認証に失敗しました。成果物は受け入れていません。"
+
+msgid "The operation could not be completed."
+msgstr "操作を完了できませんでした。"
+
+msgid "schedule needs five cron fields"
+msgstr "スケジュールには 5 つの cron フィールドが必要です"
+
+msgid "unsupported cron field"
+msgstr "対応していない cron フィールドです"
+
+msgid "cron step out of range"
+msgstr "cron の間隔指定が範囲外です"
+
+msgid "cron field out of range"
+msgstr "cron フィールドの値が範囲外です"
+
+msgid "unknown package command"
+msgstr "不明なパッケージ管理コマンドです"
+
+msgid "command input limit exceeded"
+msgstr "コマンド入力の上限を超えました"
+
+msgid "empty argument or control character"
+msgstr "空の引数または制御文字が含まれています"
+
+#, python-brace-format
+msgid "Invalid command option: {option}."
+msgstr "コマンドオプションが無効です: {option}"
+
+msgid "unknown, duplicate or malformed SUMA attribute"
+msgstr "suma の属性が不明、重複、または不正な形式です"
+
+#, python-brace-format
+msgid "repeated -{option}"
+msgstr "-{option} が重複しています"
+
+#, python-brace-format
+msgid "missing or unsupported value for -{option}"
+msgstr "-{option} の値が未指定か、対応していない値です"
+
+msgid "options must precede operands; leading-dash operands are unsupported"
+msgstr ""
+"オプションは対象名の前に指定してください。ハイフンで始まる対象名には対応して"
+"いません"
+
+msgid "option is not valid for this action"
+msgstr "この操作には使用できないオプションです"
+
+#, python-brace-format
+msgid "specify exactly one action from {actions}"
+msgstr "{actions} から操作を 1 つだけ指定してください"
+
+msgid "conflicting installp actions"
+msgstr "同時に実行できない installp 操作が指定されています"
+
+msgid "specify operands or -f LIST"
+msgstr "対象名または -f LIST のどちらかを指定してください"
+
+msgid "all cannot be combined with names"
+msgstr "all と個別の名前は同時に指定できません"
+
+msgid "name packages explicitly for reject/remove"
+msgstr "取り消しまたは削除の対象パッケージ名を明示してください"
+
+msgid "Nia requires an explicit -d SOURCE for apply"
+msgstr "適用には -d SOURCE を明示的に指定してください"
+
+msgid "media listing requires -d SOURCE and no operands"
+msgstr "メディア一覧には -d SOURCE だけを指定し、対象名を付けないでください"
+
+msgid "recovery covers the interrupted transaction; no operands allowed"
+msgstr "復旧は中断されたトランザクションを対象にします。対象名は指定できません"
+
+msgid "-m must be 1, 2 or 3"
+msgstr "-m には 1、2、3 のいずれかを指定してください"
+
+msgid "-v does not accept file operands"
+msgstr "-v にはファイルを指定できません"
+
+msgid "specify -d SOURCE, without package operands"
+msgstr "-d SOURCE を指定し、パッケージ名を付けないでください"
+
+msgid "use -k for fix keywords"
+msgstr "修正キーワードには -k を使用してください"
+
+msgid "specify -d SOURCE"
+msgstr "-d SOURCE を指定してください"
+
+msgid "-p requires -k FIX"
+msgstr "-p には -k FIX の指定が必要です"
+
+msgid "empty fix keyword list"
+msgstr "修正キーワードの一覧が空です"
+
+msgid "inutoc accepts at most one directory"
+msgstr "inutoc にはディレクトリを 1 つまで指定してください"
+
+msgid "conflicting geninstall actions"
+msgstr "同時に実行できない geninstall 操作が指定されています"
+
+msgid "unsupported installp flags in -I"
+msgstr "-I に対応していない installp オプションがあります"
+
+msgid "-I accepts only installp option flags"
+msgstr "-I には installp のオプションだけを指定してください"
+
+msgid "geninstall -I must select apply, not commit alone"
+msgstr "geninstall -I には適用操作が必要です。確定操作だけでは実行できません"
+
+msgid "task IDs must be numeric"
+msgstr "タスク ID には数字を指定してください"
+
+msgid "attribute edits for this SUMA action are not supported"
+msgstr "この suma 操作では属性を変更できません"
+
+msgid "incorrect task ID count"
+msgstr "タスク ID の指定数が正しくありません"
+
+msgid "at most one task ID"
+msgstr "タスク ID は 1 つまで指定してください"
+
+msgid "specify -x, -w or -s"
+msgstr "-x、-w、-s のいずれかを指定してください"
+
+msgid "-s cannot be combined with -x or -w"
+msgstr "-s は -x または -w と同時に指定できません"
+
+msgid "Foreign TL/SP/ML/PTF are not Nia release identifiers"
+msgstr "TL/SP/ML/PTF は Nia のリリース識別子として使用できません"
+
+msgid "unsupported SUMA Action"
+msgstr "suma の Action に指定された操作には対応していません"
+
+msgid "DLTarget must be absolute"
+msgstr "DLTarget には絶対パスを指定してください"
+
+msgid "specify -L URL, without operands"
+msgstr "-L URL を指定し、対象名を付けないでください"
+
+msgid "specify one interim fix label"
+msgstr "緊急修正ラベルを 1 つ指定してください"
+
+msgid "invalid interim fix label"
+msgstr "緊急修正ラベルが無効です"
+
+msgid "conflicting interim actions"
+msgstr "同時に実行できない緊急修正操作が指定されています"
+
+msgid "specify one interim package with -e or as an operand"
+msgstr "緊急修正パッケージを -e または対象名として 1 つ指定してください"
+
+msgid "specify one selector for remove, at most one for list/check"
+msgstr "削除には選択条件を 1 つ、一覧または検査には 1 つまで指定してください"
+
+msgid "interim number must be a positive integer"
+msgstr "緊急修正番号には正の整数を指定してください"
+
+msgid "at most one package for lock display"
+msgstr "保留の表示にはパッケージを 1 つまで指定してください"
+
+msgid "specify -e PACKAGE_FILE"
+msgstr "-e PACKAGE_FILE を指定してください"
+
+msgid "verbosity must be 1, 2 or 3"
+msgstr "表示の詳細度には 1、2、3 のいずれかを指定してください"
+
+msgid "specify -d SOURCE, without operands"
+msgstr "-d SOURCE を指定し、対象名を付けないでください"
+
+msgid "-r and -m are mutually exclusive"
+msgstr "-r と -m は同時に指定できません"
+
+#, python-brace-format
+msgid "Invoke as: {commands}"
+msgstr "次のコマンド名で実行してください: {commands}"
+
+msgid ""
+"niayan development interface; native service is not connected.\n"
+"Local epkg template builds and emgr -d displays are available.\n"
+"emgr_download_ifix requires provisioned authenticated repository policy.\n"
+"Installed-package operations and interactive packaging are unavailable.\n"
+"Debian package names/versions are retained. Other reference-platform options "
+"are rejected."
+msgstr ""
+"niayan の開発用インターフェイスです。管理サービスは未接続です。\n"
+"epkg のテンプレート作成と emgr -d の成果物表示を使用できます。\n"
+"emgr_download_ifix には、認証されたリポジトリのポリシーをあらかじめ配備する必"
+"要があります。\n"
+"導入済みパッケージの操作と対話形式の作成はまだ使用できません。\n"
+"Debian のパッケージ名と版を維持します。参照環境のその他のオプションは受け付け"
+"ません。"
+
+msgid ""
+"Local media indexing and listing are available through inutoc, installp and "
+"geninstall."
+msgstr ""
+"ローカル媒体の索引作成と一覧表示は inutoc、installp、geninstall で利用できま"
+"す。"
+
+#, python-brace-format
+msgid "{label}: {value}"
+msgstr "{label}: {value}"
+
+msgid "EFIX LABEL"
+msgstr "緊急修正ラベル"
+
+msgid "ABSTRACT"
+msgstr "概要"
+
+msgid "REBOOT REQUIRED"
+msgstr "再起動の必要性"
+
+msgctxt "reboot-required"
+msgid "yes"
+msgstr "必要"
+
+msgid "not established"
+msgstr "未確認"
+
+msgctxt "reboot-required"
+msgid "no"
+msgstr "不要"
+
+msgid "PRE-REQUISITES"
+msgstr "前提修正"
+
+msgid "none"
+msgstr "なし"
+
+msgid "SUPERSEDE"
+msgstr "置き換える修正"
+
+msgid "CONFLICTS"
+msgstr "競合"
+
+msgid "ADVISORIES"
+msgstr "修正告知"
+
+msgid "PACKAGE SHA256"
+msgstr "パッケージの SHA256"
+
+msgid "CREATED AT"
+msgstr "作成時刻"
+
+msgid "EXPIRES AT"
+msgstr "有効期限"
+
+msgid "SECURITY EPOCH"
+msgstr "セキュリティ世代"
+
+msgid "ROLLBACK CONTRACT SHA256"
+msgstr "復旧契約の SHA256"
+
+msgid "PUBLISHER AUTHENTICATION"
+msgstr "発行者の認証"
+
+msgid "not verified"
+msgstr "未検証"
+
+msgid "PACKAGE"
+msgstr "パッケージ"
+
+msgid "LEVEL"
+msgstr "版"
+
+msgid "BASE LEVEL"
+msgstr "適用前の版"
+
+msgid "ACTIVATION"
+msgstr "有効化条件"
+
+msgid "CONTROL EFFECT"
+msgstr "制御処理"
+
+msgid "BASE SHA256"
+msgstr "適用前の SHA256"
+
+msgid "TARGET SHA256"
+msgstr "適用後の SHA256"
+
+msgid "EFFECT CONTRACT SHA256"
+msgstr "効果契約の SHA256"
+
+msgid "FILE NUMBER"
+msgstr "ファイル番号"
+
+msgid "LOCATION"
+msgstr "場所"
+
+msgid "FILE TYPE"
+msgstr "ファイル種別"
+
+msgid "SIZE"
+msgstr "サイズ"
+
+msgid "SHA256"
+msgstr "SHA256"
+
+msgid "LINK"
+msgstr "リンク先"
+
+#, python-brace-format
+msgid "Package file is: {path}"
+msgstr "パッケージファイル: {path}"
+
+#, python-brace-format
+msgid "Downloaded interim fix: {path}"
+msgstr "緊急修正を取得しました: {path}"
+
 msgid "ARCHITECTURE"
 msgstr "アーキテクチャ"
+
+msgid ""
+"Approve exactly this plan? Type yes to continue; any other answer cancels."
+msgstr ""
+"この計画を承認しますか？ 続行するには yes と入力してください。それ以外は取り"
+"消します。"
+
+msgid "Plan cancelled; no confirmation was granted."
+msgstr "計画を取り消しました。同意は与えられていません。"
+
+msgid "The request outcome is unconfirmed. No automatic retry was performed."
+msgstr "要求の結果を確認できません。自動再試行は行っていません。"
+
+msgid "The native package service is unavailable; no request was sent."
+msgstr "nativeパッケージサービスを利用できません。要求は送信していません。"
+
+#, python-brace-format
+msgid "Diagnostic: {reason}"
+msgstr "診断: {reason}"

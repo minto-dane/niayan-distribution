@@ -14,6 +14,8 @@ import re
 import struct
 from string import Formatter
 import unicodedata
+from collections.abc import Mapping
+from typing import TextIO, cast
 
 DOMAIN = 'nia-management'
 LOCALE_DIR = Path(__file__).resolve().parent / 'locale'
@@ -34,13 +36,13 @@ def catalog_candidates(value: str) -> tuple[str, ...]:
     match = LOCALE.fullmatch(value)
     if match is None:
         return ()
-    language, territory, _, modifier = match.groups()
+    language, territory, _, modifier = cast(tuple[str, str, str, str], match.groups(default=''))
     base = language + ('_' + territory if territory else '')
-    result = []
+    result: list[str] = []
     if modifier:
         result.extend((base + '@' + modifier, language + '@' + modifier))
         if modifier != 'euro':
-            return tuple(dict.fromkeys(result))
+            return (result[0],) if result[0] == result[1] else tuple(result)
     result.append(base)
     if language == 'zh' and territory:
         if territory in ('HK', 'MO', 'TW'):
@@ -49,7 +51,8 @@ def catalog_candidates(value: str) -> tuple[str, ...]:
             result.append('zh_CN')
     else:
         result.append(language)
-    return tuple(dict.fromkeys(result))
+    unique: dict[str, None] = {item: None for item in result}
+    return tuple(unique)
 
 
 def N_(message: str) -> str:
@@ -57,8 +60,8 @@ def N_(message: str) -> str:
     return message
 
 
-def languages(environment) -> tuple[str, ...]:
-    selected = next((environment.get(k) for k in ('LC_ALL', 'LC_MESSAGES', 'LANG') if environment.get(k)), 'C')
+def languages(environment: Mapping[str, str]) -> tuple[str, ...]:
+    selected = next((value for k in ('LC_ALL', 'LC_MESSAGES', 'LANG') if (value := environment.get(k))), 'C')
     # The C family provides deterministic English diagnostics for scripts.
     if selected in C_LOCALES or not LOCALE.fullmatch(selected):
         return ('en',)
@@ -67,7 +70,7 @@ def languages(environment) -> tuple[str, ...]:
         return ('en',)
     choices = [p for p in preference.split(':') if p] if preference else []
     choices.append(selected)
-    result = []
+    result: list[str] = []
     for choice in choices:
         if choice in C_LOCALES:
             result.append('en')
@@ -93,27 +96,28 @@ def placeholders(message: str) -> frozenset[str]:
     return frozenset(result)
 
 
-def display_text(value) -> str:
+def display_text(value: object) -> str:
     # Preserve joining controls used by natural languages and emoji. Escape
     # terminal controls, bidi overrides/isolates and invalid Unicode scalars.
     return ''.join(('\\u%04x' % ord(c)) if unicodedata.category(c).startswith('C')
                    and c not in ('\u200c', '\u200d') else c for c in str(value))
 
 
-def write_text(stream, text: str) -> None:
+def write_text(stream: TextIO, text: str) -> None:
     # Do not reconfigure a process-global stream. Old terminals get visible
     # escapes, never a UnicodeEncodeError after an operation already succeeded.
-    encoding = getattr(stream, 'encoding', None) or 'utf-8'
+    candidate = cast(object, getattr(stream, 'encoding', None))
+    encoding = candidate if isinstance(candidate, str) and candidate else 'utf-8'
     stream.write(text.encode(encoding, errors='backslashreplace').decode(encoding))
 
 
 class UI:
-    def __init__(self, translation=None):
+    def __init__(self, translation: gettext.NullTranslations | None = None) -> None:
         self.translation = translation or gettext.NullTranslations()
 
     @classmethod
-    def from_environment(cls, environment=None):
-        translation = None
+    def from_environment(cls, environment: Mapping[str, str] | None = None) -> UI:
+        translation: gettext.NullTranslations | None = None
         for language in languages(os.environ if environment is None else environment):
             if language == 'en':
                 break
@@ -133,7 +137,7 @@ class UI:
                 translation.add_fallback(loaded)
         return cls(translation)
 
-    def _format(self, source, translated, values):
+    def _format(self, source: str, translated: str, values: Mapping[str, object]) -> str:
         try:
             if (placeholders(translated) != placeholders(source)
                     or any(unicodedata.category(c) in ('Cc', 'Cs', 'Cf') and c not in '\n\t\u200c\u200d'
@@ -141,15 +145,16 @@ class UI:
                 translated = source
         except ValueError:
             translated = source
-        return translated.format_map({key: display_text(value) for key, value in values.items()})
+        rendered: dict[str, str] = {key: display_text(value) for key, value in values.items()}
+        return translated.format_map(rendered)
 
-    def message(self, source: str, **values) -> str:
+    def message(self, source: str, **values: object) -> str:
         return self._format(source, self.translation.gettext(source), values)
 
-    def context(self, context: str, source: str, **values) -> str:
+    def context(self, context: str, source: str, **values: object) -> str:
         return self._format(source, self.translation.pgettext(context, source), values)
 
-    def plural(self, singular: str, plural: str, count: int, **values) -> str:
+    def plural(self, singular: str, plural: str, count: int, **values: object) -> str:
         if type(count) is not int or count < 0:
             raise ValueError('plural count must be a nonnegative integer')
         source = singular if count == 1 else plural
