@@ -16,6 +16,7 @@ import sys
 import termios
 
 from i18n import UI, N_, write_text, languages
+import management_result
 from plan_consent import Offer, Rejected, now_ms, read_presentation, receive, release, response, presentation_text
 
 SOCKET = '/run/niaos/package.sock'
@@ -130,6 +131,12 @@ def execute(command: str, argv: list[str], ui: UI, *, preview: bool, read_only: 
                 if actor[1] or sender not in (0, actor[0]):
                     raise Rejected('management-reply-sender')
                 sender = actor[0]
+                if raw.startswith(management_result.MAGIC):
+                    if not read_only or preview or offer is not None or len(owned) != 1:
+                        raise Rejected('management-unexpected-query-result')
+                    text = management_result.read(raw, owned[0])
+                    write_text(sys.stdout, text + '\n')
+                    return 0
                 if raw.startswith(b'NIAPLN01'):
                     if offer is not None or read_only or preview or len(owned) != 1:
                         raise Rejected('management-unexpected-plan-offer')

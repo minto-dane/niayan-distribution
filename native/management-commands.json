@@ -15,9 +15,9 @@
         "lslpp",
         "lppchk"
       ],
-      "state": "media-listing-connected-installed-operations-pending",
+      "state": "media-and-accepted-catalog-listing-connected-source-unvalidated",
       "target": "one native catalog, resolver and managed transaction service",
-      "remaining": "native transport, authenticated catalog, lifecycle retention, fix metadata, output formats, complete option review, real update/recovery tests; no reference-platform BFF/RPM/ISMP delegation",
+      "remaining": "actual target selection, full managed execution and mutation dispatch, lifecycle retention, fix/history/file metadata, complete output/option semantics, real update/recovery acceptance; no alternate package-manager delegation",
       "reference_status": "Public command documentation reviewed for grammar-only entries; individual review pending for candidate entries."
     },
     {

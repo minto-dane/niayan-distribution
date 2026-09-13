@@ -293,23 +293,8 @@ msgstr "-r und -m schließen sich gegenseitig aus"
 msgid "Invoke as: {commands}"
 msgstr "Aufruf als: {commands}"
 
-msgid ""
-"niayan development interface; native service is not connected.\n"
-"Local epkg template builds and emgr -d displays are available.\n"
-"emgr_download_ifix requires provisioned authenticated repository policy.\n"
-"Installed-package operations and interactive packaging are unavailable.\n"
-"Debian package names/versions are retained. Other reference-platform options "
-"are rejected."
-msgstr ""
-"niayan-Entwicklungsschnittstelle; der native Dienst ist nicht angebunden.\n"
-"Lokale Paketerstellung aus Vorlagen mit epkg und Anzeige mit emgr -d sind "
-"verfügbar.\n"
-"emgr_download_ifix erfordert eine eingerichtete, authentifizierte Repository-"
-"Richtlinie.\n"
-"Operationen an installierten Paketen und interaktive Paketerstellung sind "
-"nicht verfügbar.\n"
-"Debian-Paketnamen und -Versionen bleiben erhalten. Andere Optionen der "
-"Referenzplattform werden abgelehnt."
+msgid "niayan development interface; native integration is incomplete.\nLocal epkg template builds and emgr -d displays are available.\nemgr_download_ifix requires provisioned authenticated repository policy.\nlslpp -l/-L query an explicitly configured native accepted catalog.\nPackage changes and interactive packaging are not connected.\nDebian package names/versions are retained. Other reference-platform options are rejected."
+msgstr "niayan-Entwicklungsschnittstelle; die native Integration ist unvollständig.\nLokale epkg-Vorlagen und die Anzeige mit emgr -d sind verfügbar.\nemgr_download_ifix erfordert eine eingerichtete authentifizierte Repository-Richtlinie.\nlslpp -l/-L fragt einen ausdrücklich konfigurierten nativen bestätigten Katalog ab.\nPaketänderungen und interaktive Paketerstellung sind nicht angebunden.\nDebian-Paketnamen und -Versionen bleiben erhalten. Andere Optionen der Referenzplattform werden abgelehnt."
 
 msgid ""
 "Local media indexing and listing are available through inutoc, installp and "
@@ -452,3 +437,27 @@ msgstr ""
 #, python-brace-format
 msgid "Diagnostic: {reason}"
 msgstr "Diagnose: {reason}"
+
+msgid "Fileset"
+msgstr "Dateisatz"
+
+msgid "Level"
+msgstr "Version"
+
+msgid "State"
+msgstr "Status"
+
+msgid "Architecture"
+msgstr "Architektur"
+
+msgid "No packages are recorded in the accepted catalog."
+msgstr "Im bestätigten Katalog sind keine Pakete verzeichnet."
+
+msgid "This operation is not connected to native planning and admission. No package change was started."
+msgstr "Dieser Vorgang ist noch nicht an die native Planung und Autorisierung angebunden. Es wurde keine Paketänderung gestartet."
+
+msgid "Catalog queries are temporarily limited. No automatic retry was performed."
+msgstr "Katalogabfragen sind vorübergehend begrenzt. Es wurde kein automatischer Wiederholungsversuch unternommen."
+
+msgid "The native catalog query could not complete. No package change was started."
+msgstr "Die native Katalogabfrage konnte nicht abgeschlossen werden. Es wurde keine Paketänderung gestartet."

@@ -3,7 +3,9 @@
 `pkgcore/runtime/pkg_generation_publisher.*`は検査済みのstageとcatalogを
 一つのdescriptorへ束縛して確定する非特権内部SDKである。
 [設計判断](../../assurance/docs/engineering/adr/ADR-0056.ja.md)を参照。
-実mount/boot切替と公開管理コマンドはまだ接続していない。
+実mount/boot切替と変更コマンドはまだ接続していない。
+確定状態の照会は共通のPkg_Generation_Readerへ分離し、lslppの一覧と更新準備へ接続した。
+詳細は[確定済みカタログ](accepted-catalog.ja.md)。
 
 ## 呼出しと予約
 

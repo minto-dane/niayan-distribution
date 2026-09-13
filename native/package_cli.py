@@ -21,10 +21,11 @@ def main(command: str, argv: list[str]) -> int:
         return 2
     if argv == ['--help']:
         write_text(sys.stdout, HELP[command] + '\n\n' + ui.message(
-            'niayan development interface; native service is not connected.\n'
+            'niayan development interface; native integration is incomplete.\n'
             'Local epkg template builds and emgr -d displays are available.\n'
             'emgr_download_ifix requires provisioned authenticated repository policy.\n'
-            'Installed-package operations and interactive packaging are unavailable.\n'
+            'lslpp -l/-L query an explicitly configured native accepted catalog.\n'
+            'Package changes and interactive packaging are not connected.\n'
             'Debian package names/versions are retained. Other reference-platform options are rejected.') + '\n')
         write_text(sys.stdout, ui.message('Local media indexing and listing are available through inutoc, installp and geninstall.') + '\n')
         return 0

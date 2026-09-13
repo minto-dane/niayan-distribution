@@ -270,21 +270,8 @@ msgstr "-r と -m は同時に指定できません"
 msgid "Invoke as: {commands}"
 msgstr "次のコマンド名で実行してください: {commands}"
 
-msgid ""
-"niayan development interface; native service is not connected.\n"
-"Local epkg template builds and emgr -d displays are available.\n"
-"emgr_download_ifix requires provisioned authenticated repository policy.\n"
-"Installed-package operations and interactive packaging are unavailable.\n"
-"Debian package names/versions are retained. Other reference-platform options "
-"are rejected."
-msgstr ""
-"niayan の開発用インターフェイスです。管理サービスは未接続です。\n"
-"epkg のテンプレート作成と emgr -d の成果物表示を使用できます。\n"
-"emgr_download_ifix には、認証されたリポジトリのポリシーをあらかじめ配備する必"
-"要があります。\n"
-"導入済みパッケージの操作と対話形式の作成はまだ使用できません。\n"
-"Debian のパッケージ名と版を維持します。参照環境のその他のオプションは受け付け"
-"ません。"
+msgid "niayan development interface; native integration is incomplete.\nLocal epkg template builds and emgr -d displays are available.\nemgr_download_ifix requires provisioned authenticated repository policy.\nlslpp -l/-L query an explicitly configured native accepted catalog.\nPackage changes and interactive packaging are not connected.\nDebian package names/versions are retained. Other reference-platform options are rejected."
+msgstr "niayan の開発用インターフェイスです。ネイティブ機能の統合は未完了です。\nepkg のテンプレート作成と emgr -d の成果物表示を使用できます。\nemgr_download_ifix には認証されたリポジトリのポリシーを配備する必要があります。\nlslpp -l/-L は明示的に設定されたネイティブの確定済みカタログを照会します。\nパッケージ変更と対話形式の作成は未接続です。\nDebian のパッケージ名と版を維持します。参照環境のその他のオプションは受け付けません。"
 
 msgid ""
 "Local media indexing and listing are available through inutoc, installp and "
@@ -424,3 +411,27 @@ msgstr "nativeパッケージサービスを利用できません。要求は送
 #, python-brace-format
 msgid "Diagnostic: {reason}"
 msgstr "診断: {reason}"
+
+msgid "Fileset"
+msgstr "ファイルセット"
+
+msgid "Level"
+msgstr "版"
+
+msgid "State"
+msgstr "状態"
+
+msgid "Architecture"
+msgstr "アーキテクチャ"
+
+msgid "No packages are recorded in the accepted catalog."
+msgstr "確定済みカタログにパッケージは記録されていません。"
+
+msgid "This operation is not connected to native planning and admission. No package change was started."
+msgstr "この操作はネイティブの計画・認可処理へ未接続です。パッケージの変更は開始していません。"
+
+msgid "Catalog queries are temporarily limited. No automatic retry was performed."
+msgstr "カタログの照会を一時的に制限しています。自動再試行は行っていません。"
+
+msgid "The native catalog query could not complete. No package change was started."
+msgstr "ネイティブカタログの照会を完了できませんでした。パッケージの変更は開始していません。"

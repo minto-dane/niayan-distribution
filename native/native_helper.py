@@ -11,7 +11,7 @@ class Rejected(ValueError):
 def executable(name: str) -> int:
     # Fixed path only. Pin every protected ancestor and the final ELF. No
     # caller-selected executable, environment lookup or implicit escalation.
-    if name not in ('pkg_operator_guard', 'pkg_supply_guard'):
+    if name not in ('pkg_operator_guard', 'pkg_supply_guard', 'pkg_catalog_query'):
         raise Rejected('unknown-private-helper')
     directory = os.open('/', os.O_RDONLY | os.O_DIRECTORY | os.O_CLOEXEC)
     result = -1

@@ -280,23 +280,8 @@ msgstr "-r y -m son mutuamente excluyentes"
 msgid "Invoke as: {commands}"
 msgstr "Ejecute como: {commands}"
 
-msgid ""
-"niayan development interface; native service is not connected.\n"
-"Local epkg template builds and emgr -d displays are available.\n"
-"emgr_download_ifix requires provisioned authenticated repository policy.\n"
-"Installed-package operations and interactive packaging are unavailable.\n"
-"Debian package names/versions are retained. Other reference-platform options "
-"are rejected."
-msgstr ""
-"Interfaz de desarrollo de niayan; el servicio nativo no está conectado.\n"
-"Están disponibles la creación local de plantillas con epkg y la "
-"visualización con emgr -d.\n"
-"emgr_download_ifix requiere una política de repositorio autenticada y "
-"configurada.\n"
-"No están disponibles las operaciones sobre paquetes instalados ni la "
-"creación interactiva de paquetes.\n"
-"Se conservan los nombres y versiones de los paquetes Debian. Se rechazan las "
-"demás opciones de la plataforma de referencia."
+msgid "niayan development interface; native integration is incomplete.\nLocal epkg template builds and emgr -d displays are available.\nemgr_download_ifix requires provisioned authenticated repository policy.\nlslpp -l/-L query an explicitly configured native accepted catalog.\nPackage changes and interactive packaging are not connected.\nDebian package names/versions are retained. Other reference-platform options are rejected."
+msgstr "Interfaz de desarrollo de niayan; la integración nativa está incompleta.\nEstán disponibles la creación local de plantillas con epkg y la visualización con emgr -d.\nemgr_download_ifix requiere una política de repositorio autenticada y configurada.\nlslpp -l/-L consulta un catálogo nativo confirmado y configurado explícitamente.\nLos cambios de paquetes y la creación interactiva de paquetes no están conectados.\nSe conservan los nombres y versiones de paquetes Debian. Se rechazan las demás opciones de la plataforma de referencia."
 
 msgid ""
 "Local media indexing and listing are available through inutoc, installp and "
@@ -439,3 +424,27 @@ msgstr ""
 #, python-brace-format
 msgid "Diagnostic: {reason}"
 msgstr "Diagnóstico: {reason}"
+
+msgid "Fileset"
+msgstr "Conjunto de archivos"
+
+msgid "Level"
+msgstr "Versión"
+
+msgid "State"
+msgstr "Estado"
+
+msgid "Architecture"
+msgstr "Arquitectura"
+
+msgid "No packages are recorded in the accepted catalog."
+msgstr "No hay paquetes registrados en el catálogo confirmado."
+
+msgid "This operation is not connected to native planning and admission. No package change was started."
+msgstr "Esta operación aún no está conectada a la planificación y autorización nativas. No se inició ningún cambio de paquetes."
+
+msgid "Catalog queries are temporarily limited. No automatic retry was performed."
+msgstr "Las consultas del catálogo están limitadas temporalmente. No se realizó ningún reintento automático."
+
+msgid "The native catalog query could not complete. No package change was started."
+msgstr "No se pudo completar la consulta del catálogo nativo. No se inició ningún cambio de paquetes."

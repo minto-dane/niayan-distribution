@@ -41,3 +41,7 @@ observer UIDは独立した配備accountから呼出側が解決する。
 plannerが受けるpredecessorはcaller assertionで、実admissionが現在root.stateとの一致を証明する必要がある。
 全managed認可・停止barrier・効果契約・health・世代公開・公開コマンドはこの処理だけでは実装されない。
 本番site鍵/floor/時刻/installer配備、全DEB効果、実boot/復旧、完全置換ISOと全翻訳は別の未完工程である。
+
+`Pkg_Update_Planner.Prepare`は実accepted predecessorのpublication/root/CAS予約を保持して
+native intentとこの供給計画を作る具体的な呼出元を追加した。
+[確定済みカタログと更新計画](accepted-catalog.ja.md)を参照。実行認可/効果compile/bootは別途必要。

@@ -72,8 +72,8 @@ def response(offer: Offer, confirm: bool) -> bytes:
     return b'NIACNS01' + hashlib.sha256(offer.wire()).digest() + bytes((int(confirm),)) + bytes(7)
 
 
-def presentation_text(raw: bytes) -> str:
-    if not 0 < len(raw) <= MAX_PRESENTATION:
+def presentation_text(raw: bytes, *, limit: int = MAX_PRESENTATION) -> str:
+    if not 0 < limit <= 64 * 1024 * 1024 or not 0 < len(raw) <= limit:
         raise Rejected('consent-presentation-size')
     text = raw.decode('utf-8', errors='strict')
     # Natural-language joining controls remain available. Escape package names
@@ -84,22 +84,29 @@ def presentation_text(raw: bytes) -> str:
     return text
 
 
-def read_presentation(fd: int, offer: Offer) -> str:
+def read_sealed_text(fd: int, size: int, digest: bytes, *, limit: int = MAX_PRESENTATION) -> str:
+    if (type(size) is not int or not 0 < size <= limit <= 64 * 1024 * 1024
+            or type(digest) is not bytes or len(digest) != 32 or not any(digest)):
+        raise Rejected('sealed-text-context')
     info = os.fstat(fd)
     if (not stat.S_ISREG(info.st_mode) or info.st_uid or info.st_nlink != 0
-            or info.st_size != offer.size or fcntl.fcntl(fd, fcntl.F_GET_SEALS) & SEALS != SEALS):
+            or info.st_size != size or fcntl.fcntl(fd, fcntl.F_GET_SEALS) & SEALS != SEALS):
         raise Rejected('consent-presentation-seals')
     raw = bytearray()
-    for _ in range(256):
-        if len(raw) == offer.size:
+    for _ in range(1024):
+        if len(raw) == size:
             break
-        chunk = os.pread(fd, min(65536, offer.size - len(raw)), len(raw))
+        chunk = os.pread(fd, min(65536, size - len(raw)), len(raw))
         if not chunk:
             raise Rejected('consent-presentation-truncated')
         raw.extend(chunk)
-    if len(raw) != offer.size or hashlib.sha256(raw).digest() != offer.presentation:
+    if len(raw) != size or hashlib.sha256(raw).digest() != digest:
         raise Rejected('consent-presentation-digest')
-    return presentation_text(bytes(raw))
+    return presentation_text(bytes(raw), limit=limit)
+
+
+def read_presentation(fd: int, offer: Offer) -> str:
+    return read_sealed_text(fd, offer.size, offer.presentation)
 
 
 def receive(peer: socket.socket, limit: int) -> tuple[bytes, tuple[int, int], list[int]]:

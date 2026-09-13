@@ -1,0 +1,16 @@
+# SPDX-License-Identifier: BSD-3-Clause
+[Unit]
+Description=niayan adopted package command socket
+
+[Socket]
+ListenSequentialPacket=/run/niaos/package.sock
+SocketUser=root
+SocketGroup=root
+SocketMode=0666
+DirectoryMode=0755
+PassCredentials=yes
+Backlog=32
+RemoveOnStop=yes
+
+[Install]
+WantedBy=sockets.target

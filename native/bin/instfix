@@ -1,6 +1,6 @@
 #!/usr/bin/python3 -I
 # SPDX-License-Identifier: BSD-3-Clause
-"""Development entry point; native package service is not connected."""
+"""Adopted management entry point; the service enforces supported operations."""
 from pathlib import Path
 import sys
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))

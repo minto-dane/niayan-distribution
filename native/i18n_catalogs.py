@@ -16,7 +16,7 @@ import tempfile
 from i18n import DOMAIN, placeholders, display_text, catalog_candidates
 
 ROOT = Path(__file__).resolve().parent
-SOURCES = ('i18n.py', 'diagnostics.py', 'package_cli.py', 'management_grammar.py', 'interim_commands.py', 'interim_download.py', 'media.py', 'management_client.py')
+SOURCES = ('i18n.py', 'diagnostics.py', 'package_cli.py', 'management_grammar.py', 'interim_commands.py', 'interim_download.py', 'media.py', 'management_client.py', 'management_service.py')
 
 
 def source_forms():

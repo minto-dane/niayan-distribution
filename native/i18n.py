@@ -117,8 +117,15 @@ class UI:
 
     @classmethod
     def from_environment(cls, environment: Mapping[str, str] | None = None) -> UI:
+        return cls.from_languages(languages(os.environ if environment is None else environment))
+
+    @classmethod
+    def from_languages(cls, preferences: tuple[str, ...]) -> UI:
+        if (not 1 <= len(preferences) <= 64
+                or any(re.fullmatch('[a-z][A-Za-z0-9_@-]{0,63}', item) is None for item in preferences)):
+            raise ValueError('invalid display language preferences')
         translation: gettext.NullTranslations | None = None
-        for language in languages(os.environ if environment is None else environment):
+        for language in preferences:
             if language == 'en':
                 break
             path = LOCALE_DIR / language / 'LC_MESSAGES' / (DOMAIN + '.mo')

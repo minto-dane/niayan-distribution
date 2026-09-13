@@ -1,0 +1,31 @@
+# SPDX-License-Identifier: BSD-3-Clause
+[Unit]
+Description=niayan native package command dispatcher
+Requires=niaos-package.socket
+After=niaos-package.socket
+
+[Service]
+Type=exec
+User=root
+Group=root
+ExecStart=/usr/bin/python3 -I /usr/libexec/niaos/management_service.py
+UMask=0077
+Restart=no
+KillMode=control-group
+OOMPolicy=kill
+TimeoutStopSec=15
+NoNewPrivileges=yes
+CapabilityBoundingSet=CAP_SETUID CAP_SETGID CAP_KILL
+RestrictAddressFamilies=AF_UNIX
+RestrictNamespaces=yes
+SystemCallArchitectures=native
+LockPersonality=yes
+MemoryDenyWriteExecute=yes
+LimitCORE=0
+LimitNOFILE=64
+MemoryMax=3G
+MemorySwapMax=0
+CPUQuota=100%
+TasksMax=16
+# Native accepted-state validation includes mount identities. Do not create a
+# private mount namespace or offer a different catalog view through bind mounts.

@@ -287,23 +287,8 @@ msgstr "-r et -m s’excluent mutuellement"
 msgid "Invoke as: {commands}"
 msgstr "Exécutez sous la forme : {commands}"
 
-msgid ""
-"niayan development interface; native service is not connected.\n"
-"Local epkg template builds and emgr -d displays are available.\n"
-"emgr_download_ifix requires provisioned authenticated repository policy.\n"
-"Installed-package operations and interactive packaging are unavailable.\n"
-"Debian package names/versions are retained. Other reference-platform options "
-"are rejected."
-msgstr ""
-"Interface de développement de niayan ; le service natif n’est pas connecté.\n"
-"La création locale à partir de modèles avec epkg et l’affichage avec emgr -d "
-"sont disponibles.\n"
-"emgr_download_ifix nécessite une politique de dépôt authentifiée et "
-"configurée.\n"
-"Les opérations sur les paquets installés et la création interactive de "
-"paquets ne sont pas disponibles.\n"
-"Les noms et versions des paquets Debian sont conservés. Les autres options "
-"de la plateforme de référence sont refusées."
+msgid "niayan development interface; native integration is incomplete.\nLocal epkg template builds and emgr -d displays are available.\nemgr_download_ifix requires provisioned authenticated repository policy.\nlslpp -l/-L query an explicitly configured native accepted catalog.\nPackage changes and interactive packaging are not connected.\nDebian package names/versions are retained. Other reference-platform options are rejected."
+msgstr "Interface de développement niayan ; l’intégration native est incomplète.\nLa création locale de modèles epkg et l’affichage avec emgr -d sont disponibles.\nemgr_download_ifix nécessite une politique de dépôt authentifiée et configurée.\nlslpp -l/-L consulte un catalogue natif validé et explicitement configuré.\nLes modifications de paquets et la création interactive de paquets ne sont pas reliées.\nLes noms et versions des paquets Debian sont conservés. Les autres options de la plateforme de référence sont refusées."
 
 msgid ""
 "Local media indexing and listing are available through inutoc, installp and "
@@ -447,3 +432,27 @@ msgstr ""
 #, python-brace-format
 msgid "Diagnostic: {reason}"
 msgstr "Diagnostic : {reason}"
+
+msgid "Fileset"
+msgstr "Ensemble de fichiers"
+
+msgid "Level"
+msgstr "Version"
+
+msgid "State"
+msgstr "État"
+
+msgid "Architecture"
+msgstr "Architecture"
+
+msgid "No packages are recorded in the accepted catalog."
+msgstr "Aucun paquet n’est enregistré dans le catalogue validé."
+
+msgid "This operation is not connected to native planning and admission. No package change was started."
+msgstr "Cette opération n’est pas encore reliée à la planification et à l’autorisation natives. Aucune modification de paquet n’a été lancée."
+
+msgid "Catalog queries are temporarily limited. No automatic retry was performed."
+msgstr "Les consultations du catalogue sont temporairement limitées. Aucune nouvelle tentative automatique n’a été effectuée."
+
+msgid "The native catalog query could not complete. No package change was started."
+msgstr "La consultation du catalogue natif n’a pas pu aboutir. Aucune modification de paquet n’a été lancée."

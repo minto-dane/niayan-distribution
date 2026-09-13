@@ -262,19 +262,8 @@ msgstr "-r 與 -m 不能同時使用"
 msgid "Invoke as: {commands}"
 msgstr "呼叫方式：{commands}"
 
-msgid ""
-"niayan development interface; native service is not connected.\n"
-"Local epkg template builds and emgr -d displays are available.\n"
-"emgr_download_ifix requires provisioned authenticated repository policy.\n"
-"Installed-package operations and interactive packaging are unavailable.\n"
-"Debian package names/versions are retained. Other reference-platform options "
-"are rejected."
-msgstr ""
-"niayan 開發介面；尚未連接原生服務。\n"
-"可使用 epkg 從本機範本建置，以及使用 emgr -d 顯示內容。\n"
-"emgr_download_ifix 需要已設定且經過驗證的套件庫政策。\n"
-"尚不支援已安裝套件操作和互動式套件建立。\n"
-"保留 Debian 套件的名稱和版本。其他參考平台選項將被拒絕。"
+msgid "niayan development interface; native integration is incomplete.\nLocal epkg template builds and emgr -d displays are available.\nemgr_download_ifix requires provisioned authenticated repository policy.\nlslpp -l/-L query an explicitly configured native accepted catalog.\nPackage changes and interactive packaging are not connected.\nDebian package names/versions are retained. Other reference-platform options are rejected."
+msgstr "niayan 開發介面；原生整合尚未完成。\n可使用本機 epkg 範本建置和 emgr -d 成果顯示。\nemgr_download_ifix 需要預先設定經過認證的軟體庫原則。\nlslpp -l/-L 查詢明確設定的原生已確認目錄。\n套件變更和互動式套件建置尚未連接。\n保留 Debian 套件名稱和版本。拒絕參考平台的其他選項。"
 
 msgid ""
 "Local media indexing and listing are available through inutoc, installp and "
@@ -410,3 +399,27 @@ msgstr "原生套件服務無法使用，未傳送請求。"
 #, python-brace-format
 msgid "Diagnostic: {reason}"
 msgstr "診斷：{reason}"
+
+msgid "Fileset"
+msgstr "檔案集"
+
+msgid "Level"
+msgstr "版本"
+
+msgid "State"
+msgstr "狀態"
+
+msgid "Architecture"
+msgstr "架構"
+
+msgid "No packages are recorded in the accepted catalog."
+msgstr "已確認的目錄中沒有記錄任何套件。"
+
+msgid "This operation is not connected to native planning and admission. No package change was started."
+msgstr "此操作尚未連接至原生規劃和授權流程。未開始變更套件。"
+
+msgid "Catalog queries are temporarily limited. No automatic retry was performed."
+msgstr "套件目錄查詢暫時受到限制。未進行自動重試。"
+
+msgid "The native catalog query could not complete. No package change was started."
+msgstr "無法完成原生套件目錄查詢。未開始變更套件。"

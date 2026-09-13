@@ -24,3 +24,9 @@ native/plan_consent.py usr/libexec/niaos
 native/management_receiver.py usr/libexec/niaos
 native/management_grammar.py usr/libexec/niaos
 native/i18n.py usr/libexec/niaos
+native/catalog_query.py usr/libexec/niaos
+native/management_service.py usr/libexec/niaos
+native/management_result.py usr/libexec/niaos
+native/locale usr/libexec/niaos
+debian/niaos-package.service usr/lib/systemd/system
+debian/niaos-package.socket usr/lib/systemd/system

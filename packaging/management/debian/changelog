@@ -1,3 +1,9 @@
+niayan-management (0.3.0) trixie; urgency=medium
+
+  * Accept bounded sealed read-only catalog results through the adopted commands.
+
+ -- minto-dane <205936182+minto-dane@users.noreply.github.com>  Sun, 13 Sep 2026 04:00:00 +0000
+
 niayan-management (0.2.0) trixie; urgency=medium
 
   * Connect adopted commands to the native local request protocol and sealed

@@ -1,3 +1,10 @@
+niaos-root-preparation (0.15.0) trixie; urgency=medium
+
+  * Connect adopted read-only listing to the concrete native accepted catalog.
+  * Deliver complete sealed query results; refuse unconnected mutation actions.
+
+ -- minto-dane <205936182+minto-dane@users.noreply.github.com>  Sun, 13 Sep 2026 04:00:00 +0000
+
 niaos-root-preparation (0.14.0) trixie; urgency=medium
 
   * Require continuous native supply observations bound to the planned inputs.
